@@ -1,0 +1,83 @@
+{
+  "id": "fc5b35c5-6015-49db-a06c-acf931d942a1",
+  "briefId": "9643a422-62b7-4710-91c2-64f208b8b490",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 38,
+      "content_style": "Jesús a cámara, serio y directo, sin música al principio, jump cuts, subtítulos grandes con palabras clave en CAPS, se siente como una conversación honesta",
+      "key_considerations": "Este ángulo necesita validar el escepticismo del viewer en vez de pelear contra él. Empezar reconociendo que tiene razón en desconfiar."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "contrarian",
+        "script_text": "Sí, la mayoría de cursos online son una estafa.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "authority_social_proof",
+        "script_text": "Gasté 50 mil dólares en cursos. La mayoría no sirvió.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "question",
+        "script_text": "¿Ya te prometieron plata fácil y te fallaron?",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pain_point",
+        "script_text": "Compré un curso de mil dólares y no lo terminé.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pattern_interrupt",
+        "script_text": "No te voy a pedir que confíes en mí.",
+        "timing_seconds": 3
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Validación del escepticismo (yo también fui estafado) → agitación de que el problema no sos vos, es el método → solución con prueba: venís gratis, sin tarjeta, y decidís vos",
+      "sections": [
+        {
+          "section_name": "Validación",
+          "is_rehook": false,
+          "script_text": "La realidad es que yo también compré cursos que no terminé. Pagué cosas que no servían. Y sé lo que se siente. Sentís que te tomaron de boludo.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Reencuadre",
+          "is_rehook": false,
+          "script_text": "Pero fíjense, el problema no es que seas vago o que no te dé la cabeza. El problema es que te vendieron un curso grabado hace 3 años que ya no funciona y te dejaron solo.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Entonces yo hice algo distinto.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Prueba",
+          "is_rehook": false,
+          "script_text": "Armé un sistema donde la inteligencia artificial hace el trabajo pesado. Vos no tenés que ser experto en nada. Y para que no sea otra promesa vacía, la primera clase es gratis. Sin tarjeta. Sin compromiso. Venís, ves el proceso en vivo, y vos decidís.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Registrate gratis. Cero riesgo. Link en bio.",
+      "reason_why": "No te pido confianza ciega. Te pido 40 minutos. Si no te sirve, no perdiste nada.",
+      "timing_seconds": 6,
+      "cta_type": "link_bio"
+    },
+    "total_duration_seconds": 38,
+    "word_count": 142
+  },
+  "createdAt": "2026-03-07T20:25:52.520Z"
+}

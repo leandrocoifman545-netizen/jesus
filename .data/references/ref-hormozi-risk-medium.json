@@ -1,0 +1,72 @@
+{
+  "id": "ref-hormozi-risk-medium",
+  "title": "Hormozi - Risk Illusion (Medium)",
+  "transcript": "Big rewards often come with big risks, but most risk is an illusion. And the illusion is if you fail, you'll starve, go homeless, and die. But the reality is you just go back to zero and start over with even more lessons and experience. And that's when you realize that the biggest risk is just not taking any. And this is actually one of the stages of scaling. And so that's why we put together the hundred million dollar scaling roadmap. All right, so it's guide that shows you exactly what our companies had to do to get past each stage of scaling by function as they grew. And so if that sounds a little interesting, you can grab your own personalized copy of the roadmap absolutely free. Just put in your business information and it'll actually customize the roadmap for you.",
+  "analysis": {
+    "hook": {
+      "text": "Big rewards often come with big risks, but most risk is an illusion.",
+      "type": "contrarian",
+      "word_count": 13,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Reframe",
+          "summary": "Mismo reencuadre del riesgo como ilusión",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Bridge",
+          "summary": "Conecta con stages of scaling",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Offer + CTA",
+          "summary": "Roadmap gratis personalizado",
+          "estimated_seconds": 12
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Autoritativo pero accesible",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "if that sounds a little interesting",
+        "the biggest risk is just not taking any",
+        "absolutely free"
+      ]
+    },
+    "cta": {
+      "text": "grab your own personalized copy of the roadmap absolutely free",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 30,
+    "total_word_count": 128,
+    "emotional_arc": "Miedo → reencuadre liberador → oferta sin fricción (versión comprimida, más directa)",
+    "strengths": [
+      "Versión corta efectiva: mantiene el reencuadre core sin perder impacto",
+      "Elimina el upsell, más limpio para cold audience",
+      "30 segundos: ideal para TikTok/Shorts"
+    ],
+    "patterns_to_replicate": [
+      "Comprimir un ad largo eliminando el dual CTA pero manteniendo el hook y reencuadre intactos",
+      "Versión A/B testing: misma idea, distinta longitud para testear qué duración convierte mejor"
+    ]
+  },
+  "folder": "masiva-hormozi",
+  "folderLabel": "Hormozi - Risk Illusion (3 variaciones)",
+  "createdAt": "2026-03-08T12:01:00.000Z",
+  "competitor": false,
+  "reference_type": "best_in_class_ads",
+  "notes": "No es competencia directa de ADP. Hormozi vende a empresarios USA (Acquisition.com). Es referente mundial en estructura de ads. Ads con +1 año activas = unicornio."
+}

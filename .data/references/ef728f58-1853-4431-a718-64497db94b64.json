@@ -1,0 +1,78 @@
+{
+  "id": "ef728f58-1853-4431-a718-64497db94b64",
+  "title": "Hormozi - No Growth No Shame (Full)",
+  "transcript": "If you have no growth, you should have no shame. Knock, call, DM, email, ask. Life-changing doors don't open themselves. Worst case scenario, you're in the exact same position you were before you knocked, except you have more experience. Best case scenario, the door opens and your life changes forever. And so it's a zero-risk move to take more shots on goal when life gives you unlimited shots. But the problem is most people don't want to take the first one because they fear risk more than they fear regret. And so if you have more fear around not accomplishing your goals, then if you do of taking risk, then I have something cool for you. So my team put together the exact findings of studying our entire portfolio companies across all stages of growth, where we got stuck, and most importantly, what we did to scale to the next level. And you can grab it for free at the link somewhere around here. And if you're feeling extra ambitious or you're my kind of business owner on the next page you'll have the opportunity to book a call with our team no obligation but it's just a way for us to provide more value to you and see if we can help you apply this stuff to your business right now that much faster in person at our headquarters. So either way, enjoy the roadmap and for the few crazy business owners who want to take the plunge, I can't wait to meet you.",
+  "analysis": {
+    "hook": {
+      "text": "If you have no growth, you should have no shame.",
+      "type": "contrarian",
+      "word_count": 11,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Permission",
+          "summary": "Da permiso para no tener verg\u00fcenza y tomar acci\u00f3n (knock, call, DM)",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Reframe - Zero risk",
+          "summary": "Worst/best case: es zero-risk tomar shots cuando la vida da unlimited shots",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Bridge - Fear vs regret",
+          "summary": "El problema es que la gente teme m\u00e1s al riesgo que al arrepentimiento",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Offer + Dual CTA",
+          "summary": "Roadmap gratis + book a call para crazy business owners",
+          "estimated_seconds": 18
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "But the problem is most people don't want to take the first one"
+    },
+    "tone": {
+      "primary_tone": "Motivacional autoritativo",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "you should have no shame",
+        "life gives you unlimited shots",
+        "they fear risk more than they fear regret",
+        "for the few crazy business owners"
+      ]
+    },
+    "cta": {
+      "text": "grab it for free at the link somewhere around here",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 50,
+    "total_word_count": 215,
+    "emotional_arc": "Permiso/validaci\u00f3n \u2192 reframe de riesgo como zero-sum \u2192 separaci\u00f3n entre miedosos y ambiciosos \u2192 oferta para los ambiciosos",
+    "strengths": [
+      "Hook que da PERMISO en vez de presionar",
+      "Worst/best case framework muy persuasivo",
+      "Dual CTA con identidad: 'for the few crazy business owners'",
+      "Tono de invitaci\u00f3n, nunca de presi\u00f3n"
+    ],
+    "patterns_to_replicate": [
+      "Patr\u00f3n PERMISO como hook: en vez de se\u00f1alar el dolor, dar permiso para actuar sin verg\u00fcenza",
+      "Worst case/Best case framework: presentar ambos escenarios para demostrar que es zero-risk",
+      "Identidad en el CTA: 'if you're my kind of business owner' filtra y halaga al mismo tiempo",
+      "'fear risk more than they fear regret' - reencuadre emocional potente"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

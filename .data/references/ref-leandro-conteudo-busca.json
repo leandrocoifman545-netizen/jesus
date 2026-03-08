@@ -1,0 +1,29 @@
+{
+  "id": "ref-leandro-conteudo-busca",
+  "title": "Leandro Ladeira - Conteúdo de Busca vs Interesse (Views vs Ventas)",
+  "type": "text",
+  "language": "pt-BR",
+  "competitor": true,
+  "competitor_of": "ADP - Jesús Tassarolo",
+  "transcript": "O que o seu comprador busca? Você vai ter menos views, mas você vai ter view da pessoa certa que vai comprar. Eu lembro que uma vez uma aluna minha, ela tem, inclusive ainda, um produto de gestão para empreendedores, empresas maiores, tá? Então ela ensina gestão ali. E aí ela falou: vou criar um canal no YouTube, eu que pensei em fazer resumos de livros muito grandes. E é uma boa? Sim. Mas normalmente resumos de livros vão vir em muita view, porque o livro é famoso, e não necessariamente muita venda. E aí, o que vai acontecer? Ela vai ficar popular, mas não vai ganhar necessariamente muito dinheiro. Isso é bom ou ruim? É bom. Mas dependendo do momento do seu negócio. Eu acho que no início você não precisa de popularidade, você precisa de dinheiro. Aí eu falei pra ela: não, cara, começa com as palavras que os compradores vão buscar. Aí eu fui ver de onde vinham minhas vendas das lives, que o tema era como criar uma página de captura que converte? Como criar uma página de vendas de alta conversão. Eu troco 11 milhões de visualizações nesse vídeo por 27 mil visualizações nas minhas lives diárias. Se você está começando em 2026 a criar conteúdo, está muito mais fácil do que já teve em toda a história da nossa internet aparecer em bolhas em buscas. Quer aprender a trabalhar com internet? Clica no link abaixo que tem uma aula introdutória em que eu revelo quais são os melhores nichos e os melhores modelos para se ganhar dinheiro com marketing digital no Brasil.",
+  "analysis": {
+    "hook_type": "contrarian",
+    "hook_text": "O que o seu comprador busca? Menos views, mais vendas.",
+    "structure": "Concepto (busca vs interesse) → Historia alumna (gestión, resúmenes de libros) → Contrarian (popularidad ≠ dinero) → Dato propio (11M views vs 27K lives) → CTA",
+    "framework": "PAS",
+    "tone": "Educativo, contrarian suave. Destruye el mito de 'necesito muchos seguidores'.",
+    "cta_type": "learn_more",
+    "duration_seconds": 90,
+    "key_patterns": [
+      "Views ≠ ventas (mismo mensaje que Jesús: 'sin seguidores')",
+      "Historia de alumna real con nombre implícito",
+      "Dato concreto: 'cambio 11M views por 27K views de mis lives'",
+      "Al inicio necesitás DINERO, no popularidad",
+      "Contenido de COMPRADOR vs contenido de AUDIENCIA"
+    ],
+    "competitive_insight": "Jesús dice 'sin seguidores, sin audiencia, la publicidad vende'. Leandro dice lo mismo pero desde el ángulo de contenido orgánico (busca vs interés). Ambos atacan el mito de necesitar seguidores."
+  },
+  "createdAt": "2026-03-08T02:05:00.000Z",
+  "reference_type": "direct_competitor",
+  "notes": "Competencia directa en Brasil. Mismo producto (crear/vender productos digitales con IA). Mercado: Brasil (PT-BR)."
+}

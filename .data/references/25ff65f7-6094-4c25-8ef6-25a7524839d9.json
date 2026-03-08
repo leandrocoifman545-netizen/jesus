@@ -1,0 +1,71 @@
+{
+  "id": "25ff65f7-6094-4c25-8ef6-25a7524839d9",
+  "title": "Hormozi - What You Avoid Controls You",
+  "transcript": "Business owners don't want to hear this, but what you avoid controls you. At least for me, I just try and face the thing that I'm avoiding. And so if you feel like you're constantly putting out fires all day and you're not even sure whether the thing you need to confront or to move forward, what it is, I get it. And we made something for you to help. What we did was we spent 200 hours analyzing all the companies in our portfolio, figuring out where they got stuck and what they did to get past it. We put in this automated tool where if you plug in your business information, it'll identify what state you're at and what the next steps need to be in a really customized report it's pretty sweet and the best part is it's absolutely free.",
+  "analysis": {
+    "hook": {
+      "text": "Business owners don't want to hear this, but what you avoid controls you.",
+      "type": "contrarian",
+      "word_count": 12,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook - Truth bomb",
+          "summary": "Lo que evit\u00e1s te controla - verdad inc\u00f3moda",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Empathy - Putting out fires",
+          "summary": "Valida la sensaci\u00f3n de estar apagando incendios todo el d\u00eda",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Solution - Automated tool",
+          "summary": "Herramienta que identifica tu estado y pr\u00f3ximos pasos",
+          "estimated_seconds": 12
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Vulnerable y directo",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "what you avoid controls you",
+        "I just try and face the thing that I'm avoiding",
+        "I get it",
+        "it's pretty sweet"
+      ]
+    },
+    "cta": {
+      "text": "it's absolutely free",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 28,
+    "total_word_count": 120,
+    "emotional_arc": "Confrontaci\u00f3n (lo que evit\u00e1s te controla) \u2192 empat\u00eda (yo tambi\u00e9n, I get it) \u2192 soluci\u00f3n autom\u00e1tica",
+    "strengths": [
+      "Hook filos\u00f3fico que pega en el ego del business owner",
+      "Vulnerabilidad personal: 'at least for me' humaniza",
+      "Producto como diagn\u00f3stico, no como curso"
+    ],
+    "patterns_to_replicate": [
+      "Hook 'don't want to hear this, but...' genera curiosidad irresistible",
+      "Patr\u00f3n DIAGN\u00d3STICO: posicionar el producto como herramienta que identifica el problema, no como soluci\u00f3n gen\u00e9rica",
+      "Vulnerabilidad calculada: compartir que vos tambi\u00e9n luch\u00e1s con lo mismo"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

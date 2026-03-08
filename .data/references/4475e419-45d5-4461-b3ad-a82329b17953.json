@@ -1,0 +1,70 @@
+{
+  "id": "4475e419-45d5-4461-b3ad-a82329b17953",
+  "title": "Hormozi - Perfect Sam (Workshop)",
+  "transcript": "Let's say like within your business. Let's say that you could find the perfect Sam. The perfect Sam that you could hire and whatever you could pay the perfect Sam to do, and he could do everything you can do just as well as you can. So whatever your current profit is minus Sam's compensation, if you could do that, then you would have almost the same amount of money you have now, and maybe in two years, perfect Sam would grow the pie so that you're making the same or more than you're making right now, but you're still not working at all. And so if that's the case, then it's like we're always in the hypothetic world, we're one hirer away from somebody who could do 100% of what we're currently doing and the business would be able to continue to grow. And so that's what we walked through at our scaling workshop here at my headquarters in Vegas. And so if you're at all interested in being surrounded by business owners that are like you or even bigger in this specific industry, then I'd love to invite you out. So click book a call and if it's a fit, can't wait to meet you.",
+  "analysis": {
+    "hook": {
+      "text": "Let's say that you could find the perfect Sam.",
+      "type": "curiosity_gap",
+      "word_count": 9,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Thought experiment",
+          "summary": "Imaginate que encontr\u00e1s a alguien que hace todo lo que vos hac\u00e9s",
+          "estimated_seconds": 18
+        },
+        {
+          "name": "Insight",
+          "summary": "Siempre estamos a UN hire de libertad total",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Workshop invite",
+          "summary": "Eso es lo que hacemos en el workshop en Vegas",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "we're one hirer away from somebody who could do 100% of what we're currently doing"
+    },
+    "tone": {
+      "primary_tone": "Socr\u00e1tico conversacional",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "the perfect Sam",
+        "one hirer away",
+        "surrounded by business owners like you or even bigger"
+      ]
+    },
+    "cta": {
+      "text": "click book a call and if it's a fit, can't wait to meet you",
+      "type": "custom",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 38,
+    "total_word_count": 175,
+    "emotional_arc": "Experimento mental (imagin\u00e1 al Sam perfecto) \u2192 revelaci\u00f3n (est\u00e1s a un hire de distancia) \u2192 invitaci\u00f3n a resolver eso",
+    "strengths": [
+      "Thought experiment como hook es \u00fanico y enganchador",
+      "Concepto 'Perfect Sam' es memorable y compartible",
+      "Vende libertad, no el workshop"
+    ],
+    "patterns_to_replicate": [
+      "Patr\u00f3n THOUGHT EXPERIMENT: en vez de decir el problema, hacer que el viewer lo descubra solo a trav\u00e9s de un ejercicio mental",
+      "Nombrar un concepto ('Perfect Sam') para hacerlo memorable y referenciable",
+      "Vender el resultado (libertad) no el producto (workshop)"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

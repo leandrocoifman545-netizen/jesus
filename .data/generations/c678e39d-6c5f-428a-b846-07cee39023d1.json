@@ -1,0 +1,77 @@
+{
+  "id": "c678e39d-6c5f-428a-b846-07cee39023d1",
+  "briefId": "ed7ac66b-64fa-4acd-948a-bbd5537cc89f",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 30,
+      "content_style": "UGC-style, primera persona, tono casual y directo. Jump cuts, text overlays y auto-captions. Energía joven y aspiracional sin prometer riqueza fácil. Nativo a la plataforma.",
+      "key_considerations": "Audiencia 20-30 años hipersensible a contenido financiero genérico. Evitar lenguaje de 'hazte rico rápido'. Hook visual en pantalla obligatorio. Auto-captions activados. Música con energía media-alta. Safe zones respetadas. CTA al final apuntando al link en bio."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pain_point",
+        "script_text": "Trabajás 40 horas y no te alcanza.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contrarian",
+        "script_text": "El trading no es para expertos.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "curiosity_gap",
+        "script_text": "Hay un mercado abierto mientras dormís.",
+        "timing_seconds": 3
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Arranca en frustración y resignación (sueldo que no alcanza, sin tiempo, sin conocimiento). Pivotea en el re-hook hacia posibilidad y agencia personal. Cierra en aspiración concreta y acción de bajo riesgo.",
+      "sections": [
+        {
+          "section_name": "Problema",
+          "is_rehook": false,
+          "script_text": "Yo también pensaba que invertir era solo para gente con plata o título universitario. Fin de mes, cuentas sin cerrar, y el sueldo ya gastado.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Agitación",
+          "is_rehook": false,
+          "script_text": "Intenté ahorrar. No funcionó. Vi videos de YouTube. Me perdí. Sentí que el sistema estaba hecho para que otros ganen y yo no.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Pero acá viene lo que nadie te explica en simple.",
+          "timing_seconds": 3
+        },
+        {
+          "section_name": "Solución",
+          "is_rehook": false,
+          "script_text": "Empecé a operar en los mercados con cero experiencia. Desde el celular. Con 50 dólares. Y aprendí exactamente qué comprar, cuándo entrar y cuándo salir.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Prueba y beneficio",
+          "is_rehook": false,
+          "script_text": "No es magia. Es un método. Y en el curso te lo enseño paso a paso, desde cero, sin jerga técnica.",
+          "timing_seconds": 5
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Entrá al curso. Link en bio, hoy gratis.",
+      "reason_why": "Los primeros 200 lugares tienen acceso gratuito al módulo de arranque. Después tiene costo.",
+      "timing_seconds": 4,
+      "cta_type": "link_bio"
+    },
+    "total_duration_seconds": 30,
+    "word_count": 118
+  },
+  "createdAt": "2026-03-07T18:09:20.198Z"
+}

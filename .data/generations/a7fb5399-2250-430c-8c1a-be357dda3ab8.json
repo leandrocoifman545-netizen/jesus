@@ -1,0 +1,158 @@
+{
+  "id": "a7fb5399-2250-430c-8c1a-be357dda3ab8",
+  "briefId": "78aebfa9-ac75-4f70-bae4-956c04b058f7",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Instagram Reels",
+      "recommended_duration_seconds": 30,
+      "content_style": "UGC-style, casual, conversational, native. Captions/text overlay crucial as 80% watch without sound. Prioritize Watch Time and DM Shares.",
+      "key_considerations": "Hook in first 3 seconds, use text overlays for silent viewing, ensure content is within safe zones (avoid top 108px, bottom 320px, right 120px). Use jump cuts and natural pacing for a native feel."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pain_point",
+        "script_text": "Cansada de pedir delivery?",
+        "shot_type": "Primer plano frontal",
+        "camera_movement": "Estática, slight handheld feel",
+        "talent_action": "Talent mira a cámara con expresión de frustración suave, suspira y se recuesta contra una encimera de cocina desordenada.",
+        "audio_notes": "Sonido de notificación de app de delivery, música Lo-fi triste de fondo.",
+        "screen_text": "CANSADA de delivery?",
+        "timing_seconds": 3,
+        "strategic_rationale": "Ataca directamente el dolor principal del público objetivo: la fatiga de la comida a domicilio por falta de tiempo."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "question",
+        "script_text": "¿Comer sano es un caos para ti?",
+        "shot_type": "Plano medio",
+        "camera_movement": "Zoom in rápido",
+        "talent_action": "Talent hace un gesto de pregunta con las manos, mirando a cámara con expresión de confusión y agotamiento.",
+        "audio_notes": "Sonido de 'scratch' o efecto de sonido de pregunta. Música Lo-fi triste de fondo.",
+        "screen_text": "¿COMER SANO un CAOS?",
+        "timing_seconds": 3,
+        "strategic_rationale": "Involucra al espectador directamente, pidiéndole que reflexione sobre su propia situación y validando su problema."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "statistical",
+        "script_text": "El 70% come mal por falta de tiempo.",
+        "shot_type": "Primer plano frontal",
+        "camera_movement": "Estática",
+        "talent_action": "Talent mira a cámara seriamente, luego levanta las cejas con un gesto de '¿sabías esto?'.",
+        "audio_notes": "Sonido de 'ding' o 'boom' ligero para el número. Música Lo-fi con un toque de seriedad.",
+        "screen_text": "70% COME MAL por TIEMPO.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Utiliza un dato impactante para generar credibilidad y hacer que el público se sienta identificado con un problema común."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "curiosity_gap",
+        "script_text": "Hay un secreto para cocinar rápido.",
+        "shot_type": "Primer plano frontal",
+        "camera_movement": "Estática",
+        "talent_action": "Talent mira a cámara con expresión de intriga, luego una pequeña sonrisa cómplice.",
+        "audio_notes": "Música ligera y misteriosa de fondo. SFX de 'ding' al final del hook.",
+        "screen_text": "EL SECRETO para cocinar RÁPIDO",
+        "timing_seconds": 3,
+        "strategic_rationale": "Crea una brecha de curiosidad sobre una solución para la falta de tiempo, clave para el público objetivo. Es corto y directo."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contrarian",
+        "script_text": "No necesitas ser chef para comer bien.",
+        "shot_type": "Plano medio, ligeramente ladeado",
+        "camera_movement": "Pequeño zoom in gradual",
+        "talent_action": "Talent hace un gesto negativo con la cabeza, luego levanta un dedo como para corregir una idea errónea.",
+        "audio_notes": "Música con un beat más marcado. SFX de 'whoosh' o 'pop' al inicio del hook.",
+        "screen_text": "NO hace falta ser CHEF",
+        "timing_seconds": 3,
+        "strategic_rationale": "Desafía la creencia común de que cocinar saludable es complicado, eliminando una barrera mental para mujeres profesionales ocupadas. Con tono casual."
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Inicia con frustración y cansancio (negativo), transiciona a curiosidad y esperanza (pivote), finaliza con alivio y empoderamiento (positivo).",
+      "sections": [
+        {
+          "section_name": "Problem: Agotamiento",
+          "script_text": "Llegas agotada, ¿y cocinar? ¡Ni hablar!",
+          "shot_type": "Primer plano",
+          "camera_movement": "Estática",
+          "transition": "Corte seco",
+          "talent_action": "Talent mira a cámara con expresión de cansancio, se frota los ojos. Parece que acaba de llegar a casa.",
+          "audio_notes": "Música Lo-fi sigue triste. Pequeño 'whoosh' para la transición.",
+          "screen_text": "AGOTADA? Sin TIEMPO?",
+          "emotional_beat": "Frustración, cansancio",
+          "timing_seconds": 4,
+          "props": "Mochila o bolso de trabajo en el suelo."
+        },
+        {
+          "section_name": "Agitate: Consecuencias",
+          "script_text": "Siempre lo mismo o delivery caro. Tu energía baja, la culpa sube.",
+          "shot_type": "Plano detalle",
+          "camera_movement": "Paneo lento",
+          "transition": "Jump cut",
+          "talent_action": "Talent señala con el dedo hacia abajo mientras habla de energía, luego se toca el pecho con una expresión de culpa. Paneo sobre un plato de comida rápida vacío.",
+          "audio_notes": "Música Lo-fi con un tono más dramático. Sonido de envoltura de comida rápida arrugada.",
+          "screen_text": "DELIVERY CARO. CULPA.",
+          "emotional_beat": "Culpa, monotonía, preocupación por la salud",
+          "timing_seconds": 4,
+          "props": "Envase de comida rápida o platos sucios."
+        },
+        {
+          "section_name": "Re-hook",
+          "script_text": "Pero hay una solución real.",
+          "shot_type": "Primer plano frontal",
+          "camera_movement": "Zoom out rápido",
+          "transition": "Pattern interrupt (cambio de ángulo)",
+          "talent_action": "Talent mira a cámara con una expresión de '¡espera!', luego sonríe con confianza. Cambio de iluminación a más brillante.",
+          "audio_notes": "Música cambia a un tono más optimista y upbeat. Sonido de 'pop' o 'magic chime'.",
+          "screen_text": "HAY UNA SOLUCIÓN.",
+          "emotional_beat": "Esperanza, curiosidad",
+          "timing_seconds": 3,
+          "is_rehook": true
+        },
+        {
+          "section_name": "Solve: Presentación del Producto",
+          "script_text": "Mi curso te enseña platos saludables, rápidos y deliciosos.",
+          "shot_type": "Plano medio",
+          "camera_movement": "Estática",
+          "transition": "Corte seco",
+          "talent_action": "Talent sonríe, gesticula con las manos como presentando algo. Podría sostener un tablet mostrando el curso.",
+          "audio_notes": "Música upbeat, energética y motivadora. Sonido de 'click' de interfaz digital.",
+          "screen_text": "COCINA FÁCIL Y DELICIOSA.",
+          "emotional_beat": "Alivio, solución",
+          "timing_seconds": 5,
+          "props": "Tablet/laptop mostrando la interfaz del curso, o un plato de comida saludable."
+        },
+        {
+          "section_name": "Benefits: Rapidez y Variedad",
+          "script_text": "En 30 minutos, comidas nutritivas para toda la semana. ¡Sin estrés!",
+          "shot_type": "Plano detalle de manos",
+          "camera_movement": "Tracking lateral",
+          "transition": "Whip pan",
+          "talent_action": "Manos del talent cortando verduras rápidamente, o montando un plato de forma eficiente. Secuencia de tomas rápidas de diferentes platos terminados.",
+          "audio_notes": "Música upbeat sigue. Sonido de cuchillo cortando, siseo de cocción. Efecto de sonido 'ding' al final.",
+          "screen_text": "30 MINUTOS. SIN ESTRÉS.",
+          "emotional_beat": "Aspiración, practicidad, transformación",
+          "timing_seconds": 6,
+          "props": "Tabla de cortar, cuchillo, ingredientes frescos, varios platos de comida preparada."
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Link en bio. ¡Empieza hoy mismo a cambiar tu cocina!",
+      "reason_why": "Para transformar tu alimentación y ganar tiempo sin estrés.",
+      "shot_type": "Primer plano frontal",
+      "talent_action": "Talent señala con el pulgar hacia abajo (indicando link en bio) con una sonrisa entusiasmada y confiada. Sonríe a cámara.",
+      "screen_text": "LINK EN BIO: ¡TRANSFORMA TU COCINA HOY! CUPOS LIMITADOS.",
+      "timing_seconds": 5,
+      "cta_type": "link_bio"
+    },
+    "total_duration_seconds": 30,
+    "word_count": 65,
+    "production_notes": "Priorizar la autenticidad y el estilo UGC. La iluminación debe ser natural y el vestuario casual. Asegurarse de que el texto en pantalla sea legible y esté dentro de la zona segura de Reels. La música debe evolucionar de un tono ligeramente frustrado a uno optimista y enérgico. Incluir auto-captions."
+  },
+  "createdAt": "2026-03-06T14:20:02.711Z"
+}

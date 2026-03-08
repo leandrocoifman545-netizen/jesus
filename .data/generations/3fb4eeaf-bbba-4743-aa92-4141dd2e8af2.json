@@ -1,0 +1,150 @@
+{
+  "id": "3fb4eeaf-bbba-4743-aa92-4141dd2e8af2",
+  "briefId": "5627350e-8e7f-4455-a332-f36122f08016",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 30,
+      "content_style": "UGC-style, cámara frontal, argentino coloquial accesible para toda LATAM, tono conversacional con autoridad empática. Sin producción elaborada. Jesús habla directo a cámara como si fuera un mensaje de WhatsApp en video.",
+      "key_considerations": "Hook en primeros 3s crítico. Jump cuts entre cada beat. Auto-captions obligatorias. Música de fondo baja con energía creciente. Safe zone respetada. Re-hook entre segundo 10-15. Duración de 30s elegida porque el mensaje es directo, el avatar toma decisiones rápidas, y TikTok penaliza drop-off en videos más largos para audiencias frías."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pain_point",
+        "script_text": "El sueldo no te alcanza y ya no sabés qué hacer.",
+        "shot_type": "Primer plano frontal, cámara a altura de ojos",
+        "camera_movement": "Estática",
+        "talent_action": "Jesús mira directo a cámara con expresión seria, ceño levemente fruncido, pausa de medio segundo antes de hablar, como si le estuviera hablando a una sola persona.",
+        "audio_notes": "Sin música primeros 2s. Voz sin filtros, tono directo y bajo. El silencio antes del hook genera tensión.",
+        "screen_text": "El SUELDO no alcanza.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Dolor #1 del avatar según 9.441 conversaciones reales. La frase espeja el lenguaje textual del lead ('gano muy poco'). Activa reconocimiento inmediato en el segmento A y D. Sin rodeos, sin contexto previo."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contrarian",
+        "script_text": "No necesitás saber nada de tecnología para vender por internet.",
+        "shot_type": "Primer plano frontal, cámara a altura de ojos",
+        "camera_movement": "Estática",
+        "talent_action": "Jesús levanta levemente una ceja al decir 'nada', como desafiando una creencia. Habla con seguridad, sin apuro.",
+        "audio_notes": "Música lo-fi suave entra en segundo 1, volumen 15%. Voz clara, pausa natural después de 'tecnología'.",
+        "screen_text": "NO necesitás tecnología.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Desactiva el miedo #4 del avatar ('no sé nada de tecnología', 76 ocurrencias reales). Contrarian porque va contra la creencia instalada. Segmento B y C. Genera fricción cognitiva que obliga a seguir mirando para resolver la contradicción."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "question",
+        "script_text": "¿Cuánto tiempo más vas a esperar para tener tu propio ingreso?",
+        "shot_type": "Primer plano frontal, cámara a altura de ojos",
+        "camera_movement": "Zoom in lento desde plano medio a primer plano durante los 3 segundos",
+        "talent_action": "Jesús inclina levemente la cabeza hacia adelante al hacer la pregunta, ojos bien abiertos, expresión que combina desafío con empatía. No acusa, interpela.",
+        "audio_notes": "Música con beat suave entra en segundo 2, volumen 20%. La pregunta termina con el zoom llegando a su punto máximo.",
+        "screen_text": "¿Hasta cuándo ESPERÁS?",
+        "timing_seconds": 3,
+        "strategic_rationale": "Activa el deseo de autonomía e independencia del segmento A. La pregunta no juzga sino que invita a la reflexión. El zoom in crea tensión visual que aumenta retención. Basado en el patrón de 'preguntas incómodas' de la voz de Jesús."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "authority_social_proof",
+        "script_text": "Más de dos mil alumnos ya venden productos digitales con IA. Sin experiencia.",
+        "shot_type": "Primer plano frontal, cámara a altura de ojos",
+        "camera_movement": "Estática",
+        "talent_action": "Jesús habla con calma y convicción, sin exaltarse. Al decir 'sin experiencia' hace una pausa corta y levanta una mano abierta como reforzando el punto.",
+        "audio_notes": "Beat rítmico suave entra desde el inicio, volumen 20%. Voz firme, no apresurada. El número '2.000' se dice con énfasis natural.",
+        "screen_text": "+2.000 alumnos. SIN experiencia.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Usa el dato real de ADP como prueba social inmediata. Desactiva el miedo M6 ('demasiado bueno para ser verdad') desde el segundo 0. El 'sin experiencia' espeja el lenguaje del avatar. Más efectivo para segmento D (escéptico) que ya necesita evidencia antes de escuchar la propuesta."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "curiosity_gap",
+        "script_text": "Hay personas vendiendo PDFs y ganando más que tu sueldo.",
+        "shot_type": "Primer plano frontal, cámara a altura de ojos",
+        "camera_movement": "Estática con jump cut en segundo 2 a plano ligeramente más cerrado",
+        "talent_action": "Jesús abre los ojos con expresión de 'no puedo creer que esto sea real' al decir 'PDFs'. Como si él mismo todavía lo encontrara sorprendente. Natural, no actuado.",
+        "audio_notes": "Silencio primeros 1.5s, luego entra música con beat ascendente volumen 25%. El jump cut coincide con el cambio musical.",
+        "screen_text": "Vendiendo PDFS. Más que tu sueldo.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Crea una brecha de información: el cerebro necesita saber cómo es posible eso. 'PDFs' es específico y concreto, evita el lenguaje de marketer. Conecta con el guión real de Jesús ('pedos en frasco' → aquí usamos 'PDFs' como versión más directa al producto). Activa curiosidad en los 4 segmentos."
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "NEGATIVO (dolor económico + frustración de no saber cómo salir) → PIVOTE (revelación: hay un sistema simple con IA) → POSITIVO (alivio + posibilidad concreta + acción sin riesgo)",
+      "sections": [
+        {
+          "section_name": "Problema",
+          "is_rehook": false,
+          "script_text": "Trabajás todo el día y a fin de mes no te queda nada. Querés algo extra pero no sabés por dónde empezar.",
+          "shot_type": "Plano medio frontal, cámara a altura de ojos",
+          "camera_movement": "Estática",
+          "transition": "Corte seco desde el hook",
+          "talent_action": "Jesús baja el tono, habla con empatía real. No condescendiente. Como alguien que lo vivió. Asiente levemente al decir 'no te queda nada'.",
+          "props": "Ninguno. Fondo simple, neutro.",
+          "audio_notes": "Música baja, tono emocional leve. Volumen 15%. Refuerza la sensación de tensión sin exagerar.",
+          "screen_text": "Trabajás TODO el día. No queda NADA.",
+          "emotional_beat": "Identificación + validación del dolor. El lead se siente visto.",
+          "timing_seconds": 5
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Pero hay algo que la mayoría no sabe.",
+          "shot_type": "Primer plano, cámara a altura de ojos",
+          "camera_movement": "Zoom in rápido (whip zoom)",
+          "transition": "Whip pan desde el beat anterior",
+          "talent_action": "Jesús hace una pausa dramática de 0.5 segundos antes de hablar, levanta el dedo índice levemente. Expresión que dice 'prestá atención a esto'.",
+          "props": "Ninguno.",
+          "audio_notes": "Beat musical sube de golpe a volumen 40% coincidiendo con el zoom. Cambio de energía claro.",
+          "screen_text": "Pero hay algo que NO sabés.",
+          "emotional_beat": "Pattern interrupt. Resetea la atención. Promesa de revelación.",
+          "timing_seconds": 3
+        },
+        {
+          "section_name": "Agitación + Revelación",
+          "is_rehook": false,
+          "script_text": "La IA puede crear un producto digital en horas. Vos lo vendés por WhatsApp. Sin seguidores, sin experiencia, con un dólar por día de publicidad.",
+          "shot_type": "Plano medio frontal",
+          "camera_movement": "Estática con jump cut entre cada frase",
+          "transition": "Jump cut",
+          "talent_action": "Jesús habla más rápido pero articulado. Al decir 'un dólar por día' levanta el dedo índice mirando a cámara como para que ese número quede grabado. Energía subiendo.",
+          "props": "Ninguno. Énfasis en la voz y el ritmo.",
+          "audio_notes": "Música con beat ascendente, volumen 35%. Cada jump cut tiene micro-transición de sonido (whoosh suave).",
+          "screen_text": "IA crea tu PRODUCTO. $1/día de publicidad.",
+          "emotional_beat": "Alivio + sorpresa positiva. El mecanismo se revela como simple y accesible.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Solución + Prueba",
+          "is_rehook": false,
+          "script_text": "Tenemos más de dos mil alumnos que lo hicieron desde cero. Muchos sin saber usar una computadora.",
+          "shot_type": "Plano medio frontal",
+          "camera_movement": "Estática",
+          "transition": "Corte seco",
+          "talent_action": "Jesús retoma tono empático pero con autoridad. Habla despacio en esta parte para que el número impacte. Asiente al decir 'desde cero'.",
+          "props": "Ninguno.",
+          "audio_notes": "Música baja a volumen 20%, pausa emocional. Permite que las palabras tengan peso.",
+          "screen_text": "+2.000 alumnos. Desde CERO.",
+          "emotional_beat": "Credibilidad + identificación. 'Desde cero' y 'sin computadora' elimina la objeción principal.",
+          "timing_seconds": 5
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "La primera clase es gratis. Tocá el link en bio ahora.",
+      "reason_why": "La primera experiencia no te cuesta nada. El riesgo lo asumimos nosotros, no vos. Pero los lugares son limitados.",
+      "shot_type": "Primer plano frontal, cámara a altura de ojos",
+      "talent_action": "Jesús mira directo a cámara, señala hacia abajo con el dedo índice al decir 'link en bio'. Expresión seria pero cálida. Pausa después de 'gratis' para que la palabra aterrice.",
+      "screen_text": "GRATIS. Link en bio 👇",
+      "timing_seconds": 7,
+      "cta_type": "link_bio"
+    },
+    "total_duration_seconds": 30,
+    "word_count": 78,
+    "production_notes": "TONO: UGC puro. Jesús habla como si grabara un video de WhatsApp, no un comercial. Sin teleprompter visible, sin iluminación de estudio. Luz natural o ring light simple. Fondo neutro (pared blanca, pared de ladrillo, o espacio de oficina simple). VESTUARIO: casual, remera o camisa sin traje. AUDIO: micrófono de solapa o inalámbrico. Voz sin procesado. Música de fondo: lo-fi hip hop o beat minimalista latinoamericano, que suba y baje según el arco emocional indicado en cada beat. CAPTIONS: auto-captions activadas obligatoriamente. Palabras clave en mayúscula y negrita (ya indicadas en screen_text). EDICIÓN: jump cuts entre beats, sin transiciones fancy. Velocidad de edición media-alta. Cada beat es una toma diferente aunque sea del mismo plano. INSTRUCCIÓN DE COMBINACIÓN DE HOOKS: cualquiera de los 5 hooks se graba como toma separada y se edita directamente antes del beat 'Problema'. El desarrollo y CTA son exactamente los mismos en las 5 variantes. Testear las 5 versiones simultáneamente con presupuesto mínimo ($2-5/día por variante) antes de escalar."
+  },
+  "createdAt": "2026-03-07T17:05:57.238Z"
+}

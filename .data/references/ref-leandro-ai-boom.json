@@ -1,0 +1,30 @@
+{
+  "id": "ref-leandro-ai-boom",
+  "title": "Leandro Ladeira - AI Boom / Curso Obsoleto (Urgencia IA)",
+  "type": "text",
+  "language": "pt-BR",
+  "competitor": true,
+  "competitor_of": "ADP - Jesús Tassarolo",
+  "transcript": "É o novo boom do digital, na minha opinião. Que é inteligência artificial. Meu curso em janeiro desse ano, ele era atualizadíssimo. Em julho, ele ficou completamente obsoleto. Completamente. Eu não tinha coragem mais de vender igual era antes. As últimas duas semanas, eu tô sem dormir. Eu tô trabalhando de 6 da manhã a quatro da manhã. Tipo, teve um dia que eu trabalhei, sei lá, 15 horas seguidas. Por que você fez esse negócio? Eu não acho que é saudável fazer isso. Mas eu vi um negócio que não tem como dizer. É o novo boom do digital, na minha opinião. Que é inteligência artificial. No meu curso estava obsoleto. Eu olhava pro lado e falava: cara, tá obsoleto. E aí eu regravei com inteligência artificial em tudo. E aí, cara, eu vou te falar, é o futuro. Porque qualquer aluno meu antes precisava ser muito bom pra conseguir fazer isso aqui. Agora, não precisa ser bom. A inteligência artificial fica bom por você. A velocidade de implementação eu acho que aumentou em, sei lá, 10, 15 vezes. Mas a qualidade também. Principalmente pro cara que tá começando, ele é ruim de copo. Sabe quando você começa qualquer coisa, você é meio desajeitado? Agora o cara é muito menos desajeitado. É óbvio que ele não é tão bom, igual um cara genial, mas eventualmente fica até melhor do que o cara genial. Quer aprender a trabalhar com internet? Clica no link abaixo que tem uma aula introdutória em que eu revelo quais são os melhores nichos e os melhores modelos para se ganhar dinheiro com marketing digital no Brasil.",
+  "analysis": {
+    "hook_type": "authority_social_proof",
+    "hook_text": "É o novo boom do digital: inteligência artificial. Meu curso ficou completamente obsoleto.",
+    "structure": "Declaración fuerte (boom) → Vulnerabilidad (mi curso quedó obsoleto) → Sacrificio personal (15h/día sin dormir) → Beneficio para principiantes (IA compensa tus debilidades) → CTA",
+    "framework": "BAB",
+    "tone": "Vulnerable y honesto. Admite que su propio producto quedó obsoleto. Genera confianza por transparencia.",
+    "cta_type": "learn_more",
+    "duration_seconds": 75,
+    "key_patterns": [
+      "Vulnerabilidad estratégica: 'mi curso quedó COMPLETAMENTE obsoleto'",
+      "Sacrificio personal como prueba de convicción: '6am a 4am, 15h seguidas'",
+      "Argumento clave: 'antes tenías que ser muy bueno, ahora la IA es buena por vos'",
+      "Velocidad 10-15x con IA",
+      "Principiante 'desajeitado' → IA lo compensa",
+      "Ventana de oportunidad implícita: 'es el nuevo boom'"
+    ],
+    "competitive_insight": "Jesús usa el mismo argumento ('la IA hace el 90%') pero Leandro lo presenta desde la vulnerabilidad ('mi propio curso quedó obsoleto'). Ambos apelan a que principiantes pueden competir gracias a IA."
+  },
+  "createdAt": "2026-03-08T02:01:00.000Z",
+  "reference_type": "direct_competitor",
+  "notes": "Competencia directa en Brasil. Mismo producto (crear/vender productos digitales con IA). Mercado: Brasil (PT-BR)."
+}

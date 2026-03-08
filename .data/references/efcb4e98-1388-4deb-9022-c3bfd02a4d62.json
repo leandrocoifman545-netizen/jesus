@@ -1,0 +1,71 @@
+{
+  "id": "efcb4e98-1388-4deb-9022-c3bfd02a4d62",
+  "title": "Hormozi - Business Owners Stay Poor (Blame)",
+  "transcript": "Business owners stay poor because they're afraid of other poor business owners judging them for doing the things that it takes to win. And so if you want to feel better, blame other people. If you want to get better, blame yourself. If you're tired of the things that have prevented you, maybe it's the president or your market or your competition or inflation or interest rates or whatever else you can think of for why the business isn't growing the way you want it to. We put together a scaling roadmap from studying every business that we own that's been exposed to the same pressures and we figured out where they got stuck and how we broke through. We broke it into 10 phases across eight different functions of the business, and I want to gift it to you. It's absolutely free. And on the next page, if you are a business owner and you'd like our help applying this stuff to your business, then just book a call. We scale businesses and we'd love to help you scale.",
+  "analysis": {
+    "hook": {
+      "text": "Business owners stay poor because they're afraid of other poor business owners judging them.",
+      "type": "contrarian",
+      "word_count": 14,
+      "estimated_seconds": 5
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook - Mirror",
+          "summary": "Te qued\u00e1s pobre por miedo al juicio de otros pobres",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Agitate - Blame",
+          "summary": "Si quer\u00e9s sentirte mejor, culp\u00e1 a otros. Si quer\u00e9s mejorar, culpate a vos.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Solution + CTA",
+          "summary": "Roadmap de empresas expuestas a las mismas presiones",
+          "estimated_seconds": 14
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "If you're tired of the things that have prevented you"
+    },
+    "tone": {
+      "primary_tone": "Confrontacional directo",
+      "formality_level": "casual",
+      "uses_first_person": false,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "afraid of other poor business owners judging them",
+        "blame other people vs blame yourself",
+        "I want to gift it to you",
+        "exposed to the same pressures"
+      ]
+    },
+    "cta": {
+      "text": "I want to gift it to you. It's absolutely free.",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 35,
+    "total_word_count": 155,
+    "emotional_arc": "Provocaci\u00f3n (te qued\u00e1s pobre por miedo) \u2192 confrontaci\u00f3n (blame yourself) \u2192 neutralizaci\u00f3n de excusas \u2192 regalo",
+    "strengths": [
+      "Hook que provoca ego y obliga a seguir viendo",
+      "Dicotom\u00eda feel better vs get better es brillante",
+      "Lista de excusas (presidente, mercado, inflaci\u00f3n) valida y destruye a la vez"
+    ],
+    "patterns_to_replicate": [
+      "Patr\u00f3n ESPEJO: mostrarle al viewer exactamente lo que est\u00e1 haciendo mal de forma que no pueda mirar para otro lado",
+      "Dicotom\u00eda simple: feel better vs get better como test de identidad",
+      "Listar excusas comunes y luego demolerlas con evidencia propia"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

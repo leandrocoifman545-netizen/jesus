@@ -1,0 +1,52 @@
+{
+  "id": "ref-erico-diagnostico",
+  "title": "Érico Rocha - 4 Hooks mismo body (Diagnóstico gratuito / 6 en 7)",
+  "type": "text",
+  "language": "pt-BR",
+  "competitor": true,
+  "reference_type": "indirect_competitor",
+  "competitor_of": "ADP - Jesús Tassarolo",
+  "notes": "Competencia indirecta. Mismo mercado (ganar con digital en BR) pero diferente modelo: high ticket + mentoría + diagnóstico 1-a-1. Jesús es low ticket + productos digitales + WhatsApp. Sirve por el patrón de testeo de 4 hooks con mismo body.",
+  "variants": [
+    {
+      "hook_type": "curiosity_gap",
+      "hook_text": "¿Ya pensaste en facturar 6 en 7 (100K reais en 7 días)?",
+      "angle": "Aspiracional con número concreto"
+    },
+    {
+      "hook_type": "pain_point",
+      "hook_text": "Ya intentaste diversas estrategias y no alcanzaste el resultado",
+      "angle": "Frustración por intentos fallidos"
+    },
+    {
+      "hook_type": "curiosity_gap",
+      "hook_text": "Tenés un conocimiento que vale oro y no te diste cuenta",
+      "angle": "Reframe: ya tenés lo que necesitás"
+    },
+    {
+      "hook_type": "contrarian",
+      "hook_text": "Hay gente buscando forma mágica. No existe.",
+      "angle": "Anti-magia, pro-método"
+    }
+  ],
+  "shared_body": "Diagnóstico estratégico gratuito con equipo de especialistas → conversación individual y personalizada → plan claro para llegar al 6 en 7",
+  "transcript_variant_1": "Para caso, já pensou em faturar seis em sete, isso é 100 mil reais em sete dias com negócio digital? Pode parecer distante à primeira vista, mas é totalmente possível para quem tem um plano e segue o método certo, comprovado e validado por milhares de pessoas. Só para você ter uma ideia, somente no ano passado, em 2024, meus alunos somados faturaram mais de um bilhão de reais segundo meu método. E para te mostrar por onde começar, eu estou liberando meu time de especialistas para fazer um diagnóstico um a um específico para você. Esse diagnóstico serve para você, mesmo que você queira fazer o 6 em 7, mas você não tenha produto, expertise ou ideia. E esse diagnóstico serve pra você também com seu negócio físico através de marketing digital. Esse diagnóstico é uma análise individual e personalizada que vai te ajudar a entender qual caminho você vai ter que seguir para você chegar ao seu primeiro seis em 7. Para agendar o seu diagnóstico basta você clicar no Saiba Mais e agendar. Sinceramente, pelo fato dele ser um a um, ele pode ser a virada que você estava esperando.",
+  "transcript_variant_4": "Tem gente procurando uma forma mágica para fazer um 6 em 7. Mas deixa eu te falar a verdade. Ela não existe. O que existe é um método testado e validado que já levou milhares de pessoas, literalmente, a faturar 100 mil reais em sete dias. Para te mostrar esse método que pode funcionar pra você, eu liberei um diagnóstico estratégico e gratuito que você vai fazer junto com o meu time de especialistas. É uma conversa individual e personalizada, sem custo e sem pegadinha. Clica aqui embaixo e agenda o seu diagnóstico e veja como chegar lá. Pode ser mais simples do que parece.",
+  "analysis": {
+    "structure": "Hook variable → Promesa (método validado) → Prueba social (1 billón de reais en 2024) → Oferta (diagnóstico gratuito 1-a-1) → CTA (Saiba Mais)",
+    "framework": "AIDA",
+    "tone": "Profesional, confiado, menos callejero que Jesús o Leandro. Más 'empresario establecido'.",
+    "cta_type": "sign_up",
+    "duration_seconds": 60,
+    "key_patterns": [
+      "4 hooks distintos, MISMO body y CTA = A/B testing puro de hooks",
+      "Número aspiracional concreto: '6 en 7' (100K en 7 días)",
+      "Prueba social masiva: 'alumnos facturaron +1 billón de reais'",
+      "Oferta de entrada = diagnóstico GRATUITO (no webinar, no taller)",
+      "Personalización: 'individual y personalizado' repetido en todos",
+      "Baja barrera: 'sin costo, sin pegadinha'"
+    ],
+    "competitive_insight": "Érico usa diagnóstico 1-a-1 como entrada al funnel (high ticket closer). Jesús usa webinar/taller como entrada (self-serve). El patrón de testear múltiples hooks con mismo body es replicable directamente en nuestro generador."
+  },
+  "createdAt": "2026-03-08T03:00:00.000Z"
+}

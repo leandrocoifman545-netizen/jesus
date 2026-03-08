@@ -1,0 +1,71 @@
+{
+  "id": "5f430ae3-0cb8-42a9-84d7-4d11c13e4de7",
+  "title": "Hormozi - Industry-Specific Template",
+  "transcript": "If you want a [INDUSTRY] doing over a million dollars a year and you want to scale, I have a free gift for you. And so my team spent 200 plus hours reviewing portfolio companies and companies we advised to figure out exactly where people got stuck at each revenue level and looked at it across function. So that means marketing, sales, CS, finance, legal, tech, ops, the whole gamut, and more importantly, not where they get stuck, but how to get unstuck at each revenue level. It's a gift, it's absolutely free. If you want that, it'll give you a customized scaling roadmap to where you're at right now and what specific actions to take. The whole thing's a gift. No strings attached. So if you want it, click, put your information in, and it'll send it to you all personalized. And uh yeah, it rocks. And so you should use it. That's all I got. All right, grab it and uh have a good year.",
+  "analysis": {
+    "hook": {
+      "text": "If you want a [INDUSTRY] doing over a million dollars a year and you want to scale, I have a free gift for you.",
+      "type": "authority_social_proof",
+      "word_count": 22,
+      "estimated_seconds": 5
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Industry callout + qualifier",
+          "summary": "Filtra por industria Y por revenue ($1M+). Solo habla con los correctos.",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Credibility",
+          "summary": "200+ horas, portfolio, todas las funciones",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA - Gift",
+          "summary": "Gratis, personalizado, sin compromiso",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Directo y generoso",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "light",
+      "key_phrases": [
+        "I have a free gift for you",
+        "it rocks",
+        "that's all I got",
+        "no strings attached"
+      ]
+    },
+    "cta": {
+      "text": "click, put your information in",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 28,
+    "total_word_count": 125,
+    "emotional_arc": "Identificaci\u00f3n (\u00a1habla de MI industria!) \u2192 credibilidad \u2192 regalo sin fricci\u00f3n",
+    "strengths": [
+      "Hyper-targeting por industria hace que el viewer sienta que es para \u00e9l espec\u00edficamente",
+      "Mismo body reutilizado para 15+ industrias = escala masiva con m\u00ednimo esfuerzo",
+      "El qualifier '$1M+' filtra y halaga a la vez"
+    ],
+    "patterns_to_replicate": [
+      "PATR\u00d3N TEMPLATE INDUSTRIA: crear UN guion base y cambiar solo el hook con la industria espec\u00edfica. Usado en: peptide therapy, hormone therapy, HVAC, landscaping, garage door/fencing, aesthetics, clothing/apparel, remodeling, weight loss, holistic health, dental, consumer package goods, warehouse/logistics",
+      "Qualifier de revenue en el hook ('doing over a million') como filtro + halago",
+      "Escala de contenido: 1 template = 15+ ads distintos cambiando una palabra"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

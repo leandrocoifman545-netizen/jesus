@@ -1,0 +1,79 @@
+{
+  "id": "aa1dd500-8561-4081-800c-516317706804",
+  "title": "Hormozi - Treasure Map Analogy",
+  "transcript": "Imagine finding a treasure map that on it showed piece by piece exactly what would lead you to the treasure. Except if you're a business owner, the treasure is gonna be what you need to do to get exactly where to go. And boy, I wish I could find that too. And I don't have it, but we do have a handful of things that we've looked at when we studied all the portfolio companies and all the companies that we've advised over the years and figured out at each revenue level, at each headcount level, where do people get stuck for marketing, where do people get stuck for sales, where do they get stuck for customer success, it, legal, finance, and ops. Like where are those real bottlenecks? And so we actually documented all of it, put it into a cool little widget that spits out a customized personal scaling plan specifically for you. And so no, it's not a treasure map, but it can help you get a little bit less stuck so you can get to the next level and it's the number one thing that we've had download we have 250 000 businesses who download it and I get testimonials every day. It's free. It's free. And so my gift by the end of the year, go grab it and uh I don't know maybe I'll see you out here in Vegas someday.",
+  "analysis": {
+    "hook": {
+      "text": "Imagine finding a treasure map that showed piece by piece exactly what would lead you to the treasure.",
+      "type": "curiosity_gap",
+      "word_count": 17,
+      "estimated_seconds": 5
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Treasure map fantasy",
+          "summary": "Invita a imaginar un mapa del tesoro para tu negocio",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Honesty break",
+          "summary": "'I don't have it' - honestidad que genera m\u00e1s confianza",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "What we DO have",
+          "summary": "Portfolio analysis across all functions at each revenue level",
+          "estimated_seconds": 14
+        },
+        {
+          "name": "Social proof + CTA",
+          "summary": "250K downloads, testimonios diarios, gratis",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "no, it's not a treasure map, but it can help you get a little bit less stuck"
+    },
+    "tone": {
+      "primary_tone": "Storytelling honesto",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "light",
+      "key_phrases": [
+        "I wish I could find that too",
+        "I don't have it, but",
+        "it's not a treasure map, but",
+        "250,000 businesses",
+        "It's free. It's free."
+      ]
+    },
+    "cta": {
+      "text": "go grab it",
+      "type": "download",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 42,
+    "total_word_count": 190,
+    "emotional_arc": "Fantas\u00eda (imaginate el mapa perfecto) \u2192 honestidad (no lo tengo) \u2192 credibilidad (pero tenemos esto) \u2192 prueba social masiva \u2192 regalo",
+    "strengths": [
+      "Analog\u00eda del mapa del tesoro es universal y visual",
+      "'I don't have it' genera confianza masiva por ser inesperadamente honesto",
+      "250K downloads como prueba social irrefutable",
+      "Repetici\u00f3n 'It's free. It's free.' enfatiza sin presionar"
+    ],
+    "patterns_to_replicate": [
+      "Patr\u00f3n FANTAS\u00cdA + HONESTIDAD: crear expectativa y despu\u00e9s ser brutalmente honesto sobre lo que S\u00cd ten\u00e9s",
+      "Under-promise: 'a little bit less stuck' en vez de prometer transformaci\u00f3n total",
+      "Repetici\u00f3n simple para enfatizar: 'It's free. It's free.'",
+      "Social proof num\u00e9rico masivo (250K) como cierre antes del CTA"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

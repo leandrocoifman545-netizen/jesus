@@ -1,0 +1,71 @@
+{
+  "id": "46194f4e-8106-4820-9095-4c923f4d7b6e",
+  "title": "Hormozi - Best Gift (Should Charge)",
+  "transcript": "The best gift I can possibly give business owners this year is something that I should charge for and just make it free. And so that's exactly what I'm gonna do. And so my team spent 200 plus hours reviewing portfolio companies and companies we advised to figure out exactly where people got stuck at each revenue level and looked at it across function. So that means marketing, sales, CS, finance, legal, tech, ops, the whole gamut, and more importantly, not where they get stuck, but how to get unstuck at each revenue level. It's a gift. It's absolutely free. If you want that, it'll give you a customized scaling roadmap to where you're at right now and what specific actions to take. The whole thing's a gift. No strings attached. So if you want it, click, put your information in, and it'll send it to you all personalized. And uh yeah, it rocks. And so you should use it. That's all I got.",
+  "analysis": {
+    "hook": {
+      "text": "The best gift I can possibly give business owners this year is something that I should charge for and just make it free.",
+      "type": "curiosity_gap",
+      "word_count": 21,
+      "estimated_seconds": 5
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Gift + perceived value",
+          "summary": "Deber\u00eda cobrar pero lo hace gratis. Valor percibido instant\u00e1neo.",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Credibility",
+          "summary": "200+ horas, portfolio companies, all functions",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA - No strings",
+          "summary": "Gratis, personalizado, sin compromiso",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Generoso y casual",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "light",
+      "key_phrases": [
+        "should charge for and just make it free",
+        "no strings attached",
+        "it rocks",
+        "that's all I got"
+      ]
+    },
+    "cta": {
+      "text": "click, put your information in",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 30,
+    "total_word_count": 130,
+    "emotional_arc": "Generosidad (te regalo algo valioso) \u2192 credibilidad (200 horas de research) \u2192 acci\u00f3n simple",
+    "strengths": [
+      "'Should charge for it' eleva valor percibido sin poner precio",
+      "Tono ultra casual al final ('it rocks', 'that's all I got') genera cercan\u00eda",
+      "Repite 'gift' 3 veces para anclar que es regalo"
+    ],
+    "patterns_to_replicate": [
+      "Patr\u00f3n VALOR PERCIBIDO: decir que deber\u00edas cobrar algo pero lo hac\u00e9s gratis",
+      "Cierre ultra casual: 'that's all I got' humaniza y baja la guardia",
+      "Repetici\u00f3n de 'gift/free/no strings' para eliminar objeciones de costo"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

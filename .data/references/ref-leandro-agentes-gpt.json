@@ -1,0 +1,30 @@
+{
+  "id": "ref-leandro-agentes-gpt",
+  "title": "Leandro Ladeira - Agentes GPT Demo en Vivo (Sono Infantil)",
+  "type": "text",
+  "language": "pt-BR",
+  "competitor": true,
+  "competitor_of": "ADP - Jesús Tassarolo",
+  "transcript": "Olha como é que ficou fácil criar o seu projeto digital, o seu negócio digital com inteligência artificial com os agentes do Venda Todo Santo Dia. Quer criar sua página? Eu não sei exatamente o que tem na minha página, clicou em começar e ele vai te perguntar qual é o grande desejo do seu produto, quais são os benefícios e o que ele precisa aprender pra chegar lá. Pra você entender como é que funciona, eu vou criar aqui de um nicho aleatório, dá uma ideia de um nicho aí. Sono infantil. Sou pediatra especialista em sono infantil. Perfeito. E ele já vai escrevendo a sua página de vendas para você automaticamente. Bebês não nascem sabendo dormir, mas podem aprender. Descubra como fazer o seu bebê dormir a noite toda, sem choro excessivo, sem traumas e sem precisar recorrer a métodos que te deixam insegura. Assista o vídeo e aprenda três coisas essenciais para chegar lá. Os três erros mais comuns que impedem seu bebê de dormir bem e como evitá-los sem culpa. Como criar uma rotina simples e eficaz de sono que funciona mesmo em dias bagunçados, e a abordagem certa para lidar com o choro sem reforçar mal, usar, nem gerar estresse. Quem chegou a essa cópia, a essa estrutura de texto? O seu agente GPT do Venda Todo Santo Dia. A gente tem um agente GPT para cada etapa do seu produto. Um agente para descobrir qual é o ponto de transformação do produto, da estratégia de como é que o seu produto vai funcionar, quais são os benefícios estendidos e implícitos que o seu produto resolve, dores, desejos do seu produto, quais são as principais objeções e como quebrar cada uma delas? Essa de objeção eu vou ter que mostrar, porque ela é muito boa, cara. Ele já vai listando as objeções. Qual a objeção número um? Ah, mas o meu bebê é muito diferente, eu já tentei de tudo e nada funciona. E aí ele tem vários tipos de argumento para quebrar essa objeção. O argumento incontestável: Diversos estudos em pediatria de sono mostram que mais de 90% dos bebês saudáveis têm plena capacidade de dormir longos períodos à noite. Argumento lógico de causa e efeito: Você já tentou de tudo, entre aspas, e justamente por isso precisa de um método estruturado. Então, com inteligência artificial, ficou muito mais rápido, fácil e assertivo criar um negócio digital. Se você já tentou criar um negócio digital e se frustrou, ou se você nem tentou ainda, agora chegou a sua vez, agora ficou mais fácil, por quê? Porque agora a IA faz boa parte com você, pra você. Você só precisa passar feedbacks para ela e ter uma boa estrutura de agentes prontos. Quer aprender a trabalhar com internet? Clica no link abaixo que tem uma aula introdutória em que eu revelo quais são os melhores nichos e os melhores modelos para se ganhar dinheiro com marketing digital no Brasil.",
+  "analysis": {
+    "hook_type": "reveal_teaser",
+    "hook_text": "Olha como ficou fácil criar seu negócio digital com IA e os agentes do Venda Todo Santo Dia.",
+    "structure": "Promesa (es fácil) → Demo en vivo con nicho aleatorio (sono infantil) → Muestra resultado del agente → Lista agentes disponibles → Demo de objeciones → CTA",
+    "framework": "AIDA",
+    "tone": "Demo/tutorial, muestra el producto funcionando en tiempo real. Screen recording + narración.",
+    "cta_type": "learn_more",
+    "duration_seconds": 180,
+    "key_patterns": [
+      "DEMO EN VIVO: pide nicho al público y crea en tiempo real",
+      "Nicho aleatorio (sono infantil) = prueba de que funciona para cualquier nicho",
+      "Agente para cada etapa: transformación, estrategia, beneficios, objeções",
+      "Muestra output real del agente (texto de la página de ventas)",
+      "Doble argumento por objeción: incontestável + lógico",
+      "Cierre: 'la IA hace boa parte CON vos, PRA vos'"
+    ],
+    "competitive_insight": "Jesús tiene 7 agentes IA similares. La diferencia es que Leandro hace DEMO EN VIVO mostrando el resultado. Jesús podría replicar esto en sus ads: mostrar el agente creando un producto en tiempo real."
+  },
+  "createdAt": "2026-03-08T02:02:00.000Z",
+  "reference_type": "direct_competitor",
+  "notes": "Competencia directa en Brasil. Mismo producto (crear/vender productos digitales con IA). Mercado: Brasil (PT-BR)."
+}

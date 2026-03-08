@@ -1,0 +1,83 @@
+{
+  "id": "b733378b-9046-4884-9070-a1f3fc9c5f6c",
+  "briefId": "e91292f2-1406-4329-9e05-8a073666bd82",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 32,
+      "content_style": "UGC frontal, primera persona, jump cuts, texto en pantalla reforzando cada beat, subtítulos activos, música lo-fi sutil",
+      "key_considerations": "Hook en 3s, audiencia escéptica que ya compró cursos que no funcionaron, re-hook obligatorio, CTA sin fricción (gratis, sin tarjeta)"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "contrarian",
+        "script_text": "No necesitás seguidores para vender online.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pain_point",
+        "script_text": "Trabajás todo el día y no te alcanza.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "curiosity_gap",
+        "script_text": "La IA puede vender por vos mientras dormís.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "statistical",
+        "script_text": "2.000 personas ya lo están haciendo con $10.",
+        "timing_seconds": 3
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "authority_social_proof",
+        "script_text": "Vendí un millón de dólares desde mi casa.",
+        "timing_seconds": 3
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Frustración y escepticismo (yo también estuve ahí) → revelación de que el problema era el método, no la persona → alivio y esperanza con sistema simple que ya funciona",
+      "sections": [
+        {
+          "section_name": "Problema",
+          "is_rehook": false,
+          "script_text": "Yo también compré cursos que no terminé. Intenté emprender y no vendí nada. Pensaba que vender online era para gente con audiencia, con plata, con suerte.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Agitación",
+          "is_rehook": false,
+          "script_text": "Y mientras tanto seguía laburando para otro, llegando a fin de mes justo, sin poder darle a mi familia lo que se merece.",
+          "timing_seconds": 5
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Pero el problema nunca fui yo. Era el método.",
+          "timing_seconds": 3
+        },
+        {
+          "section_name": "Solución",
+          "is_rehook": false,
+          "script_text": "Armé un sistema donde la IA investiga tu mercado, crea tu producto y hasta te arma el anuncio. Vos solo vendés por WhatsApp. Sin seguidores. Sin saber de tecnología. Con 10 dólares para arrancar.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Registrate gratis. Sin tarjeta, sin compromiso.",
+      "reason_why": "Es un webinar gratuito con cupos limitados. El riesgo es cero.",
+      "timing_seconds": 3,
+      "cta_type": "link_bio"
+    },
+    "total_duration_seconds": 32,
+    "word_count": 112
+  },
+  "createdAt": "2026-03-07T18:19:06.247Z"
+}

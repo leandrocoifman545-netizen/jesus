@@ -1,0 +1,76 @@
+{
+  "id": "b8252fdd-f5b9-44e7-a2b0-1d442d53b964",
+  "title": "Hormozi - Groundhog Day (Same 6 Months)",
+  "transcript": "Most business owners don't change. They live the same six months of their lives a hundred times in a row. Then they die. So if you want to have a different outcome, you have to walk a different path. And so that's why we spent 200 plus hours analyzing companies in our portfolio. And we documented each of it into a single roadmap across 10 stages of growth. And so it looks like this. And if you want to stop groundhog day, it's the most viable thing that can possibly give you. And yes, it's free. You can grab a personalized copy by hitting the link and just plopping in your business information. And if you're a legitimate business owner who's looking to scale, we run workshops at our headquarters here in Las Vegas and you can book a call on the thank you page to see if it's good fit for you. We would look forward to meeting you potentially in person.",
+  "analysis": {
+    "hook": {
+      "text": "Most business owners don't change. They live the same six months of their lives a hundred times in a row. Then they die.",
+      "type": "pain_point",
+      "word_count": 22,
+      "estimated_seconds": 6
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook - Mortality punch",
+          "summary": "Mismos 6 meses x100 y despu\u00e9s mueren. Brutal.",
+          "estimated_seconds": 7
+        },
+        {
+          "name": "Bridge - Different path",
+          "summary": "Si quer\u00e9s un resultado diferente, camin\u00e1 diferente",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Proof - 200 hours",
+          "summary": "Credibilidad con horas invertidas y 10 stages",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "CTA dual",
+          "summary": "Roadmap gratis + workshop en Vegas",
+          "estimated_seconds": 12
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "if you want to stop groundhog day"
+    },
+    "tone": {
+      "primary_tone": "Brutalmente honesto",
+      "formality_level": "casual",
+      "uses_first_person": false,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "the same six months a hundred times in a row",
+        "then they die",
+        "stop groundhog day",
+        "legitimate business owner"
+      ]
+    },
+    "cta": {
+      "text": "grab a personalized copy by hitting the link",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 35,
+    "total_word_count": 140,
+    "emotional_arc": "Shock existencial (vas a morir haciendo lo mismo) \u2192 urgencia de cambio \u2192 herramienta concreta \u2192 invitaci\u00f3n",
+    "strengths": [
+      "Hook devastador: 'then they die' es inolvidable",
+      "Met\u00e1fora Groundhog Day universalmente entendida",
+      "Filtro de identidad: 'legitimate business owner'"
+    ],
+    "patterns_to_replicate": [
+      "Hook MORTALIDAD: usar la muerte como wake-up call sin ser morboso",
+      "Met\u00e1fora cultural (Groundhog Day) como ancla para el problema",
+      "Filtro de identidad en CTA: 'legitimate business owner' hace que el viewer quiera calificar"
+    ]
+  },
+  "folder": "masiva-hormozi-2",
+  "folderLabel": "Hormozi - Scaling Roadmap (8 templates \u00fanicos)",
+  "createdAt": "2026-03-08T09:53:00.808387"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ref-hormozi-risk-full",
+  "title": "Hormozi - Risk Illusion (Full)",
+  "transcript": "Big rewards often come with big risks, but most risk is an illusion. And the illusion is if you fail, you'll starve, go homeless, and die. But the reality is you just go back to zero and start over with even more lessons and experience, which sounds oddly free, right? And that's when you realize the biggest risk is just not taking any. And this is actually one of the stages of scaling, which is stage nine, where you actually need to make a massive industry bet on your business in order to get to the next level. But making a bet like that too early on can be disastrous. And so that's why we put together the $100 million scaling roadmap. All right, so it's guide that shows you exactly what our companies had to do to get past each stage of scaling by function as they grew. Because best case scenario, you risk little and gain a lot. Worst case, you risk at the wrong time and have nothing but downside. The difference between those two scenarios is the power of knowing what to do next. And so if that sounds a little interesting, you can grab your own personalized copy of the roadmap absolutely free. Just put in your business information and it'll actually customize the roadmap for you to your current stage. And if you'd like more help scaling on the thank you page, you can book a call with our team to see if coming out in person to have my actual team help you break through each of these levels if that sounds interesting. Either way, enjoy the roadmap and maybe I'll see you out here in Vegas.",
+  "analysis": {
+    "hook": {
+      "text": "Big rewards often come with big risks, but most risk is an illusion.",
+      "type": "contrarian",
+      "word_count": 13,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Reframe risk",
+          "summary": "Desafía la creencia de que el riesgo es real, reencuadra el fracaso como volver a cero con más experiencia",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Bridge - Stages of scaling",
+          "summary": "Conecta el concepto abstracto de riesgo con un framework concreto (stage 9 de scaling)",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Offer - Roadmap",
+          "summary": "Presenta el roadmap como herramienta para saber cuándo tomar riesgos",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "CTA dual",
+          "summary": "Roadmap gratis + opción de book a call para ayuda presencial",
+          "estimated_seconds": 15
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "And this is actually one of the stages of scaling"
+    },
+    "tone": {
+      "primary_tone": "Autoritativo pero accesible",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "light",
+      "key_phrases": [
+        "which sounds oddly free, right?",
+        "if that sounds a little interesting",
+        "Either way, enjoy the roadmap",
+        "the biggest risk is just not taking any"
+      ]
+    },
+    "cta": {
+      "text": "grab your own personalized copy of the roadmap absolutely free",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 52,
+    "total_word_count": 230,
+    "emotional_arc": "Miedo al riesgo → reencuadre liberador (el fracaso no es mortal) → curiosidad sobre framework → oferta sin fricción",
+    "strengths": [
+      "Reencuadre poderoso: transforma el miedo al riesgo en libertad",
+      "CTA de fricción cero: gratis, personalizado, sin compromiso",
+      "Dual CTA: roadmap gratis + book a call como upsell natural",
+      "Tono conversacional que no presiona, invita",
+      "Best case/worst case como cierre lógico antes del CTA"
+    ],
+    "patterns_to_replicate": [
+      "Reencuadre filosófico como hook: tomar una creencia universal y voltearla con lógica simple",
+      "Patrón 'which sounds oddly free, right?' - validar la emoción del viewer después del reencuadre para anclarla",
+      "Conectar concepto abstracto con framework concreto numerado (stage 9) para dar credibilidad",
+      "CTA soft con 'if that sounds a little interesting' en vez de presión directa",
+      "Dual CTA escalonado: oferta gratis primero, upsell en thank you page después"
+    ]
+  },
+  "folder": "masiva-hormozi",
+  "folderLabel": "Hormozi - Risk Illusion (3 variaciones)",
+  "createdAt": "2026-03-08T12:00:00.000Z",
+  "competitor": false,
+  "reference_type": "best_in_class_ads",
+  "notes": "No es competencia directa de ADP. Hormozi vende a empresarios USA (Acquisition.com). Es referente mundial en estructura de ads. Ads con +1 año activas = unicornio."
+}

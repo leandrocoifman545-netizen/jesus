@@ -1,0 +1,163 @@
+{
+  "id": "c677dca6-844f-4803-97a8-163443c76230",
+  "briefId": "5f8ff5b0-b65e-44f8-b1ab-c81234d4db9a",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 30,
+      "content_style": "UGC-style, nativo, casual, conversacional",
+      "key_considerations": "Hook en los primeros 3 segundos es CRÍTICO. Sonido vital. Edición con jump cuts y texto en pantalla obligatorio. Usar captions automáticas. Mantener contenido crítico fuera de las zonas seguras (top 108px, bottom 320px, right 120px)."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "curiosity_gap",
+        "script_text": "Tu meditación no funciona por esto.",
+        "shot_type": "Primer plano frontal",
+        "camera_movement": "Estática",
+        "talent_action": "Talent mira a cámara con expresión de ligera frustración, luego curiosidad.",
+        "audio_notes": "Música de fondo misteriosa y ligera. SFX: pop rápido.",
+        "screen_text": "TU MEDITACIÓN NO FUNCIONA",
+        "timing_seconds": 3,
+        "strategic_rationale": "Crea una pregunta en la mente del espectador sobre qué es 'esto' que hace que su meditación falle, generando intriga."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contrarian",
+        "script_text": "No necesitas 30 minutos para meditar.",
+        "shot_type": "Plano medio",
+        "camera_movement": "Zoom in lento",
+        "talent_action": "Talent niega con la cabeza ligeramente mientras habla, expresión de incredulidad pero amigable.",
+        "audio_notes": "Música ligera y optimista. SFX: '¡Ah!' de sorpresa.",
+        "screen_text": "NO NECESITAS 30 MINUTOS",
+        "timing_seconds": 3,
+        "strategic_rationale": "Desafía una creencia común sobre la duración de la meditación, atrayendo a quienes se sienten abrumados por el tiempo requerido."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "question",
+        "script_text": "¿Cansado de apps de meditación aburridas?",
+        "shot_type": "Primer plano (selfie-style)",
+        "camera_movement": "Estática, ligeramente inestable (simulando UGC)",
+        "talent_action": "Talent mira a cámara con cejas levantadas, expresión de '¿te suena?'",
+        "audio_notes": "Música de fondo casual, ritmo de TikTok. SFX: pregunta con eco.",
+        "screen_text": "¿APPS ABURRIDAS?",
+        "timing_seconds": 3,
+        "strategic_rationale": "Pregunta directa que apela al pain point de la audiencia, generando identificación inmediata."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pain_point",
+        "script_text": "El estrés laboral te está matando.",
+        "shot_type": "Plano medio",
+        "camera_movement": "Estática",
+        "talent_action": "Talent se sienta en un escritorio desordenado, se frota las sienes con expresión de agotamiento.",
+        "audio_notes": "Música de fondo ligeramente tensa. SFX: suspiro.",
+        "screen_text": "ESTRÉS LABORAL",
+        "timing_seconds": 3,
+        "strategic_rationale": "Identifica el problema principal de la audiencia de forma directa y relatable, captando su atención por empatía."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "statistical",
+        "script_text": "El 87% abandona la meditación.",
+        "shot_type": "Plano detalle",
+        "camera_movement": "Zoom out rápido desde un número 87 en pantalla",
+        "talent_action": "Mano del talent aparece apuntando a un texto en pantalla, luego se encoge de hombros.",
+        "audio_notes": "Música de fondo dramática corta. SFX: '¡Boom!' para el dato.",
+        "screen_text": "87% ABANDONA",
+        "timing_seconds": 3,
+        "strategic_rationale": "Utiliza un dato impactante para generar credibilidad y demostrar que el problema de abandonar la meditación es común, atrayendo a quienes se sienten identificados."
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Inicia con frustración y agotamiento por el estrés y las soluciones fallidas. Agita el problema de las apps genéricas. Pivota a la esperanza y alivio con la solución innovadora y personalizada, terminando con la aspiración a la calma.",
+      "sections": [
+        {
+          "section_name": "Problema - Agotamiento Digital",
+          "script_text": "Agotado de la pantalla? ¿Intentaste meditar y nada?",
+          "shot_type": "Plano medio",
+          "camera_movement": "Estática",
+          "transition": "Corte seco",
+          "talent_action": "Talent se recuesta sobre su silla con expresión de cansancio, luego mira a cámara expectante.",
+          "audio_notes": "Música de fondo suave y un poco melancólica. SFX: un leve 'suspiro'.",
+          "screen_text": "ESTRÉS DIGITAL?",
+          "emotional_beat": "Frustración",
+          "timing_seconds": 4,
+          "is_rehook": false,
+          "props": "Escritorio con laptop abierta"
+        },
+        {
+          "section_name": "Agitación - Apps fallidas",
+          "script_text": "Apps de meditación aburridas, genéricas, te piden mucho tiempo.",
+          "shot_type": "Primer plano",
+          "camera_movement": "Paneo lateral rápido",
+          "transition": "Jump cut",
+          "talent_action": "Talent hace gestos de desinterés con las manos, luego mira a cámara con ojos en blanco.",
+          "audio_notes": "Música más rápida, ligeramente molesta. SFX: 'zzzzz' o un sonido de 'boring'.",
+          "screen_text": "MEDITACIÓN ABURRIDA?",
+          "emotional_beat": "Decepción",
+          "timing_seconds": 4,
+          "is_rehook": false,
+          "props": "Teléfono con una app de meditación genérica en pantalla"
+        },
+        {
+          "section_name": "Re-hook",
+          "script_text": "¡Pero espera! ¿Y si hay otra forma?",
+          "shot_type": "Primer plano",
+          "camera_movement": "Zoom in rápido",
+          "transition": "Whip pan",
+          "talent_action": "Talent se incorpora rápidamente, abre los ojos sorprendido y levanta una ceja con una sonrisa pícara.",
+          "audio_notes": "Cambio abrupto a música más alegre y curiosa. SFX: '¡Ding!' de idea.",
+          "screen_text": "¡HAY OTRA FORMA!",
+          "emotional_beat": "Curiosidad",
+          "timing_seconds": 3,
+          "is_rehook": true,
+          "props": ""
+        },
+        {
+          "section_name": "Solución - Introducción de MindFlow AI",
+          "script_text": "Con MindFlow AI, medita 5 minutos, personalizado por IA a tu estado.",
+          "shot_type": "Plano detalle de teléfono",
+          "camera_movement": "Tracking suave lateral",
+          "transition": "Corte seco",
+          "talent_action": "Talent desliza el dedo por la pantalla de un teléfono mostrando la interfaz de MindFlow AI.",
+          "audio_notes": "Música calmada y futurista. Voz del talent más suave y confiada.",
+          "screen_text": "5 MINUTOS DE PAZ / IA PARA TI",
+          "emotional_beat": "Alivio",
+          "timing_seconds": 5,
+          "is_rehook": false,
+          "props": "Teléfono con app MindFlow AI abierta"
+        },
+        {
+          "section_name": "Solución - Beneficio y uso",
+          "script_text": "Es tu dosis rápida de calma. Olvídate del estrés al instante, justo cuando lo necesitas.",
+          "shot_type": "Plano medio",
+          "camera_movement": "Zoom out lento",
+          "transition": "Jump cut",
+          "talent_action": "Talent cierra los ojos brevemente con una sonrisa de paz, luego los abre y mira a cámara con energía renovada.",
+          "audio_notes": "Música inspiradora y relajante. SFX: 'campanilla' suave.",
+          "screen_text": "CALMA RÁPIDA / ADIÓS ESTRÉS",
+          "emotional_beat": "Aspiración",
+          "timing_seconds": 6,
+          "is_rehook": false,
+          "props": ""
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Descarga MindFlow AI gratis hoy.",
+      "reason_why": "¡Tu mente te lo agradecerá!",
+      "shot_type": "Primer plano de talent sonriendo",
+      "talent_action": "Talent sonríe, apunta al texto en pantalla y hace un gesto de 'OK' con el pulgar.",
+      "screen_text": "DESCARGA GRATIS! / LINK EN BIO",
+      "timing_seconds": 5,
+      "cta_type": "download"
+    },
+    "total_duration_seconds": 30,
+    "word_count": 78,
+    "production_notes": "El video debe tener un estilo nativo de TikTok, como si fuera creado por un usuario. Usar jump cuts y transiciones rápidas. Asegurar que el audio sea claro y las captions automáticas estén activas. La música debe cambiar para reforzar el arco emocional. Evitar la zona segura de interfaz de TikTok para texto y elementos clave. El nombre de la app es 'MindFlow AI'."
+  },
+  "createdAt": "2026-03-06T13:28:59.153Z"
+}

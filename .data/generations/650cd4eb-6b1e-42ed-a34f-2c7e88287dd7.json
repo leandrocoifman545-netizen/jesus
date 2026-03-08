@@ -1,0 +1,41 @@
+{
+  "id": "650cd4eb-6b1e-42ed-a34f-2c7e88287dd7",
+  "briefId": "d0b5138e-b154-462a-8ce0-de5057933d2f",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 25,
+      "content_style": "UGC casual",
+      "key_considerations": "Hook en 3s"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pain_point",
+        "script_text": "Esto es un test.",
+        "timing_seconds": 3
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Test",
+      "sections": [
+        {
+          "section_name": "Test",
+          "is_rehook": false,
+          "script_text": "Sección de prueba.",
+          "timing_seconds": 5
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Test CTA",
+      "reason_why": "Test",
+      "timing_seconds": 3,
+      "cta_type": "link_bio"
+    },
+    "total_duration_seconds": 11,
+    "word_count": 10
+  },
+  "createdAt": "2026-03-07T18:09:53.357Z"
+}

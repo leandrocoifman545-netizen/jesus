@@ -1,0 +1,30 @@
+{
+  "id": "ref-leandro-vtsd",
+  "title": "Leandro Ladeira - Venda Todo Santo Dia (Curso completo, todos los funnels)",
+  "type": "text",
+  "language": "pt-BR",
+  "competitor": true,
+  "competitor_of": "ADP - Jesús Tassarolo",
+  "transcript": "O que você acha que vende mais no mundo dos infoprodutos hoje. Produto de entrada, esses de 90 reais, 200 reais. Produto de ticket mais front-end, que a galera chama de 900, 2000, até 3, 4 mil reais. Ou mentorias de 5, 7, 8 mil reais. Qual é o melhor jeito de trabalhar no digital? Produtinho barato, cursos longos, mentorias, high-ticket, não importa o que você acha. No Venda todo Santo Dia, nós ensinamos todos os tipos de funil. Lá a gente ensina como é que cria produto de ticket baixo, produto de ticket de 2000, produto de high ticket, desde como criar, como estruturar funis, como vender, como escalar e como criar carteira de produtos para que você, ao longo do tempo, vá escalando. O Venda Todo Santo Dia é disparado o produto que mais traz resultado no mundo dos infoprodutos hoje. Eu desafio algum outro professor de Infoproduto ter esse tipo de resultado aqui. É gigantesco, é muito, é muito grande. São muitas pessoas de tudo quanto é ticket, tudo quanto é momento. Desde quem me conheceu quando já estava jogando o jogo, já estava vendendo e conseguiu explodir e escalar, as pessoas que não tinham nem ideia de produto estavam realmente do zero e hoje estão explodindo no mundo do digital, vendendo no perpétuo e fazendo picos de venda. Então, se você quer entender como é que funciona a minha filosofia, a filosofia do Venda Todo Santo Dia para criação e venda de produtos digitais? Clique no link abaixo e assiste uma aula. É literalmente uma aula, vai estar dentro de um vídeo de vendas, porque eu vou te oferecer o produto, mas tem uma aula introdutória com a filosofia de trabalho do Venda Todo Santo Dia, e eu acho que você vai gostar.",
+  "analysis": {
+    "hook_type": "question",
+    "hook_text": "O que você acha que vende mais no mundo dos infoprodutos hoje?",
+    "structure": "Pregunta (qué vende más) → Lista opciones (low/mid/high ticket) → 'No importa, enseñamos todo' → Desafío a competencia → Prueba social masiva → CTA transparente ('es un video de ventas pero tiene aula')",
+    "framework": "AIDA",
+    "tone": "Confiado, desafiante. Se posiciona como el #1 indiscutido. Transparente sobre que el CTA lleva a un pitch.",
+    "cta_type": "learn_more",
+    "duration_seconds": 90,
+    "key_patterns": [
+      "Pregunta que genera debate (low vs mid vs high ticket)",
+      "Posicionamiento: 'No importa, enseñamos TODOS'",
+      "Desafío directo: 'desafio a cualquier otro profesor'",
+      "Transparencia: 'es un video de ventas, pero tiene aula introductoria'",
+      "Prueba social implícita: 'desde el que estaba en cero hasta el que ya vendía'",
+      "Escalera de valor clara: zero → primera venta → escalar"
+    ],
+    "competitive_insight": "Jesús se enfoca en low ticket ($5-$20 productos). Leandro enseña TODOS los tickets. Esto es una ventaja competitiva de Leandro pero también lo hace menos enfocado. Jesús podría usar esto: 'Yo no te voy a marear con 50 modelos. Te enseño UNO que funciona.'"
+  },
+  "createdAt": "2026-03-08T02:04:00.000Z",
+  "reference_type": "direct_competitor",
+  "notes": "Competencia directa en Brasil. Mismo producto (crear/vender productos digitales con IA). Mercado: Brasil (PT-BR)."
+}

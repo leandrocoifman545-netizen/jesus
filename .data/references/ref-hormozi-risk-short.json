@@ -1,0 +1,66 @@
+{
+  "id": "ref-hormozi-risk-short",
+  "title": "Hormozi - Risk Illusion (Short)",
+  "transcript": "And that's when you realize that the biggest risk is just not taking any. And this is actually one of the stages of scaling. And so that's why we put together the hundred million dollar scaling roadmap. Alright, so it's a guide that shows you exactly what our companies had to do to get past each stage of scaling by function as they grew. And so if that sounds at all interesting you can grab your own personalized copy of the roadmap absolutely free just put in your business information, and it'll actually customize the roadmap for you.",
+  "analysis": {
+    "hook": {
+      "text": "The biggest risk is just not taking any.",
+      "type": "contrarian",
+      "word_count": 8,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook directo",
+          "summary": "Arranca con la conclusión del reencuadre, sin buildup",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Offer",
+          "summary": "Roadmap como solución directa",
+          "estimated_seconds": 14
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Directo y conciso",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "if that sounds at all interesting",
+        "absolutely free"
+      ]
+    },
+    "cta": {
+      "text": "grab your own personalized copy of the roadmap absolutely free",
+      "type": "download",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 20,
+    "total_word_count": 88,
+    "emotional_arc": "Revelación directa → oferta inmediata (sin buildup emocional, apuesta a que el viewer ya está enganchado)",
+    "strengths": [
+      "Ultra corta: 20 segundos, ideal para retargeting o audiencia que ya conoce la marca",
+      "Arranca con la conclusión más fuerte del ad largo",
+      "Sin relleno: cada segundo tiene propósito"
+    ],
+    "patterns_to_replicate": [
+      "Para versiones cortas: arrancar con la conclusión del reencuadre en vez del buildup",
+      "Versión retargeting: asumir que el viewer ya sabe quién sos y ir directo a la oferta"
+    ]
+  },
+  "folder": "masiva-hormozi",
+  "folderLabel": "Hormozi - Risk Illusion (3 variaciones)",
+  "createdAt": "2026-03-08T12:02:00.000Z",
+  "competitor": false,
+  "reference_type": "best_in_class_ads",
+  "notes": "No es competencia directa de ADP. Hormozi vende a empresarios USA (Acquisition.com). Es referente mundial en estructura de ads. Ads con +1 año activas = unicornio."
+}
