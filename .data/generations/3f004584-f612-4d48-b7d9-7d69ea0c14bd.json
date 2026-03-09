@@ -1,0 +1,92 @@
+{
+  "id": "3f004584-f612-4d48-b7d9-7d69ea0c14bd",
+  "briefId": "64acef50-35e7-4f4b-883b-ba1cc227eef0",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Instagram/TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Talking head, tono Jesús Tassarolo: directo, crudo, sin corporativismo. Habla como si estuviera en un café explicándote algo que descubrió.",
+      "key_considerations": "Leads de 2-3 oraciones en vez de hooks de frase suelta. Cuerpo funciona solo. Cambio de creencia: de 'ganar plata online es para expertos o estafadores' a 'cualquiera puede crear y vender un producto digital con IA'. Sin inventar anécdotas de Jesús. Sin porcentajes. Sin 'no te alcanza la plata'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "lead_contrarian",
+        "script_text": "Todo el mundo te dice que para ganar plata online necesitás seguidores, una marca personal, años de experiencia. No necesitás nada de eso. Lo que necesitás cabe en una sola oración.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Estructura Marco Osaid: declaración audaz + negación de respuesta obvia + promesa. Tres movimientos que abren un gap y obligan a quedarse para escuchar la oración."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "lead_categorizacion",
+        "script_text": "Hay dos tipos de personas que quieren ganar plata por internet. Los que buscan el próximo curso mágico. Y los que se sientan una tarde con la IA y arman un negocio. La diferencia entre los dos no es talento.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Estructura Epifanía Emprendedora: categorización que obliga a elegir bando + negación de respuesta obvia. El espectador se pregunta 'yo cuál soy' y necesita saber cuál es la diferencia."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "lead_contraintuitivo",
+        "script_text": "La gente que más plata gana con productos digitales no sabe editar, no sabe diseñar, no sabe programar. Y esa es exactamente la razón por la que les va bien.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Hecho contraintuitivo + giro. 'No saber' como ventaja rompe el patrón mental. El espectador necesita entender por qué la ignorancia es ventaja."
+      }
+    ],
+    "development": {
+      "framework_used": "Lo que pensás → Por qué es mentira → Cómo funciona realmente → Prueba → Nueva creencia",
+      "emotional_arc": "Escepticismo → sorpresa → curiosidad → claridad → decisión",
+      "sections": [
+        {
+          "section_name": "Lo que pensás",
+          "script_text": "Vos pensás que para vender algo online necesitás ser un experto en algo.\n\nQue necesitás armar una página web, grabar videos, manejar redes, entender de marketing.\n\nY que si no sabés todo eso, mejor ni arranques.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Se habla de lo que el avatar piensa. Se pone en palabras lo que siente pero no articula. Se valida sin juzgar. Tres capas del mismo miedo para que se sienta completamente identificado."
+        },
+        {
+          "section_name": "Por qué es mentira",
+          "script_text": "Pero pensá esto un segundo.\n\n¿Quién arma mejores productos digitales? ¿El que estudió marketing cinco años o el que sabe exactamente qué problema tiene la gente?\n\nEl que sabe del problema siempre gana. Porque la gente no compra experiencia, compra soluciones.",
+          "timing_seconds": 12,
+          "strategic_rationale": "Refutación con pregunta retórica que el espectador se responde solo. Reencuadre: tu conocimiento del problema ES tu ventaja. Cada frase justifica la siguiente."
+        },
+        {
+          "section_name": "Cómo funciona realmente",
+          "script_text": "Y hoy la inteligencia artificial te arma la solución.\n\nVos sabés que a las mamás les cuesta organizarse con los horarios de los chicos. Le pedís a la IA una planilla de organización familiar, te la crea, la publicás en Hotmart, y la gente la compra.\n\nNo estudiaste nada. No programaste nada. Sabías cuál era el problema y la IA armó el producto.",
+          "timing_seconds": 15,
+          "strategic_rationale": "Ejemplo concreto y tangible. No es abstracto. Se conecta con la sección anterior: 'el que sabe del problema gana' → acá se muestra cómo. Mecanismo claro: problema + IA + plataforma = negocio."
+        },
+        {
+          "section_name": "Cierre de creencia",
+          "script_text": "No necesitás ser experto en tecnología. Necesitás ser experto en un problema que la gente tiene.\n\nY todos somos expertos en algún problema. Porque todos vivimos problemas todos los días.",
+          "timing_seconds": 8,
+          "strategic_rationale": "Cambio de creencia aterrizado. Reencuadre final: todos califican. La última frase cierra el arco y elimina la excusa de 'yo no tengo nada para ofrecer'."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "clase_gratis",
+        "script_text": "Si querés ver cómo funciona esto paso a paso, tengo una clase gratis. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Bajo compromiso. Para los escépticos que necesitan ver antes de creer."
+      },
+      {
+        "variant_number": 2,
+        "cta_type": "comentario",
+        "script_text": "Comentá NEGOCIO y te mando todo por privado.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Acción mínima. Palabra clave alineada con el mensaje (negocio, no trabajo)."
+      },
+      {
+        "variant_number": 3,
+        "cta_type": "taller",
+        "script_text": "O si ya estás listo, en 3 días armás tu primer producto digital en el taller. Son 5 dólares. Link en la bio.",
+        "timing_seconds": 5,
+        "strategic_rationale": "Para los que ya están convencidos. El 'o si ya estás listo' filtra por temperatura."
+      }
+    ]
+  },
+  "createdAt": "2026-03-08T22:06:09.707Z"
+}

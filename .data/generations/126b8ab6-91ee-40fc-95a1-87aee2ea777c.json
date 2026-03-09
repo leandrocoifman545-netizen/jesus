@@ -1,0 +1,108 @@
+{
+  "id": "126b8ab6-91ee-40fc-95a1-87aee2ea777c",
+  "briefId": "1853bb92-f252-45ba-852c-8856b0240cbb",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Instagram/TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Talking head, tono Jesús: directo, crudo, empático. Cada lead tiene su cuerpo propio — son piezas completas, no intercambiables.",
+      "key_considerations": "Lead y cuerpo son UNA sola pieza continua. Si leés lead + cuerpo de corrido tiene que fluir como una conversación sin cortes lógicos. Cada lead abre algo que el cuerpo responde directamente."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "lead_contrarian",
+        "script_text": "Todo el mundo te dice que para ganar plata online necesitás seguidores, una marca personal, años de experiencia. No necesitás nada de eso. Solo necesitás saber un problema que la gente tenga.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Tres movimientos: declaración común + negación + la respuesta real. La respuesta ('saber un problema') conecta directamente con lo que el cuerpo desarrolla.",
+        "dedicated_body": {
+          "sections": [
+            {
+              "section_name": "Desarrollo del problema como ventaja",
+              "script_text": "Pensalo así.\n\nSi vos sabés que a las mamás les cuesta organizar los horarios de los chicos, ya tenés un negocio.\n\nLe pedís a la inteligencia artificial que te arme una planilla de organización familiar. Te la crea en una tarde. La publicás en Hotmart. Y la gente la compra.\n\nNo necesitaste saber diseño. No necesitaste saber marketing. Necesitaste saber qué le duele a alguien.",
+              "timing_seconds": 18
+            },
+            {
+              "section_name": "Expansión + cierre de creencia",
+              "script_text": "Y todos sabemos qué le duele a alguien. Porque todos vivimos problemas todos los días.\n\nEl que sabe cocinar puede armar un recetario. El que sabe de finanzas puede armar una guía. El que pasó por un divorcio puede armar un manual para otros que están pasando lo mismo.\n\nLa IA arma el producto. Vos ponés el problema. Eso es todo.",
+              "timing_seconds": 15
+            }
+          ]
+        }
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "lead_categorizacion",
+        "script_text": "Hay dos tipos de personas que quieren ganar plata por internet. Los que se la pasan buscando el próximo curso mágico. Y los que agarran la IA, le piden que les arme un producto, y lo publican. La diferencia no es talento. Es una decisión.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Categorización que obliga a elegir bando. Cierra con 'es una decisión', y el cuerpo explica exactamente cuál es esa decisión y cómo se ejecuta.",
+        "dedicated_body": {
+          "sections": [
+            {
+              "section_name": "La decisión concreta",
+              "script_text": "La decisión es dejar de estudiar sobre negocios y armar uno.\n\nHoy la inteligencia artificial te permite crear un producto digital en una tarde. Un curso, una guía, una planilla. Vos le decís qué querés, y ella lo hace.\n\nNo estás meses planeando. No estás años estudiando. Te sentás, le pedís a la IA que te arme algo, y al otro día ya está publicado.",
+              "timing_seconds": 16
+            },
+            {
+              "section_name": "Contraste + cierre",
+              "script_text": "Mientras uno sigue buscando el curso perfecto, el otro ya tiene algo publicado, vendiendo, generando plata.\n\nNo porque sea más inteligente. Porque decidió hacer en vez de seguir aprendiendo.\n\nLa pregunta no es si podés. La pregunta es cuánto más vas a esperar.",
+              "timing_seconds": 12
+            }
+          ]
+        }
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "lead_contraintuitivo",
+        "script_text": "La gente que más plata gana con productos digitales no sabe editar, no sabe diseñar, no sabe programar. Y esa es exactamente la razón por la que les va bien. Porque no pierden tiempo en lo que la IA puede hacer por ellos.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Hecho contraintuitivo + explicación inmediata del por qué. El cuerpo expande ESA lógica: no saber = delegar en IA = ir más rápido.",
+        "dedicated_body": {
+          "sections": [
+            {
+              "section_name": "Por qué no saber es ventaja",
+              "script_text": "El que sabe editar se pone a editar. El que sabe diseñar se pone a diseñar. Se la pasan perfeccionando detalles en vez de vender.\n\nEl que no sabe nada de eso agarra la IA, le dice \"armame un curso de recetas saludables\", la IA se lo arma, lo publica, y se pone a buscar clientes.\n\nTermina vendiendo antes que el que sabe todo. Porque no se frenó en ningún paso técnico.",
+              "timing_seconds": 17
+            },
+            {
+              "section_name": "Cierre de creencia",
+              "script_text": "Tu ventaja no es lo que sabés de tecnología. Tu ventaja es lo que sabés de la vida.\n\nCada problema que viviste, cada cosa que aprendiste por las malas, es un producto digital que alguien necesita.\n\nLa IA lo arma. Vos lo vendés.",
+              "timing_seconds": 10
+            }
+          ]
+        }
+      }
+    ],
+    "development": {
+      "framework_used": "Cada lead tiene su cuerpo dedicado. Son 3 piezas completas, no intercambiables.",
+      "emotional_arc": "Escepticismo → sorpresa → claridad → decisión"
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "clase_gratis",
+        "script_text": "Si querés ver cómo funciona esto, tengo una clase gratis donde te lo muestro paso a paso. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Bajo compromiso para escépticos."
+      },
+      {
+        "variant_number": 2,
+        "cta_type": "comentario",
+        "script_text": "Comentá NEGOCIO y te mando todo por privado.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Acción mínima."
+      },
+      {
+        "variant_number": 3,
+        "cta_type": "taller",
+        "script_text": "O si ya estás listo, en 3 días armás tu primer producto digital. Son 5 dólares. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Para los convencidos. Filtra por temperatura."
+      }
+    ]
+  },
+  "createdAt": "2026-03-08T22:10:25.028Z"
+}

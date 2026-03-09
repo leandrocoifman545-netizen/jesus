@@ -1,0 +1,108 @@
+{
+  "id": "c9199172-a337-49ab-8aa8-cc4e668f5d86",
+  "briefId": "3e2e473f-93ab-401c-b0b0-2f90252dc7b6",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Instagram/TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Talking head, tono Jesús. Un solo cuerpo central. Todos los leads son intercambiables y conectan con el mismo cuerpo.",
+      "key_considerations": "El cuerpo arranca con una frase puente universal que funciona después de cualquier lead. Todos los leads terminan dirigiendo al mismo lugar: 'la IA te permite crear un negocio sin saber nada técnico'. El cuerpo desarrolla eso."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "lead_contrarian",
+        "script_text": "Todo el mundo te dice que para ganar plata online necesitás seguidores, marca personal, años de experiencia. No necesitás nada de eso. Y te lo voy a demostrar.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Declaración común + negación + promesa de demostración. Cae al cuerpo con 'te lo voy a demostrar' → el cuerpo demuestra."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "lead_categorizacion",
+        "script_text": "Hay dos tipos de personas que quieren ganar plata por internet. Los que estudian durante meses. Y los que en una tarde arman un negocio con IA. La diferencia es más simple de lo que pensás.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Categorización + promesa de revelar la diferencia. Cae al cuerpo que explica cómo funciona 'armar un negocio en una tarde'."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "lead_contraintuitivo",
+        "script_text": "La gente que más plata gana con productos digitales no sabe editar, no sabe diseñar, no sabe programar. Y justamente por eso les va bien. Te explico.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Hecho contraintuitivo + 'te explico' como puente directo al cuerpo."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "lead_pregunta",
+        "script_text": "¿Qué pasa si te digo que tu próximo negocio no necesita que sepas absolutamente nada de tecnología? No es chamuyo. Es lo que está pasando ahora mismo.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Pregunta + validación de que es real. Cae al cuerpo que muestra el mecanismo concreto."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "lead_provocacion",
+        "script_text": "Mientras vos seguís pensando si podés o no podés, hay gente sin ninguna experiencia armando negocios digitales con inteligencia artificial. Y no son genios. Hacen algo muy simple.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Provocación + contraste + promesa de simplicidad. 'Hacen algo muy simple' → el cuerpo muestra qué es."
+      }
+    ],
+    "development": {
+      "framework_used": "Cuerpo universal: mecanismo → ejemplo concreto → expansión → cambio de creencia",
+      "emotional_arc": "Curiosidad → comprensión → sorpresa por la simpleza → decisión",
+      "sections": [
+        {
+          "section_name": "Mecanismo",
+          "script_text": "Hoy la inteligencia artificial crea productos digitales por vos.\n\nVos le decís qué querés, y ella lo arma. Así de simple.",
+          "timing_seconds": 6,
+          "strategic_rationale": "Arranque universal que funciona después de cualquier lead. Cualquier hook que prometa explicar algo, acá empieza la explicación. Directo, sin rodeos."
+        },
+        {
+          "section_name": "Ejemplo concreto",
+          "script_text": "Vos sabés que a las mamás les cuesta organizar los horarios de los chicos. Le pedís a la IA una planilla de organización familiar. Te la crea en una tarde. La publicás en Hotmart. Y la gente la compra.\n\nNo tocaste nada técnico. No programaste. No editaste. Sabías cuál era el problema y la IA hizo el resto.",
+          "timing_seconds": 15,
+          "strategic_rationale": "Ejemplo tangible que cualquiera entiende. Muestra el proceso completo: problema → IA → plataforma → venta. Refuerza que no hay paso técnico."
+        },
+        {
+          "section_name": "Expansión",
+          "script_text": "Y no es solo planillas. El que sabe cocinar puede armar un recetario. El que sabe de finanzas, una guía. El que pasó por un divorcio, un manual para otros que están en la misma.\n\nCada problema que viviste es un producto que alguien necesita.",
+          "timing_seconds": 12,
+          "strategic_rationale": "Multiplica el ejemplo para que el espectador se vea reflejado en al menos uno. Cierra con el reencuadre: tu vida = tu producto."
+        },
+        {
+          "section_name": "Cambio de creencia",
+          "script_text": "No necesitás saber de tecnología. Necesitás saber de un problema.\n\nY eso ya lo sabés. Porque lo vivís todos los días.",
+          "timing_seconds": 6,
+          "strategic_rationale": "Cierre que ata todo. La nueva creencia es clara y concisa. La última frase elimina la excusa final."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "clase_gratis",
+        "script_text": "Tengo una clase gratis donde te muestro cómo hacer esto paso a paso. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Bajo compromiso."
+      },
+      {
+        "variant_number": 2,
+        "cta_type": "comentario",
+        "script_text": "Comentá NEGOCIO y te mando todo por privado.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Acción mínima."
+      },
+      {
+        "variant_number": 3,
+        "cta_type": "taller",
+        "script_text": "O en 3 días armás tu primer producto digital en el taller. Son 5 dólares. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Para convencidos."
+      }
+    ]
+  },
+  "createdAt": "2026-03-08T22:13:54.256Z"
+}

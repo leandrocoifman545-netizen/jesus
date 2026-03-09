@@ -1,0 +1,86 @@
+{
+  "id": "38c9ef66-e6c0-43b1-92a3-c0c4bfa4486b",
+  "briefId": "b7e71e67-89e1-41bd-9031-53d829db504c",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Instagram/TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Talking head, empático pero directo. Tono Jesús Tassarolo: auténtico, sin rodeos, con empatía real. Se habla desde la experiencia, no desde la superioridad.",
+      "key_considerations": "El cuerpo funciona solo sin los hooks. Cada sección se agarra de la anterior. Todo justificado. Cambio de creencia claro: de 'no puedo porque no sé tecnología' a 'solo tengo que saber qué quiero'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "textual_avatar",
+        "script_text": "\"Soy de madera con la tecnología.\"",
+        "screen_text": "",
+        "timing_seconds": 3,
+        "strategic_rationale": "Frase textual que el avatar dice literalmente. Genera reconocimiento instantáneo. Ultra ángulo según feedback de Jesús."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "textual_avatar",
+        "script_text": "Mis hijos me tienen que configurar el celular.",
+        "screen_text": "",
+        "timing_seconds": 3,
+        "strategic_rationale": "Situación cotidiana que el avatar vive. Genera identificación sin filtrar hacia abajo. No es dolor económico, es dolor de incompetencia percibida."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contrarian",
+        "script_text": "La gente que menos sabe de tecnología es la que más plata está ganando con IA.",
+        "screen_text": "",
+        "timing_seconds": 3,
+        "strategic_rationale": "Desafía la creencia directamente. Genera curiosidad sin usar porcentajes ni dolor económico como puerta de entrada."
+      }
+    ],
+    "development": {
+      "framework_used": "Creencia → Refutación → Mecanismo → Prueba → Nueva creencia",
+      "emotional_arc": "Vergüenza → alivio → sorpresa → esperanza → acción",
+      "sections": [
+        {
+          "section_name": "Empatía + Lo que pensás",
+          "script_text": "Vos pensás que para ganar plata por internet necesitás ser un genio de la tecnología.\n\nQue tenés que saber programar, armar páginas, editar videos, manejar redes.\n\nY como no sabés nada de eso, sentís que esto no es para vos.",
+          "timing_seconds": 12,
+          "strategic_rationale": "Se habla de lo que el avatar PIENSA. Se ponen sus palabras en la mesa. Se valida el sentimiento sin juzgar."
+        },
+        {
+          "section_name": "Refutación + Mecanismo",
+          "script_text": "Pero hoy existe algo que cambió todo.\n\nLa inteligencia artificial crea productos digitales por vos. Vos le decís qué querés, y ella lo arma.\n\n¿Un curso sobre cocina saludable? Se lo pedís y te lo hace.\n¿Una guía de ejercicios para mayores de 50? Se lo pedís y te lo hace.\n¿Una planilla para organizar las finanzas del hogar? Se lo pedís y te lo hace.\n\nNo tocás nada técnico. No programás nada. No editás nada.",
+          "timing_seconds": 20,
+          "strategic_rationale": "Se refuta la creencia con el mecanismo concreto. Ejemplos tangibles que el avatar entiende (cocina, ejercicios, finanzas del hogar). Repetición de 'se lo pedís y te lo hace' como ancla. Todo conectado con la sección anterior."
+        },
+        {
+          "section_name": "Prueba + Cambio de creencia",
+          "script_text": "Yo tengo alumnos de 55, 60 años que empezaron sin saber ni mandar un mail.\n\nHoy tienen su propio negocio digital vendiendo productos que la IA les creó.\n\nNo necesitaron estudiar una carrera. No necesitaron años. Necesitaron saber qué querían.\n\nSi sabés pedir un café, sabés usar esto.",
+          "timing_seconds": 15,
+          "strategic_rationale": "Prueba social con el mismo perfil del avatar (55-60 años). Cierra el cambio de creencia: de 'necesito saber tecnología' a 'necesito saber qué quiero'. Analogía tangible final ('pedir un café')."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "clase_gratis",
+        "script_text": "Tengo una clase donde te muestro cómo funciona esto paso a paso. Es gratis. Link en la bio.",
+        "timing_seconds": 5,
+        "strategic_rationale": "CTA de temperatura fría: ofrece ver antes de comprometerse. Ideal para escépticos del segmento B."
+      },
+      {
+        "variant_number": 2,
+        "cta_type": "comentario",
+        "script_text": "Comentá CLASE y te mando el link por privado.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Baja la barrera de acción. No tienen que buscar nada, solo comentar una palabra."
+      },
+      {
+        "variant_number": 3,
+        "cta_type": "taller",
+        "script_text": "Hacemos un taller de 3 días donde armás tu primer producto digital con IA. Son 5 dólares. Link en la bio.",
+        "timing_seconds": 5,
+        "strategic_rationale": "CTA de temperatura tibia: para los que ya están más convencidos. Precio bajo elimina la objeción de inversión."
+      }
+    ]
+  },
+  "createdAt": "2026-03-08T21:29:36.386Z"
+}

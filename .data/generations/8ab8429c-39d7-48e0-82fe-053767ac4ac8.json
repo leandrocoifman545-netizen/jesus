@@ -1,0 +1,108 @@
+{
+  "id": "8ab8429c-39d7-48e0-82fe-053767ac4ac8",
+  "briefId": "f5a0d7af-9f61-41cf-acbb-371cca04a6ee",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Instagram/TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Talking head, tono Jesús. Un cuerpo fijo con leads intercambiables. Cuerpo usa analogía como apertura + mecanismo + cierre de creencia. Micro-loops entre secciones. Especificidad en los números.",
+      "key_considerations": "Cambio de creencia: 'necesito prepararme mucho antes de empezar' → 'los que ganan son los que arrancan con lo que tienen'. Cita real de Jesús incluida. Sin inventar. Sin porcentajes. Sin 'no te alcanza'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "lead_historia_real",
+        "script_text": "Yo tardé 9 meses en conseguir mi primer cliente. Y fue gratis. Le regalé el trabajo. Hoy eso suena una locura, pero fue lo que me cambió todo. Y te voy a explicar por qué.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Historia real de Jesús (cita verificada). Genera curiosidad: ¿por qué regalar trabajo te cambia todo? 'Te voy a explicar por qué' como puente al cuerpo."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "lead_contraintuitivo",
+        "script_text": "La gente que más gana con productos digitales no arrancó cuando estaba lista. Arrancó cuando no tenía idea de nada. Y esa es exactamente la razón por la que hoy están donde están.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Contraintuitivo: no estar listo como ventaja. Tres movimientos: declaración + cuándo arrancaron + por qué les fue bien. Puente natural al cuerpo."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "lead_provocacion",
+        "script_text": "Mientras vos seguís preparándote para empezar, hay gente que arrancó sin saber nada y ya está vendiendo. No porque sean mejores. Porque tomaron una decisión que vos todavía no tomaste.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Provocación + contraste. 'Una decisión que vos todavía no tomaste' genera tensión y abre el cuerpo que explica cuál es esa decisión."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "lead_analogia",
+        "script_text": "Si estás esperando a que el semáforo esté en verde en todas las calles antes de salir de tu casa, no vas a llegar a ningún lado. No estoy hablando de semáforos. Estoy hablando de tu negocio.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Analogía cotidiana con giro (técnica Franco Piso). El semáforo es universal, el giro sorprende, conecta directo con el cuerpo sobre arrancar sin estar listo."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "lead_categorizacion",
+        "script_text": "Hay dos tipos de personas. Las que dicen 'primero me preparo' y las que arrancan con lo que tienen. Adivina cuáles son las que hoy viven de esto.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Categorización que obliga a elegir bando. 'Adivina cuáles' como micro-loop hacia el cuerpo."
+      }
+    ],
+    "development": {
+      "framework_used": "Cuerpo universal: la trampa de prepararse → por qué arrancar gana → mecanismo concreto → cierre de creencia",
+      "emotional_arc": "Reconocimiento → incomodidad → claridad → urgencia de actuar",
+      "sections": [
+        {
+          "section_name": "La trampa de prepararse",
+          "script_text": "El problema de prepararte es que nunca terminás de prepararte.\n\nSiempre hay un curso más, un libro más, algo que todavía no sabés. Y te quedás ahí, acumulando información, sintiéndote productivo. Pero sin haber hecho nada.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Se habla de lo que el avatar piensa y hace. 'Sintiéndose productivo' es la trampa exacta. Micro-loop: 'pero sin haber hecho nada' abre tensión hacia la siguiente sección."
+        },
+        {
+          "section_name": "Por qué arrancar gana",
+          "script_text": "Pero lo que nadie te dice es esto: el que arranca mal, corrige. El que no arranca, no tiene nada que corregir.\n\nYo me gasté 2,000 dólares en un curso cuando vivía con 100 dólares al mes. Dormía en el piso. No estaba listo. Pero arranqué.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Reencuadre: arrancar mal > no arrancar. Cita real de Jesús que prueba el punto con su propia historia. Especificidad: $2,000, $100/mes. Transición adversativa: 'Pero lo que nadie te dice'."
+        },
+        {
+          "section_name": "Mecanismo concreto",
+          "script_text": "Y hoy es más fácil que nunca.\n\nLe pedís a la inteligencia artificial que te arme un producto digital. Un curso, una guía, una planilla. Te lo crea en una tarde. Lo publicás en Hotmart. Y empezás a vender.\n\nNo necesitás saber diseño, ni marketing, ni programación. Necesitás arrancar.",
+          "timing_seconds": 13,
+          "strategic_rationale": "Transición 'Y hoy es más fácil que nunca' conecta la historia de Jesús con el presente. Mecanismo concreto y rápido. Cierra con el reencuadre: el requisito no es saber, es arrancar."
+        },
+        {
+          "section_name": "Cierre de creencia",
+          "script_text": "Cada día que te seguís preparando es un día que alguien con menos conocimiento que vos ya está vendiendo.\n\nLa diferencia nunca fue saber más. Fue empezar antes.",
+          "timing_seconds": 7,
+          "strategic_rationale": "Urgencia sin ser agresivo. La última frase es el cambio de creencia destilado en una oración. Cierra el arco completo."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "clase_gratis",
+        "script_text": "Tengo una clase gratis donde te muestro cómo armar tu primer producto digital con IA. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Bajo compromiso. Coherente con el mensaje: no te prepares más, mirá esto y arrancá."
+      },
+      {
+        "variant_number": 2,
+        "cta_type": "comentario",
+        "script_text": "Comentá ARRANCAR y te mando todo por privado.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Palabra clave alineada con el cambio de creencia del guión."
+      },
+      {
+        "variant_number": 3,
+        "cta_type": "taller",
+        "script_text": "O en 3 días armás tu primer producto digital en el taller. Son 5 dólares. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Para los que ya están convencidos. Refuerza el mensaje: 3 días, no 3 meses."
+      }
+    ]
+  },
+  "createdAt": "2026-03-09T00:42:48.995Z"
+}
