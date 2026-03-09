@@ -1,0 +1,108 @@
+{
+  "id": "8333501b-886c-44bc-ab68-db95ee7183d9",
+  "briefId": "4bdd0033-8359-42e3-8abb-26728d60e67b",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Instagram/TikTok",
+      "recommended_duration_seconds": 50,
+      "content_style": "Talking head, tono Jesús. Gran idea de nicho: si sabés cuidar mascotas, eso es un negocio digital. Todo el guión gira alrededor de mascotas.",
+      "key_considerations": "Cambio de creencia: 'lo que sé de mascotas es algo que todo dueño sabe' → 'hay miles de dueños primerizos que pagarían por saber lo que vos ya sabés'. Sin exagerar cantidades."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "lead_contraintuitivo",
+        "script_text": "Hay gente vendiendo guías de cuidado de perros por internet. No son veterinarios. No estudiaron nada. Tienen perros, saben cuidarlos, y la inteligencia artificial les armó la guía. Y la gente la compra.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Contraintuitivo: no son veterinarios pero venden guías de cuidado animal. Genera curiosidad: ¿cómo es posible?"
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "lead_provocacion",
+        "script_text": "Vos sabés qué darle de comer a tu perro, sabés cómo educarlo, sabés qué hacer cuando se pone mal. Y hay miles de dueños primerizos que no tienen idea. Y están buscando exactamente eso en internet.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Provocación suave: lo que vos sabés, otros lo buscan desesperadamente. 'Miles de dueños primerizos' es específico y creíble."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "lead_curiosidad",
+        "script_text": "¿Sabés cuál es uno de los productos digitales que más se vende? Guías de cuidado de mascotas. No cursos de marketing, no ebooks de negocios. Guías para cuidar perros y gatos. Y se arman en una tarde.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Curiosity gap con sorpresa. Rompe la expectativa de que los productos digitales son sobre negocios o marketing. 'Se arman en una tarde' abre al mecanismo."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "lead_pregunta",
+        "script_text": "¿Tenés perro? ¿Sabés cómo cuidarlo bien? Entonces tenés un negocio digital que todavía no armaste. No necesitás ser veterinario. Te explico.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Preguntas directas + eliminación de objeción profesional. Corto y al punto."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "lead_analogia",
+        "script_text": "Cuando adoptaste a tu primer perro, ¿cuánto hubieras pagado por una guía que te diga qué hacer? Qué darle de comer, cómo educarlo, cuándo llevarlo al veterinario. Bueno, esa guía la podés crear vos. Y la IA te la arma.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Pone al espectador en los zapatos del comprador. Él mismo hubiera pagado por eso. Entonces entiende por qué otros pagarían."
+      }
+    ],
+    "development": {
+      "framework_used": "Cuerpo centrado en idea de nicho: el problema que resolvés → cómo la IA lo arma → cómo se vende → por qué funciona",
+      "emotional_arc": "Identificación → sorpresa → comprensión → ganas de saber más",
+      "sections": [
+        {
+          "section_name": "El problema que resolvés",
+          "script_text": "Todos los días hay gente que adopta un perro o un gato por primera vez y no tiene idea de nada. Qué darle de comer, cada cuánto bañarlo, cómo hacer que no muerda todo, qué vacunas necesita.\n\nLo primero que hacen es buscar en internet. Y están dispuestos a pagar por algo que les resuelva todo eso en un solo lugar.",
+          "timing_seconds": 12,
+          "strategic_rationale": "Problema ultra concreto del cliente final. Lista de dudas reales que todo dueño primerizo tiene. 'Buscan en internet' conecta con el mecanismo de venta online. Micro-loop: 'dispuestos a pagar' abre la siguiente sección."
+        },
+        {
+          "section_name": "Cómo la IA lo arma",
+          "script_text": "Vos que ya tenés mascotas sabés todo eso. Lo aprendiste viviéndolo.\n\nLe pedís a la inteligencia artificial: 'Armame una guía completa para dueños primerizos de perros, con alimentación, vacunas, educación básica y errores comunes'. Te la arma en una tarde. Organizada, con todo.",
+          "timing_seconds": 12,
+          "strategic_rationale": "Conecta experiencia cotidiana con mecanismo. El pedido a la IA es ultra específico y creíble. 'Errores comunes' es un gancho dentro del producto que genera valor percibido."
+        },
+        {
+          "section_name": "Cómo se vende",
+          "script_text": "La publicás en Hotmart, le ponés un precio, y cada dueño primerizo que la compra, la plata va a tu cuenta.\n\nNo necesitás dar consultas. No necesitás atender a nadie. La guía se vende sola.",
+          "timing_seconds": 8,
+          "strategic_rationale": "Proceso simple. Elimina objeciones del nicho: no es dar consultas ni atender clientes. Se vende solo."
+        },
+        {
+          "section_name": "Por qué funciona",
+          "script_text": "La gente no te compra porque seas veterinario. Te compra porque pasaste por lo mismo que ellos están pasando y ya sabés qué hacer.\n\nLo que para vos es obvio, para alguien que acaba de adoptar su primer perro es exactamente lo que necesita.",
+          "timing_seconds": 8,
+          "strategic_rationale": "Elimina objeción profesional. Reencuadre: tu experiencia vivida es el valor. Cierre emocional que conecta con el avatar."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "clase_gratis",
+        "script_text": "Si querés ver cómo se hace esto paso a paso, tengo una clase gratis. Link en la bio.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Bajo compromiso."
+      },
+      {
+        "variant_number": 2,
+        "cta_type": "comentario",
+        "script_text": "Comentá MASCOTAS y te mando todo por privado.",
+        "timing_seconds": 3,
+        "strategic_rationale": "Palabra clave alineada con la idea de nicho."
+      },
+      {
+        "variant_number": 3,
+        "cta_type": "taller",
+        "script_text": "O en 3 días armás tu primer producto digital en el taller. Son 5 dólares. Un café.",
+        "timing_seconds": 4,
+        "strategic_rationale": "Ancla de precio."
+      }
+    ]
+  },
+  "createdAt": "2026-03-09T14:46:01.139Z"
+}
