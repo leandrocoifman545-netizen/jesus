@@ -5,6 +5,7 @@
 - **"Trabajos" → "Negocios".** La gente no quiere otro trabajo, quiere un negocio sencillo para salir de su trabajo actual.
 - **Nada de porcentajes en hooks.** "El 76% de las personas..." desconecta emocionalmente. No hay virales que usen porcentajes como gancho.
 - **No repetir CTAs ni hacerlos más largos que el cuerpo.** Máximo 4 CTAs, cada uno con enfoque diferente (gratuito, taller $5, comentar CLASE, link en bio).
+- **No exagerar cantidades.** "Millones" suena a humo en ads. Usar "miles" o "cientos" que son creíbles.
 
 ## Estructura de Guión
 - El video NO es solo Hook → Cuerpo → CTA. El cuerpo tiene secciones internas, cada una con función específica.
@@ -25,6 +26,9 @@
   - **Provocación:** Contraste con acción + promesa de simpleza → "Mientras vos pensás, otros hacen. Hacen algo muy simple."
 - Las frases textuales del avatar ("soy de madera") son UN recurso más, un complemento, no la base de todo lead.
 - El último movimiento del lead debe servir como puente natural al cuerpo (ej: "te lo demuestro", "te explico", "hacen algo muy simple").
+- **Cada lead se quema después de usarse.** Una vez grabado, no se puede reutilizar. La meta es que TODOS sean nuevos y diferentes.
+- **No reciclar fórmulas quemadas.** "Todo el mundo dice X. No es así." ya está requemado en el mercado. Las fórmulas son puntos de partida, pero la ejecución tiene que ser original cada vez.
+- **La dificultad se complejiza con el tiempo:** a medida que se graban leads, quedan menos opciones. Hay que buscar ángulos cada vez más creativos y originales.
 
 ## Avatar y Mensaje
 - **Siempre hablá de lo que el avatar piensa**, y refutalo. Decís lo que la persona piensa y lo das vuelta.

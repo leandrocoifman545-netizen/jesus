@@ -49,3 +49,11 @@ When user asks for batch (e.g. "generame 5 guiones"), generate multiple scripts 
 - **Técnicas de retención** en `tecnicas-retencion.md`: micro-loops entre secciones, especificidad extrema, escalera de curiosidad, open loops, densidad de valor, show don't tell, transiciones que retienen.
 - **Técnica de analogía cotidiana** en `tecnica-analogia-franco-piso.md`: estructura alternativa para cuerpos. Objeto cotidiano → desarrollo → giro "no estoy hablando de X" → conexión con ADP. Usar como variación, no abusar.
 - **Técnicas de venta en ads** en `tecnicas-venta-emiliano.md`: transparencia del modelo de negocio, comparación de precio como ancla ($5 = un café), garantía como eliminador de objeción, ads nurture post-registro, "mentira" como hook, anti-expertise como prueba.
+- **Tono y vocabulario del ADP nuevo** en `jesus-tono-adp-nuevo.md`: análisis de 51 guiones reales de Jesús. Muletillas ("La realidad es que...", "Me explico?"), voseo argentino, proceso de 3 pasos, frases fórmula, analogías que usa, cómo posiciona la IA, estructura de funnel. Usar para calibrar tono de guiones generados.
+
+## Gaps identificados en guiones de Jesús (oportunidades de mejora)
+- Falta big idea de nicho (casi todos genéricos)
+- Cambio de creencia débil (dice "es fácil" sin construir el porqué)
+- Guiones de funnel son copia-pega (38-51 misma estructura)
+- Cero storytelling de alumnos reales
+- Leads demasiado largos (5+ oraciones)

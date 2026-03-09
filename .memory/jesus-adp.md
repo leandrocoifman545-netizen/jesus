@@ -89,6 +89,9 @@ Sistema en 4 pasos:
 6. **PROCESO/DEMOSTRACIÓN** — mayor credibilidad (todos)
 7. **EDAD/REINVENCIÓN** — nicho desatendido, alta urgencia (Seg B, 45-65)
 8. **LATAM/CONTEXTO REGIONAL** — identidad (por país)
+9. **VENTAS VISIBLES** — mostrar paneles de Hotmart/Shopify con ventas reales. Prueba social visual. (sin testear)
+10. **IA DESPERDICIADA** — "Usás IA para tareas/estudios/trabajo pero no para generar ingresos." Reencuadre de un comportamiento que el avatar ya tiene. (sin testear)
+11. **CONSUMIDOR DE IA** — "Ves tutoriales de IA en YouTube pero no la usás para ganar plata." Ataca la brecha entre aprender y monetizar. Seg B. (sin testear)
 
 ## Guiones Reales de Jesús (Referencias Clave)
 3 guiones propios que le funcionaron bien. Son la referencia #1 para capturar su voz:
