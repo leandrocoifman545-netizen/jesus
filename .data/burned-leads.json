@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "text": "En 6 meses vas a ver mamás vendiendo guías de crianza hechas con IA por todo internet. La pregunta no es si funciona. La pregunta es si vas a ser de las primeras o las vas a ver desde afuera.",
+    "hookType": "prediccion_audaz",
+    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
+    "burnedAt": "2026-03-11T00:57:53.439Z"
+  },
+  {
+    "text": "El mercado de cursos online está diseñado para gente sin hijos, sin laburo de 9 a 6, con 4 horas libres por día. A las mamás nos dejan afuera. Pero hay una forma de entrar que nadie te contó.",
+    "hookType": "enemigo_comun",
+    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
+    "burnedAt": "2026-03-11T00:57:53.439Z"
+  },
+  {
+    "text": "Son las 10 de la noche. Los chicos se durmieron. Tenés 20 minutos antes de caer rendida y pensás: ¿cuándo voy a armar algo propio? Esos 20 minutos alcanzan. Te muestro por qué.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
+    "burnedAt": "2026-03-11T00:57:53.439Z"
+  },
+  {
+    "text": "Yo pensaba que para vender algo online necesitabas ser influencer, grabar reels todo el día, y tener un equipo. Resulta que lo que más se vende son guías simples que la IA te escribe en una tarde.",
+    "hookType": "confesion",
+    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
+    "burnedAt": "2026-03-11T00:57:53.439Z"
+  },
+  {
+    "text": "\"Crianza respetuosa\" tiene 12.000 búsquedas por mes en Google. Y casi no hay productos digitales buenos. Si sos mamá, ya tenés la experiencia. La IA te arma la guía.",
+    "hookType": "dato_concreto",
+    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
+    "burnedAt": "2026-03-11T00:57:53.439Z"
+  },
+  {
+    "text": "Esto es lo primero que veo cuando me despierto. No es Instagram, no es WhatsApp. Es una pantalla que la mayoria no sabe que existe.",
+    "hookType": "curiosity_gap",
+    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
+    "burnedAt": "2026-03-11T01:05:57.354Z"
+  },
+  {
+    "text": "Si tenes Hotmart abierto, no mires las ventas a las 7 de la manana. No porque no haya, sino porque despues no vas a querer ir a tu trabajo. Te explico.",
+    "hookType": "pattern_interrupt",
+    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
+    "burnedAt": "2026-03-11T01:05:57.361Z"
+  },
+  {
+    "text": "Te voy a mostrar algo que no muestro en mis videos. No es una cuenta bancaria ni un auto. Es algo que cualquier persona con un celular puede tener manana.",
+    "hookType": "reveal_teaser",
+    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
+    "burnedAt": "2026-03-11T01:05:57.361Z"
+  },
+  {
+    "text": "No necesitas seguidores, no necesitas saber de tecnologia, no necesitas renunciar a tu trabajo. Lo unico que necesitas es un celular y una hora libre. Mira.",
+    "hookType": "contrarian",
+    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
+    "burnedAt": "2026-03-11T01:05:57.361Z"
+  },
+  {
+    "text": "Yo tambien tenia un trabajo de oficina y queria salir de ahi. Pero no fue un curso de marketing lo que me saco. Fue algo que me tomo una tarde armar y que hoy vende solo.",
+    "hookType": "pain_point",
+    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
+    "burnedAt": "2026-03-11T01:05:57.361Z"
+  }
+]

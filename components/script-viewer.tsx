@@ -160,6 +160,7 @@ export default function ScriptViewer({
   const [savingTitle, setSavingTitle] = useState(false);
   const [status, setStatus] = useState<GenerationStatus>(initialStatus);
   const [updatingStatus, setUpdatingStatus] = useState(false);
+  const [statusOpen, setStatusOpen] = useState(false);
   const [metrics, setMetrics] = useState<WinnerMetrics>(initialMetrics || {});
   const [sessionNotes, setSessionNotes] = useState(initialSessionNotes);
   const [showMetrics, setShowMetrics] = useState(false);
@@ -204,18 +205,19 @@ export default function ScriptViewer({
     }
   }
 
-  async function cycleStatus() {
-    const nextStatus = STATUS_CONFIG[status].next;
+  async function changeStatus(newStatus: GenerationStatus) {
+    if (newStatus === status) { setStatusOpen(false); return; }
+    setStatusOpen(false);
     setUpdatingStatus(true);
     try {
       const res = await fetch("/api/generate/status", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ generationId, status: nextStatus }),
+        body: JSON.stringify({ generationId, status: newStatus }),
       });
       if (!res.ok) throw new Error("Error");
-      setStatus(nextStatus);
-      toast(`Estado: ${STATUS_CONFIG[nextStatus].label}`);
+      setStatus(newStatus);
+      toast(`Estado: ${STATUS_CONFIG[newStatus].label}`);
     } catch {
       toast("Error actualizando estado", "error");
     } finally {
@@ -321,14 +323,39 @@ export default function ScriptViewer({
 
       {/* Status bar */}
       <div className="flex items-center gap-3">
-        <button
-          onClick={cycleStatus}
-          disabled={updatingStatus}
-          className={`text-xs rounded-xl px-4 py-1.5 border transition-colors ${STATUS_CONFIG[status].color} ${updatingStatus ? "opacity-50" : ""}`}
-          title="Click para cambiar: Borrador -> Grabado -> Winner -> Borrador"
-        >
-          {updatingStatus ? "..." : STATUS_CONFIG[status].label}
-        </button>
+        <div className="relative">
+          <button
+            onClick={() => setStatusOpen(!statusOpen)}
+            disabled={updatingStatus}
+            className={`text-xs rounded-xl px-4 py-1.5 border transition-colors flex items-center gap-1.5 ${STATUS_CONFIG[status].color} ${updatingStatus ? "opacity-50" : ""}`}
+          >
+            {updatingStatus ? "..." : STATUS_CONFIG[status].label}
+            <svg className={`w-3 h-3 transition-transform ${statusOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          {statusOpen && (
+            <>
+              <div className="fixed inset-0 z-40" onClick={() => setStatusOpen(false)} />
+              <div className="absolute top-full left-0 mt-1 z-50 bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-xl overflow-hidden shadow-xl min-w-[140px]">
+                {(["draft", "recorded", "winner"] as GenerationStatus[]).map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => changeStatus(s)}
+                    className={`w-full text-left text-xs px-4 py-2.5 transition-colors flex items-center gap-2 ${
+                      s === status
+                        ? "bg-white/10 text-white"
+                        : "text-zinc-400 hover:bg-white/[0.04] hover:text-zinc-200"
+                    }`}
+                  >
+                    <span className={`w-1.5 h-1.5 rounded-full ${
+                      s === "draft" ? "bg-zinc-500" : s === "recorded" ? "bg-green-400" : "bg-amber-400"
+                    }`} />
+                    {STATUS_CONFIG[s].label}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
         {(status === "recorded" || status === "winner") && (
           <>
             <span className="text-[10px] text-red-400/50">{script.hooks.length} leads quemados</span>
@@ -540,35 +567,6 @@ export default function ScriptViewer({
           </div>
         </div>
 
-        {/* Selected Hook Detail */}
-        {script.hooks[selectedHook] && (
-          <div className="bg-zinc-900/30 border border-zinc-800/50 rounded-2xl p-5">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="text-sm font-bold">
-                Hook #{script.hooks[selectedHook].variant_number}
-              </span>
-              <span
-                className={`text-xs px-2 py-0.5 rounded-lg border ${
-                  HOOK_TYPE_COLORS[script.hooks[selectedHook].hook_type] || ""
-                }`}
-              >
-                {HOOK_TYPE_LABELS[script.hooks[selectedHook].hook_type]}
-              </span>
-              <span className="text-xs text-zinc-600">{script.hooks[selectedHook].timing_seconds}s</span>
-              <span className="text-[10px] text-zinc-600">{script.hooks[selectedHook].script_text.trim().split(/\s+/).length} palabras</span>
-              <RegenButton
-                onClick={() => handleRegenerate("hook", selectedHook)}
-                loading={regenTarget === `hook-${selectedHook}`}
-                label="Regenerar este hook"
-              />
-            </div>
-            <InlineEdit
-              value={script.hooks[selectedHook].script_text}
-              onSave={(v) => handleEdit(`hooks.${selectedHook}.script_text`, v)}
-              className="text-white text-lg leading-relaxed"
-            />
-          </div>
-        )}
       </div>
 
       {/* Script Flow */}
@@ -580,8 +578,9 @@ export default function ScriptViewer({
             const hook = script.hooks[selectedHook];
             return (
               <div className="bg-purple-500/5 border border-purple-500/15 rounded-2xl p-5">
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
                   <span className="uppercase tracking-wider text-[11px] font-semibold text-purple-400">HOOK #{hook.variant_number}</span>
+                  <span className={`text-[10px] px-2 py-0.5 rounded-lg border ${HOOK_TYPE_COLORS[hook.hook_type] || ""}`}>{HOOK_TYPE_LABELS[hook.hook_type]}</span>
                   <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">0-{hook.timing_seconds}s</span>
                   <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{hook.script_text.trim().split(/\s+/).length} palabras</span>
                   <RegenButton

@@ -132,7 +132,7 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
                   disabled={saving === gen.id}
                   className="text-[10px] px-2.5 py-1 rounded-xl border border-zinc-700 text-zinc-500 hover:text-zinc-300 hover:bg-zinc-800/50 transition-colors"
                 >
-                  Deshacer
+                  Volver a borrador
                 </button>
               </>
             )}

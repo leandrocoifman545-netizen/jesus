@@ -48,7 +48,6 @@ interface GenerationSummary {
 
 interface SessionPackProps {
   generations: GenerationSummary[];
-  burnedLeadsCount: number;
 }
 
 const CTAS = [
@@ -202,19 +201,17 @@ function groupByDate(gens: GenerationSummary[]): { label: string; items: Generat
   return groups;
 }
 
-export default function SessionPack({ generations: initialGenerations, burnedLeadsCount }: SessionPackProps) {
+export default function SessionPack({ generations: initialGenerations }: SessionPackProps) {
   const router = useRouter();
   const toast = useToast();
   const [generations, setGenerations] = useState(initialGenerations);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [updatingStatus, setUpdatingStatus] = useState<string | null>(null);
+  const [statusDropdown, setStatusDropdown] = useState<string | null>(null);
   const [filter, setFilter] = useState<GenerationStatus | "all">("all");
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [deleting, setDeleting] = useState(false);
-  const [showBurnedLeads, setShowBurnedLeads] = useState(false);
-  const [burnedLeads, setBurnedLeads] = useState<Array<{ text: string; hookType: string; fromGenerationId: string }>>([]);
-  const [loadingBurned, setLoadingBurned] = useState(false);
   const [sortBy, setSortBy] = useState<"recent" | "oldest" | "duration" | "framework" | "status">("recent");
 
   useEffect(() => {
@@ -293,10 +290,9 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
     }
   }, []);
 
-  function cycleStatus(gen: GenerationSummary) {
-    const current = gen.status || "draft";
-    const next: GenerationStatus = current === "draft" ? "recorded" : current === "recorded" ? "winner" : "draft";
-    updateStatus(gen.id, next);
+  function selectStatus(genId: string, newStatus: GenerationStatus) {
+    setStatusDropdown(null);
+    updateStatus(genId, newStatus);
   }
 
   function downloadPack() {
@@ -350,77 +346,10 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
     }
   }
 
-  async function loadBurnedLeads() {
-    if (showBurnedLeads) {
-      setShowBurnedLeads(false);
-      return;
-    }
-    setLoadingBurned(true);
-    try {
-      const res = await fetch("/api/burned-leads");
-      const data = await res.json();
-      setBurnedLeads(data.leads);
-      setShowBurnedLeads(true);
-    } catch {
-      toast("Error cargando leads quemados", "error");
-    } finally {
-      setLoadingBurned(false);
-    }
-  }
-
   if (generations.length === 0) return null;
-
-  const recordedCount = generations.filter((g) => g.status === "recorded" || g.status === "winner").length;
-  const winnerCount = generations.filter((g) => g.status === "winner").length;
-  const totalLeadsBurned = burnedLeadsCount;
 
   return (
     <>
-      {/* Stats bar */}
-      <div className="flex items-center gap-4 mb-4 text-xs bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-2xl p-4">
-        <span className="flex items-center gap-1.5 text-zinc-400"><span className="w-1.5 h-1.5 rounded-full bg-zinc-500"></span><span className="font-medium text-zinc-300">{generations.length}</span> guiones</span>
-        {recordedCount > 0 && (
-          <span className="flex items-center gap-1.5 text-green-400"><span className="w-1.5 h-1.5 rounded-full bg-green-400"></span><span className="font-medium">{recordedCount}</span> grabados</span>
-        )}
-        {winnerCount > 0 && (
-          <span className="flex items-center gap-1.5 text-amber-400"><span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span><span className="font-medium">{winnerCount}</span> winners</span>
-        )}
-        <button
-          onClick={loadBurnedLeads}
-          className="flex items-center gap-1.5 text-red-400/70 hover:text-red-400 transition-colors"
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-red-400/70"></span>
-          {loadingBurned ? "Cargando..." : <><span className="font-medium">{totalLeadsBurned}</span> leads quemados</>}
-        </button>
-      </div>
-
-      {/* Burned leads panel */}
-      {showBurnedLeads && (
-        <div className="bg-red-500/5 backdrop-blur border border-red-500/10 rounded-2xl p-4 mb-4">
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-semibold text-red-400">Biblioteca de Leads Quemados ({burnedLeads.length})</h3>
-            <button onClick={() => setShowBurnedLeads(false)} className="text-xs text-zinc-500 hover:text-zinc-300">
-              Cerrar
-            </button>
-          </div>
-          {burnedLeads.length === 0 ? (
-            <p className="text-xs text-zinc-500">No hay leads quemados. Marca guiones como &quot;Grabado&quot; para quemar sus leads.</p>
-          ) : (
-            <div className="space-y-2 max-h-64 overflow-y-auto">
-              {burnedLeads.map((lead, i) => (
-                <div key={i} className="flex items-start gap-2 text-xs">
-                  <span className="text-red-500/50 shrink-0 mt-0.5">{i + 1}.</span>
-                  <div className="min-w-0">
-                    <p className="text-zinc-400 line-through decoration-red-500/30">&ldquo;{lead.text}&rdquo;</p>
-                    <span className="text-zinc-600">{lead.hookType}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
       {/* Search bar */}
       <div className="relative mb-4">
         <svg className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -543,7 +472,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
 
       {/* Generation list with checkboxes + status */}
       <div className="grid gap-4">
-        {(sortBy === "recent" || sortBy === "oldest") ? (
+        {filteredGenerations.length > 0 ? (
           groupByDate(filteredGenerations).map((group) => (
             <div key={group.label}>
               <div className="flex items-center gap-3 mb-2 mt-2"><span className="text-xs font-medium text-zinc-500 shrink-0">{group.label}</span><div className="flex-1 h-px bg-zinc-800/50"></div></div>
@@ -603,16 +532,37 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                         </p>
                       </a>
                       <div className="shrink-0 flex flex-col items-end gap-1">
-                        <button
-                          onClick={(e) => { e.preventDefault(); cycleStatus(gen); }}
-                          disabled={updatingStatus === gen.id}
-                          className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur transition-all ${config.color} ${
-                            updatingStatus === gen.id ? "opacity-50" : "hover:opacity-80"
-                          }`}
-                          title="Click para cambiar estado: Borrador -> Grabado -> Winner -> Borrador"
-                        >
-                          {updatingStatus === gen.id ? "..." : config.label}
-                        </button>
+                        <div className="relative">
+                          <button
+                            onClick={(e) => { e.preventDefault(); e.stopPropagation(); setStatusDropdown(statusDropdown === gen.id ? null : gen.id); }}
+                            disabled={updatingStatus === gen.id}
+                            className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur transition-all flex items-center gap-1 ${config.color} ${
+                              updatingStatus === gen.id ? "opacity-50" : "hover:opacity-80"
+                            }`}
+                          >
+                            {updatingStatus === gen.id ? "..." : config.label}
+                            <svg className={`w-2.5 h-2.5 transition-transform ${statusDropdown === gen.id ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                          </button>
+                          {statusDropdown === gen.id && (
+                            <>
+                              <div className="fixed inset-0 z-40" onClick={() => setStatusDropdown(null)} />
+                              <div className="absolute top-full right-0 mt-1 z-50 bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-xl overflow-hidden shadow-xl min-w-[120px]">
+                                {(["draft", "recorded", "winner"] as GenerationStatus[]).map((s) => (
+                                  <button
+                                    key={s}
+                                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); selectStatus(gen.id, s); }}
+                                    className={`w-full text-left text-[10px] px-3 py-2 transition-colors flex items-center gap-2 ${
+                                      s === status ? "bg-white/10 text-white" : "text-zinc-400 hover:bg-white/[0.04] hover:text-zinc-200"
+                                    }`}
+                                  >
+                                    <span className={`w-1.5 h-1.5 rounded-full ${s === "draft" ? "bg-zinc-500" : s === "recorded" ? "bg-green-400" : "bg-amber-400"}`} />
+                                    {STATUS_CONFIG[s].label}
+                                  </button>
+                                ))}
+                              </div>
+                            </>
+                          )}
+                        </div>
                         {status === "recorded" && (
                           <span className="text-[9px] text-red-400/50">{gen.script.hooks.length} leads quemados</span>
                         )}
@@ -627,81 +577,9 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
             </div>
           ))
         ) : (
-          filteredGenerations.map((gen) => {
-            const status = gen.status || "draft";
-            const config = STATUS_CONFIG[status];
-            return (
-              <div
-                key={gen.id}
-                className={`border rounded-2xl p-5 transition-all duration-200 flex gap-4 ${
-                  selected.has(gen.id)
-                    ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20"
-                    : "border-zinc-800/50 bg-zinc-900/30 hover:bg-zinc-900/50 hover:border-zinc-700/50"
-                }`}
-              >
-                <button
-                  onClick={(e) => { e.preventDefault(); toggleSelect(gen.id); }}
-                  className="shrink-0 mt-1"
-                >
-                  <div
-                    className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${
-                      selected.has(gen.id)
-                        ? "bg-gradient-to-r from-purple-600 to-violet-600 border-purple-600"
-                        : "border-zinc-700 hover:border-zinc-500"
-                    }`}
-                  >
-                    {selected.has(gen.id) && (
-                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                      </svg>
-                    )}
-                  </div>
-                </button>
-                <a href={`/scripts/${gen.id}`} className="flex-1 min-w-0">
-                  {gen.title && (
-                    <p className="text-sm font-medium text-zinc-100 mb-1 truncate">{gen.title}</p>
-                  )}
-                  <div className="flex items-center gap-3 mb-2 flex-wrap">
-                    <span className="text-xs px-2 py-0.5 rounded-full border bg-zinc-800 text-zinc-400">
-                      {gen.script.platform_adaptation.platform}
-                    </span>
-                    <span className="text-xs text-zinc-500">{gen.script.total_duration_seconds}s</span>
-                    <span className="text-xs text-zinc-500">{gen.script.development.framework_used}</span>
-                    <span className="text-xs text-zinc-500">{gen.script.hooks.length} leads</span>
-                    {gen.script.visual_format && (
-                      <span className="text-xs px-2 py-0.5 rounded-full border bg-blue-500/10 text-blue-400 border-blue-500/20 backdrop-blur">
-                        {gen.script.visual_format.format_name}
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-sm text-zinc-300 truncate">
-                    {gen.script.hooks[0]?.script_text.substring(0, 100)}...
-                  </p>
-                  <p className="text-xs text-zinc-600 mt-1">
-                    {new Date(gen.createdAt).toLocaleDateString("es-AR")} &middot; {new Date(gen.createdAt).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" })}
-                  </p>
-                </a>
-                <div className="shrink-0 flex flex-col items-end gap-1">
-                  <button
-                    onClick={(e) => { e.preventDefault(); cycleStatus(gen); }}
-                    disabled={updatingStatus === gen.id}
-                    className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur transition-all ${config.color} ${
-                      updatingStatus === gen.id ? "opacity-50" : "hover:opacity-80"
-                    }`}
-                    title="Click para cambiar estado: Borrador -> Grabado -> Winner -> Borrador"
-                  >
-                    {updatingStatus === gen.id ? "..." : config.label}
-                  </button>
-                  {status === "recorded" && (
-                    <span className="text-[9px] text-red-400/50">{gen.script.hooks.length} leads quemados</span>
-                  )}
-                  {status === "winner" && (
-                    <span className="text-[9px] text-amber-400/50">{gen.script.hooks.length} leads quemados</span>
-                  )}
-                </div>
-              </div>
-            );
-          })
+          <div className="text-center py-12 text-zinc-600 text-sm">
+            {debouncedSearch ? "Sin resultados para esta busqueda" : "No hay guiones con este filtro"}
+          </div>
         )}
       </div>
     </>

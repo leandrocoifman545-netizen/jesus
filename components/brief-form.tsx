@@ -197,6 +197,11 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
         />
       </div>
 
+      {/* Divider */}
+      <div className="border-t border-zinc-800/50 pt-2">
+        <span className="text-[10px] uppercase tracking-widest text-zinc-600">Opciones</span>
+      </div>
+
       {/* Hook Count */}
       <div>
         <label className="block text-sm font-medium text-zinc-400 mb-2">
