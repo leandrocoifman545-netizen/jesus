@@ -24,10 +24,17 @@ export interface BriefInput {
   useCaseStudy?: boolean; // whether this script should include a case study fragment
 }
 
-const PLATFORM_LABELS: Record<string, string> = {
-  tiktok: "TikTok",
-  reels: "Instagram Reels",
-  shorts: "YouTube Shorts",
+const FORMAT_LABELS: Record<string, string> = {
+  vertical_ad: "Vertical Ad (9:16)",
+  vertical_organic: "Vertical Orgánico (9:16)",
+  horizontal_ad: "Horizontal Ad (16:9)",
+};
+
+// Keep backwards compat for old platform values
+const LEGACY_FORMAT_MAP: Record<string, string> = {
+  tiktok: "vertical_ad",
+  reels: "vertical_ad",
+  shorts: "vertical_ad",
 };
 
 // --- Clients ---
@@ -152,8 +159,14 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 
 // --- Brief context builders ---
 
+function resolveFormat(platform?: string): string {
+  if (!platform) return "vertical_ad";
+  return LEGACY_FORMAT_MAP[platform] || platform;
+}
+
 function buildBriefContext(brief: BriefInput): string {
-  const platformLabel = brief.platform ? (PLATFORM_LABELS[brief.platform] || brief.platform) : null;
+  const format = resolveFormat(brief.platform);
+  const formatLabel = FORMAT_LABELS[format] || format;
 
   let prompt = `## BRIEF DEL CLIENTE
 
@@ -164,14 +177,10 @@ function buildBriefContext(brief: BriefInput): string {
   if (brief.brandTone) {
     prompt += `\n\n**Tono de Marca:** ${brief.brandTone}`;
   } else {
-    prompt += `\n\n**Tono de Marca:** Elegí el tono más apropiado según el producto, audiencia y plataforma.`;
+    prompt += `\n\n**Tono de Marca:** Elegí el tono más apropiado según el producto y la audiencia.`;
   }
 
-  if (platformLabel) {
-    prompt += `\n\n**Plataforma:** ${platformLabel}`;
-  } else {
-    prompt += `\n\n**Plataforma:** Elegí la plataforma más apropiada (TikTok, Instagram Reels o YouTube Shorts) según el producto y la audiencia.`;
-  }
+  prompt += `\n\n**Formato:** ${formatLabel}`;
 
   prompt += `\n\n**Duración objetivo:** 60 a 90 segundos (elegí la duración óptima según la complejidad del producto, apuntá a 60-90s para desarrollar bien el mensaje)`;
 
@@ -445,17 +454,18 @@ async function buildUserPrompt(brief: BriefInput): Promise<string> {
   // Inject burned leads to avoid repetition
   prompt += await buildBurnedLeadsContext();
 
-  const platformLabel = brief.platform ? (PLATFORM_LABELS[brief.platform] || brief.platform) : "la plataforma elegida";
+  const format = resolveFormat(brief.platform);
+  const formatLabel = FORMAT_LABELS[format] || format;
 
   prompt += `\n\n## INSTRUCCIÓN
-Genera un guión publicitario completo para video vertical con:
+Genera un guión publicitario completo en formato ${formatLabel} con:
 1. ${brief.hookCount} variantes de hook de apertura (cada una con un tipo de hook diferente, numeradas del 1 al ${brief.hookCount})
 2. Desarrollo del mensaje central (cuerpo del guión independiente de los hooks)
 3. Cierre con CTA dual (verbal + visual)
 
 IMPORTANTE: Los hooks deben ser INDEPENDIENTES del cuerpo. Cualquier hook debe poder combinarse con el mismo desarrollo y CTA sin necesidad de modificar nada.
 
-Adapta todo al formato nativo de ${platformLabel} y al público objetivo especificado.
+Adapta todo al formato ${formatLabel} y al público objetivo especificado.
 ${brief.brandTone ? `Respeta estrictamente el tono de marca: "${brief.brandTone}".` : "Elegí el tono más apropiado según el producto y la audiencia."}
 Apuntá a una duración de entre 60 y 90 segundos. Esto permite desarrollar bien el mensaje sin apurar.
 
@@ -836,7 +846,7 @@ REGLAS:
 - Mantené una duración similar (~${script.cta.timing_seconds}s).
 - Debe conectar naturalmente con la última sección: "${lastSection.script_text}"
 - ${brief.brandTone ? `Respetá el tono de marca: "${brief.brandTone}".` : "Mantené el mismo tono del guión original."}
-- ${brief.platform ? `Plataforma: ${PLATFORM_LABELS[brief.platform] || brief.platform}.` : "Mantené la misma plataforma del guión original."}
+- ${brief.platform ? `Formato: ${FORMAT_LABELS[resolveFormat(brief.platform)] || brief.platform}.` : "Mantené el mismo formato del guión original."}
 
 ${CTA_SCHEMA_DESC}
 
