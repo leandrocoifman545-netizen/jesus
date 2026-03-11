@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { generateScriptStream, type BriefInput } from "@/lib/ai/generate";
 import { saveBrief, saveGeneration, getProject, getProjectBrandText } from "@/lib/storage/local";
+import { generateAutoTitle } from "@/lib/auto-title";
 import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
@@ -10,6 +11,7 @@ export async function POST(req: NextRequest) {
   let targetAudience = body.targetAudience;
   let brandTone = body.brandTone;
   let brandDocument: string | undefined;
+  let generationRules: string | undefined;
   const projectId: string | undefined = body.projectId;
 
   if (projectId) {
@@ -24,6 +26,7 @@ export async function POST(req: NextRequest) {
     targetAudience = targetAudience || project.targetAudience;
     brandTone = brandTone || project.brandTone;
     brandDocument = getProjectBrandText(project);
+    generationRules = project.generationRules;
   }
 
   const brief: BriefInput = {
@@ -35,6 +38,7 @@ export async function POST(req: NextRequest) {
     additionalNotes: body.additionalNotes,
     references: body.references,
     brandDocument,
+    generationRules,
   };
 
   if (!brief.productDescription || !brief.targetAudience) {
@@ -54,10 +58,11 @@ export async function POST(req: NextRequest) {
 
       try {
         const briefId = crypto.randomUUID();
+        const { generationRules: _rules, ...briefForStorage } = brief;
         await saveBrief({
           id: briefId,
           projectId,
-          ...brief,
+          ...briefForStorage,
           createdAt: new Date().toISOString(),
         });
 
@@ -68,15 +73,17 @@ export async function POST(req: NextRequest) {
         });
 
         const generationId = crypto.randomUUID();
+        const title = generateAutoTitle(script, brief.additionalNotes);
         await saveGeneration({
           id: generationId,
           briefId,
           projectId,
+          title,
           script,
           createdAt: new Date().toISOString(),
         });
 
-        send({ type: "done", generationId, script });
+        send({ type: "done", generationId, title, script });
       } catch (err) {
         const message = err instanceof Error ? err.message : "Error desconocido";
         send({ type: "error", error: message });

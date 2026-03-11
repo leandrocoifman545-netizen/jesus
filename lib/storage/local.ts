@@ -6,6 +6,7 @@ import type { ReferenceAnalysis } from "../ai/schemas/reference-analysis";
 const DATA_DIR = path.join(process.cwd(), ".data");
 const BRIEFS_DIR = path.join(DATA_DIR, "briefs");
 const GENERATIONS_DIR = path.join(DATA_DIR, "generations");
+const PLANS_DIR = path.join(DATA_DIR, "plans");
 
 // --- In-memory cache (survives across requests in same process) ---
 
@@ -54,6 +55,7 @@ export interface StoredProject {
   brandTone: string;
   brandDocument?: string; // legacy single doc
   brandDocuments?: BrandDoc[];
+  generationRules?: string; // project-specific rules injected as high-priority system prompt
   createdAt: string;
 }
 
@@ -149,15 +151,50 @@ export interface WinnerMetrics {
   recordedAt?: string;
 }
 
+export interface GenerationBatch {
+  id: string;
+  name: string;
+}
+
 export interface StoredGeneration {
   id: string;
   briefId: string;
   projectId?: string;
+  planId?: string;
   title?: string;
+  batch?: GenerationBatch;
   script: ScriptOutput;
   status?: GenerationStatus;
   metrics?: WinnerMetrics;
   sessionNotes?: string;
+  createdAt: string;
+}
+
+// --- Plans ---
+
+export interface PlanSlot {
+  index: number;
+  angle: string;
+  segment: string;
+  funnel: string;
+  bodyType: string;
+  visualFormat: string;
+  nicheIdea?: string;
+  leadTypes: string[];
+  justification: string;
+  generationId?: string; // linked when generated
+  status: "pending" | "generated" | "recorded" | "winner";
+}
+
+export interface StoredPlan {
+  id: string;
+  projectId?: string;
+  name: string;
+  weekOf: string; // ISO date of Monday
+  slots: PlanSlot[];
+  visualFormats: string[]; // 2 formats chosen for the week
+  recordingOrder?: number[]; // indices in suggested recording order
+  notes?: string;
   createdAt: string;
 }
 
@@ -250,6 +287,7 @@ async function ensureDirs() {
     fs.mkdir(GENERATIONS_DIR, { recursive: true }),
     fs.mkdir(REFERENCES_DIR, { recursive: true }),
     fs.mkdir(PROJECTS_DIR, { recursive: true }),
+    fs.mkdir(PLANS_DIR, { recursive: true }),
   ]);
   dirsEnsured = true;
 }
@@ -408,4 +446,82 @@ export async function listReferences(): Promise<StoredReference[]> {
   } catch {
     return [];
   }
+}
+
+// --- Plans CRUD ---
+
+export async function savePlan(plan: StoredPlan): Promise<void> {
+  await ensureDirs();
+  await fs.writeFile(
+    path.join(PLANS_DIR, `${plan.id}.json`),
+    JSON.stringify(plan, null, 2)
+  );
+  invalidateCache("plans");
+}
+
+export async function getPlan(id: string): Promise<StoredPlan | null> {
+  await ensureDirs();
+  try {
+    const data = await fs.readFile(path.join(PLANS_DIR, `${id}.json`), "utf-8");
+    return JSON.parse(data);
+  } catch {
+    return null;
+  }
+}
+
+export async function deletePlan(id: string): Promise<boolean> {
+  await ensureDirs();
+  try {
+    await fs.unlink(path.join(PLANS_DIR, `${id}.json`));
+    invalidateCache("plans");
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function listPlans(): Promise<StoredPlan[]> {
+  const cached = getCached<StoredPlan[]>("plans:list");
+  if (cached) return cached;
+
+  await ensureDirs();
+  try {
+    const files = await fs.readdir(PLANS_DIR);
+    const jsonFiles = files.filter((f) => f.endsWith(".json"));
+    const plans = await Promise.all(
+      jsonFiles.map(async (file) => {
+        const data = await fs.readFile(path.join(PLANS_DIR, file), "utf-8");
+        return JSON.parse(data) as StoredPlan;
+      })
+    );
+    const sorted = plans.sort(
+      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    );
+    setCache("plans:list", sorted);
+    return sorted;
+  } catch {
+    return [];
+  }
+}
+
+export async function linkGenerationToPlan(
+  planId: string,
+  slotIndex: number,
+  generationId: string,
+): Promise<StoredPlan | null> {
+  const plan = await getPlan(planId);
+  if (!plan || slotIndex < 0 || slotIndex >= plan.slots.length) return null;
+
+  plan.slots[slotIndex].generationId = generationId;
+  plan.slots[slotIndex].status = "generated";
+  await savePlan(plan);
+
+  // Also link generation back to plan
+  const gen = await getGeneration(generationId);
+  if (gen) {
+    gen.planId = planId;
+    await saveGeneration(gen);
+  }
+
+  return plan;
 }

@@ -90,6 +90,8 @@ export const SYSTEM_PROMPT = `Eres un director creativo senior especializado en 
 - 30s = 65-85 palabras TOTAL
 - 45s = 95-115 palabras TOTAL
 - 60s = 125-150 palabras TOTAL
+- 75s = 155-185 palabras TOTAL
+- 90s = 190-220 palabras TOTAL
 - Contá las palabras de todo el guión y asegurate de respetar este rango
 
 ## REGLAS DE CTA

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { regenerateSection, regenerateCTA, regenerateHook } from "@/lib/ai/generate";
-import { getGeneration, getBrief, saveGeneration } from "@/lib/storage/local";
+import { getGeneration, getBrief, saveGeneration, getProject } from "@/lib/storage/local";
 
 export async function POST(req: NextRequest) {
   try {
@@ -28,7 +28,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Brief no encontrado" }, { status: 404 });
     }
 
-    const briefInput = { ...brief, hookCount: generation.script.hooks.length };
+    // Load project-specific generation rules
+    let generationRules: string | undefined;
+    if (generation.projectId) {
+      const project = await getProject(generation.projectId);
+      if (project?.generationRules) generationRules = project.generationRules;
+    }
+
+    const briefInput = { ...brief, hookCount: generation.script.hooks.length, generationRules };
 
     if (target === "section") {
       if (index === undefined || index < 0 || index >= generation.script.development.sections.length) {

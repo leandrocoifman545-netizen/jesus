@@ -1,16 +1,26 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { useToast } from "./toast";
+import RelativeTime from "./relative-time";
+import Confetti from "./confetti";
+import CopyButton from "./copy-button";
 
 type GenerationStatus = "draft" | "recorded" | "winner";
+
+interface GenerationBatch {
+  id: string;
+  name: string;
+}
 
 interface GenerationSummary {
   id: string;
   createdAt: string;
   title?: string;
   status?: GenerationStatus;
+  batch?: GenerationBatch;
   script: {
     platform_adaptation: { platform: string };
     total_duration_seconds: number;
@@ -26,7 +36,7 @@ interface GenerationSummary {
       emotional_arc: string;
       sections: Array<{
         section_name: string;
-        is_rehook: boolean;
+        is_rehook?: boolean;
         script_text: string;
         timing_seconds: number;
       }>;
@@ -71,6 +81,207 @@ const STATUS_CONFIG: Record<GenerationStatus, { label: string; color: string; ic
   winner: { label: "Winner", color: "text-amber-400 border-amber-500/30 bg-amber-500/5", icon: "" },
 };
 
+function StatusDropdown({ currentStatus, onSelect, onClose, triggerRef }: {
+  currentStatus: GenerationStatus;
+  onSelect: (s: GenerationStatus) => void;
+  onClose: () => void;
+  triggerRef: string;
+}) {
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [pos, setPos] = useState({ top: 0, right: 0 });
+
+  useEffect(() => {
+    const btn = document.querySelector(`[data-status-trigger="${triggerRef}"]`);
+    if (btn) {
+      const rect = btn.getBoundingClientRect();
+      setPos({
+        top: rect.bottom + 4,
+        right: window.innerWidth - rect.right,
+      });
+    }
+
+    function handleScroll() { onClose(); }
+    window.addEventListener("scroll", handleScroll, true);
+    return () => window.removeEventListener("scroll", handleScroll, true);
+  }, [triggerRef, onClose]);
+
+  return createPortal(
+    <>
+      <div className="fixed inset-0 z-[9990]" onClick={onClose} />
+      <div
+        ref={dropdownRef}
+        className="fixed z-[9991] bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-xl overflow-hidden shadow-xl min-w-[120px] animate-fade-in"
+        style={{ top: pos.top, right: pos.right, animationDuration: "100ms" }}
+      >
+        {(["draft", "recorded", "winner"] as GenerationStatus[]).map((s) => (
+          <button
+            key={s}
+            onClick={(e) => { e.preventDefault(); e.stopPropagation(); onSelect(s); }}
+            className={`w-full text-left text-[10px] px-3 py-2 transition-colors flex items-center gap-2 ${
+              s === currentStatus ? "bg-white/10 text-white" : "text-zinc-400 hover:bg-white/[0.04] hover:text-zinc-200"
+            }`}
+          >
+            <span className={`w-1.5 h-1.5 rounded-full ${s === "draft" ? "bg-zinc-500" : s === "recorded" ? "bg-green-400" : "bg-amber-400"}`} />
+            {STATUS_CONFIG[s].label}
+          </button>
+        ))}
+      </div>
+    </>,
+    document.body
+  );
+}
+
+// --- Batch modal ---
+
+function BatchModal({ onClose, onSubmit, existingBatches, selectedCount }: {
+  onClose: () => void;
+  onSubmit: (batchId: string | null, batchName: string) => void;
+  existingBatches: { id: string; name: string; count: number }[];
+  selectedCount: number;
+}) {
+  const [mode, setMode] = useState<"new" | "existing">(existingBatches.length > 0 ? "existing" : "new");
+  const [name, setName] = useState("");
+  const [selectedBatchId, setSelectedBatchId] = useState<string | null>(existingBatches[0]?.id || null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (mode === "new") inputRef.current?.focus();
+  }, [mode]);
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (mode === "new") {
+      if (!name.trim()) return;
+      onSubmit(null, name.trim());
+    } else {
+      if (!selectedBatchId) return;
+      const batch = existingBatches.find((b) => b.id === selectedBatchId);
+      onSubmit(selectedBatchId, batch?.name || "");
+    }
+  }
+
+  return createPortal(
+    <div className="fixed inset-0 z-[9998] flex items-center justify-center">
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-2xl shadow-2xl w-full max-w-md p-6 animate-spring-up">
+        <h3 className="text-sm font-semibold text-zinc-200 mb-1">Agrupar {selectedCount} guion{selectedCount !== 1 ? "es" : ""}</h3>
+        <p className="text-xs text-zinc-500 mb-5">Asigna los guiones seleccionados a una carpeta</p>
+
+        {existingBatches.length > 0 && (
+          <div className="flex gap-1 mb-4 bg-zinc-800/30 rounded-xl p-1 border border-zinc-800/30">
+            <button
+              type="button"
+              onClick={() => setMode("existing")}
+              className={`flex-1 text-xs px-3 py-2 rounded-lg transition-all ${mode === "existing" ? "bg-white/10 text-white font-medium" : "text-zinc-500 hover:text-zinc-300"}`}
+            >
+              Carpeta existente
+            </button>
+            <button
+              type="button"
+              onClick={() => setMode("new")}
+              className={`flex-1 text-xs px-3 py-2 rounded-lg transition-all ${mode === "new" ? "bg-white/10 text-white font-medium" : "text-zinc-500 hover:text-zinc-300"}`}
+            >
+              Nueva carpeta
+            </button>
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit}>
+          {mode === "new" ? (
+            <input
+              ref={inputRef}
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Ej: Semana 10 Mar, Batch prueba..."
+              className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all"
+            />
+          ) : (
+            <div className="space-y-1.5 max-h-48 overflow-y-auto">
+              {existingBatches.map((b) => (
+                <button
+                  key={b.id}
+                  type="button"
+                  onClick={() => setSelectedBatchId(b.id)}
+                  className={`w-full text-left px-4 py-3 rounded-xl border transition-all flex items-center justify-between ${
+                    selectedBatchId === b.id
+                      ? "border-purple-500/30 bg-purple-500/10 text-white"
+                      : "border-zinc-800/40 bg-zinc-800/20 text-zinc-400 hover:border-zinc-700/40"
+                  }`}
+                >
+                  <span className="flex items-center gap-2.5">
+                    <svg className="w-4 h-4 text-zinc-500" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                    </svg>
+                    <span className="text-sm">{b.name}</span>
+                  </span>
+                  <span className="text-[10px] text-zinc-600">{b.count} guiones</span>
+                </button>
+              ))}
+            </div>
+          )}
+
+          <div className="flex justify-end gap-2 mt-5">
+            <button
+              type="button"
+              onClick={onClose}
+              className="px-4 py-2 rounded-xl text-xs text-zinc-400 hover:text-zinc-200 border border-zinc-800/50 hover:border-zinc-700/50 transition-all"
+            >
+              Cancelar
+            </button>
+            <button
+              type="submit"
+              disabled={mode === "new" ? !name.trim() : !selectedBatchId}
+              className="px-4 py-2 rounded-xl text-xs font-medium text-white bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 disabled:opacity-40 disabled:from-zinc-700 disabled:to-zinc-700 transition-all"
+            >
+              Agrupar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
+// --- Rename batch modal ---
+
+function RenameBatchModal({ batchName, onClose, onSubmit }: {
+  batchName: string;
+  onClose: () => void;
+  onSubmit: (name: string) => void;
+}) {
+  const [name, setName] = useState(batchName);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => { inputRef.current?.focus(); inputRef.current?.select(); }, []);
+
+  return createPortal(
+    <div className="fixed inset-0 z-[9998] flex items-center justify-center">
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-2xl shadow-2xl w-full max-w-sm p-6 animate-spring-up">
+        <h3 className="text-sm font-semibold text-zinc-200 mb-4">Renombrar carpeta</h3>
+        <form onSubmit={(e) => { e.preventDefault(); if (name.trim()) onSubmit(name.trim()); }}>
+          <input
+            ref={inputRef}
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all"
+          />
+          <div className="flex justify-end gap-2 mt-4">
+            <button type="button" onClick={onClose} className="px-4 py-2 rounded-xl text-xs text-zinc-400 hover:text-zinc-200 border border-zinc-800/50 hover:border-zinc-700/50 transition-all">Cancelar</button>
+            <button type="submit" disabled={!name.trim()} className="px-4 py-2 rounded-xl text-xs font-medium text-white bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 disabled:opacity-40 transition-all">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
+// --- Pack/teleprompter generators ---
+
 function generatePackText(selected: GenerationSummary[]): string {
   const date = new Date().toLocaleDateString("es-AR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
   let text = "";
@@ -91,7 +302,6 @@ function generatePackText(selected: GenerationSummary[]): string {
   }
 
   text += "\n";
-
   text += "-".repeat(60) + "\n";
   text += "  ORDEN DE GRABACION\n";
   text += "-".repeat(60) + "\n\n";
@@ -152,27 +362,67 @@ function generatePackText(selected: GenerationSummary[]): string {
 function generateTeleprompterText(selected: GenerationSummary[]): string {
   let text = "";
 
-  selected.forEach((gen, i) => {
-    // For each script, generate one block per lead
-    for (const hook of gen.script.hooks) {
-      text += `\n\n\n`;
-      text += `--- GUION ${i + 1} | Lead ${hook.variant_number} ---\n\n\n`;
-
-      // Lead first (big, clear)
-      text += hook.script_text + "\n\n";
-
-      // Then body sections
-      for (const section of gen.script.development.sections) {
-        text += section.script_text + "\n\n";
-      }
-
-      // Separator between takes
-      text += `\n\n--- CORTE ---\n`;
+  // --- CTAs first (record once, reuse for all scripts) ---
+  text += `========================================\n`;
+  text += `  CTAs — GRABAR PRIMERO\n`;
+  text += `  (se usan para todos los guiones)\n`;
+  text += `========================================\n\n`;
+  for (let i = 0; i < selected.length; i++) {
+    const gen = selected[i];
+    const cta = gen.script.cta?.verbal_cta;
+    if (cta) {
+      text += `CTA Guion ${i + 1}:\n${cta}\n\n`;
+      text += `--- CORTE ---\n\n`;
     }
+  }
+
+  // --- Each script: hooks + body (read straight through) ---
+  text += `\n========================================\n`;
+  text += `  GUIONES — LEER DE CORRIDO\n`;
+  text += `  (leads + cuerpo por guion)\n`;
+  text += `========================================\n`;
+
+  selected.forEach((gen, i) => {
+    text += `\n\n`;
+    text += `----------------------------------------\n`;
+    text += `  GUION ${i + 1}: ${gen.title || gen.script.development.framework_used}\n`;
+    if (gen.script.visual_format) text += `  Formato: ${gen.script.visual_format.format_name}\n`;
+    text += `----------------------------------------\n\n`;
+
+    // All hooks/leads for this script
+    for (const hook of gen.script.hooks) {
+      text += `[Lead ${hook.variant_number}]\n`;
+      text += `${hook.script_text}\n\n`;
+      text += `--- CORTE ---\n\n`;
+    }
+
+    // Body for this script
+    text += `[CUERPO]\n`;
+    for (const section of gen.script.development.sections) {
+      text += `${section.script_text}\n\n`;
+    }
+    text += `--- CORTE ---\n`;
   });
 
   return text.trim();
 }
+
+// --- Grouping helpers ---
+
+interface BatchGroup {
+  type: "batch";
+  batchId: string;
+  batchName: string;
+  items: GenerationSummary[];
+}
+
+interface DateGroup {
+  type: "date";
+  label: string;
+  items: GenerationSummary[];
+}
+
+type Group = BatchGroup | DateGroup;
 
 function getDateGroupLabel(dateStr: string): string {
   const date = new Date(dateStr);
@@ -186,20 +436,64 @@ function getDateGroupLabel(dateStr: string): string {
   return date.toLocaleDateString("es-AR", { day: "numeric", month: "long", year: "numeric" });
 }
 
-function groupByDate(gens: GenerationSummary[]): { label: string; items: GenerationSummary[] }[] {
-  const groups: { label: string; items: GenerationSummary[] }[] = [];
-  let currentLabel = "";
+function groupGenerations(gens: GenerationSummary[]): Group[] {
+  const batched = new Map<string, BatchGroup>();
+  const unbatched: GenerationSummary[] = [];
+
   for (const gen of gens) {
-    const label = getDateGroupLabel(gen.createdAt);
-    if (label !== currentLabel) {
-      groups.push({ label, items: [gen] });
-      currentLabel = label;
+    if (gen.batch) {
+      const existing = batched.get(gen.batch.id);
+      if (existing) {
+        existing.items.push(gen);
+      } else {
+        batched.set(gen.batch.id, {
+          type: "batch",
+          batchId: gen.batch.id,
+          batchName: gen.batch.name,
+          items: [gen],
+        });
+      }
     } else {
-      groups[groups.length - 1].items.push(gen);
+      unbatched.push(gen);
     }
   }
+
+  const groups: Group[] = [];
+
+  // Batch groups first, sorted by most recent item
+  const batchGroups = Array.from(batched.values()).sort((a, b) => {
+    const aDate = Math.max(...a.items.map((g) => new Date(g.createdAt).getTime()));
+    const bDate = Math.max(...b.items.map((g) => new Date(g.createdAt).getTime()));
+    return bDate - aDate;
+  });
+  groups.push(...batchGroups);
+
+  // Then ungrouped by date
+  if (unbatched.length > 0) {
+    let currentLabel = "";
+    for (const gen of unbatched) {
+      const label = getDateGroupLabel(gen.createdAt);
+      if (label !== currentLabel) {
+        groups.push({ type: "date", label, items: [gen] });
+        currentLabel = label;
+      } else {
+        (groups[groups.length - 1] as DateGroup).items.push(gen);
+      }
+    }
+  }
+
   return groups;
 }
+
+function getBatchStatusSummary(items: GenerationSummary[]): { drafts: number; recorded: number; winners: number } {
+  return {
+    drafts: items.filter((g) => !g.status || g.status === "draft").length,
+    recorded: items.filter((g) => g.status === "recorded").length,
+    winners: items.filter((g) => g.status === "winner").length,
+  };
+}
+
+// --- Main component ---
 
 export default function SessionPack({ generations: initialGenerations }: SessionPackProps) {
   const router = useRouter();
@@ -213,6 +507,10 @@ export default function SessionPack({ generations: initialGenerations }: Session
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [deleting, setDeleting] = useState(false);
   const [sortBy, setSortBy] = useState<"recent" | "oldest" | "duration" | "framework" | "status">("recent");
+  const [collapsedBatches, setCollapsedBatches] = useState<Set<string>>(new Set());
+  const [showBatchModal, setShowBatchModal] = useState(false);
+  const [renamingBatch, setRenamingBatch] = useState<{ id: string; name: string } | null>(null);
+  const [batchLoading, setBatchLoading] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setDebouncedSearch(search), 200);
@@ -228,6 +526,15 @@ export default function SessionPack({ generations: initialGenerations }: Session
     });
   }
 
+  function toggleBatchCollapse(batchId: string) {
+    setCollapsedBatches((prev) => {
+      const next = new Set(prev);
+      if (next.has(batchId)) next.delete(batchId);
+      else next.add(batchId);
+      return next;
+    });
+  }
+
   const filteredGenerations = generations
     .filter((g) => {
       if (filter !== "all" && (g.status || "draft") !== filter) return false;
@@ -239,7 +546,8 @@ export default function SessionPack({ generations: initialGenerations }: Session
         const bodyMatch = g.script.development.sections.some((s) => s.script_text.toLowerCase().includes(q));
         const platformMatch = g.script.platform_adaptation.platform.toLowerCase().includes(q);
         const formatMatch = g.script.visual_format?.format_name.toLowerCase().includes(q);
-        if (!titleMatch && !hookMatch && !frameworkMatch && !bodyMatch && !platformMatch && !formatMatch) return false;
+        const batchMatch = g.batch?.name.toLowerCase().includes(q);
+        if (!titleMatch && !hookMatch && !frameworkMatch && !bodyMatch && !platformMatch && !formatMatch && !batchMatch) return false;
       }
       return true;
     })
@@ -290,21 +598,116 @@ export default function SessionPack({ generations: initialGenerations }: Session
     }
   }, []);
 
+  const [confettiId, setConfettiId] = useState<string | null>(null);
+  const [bounceId, setBounceId] = useState<string | null>(null);
+
   function selectStatus(genId: string, newStatus: GenerationStatus) {
     setStatusDropdown(null);
     updateStatus(genId, newStatus);
+    setBounceId(genId);
+    setTimeout(() => setBounceId(null), 600);
+    if (newStatus === "winner") {
+      setConfettiId(genId);
+      setTimeout(() => setConfettiId(null), 1200);
+    }
   }
+
+  // --- Batch operations ---
+
+  const existingBatches = (() => {
+    const map = new Map<string, { id: string; name: string; count: number }>();
+    for (const g of generations) {
+      if (g.batch) {
+        const existing = map.get(g.batch.id);
+        if (existing) existing.count++;
+        else map.set(g.batch.id, { id: g.batch.id, name: g.batch.name, count: 1 });
+      }
+    }
+    return Array.from(map.values());
+  })();
+
+  async function assignBatch(batchId: string | null, batchName: string) {
+    setBatchLoading(true);
+    setShowBatchModal(false);
+    try {
+      const body: Record<string, unknown> = {
+        generationIds: Array.from(selected),
+        batchName,
+      };
+      if (batchId) body.batchId = batchId;
+
+      const res = await fetch("/api/generate/batch", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      if (!res.ok) throw new Error("Error");
+      const { batch } = await res.json();
+
+      setGenerations((prev) =>
+        prev.map((g) => selected.has(g.id) ? { ...g, batch } : g)
+      );
+      setSelected(new Set());
+      toast(`${selected.size} guion${selected.size !== 1 ? "es" : ""} agrupado${selected.size !== 1 ? "s" : ""} en "${batch.name}"`);
+    } catch {
+      toast("Error agrupando guiones", "error");
+    } finally {
+      setBatchLoading(false);
+    }
+  }
+
+  async function renameBatch(batchId: string, newName: string) {
+    setRenamingBatch(null);
+    try {
+      const genIds = generations.filter((g) => g.batch?.id === batchId).map((g) => g.id);
+      const res = await fetch("/api/generate/batch", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationIds: genIds, batchId, batchName: newName }),
+      });
+      if (!res.ok) throw new Error("Error");
+
+      setGenerations((prev) =>
+        prev.map((g) => g.batch?.id === batchId ? { ...g, batch: { id: batchId, name: newName } } : g)
+      );
+      toast(`Carpeta renombrada a "${newName}"`);
+    } catch {
+      toast("Error renombrando", "error");
+    }
+  }
+
+  async function removeBatch(generationIds: string[]) {
+    try {
+      const res = await fetch("/api/generate/batch", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationIds }),
+      });
+      if (!res.ok) throw new Error("Error");
+
+      setGenerations((prev) =>
+        prev.map((g) => generationIds.includes(g.id) ? { ...g, batch: undefined } : g)
+      );
+      toast("Guiones desagrupados");
+    } catch {
+      toast("Error desagrupando", "error");
+    }
+  }
+
+  // --- Download/copy ---
 
   function downloadPack() {
     const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
     const text = generatePackText(selectedGens);
     downloadFile(text, `pack-grabacion-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.txt`);
+    toast(`Pack descargado (${selectedGens.length} guiones)`);
   }
 
   function downloadTeleprompter() {
     const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
     const text = generateTeleprompterText(selectedGens);
     downloadFile(text, `teleprompter-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.txt`);
+    toast(`Teleprompter descargado (${selectedGens.length} guiones)`);
   }
 
   function downloadFile(text: string, filename: string) {
@@ -346,23 +749,115 @@ export default function SessionPack({ generations: initialGenerations }: Session
     }
   }
 
+  // --- Render generation card ---
+
+  function renderGenCard(gen: GenerationSummary) {
+    const status = gen.status || "draft";
+    const config = STATUS_CONFIG[status];
+    return (
+      <div
+        key={gen.id}
+        className={`relative border rounded-2xl p-6 transition-all duration-300 flex gap-4 hover-glow hover-lift ${
+          selected.has(gen.id)
+            ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20 shadow-lg shadow-purple-500/5"
+            : "border-zinc-800/40 bg-zinc-900/30 hover:bg-zinc-900/50 hover:border-zinc-700/40"
+        } ${bounceId === gen.id ? "animate-success-bounce" : ""} ${bounceId === gen.id && status !== "winner" ? "animate-success-flash" : ""}`}
+      >
+        {confettiId === gen.id && <Confetti trigger={true} />}
+        <button
+          onClick={(e) => { e.preventDefault(); toggleSelect(gen.id); }}
+          className="shrink-0 mt-1"
+        >
+          <div
+            className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${
+              selected.has(gen.id)
+                ? "bg-gradient-to-r from-purple-600 to-violet-600 border-purple-600"
+                : "border-zinc-700 hover:border-zinc-500"
+            }`}
+          >
+            {selected.has(gen.id) && (
+              <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            )}
+          </div>
+        </button>
+        <a href={`/scripts/${gen.id}`} className="flex-1 min-w-0">
+          {gen.title && (
+            <p className="text-sm font-medium text-zinc-100 mb-1 truncate">{gen.title}</p>
+          )}
+          <div className="flex items-center gap-2.5 mb-2.5 flex-wrap">
+            <span className="badge bg-zinc-800/80 text-zinc-400 border-zinc-700/50">
+              {gen.script.platform_adaptation.platform}
+            </span>
+            <span className="text-[11px] text-zinc-500 font-medium">{gen.script.total_duration_seconds}s</span>
+            <span className="text-[11px] text-zinc-500">{gen.script.development.framework_used}</span>
+            <span className="text-[11px] text-zinc-500">{gen.script.hooks.length} leads</span>
+            {gen.script.visual_format && (
+              <span className="badge bg-blue-500/10 text-blue-400 border-blue-500/20">
+                {gen.script.visual_format.format_name}
+              </span>
+            )}
+          </div>
+          <p className="text-sm text-zinc-300 truncate">
+            {gen.script.hooks[0]?.script_text.substring(0, 100)}...
+          </p>
+          <p className="text-xs text-zinc-600 mt-1">
+            <RelativeTime date={gen.createdAt} />
+          </p>
+        </a>
+        <div className="shrink-0 flex flex-col items-end gap-1">
+          <div className="relative">
+            <button
+              data-status-trigger={gen.id}
+              onClick={(e) => { e.preventDefault(); e.stopPropagation(); setStatusDropdown(statusDropdown === gen.id ? null : gen.id); }}
+              disabled={updatingStatus === gen.id}
+              className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur transition-all flex items-center gap-1 ${config.color} ${
+                updatingStatus === gen.id ? "opacity-50" : "hover:opacity-80"
+              } ${status === "winner" ? "badge-winner" : ""}`}
+            >
+              {updatingStatus === gen.id ? "..." : config.label}
+              <svg className={`w-2.5 h-2.5 transition-transform ${statusDropdown === gen.id ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            {statusDropdown === gen.id && (
+              <StatusDropdown
+                currentStatus={status}
+                onSelect={(s) => { selectStatus(gen.id, s); }}
+                onClose={() => setStatusDropdown(null)}
+                triggerRef={gen.id}
+              />
+            )}
+          </div>
+          {status === "recorded" && (
+            <span className="text-[9px] text-red-400/50">{gen.script.hooks.length} leads quemados</span>
+          )}
+          {status === "winner" && (
+            <span className="text-[9px] text-amber-400/50">{gen.script.hooks.length} leads quemados</span>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   if (generations.length === 0) return null;
+
+  const groups = groupGenerations(filteredGenerations);
 
   return (
     <>
       {/* Search bar */}
-      <div className="relative mb-4">
-        <svg className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <div className="relative mb-5">
+        <svg className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
         </svg>
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-xl pl-9 pr-3 py-2.5 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all"
-          placeholder="Buscar por titulo, hook, framework, nicho, formato..."
+          className="w-full bg-zinc-900/40 backdrop-blur border border-zinc-800/50 rounded-2xl pl-11 pr-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all duration-200"
+          placeholder="Buscar por titulo, hook, framework, nicho, formato, carpeta..."
         />
-        {search && (
+        {search ? (
           <button
             onClick={() => setSearch("")}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300"
@@ -371,6 +866,11 @@ export default function SessionPack({ generations: initialGenerations }: Session
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </button>
+        ) : (
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:flex items-center gap-0.5">
+            <kbd className="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-[10px] font-medium text-zinc-600 bg-zinc-800/40 border border-zinc-700/30 rounded-md font-mono">&#8984;</kbd>
+            <kbd className="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-[10px] font-medium text-zinc-600 bg-zinc-800/40 border border-zinc-700/30 rounded-md font-mono">K</kbd>
+          </div>
         )}
       </div>
       {search.trim() && (
@@ -380,8 +880,8 @@ export default function SessionPack({ generations: initialGenerations }: Session
       )}
 
       {/* Filter tabs + sort */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-1">
+      <div className="flex items-center justify-between mb-5">
+        <div className="flex items-center gap-1 bg-zinc-900/30 rounded-xl p-1 border border-zinc-800/30">
           {(["all", "draft", "recorded", "winner"] as const).map((f) => {
             const count = f === "all" ? generations.length : generations.filter((g) => (g.status || "draft") === f).length;
             if (count === 0 && f !== "all") return null;
@@ -390,13 +890,13 @@ export default function SessionPack({ generations: initialGenerations }: Session
               <button
                 key={f}
                 onClick={() => setFilter(f)}
-                className={`text-xs px-3 py-1.5 rounded-lg transition-all ${
+                className={`text-xs px-3.5 py-2 rounded-lg transition-all duration-200 ${
                   filter === f
-                    ? "bg-white/10 text-white font-medium"
-                    : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5"
+                    ? "bg-white/10 text-white font-medium shadow-sm"
+                    : "text-zinc-500 hover:text-zinc-300"
                 }`}
               >
-                {labels[f]} ({count})
+                {labels[f]} <span className="text-zinc-600 ml-0.5">{count}</span>
               </button>
             );
           })}
@@ -404,7 +904,7 @@ export default function SessionPack({ generations: initialGenerations }: Session
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-          className="bg-zinc-900/50 backdrop-blur border border-zinc-800/50 text-zinc-300 text-xs rounded-xl px-3 py-1.5 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all"
+          className="bg-zinc-900/40 backdrop-blur border border-zinc-800/50 text-zinc-400 text-xs rounded-xl px-3.5 py-2 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all"
         >
           <option value="recent">Mas recientes</option>
           <option value="oldest">Mas antiguos</option>
@@ -415,22 +915,19 @@ export default function SessionPack({ generations: initialGenerations }: Session
       </div>
 
       {/* Selection bar */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={selectAll}
-            className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
-          >
-            {selected.size === filteredGenerations.length ? "Deseleccionar todo" : "Seleccionar todo"}
-          </button>
-          {selected.size > 0 && (
-            <span className="text-xs text-purple-400">
+      {selected.size > 0 ? (
+        <div className="sticky top-[65px] z-40 -mx-6 px-6 py-3 mb-5 bg-zinc-950/90 backdrop-blur-2xl border-b border-purple-500/10 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={selectAll}
+              className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors"
+            >
+              {selected.size === filteredGenerations.length ? "Deseleccionar todo" : "Seleccionar todo"}
+            </button>
+            <span className="text-xs text-purple-400 font-medium">
               {selected.size} seleccionado{selected.size !== 1 ? "s" : ""}
             </span>
-          )}
-        </div>
-
-        {selected.size > 0 && (
+          </div>
           <div className="flex items-center gap-2">
             <button
               onClick={deleteSelected}
@@ -441,6 +938,17 @@ export default function SessionPack({ generations: initialGenerations }: Session
                 <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
               </svg>
               {deleting ? "Borrando..." : `Borrar (${selected.size})`}
+            </button>
+            {/* Group button */}
+            <button
+              onClick={() => setShowBatchModal(true)}
+              disabled={batchLoading}
+              className="border border-purple-500/30 hover:border-purple-500/50 hover:bg-purple-500/10 text-purple-400 hover:text-purple-300 px-3 py-1.5 rounded-xl text-xs font-medium transition-all disabled:opacity-50 flex items-center gap-1.5"
+            >
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+              </svg>
+              {batchLoading ? "..." : "Agrupar"}
             </button>
             <button
               onClick={copyPack}
@@ -459,7 +967,7 @@ export default function SessionPack({ generations: initialGenerations }: Session
             </button>
             <button
               onClick={downloadPack}
-              className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 shadow-lg shadow-purple-500/20 text-white px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
+              className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 shadow-lg shadow-purple-500/20 text-white px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
             >
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -467,121 +975,180 @@ export default function SessionPack({ generations: initialGenerations }: Session
               Descargar pack ({selected.size})
             </button>
           </div>
-        )}
-      </div>
+        </div>
+      ) : (
+        <div className="flex items-center justify-between mb-5">
+          <button
+            onClick={selectAll}
+            className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
+          >
+            Seleccionar todo
+          </button>
+        </div>
+      )}
 
-      {/* Generation list with checkboxes + status */}
-      <div className="grid gap-4">
+      {/* Generation list grouped by batch/date */}
+      <div className="grid gap-4 stagger-children">
         {filteredGenerations.length > 0 ? (
-          groupByDate(filteredGenerations).map((group) => (
-            <div key={group.label}>
-              <div className="flex items-center gap-3 mb-2 mt-2"><span className="text-xs font-medium text-zinc-500 shrink-0">{group.label}</span><div className="flex-1 h-px bg-zinc-800/50"></div></div>
-              <div className="grid gap-4">
-                {group.items.map((gen) => {
-                  const status = gen.status || "draft";
-                  const config = STATUS_CONFIG[status];
-                  return (
-                    <div
-                      key={gen.id}
-                      className={`border rounded-2xl p-5 transition-all duration-200 flex gap-4 ${
-                        selected.has(gen.id)
-                          ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20"
-                          : "border-zinc-800/50 bg-zinc-900/30 hover:bg-zinc-900/50 hover:border-zinc-700/50"
-                      }`}
+          groups.map((group) => {
+            if (group.type === "batch") {
+              const isCollapsed = collapsedBatches.has(group.batchId);
+              const summary = getBatchStatusSummary(group.items);
+              const allSelected = group.items.every((g) => selected.has(g.id));
+              const someSelected = group.items.some((g) => selected.has(g.id));
+
+              return (
+                <div key={`batch-${group.batchId}`} className="mb-2">
+                  {/* Batch folder header */}
+                  <div
+                    className="group/folder flex items-center gap-3 py-3 px-4 -mx-4 rounded-xl hover:bg-zinc-900/40 transition-all cursor-pointer"
+                    onClick={() => toggleBatchCollapse(group.batchId)}
+                  >
+                    {/* Select all in batch */}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const ids = group.items.map((g) => g.id);
+                        setSelected((prev) => {
+                          const next = new Set(prev);
+                          if (allSelected) {
+                            ids.forEach((id) => next.delete(id));
+                          } else {
+                            ids.forEach((id) => next.add(id));
+                          }
+                          return next;
+                        });
+                      }}
+                      className="shrink-0"
                     >
-                      <button
-                        onClick={(e) => { e.preventDefault(); toggleSelect(gen.id); }}
-                        className="shrink-0 mt-1"
+                      <div
+                        className={`w-4 h-4 rounded border-2 flex items-center justify-center transition-all ${
+                          allSelected
+                            ? "bg-gradient-to-r from-purple-600 to-violet-600 border-purple-600"
+                            : someSelected
+                            ? "border-purple-500/50 bg-purple-500/20"
+                            : "border-zinc-700 group-hover/folder:border-zinc-500"
+                        }`}
                       >
-                        <div
-                          className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${
-                            selected.has(gen.id)
-                              ? "bg-gradient-to-r from-purple-600 to-violet-600 border-purple-600"
-                              : "border-zinc-700 hover:border-zinc-500"
-                          }`}
-                        >
-                          {selected.has(gen.id) && (
-                            <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                            </svg>
-                          )}
-                        </div>
-                      </button>
-                      <a href={`/scripts/${gen.id}`} className="flex-1 min-w-0">
-                        {gen.title && (
-                          <p className="text-sm font-medium text-zinc-100 mb-1 truncate">{gen.title}</p>
+                        {allSelected && (
+                          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                          </svg>
                         )}
-                        <div className="flex items-center gap-3 mb-2 flex-wrap">
-                          <span className="text-xs px-2 py-0.5 rounded-full border bg-zinc-800 text-zinc-400">
-                            {gen.script.platform_adaptation.platform}
+                        {someSelected && !allSelected && (
+                          <div className="w-1.5 h-0.5 bg-purple-400 rounded-full" />
+                        )}
+                      </div>
+                    </button>
+
+                    {/* Folder icon */}
+                    <svg className={`w-4.5 h-4.5 transition-colors ${isCollapsed ? "text-zinc-600" : "text-purple-400"}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                    </svg>
+
+                    {/* Batch name + stats */}
+                    <div className="flex-1 min-w-0 flex items-center gap-3">
+                      <span className="text-sm font-medium text-zinc-200 truncate">{group.batchName}</span>
+                      <span className="text-[10px] text-zinc-600">{group.items.length} guiones</span>
+                      <div className="flex items-center gap-2">
+                        {summary.drafts > 0 && (
+                          <span className="flex items-center gap-1 text-[10px] text-zinc-500">
+                            <span className="w-1.5 h-1.5 rounded-full bg-zinc-500" />{summary.drafts}
                           </span>
-                          <span className="text-xs text-zinc-500">{gen.script.total_duration_seconds}s</span>
-                          <span className="text-xs text-zinc-500">{gen.script.development.framework_used}</span>
-                          <span className="text-xs text-zinc-500">{gen.script.hooks.length} leads</span>
-                          {gen.script.visual_format && (
-                            <span className="text-xs px-2 py-0.5 rounded-full border bg-blue-500/10 text-blue-400 border-blue-500/20 backdrop-blur">
-                              {gen.script.visual_format.format_name}
-                            </span>
-                          )}
-                        </div>
-                        <p className="text-sm text-zinc-300 truncate">
-                          {gen.script.hooks[0]?.script_text.substring(0, 100)}...
-                        </p>
-                        <p className="text-xs text-zinc-600 mt-1">
-                          {new Date(gen.createdAt).toLocaleDateString("es-AR")} &middot; {new Date(gen.createdAt).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" })}
-                        </p>
-                      </a>
-                      <div className="shrink-0 flex flex-col items-end gap-1">
-                        <div className="relative">
-                          <button
-                            onClick={(e) => { e.preventDefault(); e.stopPropagation(); setStatusDropdown(statusDropdown === gen.id ? null : gen.id); }}
-                            disabled={updatingStatus === gen.id}
-                            className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur transition-all flex items-center gap-1 ${config.color} ${
-                              updatingStatus === gen.id ? "opacity-50" : "hover:opacity-80"
-                            }`}
-                          >
-                            {updatingStatus === gen.id ? "..." : config.label}
-                            <svg className={`w-2.5 h-2.5 transition-transform ${statusDropdown === gen.id ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                          </button>
-                          {statusDropdown === gen.id && (
-                            <>
-                              <div className="fixed inset-0 z-40" onClick={() => setStatusDropdown(null)} />
-                              <div className="absolute top-full right-0 mt-1 z-50 bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-xl overflow-hidden shadow-xl min-w-[120px]">
-                                {(["draft", "recorded", "winner"] as GenerationStatus[]).map((s) => (
-                                  <button
-                                    key={s}
-                                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); selectStatus(gen.id, s); }}
-                                    className={`w-full text-left text-[10px] px-3 py-2 transition-colors flex items-center gap-2 ${
-                                      s === status ? "bg-white/10 text-white" : "text-zinc-400 hover:bg-white/[0.04] hover:text-zinc-200"
-                                    }`}
-                                  >
-                                    <span className={`w-1.5 h-1.5 rounded-full ${s === "draft" ? "bg-zinc-500" : s === "recorded" ? "bg-green-400" : "bg-amber-400"}`} />
-                                    {STATUS_CONFIG[s].label}
-                                  </button>
-                                ))}
-                              </div>
-                            </>
-                          )}
-                        </div>
-                        {status === "recorded" && (
-                          <span className="text-[9px] text-red-400/50">{gen.script.hooks.length} leads quemados</span>
                         )}
-                        {status === "winner" && (
-                          <span className="text-[9px] text-amber-400/50">{gen.script.hooks.length} leads quemados</span>
+                        {summary.recorded > 0 && (
+                          <span className="flex items-center gap-1 text-[10px] text-green-400/70">
+                            <span className="w-1.5 h-1.5 rounded-full bg-green-500" />{summary.recorded}
+                          </span>
+                        )}
+                        {summary.winners > 0 && (
+                          <span className="flex items-center gap-1 text-[10px] text-amber-400/70">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />{summary.winners}
+                          </span>
                         )}
                       </div>
                     </div>
-                  );
-                })}
+
+                    {/* Actions */}
+                    <div className="flex items-center gap-1 opacity-0 group-hover/folder:opacity-100 transition-opacity">
+                      <button
+                        onClick={(e) => { e.stopPropagation(); setRenamingBatch({ id: group.batchId, name: group.batchName }); }}
+                        className="p-1.5 rounded-lg hover:bg-zinc-800/50 text-zinc-500 hover:text-zinc-300 transition-all"
+                        title="Renombrar"
+                      >
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Z" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (confirm(`¿Desagrupar "${group.batchName}"? Los ${group.items.length} guiones van a quedar sueltos.`)) {
+                            removeBatch(group.items.map((g) => g.id));
+                          }
+                        }}
+                        className="p-1.5 rounded-lg hover:bg-red-500/10 text-zinc-500 hover:text-red-400 transition-all"
+                        title="Desagrupar carpeta"
+                      >
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+
+                    {/* Chevron */}
+                    <svg className={`w-4 h-4 text-zinc-600 transition-transform duration-200 ${isCollapsed ? "-rotate-90" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+
+                  {/* Batch items */}
+                  {!isCollapsed && (
+                    <div className="grid gap-3 pl-4 border-l-2 border-purple-500/10 ml-2 mt-1 mb-4">
+                      {group.items.map(renderGenCard)}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            // Date group (ungrouped)
+            return (
+              <div key={`date-${group.label}`}>
+                <div className="section-divider mb-3 mt-4">
+                  <span className="text-[10px] uppercase tracking-[0.15em] font-medium text-zinc-500 shrink-0">{group.label}</span>
+                </div>
+                <div className="grid gap-4">
+                  {group.items.map(renderGenCard)}
+                </div>
               </div>
-            </div>
-          ))
+            );
+          })
         ) : (
           <div className="text-center py-12 text-zinc-600 text-sm">
             {debouncedSearch ? "Sin resultados para esta busqueda" : "No hay guiones con este filtro"}
           </div>
         )}
       </div>
+
+      {/* Batch modal */}
+      {showBatchModal && (
+        <BatchModal
+          onClose={() => setShowBatchModal(false)}
+          onSubmit={assignBatch}
+          existingBatches={existingBatches}
+          selectedCount={selected.size}
+        />
+      )}
+
+      {/* Rename batch modal */}
+      {renamingBatch && (
+        <RenameBatchModal
+          batchName={renamingBatch.name}
+          onClose={() => setRenamingBatch(null)}
+          onSubmit={(name) => renameBatch(renamingBatch.id, name)}
+        />
+      )}
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { generateScript, type BriefInput } from "@/lib/ai/generate";
 import { saveBrief, saveGeneration, getProject, getProjectBrandText } from "@/lib/storage/local";
+import { generateAutoTitle } from "@/lib/auto-title";
 import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
@@ -11,6 +12,7 @@ export async function POST(req: NextRequest) {
     let targetAudience = body.targetAudience;
     let brandTone = body.brandTone;
     let brandDocument: string | undefined;
+    let generationRules: string | undefined;
     const projectId: string | undefined = body.projectId;
 
     // If projectId provided, load project data as defaults
@@ -23,6 +25,7 @@ export async function POST(req: NextRequest) {
       targetAudience = targetAudience || project.targetAudience;
       brandTone = brandTone || project.brandTone;
       brandDocument = getProjectBrandText(project);
+      generationRules = project.generationRules;
     }
 
     const brief: BriefInput = {
@@ -34,6 +37,7 @@ export async function POST(req: NextRequest) {
       additionalNotes: body.additionalNotes,
       references: body.references,
       brandDocument,
+      generationRules,
     };
 
     if (!brief.productDescription || !brief.targetAudience) {
@@ -44,20 +48,23 @@ export async function POST(req: NextRequest) {
     }
 
     const briefId = crypto.randomUUID();
+    const { generationRules: _rules, ...briefForStorage } = brief;
     await saveBrief({
       id: briefId,
       projectId,
-      ...brief,
+      ...briefForStorage,
       createdAt: new Date().toISOString(),
     });
 
     const script = await generateScript(brief);
 
     const generationId = crypto.randomUUID();
+    const title = generateAutoTitle(script, brief.additionalNotes);
     await saveGeneration({
       id: generationId,
       briefId,
       projectId,
+      title,
       script,
       createdAt: new Date().toISOString(),
     });
@@ -66,6 +73,7 @@ export async function POST(req: NextRequest) {
       id: generationId,
       briefId,
       projectId,
+      title,
       script,
     });
   } catch (error) {

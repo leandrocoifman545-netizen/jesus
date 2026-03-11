@@ -7,7 +7,7 @@ import {
   type DevelopmentSection,
 } from "./schemas/script-output";
 import { type ReferenceAnalysis } from "./schemas/reference-analysis";
-import { listReferences } from "../storage/local";
+import { listReferences, listGenerations, getBurnedLeads } from "../storage/local";
 
 export interface BriefInput {
   productDescription: string;
@@ -18,6 +18,7 @@ export interface BriefInput {
   additionalNotes?: string;
   references?: string[];
   brandDocument?: string;
+  generationRules?: string; // project-specific rules (overrides generic system prompt where they conflict)
 }
 
 const PLATFORM_LABELS: Record<string, string> = {
@@ -169,7 +170,7 @@ function buildBriefContext(brief: BriefInput): string {
     prompt += `\n\n**Plataforma:** Elegí la plataforma más apropiada (TikTok, Instagram Reels o YouTube Shorts) según el producto y la audiencia.`;
   }
 
-  prompt += `\n\n**Duración Máxima:** 60 segundos (elegí la duración óptima según la complejidad del producto y la plataforma)`;
+  prompt += `\n\n**Duración objetivo:** 60 a 90 segundos (elegí la duración óptima según la complejidad del producto, apuntá a 60-90s para desarrollar bien el mensaje)`;
 
   if (brief.brandDocument) {
     prompt += `\n\n## DOCUMENTO DE MARCA (información adicional del cliente)\n${brief.brandDocument}`;
@@ -263,11 +264,52 @@ ${hookExamples.map((h) => `- ${h}`).join("\n")}`;
   return section;
 }
 
+async function buildWinnerExamples(): Promise<string> {
+  try {
+    const generations = await listGenerations();
+    const winners = generations.filter((g) => g.status === "winner").slice(0, 3);
+    if (winners.length === 0) return "";
+
+    let section = `\n\n## GUIONES GANADORES (winners reales — usá como referencia de calidad y estilo)\n`;
+    for (const w of winners) {
+      const hooks = w.script.hooks.slice(0, 2).map((h) => `"${h.script_text}"`).join(" | ");
+      const body = w.script.development.sections.map((s) => s.script_text).join(" ");
+      section += `\n### Winner: ${w.title || "Sin título"}`;
+      if (w.sessionNotes) section += ` — Notas: ${w.sessionNotes}`;
+      section += `\nLeads: ${hooks}\nCuerpo: ${body.slice(0, 300)}${body.length > 300 ? "..." : ""}\n`;
+    }
+    return section;
+  } catch {
+    return "";
+  }
+}
+
+async function buildBurnedLeadsContext(): Promise<string> {
+  try {
+    const burned = await getBurnedLeads();
+    if (burned.length === 0) return "";
+
+    const leadTexts = burned.slice(-30).map((l) => `- "${l.text.slice(0, 80)}${l.text.length > 80 ? "..." : ""}"`).join("\n");
+    return `\n\n## LEADS QUEMADOS (NO generar leads parecidos a estos — ya se usaron)
+${leadTexts}
+
+IMPORTANTE: No generar leads con el mismo ángulo + misma estructura que los quemados. Cada lead nuevo debe ser original.`;
+  } catch {
+    return "";
+  }
+}
+
 async function buildUserPrompt(brief: BriefInput): Promise<string> {
   let prompt = buildBriefContext(brief);
 
   const refs = await listReferences();
   prompt += buildLearnedPatterns(refs);
+
+  // Inject winner examples as quality reference
+  prompt += await buildWinnerExamples();
+
+  // Inject burned leads to avoid repetition
+  prompt += await buildBurnedLeadsContext();
 
   const platformLabel = brief.platform ? (PLATFORM_LABELS[brief.platform] || brief.platform) : "la plataforma elegida";
 
@@ -281,7 +323,7 @@ IMPORTANTE: Los hooks deben ser INDEPENDIENTES del cuerpo. Cualquier hook debe p
 
 Adapta todo al formato nativo de ${platformLabel} y al público objetivo especificado.
 ${brief.brandTone ? `Respeta estrictamente el tono de marca: "${brief.brandTone}".` : "Elegí el tono más apropiado según el producto y la audiencia."}
-Decidí la duración óptima del guión según la complejidad del brief. Máximo absoluto: 60 segundos.
+Apuntá a una duración de entre 60 y 90 segundos. Esto permite desarrollar bien el mensaje sin apurar.
 
 ${SCRIPT_SCHEMA_DESC}
 
@@ -327,6 +369,7 @@ async function callClaude(
   userPrompt: string,
   learnedPatterns?: string,
   maxTokens = 16384,
+  generationRules?: string,
 ): Promise<unknown> {
   const client = getAnthropicClient();
 
@@ -337,6 +380,15 @@ async function callClaude(
       cache_control: { type: "ephemeral" },
     },
   ];
+
+  // Project-specific generation rules (highest priority — overrides generic system prompt)
+  if (generationRules) {
+    systemBlocks.push({
+      type: "text",
+      text: `## REGLAS DEL PROYECTO (PRIORIDAD MÁXIMA — si hay conflicto con las reglas genéricas, estas GANAN)\n\n${generationRules}`,
+      cache_control: { type: "ephemeral" },
+    });
+  }
 
   // Learned patterns as separate cached block (changes only when references change)
   if (learnedPatterns) {
@@ -363,6 +415,56 @@ async function callClaude(
   return extractJSON(textBlock.text);
 }
 
+// --- Post-generation validation ---
+
+interface ValidationResult {
+  passed: boolean;
+  issues: string[];
+}
+
+async function validateScript(script: ScriptOutput, rules?: string): Promise<ValidationResult> {
+  if (!rules) return { passed: true, issues: [] };
+
+  try {
+    const client = getAnthropicClient();
+    const scriptJSON = JSON.stringify(script, null, 2);
+
+    const response = await client.messages.create({
+      model: CLAUDE_MODEL_FAST,
+      max_tokens: 1024,
+      system: [{ type: "text", text: "Sos un validador de guiones. Respondés SOLO con JSON." }],
+      messages: [{
+        role: "user",
+        content: `Validá si este guion cumple con las reglas del proyecto. Revisá SOLO estas cosas:
+1. ¿Los hooks/leads tienen 2-3 oraciones (no son frases sueltas de 5-10 palabras)?
+2. ¿Usa voseo argentino ("tenés", "podés") y NUNCA "tú"?
+3. ¿Tiene al menos 1 muletilla de Jesús ("La realidad es que...", "¿Me explico?", "Básicamente", "¿Me siguen?", "¿Viste?")?
+4. ¿Tiene un re-hook si dura más de 20 segundos?
+5. ¿Tiene al menos 3 números concretos (precios, cantidades, tiempos)?
+6. ¿NO usa "trabajos" (debe decir "negocios")?
+7. ¿NO usa porcentajes inventados en hooks?
+
+GUION:
+${scriptJSON}
+
+REGLAS:
+${rules.slice(0, 2000)}
+
+Responde con JSON: {"passed": true/false, "issues": ["problema 1", "problema 2"]}
+Solo marcá passed=false si hay problemas GRAVES (tú en vez de vos, hooks de 1 frase, sin números). Problemas menores = passed=true con issues informativos.`,
+      }],
+      temperature: 0.1,
+    });
+
+    const textBlock = response.content.find((b) => b.type === "text");
+    if (!textBlock || textBlock.type !== "text") return { passed: true, issues: [] };
+    return extractJSON(textBlock.text) as ValidationResult;
+  } catch {
+    // Validation failure shouldn't block generation
+    return { passed: true, issues: [] };
+  }
+}
+
 // --- Main generation functions (Claude) ---
 
 export async function generateScript(brief: BriefInput): Promise<ScriptOutput> {
@@ -370,7 +472,20 @@ export async function generateScript(brief: BriefInput): Promise<ScriptOutput> {
   const refs = await listReferences();
   const patterns = buildLearnedPatterns(refs);
   const promptWithoutPatterns = prompt.replace(patterns, "");
-  return callClaude(promptWithoutPatterns, patterns || undefined) as Promise<ScriptOutput>;
+
+  let script = await callClaude(promptWithoutPatterns, patterns || undefined, 16384, brief.generationRules) as ScriptOutput;
+
+  // Auto-validate and retry once if critical issues found
+  if (brief.generationRules) {
+    const validation = await validateScript(script, brief.generationRules);
+    if (!validation.passed) {
+      console.log("[validate] Issues found, regenerating:", validation.issues);
+      const fixPrompt = promptWithoutPatterns + `\n\n## CORRECCIONES OBLIGATORIAS\nLa generación anterior tenía estos problemas. Corregí TODOS:\n${validation.issues.map((i) => `- ${i}`).join("\n")}`;
+      script = await callClaude(fixPrompt, patterns || undefined, 16384, brief.generationRules) as ScriptOutput;
+    }
+  }
+
+  return script;
 }
 
 export async function generateScriptStream(
@@ -390,6 +505,15 @@ export async function generateScriptStream(
       cache_control: { type: "ephemeral" },
     },
   ];
+
+  // Project-specific generation rules (highest priority)
+  if (brief.generationRules) {
+    systemBlocks.push({
+      type: "text",
+      text: `## REGLAS DEL PROYECTO (PRIORIDAD MÁXIMA — si hay conflicto con las reglas genéricas, estas GANAN)\n\n${brief.generationRules}`,
+      cache_control: { type: "ephemeral" },
+    });
+  }
 
   if (patterns) {
     systemBlocks.push({
@@ -416,7 +540,20 @@ export async function generateScriptStream(
     }
   }
 
-  return extractJSON(fullText) as ScriptOutput;
+  let script = extractJSON(fullText) as ScriptOutput;
+
+  // Auto-validate streamed output and retry if critical issues
+  if (brief.generationRules) {
+    const validation = await validateScript(script, brief.generationRules);
+    if (!validation.passed) {
+      console.log("[validate-stream] Issues found, regenerating:", validation.issues);
+      onChunk("\n\n--- VALIDANDO Y CORRIGIENDO ---\n\n");
+      const fixPrompt = promptWithoutPatterns + `\n\n## CORRECCIONES OBLIGATORIAS\nLa generación anterior tenía estos problemas. Corregí TODOS:\n${validation.issues.map((i) => `- ${i}`).join("\n")}`;
+      script = await callClaude(fixPrompt, patterns || undefined, 16384, brief.generationRules) as ScriptOutput;
+    }
+  }
+
+  return script;
 }
 
 export async function analyzeTranscript(transcript: string): Promise<ReferenceAnalysis> {
@@ -475,11 +612,13 @@ export async function generateMoreHooks(
     .join("\n");
 
   const startNumber = existingHooks.length + 1;
+  const burnedContext = await buildBurnedLeadsContext();
 
   const prompt = `${buildBriefContext(brief)}
 
 ## HOOKS EXISTENTES (NO repetir tipos ni ideas similares)
 ${existingList}
+${burnedContext}
 
 ## INSTRUCCIÓN
 Genera ${count} hooks NUEVOS para el mismo guión, numerados del ${startNumber} al ${startNumber + count - 1}.
@@ -494,7 +633,7 @@ ${HOOKS_SCHEMA_DESC}
 
 Responde ÚNICAMENTE con el JSON.`;
 
-  const parsed = await callClaude(prompt, undefined, 8192) as { hooks: Hook[] };
+  const parsed = await callClaude(prompt, undefined, 8192, brief.generationRules) as { hooks: Hook[] };
   return parsed.hooks;
 }
 
@@ -531,7 +670,7 @@ ${SECTION_SCHEMA_DESC}
 
 Responde ÚNICAMENTE con el JSON.`;
 
-  return callClaude(prompt, undefined, 2048) as Promise<DevelopmentSection>;
+  return callClaude(prompt, undefined, 2048, brief.generationRules) as Promise<DevelopmentSection>;
 }
 
 export async function regenerateCTA(
@@ -567,7 +706,7 @@ ${CTA_SCHEMA_DESC}
 
 Responde ÚNICAMENTE con el JSON.`;
 
-  return callClaude(prompt, undefined, 1024) as Promise<ScriptOutput["cta"]>;
+  return callClaude(prompt, undefined, 1024, brief.generationRules) as Promise<ScriptOutput["cta"]>;
 }
 
 export async function regenerateHook(
@@ -607,7 +746,7 @@ ${SINGLE_HOOK_SCHEMA_DESC}
 
 Responde ÚNICAMENTE con el JSON.`;
 
-  return callClaude(prompt, undefined, 2048) as Promise<Hook>;
+  return callClaude(prompt, undefined, 2048, brief.generationRules) as Promise<Hook>;
 }
 
 // --- Gemini-only functions (audio transcription) ---

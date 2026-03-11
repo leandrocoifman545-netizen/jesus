@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { generateMoreHooks } from "@/lib/ai/generate";
-import { getGeneration, getBrief, saveGeneration } from "@/lib/storage/local";
+import { getGeneration, getBrief, saveGeneration, getProject } from "@/lib/storage/local";
 
 export async function POST(req: NextRequest) {
   try {
@@ -24,8 +24,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Brief no encontrado" }, { status: 404 });
     }
 
+    // Load project-specific generation rules
+    let generationRules: string | undefined;
+    if (generation.projectId) {
+      const project = await getProject(generation.projectId);
+      if (project?.generationRules) generationRules = project.generationRules;
+    }
+
     const newHooks = await generateMoreHooks(
-      { ...brief, hookCount: count },
+      { ...brief, hookCount: count, generationRules },
       generation.script.hooks,
       count,
     );
