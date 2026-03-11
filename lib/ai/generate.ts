@@ -8,6 +8,7 @@ import {
 } from "./schemas/script-output";
 import { type ReferenceAnalysis } from "./schemas/reference-analysis";
 import { listReferences, listGenerations, getBurnedLeads } from "../storage/local";
+import { computeCoverage } from "../coverage";
 
 export interface BriefInput {
   productDescription: string;
@@ -19,6 +20,7 @@ export interface BriefInput {
   references?: string[];
   brandDocument?: string;
   generationRules?: string; // project-specific rules (overrides generic system prompt where they conflict)
+  projectId?: string; // used to filter winners by project + coverage gaps
 }
 
 const PLATFORM_LABELS: Record<string, string> = {
@@ -193,91 +195,169 @@ function buildBriefContext(brief: BriefInput): string {
 function buildLearnedPatterns(refs: { analysis: ReferenceAnalysis }[]): string {
   if (refs.length === 0) return "";
 
-  const hookTypes = refs.map((r) => r.analysis.hook.type);
-  const hookTypeCounts: Record<string, number> = {};
-  hookTypes.forEach((t) => { hookTypeCounts[t] = (hookTypeCounts[t] || 0) + 1; });
-  const topHookTypes = Object.entries(hookTypeCounts)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 3)
-    .map(([t, c]) => `${t} (${c}x)`);
-
-  const frameworks = refs.map((r) => r.analysis.structure.framework);
-  const fwCounts: Record<string, number> = {};
-  frameworks.forEach((f) => { fwCounts[f] = (fwCounts[f] || 0) + 1; });
-  const topFrameworks = Object.entries(fwCounts)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 2)
-    .map(([f, c]) => `${f} (${c}x)`);
-
+  // Extract principles, not structures to copy
   const allPatterns = refs.flatMap((r) => r.analysis.patterns_to_replicate);
-  const uniquePatterns = [...new Set(allPatterns)].slice(0, 10);
+  const uniquePatterns = [...new Set(allPatterns)].slice(0, 12);
 
   const allStrengths = refs.flatMap((r) => r.analysis.strengths);
   const uniqueStrengths = [...new Set(allStrengths)].slice(0, 8);
 
-  const tones = refs.map((r) => r.analysis.tone.primary_tone);
-  const uniqueTones = [...new Set(tones)].slice(0, 5);
-
-  const avgDuration = Math.round(
-    refs.reduce((sum, r) => sum + r.analysis.estimated_total_duration_seconds, 0) / refs.length
-  );
-
   const keyPhrases = [...new Set(refs.flatMap((r) => r.analysis.tone.key_phrases))].slice(0, 10);
 
-  const ugcCount = refs.filter((r) => r.analysis.tone.ugc_style).length;
   const rehookCount = refs.filter((r) => r.analysis.structure.has_rehook).length;
-  const urgencyCount = refs.filter((r) => r.analysis.cta.has_urgency).length;
-  const dualCtaCount = refs.filter((r) => r.analysis.cta.is_dual).length;
+  const ugcCount = refs.filter((r) => r.analysis.tone.ugc_style).length;
 
-  let section = `\n\n## PATRONES APRENDIDOS DE ${refs.length} GUIONES GANADORES
+  // Stats for context only (NOT as instructions to copy)
+  const hookTypeCounts: Record<string, number> = {};
+  refs.forEach((r) => { hookTypeCounts[r.analysis.hook.type] = (hookTypeCounts[r.analysis.hook.type] || 0) + 1; });
+  const frameworkCounts: Record<string, number> = {};
+  refs.forEach((r) => { frameworkCounts[r.analysis.structure.framework] = (frameworkCounts[r.analysis.structure.framework] || 0) + 1; });
 
-Estos patrones fueron extraídos de guiones que ya funcionaron. APLICALOS al generar el nuevo guión.
+  // Identify over-represented combos to AVOID repeating
+  const topFramework = Object.entries(frameworkCounts).sort((a, b) => b[1] - a[1])[0];
+  const topHookType = Object.entries(hookTypeCounts).sort((a, b) => b[1] - a[1])[0];
 
-### Hooks que funcionan
-- Tipos más usados: ${topHookTypes.join(", ")}
-- Duración promedio de hook: ${Math.round(refs.reduce((s, r) => s + r.analysis.hook.estimated_seconds, 0) / refs.length)}s
+  let section = `\n\n## PRINCIPIOS VALIDADOS POR ${refs.length} ADS GANADORES
 
-### Estructura
-- Frameworks más usados: ${topFrameworks.join(", ")}
-- ${rehookCount}/${refs.length} guiones usan re-hook
-- Duración promedio total: ${avgDuration}s
+Los siguientes PRINCIPIOS fueron extraídos de ads reales con buen performance.
+Aplicalos como guía, pero NO copies la estructura ni el ángulo exacto de los winners.
+Cada guion nuevo debe tener su PROPIA combinación de framework + hook type + nicho.
 
-### Tono
-- Tonos detectados: ${uniqueTones.join(", ")}
-- ${ugcCount}/${refs.length} son estilo UGC
-- Frases clave recurrentes: ${keyPhrases.map((p) => `"${p}"`).join(", ")}
+### Principios de retención (aplicar siempre)
+- ${rehookCount}/${refs.length} winners usan re-hook → incluí re-hook en videos de 20s+
+- ${ugcCount}/${refs.length} son estilo UGC conversacional → el tono mentor/directo funciona
+- Frases que conectan: ${keyPhrases.map((p) => `"${p}"`).join(", ")}
 
-### CTA
-- ${urgencyCount}/${refs.length} usan urgencia
-- ${dualCtaCount}/${refs.length} usan CTA dual (verbal + visual)
-
-### Fortalezas a replicar
+### Principios de estructura (aplicar el concepto, no la estructura exacta)
 ${uniqueStrengths.map((s) => `- ${s}`).join("\n")}
 
-### Patrones específicos a aplicar
-${uniquePatterns.map((p) => `- ${p}`).join("\n")}`;
+### Principios de copywriting (aplicar creativamente)
+${uniquePatterns.map((p) => `- ${p}`).join("\n")}
 
-  const hookExamples = refs.slice(0, 3).map((r) => `"${r.analysis.hook.text}" (${r.analysis.hook.type})`);
-  section += `\n\n### Ejemplos de hooks ganadores (inspírate, no copies)
-${hookExamples.map((h) => `- ${h}`).join("\n")}`;
+### DIVERSIDAD OBLIGATORIA
+Los winners analizados tienden a usar ${topFramework ? topFramework[0] : "un mismo framework"} y hooks tipo ${topHookType ? topHookType[0] : "similar"}.
+Para evitar saturar la audiencia, PRIORIZÁ frameworks y hook types DIFERENTES a los más usados en winners.
+Usá los principios de arriba pero con combinaciones frescas.`;
 
   return section;
 }
 
-async function buildWinnerExamples(): Promise<string> {
+async function buildWinnerExamples(projectId?: string): Promise<string> {
   try {
     const generations = await listGenerations();
-    const winners = generations.filter((g) => g.status === "winner").slice(0, 3);
-    if (winners.length === 0) return "";
+    const now = Date.now();
+    const ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
+    const ONE_MONTH = 30 * 24 * 60 * 60 * 1000;
 
-    let section = `\n\n## GUIONES GANADORES (winners reales — usá como referencia de calidad y estilo)\n`;
-    for (const w of winners) {
-      const hooks = w.script.hooks.slice(0, 2).map((h) => `"${h.script_text}"`).join(" | ");
-      const body = w.script.development.sections.map((s) => s.script_text).join(" ");
-      section += `\n### Winner: ${w.title || "Sin título"}`;
-      if (w.sessionNotes) section += ` — Notas: ${w.sessionNotes}`;
-      section += `\nLeads: ${hooks}\nCuerpo: ${body.slice(0, 300)}${body.length > 300 ? "..." : ""}\n`;
+    // All winners
+    const allWinners = generations.filter((g) => g.status === "winner");
+    if (allWinners.length === 0) return "";
+
+    // Separate by project: same project = full context, other projects = principles only
+    const sameProject = projectId
+      ? allWinners.filter((g) => g.projectId === projectId)
+      : allWinners;
+    const otherProjects = projectId
+      ? allWinners.filter((g) => g.projectId && g.projectId !== projectId)
+      : [];
+
+    let section = `\n\n## WINNERS INTERNOS (guiones nuestros que funcionaron en ads)\n`;
+    section += `IMPORTANTE: Estos son referencia de CALIDAD y TONO, no moldes para copiar.\n`;
+    section += `Aplicá los principios pero con ángulo, nicho y estructura DIFERENTES.\n`;
+
+    // Same-project winners with temporal decay
+    if (sameProject.length > 0) {
+      section += `\n### Winners de este proyecto (máxima relevancia)\n`;
+      const sorted = sameProject.sort(
+        (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+      );
+
+      for (const w of sorted.slice(0, 5)) {
+        const age = now - new Date(w.createdAt).getTime();
+        let freshness: string;
+        if (age < ONE_WEEK) freshness = "RECIENTE — principios + estilo muy relevantes";
+        else if (age < ONE_MONTH) freshness = "2-4 semanas — principios relevantes, no repetir estructura";
+        else freshness = "antiguo — solo principios generales aplican";
+
+        const hooks = w.script.hooks.slice(0, 2).map((h) => `"${h.script_text.slice(0, 60)}..." (${h.hook_type})`).join(" | ");
+        const framework = w.script.development.framework_used;
+
+        section += `\n**${w.title || "Sin título"}** [${freshness}]`;
+        section += `\n- Framework: ${framework} | ${w.script.total_duration_seconds}s`;
+        section += `\n- Leads usados: ${hooks}`;
+        if (w.sessionNotes) section += `\n- Qué funcionó: ${w.sessionNotes}`;
+        if (w.metrics?.notes) section += `\n- Métricas: ${w.metrics.notes}`;
+
+        // Only include full body for recent winners
+        if (age < ONE_WEEK) {
+          const body = w.script.development.sections.map((s) => s.script_text).join(" ");
+          section += `\n- Cuerpo: ${body.slice(0, 250)}${body.length > 250 ? "..." : ""}`;
+        }
+        section += `\n- ⚠️ NO repetir: ${framework} + ${w.script.hooks[0]?.hook_type}. Usá otra combinación.\n`;
+      }
     }
+
+    // Other-project winners: only principles
+    if (otherProjects.length > 0) {
+      section += `\n### Principios de winners de otros proyectos (solo referencia de tono/retención)\n`;
+      const otherSorted = otherProjects.slice(0, 3);
+      for (const w of otherSorted) {
+        section += `- ${w.title || "Sin título"}: ${w.script.development.framework_used}, tono ${w.script.platform_adaptation.content_style || "conversacional"}`;
+        if (w.sessionNotes) section += ` — ${w.sessionNotes}`;
+        section += `\n`;
+      }
+    }
+
+    return section;
+  } catch {
+    return "";
+  }
+}
+
+async function buildCoverageGaps(projectId?: string): Promise<string> {
+  try {
+    const coverage = await computeCoverage();
+
+    // Only show gaps if there's enough data to be meaningful
+    if (coverage.totalGenerations < 5) return "";
+
+    const gaps = coverage.gaps;
+
+    // Find over-represented frameworks and hook types
+    const fwEntries = Object.entries(coverage.byFramework).sort((a, b) => b[1] - a[1]);
+    const hookEntries = Object.entries(coverage.byLeadType).sort((a, b) => b[1] - a[1]);
+    const overusedFw = fwEntries.filter(([, count]) => count > coverage.totalGenerations * 0.3);
+    const underusedFw = fwEntries.filter(([, count]) => count <= 2).map(([name]) => name);
+    const underusedHooks = hookEntries.filter(([, count]) => count <= 2).map(([name]) => name);
+
+    if (gaps.length === 0 && overusedFw.length === 0 && underusedFw.length === 0) return "";
+
+    let section = `\n\n## COBERTURA ACTUAL — PRIORIZÁ LO QUE FALTA\n`;
+
+    if (overusedFw.length > 0) {
+      section += `\n### Frameworks sobre-representados (EVITAR salvo que el brief lo requiera)\n`;
+      for (const [name, count] of overusedFw) {
+        section += `- ${name}: usado ${count}/${coverage.totalGenerations} veces → NO usar salvo justificación\n`;
+      }
+    }
+
+    if (underusedFw.length > 0) {
+      section += `\n### Frameworks sub-representados (PRIORIZAR)\n`;
+      section += `- Probá: ${underusedFw.join(", ")}\n`;
+    }
+
+    if (underusedHooks.length > 0) {
+      section += `\n### Hook types poco usados (PRIORIZAR)\n`;
+      section += `- Probá: ${underusedHooks.join(", ")}\n`;
+    }
+
+    if (gaps.length > 0) {
+      section += `\n### Gaps detectados\n`;
+      for (const gap of gaps.slice(0, 8)) {
+        section += `- ${gap}\n`;
+      }
+    }
+
     return section;
   } catch {
     return "";
@@ -305,8 +385,11 @@ async function buildUserPrompt(brief: BriefInput): Promise<string> {
   const refs = await listReferences();
   prompt += buildLearnedPatterns(refs);
 
-  // Inject winner examples as quality reference
-  prompt += await buildWinnerExamples();
+  // Inject winner examples (filtered by project, with decay)
+  prompt += await buildWinnerExamples(brief.projectId);
+
+  // Inject coverage gaps to drive diversity
+  prompt += await buildCoverageGaps(brief.projectId);
 
   // Inject burned leads to avoid repetition
   prompt += await buildBurnedLeadsContext();
@@ -324,6 +407,8 @@ IMPORTANTE: Los hooks deben ser INDEPENDIENTES del cuerpo. Cualquier hook debe p
 Adapta todo al formato nativo de ${platformLabel} y al público objetivo especificado.
 ${brief.brandTone ? `Respeta estrictamente el tono de marca: "${brief.brandTone}".` : "Elegí el tono más apropiado según el producto y la audiencia."}
 Apuntá a una duración de entre 60 y 90 segundos. Esto permite desarrollar bien el mensaje sin apurar.
+
+REGLA DE DIVERSIDAD: Si hay winners o referencias cargadas, aplicá sus PRINCIPIOS (retención, tono, números concretos) pero NUNCA copies la misma combinación de framework + hook type + nicho. Cada guion debe ser único.
 
 ${SCRIPT_SCHEMA_DESC}
 

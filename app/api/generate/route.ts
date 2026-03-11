@@ -38,6 +38,7 @@ export async function POST(req: NextRequest) {
       references: body.references,
       brandDocument,
       generationRules,
+      projectId,
     };
 
     if (!brief.productDescription || !brief.targetAudience) {
@@ -48,7 +49,7 @@ export async function POST(req: NextRequest) {
     }
 
     const briefId = crypto.randomUUID();
-    const { generationRules: _rules, ...briefForStorage } = brief;
+    const { generationRules: _rules, projectId: _pid, ...briefForStorage } = brief;
     await saveBrief({
       id: briefId,
       projectId,
