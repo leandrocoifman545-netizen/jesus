@@ -1,0 +1,62 @@
+[
+  {
+    "id": "c1340",
+    "fileReference": "C1340",
+    "name": "Mateo",
+    "age": 21,
+    "location": "Córdoba, Mina Clavero",
+    "situationBefore": "Empleado de comercio, egresado del colegio técnico, probó muchos trabajos presenciales",
+    "result": "Empezó a tomar acción desde el día 1, armando su primer negocio digital",
+    "keyQuote": "No tengan miedo, que se animen. El acompañamiento es lo que hace la diferencia.",
+    "objection": "Miedo a dar el paso, no saber si iba a funcionar",
+    "bestFor": "TOFU Seg D — jóvenes sin experiencia que no se animan",
+    "useAs": "lead",
+    "productSource": "Academia Publicistas",
+    "active": true
+  },
+  {
+    "id": "c1342",
+    "fileReference": "C1342",
+    "name": "Andrea",
+    "age": 55,
+    "location": "",
+    "situationBefore": "15 años en eventos corporativos, no tenía redes sociales, compró cursos online que no le sirvieron",
+    "result": "Entró al mundo digital partiendo de cero",
+    "keyQuote": "Compré cursos y no me sirvieron. Esto fue diferente.",
+    "objection": "Edad, no saber tecnología, cursos anteriores que fueron estafa",
+    "bestFor": "Seg B/C — objeción edad, anti-gurú, desconfianza por cursos anteriores",
+    "useAs": "lead",
+    "productSource": "Academia Publicistas",
+    "active": true
+  },
+  {
+    "id": "c1345",
+    "fileReference": "C1345",
+    "name": "Ernesto",
+    "age": 39,
+    "location": "Escobar, Buenos Aires",
+    "situationBefore": "Trabajos tradicionales: gastronomía, Uber, vendedor de zapatos. 39 años saltando de trabajo en trabajo.",
+    "result": "5 clientes, ~$5,000 facturados en el año, 100% dedicado a su negocio",
+    "keyQuote": "Apagar el ruido externo y escuchar a una persona que ya lo hizo. Eso cambió todo.",
+    "objection": "Estar atrapado en trabajos tradicionales sin ver salida",
+    "bestFor": "MOFU — el más fuerte, tiene números reales y cambio de vida concreto",
+    "useAs": "body_fragment",
+    "productSource": "Academia Publicistas",
+    "active": true
+  },
+  {
+    "id": "c1349",
+    "fileReference": "C1349",
+    "name": "",
+    "age": null,
+    "location": "",
+    "situationBefore": "No tenía plata para invertir",
+    "result": "Se puso a trabajar para juntar la inversión y lo logró",
+    "keyQuote": "No hay excusa. Si vos querés, vas a conseguirlo sea como sea.",
+    "objection": "No tengo dinero para invertir",
+    "bestFor": "Pre-CTA — respuesta directa a objeción de plata",
+    "useAs": "pre_cta",
+    "productSource": "Academia Publicistas",
+    "active": true
+  }
+]

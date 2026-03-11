@@ -198,6 +198,40 @@ export interface StoredPlan {
   createdAt: string;
 }
 
+// --- Case Studies (Casos de éxito) ---
+
+const CASE_STUDIES_FILE = path.join(DATA_DIR, "case-studies.json");
+
+export interface CaseStudy {
+  id: string;
+  fileReference: string; // e.g. "C1340" — for editor to find the clip
+  name: string;
+  age?: number;
+  location?: string;
+  situationBefore: string; // what they were doing before
+  result?: string; // concrete result if any
+  keyQuote: string; // most powerful quote for scripts
+  objection?: string; // what objection they had before joining
+  bestFor: string; // when to use: "TOFU jóvenes", "objeción edad", etc.
+  useAs: "lead" | "body_fragment" | "pre_cta" | "objection_response"; // primary use
+  productSource: string; // "Academia Publicistas" — to know it's NOT from current product
+  active: boolean;
+}
+
+export async function getCaseStudies(): Promise<CaseStudy[]> {
+  try {
+    const data = await fs.readFile(CASE_STUDIES_FILE, "utf-8");
+    return (JSON.parse(data) as CaseStudy[]).filter((c) => c.active);
+  } catch {
+    return [];
+  }
+}
+
+export async function saveCaseStudies(cases: CaseStudy[]): Promise<void> {
+  await ensureDirs();
+  await fs.writeFile(CASE_STUDIES_FILE, JSON.stringify(cases, null, 2));
+}
+
 // --- Burned Leads ---
 
 export interface BurnedLead {

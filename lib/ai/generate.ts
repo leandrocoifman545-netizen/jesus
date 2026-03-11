@@ -7,7 +7,7 @@ import {
   type DevelopmentSection,
 } from "./schemas/script-output";
 import { type ReferenceAnalysis } from "./schemas/reference-analysis";
-import { listReferences, listGenerations, getBurnedLeads } from "../storage/local";
+import { listReferences, listGenerations, getBurnedLeads, getCaseStudies } from "../storage/local";
 import { computeCoverage } from "../coverage";
 
 export interface BriefInput {
@@ -21,6 +21,7 @@ export interface BriefInput {
   brandDocument?: string;
   generationRules?: string; // project-specific rules (overrides generic system prompt where they conflict)
   projectId?: string; // used to filter winners by project + coverage gaps
+  useCaseStudy?: boolean; // whether this script should include a case study fragment
 }
 
 const PLATFORM_LABELS: Record<string, string> = {
@@ -364,6 +365,53 @@ async function buildCoverageGaps(projectId?: string): Promise<string> {
   }
 }
 
+async function buildCaseStudiesContext(useCaseStudy: boolean): Promise<string> {
+  if (!useCaseStudy) return "";
+
+  try {
+    const cases = await getCaseStudies();
+    if (cases.length === 0) return "";
+
+    let section = `\n\n## CASO DE ÉXITO DISPONIBLE — USALO EN ESTE GUION
+
+Tenés los siguientes casos de éxito REALES para incluir en este guion.
+Elegí el que mejor encaje con el ángulo y usá UN FRAGMENTO adaptado al contexto.
+
+REGLAS:
+- NUNCA mencionar "academia de publicistas" ni el producto original. Adaptá la historia al contexto de ADP/productos digitales con IA.
+- Usá máximo 1 caso por guion.
+- Siempre marcá el corte con: [CORTE A: {archivo} — {nombre}] para que el editor sepa qué clip insertar.
+- La transición tiene que ser natural: Jesús dice algo → corta al clip → vuelve a Jesús.
+- El fragmento del caso de éxito va ENTRECOMILLADO (es lo que dice la persona en el video).
+
+CASOS DISPONIBLES:\n`;
+
+    for (const c of cases) {
+      const nameLabel = c.name || "Persona anónima";
+      const ageLabel = c.age ? `, ${c.age} años` : "";
+      const locLabel = c.location ? `, ${c.location}` : "";
+
+      section += `\n**${c.fileReference} — ${nameLabel}${ageLabel}${locLabel}**\n`;
+      section += `- Antes: ${c.situationBefore}\n`;
+      if (c.result) section += `- Resultado: ${c.result}\n`;
+      section += `- Frase clave: "${c.keyQuote}"\n`;
+      if (c.objection) section += `- Objeción que tenía: ${c.objection}\n`;
+      section += `- Mejor para: ${c.bestFor}\n`;
+      section += `- Usar como: ${c.useAs === "lead" ? "lead/hook" : c.useAs === "body_fragment" ? "fragmento en el cuerpo" : c.useAs === "pre_cta" ? "pre-CTA / cierre" : "respuesta a objeción"}\n`;
+    }
+
+    section += `\nEJEMPLO DE USO EN GUION:
+[Jesús a cámara]: "Y no soy yo el que te lo dice."
+[CORTE A: C1345 — Ernesto]: "Estaba trabajando en Uber, en gastronomía... hoy me dedico 100% a esto."
+[Jesús a cámara]: "Ernesto tiene 39 años y vive en Buenos Aires. Esto es real."
+`;
+
+    return section;
+  } catch {
+    return "";
+  }
+}
+
 async function buildBurnedLeadsContext(): Promise<string> {
   try {
     const burned = await getBurnedLeads();
@@ -390,6 +438,9 @@ async function buildUserPrompt(brief: BriefInput): Promise<string> {
 
   // Inject coverage gaps to drive diversity
   prompt += await buildCoverageGaps(brief.projectId);
+
+  // Inject case studies if this script should use one
+  prompt += await buildCaseStudiesContext(brief.useCaseStudy || false);
 
   // Inject burned leads to avoid repetition
   prompt += await buildBurnedLeadsContext();
