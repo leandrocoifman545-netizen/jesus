@@ -89,37 +89,37 @@ function AddReferenceForm({ onAdded }: { onAdded: () => void }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 space-y-4">
+    <form onSubmit={handleSubmit} className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 space-y-4">
       <h3 className="text-sm font-semibold">Agregar guion ganador</h3>
       <div>
-        <label className="block text-xs text-zinc-400 mb-1">Nombre / Titulo</label>
+        <label className="block text-xs text-zinc-400 font-medium mb-1">Nombre / Titulo</label>
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder='Ej: "Ad de Headspace que convirtio 3x"'
           required
-          className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200"
         />
       </div>
       <div>
-        <label className="block text-xs text-zinc-400 mb-1">Transcripcion del video</label>
+        <label className="block text-xs text-zinc-400 font-medium mb-1">Transcripcion del video</label>
         <textarea
           value={transcript}
           onChange={(e) => setTranscript(e.target.value)}
           placeholder="Pega la transcripcion completa del anuncio que funciono bien..."
           rows={6}
           required
-          className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
       {error && (
-        <div className="bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2 text-xs text-red-400">{error}</div>
+        <div className="bg-red-500/10 backdrop-blur border border-red-500/20 rounded-2xl px-3 py-2 text-xs text-red-400">{error}</div>
       )}
       <button
         type="submit"
         disabled={loading || !title || !transcript}
-        className="bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-800 disabled:text-zinc-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2"
+        className="bg-gradient-to-r from-purple-600 to-violet-600 hover:shadow-lg hover:shadow-purple-500/20 disabled:bg-zinc-800 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-600 disabled:shadow-none text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2"
       >
         {loading ? (
           <>
@@ -205,14 +205,14 @@ function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targe
   const currentIndex = files.findIndex((f) => f.status === "processing");
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 space-y-4">
+    <form onSubmit={handleSubmit} className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 space-y-4">
       <div>
         <h3 className="text-sm font-semibold">Subir audios de anuncios</h3>
-        <p className="text-xs text-zinc-500 mt-1">MP3, M4A, WAV, WebM u OGG (max 200MB c/u). Se transcriben y analizan automaticamente.</p>
+        <p className="text-xs text-zinc-600 mt-1">MP3, M4A, WAV, WebM u OGG (max 200MB c/u). Se transcriben y analizan automaticamente.</p>
       </div>
       <div>
-        <label className="flex items-center gap-3 cursor-pointer border border-zinc-800 border-dashed rounded-lg p-4 hover:border-zinc-600 transition-colors">
-          <div className="shrink-0 w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center">
+        <label className="flex items-center gap-3 cursor-pointer border border-zinc-800/50 border-dashed rounded-xl p-4 bg-zinc-800/20 hover:border-zinc-600/50 hover:bg-zinc-800/30 transition-all duration-200">
+          <div className="shrink-0 w-10 h-10 bg-zinc-800/50 rounded-xl flex items-center justify-center">
             <svg className="w-5 h-5 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15m0-3-3-3m0 0-3 3m3-3V15" />
             </svg>
@@ -277,7 +277,7 @@ function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targe
       <button
         type="submit"
         disabled={loading || files.length === 0 || files.every((f) => f.status === "done")}
-        className="bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-800 disabled:text-zinc-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2"
+        className="bg-gradient-to-r from-purple-600 to-violet-600 hover:shadow-lg hover:shadow-purple-500/20 disabled:bg-zinc-800 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-600 disabled:shadow-none text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2"
       >
         {loading ? (
           <>
@@ -352,22 +352,22 @@ function BulkAddForm({ onAdded }: { onAdded: () => void }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 space-y-4">
+    <form onSubmit={handleSubmit} className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 space-y-4">
       <div>
         <h3 className="text-sm font-semibold">Carga masiva de guiones</h3>
-        <p className="text-xs text-zinc-500 mt-1">
+        <p className="text-xs text-zinc-600 mt-1">
           Pega multiples transcripciones separadas por <code className="bg-zinc-800 px-1 py-0.5 rounded text-zinc-400">---</code>. La primera linea de cada bloque es el titulo.
         </p>
       </div>
 
       <div>
-        <label className="block text-xs text-zinc-400 mb-1">Nombre de la carpeta (opcional)</label>
+        <label className="block text-xs text-zinc-400 font-medium mb-1">Nombre de la carpeta (opcional)</label>
         <input
           type="text"
           value={folderName}
           onChange={(e) => setFolderName(e.target.value)}
           placeholder={`Ej: "Ads de Nike Q1 2026"`}
-          className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200"
         />
       </div>
 
@@ -378,7 +378,7 @@ function BulkAddForm({ onAdded }: { onAdded: () => void }) {
           placeholder={`Ad de Headspace 3x conversion\nSabias que el 87% de la gente no puede dormir bien?...\n---\nAd de Nike running\nDeja de buscar excusas. Este es el unico par de zapatillas...\n---\nAd de Duolingo viral\nTu ex ya habla 3 idiomas y vos seguis sin poder pedir la cuenta...`}
           rows={12}
           required
-          className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none font-mono"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-3 py-2 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none font-mono transition-all duration-200"
         />
       </div>
 
@@ -393,7 +393,7 @@ function BulkAddForm({ onAdded }: { onAdded: () => void }) {
         </div>
       )}
 
-      {error && <div className="bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2 text-xs text-red-400">{error}</div>}
+      {error && <div className="bg-red-500/10 backdrop-blur border border-red-500/20 rounded-2xl px-3 py-2 text-xs text-red-400">{error}</div>}
 
       {results && (
         <div className="space-y-1">
@@ -408,7 +408,7 @@ function BulkAddForm({ onAdded }: { onAdded: () => void }) {
       <button
         type="submit"
         disabled={loading || entries.length === 0}
-        className="bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-800 disabled:text-zinc-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2"
+        className="bg-gradient-to-r from-purple-600 to-violet-600 hover:shadow-lg hover:shadow-purple-500/20 disabled:bg-zinc-800 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-600 disabled:shadow-none text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2"
       >
         {loading ? (
           <>
@@ -441,7 +441,7 @@ function ReferenceCard({ reference, onDelete, selected, onToggleSelect }: {
   }
 
   return (
-    <div className={`border rounded-xl overflow-hidden transition-colors ${selected ? "border-purple-500/50 bg-purple-500/5" : "border-zinc-800"}`}>
+    <div className={`border rounded-2xl overflow-hidden transition-all duration-200 ${selected ? "border-purple-500/50 bg-purple-500/5" : "border-zinc-800/50 bg-zinc-900/30 backdrop-blur"}`}>
       <div className="flex items-start">
         {onToggleSelect && (
           <label
@@ -524,7 +524,7 @@ function ReferenceCard({ reference, onDelete, selected, onToggleSelect }: {
             <span className="text-xs text-zinc-500 uppercase tracking-wider">Transcripcion</span>
             <p className="text-xs text-zinc-500 mt-1 whitespace-pre-line bg-zinc-950 rounded-lg p-3 max-h-32 overflow-y-auto">{r.transcript}</p>
           </div>
-          <button onClick={handleDelete} disabled={deleting} className="text-xs text-red-400/60 hover:text-red-400 transition-colors">
+          <button onClick={handleDelete} disabled={deleting} className="text-xs text-red-400/60 hover:text-red-400 hover:bg-red-500/10 px-2 py-1 rounded-xl transition-all duration-200">
             {deleting ? "Eliminando..." : "Eliminar referencia"}
           </button>
         </div>
@@ -558,7 +558,7 @@ function SelectionBar({ selectedIds, allIds, onSelectAll, onDeselectAll, onDelet
   const allSelected = allIds.length > 0 && allIds.every((id) => selectedIds.has(id));
 
   return (
-    <div className="sticky top-0 z-10 bg-zinc-900 border border-purple-500/30 rounded-xl px-4 py-3 flex items-center justify-between gap-3">
+    <div className="sticky top-0 z-10 bg-zinc-900/30 backdrop-blur border border-purple-500/30 rounded-2xl px-4 py-3 flex items-center justify-between gap-3">
       <div className="flex items-center gap-3">
         <span className="text-sm text-white font-medium">
           {count} seleccionada{count !== 1 ? "s" : ""}
@@ -577,13 +577,13 @@ function SelectionBar({ selectedIds, allIds, onSelectAll, onDeselectAll, onDelet
             <button
               onClick={handleDelete}
               disabled={deleting}
-              className="text-xs bg-red-500/20 text-red-400 px-3 py-1.5 rounded-lg hover:bg-red-500/30 transition-colors"
+              className="text-xs bg-red-500/20 text-red-400 px-3 py-1.5 rounded-xl hover:bg-red-500/30 transition-all duration-200"
             >
               {deleting ? "Eliminando..." : "Si, eliminar"}
             </button>
             <button
               onClick={() => setConfirming(false)}
-              className="text-xs text-zinc-500 px-3 py-1.5 rounded-lg hover:text-zinc-300 transition-colors"
+              className="text-xs text-zinc-500 px-3 py-1.5 rounded-xl hover:text-zinc-300 transition-all duration-200"
             >
               Cancelar
             </button>
@@ -598,7 +598,7 @@ function SelectionBar({ selectedIds, allIds, onSelectAll, onDeselectAll, onDelet
             </button>
             <button
               onClick={() => setConfirming(true)}
-              className="text-xs bg-red-500/20 text-red-400 px-3 py-1.5 rounded-lg hover:bg-red-500/30 transition-colors flex items-center gap-1.5"
+              className="text-xs bg-red-500/20 text-red-400 px-3 py-1.5 rounded-xl hover:bg-red-500/30 transition-all duration-200 flex items-center gap-1.5"
             >
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
@@ -680,10 +680,10 @@ function FolderCard({ folder, onOpen, onDelete }: { folder: FolderInfo; onOpen: 
   }
 
   return (
-    <div className="border border-zinc-800 rounded-xl p-4 hover:border-zinc-700 transition-colors">
+    <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-4 hover:border-zinc-700/50 transition-all duration-200">
       <div className="flex items-center justify-between">
         <button onClick={onOpen} className="flex items-center gap-3 flex-1 min-w-0 text-left">
-          <div className="shrink-0 w-10 h-10 bg-purple-500/10 border border-purple-500/20 rounded-lg flex items-center justify-center">
+          <div className="shrink-0 w-10 h-10 bg-purple-500/10 border border-purple-500/20 rounded-xl flex items-center justify-center">
             <svg className="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
             </svg>
@@ -702,13 +702,13 @@ function FolderCard({ folder, onOpen, onDelete }: { folder: FolderInfo; onOpen: 
               <button
                 onClick={handleDelete}
                 disabled={deleting}
-                className="text-[10px] bg-red-500/20 text-red-400 px-2 py-1 rounded hover:bg-red-500/30 transition-colors"
+                className="text-[10px] bg-red-500/20 text-red-400 px-2 py-1 rounded-xl hover:bg-red-500/30 transition-all duration-200"
               >
                 {deleting ? "..." : "Si"}
               </button>
               <button
                 onClick={() => setConfirming(false)}
-                className="text-[10px] text-zinc-500 px-2 py-1 rounded hover:text-zinc-300 transition-colors"
+                className="text-[10px] text-zinc-500 px-2 py-1 rounded-xl hover:text-zinc-300 transition-all duration-200"
               >
                 No
               </button>
@@ -716,7 +716,7 @@ function FolderCard({ folder, onOpen, onDelete }: { folder: FolderInfo; onOpen: 
           ) : (
             <button
               onClick={() => setConfirming(true)}
-              className="text-zinc-600 hover:text-red-400 transition-colors p-1"
+              className="text-zinc-600 hover:text-red-400 hover:bg-red-500/10 rounded-xl transition-all duration-200 p-1"
               title="Eliminar carpeta"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -762,10 +762,10 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
 
         <button
           onClick={() => setView({ type: "individuales" })}
-          className="w-full border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition-colors text-left"
+          className="w-full border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-5 hover:border-zinc-700/50 transition-all duration-200 text-left"
         >
           <div className="flex items-center gap-4">
-            <div className="shrink-0 w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center">
+            <div className="shrink-0 w-12 h-12 bg-zinc-800/50 rounded-xl flex items-center justify-center">
               <svg className="w-6 h-6 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
               </svg>
@@ -781,10 +781,10 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
 
         <button
           onClick={() => setView({ type: "bulk-list" })}
-          className="w-full border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition-colors text-left"
+          className="w-full border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-5 hover:border-zinc-700/50 transition-all duration-200 text-left"
         >
           <div className="flex items-center gap-4">
-            <div className="shrink-0 w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-lg flex items-center justify-center">
+            <div className="shrink-0 w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-xl flex items-center justify-center">
               <svg className="w-6 h-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
               </svg>
@@ -843,13 +843,13 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         <div className="flex gap-2 mb-2">
           <button
             onClick={() => setInputMode("text")}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${inputMode === "text" ? "bg-purple-600 text-white" : "bg-zinc-800 text-zinc-400 hover:text-white"}`}
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all duration-200 ${inputMode === "text" ? "bg-gradient-to-r from-purple-600 to-violet-600 text-white shadow-lg shadow-purple-500/20" : "bg-zinc-800/50 border border-zinc-700/50 text-zinc-400 hover:text-white hover:bg-zinc-700/50"}`}
           >
             Texto
           </button>
           <button
             onClick={() => setInputMode("audio")}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${inputMode === "audio" ? "bg-purple-600 text-white" : "bg-zinc-800 text-zinc-400 hover:text-white"}`}
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all duration-200 ${inputMode === "audio" ? "bg-gradient-to-r from-purple-600 to-violet-600 text-white shadow-lg shadow-purple-500/20" : "bg-zinc-800/50 border border-zinc-700/50 text-zinc-400 hover:text-white hover:bg-zinc-700/50"}`}
           >
             Audio
           </button>
@@ -862,7 +862,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         )}
 
         {individuales.length === 0 ? (
-          <div className="border border-zinc-800 rounded-xl p-8 text-center">
+          <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-8 text-center">
             <p className="text-zinc-500 text-sm">Sin referencias individuales todavia.</p>
           </div>
         ) : (
@@ -884,13 +884,13 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         <div className="flex gap-2 mb-2">
           <button
             onClick={() => setInputMode("text")}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${inputMode === "text" ? "bg-purple-600 text-white" : "bg-zinc-800 text-zinc-400 hover:text-white"}`}
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all duration-200 ${inputMode === "text" ? "bg-gradient-to-r from-purple-600 to-violet-600 text-white shadow-lg shadow-purple-500/20" : "bg-zinc-800/50 border border-zinc-700/50 text-zinc-400 hover:text-white hover:bg-zinc-700/50"}`}
           >
             Texto
           </button>
           <button
             onClick={() => setInputMode("audio")}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${inputMode === "audio" ? "bg-purple-600 text-white" : "bg-zinc-800 text-zinc-400 hover:text-white"}`}
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all duration-200 ${inputMode === "audio" ? "bg-gradient-to-r from-purple-600 to-violet-600 text-white shadow-lg shadow-purple-500/20" : "bg-zinc-800/50 border border-zinc-700/50 text-zinc-400 hover:text-white hover:bg-zinc-700/50"}`}
           >
             Audio
           </button>
@@ -903,7 +903,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         )}
 
         {bulkFolders.length === 0 ? (
-          <div className="border border-zinc-800 rounded-xl p-8 text-center">
+          <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-8 text-center">
             <p className="text-zinc-500 text-sm">Sin cargas masivas todavia. Usa el formulario de arriba para crear la primera.</p>
           </div>
         ) : (
@@ -939,7 +939,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         </div>
 
         {folderRefs.length === 0 ? (
-          <div className="border border-zinc-800 rounded-xl p-8 text-center">
+          <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-8 text-center">
             <p className="text-zinc-500 text-sm">Esta carpeta esta vacia.</p>
             <button
               onClick={() => { setView({ type: "bulk-list" }); refresh(); }}

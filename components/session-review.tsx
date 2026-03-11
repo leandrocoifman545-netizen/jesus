@@ -85,7 +85,7 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
   function renderCard(gen: Generation) {
     const currentStatus = gen.status || "draft";
     return (
-      <div key={gen.id} className="border border-zinc-800 rounded-xl p-4 space-y-3">
+      <div key={gen.id} className="rounded-2xl bg-zinc-900/30 border border-zinc-800/50 p-5 hover:border-zinc-700/50 transition-all duration-200 space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 flex-wrap">
             <Link href={`/scripts/${gen.id}`} className="text-sm font-medium text-zinc-200 hover:text-purple-400 transition-colors">
@@ -104,14 +104,14 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
                 <button
                   onClick={() => updateStatus(gen.id, "recorded", notes[gen.id])}
                   disabled={saving === gen.id}
-                  className="text-[10px] px-2 py-0.5 rounded border border-green-500/30 text-green-400 bg-green-500/5 hover:bg-green-500/10 transition-colors"
+                  className="text-[10px] px-2.5 py-1 rounded-xl border border-green-500/30 text-green-400 bg-green-500/5 hover:bg-green-500/15 transition-colors"
                 >
                   {saving === gen.id ? "..." : "Grabado"}
                 </button>
                 <button
                   onClick={() => updateStatus(gen.id, "draft")}
                   disabled={saving === gen.id}
-                  className="text-[10px] px-2 py-0.5 rounded border border-red-500/30 text-red-400 bg-red-500/5 hover:bg-red-500/10 transition-colors"
+                  className="text-[10px] px-2.5 py-1 rounded-xl border border-red-500/30 text-red-400 bg-red-500/5 hover:bg-red-500/15 transition-colors"
                   title="Descartar (se queda en borrador)"
                 >
                   Descartar
@@ -123,21 +123,21 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
                 <button
                   onClick={() => updateStatus(gen.id, "winner", notes[gen.id])}
                   disabled={saving === gen.id}
-                  className="text-[10px] px-2 py-0.5 rounded border border-amber-500/30 text-amber-400 bg-amber-500/5 hover:bg-amber-500/10 transition-colors"
+                  className="text-[10px] px-2.5 py-1 rounded-xl border border-amber-500/30 text-amber-400 bg-amber-500/5 hover:bg-amber-500/15 transition-colors"
                 >
                   {saving === gen.id ? "..." : "Winner"}
                 </button>
                 <button
                   onClick={() => updateStatus(gen.id, "draft", notes[gen.id])}
                   disabled={saving === gen.id}
-                  className="text-[10px] px-2 py-0.5 rounded border border-zinc-700 text-zinc-500 hover:text-zinc-300 transition-colors"
+                  className="text-[10px] px-2.5 py-1 rounded-xl border border-zinc-700 text-zinc-500 hover:text-zinc-300 hover:bg-zinc-800/50 transition-colors"
                 >
                   Deshacer
                 </button>
               </>
             )}
             {currentStatus === "winner" && (
-              <span className="text-[10px] px-2 py-0.5 rounded border border-amber-500/30 text-amber-400 bg-amber-500/5">
+              <span className="text-[10px] px-2.5 py-1 rounded-xl border border-amber-500/30 text-amber-400 bg-amber-500/5">
                 Winner
               </span>
             )}
@@ -154,7 +154,7 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
             value={notes[gen.id] || ""}
             onChange={(e) => setNotes((prev) => ({ ...prev, [gen.id]: e.target.value }))}
             onBlur={() => { if (notes[gen.id] !== (gen.sessionNotes || "")) saveNote(gen.id); }}
-            className="flex-1 bg-zinc-800/50 border border-zinc-800 rounded px-2 py-1 text-[11px] text-zinc-300 placeholder-zinc-600 focus:outline-none focus:border-purple-500/50"
+            className="flex-1 bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-3 py-1.5 text-[11px] text-zinc-300 placeholder-zinc-600 focus:outline-none focus:border-purple-500/50"
             placeholder="Notas de sesion (ej: grabo en 1 toma, cambio el lead 3...)"
           />
         </div>
@@ -167,7 +167,8 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       {/* Pending review (drafts) */}
       {drafts.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold text-zinc-400 mb-3">
+          <h2 className="text-sm font-semibold tracking-wide text-zinc-400 mb-3 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-zinc-500" />
             Pendientes de review ({drafts.length})
           </h2>
           <div className="space-y-3">
@@ -179,7 +180,8 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       {/* Recorded */}
       {recorded.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold text-green-400 mb-3">
+          <h2 className="text-sm font-semibold tracking-wide text-green-400 mb-3 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-green-500" />
             Grabados ({recorded.length})
           </h2>
           <div className="space-y-3">
@@ -191,7 +193,8 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       {/* Winners */}
       {winners.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold text-amber-400 mb-3">
+          <h2 className="text-sm font-semibold tracking-wide text-amber-400 mb-3 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-amber-500" />
             Winners ({winners.length})
           </h2>
           <div className="space-y-3">
@@ -205,7 +208,7 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       )}
 
       {/* Summary */}
-      <div className="border border-zinc-800 rounded-xl p-4 text-xs text-zinc-500">
+      <div className="bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-2xl p-4 text-xs text-zinc-500">
         <p>Resumen: {drafts.length} pendientes | {recorded.length} grabados | {winners.length} winners | {generations.length} total</p>
       </div>
     </div>

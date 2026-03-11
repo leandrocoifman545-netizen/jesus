@@ -19,16 +19,16 @@ export default async function ScriptPage({ params }: { params: Promise<{ id: str
             <Link href="/" className="text-zinc-500 hover:text-zinc-300 transition-colors">
               Dashboard
             </Link>
-            <span className="text-zinc-700">/</span>
+            <span className="text-zinc-800">/</span>
             <span className="text-zinc-400">{generation.title || "Guion sin titulo"}</span>
           </nav>
-          <p className="text-zinc-500 text-sm mt-3">
+          <p className="text-zinc-600 text-xs mt-3">
             Creado {new Date(generation.createdAt).toLocaleString("es-AR")}
           </p>
         </div>
         <Link
           href="/briefs/new"
-          className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          className="bg-gradient-to-r from-purple-600 to-violet-600 hover:shadow-lg hover:shadow-purple-500/20 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200"
         >
           + Nuevo Guion
         </Link>

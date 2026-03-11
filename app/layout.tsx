@@ -11,17 +11,28 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="min-h-screen antialiased">
-        <header className="border-b border-zinc-800 px-6 py-4">
-          <div className="relative mx-auto max-w-6xl flex items-center justify-between">
+        {/* Top gradient line */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
+
+        <header className="sticky top-0 z-50 backdrop-blur-xl bg-zinc-950/80 border-b border-white/[0.06]">
+          <div className="relative mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
             <a href="/" className="text-lg font-bold tracking-tight">
-              Script<span className="text-purple-500">Gen</span>
+              Script<span className="bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent">Gen</span>
             </a>
             <NavLinks />
           </div>
         </header>
         <ToastProvider>
-          <main className="mx-auto max-w-6xl px-6 py-8">{children}</main>
+          <main className="mx-auto max-w-7xl px-6 py-10">{children}</main>
         </ToastProvider>
       </body>
     </html>

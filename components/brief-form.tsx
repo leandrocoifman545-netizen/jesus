@@ -116,11 +116,11 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl">
+    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-6">
       {/* Project Selector */}
       {projects.length > 0 && (
         <div>
-          <label className="block text-sm font-medium mb-2">Proyecto</label>
+          <label className="block text-sm font-medium text-zinc-400 mb-2">Proyecto</label>
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
@@ -129,10 +129,10 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
                 setProductDescription("");
                 setTargetAudience("");
               }}
-              className={`border rounded-lg px-3 py-2 text-xs transition-colors ${
+              className={`border rounded-xl px-3 py-2 text-xs transition-all duration-200 ${
                 !selectedProjectId
                   ? "border-purple-500 bg-purple-500/10 text-purple-400"
-                  : "border-zinc-800 text-zinc-400 hover:border-zinc-700"
+                  : "border-zinc-800/50 bg-zinc-800/30 text-zinc-400 hover:border-zinc-700/50 hover:bg-zinc-700/30"
               }`}
             >
               Sin proyecto
@@ -142,10 +142,10 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
                 key={p.id}
                 type="button"
                 onClick={() => setSelectedProjectId(p.id)}
-                className={`border rounded-lg px-3 py-2 text-xs transition-colors ${
+                className={`border rounded-xl px-3 py-2 text-xs transition-all duration-200 ${
                   selectedProjectId === p.id
                     ? "border-purple-500 bg-purple-500/10 text-purple-400"
-                    : "border-zinc-800 text-zinc-400 hover:border-zinc-700"
+                    : "border-zinc-800/50 bg-zinc-800/30 text-zinc-400 hover:border-zinc-700/50 hover:bg-zinc-700/30"
                 }`}
               >
                 {p.clientName}
@@ -169,7 +169,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
 
       {/* Producto/Servicio */}
       <div>
-        <label className="block text-sm font-medium mb-2">
+        <label className="block text-sm font-medium text-zinc-400 mb-2">
           Producto o Servicio *
         </label>
         <textarea
@@ -178,13 +178,13 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           placeholder="Describe tu producto o servicio, sus beneficios principales, precio, diferenciadores..."
           rows={4}
           required
-          className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
       {/* Publico Objetivo */}
       <div>
-        <label className="block text-sm font-medium mb-2">
+        <label className="block text-sm font-medium text-zinc-400 mb-2">
           Publico Objetivo *
         </label>
         <textarea
@@ -193,20 +193,20 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           placeholder="Edad, genero, intereses, pain points, nivel socioeconomico, ubicacion..."
           rows={3}
           required
-          className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
       {/* Hook Count */}
       <div>
-        <label className="block text-sm font-medium mb-2">
+        <label className="block text-sm font-medium text-zinc-400 mb-2">
           Cantidad de Hooks
         </label>
         <div className="flex items-center gap-3">
           <button
             type="button"
             onClick={() => setHookCount(Math.max(1, hookCount - 1))}
-            className="border border-zinc-800 hover:border-zinc-700 rounded-lg w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white transition-colors"
+            className="rounded-lg bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700/50 w-8 h-8 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-200"
           >
             -
           </button>
@@ -214,7 +214,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           <button
             type="button"
             onClick={() => setHookCount(Math.min(20, hookCount + 1))}
-            className="border border-zinc-800 hover:border-zinc-700 rounded-lg w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white transition-colors"
+            className="rounded-lg bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700/50 w-8 h-8 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-200"
           >
             +
           </button>
@@ -227,7 +227,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
 
       {/* Notas adicionales */}
       <div>
-        <label className="block text-sm font-medium mb-2">
+        <label className="block text-sm font-medium text-zinc-400 mb-2">
           Notas Adicionales <span className="text-zinc-600">(opcional)</span>
         </label>
         <textarea
@@ -235,13 +235,13 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           onChange={(e) => setAdditionalNotes(e.target.value)}
           placeholder="Tono preferido, plataforma específica, ofertas especiales, restricciones, palabras clave a incluir..."
           rows={2}
-          className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
       {/* Referencias */}
       <div>
-        <label className="block text-sm font-medium mb-2">
+        <label className="block text-sm font-medium text-zinc-400 mb-2">
           Referencias de Ads Ganadores{" "}
           <span className="text-zinc-600">(opcional)</span>
         </label>
@@ -254,14 +254,14 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           onChange={(e) => setReferenceText(e.target.value)}
           placeholder={`Ejemplo de referencia 1: "Hey, sabias que el 80% de las personas..." (pegar guion completo)\n---\nEjemplo de referencia 2: "Deja de hacer esto si quieres..." (pegar otro guion)`}
           rows={4}
-          className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none"
+          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
       {/* Streaming Preview */}
       {streamingStatus !== "idle" && streamingText && (
-        <div className="border border-zinc-800 rounded-lg overflow-hidden">
-          <div className="flex items-center gap-2 px-4 py-2 bg-zinc-900 border-b border-zinc-800">
+        <div className="bg-zinc-900/30 backdrop-blur border border-purple-500/20 rounded-2xl overflow-hidden">
+          <div className="flex items-center gap-2 px-4 py-2 bg-zinc-900/50 border-b border-zinc-800/50">
             <div className="h-2 w-2 rounded-full bg-purple-500 animate-pulse" />
             <span className="text-xs text-zinc-400">
               {streamingStatus === "streaming" ? "Generando guion en tiempo real..." : "Guardando..."}
@@ -277,7 +277,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
 
       {/* Error */}
       {error && (
-        <div className="bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-3 text-sm text-red-400">
+        <div className="bg-red-500/10 backdrop-blur border border-red-500/20 rounded-2xl px-4 py-3 text-sm text-red-400">
           {error}
         </div>
       )}
@@ -286,7 +286,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
       <button
         type="submit"
         disabled={loading || !productDescription || !targetAudience}
-        className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-800 disabled:text-zinc-600 text-white py-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
+        className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:shadow-lg hover:shadow-purple-500/20 disabled:bg-zinc-800 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-600 disabled:shadow-none text-white py-3 rounded-xl text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2"
       >
         {loading ? (
           <>

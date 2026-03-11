@@ -23,15 +23,15 @@ export default function NavLinks() {
   return (
     <>
       {/* Desktop nav */}
-      <nav className="hidden md:flex gap-4 text-sm">
+      <nav className="hidden md:flex gap-1 text-sm">
         {links.map(({ href, label }) => (
           <Link
             key={href}
             href={href}
-            className={`transition-colors ${
+            className={`font-medium rounded-xl px-3 py-1.5 transition-colors ${
               isActive(pathname, href)
-                ? "text-white"
-                : "text-zinc-400 hover:text-white"
+                ? "bg-white/10 text-white"
+                : "text-zinc-500 hover:text-zinc-200 hover:bg-white/[0.04]"
             }`}
           >
             {label}
@@ -66,16 +66,16 @@ export default function NavLinks() {
 
       {/* Mobile dropdown */}
       {open && (
-        <nav className="md:hidden absolute left-0 top-full w-full border-b border-zinc-800 bg-zinc-950 px-6 py-4 flex flex-col gap-3 text-sm z-50">
+        <nav className="md:hidden absolute left-0 top-full w-full border-b border-white/[0.06] backdrop-blur-xl bg-zinc-950/95 px-6 py-4 flex flex-col gap-1 text-sm z-50">
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               onClick={() => setOpen(false)}
-              className={`transition-colors ${
+              className={`font-medium rounded-xl px-3 py-2 transition-colors ${
                 isActive(pathname, href)
-                  ? "text-white"
-                  : "text-zinc-400 hover:text-white"
+                  ? "bg-white/10 text-white"
+                  : "text-zinc-500 hover:text-zinc-200 hover:bg-white/[0.04]"
               }`}
             >
               {label}

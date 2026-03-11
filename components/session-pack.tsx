@@ -377,25 +377,26 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
   return (
     <>
       {/* Stats bar */}
-      <div className="flex items-center gap-4 mb-4 text-xs">
-        <span className="text-zinc-500">{generations.length} guiones</span>
+      <div className="flex items-center gap-4 mb-4 text-xs bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-2xl p-4">
+        <span className="flex items-center gap-1.5 text-zinc-400"><span className="w-1.5 h-1.5 rounded-full bg-zinc-500"></span><span className="font-medium text-zinc-300">{generations.length}</span> guiones</span>
         {recordedCount > 0 && (
-          <span className="text-green-400">{recordedCount} grabados</span>
+          <span className="flex items-center gap-1.5 text-green-400"><span className="w-1.5 h-1.5 rounded-full bg-green-400"></span><span className="font-medium">{recordedCount}</span> grabados</span>
         )}
         {winnerCount > 0 && (
-          <span className="text-amber-400">{winnerCount} winners</span>
+          <span className="flex items-center gap-1.5 text-amber-400"><span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span><span className="font-medium">{winnerCount}</span> winners</span>
         )}
         <button
           onClick={loadBurnedLeads}
-          className="text-red-400/70 hover:text-red-400 transition-colors"
+          className="flex items-center gap-1.5 text-red-400/70 hover:text-red-400 transition-colors"
         >
-          {loadingBurned ? "Cargando..." : `${totalLeadsBurned} leads quemados`}
+          <span className="w-1.5 h-1.5 rounded-full bg-red-400/70"></span>
+          {loadingBurned ? "Cargando..." : <><span className="font-medium">{totalLeadsBurned}</span> leads quemados</>}
         </button>
       </div>
 
       {/* Burned leads panel */}
       {showBurnedLeads && (
-        <div className="border border-red-500/20 bg-red-500/5 rounded-xl p-4 mb-4">
+        <div className="bg-red-500/5 backdrop-blur border border-red-500/10 rounded-2xl p-4 mb-4">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-semibold text-red-400">Biblioteca de Leads Quemados ({burnedLeads.length})</h3>
             <button onClick={() => setShowBurnedLeads(false)} className="text-xs text-zinc-500 hover:text-zinc-300">
@@ -422,14 +423,14 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
 
       {/* Search bar */}
       <div className="relative mb-4">
-        <svg className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
         </svg>
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full bg-zinc-900 border border-zinc-800 rounded-lg pl-9 pr-3 py-2 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-purple-500/50 transition-colors"
+          className="w-full bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-xl pl-9 pr-3 py-2.5 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all"
           placeholder="Buscar por titulo, hook, framework, nicho, formato..."
         />
         {search && (
@@ -460,10 +461,10 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
               <button
                 key={f}
                 onClick={() => setFilter(f)}
-                className={`text-xs px-3 py-1 rounded-full transition-colors ${
+                className={`text-xs px-3 py-1.5 rounded-lg transition-all ${
                   filter === f
-                    ? "bg-zinc-800 text-white"
-                    : "text-zinc-500 hover:text-zinc-300"
+                    ? "bg-white/10 text-white font-medium"
+                    : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5"
                 }`}
               >
                 {labels[f]} ({count})
@@ -474,7 +475,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-          className="bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs rounded-lg px-2 py-1 focus:outline-none focus:border-purple-500/50 transition-colors"
+          className="bg-zinc-900/50 backdrop-blur border border-zinc-800/50 text-zinc-300 text-xs rounded-xl px-3 py-1.5 focus:outline-none focus:border-purple-500/30 focus:ring-2 focus:ring-purple-500/10 transition-all"
         >
           <option value="recent">Mas recientes</option>
           <option value="oldest">Mas antiguos</option>
@@ -505,7 +506,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
             <button
               onClick={deleteSelected}
               disabled={deleting}
-              className="border border-red-500/30 hover:border-red-500/50 text-red-400 hover:text-red-300 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors disabled:opacity-50 flex items-center gap-1.5"
+              className="border border-red-500/30 hover:border-red-500/50 hover:bg-red-500/10 text-red-400 hover:text-red-300 px-3 py-1.5 rounded-xl text-xs font-medium transition-all disabled:opacity-50 flex items-center gap-1.5"
             >
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
@@ -514,13 +515,13 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
             </button>
             <button
               onClick={copyPack}
-              className="border border-zinc-700 hover:border-zinc-600 text-zinc-300 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors"
+              className="bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700/50 text-zinc-300 px-3 py-1.5 rounded-xl text-xs font-medium transition-all"
             >
               Copiar pack
             </button>
             <button
               onClick={downloadTeleprompter}
-              className="border border-zinc-700 hover:border-zinc-600 text-zinc-300 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5"
+              className="bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700/50 text-zinc-300 px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
             >
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5" />
@@ -529,7 +530,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
             </button>
             <button
               onClick={downloadPack}
-              className="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5"
+              className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 shadow-lg shadow-purple-500/20 text-white px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
             >
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -545,7 +546,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
         {(sortBy === "recent" || sortBy === "oldest") ? (
           groupByDate(filteredGenerations).map((group) => (
             <div key={group.label}>
-              <p className="text-xs font-medium text-zinc-500 mb-2 mt-2">{group.label}</p>
+              <div className="flex items-center gap-3 mb-2 mt-2"><span className="text-xs font-medium text-zinc-500 shrink-0">{group.label}</span><div className="flex-1 h-px bg-zinc-800/50"></div></div>
               <div className="grid gap-4">
                 {group.items.map((gen) => {
                   const status = gen.status || "draft";
@@ -553,10 +554,10 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                   return (
                     <div
                       key={gen.id}
-                      className={`border rounded-xl p-5 transition-colors flex gap-4 ${
+                      className={`border rounded-2xl p-5 transition-all duration-200 flex gap-4 ${
                         selected.has(gen.id)
-                          ? "border-purple-500/40 bg-purple-500/5"
-                          : "border-zinc-800 hover:border-zinc-700"
+                          ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20"
+                          : "border-zinc-800/50 bg-zinc-900/30 hover:bg-zinc-900/50 hover:border-zinc-700/50"
                       }`}
                     >
                       <button
@@ -564,10 +565,10 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                         className="shrink-0 mt-1"
                       >
                         <div
-                          className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
+                          className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${
                             selected.has(gen.id)
-                              ? "bg-purple-600 border-purple-600"
-                              : "border-zinc-600 hover:border-zinc-400"
+                              ? "bg-gradient-to-r from-purple-600 to-violet-600 border-purple-600"
+                              : "border-zinc-700 hover:border-zinc-500"
                           }`}
                         >
                           {selected.has(gen.id) && (
@@ -579,7 +580,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                       </button>
                       <a href={`/scripts/${gen.id}`} className="flex-1 min-w-0">
                         {gen.title && (
-                          <p className="text-sm font-medium text-zinc-200 mb-1 truncate">{gen.title}</p>
+                          <p className="text-sm font-medium text-zinc-100 mb-1 truncate">{gen.title}</p>
                         )}
                         <div className="flex items-center gap-3 mb-2 flex-wrap">
                           <span className="text-xs px-2 py-0.5 rounded-full border bg-zinc-800 text-zinc-400">
@@ -589,7 +590,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                           <span className="text-xs text-zinc-500">{gen.script.development.framework_used}</span>
                           <span className="text-xs text-zinc-500">{gen.script.hooks.length} leads</span>
                           {gen.script.visual_format && (
-                            <span className="text-xs px-2 py-0.5 rounded-full border bg-blue-500/10 text-blue-400 border-blue-500/20">
+                            <span className="text-xs px-2 py-0.5 rounded-full border bg-blue-500/10 text-blue-400 border-blue-500/20 backdrop-blur">
                               {gen.script.visual_format.format_name}
                             </span>
                           )}
@@ -598,14 +599,14 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                           {gen.script.hooks[0]?.script_text.substring(0, 100)}...
                         </p>
                         <p className="text-xs text-zinc-600 mt-1">
-                          {new Date(gen.createdAt).toLocaleDateString("es-AR")}
+                          {new Date(gen.createdAt).toLocaleDateString("es-AR")} &middot; {new Date(gen.createdAt).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" })}
                         </p>
                       </a>
                       <div className="shrink-0 flex flex-col items-end gap-1">
                         <button
                           onClick={(e) => { e.preventDefault(); cycleStatus(gen); }}
                           disabled={updatingStatus === gen.id}
-                          className={`text-[10px] px-2 py-0.5 rounded-full border transition-colors ${config.color} ${
+                          className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur transition-all ${config.color} ${
                             updatingStatus === gen.id ? "opacity-50" : "hover:opacity-80"
                           }`}
                           title="Click para cambiar estado: Borrador -> Grabado -> Winner -> Borrador"
@@ -632,10 +633,10 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
             return (
               <div
                 key={gen.id}
-                className={`border rounded-xl p-5 transition-colors flex gap-4 ${
+                className={`border rounded-2xl p-5 transition-all duration-200 flex gap-4 ${
                   selected.has(gen.id)
-                    ? "border-purple-500/40 bg-purple-500/5"
-                    : "border-zinc-800 hover:border-zinc-700"
+                    ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20"
+                    : "border-zinc-800/50 bg-zinc-900/30 hover:bg-zinc-900/50 hover:border-zinc-700/50"
                 }`}
               >
                 <button
@@ -643,10 +644,10 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                   className="shrink-0 mt-1"
                 >
                   <div
-                    className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
+                    className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${
                       selected.has(gen.id)
-                        ? "bg-purple-600 border-purple-600"
-                        : "border-zinc-600 hover:border-zinc-400"
+                        ? "bg-gradient-to-r from-purple-600 to-violet-600 border-purple-600"
+                        : "border-zinc-700 hover:border-zinc-500"
                     }`}
                   >
                     {selected.has(gen.id) && (
@@ -658,7 +659,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                 </button>
                 <a href={`/scripts/${gen.id}`} className="flex-1 min-w-0">
                   {gen.title && (
-                    <p className="text-sm font-medium text-zinc-200 mb-1 truncate">{gen.title}</p>
+                    <p className="text-sm font-medium text-zinc-100 mb-1 truncate">{gen.title}</p>
                   )}
                   <div className="flex items-center gap-3 mb-2 flex-wrap">
                     <span className="text-xs px-2 py-0.5 rounded-full border bg-zinc-800 text-zinc-400">
@@ -668,7 +669,7 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                     <span className="text-xs text-zinc-500">{gen.script.development.framework_used}</span>
                     <span className="text-xs text-zinc-500">{gen.script.hooks.length} leads</span>
                     {gen.script.visual_format && (
-                      <span className="text-xs px-2 py-0.5 rounded-full border bg-blue-500/10 text-blue-400 border-blue-500/20">
+                      <span className="text-xs px-2 py-0.5 rounded-full border bg-blue-500/10 text-blue-400 border-blue-500/20 backdrop-blur">
                         {gen.script.visual_format.format_name}
                       </span>
                     )}
@@ -677,14 +678,14 @@ export default function SessionPack({ generations: initialGenerations, burnedLea
                     {gen.script.hooks[0]?.script_text.substring(0, 100)}...
                   </p>
                   <p className="text-xs text-zinc-600 mt-1">
-                    {new Date(gen.createdAt).toLocaleDateString("es-AR")}
+                    {new Date(gen.createdAt).toLocaleDateString("es-AR")} &middot; {new Date(gen.createdAt).toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" })}
                   </p>
                 </a>
                 <div className="shrink-0 flex flex-col items-end gap-1">
                   <button
                     onClick={(e) => { e.preventDefault(); cycleStatus(gen); }}
                     disabled={updatingStatus === gen.id}
-                    className={`text-[10px] px-2 py-0.5 rounded-full border transition-colors ${config.color} ${
+                    className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur transition-all ${config.color} ${
                       updatingStatus === gen.id ? "opacity-50" : "hover:opacity-80"
                     }`}
                     title="Click para cambiar estado: Borrador -> Grabado -> Winner -> Borrador"

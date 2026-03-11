@@ -116,9 +116,9 @@ function RegenButton({
 type GenerationStatus = "draft" | "recorded" | "winner";
 
 const STATUS_CONFIG: Record<GenerationStatus, { label: string; next: GenerationStatus; color: string }> = {
-  draft: { label: "Borrador", next: "recorded", color: "text-zinc-500 border-zinc-700 hover:border-zinc-500" },
-  recorded: { label: "Grabado", next: "winner", color: "text-green-400 border-green-500/30 bg-green-500/5 hover:bg-green-500/10" },
-  winner: { label: "Winner", next: "draft", color: "text-amber-400 border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10" },
+  draft: { label: "Borrador", next: "recorded", color: "bg-zinc-800/50 text-zinc-400 border-zinc-700/50 hover:bg-zinc-800" },
+  recorded: { label: "Grabado", next: "winner", color: "bg-green-500/10 text-green-400 border-green-500/20 hover:bg-green-500/15" },
+  winner: { label: "Winner", next: "draft", color: "bg-amber-500/10 text-amber-400 border-amber-500/20 hover:bg-amber-500/15" },
 };
 
 interface WinnerMetrics {
@@ -290,7 +290,7 @@ export default function ScriptViewer({
                 if (e.key === "Enter") saveTitle(titleDraft);
                 if (e.key === "Escape") { setEditingTitle(false); setTitleDraft(title); }
               }}
-              className="flex-1 bg-transparent border-b-2 border-purple-500 text-2xl font-bold text-white focus:outline-none py-1"
+              className="flex-1 bg-transparent border-b-2 border-purple-500/50 text-3xl font-bold tracking-tight text-white focus:outline-none py-1"
               placeholder="Ej: Crianza — Mamá/tiempo — Seg C"
             />
             <button
@@ -310,11 +310,11 @@ export default function ScriptViewer({
         ) : (
           <h1
             onClick={() => { setEditingTitle(true); setTitleDraft(title); }}
-            className="text-2xl font-bold cursor-pointer hover:text-purple-300 transition-colors group"
+            className="text-3xl font-bold tracking-tight cursor-pointer hover:text-purple-300 transition-colors group"
             title="Click para editar titulo"
           >
-            {title || "Guion sin titulo"}
-            <span className="text-zinc-600 text-sm ml-2 opacity-0 group-hover:opacity-100 transition-opacity">editar</span>
+            <span className={title ? "text-white" : "text-zinc-600"}>{title || "Guion sin titulo"}</span>
+            <span className="text-zinc-700 text-xs italic ml-3 opacity-0 group-hover:opacity-100 transition-opacity">editar</span>
           </h1>
         )}
       </div>
@@ -324,7 +324,7 @@ export default function ScriptViewer({
         <button
           onClick={cycleStatus}
           disabled={updatingStatus}
-          className={`text-xs px-3 py-1 rounded-full border transition-colors ${STATUS_CONFIG[status].color} ${updatingStatus ? "opacity-50" : ""}`}
+          className={`text-xs rounded-xl px-4 py-1.5 border transition-colors ${STATUS_CONFIG[status].color} ${updatingStatus ? "opacity-50" : ""}`}
           title="Click para cambiar: Borrador -> Grabado -> Winner -> Borrador"
         >
           {updatingStatus ? "..." : STATUS_CONFIG[status].label}
@@ -344,7 +344,7 @@ export default function ScriptViewer({
 
       {/* Metrics panel (for recorded/winner) */}
       {showMetrics && (status === "recorded" || status === "winner") && (
-        <div className={`border rounded-xl p-4 space-y-3 ${status === "winner" ? "border-amber-500/20 bg-amber-500/5" : "border-green-500/20 bg-green-500/5"}`}>
+        <div className={`bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-2xl p-6 space-y-4`}>
           <h3 className="text-xs font-semibold text-zinc-400">Metricas de rendimiento</h3>
           <div className="grid grid-cols-5 gap-2">
             {([
@@ -364,7 +364,7 @@ export default function ScriptViewer({
                     const val = e.target.value ? parseFloat(e.target.value) : undefined;
                     setMetrics((prev) => ({ ...prev, [key]: val }));
                   }}
-                  className="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-1 text-xs text-zinc-200 focus:outline-none focus:border-purple-500"
+                  className="w-full bg-zinc-800/50 border border-zinc-700/50 rounded-xl px-2 py-1 text-xs text-zinc-200 focus:outline-none focus:ring-2 focus:ring-purple-500/10"
                   placeholder="-"
                 />
               </div>
@@ -377,10 +377,10 @@ export default function ScriptViewer({
                 <button
                   key={i}
                   onClick={() => setMetrics((prev) => ({ ...prev, bestLeadIndex: i }))}
-                  className={`text-[10px] px-2 py-0.5 rounded border transition-colors ${
+                  className={`text-[10px] px-2 py-0.5 rounded-lg border transition-colors ${
                     metrics.bestLeadIndex === i
-                      ? "bg-purple-600 border-purple-600 text-white"
-                      : "border-zinc-700 text-zinc-400 hover:border-zinc-500"
+                      ? "bg-gradient-to-r from-purple-600 to-violet-600 border-purple-500 text-white"
+                      : "border-zinc-700/50 text-zinc-400 hover:border-zinc-500"
                   }`}
                 >
                   #{hook.variant_number}
@@ -411,7 +411,7 @@ export default function ScriptViewer({
           <button
             onClick={() => saveMetrics(metrics, sessionNotes)}
             disabled={savingMeta}
-            className="text-xs bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-700 text-white px-3 py-1 rounded transition-colors"
+            className="text-xs bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 disabled:from-zinc-700 disabled:to-zinc-700 text-white px-4 py-1.5 rounded-xl transition-all"
           >
             {savingMeta ? "Guardando..." : "Guardar metricas y notas"}
           </button>
@@ -419,37 +419,37 @@ export default function ScriptViewer({
       )}
 
       {/* Platform Info + Emotional Arc */}
-      <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5">
-        <div className="flex items-center justify-between mb-3">
+      <div className="bg-zinc-900/30 border border-zinc-800/50 rounded-2xl p-6">
+        <div className="flex items-center justify-between mb-4">
           <h2 className="text-sm font-semibold text-zinc-300">Adaptacion de Plataforma</h2>
-          <span className="text-xs text-zinc-500">
+          <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">
             {script.total_duration_seconds}s | ~{script.word_count} palabras | {script.development.framework_used}
           </span>
         </div>
         <div className="grid grid-cols-2 gap-4 text-sm mb-4">
           <div>
-            <span className="text-zinc-500 text-xs">Plataforma</span>
-            <p className="text-white">{script.platform_adaptation.platform}</p>
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Plataforma</span>
+            <p className="text-zinc-200">{script.platform_adaptation.platform}</p>
           </div>
           <div>
-            <span className="text-zinc-500 text-xs">Estilo</span>
-            <p className="text-white">{script.platform_adaptation.content_style}</p>
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Estilo</span>
+            <p className="text-zinc-200">{script.platform_adaptation.content_style}</p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
-            <span className="text-zinc-500 text-xs">Consideraciones</span>
-            <p className="text-zinc-300">{script.platform_adaptation.key_considerations}</p>
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Consideraciones</span>
+            <p className="text-zinc-200">{script.platform_adaptation.key_considerations}</p>
           </div>
           <div>
-            <span className="text-zinc-500 text-xs">Arco Emocional</span>
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Arco Emocional</span>
             <p className="text-purple-300 font-medium">{script.development.emotional_arc}</p>
           </div>
         </div>
         {script.visual_format && (
-          <div className="mt-4 border-t border-zinc-800 pt-4">
+          <div className="mt-4 border-l-2 border-purple-500/30 pl-4 ml-1 pt-2">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-zinc-500 text-xs">Formato Visual</span>
+              <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Formato Visual</span>
               <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
                 Nivel {script.visual_format.difficulty_level}/5
               </span>
@@ -466,7 +466,7 @@ export default function ScriptViewer({
       {/* Hooks Selector */}
       <div>
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold">
+          <h2 className="text-xl font-semibold tracking-tight">
             {script.hooks.length} Hook{script.hooks.length !== 1 ? "s" : ""}
           </h2>
           <CopyButton text={formatFullScript(script, selectedHook)} label="Copiar guion completo" />
@@ -478,10 +478,10 @@ export default function ScriptViewer({
             <button
               key={i}
               onClick={() => setSelectedHook(i)}
-              className={`border rounded-lg p-3 text-left transition-all shrink-0 w-40 ${
+              className={`border rounded-2xl p-3 text-left transition-all shrink-0 w-40 ${
                 selectedHook === i
-                  ? "border-purple-500 bg-purple-500/5 ring-1 ring-purple-500/30"
-                  : "border-zinc-800 hover:border-zinc-700"
+                  ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20 shadow-lg shadow-purple-500/5"
+                  : "bg-zinc-900/30 border-zinc-800/50 hover:border-zinc-700/50"
               }`}
             >
               <div className="flex items-center justify-between mb-1.5">
@@ -489,7 +489,7 @@ export default function ScriptViewer({
                 <span className="text-[10px] text-zinc-600">{hook.timing_seconds}s</span>
               </div>
               <span
-                className={`inline-block text-[10px] px-1.5 py-0.5 rounded border ${
+                className={`inline-block text-[10px] px-1.5 py-0.5 rounded-lg border ${
                   HOOK_TYPE_COLORS[hook.hook_type] || "bg-zinc-800 text-zinc-400"
                 }`}
               >
@@ -502,7 +502,7 @@ export default function ScriptViewer({
           ))}
 
           {/* Generate More button inline */}
-          <div className="border border-dashed border-zinc-700 rounded-lg p-3 shrink-0 w-40 flex flex-col items-center justify-center gap-2">
+          <div className="border border-dashed border-zinc-700/30 rounded-2xl p-3 shrink-0 w-40 flex flex-col items-center justify-center gap-2 hover:border-zinc-600/50 hover:bg-zinc-900/20 transition-all">
             <div className="flex items-center gap-1">
               <button
                 type="button"
@@ -542,13 +542,13 @@ export default function ScriptViewer({
 
         {/* Selected Hook Detail */}
         {script.hooks[selectedHook] && (
-          <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5">
+          <div className="bg-zinc-900/30 border border-zinc-800/50 rounded-2xl p-5">
             <div className="flex items-center gap-3 mb-3">
               <span className="text-sm font-bold">
                 Hook #{script.hooks[selectedHook].variant_number}
               </span>
               <span
-                className={`text-xs px-2 py-0.5 rounded-full border ${
+                className={`text-xs px-2 py-0.5 rounded-lg border ${
                   HOOK_TYPE_COLORS[script.hooks[selectedHook].hook_type] || ""
                 }`}
               >
@@ -573,17 +573,17 @@ export default function ScriptViewer({
 
       {/* Script Flow */}
       <div>
-        <h2 className="text-lg font-bold mb-4">Guion</h2>
+        <h2 className="text-xl font-semibold tracking-tight mb-4 bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">Guion</h2>
         <div className="space-y-3">
           {/* Hook row */}
           {(() => {
             const hook = script.hooks[selectedHook];
             return (
-              <div className="bg-purple-500/5 border border-purple-500/20 rounded-xl p-4">
+              <div className="bg-purple-500/5 border border-purple-500/15 rounded-2xl p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-semibold text-purple-400">HOOK #{hook.variant_number}</span>
-                  <span className="text-[10px] text-zinc-600 font-mono">0-{hook.timing_seconds}s</span>
-                  <span className="text-[10px] text-zinc-600">{hook.script_text.trim().split(/\s+/).length} palabras</span>
+                  <span className="uppercase tracking-wider text-[11px] font-semibold text-purple-400">HOOK #{hook.variant_number}</span>
+                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">0-{hook.timing_seconds}s</span>
+                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{hook.script_text.trim().split(/\s+/).length} palabras</span>
                   <RegenButton
                     onClick={() => handleRegenerate("hook", selectedHook)}
                     loading={regenTarget === `hook-${selectedHook}`}
@@ -608,18 +608,18 @@ export default function ScriptViewer({
               return (
                 <div
                   key={i}
-                  className={`border rounded-xl p-4 ${
+                  className={`border rounded-2xl p-5 ${
                     isRehook
-                      ? "bg-amber-500/5 border-amber-500/20"
-                      : "bg-zinc-900 border-zinc-800"
+                      ? "bg-amber-500/5 border-amber-500/15"
+                      : "bg-zinc-900/30 border-zinc-800/50"
                   }`}
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className={`text-xs font-semibold ${isRehook ? "text-amber-400" : "text-zinc-400"}`}>
+                    <span className={`uppercase tracking-wider text-[11px] font-semibold ${isRehook ? "text-amber-400" : "text-zinc-400"}`}>
                       {section.section_name}
                     </span>
-                    <span className="text-[10px] text-zinc-600 font-mono">{startTime}-{accTime}s</span>
-                    <span className="text-[10px] text-zinc-600">{section.script_text.trim().split(/\s+/).length} palabras</span>
+                    <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">{startTime}-{accTime}s</span>
+                    <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{section.script_text.trim().split(/\s+/).length} palabras</span>
                     <RegenButton
                       onClick={() => handleRegenerate("section", i)}
                       loading={regenTarget === `section-${i}`}
@@ -647,11 +647,11 @@ export default function ScriptViewer({
             const ctaType = cta?.cta_type || '-';
             const ctaReason = cta?.reason_why || '';
             return (
-              <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-4">
+              <div className="bg-emerald-500/5 border border-emerald-500/15 rounded-2xl p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-semibold text-emerald-400">CTA</span>
-                  <span className="text-[10px] text-zinc-600 font-mono">{devTotal}-{devTotal + ctaTiming}s</span>
-                  <span className="text-[10px] text-zinc-600">{ctaVerbal.trim().split(/\s+/).length} palabras</span>
+                  <span className="uppercase tracking-wider text-[11px] font-semibold text-emerald-400">CTA</span>
+                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">{devTotal}-{devTotal + ctaTiming}s</span>
+                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{ctaVerbal.trim().split(/\s+/).length} palabras</span>
                   <span className="text-[10px] text-zinc-600">({ctaType})</span>
                   <RegenButton
                     onClick={() => handleRegenerate("cta")}
@@ -678,7 +678,7 @@ export default function ScriptViewer({
             onClick={() => {
               navigator.clipboard.writeText(formatFullScript(script, i));
             }}
-            className="border border-zinc-800 hover:border-zinc-700 rounded-lg px-3 py-1.5 text-xs text-zinc-400 hover:text-white transition-colors"
+            className="bg-zinc-900/30 border border-zinc-800/50 hover:bg-zinc-800/50 rounded-xl px-3 py-1.5 text-xs text-zinc-400 hover:text-white transition-colors"
           >
             Copiar con Hook #{hook.variant_number}
           </button>

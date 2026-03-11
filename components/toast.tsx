@@ -78,19 +78,27 @@ function ToastItem({ toast }: { toast: Toast }) {
     return () => cancelAnimationFrame(raf);
   }, []);
 
-  const borderColor = toast.type === "error" ? "border-red-500/60" : "border-green-500/60";
-  const textColor = toast.type === "error" ? "text-red-400" : "text-green-400";
+  const isError = toast.type === "error";
+  const borderAccent = isError ? "border-l-2 border-l-red-500" : "border-l-2 border-l-green-500";
+  const textColor = isError ? "text-red-400" : "text-green-400";
 
   return (
     <div
       className={`
-        pointer-events-auto rounded-lg border bg-zinc-900 px-4 py-2.5 text-sm shadow-lg
+        pointer-events-auto min-w-[280px] rounded-2xl backdrop-blur-xl bg-zinc-900/90 border border-zinc-800/50 px-4 py-3 text-sm shadow-2xl shadow-black/50
         transition-all duration-200 ease-out
-        ${borderColor} ${textColor}
+        ${borderAccent} ${textColor}
         ${visible && !toast.exiting ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"}
       `}
     >
-      {toast.message}
+      <span className="flex items-center gap-2">
+        {isError ? (
+          <svg className="w-4 h-4 shrink-0" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+        ) : (
+          <svg className="w-4 h-4 shrink-0" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.5l3 3 6-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        )}
+        {toast.message}
+      </span>
     </div>
   );
 }

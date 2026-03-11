@@ -135,29 +135,29 @@ export default function InlineEdit({ value, onSave, className = "", tag: Tag = "
             e.target.style.height = e.target.scrollHeight + "px";
           }}
           onKeyDown={handleKeyDown}
-          className={`w-full bg-zinc-800 border border-zinc-600 rounded-lg px-3 py-2 text-sm text-zinc-200 resize-none focus:outline-none focus:border-purple-500 ${className}`}
+          className={`w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-3 py-2 text-sm text-zinc-200 resize-none focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 ${className}`}
           disabled={saving}
         />
         <div className="flex items-center gap-2 mt-2">
           <button
             onClick={() => handleSave()}
             disabled={saving}
-            className="text-xs bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-700 text-white px-3 py-1 rounded transition-colors"
+            className="text-xs bg-gradient-to-r from-purple-600 to-violet-600 text-white rounded-xl px-4 py-1.5 font-medium hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-200 disabled:bg-zinc-700 disabled:from-zinc-700 disabled:to-zinc-700"
           >
             {saving ? "Guardando..." : "Guardar"}
           </button>
           <button
             onClick={() => { setText(value); setEditing(false); stopListening(); }}
-            className="text-xs text-zinc-500 hover:text-zinc-300 px-3 py-1 transition-colors"
+            className="text-xs bg-zinc-800/50 hover:bg-zinc-700/50 text-zinc-400 border border-zinc-700/50 rounded-xl px-3 py-1.5 transition-all duration-200"
           >
             Cancelar
           </button>
           <button
             onClick={toggleVoice}
-            className={`text-xs px-3 py-1 rounded transition-colors flex items-center gap-1 ${
+            className={`text-xs px-3 py-1.5 rounded-xl transition-all duration-200 flex items-center gap-1 ${
               listening
-                ? "bg-red-600/20 text-red-400 border border-red-500/30"
-                : "text-zinc-500 hover:text-zinc-300"
+                ? "bg-red-500/20 text-red-400 border border-red-500/30"
+                : "bg-zinc-800/50 hover:bg-zinc-700/50 text-zinc-400 border border-zinc-700/50"
             }`}
             title={listening ? "Parar dictado" : "Dictar con voz"}
           >
@@ -173,7 +173,7 @@ export default function InlineEdit({ value, onSave, className = "", tag: Tag = "
               </>
             )}
           </button>
-          <span className="text-[10px] text-zinc-600 ml-auto">Cmd+Enter para guardar · Esc para cancelar</span>
+          <span className="text-[10px] text-zinc-700 ml-auto">Cmd+Enter para guardar · Esc para cancelar</span>
         </div>
       </div>
     );
@@ -182,11 +182,11 @@ export default function InlineEdit({ value, onSave, className = "", tag: Tag = "
   return (
     <span className="group relative inline">
       <Tag
-        className={`cursor-pointer hover:bg-zinc-800/50 rounded px-1 -mx-1 transition-colors ${className}`}
+        className={`cursor-pointer hover:bg-white/[0.02] rounded-xl p-2 -m-2 transition-all duration-200 ${className}`}
         onClick={() => setEditing(true)}
         title="Click para editar"
       >
-        &ldquo;{value}&rdquo;
+        <span className="text-zinc-700">&ldquo;</span>{value}<span className="text-zinc-700">&rdquo;</span>
       </Tag>
       <button
         onClick={(e) => { e.stopPropagation(); setEditing(true); }}

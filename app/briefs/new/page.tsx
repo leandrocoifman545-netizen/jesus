@@ -17,8 +17,8 @@ export default async function NewBriefPage() {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-2xl font-bold">Nuevo Guion</h1>
-        <p className="text-zinc-400 mt-1">
+        <h1 className="text-3xl font-bold tracking-tight">Nuevo Guion</h1>
+        <p className="text-zinc-500 mt-1">
           {projects.length > 0
             ? "Selecciona un proyecto o completa el brief manualmente"
             : "Completa el brief para generar guiones listos para produccion"}
