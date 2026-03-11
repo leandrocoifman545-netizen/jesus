@@ -1,0 +1,98 @@
+{
+  "id": "b4a788e2-9651-49db-a216-3b7b604dd288",
+  "briefId": "1a75982d-ef57-4c24-889d-d2fbbb408041",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Talking head, transparente y sin presión. Tono Jesús Tassarolo: honesto sobre el modelo de negocio.",
+      "key_considerations": "Cuerpo funciona solo sin hooks. PAS framework. Transparencia del modelo de negocio como técnica de venta. Cambio de creencia: de 'todo lo barato es malo' a '5 dólares es un filtro de compromiso'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "transparencia_directa",
+        "script_text": "Te voy a contar exactamente cómo gano plata. Sin chamuyo. Porque cuando entendés mi modelo de negocio, vas a entender por qué el taller vale 5 dólares y no 500.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Transparencia total que genera confianza. Abre loop sobre el modelo de negocio."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "comparacion_precio",
+        "script_text": "5 dólares. Un café en Starbucks. Una empanada en el aeropuerto. O 3 días aprendiendo a crear tu primer producto digital con IA. Vos elegís.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Ancla de precio con comparaciones cotidianas. Técnica de Emiliano de comparación de precio."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "anti_publico",
+        "script_text": "Este taller no es para todos. Si buscás hacerte rico mañana, no te anotes. Si no podés dedicar una hora al día, no te anotes. Pero si podés invertir 5 dólares y 3 días, te muestro algo que puede cambiar cómo ganás plata.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Anti-público que filtra y genera deseo. Las restricciones aumentan el valor percibido."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuánta plata gastaste el mes pasado en cosas que no te acordás? ¿50 dólares? ¿100? Y si por 5 dólares pudieras armar algo que te genere 500 al mes? No es magia. Es un método. Y te lo muestro en 3 días.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Contraste entre gasto invisible y inversión con retorno. Números concretos."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "cierre_dos_versiones",
+        "script_text": "Opción 1: no te sumás, seguís como estás, capaz lo intentás solo y eventualmente llegás. Opción 2: invertís 5 dólares — lo que sale una pizza — y en 3 días tenés tu primer producto digital listo. Sin presión. Vos decidís.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Dos versiones del futuro. Sin presión pero con contraste claro. Pizza como ancla de precio."
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Transparencia → confianza → baja barrera → invitación sin presión",
+      "sections": [
+        {
+          "section_name": "Transparencia",
+          "script_text": "Te voy a decir algo que la mayoría no te dice: yo no gano plata con el taller de 5 dólares. Es menos de lo que sale una pizza. ¿Entonces por qué lo cobro?",
+          "timing_seconds": 10,
+          "strategic_rationale": "Honestidad sobre el modelo que genera confianza. Pregunta retórica que mantiene atención."
+        },
+        {
+          "section_name": "Justificación",
+          "script_text": "Porque el que paga 5 dólares, aparece. El que entra gratis, desaparece. No es un filtro de plata. Es un filtro de compromiso.",
+          "timing_seconds": 8,
+          "strategic_rationale": "Justificación que reencuadra el precio como filtro, no como barrera."
+        },
+        {
+          "section_name": "Oferta",
+          "script_text": "En esos 3 días yo te muestro paso a paso cómo crear tu primer producto digital con inteligencia artificial. No teoría. Lo hacemos juntos. Si al final del taller no creaste nada, te devuelvo la plata. Así de simple.",
+          "timing_seconds": 12,
+          "is_rehook": true,
+          "strategic_rationale": "Rehook con oferta concreta + garantía. 'Lo hacemos juntos' elimina miedo. Garantía elimina riesgo."
+        },
+        {
+          "section_name": "Modelo de negocio",
+          "script_text": "Mi negocio real es el programa completo que viene después. Pero no te voy a vender nada que no quieras. Si el taller te sirve y querés seguir, seguís. Si no, te llevás lo que aprendiste y listo. Son 5 dólares. El riesgo más grande que corrés es no pedir la pizza hoy.",
+          "timing_seconds": 12,
+          "strategic_rationale": "Transparencia total del modelo de negocio. Callback a la pizza. Elimina presión de venta."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "learn_more",
+        "script_text": "[CTA genérico]",
+        "timing_seconds": 5,
+        "strategic_rationale": "CTA genérico para adaptar según campaña."
+      }
+    ],
+    "total_duration_seconds": 55,
+    "word_count": 155
+  },
+  "createdAt": "2026-03-10T18:19:56.584Z",
+  "status": "draft"
+}

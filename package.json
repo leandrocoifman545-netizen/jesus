@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -15,7 +15,8 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",
     "@google/genai": "^1.44.0",
-    "next": "^16.1.6",
+    "google-trends-api": "^4.9.2",
+    "next": "^15.5.12",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

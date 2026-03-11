@@ -1,0 +1,29 @@
+{
+  "id": "ref-quantum-clic-competidor",
+  "title": "Quantum Clic (Gio) - Competidor directo ADP",
+  "type": "audio",
+  "transcript": "VSL larga. Membresía $39/mes para vender productos digitales con IA. 3 niveles progresivos.",
+  "analysis": {
+    "hook_type": "Provocación + curiosidad",
+    "hook_text": "Detente y cuestiona todo lo que querés saber sobre vender productos digitales. Lo que estás por descubrir puede cambiar tu percepción de esta industria.",
+    "structure": "Hook provocador - La verdad oculta (top players vs vendehumos) - Historia de origen - Revelación del método - Oferta 3 niveles - Bonos - Urgencia",
+    "framework": "Conspiración + Anti-gurú + Oferta progresiva",
+    "tone": "Confrontativo con los gurús, posicionamiento anti-curso, algo exagerado en conspiración",
+    "cta_type": "Membresía $39/mes",
+    "cta_text": "Accede hoy y congela este precio de $39 al mes antes de que suba",
+    "duration_seconds": 1800,
+    "key_patterns": [
+      "Anti-gurú: los que enseñan nunca vendieron un producto de verdad",
+      "3 niveles progresivos (principiante/intermedio/avanzado) ordena el caos del avatar",
+      "Top players tienen herramientas secretas como ángulo de venta",
+      "Facturación real ($500K) sin vender cursos como credencial",
+      "Critica ChatGPT gratis como insuficiente para negocio real"
+    ],
+    "language": "es",
+    "emotional_arc": "Indignación (te mintieron) - Revelación (así funciona de verdad) - Esperanza (vos también podés) - Acción"
+  },
+  "createdAt": "2026-03-09T00:00:00.000Z",
+  "competitor": true,
+  "reference_type": "competitor",
+  "notes": "Competidor directo. Mismo avatar y oferta que Jesús. Ángulo anti-gurú es fuerte y adaptable. Los 3 niveles progresivos son buena idea. Debilidad: repite top players 40 veces, suena conspirativo. Jesús puede ser más auténtico y directo."
+}

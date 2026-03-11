@@ -4,3 +4,8 @@ node_modules/
 .env*.local
 .DS_Store
 tsconfig.tsbuildinfo
+
+# Media files (too large for git)
+*.mp3
+*.mp4
+*.pdf

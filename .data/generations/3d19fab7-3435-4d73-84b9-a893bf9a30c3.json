@@ -1,0 +1,97 @@
+{
+  "id": "3d19fab7-3435-4d73-84b9-a893bf9a30c3",
+  "briefId": "73992292-96ef-420e-96b7-a8d8925e9cc7",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 50,
+      "content_style": "Talking head, empático y empoderador. Tono Jesús Tassarolo: respetuoso con la edad, sin condescendencia.",
+      "key_considerations": "Cuerpo funciona solo sin hooks. BAB framework. Cambio de creencia: de 'soy muy grande para esto' a 'mi edad es mi mayor ventaja'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "validacion_directa",
+        "script_text": "Si tenés más de 45 años y pensás que ya es tarde para emprender algo online, este video es para vos. No solo no es tarde — estás en mejor posición que un pibe de 25. Te explico por qué.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Validación directa del público específico. El reencuadre de la edad como ventaja genera curiosidad."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que mejor les va vendiendo productos digitales no son jóvenes. Son personas de 45, 50, 60 años. ¿Por qué? Porque tienen algo que la IA no puede crear: experiencia real.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Contraintuitivo que desafía el sesgo de juventud = tecnología. Posiciona la experiencia como insustituible."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_mini",
+        "script_text": "Un alumno de 58 años me dijo: 'Jesús, yo de tecnología no sé nada.' A las dos semanas tenía su primer producto vendiendo. ¿Qué sabía? Sabía de jardinería. Nada más.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Historia de alumno real del mismo perfil. Jardinería como nicho inesperado genera sorpresa."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántos años te quedan laburando para otro? ¿10? ¿15? ¿Y si en los próximos 3 meses armaras algo propio que te genere ingresos? Con la experiencia que ya tenés y una herramienta que hace el trabajo técnico por vos.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Pregunta que toca la urgencia temporal del segmento. 3 meses como horizonte alcanzable."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "script_text": "Esto no es para pendejos que quieren hacerse ricos en TikTok. Es para gente grande, con experiencia real, que quiere generar un ingreso extra sin complicarse la vida. Si sos esa persona, escuchame.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Filtro generacional que hace sentir al público mayor como el target real. Anti-público como validación."
+      }
+    ],
+    "development": {
+      "framework_used": "BAB",
+      "emotional_arc": "Validación → reencuadre de la edad → mecanismo que elimina barrera → empoderamiento",
+      "sections": [
+        {
+          "section_name": "Before - La creencia",
+          "script_text": "Si tenés 50 años, ya laburaste 30. Treinta años de experiencia. Eso no es una desventaja. Es exactamente lo que hace falta para crear un producto digital.",
+          "timing_seconds": 8,
+          "strategic_rationale": "Reencuadra los 30 años de trabajo como activo, no como limitación."
+        },
+        {
+          "section_name": "Contraste generacional",
+          "script_text": "La realidad es que un pibe de 25 sabe de tecnología pero no sabe de la vida. Vos sabés de la vida pero le tenés miedo a la tecnología. ¿Y si la tecnología ya no fuera un problema?",
+          "timing_seconds": 10,
+          "strategic_rationale": "Contraste que valida al público mayor. La pregunta final introduce el mecanismo."
+        },
+        {
+          "section_name": "After - El mecanismo",
+          "script_text": "Hoy la inteligencia artificial hace el trabajo técnico. Vos le decís qué querés crear — una guía de cocina, un manual de finanzas, un curso de lo que sea — y ella lo arma. Literalmente. Copiar y pegar.",
+          "timing_seconds": 14,
+          "is_rehook": true,
+          "strategic_rationale": "Rehook con mecanismo ultra simplificado. 'Copiar y pegar' como nivel de dificultad máximo. Elimina barrera técnica."
+        },
+        {
+          "section_name": "Bridge - Cambio de creencia",
+          "script_text": "No tenés que aprender a programar. No tenés que tener seguidores. No tenés que entender de diseño. La IA sabe por vos. Lo único que necesitás es saber algo que le sirva a otra persona. Y con 50 años, sabés más que la mayoría.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Cierre empoderador. Lista de negaciones que elimina objeciones. Callback a la edad como ventaja."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "learn_more",
+        "script_text": "[CTA genérico]",
+        "timing_seconds": 5,
+        "strategic_rationale": "CTA genérico para adaptar según campaña."
+      }
+    ],
+    "total_duration_seconds": 50,
+    "word_count": 142
+  },
+  "createdAt": "2026-03-10T18:19:54.521Z"
+}

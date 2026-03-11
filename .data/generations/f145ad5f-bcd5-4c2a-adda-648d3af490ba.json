@@ -1,0 +1,83 @@
+{
+  "id": "f145ad5f-bcd5-4c2a-adda-648d3af490ba",
+  "briefId": "a25e5728-52ca-4ab8-a44b-76d7702e67fa",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Hablando a cámara, informal, energético",
+      "key_considerations": "Hook rate en primeros 3s, subtítulos grandes"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Estás en la cocina, son las 8 de la noche, no sabés qué hacer de comer. Abrís Google y buscás \"recetas rápidas\". Millones de personas hacen exactamente eso. Todos los días. Y alguien está ganando plata con eso. Dejame explicarte cómo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que más ganan vendiendo productos digitales no saben de tecnología. Saben cocinar. O saben de perros. O saben organizar sus gastos. Te muestro por qué.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion_especifica",
+        "script_text": "Tu vieja tiene mejores recetas que el 90% de los ebooks que se venden en internet. Y no está vendiendo ninguna. Hoy eso se cambia.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "script_text": "\"Recetas fáciles\" tiene más de 100 mil búsquedas por mes en Google. 100 mil personas buscando algo que vos probablemente ya sabés hacer. Pero dejame contarte cómo convertir eso en plata.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "¿Viste cuando le pasás una receta por WhatsApp a una amiga? Bueno, hay gente que hace exactamente eso pero cobra por ello. Y la IA le arma el recetario entero. No estoy hablando de ser chef. Estoy hablando de un negocio.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Cambio de creencia",
+      "emotional_arc": "Conexión cotidiana → revelación de oportunidad → simplicidad del mecanismo → empoderamiento",
+      "sections": [
+        {
+          "section_name": "Identificación del dolor/oportunidad",
+          "is_rehook": false,
+          "script_text": "La realidad es que hay millones de personas que llegan a su casa reventadas del laburo y no saben qué cocinar. Buscan \"recetas fáciles para la semana\" todos los días en Google. ¿Me siguen?",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Mecanismo IA",
+          "is_rehook": false,
+          "script_text": "Bueno, con inteligencia artificial hoy podés armar un recetario completo — con fotos, con lista de compras, con menú semanal — en una tarde. Literalmente le decís a la IA \"armame 30 recetas para una familia que no tiene tiempo\" y te lo hace.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Modelo de negocio",
+          "is_rehook": true,
+          "script_text": "Pero acá viene lo interesante. Ese recetario lo subís a una plataforma como Hotmart, le ponés un precio de 7 dólares, y cada vez que alguien lo compra, la plata entra sola. No tenés que cocinar. No tenés que enviar nada. Lo creás una sola vez y lo vendés infinitas veces.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Cambio de creencia",
+          "is_rehook": false,
+          "script_text": "Entonces ¿para qué necesitás saber de programación? ¿Para qué necesitás miles de seguidores? Solo necesitás saber algo que a otra persona le sirva. Y si cocinás todos los días para tu familia, ya sabés más que suficiente.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "[CTA genérico — se pega en edición]",
+      "reason_why": "Ver en vivo cómo se crea el producto",
+      "timing_seconds": 0,
+      "cta_type": "learn_more"
+    },
+    "total_duration_seconds": 53,
+    "word_count": 142
+  },
+  "createdAt": "2026-03-10T18:11:32.622Z"
+}

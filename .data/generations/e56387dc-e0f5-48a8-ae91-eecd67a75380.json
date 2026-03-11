@@ -1,0 +1,97 @@
+{
+  "id": "e56387dc-e0f5-48a8-ae91-eecd67a75380",
+  "briefId": "c8a6313c-ee0b-403a-bd29-abdb4e12a4c8",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 52,
+      "content_style": "Talking head, práctico con números. Tono Jesús Tassarolo: directo, con ejemplos de nicho concreto.",
+      "key_considerations": "Cuerpo funciona solo sin hooks. PAS framework. Nicho de finanzas personales como ejemplo. Cambio de creencia: de 'necesito ser experto' a 'si organizás tu plata, ya sabés suficiente'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Faltan 5 días para cobrar y ya no tenés un peso. Te pasó, ¿no? A millones de personas también. Y hay gente ganando plata ayudándolos a organizarse. Con algo que la IA arma en horas.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Situación universal que genera reconocimiento inmediato. Conecta el dolor personal con la oportunidad."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "script_text": "'Planilla de gastos' tiene más de 30 mil búsquedas por mes en Google. Gente buscando algo que la IA te arma en 20 minutos. ¿Por qué no estás vendiendo eso?",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Dato de búsqueda real que cuantifica demanda. Contraste con la facilidad de creación."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "El nicho más rentable para vender online no es fitness ni marketing. Es algo que todos necesitan y nadie quiere hablar: organizar la plata. Te cuento por qué.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Desafía la creencia de que los nichos populares son los mejores. Abre curiosidad."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Sabés organizar tus gastos? ¿Pagás todo a tiempo? Felicitaciones: tenés un producto digital para vender. No, en serio. Dejame explicarte.",
+        "screen_text": "",
+        "timing_seconds": 5,
+        "strategic_rationale": "Convierte una habilidad cotidiana en oportunidad de negocio. Sorpresa genuina."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "provocacion",
+        "script_text": "Tu contador cobra 200 dólares por algo que la IA arma gratis. Pero vos podés vender eso a 15 dólares y ayudar a miles de familias. El modelo es más simple de lo que pensás.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Comparación de precio que muestra la oportunidad. Posiciona como ayuda, no solo negocio."
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Dolor compartido → oportunidad oculta → mecanismo simple → prueba de números",
+      "sections": [
+        {
+          "section_name": "Problema",
+          "script_text": "Hay millones de familias que cobran y en dos semanas ya no saben a dónde se fue la plata. No es que ganen poco. Es que no tienen un sistema para organizar sus gastos.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Problema universal que genera empatía. Reencuadra: no es falta de dinero, es falta de sistema."
+        },
+        {
+          "section_name": "Agitación",
+          "script_text": "¿Sabés qué buscan? 'Planilla de gastos', 'cómo ahorrar', 'presupuesto familiar'. Todos los meses. La misma búsqueda.",
+          "timing_seconds": 6,
+          "strategic_rationale": "Agita mostrando la demanda repetitiva. Implica oportunidad recurrente."
+        },
+        {
+          "section_name": "Solución",
+          "script_text": "Con inteligencia artificial hoy podés armar una guía completa de finanzas personales. Con planillas, con calendario de pagos, con el paso a paso para organizar la plata del mes. La IA te arma todo. Vos le agregás tu experiencia real — cómo organizás tus gastos, qué te funcionó a vos — y tenés un producto de 15 dólares.",
+          "timing_seconds": 14,
+          "is_rehook": true,
+          "strategic_rationale": "Rehook con solución detallada. Mecanismo claro: IA + experiencia personal = producto. Precio concreto."
+        },
+        {
+          "section_name": "Prueba de números + cambio de creencia",
+          "script_text": "15 dólares. Menos que una salida a comer. Y si lo compran 10 personas por semana, son 600 dólares al mes. Con algo que creaste una sola vez. No necesitás ser contador. Si pagás tus cuentas a tiempo y no te quedás en rojo, ya sabés más que la mitad del mercado.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Matemática simple que hace tangible el ingreso. Elimina barrera de expertise con comparación accesible."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "learn_more",
+        "script_text": "[CTA genérico]",
+        "timing_seconds": 5,
+        "strategic_rationale": "CTA genérico para adaptar según campaña."
+      }
+    ],
+    "total_duration_seconds": 52,
+    "word_count": 145
+  },
+  "createdAt": "2026-03-10T18:19:53.896Z"
+}

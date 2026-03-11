@@ -1,0 +1,29 @@
+{
+  "id": "ref-melisa-escobar-analisis-agregado",
+  "title": "Melisa Escobar - Competidora directa ADP (12 ads analizados)",
+  "type": "video",
+  "transcript": "12 videos analizados. Hooks: 1) Diálogo actuado con amiga 2) Cuenta falsa provocación 3) Skynet/Terminator miedo 4) Solo 1% usa IA avanzada 5) Clase baja permanente 6) Lifestyle París 7) Nunca vas a poder venir 8) Contrato para cumplir sueños 9) Desafío 30 segundos 10) TikTok sin bailecitos 11) Qué tienen en común las apps 12) Te voy a abrir los ojos",
+  "analysis": {
+    "hook_type": "Variado - 12 hooks distintos analizados",
+    "hook_text": "Mejores: Diálogo actuado (Meli explicame eso que hacés), Contrato/compromiso (Este es el contrato que debés firmar), Desafío con timer (Tenés 30 segundos para armar un negocio)",
+    "structure": "Hook - Mecanismo simplificado (4 herramientas) - Prueba social (notificaciones + alumnos) - CTA clase gratuita. Siempre la misma.",
+    "framework": "Hook-Mecanismo-Prueba-CTA",
+    "tone": "Español neutro colombiano, directo, aspiracional, mucha prueba social",
+    "cta_type": "Clase gratuita",
+    "cta_text": "Haz clic en ver más y mira la clase antes de que deje de estar disponible",
+    "duration_seconds": 60,
+    "key_patterns": [
+      "Actuación/diálogo como hook (simula conversación real)",
+      "Contrato/compromiso pone al espectador en modo decisión",
+      "Prueba social en CADA video (notificaciones + capturas de alumnos)",
+      "Simplicidad extrema del mecanismo (4 herramientas listo)",
+      "Sin mostrarte, sin ser reconocido, sin renunciar a tu trabajo (triple negación de objeciones)"
+    ],
+    "language": "es-CO",
+    "emotional_arc": "Curiosidad/alarma - Simplificación - Validación social - Urgencia"
+  },
+  "createdAt": "2026-03-09T00:00:00.000Z",
+  "competitor": true,
+  "reference_type": "competitor",
+  "notes": "Competidora directa de Jesús. Misma oferta (productos digitales con IA). Hace mejor: prueba social constante, diversidad de hooks, simplicidad. Hace peor: cero cambio de creencia, fear-mongering exagerado, no tiene big idea de nicho, CTA copy-paste. Hooks nuevos para ADP: actuación/diálogo y contrato/compromiso."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ref-rodrigo-timeline-provocacion",
+  "title": "Hook: Timeline + Provocación (Rodrigo #23)",
+  "type": "video",
+  "transcript": "En 30 días, usted va a parar de usar el chat GPT por el chat y voy a mostrar exactamente por qué. En día 1, usted aprende a tirar cualquier idea del chat y entiende la lógica de cómo ponerla para trabajar por usted. En día 7, usted va a tener que crear su primer agente personal capaz de acceder a su email o su calendario. En día 15, usted va a entender cómo utilizar diferentes modelos de inteligencia artificial en sus proyectos. Y en día 30, usted ya va a entender cómo colocar la propia AI para desenvolver estos sistemas para usted del inicio al fin.",
+  "analysis": {
+    "hook_type": "Timeline + provocación",
+    "hook_text": "En 30 días vas a dejar de usar ChatGPT por el chat. Y te voy a mostrar exactamente por qué.",
+    "structure": "Hook provocador - Timeline día 1/7/15/30 con hitos progresivos - Reframe de lo que realmente es IA - CTA aula gratuita",
+    "framework": "Provocación + Timeline progresiva",
+    "tone": "Directo, confiado, didáctico",
+    "cta_type": "Aula gratuita + link",
+    "cta_text": "Preparé una aula gratuita que podés acceder clicando en el link abajo",
+    "duration_seconds": 78,
+    "key_patterns": [
+      "Timeline con hitos concretos genera sensación de progreso real",
+      "Provocación inicial contradice lo que el espectador hace hoy",
+      "Cada hito es más ambicioso que el anterior (escalera de curiosidad)"
+    ],
+    "language": "pt-BR",
+    "emotional_arc": "Provocación - Curiosidad - Ambición - Acción"
+  },
+  "createdAt": "2026-03-09T00:00:00.000Z",
+  "competitor": false,
+  "reference_type": "inspiration",
+  "notes": "Hook nuevo: Timeline + provocación. Fórmula: En X días vas a [resultado provocador]. Día 1... Día 7... Día 30... Adaptable a ADP: En 30 días vas a tener tu primer producto digital vendiendo."
+}

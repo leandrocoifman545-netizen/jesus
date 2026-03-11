@@ -15,11 +15,14 @@ export default async function ScriptPage({ params }: { params: Promise<{ id: str
     <div>
       <div className="flex items-center justify-between mb-8">
         <div>
-          <Link href="/" className="text-xs text-zinc-500 hover:text-zinc-400 transition-colors">
-            &larr; Volver al dashboard
-          </Link>
-          <h1 className="text-2xl font-bold mt-2">Guion Generado</h1>
-          <p className="text-zinc-500 text-sm mt-1">
+          <nav className="text-xs flex items-center gap-1">
+            <Link href="/" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+              Dashboard
+            </Link>
+            <span className="text-zinc-700">/</span>
+            <span className="text-zinc-400">{generation.title || "Guion sin titulo"}</span>
+          </nav>
+          <p className="text-zinc-500 text-sm mt-3">
             Creado {new Date(generation.createdAt).toLocaleString("es-AR")}
           </p>
         </div>
@@ -30,7 +33,14 @@ export default async function ScriptPage({ params }: { params: Promise<{ id: str
           + Nuevo Guion
         </Link>
       </div>
-      <ScriptViewer script={generation.script} generationId={generation.id} />
+      <ScriptViewer
+        script={generation.script}
+        generationId={generation.id}
+        initialTitle={generation.title || ""}
+        initialStatus={generation.status || "draft"}
+        initialMetrics={generation.metrics}
+        initialSessionNotes={generation.sessionNotes || ""}
+      />
     </div>
   );
 }

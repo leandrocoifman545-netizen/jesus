@@ -1,0 +1,98 @@
+{
+  "id": "30f53a49-00fa-4e6f-85ac-e13018b93d4e",
+  "briefId": "d5762a9e-4eab-4051-bce2-10fade8d83f8",
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Talking head, empático con escépticos. Tono Jesús Tassarolo: honesto, sin promesas vacías.",
+      "key_considerations": "Cuerpo funciona solo sin hooks. BAB framework. Cambio de creencia: de 'vender online es una estafa' a 'el modelo funciona, el problema fue quién te lo enseñó'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "validacion_esceptico",
+        "script_text": "Si ya compraste un curso online y no te sirvió, escuchame. La culpa no fue tuya. El problema es que la mayoría de los que enseñan nunca hicieron lo que enseñan. Yo sí. Te lo demuestro.",
+        "screen_text": "",
+        "timing_seconds": 8,
+        "strategic_rationale": "Valida el dolor del escéptico. No defiende la industria, la ataca. Genera confianza desde el primer segundo."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "script_text": "'Para vender en Hotmart hay que pagar?' Es de las cosas que más se busca en Google. Y la respuesta es no. No pagás nada. Pero hay algo que sí necesitás y nadie te lo dice.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Responde una búsqueda real del avatar. Abre loop con lo que nadie dice."
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "timeline_provocacion",
+        "script_text": "Hace 3 años yo también pensaba que vender por internet era humo. Hoy facturo más de un millón al año en publicidad. No cambié yo. Cambió el método.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Timeline personal que muestra transformación. El 'no cambié yo' reencuadra hacia el método."
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "negacion_directa",
+        "script_text": "No es multinivel. No es dropshipping. No es trading. Y no, no necesitás vender cursos de cómo vender cursos. Es algo completamente distinto. Dejame 60 segundos.",
+        "screen_text": "",
+        "timing_seconds": 6,
+        "strategic_rationale": "Elimina todas las asociaciones negativas que el escéptico tiene. Pide poco tiempo."
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuánta plata perdiste en cosas que prometían ingresos online? ¿200 dólares? ¿500? Yo perdí 150 mil. Y por eso hoy no te pido un solo peso para mostrarte cómo funciona.",
+        "screen_text": "",
+        "timing_seconds": 7,
+        "strategic_rationale": "Escala el dolor del avatar con el propio. La pérdida de 150 mil genera credibilidad. Conecta con la oferta gratuita."
+      }
+    ],
+    "development": {
+      "framework_used": "BAB",
+      "emotional_arc": "Validación del dolor → diagnóstico → diferenciación → prueba → invitación sin presión",
+      "sections": [
+        {
+          "section_name": "Diagnóstico",
+          "script_text": "La mayoría de los que te enseñan a vender productos digitales nunca vendieron uno. Su único negocio es venderte el curso. Por eso sentís que es una estafa. Porque compraste algo que no servía.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Diagnostica el problema real: no el modelo, sino quién lo enseña. Valida la experiencia del escéptico."
+        },
+        {
+          "section_name": "Diferenciación",
+          "script_text": "Pero el modelo en sí funciona. Hotmart mueve millones de dólares al mes. La gente compra guías, cursos, templates, recetarios todos los días. El problema no es el modelo. El problema es quién te lo enseñó.",
+          "timing_seconds": 10,
+          "strategic_rationale": "Separa el modelo de la experiencia negativa. Datos de Hotmart como prueba externa."
+        },
+        {
+          "section_name": "Prueba",
+          "script_text": "Yo no gano plata enseñando. Gano plata vendiendo productos digitales. Invierto más de un millón de dólares al año en publicidad. Y lo que enseño es exactamente lo que yo hago. ¿Me explico?",
+          "timing_seconds": 10,
+          "is_rehook": true,
+          "strategic_rationale": "Rehook con diferenciación clave: practica lo que predica. Dato de inversión en publicidad como prueba. Muletilla de Jesús."
+        },
+        {
+          "section_name": "Invitación sin presión",
+          "script_text": "La clase es gratis. No te pido tarjeta, no te pido datos, no te vendo nada adentro. Si después de verla pensás que es humo, perfecto, no perdiste nada. Pero si ves que tiene sentido, tenés un taller de 3 días donde lo hacés conmigo paso a paso.",
+          "timing_seconds": 12,
+          "strategic_rationale": "Elimina todas las objeciones del escéptico una por una. Garantía implícita de cero riesgo."
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "variant_number": 1,
+        "cta_type": "learn_more",
+        "script_text": "[CTA genérico]",
+        "timing_seconds": 5,
+        "strategic_rationale": "CTA genérico para adaptar según campaña."
+      }
+    ],
+    "total_duration_seconds": 55,
+    "word_count": 155
+  },
+  "createdAt": "2026-03-10T18:19:52.251Z",
+  "status": "draft"
+}

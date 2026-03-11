@@ -32,6 +32,13 @@ export interface DevelopmentSection {
   timing_seconds: number;
 }
 
+export interface VisualFormat {
+  format_name: string;
+  difficulty_level: number;
+  setup_instructions: string;
+  recording_notes: string;
+}
+
 export interface ScriptOutput {
   platform_adaptation: {
     platform: string;
@@ -39,6 +46,7 @@ export interface ScriptOutput {
     content_style: string;
     key_considerations: string;
   };
+  visual_format?: VisualFormat;
   hooks: Hook[];
   development: {
     framework_used: string;

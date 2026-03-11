@@ -1,0 +1,28 @@
+{
+  "id": "ref-simplificacion-error-pedrobuerbaum",
+  "title": "Hook: Simplificación + Error en paso clave",
+  "type": "video",
+  "transcript": "Vamos a ver, ganar dinero es bastante sencillo, son dos pasos fundamentalmente, la mayoría es el primero bien pero la caga completamente en el segundo paso, primero necesitas ser capaz de aportar valor, necesitas tener algo que ofrecer en el mercado, entonces debes prepararte, debes tener un buen producto o servicio, desarrollar tus habilidades y mucha gente se detiene y se queda estancada en esa fase de preparación continua, pero luego para ganar dinero tienes que salir al mercado e intercambiar ese valor que tú puedes aportar por dinero, y cómo se consigue dinero poniendo aquel valor que puedes aportar delante de la cara de las personas que potencialmente podrían comprarlo y hay dos formas, tratar de hablar con ellos, llamar, escribir, presentarte, tocar puertas y ofrecer aquello que sabes hacer o puedes crear contenido, quieres hacerlo de forma menos personalizada pero de forma masiva, es un juego de ir a cazar con arpón tocando puertas, o pescar con red, ambas son válidas pero sin eso eres invisible, nadie sabe que existes, nadie sabe el valor que le puedes aportar y por lo tanto nadie te va a contratar, nadie te va a pagar.",
+  "analysis": {
+    "hook_type": "Simplificación + error en paso clave",
+    "hook_text": "Ganar dinero es bastante sencillo, son dos pasos. La mayoría hace el primero bien pero la caga completamente en el segundo.",
+    "structure": "Hook (simplificación + open loop) → Paso 1 validado → El error (quedarse en preparación) → Paso 2 revelado → Dos caminos → Cierre con consecuencia",
+    "framework": "Simplificación + Validar + Corregir",
+    "tone": "Directo, didáctico, conversacional. Español de España.",
+    "cta_type": "Sin CTA explícito",
+    "cta_text": "",
+    "duration_seconds": 87,
+    "key_patterns": [
+      "Simplificación en X pasos como hook",
+      "Validación parcial (hacés bien el paso 1) + open loop (la cagás en el 2)",
+      "El espectador se autoidentifica como el que falla",
+      "Analogía arpón vs red para explicar distribución"
+    ],
+    "language": "es-ES",
+    "emotional_arc": "Curiosidad (cuáles son los pasos?) → Validación (hago bien el primero) → Tensión (cuál es el que la cago?) → Revelación → Claridad"
+  },
+  "createdAt": "2026-03-09T00:00:00.000Z",
+  "competitor": false,
+  "reference_type": "inspiration",
+  "notes": "Hook replicable: Son X pasos, la mayoría hace bien el primero pero la caga en el segundo. Fórmula: simplificás + validás parcialmente + abrís loop del paso que falta. Adaptable a ADP: Crear un producto digital son 3 pasos, el 90% hace bien los dos primeros pero la caga en el tercero."
+}

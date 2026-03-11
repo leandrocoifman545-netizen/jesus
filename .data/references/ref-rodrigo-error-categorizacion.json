@@ -1,0 +1,27 @@
+{
+  "id": "ref-rodrigo-error-categorizacion",
+  "title": "Hook: Error + Categorización (Rodrigo #12)",
+  "type": "video",
+  "transcript": "Si estás estudiando la inteligencia artificial ahora, el mayor error que puedes hacer es montar el plan de estudios sin antes entender que, en realidad, hay cuatro caminos distintos en el mundo de AI. Y si no entiendes bien su objetivo antes de comenzar, te complica mucho.",
+  "analysis": {
+    "hook_type": "Error común + categorización",
+    "hook_text": "Si estás estudiando IA ahora, el mayor error que podés hacer es armar tu plan de estudios sin antes entender que hay 4 caminos distintos.",
+    "structure": "Hook (error que estás cometiendo) - Categorización en 4 caminos - Cada camino explicado - Posiciona el suyo como el mejor - CTA comentar",
+    "framework": "Error común + Categorización + Posicionamiento",
+    "tone": "Didáctico, estructurado, accesible",
+    "cta_type": "Comentar",
+    "cta_text": "Comenta aquí abajo cuál es el camino que estás siguiendo",
+    "duration_seconds": 90,
+    "key_patterns": [
+      "Error común como apertura genera urgencia de corregir",
+      "Categorización en caminos ordena el caos del espectador",
+      "Posiciona su producto como EL camino correcto sin decirlo explícitamente"
+    ],
+    "language": "pt-BR",
+    "emotional_arc": "Alarma - Orden - Claridad - Acción"
+  },
+  "createdAt": "2026-03-09T00:00:00.000Z",
+  "competitor": false,
+  "reference_type": "inspiration",
+  "notes": "Hook: Error + categorización. Fórmula: Si estás haciendo X, el mayor error es no saber que hay Y caminos. Adaptable a ADP: Si querés ganar plata online, el mayor error es no saber que hay 3 formas. La mayoría elige la más difícil."
+}

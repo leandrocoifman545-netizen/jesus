@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import type { ScriptOutput } from "@/lib/ai/schemas/script-output";
+import InlineEdit from "./inline-edit";
+import { useToast } from "./toast";
 
 const HOOK_TYPE_LABELS: Record<string, string> = {
   curiosity_gap: "Curiosity Gap",
@@ -68,10 +70,15 @@ function formatFullScript(script: ScriptOutput, hookIndex: number): string {
 
   text += `CTA\n`;
   text += `-`.repeat(50) + "\n";
-  text += `Tiempo: ${accTime}-${accTime + script.cta.timing_seconds}s\n`;
-  text += `"${script.cta.verbal_cta}"\n`;
-  text += `Razon: ${script.cta.reason_why}\n`;
-  text += `Tipo: ${script.cta.cta_type}\n`;
+  if (script.cta) {
+    const ctaEnd = (script.cta.timing_seconds || 0);
+    text += `Tiempo: ${accTime}-${accTime + ctaEnd}s\n`;
+    text += `"${script.cta.verbal_cta || '[CTA genérico — se pega en edición]'}"\n`;
+    text += `Razon: ${script.cta.reason_why || '-'}\n`;
+    text += `Tipo: ${script.cta.cta_type || '-'}\n`;
+  } else {
+    text += `[CTA genérico — se pega en edición]\n`;
+  }
 
   return text;
 }
@@ -106,19 +113,126 @@ function RegenButton({
   );
 }
 
+type GenerationStatus = "draft" | "recorded" | "winner";
+
+const STATUS_CONFIG: Record<GenerationStatus, { label: string; next: GenerationStatus; color: string }> = {
+  draft: { label: "Borrador", next: "recorded", color: "text-zinc-500 border-zinc-700 hover:border-zinc-500" },
+  recorded: { label: "Grabado", next: "winner", color: "text-green-400 border-green-500/30 bg-green-500/5 hover:bg-green-500/10" },
+  winner: { label: "Winner", next: "draft", color: "text-amber-400 border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10" },
+};
+
+interface WinnerMetrics {
+  ctr?: number;
+  hookRate?: number;
+  holdRate?: number;
+  cpa?: number;
+  roas?: number;
+  notes?: string;
+  bestLeadIndex?: number;
+  recordedAt?: string;
+}
+
 export default function ScriptViewer({
   script: initialScript,
   generationId,
+  initialTitle = "",
+  initialStatus = "draft",
+  initialMetrics,
+  initialSessionNotes = "",
 }: {
   script: ScriptOutput;
   generationId: string;
+  initialTitle?: string;
+  initialStatus?: GenerationStatus;
+  initialMetrics?: WinnerMetrics;
+  initialSessionNotes?: string;
 }) {
   const router = useRouter();
+  const toast = useToast();
   const [script, setScript] = useState(initialScript);
   const [selectedHook, setSelectedHook] = useState(0);
   const [moreCount, setMoreCount] = useState(3);
   const [generating, setGenerating] = useState(false);
   const [regenTarget, setRegenTarget] = useState<string | null>(null);
+  const [title, setTitle] = useState(initialTitle);
+  const [editingTitle, setEditingTitle] = useState(false);
+  const [titleDraft, setTitleDraft] = useState(initialTitle);
+  const [savingTitle, setSavingTitle] = useState(false);
+  const [status, setStatus] = useState<GenerationStatus>(initialStatus);
+  const [updatingStatus, setUpdatingStatus] = useState(false);
+  const [metrics, setMetrics] = useState<WinnerMetrics>(initialMetrics || {});
+  const [sessionNotes, setSessionNotes] = useState(initialSessionNotes);
+  const [showMetrics, setShowMetrics] = useState(false);
+  const [savingMeta, setSavingMeta] = useState(false);
+
+  async function saveTitle(newTitle: string) {
+    setSavingTitle(true);
+    try {
+      const res = await fetch("/api/generate/status", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId, title: newTitle }),
+      });
+      if (!res.ok) throw new Error("Error");
+      setTitle(newTitle);
+      toast("Titulo guardado");
+    } catch {
+      toast("Error guardando titulo", "error");
+    } finally {
+      setSavingTitle(false);
+      setEditingTitle(false);
+    }
+  }
+
+  async function saveMetrics(newMetrics?: WinnerMetrics, newNotes?: string) {
+    setSavingMeta(true);
+    try {
+      const body: Record<string, unknown> = { generationId };
+      if (newMetrics) body.metrics = newMetrics;
+      if (newNotes !== undefined) body.sessionNotes = newNotes;
+      const res = await fetch("/api/generate/status", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      if (!res.ok) throw new Error("Error");
+      toast("Metricas guardadas");
+    } catch {
+      toast("Error guardando", "error");
+    } finally {
+      setSavingMeta(false);
+    }
+  }
+
+  async function cycleStatus() {
+    const nextStatus = STATUS_CONFIG[status].next;
+    setUpdatingStatus(true);
+    try {
+      const res = await fetch("/api/generate/status", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId, status: nextStatus }),
+      });
+      if (!res.ok) throw new Error("Error");
+      setStatus(nextStatus);
+      toast(`Estado: ${STATUS_CONFIG[nextStatus].label}`);
+    } catch {
+      toast("Error actualizando estado", "error");
+    } finally {
+      setUpdatingStatus(false);
+    }
+  }
+
+  const handleEdit = useCallback(async (path: string, value: string) => {
+    const res = await fetch("/api/generate/edit", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ generationId, path, value }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error);
+    setScript(data.script);
+  }, [generationId]);
 
   async function handleRegenerate(target: "section" | "cta" | "hook", index?: number) {
     const key = `${target}-${index ?? ""}`;
@@ -133,7 +247,7 @@ export default function ScriptViewer({
       if (!res.ok) throw new Error(data.error);
       setScript(data.script);
     } catch (err) {
-      alert(err instanceof Error ? err.message : "Error regenerando");
+      toast(err instanceof Error ? err.message : "Error regenerando", "error");
     } finally {
       setRegenTarget(null);
     }
@@ -156,7 +270,7 @@ export default function ScriptViewer({
       }));
       setSelectedHook(script.hooks.length);
     } catch (err) {
-      alert(err instanceof Error ? err.message : "Error generando hooks");
+      toast(err instanceof Error ? err.message : "Error generando hooks", "error");
     } finally {
       setGenerating(false);
     }
@@ -164,6 +278,146 @@ export default function ScriptViewer({
 
   return (
     <div className="space-y-8">
+      {/* Title */}
+      <div>
+        {editingTitle ? (
+          <div className="flex items-center gap-2">
+            <input
+              autoFocus
+              value={titleDraft}
+              onChange={(e) => setTitleDraft(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") saveTitle(titleDraft);
+                if (e.key === "Escape") { setEditingTitle(false); setTitleDraft(title); }
+              }}
+              className="flex-1 bg-transparent border-b-2 border-purple-500 text-2xl font-bold text-white focus:outline-none py-1"
+              placeholder="Ej: Crianza — Mamá/tiempo — Seg C"
+            />
+            <button
+              onClick={() => saveTitle(titleDraft)}
+              disabled={savingTitle}
+              className="text-xs text-purple-400 hover:text-purple-300 px-2 py-1"
+            >
+              {savingTitle ? "..." : "Guardar"}
+            </button>
+            <button
+              onClick={() => { setEditingTitle(false); setTitleDraft(title); }}
+              className="text-xs text-zinc-500 hover:text-zinc-300 px-2 py-1"
+            >
+              Cancelar
+            </button>
+          </div>
+        ) : (
+          <h1
+            onClick={() => { setEditingTitle(true); setTitleDraft(title); }}
+            className="text-2xl font-bold cursor-pointer hover:text-purple-300 transition-colors group"
+            title="Click para editar titulo"
+          >
+            {title || "Guion sin titulo"}
+            <span className="text-zinc-600 text-sm ml-2 opacity-0 group-hover:opacity-100 transition-opacity">editar</span>
+          </h1>
+        )}
+      </div>
+
+      {/* Status bar */}
+      <div className="flex items-center gap-3">
+        <button
+          onClick={cycleStatus}
+          disabled={updatingStatus}
+          className={`text-xs px-3 py-1 rounded-full border transition-colors ${STATUS_CONFIG[status].color} ${updatingStatus ? "opacity-50" : ""}`}
+          title="Click para cambiar: Borrador -> Grabado -> Winner -> Borrador"
+        >
+          {updatingStatus ? "..." : STATUS_CONFIG[status].label}
+        </button>
+        {(status === "recorded" || status === "winner") && (
+          <>
+            <span className="text-[10px] text-red-400/50">{script.hooks.length} leads quemados</span>
+            <button
+              onClick={() => setShowMetrics(!showMetrics)}
+              className="text-[10px] text-zinc-500 hover:text-zinc-300 transition-colors"
+            >
+              {showMetrics ? "Ocultar metricas" : "Metricas + notas"}
+            </button>
+          </>
+        )}
+      </div>
+
+      {/* Metrics panel (for recorded/winner) */}
+      {showMetrics && (status === "recorded" || status === "winner") && (
+        <div className={`border rounded-xl p-4 space-y-3 ${status === "winner" ? "border-amber-500/20 bg-amber-500/5" : "border-green-500/20 bg-green-500/5"}`}>
+          <h3 className="text-xs font-semibold text-zinc-400">Metricas de rendimiento</h3>
+          <div className="grid grid-cols-5 gap-2">
+            {([
+              ["CTR %", "ctr"],
+              ["Hook Rate %", "hookRate"],
+              ["Hold Rate %", "holdRate"],
+              ["CPA $", "cpa"],
+              ["ROAS x", "roas"],
+            ] as const).map(([label, key]) => (
+              <div key={key}>
+                <label className="text-[10px] text-zinc-500 block mb-1">{label}</label>
+                <input
+                  type="number"
+                  step="0.1"
+                  value={metrics[key] ?? ""}
+                  onChange={(e) => {
+                    const val = e.target.value ? parseFloat(e.target.value) : undefined;
+                    setMetrics((prev) => ({ ...prev, [key]: val }));
+                  }}
+                  className="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-1 text-xs text-zinc-200 focus:outline-none focus:border-purple-500"
+                  placeholder="-"
+                />
+              </div>
+            ))}
+          </div>
+          <div>
+            <label className="text-[10px] text-zinc-500 block mb-1">Mejor lead (cual funco mejor?)</label>
+            <div className="flex gap-1 flex-wrap">
+              {script.hooks.map((hook, i) => (
+                <button
+                  key={i}
+                  onClick={() => setMetrics((prev) => ({ ...prev, bestLeadIndex: i }))}
+                  className={`text-[10px] px-2 py-0.5 rounded border transition-colors ${
+                    metrics.bestLeadIndex === i
+                      ? "bg-purple-600 border-purple-600 text-white"
+                      : "border-zinc-700 text-zinc-400 hover:border-zinc-500"
+                  }`}
+                >
+                  #{hook.variant_number}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div>
+            <label className="text-[10px] text-zinc-500 block mb-1">Notas de la sesion</label>
+            <textarea
+              value={sessionNotes}
+              onChange={(e) => setSessionNotes(e.target.value)}
+              className="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-1 text-xs text-zinc-200 resize-none focus:outline-none focus:border-purple-500"
+              rows={2}
+              placeholder="Ej: El lead 2 de POV genero mucho engagement. Jesus lo grabo en 1 toma."
+            />
+          </div>
+          <div>
+            <label className="text-[10px] text-zinc-500 block mb-1">Notas de metricas</label>
+            <textarea
+              value={metrics.notes || ""}
+              onChange={(e) => setMetrics((prev) => ({ ...prev, notes: e.target.value }))}
+              className="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-1 text-xs text-zinc-200 resize-none focus:outline-none focus:border-purple-500"
+              rows={2}
+              placeholder="Ej: CTR alto pero CPA caro, iterar con otro formato"
+            />
+          </div>
+          <button
+            onClick={() => saveMetrics(metrics, sessionNotes)}
+            disabled={savingMeta}
+            className="text-xs bg-purple-600 hover:bg-purple-700 disabled:bg-zinc-700 text-white px-3 py-1 rounded transition-colors"
+          >
+            {savingMeta ? "Guardando..." : "Guardar metricas y notas"}
+          </button>
+        </div>
+      )}
+
       {/* Platform Info + Emotional Arc */}
       <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5">
         <div className="flex items-center justify-between mb-3">
@@ -192,6 +446,21 @@ export default function ScriptViewer({
             <p className="text-purple-300 font-medium">{script.development.emotional_arc}</p>
           </div>
         </div>
+        {script.visual_format && (
+          <div className="mt-4 border-t border-zinc-800 pt-4">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-zinc-500 text-xs">Formato Visual</span>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                Nivel {script.visual_format.difficulty_level}/5
+              </span>
+            </div>
+            <p className="text-white text-sm font-medium">{script.visual_format.format_name}</p>
+            <p className="text-zinc-400 text-xs mt-1">{script.visual_format.setup_instructions}</p>
+            {script.visual_format.recording_notes && (
+              <p className="text-zinc-500 text-xs mt-1 italic">{script.visual_format.recording_notes}</p>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Hooks Selector */}
@@ -286,15 +555,18 @@ export default function ScriptViewer({
                 {HOOK_TYPE_LABELS[script.hooks[selectedHook].hook_type]}
               </span>
               <span className="text-xs text-zinc-600">{script.hooks[selectedHook].timing_seconds}s</span>
+              <span className="text-[10px] text-zinc-600">{script.hooks[selectedHook].script_text.trim().split(/\s+/).length} palabras</span>
               <RegenButton
                 onClick={() => handleRegenerate("hook", selectedHook)}
                 loading={regenTarget === `hook-${selectedHook}`}
                 label="Regenerar este hook"
               />
             </div>
-            <p className="text-white text-lg leading-relaxed">
-              &ldquo;{script.hooks[selectedHook].script_text}&rdquo;
-            </p>
+            <InlineEdit
+              value={script.hooks[selectedHook].script_text}
+              onSave={(v) => handleEdit(`hooks.${selectedHook}.script_text`, v)}
+              className="text-white text-lg leading-relaxed"
+            />
           </div>
         )}
       </div>
@@ -311,12 +583,17 @@ export default function ScriptViewer({
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xs font-semibold text-purple-400">HOOK #{hook.variant_number}</span>
                   <span className="text-[10px] text-zinc-600 font-mono">0-{hook.timing_seconds}s</span>
+                  <span className="text-[10px] text-zinc-600">{hook.script_text.trim().split(/\s+/).length} palabras</span>
                   <RegenButton
                     onClick={() => handleRegenerate("hook", selectedHook)}
                     loading={regenTarget === `hook-${selectedHook}`}
                   />
                 </div>
-                <p className="text-zinc-200 text-sm">&ldquo;{hook.script_text}&rdquo;</p>
+                <InlineEdit
+                  value={hook.script_text}
+                  onSave={(v) => handleEdit(`hooks.${selectedHook}.script_text`, v)}
+                  className="text-zinc-200 text-sm"
+                />
               </div>
             );
           })()}
@@ -342,12 +619,17 @@ export default function ScriptViewer({
                       {section.section_name}
                     </span>
                     <span className="text-[10px] text-zinc-600 font-mono">{startTime}-{accTime}s</span>
+                    <span className="text-[10px] text-zinc-600">{section.script_text.trim().split(/\s+/).length} palabras</span>
                     <RegenButton
                       onClick={() => handleRegenerate("section", i)}
                       loading={regenTarget === `section-${i}`}
                     />
                   </div>
-                  <p className="text-zinc-200 text-sm">&ldquo;{section.script_text}&rdquo;</p>
+                  <InlineEdit
+                    value={section.script_text}
+                    onSave={(v) => handleEdit(`development.sections.${i}.script_text`, v)}
+                    className="text-zinc-200 text-sm"
+                  />
                 </div>
               );
             });
@@ -359,19 +641,29 @@ export default function ScriptViewer({
               (sum, s) => sum + s.timing_seconds,
               script.hooks[selectedHook].timing_seconds
             );
+            const cta = script.cta;
+            const ctaTiming = cta?.timing_seconds || 0;
+            const ctaVerbal = cta?.verbal_cta || '[CTA genérico — se pega en edición]';
+            const ctaType = cta?.cta_type || '-';
+            const ctaReason = cta?.reason_why || '';
             return (
               <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xs font-semibold text-emerald-400">CTA</span>
-                  <span className="text-[10px] text-zinc-600 font-mono">{devTotal}-{devTotal + script.cta.timing_seconds}s</span>
-                  <span className="text-[10px] text-zinc-600">({script.cta.cta_type})</span>
+                  <span className="text-[10px] text-zinc-600 font-mono">{devTotal}-{devTotal + ctaTiming}s</span>
+                  <span className="text-[10px] text-zinc-600">{ctaVerbal.trim().split(/\s+/).length} palabras</span>
+                  <span className="text-[10px] text-zinc-600">({ctaType})</span>
                   <RegenButton
                     onClick={() => handleRegenerate("cta")}
                     loading={regenTarget === "cta-"}
                   />
                 </div>
-                <p className="text-zinc-200 text-sm">&ldquo;{script.cta.verbal_cta}&rdquo;</p>
-                <p className="text-zinc-500 text-xs mt-1 italic">{script.cta.reason_why}</p>
+                <InlineEdit
+                  value={ctaVerbal}
+                  onSave={(v) => handleEdit("cta.verbal_cta", v)}
+                  className="text-zinc-200 text-sm"
+                />
+                {ctaReason && <p className="text-zinc-500 text-xs mt-1 italic">{ctaReason}</p>}
               </div>
             );
           })()}

@@ -1,0 +1,21 @@
+Cloud ahora tiene una skill que sirve para crear, mejorar y adaptar otras skills, y aunque
+suene bastante raro, en realidad cambia por completo la forma en la que actualmente trabajamos
+con agentes, ya que no estamos hablando solo de pedir prompts, sino de construir sistemas
+reutilizables.
+La clave para entender por qué esto importa está en que una skill en el fondo no deja
+de ser texto bien estructurado, una receta que le damos al modelo para que sepa cómo
+ejecutar ciertas tareas con criterio y con un estilo coherente a lo que nosotros buscamos.
+Y aquí es donde entra Skill Creator, porque en lugar de tener que inventarte tú toda esa
+receta desde cero, esta herramienta ayuda a Cloud a crear skills, modificarlas ya existentes
+o incluso adaptarlas para seguir una lógica de trabajo concreta.
+Lo potente de esto es que ya no te quedas en el típico prompte, diseña una web, sino
+que puedes transformar una tarea repetitiva en un método reutilizable, de forma que Cloud
+utilice ese proceso cada vez en lugar de improvisar, y además lo interesante no es solo crear
+la skill, sino poder iterarla después, porque esta herramienta también sirve para evaluar
+si está funcionando correctamente, detectar cuando falla y ajustar incluso la descripción
+para que se ejecute correctamente.
+Y ahí es donde para mí está el verdadero salto, porque pasamos de usar IA como algo
+que responde a usarlo como un sistema capaz de crear sus propios procesos y adaptarlos
+mejor a nuestra manera de trabajar.
+Si quieres que te envíe la guía completa con el paso a paso para configurar todo esto,
+comenta la palabra IA y te la mando totalmente gratis.
