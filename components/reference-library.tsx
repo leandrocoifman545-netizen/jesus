@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { StoredReference } from "@/lib/storage/local";
+import GlowCard from "./glow-card";
 
 const HOOK_TYPE_LABELS: Record<string, string> = {
   curiosity_gap: "Curiosity Gap",
@@ -89,7 +90,8 @@ function AddReferenceForm({ onAdded }: { onAdded: () => void }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 space-y-4">
+    <GlowCard className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 shimmer-sweep" glowColor="rgba(59, 130, 246, 0.08)">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <h3 className="text-sm font-semibold">Agregar guion ganador</h3>
       <div>
         <label className="block text-xs text-zinc-400 font-medium mb-1">Nombre / Titulo</label>
@@ -129,6 +131,7 @@ function AddReferenceForm({ onAdded }: { onAdded: () => void }) {
         ) : "Analizar y guardar"}
       </button>
     </form>
+    </GlowCard>
   );
 }
 
@@ -205,7 +208,8 @@ function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targe
   const currentIndex = files.findIndex((f) => f.status === "processing");
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 space-y-4">
+    <GlowCard className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 shimmer-sweep" glowColor="rgba(59, 130, 246, 0.08)">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <h3 className="text-sm font-semibold">Subir audios de anuncios</h3>
         <p className="text-xs text-zinc-600 mt-1">MP3, M4A, WAV, WebM u OGG (max 200MB c/u). Se transcriben y analizan automaticamente.</p>
@@ -287,6 +291,7 @@ function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targe
         ) : `Transcribir y analizar ${files.length} archivo${files.length !== 1 ? "s" : ""}`}
       </button>
     </form>
+    </GlowCard>
   );
 }
 
@@ -352,7 +357,8 @@ function BulkAddForm({ onAdded }: { onAdded: () => void }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 space-y-4">
+    <GlowCard className="bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-5 shimmer-sweep" glowColor="rgba(59, 130, 246, 0.08)">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <h3 className="text-sm font-semibold">Carga masiva de guiones</h3>
         <p className="text-xs text-zinc-600 mt-1">
@@ -418,6 +424,7 @@ function BulkAddForm({ onAdded }: { onAdded: () => void }) {
         ) : `Analizar ${entries.length} referencia${entries.length !== 1 ? "s" : ""}`}
       </button>
     </form>
+    </GlowCard>
   );
 }
 
@@ -441,7 +448,7 @@ function ReferenceCard({ reference, onDelete, selected, onToggleSelect }: {
   }
 
   return (
-    <div className={`border rounded-2xl overflow-hidden transition-all duration-200 ${selected ? "border-purple-500/50 bg-purple-500/5" : "border-zinc-800/50 bg-zinc-900/30 backdrop-blur"}`}>
+    <div className={`border rounded-2xl overflow-hidden transition-all duration-200 hover-lift ${selected ? "border-purple-500/50 bg-purple-500/5" : "border-zinc-800/50 bg-zinc-900/30 backdrop-blur hover:border-zinc-700/50"}`}>
       <div className="flex items-start">
         {onToggleSelect && (
           <label
@@ -465,9 +472,9 @@ function ReferenceCard({ reference, onDelete, selected, onToggleSelect }: {
               <div className="flex items-center gap-2 mb-1.5">
                 <span className="text-sm font-medium text-white">{r.title}</span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded border bg-zinc-800 text-zinc-400 border-zinc-700">{a.structure.framework}</span>
-                <span className="text-[10px] px-1.5 py-0.5 rounded border bg-purple-500/10 text-purple-400 border-purple-500/20">{HOOK_TYPE_LABELS[a.hook.type] || a.hook.type}</span>
+                {a.hook?.type && <span className="text-[10px] px-1.5 py-0.5 rounded border bg-purple-500/10 text-purple-400 border-purple-500/20">{HOOK_TYPE_LABELS[a.hook.type] || a.hook.type}</span>}
               </div>
-              <p className="text-xs text-zinc-500 truncate">Hook: &ldquo;{a.hook.text}&rdquo;</p>
+              {a.hook?.text && <p className="text-xs text-zinc-500 truncate">Hook: &ldquo;{a.hook.text}&rdquo;</p>}
             </div>
             <div className="flex items-center gap-3 ml-3 shrink-0">
               <span className="text-xs text-zinc-600">{a.estimated_total_duration_seconds}s</span>
@@ -646,7 +653,7 @@ function ReferenceList({ refs, onRefresh }: { refs: StoredReference[]; onRefresh
   }
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 stagger-children">
       <SelectionBar
         selectedIds={selectedIds}
         allIds={refs.map((r) => r.id)}
@@ -680,7 +687,7 @@ function FolderCard({ folder, onOpen, onDelete }: { folder: FolderInfo; onOpen: 
   }
 
   return (
-    <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-4 hover:border-zinc-700/50 transition-all duration-200">
+    <div className="border border-zinc-800/40 bg-zinc-900/30 backdrop-blur rounded-2xl p-5 hover:border-zinc-700/40 transition-all duration-300 hover-glow">
       <div className="flex items-center justify-between">
         <button onClick={onOpen} className="flex items-center gap-3 flex-1 min-w-0 text-left">
           <div className="shrink-0 w-10 h-10 bg-purple-500/10 border border-purple-500/20 rounded-xl flex items-center justify-center">
@@ -762,7 +769,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
 
         <button
           onClick={() => setView({ type: "individuales" })}
-          className="w-full border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-5 hover:border-zinc-700/50 transition-all duration-200 text-left"
+          className="w-full border border-zinc-800/40 bg-zinc-900/30 backdrop-blur rounded-2xl p-5 hover:border-zinc-700/40 transition-all duration-300 hover-glow text-left"
         >
           <div className="flex items-center gap-4">
             <div className="shrink-0 w-12 h-12 bg-zinc-800/50 rounded-xl flex items-center justify-center">
@@ -781,7 +788,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
 
         <button
           onClick={() => setView({ type: "bulk-list" })}
-          className="w-full border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-5 hover:border-zinc-700/50 transition-all duration-200 text-left"
+          className="w-full border border-zinc-800/40 bg-zinc-900/30 backdrop-blur rounded-2xl p-5 hover:border-zinc-700/40 transition-all duration-300 hover-glow text-left"
         >
           <div className="flex items-center gap-4">
             <div className="shrink-0 w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-xl flex items-center justify-center">
@@ -862,7 +869,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         )}
 
         {individuales.length === 0 ? (
-          <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-8 text-center">
+          <div className="border border-zinc-800/40 bg-zinc-900/30 backdrop-blur rounded-3xl p-8 text-center">
             <p className="text-zinc-500 text-sm">Sin referencias individuales todavia.</p>
           </div>
         ) : (
@@ -903,7 +910,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         )}
 
         {bulkFolders.length === 0 ? (
-          <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-8 text-center">
+          <div className="border border-zinc-800/40 bg-zinc-900/30 backdrop-blur rounded-3xl p-8 text-center">
             <p className="text-zinc-500 text-sm">Sin cargas masivas todavia. Usa el formulario de arriba para crear la primera.</p>
           </div>
         ) : (
@@ -939,7 +946,7 @@ export default function ReferenceLibrary({ initialRefs }: { initialRefs: StoredR
         </div>
 
         {folderRefs.length === 0 ? (
-          <div className="border border-zinc-800/50 bg-zinc-900/30 backdrop-blur rounded-2xl p-8 text-center">
+          <div className="border border-zinc-800/40 bg-zinc-900/30 backdrop-blur rounded-3xl p-8 text-center">
             <p className="text-zinc-500 text-sm">Esta carpeta esta vacia.</p>
             <button
               onClick={() => { setView({ type: "bulk-list" }); refresh(); }}

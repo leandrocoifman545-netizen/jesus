@@ -3,14 +3,19 @@ import Link from "next/link";
 import { getProject, listGenerationsByProject } from "@/lib/storage/local";
 import ProjectDetail from "@/components/project-detail";
 
-const PLATFORM_COLORS: Record<string, string> = {
-  tiktok: "bg-pink-500/10 text-pink-400 border-pink-500/20",
-  reels: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-  shorts: "bg-red-500/10 text-red-400 border-red-500/20",
+import { resolveFormatLabel } from "@/lib/ai/schemas/script-output";
+
+const FORMAT_COLORS: Record<string, string> = {
+  "vertical ad": "bg-purple-500/10 text-purple-400 border-purple-500/20",
+  "vertical orgánico": "bg-pink-500/10 text-pink-400 border-pink-500/20",
+  "horizontal ad": "bg-blue-500/10 text-blue-400 border-blue-500/20",
 };
 
-function platformKey(name: string): string {
-  return name.toLowerCase().replace("instagram ", "").replace("youtube ", "");
+function formatColorKey(platform: string): string {
+  const label = resolveFormatLabel(platform).toLowerCase();
+  if (label.includes("orgánico")) return "vertical orgánico";
+  if (label.includes("horizontal")) return "horizontal ad";
+  return "vertical ad";
 }
 
 export default async function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
@@ -68,10 +73,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                   <div className="flex items-center gap-3 mb-2">
                     <span
                       className={`text-xs px-2 py-0.5 rounded-full border ${
-                        PLATFORM_COLORS[platformKey(gen.script.platform_adaptation.platform)] || "bg-zinc-800 text-zinc-400"
+                        FORMAT_COLORS[formatColorKey(gen.script.platform_adaptation.platform)] || "bg-zinc-800 text-zinc-400"
                       }`}
                     >
-                      {gen.script.platform_adaptation.platform}
+                      {resolveFormatLabel(gen.script.platform_adaptation.platform)}
                     </span>
                     <span className="text-xs text-zinc-500">{gen.script.total_duration_seconds}s</span>
                     <span className="text-xs text-zinc-500">{gen.script.hooks.length} hooks</span>

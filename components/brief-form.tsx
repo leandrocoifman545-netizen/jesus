@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import GlowCard from "./glow-card";
 
 interface Project {
   id: string;
@@ -116,7 +117,8 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl bg-zinc-900/30 backdrop-blur border border-zinc-800/50 rounded-2xl p-6">
+    <GlowCard className="max-w-2xl bg-zinc-900/30 backdrop-blur border border-zinc-800/40 rounded-3xl p-8 animate-spring-up" glowColor="rgba(124, 58, 237, 0.08)">
+    <form onSubmit={handleSubmit} className="space-y-7">
       {/* Project Selector */}
       {projects.length > 0 && (
         <div>
@@ -178,7 +180,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           placeholder="Describe tu producto o servicio, sus beneficios principales, precio, diferenciadores..."
           rows={4}
           required
-          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
+          className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-2xl px-4 py-3.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
@@ -193,7 +195,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           placeholder="Edad, genero, intereses, pain points, nivel socioeconomico, ubicacion..."
           rows={3}
           required
-          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
+          className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-2xl px-4 py-3.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
@@ -240,7 +242,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           onChange={(e) => setAdditionalNotes(e.target.value)}
           placeholder="Tono preferido, plataforma específica, ofertas especiales, restricciones, palabras clave a incluir..."
           rows={2}
-          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
+          className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-2xl px-4 py-3.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
@@ -259,21 +261,21 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           onChange={(e) => setReferenceText(e.target.value)}
           placeholder={`Ejemplo de referencia 1: "Hey, sabias que el 80% de las personas..." (pegar guion completo)\n---\nEjemplo de referencia 2: "Deja de hacer esto si quieres..." (pegar otro guion)`}
           rows={4}
-          className="w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
+          className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-2xl px-4 py-3.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 resize-none transition-all duration-200"
         />
       </div>
 
       {/* Streaming Preview */}
       {streamingStatus !== "idle" && streamingText && (
-        <div className="bg-zinc-900/30 backdrop-blur border border-purple-500/20 rounded-2xl overflow-hidden">
-          <div className="flex items-center gap-2 px-4 py-2 bg-zinc-900/50 border-b border-zinc-800/50">
-            <div className="h-2 w-2 rounded-full bg-purple-500 animate-pulse" />
+        <div className="bg-zinc-900/30 backdrop-blur border border-purple-500/20 rounded-2xl overflow-hidden shadow-lg shadow-purple-500/5">
+          <div className="flex items-center gap-2 px-4 py-2.5 bg-zinc-900/50 border-b border-zinc-800/40">
+            <div className="h-2 w-2 rounded-full bg-purple-500 animate-pulse shadow-sm shadow-purple-500/50" />
             <span className="text-xs text-zinc-400">
               {streamingStatus === "streaming" ? "Generando guion en tiempo real..." : "Guardando..."}
             </span>
           </div>
           <div className="px-4 py-3 max-h-80 overflow-y-auto">
-            <pre className="text-sm text-zinc-300 whitespace-pre-wrap font-mono leading-relaxed">
+            <pre className={`text-sm text-zinc-300 whitespace-pre-wrap font-mono leading-relaxed ${streamingStatus === "streaming" ? "typewriter-cursor" : ""}`}>
               {streamingText}
             </pre>
           </div>
@@ -282,7 +284,10 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
 
       {/* Error */}
       {error && (
-        <div className="bg-red-500/10 backdrop-blur border border-red-500/20 rounded-2xl px-4 py-3 text-sm text-red-400">
+        <div className="bg-red-500/10 backdrop-blur border border-red-500/20 rounded-2xl px-4 py-3 text-sm text-red-400 animate-error-shake flex items-center gap-2">
+          <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+          </svg>
           {error}
         </div>
       )}
@@ -291,7 +296,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
       <button
         type="submit"
         disabled={loading || !productDescription || !targetAudience}
-        className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:shadow-lg hover:shadow-purple-500/20 disabled:bg-zinc-800 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-600 disabled:shadow-none text-white py-3 rounded-xl text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2"
+        className="relative w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 hover:shadow-lg hover:shadow-purple-500/25 disabled:bg-zinc-800 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-600 disabled:shadow-none text-white py-3.5 rounded-2xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 active:scale-[0.98] pulse-ring"
       >
         {loading ? (
           <>
@@ -308,5 +313,6 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
         )}
       </button>
     </form>
+    </GlowCard>
   );
 }

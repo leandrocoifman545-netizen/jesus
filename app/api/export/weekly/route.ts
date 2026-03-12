@@ -13,7 +13,7 @@ function buildTeleprompterDoc(slots: { slot: { index: number }; gen: StoredGener
   for (let i = 0; i < slots.length; i++) {
     const { gen } = slots[i];
     doc += `CTA ${i + 1}:\n`;
-    doc += `${gen.script.cta.verbal_cta}\n\n`;
+    doc += `${gen.script.cta?.verbal_cta || "[CTA pendiente]"}\n\n`;
   }
 
   // --- PART 2: Each script = hooks + body (read straight through) ---
@@ -51,7 +51,7 @@ function formatScriptDoc(gen: StoredGeneration, slotIndex: number): string {
   const vf = s.visual_format;
 
   let doc = `# Guion ${slotIndex + 1}: ${gen.title || "Sin título"}\n\n`;
-  doc += `- **Plataforma:** ${s.platform_adaptation.platform}\n`;
+  doc += `- **Formato:** ${s.platform_adaptation.platform}\n`;
   doc += `- **Framework:** ${s.development.framework_used}\n`;
   doc += `- **Duración:** ${s.total_duration_seconds}s | ${s.word_count} palabras\n`;
 
@@ -76,9 +76,9 @@ function formatScriptDoc(gen: StoredGeneration, slotIndex: number): string {
   }
 
   doc += `\n## CTA\n`;
-  doc += `**${s.cta.verbal_cta}**\n`;
-  doc += `- Tipo: ${s.cta.cta_type}\n`;
-  doc += `- Razón: ${s.cta.reason_why}\n`;
+  doc += `**${s.cta?.verbal_cta || "[CTA pendiente]"}**\n`;
+  doc += `- Tipo: ${s.cta?.cta_type || "custom"}\n`;
+  doc += `- Razón: ${s.cta?.reason_why || ""}\n`;
 
   if (gen.sessionNotes) {
     doc += `\n## Notas de Sesión\n${gen.sessionNotes}\n`;
@@ -145,7 +145,7 @@ export async function GET(req: NextRequest) {
       summary += `- Cuerpo: ${slot.bodyType} | Formato: ${slot.visualFormat}\n`;
       if (slot.nicheIdea) summary += `- Idea de nicho: ${slot.nicheIdea}\n`;
       summary += `- Leads: ${slot.leadTypes.join(", ")}\n`;
-      summary += `- CTA: ${gen.script.cta.verbal_cta}\n\n`;
+      summary += `- CTA: ${gen.script.cta?.verbal_cta || "[CTA pendiente]"}\n\n`;
     }
 
     zip.file("00-RESUMEN.md", summary);

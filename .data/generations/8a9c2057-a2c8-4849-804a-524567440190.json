@@ -1,0 +1,88 @@
+{
+  "id": "8a9c2057-a2c8-4849-804a-524567440190",
+  "briefId": "0fe772c0-7bc2-4f84-81ba-0334fc4e35f3",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Las notificaciones que me llegaron durmiendo",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 68,
+      "content_style": "Chat WhatsApp simulado — notificaciones de venta aparecen como mensajes",
+      "key_considerations": "Simular notificaciones de Hotmart como mensajes de WhatsApp. Sonidito con cada venta. Jesús narra mientras aparecen los montos. Prueba visual del modelo."
+    },
+    "visual_format": {
+      "format_name": "Chat WhatsApp Simulado",
+      "difficulty_level": 2,
+      "setup_instructions": "Simular pantalla de notificaciones tipo Hotmart: 'Nueva venta: $7', 'Nueva venta: $12'. Van apareciendo con sonidito mientras Jesús narra.",
+      "recording_notes": "Las notificaciones aparecen durante los primeros 5-8 segundos como pattern interrupt. Después Jesús explica cómo funciona. Tono: tranquilo, de 'esto me pasa seguido'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Son las 7 de la mañana. Agarrás el celular para apagar la alarma y tenés 3 notificaciones de venta de algo que armaste con IA en una tarde. Eso es un producto digital.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "script_text": "La primera vez que me desperté con una notificación de venta no lo podía creer. Alguien había comprado una guía que armé con IA mientras yo dormía. Hoy me pasa casi todos los días.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "Los productos digitales que más se venden no los crean expertos. Los crea gente común que le cuenta a la IA lo que sabe. Y después se venden solos. Las 24 horas.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Mientras dormís, hay gente cobrando por productos que armaron con IA en una tarde. No son influencers. No son programadores. Usan la misma herramienta que tenés en tu celular.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Imaginate poner una máquina expendedora que trabaja 24 horas sin que le pongas un solo producto físico. Eso es un producto digital. Y la IA te lo arma.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Hook-Story-Offer",
+      "emotional_arc": "Intriga (notificaciones de venta) → Claridad (no es magia, es un proceso) → Deseo (yo quiero eso) → Acción (quiero aprender)",
+      "sections": [
+        {
+          "section_name": "Desmitificar — No es magia",
+          "script_text": "Esto no pasa por suerte. Atrás de cada notificación de venta hay un proceso muy concreto. Y es bastante más simple de lo que pensás.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Son 3 pasos.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "El mecanismo — Cómo funciona",
+          "script_text": "Primero encontrás un problema que la gente busca resolver todos los días en Google. Algo concreto. Después le contás a la IA todo lo que sabés sobre ese tema y la IA te arma un producto digital profesional. Una guía, un manual, un recurso práctico que resuelve ese problema. Y por último lo subís a una plataforma como Hotmart que se encarga de cobrar, entregar y hacer todo automático. Vos creás el producto una sola vez. Y la plataforma lo vende por vos las 24 horas. Sin que hagas nada más.",
+          "timing_seconds": 26
+        },
+        {
+          "section_name": "Puente al CTA",
+          "script_text": "No necesitás stock, ni envíos, ni empleados. No necesitás saber de diseño ni de programación. Solo una idea y la IA. En la clase gratuita te muestro cómo encontrar tu idea y armar el primer producto.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro en vivo cómo armar tu primer producto digital con IA desde cero",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 68,
+    "word_count": 182
+  },
+  "createdAt": "2026-03-11T22:15:53.972Z"
+}

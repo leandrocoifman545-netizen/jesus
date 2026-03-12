@@ -9,7 +9,7 @@ import {
 
 export async function PATCH(req: NextRequest) {
   try {
-    const { generationId, status, metrics, sessionNotes, title } = await req.json();
+    const { generationId, status, metrics, sessionNotes, title, batch } = await req.json();
 
     if (!generationId) {
       return NextResponse.json({ error: "Missing generationId" }, { status: 400 });
@@ -32,7 +32,7 @@ export async function PATCH(req: NextRequest) {
       return NextResponse.json({ error: "Missing status" }, { status: 400 });
     }
 
-    const validStatuses: GenerationStatus[] = ["draft", "recorded", "winner"];
+    const validStatuses: GenerationStatus[] = ["draft", "confirmed", "recorded", "winner"];
     if (!validStatuses.includes(status)) {
       return NextResponse.json({ error: "Invalid status" }, { status: 400 });
     }

@@ -1,0 +1,88 @@
+{
+  "id": "b8d641bd-e5a9-40c8-a687-b1924a79cd3c",
+  "briefId": "d44d69d5-ba8d-4b30-9949-6054979a917d",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "La IA la usás para tareas, no para ganar plata",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 68,
+      "content_style": "Chat WhatsApp simulado — mensajes aparecen uno a uno",
+      "key_considerations": "Chat donde alguien pregunta 'yo uso ChatGPT pero no sé cómo ganar plata con eso'. Jesús responde con el reframe."
+    },
+    "visual_format": {
+      "format_name": "Chat WhatsApp Simulado",
+      "difficulty_level": 2,
+      "setup_instructions": "Chat WhatsApp. Mensaje entrante: 'Uso IA todos los días pero para el laburo nomas. ¿Se puede ganar plata con eso?'. Jesús responde con audios/texto.",
+      "recording_notes": "Audio de Jesús narrando. Tono de revelación, tipo 'mirá lo que te estás perdiendo'. Energía de descubrimiento. Mensajes sincronizan con voz."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "contraintuitivo",
+        "script_text": "Ya usás IA todos los días. Para el laburo, para estudiar, para resolver cosas. Pero la parte que te puede generar plata no la estás tocando.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "Le pedís a la IA que te escriba mails y que te resuma textos. Pero nunca le pediste que te arme algo que se venda. Estás usando la herramienta más poderosa del mundo para hacer mandados.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas horas por semana le dedicás a la IA? ¿Y cuántas de esas horas te generaron un peso? Si la respuesta es cero, el problema no es la IA. Es qué le estás pidiendo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Imaginate tener un chef en tu casa y solo pedirle que hierva agua. Eso es lo que hacés con la IA cuando solo la usás para tareas del laburo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Hay gente usando exactamente la misma IA que vos para crear productos digitales que se venden solos. La diferencia no es la herramienta. Es lo que le piden.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "AIDA",
+      "emotional_arc": "Reframe (ya usás IA) → Curiosidad (otros generan plata con lo mismo) → Deseo (es tan fácil como cambiar el pedido) → Acción (quiero aprender)",
+      "sections": [
+        {
+          "section_name": "Atención — Lo que otros hacen con la misma IA",
+          "script_text": "Hay gente que con esa misma herramienta arma guías, manuales, recursos — cosas que la gente compra todos los días en internet. No saben más que vos. No son más inteligentes. La única diferencia es lo que le piden a la IA.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Y cambiar ese pedido es más fácil de lo que pensás.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Interés + Deseo — El mecanismo",
+          "script_text": "La misma IA que te resume un PDF puede investigar qué problemas busca resolver la gente en Google, puede organizar información sobre cualquier tema, y puede redactar un producto digital completo que se vea profesional. Todo en la misma conversación. Vos le decís qué querés crear, la IA te hace preguntas, vos le contestás con lo que sabés, y al final tenés un producto terminado listo para vender. Sin saber de diseño. Sin saber de programación.",
+          "timing_seconds": 24
+        },
+        {
+          "section_name": "Acción — Puente al CTA",
+          "script_text": "Vos ya tenés la habilidad de usar la IA. Solo te falta el proceso para convertir eso en un negocio. En la clase gratuita te lo muestro paso a paso.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro cómo usar la IA que ya tenés para crear tu primer producto digital",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 68,
+    "word_count": 175
+  },
+  "createdAt": "2026-03-11T22:15:49.883Z"
+}

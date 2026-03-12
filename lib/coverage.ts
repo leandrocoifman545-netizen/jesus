@@ -107,6 +107,10 @@ export async function computeCoverage(): Promise<CoverageData> {
   const allSegments = ["A", "B", "C", "D"];
   const allFunnels = ["TOFU", "MOFU", "BOFU", "RETARGET", "EVERGREEN"];
   const allHookTypes = [
+    "situacion_especifica", "dato_concreto", "pregunta_incomoda", "confesion",
+    "contraintuitivo", "provocacion", "historia_mini", "analogia",
+    "negacion_directa", "observacion_tendencia", "timeline_provocacion",
+    "contrato_compromiso", "actuacion_dialogo", "anti_publico",
     "curiosity_gap", "contrarian", "question", "statistical",
     "pain_point", "pattern_interrupt", "reveal_teaser", "authority_social_proof",
   ];

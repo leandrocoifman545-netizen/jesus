@@ -3,14 +3,30 @@
 import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import type { ScriptOutput } from "@/lib/ai/schemas/script-output";
+import { resolveFormatLabel } from "@/lib/ai/schemas/script-output";
 import InlineEdit from "./inline-edit";
 import { useToast } from "./toast";
+import CopyButton from "./copy-button";
 
 const HOOK_TYPE_LABELS: Record<string, string> = {
+  situacion_especifica: "Situación",
+  dato_concreto: "Dato Concreto",
+  pregunta_incomoda: "Pregunta",
+  confesion: "Confesión",
+  contraintuitivo: "Contraintuitivo",
+  provocacion: "Provocación",
+  historia_mini: "Historia Mini",
+  analogia: "Analogía",
+  negacion_directa: "Negación",
+  observacion_tendencia: "Tendencia",
+  timeline_provocacion: "Timeline",
+  contrato_compromiso: "Contrato",
+  actuacion_dialogo: "Diálogo",
+  anti_publico: "Anti-público",
   curiosity_gap: "Curiosity Gap",
   contrarian: "Contrarian",
   question: "Pregunta",
-  statistical: "Estadistica",
+  statistical: "Estadística",
   pain_point: "Pain Point",
   pattern_interrupt: "Pattern Interrupt",
   reveal_teaser: "Reveal / Teaser",
@@ -18,6 +34,20 @@ const HOOK_TYPE_LABELS: Record<string, string> = {
 };
 
 const HOOK_TYPE_COLORS: Record<string, string> = {
+  situacion_especifica: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+  dato_concreto: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+  pregunta_incomoda: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+  confesion: "bg-rose-500/10 text-rose-400 border-rose-500/20",
+  contraintuitivo: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+  provocacion: "bg-red-500/10 text-red-400 border-red-500/20",
+  historia_mini: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+  analogia: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
+  negacion_directa: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+  observacion_tendencia: "bg-lime-500/10 text-lime-400 border-lime-500/20",
+  timeline_provocacion: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+  contrato_compromiso: "bg-sky-500/10 text-sky-400 border-sky-500/20",
+  actuacion_dialogo: "bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/20",
+  anti_publico: "bg-zinc-500/10 text-zinc-300 border-zinc-500/20",
   curiosity_gap: "bg-amber-500/10 text-amber-400 border-amber-500/20",
   contrarian: "bg-rose-500/10 text-rose-400 border-rose-500/20",
   question: "bg-blue-500/10 text-blue-400 border-blue-500/20",
@@ -49,7 +79,7 @@ function CopyButton({ text, label }: { text: string; label?: string }) {
 
 function formatFullScript(script: ScriptOutput, hookIndex: number): string {
   const hook = script.hooks[hookIndex];
-  let text = `GUION - ${script.platform_adaptation.platform} (${script.total_duration_seconds}s) | ~${script.word_count} palabras\n`;
+  let text = `GUION - ${resolveFormatLabel(script.platform_adaptation.platform)} (${script.total_duration_seconds}s) | ~${script.word_count} palabras\n`;
   text += `Framework: ${script.development.framework_used} | Arco emocional: ${script.development.emotional_arc}\n`;
   text += `=`.repeat(70) + "\n\n";
 
@@ -113,10 +143,11 @@ function RegenButton({
   );
 }
 
-type GenerationStatus = "draft" | "recorded" | "winner";
+type GenerationStatus = "draft" | "confirmed" | "recorded" | "winner";
 
 const STATUS_CONFIG: Record<GenerationStatus, { label: string; next: GenerationStatus; color: string }> = {
-  draft: { label: "Borrador", next: "recorded", color: "bg-zinc-800/50 text-zinc-400 border-zinc-700/50 hover:bg-zinc-800" },
+  draft: { label: "Borrador", next: "confirmed", color: "bg-zinc-800/50 text-zinc-400 border-zinc-700/50 hover:bg-zinc-800" },
+  confirmed: { label: "Confirmado", next: "recorded", color: "bg-blue-500/10 text-blue-400 border-blue-500/20 hover:bg-blue-500/15" },
   recorded: { label: "Grabado", next: "winner", color: "bg-green-500/10 text-green-400 border-green-500/20 hover:bg-green-500/15" },
   winner: { label: "Winner", next: "draft", color: "bg-amber-500/10 text-amber-400 border-amber-500/20 hover:bg-amber-500/15" },
 };
@@ -279,7 +310,7 @@ export default function ScriptViewer({
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       {/* Title */}
       <div>
         {editingTitle ? (
@@ -312,10 +343,10 @@ export default function ScriptViewer({
         ) : (
           <h1
             onClick={() => { setEditingTitle(true); setTitleDraft(title); }}
-            className="text-3xl font-bold tracking-tight cursor-pointer hover:text-purple-300 transition-colors group"
+            className="text-4xl font-extrabold tracking-tight cursor-pointer hover:text-purple-300 transition-colors group"
             title="Click para editar titulo"
           >
-            <span className={title ? "text-white" : "text-zinc-600"}>{title || "Guion sin titulo"}</span>
+            <span className={title ? "bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent" : "text-zinc-600"}>{title || "Guion sin titulo"}</span>
             <span className="text-zinc-700 text-xs italic ml-3 opacity-0 group-hover:opacity-100 transition-opacity">editar</span>
           </h1>
         )}
@@ -336,7 +367,7 @@ export default function ScriptViewer({
             <>
               <div className="fixed inset-0 z-40" onClick={() => setStatusOpen(false)} />
               <div className="absolute top-full left-0 mt-1 z-50 bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-xl overflow-hidden shadow-xl min-w-[140px]">
-                {(["draft", "recorded", "winner"] as GenerationStatus[]).map((s) => (
+                {(["draft", "confirmed", "recorded", "winner"] as GenerationStatus[]).map((s) => (
                   <button
                     key={s}
                     onClick={() => changeStatus(s)}
@@ -347,16 +378,17 @@ export default function ScriptViewer({
                     }`}
                   >
                     <span className={`w-1.5 h-1.5 rounded-full ${
-                      s === "draft" ? "bg-zinc-500" : s === "recorded" ? "bg-green-400" : "bg-amber-400"
+                      s === "draft" ? "bg-zinc-500" : s === "confirmed" ? "bg-blue-400" : s === "recorded" ? "bg-green-400" : "bg-amber-400"
                     }`} />
                     {STATUS_CONFIG[s].label}
+                    {s === "confirmed" && status === "draft" ? <span className="text-zinc-600 ml-auto">quema leads</span> : null}
                   </button>
                 ))}
               </div>
             </>
           )}
         </div>
-        {(status === "recorded" || status === "winner") && (
+        {(status === "confirmed" || status === "recorded" || status === "winner") && (
           <>
             <span className="text-[10px] text-red-400/50">{script.hooks.length} leads quemados</span>
             <button
@@ -371,7 +403,7 @@ export default function ScriptViewer({
 
       {/* Metrics panel (for recorded/winner) */}
       {showMetrics && (status === "recorded" || status === "winner") && (
-        <div className={`bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-2xl p-6 space-y-4`}>
+        <div className="bg-zinc-900/40 backdrop-blur border border-zinc-800/40 rounded-3xl p-7 space-y-5">
           <h3 className="text-xs font-semibold text-zinc-400">Metricas de rendimiento</h3>
           <div className="grid grid-cols-5 gap-2">
             {([
@@ -446,17 +478,17 @@ export default function ScriptViewer({
       )}
 
       {/* Platform Info + Emotional Arc */}
-      <div className="bg-zinc-900/30 border border-zinc-800/50 rounded-2xl p-6">
+      <div className="bg-zinc-900/30 border border-zinc-800/40 rounded-3xl p-7">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-sm font-semibold text-zinc-300">Adaptacion de Plataforma</h2>
+          <h2 className="text-sm font-semibold text-zinc-300">Formato</h2>
           <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">
             {script.total_duration_seconds}s | ~{script.word_count} palabras | {script.development.framework_used}
           </span>
         </div>
         <div className="grid grid-cols-2 gap-4 text-sm mb-4">
           <div>
-            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Plataforma</span>
-            <p className="text-zinc-200">{script.platform_adaptation.platform}</p>
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Formato</span>
+            <p className="text-zinc-200">{resolveFormatLabel(script.platform_adaptation.platform)}</p>
           </div>
           <div>
             <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Estilo</span>
@@ -493,43 +525,43 @@ export default function ScriptViewer({
       {/* Hooks Selector */}
       <div>
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-semibold tracking-tight">
+          <h2 className="text-2xl font-bold tracking-tight">
             {script.hooks.length} Hook{script.hooks.length !== 1 ? "s" : ""}
           </h2>
           <CopyButton text={formatFullScript(script, selectedHook)} label="Copiar guion completo" />
         </div>
 
         {/* Scrollable hook selector */}
-        <div className="flex gap-2 mb-4 overflow-x-auto pb-2 scrollbar-thin">
+        <div className="flex gap-3 mb-6 overflow-x-auto pb-2 scrollbar-thin">
           {script.hooks.map((hook, i) => (
             <button
               key={i}
               onClick={() => setSelectedHook(i)}
-              className={`border rounded-2xl p-3 text-left transition-all shrink-0 w-40 ${
+              className={`border rounded-2xl p-4 text-left transition-all duration-300 shrink-0 w-44 hover-glow ${
                 selectedHook === i
                   ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20 shadow-lg shadow-purple-500/5"
-                  : "bg-zinc-900/30 border-zinc-800/50 hover:border-zinc-700/50"
+                  : "bg-zinc-900/30 border-zinc-800/40 hover:border-zinc-700/40"
               }`}
             >
-              <div className="flex items-center justify-between mb-1.5">
-                <span className="text-xs font-bold text-zinc-400">#{hook.variant_number}</span>
-                <span className="text-[10px] text-zinc-600">{hook.timing_seconds}s</span>
+              <div className="flex items-center justify-between mb-2">
+                <span className={`text-xs font-bold ${selectedHook === i ? "text-purple-400" : "text-zinc-400"}`}>#{hook.variant_number}</span>
+                <span className="text-[10px] text-zinc-600 font-medium">{hook.timing_seconds}s</span>
               </div>
               <span
-                className={`inline-block text-[10px] px-1.5 py-0.5 rounded-lg border ${
-                  HOOK_TYPE_COLORS[hook.hook_type] || "bg-zinc-800 text-zinc-400"
+                className={`badge ${
+                  HOOK_TYPE_COLORS[hook.hook_type] || "bg-zinc-800 text-zinc-400 border-zinc-700"
                 }`}
               >
                 {HOOK_TYPE_LABELS[hook.hook_type] || hook.hook_type}
               </span>
-              <p className="text-[11px] text-zinc-400 mt-2 line-clamp-2 leading-tight">
+              <p className="text-[11px] text-zinc-400 mt-2.5 line-clamp-2 leading-relaxed">
                 &ldquo;{hook.script_text}&rdquo;
               </p>
             </button>
           ))}
 
           {/* Generate More button inline */}
-          <div className="border border-dashed border-zinc-700/30 rounded-2xl p-3 shrink-0 w-40 flex flex-col items-center justify-center gap-2 hover:border-zinc-600/50 hover:bg-zinc-900/20 transition-all">
+          <div className="border border-dashed border-zinc-700/20 rounded-2xl p-4 shrink-0 w-44 flex flex-col items-center justify-center gap-2.5 hover:border-purple-500/20 hover:bg-purple-500/[0.02] transition-all duration-300">
             <div className="flex items-center gap-1">
               <button
                 type="button"
@@ -571,13 +603,14 @@ export default function ScriptViewer({
 
       {/* Script Flow */}
       <div>
-        <h2 className="text-xl font-semibold tracking-tight mb-4 bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">Guion</h2>
-        <div className="space-y-3">
+        <h2 className="text-2xl font-bold tracking-tight mb-5 bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">Guion</h2>
+        <div className="space-y-4">
           {/* Hook row */}
           {(() => {
             const hook = script.hooks[selectedHook];
+            if (!hook) return null;
             return (
-              <div className="bg-purple-500/5 border border-purple-500/15 rounded-2xl p-5">
+              <div key={selectedHook} className="bg-purple-500/5 border border-purple-500/15 rounded-2xl p-6 animate-content-swap">
                 <div className="flex items-center gap-2 mb-2 flex-wrap">
                   <span className="uppercase tracking-wider text-[11px] font-semibold text-purple-400">HOOK #{hook.variant_number}</span>
                   <span className={`text-[10px] px-2 py-0.5 rounded-lg border ${HOOK_TYPE_COLORS[hook.hook_type] || ""}`}>{HOOK_TYPE_LABELS[hook.hook_type]}</span>
@@ -599,7 +632,7 @@ export default function ScriptViewer({
 
           {/* Development sections */}
           {(() => {
-            let accTime = script.hooks[selectedHook].timing_seconds;
+            let accTime = script.hooks[selectedHook]?.timing_seconds || 0;
             return script.development.sections.map((section, i) => {
               const startTime = accTime;
               accTime += section.timing_seconds;
@@ -607,10 +640,10 @@ export default function ScriptViewer({
               return (
                 <div
                   key={i}
-                  className={`border rounded-2xl p-5 ${
+                  className={`border rounded-2xl p-6 ${
                     isRehook
                       ? "bg-amber-500/5 border-amber-500/15"
-                      : "bg-zinc-900/30 border-zinc-800/50"
+                      : "bg-zinc-900/30 border-zinc-800/40"
                   }`}
                 >
                   <div className="flex items-center gap-2 mb-2">
@@ -638,7 +671,7 @@ export default function ScriptViewer({
           {(() => {
             const devTotal = script.development.sections.reduce(
               (sum, s) => sum + s.timing_seconds,
-              script.hooks[selectedHook].timing_seconds
+              script.hooks[selectedHook]?.timing_seconds || 0
             );
             const cta = script.cta;
             const ctaTiming = cta?.timing_seconds || 0;
@@ -646,7 +679,7 @@ export default function ScriptViewer({
             const ctaType = cta?.cta_type || '-';
             const ctaReason = cta?.reason_why || '';
             return (
-              <div className="bg-emerald-500/5 border border-emerald-500/15 rounded-2xl p-5">
+              <div className="bg-emerald-500/5 border border-emerald-500/15 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="uppercase tracking-wider text-[11px] font-semibold text-emerald-400">CTA</span>
                   <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">{devTotal}-{devTotal + ctaTiming}s</span>
@@ -672,15 +705,12 @@ export default function ScriptViewer({
       {/* Copy Buttons */}
       <div className="flex flex-wrap gap-2">
         {script.hooks.map((hook, i) => (
-          <button
+          <CopyButton
             key={i}
-            onClick={() => {
-              navigator.clipboard.writeText(formatFullScript(script, i));
-            }}
-            className="bg-zinc-900/30 border border-zinc-800/50 hover:bg-zinc-800/50 rounded-xl px-3 py-1.5 text-xs text-zinc-400 hover:text-white transition-colors"
-          >
-            Copiar con Hook #{hook.variant_number}
-          </button>
+            text={formatFullScript(script, i)}
+            label={`Copiar con Hook #${hook.variant_number}`}
+            className="bg-zinc-900/30 border border-zinc-800/40 hover:bg-zinc-800/50 hover:border-zinc-700/50 rounded-xl px-4 py-2 text-xs text-zinc-400 hover:text-white transition-all duration-200"
+          />
         ))}
       </div>
     </div>

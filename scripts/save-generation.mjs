@@ -26,7 +26,7 @@ if (process.argv[2]) {
 }
 
 const data = JSON.parse(input);
-const { brief, script } = data;
+const { brief, script, batch, title, projectId } = data;
 
 if (!script) {
   console.error("Error: se requiere al menos 'script' en el JSON");
@@ -40,6 +40,7 @@ const now = new Date().toISOString();
 // Save brief
 const briefData = {
   id: briefId,
+  projectId: projectId || brief?.projectId,
   productDescription: brief?.productDescription || "Generado desde CLI",
   targetAudience: brief?.targetAudience || "",
   hookCount: script.hooks?.length || 5,
@@ -51,6 +52,9 @@ writeFileSync(join(BRIEFS_DIR, `${briefId}.json`), JSON.stringify(briefData, nul
 const genData = {
   id: generationId,
   briefId,
+  projectId: projectId || brief?.projectId,
+  title: title || undefined,
+  batch: batch || undefined,
   script,
   createdAt: now,
 };

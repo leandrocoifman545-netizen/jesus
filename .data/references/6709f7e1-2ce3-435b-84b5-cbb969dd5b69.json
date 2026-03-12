@@ -1,0 +1,96 @@
+{
+  "id": "6709f7e1-2ce3-435b-84b5-cbb969dd5b69",
+  "title": "#7 [GMAPS] [WEBINAR] - Winner",
+  "transcript": "Hacemos una imagen publicitaria para un negocio de odontología para poder promocionarlo y conseguirle clientes. Esta imagen tiene que tener una oferta que sea eh tu primer blanqueamiento gratis. En este momento estoy trabajando seriamente. Estoy diseñando imágenes. Porque curiosamente, hoy la IA hace el trabajo de un diseñador, el trabajo de un escritor para poder hacer piezas de contenido para anuncios. Mirá, esto lo acabo de hacer en un segundo. Literalmente se me hizo recién. Esto es genial porque abre una oportunidad enorme, porque la persona que sepa usar la IA y le sepa encontrar cómo eh usar estas cosas para ofrecer una solución a un mercado específico, va a ganar un montón de dinero. Y eso es lo que quiero mostrarte en una clase que preparé, en donde te voy a enseñar a usar la IA para instalar sistemas de captación de clientes, de atracción de clientes a negocios por el cual los negocios te van a querer pagar una mensualidad para que se lo mantengas. Vos no tenés que aprender a diseñar, no tenés que aprender a redactar textos. Lo único que tenés que hacer es aprender a operar estos agentes de IA que te producen las imágenes como recién y te producen los textos de los anuncios. Después, ¿qué hacés? Agarrás los textos de los anuncios, agarrás las imágenes y creás una campaña de publicidad para estos clientes que te van a pagar todos los meses. Y seguramente te vas a preguntar, \"Sí, Jesús, pero cómo consigo los clientes?\" Hacés esto que te enseño para vos mismo y listo, ya tenés anuncios con IA, imágenes con IA, vas a aprender a conseguir clientes, vas a aprender a hacer todo con IA y simplemente vos te encargás de operar y montar todo y los negocios te van a querer pagar por esto porque están muy ocupados para conseguir clientes por su cuenta. Y por eso te van a querer pagar. Para poder ver esto, tocá el botón de acá abajo y registrate a la clase que voy a dar esta semana. Abrazos.",
+  "analysis": {
+    "hook": {
+      "text": "Hacemos una imagen publicitaria para un negocio de odontología para poder promocionarlo y conseguirle clientes.",
+      "type": "reveal_teaser",
+      "word_count": 22,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Demostración práctica",
+          "summary": "Presenta el problema (necesidad de diseño) y muestra una solución inmediata con IA",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Story - Oportunidad de mercado",
+          "summary": "Explica por qué la IA es una oportunidad de negocio y quién puede ganar dinero con esto",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Solution - Sistema completo",
+          "summary": "Detalla el proceso: aprender IA → crear campañas → vender a negocios",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Objection handling - Cómo conseguir clientes",
+          "summary": "Anticipa la pregunta del prospect y responde cómo conseguir primeros clientes",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA - Registro a clase",
+          "summary": "Cierre con urgencia temporal y llamada a acción clara",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Porque curiosamente, hoy la IA hace el trabajo de un diseñador, el trabajo de un escritor"
+    },
+    "tone": {
+      "primary_tone": "Conversacional, educativo, emprendedor, entusiasta",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Mirá, esto lo acabo de hacer en un segundo",
+        "Esto es genial porque",
+        "va a ganar un montón de dinero",
+        "Lo único que tenés que hacer es",
+        "Abrazos"
+      ]
+    },
+    "cta": {
+      "text": "Tocá el botón de acá abajo y registrate a la clase que voy a dar esta semana",
+      "type": "sign_up",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 54,
+    "total_word_count": 348,
+    "emotional_arc": "Curiosidad (hook) → Asombro (demostración IA) → Ambición (oportunidad de dinero) → Confianza (sistema explicado) → Urgencia (clase esta semana)",
+    "strengths": [
+      "Hook visual + narrativo: muestra mientras cuenta, no solo dice",
+      "Rehook estratégico a los 8 segundos para retener atención",
+      "Anticipación de objeciones: responde 'cómo consigo clientes' antes de que se lo pregunten",
+      "Propuesta de valor clara: no necesitas habilidades, solo operar IA",
+      "Razón por qué los negocios pagarán: están ocupados",
+      "Urgencia temporal específica: 'esta semana'",
+      "Tono conversacional y accesible, genera confianza",
+      "Cierre con elemento humano: 'Abrazos' crea conexión emocional",
+      "Estructura lógica: problema → solución → oportunidad → cómo → CTA"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con demostración práctica/visual del resultado (no solo promesa)",
+      "Insertar rehook a los 8-10 segundos con frase de curiosidad o contraste",
+      "Usar 'Mirá' o equivalentes para crear intimidad conversacional",
+      "Explicar el 'por qué' detrás de la oportunidad (IA reemplaza habilidades caras)",
+      "Anticipar y responder objeciones antes de que surjan",
+      "Mencionar beneficio económico específico ('montón de dinero', 'mensualidad')",
+      "Simplificar el proceso en pasos claros y numerados mentalmente",
+      "Crear urgencia temporal específica, no genérica",
+      "Cerrar con elemento humano/emocional después del CTA técnico",
+      "Usar primera persona y dirección directa ('vos', 'te voy a enseñar')",
+      "Estructura: Demostración → Oportunidad → Sistema → Objeción → CTA"
+    ]
+  },
+  "folder": "winners-gmaps",
+  "folderLabel": "Winners GMAPS Webinar",
+  "createdAt": "2026-03-11T15:21:40.552Z"
+}

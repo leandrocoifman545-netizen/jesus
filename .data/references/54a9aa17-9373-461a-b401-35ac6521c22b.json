@@ -1,0 +1,107 @@
+{
+  "id": "54a9aa17-9373-461a-b401-35ac6521c22b",
+  "title": "Caso de éxito C1345",
+  "transcript": "Bueno, mi nombre es Ernesto Cuba, tengo 39 años y actualmente vivo en Escobar, Buenos Aires. Genial. Ahora contanos un poco de quién eres, qué es lo que más te gusta, qué es lo que te gusta, a qué te dedicás. Okay. Eh, bueno, eh actualmente ya puedo decir que me dedico a la publicidad 100%, ¿sí? Eh, vengo, como te dije, tengo 39 años, vengo ya del mundo tradicional con muchos años eh trabajando en diferentes trabajos tradicionales. Eh, y he pasado de todo, o sea, por diferentes rubros, gastronomía, eh Uber, eh vendedor, eh en tiendas de de zapatos, eh chófer, bueno, diferentes rubros. Eh, hoy me dedico 100% a la publicidad y y cuál era la otra pregunta que me hiciste? Eh, no, era contar qué es lo que hacías y a qué te dedicabas. Okay. Eh, eso. Genial. Eh, ¿en qué situación te encontrabas antes de comprar la academia? Bien, justamente, vuelvo de vuelta con lo mismo. Eh, ¿puedes comenzar con las preguntas tipo decir, la situación que me encontraba antes de comprar la academia, como para que sea más Okay. Okay. La situación que me encontraba antes de de entrar a la academia, eh era justamente esa, ¿no? Eh todavía estaba trabajando eh como eh en un restaurante, sin gastronomía y creo que que lo que me llevó a a tomar la decisión para ingresar a la academia fue eso, poder renunciar a a un trabajo tradicional para poder dedicarme 100% al al a lo que es eh el la publicidad digital. Sí, te iba a hacer una pregunta, ¿qué era qué te motivó? La dijiste justo. Ah, ya te la unifiqué. Sí. Eh, ¿cuántos clientes conseguiste y cuánto facturaste? Y de hace cuánto tiempo. Okay. Eh, he he tenido varios clientes a lo largo de este año, ¿sí? Eh, actualmente tengo cinco clientes en diferentes nichos. Eh, y también trabajo colaboro con una agencia de marketing como publicista. Eh, y en facturación total a lo largo del año y no he llevado los números, pero eh puedo estar cerca de los $5,000. Genial. Súper. Eh, ¿qué cambió ahora para que tuvieras éxito? Okay. ¿Qué cambió ahora para que tenga éxito? Creo que fue, bueno, primero que nada, invertir en conocimiento, tener eh una persona que ya tenga los resultados que quiero y escuchar a esa persona y apagar el ruido externo de que hay hoy en día en las redes sociales que escuchamos a tanta gente. Eh, creo que eso fue una de las principales eh razones, ¿no? Apagar un poco el ruido externo, escuchar a una persona que tiene los resultados que yo quiero tener, invertir en esa persona en conocimiento y luego tomar acción, obviamente, ¿no? Porque no solamente el conocimiento, la información por sí sola no es no es el conocimiento, sino eh es la acción que uno, o sea, es lo que uno hace con esa información, ¿verdad? Eh, pero creo que esas fueron las claves para para tener los resultados. Súper. Eh, ¿qué te parecieron las pasantías de la academia? ¿Qué me parecieron las las pasantías de la academia? Eh, para mí es clave. Clave es una un una etapa en la que uno está aprendiendo eh una habilidad nueva, ¿no? Y y creo que es el engranaje que te que te lleva desde el conocimiento a la acción y de la acción a a poder salir al mercado laboral. Súper. ¿Qué le dirías a otras personas que aún no han dado el paso de comprar la academia? ¿Qué le diría a otras personas que aún no han dado el paso? Que que piensen a términos de largo plazo. Si vos no sé en qué situación estás, ¿no? Pero si tu situación es como la mía de que estás en un trabajo tradicional, cuántos años estás dispuesto a invertir eh para trabajar y tener una jubilación y cuántos años estás dispuesto a invertir en en vos, en en una habilidad, en conocimiento que te puede llevar a tener grandes resultados en un lapso mucho menor que esa cantidad de años que estás dispuesto a invertir para tener una jubilación, que no te va a alcanzar ni para sobrevivir. Está perfecto. Listo. Fue durísimo ahí, ¿no? Al hueso. Ahí fui al hueso. Por favor. Durísimo. Gracias, papá. No, pronto, metele lo de los repartos. Sí.",
+  "analysis": {
+    "hook": {
+      "text": "Bueno, mi nombre es Ernesto Cuba, tengo 39 años y actualmente vivo en Escobar, Buenos Aires.",
+      "type": "authority_social_proof",
+      "word_count": 18,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "BAB",
+      "sections": [
+        {
+          "name": "Introduction & Authority Setup",
+          "summary": "Presentación personal con datos específicos (nombre, edad, ubicación) para establecer credibilidad",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Before State",
+          "summary": "Descripción detallada de la situación anterior: trabajos tradicionales, múltiples rubros, falta de dirección",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Transformation Trigger",
+          "summary": "El momento de decisión: entrar a la academia para dejar trabajos tradicionales",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "After State & Results",
+          "summary": "Resultados concretos: 5 clientes, colaboración con agencia, facturación de $5,000",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Key Success Factors",
+          "summary": "Explicación de qué cambió: invertir en conocimiento, seguir a un mentor, apagar ruido externo, tomar acción",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "Value of Academy Components",
+          "summary": "Testimonio sobre las pasantías como puente entre conocimiento y acción",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Direct Call to Action & Closing Argument",
+          "summary": "Mensaje final poderoso sobre inversión a largo plazo vs jubilación tradicional",
+          "estimated_seconds": 20
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "¿Qué cambió ahora para que tuvieras éxito? / ¿Qué le dirías a otras personas que aún no han dado el paso?"
+    },
+    "tone": {
+      "primary_tone": "Conversational testimonial with motivational undertones",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "apagar el ruido externo",
+        "invertir en conocimiento",
+        "tomar acción",
+        "al hueso",
+        "durísimo",
+        "piensen a términos de largo plazo",
+        "una habilidad que te puede llevar a tener grandes resultados"
+      ]
+    },
+    "cta": {
+      "text": "¿Qué le diría a otras personas que aún no han dado el paso? Que piensen a términos de largo plazo... cuántos años estás dispuesto a invertir en vos, en una habilidad, en conocimiento que te puede llevar a tener grandes resultados",
+      "type": "custom",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 112,
+    "total_word_count": 1247,
+    "emotional_arc": "Relatable struggle (multiple jobs, uncertainty) → Moment of decision (taking action) → Tangible results (5 clients, income) → Empowerment (sharing wisdom) → Inspiring challenge (long-term thinking vs traditional path)",
+    "strengths": [
+      "Uso de datos específicos y verificables (5 clientes, $5,000 facturación, edad, ubicación)",
+      "Estructura BAB clara y progresiva que genera identificación con la audiencia",
+      "Tono genuino y conversacional que simula una entrevista real (UGC style)",
+      "Múltiples re-hooks que mantienen la atención durante el video",
+      "Mensaje final poderoso que cuestiona creencias sobre jubilación y tiempo",
+      "Énfasis en la acción como diferenciador (no solo conocimiento)",
+      "Menciona componentes específicos del programa (pasantías) como valor agregado",
+      "Lenguaje coloquial que genera conexión emocional ('al hueso', 'durísimo')",
+      "Responde preguntas que la audiencia probablemente tiene"
+    ],
+    "patterns_to_replicate": [
+      "Comenzar con presentación personal específica (nombre, edad, ubicación) para humanizar",
+      "Detallar trabajos anteriores múltiples para amplificar el contraste con el resultado",
+      "Usar preguntas tipo entrevista como estructura para mantener flujo natural",
+      "Incluir números concretos de resultados (clientes, ingresos) para credibilidad",
+      "Explicar el 'por qué funcionó' no solo el 'qué funcionó'",
+      "Mencionar componentes específicos del programa/academia que agregaron valor",
+      "Terminar con un argumento filosófico/motivacional que trasciende el producto",
+      "Usar lenguaje coloquial y exclamaciones para mantener energía conversacional",
+      "Crear múltiples puntos de re-engagement con preguntas que relanzan la narrativa",
+      "Contrastar tiempo/inversión en educación tradicional vs alternativa"
+    ]
+  },
+  "folder": "casos-exito",
+  "folderLabel": "Casos de Éxito (Academia Jesús)",
+  "createdAt": "2026-03-11T16:34:04.192Z"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "266556fb-14f6-4402-9151-7026c4db362f",
+  "briefId": "6b4a9b63-e13e-4d07-a6a5-c4b2bdc0004c",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Decoración de interiores con IA",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 70,
+      "content_style": "Screenshot de comentario sobre decoración → Jesús responde",
+      "key_considerations": "Screenshot de alguien diciendo 'Todos me preguntan cómo decoré mi casa'. Jesús responde con el giro: podés vender ese conocimiento."
+    },
+    "visual_format": {
+      "format_name": "Screenshot → Respuesta en Video",
+      "difficulty_level": 1,
+      "setup_instructions": "Screenshot de comentario/DM: 'Siempre me preguntan cómo decoro mi casa pero no sé cómo ganar plata con eso'. Jesús responde a cámara.",
+      "recording_notes": "Screenshot 3s → Jesús responde con empatía primero ('Te pasa a vos y a miles más'), después revela el mecanismo. Tono: cercano, como un amigo que te cuenta un secreto."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Estás scrolleando en Pinterest buscando ideas para el living. Guardás 50 fotos de inspiración. Tenés un gusto increíble para decorar. Pero nunca se te cruzó que ese ojo que tenés puede ser un negocio.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas amigas te pidieron consejos para decorar su casa? ¿Cuántas veces te dijeron \"vos tendrías que cobrar por esto\"? Bueno, tienen razón. Y hay una forma de hacerlo sin ser diseñadora de interiores.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "\"Cómo decorar mi casa\" tiene 110 mil búsquedas por mes en Google en español. La mayoría encuentra blogs genéricos con fotos que no te dicen nada. Hay una oportunidad enorme para una guía sobre decoración bien hecha. Y la IA te la arma en minutos.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "¿Viste esas revistas de decoración que antes comprábamos en el kiosco? Ya casi no existen. Pero la gente sigue buscando lo mismo: ideas para mejorar su casa. Solo que ahora lo buscan online. Y vos podés ser quien se las venda.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "En los últimos 2 años, los productos digitales de decoración crecieron un montón en Hotmart. Es un nicho visual, emocional, y con una audiencia que compra impulsivamente. Y casi nadie lo está explotando con IA.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "Hook-Story-Offer",
+      "emotional_arc": "Reconocimiento (yo sé decorar) → Historia (alguien como vos lo hizo) → Mecanismo (la IA te ayuda) → Oferta (aprende gratis)",
+      "sections": [
+        {
+          "section_name": "Dimensionar la oportunidad",
+          "script_text": "La gente paga entre 10 y 25 dólares por una guía de decoración que le diga: comprá estos muebles, pintá de este color, poné esta lámpara acá. Quieren algo específico para SU espacio, no inspiración genérica de Pinterest. Y hay tantos estilos que cada uno puede ser un producto diferente.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Mirá cómo funciona esto.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Story + Mecanismo",
+          "script_text": "Abrís Pinterest, elegís 10 fotos que representen tu estilo. Se las mostrás a la IA y le decís: \"Armame una guía de decoración con esta estética para departamentos chicos. Incluí paleta de colores, muebles recomendados, y dónde comprarlos online\". La IA te arma algo que parece sacado de una revista. Con tu gusto. Con tu ojo. Pero sin que vos tengas que escribir una sola página. Y cuando alguien busca \"cómo decorar mi depto\", encuentra tu guía y la compra. ¿Me explico?",
+          "timing_seconds": 26
+        },
+        {
+          "section_name": "Offer — puente al CTA",
+          "script_text": "Cada estilo es un producto nuevo: minimalista, rústico, moderno, boho. Y en la clase gratuita te muestro el proceso completo para crear el primero y ponerlo a vender.",
+          "timing_seconds": 15
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro paso a paso cómo convertir lo que ya sabés en un producto digital que vende",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 70,
+    "word_count": 175
+  },
+  "createdAt": "2026-03-11T18:22:34.903Z",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "status": "confirmed"
+}

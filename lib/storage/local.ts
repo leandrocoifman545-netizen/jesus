@@ -138,7 +138,7 @@ export interface StoredBrief {
   createdAt: string;
 }
 
-export type GenerationStatus = "draft" | "recorded" | "winner";
+export type GenerationStatus = "draft" | "confirmed" | "recorded" | "winner";
 
 export interface WinnerMetrics {
   ctr?: number;
@@ -301,10 +301,11 @@ export async function updateGenerationStatus(
   gen.status = status;
   await saveGeneration(gen);
 
-  // Burn/unburn leads based on status change
-  if ((status === "recorded" || status === "winner") && oldStatus === "draft") {
+  // Burn leads when confirmed (or skipping straight to recorded/winner)
+  const burnStatuses = ["confirmed", "recorded", "winner"];
+  if (burnStatuses.includes(status) && !burnStatuses.includes(oldStatus)) {
     await burnLeadsFromGeneration(gen);
-  } else if (status === "draft" && (oldStatus === "recorded" || oldStatus === "winner")) {
+  } else if (!burnStatuses.includes(status) && burnStatuses.includes(oldStatus)) {
     await unburnLeadsFromGeneration(id);
   }
 
@@ -339,6 +340,25 @@ export async function saveBrief(brief: StoredBrief): Promise<void> {
   );
 }
 
+// Normalize old generations: ctas[] → cta, old platform → format label
+function normalizeGeneration(gen: StoredGeneration): StoredGeneration {
+  const script = gen.script as unknown as Record<string, unknown>;
+
+  // Fix old ctas[] array → cta object
+  if (!script.cta && Array.isArray(script.ctas) && script.ctas.length > 0) {
+    const old = script.ctas[0] as Record<string, unknown>;
+    script.cta = {
+      verbal_cta: old.script_text || old.verbal_cta || "[CTA genérico]",
+      reason_why: old.strategic_rationale || old.reason_why || "",
+      timing_seconds: old.timing_seconds || 5,
+      cta_type: old.cta_type || "custom",
+    };
+    delete script.ctas;
+  }
+
+  return gen;
+}
+
 export async function saveGeneration(gen: StoredGeneration): Promise<void> {
   await ensureDirs();
   await fs.writeFile(
@@ -352,7 +372,7 @@ export async function getGeneration(id: string): Promise<StoredGeneration | null
   await ensureDirs();
   try {
     const data = await fs.readFile(path.join(GENERATIONS_DIR, `${id}.json`), "utf-8");
-    return JSON.parse(data);
+    return normalizeGeneration(JSON.parse(data));
   } catch {
     return null;
   }
@@ -392,7 +412,7 @@ export async function listGenerations(): Promise<StoredGeneration[]> {
     const generations = await Promise.all(
       jsonFiles.map(async (file) => {
         const data = await fs.readFile(path.join(GENERATIONS_DIR, file), "utf-8");
-        return JSON.parse(data) as StoredGeneration;
+        return normalizeGeneration(JSON.parse(data) as StoredGeneration);
       })
     );
     const sorted = generations.sort(

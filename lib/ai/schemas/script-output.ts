@@ -6,7 +6,21 @@ export type HookType =
   | "pain_point"
   | "pattern_interrupt"
   | "reveal_teaser"
-  | "authority_social_proof";
+  | "authority_social_proof"
+  | "situacion_especifica"
+  | "dato_concreto"
+  | "pregunta_incomoda"
+  | "confesion"
+  | "contraintuitivo"
+  | "provocacion"
+  | "historia_mini"
+  | "analogia"
+  | "negacion_directa"
+  | "observacion_tendencia"
+  | "timeline_provocacion"
+  | "contrato_compromiso"
+  | "actuacion_dialogo"
+  | "anti_publico";
 
 export type CTAType =
   | "swipe_up"
@@ -39,9 +53,25 @@ export interface VisualFormat {
   recording_notes: string;
 }
 
+// Maps old platform values (TikTok, Reels, etc.) to format labels
+const PLATFORM_TO_FORMAT: Record<string, string> = {
+  tiktok: "Vertical Ad (9:16)",
+  reels: "Vertical Ad (9:16)",
+  shorts: "Vertical Ad (9:16)",
+  "instagram reels": "Vertical Ad (9:16)",
+  "youtube shorts": "Vertical Ad (9:16)",
+};
+
+export function resolveFormatLabel(platform: string): string {
+  // If it already looks like a format label, return as-is
+  if (platform.includes("Vertical") || platform.includes("Horizontal")) return platform;
+  // Map old platform values
+  return PLATFORM_TO_FORMAT[platform.toLowerCase()] || "Vertical Ad (9:16)";
+}
+
 export interface ScriptOutput {
   platform_adaptation: {
-    platform: string;
+    platform: string; // format label (e.g. "Vertical Ad (9:16)") — old data may have "TikTok"
     recommended_duration_seconds: number;
     content_style: string;
     key_considerations: string;

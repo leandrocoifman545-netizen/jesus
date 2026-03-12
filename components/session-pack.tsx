@@ -7,8 +7,9 @@ import { useToast } from "./toast";
 import RelativeTime from "./relative-time";
 import Confetti from "./confetti";
 import CopyButton from "./copy-button";
+import { resolveFormatLabel } from "@/lib/ai/schemas/script-output";
 
-type GenerationStatus = "draft" | "recorded" | "winner";
+type GenerationStatus = "draft" | "confirmed" | "recorded" | "winner";
 
 interface GenerationBatch {
   id: string;
@@ -77,6 +78,7 @@ const CTAS = [
 
 const STATUS_CONFIG: Record<GenerationStatus, { label: string; color: string; icon: string }> = {
   draft: { label: "Borrador", color: "text-zinc-500 border-zinc-700", icon: "" },
+  confirmed: { label: "Confirmado", color: "text-blue-400 border-blue-500/30 bg-blue-500/5", icon: "" },
   recorded: { label: "Grabado", color: "text-green-400 border-green-500/30 bg-green-500/5", icon: "" },
   winner: { label: "Winner", color: "text-amber-400 border-amber-500/30 bg-amber-500/5", icon: "" },
 };
@@ -113,7 +115,7 @@ function StatusDropdown({ currentStatus, onSelect, onClose, triggerRef }: {
         className="fixed z-[9991] bg-zinc-900/95 backdrop-blur-xl border border-zinc-800/50 rounded-xl overflow-hidden shadow-xl min-w-[120px] animate-fade-in"
         style={{ top: pos.top, right: pos.right, animationDuration: "100ms" }}
       >
-        {(["draft", "recorded", "winner"] as GenerationStatus[]).map((s) => (
+        {(["draft", "confirmed", "recorded", "winner"] as GenerationStatus[]).map((s) => (
           <button
             key={s}
             onClick={(e) => { e.preventDefault(); e.stopPropagation(); onSelect(s); }}
@@ -121,7 +123,7 @@ function StatusDropdown({ currentStatus, onSelect, onClose, triggerRef }: {
               s === currentStatus ? "bg-white/10 text-white" : "text-zinc-400 hover:bg-white/[0.04] hover:text-zinc-200"
             }`}
           >
-            <span className={`w-1.5 h-1.5 rounded-full ${s === "draft" ? "bg-zinc-500" : s === "recorded" ? "bg-green-400" : "bg-amber-400"}`} />
+            <span className={`w-1.5 h-1.5 rounded-full ${s === "draft" ? "bg-zinc-500" : s === "confirmed" ? "bg-blue-400" : s === "recorded" ? "bg-green-400" : "bg-amber-400"}`} />
             {STATUS_CONFIG[s].label}
           </button>
         ))}
@@ -332,6 +334,14 @@ function generatePackText(selected: GenerationSummary[]): string {
     }
     text += "=".repeat(60) + "\n\n";
 
+    text += `> ${gen.script.hooks.length} LEADS\n`;
+    text += "-".repeat(40) + "\n\n";
+
+    for (const hook of gen.script.hooks) {
+      text += `  Lead ${hook.variant_number} (${hook.hook_type}):\n`;
+      text += `  "${hook.script_text}"\n\n`;
+    }
+
     text += "> CUERPO\n";
     text += "-".repeat(40) + "\n\n";
 
@@ -339,14 +349,6 @@ function generatePackText(selected: GenerationSummary[]): string {
       const rehook = section.is_rehook ? " [RE-HOOK]" : "";
       text += `[${section.section_name}${rehook}]\n`;
       text += `${section.script_text}\n\n`;
-    }
-
-    text += `> ${gen.script.hooks.length} LEADS (cada uno conecta con el cuerpo de arriba)\n`;
-    text += "-".repeat(40) + "\n\n";
-
-    for (const hook of gen.script.hooks) {
-      text += `  Lead ${hook.variant_number} (${hook.hook_type}):\n`;
-      text += `  "${hook.script_text}"\n\n`;
     }
 
     text += "\n";
@@ -357,6 +359,186 @@ function generatePackText(selected: GenerationSummary[]): string {
   text += "=".repeat(60) + "\n";
 
   return text;
+}
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function generatePackHTML(selected: GenerationSummary[]): string {
+  const date = new Date().toLocaleDateString("es-AR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+  const totalDuration = selected.reduce((a, g) => a + (g.script.total_duration_seconds || 0), 0);
+
+  const ctasHTML = CTAS.map(c => `
+    <div class="cta-item">
+      <div class="cta-name">${esc(c.name)}</div>
+      <div class="cta-text">&ldquo;${esc(c.text)}&rdquo;</div>
+    </div>`).join("");
+
+  const tocHTML = selected.map((g, i) => `
+    <div class="toc-item">
+      <span class="toc-num">${i + 1}</span>
+      <span class="toc-title">${esc(g.title || g.script.development.framework_used)}</span>
+      <span class="toc-duration">${g.script.total_duration_seconds}s</span>
+    </div>`).join("");
+
+  const scriptsHTML = selected.map((g, i) => {
+    const bodySections = g.script.development.sections.map(sec => `
+      <div class="body-section ${sec.is_rehook ? "rehook" : ""} no-break">
+        <div class="body-section-name">${esc(sec.section_name)}${sec.is_rehook ? " — RE-HOOK" : ""}</div>
+        <div class="body-section-text">${esc(sec.script_text)}</div>
+      </div>`).join("");
+
+    const leadsHTML = g.script.hooks.map(h => `
+      <div class="lead-card no-break">
+        <div class="lead-num">${h.variant_number}</div>
+        <div class="lead-content">
+          <div class="lead-type">${esc(h.hook_type.replace(/_/g, " "))}</div>
+          <div class="lead-text">&ldquo;${esc(h.script_text)}&rdquo;</div>
+        </div>
+      </div>`).join("");
+
+    const vf = g.script.visual_format;
+
+    return `
+    <div class="page page-break">
+      <div class="script-header">
+        <div class="script-num">Guión ${i + 1} de ${selected.length}</div>
+        <div class="script-title">${esc(g.title || "Sin título")}</div>
+        <div class="script-meta">
+          <span class="script-meta-item"><span class="script-meta-label">Framework:</span> ${esc(g.script.development.framework_used)}</span>
+          <span class="script-meta-item"><span class="script-meta-label">Duración:</span> ${g.script.total_duration_seconds}s | ~${g.script.word_count} palabras</span>
+          ${vf ? `<span class="script-meta-item"><span class="script-meta-label">Formato:</span> ${esc(vf.format_name)} (Nivel ${vf.difficulty_level}/5)</span>` : ""}
+        </div>
+      </div>
+      <div class="script-details">
+        <p><strong>Arco:</strong> ${esc(g.script.development.emotional_arc)}</p>
+        ${vf ? `<p><strong>Setup:</strong> ${esc(vf.setup_instructions)}</p>` : ""}
+        ${vf?.recording_notes ? `<p><strong>Notas:</strong> ${esc(vf.recording_notes)}</p>` : ""}
+      </div>
+
+      <div class="leads-label">${g.script.hooks.length} Leads</div>
+      ${leadsHTML}
+
+      <div class="body-label">Cuerpo</div>
+      ${bodySections}
+    </div>`;
+  }).join("");
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pack de Grabación — ${esc(date)}</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  :root {
+    --purple: #7c3aed; --purple-light: #ede9fe; --purple-dark: #5b21b6;
+    --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb; --gray-300: #d1d5db;
+    --gray-500: #6b7280; --gray-700: #374151; --gray-900: #111827;
+    --green: #059669; --green-light: #ecfdf5;
+    --amber: #d97706; --amber-light: #fffbeb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--gray-900); background: white; line-height: 1.6; font-size: 11pt; }
+  @media print {
+    body { font-size: 10pt; }
+    .page-break { page-break-before: always; }
+    .no-break { page-break-inside: avoid; }
+    @page { margin: 1.5cm 2cm; size: A4; }
+    .cover { height: 100vh; }
+    .print-hint { display: none; }
+  }
+  @media screen {
+    body { max-width: 210mm; margin: 0 auto; background: #f3f4f6; }
+    .page { background: white; margin: 20px auto; padding: 40px 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .cover { min-height: 100vh; }
+  }
+  .print-hint {
+    position: fixed; top: 16px; right: 16px; background: var(--purple); color: white;
+    padding: 12px 20px; border-radius: 12px; font-size: 10pt; font-weight: 600;
+    cursor: pointer; z-index: 100; box-shadow: 0 4px 12px rgba(124,58,237,0.4);
+  }
+  .print-hint:hover { background: var(--purple-dark); }
+  .cover { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px 40px; }
+  .cover-logo { width: 80px; height: 80px; background: var(--purple); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 40px; }
+  .cover-logo svg { width: 44px; height: 44px; }
+  .cover h1 { font-size: 32pt; font-weight: 800; color: var(--gray-900); letter-spacing: -0.02em; margin-bottom: 8px; }
+  .cover .subtitle { font-size: 14pt; color: var(--gray-500); font-weight: 400; margin-bottom: 48px; }
+  .cover-meta { display: flex; gap: 32px; color: var(--gray-500); font-size: 10pt; }
+  .cover-divider { width: 60px; height: 4px; background: var(--purple); border-radius: 2px; margin: 40px 0; }
+  .toc h2 { font-size: 18pt; font-weight: 700; margin-bottom: 24px; }
+  .toc-item { display: flex; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--gray-100); }
+  .toc-num { font-weight: 700; color: var(--purple); min-width: 28px; font-size: 12pt; }
+  .toc-title { font-weight: 500; flex: 1; }
+  .toc-duration { color: var(--gray-500); font-size: 9pt; }
+  .cta-section { background: var(--purple-light); border-radius: 12px; padding: 24px; margin: 24px 0; }
+  .cta-section h3 { font-size: 11pt; font-weight: 700; color: var(--purple-dark); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .cta-item { background: white; border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; border-left: 3px solid var(--purple); }
+  .cta-item:last-child { margin-bottom: 0; }
+  .cta-name { font-weight: 600; font-size: 9pt; color: var(--purple); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+  .cta-text { color: var(--gray-700); font-size: 10pt; line-height: 1.5; }
+  .script-header { background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%); color: white; padding: 28px 32px; border-radius: 12px 12px 0 0; }
+  .script-num { font-size: 9pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-bottom: 6px; }
+  .script-title { font-size: 18pt; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 16px; }
+  .script-meta { display: flex; flex-wrap: wrap; gap: 16px; font-size: 9pt; opacity: 0.85; }
+  .script-meta-item { display: flex; align-items: center; gap: 4px; }
+  .script-meta-label { font-weight: 600; }
+  .script-details { background: var(--gray-50); border: 1px solid var(--gray-200); border-top: none; padding: 16px 24px; font-size: 9pt; color: var(--gray-700); border-radius: 0 0 12px 12px; margin-bottom: 24px; }
+  .script-details p { margin-bottom: 4px; }
+  .script-details strong { color: var(--gray-900); }
+  .body-label, .leads-label { font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .body-label { color: var(--purple); }
+  .body-label::after, .leads-label::after { content: ''; flex: 1; height: 1px; background: var(--gray-200); }
+  .leads-label { color: var(--green); margin-top: 28px; }
+  .body-section { margin-bottom: 16px; padding: 14px 18px; background: white; border: 1px solid var(--gray-200); border-radius: 8px; }
+  .body-section-name { font-size: 8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-500); margin-bottom: 6px; }
+  .body-section-text { font-size: 11pt; line-height: 1.7; }
+  .body-section.rehook { background: var(--amber-light); border-color: var(--amber); border-left: 3px solid var(--amber); }
+  .body-section.rehook .body-section-name { color: var(--amber); }
+  .lead-card { display: flex; gap: 12px; margin-bottom: 12px; padding: 14px 16px; background: var(--green-light); border-radius: 8px; border: 1px solid #d1fae5; }
+  .lead-num { font-size: 16pt; font-weight: 800; color: var(--green); min-width: 28px; line-height: 1; padding-top: 2px; }
+  .lead-content { flex: 1; }
+  .lead-type { font-size: 8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--green); margin-bottom: 4px; }
+  .lead-text { font-size: 11pt; line-height: 1.6; }
+  .footer { text-align: center; padding: 40px; color: var(--gray-500); font-size: 9pt; }
+</style>
+</head>
+<body>
+
+<button class="print-hint" onclick="window.print()">Guardar como PDF</button>
+
+<div class="page cover">
+  <div class="cover-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+    </svg>
+  </div>
+  <h1>Pack de Grabación</h1>
+  <p class="subtitle">${esc(date)}</p>
+  <div class="cover-divider"></div>
+  <div class="cover-meta">
+    <span><strong>${selected.length}</strong>&nbsp;guiones</span>
+    <span><strong>${totalDuration}s</strong>&nbsp;total</span>
+    <span><strong>${CTAS.length}</strong>&nbsp;CTAs</span>
+  </div>
+</div>
+
+<div class="page toc page-break">
+  <h2>Orden de grabación</h2>
+  ${tocHTML}
+  <div class="cta-section" style="margin-top: 32px;">
+    <h3>CTAs — grabar una vez, se pegan a cualquier cuerpo</h3>
+    ${ctasHTML}
+  </div>
+</div>
+
+${scriptsHTML}
+
+<div class="footer">ADP — Academia de Productos Digitales</div>
+
+</body>
+</html>`;
 }
 
 function generateTeleprompterText(selected: GenerationSummary[]): string {
@@ -485,9 +667,10 @@ function groupGenerations(gens: GenerationSummary[]): Group[] {
   return groups;
 }
 
-function getBatchStatusSummary(items: GenerationSummary[]): { drafts: number; recorded: number; winners: number } {
+function getBatchStatusSummary(items: GenerationSummary[]): { drafts: number; confirmed: number; recorded: number; winners: number } {
   return {
     drafts: items.filter((g) => !g.status || g.status === "draft").length,
+    confirmed: items.filter((g) => g.status === "confirmed").length,
     recorded: items.filter((g) => g.status === "recorded").length,
     winners: items.filter((g) => g.status === "winner").length,
   };
@@ -511,6 +694,9 @@ export default function SessionPack({ generations: initialGenerations }: Session
   const [showBatchModal, setShowBatchModal] = useState(false);
   const [renamingBatch, setRenamingBatch] = useState<{ id: string; name: string } | null>(null);
   const [batchLoading, setBatchLoading] = useState(false);
+  const [draggingId, setDraggingId] = useState<string | null>(null);
+  const [dragOverBatchId, setDragOverBatchId] = useState<string | null>(null);
+  const [dragOverUngrouped, setDragOverUngrouped] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setDebouncedSearch(search), 200);
@@ -544,7 +730,7 @@ export default function SessionPack({ generations: initialGenerations }: Session
         const hookMatch = g.script.hooks.some((h) => h.script_text.toLowerCase().includes(q) || h.hook_type.toLowerCase().includes(q));
         const frameworkMatch = g.script.development.framework_used.toLowerCase().includes(q);
         const bodyMatch = g.script.development.sections.some((s) => s.script_text.toLowerCase().includes(q));
-        const platformMatch = g.script.platform_adaptation.platform.toLowerCase().includes(q);
+        const platformMatch = resolveFormatLabel(g.script.platform_adaptation.platform).toLowerCase().includes(q);
         const formatMatch = g.script.visual_format?.format_name.toLowerCase().includes(q);
         const batchMatch = g.batch?.name.toLowerCase().includes(q);
         if (!titleMatch && !hookMatch && !frameworkMatch && !bodyMatch && !platformMatch && !formatMatch && !batchMatch) return false;
@@ -562,7 +748,7 @@ export default function SessionPack({ generations: initialGenerations }: Session
         case "framework":
           return a.script.development.framework_used.localeCompare(b.script.development.framework_used);
         case "status": {
-          const order: Record<string, number> = { winner: 0, recorded: 1, draft: 2 };
+          const order: Record<string, number> = { winner: 0, recorded: 1, confirmed: 2, draft: 3 };
           return (order[a.status || "draft"] ?? 2) - (order[b.status || "draft"] ?? 2);
         }
         default:
@@ -694,6 +880,81 @@ export default function SessionPack({ generations: initialGenerations }: Session
     }
   }
 
+  // --- Drag & drop ---
+
+  function handleDragStart(e: React.DragEvent, genId: string) {
+    setDraggingId(genId);
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", genId);
+    // Make the drag image slightly transparent
+    if (e.currentTarget instanceof HTMLElement) {
+      e.currentTarget.style.opacity = "0.5";
+    }
+  }
+
+  function handleDragEnd(e: React.DragEvent) {
+    if (e.currentTarget instanceof HTMLElement) {
+      e.currentTarget.style.opacity = "1";
+    }
+    setDraggingId(null);
+    setDragOverBatchId(null);
+    setDragOverUngrouped(false);
+  }
+
+  async function handleDropOnBatch(e: React.DragEvent, batchId: string, batchName: string) {
+    e.preventDefault();
+    setDragOverBatchId(null);
+    const genId = e.dataTransfer.getData("text/plain");
+    if (!genId) return;
+
+    // Don't drop on the same batch
+    const gen = generations.find((g) => g.id === genId);
+    if (gen?.batch?.id === batchId) return;
+
+    try {
+      const res = await fetch("/api/generate/batch", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationIds: [genId], batchId, batchName }),
+      });
+      if (!res.ok) throw new Error("Error");
+      const { batch } = await res.json();
+
+      setGenerations((prev) =>
+        prev.map((g) => g.id === genId ? { ...g, batch } : g)
+      );
+      toast(`Movido a "${batchName}"`);
+    } catch {
+      toast("Error moviendo guion", "error");
+    }
+  }
+
+  async function handleDropOnUngrouped(e: React.DragEvent) {
+    e.preventDefault();
+    setDragOverUngrouped(false);
+    const genId = e.dataTransfer.getData("text/plain");
+    if (!genId) return;
+
+    const gen = generations.find((g) => g.id === genId);
+    if (!gen?.batch) return; // already ungrouped
+
+    try {
+      const res = await fetch("/api/generate/batch", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationIds: [genId] }),
+      });
+      if (!res.ok) throw new Error("Error");
+
+      setGenerations((prev) =>
+        prev.map((g) => g.id === genId ? { ...g, batch: undefined } : g)
+      );
+      toast("Guion desagrupado");
+    } catch {
+      toast("Error desagrupando", "error");
+    }
+  }
+
   // --- Download/copy ---
 
   function downloadPack() {
@@ -701,6 +962,16 @@ export default function SessionPack({ generations: initialGenerations }: Session
     const text = generatePackText(selectedGens);
     downloadFile(text, `pack-grabacion-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.txt`);
     toast(`Pack descargado (${selectedGens.length} guiones)`);
+  }
+
+  function downloadPackPDF() {
+    const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
+    const html = generatePackHTML(selectedGens);
+    const w = window.open("", "_blank");
+    if (!w) { toast("Permití popups para descargar el PDF"); return; }
+    w.document.write(html);
+    w.document.close();
+    toast(`PDF listo — usá Cmd+P para guardar (${selectedGens.length} guiones)`);
   }
 
   function downloadTeleprompter() {
@@ -757,11 +1028,14 @@ export default function SessionPack({ generations: initialGenerations }: Session
     return (
       <div
         key={gen.id}
-        className={`relative border rounded-2xl p-6 transition-all duration-300 flex gap-4 hover-glow hover-lift ${
+        draggable
+        onDragStart={(e) => handleDragStart(e, gen.id)}
+        onDragEnd={handleDragEnd}
+        className={`relative border rounded-2xl p-6 transition-all duration-300 flex gap-4 hover-glow hover-lift cursor-grab active:cursor-grabbing ${
           selected.has(gen.id)
             ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20 shadow-lg shadow-purple-500/5"
             : "border-zinc-800/40 bg-zinc-900/30 hover:bg-zinc-900/50 hover:border-zinc-700/40"
-        } ${bounceId === gen.id ? "animate-success-bounce" : ""} ${bounceId === gen.id && status !== "winner" ? "animate-success-flash" : ""}`}
+        } ${draggingId === gen.id ? "opacity-50 scale-[0.98]" : ""} ${bounceId === gen.id ? "animate-success-bounce" : ""} ${bounceId === gen.id && status !== "winner" ? "animate-success-flash" : ""}`}
       >
         {confettiId === gen.id && <Confetti trigger={true} />}
         <button
@@ -788,7 +1062,7 @@ export default function SessionPack({ generations: initialGenerations }: Session
           )}
           <div className="flex items-center gap-2.5 mb-2.5 flex-wrap">
             <span className="badge bg-zinc-800/80 text-zinc-400 border-zinc-700/50">
-              {gen.script.platform_adaptation.platform}
+              {resolveFormatLabel(gen.script.platform_adaptation.platform)}
             </span>
             <span className="text-[11px] text-zinc-500 font-medium">{gen.script.total_duration_seconds}s</span>
             <span className="text-[11px] text-zinc-500">{gen.script.development.framework_used}</span>
@@ -828,6 +1102,9 @@ export default function SessionPack({ generations: initialGenerations }: Session
               />
             )}
           </div>
+          {status === "confirmed" && (
+            <span className="text-[9px] text-blue-400/50">{gen.script.hooks.length} leads quemados</span>
+          )}
           {status === "recorded" && (
             <span className="text-[9px] text-red-400/50">{gen.script.hooks.length} leads quemados</span>
           )}
@@ -967,12 +1244,21 @@ export default function SessionPack({ generations: initialGenerations }: Session
             </button>
             <button
               onClick={downloadPack}
-              className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 shadow-lg shadow-purple-500/20 text-white px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
+              className="bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700/50 text-zinc-300 px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
             >
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
               </svg>
-              Descargar pack ({selected.size})
+              TXT
+            </button>
+            <button
+              onClick={downloadPackPDF}
+              className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 shadow-lg shadow-purple-500/20 text-white px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
+            >
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+              </svg>
+              Descargar PDF ({selected.size})
             </button>
           </div>
         </div>
@@ -1001,8 +1287,17 @@ export default function SessionPack({ generations: initialGenerations }: Session
                 <div key={`batch-${group.batchId}`} className="mb-2">
                   {/* Batch folder header */}
                   <div
-                    className="group/folder flex items-center gap-3 py-3 px-4 -mx-4 rounded-xl hover:bg-zinc-900/40 transition-all cursor-pointer"
+                    className={`group/folder flex items-center gap-3 py-3 px-4 -mx-4 rounded-xl hover:bg-zinc-900/40 transition-all cursor-pointer ${
+                      dragOverBatchId === group.batchId ? "bg-purple-500/10 border border-purple-500/30 ring-2 ring-purple-500/20" : ""
+                    }`}
                     onClick={() => toggleBatchCollapse(group.batchId)}
+                    onDragOver={(e) => {
+                      e.preventDefault();
+                      e.dataTransfer.dropEffect = "move";
+                      setDragOverBatchId(group.batchId);
+                    }}
+                    onDragLeave={() => setDragOverBatchId(null)}
+                    onDrop={(e) => handleDropOnBatch(e, group.batchId, group.batchName)}
                   >
                     {/* Select all in batch */}
                     <button
@@ -1114,9 +1409,20 @@ export default function SessionPack({ generations: initialGenerations }: Session
 
             // Date group (ungrouped)
             return (
-              <div key={`date-${group.label}`}>
+              <div
+                key={`date-${group.label}`}
+                onDragOver={(e) => {
+                  e.preventDefault();
+                  e.dataTransfer.dropEffect = "move";
+                  setDragOverUngrouped(true);
+                }}
+                onDragLeave={() => setDragOverUngrouped(false)}
+                onDrop={handleDropOnUngrouped}
+                className={dragOverUngrouped ? "rounded-xl ring-2 ring-zinc-500/30 bg-zinc-800/20 transition-all" : "transition-all"}
+              >
                 <div className="section-divider mb-3 mt-4">
                   <span className="text-[10px] uppercase tracking-[0.15em] font-medium text-zinc-500 shrink-0">{group.label}</span>
+                  {draggingId && <span className="text-[10px] text-zinc-600 ml-2">soltar para desagrupar</span>}
                 </div>
                 <div className="grid gap-4">
                   {group.items.map(renderGenCard)}
@@ -1130,6 +1436,26 @@ export default function SessionPack({ generations: initialGenerations }: Session
           </div>
         )}
       </div>
+
+      {/* Drop zone to ungrouped — only visible when dragging and all items are batched */}
+      {draggingId && !groups.some((g) => g.type === "date") && (
+        <div
+          onDragOver={(e) => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = "move";
+            setDragOverUngrouped(true);
+          }}
+          onDragLeave={() => setDragOverUngrouped(false)}
+          onDrop={handleDropOnUngrouped}
+          className={`border-2 border-dashed rounded-2xl p-6 text-center transition-all ${
+            dragOverUngrouped
+              ? "border-zinc-500/50 bg-zinc-800/30 text-zinc-400"
+              : "border-zinc-800/30 text-zinc-600"
+          }`}
+        >
+          <p className="text-xs">Soltar acá para desagrupar</p>
+        </div>
+      )}
 
       {/* Batch modal */}
       {showBatchModal && (

@@ -14,6 +14,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const clampedCount = Math.max(1, Math.min(10, Number(count) || 1));
+
     const generation = await getGeneration(generationId);
     if (!generation) {
       return NextResponse.json({ error: "Generacion no encontrada" }, { status: 404 });
@@ -32,9 +34,9 @@ export async function POST(req: NextRequest) {
     }
 
     const newHooks = await generateMoreHooks(
-      { ...brief, hookCount: count, generationRules },
+      { ...brief, hookCount: clampedCount, generationRules },
       generation.script.hooks,
-      count,
+      clampedCount,
     );
 
     generation.script.hooks = [...generation.script.hooks, ...newHooks];

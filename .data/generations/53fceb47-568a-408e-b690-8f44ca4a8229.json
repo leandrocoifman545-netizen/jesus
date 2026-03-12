@@ -1,0 +1,88 @@
+{
+  "id": "53fceb47-568a-408e-b690-8f44ca4a8229",
+  "briefId": "4d6f0793-bbf6-4c91-92b0-ce67c34c59ab",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Ves tutoriales de IA pero no ganás un peso",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 68,
+      "content_style": "Screenshot de comentario → Jesús responde a cámara",
+      "key_considerations": "Screenshot de alguien diciendo 'Veo videos de IA todos los días pero no sé cómo ganar plata con eso'. Jesús responde con el proceso."
+    },
+    "visual_format": {
+      "format_name": "Screenshot → Respuesta en Video",
+      "difficulty_level": 1,
+      "setup_instructions": "Captura de comentario: 'Llevo meses aprendiendo de IA pero no genero nada'. Jesús responde a cámara.",
+      "recording_notes": "Screenshot 3s → Jesús responde directo, sin rodeos. Tono de 'te entiendo, me pasó lo mismo'. Energía de solución."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "script_text": "Sabés más de IA que la mayoría de la gente que conocés. Mirás tutoriales, probás herramientas, estás al día con todo lo nuevo. Pero no generaste un peso con todo eso.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántos videos de IA miraste este mes? ¿Y cuántos pesos te generaron? Si la respuesta te incomoda, escuchame 60 segundos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "simplificacion_error",
+        "script_text": "Ganar plata con IA son 3 pasos. El primero lo hacés bárbaro. El tercero es fácil. Pero el segundo es donde la mayoría se traba sin saberlo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "script_text": "Yo también pasé meses probando cosas con la IA sin ganar nada. Hasta que entendí que no me faltaba saber MÁS de IA. Me faltaba saber QUÉ pedirle para generar plata.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "script_text": "Esto no es otro tutorial de IA. No te voy a enseñar prompts. No te voy a mostrar herramientas nuevas. Te voy a mostrar cómo convertir lo que ya sabés de IA en plata.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Problema (sabés de IA pero no monetizás) → Agitación (la brecha entre aprender y ganar) → Solución (proceso de 3 pasos con nicho real)",
+      "sections": [
+        {
+          "section_name": "Problema — La brecha",
+          "script_text": "El problema no es que no sabés de IA. Sabés de sobra. El problema es que nadie te enseñó a convertir eso en algo que se venda. Hay una diferencia enorme entre usar la IA y ganar plata con la IA. Y esa diferencia no es técnica.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Son 3 pasos. Y el que te falta es el más simple.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Solución — El proceso con nicho",
+          "script_text": "Primero: encontrás un tema que la gente busca resolver. Ponele, cuidado de la piel. Segundo: le pedís a la IA que arme una guía completa con rutinas, productos recomendados y errores comunes. La IA lo hace en una hora con lo que vos le indicás. Tercero: lo subís a internet y dejás que la gente que busca eso lo encuentre y lo compre. El producto trabaja por vos. Y la IA que ya sabés usar te lo armó en una tarde.",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "Puente al CTA",
+          "script_text": "Vos ya tenés la habilidad. Solo te falta el proceso para monetizarla. En la clase gratuita te lo muestro completo.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro cómo convertir lo que ya sabés de IA en tu primer producto digital",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 68,
+    "word_count": 175
+  },
+  "createdAt": "2026-03-11T22:15:49.935Z"
+}

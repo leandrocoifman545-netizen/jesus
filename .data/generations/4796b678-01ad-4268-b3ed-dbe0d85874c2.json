@@ -1,0 +1,93 @@
+{
+  "id": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+  "briefId": "1744161b-2f49-43e5-8475-886813ac4c53",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Tu auto vale más de lo que pensás",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 70,
+      "content_style": "Screenshot de comentario/pregunta → Jesús responde a cámara",
+      "key_considerations": "El screenshot es el pattern interrupt. Jesús responde como si le hubieran preguntado directamente."
+    },
+    "visual_format": {
+      "format_name": "Screenshot → Respuesta en Video",
+      "difficulty_level": 1,
+      "setup_instructions": "Captura de pantalla de un comentario tipo 'Yo sé de autos pero no sé cómo ganar plata con eso'. Jesús aparece respondiendo a cámara. Fondo limpio, cámara frontal.",
+      "recording_notes": "Screenshot ocupa 3s iniciales. Después Jesús habla directo a cámara respondiendo. Tono: entusiasmado, tipo 'mirá qué fácil'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Estás abajo del auto un sábado cambiándole el aceite a un vecino por 50 lucas. Sabés más de mecánica que el 90% de la gente. Pero nunca se te ocurrió que ese conocimiento vale plata en internet.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contrato_compromiso",
+        "script_text": "Si sabés cambiar una rueda o revisar el aceite, ya tenés más conocimiento que el que necesitás para ganar plata con un producto digital. Solo que nadie te lo dijo. Hasta ahora.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_mini",
+        "script_text": "Che, ¿viste cuando un amigo te llama un domingo porque el auto le hace un ruido raro y vos con una foto ya sabés qué es? La realidad es que eso que para vos es obvio, para millones de personas es un misterio. Y pagarían por entenderlo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Un mecánico sabe más de autos que el 99% de los ebooks que se venden en Hotmart. Y no está vendiendo nada. Si vos sabés de autos, estás sentado arriba de un negocio y no te diste cuenta.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "script_text": "Esto no es para programadores. No es para diseñadores. No es para gente que sabe de marketing. Esto es para el que sabe de autos y nunca pensó que podía ganar plata con eso desde la computadora.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "AIDA",
+      "emotional_arc": "Reconocimiento (yo sé de autos) → Sorpresa (vale plata online) → Deseo (la IA me lo arma) → Urgencia (quiero aprender)",
+      "sections": [
+        {
+          "section_name": "Interés — dimensionar la oportunidad",
+          "script_text": "Hay miles de personas por mes buscando en Google cosas como \"cómo cambiar pastillas de freno\", \"mantenimiento del auto en casa\", \"qué hacer si el auto no arranca\". Miles. Y lo que encuentran son videos de 40 minutos mal grabados o artículos que no se entienden. Ahora, si vos sabés de autos, tenés algo que la mayoría no tiene: conocimiento real.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Y acá es donde se pone interesante.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Deseo — el mecanismo con IA",
+          "script_text": "Agarrás todo lo que sabés de mecánica y en vez de explicárselo a un vecino gratis, se lo contás a la IA. \"Necesito una guía de mantenimiento básico del auto, mes por mes, con los errores más comunes que comete la gente\". La IA te lo organiza, te lo redacta profesional, y te arma algo que parece hecho por un taller oficial de BMW en menos de media hora. Esa información ya tenés en la cabeza. ¿Me explico?",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "Prueba y puente al CTA",
+          "script_text": "Después es cuestión de subirlo a internet y dejar que la gente que busca eso todos los días lo encuentre. Yo te enseño cómo hacer todo eso en la clase gratuita.",
+          "timing_seconds": 15
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro en vivo cómo armar tu primer producto digital con lo que ya sabés",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 70,
+    "word_count": 165
+  },
+  "createdAt": "2026-03-11T18:19:02.078Z",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "status": "confirmed"
+}

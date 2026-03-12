@@ -1,0 +1,101 @@
+{
+  "id": "d3b65d63-31c9-40af-9c15-adea42c3b526",
+  "title": "#6 [GMAPS] [WEBINAR] - Winner",
+  "transcript": "Toda la gente conoce lo que es la inteligencia artificial. Por ejemplo, acá tengo el chat GPT abierto y le puedo preguntar, chat GPT, ¿por qué hay personas que usan la IA para generar ingresos y otras personas que solamente la usan para preguntarte cosas como yo te estoy preguntando ahora? Y probablemente hay mucha gente que lo usa para hacer preguntas, para buscar cosas en la IA o que le responda. Acá acá me está respondiendo. Pero hay gran parte de personas que aprendieron a usar la IA para reemplazar talentos que antes había que estudiar por años, por ejemplo, diseñadores, escritores, un montón de cosas. Y lo que hicimos fue resumir todo esto en tres pasos para enseñarte un proceso en donde puedes usar la inteligencia artificial para reemplazar a diseñadores, a escritores, instalar un sistema de publicidad de negocios que le atrae clientes. Vos no tenés que aprender a hacer todo, vos simplemente tenés que operarlo. Yo te voy a enseñar cómo redactar textos con IA, redactar anuncios, hacer anuncios y diseños con inteligencia artificial que con un click puedes hacer cientos de anuncios y después simplemente mezclar estos ingredientes en una campaña para poder conseguirle clientes a negocios que te van a querer contratar. Esto lo cobras mensualmente y puedes generar unos 200, 300 dólares al mes. Te voy a explicar esto en la clase que voy a dar, una clase que voy a dar la siguiente semana, solamente tienes que tocar el botón de aquí abajo para registrarte.",
+  "analysis": {
+    "hook": {
+      "text": "Toda la gente conoce lo que es la inteligencia artificial.",
+      "type": "pattern_interrupt",
+      "word_count": 11,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook - Normalización del tema",
+          "summary": "Introduce IA como algo conocido por todos",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Problem - Brecha de conocimiento",
+          "summary": "Contrasta usuarios pasivos vs usuarios que generan ingresos con IA",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Agitation - Ejemplos de reemplazo de talentos",
+          "summary": "Muestra cómo IA reemplaza diseñadores, escritores y otros profesionales",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Solution - Sistema de 3 pasos",
+          "summary": "Presenta el proceso: redactar textos, hacer anuncios/diseños, crear campañas",
+          "estimated_seconds": 18
+        },
+        {
+          "name": "Value proposition - Monetización",
+          "summary": "Explica cómo cobrar mensualmente ($200-300/mes)",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "CTA - Registro a clase",
+          "summary": "Invita a registrarse para clase la siguiente semana",
+          "estimated_seconds": 5
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Y lo que hicimos fue resumir todo esto en tres pasos para enseñarte un proceso..."
+    },
+    "tone": {
+      "primary_tone": "Educational, conversational, mentor-like",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Toda la gente conoce",
+        "hay gran parte de personas que aprendieron",
+        "Vos no tenés que aprender a hacer todo",
+        "simplemente tenés que operarlo",
+        "con un click puedes hacer cientos de anuncios",
+        "puedes generar unos 200, 300 dólares al mes"
+      ]
+    },
+    "cta": {
+      "text": "solamente tienes que tocar el botón de aquí abajo para registrarte",
+      "type": "sign_up",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 61,
+    "total_word_count": 287,
+    "emotional_arc": "Curiosity (hook) → Recognition (problem identification) → Aspiration (solution reveal) → Empowerment (you can do this) → Action (register now)",
+    "strengths": [
+      "Hook establece familiaridad antes de crear brecha de conocimiento",
+      "Rehook a mitad del video mantiene atención después de problema",
+      "Usa demostración visual (ChatGPT abierto) para credibilidad",
+      "Lenguaje conversacional y cercano (vos, tenés) genera conexión",
+      "Estructura PAS clara: problema evidente, solución específica, beneficio monetario",
+      "Menciona cifra concreta ($200-300/mes) para credibilidad",
+      "Simplifica la propuesta: 'no tenés que aprender todo, solo operarlo'",
+      "CTA dual: verbal + visual (botón)",
+      "Crea urgencia temporal: 'clase la siguiente semana'"
+    ],
+    "patterns_to_replicate": [
+      "Iniciar con afirmación universal que todos reconocen, luego crear contraste",
+      "Usar demostración en vivo/visual del producto/herramienta mencionada",
+      "Incluir rehook a los 15-20 segundos cuando atención baja",
+      "Contrastar dos tipos de usuarios (pasivos vs activos) para crear aspiración",
+      "Presentar solución como proceso simple de N pasos",
+      "Usar lenguaje local/regional (vos, tenés) para conexión emocional",
+      "Mencionar cifras específicas de ingresos/resultados",
+      "Simplificar la propuesta de valor: 'no necesitas ser experto, solo operador'",
+      "Crear urgencia temporal sin ser agresivo",
+      "Terminar con CTA clara que requiere acción inmediata"
+    ]
+  },
+  "folder": "winners-gmaps",
+  "folderLabel": "Winners GMAPS Webinar",
+  "createdAt": "2026-03-11T15:21:24.800Z"
+}

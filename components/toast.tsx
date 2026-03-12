@@ -85,8 +85,8 @@ function ToastItem({ toast }: { toast: Toast }) {
   return (
     <div
       className={`
-        pointer-events-auto min-w-[280px] rounded-2xl backdrop-blur-xl bg-zinc-900/90 border border-zinc-800/50 px-4 py-3 text-sm shadow-2xl shadow-black/50
-        transition-all duration-200 ease-out
+        pointer-events-auto min-w-[280px] rounded-2xl backdrop-blur-2xl bg-zinc-900/95 border border-zinc-800/40 px-4 py-3.5 text-sm shadow-2xl shadow-black/60
+        transition-all duration-300 ease-out
         ${borderAccent} ${textColor}
         ${visible && !toast.exiting ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"}
       `}

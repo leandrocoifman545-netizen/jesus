@@ -1,0 +1,89 @@
+{
+  "id": "dbe10055-67db-446e-b1e7-a5b40a1f1a25",
+  "briefId": "6c0eec06-fb78-4c4c-a591-1961531cf78c",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Edad/reinvención: jardinería con IA",
+  "batch": {
+    "id": "d3f87158-1089-4a64-a803-7dcb639871c2",
+    "name": "Semana 11 Mar 2026"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 45,
+      "content_style": "Split Screen 2 Pantallas: Arriba — screencast de la IA generando una guía de jardinería (tabla de contenidos, calendario de siembra). Abajo — Jesús hablando, tono cálido y respetuoso.",
+      "key_considerations": "Formato nivel 2. Split en CapCut. Arriba: prompt visible 'Armame una guía de huerta urbana paso a paso'. Tono respetuoso, sin condescendencia. No asumir que no saben nada de tecnología."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "curiosity_gap",
+        "script_text": "¿Viste cuando plantás un tomate? Preparás la tierra, ponés la semilla, regás y esperás. No te estoy hablando de jardinería. Te estoy hablando de cómo armar un negocio digital.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pain_point",
+        "script_text": "Tenés 50 años, un jardín hermoso, y tu familia te dice 'vos tendrías que vender tus recetas de compost.' Pero no sabés ni por dónde empezar con la tecnología. Bueno, eso hoy se resuelve.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "question",
+        "script_text": "¿Cuántos años te tomó aprender lo que sabés de plantas? ¿10, 20, 30? Ahora imaginate que todo eso lo convertís en un producto digital que se vende solo. Con la IA lo hacés en una tarde.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contrarian",
+        "script_text": "Las personas de más de 45 años tienen una ventaja enorme para vender productos digitales. No es la tecnología. Es que tienen 20 años de conocimiento real que un pibe de 22 no tiene.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "reveal_teaser",
+        "script_text": "Cada vez más gente busca en internet cómo cultivar en casa, cómo hacer compost, cómo armar una huerta. Y casi nadie en español está vendiendo guías buenas sobre eso. Ahí hay un hueco enorme.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "3_Acts",
+      "emotional_arc": "Identificación (vos sabés de plantas) → analogía sorpresiva (plantar = emprender) → giro (no hablo de jardinería) → esperanza (la IA lo hace fácil) → cambio de creencia (tu experiencia es tu ventaja, no la tecnología)",
+      "sections": [
+        {
+          "section_name": "Analogía — Plantar y emprender",
+          "is_rehook": false,
+          "script_text": "Cuando plantás algo en el jardín, no le pedís a la semilla que crezca más rápido. Preparás la tierra, le das agua, y dejás que el proceso funcione. Con un negocio digital es exactamente igual.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Re-hook — El giro",
+          "is_rehook": true,
+          "script_text": "Pero acá viene el giro. No estoy hablando de jardinería.",
+          "timing_seconds": 3
+        },
+        {
+          "section_name": "Conexión — Tu conocimiento como producto",
+          "is_rehook": false,
+          "script_text": "Estoy hablando de tu conocimiento. Vos sabés de plantas, de tierra, de compost. La IA agarra todo eso y te arma una guía de jardinería completa. Paso a paso. Con calendarios de siembra, con recomendaciones por zona, con todo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Mecanismo — Se vende solo",
+          "is_rehook": false,
+          "script_text": "La subís a internet por 15 dólares. Y cada persona que busca 'cómo empezar una huerta en casa' puede comprarla. Básicamente, tu experiencia de 20 años se convierte en un producto que se vende solo. No necesitás saber de tecnología. La IA se encarga. ¿Se entiende?",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón y registrate gratis",
+      "reason_why": "Te muestro en vivo cómo crear tu primer producto digital con IA, paso a paso",
+      "timing_seconds": 5,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 45,
+    "word_count": 108
+  },
+  "createdAt": "2026-03-11T05:34:35.958Z"
+}

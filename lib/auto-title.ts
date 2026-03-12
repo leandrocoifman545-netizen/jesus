@@ -1,4 +1,5 @@
 import type { ScriptOutput } from "./ai/schemas/script-output";
+import { resolveFormatLabel } from "./ai/schemas/script-output";
 
 /**
  * Genera un título automático para un guion basándose en el contenido.
@@ -7,7 +8,7 @@ import type { ScriptOutput } from "./ai/schemas/script-output";
 export function generateAutoTitle(script: ScriptOutput, additionalNotes?: string): string {
   const fw = script.development.framework_used;
   const dur = script.total_duration_seconds;
-  const platform = script.platform_adaptation.platform;
+  const platform = resolveFormatLabel(script.platform_adaptation.platform);
 
   // Try to extract the core topic from the first body section
   const bodyText = script.development.sections

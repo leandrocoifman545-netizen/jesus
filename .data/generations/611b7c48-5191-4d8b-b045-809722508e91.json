@@ -1,0 +1,89 @@
+{
+  "id": "611b7c48-5191-4d8b-b045-809722508e91",
+  "briefId": "4cb99f84-fe10-4af6-ba98-b440450fef0e",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "LATAM/Venezuela: enseñar español con IA",
+  "batch": {
+    "id": "d3f87158-1089-4a64-a803-7dcb639871c2",
+    "name": "Semana 11 Mar 2026"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 45,
+      "content_style": "Green Screen + Noticia: Jesús aparece sobre fondo de Google Trends mostrando búsquedas de 'learn Spanish online' (110K/mes). Datos reales visibles detrás.",
+      "key_considerations": "Formato nivel 1. Green screen nativo de TikTok/IG. Fondo: captura de Google Trends. Jesús habla directo a cámara sobre el dato. Energía alta desde el segundo 0."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "statistical",
+        "script_text": "110 mil personas buscan 'learn Spanish' en Google cada mes. ¿Y sabés quién les vende cursos? Gringos que aprendieron español de segundo idioma. Vos lo hablás desde que naciste y no vendés nada.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pain_point",
+        "script_text": "Sos de Venezuela. Hablás español todo el día, con tu familia, con tus vecinos. Mientras tanto hay gente cobrando 30 dólares por enseñar lo que vos hacés sin pensar. Te cuento por qué eso cambia hoy.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "curiosity_gap",
+        "script_text": "Yo antes pensaba que para vender online tenías que ser programador o saber de diseño. Hasta que vi cuánta gente en el mundo está pagando por aprender español. Y no necesitás ser profesor para venderlo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contrarian",
+        "script_text": "Los que peor hablan español son los que más cursos de español venden en internet. Suena ridículo pero pasa. La realidad es que vos tenés una ventaja que ellos jamás van a tener.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pattern_interrupt",
+        "script_text": "En Venezuela un sueldo mensual son 30 dólares. Un curso de español online se vende a 25. Una sola venta y casi igualás lo que mucha gente gana en un mes entero de laburo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "Hook-Story-Offer",
+      "emotional_arc": "Sorpresa (dato de búsquedas) → identificación (vos hablás español) → curiosidad (un pibe en Caracas) → esperanza concreta (proceso simple) → cambio de creencia (no necesitás ser profesor)",
+      "sections": [
+        {
+          "section_name": "Story — El pibe de Caracas",
+          "is_rehook": false,
+          "script_text": "Hay un pibe en Caracas que agarró su celular, le pidió a la IA que le arme un curso de español para extranjeros. Lecciones, ejercicios, PDFs, todo. En una tarde lo tenía listo.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Pero acá viene lo importante.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Mecanismo — Cómo lo vendió",
+          "is_rehook": false,
+          "script_text": "Lo subió a Hotmart, le puso 25 dólares, y empezó a correr anuncios con 5 dólares por día. Básicamente la IA armó todo el producto. Él solo tuvo que hablar como habla todos los días. ¿Me seguís?",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Cambio de creencia",
+          "is_rehook": false,
+          "script_text": "No necesitás ser profesor. No necesitás una plataforma cara. Necesitás saber pedirle a la IA. Ella te estructura el curso entero, vos le ponés tu acento y tu forma de explicar. Lo creás una vez y se vende solo.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón y registrate gratis",
+      "reason_why": "Te muestro en vivo cómo crear tu primer producto digital con IA",
+      "timing_seconds": 5,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 45,
+    "word_count": 105
+  },
+  "createdAt": "2026-03-11T05:34:32.364Z"
+}

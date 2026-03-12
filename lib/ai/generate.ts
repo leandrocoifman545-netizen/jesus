@@ -1,6 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_PROMPT } from "./prompts/system";
+import { AVATAR_CONTEXT } from "./prompts/avatar-context";
 import {
   type ScriptOutput,
   type Hook,
@@ -56,14 +57,20 @@ function getGeminiClient() {
 const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
 {
   "platform_adaptation": {
-    "platform": string,
+    "platform": string (DEBE ser uno de: "Vertical Ad (9:16)", "Vertical Orgánico (9:16)", "Horizontal Ad (16:9)"),
     "recommended_duration_seconds": number,
     "content_style": string,
     "key_considerations": string
   },
+  "visual_format": {
+    "format_name": string (nombre del formato visual, ej: "Talking Head", "Split Screen", "Gameplay Background"),
+    "difficulty_level": number (1 a 5, donde 1 es solo cámara y 5 requiere producción compleja),
+    "setup_instructions": string (instrucciones de setup para el equipo de grabación),
+    "recording_notes": string (notas adicionales para la sesión de grabación)
+  },
   "hooks": [{
     "variant_number": number,
-    "hook_type": "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
+    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
     "script_text": string,
     "timing_seconds": number
   }],
@@ -91,7 +98,7 @@ const HOOKS_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 {
   "hooks": [{
     "variant_number": number,
-    "hook_type": "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
+    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
     "script_text": string,
     "timing_seconds": number
   }]
@@ -205,6 +212,7 @@ function buildBriefContext(brief: BriefInput): string {
 function buildLearnedPatterns(refs: { analysis: ReferenceAnalysis }[]): string {
   if (refs.length === 0) return "";
 
+  try {
   // Extract principles, not structures to copy
   const allPatterns = refs.flatMap((r) => r.analysis.patterns_to_replicate);
   const uniquePatterns = [...new Set(allPatterns)].slice(0, 12);
@@ -250,6 +258,10 @@ Para evitar saturar la audiencia, PRIORIZÁ frameworks y hook types DIFERENTES a
 Usá los principios de arriba pero con combinaciones frescas.`;
 
   return section;
+  } catch (err) {
+    console.error("[buildLearnedPatterns] Error procesando referencias:", err);
+    return "";
+  }
 }
 
 async function buildWinnerExamples(projectId?: string): Promise<string> {
@@ -319,7 +331,8 @@ async function buildWinnerExamples(projectId?: string): Promise<string> {
     }
 
     return section;
-  } catch {
+  } catch (err) {
+    console.error("[buildWinnerExamples] Error cargando winners:", err);
     return "";
   }
 }
@@ -369,7 +382,8 @@ async function buildCoverageGaps(projectId?: string): Promise<string> {
     }
 
     return section;
-  } catch {
+  } catch (err) {
+    console.error("[buildCoverageGaps] Error computando cobertura:", err);
     return "";
   }
 }
@@ -416,7 +430,8 @@ CASOS DISPONIBLES:\n`;
 `;
 
     return section;
-  } catch {
+  } catch (err) {
+    console.error("[buildCaseStudiesContext] Error cargando casos:", err);
     return "";
   }
 }
@@ -431,7 +446,8 @@ async function buildBurnedLeadsContext(): Promise<string> {
 ${leadTexts}
 
 IMPORTANTE: No generar leads con el mismo ángulo + misma estructura que los quemados. Cada lead nuevo debe ser original.`;
-  } catch {
+  } catch (err) {
+    console.error("[buildBurnedLeadsContext] Error cargando leads quemados:", err);
     return "";
   }
 }
@@ -463,13 +479,13 @@ Genera un guión publicitario completo en formato ${formatLabel} con:
 2. Desarrollo del mensaje central (cuerpo del guión independiente de los hooks)
 3. Cierre con CTA dual (verbal + visual)
 
-IMPORTANTE: Los hooks deben ser INDEPENDIENTES del cuerpo. Cualquier hook debe poder combinarse con el mismo desarrollo y CTA sin necesidad de modificar nada.
+IMPORTANTE: Los leads deben ser INDEPENDIENTES del cuerpo. Cualquier lead debe poder combinarse con el mismo desarrollo y CTA sin necesidad de modificar nada.
 
 Adapta todo al formato ${formatLabel} y al público objetivo especificado.
 ${brief.brandTone ? `Respeta estrictamente el tono de marca: "${brief.brandTone}".` : "Elegí el tono más apropiado según el producto y la audiencia."}
-Apuntá a una duración de entre 60 y 90 segundos. Esto permite desarrollar bien el mensaje sin apurar.
+Apuntá a una duración de entre 60 y 90 segundos.
 
-REGLA DE DIVERSIDAD: Si hay winners o referencias cargadas, aplicá sus PRINCIPIOS (retención, tono, números concretos) pero NUNCA copies la misma combinación de framework + hook type + nicho. Cada guion debe ser único.
+Usá los datos reales del avatar (frases, tensiones, perfiles) para dar AUTENTICIDAD. Que suene como si conocieras a la persona.
 
 ${SCRIPT_SCHEMA_DESC}
 
@@ -485,7 +501,7 @@ function summarizeScript(script: ScriptOutput): string {
 
   return `## GUIÓN ACTUAL
 
-**Plataforma:** ${script.platform_adaptation.platform}
+**Formato:** ${script.platform_adaptation.platform}
 **Framework:** ${script.development.framework_used}
 **Arco emocional:** ${script.development.emotional_arc}
 **Duración total:** ${script.total_duration_seconds}s
@@ -525,6 +541,12 @@ async function callClaude(
       text: SYSTEM_PROMPT,
       cache_control: { type: "ephemeral" },
     },
+    // Avatar intelligence — cached, changes rarely
+    {
+      type: "text",
+      text: AVATAR_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
   ];
 
   // Project-specific generation rules (highest priority — overrides generic system prompt)
@@ -550,7 +572,7 @@ async function callClaude(
     max_tokens: maxTokens,
     system: systemBlocks,
     messages: [{ role: "user", content: userPrompt }],
-    temperature: 0.9,
+    temperature: 0.85,
   });
 
   const textBlock = response.content.find((b) => b.type === "text");
@@ -594,7 +616,7 @@ GUION:
 ${scriptJSON}
 
 REGLAS:
-${rules.slice(0, 2000)}
+${rules.slice(0, 6000)}
 
 Responde con JSON: {"passed": true/false, "issues": ["problema 1", "problema 2"]}
 Solo marcá passed=false si hay problemas GRAVES (tú en vez de vos, hooks de 1 frase, sin números). Problemas menores = passed=true con issues informativos.`,
@@ -650,6 +672,11 @@ export async function generateScriptStream(
       text: SYSTEM_PROMPT,
       cache_control: { type: "ephemeral" },
     },
+    {
+      type: "text",
+      text: AVATAR_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
   ];
 
   // Project-specific generation rules (highest priority)
@@ -676,7 +703,7 @@ export async function generateScriptStream(
     max_tokens: 16384,
     system: systemBlocks,
     messages: [{ role: "user", content: promptWithoutPatterns }],
-    temperature: 0.9,
+    temperature: 0.85,
   });
 
   for await (const event of stream) {
@@ -770,10 +797,10 @@ ${burnedContext}
 Genera ${count} hooks NUEVOS para el mismo guión, numerados del ${startNumber} al ${startNumber + count - 1}.
 
 REGLAS:
-- Cada hook debe usar un tipo DIFERENTE a los existentes. Si ya se usaron todos los tipos, podés repetir tipos pero con un ángulo completamente distinto.
-- Los hooks deben ser INDEPENDIENTES: cualquiera debe poder combinarse con el cuerpo del guión sin modificar nada.
-- Mantené el mismo tono, plataforma y público objetivo del brief.
-- Cada hook debe ser decible en 3 segundos o menos (5-10 palabras máximo).
+- Cada hook/lead debe usar un tipo DIFERENTE a los existentes. Si ya se usaron todos los tipos, podés repetir tipos pero con un ángulo completamente distinto.
+- Los leads deben ser INDEPENDIENTES: cualquiera debe poder combinarse con el cuerpo del guión sin modificar nada.
+- Mantené el mismo tono, formato y público objetivo del brief.
+- Cada lead debe tener 2-3 ORACIONES (situación específica + gap de curiosidad + puente al cuerpo). NO frases sueltas de 5 palabras.
 
 ${HOOKS_SCHEMA_DESC}
 
@@ -823,7 +850,9 @@ export async function regenerateCTA(
   brief: BriefInput,
   script: ScriptOutput,
 ): Promise<ScriptOutput["cta"]> {
-  const lastSection = script.development.sections[script.development.sections.length - 1];
+  const lastSection = script.development.sections.length > 0
+    ? script.development.sections[script.development.sections.length - 1]
+    : { section_name: "intro", script_text: "", timing_seconds: 0 };
 
   const prompt = `${buildBriefContext(brief)}
 
@@ -867,6 +896,8 @@ export async function regenerateHook(
     .map((h) => `- Hook ${h.variant_number} (${h.hook_type}): "${h.script_text}"`)
     .join("\n");
 
+  const burnedContext = await buildBurnedLeadsContext();
+
   const prompt = `${buildBriefContext(brief)}
 
 ${summarizeScript(script)}
@@ -876,15 +907,16 @@ ${summarizeScript(script)}
 
 ## OTROS HOOKS (NO repetir ideas)
 ${otherHooks}
+${burnedContext}
 
 ## INSTRUCCIÓN
 Regenerá ÚNICAMENTE el hook variante #${hook.variant_number}.
 
 REGLAS:
-- Generá un hook completamente NUEVO y DIFERENTE al actual.
-- Podés cambiar el tipo de hook si querés, pero NO uses un tipo que ya esté en los otros hooks (a menos que el ángulo sea completamente distinto).
-- El hook debe ser decible en 3 segundos o menos (5-10 palabras máximo).
-- Debe ser INDEPENDIENTE del cuerpo: cualquier hook debe poder combinarse con el desarrollo sin modificar nada.
+- Generá un lead completamente NUEVO y DIFERENTE al actual.
+- Podés cambiar el tipo de lead si querés, pero NO uses un tipo que ya esté en los otros leads (a menos que el ángulo sea completamente distinto).
+- El lead debe tener 2-3 ORACIONES: situación específica + gap de curiosidad + puente al cuerpo. NO frases sueltas de 5 palabras.
+- Debe ser INDEPENDIENTE del cuerpo: cualquier lead debe poder combinarse con el desarrollo sin modificar nada.
 - Mantené el mismo variant_number: ${hook.variant_number}.
 - ${brief.brandTone ? `Respetá el tono de marca: "${brief.brandTone}".` : "Mantené el mismo tono del guión original."}
 

@@ -1,0 +1,108 @@
+{
+  "id": "28cff6ca-939f-4282-846e-2c14095f2e47",
+  "title": "Caso de éxito C1342",
+  "transcript": "Ves? Sí. Sí, vamos, vamos rápido. Que se escucha bien. Se escucha todo el ruido de fondo. Si no de este lado acá. Que acá, acá no hay plantas, no hay nada. O estar más. Ay, pero con la planta salí. Ahí es divino. Ese, ese, recién me saqué una foto con la palmera y estaba buenísimo. Vamos nomás. Acá. Se nos acaba el tiempo. Ay, la puta madre. Bueno. Eh, ponete ahí. ¿Dónde? ¿Acá? ¿Puedo dejar esto acá? Ahí está. Quiero bajarlo. Decime cómo me pongo, ¿más lejos o más? ¿Más lejos o más? Okay. Bien. Eh, nombre, país y edad. Okay. Mi nombre es Andrea Centenari. Soy de acá de Capital, Buenos Aires. Vivo acá a media hora. Y tengo 55 años. No tenía ni redes, chicos. Ni redes sociales. Eh, Contanos un poco de quién sos, a qué te dedicás, profesión. Bueno, eh, mi profesión soy licenciada en comercio internacional. Eh, pero en los últimos 15 años trabajé en eventos, eventos corporativos. En relación de dependencia. Eh, bueno, compré, quise interiorizar en el en el mundo digital, porque como dije, no tenía ni redes y empecé a comprar algunos cursos por internet antes del de Jesús. Me gustaron, aprendí, pero no me cerraban. Hasta que llegué a Jesús y me gustó. Hacés campañas para uno. Le das. Entonces, esa es más o menos la situación que vos te encontrabas antes de comprar la academia. Bueno, estaba trabajando en relación. ¿Podés comenzar con la pregunta en sí? ¿Qué situación te encontrabas antes de comprar la academia? Antes. Antes, ah, okay. Antes de comprar el curso no tenía ni redes sociales y no sabía nada del mundo digital. Y bueno, ahora estoy en una situación diferente y le perdiendo el miedo a las redes sociales y a todo. Genial. Pero con vos. ¿Qué fue lo que más te gustó? De la academia. La motivación, lo que más me gustó fue la motivación y la energía que emana Jesús en en sus videos y en las publicidades que hace. No, pero dentro de la academia. Ah, ¿dentro de la academia? Eh, la verdad que el acompañamiento de los tutores. Todos. Bien. ¿Qué cambió para que tuvieras éxito? O sea, ¿qué tuviste que cambiar? ¿Qué pasaste de cambiar antes de la academia? Cosas. Pero acordate que yo no tengo clientes todavía. No, sí, por ejemplo, me dijiste el miedo que tenías. Ah, bueno. Okay. Eh, lo que es, digamos, tengo que sortear la barrera del miedo a conseguir mis propios clientes. Que esa es mi principal idea. Y antes de hacer este curso, nunca me lo hubiera imaginado. Entonces, ahora es como que voy a empezar a hacer campañas para mí misma a pesar de que me el miedo que tengo por dentro, aunque no se note, chicos, estoy muy miedosa, pero lo voy a hacer. Entonces, es como que sorteé eso y bueno, verlo a Jesús me ayudó un montón. No, en serio, en persona, y verlos a ustedes también, chicos. Sí, re. ¿Qué le dirías a otras personas que están dando el paso de? A los que no compraron, los que no. Bueno, lo que yo le diría es que este curso lo que tiene principal, bueno, es a Jesús y a los tutores. Y que en otros cursos eso se diluye un montón, eh, no te dan mucha motivación para seguir y para las personas que somos más grandes, necesitamos mucha motivación, porque no nacimos sin internet. Entonces, es como que, bueno, para la gente que quiere inmiscuirse en el mundo digital, para mí es uno de los mejores cursos. Muchas gracias. Bueno, listo, ya está. Ay, no puedes. Sí, sí. Bueno, lo van a editar. Sí, sí. Eh, Paula, primero. Te parece. Pero no sé. Hay que responder lo que sea. Bueno, dale. Pregunta. ¿Qué le dirías a los demás? Lo que sea. Bueno, las preguntas son más o menos, eh, nombre, dónde vivís, edad que tenés. Qué es lo que hacés. Qué situación te encontrabas antes. ¿Qué te motivó a comprar la academia? ¿Qué fue lo que más te gustó? ¡Uh! Eh, ¿cuántos clientes conseguiste, cuánto facturaste? No. Bueno, pero, pero no de publicidad. Eh, el tema es que yo lo hice para la Perú y bueno, activé lo que tenía que activar. ¿Sí? ¿Qué cambió para que tuvieras éxito y qué te parecieron las pasantías? No escuché. ¿Qué cambió para que tuvieras éxito, qué te parecieron las pasantías y qué le dirías a otras personas? No hice pasantías. Bueno, esa la salteamos y también la de facturación. Bueno, eso me vas a hacer una por una. Ahora te las voy diciendo. Oh, bueno. Ayúdame con esto porque.",
+  "analysis": {
+    "hook": {
+      "text": "Ves? Sí. Sí, vamos, vamos rápido.",
+      "type": "pattern_interrupt",
+      "word_count": 10,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Pattern Interrupt & Setup",
+          "summary": "Caos controlado, ruido de fondo, conversación natural sobre ubicación y sonido",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Testimonial Interview - Personal Info",
+          "summary": "Presentación de Andrea: nombre, edad (55), ubicación, background profesional",
+          "estimated_seconds": 30
+        },
+        {
+          "name": "Problem Statement",
+          "summary": "Situación antes: sin redes sociales, sin conocimiento digital, trabajaba en relación de dependencia",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "Solution & Transformation",
+          "summary": "Descubrimiento de la academia, motivación de Jesús, acompañamiento de tutores",
+          "estimated_seconds": 35
+        },
+        {
+          "name": "Results & Mindset Shift",
+          "summary": "Superó el miedo, cambió mentalidad, lista para conseguir clientes propios",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "Social Proof & Recommendation",
+          "summary": "Recomendación directa: énfasis en motivación y tutores vs otros cursos",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Behind-the-Scenes Closing",
+          "summary": "Conversación meta sobre edición, preguntas del guión, cierre natural",
+          "estimated_seconds": 15
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "¿Qué cambió para que tuvieras éxito? O sea, ¿qué tuviste que cambiar?"
+    },
+    "tone": {
+      "primary_tone": "Authentic testimonial, conversational, vulnerable, motivational",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "No tenía ni redes",
+        "Perdiendo el miedo",
+        "Aunque no se note, chicos, estoy muy miedosa",
+        "La motivación y la energía que emana Jesús",
+        "Para la gente que quiere inmiscuirse en el mundo digital",
+        "No nacimos sin internet",
+        "Lo voy a hacer"
+      ]
+    },
+    "cta": {
+      "text": "Para la gente que quiere inmiscuirse en el mundo digital, para mí es uno de los mejores cursos",
+      "type": "custom",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 165,
+    "total_word_count": 1247,
+    "emotional_arc": "Curiosity (caos inicial) → Relatability (presentación vulnerable) → Pain (miedo, falta de conocimiento) → Hope (descubrimiento de solución) → Empowerment (superación del miedo) → Inspiration (recomendación genuina) → Authenticity (cierre meta)",
+    "strengths": [
+      "Autenticidad extrema: incluye dudas, miedo explícito y conversación meta sobre la grabación",
+      "Testimonial de persona mayor (55 años) rompe estereotipos de digital marketing",
+      "Vulnerabilidad como fortaleza: 'aunque no se note, chicos, estoy muy miedosa'",
+      "Rehook estratégico a mitad del video para mantener atención",
+      "Comparación implícita con competencia sin nombrarla",
+      "Énfasis en motivación y tutores como diferenciadores clave",
+      "UGC puro: ruido de fondo, errores de grabación, conversación natural",
+      "Cierre meta que humaniza el proceso y genera confianza",
+      "Recomendación específica dirigida a personas mayores/sin experiencia digital"
+    ],
+    "patterns_to_replicate": [
+      "Iniciar con patrón disruptivo (caos controlado, conversación natural) antes del hook formal",
+      "Usar testimoniales de personas fuera del perfil típico (edad, background) para mayor impacto",
+      "Incluir vulnerabilidad explícita como elemento de conexión emocional",
+      "Estructura de entrevista con preguntas claras que guíen la narrativa",
+      "Rehook a mitad del contenido para mantener engagement en videos largos",
+      "Énfasis en transformación de mentalidad, no solo en resultados económicos",
+      "Comparación con competencia mediante diferenciadores (motivación, tutores, acompañamiento)",
+      "Cierre meta/behind-the-scenes que humaniza y genera confianza",
+      "Mantener ruido de fondo y imperfecciones para autenticidad UGC",
+      "Dirigirse explícitamente a audiencia específica en la recomendación final",
+      "Usar frases coloquiales y argentinismos para conexión local"
+    ]
+  },
+  "folder": "casos-exito",
+  "folderLabel": "Casos de Éxito (Academia Jesús)",
+  "createdAt": "2026-03-11T16:33:10.341Z"
+}

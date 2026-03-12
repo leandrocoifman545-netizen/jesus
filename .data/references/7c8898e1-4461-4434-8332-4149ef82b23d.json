@@ -1,0 +1,92 @@
+{
+  "id": "7c8898e1-4461-4434-8332-4149ef82b23d",
+  "title": "Caso de éxito C1349",
+  "transcript": "¿Qué le dirías a las a otras personas que aún no han dado el paso?\nBueno.\nPara entrar a la academia.\nBueno, ¿qué le diría a una persona para no?\nQue no ha entrado a la academia.\n¿Qué le diría a una persona que no entró a la academia? Y yo creo que eh no hay excusa el hecho de no tener dinero. Si vos querés, vas a conseguirlo sea como sea. Yo la verdad en su momento no tenía, pero dije, bueno, me pongo a laburar bien y cuando tengo y a ver.\nCuando tenga.\nBueno, y cuando tenga la plata para invertirlo lo voy a",
+  "analysis": {
+    "hook": {
+      "text": "¿Qué le dirías a las otras personas que aún no han dado el paso?",
+      "type": "question",
+      "word_count": 14,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "BAB",
+      "sections": [
+        {
+          "name": "Hook - Pregunta directa",
+          "summary": "Pregunta abierta que invita al testimoniante a reflexionar sobre barreras de entrada",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Clarificación de contexto",
+          "summary": "Se especifica que se habla de entrar a una academia",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Belief/Creencia central",
+          "summary": "Afirmación de que no hay excusas válidas, especialmente la falta de dinero",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Prueba social - Testimonio personal",
+          "summary": "El speaker comparte su propia experiencia de no tener dinero pero lograrlo",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Acción - Resolución",
+          "summary": "Describe cómo trabajó para conseguir el dinero e invertirlo",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Motivacional, directo, vulnerable, inspirador",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "no hay excusa",
+        "si vos querés, vas a conseguirlo sea como sea",
+        "yo la verdad en su momento no tenía",
+        "me pongo a laburar bien"
+      ]
+    },
+    "cta": {
+      "text": null,
+      "type": "none",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 22,
+    "total_word_count": 87,
+    "emotional_arc": "Curiosidad → Empoderamiento → Identificación → Inspiración → Determinación",
+    "strengths": [
+      "Hook como pregunta abierta que genera curiosidad inmediata",
+      "Uso de testimonio auténtico y vulnerable (UGC style)",
+      "Lenguaje coloquial y cercano que genera confianza",
+      "Creencia central clara: 'no hay excusa'",
+      "Prueba social potente: el speaker mismo es la evidencia",
+      "Estructura conversacional natural que mantiene engagement",
+      "Dirección clara del mensaje sin rodeos",
+      "Tono motivacional sin ser predicador"
+    ],
+    "patterns_to_replicate": [
+      "Iniciar con pregunta abierta dirigida al audiencia para crear identificación",
+      "Usar testimonio en primera persona como estructura principal",
+      "Incluir creencia central contundente (ej: 'no hay excusa')",
+      "Compartir vulnerabilidad personal (falta de recursos) antes de la solución",
+      "Usar lenguaje muy casual y coloquial para UGC authenticity",
+      "Estructura: Pregunta → Clarificación → Creencia → Testimonio personal → Acción",
+      "Mantener duración corta (20-25 segundos) con densidad alta de mensaje",
+      "Evitar CTA explícito cuando el testimonio es suficientemente motivador",
+      "Repetir la pregunta/tema para reforzar el mensaje central"
+    ]
+  },
+  "folder": "casos-exito",
+  "folderLabel": "Casos de Éxito (Academia Jesús)",
+  "createdAt": "2026-03-11T16:34:16.867Z"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "17164eb2-dc91-4c2d-96d4-9c1b633a1c1a",
+  "briefId": "b8feae99-af8e-4460-bb75-e03d4faa6a98",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Ventas visibles: skincare con IA",
+  "batch": {
+    "id": "d3f87158-1089-4a64-a803-7dcb639871c2",
+    "name": "Semana 11 Mar 2026"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 45,
+      "content_style": "Split Screen 2 Pantallas: Arriba — screencast de dashboard de Hotmart con notificaciones de venta reales de un producto de skincare. Abajo — Jesús hablando a cámara.",
+      "key_considerations": "Formato nivel 2. La pantalla de arriba TIENE que mostrar ventas reales (o simulación creíble). El impacto es visual: el espectador ve ventas entrando mientras Jesús explica. CTA apunta al taller de $5."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "statistical",
+        "script_text": "Ayer entraron 9 ventas de un producto digital de skincare. Un PDF de rutinas de cuidado facial que una alumna armó con IA en 2 horas. 9 ventas a 15 dólares cada una. Hacé la cuenta.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "reveal_teaser",
+        "script_text": "Hay una piba que vende una guía de skincare por 15 dólares. La hizo con ChatGPT en una tarde. El mes pasado facturó más que muchos sueldos en Argentina. Y no muestra la cara.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contrarian",
+        "script_text": "El producto digital que más se vende en belleza no es un video, no es un curso, no es una app. Es un PDF de 12 páginas sobre rutinas de skincare. Lo armó una piba con IA y lo vende por 15 dólares.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pattern_interrupt",
+        "script_text": "Esto no es teoría. No es un ejemplo inventado. Esto es lo que pasó esta semana en Hotmart con un producto de belleza armado con IA. Te lo muestro en la pantalla.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "curiosity_gap",
+        "script_text": "'Jesús, pero eso de los productos digitales funciona de verdad?' Mirá, te voy a mostrar algo en pantalla. Estas son ventas reales. De un producto de skincare. Armado con IA. Sin mostrar la cara.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "BAB",
+      "emotional_arc": "Escepticismo (¿esto funciona?) → evidencia visual (ventas en pantalla) → curiosidad (cómo lo hizo) → convicción (el proceso es simple) → acción (taller $5)",
+      "sections": [
+        {
+          "section_name": "Before — El viejo proceso",
+          "is_rehook": false,
+          "script_text": "Antes de la IA, crear un producto de belleza digital te tomaba semanas. Investigar, escribir, diseñar, buscar plataforma. La mayoría abandonaba antes de publicar.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Ahora mirá cómo es el proceso hoy.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "After — Proceso con IA + ventas reales",
+          "is_rehook": false,
+          "script_text": "Le pedís a la IA: 'Armame una guía de rutina de skincare para piel grasa.' Te genera contenido, rutinas, recomendaciones. Le pedís formato PDF. En 2 horas tenés un producto listo. Lo subís a Hotmart por 15 dólares y empezás a correr publicidad. En la pantalla de arriba ves las notificaciones de venta. Eso es real.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Bridge — Sin excusas",
+          "is_rehook": false,
+          "script_text": "Sin mostrar tu cara. Sin ser dermatóloga. Sin saber de diseño. La IA pone el conocimiento, vos ponés la idea de nicho y el empuje. Después se vende solo. ¿Me seguís?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Registrate al taller por 5 dólares",
+      "reason_why": "En 3 días armás tu primer producto digital conmigo paso a paso. Menos que una pizza.",
+      "timing_seconds": 5,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 45,
+    "word_count": 108
+  },
+  "createdAt": "2026-03-11T05:34:34.486Z"
+}

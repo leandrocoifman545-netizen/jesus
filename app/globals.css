@@ -30,6 +30,11 @@ body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 
+/* Headings font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+}
+
 /* Noise texture overlay */
 body::before {
   content: "";
@@ -37,10 +42,29 @@ body::before {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.015;
+  opacity: 0.012;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
+}
+
+/* Subtle radial gradient on body */
+body::after {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.06) 0%, transparent 50%);
+}
+
+/* Dot grid pattern */
+.dot-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 32px 32px;
 }
 
 /* Selection */
@@ -56,17 +80,16 @@ body::before {
 }
 
 ::-webkit-scrollbar-track {
-  background: #27272a;
-  border-radius: 3px;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #52525b;
+  background: #3f3f46;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #71717a;
+  background: #52525b;
 }
 
 /* Glass utility */
@@ -106,7 +129,59 @@ textarea {
   transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Animations */
+/* ─── Hover border glow (Vercel-style) ─── */
+.hover-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.4),
+    rgba(139, 92, 246, 0.2),
+    rgba(124, 58, 237, 0.1),
+    transparent
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.hover-glow:hover::before {
+  opacity: 1;
+}
+
+/* ─── Animated gradient text ─── */
+.gradient-text-animated {
+  background: linear-gradient(
+    90deg,
+    #a78bfa,
+    #c084fc,
+    #818cf8,
+    #a78bfa
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 6s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ─── Animations ─── */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -129,10 +204,362 @@ textarea {
   }
 }
 
+/* Spring bounce — overshoot then settle */
+@keyframes spring-up {
+  0% {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.01);
+  }
+  70% {
+    transform: translateY(2px) scale(0.995);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Shimmer sweep — light reflection across card */
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+/* Pulse ring — expands outward and fades */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Pipeline fill — grows from 0 width */
+@keyframes bar-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes nav-indicator {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes border-rotate {
+  0% { --angle: 0deg; }
+  100% { --angle: 360deg; }
+}
+
+/* Gentle breathing glow for winner badges */
+@keyframes badge-glow {
+  0%, 100% { box-shadow: 0 0 4px 0 currentColor; }
+  50% { box-shadow: 0 0 12px 2px currentColor; }
+}
+
 .animate-fade-in {
-  animation: fade-in 300ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: fade-in 400ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-slide-up {
-  animation: slide-up 400ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: slide-up 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-spring-up {
+  animation: spring-up 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Staggered spring children */
+.stagger-children > * {
+  animation: spring-up 700ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 80ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 160ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 240ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 320ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 400ms; }
+.stagger-children > *:nth-child(7) { animation-delay: 480ms; }
+.stagger-children > *:nth-child(8) { animation-delay: 560ms; }
+
+/* Shimmer sweep overlay — add to parent with overflow-hidden */
+.shimmer-sweep::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.04) 45%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.04) 55%,
+    transparent 100%
+  );
+  animation: shimmer-sweep 1.8s ease-in-out 0.5s 1 both;
+  pointer-events: none;
+}
+
+/* CTA pulse ring */
+.pulse-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid rgba(124, 58, 237, 0.4);
+  animation: pulse-ring 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  pointer-events: none;
+}
+
+/* Pipeline bar fill */
+.bar-fill {
+  transform-origin: left;
+  animation: bar-fill 800ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Card hover lift */
+.hover-lift {
+  transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 300ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(124, 58, 237, 0.1);
+}
+
+/* Winner badge breathing glow */
+.badge-winner {
+  animation: badge-glow 3s ease-in-out infinite;
+}
+
+/* ─── Success bounce ─── */
+@keyframes success-bounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.15); }
+  50% { transform: scale(0.95); }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-success-bounce {
+  animation: success-bounce 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ─── Error shake ─── */
+@keyframes error-shake {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-6px); }
+  30% { transform: translateX(5px); }
+  45% { transform: translateX(-4px); }
+  60% { transform: translateX(3px); }
+  75% { transform: translateX(-2px); }
+}
+
+.animate-error-shake {
+  animation: error-shake 400ms ease-out;
+}
+
+/* ─── Confetti burst ─── */
+@keyframes confetti-pop {
+  0% { transform: scale(0) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.2) rotate(180deg); opacity: 1; }
+  100% { transform: scale(0) rotate(360deg); opacity: 0; }
+}
+
+/* ─── Success flash (green pulse on element) ─── */
+@keyframes success-flash {
+  0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+}
+
+.animate-success-flash {
+  animation: success-flash 600ms ease-out;
+}
+
+/* ─── Slide out left (for deletion) ─── */
+@keyframes slide-out-left {
+  0% { opacity: 1; transform: translateX(0) scale(1); }
+  100% { opacity: 0; transform: translateX(-60px) scale(0.95); }
+}
+
+.animate-slide-out-left {
+  animation: slide-out-left 300ms ease-in forwards;
+}
+
+/* ─── Content fade transition ─── */
+@keyframes content-swap {
+  0% { opacity: 0; transform: translateY(4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-content-swap {
+  animation: content-swap 200ms ease-out;
+}
+
+/* ─── Typewriter cursor ─── */
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-cursor::after {
+  content: "▊";
+  display: inline;
+  color: #a78bfa;
+  animation: blink-cursor 800ms step-end infinite;
+  font-size: 0.9em;
+  margin-left: 1px;
+}
+
+/* ─── Winner confetti container ─── */
+@keyframes particle-fly {
+  0% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx), var(--ty)) rotate(var(--tr)) scale(0); opacity: 0; }
+}
+
+/* ─── Checkbox wave ─── */
+@keyframes check-pop {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animate-check-pop {
+  animation: check-pop 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Shimmer effect for loading states */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* ─── Metric card inner glow ─── */
+.metric-glow-purple {
+  background: radial-gradient(ellipse at top right, rgba(124, 58, 237, 0.12) 0%, transparent 60%);
+}
+
+.metric-glow-zinc {
+  background: radial-gradient(ellipse at top right, rgba(161, 161, 170, 0.07) 0%, transparent 60%);
+}
+
+.metric-glow-green {
+  background: radial-gradient(ellipse at top right, rgba(74, 222, 128, 0.1) 0%, transparent 60%);
+}
+
+.metric-glow-amber {
+  background: radial-gradient(ellipse at top right, rgba(251, 191, 36, 0.1) 0%, transparent 60%);
+}
+
+/* ─── Focus ring for keyboard nav ─── */
+*:focus-visible {
+  outline: 2px solid rgba(124, 58, 237, 0.5);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Remove focus ring inside command palette */
+[data-command-palette] *:focus-visible {
+  outline: none;
+}
+
+/* ─── Badge refinement ─── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ─── Divider with label ─── */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(63, 63, 70, 0.5), transparent);
+}
+
+.section-divider::before {
+  background: linear-gradient(90deg, transparent, rgba(63, 63, 70, 0.5));
+}
+
+.section-divider::after {
+  background: linear-gradient(90deg, rgba(63, 63, 70, 0.5), transparent);
+}
+
+/* ─── View transitions ─── */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: fade-out 150ms ease-in;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 200ms ease-out;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* ─── Kbd refinement ─── */
+kbd {
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
 }

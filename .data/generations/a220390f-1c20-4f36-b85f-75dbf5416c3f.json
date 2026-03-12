@@ -1,0 +1,93 @@
+{
+  "id": "a220390f-1c20-4f36-b85f-75dbf5416c3f",
+  "briefId": "f0b83183-5840-4d0b-9bfb-fc6a660ccfb7",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Qué pasa adentro del taller de $5",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 75,
+      "content_style": "Chat WhatsApp simulado mostrando grupo del taller → corte a Jesús",
+      "key_considerations": "El chat del grupo real es la prueba social. Los mensajes de alumnos celebrando ventas generan FOMO."
+    },
+    "visual_format": {
+      "format_name": "Chat WhatsApp Simulado",
+      "difficulty_level": 2,
+      "setup_instructions": "Simular grupo de WhatsApp del taller: mensajes de alumnos tipo 'Hice mi primera venta!', '¿Esto es real?', 'Gracias Jesús'. Notificaciones entrando. Corte a Jesús explicando.",
+      "recording_notes": "Los mensajes del grupo deben ser variados y creíbles. Mezcla de preguntas, celebraciones y agradecimientos. Jesús aparece después con tono de transparencia total."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "Voy a hacer algo que nunca hago en un ad. Te voy a mostrar exactamente qué pasa adentro de mi taller de 5 dólares. Sin filtro. Así decidís vos si vale la pena o no.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "timeline_provocacion",
+        "script_text": "Día 1: elegís tu nicho. Día 2: la IA te arma el producto. Día 3: ya está en Hotmart listo para vender. Eso es lo que pasa adentro de mi taller de 5 dólares. No es teoría. Te lo muestro todo paso a paso.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "confesion",
+        "script_text": "5 dólares. 3 días. Y al tercero ya tenés un producto digital armado con inteligencia artificial, subido a internet y listo para recibir ventas. Suena demasiado fácil, ¿no? Te muestro exactamente qué hay dentro de este taller.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "Hay talleres de 500 dólares que son un tipo con un PowerPoint. El mío vale 5 y estoy yo en vivo 3 días con vos. Algo no te cuadra, ¿no? Te explico por qué.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contrato_compromiso",
+        "script_text": "Por 5 dólares te metés 3 días conmigo en vivo. No es un curso grabado. Estoy yo ahí, respondiendo en tiempo real, mostrándote cómo armar tu primer producto digital con IA paso a paso. Si no te sirve, son 5 dólares. Pero si te sirve, te cambia todo.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "3_Acts",
+      "emotional_arc": "Desconfianza (otro taller más) → Curiosidad (¿qué pasa adentro?) → Confianza (es real) → Decisión (por $5 lo pruebo)",
+      "sections": [
+        {
+          "section_name": "Acto 1 — La objeción",
+          "script_text": "Mirá, yo entiendo la desconfianza. Hay miles de cursos online que te prometen la luna y después es un tipo leyendo un PowerPoint. Lo sé porque yo compré todos esos cursos. Me gasté 2 mil dólares en un curso cuando vivía con 100 dolares al mes. Así que sé exactamente lo que se siente.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Por eso armé algo completamente distinto.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Acto 2 — Qué pasa adentro",
+          "script_text": "El taller son 3 días en vivo. No es grabado, no es un PDF. Estoy yo ahí respondiendo preguntas en tiempo real. Día 1: encontrás tu idea de nicho con IA. Día 2: armás tu producto digital completo, también con IA. Día 3: lo subís a Hotmart y armás tu primera campaña de publicidad. Al tercer día ya tenés algo vendiendo. Y todo esto con acompañamiento diario de mi equipo por WhatsApp. ¿Ves cómo funciona?",
+          "timing_seconds": 25
+        },
+        {
+          "section_name": "Acto 3 — El precio como prueba",
+          "script_text": "¿Y sabés cuánto vale todo eso? 5 dólares. Menos que un café en Starbucks. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando vos tenés resultados y querés seguir avanzando conmigo. Esa es mi estrategia, nada más. Transparencia total.",
+          "timing_seconds": 18
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro en vivo cómo funciona todo el modelo antes de que inviertas un solo peso",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 75,
+    "word_count": 185
+  },
+  "createdAt": "2026-03-11T18:20:05.637Z",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "status": "confirmed"
+}

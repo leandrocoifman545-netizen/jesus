@@ -1,0 +1,89 @@
+{
+  "id": "9b8976b4-8c4d-4fe0-a649-6e16296d5388",
+  "briefId": "f4a1f59e-e51f-49ec-8b7e-85091fedbe55",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Mamá/tiempo: guías de crianza con IA",
+  "batch": {
+    "id": "d3f87158-1089-4a64-a803-7dcb639871c2",
+    "name": "Semana 11 Mar 2026"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 45,
+      "content_style": "Green Screen + Noticia: Jesús sobre fondo de Google Trends mostrando búsquedas de 'cómo hacer que mi hijo duerma' (40K/mes). Tono empático, no agresivo.",
+      "key_considerations": "Formato nivel 1. Green screen nativo. Fondo: captura con búsquedas reales de crianza. Tono cálido, identificación con mamás. Sin condescendencia."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pain_point",
+        "script_text": "Son las 10 de la noche. Los pibes ya durmieron. Tenés una hora antes de caer rendida. Esa hora puede ser Netflix o puede ser la hora en la que armás tu primer producto digital. Te explico cómo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "curiosity_gap",
+        "script_text": "Conozco mamás que me dicen: 'Jesús, yo quiero emprender pero no puedo. Tengo los nenes, la casa, no me dan las horas.' Y tienen razón. Pero hay algo que no saben.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "statistical",
+        "script_text": "Hay 40 mil búsquedas por mes de 'cómo hacer que mi hijo duerma'. 40 mil mamás desesperadas buscando respuestas. Y vos que ya lo viviste podés crear esa guía con IA en una tarde.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "question",
+        "script_text": "¿Cuántas veces googleaste algo sobre crianza a las 3 de la mañana? Miles de mamás hacen lo mismo todas las noches. Alguien les vende esas respuestas como producto digital. ¿Por qué no vos?",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "authority_social_proof",
+        "script_text": "La semana pasada una alumna me mandó un audio. Me dijo: 'Jesús, armé una guía de recetas para bebés con la IA. La subí y vendí 12 copias el primer mes.' Es mamá de 3 pibes.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "3_Acts",
+      "emotional_arc": "Identificación (sos mamá, no tenés tiempo) → apertura (lo que sabés de crianza vale plata) → sorpresa (la IA te lo arma en una hora) → esperanza (se vende mientras dormís)",
+      "sections": [
+        {
+          "section_name": "Acto 1 — Setup: tu conocimiento vale",
+          "is_rehook": false,
+          "script_text": "Si sos mamá y sentís que no tenés tiempo para nada más, escuchame. Justamente lo que sabés de crianza puede darte un ingreso extra sin salir de tu casa.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Pero no te estoy diciendo que escribas un libro de 200 páginas.",
+          "timing_seconds": 3
+        },
+        {
+          "section_name": "Acto 2 — Confrontación: IA como atajo",
+          "is_rehook": false,
+          "script_text": "Con IA armás una guía de crianza en una hora. Le pedís: 'Dame una guía de rutinas de sueño para bebés de 0 a 6 meses.' Te la estructura con consejos, ejercicios, recomendaciones. Todo armado.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Acto 3 — Resolución: se vende solo",
+          "is_rehook": false,
+          "script_text": "La subís a Hotmart por 10 dólares. Cada mamá que la busca a las 3 de la mañana y la compra es plata que entra mientras vos dormís. Lo creás una vez, se vende solo. Básicamente, convertís lo que ya sabés en un ingreso. ¿Me explico?",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón y registrate gratis",
+      "reason_why": "Te muestro en vivo cómo crear tu primer producto digital con IA",
+      "timing_seconds": 5,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 45,
+    "word_count": 100
+  },
+  "createdAt": "2026-03-11T05:34:33.579Z"
+}

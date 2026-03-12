@@ -1,0 +1,89 @@
+{
+  "id": "86b12cc7-6cc3-4b2f-9539-114b68ee9fae",
+  "briefId": "1177493b-b457-4afc-8863-057f232b791a",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Storytelling Jesús: 9 meses sin vender",
+  "batch": {
+    "id": "d3f87158-1089-4a64-a803-7dcb639871c2",
+    "name": "Semana 11 Mar 2026"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 55,
+      "content_style": "Green Screen + Noticia: Jesús sobre fondo de fotos reales de su historia (Sarandí, México, TikTok). Tono vulnerable, emocional pero honesto. Sin música épica.",
+      "key_considerations": "Formato nivel 1. TEST DE LEADS: subir como 5 ads separados con distintos leads para medir CTR por tipo de lead. Fondo: fotos de Jesús en distintas etapas (joven, México, España). Tono crudo, real."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "authority_social_proof",
+        "script_text": "Tardé 9 meses en conseguir mi primer cliente. Y fue gratis. 9 meses sin vender nada. La mayoría hubiera dejado al mes. Yo seguí. Y lo que pasó después te lo cuento ahora.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contrarian",
+        "script_text": "Mi peor momento no fue cuando no vendía nada. Mi peor momento fue cuando tuve 100 clientes. Suena loco, pero eso casi me funde. Te explico por qué.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pattern_interrupt",
+        "script_text": "Tenía 19 años, pesaba 47 kilos, vivía con 100 dólares al mes. Me gasté los 2,000 dólares que tenía en un curso de marketing. Y dormía en el piso. No te digo esto para motivarte. Te lo digo porque me pasó.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "curiosity_gap",
+        "script_text": "Me puse en contra de toda mi familia. Dejé el país. Me fui sin conocer a nadie. Y hoy estoy acá contándote cómo armé un negocio que me cambió la vida. Pero el camino no fue el que pensás.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "reveal_teaser",
+        "script_text": "Si no estás dispuesto a escuchar una historia incómoda, seguí scrolleando. Porque lo que te voy a contar no es bonito, no es motivacional, y no es fácil. Pero es real. Y puede cambiarte la forma de ver esto.",
+        "timing_seconds": 6
+      }
+    ],
+    "development": {
+      "framework_used": "Hook-Story-Offer",
+      "emotional_arc": "Vulnerabilidad (la historia cruda) → tensión (9 meses sin vender) → giro (obsesión + método) → credibilidad (no es fácil pero funciona) → cambio de creencia (el proceso existe)",
+      "sections": [
+        {
+          "section_name": "Story — México, solo, sin nada",
+          "is_rehook": false,
+          "script_text": "Cuando tenía 19 años me fui a México. Solo, sin conocer a nadie, sin red de seguridad. Me viralicé en TikTok, volví a lo de mi vieja sin plata, con 15 mil seguidores. Y dije: 'Es imposible que esto no dé plata.' Entonces me obsesioné.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Pero lo que no sabía era esto.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Mecanismo — 9 meses y el proceso",
+          "is_rehook": false,
+          "script_text": "Tardé 9 meses en hacer mi primera venta. Gratis. La motivación se pierde, la disciplina no. Y cuando encontré el proceso correcto —investigar qué se vende, crearlo con IA, y meterle publicidad— ahí no paré más. Hoy ese mismo proceso se lo enseño en 3 pasos. ¿Ves cómo funciona?",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Cambio de creencia — No es fácil pero existe",
+          "is_rehook": false,
+          "script_text": "No te voy a decir que es fácil. Pero sí te digo que el método existe y funciona. Yo no creo en el dinero fácil. Creo en los procesos que dan resultados. Compré todo curso del mercado. Pagué todo. Y por eso hoy sé qué funciona y qué es humo.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón y registrate gratis",
+      "reason_why": "Te muestro en vivo el proceso de 3 pasos que a mí me tomó 9 meses descubrir",
+      "timing_seconds": 5,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 55,
+    "word_count": 135
+  },
+  "createdAt": "2026-03-11T05:34:34.896Z"
+}

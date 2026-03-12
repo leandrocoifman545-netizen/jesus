@@ -47,7 +47,7 @@
         {
           "section_name": "Identificación del dolor/oportunidad",
           "is_rehook": false,
-          "script_text": "La realidad es que hay millones de personas que llegan a su casa reventadas del laburo y no saben qué cocinar. Buscan \"recetas fáciles para la semana\" todos los días en Google. ¿Me siguen?",
+          "script_text": "La realidad es que hay millones de personas que llegan a su casa reventadas del laburo y no saben qué cocinar. Buscan \"recetas fáciles para la semana\" todos los días en Google. ¿Se entiende?",
           "timing_seconds": 10
         },
         {
@@ -79,5 +79,6 @@
     "total_duration_seconds": 53,
     "word_count": 142
   },
+  "status": "draft",
   "createdAt": "2026-03-10T18:11:32.622Z"
 }

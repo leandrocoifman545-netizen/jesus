@@ -1,0 +1,101 @@
+{
+  "id": "7679f5a9-4634-423d-925a-bb2181a5f0e6",
+  "title": "#1 [GMAPS] [WEBINAR] - Winner",
+  "transcript": "Hay un sistema que vos puedes instalar a negocios para que te paguen de 200 a 300 dólares mensualmente, ¿okay? Básicamente te encargas de redactar textos publicitarios con IA, hacer todas las imágenes publicitarias con inteligencia artificial y después activar campañas para negocios y esto mismo es lo que te permite conseguir los clientes que te van a querer pagar esto mensualmente. Y pero para qué hacer todo esto? Para que te pongas una nueva meta. Ya pensaste la meta que querés para este año? Cambiar de auto, irte de vacaciones. Hace años que venimos capacitando personas y hemos capacitado miles de personas y nos dimos cuenta de que si le ponemos una meta que tiene que conseguir como un auto en vacaciones, resulta que lo consiguen mucho más rápido y además están más motivados. ¿Qué te voy a enseñar en esta clase? Te voy a enseñar cuál es el sistema de tres pasos para ofrecer un sistema de atracción de clientes con IA para que lo instales en negocios y les consigas clientes a negocios gracias a instalar este sistema. Y vos vas a cobrar el mantenimiento que es una mensualidad que te van a pagar porque le mantengas todo este sistema actualizado y al día. Para poder registrarte, simplemente toca el botón de acá abajo que tiene que aparecer por acá y nos vemos en la próxima página.",
+  "analysis": {
+    "hook": {
+      "text": "Hay un sistema que vos puedes instalar a negocios para que te paguen de 200 a 300 dólares mensualmente, ¿okay?",
+      "type": "reveal_teaser",
+      "word_count": 21,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook & Initial Promise",
+          "summary": "Presenta el sistema de ingresos mensuales con cifra específica",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Mechanism Explanation",
+          "summary": "Explica cómo funciona: redacción con IA, imágenes con IA, activar campañas",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Motivation & Psychology",
+          "summary": "Introduce el concepto de meta personal (auto, vacaciones) para aumentar motivación",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Social Proof & Authority",
+          "summary": "Menciona miles de personas capacitadas y resultados comprobados",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Offer Details",
+          "summary": "Detalla el sistema de 3 pasos y modelo de ingresos por mantenimiento",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA",
+          "summary": "Instrucción clara para registrarse",
+          "estimated_seconds": 3
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "¿Qué te voy a enseñar en esta clase? Te voy a enseñar cuál es el sistema de tres pasos..."
+    },
+    "tone": {
+      "primary_tone": "conversational_mentor",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "¿okay?",
+        "Básicamente",
+        "Hace años que venimos",
+        "nos dimos cuenta de que",
+        "resulta que",
+        "simplemente toca el botón"
+      ]
+    },
+    "cta": {
+      "text": "Para poder registrarte, simplemente toca el botón de acá abajo que tiene que aparecer por acá y nos vemos en la próxima página.",
+      "type": "sign_up",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 43,
+    "total_word_count": 287,
+    "emotional_arc": "Curiosity (hook) → Excitement (mechanism) → Aspiration (meta personal) → Trust (social proof) → Clarity (offer details) → Action (CTA)",
+    "strengths": [
+      "Hook específico con cifra monetaria clara ($200-300)",
+      "Rehook estratégico a mitad del video para retener atención",
+      "Uso de psicología motivacional (metas personales) para conectar emocionalmente",
+      "Social proof integrado naturalmente (miles de personas capacitadas)",
+      "Explicación clara del modelo de negocio en pasos simples",
+      "Tono conversacional y cercano que genera confianza",
+      "CTA dual: verbal + visual (botón)",
+      "Estructura que va de lo general a lo específico",
+      "Uso de preguntas retóricas para mantener engagement"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con número específico de ingresos potenciales",
+      "Usar '¿okay?' como pattern interrupt conversacional",
+      "Incluir rehook a los 15-20 segundos con pregunta sobre el contenido que viene",
+      "Conectar la oferta con aspiraciones personales (metas, estilo de vida)",
+      "Mencionar experiencia y números de personas capacitadas para autoridad",
+      "Explicar el mecanismo en 3-4 pasos simples y claros",
+      "Usar primera persona plural ('venimos', 'nos dimos cuenta') para crear comunidad",
+      "Finalizar con CTA simple y directa con instrucción visual clara",
+      "Mantener tono conversacional como si fuera un amigo dando consejo",
+      "Intercalar preguntas retóricas para mantener atención del espectador"
+    ]
+  },
+  "folder": "winners-gmaps",
+  "folderLabel": "Winners GMAPS Webinar",
+  "createdAt": "2026-03-11T15:20:55.145Z"
+}

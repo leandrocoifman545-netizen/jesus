@@ -1,62 +1,302 @@
 [
   {
-    "text": "En 6 meses vas a ver mamás vendiendo guías de crianza hechas con IA por todo internet. La pregunta no es si funciona. La pregunta es si vas a ser de las primeras o las vas a ver desde afuera.",
-    "hookType": "prediccion_audaz",
-    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
-    "burnedAt": "2026-03-11T00:57:53.439Z"
-  },
-  {
-    "text": "El mercado de cursos online está diseñado para gente sin hijos, sin laburo de 9 a 6, con 4 horas libres por día. A las mamás nos dejan afuera. Pero hay una forma de entrar que nadie te contó.",
-    "hookType": "enemigo_comun",
-    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
-    "burnedAt": "2026-03-11T00:57:53.439Z"
-  },
-  {
-    "text": "Son las 10 de la noche. Los chicos se durmieron. Tenés 20 minutos antes de caer rendida y pensás: ¿cuándo voy a armar algo propio? Esos 20 minutos alcanzan. Te muestro por qué.",
+    "text": "Estás scrolleando Pinterest buscando ideas para el living. Guardás 50 fotos de inspiración. Tenés un gusto increíble para decorar. Pero nunca se te cruzó que ese ojo que tenés puede ser un negocio.",
     "hookType": "situacion_especifica",
-    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
-    "burnedAt": "2026-03-11T00:57:53.439Z"
+    "fromGenerationId": "266556fb-14f6-4402-9151-7026c4db362f",
+    "burnedAt": "2026-03-11T19:35:46.173Z"
   },
   {
-    "text": "Yo pensaba que para vender algo online necesitabas ser influencer, grabar reels todo el día, y tener un equipo. Resulta que lo que más se vende son guías simples que la IA te escribe en una tarde.",
-    "hookType": "confesion",
-    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
-    "burnedAt": "2026-03-11T00:57:53.439Z"
+    "text": "¿Cuántas amigas te pidieron consejos para decorar su casa? ¿Cuántas veces te dijeron \"vos tendrías que cobrar por esto\"? Bueno, tienen razón. Y hay una forma de hacerlo sin ser diseñadora de interiores.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "266556fb-14f6-4402-9151-7026c4db362f",
+    "burnedAt": "2026-03-11T19:35:46.173Z"
   },
   {
-    "text": "\"Crianza respetuosa\" tiene 12.000 búsquedas por mes en Google. Y casi no hay productos digitales buenos. Si sos mamá, ya tenés la experiencia. La IA te arma la guía.",
+    "text": "\"Cómo decorar mi casa\" tiene 110 mil búsquedas por mes en Google en español. La mayoría encuentra blogs genéricos con fotos de stock. Hay un hueco enorme para una guía específica bien hecha. Y la IA te la arma.",
     "hookType": "dato_concreto",
-    "fromGenerationId": "c5fb0df9-d18e-4fdc-b4bb-5ef5d0b3adf7",
-    "burnedAt": "2026-03-11T00:57:53.439Z"
+    "fromGenerationId": "266556fb-14f6-4402-9151-7026c4db362f",
+    "burnedAt": "2026-03-11T19:35:46.173Z"
   },
   {
-    "text": "Esto es lo primero que veo cuando me despierto. No es Instagram, no es WhatsApp. Es una pantalla que la mayoria no sabe que existe.",
-    "hookType": "curiosity_gap",
-    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
-    "burnedAt": "2026-03-11T01:05:57.354Z"
+    "text": "¿Viste esas revistas de decoración que antes comprábamos en el kiosco? Ya casi no existen. Pero la gente sigue buscando lo mismo: ideas para mejorar su casa. Solo que ahora lo buscan online. Y vos podés ser quien se las venda.",
+    "hookType": "analogia_cotidiana",
+    "fromGenerationId": "266556fb-14f6-4402-9151-7026c4db362f",
+    "burnedAt": "2026-03-11T19:35:46.173Z"
   },
   {
-    "text": "Si tenes Hotmart abierto, no mires las ventas a las 7 de la manana. No porque no haya, sino porque despues no vas a querer ir a tu trabajo. Te explico.",
-    "hookType": "pattern_interrupt",
-    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
-    "burnedAt": "2026-03-11T01:05:57.361Z"
+    "text": "En los últimos 2 años, los productos digitales de decoración y home staging crecieron un montón en Hotmart. Es un nicho visual, emocional, y con una audiencia que compra impulsivamente. Y casi nadie lo está explotando con IA.",
+    "hookType": "observacion_tendencia",
+    "fromGenerationId": "266556fb-14f6-4402-9151-7026c4db362f",
+    "burnedAt": "2026-03-11T19:35:46.173Z"
   },
   {
-    "text": "Te voy a mostrar algo que no muestro en mis videos. No es una cuenta bancaria ni un auto. Es algo que cualquier persona con un celular puede tener manana.",
-    "hookType": "reveal_teaser",
-    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
-    "burnedAt": "2026-03-11T01:05:57.361Z"
+    "text": "Eran las 6 de la mañana. Agarré el celular para apagar la alarma y tenía 3 notificaciones de Hotmart. Tres ventas. De una guía de ejercicios que me costó 2 horas armar con IA. Te cuento cómo.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "dc7628bb-4881-44c0-9986-0f16979ce668",
+    "burnedAt": "2026-03-11T19:38:29.998Z"
   },
   {
-    "text": "No necesitas seguidores, no necesitas saber de tecnologia, no necesitas renunciar a tu trabajo. Lo unico que necesitas es un celular y una hora libre. Mira.",
-    "hookType": "contrarian",
-    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
-    "burnedAt": "2026-03-11T01:05:57.361Z"
+    "text": "Cada vez más gente busca rutinas de ejercicio para hacer en casa sin ir al gimnasio. Es uno de los nichos que más crece en productos digitales. Y la mayoría de lo que encuentran es gratis y desordenado. Ahí hay un negocio.",
+    "hookType": "observacion_tendencia",
+    "fromGenerationId": "dc7628bb-4881-44c0-9986-0f16979ce668",
+    "burnedAt": "2026-03-11T19:38:29.998Z"
   },
   {
-    "text": "Yo tambien tenia un trabajo de oficina y queria salir de ahi. Pero no fue un curso de marketing lo que me saco. Fue algo que me tomo una tarde armar y que hoy vende solo.",
+    "text": "Día 1: le pedís a la IA que te arme una guía de ejercicios en casa. Día 2: la subís a Hotmart por 7 dólares. Día 7: empiezan a entrar ventas mientras dormís. No es ciencia ficción. Es un modelo que ya funciona.",
+    "hookType": "timeline_provocacion",
+    "fromGenerationId": "dc7628bb-4881-44c0-9986-0f16979ce668",
+    "burnedAt": "2026-03-11T19:38:29.998Z"
+  },
+  {
+    "text": "—Jesús, ¿de verdad se puede ganar plata vendiendo guías de ejercicio? —No solo se puede. Hay gente que gana más con eso que un instructor de gimnasio. Y no saben ni hacer una sentadilla. La IA la hace por ellos.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "dc7628bb-4881-44c0-9986-0f16979ce668",
+    "burnedAt": "2026-03-11T19:38:29.998Z"
+  },
+  {
+    "text": "No necesitás ser personal trainer. No necesitás un cuerpo fitness. No necesitás mostrar tu cara. Necesitás saber pedirle a la IA lo correcto. Y eso se aprende en una tarde.",
+    "hookType": "negacion_directa",
+    "fromGenerationId": "dc7628bb-4881-44c0-9986-0f16979ce668",
+    "burnedAt": "2026-03-11T19:38:29.998Z"
+  },
+  {
+    "text": "—Jesús, dale, decime la verdad. ¿Qué pasa realmente adentro del taller de 5 dólares? —Mirá, te voy a mostrar algo que normalmente no muestro. Esto es el grupo de WhatsApp del último taller.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "a220390f-1c20-4f36-b85f-75dbf5416c3f",
+    "burnedAt": "2026-03-11T20:39:20.628Z"
+  },
+  {
+    "text": "Día 1: elegís tu nicho. Día 2: la IA te arma el producto. Día 3: ya está en Hotmart listo para vender. Eso es lo que pasa adentro del taller de 5 dólares. No es teoría. Te lo muestro.",
+    "hookType": "timeline_provocacion",
+    "fromGenerationId": "a220390f-1c20-4f36-b85f-75dbf5416c3f",
+    "burnedAt": "2026-03-11T20:39:20.628Z"
+  },
+  {
+    "text": "Yo sé que estás pensando \"otro taller más que no sirve para nada\". Yo pensé lo mismo cuando pagué mi primer curso. Me cagaron. Por eso hice algo distinto. Te cuento qué.",
+    "hookType": "confesion",
+    "fromGenerationId": "a220390f-1c20-4f36-b85f-75dbf5416c3f",
+    "burnedAt": "2026-03-11T20:39:20.628Z"
+  },
+  {
+    "text": "¿Cuántos cursos compraste que prometían todo y no te enseñaron nada? ¿Dos? ¿Tres? Yo compré todos los que había. Y por eso armé algo completamente diferente. Escuchame.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "a220390f-1c20-4f36-b85f-75dbf5416c3f",
+    "burnedAt": "2026-03-11T20:39:20.628Z"
+  },
+  {
+    "text": "Si estás dispuesto a dedicar 3 días y 5 dólares, yo me comprometo a que salgas con tu primer producto digital armado. Si no, te devuelvo la plata. Ese es el trato.",
+    "hookType": "contrato_compromiso",
+    "fromGenerationId": "a220390f-1c20-4f36-b85f-75dbf5416c3f",
+    "burnedAt": "2026-03-11T20:39:20.628Z"
+  },
+  {
+    "text": "Son las 10 de la noche. Los chicos ya durmieron. Tenés una hora libre y la usás para limpiar lo que quedó del día. ¿Y si esa hora la usaras para armar algo que te genere plata mientras dormís?",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "d44e3b46-cc26-48be-82d8-1db898061283",
+    "burnedAt": "2026-03-11T20:50:20.443Z"
+  },
+  {
+    "text": "¿Cuántas veces te dijeron \"qué ordenada tu casa\" o \"¿cómo hacés para tener todo tan limpio\"? Eso que para vos es normal, para miles de personas es un problema que pagarían por resolver.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "d44e3b46-cc26-48be-82d8-1db898061283",
+    "burnedAt": "2026-03-11T20:50:20.444Z"
+  },
+  {
+    "text": "Yo no sabía nada de organización del hogar. Pero cuando vi que hay 60 mil búsquedas por mes de \"cómo organizar mi casa\", entendí que cualquier mamá que sepa de eso está sentada arriba de un negocio.",
+    "hookType": "confesion",
+    "fromGenerationId": "d44e3b46-cc26-48be-82d8-1db898061283",
+    "burnedAt": "2026-03-11T20:50:20.444Z"
+  },
+  {
+    "text": "¿Viste esas cuentas de Instagram que suben rutinas de limpieza y tienen millones de seguidores? Ellas dan el contenido gratis. Vos podés empaquetar lo mismo en una guía con IA y cobrar por eso. Sin mostrar tu cara y sin tener seguidores.",
+    "hookType": "analogia_cotidiana",
+    "fromGenerationId": "d44e3b46-cc26-48be-82d8-1db898061283",
+    "burnedAt": "2026-03-11T20:50:20.444Z"
+  },
+  {
+    "text": "Tu vecina te pide tu rutina de limpieza. Tu cuñada te manda mensaje preguntando qué productos usás. Tu amiga te dice \"vos tendrías que cobrar por esto\". Bueno, tienen razón. Y hay una forma de hacerlo sin convertirte en influencer.",
+    "hookType": "observacion_tendencia",
+    "fromGenerationId": "d44e3b46-cc26-48be-82d8-1db898061283",
+    "burnedAt": "2026-03-11T20:50:20.444Z"
+  },
+  {
+    "text": "Estás abajo del auto un sábado cambiándole el aceite a un vecino por 20 lucas. Sabés más de mecánica que el 90% de la gente. Pero nunca se te ocurrió que ese conocimiento vale plata en internet.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+    "burnedAt": "2026-03-11T21:12:12.776Z"
+  },
+  {
+    "text": "Si sabés cambiar una rueda o revisar el aceite, ya tenés más conocimiento que el que necesitás para armar un producto digital. Solo que nadie te lo dijo. Hasta ahora.",
+    "hookType": "contrato_compromiso",
+    "fromGenerationId": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+    "burnedAt": "2026-03-11T21:12:12.776Z"
+  },
+  {
+    "text": "Un alumno sabía de autos toda la vida. Mecánico de barrio, 20 años de oficio. Le pedimos a la IA que armara una guía de mantenimiento básico con lo que él sabía. La primera semana vendió 23 copias a 7 dólares.",
+    "hookType": "historia_mini",
+    "fromGenerationId": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+    "burnedAt": "2026-03-11T21:12:12.776Z"
+  },
+  {
+    "text": "Tu mecánico sabe más de autos que el 99% de los ebooks que se venden en Hotmart. Y no está vendiendo nada. Si vos sabés de autos, estás sentado arriba de un negocio y no te diste cuenta.",
+    "hookType": "provocacion",
+    "fromGenerationId": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+    "burnedAt": "2026-03-11T21:12:12.776Z"
+  },
+  {
+    "text": "Esto no es para programadores. No es para diseñadores. No es para gente que sabe de marketing. Esto es para el que sabe de autos y nunca pensó que podía ganar plata con eso desde la computadora.",
+    "hookType": "negacion_directa",
+    "fromGenerationId": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+    "burnedAt": "2026-03-11T21:12:12.776Z"
+  },
+  {
+    "text": "Antes de cada viaje, todo el mundo hace lo mismo: abre Google y busca \"qué hacer en Rio de Janeiro\", \"dónde comer barato en Bogotá\", \"Plan de 5 días en Europa\". Y lo que encuentra son blogs llenos de publicidad que no sirven. Ahí hay un negocio que casi nadie ve.",
+    "hookType": "dato_concreto",
+    "fromGenerationId": "7934021b-adc3-4315-8d8a-e9740ca78436",
+    "burnedAt": "2026-03-11T21:42:52.102Z"
+  },
+  {
+    "text": "¿Alguna vez volviste de un viaje y un amigo te preguntó \"pasame todo lo que hiciste\"? Dónde comiste, cómo te moviste, qué evitar. Esa información que vos regalás, hay gente que la paga. Y ni siquiera necesitás haber viajado para armarla.",
+    "hookType": "analogia_cotidiana",
+    "fromGenerationId": "7934021b-adc3-4315-8d8a-e9740ca78436",
+    "burnedAt": "2026-03-11T21:42:52.102Z"
+  },
+  {
+    "text": "Cuando viajé 6 meses por Europa me pasé horas planeando cada destino. Hotel, comida, transporte, qué evitar en cada ciudad. Después pensé: si yo pagué esas horas con mi tiempo, ¿cuánta gente pagaría 10 dólares por tenerlo resuelto?",
+    "hookType": "observacion_tendencia",
+    "fromGenerationId": "7934021b-adc3-4315-8d8a-e9740ca78436",
+    "burnedAt": "2026-03-11T21:42:52.102Z"
+  },
+  {
+    "text": "Hay gente ganando 2 mil dólares al mes vendiendo guías de viaje a destinos que ni siquiera visitó. No son influencers. No tienen seguidores. Solo tienen Chatgpt y un poco de sentido común.",
+    "hookType": "provocacion",
+    "fromGenerationId": "7934021b-adc3-4315-8d8a-e9740ca78436",
+    "burnedAt": "2026-03-11T21:42:52.102Z"
+  },
+  {
+    "text": "Un pibe se fue de vacaciones a Bariloche y no encontró ninguna guía buena del lugar. Cuando volvió, le pidió a la IA que le arme una con todo lo que vivió. La subió a Hotmart por 7 dólares y al mes vendió 50 copias. Sin volver a pisar Bariloche.",
+    "hookType": "historia_mini",
+    "fromGenerationId": "7934021b-adc3-4315-8d8a-e9740ca78436",
+    "burnedAt": "2026-03-11T21:42:52.102Z"
+  },
+  {
+    "text": "Si ya viste mi video anterior y pensaste 'suena lindo pero no sé qué vender', este es para vos. Porque te voy a dar una idea concreta que funciona especialmente en LATAM.",
     "hookType": "pain_point",
-    "fromGenerationId": "9e3f6fab-e560-4094-b90e-74e06de78bfa",
-    "burnedAt": "2026-03-11T01:05:57.361Z"
+    "fromGenerationId": "6fcecad3-251c-4766-b919-e5a07bc30ea0",
+    "burnedAt": "2026-03-11T22:59:00.878Z"
+  },
+  {
+    "text": "¿Sabés hacer manualidades? ¿Alguna vez te dijeron 'deberías vender eso'? Bueno, hay una forma de venderlo sin depender de ferias ni de envíos. Y chatgpt te ayuda a armarlo.",
+    "hookType": "question",
+    "fromGenerationId": "6fcecad3-251c-4766-b919-e5a07bc30ea0",
+    "burnedAt": "2026-03-11T22:59:00.878Z"
+  },
+  {
+    "text": "En LATAM hay miles de personas que saben hacer velas, bisutería, jabones. Pero venden a los vecinos y no escalan. El problema no es lo que hacen. Es CÓMO lo venden. Te muestro otra forma.",
+    "hookType": "reveal_teaser",
+    "fromGenerationId": "6fcecad3-251c-4766-b919-e5a07bc30ea0",
+    "burnedAt": "2026-03-11T22:59:00.878Z"
+  },
+  {
+    "text": "En LATAM hay miles de personas que saben hacer cosas increíbles con las manos. Velas, jabones, bisutería. Pero la mayoría gana poco porque vende uno por uno. Y lo que saben hacer vale mucho más que eso.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "6fcecad3-251c-4766-b919-e5a07bc30ea0",
+    "burnedAt": "2026-03-11T22:59:00.878Z"
+  },
+  {
+    "text": "Si sabés hacer velas, jabones o bisutería, probablemente pensás que eso no se puede vender por internet. Que es algo demasiado artesanal. Pero resulta que la gente no quiere comprar la vela. Quiere aprender a hacerla.",
+    "hookType": "curiosity_gap",
+    "fromGenerationId": "6fcecad3-251c-4766-b919-e5a07bc30ea0",
+    "burnedAt": "2026-03-11T22:59:00.878Z"
+  },
+  {
+    "text": "Son las 10 de la noche. Los chicos durmieron. Tenés una hora antes de acostarte. ¿Y si esa hora pudiera ser el comienzo de tu primer ingreso online?",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+    "burnedAt": "2026-03-11T23:06:48.532Z"
+  },
+  {
+    "text": "¿Cuántas veces una amiga te preguntó cómo hacés para organizar la rutina con los chicos? Lo que vos regalás como consejo, hay gente que paga por eso.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+    "burnedAt": "2026-03-11T23:06:48.532Z"
+  },
+  {
+    "text": "Sabés más de crianza que la mayoría de los libros que se venden en internet. Y no estás vendiendo nada. Tu experiencia como mamá o papá vale plata. En serio.",
+    "hookType": "provocacion",
+    "fromGenerationId": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+    "burnedAt": "2026-03-11T23:06:48.532Z"
+  },
+  {
+    "text": "Una mamá de 3 hijos le pidió a la IA que organice todo lo que aprendió sobre rutinas de sueño para bebés. En una hora tenía una guía que parece escrita por una pediatra. Hoy la vende online.",
+    "hookType": "historia_mini",
+    "fromGenerationId": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+    "burnedAt": "2026-03-11T23:06:48.532Z"
+  },
+  {
+    "text": "Yo pensaba que para vender algo online necesitabas saber de tecnología o de marketing. Después descubrí que lo que más se vende son experiencias reales organizadas. Como criar hijos.",
+    "hookType": "confesion",
+    "fromGenerationId": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+    "burnedAt": "2026-03-11T23:06:48.532Z"
+  },
+  {
+    "text": "¿Cuántas horas por semana le dedicás a ChatGPT? Le pedís recetas, chistes, que te resuma un texto. Pero nunca le pediste que te arme un negocio. Y es literalmente lo más fácil que puede hacer.",
+    "hookType": "question",
+    "fromGenerationId": "9f01fb01-ca5d-4c25-aa3e-0f47b93ba6f3",
+    "burnedAt": "2026-03-11T23:09:52.716Z"
+  },
+  {
+    "text": "Abrís ChatGPT, le pedís un chiste, una receta de milanesas, que te resuma un artículo. Lo usás todos los días y todavía no le pediste que te genere plata. Te cuento cómo se hace.",
+    "hookType": "pain_point",
+    "fromGenerationId": "9f01fb01-ca5d-4c25-aa3e-0f47b93ba6f3",
+    "burnedAt": "2026-03-11T23:09:52.717Z"
+  },
+  {
+    "text": "Esto no es otro video de 'usá ChatGPT para ser más productivo'. Esto es sobre cómo la misma IA que usás para pavadas puede armarte un producto digital que se venda mientras dormís.",
+    "hookType": "contrarian",
+    "fromGenerationId": "9f01fb01-ca5d-4c25-aa3e-0f47b93ba6f3",
+    "burnedAt": "2026-03-11T23:09:52.717Z"
+  },
+  {
+    "text": "¿Viste cuando tenés un auto y lo usás solo para ir al supermercado? Con la IA hacés exactamente lo mismo. La tenés ahí, la usás para boludeces, y no sabés que puede ser tu herramienta de laburo.",
+    "hookType": "curiosity_gap",
+    "fromGenerationId": "9f01fb01-ca5d-4c25-aa3e-0f47b93ba6f3",
+    "burnedAt": "2026-03-11T23:09:52.717Z"
+  },
+  {
+    "text": "Todo el mundo tiene ChatGPT en el celular. Pero casi nadie la usa para ganar plata. Los que descubrieron cómo usarla para armar productos digitales generan ingresos todos los meses. La diferencia son 3 pasos.",
+    "hookType": "reveal_teaser",
+    "fromGenerationId": "9f01fb01-ca5d-4c25-aa3e-0f47b93ba6f3",
+    "burnedAt": "2026-03-11T23:09:52.717Z"
+  },
+  {
+    "text": "Tenés más de 50 y cada vez que ves algo de tecnología pensás 'esto no es para mí'. Te presento a alguien que pensó exactamente lo mismo.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "43422594-2466-494c-a646-6aa8fc286266",
+    "burnedAt": "2026-03-11T23:34:14.533Z"
+  },
+  {
+    "text": "Andrea tiene 55 años. Compró cursos online que no le sirvieron. No tenía redes sociales. Y hoy tiene su propio producto digital vendiendo en internet. Te cuento qué hizo distinto.",
+    "hookType": "historia_mini",
+    "fromGenerationId": "43422594-2466-494c-a646-6aa8fc286266",
+    "burnedAt": "2026-03-11T23:34:14.534Z"
+  },
+  {
+    "text": "¿Cuántos cursos compraste que no terminaste? Andrea compró varios. Ninguno le sirvió. Hasta que encontró un proceso donde la IA hacía lo técnico por ella.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "43422594-2466-494c-a646-6aa8fc286266",
+    "burnedAt": "2026-03-11T23:34:14.534Z"
+  },
+  {
+    "text": "Esto no es para programadores ni para gente de marketing. Esto es para gente como Andrea: 55 años, sin redes, con 15 años de experiencia que nadie le dijo que podía vender.",
+    "hookType": "negacion_directa",
+    "fromGenerationId": "43422594-2466-494c-a646-6aa8fc286266",
+    "burnedAt": "2026-03-11T23:34:14.534Z"
+  },
+  {
+    "text": "Las personas que menos saben de tecnología son las que mejor les va con esto. ¿Sabés por qué? Porque no intentan hacerlo todo solas. Dejan que la IA se encargue.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "43422594-2466-494c-a646-6aa8fc286266",
+    "burnedAt": "2026-03-11T23:34:14.534Z"
   }
 ]

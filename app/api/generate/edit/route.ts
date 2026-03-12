@@ -22,10 +22,16 @@ export async function PATCH(req: NextRequest) {
       return NextResponse.json({ error: "Generacion no encontrada" }, { status: 404 });
     }
 
+    // Sanitize path to prevent prototype pollution
+    const FORBIDDEN_KEYS = ["__proto__", "constructor", "prototype"];
+    const parts = path.split(".");
+    if (parts.some((p) => FORBIDDEN_KEYS.includes(p))) {
+      return NextResponse.json({ error: "Path no permitido" }, { status: 400 });
+    }
+
     // Navigate the path and set the value
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const script = generation.script as any;
-    const parts = path.split(".");
     let current = script;
 
     for (let i = 0; i < parts.length - 1; i++) {

@@ -1,0 +1,102 @@
+{
+  "id": "267113d0-2e14-41bd-9b5d-d0842deebd56",
+  "title": "#3 [GMAPS] [WEBINAR] - Winner",
+  "transcript": "Venid, te quiero mostrar algo. Muchas personas me preguntan cómo hacen para poder comprar su primer auto. Y yo les digo, mirá, yo también pude y mi primer auto que me compré fue un Mercedes-Benz AMG. Pero bueno, cambiando de tema, ¿cómo haces para comprar tu primer auto? Mirá, antes vos si querías ofrecer servicios de publicidad a negocios, tenías que aprender diseño, tenías que aprender copy, tenías que aprender todo para poder hacer publicidad. Hoy en día, la IA te hace todo automáticamente. Vos solamente tenés que operar los agentes de IA que te hacen los textos publicitarios, que te hacen las imágenes automáticamente y simplemente mezclás todos los ingredientes en una campaña que se la instalás a los negocios. Y eso es por lo cual los negocios te van a pagar de 200 a 300 dólares todos los meses. ¿Para qué? Para que con ese pago puedas comprarte tu primer auto. Esto es muy fácil y te lo voy a explicar en una clase que voy a dar esta semana, en donde te voy a mostrar cuál es el sistema que vos podés instalar en negocios, que simplemente lo copiás, lo instalás y los negocios te van a querer pagar por conseguirle clientes con inteligencia artificial y campañas de publicidad. Para poder registrarte, solamente tocá el botón de aquí abajo.",
+  "analysis": {
+    "hook": {
+      "text": "Venid, te quiero mostrar algo.",
+      "type": "curiosity_gap",
+      "word_count": 6,
+      "estimated_seconds": 2
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook & Pattern Interrupt",
+          "summary": "Apertura directa con invitación personal y mención de pregunta frecuente",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Authority & Social Proof",
+          "summary": "Establece credibilidad mencionando compra de Mercedes-Benz AMG",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Problem Identification",
+          "summary": "Contrasta el antes (necesidad de múltiples habilidades) con el ahora (IA automatiza)",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Solution & Value Proposition",
+          "summary": "Explica cómo usar agentes de IA para ofrecer servicios a negocios y ganar $200-300 USD mensuales",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Benefit & Dream Outcome",
+          "summary": "Conecta el dinero ganado con el objetivo final (comprar primer auto)",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Offer & CTA",
+          "summary": "Invita a clase semanal y proporciona instrucciones de registro",
+          "estimated_seconds": 5
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Esto es muy fácil y te lo voy a explicar en una clase que voy a dar esta semana"
+    },
+    "tone": {
+      "primary_tone": "Conversational, mentor-like, aspirational",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Venid, te quiero mostrar algo",
+        "Mirá",
+        "cambiando de tema",
+        "Hoy en día, la IA te hace todo automáticamente",
+        "simplemente mezclás todos los ingredientes",
+        "Esto es muy fácil"
+      ]
+    },
+    "cta": {
+      "text": "Para poder registrarte, solamente tocá el botón de aquí abajo.",
+      "type": "sign_up",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 36,
+    "total_word_count": 267,
+    "emotional_arc": "Curiosity → Aspiration (via social proof) → Problem recognition → Hope & Empowerment → Excitement → Action",
+    "strengths": [
+      "Hook inmediato con curiosidad gap y invitación personal",
+      "Uso efectivo de social proof (Mercedes-Benz) para establecer autoridad sin arrogancia",
+      "Contraste claro antes/después que resuelve un pain point real",
+      "Especificidad en números ($200-300 USD) genera credibilidad",
+      "Conexión emocional entre solución y sueño (comprar auto)",
+      "Rehook estratégico a mitad del video para retener atención",
+      "Tono conversacional y accesible (UGC style) genera confianza",
+      "CTA claro con instrucción visual explícita",
+      "Estructura narrativa que fluye naturalmente sin sentirse vendedora"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con 'Venid/Mira' + invitación personal para crear intimidad",
+      "Incluir social proof temprano pero de forma orgánica (no forzada)",
+      "Usar 'cambiando de tema' como transición natural entre ideas",
+      "Contrastar antes/después para amplificar el problema y la solución",
+      "Especificar números concretos de ingresos/beneficios",
+      "Conectar la solución con un sueño/objetivo emocional del audiencia",
+      "Insertar rehook a mitad del video con frase como 'Esto es muy fácil y te lo voy a explicar'",
+      "Usar 'Mirá' repetidamente como marcador de atención",
+      "Mantener tono conversacional como si fuera amigo dando consejo",
+      "Terminar con CTA dual: verbal + visual (botón abajo)",
+      "Evitar urgencia artificial; confiar en la propuesta de valor"
+    ]
+  },
+  "folder": "winners-gmaps",
+  "folderLabel": "Winners GMAPS Webinar",
+  "createdAt": "2026-03-11T15:21:09.875Z"
+}

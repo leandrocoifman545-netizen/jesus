@@ -3,8 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useToast } from "./toast";
+import GlowCard from "./glow-card";
+import Confetti from "./confetti";
 
-type GenerationStatus = "draft" | "recorded" | "winner";
+type GenerationStatus = "draft" | "confirmed" | "recorded" | "winner";
 
 interface Generation {
   id: string;
@@ -40,8 +42,12 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
   });
 
   const drafts = generations.filter((g) => !g.status || g.status === "draft");
+  const confirmed = generations.filter((g) => g.status === "confirmed");
   const recorded = generations.filter((g) => g.status === "recorded");
   const winners = generations.filter((g) => g.status === "winner");
+
+  const [confettiId, setConfettiId] = useState<string | null>(null);
+  const [bounceId, setBounceId] = useState<string | null>(null);
 
   async function updateStatus(id: string, status: GenerationStatus, sessionNote?: string) {
     setSaving(id);
@@ -57,6 +63,14 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       setGenerations((prev) =>
         prev.map((g) => (g.id === id ? { ...g, status, sessionNotes: sessionNote ?? g.sessionNotes } : g))
       );
+      // Trigger animations
+      setBounceId(id);
+      setTimeout(() => setBounceId(null), 600);
+      if (status === "winner") {
+        setConfettiId(id);
+        setTimeout(() => setConfettiId(null), 1200);
+      }
+      toast(status === "winner" ? "Winner! 🏆" : status === "recorded" ? "Marcado como grabado" : status === "confirmed" ? "Confirmado — leads quemados" : "Vuelto a borrador");
     } catch {
       toast("Error actualizando", "error");
     } finally {
@@ -85,7 +99,8 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
   function renderCard(gen: Generation) {
     const currentStatus = gen.status || "draft";
     return (
-      <div key={gen.id} className="rounded-2xl bg-zinc-900/30 border border-zinc-800/50 p-5 hover:border-zinc-700/50 transition-all duration-200 space-y-3">
+      <GlowCard key={gen.id} className={`rounded-2xl bg-zinc-900/30 border border-zinc-800/40 p-6 hover:border-zinc-700/40 transition-all duration-300 hover-lift ${bounceId === gen.id ? "animate-success-bounce animate-success-flash" : ""}`} glowColor="rgba(124, 58, 237, 0.06)"><div className="relative space-y-4">
+        {confettiId === gen.id && <Confetti trigger={true} />}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 flex-wrap">
             <Link href={`/scripts/${gen.id}`} className="text-sm font-medium text-zinc-200 hover:text-purple-400 transition-colors">
@@ -102,11 +117,11 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
             {currentStatus === "draft" && (
               <>
                 <button
-                  onClick={() => updateStatus(gen.id, "recorded", notes[gen.id])}
+                  onClick={() => updateStatus(gen.id, "confirmed", notes[gen.id])}
                   disabled={saving === gen.id}
-                  className="text-[10px] px-2.5 py-1 rounded-xl border border-green-500/30 text-green-400 bg-green-500/5 hover:bg-green-500/15 transition-colors"
+                  className="text-[10px] px-2.5 py-1 rounded-xl border border-blue-500/30 text-blue-400 bg-blue-500/5 hover:bg-blue-500/15 transition-colors"
                 >
-                  {saving === gen.id ? "..." : "Grabado"}
+                  {saving === gen.id ? "..." : "Confirmar"}
                 </button>
                 <button
                   onClick={() => updateStatus(gen.id, "draft")}
@@ -115,6 +130,24 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
                   title="Descartar (se queda en borrador)"
                 >
                   Descartar
+                </button>
+              </>
+            )}
+            {currentStatus === "confirmed" && (
+              <>
+                <button
+                  onClick={() => updateStatus(gen.id, "recorded", notes[gen.id])}
+                  disabled={saving === gen.id}
+                  className="text-[10px] px-2.5 py-1 rounded-xl border border-green-500/30 text-green-400 bg-green-500/5 hover:bg-green-500/15 transition-colors"
+                >
+                  {saving === gen.id ? "..." : "Grabado"}
+                </button>
+                <button
+                  onClick={() => updateStatus(gen.id, "draft", notes[gen.id])}
+                  disabled={saving === gen.id}
+                  className="text-[10px] px-2.5 py-1 rounded-xl border border-zinc-700 text-zinc-500 hover:text-zinc-300 hover:bg-zinc-800/50 transition-colors"
+                >
+                  Volver a borrador
                 </button>
               </>
             )}
@@ -128,11 +161,11 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
                   {saving === gen.id ? "..." : "Winner"}
                 </button>
                 <button
-                  onClick={() => updateStatus(gen.id, "draft", notes[gen.id])}
+                  onClick={() => updateStatus(gen.id, "confirmed", notes[gen.id])}
                   disabled={saving === gen.id}
                   className="text-[10px] px-2.5 py-1 rounded-xl border border-zinc-700 text-zinc-500 hover:text-zinc-300 hover:bg-zinc-800/50 transition-colors"
                 >
-                  Volver a borrador
+                  Volver a confirmado
                 </button>
               </>
             )}
@@ -158,21 +191,34 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
             placeholder="Notas de sesion (ej: grabo en 1 toma, cambio el lead 3...)"
           />
         </div>
-      </div>
+      </div></GlowCard>
     );
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       {/* Pending review (drafts) */}
       {drafts.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold tracking-wide text-zinc-400 mb-3 flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-zinc-500" />
+          <h2 className="text-sm font-semibold tracking-wide text-zinc-400 mb-4 flex items-center gap-2.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-zinc-500 animate-pulse" />
             Pendientes de review ({drafts.length})
           </h2>
-          <div className="space-y-3">
+          <div className="space-y-3 stagger-children">
             {drafts.map(renderCard)}
+          </div>
+        </div>
+      )}
+
+      {/* Confirmed */}
+      {confirmed.length > 0 && (
+        <div>
+          <h2 className="text-sm font-semibold tracking-wide text-blue-400 mb-4 flex items-center gap-2.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-blue-500" />
+            Confirmados ({confirmed.length})
+          </h2>
+          <div className="space-y-3 stagger-children">
+            {confirmed.map(renderCard)}
           </div>
         </div>
       )}
@@ -180,11 +226,11 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       {/* Recorded */}
       {recorded.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold tracking-wide text-green-400 mb-3 flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-green-500" />
+          <h2 className="text-sm font-semibold tracking-wide text-green-400 mb-4 flex items-center gap-2.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
             Grabados ({recorded.length})
           </h2>
-          <div className="space-y-3">
+          <div className="space-y-3 stagger-children">
             {recorded.map(renderCard)}
           </div>
         </div>
@@ -193,11 +239,11 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       {/* Winners */}
       {winners.length > 0 && (
         <div>
-          <h2 className="text-sm font-semibold tracking-wide text-amber-400 mb-3 flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-amber-500" />
+          <h2 className="text-sm font-semibold tracking-wide text-amber-400 mb-4 flex items-center gap-2.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-amber-500" />
             Winners ({winners.length})
           </h2>
-          <div className="space-y-3">
+          <div className="space-y-3 stagger-children">
             {winners.map(renderCard)}
           </div>
         </div>
@@ -208,8 +254,14 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
       )}
 
       {/* Summary */}
-      <div className="bg-zinc-900/50 backdrop-blur border border-zinc-800/50 rounded-2xl p-4 text-xs text-zinc-500">
-        <p>Resumen: {drafts.length} pendientes | {recorded.length} grabados | {winners.length} winners | {generations.length} total</p>
+      <div className="bg-zinc-900/40 backdrop-blur border border-zinc-800/40 rounded-2xl p-5 animate-fade-in">
+        <div className="flex items-center gap-6 text-xs text-zinc-500">
+          <span className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-zinc-500" />{drafts.length} pendientes</span>
+          <span className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500" />{confirmed.length} confirmados</span>
+          <span className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500" />{recorded.length} grabados</span>
+          <span className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-amber-500" />{winners.length} winners</span>
+          <span className="text-zinc-600 ml-auto">{generations.length} total</span>
+        </div>
       </div>
     </div>
   );
