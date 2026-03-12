@@ -1,15 +1,19 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_PROMPT } from "./prompts/system";
+import { SYSTEM_PROMPT_LONGFORM } from "./prompts/system-longform";
 import { AVATAR_CONTEXT } from "./prompts/avatar-context";
 import {
   type ScriptOutput,
   type Hook,
   type DevelopmentSection,
 } from "./schemas/script-output";
+import { type LongformOutput, type LongformOutputMode } from "./schemas/longform-output";
 import { type ReferenceAnalysis } from "./schemas/reference-analysis";
 import { listReferences, listGenerations, getBurnedLeads, getCaseStudies } from "../storage/local";
 import { computeCoverage } from "../coverage";
+
+export type ContentType = "shortform" | "longform";
 
 export interface BriefInput {
   productDescription: string;
@@ -23,6 +27,11 @@ export interface BriefInput {
   generationRules?: string; // project-specific rules (overrides generic system prompt where they conflict)
   projectId?: string; // used to filter winners by project + coverage gaps
   useCaseStudy?: boolean; // whether this script should include a case study fragment
+  // Long-form specific
+  contentType?: ContentType;
+  outputMode?: LongformOutputMode; // "full_script" | "structure"
+  targetDurationMinutes?: number; // 8-20 min
+  youtubeReferences?: string[]; // transcriptions of YouTube reference videos
 }
 
 const FORMAT_LABELS: Record<string, string> = {
@@ -925,6 +934,350 @@ ${SINGLE_HOOK_SCHEMA_DESC}
 Responde ÚNICAMENTE con el JSON.`;
 
   return callClaude(prompt, undefined, 2048, brief.generationRules) as Promise<Hook>;
+}
+
+// --- Long-form YouTube generation ---
+
+const LONGFORM_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
+{
+  "output_mode": "full_script" | "structure",
+  "title": string,
+  "framework": "educational" | "storytelling" | "listicle" | "case_study" | "debate" | "tutorial" | "reaction_analysis",
+  "hook": {
+    "script_text": string (texto completo del hook, primeros 30-60 segundos),
+    "visual_notes": string (qué mostrar en pantalla durante el hook),
+    "estimated_duration_seconds": number
+  },
+  "chapters": [{
+    "number": number,
+    "title": string,
+    "content": string (en full_script: texto completo. en structure: bullet points),
+    "key_points": [string],
+    "estimated_duration_seconds": number,
+    "visual_notes": string (opcional: qué mostrar, B-roll, gráficos)
+  }],
+  "transitions": [{
+    "from_chapter": number,
+    "to_chapter": number,
+    "transition_text": string
+  }],
+  "conclusion": {
+    "content": string,
+    "estimated_duration_seconds": number
+  },
+  "cta": {
+    "primary_text": string (CTA principal al final),
+    "midroll_text": string (opcional: CTA suave a mitad del video),
+    "end_screen_notes": string (qué poner en el end screen)
+  },
+  "seo": {
+    "title": string (máximo 60 caracteres, clickable),
+    "description": string (2-3 párrafos con keywords),
+    "tags": [string] (5-10 tags),
+    "thumbnail_idea": string (descripción de la imagen + texto del thumbnail)
+  },
+  "total_duration_seconds": number,
+  "word_count": number,
+  "emotional_arc": string,
+  "production_notes": string
+}`;
+
+const LONGFORM_REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
+{
+  "title": string,
+  "framework": "educational" | "storytelling" | "listicle" | "case_study" | "debate" | "tutorial" | "reaction_analysis",
+  "hook": {
+    "text": string,
+    "technique": string,
+    "estimated_duration_seconds": number
+  },
+  "chapters": [{
+    "number": number,
+    "title": string,
+    "summary": string,
+    "estimated_duration_seconds": number,
+    "retention_techniques": [string]
+  }],
+  "transitions": [{
+    "from": number,
+    "to": number,
+    "technique": string
+  }],
+  "tone": {
+    "energy_level": "low" | "medium" | "high",
+    "formality": "very_casual" | "casual" | "neutral" | "formal",
+    "key_phrases": [string]
+  },
+  "retention_patterns": [string],
+  "strengths": [string],
+  "patterns_to_replicate": [string],
+  "estimated_total_duration_seconds": number,
+  "total_word_count": number
+}`;
+
+export interface LongformReferenceAnalysis {
+  title: string;
+  framework: string;
+  hook: { text: string; technique: string; estimated_duration_seconds: number };
+  chapters: Array<{
+    number: number;
+    title: string;
+    summary: string;
+    estimated_duration_seconds: number;
+    retention_techniques: string[];
+  }>;
+  transitions: Array<{ from: number; to: number; technique: string }>;
+  tone: { energy_level: string; formality: string; key_phrases: string[] };
+  retention_patterns: string[];
+  strengths: string[];
+  patterns_to_replicate: string[];
+  estimated_total_duration_seconds: number;
+  total_word_count: number;
+}
+
+function buildLongformBriefContext(brief: BriefInput): string {
+  const outputMode = brief.outputMode || "full_script";
+  const duration = brief.targetDurationMinutes || 10;
+
+  let prompt = `## BRIEF — VIDEO YOUTUBE LARGO
+
+**Producto/Servicio:** ${brief.productDescription}
+**Público Objetivo:** ${brief.targetAudience}
+**Modo de output:** ${outputMode === "full_script" ? "Guión completo (texto palabra por palabra)" : "Estructura flexible (bullet points por capítulo)"}
+**Duración objetivo:** ${duration} minutos`;
+
+  if (brief.brandTone) {
+    prompt += `\n**Tono:** ${brief.brandTone}`;
+  }
+
+  if (brief.brandDocument) {
+    prompt += `\n\n## DOCUMENTO DE MARCA\n${brief.brandDocument}`;
+  }
+
+  if (brief.additionalNotes) {
+    prompt += `\n\n**Notas:** ${brief.additionalNotes}`;
+  }
+
+  if (brief.youtubeReferences && brief.youtubeReferences.length > 0) {
+    prompt += `\n\n## REFERENCIAS DE YOUTUBE (adaptar estilo y estructura al tono del presentador)\n`;
+    brief.youtubeReferences.forEach((ref, i) => {
+      prompt += `\n### Referencia ${i + 1}:\n${ref}\n`;
+    });
+  }
+
+  return prompt;
+}
+
+function buildLongformUserPrompt(brief: BriefInput): string {
+  const outputMode = brief.outputMode || "full_script";
+  const duration = brief.targetDurationMinutes || 10;
+  const chapters = Math.max(3, Math.min(5, Math.round(duration / 3)));
+
+  let prompt = buildLongformBriefContext(brief);
+
+  prompt += `\n\n## INSTRUCCIÓN
+Generá un guión de YouTube largo en modo "${outputMode}" con:
+1. Hook potente de 30-60 segundos que enganche y prometa algo claro
+2. ${chapters} capítulos de contenido (cada uno con título, contenido y notas visuales)
+3. Transiciones entre capítulos que mantengan la curiosidad
+4. Conclusión con impacto (no resumen aburrido)
+5. CTA nativo de YouTube (suscribirse, ver otro video, link en descripción)
+6. SEO completo: título (máx 60 chars), descripción, tags, idea de thumbnail
+
+Duración objetivo: ${duration} minutos (~${duration * 150} palabras en full_script).
+
+${brief.brandTone ? `Respetá el tono: "${brief.brandTone}".` : "Elegí el tono más apropiado para YouTube."}
+
+Usá los datos reales del avatar si están disponibles para dar autenticidad.
+
+${LONGFORM_SCHEMA_DESC}
+
+IMPORTANTE: Responde ÚNICAMENTE con el JSON. Sin texto antes ni después.`;
+
+  return prompt;
+}
+
+async function callClaudeLongform(
+  userPrompt: string,
+  generationRules?: string,
+): Promise<unknown> {
+  const client = getAnthropicClient();
+
+  const systemBlocks: Anthropic.Messages.TextBlockParam[] = [
+    {
+      type: "text",
+      text: SYSTEM_PROMPT_LONGFORM,
+      cache_control: { type: "ephemeral" },
+    },
+    {
+      type: "text",
+      text: AVATAR_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
+  ];
+
+  if (generationRules) {
+    systemBlocks.push({
+      type: "text",
+      text: `## REGLAS DEL PROYECTO (PRIORIDAD MÁXIMA)\n\n${generationRules}`,
+      cache_control: { type: "ephemeral" },
+    });
+  }
+
+  const response = await client.messages.create({
+    model: CLAUDE_MODEL,
+    max_tokens: 32768,
+    system: systemBlocks,
+    messages: [{ role: "user", content: userPrompt }],
+    temperature: 0.85,
+  });
+
+  const textBlock = response.content.find((b) => b.type === "text");
+  if (!textBlock || textBlock.type !== "text") {
+    throw new Error("Sin respuesta de texto de Claude");
+  }
+
+  return extractJSON(textBlock.text);
+}
+
+export async function generateLongform(brief: BriefInput): Promise<LongformOutput> {
+  const prompt = buildLongformUserPrompt(brief);
+  return callClaudeLongform(prompt, brief.generationRules) as Promise<LongformOutput>;
+}
+
+export async function generateLongformStream(
+  brief: BriefInput,
+  onChunk: (text: string) => void,
+): Promise<LongformOutput> {
+  const client = getAnthropicClient();
+  const prompt = buildLongformUserPrompt(brief);
+
+  const systemBlocks: Anthropic.Messages.TextBlockParam[] = [
+    {
+      type: "text",
+      text: SYSTEM_PROMPT_LONGFORM,
+      cache_control: { type: "ephemeral" },
+    },
+    {
+      type: "text",
+      text: AVATAR_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
+  ];
+
+  if (brief.generationRules) {
+    systemBlocks.push({
+      type: "text",
+      text: `## REGLAS DEL PROYECTO (PRIORIDAD MÁXIMA)\n\n${brief.generationRules}`,
+      cache_control: { type: "ephemeral" },
+    });
+  }
+
+  let fullText = "";
+
+  const stream = client.messages.stream({
+    model: CLAUDE_MODEL,
+    max_tokens: 32768,
+    system: systemBlocks,
+    messages: [{ role: "user", content: prompt }],
+    temperature: 0.85,
+  });
+
+  for await (const event of stream) {
+    if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+      fullText += event.delta.text;
+      onChunk(event.delta.text);
+    }
+  }
+
+  return extractJSON(fullText) as LongformOutput;
+}
+
+export async function analyzeLongformReference(transcript: string): Promise<LongformReferenceAnalysis> {
+  const client = getAnthropicClient();
+
+  const prompt = `Analizá la siguiente transcripción de un video de YouTube largo.
+
+Extraé:
+1. El hook (primeros 30-60 segundos), qué técnica usa
+2. La estructura por capítulos (título, resumen, duración, técnicas de retención)
+3. Las transiciones entre capítulos (qué técnica usa para mantener al viewer)
+4. El tono (nivel de energía, formalidad, frases clave)
+5. Patrones de retención (qué hace para que no se vayan)
+6. Fortalezas y patrones para replicar
+7. Duración total estimada
+
+TRANSCRIPCIÓN:
+"""
+${transcript}
+"""
+
+${LONGFORM_REFERENCE_SCHEMA_DESC}
+
+Responde ÚNICAMENTE con el JSON.`;
+
+  const response = await client.messages.create({
+    model: CLAUDE_MODEL,
+    max_tokens: 4096,
+    system: [
+      {
+        type: "text",
+        text: "Sos un analista de contenido de YouTube. Analizás transcripciones de videos largos exitosos y extraés patrones de estructura, retención y tono. Respondés únicamente con JSON válido.",
+        cache_control: { type: "ephemeral" },
+      },
+    ],
+    messages: [{ role: "user", content: prompt }],
+    temperature: 0.3,
+  });
+
+  const textBlock = response.content.find((b) => b.type === "text");
+  if (!textBlock || textBlock.type !== "text") {
+    throw new Error("Sin respuesta de texto de Claude");
+  }
+
+  return extractJSON(textBlock.text) as LongformReferenceAnalysis;
+}
+
+export async function regenerateLongformChapter(
+  brief: BriefInput,
+  longform: LongformOutput,
+  chapterIndex: number,
+): Promise<LongformOutput["chapters"][0]> {
+  const chapter = longform.chapters[chapterIndex];
+  const prevChapter = chapterIndex > 0 ? longform.chapters[chapterIndex - 1] : null;
+  const nextChapter = chapterIndex < longform.chapters.length - 1 ? longform.chapters[chapterIndex + 1] : null;
+
+  const prompt = `${buildLongformBriefContext(brief)}
+
+## VIDEO ACTUAL
+**Título:** ${longform.title}
+**Framework:** ${longform.framework}
+**Arco:** ${longform.emotional_arc}
+**Modo:** ${longform.output_mode}
+
+## CAPÍTULO A REGENERAR (#${chapter.number}: "${chapter.title}")
+Contenido actual: "${chapter.content.slice(0, 500)}${chapter.content.length > 500 ? "..." : ""}"
+Duración: ${chapter.estimated_duration_seconds}s
+
+${prevChapter ? `Capítulo anterior (#${prevChapter.number}): "${prevChapter.title}" — termina con: "${prevChapter.content.slice(-200)}"` : "(Es el primer capítulo)"}
+${nextChapter ? `Capítulo siguiente (#${nextChapter.number}): "${nextChapter.title}" — arranca con: "${nextChapter.content.slice(0, 200)}"` : "(Es el último capítulo)"}
+
+## INSTRUCCIÓN
+Regenerá ÚNICAMENTE este capítulo. Mantené el número, generá un nuevo título si querés, y escribí contenido nuevo que cumpla la misma función en el arco del video. Que conecte con el capítulo anterior y el siguiente.
+
+Responde con JSON:
+{
+  "number": ${chapter.number},
+  "title": string,
+  "content": string,
+  "key_points": [string],
+  "estimated_duration_seconds": number,
+  "visual_notes": string
+}
+
+Responde ÚNICAMENTE con el JSON.`;
+
+  return callClaudeLongform(prompt, brief.generationRules) as Promise<LongformOutput["chapters"][0]>;
 }
 
 // --- Gemini-only functions (audio transcription) ---

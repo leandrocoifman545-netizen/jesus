@@ -1,0 +1,128 @@
+import { NextRequest } from "next/server";
+import { generateLongformStream, type BriefInput } from "@/lib/ai/generate";
+import { saveGeneration, getProject, getProjectBrandText } from "@/lib/storage/local";
+import crypto from "crypto";
+
+export async function POST(req: NextRequest) {
+  const body = await req.json();
+
+  let productDescription = body.productDescription;
+  let targetAudience = body.targetAudience;
+  let brandTone = body.brandTone;
+  let brandDocument: string | undefined;
+  let generationRules: string | undefined;
+  const projectId: string | undefined = body.projectId;
+
+  if (projectId) {
+    const project = await getProject(projectId);
+    if (!project) {
+      return new Response(
+        `data: ${JSON.stringify({ type: "error", error: "Proyecto no encontrado" })}\n\n`,
+        { status: 404, headers: { "Content-Type": "text/event-stream" } }
+      );
+    }
+    productDescription = productDescription || project.productDescription;
+    targetAudience = targetAudience || project.targetAudience;
+    brandTone = brandTone || project.brandTone;
+    brandDocument = getProjectBrandText(project);
+    generationRules = project.generationRules;
+  }
+
+  const brief: BriefInput = {
+    productDescription,
+    targetAudience,
+    brandTone: brandTone || undefined,
+    hookCount: 1, // long-form uses single hook
+    additionalNotes: body.additionalNotes,
+    brandDocument,
+    generationRules,
+    projectId,
+    contentType: "longform",
+    outputMode: body.outputMode || "full_script",
+    targetDurationMinutes: Math.min(Math.max(body.targetDurationMinutes || 10, 5), 30),
+    youtubeReferences: body.youtubeReferences,
+  };
+
+  if (!brief.productDescription || !brief.targetAudience) {
+    return new Response(
+      `data: ${JSON.stringify({ type: "error", error: "Faltan campos requeridos" })}\n\n`,
+      { status: 400, headers: { "Content-Type": "text/event-stream" } }
+    );
+  }
+
+  const encoder = new TextEncoder();
+
+  const stream = new ReadableStream({
+    async start(controller) {
+      function send(data: object) {
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify(data)}\n\n`));
+      }
+
+      try {
+        send({ type: "start" });
+
+        const longform = await generateLongformStream(brief, (chunk) => {
+          send({ type: "chunk", text: chunk });
+        });
+
+        const generationId = crypto.randomUUID();
+        await saveGeneration({
+          id: generationId,
+          briefId: generationId, // longform doesn't use separate brief
+          projectId,
+          title: longform.title || body.additionalNotes?.slice(0, 60) || "Video YouTube",
+          contentType: "longform",
+          longform,
+          script: {
+            platform_adaptation: {
+              platform: "YouTube",
+              recommended_duration_seconds: longform.total_duration_seconds,
+              content_style: longform.framework,
+              key_considerations: longform.production_notes,
+            },
+            hooks: [{
+              variant_number: 1,
+              hook_type: "curiosity_gap" as const,
+              script_text: longform.hook.script_text,
+              timing_seconds: longform.hook.estimated_duration_seconds,
+            }],
+            development: {
+              framework_used: longform.framework,
+              emotional_arc: longform.emotional_arc,
+              sections: longform.chapters.map((ch) => ({
+                section_name: `Cap ${ch.number}: ${ch.title}`,
+                is_rehook: false,
+                script_text: ch.content,
+                timing_seconds: ch.estimated_duration_seconds,
+              })),
+            },
+            cta: {
+              verbal_cta: longform.cta.primary_text,
+              reason_why: longform.cta.end_screen_notes || "",
+              timing_seconds: 15,
+              cta_type: "custom" as const,
+            },
+            total_duration_seconds: longform.total_duration_seconds,
+            word_count: longform.word_count,
+          },
+          createdAt: new Date().toISOString(),
+        });
+
+        send({ type: "done", generationId, title: longform.title, longform });
+      } catch (err) {
+        const message = err instanceof Error ? err.message : "Error desconocido";
+        send({ type: "error", error: message });
+      } finally {
+        controller.close();
+      }
+    },
+  });
+
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "text/event-stream",
+      "Cache-Control": "no-cache",
+      Connection: "keep-alive",
+    },
+  });
+}

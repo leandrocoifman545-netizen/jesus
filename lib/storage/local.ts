@@ -1,7 +1,10 @@
 import { promises as fs } from "fs";
 import path from "path";
 import type { ScriptOutput } from "../ai/schemas/script-output";
+import type { LongformOutput } from "../ai/schemas/longform-output";
 import type { ReferenceAnalysis } from "../ai/schemas/reference-analysis";
+
+export type ContentType = "shortform" | "longform";
 
 const DATA_DIR = path.join(process.cwd(), ".data");
 const BRIEFS_DIR = path.join(DATA_DIR, "briefs");
@@ -163,7 +166,9 @@ export interface StoredGeneration {
   planId?: string;
   title?: string;
   batch?: GenerationBatch;
+  contentType?: ContentType;
   script: ScriptOutput;
+  longform?: LongformOutput;
   status?: GenerationStatus;
   metrics?: WinnerMetrics;
   sessionNotes?: string;
