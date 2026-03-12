@@ -279,6 +279,20 @@ export async function burnLeadsFromGeneration(gen: StoredGeneration): Promise<nu
     }
   }
 
+  // Also burn longform hook if present
+  if (gen.longform?.hook?.script_text) {
+    const normalized = gen.longform.hook.script_text.toLowerCase().trim();
+    if (!existingTexts.has(normalized)) {
+      newLeads.push({
+        text: gen.longform.hook.script_text,
+        hookType: "longform_hook",
+        fromGenerationId: gen.id,
+        burnedAt: new Date().toISOString(),
+      });
+      existingTexts.add(normalized);
+    }
+  }
+
   if (newLeads.length > 0) {
     await saveBurnedLeads([...existing, ...newLeads]);
   }

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { regenerateSection, regenerateCTA, regenerateHook } from "@/lib/ai/generate";
+import { regenerateSection, regenerateCTA, regenerateHook, regenerateLongformChapter } from "@/lib/ai/generate";
+import type { BriefInput } from "@/lib/ai/generate";
 import { getGeneration, getBrief, saveGeneration, getProject } from "@/lib/storage/local";
 
 export async function POST(req: NextRequest) {
@@ -7,7 +8,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { generationId, target, index } = body as {
       generationId: string;
-      target: "section" | "cta" | "hook";
+      target: "section" | "cta" | "hook" | "chapter";
       index?: number;
     };
 
@@ -23,16 +24,54 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Generacion no encontrada" }, { status: 404 });
     }
 
-    const brief = await getBrief(generation.briefId);
-    if (!brief) {
-      return NextResponse.json({ error: "Brief no encontrado" }, { status: 404 });
-    }
-
     // Load project-specific generation rules
     let generationRules: string | undefined;
     if (generation.projectId) {
       const project = await getProject(generation.projectId);
       if (project?.generationRules) generationRules = project.generationRules;
+    }
+
+    // Longform chapter regeneration doesn't need the original brief
+    if (target === "chapter") {
+      if (generation.contentType !== "longform" || !generation.longform) {
+        return NextResponse.json(
+          { error: "Solo se pueden regenerar capítulos en generaciones longform" },
+          { status: 400 }
+        );
+      }
+      if (index === undefined || index < 0 || index >= generation.longform.chapters.length) {
+        return NextResponse.json({ error: "Indice de capitulo invalido" }, { status: 400 });
+      }
+
+      const longformBrief: BriefInput = {
+        productDescription: "",
+        targetAudience: "",
+        hookCount: 1,
+        contentType: "longform",
+        outputMode: generation.longform.output_mode,
+        generationRules,
+      };
+
+      const newChapter = await regenerateLongformChapter(longformBrief, generation.longform, index);
+      generation.longform.chapters[index] = newChapter;
+
+      // Update dummy script section for backward compat
+      if (generation.script.development.sections[index]) {
+        generation.script.development.sections[index] = {
+          ...generation.script.development.sections[index],
+          section_name: newChapter.title,
+          script_text: newChapter.content,
+        };
+      }
+
+      await saveGeneration(generation);
+      return NextResponse.json({ target, index, data: newChapter, longform: generation.longform });
+    }
+
+    // For shortform targets, we need the brief
+    const brief = await getBrief(generation.briefId);
+    if (!brief) {
+      return NextResponse.json({ error: "Brief no encontrado" }, { status: 404 });
     }
 
     const briefInput = { ...brief, hookCount: generation.script.hooks.length, generationRules };
@@ -64,7 +103,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ target, index, data: newHook, script: generation.script });
     }
 
-    return NextResponse.json({ error: "Target invalido. Usa: section, cta, hook" }, { status: 400 });
+    return NextResponse.json({ error: "Target invalido. Usa: section, cta, hook, chapter" }, { status: 400 });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Error desconocido";
     console.error("Error regenerating:", message);

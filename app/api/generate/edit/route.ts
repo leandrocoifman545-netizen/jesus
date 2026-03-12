@@ -6,7 +6,7 @@ export async function PATCH(req: NextRequest) {
     const body = await req.json();
     const { generationId, path, value } = body as {
       generationId: string;
-      path: string; // e.g. "hooks.0.script_text", "development.sections.1.script_text", "cta.verbal_cta"
+      path: string; // e.g. "hooks.0.script_text", "development.sections.1.script_text", "cta.verbal_cta", "longform.hook.script_text", "longform.chapters.0.content"
       value: string;
     };
 
@@ -29,27 +29,44 @@ export async function PATCH(req: NextRequest) {
       return NextResponse.json({ error: "Path no permitido" }, { status: 400 });
     }
 
-    // Navigate the path and set the value
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const script = generation.script as any;
-    let current = script;
+    // Determine target object: longform paths navigate generation.longform,
+    // all other paths navigate generation.script
+    const isLongform = path.startsWith("longform.");
+    const navigablePath = isLongform ? path.slice("longform.".length) : path;
+    const navParts = navigablePath.split(".");
 
-    for (let i = 0; i < parts.length - 1; i++) {
-      const key = isNaN(Number(parts[i])) ? parts[i] : Number(parts[i]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const target = isLongform ? (generation as any).longform : (generation.script as any);
+
+    if (!target) {
+      return NextResponse.json(
+        { error: isLongform ? "No hay longform en esta generacion" : "No hay script en esta generacion" },
+        { status: 400 }
+      );
+    }
+
+    let current = target;
+
+    for (let i = 0; i < navParts.length - 1; i++) {
+      const key = isNaN(Number(navParts[i])) ? navParts[i] : Number(navParts[i]);
       if (current[key] === undefined) {
         return NextResponse.json({ error: `Path invalido: ${path}` }, { status: 400 });
       }
       current = current[key];
     }
 
-    const lastKey = isNaN(Number(parts[parts.length - 1]))
-      ? parts[parts.length - 1]
-      : Number(parts[parts.length - 1]);
+    const lastKey = isNaN(Number(navParts[navParts.length - 1]))
+      ? navParts[navParts.length - 1]
+      : Number(navParts[navParts.length - 1]);
     current[lastKey] = value;
 
     await saveGeneration(generation);
 
-    return NextResponse.json({ success: true, script: generation.script });
+    return NextResponse.json({
+      success: true,
+      script: generation.script,
+      longform: (generation as any).longform,
+    });
   } catch (err) {
     console.error("Edit error:", err);
     return NextResponse.json(

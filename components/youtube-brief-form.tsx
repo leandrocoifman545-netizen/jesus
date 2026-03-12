@@ -20,8 +20,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
   const router = useRouter();
   const toast = useToast();
   const [loading, setLoading] = useState(false);
-  const [streamText, setStreamText] = useState("");
-  const streamRef = useRef<HTMLPreElement>(null);
+  const [progress, setProgress] = useState(0);
+  const progressRef = useRef(0);
 
   const [projectId, setProjectId] = useState(projects[0]?.id || "");
   const [productDescription, setProductDescription] = useState("");
@@ -37,7 +37,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
-    setStreamText("");
+    setProgress(0);
+    progressRef.current = 0;
 
     const body = {
       projectId: projectId || undefined,
@@ -65,6 +66,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
+      // Estimate total chars based on duration for progress
+      const estimatedChars = targetDuration * 150 * 5; // rough char estimate
 
       while (true) {
         const { done, value } = await reader.read();
@@ -79,11 +82,10 @@ export default function YouTubeBriefForm({ projects }: Props) {
           try {
             const data = JSON.parse(line.slice(6));
             if (data.type === "chunk") {
-              setStreamText((prev) => prev + data.text);
-              if (streamRef.current) {
-                streamRef.current.scrollTop = streamRef.current.scrollHeight;
-              }
+              progressRef.current += data.text.length;
+              setProgress(Math.min(95, Math.round((progressRef.current / estimatedChars) * 100)));
             } else if (data.type === "done") {
+              setProgress(100);
               toast("Video generado");
               router.push(`/youtube/${data.generationId}`);
               return;
@@ -97,7 +99,7 @@ export default function YouTubeBriefForm({ projects }: Props) {
           }
         }
       }
-    } catch (err) {
+    } catch {
       toast("Error de conexión");
     }
     setLoading(false);
@@ -113,7 +115,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
             <select
               value={projectId}
               onChange={(e) => setProjectId(e.target.value)}
-              className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all"
+              disabled={loading}
+              className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all disabled:opacity-50"
             >
               <option value="">Sin proyecto</option>
               {projects.map((p) => (
@@ -133,7 +136,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
                 value={productDescription}
                 onChange={(e) => setProductDescription(e.target.value)}
                 placeholder="Ej: ADP - Academia de Productos Digitales"
-                className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all"
+                disabled={loading}
+                className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all disabled:opacity-50"
                 required={!selectedProject}
               />
             </div>
@@ -144,7 +148,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
                 value={targetAudience}
                 onChange={(e) => setTargetAudience(e.target.value)}
                 placeholder="Ej: Personas de 25-45 que quieren generar ingresos extra"
-                className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all"
+                disabled={loading}
+                className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all disabled:opacity-50"
                 required={!selectedProject}
               />
             </div>
@@ -157,8 +162,9 @@ export default function YouTubeBriefForm({ projects }: Props) {
           <div className="grid grid-cols-2 gap-3">
             <button
               type="button"
-              onClick={() => setOutputMode("full_script")}
-              className={`p-4 rounded-xl border text-left transition-all ${
+              onClick={() => !loading && setOutputMode("full_script")}
+              disabled={loading}
+              className={`p-4 rounded-xl border text-left transition-all disabled:opacity-50 ${
                 outputMode === "full_script"
                   ? "border-red-500/50 bg-red-500/5"
                   : "border-zinc-800 bg-zinc-900/30 hover:border-zinc-700"
@@ -176,8 +182,9 @@ export default function YouTubeBriefForm({ projects }: Props) {
             </button>
             <button
               type="button"
-              onClick={() => setOutputMode("structure")}
-              className={`p-4 rounded-xl border text-left transition-all ${
+              onClick={() => !loading && setOutputMode("structure")}
+              disabled={loading}
+              className={`p-4 rounded-xl border text-left transition-all disabled:opacity-50 ${
                 outputMode === "structure"
                   ? "border-red-500/50 bg-red-500/5"
                   : "border-zinc-800 bg-zinc-900/30 hover:border-zinc-700"
@@ -208,7 +215,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
             step={1}
             value={targetDuration}
             onChange={(e) => setTargetDuration(Number(e.target.value))}
-            className="w-full accent-red-500"
+            disabled={loading}
+            className="w-full accent-red-500 disabled:opacity-50"
           />
           <div className="flex justify-between text-xs text-zinc-600 mt-1">
             <span>5 min</span>
@@ -225,7 +233,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
             onChange={(e) => setAdditionalNotes(e.target.value)}
             placeholder="Ej: Video sobre cómo encontrar tu nicho para productos digitales. Enfocado en gente que no sabe por dónde empezar."
             rows={3}
-            className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all resize-none"
+            disabled={loading}
+            className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all resize-none disabled:opacity-50"
           />
         </div>
 
@@ -239,7 +248,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
             onChange={(e) => setYoutubeRef(e.target.value)}
             placeholder="Pegá acá la transcripción de un video de YouTube que te guste como referencia de estilo/estructura..."
             rows={4}
-            className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all resize-none"
+            disabled={loading}
+            className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white placeholder:text-zinc-600 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20 outline-none transition-all resize-none disabled:opacity-50"
           />
         </div>
 
@@ -268,16 +278,33 @@ export default function YouTubeBriefForm({ projects }: Props) {
         </button>
       </form>
 
-      {/* Stream output */}
-      {streamText && (
+      {/* Progress indicator */}
+      {loading && (
         <div className="mt-8">
-          <h3 className="text-sm font-medium text-zinc-400 mb-3">Generando...</h3>
-          <pre
-            ref={streamRef}
-            className="bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-xs text-zinc-300 max-h-96 overflow-y-auto whitespace-pre-wrap font-mono"
-          >
-            {streamText}
-          </pre>
+          <div className="flex items-center gap-3 mb-3">
+            <svg className="w-5 h-5 animate-spin text-red-400" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+            </svg>
+            <div className="flex-1">
+              <div className="flex items-center justify-between mb-1">
+                <p className="text-sm font-medium text-zinc-300">Generando guión de YouTube...</p>
+                <span className="text-xs text-zinc-500">{progress}%</span>
+              </div>
+              <div className="w-full bg-zinc-800 rounded-full h-1.5">
+                <div
+                  className="bg-gradient-to-r from-red-500 to-orange-500 h-1.5 rounded-full transition-all duration-300"
+                  style={{ width: `${progress}%` }}
+                />
+              </div>
+            </div>
+          </div>
+          <p className="text-xs text-zinc-600 ml-8">
+            {progress < 20 ? "Analizando brief y contexto..." :
+             progress < 50 ? "Escribiendo capítulos..." :
+             progress < 80 ? "Generando SEO y producción..." :
+             "Finalizando..."}
+          </p>
         </div>
       )}
     </div>
