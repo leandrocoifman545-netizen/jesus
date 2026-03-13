@@ -110,6 +110,14 @@ function formatFullScript(script: ScriptOutput, hookIndex: number): string {
     text += `[CTA genérico — se pega en edición]\n`;
   }
 
+  if (script.ingredients_used && script.ingredients_used.length > 0) {
+    text += `\nINGREDIENTES USADOS\n`;
+    text += `-`.repeat(50) + "\n";
+    for (const ing of script.ingredients_used) {
+      text += `${ing.category}#${ing.ingredient_number} ${ing.ingredient_name}\n`;
+    }
+  }
+
   return text;
 }
 
@@ -518,6 +526,18 @@ export default function ScriptViewer({
             {script.visual_format.recording_notes && (
               <p className="text-zinc-500 text-xs mt-1 italic">{script.visual_format.recording_notes}</p>
             )}
+          </div>
+        )}
+        {script.ingredients_used && script.ingredients_used.length > 0 && (
+          <div className="mt-4 border-l-2 border-amber-500/30 pl-4 ml-1 pt-2">
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Ingredientes usados</span>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {script.ingredients_used.map((ing, i) => (
+                <span key={i} className="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                  {ing.category}#{ing.ingredient_number} {ing.ingredient_name}
+                </span>
+              ))}
+            </div>
           </div>
         )}
       </div>

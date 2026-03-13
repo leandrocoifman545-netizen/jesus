@@ -69,6 +69,13 @@ export function resolveFormatLabel(platform: string): string {
   return PLATFORM_TO_FORMAT[platform.toLowerCase()] || "Vertical Ad (9:16)";
 }
 
+/** Ingrediente usado de la enciclopedia de 127 ingredientes */
+export interface IngredientUsed {
+  category: string; // "A" through "K"
+  ingredient_number: number; // 1-127
+  ingredient_name: string;
+}
+
 export interface ScriptOutput {
   platform_adaptation: {
     platform: string; // format label (e.g. "Vertical Ad (9:16)") — old data may have "TikTok"
@@ -89,6 +96,8 @@ export interface ScriptOutput {
     timing_seconds: number;
     cta_type: CTAType;
   };
+  /** Ingredientes de la enciclopedia usados en este guion (categorías A-K) */
+  ingredients_used?: IngredientUsed[];
   total_duration_seconds: number;
   word_count: number;
 }

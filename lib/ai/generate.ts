@@ -99,6 +99,13 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
     "timing_seconds": number,
     "cta_type": "swipe_up" | "link_bio" | "comment" | "shop_now" | "learn_more" | "download" | "sign_up" | "custom"
   },
+  "ingredients_used": [
+    {
+      "category": string ("A" a "K"),
+      "ingredient_number": number (1-127),
+      "ingredient_name": string (nombre exacto del ingrediente)
+    }
+  ],
   "total_duration_seconds": number,
   "word_count": number
 }`;
