@@ -1,7 +1,38 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { generateLongformStream, type BriefInput } from "@/lib/ai/generate";
-import { saveGeneration, getProject, getProjectBrandText } from "@/lib/storage/local";
+import { saveGeneration, getGeneration, getProject, getProjectBrandText } from "@/lib/storage/local";
 import crypto from "crypto";
+
+// PUT: Duplicate a longform generation
+export async function PUT(req: NextRequest) {
+  try {
+    const { sourceGenerationId } = await req.json();
+    if (!sourceGenerationId) {
+      return NextResponse.json({ error: "Falta sourceGenerationId" }, { status: 400 });
+    }
+    const source = await getGeneration(sourceGenerationId);
+    if (!source || source.contentType !== "longform") {
+      return NextResponse.json({ error: "Generación no encontrada" }, { status: 404 });
+    }
+    const newId = crypto.randomUUID();
+    await saveGeneration({
+      ...source,
+      id: newId,
+      briefId: newId,
+      title: `${source.title || "Video"} (copia)`,
+      status: "draft",
+      metrics: undefined,
+      sessionNotes: undefined,
+      createdAt: new Date().toISOString(),
+    });
+    return NextResponse.json({ generationId: newId });
+  } catch (err) {
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Error duplicando" },
+      { status: 500 }
+    );
+  }
+}
 
 export async function POST(req: NextRequest) {
   const body = await req.json();

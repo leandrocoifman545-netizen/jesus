@@ -70,8 +70,18 @@ export default function YouTubeViewer({ generation }: Props) {
   const [showMetrics, setShowMetrics] = useState(false);
   const [savingMeta, setSavingMeta] = useState(false);
 
+  // Title editing
+  const [title, setTitle] = useState(generation.title || lf?.title || "");
+  const [editingTitle, setEditingTitle] = useState(false);
+  const [titleDraft, setTitleDraft] = useState(title);
+  const [savingTitle, setSavingTitle] = useState(false);
+
   // Chapter regeneration
   const [regenChapter, setRegenChapter] = useState<number | null>(null);
+
+  // Delete
+  const [confirmDelete, setConfirmDelete] = useState(false);
+  const [deleting, setDeleting] = useState(false);
 
   // Teleprompter
   const [teleprompter, setTeleprompter] = useState(false);
@@ -136,6 +146,7 @@ export default function YouTubeViewer({ generation }: Props) {
       if (!res.ok) throw new Error("Error");
       setStatus(newStatus);
       toast(`Estado: ${STATUS_CONFIG[newStatus].label}`);
+      router.refresh();
     } catch {
       toast("Error actualizando estado", "error");
     } finally {
@@ -175,6 +186,64 @@ export default function YouTubeViewer({ generation }: Props) {
     if (!res.ok) throw new Error(data.error);
     if (data.longform) setLf(data.longform);
   }, [generationId]);
+
+  // --- Title ---
+  async function saveTitle() {
+    if (titleDraft === title) { setEditingTitle(false); return; }
+    setSavingTitle(true);
+    try {
+      const res = await fetch("/api/generate/status", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId, title: titleDraft }),
+      });
+      if (!res.ok) throw new Error("Error");
+      setTitle(titleDraft);
+      setEditingTitle(false);
+      toast("Título guardado");
+    } catch {
+      toast("Error guardando título", "error");
+    } finally {
+      setSavingTitle(false);
+    }
+  }
+
+  // --- Delete ---
+  async function handleDelete() {
+    setDeleting(true);
+    try {
+      const res = await fetch("/api/generate/delete", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId }),
+      });
+      if (!res.ok) throw new Error("Error");
+      toast("Video eliminado");
+      router.push("/youtube");
+      router.refresh();
+    } catch {
+      toast("Error eliminando", "error");
+      setDeleting(false);
+    }
+  }
+
+  // --- Duplicate ---
+  async function handleDuplicate() {
+    try {
+      const res = await fetch("/api/generate/longform", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sourceGenerationId: generationId }),
+      });
+      if (!res.ok) throw new Error("Error");
+      const data = await res.json();
+      toast("Video duplicado");
+      router.push(`/youtube/${data.generationId}`);
+      router.refresh();
+    } catch {
+      toast("Error duplicando", "error");
+    }
+  }
 
   // --- Chapter regeneration ---
   async function handleRegenChapter(index: number) {
@@ -308,7 +377,7 @@ export default function YouTubeViewer({ generation }: Props) {
   }
 
   const totalMin = Math.round(lf.total_duration_seconds / 60);
-  const mode = lf.output_mode === "structure" ? "Estructura" : "Guión completo";
+  const mode = lf.output_mode === "both" ? "Guión + Estructura" : lf.output_mode === "structure" ? "Estructura" : "Guión completo";
   const statusCfg = STATUS_CONFIG[status];
 
   // --- Teleprompter overlay ---
@@ -374,9 +443,69 @@ export default function YouTubeViewer({ generation }: Props) {
         </button>
 
         <div className="flex items-start justify-between gap-4 mb-3">
-          <h1 className="text-3xl font-extrabold tracking-tight text-white">{lf.title}</h1>
-          {/* Status dropdown */}
-          <div className="relative shrink-0">
+          {/* Editable title */}
+          <div className="flex-1 min-w-0">
+            {editingTitle ? (
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={titleDraft}
+                  onChange={(e) => setTitleDraft(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === "Enter") saveTitle(); if (e.key === "Escape") { setTitleDraft(title); setEditingTitle(false); } }}
+                  className="text-2xl font-extrabold tracking-tight text-white bg-transparent border-b border-red-500/50 outline-none w-full"
+                  autoFocus
+                  disabled={savingTitle}
+                />
+                <button onClick={saveTitle} disabled={savingTitle} className="text-xs text-red-400 hover:text-red-300 shrink-0">
+                  {savingTitle ? "..." : "Guardar"}
+                </button>
+                <button onClick={() => { setTitleDraft(title); setEditingTitle(false); }} className="text-xs text-zinc-500 hover:text-zinc-300 shrink-0">
+                  Cancelar
+                </button>
+              </div>
+            ) : (
+              <h1
+                className="text-3xl font-extrabold tracking-tight text-white cursor-pointer hover:text-zinc-200 transition-colors"
+                onClick={() => setEditingTitle(true)}
+                title="Click para editar"
+              >
+                {title || lf.title}
+              </h1>
+            )}
+          </div>
+          {/* Status dropdown + actions */}
+          <div className="flex items-center gap-2 shrink-0">
+            {/* Duplicate */}
+            <button
+              onClick={handleDuplicate}
+              className="p-1.5 rounded-lg text-zinc-600 hover:text-zinc-300 hover:bg-zinc-800/50 transition-all"
+              title="Duplicar video"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" /></svg>
+            </button>
+            {/* Delete */}
+            <div className="relative">
+              <button
+                onClick={() => setConfirmDelete(!confirmDelete)}
+                className="p-1.5 rounded-lg text-zinc-600 hover:text-red-400 hover:bg-red-500/10 transition-all"
+                title="Eliminar video"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" /></svg>
+              </button>
+              {confirmDelete && (
+                <div className="absolute right-0 top-full mt-1 bg-zinc-900 border border-red-500/30 rounded-xl p-3 shadow-xl z-10 w-48">
+                  <p className="text-xs text-zinc-400 mb-2">¿Eliminar este video?</p>
+                  <div className="flex gap-2">
+                    <button onClick={handleDelete} disabled={deleting} className="text-xs bg-red-600 hover:bg-red-500 text-white px-3 py-1 rounded-lg disabled:opacity-50">
+                      {deleting ? "..." : "Eliminar"}
+                    </button>
+                    <button onClick={() => setConfirmDelete(false)} className="text-xs text-zinc-500 hover:text-zinc-300">Cancelar</button>
+                  </div>
+                </div>
+              )}
+            </div>
+            {/* Status */}
+            <div className="relative">
             <button
               onClick={() => setStatusOpen(!statusOpen)}
               disabled={updatingStatus}
@@ -401,6 +530,7 @@ export default function YouTubeViewer({ generation }: Props) {
                 ))}
               </div>
             )}
+          </div>
           </div>
         </div>
 

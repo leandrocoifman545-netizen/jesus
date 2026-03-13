@@ -1043,7 +1043,7 @@ function buildLongformBriefContext(brief: BriefInput): string {
 
 **Producto/Servicio:** ${brief.productDescription}
 **Público Objetivo:** ${brief.targetAudience}
-**Modo de output:** ${outputMode === "full_script" ? "Guión completo (texto palabra por palabra)" : "Estructura flexible (bullet points por capítulo)"}
+**Modo de output:** ${outputMode === "both" ? "Ambos (guión completo + estructura)" : outputMode === "full_script" ? "Guión completo (texto palabra por palabra)" : "Estructura flexible (bullet points por capítulo)"}
 **Duración objetivo:** ${duration} minutos`;
 
   if (brief.brandTone) {
@@ -1075,8 +1075,15 @@ function buildLongformUserPrompt(brief: BriefInput): string {
 
   let prompt = buildLongformBriefContext(brief);
 
+  const modeInstruction = outputMode === "both"
+    ? `Generá un guión de YouTube largo con AMBOS: guión completo Y estructura. En cada capítulo:
+- "content": escribí el texto completo palabra por palabra (guión para teleprompter)
+- "key_points": escribí 5-10 bullet points con la estructura/ideas clave (para improvisar)
+Así el presentador tiene las dos opciones.`
+    : `Generá un guión de YouTube largo en modo "${outputMode}" con:`;
+
   prompt += `\n\n## INSTRUCCIÓN
-Generá un guión de YouTube largo en modo "${outputMode}" con:
+${modeInstruction}
 1. Hook potente de 30-60 segundos que enganche y prometa algo claro
 2. ${chapters} capítulos de contenido (cada uno con título, contenido y notas visuales)
 3. Transiciones entre capítulos que mantengan la curiosidad
@@ -1085,6 +1092,7 @@ Generá un guión de YouTube largo en modo "${outputMode}" con:
 6. SEO completo: título (máx 60 chars), descripción, tags, idea de thumbnail
 
 Duración objetivo: ${duration} minutos (~${duration * 150} palabras en full_script).
+${outputMode === "both" ? 'En el campo "output_mode" del JSON, usá "both".' : ""}
 
 ${brief.brandTone ? `Respetá el tono: "${brief.brandTone}".` : "Elegí el tono más apropiado para YouTube."}
 

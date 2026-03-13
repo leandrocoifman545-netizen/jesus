@@ -1,7 +1,7 @@
 // --- Long-form YouTube content schema ---
 // Separate from ScriptOutput (short-form ads) to avoid polluting that schema.
 
-export type LongformOutputMode = "full_script" | "structure";
+export type LongformOutputMode = "full_script" | "structure" | "both";
 
 export type LongformFramework =
   | "educational"        // Enseñar algo paso a paso

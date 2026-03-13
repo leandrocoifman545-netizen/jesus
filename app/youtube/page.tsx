@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { listGenerations } from "@/lib/storage/local";
-import RelativeTime from "@/components/relative-time";
+import YouTubeListFilter from "@/components/youtube-list-filter";
 
 export default async function YouTubePage() {
   const allGenerations = await listGenerations();
@@ -8,6 +8,20 @@ export default async function YouTubePage() {
 
   const hour = new Date().getHours();
   const greeting = hour < 12 ? "Buenos días" : hour < 19 ? "Buenas tardes" : "Buenas noches";
+
+  // Serialize for client component
+  const serialized = longformGenerations.map((gen) => ({
+    id: gen.id,
+    title: gen.title || "Sin título",
+    status: gen.status || "draft",
+    hookText: gen.longform?.hook?.script_text || gen.script.hooks[0]?.script_text || "",
+    duration: gen.longform ? Math.round(gen.longform.total_duration_seconds / 60) : Math.round(gen.script.total_duration_seconds / 60),
+    chapters: gen.longform?.chapters?.length || gen.script.development.sections.length,
+    chapterTitles: gen.longform?.chapters?.map((ch) => ({ number: ch.number, title: ch.title })) || [],
+    framework: gen.longform?.framework || gen.script.development.framework_used,
+    mode: gen.longform?.output_mode === "both" ? "Ambos" : gen.longform?.output_mode === "structure" ? "Estructura" : "Guión completo",
+    createdAt: gen.createdAt,
+  }));
 
   return (
     <div className="animate-fade-in">
@@ -44,7 +58,7 @@ export default async function YouTubePage() {
 
       {/* Stats */}
       {longformGenerations.length > 0 && (
-        <div className="grid grid-cols-3 gap-4 mb-10">
+        <div className="grid grid-cols-4 gap-4 mb-10">
           <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-5">
             <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Videos</p>
             <p className="text-2xl font-bold text-white">{longformGenerations.length}</p>
@@ -58,13 +72,19 @@ export default async function YouTubePage() {
           <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-5">
             <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Grabados</p>
             <p className="text-2xl font-bold text-white">
-              {longformGenerations.filter((g) => g.status === "recorded" || g.status === "winner").length}
+              {longformGenerations.filter((g) => g.status === "recorded").length}
+            </p>
+          </div>
+          <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-2xl p-5">
+            <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Winners</p>
+            <p className="text-2xl font-bold text-amber-400">
+              {longformGenerations.filter((g) => g.status === "winner").length}
             </p>
           </div>
         </div>
       )}
 
-      {/* Video list */}
+      {/* Video list with filters */}
       {longformGenerations.length === 0 ? (
         <div className="text-center py-24">
           <div className="w-16 h-16 rounded-3xl bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/10 flex items-center justify-center mx-auto mb-5">
@@ -87,71 +107,7 @@ export default async function YouTubePage() {
           </Link>
         </div>
       ) : (
-        <div className="space-y-3">
-          {longformGenerations.map((gen) => {
-            const lf = gen.longform;
-            const duration = lf ? Math.round(lf.total_duration_seconds / 60) : Math.round(gen.script.total_duration_seconds / 60);
-            const chapters = lf?.chapters?.length || gen.script.development.sections.length;
-            const framework = lf?.framework || gen.script.development.framework_used;
-            const mode = lf?.output_mode === "structure" ? "Estructura" : "Guión completo";
-
-            return (
-              <Link
-                key={gen.id}
-                href={`/youtube/${gen.id}`}
-                className="block group"
-              >
-                <div className="bg-zinc-900/50 hover:bg-zinc-800/50 border border-zinc-800/50 hover:border-red-500/20 rounded-2xl p-5 transition-all">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
-                        {gen.status === "recorded" && (
-                          <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-green-500/10 text-green-400 border border-green-500/20">
-                            Grabado
-                          </span>
-                        )}
-                        {gen.status === "winner" && (
-                          <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
-                            Winner
-                          </span>
-                        )}
-                      </div>
-                      <h3 className="text-base font-semibold text-white group-hover:text-red-300 transition-colors truncate">
-                        {gen.title || "Sin título"}
-                      </h3>
-                      <p className="text-sm text-zinc-500 mt-1 line-clamp-1">
-                        {lf?.hook?.script_text || gen.script.hooks[0]?.script_text || ""}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-4 text-xs text-zinc-500 shrink-0">
-                      <span className="px-2 py-1 rounded-lg bg-zinc-800/50 border border-zinc-700/30">
-                        {mode}
-                      </span>
-                      <span>{duration} min</span>
-                      <span>{chapters} caps</span>
-                      <span className="capitalize">{framework}</span>
-                      <RelativeTime date={gen.createdAt} />
-                    </div>
-                  </div>
-
-                  {/* Chapter preview */}
-                  {lf && lf.chapters.length > 0 && (
-                    <div className="flex gap-2 mt-3 overflow-hidden">
-                      {lf.chapters.map((ch) => (
-                        <span
-                          key={ch.number}
-                          className="px-2.5 py-1 rounded-lg bg-zinc-800/80 border border-zinc-700/30 text-[11px] text-zinc-400 truncate max-w-[200px]"
-                        >
-                          {ch.number}. {ch.title}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </Link>
-            );
-          })}
-        </div>
+        <YouTubeListFilter generations={serialized} />
       )}
     </div>
   );

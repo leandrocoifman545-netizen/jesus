@@ -27,7 +27,7 @@ export default function YouTubeBriefForm({ projects }: Props) {
   const [productDescription, setProductDescription] = useState("");
   const [targetAudience, setTargetAudience] = useState("");
   const [additionalNotes, setAdditionalNotes] = useState("");
-  const [outputMode, setOutputMode] = useState<"full_script" | "structure">("full_script");
+  const [outputMode, setOutputMode] = useState<"full_script" | "structure" | "both">("full_script");
   const [targetDuration, setTargetDuration] = useState(10);
   const [youtubeRef, setYoutubeRef] = useState("");
 
@@ -159,54 +159,44 @@ export default function YouTubeBriefForm({ projects }: Props) {
         {/* Output mode */}
         <div>
           <label className="block text-sm font-medium text-zinc-300 mb-3">Modo de output</label>
-          <div className="grid grid-cols-2 gap-3">
-            <button
-              type="button"
-              onClick={() => !loading && setOutputMode("full_script")}
-              disabled={loading}
-              className={`p-4 rounded-xl border text-left transition-all disabled:opacity-50 ${
-                outputMode === "full_script"
-                  ? "border-red-500/50 bg-red-500/5"
-                  : "border-zinc-800 bg-zinc-900/30 hover:border-zinc-700"
-              }`}
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <svg className={`w-4 h-4 ${outputMode === "full_script" ? "text-red-400" : "text-zinc-500"}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-                <span className={`text-sm font-semibold ${outputMode === "full_script" ? "text-white" : "text-zinc-400"}`}>
-                  Guión completo
-                </span>
-              </div>
-              <p className="text-xs text-zinc-500">Texto palabra por palabra. Para leer o usar como teleprompter.</p>
-            </button>
-            <button
-              type="button"
-              onClick={() => !loading && setOutputMode("structure")}
-              disabled={loading}
-              className={`p-4 rounded-xl border text-left transition-all disabled:opacity-50 ${
-                outputMode === "structure"
-                  ? "border-red-500/50 bg-red-500/5"
-                  : "border-zinc-800 bg-zinc-900/30 hover:border-zinc-700"
-              }`}
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <svg className={`w-4 h-4 ${outputMode === "structure" ? "text-red-400" : "text-zinc-500"}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                </svg>
-                <span className={`text-sm font-semibold ${outputMode === "structure" ? "text-white" : "text-zinc-400"}`}>
-                  Estructura
-                </span>
-              </div>
-              <p className="text-xs text-zinc-500">Bullet points por capítulo. Para improvisar con más libertad.</p>
-            </button>
+          <div className="grid grid-cols-3 gap-3">
+            {([
+              { value: "full_script" as const, label: "Guión completo", desc: "Texto palabra por palabra para teleprompter.", icon: "M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" },
+              { value: "structure" as const, label: "Estructura", desc: "Bullet points para improvisar.", icon: "M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" },
+              { value: "both" as const, label: "Ambos", desc: "Guión completo + estructura juntos.", icon: "M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" },
+            ]).map((opt) => {
+              const selected = outputMode === opt.value;
+              return (
+                <button
+                  key={opt.value}
+                  type="button"
+                  onClick={() => setOutputMode(opt.value)}
+                  disabled={loading}
+                  className={`relative p-4 rounded-xl border text-left transition-all disabled:opacity-50 cursor-pointer ${
+                    selected
+                      ? "border-red-500/50 bg-red-500/5 ring-1 ring-red-500/20"
+                      : "border-zinc-800 bg-zinc-900/30 hover:border-zinc-700"
+                  }`}
+                >
+                  <div className="flex items-center gap-2 mb-1 pointer-events-none">
+                    <svg className={`w-4 h-4 ${selected ? "text-red-400" : "text-zinc-500"}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d={opt.icon} />
+                    </svg>
+                    <span className={`text-sm font-semibold ${selected ? "text-white" : "text-zinc-400"}`}>
+                      {opt.label}
+                    </span>
+                  </div>
+                  <p className="text-xs text-zinc-500 pointer-events-none">{opt.desc}</p>
+                </button>
+              );
+            })}
           </div>
         </div>
 
         {/* Duration */}
         <div>
           <label className="block text-sm font-medium text-zinc-300 mb-2">
-            Duración objetivo: <span className="text-red-400 font-bold">{targetDuration} minutos</span>
+            Duración objetivo: <span className="text-red-400 font-bold">{targetDuration} min</span>
           </label>
           <input
             type="range"
@@ -219,9 +209,11 @@ export default function YouTubeBriefForm({ projects }: Props) {
             className="w-full accent-red-500 disabled:opacity-50"
           />
           <div className="flex justify-between text-xs text-zinc-600 mt-1">
-            <span>5 min</span>
-            <span>15 min</span>
-            <span>25 min</span>
+            <span>5</span>
+            <span>10</span>
+            <span>15</span>
+            <span>20</span>
+            <span>25</span>
           </div>
         </div>
 
