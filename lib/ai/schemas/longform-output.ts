@@ -10,7 +10,8 @@ export type LongformFramework =
   | "case_study"         // Analizar un caso real en profundidad
   | "debate"             // Presentar dos lados, dar opinión
   | "tutorial"           // Hacer algo en vivo, paso a paso
-  | "reaction_analysis"; // Reaccionar/analizar contenido existente
+  | "reaction_analysis"  // Reaccionar/analizar contenido existente
+  | "vsl_camuflado";     // VSL disfrazado de contenido: 9 actos (Benson) que parecen video educativo pero venden
 
 export interface LongformChapter {
   number: number;
