@@ -412,7 +412,7 @@ export default function ScriptViewer({
       </div>
 
       {/* Metrics panel (for recorded/winner) */}
-      {showMetrics && (status === "recorded" || status === "winner") && (
+      {showMetrics && (status === "confirmed" || status === "recorded" || status === "winner") && (
         <div className="bg-zinc-900/40 backdrop-blur border border-zinc-800/40 rounded-3xl p-7 space-y-5">
           <h3 className="text-xs font-semibold text-zinc-400">Metricas de rendimiento</h3>
           <div className="grid grid-cols-5 gap-2">

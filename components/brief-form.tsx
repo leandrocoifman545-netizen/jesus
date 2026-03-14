@@ -104,6 +104,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
     if (angleFamily) selectorParts.push(`[ANGULO: ${angleFamily}]`);
     if (bodyType) selectorParts.push(`[BODY TYPE: ${bodyType}]`);
     if (funnelStage) selectorParts.push(`[FUNNEL: ${funnelStage}]`);
+    if (segment) selectorParts.push(`[SEGMENTO: ${segment}]`);
     const selectorPrefix = selectorParts.length > 0 ? selectorParts.join(" ") : "";
     const finalNotes = [selectorPrefix, additionalNotes].filter(Boolean).join("\n") || undefined;
 

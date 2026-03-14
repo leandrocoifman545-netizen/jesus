@@ -131,8 +131,8 @@ export interface StoredBrief {
   projectId?: string;
   productDescription: string;
   targetAudience: string;
-  brandTone: string;
-  platform: "tiktok" | "reels" | "shorts";
+  brandTone?: string;
+  platform?: string;
   durationTarget?: number;
   hookCount: number;
   additionalNotes?: string;

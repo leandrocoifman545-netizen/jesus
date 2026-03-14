@@ -212,7 +212,8 @@ function resolveFormat(platform?: string): string {
 /** Extract segment (A/B/C/D) from brief fields if mentioned. */
 function extractSegment(brief: BriefInput): string | undefined {
   const haystack = `${brief.additionalNotes || ""} ${brief.targetAudience || ""}`;
-  const match = haystack.match(/\bseg(?:mento)?\s*([abcd])\b/i);
+  // Match "[SEGMENTO: A]" or "segmento A" or "seg A"
+  const match = haystack.match(/\[SEGMENTO:\s*([ABCD])\]/) || haystack.match(/\bseg(?:mento)?\s*([abcd])\b/i);
   return match ? match[1].toUpperCase() : undefined;
 }
 
