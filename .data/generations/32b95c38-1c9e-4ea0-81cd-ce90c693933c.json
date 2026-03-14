@@ -1,0 +1,123 @@
+{
+  "id": "32b95c38-1c9e-4ea0-81cd-ce90c693933c",
+  "briefId": "9a4fd03a-0005-4274-bce2-b00d3bfdd9a5",
+  "projectId": "adp",
+  "title": "RETARGET: Ya te registraste, ahora vení en vivo",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 45,
+      "content_style": "Cercano, urgente pero no presionado, voseo argentino",
+      "key_considerations": "Texto Grande → Persona: texto 'Ya te registraste. Pero si no venís en vivo...' corta a Jesús."
+    },
+    "visual_format": {
+      "format_name": "Texto Grande → Persona",
+      "difficulty_level": 2,
+      "setup_instructions": "Texto blanco sobre fondo negro: 'Ya te anotaste. Pero si no venís en vivo, te perdés lo más importante.' Corte a Jesús close-up.",
+      "recording_notes": "Tono íntimo, como hablándole a un amigo. Plano cerrado. Sin gritar. Urgencia suave."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "contrato_compromiso",
+        "script_text": "[TEXTO: 'Ya te anotaste. Falta lo más importante.'] Te registraste a la clase. Bien. Pero si no venís en vivo, te perdés lo que no queda grabado.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "[TEXTO: '¿Te vas a registrar y no aparecer? Otra vez?'] Siempre pasa lo mismo: te anotás con toda la intención y después no vas. Esta vez hacé algo diferente.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "[TEXTO: 'El 70% se registra. El 20% viene. El 5% actúa.'] ¿En qué grupo querés estar? La diferencia entre los que ganan y los que no es aparecer.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "historia_mini",
+        "script_text": "[TEXTO: 'Casi no vine. Hoy facturo en dólares.'] Un alumno estaba por no entrar a la clase. Pensó 'otro más'. Entró. Hoy tiene 3 productos vendiendo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "[TEXTO: '¿Cuántas veces te anotaste a algo y no fuiste?'] No es culpa tuya. Pero esta vez hay algo diferente: en vivo te muestro cosas que no están en ningún video grabado.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Reconocimiento (ya se anotó) → riesgo de perderse algo → urgencia legítima → decisión",
+      "sections": [
+        {
+          "section_name": "Problema — Lo que se pierde",
+          "script_text": "En la clase en vivo hago algo que no hago en ningún video: abro la IA en vivo, creo un producto digital en tiempo real, y contesto preguntas una por una. Eso no queda grabado.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Re-hook + Agitación",
+          "is_rehook": true,
+          "script_text": "Además, los que vienen en vivo reciben un bono que no está disponible después. No te lo puedo mandar por mail. Es solo para los que están ahí.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Solución — La decisión",
+          "script_text": "Poné una alarma. Bloqueá esa hora. Vení. Si no te sirve, perdiste una hora. Si te sirve, te puede cambiar la forma en que generás ingresos.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Nos vemos en la clase. Poné la alarma.",
+      "reason_why": "Ya diste el primer paso al registrarte. El segundo es aparecer.",
+      "timing_seconds": 5,
+      "cta_type": "micro_compromiso"
+    },
+    "ingredients_used": [
+      {
+        "category": "J",
+        "ingredient_number": 118,
+        "ingredient_name": "Deadline Temporal"
+      },
+      {
+        "category": "J",
+        "ingredient_number": 122,
+        "ingredient_name": "Costo de Esperar"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 104,
+        "ingredient_name": "Bonus Sorpresa"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 126,
+        "ingredient_name": "Presuposición"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 112,
+        "ingredient_name": "CTA con Micro-Compromiso"
+      }
+    ],
+    "model_sale_type": "Retargeting post-registro",
+    "body_type": "Mecanismo",
+    "angle_family": "6 — Proceso/demostración",
+    "angle_specific": "Nurture post-registro — asistir al webinar en vivo",
+    "segment": "A",
+    "funnel_stage": "RETARGET",
+    "niche": "General — retargeting",
+    "belief_change": {
+      "old_belief": "Ya me registré, puedo verlo grabado después",
+      "mechanism": "La demo en vivo y el bono exclusivo solo están disponibles para los que asisten",
+      "new_belief": "Tengo que estar en vivo para acceder a lo que realmente vale"
+    },
+    "transition_text": "Ya diste el primer paso al registrarte. El segundo es aparecer.",
+    "total_duration_seconds": 45,
+    "word_count": 100
+  },
+  "createdAt": "2026-03-14T16:31:42.051Z"
+}

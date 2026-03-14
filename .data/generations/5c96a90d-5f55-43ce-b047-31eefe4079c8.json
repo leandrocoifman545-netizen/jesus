@@ -1,0 +1,128 @@
+{
+  "id": "5c96a90d-5f55-43ce-b047-31eefe4079c8",
+  "briefId": "c9428d9b-84b1-4cc2-8a72-2b0b50269b50",
+  "projectId": "adp",
+  "title": "Nutrición + IA — Comparación de alternativas — Seg A",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 70,
+      "content_style": "Directo, argumentativo, voseo argentino",
+      "key_considerations": "Texto Grande → Persona: texto con las alternativas tachadas, corta a Jesús explicando."
+    },
+    "visual_format": {
+      "format_name": "Texto Grande → Persona",
+      "difficulty_level": 2,
+      "setup_instructions": "Texto inicial: lista de alternativas tachadas (Dropshipping, Freelance, Trading). Corte a Jesús en fondo limpio.",
+      "recording_notes": "El texto muestra las alternativas tachadas con una X roja. Jesús arranca explicando por qué ninguna sirve y qué sí funciona."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "negacion_directa",
+        "script_text": "[TEXTO: ❌Dropshipping ❌Trading ❌Freelance ❌Network] Probaste todo. No funcionó. Pero hay una forma de ganar plata online que no está en esa lista. Y tiene que ver con algo que ya sabés.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "[TEXTO: 'Tu nutricionista no vende online. Debería.'] Hay miles de personas buscando planes de alimentación en Google. Y la mayoría de los que venden esos planes no son nutricionistas. Son gente con ChatGPT.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "[TEXTO: '110.000 búsquedas/mes'] 'Plan de alimentación saludable' tiene 110 mil búsquedas mensuales. Cien diez mil personas buscando lo que vos ya sabés preparar.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia",
+        "script_text": "[TEXTO: 'El menú de tu casa vale más que un curso de Udemy'] Armás el menú semanal de tu familia sin pensar. Pero hay gente pagando 10 dólares por exactamente eso. La diferencia es el empaque.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "[TEXTO: 'El boom de la alimentación saludable en LATAM'] Cada vez más gente busca comer mejor pero no sabe cómo. Y paga por guías simples. No por nutricionistas caros. Por guías de 5 dólares.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "3_Acts",
+      "emotional_arc": "Frustración con alternativas → revelación del nicho oculto → claridad del proceso → motivación",
+      "sections": [
+        {
+          "section_name": "Acto 1 — Las alternativas que no funcionan",
+          "script_text": "Dropshipping: márgenes de nada, competencia china. Freelance: cambiás horas por plata, si no trabajás no cobrás. Trading: más casino que negocio. Network: dependés de que tu amigo le venda al amigo. Todo eso ya lo sabés porque lo probaste.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Re-hook + Acto 2 — El nicho oculto",
+          "is_rehook": true,
+          "script_text": "Pero hay algo que casi nadie te dice: si sabés de nutrición, de alimentación saludable, de cocina sana, ya tenés un negocio digital. Porque la gente no busca nutricionistas caros. Busca guías simples. 'Menú semanal para bajar de peso.' '7 desayunos sanos.' 'Qué comer con diabetes.' Eso lo podés armar con IA en una tarde.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Acto 3 — El proceso",
+          "script_text": "Le dictás a la IA tu conocimiento. Ella te arma la guía. La subís a Hotmart. Ponés un anuncio de 5 dólares. La gente te encuentra. Te compra. Y vos cobrás en dólares. Sin seguidores. Sin mostrar tu cara.",
+          "timing_seconds": 15
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo.",
+      "reason_why": "Si probaste de todo y nada funcionó, puede ser que el problema no seas vos sino el modelo. Mirá este.",
+      "timing_seconds": 8,
+      "cta_type": "directo"
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 30,
+        "ingredient_name": "El Ciclo Roto"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 27,
+        "ingredient_name": "La Parálisis por Información"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "El Proceso de N Pasos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "1 — Webinar gratuito",
+    "body_type": "Comparación",
+    "angle_family": "1 — Dolor económico",
+    "angle_specific": "Alternativas fallidas vs producto digital con IA en nicho nutrición",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "Nutrición / alimentación saludable",
+    "belief_change": {
+      "old_belief": "Ya probé todo para ganar plata online y nada funciona",
+      "mechanism": "Las alternativas fallan por modelo, no por falta de esfuerzo — productos digitales con IA son otro paradigma",
+      "new_belief": "El problema era el modelo de negocio, no yo"
+    },
+    "transition_text": "Si probaste de todo y nada funcionó, puede ser que el problema no seas vos sino el modelo.",
+    "total_duration_seconds": 70,
+    "word_count": 152
+  },
+  "createdAt": "2026-03-14T16:31:07.734Z"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "a3fdb552-54ce-40f1-b10a-cf0dd32ff691",
+  "briefId": "e375dc35-5953-488a-975d-3e0b82a53413",
+  "projectId": "adp",
+  "title": "MOFU: Taller $5 — Freelancers atrapados — Seg A",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 75,
+      "content_style": "Directo, confrontativo suave, voseo argentino",
+      "key_considerations": "Texto Grande → Persona: texto provocador, corta a Jesús con tono tough love."
+    },
+    "visual_format": {
+      "format_name": "Texto Grande → Persona",
+      "difficulty_level": 2,
+      "setup_instructions": "Texto inicial: '$5. 3 días. Tu primer producto digital.' Corte a Jesús, fondo limpio, plano medio.",
+      "recording_notes": "Tono MOFU: más directo que TOFU, ya asume que la persona conoce el concepto. Energía firme."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "script_text": "[TEXTO: 'Sos freelancer. Si no trabajás, no cobrás.'] Cambiás horas por plata. Todos los meses arrancás de cero. Y por más que subas tus tarifas, el techo es siempre el mismo: tu tiempo.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "analogia",
+        "script_text": "[TEXTO: 'Freelancer = taxi. Si frenás, dejás de facturar.'] Pero hay freelancers que crearon un producto digital con lo que saben y ahora cobran mientras duermen. La diferencia cuesta 5 dólares.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contrato_compromiso",
+        "script_text": "[TEXTO: '3 días. $5. Tu primer producto.'] Si estás dispuesto a dedicar 3 tardes y 5 dólares, yo me comprometo a que salgas con un producto digital listo para vender. Si no te sirve, te devuelvo la plata.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "[TEXTO: '¿Cuánto vale tu hora? ¿Y cuántas horas podés vender por mes?'] Hay un límite. Y cuando lo tocás, no hay tarifa que te salve. A menos que dejes de vender horas.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "dato_concreto",
+        "script_text": "[TEXTO: 'Un producto digital se crea 1 vez. Se vende infinitas.'] Lo que sabés de diseño, de programación, de marketing, de lo que sea, lo convertís en una guía con IA y cada venta te llega automáticamente.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Identificación del techo → frustración del modelo horas-por-plata → revelación del nuevo modelo → oferta irresistible",
+      "sections": [
+        {
+          "section_name": "Problema — El techo del freelance",
+          "script_text": "Cuando sos freelancer, tu ingreso tiene un techo: tus horas. Podés cobrar más caro, pero las horas del día son las mismas. Y cada mes arrancás de cero. Sin vacaciones. Sin enfermarte. Sin parar.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Re-hook + Agitación",
+          "is_rehook": true,
+          "script_text": "Lo peor es que ya tenés el conocimiento para salir de esa rueda. Lo que sabés de tu oficio vale plata empaquetado. Pero seguís vendiéndolo por hora en vez de venderlo una vez y cobrar para siempre.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Solución — El taller",
+          "script_text": "En 3 días te muestro cómo tomar lo que ya sabés, pedirle a la IA que te lo arme como producto digital, y ponerlo a la venta. Al tercer día tenés tu producto listo. Cuesta 5 dólares. Menos que una hora de tu laburo. Y si no te sirve, te devuelvo los 5.",
+          "timing_seconds": 20
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y anotate al taller.",
+      "reason_why": "Si estás cansado de cambiar horas por plata, estos 3 días te pueden dar una salida.",
+      "timing_seconds": 7,
+      "cta_type": "directo"
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 37,
+        "ingredient_name": "Dolor de Dependencia"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 38,
+        "ingredient_name": "Y lo peor es que..."
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "New Opportunity"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 103,
+        "ingredient_name": "Reducción al Absurdo"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 105,
+        "ingredient_name": "Garantía Explícita"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "2 — Taller $5 USD",
+    "body_type": "Mecanismo",
+    "angle_family": "1 — Dolor económico",
+    "angle_specific": "Freelancers atrapados en horas-por-plata",
+    "segment": "A",
+    "funnel_stage": "MOFU",
+    "niche": "General — freelancers",
+    "belief_change": {
+      "old_belief": "La única forma de ganar más como freelancer es cobrar más caro por hora",
+      "mechanism": "Empaquetar tu conocimiento en un producto digital que se vende solo, sin límite de horas",
+      "new_belief": "Puedo generar ingresos pasivos con lo que ya sé, sin dejar de hacer freelance"
+    },
+    "transition_text": "Si estás cansado de cambiar horas por plata, estos 3 días te pueden dar una salida.",
+    "total_duration_seconds": 75,
+    "word_count": 155
+  },
+  "createdAt": "2026-03-14T16:33:02.478Z"
+}

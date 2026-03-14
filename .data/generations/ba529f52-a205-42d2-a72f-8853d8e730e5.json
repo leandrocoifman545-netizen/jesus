@@ -1,0 +1,128 @@
+{
+  "id": "ba529f52-a205-42d2-a72f-8853d8e730e5",
+  "briefId": "27a6ed90-f1e0-4731-966c-86e1b5c77e55",
+  "projectId": "adp",
+  "title": "Jardinería + IA — Storytelling alumno — Seg C",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 70,
+      "content_style": "Narrativo, cálido, voseo argentino",
+      "key_considerations": "Texto Grande → Persona: texto con la frase del alumno, corta a Jesús contando la historia."
+    },
+    "visual_format": {
+      "format_name": "Texto Grande → Persona",
+      "difficulty_level": 2,
+      "setup_instructions": "Texto inicial: 'No sé nada de tecnología. Solo sé de plantas.' — Alumna, 54 años. Corte a Jesús sentado, tono storytelling.",
+      "recording_notes": "Jesús cuenta la historia como si la conociera personalmente. Tono de admiración, no de profesor. Pausas para que la historia respire."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "script_text": "[TEXTO: 'No sé nada de tecnología. Solo sé de plantas.'] Una alumna de 54 años me dijo eso. Hoy vende guías de huerta urbana. Te cuento qué pasó.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "[TEXTO: 'La mejor vendedora de productos digitales que conozco cultiva tomates.'] No sabe de marketing. No tiene redes. Tiene tierra en las uñas y un celular. Y factura en dólares.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "[TEXTO: '60.000 búsquedas: huerta en casa'] 60 mil personas por mes buscan cómo armar una huerta en su casa. La mayoría termina en un video de YouTube genérico. Pero hay quienes venden la solución.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "script_text": "[TEXTO: 'Tu balcón tiene más valor del que pensás.'] Tenés macetas en el balcón. Les hablás a las plantas. Tus vecinos te piden gajos. Pero nunca pensaste que eso que hacés por amor tiene un mercado.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "script_text": "[TEXTO: 'Yo maté todas las plantas que tuve.'] No tengo ni idea de jardinería. Pero descubrí que la gente que sí sabe tiene un negocio que ni se imagina. Y es más simple de lo que parece.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "HSO",
+      "emotional_arc": "Presentación de persona improbable → progresión temporal → revelación del proceso → identificación y esperanza",
+      "sections": [
+        {
+          "section_name": "Hook-Story — La alumna",
+          "script_text": "Cuando esta alumna entró, me dijo: 'Jesús, yo no sé nada de computadoras. Lo único que sé es de plantas.' Le dije: perfecto. Eso es exactamente lo que necesitás.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Re-hook + Story — El proceso",
+          "is_rehook": true,
+          "script_text": "Le pedimos a la IA que armara una guía de huerta urbana con todo lo que ella sabe. Qué plantar según la temporada. Cómo cuidar cada planta. Errores comunes. La IA le armó una guía de 30 páginas en una tarde. La subió a Hotmart. Puso un anuncio de 5 dólares.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Offer — El resultado",
+          "script_text": "A la semana tenía sus primeras ventas. Guías de 7 dólares. Cada una le llega automáticamente al comprador. Ella no tiene que hacer nada. Solo creó una vez y vende infinitas veces. Sin mostrar su cara. Sin saber de tecnología. Solo sabiendo de plantas.",
+          "timing_seconds": 18
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo.",
+      "reason_why": "Si sabés de algo — lo que sea — y querés ver cómo convertirlo en un ingreso, mirá la clase gratuita.",
+      "timing_seconds": 8,
+      "cta_type": "directo"
+    },
+    "ingredients_used": [
+      {
+        "category": "E",
+        "ingredient_number": 61,
+        "ingredient_name": "Resultado de Alumnos"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Testimonio de Persona Improbable"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case Study Mini"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 73,
+        "ingredient_name": "Demo Implícita"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "Future Pacing 7 Días"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "1 — Webinar gratuito",
+    "body_type": "Storytelling",
+    "angle_family": "7 — Edad/reinvención",
+    "angle_specific": "Mujer mayor que monetiza jardinería con IA",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "Jardinería / huerta urbana",
+    "belief_change": {
+      "old_belief": "Lo que sé de plantas no tiene valor comercial, es solo un hobby",
+      "mechanism": "La IA empaqueta el conocimiento en guía vendible + Hotmart + anuncio barato = negocio automático",
+      "new_belief": "Cualquier conocimiento específico tiene un mercado si lo empaquetás bien"
+    },
+    "transition_text": "Si sabés de algo — lo que sea — y querés ver cómo convertirlo en un ingreso, mirá la clase gratuita.",
+    "total_duration_seconds": 70,
+    "word_count": 148
+  },
+  "createdAt": "2026-03-14T16:32:22.087Z"
+}

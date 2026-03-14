@@ -1,0 +1,123 @@
+{
+  "id": "cfefb1c9-8fd9-420b-8353-e19da3505718",
+  "briefId": "3d65db33-c829-4a8f-bbbe-b96255e97390",
+  "projectId": "adp",
+  "title": "Consumidor de IA — Ángulo nuevo — Seg B",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 65,
+      "content_style": "Directo, provocativo suave, voseo argentino",
+      "key_considerations": "Texto Grande → Persona: pantalla negra con texto impactante 2-3s, corta a Jesús respondiendo."
+    },
+    "visual_format": {
+      "format_name": "Texto Grande → Persona",
+      "difficulty_level": 2,
+      "setup_instructions": "Pantalla negra con texto blanco grande (CapCut/Canva). Corte seco a Jesús en plano medio sobre fondo limpio.",
+      "recording_notes": "El texto aparece 2-3 segundos. Jesús arranca hablando inmediatamente después del corte, como si respondiera al texto. Energía media-alta."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "script_text": "[TEXTO EN PANTALLA: 'Usás IA todos los días. Pero no ganás un peso con ella.'] Y no es porque no se pueda. Es porque nadie te mostró cómo. Hasta ahora.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "analogia",
+        "script_text": "[TEXTO EN PANTALLA: 'Tenés un Ferrari en el garage. Lo usás para ir al kiosco.'] Eso es lo que hacés con la IA. La usás para chistes y recetas cuando podrías usarla para generar ingresos.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "[TEXTO EN PANTALLA: 'Los que más usan IA son los que menos ganan con ella.'] ¿Sabés por qué? Porque la usan para consumir contenido en vez de crearlo y venderlo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "script_text": "[TEXTO EN PANTALLA: '114 de cada 100 leads nos hablan de IA.'] La IA es el tema #1 que le interesa a nuestra audiencia. Pero casi nadie la usa para lo que realmente sirve: ganar plata.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "[TEXTO EN PANTALLA: '¿Cuántas horas le dedicaste a la IA esta semana?'] ¿Y cuánto dinero generaste con esas horas? Si la respuesta es cero, estás haciendo exactamente lo mismo que el 99%.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Reconocimiento (ya usás IA) → incomodidad (no ganás nada) → reencuadre (de consumidor a productor) → claridad",
+      "sections": [
+        {
+          "section_name": "Problema — El uso equivocado",
+          "script_text": "Abrís ChatGPT. Le pedís que te resuma un artículo. Que te haga un mail. Que te arme un plan de comidas. Genial. Pero mientras vos la usás para tareas, hay gente que la usa para crear productos digitales y venderlos.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Re-hook + Agitación",
+          "is_rehook": true,
+          "script_text": "La misma herramienta. El mismo ChatGPT que tenés vos. La diferencia es que ellos le piden que arme una guía con lo que saben de un tema, la suben a una plataforma, ponen un anuncio, y cobran. Vos le pedís chistes.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Solución — El cambio",
+          "script_text": "No necesitás aprender nada nuevo. Necesitás usar lo que ya tenés de una forma diferente. Le decís a la IA lo que sabés de cualquier tema. Ella lo empaqueta. Vos lo vendés. Son 3 pasos. Y el primero lo podés hacer hoy, ahora, cuando termines de ver esto.",
+          "timing_seconds": 18
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo.",
+      "reason_why": "Si ya usás IA y querés empezar a ganar plata con ella, acá te muestro cómo.",
+      "timing_seconds": 7,
+      "cta_type": "directo"
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 27,
+        "ingredient_name": "La Parálisis por Información"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 42,
+        "ingredient_name": "Ironía Dolorosa"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "El Atajo Legítimo"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "1 — Webinar gratuito",
+    "body_type": "Cambio de creencia",
+    "angle_family": "11 — Consumidor de IA",
+    "angle_specific": "Reencuadre: de consumidor de IA a productor con IA",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "General — IA como herramienta de producción",
+    "belief_change": {
+      "old_belief": "Uso IA para tareas y eso ya está bien",
+      "mechanism": "Misma herramienta, diferente pedido: crear un producto vendible en vez de tareas sueltas",
+      "new_belief": "Ya tengo la herramienta, solo necesito cambiar lo que le pido"
+    },
+    "transition_text": "Si ya usás IA y querés empezar a ganar plata con ella, acá te muestro cómo.",
+    "total_duration_seconds": 65,
+    "word_count": 142
+  },
+  "createdAt": "2026-03-14T16:30:29.730Z"
+}
