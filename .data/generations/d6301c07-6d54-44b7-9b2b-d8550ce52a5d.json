@@ -1,0 +1,128 @@
+{
+  "id": "d6301c07-6d54-44b7-9b2b-d8550ce52a5d",
+  "briefId": "823d56e3-95a9-40dd-a58b-a33fb6664072",
+  "projectId": "adp",
+  "title": "Crianza + IA — Mamá con 1 hora al día",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 70,
+      "content_style": "Directo, empático, tono Jesús — voseo argentino, informal, sin presión",
+      "key_considerations": "Split screen: arriba screencast IA creando guía, abajo Jesús hablando. Cortes rápidos entre pantallas."
+    },
+    "visual_format": {
+      "format_name": "Split Screen 2 Pantallas",
+      "difficulty_level": 2,
+      "setup_instructions": "Arriba: screen recording del celular mostrando ChatGPT armando una guía de crianza. Abajo: Jesús hablando a cámara en plano medio. Editar en CapCut con layout 50/50.",
+      "recording_notes": "Grabar primero el talking head completo. Después grabar screen recording de ChatGPT creando guía de rutinas para bebés. Combinar en edición. El screen recording acompaña las partes donde habla del proceso."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Son las 11 de la noche. Los pibes se durmieron. Tenés una hora antes de caer rendida. Y la usás para scrollear Instagram viendo gente que vende cosas online. Pero hay algo que no te contaron sobre esa hora.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "negacion_directa",
+        "script_text": "¿Sabés quién te convenció de que necesitás 4 horas por día para emprender? Los mismos que te venden cursos de 40 módulos. Hay otra forma, y tarda lo mismo que acostar a tus hijos.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las mamás que más venden productos digitales son las que menos tiempo tienen. No es a pesar del poco tiempo. Es justamente por eso: no se dan el lujo de perder ni un minuto en cosas que no funcionan.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "script_text": "Voy a ser honesto. Yo no tengo ni idea de crianza. Pero cuando vi que \"rutinas para bebés\" tiene 40 mil búsquedas por mes en Google, entendí algo que la mayoría no ve.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "En 12 meses, las mamás que hoy venden guías de crianza con IA van a facturar más que muchos profesionales con título. Y la mayoría no tiene ni redes sociales.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "BAB",
+      "emotional_arc": "Identificación (sos mamá sin tiempo) → frustración amplificada (cursos imposibles) → quiebre de creencia (WhatsApp = habilidad suficiente) → claridad del proceso (3 pasos) → alivio (una hora al día alcanza)",
+      "sections": [
+        {
+          "section_name": "Before — Situación actual",
+          "script_text": "La mayoría de las mamás que me escriben me dicen lo mismo: \"Quiero generar ingresos pero no tengo tiempo.\" Y lo peor es que cada curso que ven les pide 4 horas por día. Cuatro horas que no existen.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Re-hook + Quiebre de creencia",
+          "is_rehook": true,
+          "script_text": "Pero pensalo así: ¿sabés mandar un audio de WhatsApp? Entonces ya tenés la habilidad que necesitás. Porque hoy le dictás a la inteligencia artificial lo que sabés de crianza — rutinas, berrinches, sueño infantil, lo que sea — y en una tarde te arma una guía completa lista para vender.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "After — El proceso simplificado",
+          "script_text": "Son 3 pasos: le pedís a la IA que arme tu producto. Ponés un anuncio de 5 dólares. Y la gente te escribe por WhatsApp. No hay funnel. No hay landing page. No hay email marketing. Una hora al día. Eso es todo.",
+          "timing_seconds": 18
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo.",
+      "reason_why": "Si podés dedicar una hora cuando los chicos duermen, esto te va a cambiar la ecuación.",
+      "timing_seconds": 7,
+      "cta_type": "directo"
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 38,
+        "ingredient_name": "Y lo peor es que..."
+      },
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "El Proceso de N Pasos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "1 — Webinar gratuito (lead magnet)",
+    "body_type": "Cambio de creencia",
+    "angle_family": "5 — Mamá/tiempo limitado",
+    "angle_specific": "Mamá sin tiempo + crianza como nicho vendible",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "Crianza / maternidad",
+    "belief_change": {
+      "old_belief": "Para vender algo online necesito tiempo, y yo como mamá no tengo",
+      "mechanism": "La IA crea el producto en una tarde con lo que ya sabés, y se vende con un anuncio + WhatsApp",
+      "new_belief": "Una hora al día alcanza si el sistema hace el trabajo pesado por vos"
+    },
+    "transition_text": "Si podés dedicar una hora cuando los chicos duermen, esto te va a cambiar la ecuación.",
+    "total_duration_seconds": 70,
+    "word_count": 142
+  },
+  "createdAt": "2026-03-14T16:03:24.099Z"
+}
