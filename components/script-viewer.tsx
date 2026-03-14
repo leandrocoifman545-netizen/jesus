@@ -59,25 +59,6 @@ const HOOK_TYPE_COLORS: Record<string, string> = {
   authority_social_proof: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
 };
 
-function CopyButton({ text, label }: { text: string; label?: string }) {
-  const [copied, setCopied] = useState(false);
-
-  function handleCopy() {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }
-
-  return (
-    <button
-      onClick={handleCopy}
-      className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
-    >
-      {copied ? "Copiado!" : label || "Copiar"}
-    </button>
-  );
-}
-
 function formatFullScript(script: ScriptOutput, hookIndex: number): string {
   const hook = script.hooks[hookIndex];
   let text = `GUION - ${resolveFormatLabel(script.platform_adaptation.platform)} (${script.total_duration_seconds}s) | ~${script.word_count} palabras\n`;

@@ -13,6 +13,7 @@ export interface CoverageData {
   byVisualFormat: Record<string, number>;
   byNiche: Record<string, number>;
   byLeadType: Record<string, number>;
+  byModelSaleType: Record<string, number>;
   byStatus: Record<string, number>;
   gaps: string[];
   lastUpdated: string;
@@ -72,6 +73,7 @@ export async function computeCoverage(): Promise<CoverageData> {
     byVisualFormat: {},
     byNiche: {},
     byLeadType: {},
+    byModelSaleType: {},
     byStatus: {},
     gaps: [],
     lastUpdated: new Date().toISOString(),
@@ -140,8 +142,7 @@ export async function computeCoverage(): Promise<CoverageData> {
 
     // Model sale type
     if (script.model_sale_type) {
-      const key = `model_sale_${script.model_sale_type}`;
-      data.byBodyType[key] = (data.byBodyType[key] || 0) + 1;
+      data.byModelSaleType[script.model_sale_type] = (data.byModelSaleType[script.model_sale_type] || 0) + 1;
     }
   }
 
@@ -159,7 +160,7 @@ export async function computeCoverage(): Promise<CoverageData> {
     if (!data.bySegment[s]) data.gaps.push(`Segmento ${s} sin cobertura`);
   }
   for (const f of allFunnels) {
-    if (!data.byFunnel[f.toLowerCase()]) data.gaps.push(`Funnel ${f} sin cobertura`);
+    if (!data.byFunnel[f] && !data.byFunnel[f.toLowerCase()]) data.gaps.push(`Funnel ${f} sin cobertura`);
   }
   for (const h of allHookTypes) {
     if (!data.byLeadType[h]) data.gaps.push(`Lead type "${h}" sin usar`);

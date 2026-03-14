@@ -82,7 +82,7 @@ export const AVATAR_CONTEXT = `## INTELIGENCIA DE AUDIENCIA REAL (8,074 leads, d
 
 ### Frases textuales por segmento
 
-**Segmento A — Principiante total (no sabe por dónde empezar):**
+**Segmento A — Emprendedor frustrado (quiere independencia, ya intentó o quiere arrancar):**
 - "Tengo varias ideas pero nada aún"
 - "No sé cómo darle forma a mi idea de negocio con IA"
 - "No conozco las herramientas especializadas de IA para crear productos digitales que vendan"
@@ -90,7 +90,7 @@ export const AVATAR_CONTEXT = `## INTELIGENCIA DE AUDIENCIA REAL (8,074 leads, d
 - "No sé cómo conseguir clientes"
 - "No sé cómo vender el producto"
 
-**Segmento B — Con intención pero frenado por tiempo/plata:**
+**Segmento B — Principiante tecnológico 40-60 (miedo a quedarse afuera):**
 - "Si Generar Ingresos que sea mi fuente de trabajo y así no descuidar el cuidado de mis hijos"
 - "Falta de tiempo corrido" — no tienen bloques de horas, tienen fragmentos
 - "No llegar a fin de mes"
@@ -98,7 +98,7 @@ export const AVATAR_CONTEXT = `## INTELIGENCIA DE AUDIENCIA REAL (8,074 leads, d
 - "No tengo esa plata"
 - "Tiene dificultades económicas y recurre a rifas para cubrir sus gastos"
 
-**Segmento C — Ya intentó y fracasó:**
+**Segmento C — Mamá/papá sobrecargado (poco tiempo, mucha culpa):**
 - "Publicidad en redes sociales sin resultados"
 - "Intentó vender cursos de resina epoxi en Hotmart sin éxito"
 - "Comenzó un proyecto hace unos años pero lo abandonó"
@@ -106,7 +106,7 @@ export const AVATAR_CONTEXT = `## INTELIGENCIA DE AUDIENCIA REAL (8,074 leads, d
 - "Ofrecer productos sin WhatsApp Business ni Facebook (solo charlando)"
 - "Poca o casi nula experiencia en la venta de productos"
 
-**Segmento D — Escéptico / quemado:**
+**Segmento D — Escéptico con estafa previa (solo entra si es gratis):**
 - "Me están estafando, quiero aprender lo que dijo, no escucharlo decir lo mismo todas las veces"
 - "Cuando empezará a enseñar de verdad o es para vender otro curso más caro"
 - "No tiene sentido el vídeo que me mandaste"

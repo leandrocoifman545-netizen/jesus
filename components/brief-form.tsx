@@ -100,7 +100,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
 
     // Build structured prefix from selectors
     const selectorParts: string[] = [];
-    if (targetDuration) selectorParts.push(`[DURACION: ${targetDuration}]`);
+    if (targetDuration) selectorParts.push(`[DURACIÓN: ${targetDuration}]`);
     if (angleFamily) selectorParts.push(`[ANGULO: ${angleFamily}]`);
     if (bodyType) selectorParts.push(`[BODY TYPE: ${bodyType}]`);
     if (funnelStage) selectorParts.push(`[FUNNEL: ${funnelStage}]`);
@@ -305,10 +305,10 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
             Sin segmento
           </button>
           {[
-            { value: "A", label: "A: Jovenes 25-35 (emprendedores, escepticos)" },
-            { value: "B", label: "B: Intentaron y fallaron (quemados, 30-45)" },
-            { value: "C", label: "C: Mamas 40+ (sin tiempo, ingreso extra)" },
-            { value: "D", label: "D: Jubilados/+50 (desconfiados, baja tecnologia)" },
+            { value: "A", label: "A: Emprendedor frustrado" },
+            { value: "B", label: "B: Principiante tech 40-60" },
+            { value: "C", label: "C: Mamá/papá sobrecargado" },
+            { value: "D", label: "D: Escéptico / estafa previa" },
           ].map((seg) => (
             <button
               key={seg.value}
