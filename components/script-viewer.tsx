@@ -23,6 +23,7 @@ const HOOK_TYPE_LABELS: Record<string, string> = {
   contrato_compromiso: "Contrato",
   actuacion_dialogo: "Diálogo",
   anti_publico: "Anti-público",
+  // Legacy English types (for old data)
   curiosity_gap: "Curiosity Gap",
   contrarian: "Contrarian",
   question: "Pregunta",
@@ -589,6 +590,31 @@ export default function ScriptViewer({
                   Cuerpo: {script.body_type.replace(/_/g, ' ')}
                 </span>
               )}
+              {script.segment && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                  Seg: {script.segment}
+                </span>
+              )}
+              {script.niche && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20">
+                  {script.niche}
+                </span>
+              )}
+              {script.funnel_stage && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">
+                  {script.funnel_stage}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
+        {script.belief_change && (
+          <div className="mt-4 border-l-2 border-orange-500/30 pl-4 ml-1 pt-2">
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Cambio de creencia</span>
+            <div className="mt-2 space-y-1 text-[12px]">
+              <div className="text-red-400/80"><span className="text-zinc-600">Antes:</span> {script.belief_change.old_belief}</div>
+              <div className="text-zinc-500"><span className="text-zinc-600">Mecanismo:</span> {script.belief_change.mechanism}</div>
+              <div className="text-green-400/80"><span className="text-zinc-600">Después:</span> {script.belief_change.new_belief}</div>
             </div>
           </div>
         )}

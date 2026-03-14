@@ -99,11 +99,50 @@ export async function computeCoverage(): Promise<CoverageData> {
 
     // Extract tags from title/notes
     const tags = extractTags(gen);
-    if (tags.angle) data.byAngle[tags.angle] = (data.byAngle[tags.angle] || 0) + 1;
-    if (tags.segment) data.bySegment[tags.segment] = (data.bySegment[tags.segment] || 0) + 1;
-    if (tags.funnel) data.byFunnel[tags.funnel] = (data.byFunnel[tags.funnel] || 0) + 1;
-    if (tags.bodyType) data.byBodyType[tags.bodyType] = (data.byBodyType[tags.bodyType] || 0) + 1;
-    if (tags.niche) data.byNiche[tags.niche] = (data.byNiche[tags.niche] || 0) + 1;
+
+    // Prefer structured fields from schema, fall back to text extraction
+    const script = gen.script as any;
+
+    // Angle family (structured field)
+    if (script.angle_family) {
+      data.byAngle[script.angle_family] = (data.byAngle[script.angle_family] || 0) + 1;
+    } else if (tags.angle) {
+      data.byAngle[tags.angle] = (data.byAngle[tags.angle] || 0) + 1;
+    }
+
+    // Segment (structured field)
+    if (script.segment) {
+      data.bySegment[script.segment] = (data.bySegment[script.segment] || 0) + 1;
+    } else if (tags.segment) {
+      data.bySegment[tags.segment] = (data.bySegment[tags.segment] || 0) + 1;
+    }
+
+    // Body type (structured field)
+    if (script.body_type) {
+      data.byBodyType[script.body_type] = (data.byBodyType[script.body_type] || 0) + 1;
+    } else if (tags.bodyType) {
+      data.byBodyType[tags.bodyType] = (data.byBodyType[tags.bodyType] || 0) + 1;
+    }
+
+    // Funnel stage (structured field)
+    if (script.funnel_stage) {
+      data.byFunnel[script.funnel_stage] = (data.byFunnel[script.funnel_stage] || 0) + 1;
+    } else if (tags.funnel) {
+      data.byFunnel[tags.funnel] = (data.byFunnel[tags.funnel] || 0) + 1;
+    }
+
+    // Niche (structured field)
+    if (script.niche) {
+      data.byNiche[script.niche] = (data.byNiche[script.niche] || 0) + 1;
+    } else if (tags.niche) {
+      data.byNiche[tags.niche] = (data.byNiche[tags.niche] || 0) + 1;
+    }
+
+    // Model sale type
+    if (script.model_sale_type) {
+      const key = `model_sale_${script.model_sale_type}`;
+      data.byBodyType[key] = (data.byBodyType[key] || 0) + 1;
+    }
   }
 
   // Detect gaps
@@ -114,8 +153,6 @@ export async function computeCoverage(): Promise<CoverageData> {
     "contraintuitivo", "provocacion", "historia_mini", "analogia",
     "negacion_directa", "observacion_tendencia", "timeline_provocacion",
     "contrato_compromiso", "actuacion_dialogo", "anti_publico",
-    "curiosity_gap", "contrarian", "question", "statistical",
-    "pain_point", "pattern_interrupt", "reveal_teaser", "authority_social_proof",
   ];
 
   for (const s of allSegments) {

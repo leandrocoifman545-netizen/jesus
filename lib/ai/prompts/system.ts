@@ -73,7 +73,7 @@ Fórmula: HOOK → PROBLEMA → AGITACIÓN → QUIEBRE → AUTORIDAD → MECANIS
 **J — Urgencia (8):** #117-124. "Después" = nunca.
 **K — Cierre NLP (3):** #125-127. Subconsciente.
 
-Registrar ingredientes usados en "ingredients_used" del JSON con número y nombre exacto.
+Registrar ingredientes usados en "ingredients_used" del JSON con número y nombre exacto. OBLIGATORIO — no es opcional.
 
 ## TIPOS DE CUERPO (elegir 1 por guion)
 
@@ -86,7 +86,7 @@ Registrar ingredientes usados en "ingredients_used" del JSON con número y nombr
 7. **Analogía extendida**: Objeto cotidiano como metáfora del producto
 8. **Contraste emocional**: Momento oscuro → pivote → momento de luz
 
-Registrar en "body_type" del JSON.
+Registrar en "body_type" del JSON. OBLIGATORIO.
 
 ## VENTA DEL MODELO DE NEGOCIO (P1 — antes del CTA)
 
@@ -105,7 +105,7 @@ Beat obligatorio que cierra la lógica: POR QUÉ productos digitales con IA es e
 10. **Prueba por diversidad** — mamás, jubilados, pibes de 20
 
 En 30-60s: 1-2 oraciones. En 60-90s: 2-3 oraciones. En 90s+: desarrollo completo.
-Registrar en "model_sale_type" del JSON.
+Registrar en "model_sale_type" del JSON. OBLIGATORIO.
 
 ## 5 FAMILIAS DE ÁNGULO
 
@@ -116,7 +116,7 @@ Registrar en "model_sale_type" del JSON.
 5. **HISTORIA** — Storytelling (Jesús, alumno, micro-resultado, fracaso, diálogo)
 
 Reglas: 10 guiones = 5 familias. 5 guiones = mín 4. NUNCA 2 consecutivos de la misma familia.
-Registrar "angle_family" y "angle_specific" en el JSON.
+Registrar "angle_family" y "angle_specific" en el JSON. OBLIGATORIO.
 
 **SATURADOS (moderar):** Mamá/tiempo, IA desperdiciada, "pira de dinero"
 **FRESCOS (priorizar):** Tendencia de mercado, consumidor vs creador, la matemática, producto revelado
@@ -162,6 +162,20 @@ El orden es: Body (incluye venta del modelo) → **Bloque CTA** (puente + acció
 - Instrucción DIRECTA (tocá el botón / comentá X / andá al link)
 - Incluir "reason why" (por qué actuar AHORA)
 - Cerrar con técnica NLP (#125 Reframe, #126 Presuposición, o #127 Embedded Command)
+
+## CAMPOS OBLIGATORIOS DEL JSON
+
+Además de la estructura estándar (hooks, development, cta), SIEMPRE incluir:
+- **"body_type"**: uno de los 8 tipos listados arriba
+- **"angle_family"**: IDENTIDAD / OPORTUNIDAD / CONFRONTACIÓN / MECANISMO / HISTORIA
+- **"angle_specific"**: ángulo específico dentro de la familia
+- **"model_sale_type"**: uno de los 10 tipos de venta del modelo
+- **"ingredients_used"**: array con categoría, número y nombre de cada ingrediente
+- **"segment"**: segmento target — "A" (emprendedor frustrado), "B" (principiante tech), "C" (mamá/papá), "D" (escéptico)
+- **"funnel_stage"**: "TOFU", "MOFU", o "BOFU"
+- **"niche"**: nicho específico del guion (ej: "recetas para diabéticos", "plantillas Canva")
+- **"belief_change"**: objeto con "old_belief", "mechanism", "new_belief" — el cambio de creencia explícito
+- **"transition_text"**: 1 oración que conecta el ejemplo del body con el bloque CTA genérico. Se graba como cierre del body. Ej: "Eso que te acabo de mostrar con [EJEMPLO] es solo el principio."
 
 ## AUTOVALIDACIÓN (correr antes de entregar)
 

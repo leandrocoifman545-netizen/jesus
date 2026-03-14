@@ -59,6 +59,17 @@ interface GenerationSummary {
       script_text: string;
       timing_seconds: number;
     };
+    angle_family?: string;
+    angle_specific?: string;
+    body_type?: string;
+    segment?: string;
+    niche?: string;
+    transition_text?: string;
+    belief_change?: {
+      old_belief: string;
+      mechanism: string;
+      new_belief: string;
+    };
   };
 }
 
@@ -348,6 +359,10 @@ function generatePackText(selected: GenerationSummary[], ctas: ActiveCTA[]): str
         text += `  Notas: ${gen.script.visual_format.recording_notes}\n`;
       }
     }
+    if (gen.script.angle_family) text += `  Angulo: ${gen.script.angle_family}${gen.script.angle_specific ? ` — ${gen.script.angle_specific}` : ""}\n`;
+    if (gen.script.body_type) text += `  Cuerpo: ${gen.script.body_type.replace(/_/g, " ")}\n`;
+    if (gen.script.segment) text += `  Segmento: ${gen.script.segment}\n`;
+    if (gen.script.niche) text += `  Nicho: ${gen.script.niche}\n`;
     text += "=".repeat(60) + "\n\n";
 
     text += `> ${gen.script.hooks.length} LEADS\n`;
@@ -365,6 +380,12 @@ function generatePackText(selected: GenerationSummary[], ctas: ActiveCTA[]): str
       const rehook = section.is_rehook ? " [RE-HOOK]" : "";
       text += `[${section.section_name}${rehook}]\n`;
       text += `${section.script_text}\n\n`;
+    }
+
+    if (gen.script.transition_text) {
+      text += "> TRANSICION (grabar con el body)\n";
+      text += "-".repeat(40) + "\n\n";
+      text += `"${gen.script.transition_text}"\n\n`;
     }
 
     if (gen.script.offer_bridge) {
@@ -453,6 +474,10 @@ function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): str
           <span class="script-meta-item"><span class="script-meta-label">Framework:</span> ${esc(g.script.development.framework_used)}</span>
           <span class="script-meta-item"><span class="script-meta-label">Duración:</span> ${g.script.total_duration_seconds}s | ~${g.script.word_count} palabras</span>
           ${vf ? `<span class="script-meta-item"><span class="script-meta-label">Formato:</span> ${esc(vf.format_name)} (Nivel ${vf.difficulty_level}/5)</span>` : ""}
+          ${g.script.angle_family ? `<span class="script-meta-item"><span class="script-meta-label">Ángulo:</span> ${esc(g.script.angle_family)}${g.script.angle_specific ? ` — ${esc(g.script.angle_specific)}` : ""}</span>` : ""}
+          ${g.script.body_type ? `<span class="script-meta-item"><span class="script-meta-label">Cuerpo:</span> ${esc(g.script.body_type.replace(/_/g, " "))}</span>` : ""}
+          ${g.script.segment ? `<span class="script-meta-item"><span class="script-meta-label">Segmento:</span> ${esc(g.script.segment)}</span>` : ""}
+          ${g.script.niche ? `<span class="script-meta-item"><span class="script-meta-label">Nicho:</span> ${esc(g.script.niche)}</span>` : ""}
         </div>
       </div>
       <div class="script-details">
@@ -466,6 +491,12 @@ function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): str
 
       <div class="body-label">Cuerpo</div>
       ${bodySections}
+
+      ${g.script.transition_text ? `
+      <div class="body-section no-break" style="border-left:3px solid #f59e0b;background:#fffbeb;">
+        <div class="body-section-name" style="color:#f59e0b;">TRANSICIÓN (grabar con el body)</div>
+        <div class="body-section-text">&ldquo;${esc(g.script.transition_text)}&rdquo;</div>
+      </div>` : ""}
 
       ${g.script.offer_bridge ? `
       <div class="offer-bridge no-break">

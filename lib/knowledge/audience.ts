@@ -128,10 +128,10 @@ async function parseAudienceFile(): Promise<AudienceData> {
 // --- Segment filtering ---
 
 const SEGMENT_KEYWORDS: Record<string, string[]> = {
-  A: ["ingresos extra", "casa", "hijos", "familia", "tiempo"],
-  B: ["trabajo", "oficina", "dejar", "empleo", "sueldo"],
-  C: ["emprender", "negocio", "vender", "clientes", "escalar"],
-  D: ["tecnología", "ia", "aprender", "herramientas", "digital"],
+  A: ["emprender", "negocio", "freelance", "independencia", "renunciar", "frustrado", "intenté", "no funcionó", "fracasé"],
+  B: ["tecnología", "ia", "aprender", "digital", "computadora", "edad", "quedar afuera", "no entiendo"],
+  C: ["hijos", "familia", "casa", "tiempo", "mamá", "papá", "cuidar", "ingresos extra"],
+  D: ["estafa", "engaño", "desconfianza", "gratis", "no pago", "quemado", "curso", "probé"],
 };
 
 function scoreForSegment(text: string, segment: string): number {

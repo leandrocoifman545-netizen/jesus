@@ -3,6 +3,8 @@ import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_PROMPT } from "./prompts/system";
 import { SYSTEM_PROMPT_LONGFORM } from "./prompts/system-longform";
 import { AVATAR_CONTEXT } from "./prompts/avatar-context";
+import { TONE_JESUS } from "./prompts/tone-jesus";
+import { TECHNIQUES_CONTEXT } from "./prompts/techniques";
 import {
   type ScriptOutput,
   type Hook,
@@ -81,12 +83,12 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
   },
   "hooks": [{
     "variant_number": number,
-    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
+    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico",
     "script_text": string,
     "timing_seconds": number
   }],
   "development": {
-    "framework_used": "AIDA" | "PAS" | "BAB" | "Hook-Story-Offer" | "3_Acts",
+    "framework_used": string (ej: "PAS", "AIDA", "BAB", "Hook-Story-Offer", "3_Acts", u otro que aplique),
     "emotional_arc": string,
     "sections": [{
       "section_name": string,
@@ -99,7 +101,7 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
     "verbal_cta": string,
     "reason_why": string,
     "timing_seconds": number,
-    "cta_type": "swipe_up" | "link_bio" | "comment" | "shop_now" | "learn_more" | "download" | "sign_up" | "custom"
+    "cta_type": "directo" | "reframe" | "embedded_command" | "micro_compromiso" | "exclusion" | "conversacional" | "custom"
   },
   "ingredients_used": [
     {
@@ -108,15 +110,24 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
       "ingredient_name": string (nombre exacto del ingrediente)
     }
   ],
-  "model_sale_type": string (tipo de venta del modelo usado: "cementerio_de_modelos" | "transparencia_total" | "ventana_oportunidad" | "contraste_fisico" | "eliminacion_barreras" | "matematica_simple" | "lean_anti_riesgo" | "tiempo_vs_dinero" | "democratizacion_ia" | "prueba_diversidad"),
+  "model_sale_type": string ("cementerio_de_modelos" | "transparencia_total" | "ventana_oportunidad" | "contraste_fisico" | "eliminacion_barreras" | "matematica_simple" | "lean_anti_riesgo" | "tiempo_vs_dinero" | "democratizacion_ia" | "prueba_diversidad"),
   "offer_bridge": {
     "product_type": "webinar_gratis" | "taller_5" | "custom",
-    "script_text": string (texto que vende QUE se lleva el viewer al hacer clic — 3 promesas: encontrar + crear + vender. CONECTAR con el ejemplo del body),
+    "script_text": string (texto que vende QUE se lleva el viewer al hacer clic — 3 promesas: encontrar + crear + vender),
     "timing_seconds": number
   },
   "body_type": string ("demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional"),
   "angle_family": string ("identidad" | "oportunidad" | "confrontacion" | "mecanismo" | "historia"),
   "angle_specific": string (ej: "1.2_oficinista_atrapado", "3.4_comparacion_social"),
+  "segment": string ("A" | "B" | "C" | "D"),
+  "funnel_stage": string ("TOFU" | "MOFU" | "BOFU"),
+  "niche": string (nicho específico del guion, ej: "recetas para diabéticos"),
+  "belief_change": {
+    "old_belief": string (creencia vieja que el viewer tiene),
+    "mechanism": string (mecanismo que la refuta),
+    "new_belief": string (creencia nueva que adopta)
+  },
+  "transition_text": string (1 oración que conecta el ejemplo del body con el bloque CTA genérico),
   "total_duration_seconds": number,
   "word_count": number
 }`;
@@ -125,7 +136,7 @@ const HOOKS_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 {
   "hooks": [{
     "variant_number": number,
-    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
+    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico",
     "script_text": string,
     "timing_seconds": number
   }]
@@ -134,7 +145,7 @@ const HOOKS_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 const SINGLE_HOOK_SCHEMA_DESC = `Responde con un JSON con esta estructura (un solo hook, NO un array):
 {
   "variant_number": number,
-  "hook_type": "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
+  "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico",
   "script_text": string,
   "timing_seconds": number
 }`;
@@ -152,14 +163,14 @@ const CTA_SCHEMA_DESC = `Responde con un JSON con esta estructura:
   "verbal_cta": string,
   "reason_why": string,
   "timing_seconds": number,
-  "cta_type": "swipe_up" | "link_bio" | "comment" | "shop_now" | "learn_more" | "download" | "sign_up" | "custom"
+  "cta_type": "directo" | "reframe" | "embedded_command" | "micro_compromiso" | "exclusion" | "conversacional" | "custom"
 }`;
 
 const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 {
   "hook": {
     "text": string,
-    "type": "curiosity_gap" | "contrarian" | "question" | "statistical" | "pain_point" | "pattern_interrupt" | "reveal_teaser" | "authority_social_proof",
+    "type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico",
     "word_count": number,
     "estimated_seconds": number
   },
@@ -179,7 +190,7 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
   },
   "cta": {
     "text": string,
-    "type": "swipe_up" | "link_bio" | "comment" | "shop_now" | "learn_more" | "download" | "sign_up" | "custom" | "none",
+    "type": "directo" | "reframe" | "embedded_command" | "micro_compromiso" | "exclusion" | "conversacional" | "custom" | "none",
     "has_urgency": boolean,
     "has_reason_why": boolean,
     "is_dual": boolean
@@ -223,7 +234,14 @@ function buildBriefContext(brief: BriefInput): string {
 
   prompt += `\n\n**Formato:** ${formatLabel}`;
 
-  prompt += `\n\n**Duración objetivo:** 60 a 90 segundos (elegí la duración óptima según la complejidad del producto, apuntá a 60-90s para desarrollar bien el mensaje)`;
+  // Extract duration from additionalNotes if specified (e.g. "[DURACIÓN: 60s]")
+  const durationMatch = brief.additionalNotes?.match(/\[DURACIÓN:\s*(\d+)s?\]/i);
+  const targetDuration = durationMatch ? parseInt(durationMatch[1], 10) : null;
+  if (targetDuration) {
+    prompt += `\n\n**Duración objetivo:** ${targetDuration} segundos`;
+  } else {
+    prompt += `\n\n**Duración objetivo:** 60 a 90 segundos (elegí la duración óptima según la complejidad del producto)`;
+  }
 
   if (brief.brandDocument) {
     prompt += `\n\n## DOCUMENTO DE MARCA (información adicional del cliente)\n${brief.brandDocument}`;
@@ -524,7 +542,7 @@ IMPORTANTE: Los leads deben ser INDEPENDIENTES del cuerpo. Cualquier lead debe p
 
 Adapta todo al formato ${formatLabel} y al público objetivo especificado.
 ${brief.brandTone ? `Respeta estrictamente el tono de marca: "${brief.brandTone}".` : "Elegí el tono más apropiado según el producto y la audiencia."}
-Apuntá a una duración de entre 60 y 90 segundos.
+Apuntá a una duración de ${brief.additionalNotes?.match(/\[DURACIÓN:\s*(\d+)s?\]/i)?.[1] ? `${brief.additionalNotes.match(/\[DURACIÓN:\s*(\d+)s?\]/i)![1]} segundos` : "entre 60 y 90 segundos"}.
 
 Usá los datos reales del avatar (frases, tensiones, perfiles) para dar AUTENTICIDAD. Que suene como si conocieras a la persona.
 
@@ -588,6 +606,18 @@ async function callClaude(
       text: AVATAR_CONTEXT,
       cache_control: { type: "ephemeral" },
     },
+    // Jesus tone + history — cached, changes rarely
+    {
+      type: "text",
+      text: TONE_JESUS,
+      cache_control: { type: "ephemeral" },
+    },
+    // Retention + sales techniques — cached
+    {
+      type: "text",
+      text: TECHNIQUES_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
   ];
 
   // Project-specific generation rules (highest priority — overrides generic system prompt)
@@ -613,7 +643,7 @@ async function callClaude(
     max_tokens: maxTokens,
     system: systemBlocks,
     messages: [{ role: "user", content: userPrompt }],
-    temperature: 0.85,
+    temperature: 0.75,
   });
 
   const textBlock = response.content.find((b) => b.type === "text");
@@ -718,6 +748,18 @@ export async function generateScriptStream(
       text: AVATAR_CONTEXT,
       cache_control: { type: "ephemeral" },
     },
+    // Jesus tone + history — cached, changes rarely
+    {
+      type: "text",
+      text: TONE_JESUS,
+      cache_control: { type: "ephemeral" },
+    },
+    // Retention + sales techniques — cached
+    {
+      type: "text",
+      text: TECHNIQUES_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
   ];
 
   // Project-specific generation rules (highest priority)
@@ -744,7 +786,7 @@ export async function generateScriptStream(
     max_tokens: 16384,
     system: systemBlocks,
     messages: [{ role: "user", content: promptWithoutPatterns }],
-    temperature: 0.85,
+    temperature: 0.75,
   });
 
   for await (const event of stream) {
@@ -1154,6 +1196,18 @@ async function callClaudeLongform(
       text: AVATAR_CONTEXT,
       cache_control: { type: "ephemeral" },
     },
+    // Jesus tone + history — cached, changes rarely
+    {
+      type: "text",
+      text: TONE_JESUS,
+      cache_control: { type: "ephemeral" },
+    },
+    // Retention + sales techniques — cached
+    {
+      type: "text",
+      text: TECHNIQUES_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
   ];
 
   if (generationRules) {
@@ -1169,7 +1223,7 @@ async function callClaudeLongform(
     max_tokens: 32768,
     system: systemBlocks,
     messages: [{ role: "user", content: userPrompt }],
-    temperature: 0.85,
+    temperature: 0.75,
   });
 
   const textBlock = response.content.find((b) => b.type === "text");
@@ -1203,6 +1257,18 @@ export async function generateLongformStream(
       text: AVATAR_CONTEXT,
       cache_control: { type: "ephemeral" },
     },
+    // Jesus tone + history — cached, changes rarely
+    {
+      type: "text",
+      text: TONE_JESUS,
+      cache_control: { type: "ephemeral" },
+    },
+    // Retention + sales techniques — cached
+    {
+      type: "text",
+      text: TECHNIQUES_CONTEXT,
+      cache_control: { type: "ephemeral" },
+    },
   ];
 
   if (brief.generationRules) {
@@ -1220,7 +1286,7 @@ export async function generateLongformStream(
     max_tokens: 32768,
     system: systemBlocks,
     messages: [{ role: "user", content: prompt }],
-    temperature: 0.85,
+    temperature: 0.75,
   });
 
   for await (const event of stream) {

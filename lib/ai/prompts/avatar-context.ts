@@ -78,4 +78,62 @@ export const AVATAR_CONTEXT = `## INTELIGENCIA DE AUDIENCIA REAL (8,074 leads, d
 - 8,074 leads reales en la base
 - Los leads que convierten lo hacen en ~12 mensajes
 - Tema #1 de consulta: Inteligencia Artificial (114 menciones)
-- Tema #2: Productos digitales (86 menciones)`;
+- Tema #2: Productos digitales (86 menciones)
+
+### Frases textuales por segmento
+
+**Segmento A — Principiante total (no sabe por dónde empezar):**
+- "Tengo varias ideas pero nada aún"
+- "No sé cómo darle forma a mi idea de negocio con IA"
+- "No conozco las herramientas especializadas de IA para crear productos digitales que vendan"
+- "No sé cómo empezar un emprendimiento digital"
+- "No sé cómo conseguir clientes"
+- "No sé cómo vender el producto"
+
+**Segmento B — Con intención pero frenado por tiempo/plata:**
+- "Si Generar Ingresos que sea mi fuente de trabajo y así no descuidar el cuidado de mis hijos"
+- "Falta de tiempo corrido" — no tienen bloques de horas, tienen fragmentos
+- "No llegar a fin de mes"
+- "Desempleada, vive en una ciudad con pocas oportunidades"
+- "No tengo esa plata"
+- "Tiene dificultades económicas y recurre a rifas para cubrir sus gastos"
+
+**Segmento C — Ya intentó y fracasó:**
+- "Publicidad en redes sociales sin resultados"
+- "Intentó vender cursos de resina epoxi en Hotmart sin éxito"
+- "Comenzó un proyecto hace unos años pero lo abandonó"
+- "No logró convertir el ebook a PDF" — se traba en lo técnico básico
+- "Ofrecer productos sin WhatsApp Business ni Facebook (solo charlando)"
+- "Poca o casi nula experiencia en la venta de productos"
+
+**Segmento D — Escéptico / quemado:**
+- "Me están estafando, quiero aprender lo que dijo, no escucharlo decir lo mismo todas las veces"
+- "Cuando empezará a enseñar de verdad o es para vender otro curso más caro"
+- "No tiene sentido el vídeo que me mandaste"
+- "La duda es. El pago es por única vez. Pregunta por aquí porque desde el sitio de pago no responden"
+- "No me uní porque no quiero que me llenen de mensajes"
+- "Complejidad percibida de las herramientas digitales"
+
+### Señales de compra (frases que muestran que están listos)
+- "Pero quiero comprar" — intención directa sin rodeos
+- "Si estuve, aprendi y me anote p/ taller del mierc. Feliz!!!" — ya hizo la acción
+- "Claro que quiero ser Auto empleado ofrecer un servicio" — se visualiza en el resultado
+- "Sí, mandame" / "Si mándame" / "Dale" — micro-yes que desbloquean
+- "Jesús ya vi el Primer video... está muy interesante, buenísimo!" — consumió y le gustó
+- "Y los tres pasos?" — pide el siguiente paso activamente
+- Acciones top: preguntar cómo inscribirse (11x), unirse a grupo WhatsApp (10x), confirmar asistencia (7x)
+- Insight: leads que convierten lo hacen en ~12 mensajes. Después de 15 sin conversión, cambiar estrategia.
+
+### Intentos previos fallidos (qué probaron y por qué no funcionó)
+| Qué intentaron | Por qué falló |
+|---|---|
+| Publicidad en redes sociales | Sin resultados |
+| Vender cursos en Hotmart | Sin enfoque en ventas |
+| Crear ebook con IA | No logró convertirlo a PDF (traba técnica) |
+| Vender por chats personales | Falta de profesionalismo, alcance limitado |
+| Proyecto abandonado | Compromisos familiares |
+| Curso de ventas/prospección | Faltó implementación |
+| Clases gratis y videos | Demasiada info junta, sin estructura |
+| Usar Gemini/IA solo | Sin guía, no sabe qué hacer con la herramienta |
+
+Patrón: No es que no intentan. Intentan sin estructura, se traban en lo técnico, y abandonan. La frustración viene de la falta de un camino claro, no de la pereza.`;

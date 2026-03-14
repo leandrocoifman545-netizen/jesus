@@ -28,6 +28,12 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
   const [additionalNotes, setAdditionalNotes] = useState("");
   const [referenceText, setReferenceText] = useState("");
 
+  // Structured selectors
+  const [targetDuration, setTargetDuration] = useState("60s");
+  const [angleFamily, setAngleFamily] = useState("");
+  const [bodyType, setBodyType] = useState("");
+  const [funnelStage, setFunnelStage] = useState("");
+
   // Research insights state
   const [researchOpen, setResearchOpen] = useState(false);
   const [researchLoading, setResearchLoading] = useState(false);
@@ -92,6 +98,15 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
       ? referenceText.split("---").map((r) => r.trim()).filter(Boolean)
       : undefined;
 
+    // Build structured prefix from selectors
+    const selectorParts: string[] = [];
+    if (targetDuration) selectorParts.push(`[DURACION: ${targetDuration}]`);
+    if (angleFamily) selectorParts.push(`[ANGULO: ${angleFamily}]`);
+    if (bodyType) selectorParts.push(`[BODY TYPE: ${bodyType}]`);
+    if (funnelStage) selectorParts.push(`[FUNNEL: ${funnelStage}]`);
+    const selectorPrefix = selectorParts.length > 0 ? selectorParts.join(" ") : "";
+    const finalNotes = [selectorPrefix, additionalNotes].filter(Boolean).join("\n") || undefined;
+
     try {
       const res = await fetch("/api/generate/stream", {
         method: "POST",
@@ -102,7 +117,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           targetAudience,
           hookCount,
           segment: segment || undefined,
-          additionalNotes: additionalNotes || undefined,
+          additionalNotes: finalNotes,
           references,
         }),
       });
@@ -308,6 +323,77 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
               {seg.label}
             </button>
           ))}
+        </div>
+      </div>
+
+      {/* Structured Selectors */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {/* Target Duration */}
+        <div>
+          <label className="block text-xs font-medium text-zinc-500 mb-1.5">Duracion</label>
+          <select
+            value={targetDuration}
+            onChange={(e) => setTargetDuration(e.target.value)}
+            className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 appearance-none cursor-pointer"
+          >
+            <option value="30s">30s</option>
+            <option value="45s">45s</option>
+            <option value="60s">60s</option>
+            <option value="75s">75s</option>
+            <option value="90s">90s</option>
+          </select>
+        </div>
+
+        {/* Angle Family */}
+        <div>
+          <label className="block text-xs font-medium text-zinc-500 mb-1.5">Angulo</label>
+          <select
+            value={angleFamily}
+            onChange={(e) => setAngleFamily(e.target.value)}
+            className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 appearance-none cursor-pointer"
+          >
+            <option value="">Sin especificar</option>
+            <option value="IDENTIDAD">IDENTIDAD — Quien sos</option>
+            <option value="OPORTUNIDAD">OPORTUNIDAD — Que esta pasando</option>
+            <option value="CONFRONTACION">CONFRONTACION — Que haces mal</option>
+            <option value="MECANISMO">MECANISMO — Como funciona</option>
+            <option value="HISTORIA">HISTORIA — Storytelling</option>
+          </select>
+        </div>
+
+        {/* Body Type */}
+        <div>
+          <label className="block text-xs font-medium text-zinc-500 mb-1.5">Tipo de cuerpo</label>
+          <select
+            value={bodyType}
+            onChange={(e) => setBodyType(e.target.value)}
+            className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 appearance-none cursor-pointer"
+          >
+            <option value="">Sin especificar</option>
+            <option value="Demolicion de mito">Demolicion de mito</option>
+            <option value="Historia con giro">Historia con giro</option>
+            <option value="Demo/Proceso">Demo/Proceso</option>
+            <option value="Comparacion de caminos">Comparacion de caminos</option>
+            <option value="Un dia en la vida">Un dia en la vida</option>
+            <option value="Pregunta y respuesta">Pregunta y respuesta</option>
+            <option value="Analogia extendida">Analogia extendida</option>
+            <option value="Contraste emocional">Contraste emocional</option>
+          </select>
+        </div>
+
+        {/* Funnel Stage */}
+        <div>
+          <label className="block text-xs font-medium text-zinc-500 mb-1.5">Funnel</label>
+          <select
+            value={funnelStage}
+            onChange={(e) => setFunnelStage(e.target.value)}
+            className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 appearance-none cursor-pointer"
+          >
+            <option value="">Sin especificar</option>
+            <option value="TOFU">TOFU</option>
+            <option value="MOFU">MOFU</option>
+            <option value="BOFU">BOFU</option>
+          </select>
         </div>
       </div>
 

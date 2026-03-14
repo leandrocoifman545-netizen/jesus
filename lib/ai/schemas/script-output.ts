@@ -1,12 +1,4 @@
 export type HookType =
-  | "curiosity_gap"
-  | "contrarian"
-  | "question"
-  | "statistical"
-  | "pain_point"
-  | "pattern_interrupt"
-  | "reveal_teaser"
-  | "authority_social_proof"
   | "situacion_especifica"
   | "dato_concreto"
   | "pregunta_incomoda"
@@ -23,13 +15,12 @@ export type HookType =
   | "anti_publico";
 
 export type CTAType =
-  | "swipe_up"
-  | "link_bio"
-  | "comment"
-  | "shop_now"
-  | "learn_more"
-  | "download"
-  | "sign_up"
+  | "directo"
+  | "reframe"
+  | "embedded_command"
+  | "micro_compromiso"
+  | "exclusion"
+  | "conversacional"
   | "custom";
 
 export interface Hook {
@@ -97,9 +88,9 @@ export interface ScriptOutput {
     cta_type: CTAType;
   };
   /** Ingredientes de la enciclopedia usados en este guion (categorías A-K) */
-  ingredients_used?: IngredientUsed[];
+  ingredients_used: IngredientUsed[];
   /** Tipo de venta del modelo de negocio usado (1-10). Ver venta-modelo-negocio.md */
-  model_sale_type?: string;
+  model_sale_type: string;
   /** Puente a la oferta: vende QUÉ se lleva al hacer clic (clase/taller). Va entre body y CTA. */
   offer_bridge?: {
     product_type: "webinar_gratis" | "taller_5" | "custom";
@@ -107,10 +98,20 @@ export interface ScriptOutput {
     timing_seconds: number;
   };
   /** Tipo de cuerpo usado. Ver tipos-cuerpo.md */
-  body_type?: string;
+  body_type: string;
   /** Familia de ángulo (1-5) y ángulo específico. Ver angulos-expandidos.md */
-  angle_family?: string;
+  angle_family: string;
   angle_specific?: string;
+  /** Segmento objetivo (A/B/C/D) */
+  segment?: string;
+  /** Etapa del funnel: TOFU/MOFU/BOFU */
+  funnel_stage?: string;
+  /** Nicho específico del guion */
+  niche?: string;
+  /** Cambio de creencia explícito */
+  belief_change?: { old_belief: string; mechanism: string; new_belief: string };
+  /** Oración de transición Layer 1 que conecta el cuerpo con el CTA */
+  transition_text?: string;
   total_duration_seconds: number;
   word_count: number;
 }

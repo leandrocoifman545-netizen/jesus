@@ -172,7 +172,41 @@ export interface StoredGeneration {
   status?: GenerationStatus;
   metrics?: WinnerMetrics;
   sessionNotes?: string;
+  ctaBlockId?: string; // ID of the CTA block variant used (e.g. "clase-gratis-A")
   createdAt: string;
+}
+
+// --- CTA History ---
+
+export interface CTAHistoryEntry {
+  ctaId: string;
+  channel: string;
+  variant: string;
+  weekStart: string; // ISO date of the Monday
+  generationIds: string[]; // scripts that used this CTA
+}
+
+const CTA_HISTORY_FILE = path.join(DATA_DIR, "cta-history.json");
+
+export async function getCTAHistory(): Promise<CTAHistoryEntry[]> {
+  try {
+    const raw = await fs.readFile(CTA_HISTORY_FILE, "utf-8");
+    return JSON.parse(raw);
+  } catch {
+    return [];
+  }
+}
+
+export async function addCTAHistoryEntry(entry: CTAHistoryEntry): Promise<void> {
+  const history = await getCTAHistory();
+  // Check if entry for this CTA + week already exists
+  const existing = history.find(h => h.ctaId === entry.ctaId && h.weekStart === entry.weekStart);
+  if (existing) {
+    existing.generationIds = [...new Set([...existing.generationIds, ...entry.generationIds])];
+  } else {
+    history.push(entry);
+  }
+  await fs.writeFile(CTA_HISTORY_FILE, JSON.stringify(history, null, 2));
 }
 
 // --- Plans ---

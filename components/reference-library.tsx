@@ -6,10 +6,25 @@ import type { StoredReference } from "@/lib/storage/local";
 import GlowCard from "./glow-card";
 
 const HOOK_TYPE_LABELS: Record<string, string> = {
+  situacion_especifica: "Situación Específica",
+  dato_concreto: "Dato Concreto",
+  pregunta_incomoda: "Pregunta Incómoda",
+  confesion: "Confesión",
+  contraintuitivo: "Contraintuitivo",
+  provocacion: "Provocación",
+  historia_mini: "Historia Mini",
+  analogia: "Analogía",
+  negacion_directa: "Negación Directa",
+  observacion_tendencia: "Tendencia",
+  timeline_provocacion: "Timeline",
+  contrato_compromiso: "Contrato",
+  actuacion_dialogo: "Diálogo",
+  anti_publico: "Anti-público",
+  // Legacy English types (for old references)
   curiosity_gap: "Curiosity Gap",
   contrarian: "Contrarian",
   question: "Pregunta",
-  statistical: "Estadistica",
+  statistical: "Estadística",
   pain_point: "Pain Point",
   pattern_interrupt: "Pattern Interrupt",
   reveal_teaser: "Reveal / Teaser",
