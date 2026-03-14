@@ -247,6 +247,7 @@ export interface BurnedLead {
 }
 
 const BURNED_LEADS_FILE = path.join(DATA_DIR, "burned-leads.json");
+const ACTIVE_CTAS_FILE = path.join(DATA_DIR, "ctas-activos.json");
 
 export async function getBurnedLeads(): Promise<BurnedLead[]> {
   try {
@@ -259,6 +260,55 @@ export async function getBurnedLeads(): Promise<BurnedLead[]> {
 
 async function saveBurnedLeads(leads: BurnedLead[]): Promise<void> {
   await fs.writeFile(BURNED_LEADS_FILE, JSON.stringify(leads, null, 2));
+}
+
+// --- Active CTAs ---
+
+export interface ActiveCTA {
+  id: string;
+  channel: string;
+  variant: string;
+  ingredients: string[];
+  text: string;
+}
+
+const DEFAULT_CTAS: ActiveCTA[] = [
+  {
+    id: "clase-gratis-A",
+    channel: "Clase Gratuita",
+    variant: "A",
+    ingredients: ["#109 Directo", "#117 Escasez"],
+    text: "Tocá el botón de acá abajo y registrate a la clase gratuita. Son 2 horas en vivo donde te muestro cómo crear tu primer producto digital con IA y conseguir tus primeras ventas. Los cupos son limitados porque es en vivo. Te espero adentro.",
+  },
+  {
+    id: "taller-5-A",
+    channel: "Taller $5",
+    variant: "A",
+    ingredients: ["#103 Reducción al absurdo", "#125 Reframe", "#126 Presuposición"],
+    text: "Tocá el botón de acá abajo. Son 3 días conmigo, en vivo. Día 1 elegís tu producto, día 2 lo creás con IA, día 3 lo vendés. ¿Cuánto sale? 5 dólares. Menos que un café. La pregunta no es si funciona — ya te mostré que funciona. La pregunta es si vos vas a hacer algo. Nos vemos adentro.",
+  },
+  {
+    id: "instagram-A",
+    channel: "Instagram Orgánico",
+    variant: "A",
+    ingredients: ["#110 Conversacional", "#127 Embedded Command"],
+    text: "Comentá 'CLASE' y andá al link de mi perfil. Cuando entres y te registres, vas a ver exactamente cómo crear tu producto digital con IA paso a paso. Es gratis. Te espero.",
+  },
+];
+
+export async function getActiveCTAs(): Promise<ActiveCTA[]> {
+  try {
+    const data = await fs.readFile(ACTIVE_CTAS_FILE, "utf-8");
+    const parsed = JSON.parse(data) as ActiveCTA[];
+    return parsed.length > 0 ? parsed : DEFAULT_CTAS;
+  } catch {
+    return DEFAULT_CTAS;
+  }
+}
+
+export async function saveActiveCTAs(ctas: ActiveCTA[]): Promise<void> {
+  await ensureDirs();
+  await fs.writeFile(ACTIVE_CTAS_FILE, JSON.stringify(ctas, null, 2));
 }
 
 export async function burnLeadsFromGeneration(gen: StoredGeneration): Promise<number> {
@@ -385,6 +435,9 @@ export async function saveGeneration(gen: StoredGeneration): Promise<void> {
     JSON.stringify(gen, null, 2)
   );
   invalidateCache("generations");
+  // Fire-and-forget: refresh coverage cache after any generation save
+  // Uses dynamic import to avoid circular dependency (coverage.ts imports from local.ts)
+  import("../coverage").then((m) => m.refreshCoverageCache()).catch(() => {});
 }
 
 export async function getGeneration(id: string): Promise<StoredGeneration | null> {
@@ -404,6 +457,8 @@ export async function deleteGeneration(id: string): Promise<boolean> {
     await unburnLeadsFromGeneration(id);
     await fs.unlink(path.join(GENERATIONS_DIR, `${id}.json`));
     invalidateCache("generations");
+    // Fire-and-forget: refresh coverage cache after deletion
+    import("../coverage").then((m) => m.refreshCoverageCache()).catch(() => {});
     return true;
   } catch {
     return false;

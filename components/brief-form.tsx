@@ -24,8 +24,47 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
   const [productDescription, setProductDescription] = useState("");
   const [targetAudience, setTargetAudience] = useState("");
   const [hookCount, setHookCount] = useState(5);
+  const [segment, setSegment] = useState<string>("");
   const [additionalNotes, setAdditionalNotes] = useState("");
   const [referenceText, setReferenceText] = useState("");
+
+  // Research insights state
+  const [researchOpen, setResearchOpen] = useState(false);
+  const [researchLoading, setResearchLoading] = useState(false);
+  const [researchData, setResearchData] = useState<{
+    top_keywords: Array<{ keyword: string; total_score: number; angles: string[]; niche: string | null }>;
+    by_angle: Record<string, Array<{ keyword: string; total_score: number }>>;
+    generated_at: string;
+  } | null>(null);
+  const [researchError, setResearchError] = useState(false);
+
+  async function fetchResearch() {
+    if (researchData) return; // already loaded
+    setResearchLoading(true);
+    setResearchError(false);
+    try {
+      const res = await fetch("/api/research?limit=15");
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      setResearchData(data);
+    } catch {
+      setResearchError(true);
+    } finally {
+      setResearchLoading(false);
+    }
+  }
+
+  function handleToggleResearch() {
+    const next = !researchOpen;
+    setResearchOpen(next);
+    if (next) fetchResearch();
+  }
+
+  function handleKeywordClick(keyword: string) {
+    setAdditionalNotes((prev) =>
+      prev ? `${prev}\n${keyword}` : keyword
+    );
+  }
 
   // Load project data when selected
   useEffect(() => {
@@ -62,6 +101,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
           productDescription,
           targetAudience,
           hookCount,
+          segment: segment || undefined,
           additionalNotes: additionalNotes || undefined,
           references,
         }),
@@ -230,6 +270,122 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
         <p className="text-xs text-zinc-600 mt-1.5">
           Podes generar mas despues sin tocar el cuerpo del guion
         </p>
+      </div>
+
+      {/* Segmento */}
+      <div>
+        <label className="block text-sm font-medium text-zinc-400 mb-2">
+          Segmento <span className="text-zinc-600">(opcional)</span>
+        </label>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => setSegment("")}
+            className={`border rounded-xl px-3 py-2 text-xs transition-all duration-200 ${
+              !segment
+                ? "border-purple-500 bg-purple-500/10 text-purple-400"
+                : "border-zinc-800/50 bg-zinc-800/30 text-zinc-400 hover:border-zinc-700/50 hover:bg-zinc-700/30"
+            }`}
+          >
+            Sin segmento
+          </button>
+          {[
+            { value: "A", label: "A: Jovenes 25-35 (emprendedores, escepticos)" },
+            { value: "B", label: "B: Intentaron y fallaron (quemados, 30-45)" },
+            { value: "C", label: "C: Mamas 40+ (sin tiempo, ingreso extra)" },
+            { value: "D", label: "D: Jubilados/+50 (desconfiados, baja tecnologia)" },
+          ].map((seg) => (
+            <button
+              key={seg.value}
+              type="button"
+              onClick={() => setSegment(seg.value)}
+              className={`border rounded-xl px-3 py-2 text-xs transition-all duration-200 ${
+                segment === seg.value
+                  ? "border-purple-500 bg-purple-500/10 text-purple-400"
+                  : "border-zinc-800/50 bg-zinc-800/30 text-zinc-400 hover:border-zinc-700/50 hover:bg-zinc-700/30"
+              }`}
+            >
+              {seg.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Research Insights */}
+      <div>
+        <button
+          type="button"
+          onClick={handleToggleResearch}
+          className="flex items-center gap-2 text-sm text-zinc-400 hover:text-purple-400 transition-colors duration-200"
+        >
+          <svg
+            className={`w-3.5 h-3.5 transition-transform duration-200 ${researchOpen ? "rotate-90" : ""}`}
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          Ver tendencias
+        </button>
+
+        {researchOpen && (
+          <div className="mt-3 bg-zinc-800/20 border border-zinc-800/40 rounded-2xl p-4 space-y-4 animate-spring-up">
+            {researchLoading && (
+              <div className="flex items-center gap-2 text-xs text-zinc-500">
+                <svg className="animate-spin h-3.5 w-3.5" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                </svg>
+                Cargando research...
+              </div>
+            )}
+
+            {researchError && (
+              <p className="text-xs text-zinc-600">Sin datos de research</p>
+            )}
+
+            {researchData && (
+              <>
+                {/* Top keywords */}
+                <div>
+                  <p className="text-[10px] uppercase tracking-widest text-zinc-600 mb-2">Keywords trending</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {researchData.top_keywords.map((kw) => (
+                      <button
+                        key={kw.keyword}
+                        type="button"
+                        onClick={() => handleKeywordClick(kw.keyword)}
+                        title={`Score: ${kw.total_score}${kw.niche ? ` | Nicho: ${kw.niche}` : ""}`}
+                        className="border border-zinc-700/50 bg-zinc-800/40 hover:border-purple-500/40 hover:bg-purple-500/10 text-zinc-400 hover:text-purple-300 rounded-lg px-2 py-1 text-[11px] transition-all duration-150"
+                      >
+                        {kw.keyword}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Angles summary */}
+                <div>
+                  <p className="text-[10px] uppercase tracking-widest text-zinc-600 mb-2">Keywords por angulo</p>
+                  <div className="grid grid-cols-2 gap-1.5">
+                    {Object.entries(researchData.by_angle).map(([angle, keywords]) => (
+                      <div key={angle} className="flex items-center justify-between bg-zinc-800/30 rounded-lg px-2.5 py-1.5">
+                        <span className="text-[11px] text-zinc-400 truncate mr-2">{angle}</span>
+                        <span className="text-[10px] text-zinc-600 shrink-0">{keywords.length}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <p className="text-[10px] text-zinc-600">
+                  Click en un keyword para agregarlo a notas
+                </p>
+              </>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Notas adicionales */}

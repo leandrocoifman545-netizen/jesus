@@ -11,7 +11,9 @@ import {
 import { type LongformOutput, type LongformOutputMode } from "./schemas/longform-output";
 import { type ReferenceAnalysis } from "./schemas/reference-analysis";
 import { listReferences, listGenerations, getBurnedLeads, getCaseStudies } from "../storage/local";
-import { computeCoverage } from "../coverage";
+import { getCoverage } from "../coverage";
+import { getAudienceContext } from "../knowledge/audience";
+import { getObjectionsContext } from "../knowledge/objections";
 
 export type ContentType = "shortform" | "longform";
 
@@ -106,6 +108,15 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
       "ingredient_name": string (nombre exacto del ingrediente)
     }
   ],
+  "model_sale_type": string (tipo de venta del modelo usado: "cementerio_de_modelos" | "transparencia_total" | "ventana_oportunidad" | "contraste_fisico" | "eliminacion_barreras" | "matematica_simple" | "lean_anti_riesgo" | "tiempo_vs_dinero" | "democratizacion_ia" | "prueba_diversidad"),
+  "offer_bridge": {
+    "product_type": "webinar_gratis" | "taller_5" | "custom",
+    "script_text": string (texto que vende QUE se lleva el viewer al hacer clic — 3 promesas: encontrar + crear + vender. CONECTAR con el ejemplo del body),
+    "timing_seconds": number
+  },
+  "body_type": string ("demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional"),
+  "angle_family": string ("identidad" | "oportunidad" | "confrontacion" | "mecanismo" | "historia"),
+  "angle_specific": string (ej: "1.2_oficinista_atrapado", "3.4_comparacion_social"),
   "total_duration_seconds": number,
   "word_count": number
 }`;
@@ -185,6 +196,13 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 function resolveFormat(platform?: string): string {
   if (!platform) return "vertical_ad";
   return LEGACY_FORMAT_MAP[platform] || platform;
+}
+
+/** Extract segment (A/B/C/D) from brief fields if mentioned. */
+function extractSegment(brief: BriefInput): string | undefined {
+  const haystack = `${brief.additionalNotes || ""} ${brief.targetAudience || ""}`;
+  const match = haystack.match(/\bseg(?:mento)?\s*([abcd])\b/i);
+  return match ? match[1].toUpperCase() : undefined;
 }
 
 function buildBriefContext(brief: BriefInput): string {
@@ -355,7 +373,7 @@ async function buildWinnerExamples(projectId?: string): Promise<string> {
 
 async function buildCoverageGaps(projectId?: string): Promise<string> {
   try {
-    const coverage = await computeCoverage();
+    const coverage = await getCoverage();
 
     // Only show gaps if there's enough data to be meaningful
     if (coverage.totalGenerations < 5) return "";
@@ -482,6 +500,13 @@ async function buildUserPrompt(brief: BriefInput): Promise<string> {
 
   // Inject case studies if this script should use one
   prompt += await buildCaseStudiesContext(brief.useCaseStudy || false);
+
+  // Inject real audience intelligence (pain points, desires, fears, triggers)
+  const segment = extractSegment(brief);
+  prompt += await getAudienceContext(segment);
+
+  // Inject segment-specific objections to anticipate and address
+  prompt += await getObjectionsContext(segment);
 
   // Inject burned leads to avoid repetition
   prompt += await buildBurnedLeadsContext();

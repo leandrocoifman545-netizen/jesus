@@ -1,0 +1,144 @@
+{
+  "id": "c640a505-3e95-47af-a525-194d81dd34a7",
+  "briefId": "e48189a9-ecbd-43ef-be0f-29a0a4577aa3",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Barbero LATAM — PAS + textual avatar + ingredientes",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 75,
+      "content_style": "UGC conversacional, cámara frontal, tono de vecino que te cuenta algo",
+      "key_considerations": "Primer lead tiene que frenar el scroll en LATAM — usar especificidad geográfica y de oficio"
+    },
+    "visual_format": {
+      "format_name": "Talking Head + Text Overlay",
+      "difficulty_level": 1,
+      "setup_instructions": "Cámara frontal, luz natural, fondo neutro o barbería real si es posible. Subtítulos automáticos obligatorios.",
+      "recording_notes": "Jesús habla directo a cámara. Ritmo pausado en el dolor, más rápido en el mecanismo. Pausa dramática antes del re-hook."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "\"Quiero aprender a generar ingresos pero no sé qué podría vender.\" Eso me escribió un barbero de Córdoba por WhatsApp. Y lo que le respondí le cambió la forma de pensar sobre su negocio.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "analogia",
+        "script_text": "Vos cortás 15 cabezas por día. Sabés más de pelo que el 99% de los que venden cursos de barbería online. Y sin embargo, el que cobra por enseñar es otro. Alguien que sabe menos que vos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "Un barbero de Tucumán creó una guía de cortes con inteligencia artificial. Le llevó una tarde. La vende a 5 dólares. Ya lleva más de 80 ventas. Sin seguidores. Sin saber nada de marketing.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas horas por semana trabajás parado cortando pelo? ¿Y cuántas de esas horas son para pagar el alquiler del local y nada más? ¿Alguna vez pensaste que lo que sabés vale más que lo que cobrás?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "script_text": "No necesitás ser influencer. No necesitás tener seguidores. No necesitás saber de tecnología. Lo único que necesitás es saber de algo. Y si cortás pelo todos los días, ya sabés de algo.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Frustración silenciosa → descubrimiento → alivio + posibilidad concreta",
+      "sections": [
+        {
+          "section_name": "Problema",
+          "is_rehook": false,
+          "script_text": "La realidad es que hay miles de barberos, peluqueras, manicuristas en toda Latinoamérica que saben un montón de su oficio. Pero a fin de mes la plata no alcanza. Porque estás atado a un local, a un horario, a una cantidad de turnos que el cuerpo te aguanta.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Pero lo que la mayoría no sabe es que ese conocimiento que tenés en la cabeza... se puede empaquetar y vender. Sin que vos estés presente.",
+          "timing_seconds": 5
+        },
+        {
+          "section_name": "Agitación",
+          "is_rehook": false,
+          "script_text": "Mientras vos estás 10 horas parado en el local, alguien que sabe la mitad que vos está vendiendo una guía de cortes desde su casa. Con un anuncio de 5 dólares y un WhatsApp. Y no es más inteligente que vos. Simplemente encontró la forma.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Mecanismo",
+          "is_rehook": false,
+          "script_text": "Hoy con inteligencia artificial vos le decís: 'Sé de barbería, quiero crear un producto digital'. Y en una tarde te arma una guía completa. Con diseño, con portada, lista para vender. Vos ponés lo que sabés. La IA pone el trabajo. Después hacés un anuncio — una imagen con un texto — y la gente que busca aprender te escribe por WhatsApp. Así de simple.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Prueba social",
+          "is_rehook": false,
+          "script_text": "Fernando. Albañil. Nunca había vendido nada por internet. Creó un manual de presupuestos para otros albañiles. Con IA. En un fin de semana. Lo vende a 5 dólares. Ya lleva más de 100 ventas. Si un albañil pudo, imaginate vos.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y mirá cómo funciona.",
+      "reason_why": "Es gratis. No te pido tarjeta ni nada. Si después de verlo no te interesa, no perdiste nada.",
+      "timing_seconds": 5,
+      "cta_type": "learn_more"
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 21,
+        "ingredient_name": "Nombre Directo al Avatar"
+      },
+      {
+        "category": "A",
+        "ingredient_number": 11,
+        "ingredient_name": "Declaración Absurda"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 29,
+        "ingredient_name": "Dolor Comparativo Social"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 33,
+        "ingredient_name": "Frustración con la Complejidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 39,
+        "ingredient_name": "Contraste con Otros"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 73,
+        "ingredient_name": "Demo Implícita"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Testimonio de Persona Improbable"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 110,
+        "ingredient_name": "CTA Conversacional"
+      }
+    ],
+    "total_duration_seconds": 77,
+    "word_count": 178
+  },
+  "createdAt": "2026-03-13T21:05:16.716Z"
+}

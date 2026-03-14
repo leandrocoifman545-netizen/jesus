@@ -98,6 +98,19 @@ export interface ScriptOutput {
   };
   /** Ingredientes de la enciclopedia usados en este guion (categorías A-K) */
   ingredients_used?: IngredientUsed[];
+  /** Tipo de venta del modelo de negocio usado (1-10). Ver venta-modelo-negocio.md */
+  model_sale_type?: string;
+  /** Puente a la oferta: vende QUÉ se lleva al hacer clic (clase/taller). Va entre body y CTA. */
+  offer_bridge?: {
+    product_type: "webinar_gratis" | "taller_5" | "custom";
+    script_text: string;
+    timing_seconds: number;
+  };
+  /** Tipo de cuerpo usado. Ver tipos-cuerpo.md */
+  body_type?: string;
+  /** Familia de ángulo (1-5) y ángulo específico. Ver angulos-expandidos.md */
+  angle_family?: string;
+  angle_specific?: string;
   total_duration_seconds: number;
   word_count: number;
 }

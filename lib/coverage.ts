@@ -1,5 +1,8 @@
 import { listGenerations, type StoredGeneration } from "./storage/local";
 
+// Module-level cache for coverage data
+let coverageCache: CoverageData | null = null;
+
 export interface CoverageData {
   totalGenerations: number;
   byAngle: Record<string, number>;
@@ -126,4 +129,22 @@ export async function computeCoverage(): Promise<CoverageData> {
   }
 
   return data;
+}
+
+/**
+ * Recompute coverage and update the module-level cache.
+ * Call this after saving a generation to keep cache fresh.
+ */
+export async function refreshCoverageCache(): Promise<CoverageData> {
+  const fresh = await computeCoverage();
+  coverageCache = fresh;
+  return fresh;
+}
+
+/**
+ * Get cached coverage data, or compute if cache is empty.
+ */
+export async function getCoverage(): Promise<CoverageData> {
+  if (coverageCache) return coverageCache;
+  return refreshCoverageCache();
 }

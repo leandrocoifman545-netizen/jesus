@@ -1,0 +1,151 @@
+{
+  "id": "6c4f0414-ebd3-45aa-8327-2418b55cbccf",
+  "briefId": "a1236482-fdf9-4345-92aa-ddf3490568e5",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 75,
+      "content_style": "UGC directo a cámara, tono empático pero firme, ritmo medio-alto",
+      "key_considerations": "Lead en 0-5 seg. Auto-captions obligatorios. Corte en el re-hook para renovar atención."
+    },
+    "visual_format": {
+      "format_name": "Talking Head + Text Overlay",
+      "difficulty_level": 2,
+      "setup_instructions": "Cámara frontal, fondo real (escritorio o living). Textos en pantalla con las frases clave: '1 hora = $10', 'crear una vez, vender infinitas'. Subtítulos automáticos.",
+      "recording_notes": "Tono empático al principio (identificación), firme en la demolición del mito, esperanzador en el cierre. Pausas cortas entre secciones para dar ritmo."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Cambiás horas por plata. Si no trabajás, no cobrás. Y cada mes arrancás de cero como si no hubieras hecho nada. La realidad es que el problema no es que labures poco. Es que estás en el modelo equivocado.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "negacion_directa",
+        "script_text": "No necesitás más clientes. No necesitás subir tus precios. No necesitás otro curso de marketing. Lo que necesitás es dejar de vender tu tiempo y empezar a vender algo que se vende solo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "analogia",
+        "script_text": "Ser freelancer es como ser un taxi. Si frenás, dejás de facturar. Pero hay gente que armó un producto una vez y cobra cada vez que alguien lo descarga. Sin estar ahí. Sin hacer nada.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "script_text": "Yo tuve 100 clientes al mismo tiempo. Facturaba bien. Pero no dormía, no tenía vida, y un mes que me enfermé no entró un peso. Ahí entendí que estaba en el modelo equivocado.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Cada vez más freelancers están dejando de vender horas. No renuncian a sus clientes — arman un producto digital con lo que ya saben y lo venden por WhatsApp mientras siguen trabajando.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "PAS",
+      "emotional_arc": "Identificación con la trampa de tiempo × dinero → demolición del mito de 'necesitás más clientes' → revelación del modelo correcto → prueba social → esperanza concreta",
+      "sections": [
+        {
+          "section_name": "Problema — La trampa del freelancer",
+          "is_rehook": false,
+          "script_text": "El problema de ser freelancer es que tu techo es tu tiempo. Una hora vale 10 dólares, 20, 50 — no importa. Siempre hay un límite. Y cuando llegás a ese límite, la única forma de ganar más es no dormir.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Re-hook — Demolición del mito",
+          "is_rehook": true,
+          "script_text": "Pero la solución no es conseguir más clientes. Eso es la mentira que te vendieron.",
+          "timing_seconds": 3
+        },
+        {
+          "section_name": "Quiebre de creencia + Mecanismo",
+          "is_rehook": false,
+          "script_text": "La solución es agarrar lo que ya sabés —de diseño, de marketing, de lo que sea— y convertirlo en un producto digital. Una guía, unas plantillas, un kit. La IA te lo arma en una tarde. Y después lo vendés. Cada descarga que alguien hace, vos cobrás. Estés durmiendo, estés con un cliente, estés de vacaciones.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba social — Resultado concreto",
+          "is_rehook": false,
+          "script_text": "Un diseñador de Mendoza agarró sus plantillas de Canva que usaba para clientes, las empaquetó en un kit, y hoy las vende a 8 dólares. 60 ventas en el primer mes. Sin mostrar la cara. Sin hacer publicidad cara.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Cierre del mecanismo — VENDERLO",
+          "is_rehook": false,
+          "script_text": "Ponés un anuncio simple, la gente te escribe, les mandás el link y cobrás. No parás de vender porque no parás de trabajar — seguís vendiendo porque el producto ya está creado.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Venta del modelo — Tiempo vs. dinero",
+          "is_rehook": false,
+          "script_text": "La diferencia entre un freelancer y alguien con un producto digital es esta: el freelancer arranca de cero cada mes. El que tiene un producto creó algo una vez y sigue cobrando. Mismo esfuerzo. Resultados completamente distintos.",
+          "timing_seconds": 7
+        }
+      ]
+    },
+    "offer_bridge": {
+      "product_type": "webinar_gratis",
+      "script_text": "En la clase gratuita de la próxima semana te muestro cómo agarrar lo que ya sabés, encontrar qué producto tiene demanda, crearlo con IA y empezar a venderlo por WhatsApp. Son 2 horas. No importa si nunca vendiste nada digital.",
+      "timing_seconds": 8
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de abajo y anotate.",
+      "reason_why": "Los lugares son limitados y se llenan rápido.",
+      "timing_seconds": 3
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 4,
+        "ingredient_name": "Historia Personal / Confesional"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 37,
+        "ingredient_name": "Dolor de Dependencia"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 28,
+        "ingredient_name": "El Costo de No Actuar (TCO)"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 73,
+        "ingredient_name": "Demo Implícita"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 83,
+        "ingredient_name": "Resultado del Proceso (no features)"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado Específico con Números"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "tiempo_vs_dinero",
+    "body_type": "demolicion_mito",
+    "angle_family": "1 — Identidad",
+    "angle_specific": "1.6 — Freelancer/profesional independiente",
+    "total_duration_seconds": 75,
+    "word_count": 176
+  },
+  "createdAt": "2026-03-14T14:01:09.935Z"
+}

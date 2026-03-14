@@ -98,6 +98,14 @@ function formatFullScript(script: ScriptOutput, hookIndex: number): string {
     accTime += section.timing_seconds;
   }
 
+  if (script.offer_bridge) {
+    text += `PUENTE A LA OFERTA (${script.offer_bridge.product_type === "webinar_gratis" ? "Webinar Gratis" : script.offer_bridge.product_type === "taller_5" ? "Taller $5" : "Custom"})\n`;
+    text += `-`.repeat(50) + "\n";
+    text += `[${accTime}-${accTime + script.offer_bridge.timing_seconds}s]\n`;
+    text += `"${script.offer_bridge.script_text}"\n\n`;
+    accTime += script.offer_bridge.timing_seconds;
+  }
+
   text += `CTA\n`;
   text += `-`.repeat(50) + "\n";
   if (script.cta) {
@@ -116,6 +124,18 @@ function formatFullScript(script: ScriptOutput, hookIndex: number): string {
     for (const ing of script.ingredients_used) {
       text += `${ing.category}#${ing.ingredient_number} ${ing.ingredient_name}\n`;
     }
+  }
+
+  if (script.model_sale_type) {
+    text += `\nVENTA DEL MODELO: ${script.model_sale_type.replace(/_/g, ' ')}\n`;
+  }
+
+  if (script.angle_family || script.body_type) {
+    text += `\nCLASIFICACION\n`;
+    text += `-`.repeat(50) + "\n";
+    if (script.angle_family) text += `Familia: ${script.angle_family.replace(/_/g, ' ')}\n`;
+    if (script.angle_specific) text += `Angulo: ${script.angle_specific.replace(/_/g, ' ')}\n`;
+    if (script.body_type) text += `Tipo de cuerpo: ${script.body_type.replace(/_/g, ' ')}\n`;
   }
 
   return text;
@@ -540,6 +560,38 @@ export default function ScriptViewer({
             </div>
           </div>
         )}
+        {script.model_sale_type && (
+          <div className="mt-4 border-l-2 border-emerald-500/30 pl-4 ml-1 pt-2">
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Venta del modelo</span>
+            <div className="mt-2">
+              <span className="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                {script.model_sale_type.replace(/_/g, ' ')}
+              </span>
+            </div>
+          </div>
+        )}
+        {(script.angle_family || script.body_type) && (
+          <div className="mt-4 border-l-2 border-blue-500/30 pl-4 ml-1 pt-2">
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Clasificacion</span>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {script.angle_family && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                  Fam: {script.angle_family.replace(/_/g, ' ')}
+                </span>
+              )}
+              {script.angle_specific && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400/70 border border-blue-500/20">
+                  {script.angle_specific.replace(/_/g, ' ')}
+                </span>
+              )}
+              {script.body_type && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">
+                  Cuerpo: {script.body_type.replace(/_/g, ' ')}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Hooks Selector */}
@@ -687,12 +739,36 @@ export default function ScriptViewer({
             });
           })()}
 
+          {/* Offer Bridge */}
+          {script.offer_bridge && (() => {
+            const bridgeStart = script.development.sections.reduce(
+              (sum, s) => sum + s.timing_seconds,
+              script.hooks[selectedHook]?.timing_seconds || 0
+            );
+            return (
+              <div className="bg-teal-500/5 border border-teal-500/15 rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="uppercase tracking-wider text-[11px] font-semibold text-teal-400">PUENTE A LA OFERTA</span>
+                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">{bridgeStart}-{bridgeStart + script.offer_bridge.timing_seconds}s</span>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20">
+                    {script.offer_bridge.product_type === "webinar_gratis" ? "Webinar Gratis" : script.offer_bridge.product_type === "taller_5" ? "Taller $5" : "Custom"}
+                  </span>
+                </div>
+                <InlineEdit
+                  value={script.offer_bridge.script_text}
+                  onSave={(v) => handleEdit("offer_bridge.script_text", v)}
+                  className="text-zinc-200 text-sm"
+                />
+              </div>
+            );
+          })()}
+
           {/* CTA */}
           {(() => {
             const devTotal = script.development.sections.reduce(
               (sum, s) => sum + s.timing_seconds,
               script.hooks[selectedHook]?.timing_seconds || 0
-            );
+            ) + (script.offer_bridge?.timing_seconds || 0);
             const cta = script.cta;
             const ctaTiming = cta?.timing_seconds || 0;
             const ctaVerbal = cta?.verbal_cta || '[CTA genérico — se pega en edición]';

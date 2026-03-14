@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listGenerations, getBurnedLeads } from "@/lib/storage/local";
+import { listGenerations, getBurnedLeads, getActiveCTAs } from "@/lib/storage/local";
 import SessionPack from "@/components/session-pack";
 import { Kbd } from "@/components/keyboard-nav";
 import Sparkline from "@/components/sparkline";
@@ -8,9 +8,10 @@ import PipelineBar from "@/components/pipeline-bar";
 import GlowCard from "@/components/glow-card";
 
 export default async function DashboardPage() {
-  const [generations, burnedLeads] = await Promise.all([
+  const [generations, burnedLeads, activeCTAs] = await Promise.all([
     listGenerations(),
     getBurnedLeads(),
+    getActiveCTAs(),
   ]);
 
   const draftCount = generations.filter((g) => !g.status || g.status === "draft").length;
@@ -211,7 +212,7 @@ export default async function DashboardPage() {
             <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-600 font-medium shrink-0">Guiones</span>
           </div>
 
-          <SessionPack generations={generations} />
+          <SessionPack generations={generations} activeCTAs={activeCTAs} />
         </>
       )}
     </div>

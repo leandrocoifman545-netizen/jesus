@@ -54,27 +54,26 @@ interface GenerationSummary {
       setup_instructions: string;
       recording_notes: string;
     };
+    offer_bridge?: {
+      product_type: string;
+      script_text: string;
+      timing_seconds: number;
+    };
   };
+}
+
+interface ActiveCTA {
+  id: string;
+  channel: string;
+  variant: string;
+  ingredients: string[];
+  text: string;
 }
 
 interface SessionPackProps {
   generations: GenerationSummary[];
+  activeCTAs?: ActiveCTA[];
 }
-
-const CTAS = [
-  {
-    name: "CTA 1 — Directo",
-    text: 'Toca el boton de aca abajo y registrate a la clase gratuita. Te muestro en vivo como crear tu primer producto digital con IA. Te veo adentro. Abrazo.',
-  },
-  {
-    name: "CTA 2 — Taller $5",
-    text: 'Toca el boton de aca abajo y registrate. La clase es gratis. No te pido plata, no te pido experiencia. Solo una hora para que veas como funciona. Y si despues queres crear tu producto conmigo, hay un taller de 3 dias que vale menos que una pizza. Vos decidis. Te mando un abrazo y te veo adentro.',
-  },
-  {
-    name: "CTA 3 — Instagram",
-    text: 'Comenta "CLASE" y anda al link de mi perfil porque ahi te podes registrar a la clase gratuita donde te enseno paso a paso crear tu primer producto digital con IA y como conseguir tus primeras ventas.',
-  },
-];
 
 const STATUS_CONFIG: Record<GenerationStatus, { label: string; color: string; icon: string }> = {
   draft: { label: "Borrador", color: "text-zinc-500 border-zinc-700", icon: "" },
@@ -284,7 +283,7 @@ function RenameBatchModal({ batchName, onClose, onSubmit }: {
 
 // --- Pack/teleprompter generators ---
 
-function generatePackText(selected: GenerationSummary[]): string {
+function generatePackText(selected: GenerationSummary[], ctas: ActiveCTA[]): string {
   const date = new Date().toLocaleDateString("es-AR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
   let text = "";
 
@@ -295,11 +294,11 @@ function generatePackText(selected: GenerationSummary[]): string {
   text += "=".repeat(60) + "\n\n";
 
   text += "-".repeat(60) + "\n";
-  text += "  3 CTAs (grabar una vez, se pegan a cualquier cuerpo)\n";
+  text += `  ${ctas.length} CTAs (grabar una vez, se pegan a cualquier cuerpo)\n`;
   text += "-".repeat(60) + "\n\n";
 
-  for (const cta of CTAS) {
-    text += `> ${cta.name}\n`;
+  for (const cta of ctas) {
+    text += `> ${cta.channel} (${cta.variant})\n`;
     text += `  "${cta.text}"\n\n`;
   }
 
@@ -351,6 +350,20 @@ function generatePackText(selected: GenerationSummary[]): string {
       text += `${section.script_text}\n\n`;
     }
 
+    if (gen.script.offer_bridge) {
+      text += "> PUENTE A LA OFERTA\n";
+      text += "-".repeat(40) + "\n\n";
+      text += `"${gen.script.offer_bridge.script_text}"\n\n`;
+    }
+
+    if (gen.script.cta?.verbal_cta) {
+      text += "> CTA\n";
+      text += "-".repeat(40) + "\n\n";
+      text += `"${gen.script.cta.verbal_cta}"`;
+      if (gen.script.cta.reason_why) text += ` ${gen.script.cta.reason_why}`;
+      text += "\n\n";
+    }
+
     text += "\n";
   });
 
@@ -365,14 +378,15 @@ function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-function generatePackHTML(selected: GenerationSummary[]): string {
+function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): string {
   const date = new Date().toLocaleDateString("es-AR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
   const totalDuration = selected.reduce((a, g) => a + (g.script.total_duration_seconds || 0), 0);
 
-  const ctasHTML = CTAS.map(c => `
+  const ctasHTML = ctas.map(c => `
     <div class="cta-item">
-      <div class="cta-name">${esc(c.name)}</div>
+      <div class="cta-name">${esc(c.channel)} — Variante ${esc(c.variant)}</div>
       <div class="cta-text">&ldquo;${esc(c.text)}&rdquo;</div>
+      <div style="margin-top:4px;font-size:8pt;color:var(--gray-500);">Ingredientes: ${esc(c.ingredients.join(" + "))}</div>
     </div>`).join("");
 
   const tocHTML = selected.map((g, i) => `
@@ -422,6 +436,18 @@ function generatePackHTML(selected: GenerationSummary[]): string {
 
       <div class="body-label">Cuerpo</div>
       ${bodySections}
+
+      ${g.script.offer_bridge ? `
+      <div class="offer-bridge no-break">
+        <div class="body-section-name">PUENTE A LA OFERTA — ${esc(g.script.offer_bridge.product_type === "webinar_gratis" ? "Webinar Gratis" : g.script.offer_bridge.product_type === "taller_5" ? "Taller $5" : "Custom")}</div>
+        <div class="body-section-text">&ldquo;${esc(g.script.offer_bridge.script_text)}&rdquo;</div>
+      </div>` : ""}
+
+      ${g.script.cta?.verbal_cta ? `
+      <div class="cta-inline no-break">
+        <div class="body-section-name">CTA</div>
+        <div class="body-section-text">&ldquo;${esc(g.script.cta.verbal_cta)}&rdquo;${g.script.cta.reason_why ? ` <em>${esc(g.script.cta.reason_why)}</em>` : ""}</div>
+      </div>` : ""}
     </div>`;
   }).join("");
 
@@ -496,6 +522,10 @@ function generatePackHTML(selected: GenerationSummary[]): string {
   .body-section-text { font-size: 11pt; line-height: 1.7; }
   .body-section.rehook { background: var(--amber-light); border-color: var(--amber); border-left: 3px solid var(--amber); }
   .body-section.rehook .body-section-name { color: var(--amber); }
+  .offer-bridge { margin-top: 16px; padding: 14px 18px; background: #f0fdfa; border: 1px solid #99f6e4; border-left: 3px solid #14b8a6; border-radius: 8px; }
+  .offer-bridge .body-section-name { color: #14b8a6; }
+  .cta-inline { margin-top: 16px; padding: 14px 18px; background: var(--purple-light); border: 1px solid #c4b5fd; border-left: 3px solid var(--purple); border-radius: 8px; }
+  .cta-inline .body-section-name { color: var(--purple); }
   .lead-card { display: flex; gap: 12px; margin-bottom: 12px; padding: 14px 16px; background: var(--green-light); border-radius: 8px; border: 1px solid #d1fae5; }
   .lead-num { font-size: 16pt; font-weight: 800; color: var(--green); min-width: 28px; line-height: 1; padding-top: 2px; }
   .lead-content { flex: 1; }
@@ -520,7 +550,7 @@ function generatePackHTML(selected: GenerationSummary[]): string {
   <div class="cover-meta">
     <span><strong>${selected.length}</strong>&nbsp;guiones</span>
     <span><strong>${totalDuration}s</strong>&nbsp;total</span>
-    <span><strong>${CTAS.length}</strong>&nbsp;CTAs</span>
+    <span><strong>${ctas.length}</strong>&nbsp;CTAs</span>
   </div>
 </div>
 
@@ -583,6 +613,12 @@ function generateTeleprompterText(selected: GenerationSummary[]): string {
     for (const section of gen.script.development.sections) {
       text += `${section.script_text}\n\n`;
     }
+
+    if (gen.script.offer_bridge) {
+      text += `[PUENTE A LA OFERTA]\n`;
+      text += `${gen.script.offer_bridge.script_text}\n\n`;
+    }
+
     text += `--- CORTE ---\n`;
   });
 
@@ -678,7 +714,14 @@ function getBatchStatusSummary(items: GenerationSummary[]): { drafts: number; co
 
 // --- Main component ---
 
-export default function SessionPack({ generations: initialGenerations }: SessionPackProps) {
+const FALLBACK_CTAS: ActiveCTA[] = [
+  { id: "clase-gratis-A", channel: "Clase Gratuita", variant: "A", ingredients: ["#109 Directo", "#117 Escasez"], text: "Tocá el botón de acá abajo y registrate a la clase gratuita. Son 2 horas en vivo donde te muestro cómo crear tu primer producto digital con IA y conseguir tus primeras ventas. Los cupos son limitados porque es en vivo. Te espero adentro." },
+  { id: "taller-5-A", channel: "Taller $5", variant: "A", ingredients: ["#103 Reducción al absurdo", "#125 Reframe", "#126 Presuposición"], text: "Tocá el botón de acá abajo. Son 3 días conmigo, en vivo. Día 1 elegís tu producto, día 2 lo creás con IA, día 3 lo vendés. ¿Cuánto sale? 5 dólares. Menos que un café. La pregunta no es si funciona — ya te mostré que funciona. La pregunta es si vos vas a hacer algo. Nos vemos adentro." },
+  { id: "instagram-A", channel: "Instagram Orgánico", variant: "A", ingredients: ["#110 Conversacional", "#127 Embedded Command"], text: "Comentá 'CLASE' y andá al link de mi perfil. Cuando entres y te registres, vas a ver exactamente cómo crear tu producto digital con IA paso a paso. Es gratis. Te espero." },
+];
+
+export default function SessionPack({ generations: initialGenerations, activeCTAs }: SessionPackProps) {
+  const CTAS = activeCTAs && activeCTAs.length > 0 ? activeCTAs : FALLBACK_CTAS;
   const router = useRouter();
   const toast = useToast();
   const [generations, setGenerations] = useState(initialGenerations);
@@ -959,14 +1002,14 @@ export default function SessionPack({ generations: initialGenerations }: Session
 
   function downloadPack() {
     const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
-    const text = generatePackText(selectedGens);
+    const text = generatePackText(selectedGens, CTAS);
     downloadFile(text, `pack-grabacion-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.txt`);
     toast(`Pack descargado (${selectedGens.length} guiones)`);
   }
 
   function downloadPackPDF() {
     const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
-    const html = generatePackHTML(selectedGens);
+    const html = generatePackHTML(selectedGens, CTAS);
     const w = window.open("", "_blank");
     if (!w) { toast("Permití popups para descargar el PDF"); return; }
     w.document.write(html);
@@ -993,7 +1036,7 @@ export default function SessionPack({ generations: initialGenerations }: Session
 
   function copyPack() {
     const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
-    const text = generatePackText(selectedGens);
+    const text = generatePackText(selectedGens, CTAS);
     navigator.clipboard.writeText(text);
     toast("Pack copiado al portapapeles");
   }
