@@ -62,11 +62,20 @@ interface GenerationSummary {
   };
 }
 
+interface CTALayers {
+  oferta: string;
+  prueba: string;
+  riesgo_cero: string;
+  urgencia: string;
+  orden_nlp: string;
+}
+
 interface ActiveCTA {
   id: string;
   channel: string;
   variant: string;
   ingredients: string[];
+  layers?: CTALayers;
   text: string;
 }
 
@@ -298,8 +307,16 @@ function generatePackText(selected: GenerationSummary[], ctas: ActiveCTA[]): str
   text += "-".repeat(60) + "\n\n";
 
   for (const cta of ctas) {
-    text += `> ${cta.channel} (${cta.variant})\n`;
-    text += `  "${cta.text}"\n\n`;
+    text += `> ${cta.channel} (Variante ${cta.variant})\n`;
+    if (cta.layers) {
+      text += `  [OFERTA]      "${cta.layers.oferta}"\n`;
+      text += `  [PRUEBA]      "${cta.layers.prueba}"\n`;
+      text += `  [RIESGO CERO] "${cta.layers.riesgo_cero}"\n`;
+      text += `  [URGENCIA]    "${cta.layers.urgencia}"\n`;
+      text += `  [ORDEN + NLP] "${cta.layers.orden_nlp}"\n\n`;
+    } else {
+      text += `  "${cta.text}"\n\n`;
+    }
   }
 
   text += "\n";
@@ -382,12 +399,25 @@ function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): str
   const date = new Date().toLocaleDateString("es-AR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
   const totalDuration = selected.reduce((a, g) => a + (g.script.total_duration_seconds || 0), 0);
 
-  const ctasHTML = ctas.map(c => `
+  const LAYER_LABELS: Record<string, string> = {
+    oferta: "OFERTA", prueba: "PRUEBA", riesgo_cero: "RIESGO CERO",
+    urgencia: "URGENCIA", orden_nlp: "ORDEN + NLP",
+  };
+  const ctasHTML = ctas.map(c => {
+    const layersHTML = c.layers
+      ? Object.entries(c.layers).map(([key, val]) => `
+        <div class="cta-layer">
+          <span class="cta-layer-label">${esc(LAYER_LABELS[key] || key)}</span>
+          <span class="cta-layer-text">&ldquo;${esc(val)}&rdquo;</span>
+        </div>`).join("")
+      : `<div class="cta-text">&ldquo;${esc(c.text)}&rdquo;</div>`;
+    return `
     <div class="cta-item">
       <div class="cta-name">${esc(c.channel)} — Variante ${esc(c.variant)}</div>
-      <div class="cta-text">&ldquo;${esc(c.text)}&rdquo;</div>
-      <div style="margin-top:4px;font-size:8pt;color:var(--gray-500);">Ingredientes: ${esc(c.ingredients.join(" + "))}</div>
-    </div>`).join("");
+      ${layersHTML}
+      <div style="margin-top:6px;font-size:8pt;color:var(--gray-500);">Ingredientes: ${esc(c.ingredients.join(" + "))}</div>
+    </div>`;
+  }).join("");
 
   const tocHTML = selected.map((g, i) => `
     <div class="toc-item">
@@ -504,6 +534,9 @@ function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): str
   .cta-item:last-child { margin-bottom: 0; }
   .cta-name { font-weight: 600; font-size: 9pt; color: var(--purple); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
   .cta-text { color: var(--gray-700); font-size: 10pt; line-height: 1.5; }
+  .cta-layer { display: flex; gap: 8px; margin-bottom: 6px; align-items: baseline; }
+  .cta-layer-label { font-weight: 600; font-size: 7pt; color: var(--purple); text-transform: uppercase; letter-spacing: 0.04em; min-width: 80px; flex-shrink: 0; padding-top: 2px; }
+  .cta-layer-text { color: var(--gray-700); font-size: 9.5pt; line-height: 1.45; }
   .script-header { background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%); color: white; padding: 28px 32px; border-radius: 12px 12px 0 0; }
   .script-num { font-size: 9pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-bottom: 6px; }
   .script-title { font-size: 18pt; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 16px; }
@@ -715,9 +748,42 @@ function getBatchStatusSummary(items: GenerationSummary[]): { drafts: number; co
 // --- Main component ---
 
 const FALLBACK_CTAS: ActiveCTA[] = [
-  { id: "clase-gratis-A", channel: "Clase Gratuita", variant: "A", ingredients: ["#109 Directo", "#117 Escasez", "#126 Presuposición"], text: "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo. Tocá el botón de acá abajo y registrate. Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo. Te espero adentro." },
-  { id: "taller-5-A", channel: "Taller $5", variant: "A", ingredients: ["#103 Reducción al absurdo", "#125 Reframe", "#126 Presuposición"], text: "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Todo con acompañamiento. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro." },
-  { id: "instagram-A", channel: "Instagram Orgánico", variant: "A", ingredients: ["#110 Conversacional", "#127 Embedded Command"], text: "En la clase gratuita te muestro cómo encontrar productos que se venden, crearlos con IA y venderlos por WhatsApp. Paso a paso. Sin experiencia previa. Comentá 'CLASE' y andá al link de mi perfil para registrarte. Cuando entres, vas a ver exactamente cómo funciona. Te espero." },
+  {
+    id: "clase-gratis-A", channel: "Clase Gratuita", variant: "A",
+    ingredients: ["#98 Tres Deliverables", "#89 Prueba por Volumen", "#106 Garantía Implícita", "#117 Escasez Real", "#109 Directo", "#126 Presuposición"],
+    layers: {
+      oferta: "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo.",
+      prueba: "Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros.",
+      riesgo_cero: "Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo.",
+      urgencia: "Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo.",
+      orden_nlp: "Tocá el botón de acá abajo y registrate. Te espero adentro.",
+    },
+    text: "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo. Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros. Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo. Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo. Tocá el botón de acá abajo y registrate. Te espero adentro.",
+  },
+  {
+    id: "taller-5-A", channel: "Taller $5", variant: "A",
+    ingredients: ["#71 Proceso de N Pasos", "#98 Tres Deliverables", "#89 Prueba por Volumen", "#103 Reducción al Absurdo", "#118 Deadline", "#117 Escasez", "#125 Reframe", "#126 Presuposición"],
+    layers: {
+      oferta: "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+      prueba: "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+      riesgo_cero: "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien.",
+      urgencia: "El taller arranca esta semana y los cupos son limitados porque es en vivo.",
+      orden_nlp: "La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro.",
+    },
+    text: "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. El taller arranca esta semana y los cupos son limitados porque es en vivo. La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro.",
+  },
+  {
+    id: "instagram-A", channel: "Instagram Orgánico", variant: "A",
+    ingredients: ["#89 Prueba por Volumen", "#110 Conversacional", "#127 Embedded Command"],
+    layers: {
+      oferta: "En la clase gratuita te muestro cómo encontrar productos que se venden, crearlos con IA y venderlos por WhatsApp. Paso a paso. Sin experiencia.",
+      prueba: "Miles de personas ya lo hicieron.",
+      riesgo_cero: "Es gratis. Son 2 horas. Sin compromiso.",
+      urgencia: "Los cupos se están llenando.",
+      orden_nlp: "Comentá 'CLASE' y andá al link de mi perfil para registrarte. Cuando entres, vas a ver exactamente cómo funciona. Te espero.",
+    },
+    text: "En la clase gratuita te muestro cómo encontrar productos que se venden, crearlos con IA y venderlos por WhatsApp. Paso a paso. Sin experiencia. Miles de personas ya lo hicieron. Es gratis. Son 2 horas. Sin compromiso. Los cupos se están llenando. Comentá 'CLASE' y andá al link de mi perfil para registrarte. Cuando entres, vas a ver exactamente cómo funciona. Te espero.",
+  },
 ];
 
 export default function SessionPack({ generations: initialGenerations, activeCTAs }: SessionPackProps) {
