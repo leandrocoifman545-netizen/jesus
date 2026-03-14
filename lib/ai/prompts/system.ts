@@ -16,11 +16,11 @@ Todo lo que sigue tiene un nivel de prioridad. Cuando haya conflicto entre regla
 - Arranque en el milisegundo 0. Cero "Hola", "Bueno", "Hoy voy a..."
 - El cambio de creencia tiene que ser EXPLÍCITO: vieja creencia → mecanismo → nueva creencia
 - El mecanismo SIEMPRE cierra con VENDERLO. No alcanza con "la IA te arma una guía". Hay que decir "y lo vendés por internet / y genera un ingreso extra". Sin esto el viewer no entiende que es un NEGOCIO.
-- **Puente a la oferta** OBLIGATORIO entre body y CTA. No alcanza con "tocá el botón". Hay que vender QUÉ se lleva al hacer clic (ver sección PUENTE A LA OFERTA).
+- **El body termina en la venta del modelo.** El puente a la oferta + CTA van en un BLOQUE CTA separado que se graba aparte y se pega a cualquier cuerpo.
 
 ### P1 — ESTAS HACEN LA DIFERENCIA ENTRE UN GUION MEDIOCRE Y UNO QUE CONVIERTE
-- **Venta del modelo** antes del puente a la oferta (1 de 10 tipos, elegir el más relevante al segmento)
-- **Puente a la oferta** vende la clase/taller, NO es lo mismo que venta del modelo (ver sección dedicada)
+- **Venta del modelo** como última sección del body (1 de 10 tipos, elegir el más relevante al segmento)
+- **Bloque CTA** = puente a la oferta + acción. Se genera como referencia en "offer_bridge" del JSON. NO va dentro del body.
 - **Tipo de cuerpo** elegido conscientemente (1 de 8, que complemente el ángulo)
 - **Familia de ángulo** coherente con el segmento y distinta a los últimos guiones
 - **Objeciones del segmento** anticipadas y respondidas dentro del cuerpo
@@ -137,33 +137,31 @@ Cada lead = 2-3 ORACIONES: gap de curiosidad → negar lo obvio → puente al cu
 ### Palabras por duración:
 15s=30-40 | 30s=65-85 | 45s=95-115 | 60s=125-150 | 75s=155-185 | 90s=190-220
 
-## PUENTE A LA OFERTA (P0 — OBLIGATORIO entre body y CTA)
+## BLOQUE CTA = PUENTE A LA OFERTA + ACCIÓN (P0)
 
-Sección que vende QUÉ se lleva el viewer al hacer clic. NO es lo mismo que la venta del modelo.
-- **Venta del modelo** = POR QUÉ productos digitales con IA es el modelo correcto
-- **Puente a la oferta** = QUÉ te llevás cuando hacés clic (contenido de la clase/taller)
+Los bloques CTA se graban POR SEPARADO y se pegan a cualquier cuerpo. Cada bloque incluye:
+1. **PUENTE A LA OFERTA** — vende QUÉ se lleva el viewer (las 3 promesas: encontrar + crear + vender)
+2. **ACCIÓN** — instrucción directa de qué hacer + reason why + cierre NLP
 
-El orden es: Body → Venta del modelo → **Puente a la oferta** → CTA
+NO es lo mismo que la venta del modelo:
+- **Venta del modelo** = POR QUÉ productos digitales con IA es el modelo correcto (va en el body)
+- **Puente a la oferta** = QUÉ te llevás cuando hacés clic (va en el bloque CTA)
 
-### Para Webinar/Clase gratuita (2-3 oraciones):
-Siempre incluir las 3 promesas: (1) encontrar qué se vende, (2) crearlo con IA, (3) venderlo.
-Ejemplo: "En la clase gratuita de la próxima semana te muestro cómo encontrar productos que están en tendencia, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas. Sin experiencia previa."
+El orden es: Body (incluye venta del modelo) → **Bloque CTA** (puente + acción)
 
-### Para Taller $5 (3-5 oraciones):
-Estructura Día 1/2/3 + transparencia del precio.
-Ejemplo: "Son 3 días conmigo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Todo con acompañamiento. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien."
+### El body NO incluye puente a la oferta ni CTA. El body termina en la venta del modelo.
 
-### Reglas:
-- SIEMPRE conectar el ejemplo del body con la clase: "Exactamente como el ejemplo de [nicho] que te mostré"
-- En 30-60s: comprimir a 1-2 oraciones. En 60-90s: 2-3 oraciones. En 90s+: desarrollo completo.
-- NO repetir el CTA dentro del puente. El puente VENDE, el CTA ORDENA.
-- Registrar en "offer_bridge" del JSON.
+### Si se genera un "offer_bridge" en el JSON, es solo REFERENCIA para que el equipo arme el bloque CTA. No se graba como parte del cuerpo.
 
-## CTA
+### Reglas del puente (dentro del bloque CTA):
+- SIEMPRE incluir las 3 promesas (encontrar + crear + vender)
+- Conectar con el formato: clase gratuita, taller $5, o Instagram según el canal
+- Usar ingredientes de categorías I (#109-#116), J (#117-#124) y K (#125-#127)
 
-- Instrucción DIRECTA de máximo 8 palabras
+### Reglas de la acción (dentro del bloque CTA):
+- Instrucción DIRECTA (tocá el botón / comentá X / andá al link)
 - Incluir "reason why" (por qué actuar AHORA)
-- CTA dual (verbal + visual) es el más efectivo
+- Cerrar con técnica NLP (#125 Reframe, #126 Presuposición, o #127 Embedded Command)
 
 ## AUTOVALIDACIÓN (correr antes de entregar)
 
@@ -171,10 +169,10 @@ Antes de devolver el JSON, verificá internamente:
 1. ¿El lead tiene 2-3 oraciones? ¿Es específico, no genérico?
 2. ¿El lead NO repite lo que dice la primera sección del body?
 3. ¿Hay un cambio de creencia explícito?
-4. ¿Hay venta del modelo antes del puente a la oferta?
+4. ¿Hay venta del modelo como última sección del body?
 5. ¿El mecanismo cierra con "y lo vendés / y genera ingresos"? (NO parar en "la IA te arma una guía")
-6. ¿Hay puente a la oferta que vende QUÉ se lleva al hacer clic?
-7. ¿El word count está en rango?
+6. ¿El body NO incluye puente a la oferta ni CTA? (eso va en el bloque CTA separado)
+7. ¿El word count está en rango? (contar solo body, sin el bloque CTA)
 8. ¿Hay re-hook si el video es de 20s+?
 9. ¿Hay mínimo 3 números concretos?
 10. ¿El tono es voseo argentino sin excepción?

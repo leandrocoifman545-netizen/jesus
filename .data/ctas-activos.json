@@ -3,21 +3,21 @@
     "id": "clase-gratis-A",
     "channel": "Clase Gratuita",
     "variant": "A",
-    "ingredients": ["#109 Directo", "#117 Escasez"],
-    "text": "Tocá el botón de acá abajo y registrate a la clase gratuita. Son 2 horas en vivo donde te muestro cómo crear tu primer producto digital con IA y conseguir tus primeras ventas. Los cupos son limitados porque es en vivo. Te espero adentro."
+    "ingredients": ["#109 Directo", "#117 Escasez", "#126 Presuposición"],
+    "text": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo. Tocá el botón de acá abajo y registrate. Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo. Te espero adentro."
   },
   {
     "id": "taller-5-A",
     "channel": "Taller $5",
     "variant": "A",
     "ingredients": ["#103 Reducción al absurdo", "#125 Reframe", "#126 Presuposición"],
-    "text": "Tocá el botón de acá abajo. Son 3 días conmigo, en vivo. Día 1 elegís tu producto, día 2 lo creás con IA, día 3 lo vendés. ¿Cuánto sale? 5 dólares. Menos que un café. La pregunta no es si funciona — ya te mostré que funciona. La pregunta es si vos vas a hacer algo. Nos vemos adentro."
+    "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Todo con acompañamiento. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
   },
   {
     "id": "instagram-A",
     "channel": "Instagram Orgánico",
     "variant": "A",
     "ingredients": ["#110 Conversacional", "#127 Embedded Command"],
-    "text": "Comentá 'CLASE' y andá al link de mi perfil. Cuando entres y te registres, vas a ver exactamente cómo crear tu producto digital con IA paso a paso. Es gratis. Te espero."
+    "text": "En la clase gratuita te muestro cómo encontrar productos que se venden, crearlos con IA y venderlos por WhatsApp. Paso a paso. Sin experiencia previa. Comentá 'CLASE' y andá al link de mi perfil para registrarte. Cuando entres, vas a ver exactamente cómo funciona. Te espero."
   }
 ]
