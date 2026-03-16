@@ -1,0 +1,192 @@
+{
+  "id": "0a0e69b3-dca2-4e11-95ae-e48fbc0f9ae5",
+  "briefId": "2e15b892-3a7b-48f9-9aab-dfd870bd0483",
+  "title": "Jubilado +50: tu experiencia vale oro — Contraste emocional — Seg D",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 75,
+      "content_style": "Jesús caminando, tono más tranquilo que lo usual, respeto por la audiencia mayor",
+      "key_considerations": "Este segmento necesita eliminación de barreras técnicas. No hablar de apps complejas. Todo se reduce a celular + WhatsApp + IA."
+    },
+    "visual_format": {
+      "format_name": "Walking + Talking",
+      "difficulty_level": 1,
+      "setup_instructions": "Jesús caminando por un parque o barrio tranquilo, ritmo más calmo",
+      "recording_notes": "Hablar más despacio que lo usual. Este segmento necesita tiempo para procesar. Sin jump cuts."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Tenés 55 años. Los pibes ya crecieron. Tenés tiempo. Tenés experiencia. Tenés conocimiento. Pero no sabés cómo convertir eso en plata.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "Te dicen que a los 50 ya fue. Que la tecnología no es para vos. Que disfrutes la jubilación. ¿Y si todo eso fuera mentira?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "confesion",
+        "script_text": "Mi viejo tuvo un kiosco 30 años. Laburó todos los días de su vida. Y un día me dijo: 'Si hubiera sabido que se podía ganar plata sin local, todo habría sido distinto.'",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas de más de 50 tienen una ventaja ENORME para vender productos digitales. Y casi ninguna lo sabe.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "analogia",
+        "script_text": "Imaginate que todo lo que aprendiste en 30 años de laburo es un depósito lleno de mercadería. Pero nunca abriste la puerta. La IA es la llave.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Contraste emocional fuerte — Dolor → Pivote → Esperanza",
+      "emotional_arc": "Resignación y dolor de sentirse descartado → pivote emocional → descubrimiento de que su experiencia vale → alivio y esperanza concreta",
+      "sections": [
+        {
+          "section_name": "El momento oscuro",
+          "script_text": "Laburaste 30 años. Sabés de lo tuyo más que cualquier pibe de 25 con un curso online. Pero el mundo cambió y sentís que te dejó afuera. Que la tecnología no es para vos. Que emprender es para gente joven.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Re-hook + Pivote",
+          "is_rehook": true,
+          "script_text": "Hasta que te enterás de algo. La IA niveló la cancha. No necesitás saber programar. No necesitás seguidores. No necesitás mostrar tu cara. No necesitás invertir miles. Necesitás UN celular y saber pedirle a la IA lo que querés. Y eso se aprende en un día.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Tu ventaja real",
+          "script_text": "¿Sabés cuál es tu ventaja? Que vos ya tenés el conocimiento. Un pibe de 20 tiene que inventar de qué hablar. Vos ya lo viviste. 30 años de experiencia en lo tuyo. La IA lo organiza, lo empaqueta y lo convierte en un producto que se vende. Vos solo tenés que saber pedir.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Venta del modelo — Eliminación de barreras",
+          "script_text": "Sin mostrar tu cara. Sin saber de computadoras. Sin invertir plata. La IA hace el 90% del trabajo. Vos ponés lo que ya sabés. Eso es todo.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "offer_bridge": {
+      "product_type": "taller_5",
+      "script_text": "En el taller de 3 días te muestro paso a paso cómo agarrar lo que ya sabés — como las manualidades que hacés hace años — crear un producto digital con IA y empezar a venderlo. Encontrar qué se vende, crearlo y venderlo. Todo con acompañamiento.",
+      "timing_seconds": 10
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y anotate. Te espero el primer día.",
+      "reason_why": "MOFU - taller $5, el precio bajo elimina la barrera para este segmento cauteloso",
+      "timing_seconds": 4,
+      "cta_type": "directo"
+    },
+    "transition_text": "Y manualidades es solo UNO de los conocimientos que podés convertir en producto.",
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 4,
+        "ingredient_name": "Historia Personal / Confesional"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 25,
+        "ingredient_name": "Dolor de Identidad Limitada"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Prueba por Persona Improbable"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Persona Improbable"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 103,
+        "ingredient_name": "Reducción al Absurdo"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "5 — Eliminación de barreras",
+    "body_type": "Contraste emocional fuerte",
+    "angle_family": "1 — Identidad y situación",
+    "angle_specific": "1.4 — Jubilado/+50 reinventándose: ya pasó tu momento... o no",
+    "segment": "D",
+    "funnel_stage": "MOFU",
+    "niche": "Manualidades / conocimiento acumulado general",
+    "belief_change": {
+      "old_belief": "Ya estoy grande para esto, la tecnología no es para mi generación",
+      "mechanism": "La IA eliminó todas las barreras técnicas. Tu ventaja real es que ya tenés 30 años de conocimiento que los jóvenes no tienen.",
+      "new_belief": "Mi experiencia de vida es mi mayor activo, y la IA me permite convertirla en producto sin saber de tecnología"
+    },
+    "total_duration_seconds": 75,
+    "word_count": 175,
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita (TOFU)",
+        "variant": "Variante A — Clásica",
+        "layers": {
+          "oferta": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo.",
+          "prueba": "Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros.",
+          "riesgo_cero": "Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo.",
+          "urgencia": "Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. Te espero adentro."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5 (MOFU)",
+        "variant": "Variante A — Día 1/2/3 + Transparencia",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien.",
+          "urgencia": "El taller arranca esta semana y los cupos son limitados porque es en vivo.",
+          "orden_nlp": "La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "Variante B — Micro-compromiso",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme \"QUIERO\" en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T17:12:58.643Z",
+  "batch": {
+    "id": "e6b59315-8791-4217-abeb-bec9ec364594",
+    "name": "Version 2.0"
+  }
+}

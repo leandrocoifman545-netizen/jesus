@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
+import { exec } from "child_process";
+import { promisify } from "util";
+import { isResearchStale, getDiscoveredAngles } from "@/lib/ai/angle-discovery";
+
+const execAsync = promisify(exec);
 
 const RESEARCH_FILE = path.join(process.cwd(), ".data", "research", "latest.json");
 
@@ -93,7 +98,7 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // Default: return summary + top keywords grouped by angle
+    // Default: return summary + top keywords grouped by angle + freshness + discovered angles
     const byAngle: Record<string, Array<{ keyword: string; total_score: number }>> = {};
     for (const [angle, entries] of Object.entries(data.by_angle)) {
       byAngle[angle] = entries
@@ -102,10 +107,32 @@ export async function GET(request: NextRequest) {
         .map((k) => ({ keyword: k.keyword, total_score: k.total_score }));
     }
 
+    // Check freshness and get discovered angles
+    const freshness = await isResearchStale();
+    let discoveredTop: Array<{ niche: string; angle_family: string; big_idea: string; score: number; source: string }> = [];
+    try {
+      const discovered = await getDiscoveredAngles();
+      discoveredTop = discovered.slice(0, 20).map((a) => ({
+        niche: a.niche,
+        angle_family: a.angle_family,
+        big_idea: a.big_idea,
+        score: a.score,
+        source: a.source,
+      }));
+    } catch { /* non-critical */ }
+
     return NextResponse.json({
       generated_at: data.generated_at,
+      freshness: {
+        days_old: freshness.daysOld,
+        stale: freshness.stale,
+        recommendation: freshness.stale
+          ? "Research tiene más de 3 días. Correr: node scripts/research-angles.mjs o POST /api/research/refresh"
+          : "Research actualizado",
+      },
       total_suggestions: data.summary.total_suggestions,
       ranked_count: data.summary.ranked_count,
+      discovered_angles: discoveredTop,
       available_angles: Object.keys(data.by_angle),
       available_countries: ["Argentina", "México", "Colombia", "Venezuela", "Perú"],
       top_keywords: data.top_100.slice(0, limit).map((k) => ({

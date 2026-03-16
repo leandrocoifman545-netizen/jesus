@@ -1,0 +1,182 @@
+{
+  "id": "6503f56f-badb-4946-8f79-90bebd4bcb85",
+  "briefId": "6ebdf758-2868-4b51-a07b-90451643cdc5",
+  "title": "G7 — Anti-gurú: los que te enseñan nunca vendieron nada",
+  "batch": "semana-2026-03-17",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.6_anti_guru_industria",
+    "body_type": "demolicion_mito",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "industria de infoproductos — gurús vs. practitioners",
+    "model_sale_type": "transparencia_total",
+    "total_duration_seconds": 82,
+    "word_count": 190,
+    "belief_change": {
+      "old_belief": "Todos los que venden cursos online son iguales — venden humo",
+      "new_belief": "Hay una diferencia enorme entre los que enseñan lo que hacen y los que enseñan lo que leyeron"
+    },
+    "micro_beliefs": [
+      "La mayoría de los gurús nunca vendieron un producto propio — solo venden cursos sobre vender cursos",
+      "Hay una forma simple de detectar quién sabe y quién no: preguntale qué vendió antes de enseñar",
+      "Los practitioners muestran números reales, no capturas editadas ni estilos de vida",
+      "Desconfiar está bien — pero no dejes que la desconfianza te frene de actuar",
+      "Existe gente que enseña desde la experiencia real, no desde la teoría"
+    ],
+    "hooks": [
+      {
+        "hook_type": "provocacion",
+        "script_text": "El tipo que te vende un curso de $997 sobre cómo ganar plata online… ¿sabés cuál es su negocio? Venderte el curso. Ese es TODO su negocio. Y hay una forma de darte cuenta antes de caer."
+      },
+      {
+        "hook_type": "error_categorizacion",
+        "script_text": "Hay dos tipos de personas que enseñan negocios online: los que vendieron productos antes de enseñar, y los que solo venden el curso de cómo vender. Si no sabés distinguirlos, vas a perder plata."
+      },
+      {
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuánto gastaste en cursos que prometían todo y no servían para nada? $50, $200, $500? No fue tu culpa. Fue que le compraste a gente que nunca hizo lo que enseña."
+      },
+      {
+        "hook_type": "confesion",
+        "script_text": "Yo también caí. Compré cursos de tipos con Lamborghini alquilado y capturas de pantalla editadas. Perdí plata y tiempo. Hasta que aprendí a distinguir al que HIZO del que solo HABLA."
+      },
+      {
+        "hook_type": "negacion_directa",
+        "script_text": "No todos los que enseñan negocios online son estafadores. Pero la mayoría sí te vende un sueño que ellos nunca vivieron. Te digo cómo filtrar al que sabe del que actúa."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "title": "Beat 1 — Identificación: la industria del humo",
+          "persuasion_function": "identificacion",
+          "micro_belief": "La mayoría de los gurús nunca vendieron un producto propio — solo venden cursos sobre vender cursos",
+          "script_text": "Te muestran el auto, el viaje, la notebook en la playa. Te dicen que ganaron miles. Pero si les preguntás '¿qué vendiste antes de vender este curso?', se quedan mudos. Porque su único producto es el curso que te vende cómo ganar plata. El negocio es vos. No el producto."
+        },
+        {
+          "title": "Beat 2 — Quiebre: la pregunta que los delata",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay una forma simple de detectar quién sabe y quién no: preguntale qué vendió antes de enseñar",
+          "script_text": "Hay una sola pregunta que separa al que sabe del que actúa: '¿Qué vendiste antes de enseñar?' Si la respuesta es 'nada' o te cambia de tema, ya sabés. Un practitioner tiene productos, tiene clientes, tiene historia. No necesita alquilar un estilo de vida."
+        },
+        {
+          "title": "Beat 3 — Mecanismo: qué hace distinto a un practitioner",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Los practitioners muestran números reales, no capturas editadas ni estilos de vida",
+          "script_text": "Alguien que realmente vende productos digitales te puede mostrar: la plataforma donde vende, los números reales, los productos concretos. No promesas de estilo de vida. Resultados. Y te puede enseñar paso a paso porque lo hace todos los días, no porque leyó un libro y armó un PowerPoint."
+        },
+        {
+          "title": "Beat 4 — Demolición: la desconfianza como excusa",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Desconfiar está bien — pero no dejes que la desconfianza te frene de actuar",
+          "script_text": "Está perfecto desconfiar. Es sano. Pero hay gente que usa la desconfianza como excusa para no hacer nada. 'Son todos iguales.' No. No son todos iguales. Tu trabajo es filtrar. Y una vez que encontrás al que realmente sabe, actuás."
+        },
+        {
+          "title": "Beat 5 — Prueba: la diferencia en los resultados",
+          "persuasion_function": "prueba",
+          "micro_belief": "Existe gente que enseña desde la experiencia real, no desde la teoría",
+          "script_text": "Los alumnos de un guru teórico saben repetir frases motivacionales. Los alumnos de un practitioner tienen productos vendiendo. Esa es la diferencia. No es lo que te dicen — es lo que logran los que les hacen caso."
+        },
+        {
+          "title": "Venta del modelo — Transparencia total",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Transparencia mata humo",
+          "script_text": "Yo vendo productos digitales. Todos los días. Y enseño exactamente cómo lo hago. No te prometo un Lamborghini. Te prometo un sistema que funciona, con números que podés verificar. Si eso te parece poco glamoroso, perfecto. Es real."
+        }
+      ]
+    },
+    "transition_text": "Si querés aprender de alguien que primero vendió y después enseñó, esto es para vos.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "C",
+        "ingredient_number": 43,
+        "ingredient_name": "La Verdad Incómoda"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Anti-Autoridad"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 78,
+        "ingredient_name": "Filtro / Criterio de Decisión"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 89,
+        "ingredient_name": "Prueba por Volumen"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 28,
+        "ingredient_name": "Enemigo Común"
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T22:36:56.822Z"
+}

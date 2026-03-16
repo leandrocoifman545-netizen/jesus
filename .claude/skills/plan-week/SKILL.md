@@ -8,100 +8,213 @@ argument-hint: [fecha de la semana, ej. 2026-03-18]
 
 **REGLA CARDINAL: NUNCA delegar la generación de guiones a subagentes.** Planificar la semana en el contexto principal, generar cada guion uno por uno con toda la información cargada.
 
+## Paso 0: Pre-flight + Audit + Jerarquía (IGUAL que /guion)
+
+### 0a. Extraer winner patterns + session insights:
+```bash
+node scripts/extract-winner-patterns.mjs
+node scripts/extract-session-insights.mjs
+```
+Actualiza `.data/winner-patterns.md` y `.data/session-insights.md`.
+**Los winner patterns informan QUÉ generar:** si un tipo de lead/ángulo/body type funciona, hacer más (sin repetir).
+**Las session insights informan QUÉ evitar:** si Jesús dijo "esto no fluye", no planificar más de eso.
+
+### 0b. Audit COMPLETO (todos los checks):
+Correr `/audit` — los 12 checks. Si hay errores críticos → corregir antes de planificar.
+
+### 0c. Jerarquía de decisiones:
+Leer `.data/jerarquia-decisiones.md`:
+- **Reglas duras > Diversidad > Motor audiencia > Estructura > Enriquecimiento**
+- Frases reales del avatar: SIEMPRE usar, adaptar al segmento si es necesario
+- En caso de duda: el camino más ESPECÍFICO gana
+
 ## Paso 1: Leer contexto completo
 
-Leer TODOS estos archivos antes de planificar:
+### Archivos de contexto (SIEMPRE):
+1. `estrategia-semanal.md` — Reglas de composición del plan
+2. `matriz-cobertura.md` — Qué combinaciones están cubiertas
+3. `jesus-adp.md` — Producto, audiencia, tracking
+4. `formatos-visuales.md` — Formatos y regla de selección
+5. `consejos-jesus.md` — Reglas duras
+6. `inteligencia-audiencia.md` — Data de audiencia
+7. `avatar-frases-reales.md` — Verbatims reales del avatar
+8. `jesus-tono-adp-nuevo.md` — Tono y muletillas de Jesús
+9. `jesus-historia.md` — Historia real, citas (para planificar guiones de storytelling)
+10. `tecnicas-retencion.md` — Para saber qué técnicas asignar a cada guion
+11. `tecnicas-venta-emiliano.md` — Para elegir técnicas de venta por guion
 
-1. `!read /Users/lean/.claude/projects/-Users-lean-Documents/memory/estrategia-semanal.md` — Reglas de composición del plan
-2. `!read /Users/lean/.claude/projects/-Users-lean-Documents/memory/matriz-cobertura.md` — Qué combinaciones están cubiertas
-3. `!read /Users/lean/.claude/projects/-Users-lean-Documents/memory/jesus-adp.md` — Ángulos, segmentos, funnel, tracking
-4. `!read /Users/lean/.claude/projects/-Users-lean-Documents/memory/formatos-visuales.md` — Formatos y regla de selección
-5. `!read /Users/lean/.claude/projects/-Users-lean-Documents/memory/consejos-jesus.md` — Reglas duras
-6. `!read /Users/lean/.claude/projects/-Users-lean-Documents/memory/inteligencia-audiencia.md` — Data de audiencia
+### Archivos de SISTEMAS NUEVOS (OBLIGATORIOS):
+12. `.data/angulos-expandidos.md` — 5 familias de ángulos con reglas de diversidad
+13. `.data/tipos-cuerpo.md` — 8 vehículos narrativos con mapa de micro-creencias
+14. `.data/venta-modelo-negocio.md` — 10 tipos de venta del modelo
+15. `.data/ctas-biblioteca.md` — 3 bloques CTA de 6 capas
+16. `.data/enciclopedia-127-ingredientes.md` — 127 ingredientes
+17. `.data/reglas-diversidad.md` — **CRÍTICO:** 8 arcos narrativos, patrones prohibidos, checklist de diversidad
+18. `.data/motor-audiencia.md` — **OBLIGATORIO:** Tensiones→arcos, objeciones→guiones, vocabulario por segmento, intentos fallidos→leads, señales de compra, micro-yes, triggers→ingredientes
+19. `.data/jerarquia-decisiones.md` — 5 niveles de prioridad para resolver conflictos
 
-## Paso 2: Correr research (si hay script disponible)
+### Archivos de DATA REAL (condicionales pero leer si existen):
+20. `.data/winner-patterns.md` — Qué combinaciones funcionaron → sesgar el plan hacia ellas
+21. `.data/session-insights.md` — Feedback de Jesús → evitar lo que no funcionó, repetir lo que sí
+
+## Paso 2: Chequear leads quemados
 
 ```bash
-node scripts/research-angles.mjs 2>/dev/null || echo "Research script no disponible, usar datos existentes"
+node scripts/preflight-guion.mjs | python3 -c "import sys,json; d=json.load(sys.stdin); b=d['burned_leads']; print(f'Total quemados: {b[\"total\"]}'); [print(f'  {l[\"hookType\"]}: {l[\"text\"]}') for l in b['leads'][:20]]"
 ```
+Usa el preflight (no depende de la web). Muestra los primeros 20 de los 50 quemados.
 
-## Paso 3: Detectar huecos
+## Paso 3: Generar big ideas desde Trends + Research
 
-De la matriz de cobertura, identificar:
-- **Ángulos sin usar o con < 2 guiones**
-- **Segmentos subrepresentados** (A/B/C/D)
-- **Tipos de funnel sin cubrir** (TOFU/MOFU/RETARGET/EVERGREEN)
-- **Tipos de cuerpo sin cubrir** (mecanismo, idea de nicho, storytelling, analogía, comparación, anti-gurú)
-- **Frameworks poco usados** (rotar, no repetir PAS en exceso)
-- **Nichos nuevos** que nunca se usaron
-- **Tipos de lead sin usar** (priorizar tipos frescos)
+**Google Trends es la fuente principal de big ideas nuevas.** No es para validar nichos — es para DESCUBRIR ángulos.
 
-## Paso 4: Elegir 2 formatos visuales
+1. Correr `node scripts/trends-scan.mjs` → scan completo: base keywords + 15 nichos + rising queries
+2. Correr `node scripts/preflight-guion.mjs` → quick scan: 3 nichos frescos + rising queries (complementa el scan completo con nichos que trends-scan no tiene)
+3. Por cada dato interesante, generar big ideas cruzando con las 5 familias:
+   - Un trending topic × F1/F2/F3/F4/F5 = 5 big ideas potenciales
+3. Priorizar rising queries (están creciendo AHORA)
+4. Cada big idea candidata se convierte en un guion potencial
+
+**Ejemplo:** "jardinería urbana" está subiendo →
+- F2: "Miles buscan cómo armar un huerto en un balcón y nadie vende una guía"
+- F3: "Gastás en plantitas que se te mueren. ¿Y si alguien te pagara por enseñarle a que no se le mueran?"
+- F1: "Sos de las que tiene 40 plantas en el departamento. Eso que hacés por hobby vale plata"
+
+**Objetivo:** Generar 20-30 big ideas candidatas, elegir las 10 mejores para la semana.
+
+## Paso 4: Activar motor de audiencia
+
+Consultar `.data/motor-audiencia.md` para:
+1. **Asignar tensiones emocionales** — cada guion debe tener una tensión distinta (12 disponibles, usar mín 6 de 12 en 10 guiones)
+2. **Distribuir segmentos con vocabulario real** — usar las palabras EXACTAS de cada segmento
+3. **Incorporar objeciones** — al menos 2 de 10 guiones atacan una objeción (de las 6 del motor)
+4. **Leads de intentos fallidos** — al menos 3 de 50 leads totales (5×10) vienen de la tabla de intentos fallidos
+5. **Triggers de engagement** — variar triggers entre guiones, no siempre los mismos
+
+## Paso 5: Detectar huecos
+
+**NOTA: El sistema auto-brief (`lib/ai/auto-brief.ts`) ya hace esta detección automáticamente** al generar cada guion. Elige lo menos usado de cada dimensión (ángulo, cuerpo, segmento, funnel, venta del modelo). Para el plan semanal, igualmente conviene hacer la detección manual para tener una visión de alto nivel y asignar combinaciones estratégicamente en vez de dejar que el auto-brief elija una por una.
+
+De la matriz de cobertura + ángulos expandidos, identificar:
+- **Familias de ángulo** sin cubrir o con < 2 guiones
+- **Ángulos específicos** saturados (1.1 Mamá 5+, 3.1 IA desperdiciada 8+)
+- **Ángulos frescos** a priorizar (2.2, 2.4, 3.2, 3.4, 4.5, 4.6)
+- **Tipos de cuerpo** sin usar (mín 5 de 8 en 10 guiones)
+- **Ventas del modelo** sin usar (nunca repetir consecutiva)
+- **Segmentos** subrepresentados (A/B/C/D)
+- **Funnels** sin cubrir (TOFU/MOFU/RETARGET)
+- **Nichos** nuevos que nunca se usaron
+- **Tipos de lead** sin usar
+
+## Paso 6: Elegir 2 formatos visuales
 
 De formatos-visuales.md:
 - **2 formatos que NO se usaron en las últimas 4 semanas**
-- Al menos 1 diferente de Talking Head
 - 5 guiones en Formato A + 5 guiones en Formato B
-- Incluir instrucciones de producción para cada formato
+- Incluir instrucciones de producción
 
-## Paso 5: Armar los 10 guiones (plan)
+## Paso 7: Armar los 10 guiones (matriz)
 
-Para cada guion definir:
-- **#** (1-10)
-- **Título descriptivo**
-- **Ángulo** (con justificación de gap)
-- **Segmento** (A/B/C/D)
-- **Funnel** (TOFU/MOFU/RETARGET/EVERGREEN)
-- **Tipo de cuerpo**
-- **Framework**
-- **Nicho específico** (NO repetir nichos entre guiones)
-- **Formato visual** (A o B)
-- **Cambio de creencia** (creencia vieja → nueva)
+### Reglas de diversidad OBLIGATORIAS (ver `reglas-diversidad.md` para detalle completo):
 
-### Reglas de composición:
-- Mínimo 5 TOFU, 2 MOFU, 1 RETARGET o EVERGREEN
-- Mínimo 3 segmentos distintos cubiertos
-- No más de 2 guiones con el mismo ángulo
-- No más de 2 guiones con el mismo framework
-- Cada nicho debe ser ÚNICO (no repetir)
-- Justificar cada elección con datos (keywords, scores, gaps)
+**Dimensiones estructurales:**
+| Regla | Requisito |
+|-------|-----------|
+| **5 familias** | Todas representadas (2 por familia) |
+| **Ángulos** | NUNCA repetir el mismo ángulo específico |
+| **Consecutivos** | NUNCA 2 guiones seguidos de la misma familia |
+| **Vehículos** | Mínimo 5 distintos de 8 |
+| **Venta del modelo** | Mín 6 distintos, matemática simple máx 2, ventana oportunidad máx 1 |
+| **Segmentos** | Mín 3 de 4 cubiertos |
+| **Funnels** | Mín 5 TOFU + 2 MOFU + 1 RETARGET |
+| **Nichos** | Todos distintos, NUNCA repetir |
 
-## Paso 6: Definir CTAs de la semana
+**Dimensiones de diversidad (NUEVAS — anti-repetición):**
+| Regla | Requisito |
+|-------|-----------|
+| **Arcos narrativos** | Mínimo 5 arcos distintos de 8. Arco demo máximo 2. |
+| **Guiones sin demo** | Mínimo 3 de 10 sin ninguna demo/proceso |
+| **Ingredientes** | Combinación B+D+F+G diferente en cada guion. F#73/F#74/G#90 máx 3 de 10. |
+| **Ingredientes frescos** | Mínimo 3 guiones con ingredientes nunca usados |
+| **Frases muleta** | Cada frase de la lista prohibida → máx 1 uso en todo el batch |
+| **Ventana de IA** | Máximo 2 de 10 como contexto central |
+| **Energía/tono** | Mezclar: confrontativo (mín 2), empático, curioso, urgente. Mín 1 vulnerable. |
+| **Ritmo** | Mín 2 con ritmo rápido (Q&A, lista) vs lento (historia, analogía) |
 
-Los 3 CTAs genéricos (ver consejos-jesus.md) + excepciones por funnel si aplica.
+### Sesgar con winner patterns (si existen):
+- Si `.data/winner-patterns.md` muestra que un tipo de lead tiene más winners → incluir 2-3 guiones con ese tipo (sin exceder diversidad)
+- Si un body type o ángulo nunca fue recorded/winner → no descartar, pero priorizarlo menos que uno validado
+- Si session insights dicen "X no fluye" → evitar esa combinación
+- **Winner patterns INFORMAN, no MANDAN** — diversidad sigue siendo la regla #1
 
-## Paso 7: Programar tests
+### Para cada guion definir:
+- # | Título | Familia | Ángulo | Vehículo | **Arco** | Venta modelo | Segmento | Funnel | Nicho | Formato | **Tensión**
+- **Creencia central** y **5 beats con funciones persuasivas** (identificación, quiebre, mecanismo, demolición, prueba)
+- **Micro-creencia por beat** — cada beat instala 1 MC con función distinta
+- **Ingredientes clave** (con números específicos — NO siempre los mismos)
+- El vehículo se elige DESPUÉS de los beats, usando la tabla de `tipos-cuerpo.md`
+- **Duración objetivo: 75-90 segundos** (mínimo 75s para micro-VSL completo de 5 beats)
 
-Definir 2-3 tests A/B:
-- **Test de lead**: 1 guion con leads radicalmente distintos → subir como ads separados → medir CTR por lead
-- **Test de ángulo**: 2 guiones con mismo segmento, ángulos distintos → medir hook rate
-- **Test de funnel**: TOFU vs MOFU o RETARGET → medir CPA
+### Checklist de diversidad (correr ANTES de generar)
+```
+□ ¿Hay al menos 5 arcos narrativos distintos?
+□ ¿Máximo 2 usan el "arco demo"?
+□ ¿Mínimo 3 guiones NO tienen demo/proceso?
+□ ¿Cada guion tiene combinación de ingredientes diferente?
+□ ¿Se usan al menos 3 ingredientes NUNCA usados antes?
+□ ¿Las frases muleta aparecen máximo 1 vez cada una?
+□ ¿La "ventana de IA" aparece en máximo 2?
+□ ¿Hay mínimo 6 ventas del modelo distintas?
+□ ¿Hay variedad de energía y tono?
+□ ¿Al menos 1 guion es puro storytelling (sin demo)?
+□ ¿Al menos 1 guion es pura emoción (sin datos)?
+□ ¿Al menos 1 guion tiene ritmo rápido?
+□ ¿Se usan mín 6 tensiones emocionales distintas (de 12)?
+□ ¿Al menos 2 guiones atacan una objeción del motor?
+□ ¿Al menos 3 leads totales vienen de intentos fallidos?
+□ ¿El vocabulario de cada guion corresponde a su segmento?
+```
 
-## Paso 8: Orden de grabación
+## Paso 8: Elegir 3 bloques CTA para la sesión
 
-Sugerir orden de grabación basado en:
-1. Arrancar con energía (TOFU fríos)
-2. Escalar emoción gradualmente
+De `ctas-biblioteca.md`, elegir 1 variante por canal:
+1. **Clase Gratuita** — Variante A/B/C/D (distintas a la semana anterior)
+2. **Taller $5** — Variante A/B/C/D
+3. **Instagram** — Variante A/B/C/D
+
+NUNCA repetir misma variante 2 semanas seguidas.
+
+## Paso 9: Orden de grabación
+
+Sugerir orden basado en:
+1. Arrancar con energía (TOFU confrontativos)
+2. Formato A agrupado, Formato B agrupado (no mezclar)
 3. Storytelling/personal cuando esté caliente
-4. MOFU intensos en el medio-final
-5. RETARGET/EVERGREEN al final (más cortos, menos presión)
+4. Cerrar con tono más calmo
+5. 3 bloques CTA al final (se graban 1 vez)
 
-## Paso 9: Presentar al usuario
+Total grabaciones: 10 bodies con transición + 3 bloques CTA = 13
 
-Formato del plan:
-1. **Resumen de datos** (research, generaciones previas, batch)
-2. **Objetivos de la semana** (qué gaps se cubren y por qué)
-3. **Formatos visuales** (2, con descripción)
-4. **CTAs de la semana**
-5. **Tabla de 10 guiones** (con todos los campos)
-6. **Tests programados**
-7. **Orden de grabación**
-8. **Resumen ejecutivo para Jesús** (2-3 párrafos, directo)
+## Paso 10: Presentar al usuario
 
-## Paso 10: Guardar y generar
+1. **Trends usados** — qué nichos estaban subiendo, qué rising queries se aprovecharon
+2. **Winner patterns aplicados** — qué decisiones se sesgaron por data real
+3. **Tabla de 10 guiones** (todos los campos incluyendo tensión emocional)
+4. **Cobertura lograda** (familias, body types, ventas, segmentos, funnels, tensiones, arcos)
+5. **3 bloques CTA** elegidos
+6. **Orden de grabación**
+7. **Huecos cubiertos** vs semana anterior
 
-Guardar plan en `.data/plans/semana-FECHA.md`.
+## Paso 11: Generar los guiones
 
-Cuando el usuario apruebe, generar los 10 guiones **UNO POR UNO** usando el skill `/guion` internamente (leer todos los archivos para CADA guion). Agruparlos en un batch con nombre "Semana DD Mmm YYYY".
+Cuando el usuario apruebe, generar **UNO POR UNO** usando el proceso completo del skill `/guion`.
 
-**NUNCA generar los 10 guiones en paralelo con agentes.** Siempre secuencialmente, en el contexto principal, con toda la información cargada.
+Cada guion debe tener: 5 beats micro-VSL (con persuasion_function + micro_belief) + venta del modelo + transición + 5 leads + 3 bloques CTA. Duración mínima: 75 segundos.
+
+Guardar cada uno y dar URL. Mostrar al usuario para aprobación ANTES de pasar al siguiente.
+
+**NUNCA generar los 10 en paralelo.** Siempre secuencialmente.
+
+## Paso 12: Guardar plan
+
+Guardar en `.data/plans/semana-FECHA/plan.md` con la matriz completa.

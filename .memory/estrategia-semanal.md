@@ -8,30 +8,28 @@ Cada semana antes de la sesión con Jesús, se genera un plan basado en:
 
 ---
 
-## CTAs Fijos (3 por defecto)
-Se graban los 3 cada sesión y se asignan a los guiones. Se pueden rediseñar semana a semana pero normalmente quedan fijos para que Jesús grabe menos.
+## 3 Bloques CTA de 6 capas (ver `.data/ctas-biblioteca.md`)
 
-### CTA 1 — Directo (deslizar/botón → registro gratis)
-> Tocá el botón de acá abajo y registrate a la clase gratuita. Te muestro en vivo cómo crear tu primer producto digital con IA. Te veo adentro. Abrazo.
+Se graban los 3 cada sesión (UNA vez) y se combinan con cualquier body en edición.
 
-**Uso:** Guiones TOFU cortos, cuando el cuerpo ya hizo el trabajo pesado. Sin fricción.
+### 3 canales fijos:
+1. **Clase Gratuita (TOFU)** — 4 variantes (A/B/C/D)
+2. **Taller $5 (MOFU)** — 4 variantes (A/B/C/D)
+3. **Instagram Orgánico** — 4 variantes (A/B/C/D)
 
-### CTA 2 — Con mención del taller $5 (ancla de precio)
-> Tocá el botón de acá abajo y registrate. La clase es gratis. No te pido plata, no te pido experiencia. Solo una hora para que veas cómo funciona. Y si después querés crear tu producto conmigo, hay un taller de 3 días que vale menos que una pizza. Vos decidís. Te mando un abrazo y te veo adentro.
-
-**Uso:** Guiones más largos o MOFU. Introduce la escalera de valor sin presión. La analogía de precio ("menos que una pizza") puede variar semana a semana.
-**Nota:** El precio del taller puede subir — adaptar analogía si cambia (ej: "menos que una salida a comer").
-
-### CTA 3 — Instagram (comentar + link en perfil)
-> Comentá "CLASE" y andá al link de mi perfil porque ahí te podés registrar a la clase gratuita donde te enseño paso a paso crear tu primer producto digital con IA y cómo conseguir tus primeras ventas.
-
-**Uso:** Exclusivo para Instagram (Reels/Stories). Doble acción: comentario + link en bio.
+### 6 capas por bloque:
+1. **Transición (Capa 1)** — se graba con el body, conecta el ejemplo específico con el CTA genérico
+2. **Oferta (Capa 2)** — 3 promesas de lo que se llevan
+3. **Prueba (Capa 3)** — social proof micro
+4. **Riesgo Cero (Capa 4)** — eliminar objeción
+5. **Urgencia (Capa 5)** — escasez o deadline
+6. **Orden + NLP (Capa 6)** — acción concreta
 
 ### Reglas
-- Siempre 3 CTAs por sesión, salvo indicación contraria
-- **Los 3 CTAs son GENÉRICOS y van con TODOS los guiones.** Jesús los graba 1 vez por sesión y se combinan con cualquier cuerpo en edición.
-- Los cuerpos deben terminar de forma que conecten naturalmente con cualquiera de los 3 CTAs (no hacer referencia específica al taller ni a Instagram dentro del cuerpo)
-- Se rediseñan al armar la estrategia semanal si hace falta
+- Siempre 3 bloques CTA por sesión, uno por canal
+- NUNCA repetir misma variante 2 semanas seguidas
+- **NO meter precio ni riesgo cero en el body** — eso va SOLO en los bloques CTA
+- Los cuerpos terminan con la transición (Capa 1) que conecta el ejemplo del body con los bloques genéricos
 
 ---
 
@@ -59,20 +57,20 @@ Se graban los 3 cada sesión y se asignan a los guiones. Se pueden rediseñar se
 - **D)** Escéptico con estafa previa — solo entra si es gratis primero
 
 ### Etapas de Funnel
-- **TOFU** — Webinar gratuito (captación fría, sin fricción)
+- **TOFU** — Clase gratuita (captación fría, sin fricción)
 - **MOFU** — Taller $5 (compromiso bajo, demostración)
-- **BOFU** — Programa $297 / Backend $1000 (cierre directo)
-- **RETARGET** — Nurture post-registro (que asistan al vivo)
-- **EVERGREEN** — Low ticket $17 + bumps/OTOs
+- **RETARGET** — Nurture post-registro (que asistan al vivo, que compren)
 
-### Tipos de Cuerpo
-- **Mecanismo** — Cómo funciona el sistema paso a paso
-- **Idea de nicho** — Un nicho específico como tema central del video
-- **Cambio de creencia** — Refutar lo que el avatar piensa
-- **Storytelling** — Historia real (de Jesús o de alumno)
-- **Analogía cotidiana** — Objeto/situación → giro → conexión con ADP
-- **Comparación** — ADP vs alternativas (dropshipping, freelance, etc.)
-- **Anti-gurú** — Diferenciarse de vendehumos
+### Tipos de Cuerpo (vehículos narrativos — dan el TONO al micro-VSL)
+La estructura de todo guion son **5 beats** (identificación → quiebre → mecanismo → demolición → prueba). El vehículo define cómo se CUENTAN esos beats:
+1. **Demolición de mito** — Tono confrontativo, "te mintieron"
+2. **Historia con giro** — Narrativo, empático
+3. **Demo/Proceso** — Práctico, "mirá, te muestro"
+4. **Comparación de caminos** — Lógico, contrastante
+5. **Un día en la vida** — Aspiracional, sensorial
+6. **Pregunta y respuesta** — Rápido, eliminador
+7. **Analogía extendida** — Familiar, revelador
+8. **Contraste emocional** — Emocional, urgente
 
 ### Técnicas disponibles (rotar)
 - Micro-loops entre secciones
@@ -143,6 +141,15 @@ Se graban los 3 cada sesión y se asignan a los guiones. Se pueden rediseñar se
 - Cada guión debe tener un cambio de creencia explícito documentado
 - **No repetir formato visual por 4 semanas consecutivas**
 
+### Reglas de diversidad (ver `.data/reglas-diversidad.md` para detalle completo)
+- **8 arcos narrativos** — mínimo 5 distintos en 10 guiones, arco demo máximo 2
+- **Mínimo 3 guiones SIN demo/proceso** — no todos muestran "abrís ChatGPT"
+- **Ingredientes gastados** (F#73, F#74, G#90, B#29) — máximo 3 de 10
+- **Frases muleta** — cada una máximo 1 uso por batch
+- **Ventana de IA** — máximo 2 de 10 como contexto central
+- **Energía variada** — mezclar confrontativo, empático, curioso, vulnerable
+- **Correr el checklist de diversidad** de `reglas-diversidad.md` ANTES de generar
+
 ### Reglas de testing (para medir qué funciona)
 - **Test de leads:** Mismo cuerpo → 3 leads distintos → subir como 3 ads separados
 - **Test de ángulo:** Mismo segmento → 2 ángulos distintos → medir CTR
@@ -188,7 +195,7 @@ Cada decisión debe estar justificada con datos. El plan es un documento que se 
 ### 1. [Título descriptivo]
 - **Ángulo:** [...]
 - **Segmento:** [...]
-- **Funnel:** TOFU/MOFU/BOFU
+- **Funnel:** TOFU/MOFU/RETARGET
 - **Tipo de cuerpo:** [...]
 - **Formato visual:** [Formato A o B]
 - **Idea de nicho:** [si aplica]
@@ -210,11 +217,11 @@ Cada decisión debe estar justificada con datos. El plan es un documento que se 
 
 [... repetir para cada guión]
 
-## CTAs de la semana
-- CTA 1 (Directo): [texto exacto o "sin cambios"]
-- CTA 2 (Taller $5): [texto exacto o "sin cambios"]
-- CTA 3 (Instagram): [texto exacto o "sin cambios"]
-- *Justificación si hay cambios: [...]*
+## 3 Bloques CTA de la semana
+- **Clase Gratuita:** Variante [A/B/C/D] de `ctas-biblioteca.md`
+- **Taller $5:** Variante [A/B/C/D]
+- **Instagram:** Variante [A/B/C/D]
+- *Justificación si hay cambios vs semana anterior: [...]*
 
 ## Tests programados
 - **Test:** [descripción]

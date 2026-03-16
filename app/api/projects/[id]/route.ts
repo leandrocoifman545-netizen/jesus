@@ -44,11 +44,15 @@ export async function PUT(req: NextRequest, { params }: { params: Promise<{ id: 
 
     // Remove specific docs by name
     if (removeDocsJson) {
-      const removeNames: string[] = JSON.parse(removeDocsJson);
-      if (project.brandDocuments) {
-        project.brandDocuments = project.brandDocuments.filter(
-          (d) => !removeNames.includes(d.name)
-        );
+      try {
+        const removeNames: string[] = JSON.parse(removeDocsJson);
+        if (project.brandDocuments) {
+          project.brandDocuments = project.brandDocuments.filter(
+            (d) => !removeNames.includes(d.name)
+          );
+        }
+      } catch {
+        return NextResponse.json({ error: "JSON inválido en removeDocs" }, { status: 400 });
       }
     }
 

@@ -1,0 +1,182 @@
+{
+  "id": "7386bb1f-342a-45fa-b34c-4be885821a2f",
+  "briefId": "7aab8ff4-344f-47ba-8df3-7d4545dd9baa",
+  "title": "G10 — Diálogo: ¿Sabés mandar un audio? Entonces ya sabés",
+  "batch": "semana-2026-03-17",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.5_dialogo_actuacion_barrera",
+    "body_type": "analogia_extendida",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "barrera técnica percibida — desmitificación",
+    "model_sale_type": "democratizacion_ia",
+    "total_duration_seconds": 76,
+    "word_count": 175,
+    "belief_change": {
+      "old_belief": "Necesito saber de tecnología, diseño y marketing para vender online",
+      "new_belief": "Si sé mandar un audio y seguir instrucciones, tengo todo lo que necesito"
+    },
+    "micro_beliefs": [
+      "Las habilidades que necesito son tan básicas como mandar un audio",
+      "La IA se encarga de lo técnico — yo me encargo de dirigir",
+      "El proceso real es: hablar con la IA como si fuera un empleado y ella hace el trabajo",
+      "No existe la barrera técnica — existe el miedo a lo desconocido",
+      "Gente que no sabía ni hacer un Excel hoy vende productos digitales"
+    ],
+    "hooks": [
+      {
+        "hook_type": "actuacion_dialogo",
+        "script_text": "—¿Sabés mandar un audio de WhatsApp? —Sí. —¿Sabés escribir un mensaje? —Sí. —¿Sabés seguir instrucciones paso a paso? —Sí. —Entonces ya tenés todo lo que necesitás para armar un negocio digital. No es chiste."
+      },
+      {
+        "hook_type": "contraintuitivo",
+        "script_text": "La habilidad más importante para ganar plata con IA no es programar. No es diseñar. No es saber de marketing. Es saber PEDIR. Como le pedís a un mozo en un restaurante. Así de simple. Y así de poderoso."
+      },
+      {
+        "hook_type": "provocacion",
+        "script_text": "Mandás 50 audios por día. Respondés mensajes todo el día. Googleás cosas todo el tiempo. Y me decís que 'no sabés de tecnología'. Ya sabés. Lo que no sabés es que esas mismas habilidades alcanzan para armar un negocio."
+      },
+      {
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Usar IA para crear un negocio es como usar un GPS. No necesitás saber las calles. No necesitás saber de geografía. Solo necesitás saber a dónde querés ir y seguir las indicaciones. La IA es tu GPS de negocios."
+      },
+      {
+        "hook_type": "negacion_directa",
+        "script_text": "No necesitás aprender programación. No necesitás un título. No necesitás saber diseño. Lo que necesitás para armar un negocio digital hoy lo hacés todos los días sin darte cuenta. Te lo demuestro."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "title": "Beat 1 — Identificación: la barrera que creés que tenés",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Las habilidades que necesito son tan básicas como mandar un audio",
+          "script_text": "'No sé de tecnología.' 'No sé de diseño.' 'No sé de marketing.' Eso me dicen todos. Y después les pregunto: ¿Mandás audios? ¿Escribís mensajes? ¿Seguís instrucciones? Sí a todo. Esas son las únicas habilidades que necesitás. En serio."
+        },
+        {
+          "title": "Beat 2 — Quiebre: la IA es un empleado que sigue instrucciones",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El proceso real es: hablar con la IA como si fuera un empleado y ella hace el trabajo",
+          "script_text": "Pensá en la IA como un empleado que sabe de todo. Le decís: 'Investigame qué guías se venden sobre organización del hogar.' Lo hace. 'Armame una guía de 30 páginas.' La arma. 'Escribime el anuncio para venderla.' Lo escribe. Vos dirigís. Ella ejecuta. Como un jefe que delega."
+        },
+        {
+          "title": "Beat 3 — Mecanismo: el proceso es una conversación",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA se encarga de lo técnico — yo me encargo de dirigir",
+          "script_text": "El proceso completo es una conversación. Le hablás a la IA. Le pedís. Ella hace. Vos corregís. Es como mandar audios pero cada audio construye tu negocio. No hay código. No hay diseño. No hay nada técnico. Solo saber qué pedir y venderlo por internet."
+        },
+        {
+          "title": "Beat 4 — Demolición: la barrera es imaginaria",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No existe la barrera técnica — existe el miedo a lo desconocido",
+          "script_text": "'Pero tiene que ser más difícil que eso.' No. Lo que pasa es que lo desconocido siempre parece difícil. La primera vez que usaste WhatsApp también parecía raro. Hoy mandás 50 audios sin pensarlo. Con esto va a pasar lo mismo. En una semana te vas a preguntar de qué tenías miedo."
+        },
+        {
+          "title": "Beat 5 — Prueba: gente que no sabía ni hacer un Excel",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente que no sabía ni hacer un Excel hoy vende productos digitales",
+          "script_text": "Hay gente en la academia que me dijo 'yo no sé ni abrir un Excel'. Hoy tienen productos vendiendo. No porque aprendieron programación. Porque aprendieron a pedirle a la IA lo que necesitaban. La barrera era imaginaria. El negocio es real."
+        },
+        {
+          "title": "Venta del modelo — Democratización IA",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La IA eliminó la barrera técnica para siempre",
+          "script_text": "Antes necesitabas saber diseño, programación, copywriting. Hoy necesitás saber pedir. La IA democratizó la creación. Y los que entiendan eso primero van a tener la ventaja. No por genios. Por rápidos."
+        }
+      ]
+    },
+    "transition_text": "Si sabés mandar un audio, podés crear un negocio digital. Te enseño cómo, paso a paso.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora (GPS-empleado)"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 85,
+        "ingredient_name": "Diversidad de Perfiles"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 24,
+        "ingredient_name": "Confusión como Dolor"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T22:36:58.577Z"
+}

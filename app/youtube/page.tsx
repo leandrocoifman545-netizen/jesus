@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listGenerations } from "@/lib/storage/local";
+import { cachedListGenerations as listGenerations } from "@/lib/storage/local";
 import YouTubeListFilter from "@/components/youtube-list-filter";
 
 export default async function YouTubePage() {

@@ -1,0 +1,190 @@
+{
+  "id": "8a8daccd-53f5-470a-95f4-8c7b260288c9",
+  "briefId": "16ee8297-9d08-4436-914c-39503a6c2572",
+  "title": "Lo que no te cuentan de los cursos online",
+  "batch": {
+    "name": "Semana 2026-03-17",
+    "weekOf": "2026-03-17"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok/Instagram",
+      "aspect_ratio": "9:16",
+      "captions_style": "dynamic"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántos cursos compraste que no terminaste? ¿Cuántas veces dijiste 'esta vez sí' y a la semana lo dejaste? El problema no sos vos. El problema es lo que te están vendiendo.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "La industria de los cursos online está diseñada para que sigas comprando. No para que hagas algo. Te dan información, no un camino. Y vos seguís en el mismo loop.",
+        "estimated_duration_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "De cada 100 personas que compran un curso online, 87 no lo terminan. Y de las 13 que sí, menos de 3 aplican algo. No es un problema de motivación. Es un problema de estructura.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "script_text": "Yo compré todo. Cada curso que me prometía resultados. Pagué todo. Y no fue el camino fácil. Hasta que entendí que el problema no era la cantidad de información sino la falta de acción.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "simplificacion_error",
+        "script_text": "Aprender a generar ingresos online tiene 3 pasos. El error del 90% es quedarse eternamente en el paso 1: consumir información. Sin pasar nunca al paso 2: crear algo.",
+        "estimated_duration_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "Pregunta y respuesta",
+      "sections": [
+        {
+          "section_name": "P1 — ¿Necesito saber programar?",
+          "script_text": "\"¿Necesito saber programar?\" No. \"¿Necesito diseñar?\" Tampoco. La IA hace eso por vos. Lo único que necesitás es saber qué pedirle.",
+          "timing_seconds": 10,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Re-hook",
+          "script_text": "Pero acá viene lo distinto.",
+          "timing_seconds": 3,
+          "is_rehook": true
+        },
+        {
+          "section_name": "P2 — ¿Cuánta plata necesito?",
+          "script_text": "\"¿Cuánta plata necesito para arrancar?\" 10 dólares. 5 para el taller, 5 para tu primer anuncio. Menos de lo que gastás en datos del celular por mes.",
+          "timing_seconds": 10,
+          "is_rehook": false
+        },
+        {
+          "section_name": "P3 — ¿Cuánto tardo?",
+          "script_text": "\"¿Cuánto tardo en tener algo listo?\" Un fin de semana. No 6 meses, no un año. Un sábado y un domingo con la IA abierta.",
+          "timing_seconds": 10,
+          "is_rehook": false
+        },
+        {
+          "section_name": "P4 — ¿Por qué esto es distinto?",
+          "script_text": "\"¿Y por qué esto sería distinto a los otros 10 cursos que compré?\" Porque acá vendés ANTES de crear. No invertís meses en algo que nadie quiere. Validás primero, creás después. Así no perdés ni tiempo ni plata.",
+          "timing_seconds": 15,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Venta del modelo — Transparencia total",
+          "script_text": "Te voy a ser honesto. Yo no gano con el taller. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Sin promesas de millones. Un proceso real.",
+          "timing_seconds": 12,
+          "is_rehook": false
+        }
+      ],
+      "emotional_arc": "Frustración reconocida → preguntas resueltas → confianza"
+    },
+    "cta": {
+      "cta_type": "directo",
+      "verbal_cta": "Tocá el botón de acá abajo",
+      "reason_why": "3 bloques CTA separados"
+    },
+    "total_duration_seconds": 75,
+    "word_count": 175,
+    "visual_format": {
+      "format_name": "Split Screen 2 Pantallas",
+      "difficulty_level": 2,
+      "setup_instructions": "Arriba: screencast o imagen. Abajo: Jesús hablando. Editar con CapCut.",
+      "recording_notes": "Grabar parte de abajo mirando a cámara. La parte de arriba se agrega en edición."
+    },
+    "angle_family": "confrontacion",
+    "angle_specific": "3.3_ciclo_roto",
+    "body_type": "pregunta_respuesta",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "general — anti-curso",
+    "model_sale_type": "transparencia_total",
+    "belief_change": {
+      "old_belief": "Necesito otro curso más para aprender",
+      "mechanism": "El problema no es la información sino la falta de un camino con acción inmediata",
+      "new_belief": "Necesito UN camino claro con acción desde el día 1, no más información"
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 2,
+        "ingredient_name": "Pregunta Retórica de Dolor"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 30,
+        "ingredient_name": "Patrón de Fracaso"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Persona Improbable"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "transition_text": "Todo lo que te acabo de contestar lo enseño paso a paso en una clase.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "En 2 horas te muestro cómo encontrar algo que la gente quiere comprar, cómo crearlo con IA y cómo empezar a venderlo. Sin experiencia. Sin saber de tecnología. Desde tu celular.",
+          "prueba": "Lo hicieron mamás, jubilados, pibes de 20, gente que nunca vendió nada. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, te puede cambiar todo.",
+          "urgencia": "Ya hay cientos de personas registradas para esta edición.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres, vas a entender por qué miles ya lo hicieron. Te espero."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "B",
+        "layers": {
+          "oferta": "En 3 días en vivo creás tu producto digital con IA, armás tu anuncio y hacés tu primera venta. Todo con acompañamiento.",
+          "prueba": "Un albañil de Tucumán, una jubilada de 63 años, una mamá de 3 hijos. Todos lo hicieron.",
+          "riesgo_cero": "Si no te sirve, perdiste 5 dólares y 3 tardes. Menos de lo que gastás en datos del celular. Si te sirve, te cambia la vida.",
+          "urgencia": "Cada día que no tenés tu producto en venta son ventas que alguien más está haciendo con el conocimiento que vos tenés.",
+          "orden_nlp": "Tocá el botón de acá abajo y anotate. Te espero el primer día."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "D",
+        "layers": {
+          "oferta": "Tengo una clase gratis donde te enseño a crear un producto digital con IA y empezar a venderlo.",
+          "prueba": "Miles ya lo hicieron.",
+          "riesgo_cero": "No te voy a vender nada. Es gratis.",
+          "urgencia": "Si solo querés scrollear, seguí de largo.",
+          "orden_nlp": "Pero si querés hacer algo, comentá 'IA' y andá al link de mi perfil. Te espero."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T21:25:02.057Z"
+}

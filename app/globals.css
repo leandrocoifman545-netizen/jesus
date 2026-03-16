@@ -27,12 +27,12 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
 }
 
 /* Headings font */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  font-family: var(--font-plus-jakarta), "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
 }
 
 /* Noise texture overlay */
@@ -562,4 +562,38 @@ textarea {
 /* ─── Kbd refinement ─── */
 kbd {
   font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+}
+
+/* ─── Beat / Persuasion Function Colors (micro-VSL) ─── */
+/* Each beat has a color from the ad production world:
+   - identificacion: warm red (stop, pain, attention)
+   - quiebre: amber (disruption, warning)
+   - mecanismo: blue (clarity, solution, new path)
+   - demolicion: purple (action, destroying barriers)
+   - prueba: green (validation, proof, success)
+   - venta_modelo: zinc (structural, closing)
+*/
+.beat-identificacion { --beat: 239 68 68; }    /* red-500 */
+.beat-quiebre        { --beat: 245 158 11; }   /* amber-500 */
+.beat-mecanismo      { --beat: 59 130 246; }   /* blue-500 */
+.beat-demolicion     { --beat: 168 85 247; }   /* purple-500 */
+.beat-prueba         { --beat: 34 197 94; }    /* green-500 */
+.beat-venta_modelo   { --beat: 161 161 170; }  /* zinc-400 */
+
+[class*="beat-"] {
+  background: rgba(var(--beat), 0.04);
+  border-color: rgba(var(--beat), 0.12);
+}
+[class*="beat-"] .beat-indicator {
+  background: rgba(var(--beat), 0.15);
+  color: rgba(var(--beat), 0.9);
+}
+[class*="beat-"] .beat-line {
+  background: rgba(var(--beat), 0.25);
+}
+
+/* Off-screen card optimization — browser skips layout/paint for cards not in viewport */
+.generation-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 280px;
 }

@@ -1,0 +1,172 @@
+{
+  "id": "b015217b-37ba-4482-8e48-b5f5edbe30f9",
+  "briefId": "051c386f-0ff8-496e-95d7-2c203b64435c",
+  "projectId": "adp",
+  "title": "#10 — Finanzas personales × Micro-historia (Talking Head)",
+  "script": {
+    "angle_family": "F5",
+    "angle_specific": "5.3_micro_historia",
+    "body_type": "contraste_emocional",
+    "segment": "D",
+    "funnel_stage": "RETARGET",
+    "niche": "Finanzas personales",
+    "model_sale_type": "ventana_oportunidad",
+    "format_visual": "Talking Head — Close Up Íntimo",
+    "arc_narrative": "#8 Provocación + evidencia",
+    "tension": "T6",
+    "total_duration_seconds": 75,
+    "word_count": 178,
+    "belief_change": {
+      "old_belief": "No tengo plata para empezar nada y a mi edad ya es tarde",
+      "new_belief": "Con $5 y lo que ya sé de manejar plata puedo crear un negocio digital",
+      "mechanism": "La ventana de IA permite crear y vender sin inversión significativa"
+    },
+    "micro_beliefs": [
+      "MC1: Lo que yo sé de manejar plata con poco vale más que cualquier teoría de gurú de 25 años",
+      "MC2: La barrera de entrada es ridícula — $5 o menos — no es una inversión, es una prueba",
+      "MC3: Esta ventana es temporal — cada día que pasa sin actuar, alguien más ocupa mi lugar"
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "number": 23,
+        "name": "Descripción situacional"
+      },
+      {
+        "category": "C",
+        "number": 47,
+        "name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "number": 49,
+        "name": "Redefinición"
+      },
+      {
+        "category": "F",
+        "number": 72,
+        "name": "New Opportunity"
+      },
+      {
+        "category": "J",
+        "number": 122,
+        "name": "Costo de Esperar"
+      }
+    ],
+    "hooks": [
+      {
+        "type": "situacion_especifica",
+        "script_text": "Hacés malabares con la plata todos los meses. Sabés exactamente cuánto cuesta cada cosa. Sabés estirar el sueldo como nadie. Y nunca se te ocurrió que esa habilidad — saber de finanzas en la vida real — es exactamente lo que millones de personas buscan en internet."
+      },
+      {
+        "type": "confesion",
+        "script_text": "No te voy a vender la idea de que te vas a hacer millonario. Eso es mentira. Pero sí te digo esto: lo que vos sabés sobre manejar plata — ahorrar, estirar, llegar a fin de mes — es información que la gente paga por tener organizada. Y hoy la podés empaquetar sin gastar casi nada."
+      },
+      {
+        "type": "analogia_cotidiana",
+        "script_text": "¿Sabés esas guías de finanzas personales que venden a $10 en internet? La mayoría las escribió alguien de 25 años que nunca tuvo que elegir entre pagar la luz o comprar comida. Vos, que manejás plata real hace décadas, tenés más para enseñar. Solo te falta el formato."
+      },
+      {
+        "type": "provocacion",
+        "script_text": "Cada semana que pasa sin hacer nada es una semana donde tu experiencia se desperdicia. Sabés de plata más que el 90% de los que venden cursos de finanzas online. La diferencia entre ellos y vos no es conocimiento — es un producto empaquetado. Y hoy eso se arma en una tarde."
+      },
+      {
+        "type": "contrato_compromiso",
+        "script_text": "Dame 60 segundos. Si lo que te cuento no te sirve, cerrá el video. Pero si alguna vez quisiste generar un ingreso extra sin arriesgar lo poco que tenés, esto puede ser lo que estabas buscando. Y no te va a costar más que el precio de un café."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "name": "MC1: Tu experiencia real vale más que la teoría de cualquier gurú",
+          "micro_belief": "Lo que yo sé de manejar plata vale más que cualquier teoría de gurú",
+          "script_text": "Son las 2 de la mañana. Estás haciendo cuentas para ver si llegás a fin de mes. Movés números de un lado al otro. Sacás de acá para poner allá. Eso que hacés todos los meses — presupuestar, ahorrar, decidir prioridades — millones de personas no saben hacerlo. Lo buscan en Google desesperadamente. Y lo que encuentran son consejos de pibes de 25 que nunca pasaron por lo que vos pasaste. Tu experiencia real vale más que cualquier teoría.",
+          "ingredients": [
+            "B#23 Descripción situacional",
+            "C#47 Contraste Emocional",
+            "D#49 Redefinición"
+          ]
+        },
+        {
+          "name": "MC2: La barrera es ridícula — $5, no es inversión, es prueba",
+          "micro_belief": "La barrera de entrada es ridícula, $5 o menos",
+          "script_text": "Y acá viene lo que cambia todo: hoy la IA te ayuda a organizar todo lo que sabés en una guía profesional. En una tarde. Sin saber de tecnología. ¿El costo? Menos que un café. Si funciona, tenés un negocio. Si no funciona, perdiste lo que vale una empanada. Esto no es una inversión. Es una prueba. Y la prueba sale menos que cualquier cosa que comprás en el día.",
+          "ingredients": [
+            "F#72 New Opportunity"
+          ]
+        },
+        {
+          "name": "MC3: La ventana es temporal — cada día alguien más ocupa tu lugar",
+          "micro_belief": "Esta ventana es temporal, cada día que pasa alguien más ocupa mi lugar",
+          "script_text": "Pero esto no va a durar para siempre. Hace 2 años la IA no existía así. En 2 años el mercado va a estar saturado. La ventana es ahora. Cada día que pasa sin actuar es un día donde alguien con menos experiencia que vos ocupa el lugar que podría ser tuyo. Y lo vende por internet. No necesitás más información. Necesitás dar el primer paso.",
+          "ingredients": [
+            "J#122 Costo de Esperar"
+          ]
+        }
+      ]
+    },
+    "transition_text": "Lo que te conté de finanzas funciona con cualquier conocimiento que tengas. Y te enseño el proceso completo gratis.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo.",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero.",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "text": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas. Lo hicieron mamás, jubilados, estudiantes. Gente como vos. No te pido nada. Solo tu tiempo. Si llegaste hasta acá, algo te hizo click. No ignores esa sensación. Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info.",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T19:43:51.731Z"
+}

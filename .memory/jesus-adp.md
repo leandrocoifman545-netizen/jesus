@@ -80,18 +80,15 @@ Sistema en 4 pasos:
 - "No tengo tiempo"
 - "No sé nada de tecnología"
 
-## 8 Ángulos de Comunicación
-1. **DOLOR ECONÓMICO** — el más poderoso en LATAM (Seg A+D)
-2. **BARRERA TECNOLÓGICA** — mayor volumen (Seg B)
-3. **LIBERTAD/SUEÑO** — más aspiracional (Seg A)
-4. **DESCONFIANZA/ANTI-ESTAFA** — mayor conversión en escépticos (Seg D)
-5. **MAMÁ/TIEMPO LIMITADO** — altísima empatía (Seg C)
-6. **PROCESO/DEMOSTRACIÓN** — mayor credibilidad (todos)
-7. **EDAD/REINVENCIÓN** — nicho desatendido, alta urgencia (Seg B, 45-65)
-8. **LATAM/CONTEXTO REGIONAL** — identidad (por país)
-9. **VENTAS VISIBLES** — mostrar paneles de Hotmart/Shopify con ventas reales. Prueba social visual. (sin testear)
-10. **IA DESPERDICIADA** — "Usás IA para tareas/estudios/trabajo pero no para generar ingresos." Reencuadre de un comportamiento que el avatar ya tiene. (sin testear)
-11. **CONSUMIDOR DE IA** — "Ves tutoriales de IA en YouTube pero no la usás para ganar plata." Ataca la brecha entre aprender y monetizar. Seg B. (sin testear)
+## Ángulos de Comunicación — 5 Familias (ver `.data/angulos-expandidos.md`)
+
+> **NOTA:** Los 11 ángulos originales listados acá fueron reemplazados por el sistema de 5 familias con 30+ ángulos específicos. Consultar siempre `.data/angulos-expandidos.md` para la versión actual.
+
+1. **IDENTIDAD** (1.x) — Mamá, oficinista, jubilado, inmigrante, etc.
+2. **OPORTUNIDAD** (2.x) — Ventana temporal, nichos invisibles, modelo vs alternativas
+3. **CONFRONTACIÓN** (3.x) — Anti-gurú, IA desperdiciada, comparación social
+4. **MECANISMO** (4.x) — Proceso paso a paso, demo en vivo, velocidad
+5. **HISTORIA** (5.x) — Jesús real, alumno real, analogía cotidiana
 
 ## Guiones Reales de Jesús (Referencias Clave)
 3 guiones propios que le funcionaron bien. Son la referencia #1 para capturar su voz:
@@ -109,7 +106,5 @@ Sistema en 4 pasos:
 - No usa presión agresiva, es invitacional
 
 ## Tracking de Guiones Generados
-| # | Fecha | Producto | Ángulo | Segmento | Hooks usados |
-|---|---|---|---|---|---|
-| 1 | 2026-03-07 | Webinar gratis | Emprendedor frustrado | A+D | contrarian, pain_point, curiosity_gap, statistical, authority |
-| 2 | 2026-03-07 | Taller $5 | Mamá/tiempo + tecnología | B+C | question, contrarian, pain_point, reveal, curiosity_gap |
+
+> **NOTA:** Esta tabla está deprecada. El tracking real está en los JSON de `.data/generations/` y se visualiza en la web (`http://localhost:3002/`). Para ver cobertura, consultar `.memory/matriz-cobertura.md`.

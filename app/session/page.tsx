@@ -1,4 +1,4 @@
-import { listGenerations } from "@/lib/storage/local";
+import { cachedListGenerations as listGenerations } from "@/lib/storage/local";
 import SessionReview from "@/components/session-review";
 
 export default async function SessionPage() {

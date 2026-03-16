@@ -1,0 +1,182 @@
+{
+  "id": "70ed259e-ae88-4e12-9f64-ddfee4f8702e",
+  "briefId": "32774b7d-3141-431e-90bd-84f8735fb116",
+  "title": "G5 — Mamá: los chicos durmieron, tenés una hora, ¿qué hacés?",
+  "batch": "semana-2026-03-17",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.1_mama_una_hora_decision",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "C",
+    "funnel_stage": "MOFU",
+    "niche": "emprendimiento digital para mamás",
+    "model_sale_type": "tiempo_vs_dinero",
+    "total_duration_seconds": 80,
+    "word_count": 185,
+    "belief_change": {
+      "old_belief": "No tengo tiempo para emprender — apenas puedo con los chicos y la casa",
+      "new_belief": "Con una hora al día y las herramientas correctas, puedo construir algo propio"
+    },
+    "micro_beliefs": [
+      "Esa hora que tengo después de que duermen los chicos es más valiosa de lo que pienso",
+      "No necesito 8 horas libres — necesito UNA hora con un sistema",
+      "La IA comprime el trabajo que antes llevaba semanas en horas",
+      "Puedo construir algo propio sin descuidar a mi familia",
+      "Hay mamás que empezaron exactamente así — con fragmentos de tiempo"
+    ],
+    "hooks": [
+      {
+        "hook_type": "situacion_especifica",
+        "script_text": "Son las 10 de la noche. Los chicos se durmieron. Tenés una hora antes de acostarte. Podés scrollear el celular. O podés usar esa hora para algo que dentro de 3 meses te cambie la situación económica. Vos elegís."
+      },
+      {
+        "hook_type": "confesion",
+        "script_text": "Voy a decirte algo que nadie les dice a las mamás: el problema no es que no tenés tiempo. El problema es que nadie te mostró qué se puede construir con fragmentos de tiempo. Y la respuesta te va a sorprender."
+      },
+      {
+        "hook_type": "contraintuitivo",
+        "script_text": "Las mamás con menos tiempo son las que mejor entienden este modelo de negocio. Porque ya están acostumbradas a resolver todo con poco. Y esa habilidad es exactamente la que se necesita."
+      },
+      {
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas horas por semana perdés scrolleando el celular después de que duermen los chicos? No te juzgo — yo también lo hacía. Pero cuando supe lo que podía hacer con esas horas, dejé de perderlas."
+      },
+      {
+        "hook_type": "provocacion",
+        "script_text": "Sos mamá. Cocinás, limpiás, organizás, educás, resolvés crisis cada 20 minutos. Si pudieras dedicar el 10% de esa energía a algo tuyo, imaginate lo que podrías construir. Y resulta que podés."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "title": "Beat 1 — Identificación: el día de una mamá (y la hora escondida)",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Esa hora que tengo después de que duermen los chicos es más valiosa de lo que pienso",
+          "script_text": "Tu día arranca a las 6. Desayuno, colegio, almuerzo, tarea, cena, baño, pelea por el cepillo de dientes. A las 10, silencio. Los chicos duermen. Tenés una hora. ¿Qué hacés? Scrolleás. Mirás series. Te dormís agotada. Ese es tu día. Y esa hora es la más valiosa del día."
+        },
+        {
+          "title": "Beat 2 — Quiebre: una hora alcanza si tenés el sistema",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No necesito 8 horas libres — necesito UNA hora con un sistema",
+          "script_text": "Te dijeron que para emprender necesitás tiempo completo. Que tenés que elegir entre ser mamá o tener un negocio. Mentira. Lo que necesitás es UNA hora y un sistema que haga que esa hora rinda. Sin eso, una hora es Netflix. Con eso, una hora es tu negocio."
+        },
+        {
+          "title": "Beat 3 — Mecanismo: qué se puede hacer en una hora con IA",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA comprime el trabajo que antes llevaba semanas en horas",
+          "script_text": "Con una hora y la IA podés hacer esto: lunes investigás un nicho. Martes le pedís a la IA que arme el producto. Miércoles lo editás. Jueves lo subís. Viernes activás un anuncio. En 5 horas repartidas en una semana, tenés un producto digital listo para vender. Eso antes tomaba meses."
+        },
+        {
+          "title": "Beat 4 — Demolición: no es elegir entre hijos y negocio",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo construir algo propio sin descuidar a mi familia",
+          "script_text": "No te pido que descuides a tus hijos. No te pido que dejes de dormir. Te pido UNA hora al día en la que construyas algo tuyo. Algo que genere ingresos sin que tengas que estar presente. Eso no te quita tiempo con tu familia — a largo plazo, te da MÁS."
+        },
+        {
+          "title": "Beat 5 — Prueba: mamás que empezaron así",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay mamás que empezaron exactamente así — con fragmentos de tiempo",
+          "script_text": "Hay mamás que empezaron con esa hora de la noche. Algunas con los chicos en la siesta. Otras en el viaje en colectivo. Fragmentos de tiempo que antes se perdían. Hoy les generan un ingreso que no depende de nadie."
+        },
+        {
+          "title": "Venta del modelo — Tiempo vs dinero",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Este modelo separa mi tiempo de mis ingresos",
+          "script_text": "La diferencia con un trabajo es que acá creás algo una vez y genera ingresos sin que estés presente. Tu tiempo deja de ser tu único recurso. Y esa hora de la noche se convierte en la mejor inversión de tu día."
+        }
+      ]
+    },
+    "transition_text": "Cómo usar esa hora para construir algo que genere ingresos es exactamente lo que enseño. Paso a paso.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional del Dolor"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "Future Pacing Sensorial"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 85,
+        "ingredient_name": "Diversidad de Perfiles"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 40,
+        "ingredient_name": "Futuro Negativo Específico"
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T22:36:55.831Z"
+}

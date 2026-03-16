@@ -1,0 +1,188 @@
+{
+  "id": "975409b5-0667-4c71-b9c4-95fad5271516",
+  "briefId": "590f9c29-73a3-4f93-84c0-f700f71bcf87",
+  "projectId": "adp",
+  "title": "Huerta urbana + IA — Un día en la vida — Seg C",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 75,
+      "content_style": "Empático → contrastante → esperanzador. Voseo argentino. Ritmo pausado para segmento C.",
+      "key_considerations": "Texto Grande → Persona. Texto impactante de future pacing, corta a Jesús. Tono cálido, no presionado."
+    },
+    "visual_format": {
+      "format_name": "Texto Grande → Persona",
+      "difficulty_level": 2,
+      "setup_instructions": "Pantalla negra con texto blanco: 'Nueva venta. Nueva venta. Nueva venta.' (simulando notificaciones). Corte a Jesús en plano medio, fondo limpio.",
+      "recording_notes": "Arrancar suave, casi soñador (future pacing). Subir energía en el contraste con la realidad. Bajar a tono de convicción tranquila en el mecanismo. Cierre cálido, de amigo."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Son las 7 de la mañana. Los pibes se levantan. Empieza la carrera: desayuno, colegio, laburo, almuerzo, tarea, cena. Y en algún momento entre todo eso, se supone que tenés que 'emprender'. Te cuento por qué eso está mal planteado.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las mamás que más venden productos digitales son las que menos tiempo libre tienen. No a pesar del poco tiempo — justamente por eso. Porque cuando tenés 1 hora, no la desperdiciás. Te cuento qué hacen con esa hora.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "'Cómo armar una huerta en casa' tiene 60 mil búsquedas por mes en Google. 60 mil personas buscando algo que tu vecina — la de las macetas en el balcón — sabe de memoria. Y no está vendiendo nada.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia",
+        "script_text": "¿Viste cuando le explicás a alguien cómo cuidar una planta y te dice 'deberías cobrar por eso'? Bueno, resulta que hay gente que cobra. Y no sabe la mitad de lo que sabe tu vecina. La diferencia no es el conocimiento. Es el empaque.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "script_text": "Yo no tengo ni idea de jardinería. Maté todas las plantas que tuve. Pero cuando vi que hay 60 mil personas buscando eso en Google todos los meses, entendí algo que la mayoría de los que saben de plantas no ve.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "Un día en la vida",
+      "emotional_arc": "Future pacing sensorial (el después) → contraste doloroso (el hoy) → quiebre de creencia (crear una vez, no trabajar más) → mecanismo concreto que cierra con venderlo → venta del modelo → puente a la oferta",
+      "sections": [
+        {
+          "section_name": "El día DESPUÉS — Future pacing sensorial",
+          "script_text": "Te levantás. Revisás el celular mientras los pibes desayunan. Tres notificaciones: 'Nueva venta. Nueva venta. Nueva venta.' Una guía de huerta urbana de 7 dólares. La creaste una tarde. No la tocaste más. Sigue vendiendo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Re-hook — El día de HOY (contraste emocional)",
+          "is_rehook": true,
+          "script_text": "Ahora volvé a la realidad. Son las 7 de la mañana. Los chicos se levantan. Desayuno, colegio, laburo, almuerzo, tarea, cena. ¿A qué hora emprendés? ¿A las 11 de la noche cuando caés muerta? Ese es el problema que te vendieron: que emprender necesita tiempo. Básicamente te dijeron que para ganar más tenés que dormir menos.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "El giro — Crear una vez, vender siempre",
+          "script_text": "Pero pensalo así: si creás algo UNA vez — una guía, un curso, unas plantillas — eso sigue vendiendo mientras dormís, mientras llevás a los pibes al colegio, mientras cocinás. No cambiás horas por plata. Creás una vez y cobrás infinitas veces. ¿Me explico? No es trabajar más. Es trabajar distinto.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Mecanismo concreto — Cierra con venderlo",
+          "script_text": "Le dictás a la IA todo lo que sabés de huerta — qué plantar en cada temporada, cómo cuidar cada planta, errores que comete todo el mundo. En una tarde te arma una guía profesional. La subís a Hotmart. Ponés un anuncio de 5 dólares. Y la gente que busca 'cómo armar una huerta en casa' — que son 60 mil personas por mes — te encuentra y te compra. Vos no hacés nada más.",
+          "timing_seconds": 18
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate. Te espero adentro.",
+      "reason_why": "Y la guía de huerta es solo UNO de los cientos de productos que podés crear.",
+      "timing_seconds": 5,
+      "cta_type": "directo"
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Agitación por Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 73,
+        "ingredient_name": "Demo Implícita"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "El Atajo Legítimo"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "8 — Tiempo vs. dinero (escalabilidad)",
+    "offer_bridge": {
+      "product_type": "webinar_gratis",
+      "script_text": "En la clase gratuita de esta semana te muestro exactamente eso: cómo encontrar productos que ya se están vendiendo, cómo crearlos con IA — como la guía de huerta que te conté — y cómo venderlos por WhatsApp. Son 2 horas. Sin experiencia previa.",
+      "timing_seconds": 12
+    },
+    "body_type": "Un día en la vida",
+    "angle_family": "2 — Oportunidad y tendencia",
+    "angle_specific": "2.2 — Tendencia de mercado: huerta urbana 60K búsquedas/mes",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "Jardinería / huerta urbana",
+    "belief_change": {
+      "old_belief": "No tengo tiempo para emprender — entre los chicos, la casa y el laburo no me queda nada",
+      "mechanism": "Future pacing sensorial: el producto se crea UNA vez y vende solo. No cambiás horas por plata. La IA empaqueta lo que ya sabés en una tarde.",
+      "new_belief": "No necesito tiempo extra — necesito crear algo una vez que venda solo mientras yo vivo mi vida"
+    },
+    "transition_text": "Y la guía de huerta es solo UNO de los cientos de productos que podés crear.",
+    "total_duration_seconds": 75,
+    "word_count": 165,
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita (TOFU)",
+        "variant": "Variante A — Clásica",
+        "layers": {
+          "oferta": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo.",
+          "prueba": "Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros.",
+          "riesgo_cero": "Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo.",
+          "urgencia": "Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. Te espero adentro."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5 (MOFU)",
+        "variant": "Variante A — Día 1/2/3 + Transparencia",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien.",
+          "urgencia": "El taller arranca esta semana y los cupos son limitados porque es en vivo.",
+          "orden_nlp": "La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "Variante B — Micro-compromiso",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme \"QUIERO\" en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T16:55:28.626Z",
+  "batch": {
+    "id": "e6b59315-8791-4217-abeb-bec9ec364594",
+    "name": "Version 2.0"
+  }
+}

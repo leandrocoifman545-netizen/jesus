@@ -178,7 +178,7 @@ export default function SessionReview({ generations: initial }: SessionReviewPro
         </div>
 
         <p className="text-xs text-zinc-400 truncate">
-          {gen.script.hooks[0]?.script_text.substring(0, 120)}...
+          {(gen.script.hooks?.[0]?.script_text || (gen.script.hooks?.[0] as any)?.text || '').substring(0, 120)}...
         </p>
 
         <div className="flex gap-2">

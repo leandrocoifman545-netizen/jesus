@@ -1,0 +1,172 @@
+{
+  "id": "9e82d244-17a0-4dac-967a-52d040fa62b7",
+  "briefId": "38a9a1bf-dd77-4cb3-9140-7461ca5921dd",
+  "projectId": "adp",
+  "title": "#5 — Adiestramiento canino × Caso real trending (Green Screen)",
+  "script": {
+    "angle_family": "F2",
+    "angle_specific": "2.5_caso_real_trending",
+    "body_type": "pregunta_respuesta",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "Adiestramiento canino",
+    "model_sale_type": "eliminacion_barreras",
+    "format_visual": "Green Screen + Noticia",
+    "arc_narrative": "#8 Provocación + evidencia",
+    "tension": "T12",
+    "total_duration_seconds": 75,
+    "word_count": 170,
+    "belief_change": {
+      "old_belief": "Para vender algo de mascotas necesito ser veterinario o adiestrador certificado",
+      "new_belief": "Mi experiencia cotidiana con perros alcanza para crear un producto digital vendible",
+      "mechanism": "La IA organiza tu experiencia real en un producto que la gente compra"
+    },
+    "micro_beliefs": [
+      "MC1: No necesitás título ni certificación — tu experiencia real con perros ya es suficiente",
+      "MC2: Hay millones buscando ayuda con sus perros y lo que encuentran es un caos total",
+      "MC3: No necesitás nada especial para empezar — sin cara, sin inversión, sin saber de tech"
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "number": 53,
+        "name": "El Permiso"
+      },
+      {
+        "category": "D",
+        "number": 54,
+        "name": "Analogía Simple"
+      },
+      {
+        "category": "F",
+        "number": 74,
+        "name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "B",
+        "number": 26,
+        "name": "Exceso de información"
+      },
+      {
+        "category": "G",
+        "number": 90,
+        "name": "Persona Improbable"
+      }
+    ],
+    "hooks": [
+      {
+        "type": "situacion_especifica",
+        "script_text": "Todos los días millones de personas le gritan a su perro que deje de ladrar. Que no salte. Que no muerda los muebles. Y buscan ayuda en YouTube, donde encuentran videos de 40 minutos que no sirven. ¿Sabés lo que sí funciona? Una guía simple, paso a paso. Y vos la podés crear."
+      },
+      {
+        "type": "analogia_cotidiana",
+        "script_text": "¿Sabés esas guías de entrenamiento canino que venden en Mercado Libre a $15? No las escribió un veterinario. Las escribió alguien con internet, experiencia básica con perros, y una herramienta de IA. Es como armar una receta de cocina. Si sabés explicar algo, ya está."
+      },
+      {
+        "type": "observacion_tendencia",
+        "script_text": "'Cómo adiestrar a mi perro' se busca miles de veces por día en toda Latinoamérica. La gente está desesperada por respuestas claras. Y lo que encuentra es caos total: videos contradictorios, tips sueltos, nada organizado. Ahí hay un negocio enorme."
+      },
+      {
+        "type": "pregunta_incomoda",
+        "script_text": "¿Tenés perro? ¿Alguna vez le enseñaste algo — a sentarse, a dar la pata, a no saltar? Entonces sabés más de adiestramiento que el 90% de la gente que busca ayuda online. La pregunta es: ¿por qué regalás ese conocimiento?"
+      },
+      {
+        "type": "negacion_directa",
+        "script_text": "No necesitás ser adiestrador profesional. No necesitás filmar a tu perro. No necesitás saber de diseño ni de marketing. Lo que necesitás es organizar lo que ya sabés en un formato que la gente quiera comprar. Y la IA te ayuda a hacerlo en una tarde."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "name": "MC1: Tu experiencia real alcanza — no necesitás título",
+          "micro_belief": "No necesitás título — tu experiencia real con perros ya es suficiente",
+          "script_text": "'¿Necesito ser veterinario?' No. Si vivís con un perro y le enseñaste a sentarse, ya sabés más que la mayoría de la gente que busca ayuda. '¿Y si no soy experto?' La IA completa lo que te falta. Vos ponés la experiencia real — las cosas que aprendiste conviviendo con perros. La IA lo organiza en una guía profesional. Tu experiencia cotidiana ES el producto.",
+          "ingredients": [
+            "D#53 El Permiso",
+            "D#54 Analogía Simple"
+          ]
+        },
+        {
+          "name": "MC2: La demanda es masiva y lo que hay es un desastre",
+          "micro_belief": "Hay millones buscando ayuda con sus perros y lo que encuentran es caos",
+          "script_text": "'¿Pero la gente paga por esto?' Millones de personas buscan cómo adiestrar a su perro todos los días. Y lo que encuentran es un desastre: un video dice una cosa, otro dice lo contrario, los blogs son de 2015. Necesitan algo claro, organizado, paso a paso. Eso no existe. Y vos lo podés crear en una tarde con la IA. Y después lo vendés por internet.",
+          "ingredients": [
+            "F#74 Eliminación de Complejidad",
+            "B#26 Exceso de información"
+          ]
+        },
+        {
+          "name": "MC3: Cero barreras — sin cara, sin inversión, sin tech",
+          "micro_belief": "No necesitás nada especial para empezar",
+          "script_text": "'¿Necesito mostrar mi cara?' No. '¿Plata para invertir?' $10 o menos. '¿Saber de tecnología?' Si sabés mandar un audio de WhatsApp, alcanza. Mamás que nunca tocaron una computadora ya lo hicieron. Gente de 60 años que pensaba que era imposible. Sin cara, sin seguidores, sin local. La IA hace el trabajo pesado. Vos ponés lo que sabés. Y lo vendés.",
+          "ingredients": [
+            "G#90 Persona Improbable"
+          ]
+        }
+      ]
+    },
+    "transition_text": "Lo que acabo de contarte del adiestramiento canino funciona con cualquier tema que conozcas. Y te lo enseño gratis.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo.",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero.",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "text": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas. Lo hicieron mamás, jubilados, estudiantes. Gente como vos. No te pido nada. Solo tu tiempo. Si llegaste hasta acá, algo te hizo click. No ignores esa sensación. Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info.",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T19:43:51.478Z"
+}

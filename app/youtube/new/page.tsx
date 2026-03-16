@@ -1,4 +1,4 @@
-import { listProjects } from "@/lib/storage/local";
+import { cachedListProjects as listProjects } from "@/lib/storage/local";
 import YouTubeBriefForm from "@/components/youtube-brief-form";
 
 export default async function NewYouTubeVideoPage() {

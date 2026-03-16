@@ -1,0 +1,184 @@
+{
+  "id": "c9e70a4d-ace7-4bdf-a832-832e44c28444",
+  "briefId": "e8e8db76-c6da-42a2-a78b-dc2b360389ff",
+  "title": "Tu vecina gana plata mientras duerme",
+  "batch": {
+    "name": "Semana 2026-03-17",
+    "weekOf": "2026-03-17"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok/Instagram",
+      "aspect_ratio": "9:16",
+      "captions_style": "dynamic"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Son las 11 de la noche. Acabás de mandar 15 currículums. Ninguno te contestó. Abrís el celular y ves que una vecina tuya vendió 3 guías de costura mientras cenaba. Con la misma IA que vos usás para pedir recetas.",
+        "estimated_duration_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "negacion_directa",
+        "script_text": "No necesitás un título. No necesitás experiencia en ventas. No necesitás saber de tecnología. Lo único que necesitás es saber hacer algo con las manos que otra persona quiera aprender.",
+        "estimated_duration_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_mini",
+        "script_text": "Una señora de Córdoba cosía ropa para el barrio. Cobraba 2 mil pesos el arreglo. Un día le pidió a la IA que armara una guía con todos sus trucos. La vendió a 10 dólares. En 3 semanas ganó más que en 2 meses cosiendo.",
+        "estimated_duration_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia",
+        "script_text": "¿Viste cuando tu abuela te enseñaba a coser un botón y vos pensabas 'esto no me sirve para nada'? Bueno, hoy hay miles de personas pagando por aprender exactamente eso. En formato digital. Creado con IA.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contrato_compromiso",
+        "script_text": "Si sabés coser, tejer, bordar o arreglar ropa — cualquier cosa con las manos — ya tenés un negocio digital esperándote. Solo necesitás 1 tarde y un celular. Te lo demuestro.",
+        "estimated_duration_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Contraste emocional fuerte",
+      "sections": [
+        {
+          "section_name": "Momento oscuro",
+          "script_text": "Estás sin laburo. O con un laburo que no te da para nada. Mandás currículums todos los días y nadie te contesta. Cada mes se achica más el margen. Y lo peor no es la plata — es la sensación de que no tenés nada para ofrecer.",
+          "timing_seconds": 15,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Re-hook",
+          "script_text": "Pero lo que no sabías era esto.",
+          "timing_seconds": 3,
+          "is_rehook": true
+        },
+        {
+          "section_name": "Pivote — Hasta que...",
+          "script_text": "Todo lo que aprendiste en tu vida — coser, tejer, arreglar ropa, hacer manualidades — tiene un valor que no estás viendo. Hay miles de personas buscando en Google \"cómo arreglar un cierre\" o \"cómo achicar un pantalón\". Y casi nadie vende una guía que lo explique bien.",
+          "timing_seconds": 18,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Momento de luz — mecanismo",
+          "script_text": "Le pedís a la IA que organice todo lo que sabés en una guía paso a paso. Le llevás una tarde. La subís a una plataforma. Y la vendés por WhatsApp, con un anuncio de 3 dólares por día. Sin mostrar tu cara. Sin seguidores. Sin saber de tecnología.",
+          "timing_seconds": 18,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Venta del modelo — Eliminación de barreras",
+          "script_text": "No necesitás invertir miles de pesos. No necesitás un local ni empleados. La IA hace el trabajo pesado — vos solo tenés que saber pedirle. Y eso se aprende en un día.",
+          "timing_seconds": 12,
+          "is_rehook": false
+        }
+      ],
+      "emotional_arc": "Desesperanza → revelación → esperanza concreta"
+    },
+    "cta": {
+      "cta_type": "directo",
+      "verbal_cta": "Tocá el botón de acá abajo",
+      "reason_why": "3 bloques CTA separados"
+    },
+    "total_duration_seconds": 80,
+    "word_count": 195,
+    "visual_format": {
+      "format_name": "Car Selfie",
+      "difficulty_level": 1,
+      "setup_instructions": "Desde el auto, cámara frontal en el parabrisas o sostenida. Fondo real del auto.",
+      "recording_notes": "Estilo casual, como contándole a un amigo. Energía natural, no actuada."
+    },
+    "angle_family": "identidad",
+    "angle_specific": "1.3_desempleado_crisis",
+    "body_type": "contraste_emocional",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "costura y arreglos de ropa",
+    "model_sale_type": "eliminacion_de_barreras",
+    "belief_change": {
+      "old_belief": "No tengo nada que ofrecer, no tengo estudios ni experiencia",
+      "mechanism": "Las habilidades manuales cotidianas tienen demanda digital real",
+      "new_belief": "Lo que sé hacer con las manos vale plata en internet"
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 4,
+        "ingredient_name": "Historia Personal / Confesional"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 24,
+        "ingredient_name": "Situación Específica de Dolor"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 85,
+        "ingredient_name": "Testimonio Diverso"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "transition_text": "Y lo de costura es solo un ejemplo. Hay gente haciendo lo mismo con cocina, con jardinería, con fitness.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "En 2 horas te muestro cómo encontrar algo que la gente quiere comprar, cómo crearlo con IA y cómo empezar a venderlo. Sin experiencia. Sin saber de tecnología. Desde tu celular.",
+          "prueba": "Lo hicieron mamás, jubilados, pibes de 20, gente que nunca vendió nada. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, te puede cambiar todo.",
+          "urgencia": "Ya hay cientos de personas registradas para esta edición.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres, vas a entender por qué miles ya lo hicieron. Te espero."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "B",
+        "layers": {
+          "oferta": "En 3 días en vivo creás tu producto digital con IA, armás tu anuncio y hacés tu primera venta. Todo con acompañamiento.",
+          "prueba": "Un albañil de Tucumán, una jubilada de 63 años, una mamá de 3 hijos. Todos lo hicieron.",
+          "riesgo_cero": "Si no te sirve, perdiste 5 dólares y 3 tardes. Menos de lo que gastás en datos del celular. Si te sirve, te cambia la vida.",
+          "urgencia": "Cada día que no tenés tu producto en venta son ventas que alguien más está haciendo con el conocimiento que vos tenés.",
+          "orden_nlp": "Tocá el botón de acá abajo y anotate. Te espero el primer día."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "D",
+        "layers": {
+          "oferta": "Tengo una clase gratis donde te enseño a crear un producto digital con IA y empezar a venderlo.",
+          "prueba": "Miles ya lo hicieron.",
+          "riesgo_cero": "No te voy a vender nada. Es gratis.",
+          "urgencia": "Si solo querés scrollear, seguí de largo.",
+          "orden_nlp": "Pero si querés hacer algo, comentá 'IA' y andá al link de mi perfil. Te espero."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T21:25:02.057Z"
+}

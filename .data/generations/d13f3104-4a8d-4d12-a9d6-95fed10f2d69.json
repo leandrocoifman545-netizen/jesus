@@ -1,0 +1,182 @@
+{
+  "id": "d13f3104-4a8d-4d12-a9d6-95fed10f2d69",
+  "briefId": "2c2b29a8-0628-4d63-877f-46c8df246070",
+  "title": "G9 — Producto revelado: esta guía se creó en 2 horas y ya vendió 300 copias",
+  "batch": "semana-2026-03-17",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.6_producto_revelado_tangible",
+    "body_type": "demo_proceso",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "productos digitales — tangibilización del resultado",
+    "model_sale_type": "ingreso_recurrente",
+    "total_duration_seconds": 78,
+    "word_count": 180,
+    "belief_change": {
+      "old_belief": "No entiendo qué es un 'producto digital' — suena abstracto y lejano",
+      "new_belief": "Un producto digital es algo concreto que puedo ver, tocar y vender hoy"
+    },
+    "micro_beliefs": [
+      "Un producto digital no es algo misterioso — es una guía, un kit, un recurso útil",
+      "Se puede crear algo así en horas, no en meses",
+      "Hay gente que vende estos productos todos los días por $7-$20",
+      "La IA hace el 80% del trabajo pesado — vos ponés la dirección",
+      "Esto no es teoría — existen productos reales generando ingresos reales"
+    ],
+    "hooks": [
+      {
+        "hook_type": "dato_concreto",
+        "script_text": "Esto es una guía de 45 páginas sobre cómo organizar mudanzas. Se creó en 2 horas con IA. Se vende a $9. Ya vendió más de 300 copias. Hacé la cuenta. Y ni siquiera es el mejor ejemplo."
+      },
+      {
+        "hook_type": "contraintuitivo",
+        "script_text": "El producto digital más vendido que vi no es de fitness, ni de marketing, ni de finanzas. Es una guía de organización de fiestas infantiles. $7. Miles de copias. Creada con IA en una tarde. Dejame explicarte."
+      },
+      {
+        "hook_type": "provocacion",
+        "script_text": "Todo el mundo habla de 'productos digitales' pero nadie te muestra uno. Hoy te muestro exactamente qué son, cómo se ven, y cuánto generan. Para que dejes de imaginar y empieces a entender."
+      },
+      {
+        "hook_type": "simplificacion_error",
+        "script_text": "La gente piensa que un producto digital es algo complicado. Una app. Un software. No. Es un PDF. Una guía. Un kit de plantillas. Algo que resuelve un problema concreto. Y se crea en horas."
+      },
+      {
+        "hook_type": "negacion_directa",
+        "script_text": "No es un curso. No es una app. No es algo que necesite programación. Un producto digital es tan simple como un documento que ayuda a alguien a resolver un problema. Y la IA te lo arma."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "title": "Beat 1 — Identificación: la confusión de qué es un producto digital",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Un producto digital no es algo misterioso — es una guía, un kit, un recurso útil",
+          "script_text": "Escuchás 'producto digital' y pensás en algo técnico. Una app. Algo que necesita programadores. No. Un producto digital es una guía de 30 páginas que enseña algo útil. Un kit de plantillas. Un checklist. Algo que alguien necesita y que hoy no encuentra fácil. Eso es todo."
+        },
+        {
+          "title": "Beat 2 — Quiebre: ejemplos reales que existen hoy",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay gente que vende estos productos todos los días por $7-$20",
+          "script_text": "Guía para organizar una mudanza sin estrés: $9, 300 copias vendidas. Kit de menú semanal para familias: $12, se vende todos los días. Plantillas de presupuesto para freelancers: $7. Ninguno requirió inversión grande. Ninguno requirió mostrar la cara. Son productos simples que resuelven problemas reales."
+        },
+        {
+          "title": "Beat 3 — Mecanismo: cómo se crea uno en horas",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA hace el 80% del trabajo pesado — vos ponés la dirección",
+          "script_text": "Le decís a la IA: 'Quiero una guía sobre X para gente que tiene Y problema.' Ella investiga, organiza, redacta. Vos editás, le ponés tu estilo, la dejás lista. En 2-3 horas tenés un producto terminado. Lo subís a una plataforma. Activás publicidad por $2 al día. Y empezás a vender. Así de simple."
+        },
+        {
+          "title": "Beat 4 — Demolición: no necesitás ser experto",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Se puede crear algo así en horas, no en meses",
+          "script_text": "'Pero yo no soy experto en nada.' No hace falta. La IA organiza información que ya existe. Vos elegís el tema, validás que haya demanda, y dirigís el proceso. Es como ser director de cine: no actuás, no filmás, no editás. Pero la película lleva tu nombre. Y genera ingresos."
+        },
+        {
+          "title": "Beat 5 — Prueba: productos reales, ingresos reales",
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto no es teoría — existen productos reales generando ingresos reales",
+          "script_text": "Estos no son ejemplos inventados. Son productos que existen hoy, vendiendo hoy. Creados por gente sin experiencia técnica, sin equipo, sin inversión grande. Gente que antes pensaba igual que vos: que un producto digital era algo inalcanzable. Hoy lo venden todos los días."
+        },
+        {
+          "title": "Venta del modelo — Ingreso recurrente",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Crear una vez, vender siempre",
+          "script_text": "Lo creás una vez. Se vende cada día. Sin que estés presente. Sin stock. Sin envío. El ingreso se acumula mientras dormís, viajás o hacés otra cosa. Y podés tener 5, 10, 20 productos así. Cada uno generando su propio flujo de plata."
+        }
+      ]
+    },
+    "transition_text": "Cómo encontrar el tema, crear el producto y ponerlo a vender es exactamente lo que enseño. Paso a paso.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 87,
+        "ingredient_name": "Caso Específico con Números"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 24,
+        "ingredient_name": "Confusión como Dolor"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 42,
+        "ingredient_name": "Espejo Brutal"
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T22:36:57.905Z"
+}

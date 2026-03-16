@@ -1,0 +1,172 @@
+{
+  "id": "70c57976-7592-4556-952b-b7b8988c2356",
+  "briefId": "68e75ffc-6b9c-43db-a501-6a124a823dcf",
+  "projectId": "adp",
+  "title": "#1 — Repostería × Comparación tóxica (Green Screen)",
+  "script": {
+    "angle_family": "F3",
+    "angle_specific": "3.4_comparacion_toxica",
+    "body_type": "demolicion_mito",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "Repostería artesanal",
+    "model_sale_type": "transparencia_total",
+    "format_visual": "Green Screen + Noticia",
+    "arc_narrative": "#3 Confrontación directa",
+    "tension": "T3",
+    "total_duration_seconds": 75,
+    "word_count": 178,
+    "belief_change": {
+      "old_belief": "Para ganar plata con repostería necesito un local o vender tortas una por una",
+      "new_belief": "Puedo empaquetar lo que ya sé en un producto digital y venderlo infinitas veces",
+      "mechanism": "La IA organiza tu conocimiento en una guía vendible en horas, no meses"
+    },
+    "micro_beliefs": [
+      "MC1: Gente que sabe MENOS que yo ya está ganando plata con esto — la diferencia no es conocimiento, es formato",
+      "MC2: No necesitás local ni título — necesitás empaquetar lo que ya sabés en algo que se venda solo",
+      "MC3: La IA hace que empaquetarlo sea ridículamente fácil y lo vendés por internet"
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "number": 29,
+        "name": "Dolor comparativo social"
+      },
+      {
+        "category": "D",
+        "number": 51,
+        "name": "Derrumbe del mito"
+      },
+      {
+        "category": "F",
+        "number": 72,
+        "name": "New Opportunity"
+      },
+      {
+        "category": "C",
+        "number": 43,
+        "name": "Verdad incómoda"
+      },
+      {
+        "category": "I",
+        "number": 109,
+        "name": "Directo"
+      }
+    ],
+    "hooks": [
+      {
+        "type": "situacion_especifica",
+        "script_text": "Tu vecina empezó a vender recetas de tortas por internet. No tiene título de pastelera. No tiene local. Pero el mes pasado facturó más que laburando doble turno. Y vos que horneás desde los 14 años seguís regalando recetas en el grupo de WhatsApp."
+      },
+      {
+        "type": "pregunta_incomoda",
+        "script_text": "¿Cuántas veces te dijeron 'deberías cobrar por esto'? ¿Cuántas veces fantaseaste con vivir de lo que cocinás? La pregunta no es si se puede. La pregunta es por qué vos seguís cocinando gratis."
+      },
+      {
+        "type": "provocacion",
+        "script_text": "Hay gente que no sabe ni prender el horno vendiendo guías de repostería hechas con IA por $15. Mientras tanto, vos — que sabés de verdad — seguís regalando tu conocimiento en stories. El problema no es que no se pueda. Es que no sabés cómo."
+      },
+      {
+        "type": "confesion",
+        "script_text": "Te voy a ser honesto. La mayoría de las guías de cocina que se venden en internet las armó alguien que no sabe cocinar. Las armó con inteligencia artificial. Y la gente que realmente sabe — como vos — sigue sin ganar un peso con su conocimiento."
+      },
+      {
+        "type": "observacion_tendencia",
+        "script_text": "'Recetas de repostería paso a paso' es una de las búsquedas que más creció este año en toda Latinoamérica. Miles de personas buscan guías todos los días. Y casi nadie les vende una guía bien hecha, con experiencia real atrás."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "name": "MC1: Gente que sabe menos ya gana con esto",
+          "micro_belief": "Gente que sabe MENOS que yo ya está ganando plata con esto",
+          "script_text": "Hay gente que nunca hizo una torta en su vida vendiendo guías de repostería en internet. Las arman con IA, las suben, y cobran $10 o $15 por cada una. No saben la diferencia entre fondant y merengue. Pero saben algo que vos no: cómo empaquetar información en un formato que la gente compra. Esa es la única diferencia entre ellos y vos.",
+          "ingredients": [
+            "B#29 Dolor comparativo social",
+            "C#43 Verdad incómoda"
+          ]
+        },
+        {
+          "name": "MC2: No necesitás local — necesitás empaquetar",
+          "micro_belief": "No necesitás local ni título — necesitás empaquetar lo que ya sabés",
+          "script_text": "El mito dice que para vivir de la repostería necesitás un local, una habilitación, empleados. Mentira. Los que más ganan hoy no tienen nada de eso. Tienen un producto digital: una guía, un pack de recetas con fotos, un curso armado. Lo crean una vez. Lo venden sin parar. Sin stock. Sin horarios. Sin alquiler. El negocio no es hacer tortas. Es vender lo que sabés sobre hacer tortas.",
+          "ingredients": [
+            "D#51 Derrumbe del mito",
+            "F#72 New Opportunity"
+          ]
+        },
+        {
+          "name": "MC3: La IA lo hace fácil + cierre con venta",
+          "micro_belief": "La IA hace que empaquetarlo sea ridículamente fácil y lo vendés por internet",
+          "script_text": "Vos ponés el conocimiento real. La IA lo estructura, lo diseña, lo deja listo. En una tarde. Y después lo vendés por internet. Sin saber de tecnología. Sin mostrar tu cara. La realidad es que esto funciona porque la gente quiere aprender de alguien que SABE, no de un blog genérico. Y yo te muestro exactamente cómo hacerlo. Sin vueltas.",
+          "ingredients": [
+            "I#109 Directo"
+          ]
+        }
+      ]
+    },
+    "transition_text": "Imaginate tener tus mejores recetas organizadas en una guía profesional que se vende mientras vos dormís.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo.",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero.",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "text": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas. Lo hicieron mamás, jubilados, estudiantes. Gente como vos. No te pido nada. Solo tu tiempo. Si llegaste hasta acá, algo te hizo click. No ignores esa sensación. Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info.",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T19:43:51.313Z"
+}

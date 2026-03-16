@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, useRef } from "react";
+import { useState, useCallback, useEffect, useRef, useMemo } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { useToast } from "./toast";
@@ -122,8 +122,8 @@ function StatusDropdown({ currentStatus, onSelect, onClose, triggerRef }: {
     }
 
     function handleScroll() { onClose(); }
-    window.addEventListener("scroll", handleScroll, true);
-    return () => window.removeEventListener("scroll", handleScroll, true);
+    window.addEventListener("scroll", handleScroll, { passive: true, capture: true });
+    return () => window.removeEventListener("scroll", handleScroll, { capture: true });
   }, [triggerRef, onClose]);
 
   return createPortal(
@@ -378,7 +378,7 @@ function generatePackText(selected: GenerationSummary[], ctas: ActiveCTA[]): str
 
     for (const section of gen.script.development.sections) {
       const rehook = section.is_rehook ? " [RE-HOOK]" : "";
-      text += `[${section.section_name}${rehook}]\n`;
+      text += `[${section.section_name || (section as any).title || 'Sección'}${rehook}]\n`;
       text += `${section.script_text}\n\n`;
     }
 
@@ -450,7 +450,7 @@ function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): str
   const scriptsHTML = selected.map((g, i) => {
     const bodySections = g.script.development.sections.map(sec => `
       <div class="body-section ${sec.is_rehook ? "rehook" : ""} no-break">
-        <div class="body-section-name">${esc(sec.section_name)}${sec.is_rehook ? " — RE-HOOK" : ""}</div>
+        <div class="body-section-name">${esc(sec.section_name || (sec as any).title || 'Sección')}${sec.is_rehook ? " — RE-HOOK" : ""}</div>
         <div class="body-section-text">${esc(sec.script_text)}</div>
       </div>`).join("");
 
@@ -817,6 +817,8 @@ const FALLBACK_CTAS: ActiveCTA[] = [
   },
 ];
 
+const STATUS_ORDER: Record<string, number> = { winner: 0, recorded: 1, confirmed: 2, draft: 3 };
+
 export default function SessionPack({ generations: initialGenerations, activeCTAs }: SessionPackProps) {
   const CTAS = activeCTAs && activeCTAs.length > 0 ? activeCTAs : FALLBACK_CTAS;
   const router = useRouter();
@@ -830,7 +832,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [deleting, setDeleting] = useState(false);
   const [sortBy, setSortBy] = useState<"recent" | "oldest" | "duration" | "framework" | "status">("recent");
-  const [collapsedBatches, setCollapsedBatches] = useState<Set<string>>(new Set());
+  const [collapsedBatches, setCollapsedBatches] = useState<Set<string> | null>(null);
   const [showBatchModal, setShowBatchModal] = useState(false);
   const [renamingBatch, setRenamingBatch] = useState<{ id: string; name: string } | null>(null);
   const [batchLoading, setBatchLoading] = useState(false);
@@ -854,14 +856,14 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
 
   function toggleBatchCollapse(batchId: string) {
     setCollapsedBatches((prev) => {
-      const next = new Set(prev);
+      const next = new Set(prev ?? []);
       if (next.has(batchId)) next.delete(batchId);
       else next.add(batchId);
       return next;
     });
   }
 
-  const filteredGenerations = generations
+  const filteredGenerations = useMemo(() => generations
     .filter((g) => {
       if (filter !== "all" && (g.status || "draft") !== filter) return false;
       if (debouncedSearch.trim()) {
@@ -887,14 +889,12 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
           return b.script.total_duration_seconds - a.script.total_duration_seconds;
         case "framework":
           return a.script.development.framework_used.localeCompare(b.script.development.framework_used);
-        case "status": {
-          const order: Record<string, number> = { winner: 0, recorded: 1, confirmed: 2, draft: 3 };
-          return (order[a.status || "draft"] ?? 2) - (order[b.status || "draft"] ?? 2);
-        }
+        case "status":
+          return (STATUS_ORDER[a.status || "draft"] ?? 2) - (STATUS_ORDER[b.status || "draft"] ?? 2);
         default:
           return 0;
       }
-    });
+    }), [generations, filter, debouncedSearch, sortBy]);
 
   function selectAll() {
     if (selected.size === filteredGenerations.length) {
@@ -940,7 +940,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
 
   // --- Batch operations ---
 
-  const existingBatches = (() => {
+  const existingBatches = useMemo(() => {
     const map = new Map<string, { id: string; name: string; count: number }>();
     for (const g of generations) {
       if (g.batch) {
@@ -950,7 +950,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
       }
     }
     return Array.from(map.values());
-  })();
+  }, [generations]);
 
   async function assignBatch(batchId: string | null, batchName: string) {
     setBatchLoading(true);
@@ -1171,7 +1171,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
         draggable
         onDragStart={(e) => handleDragStart(e, gen.id)}
         onDragEnd={handleDragEnd}
-        className={`relative border rounded-2xl p-6 transition-all duration-300 flex gap-4 hover-glow hover-lift cursor-grab active:cursor-grabbing ${
+        className={`generation-card relative border rounded-2xl p-6 transition-all duration-300 flex gap-4 hover-glow hover-lift cursor-grab active:cursor-grabbing ${
           selected.has(gen.id)
             ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20 shadow-lg shadow-purple-500/5"
             : "border-zinc-800/40 bg-zinc-900/30 hover:bg-zinc-900/50 hover:border-zinc-700/40"
@@ -1201,12 +1201,18 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
             <p className="text-sm font-medium text-zinc-100 mb-1 truncate">{gen.title}</p>
           )}
           <div className="flex items-center gap-2.5 mb-2.5 flex-wrap">
-            <span className="badge bg-zinc-800/80 text-zinc-400 border-zinc-700/50">
-              {resolveFormatLabel(gen.script.platform_adaptation.platform)}
-            </span>
-            <span className="text-[11px] text-zinc-500 font-medium">{gen.script.total_duration_seconds}s</span>
-            <span className="text-[11px] text-zinc-500">{gen.script.development.framework_used}</span>
-            <span className="text-[11px] text-zinc-500">{gen.script.hooks.length} leads</span>
+            {gen.script.platform_adaptation?.platform && (
+              <span className="badge bg-zinc-800/80 text-zinc-400 border-zinc-700/50">
+                {resolveFormatLabel(gen.script.platform_adaptation.platform)}
+              </span>
+            )}
+            {gen.script.total_duration_seconds && (
+              <span className="text-[11px] text-zinc-500 font-medium">{gen.script.total_duration_seconds}s</span>
+            )}
+            {gen.script.development?.framework_used && (
+              <span className="text-[11px] text-zinc-500">{gen.script.development.framework_used}</span>
+            )}
+            <span className="text-[11px] text-zinc-500">{gen.script.hooks?.length || 0} leads</span>
             {gen.script.visual_format && (
               <span className="badge bg-blue-500/10 text-blue-400 border-blue-500/20">
                 {gen.script.visual_format.format_name}
@@ -1214,7 +1220,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
             )}
           </div>
           <p className="text-sm text-zinc-300 truncate">
-            {gen.script.hooks[0]?.script_text.substring(0, 100)}...
+            {(gen.script.hooks?.[0]?.script_text || (gen.script.hooks?.[0] as any)?.text || '').substring(0, 100)}...
           </p>
           <p className="text-xs text-zinc-600 mt-1">
             <RelativeTime date={gen.createdAt} />
@@ -1259,6 +1265,19 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
   if (generations.length === 0) return null;
 
   const groups = groupGenerations(filteredGenerations);
+
+  // Initialize all groups collapsed on first render
+  if (collapsedBatches === null && groups.length > 0) {
+    const allIds = new Set<string>();
+    for (const g of groups) {
+      if (g.type === "batch") allIds.add(g.batchId);
+      else allIds.add(`date:${g.label}`);
+    }
+    setCollapsedBatches(allIds);
+  }
+
+  // Treat null as empty set for rendering
+  const collapsed = collapsedBatches ?? new Set<string>();
 
   return (
     <>
@@ -1418,7 +1437,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
         {filteredGenerations.length > 0 ? (
           groups.map((group) => {
             if (group.type === "batch") {
-              const isCollapsed = collapsedBatches.has(group.batchId);
+              const isCollapsed = collapsed.has(group.batchId);
               const summary = getBatchStatusSummary(group.items);
               const allSelected = group.items.every((g) => selected.has(g.id));
               const someSelected = group.items.some((g) => selected.has(g.id));
@@ -1547,7 +1566,9 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
               );
             }
 
-            // Date group (ungrouped)
+            // Date group (ungrouped) — also collapsible
+            const dateKey = `date:${group.label}`;
+            const isDateCollapsed = collapsed.has(dateKey);
             return (
               <div
                 key={`date-${group.label}`}
@@ -1560,13 +1581,24 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
                 onDrop={handleDropOnUngrouped}
                 className={dragOverUngrouped ? "rounded-xl ring-2 ring-zinc-500/30 bg-zinc-800/20 transition-all" : "transition-all"}
               >
-                <div className="section-divider mb-3 mt-4">
-                  <span className="text-[10px] uppercase tracking-[0.15em] font-medium text-zinc-500 shrink-0">{group.label}</span>
+                <div
+                  className="section-divider mb-3 mt-4 cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => toggleBatchCollapse(dateKey)}
+                >
+                  <span className="text-[10px] uppercase tracking-[0.15em] font-medium text-zinc-500 shrink-0 flex items-center gap-2">
+                    <svg className={`w-3 h-3 text-zinc-600 transition-transform duration-200 ${isDateCollapsed ? "-rotate-90" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    {group.label}
+                    <span className="text-zinc-600">{group.items.length}</span>
+                  </span>
                   {draggingId && <span className="text-[10px] text-zinc-600 ml-2">soltar para desagrupar</span>}
                 </div>
-                <div className="grid gap-4">
-                  {group.items.map(renderGenCard)}
-                </div>
+                {!isDateCollapsed && (
+                  <div className="grid gap-4">
+                    {group.items.map(renderGenCard)}
+                  </div>
+                )}
               </div>
             );
           })

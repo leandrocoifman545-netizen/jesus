@@ -1,147 +1,90 @@
-# Plan Semana 2026-03-14 — Sesión #4
+# Estrategia Semanal — 14 de Marzo 2026
 
-## Resumen de datos
-- Generaciones totales antes de esta semana: 15
-- Leads quemados: 50
-- Ángulos sin cubrir: LATAM (0), Consumidor IA (0)
-- Segmentos sub-representados: B (5/38), D (4/38)
-- Body types ausentes: Anti-gurú (0), Comparación (0)
-- Funnel: RETARGET (0), EVERGREEN (0)
-- Nichos disponibles: skincare, fotografía, costura, jardinería, nutrición (ninguno usado antes)
+## Resumen
+- **10 guiones** generados con sistema completo (5 familias, 8 body types, 10 ventas modelo)
+- **Formatos visuales:** 5 Walking + Talking / 5 Texto Grande → Persona
+- **Leads quemados respetados:** 50 leads existentes evitados
+- **CTAs:** 6 TOFU (clase gratuita) + 2 MOFU (taller $5) + 1 RETARGET (taller $5) + 1 TOFU
 
-## Objetivos de la semana (con justificación)
-- **Gap principal:** Ángulos sin testear (LATAM, Consumidor IA) — 0 guiones en ambos
-- **Gap secundario:** RETARGET — 0 guiones de nurture post-registro
-- **Body types nuevos:** Anti-gurú (primer uso) + Comparación (primer uso) + Analogía cotidiana
-- **Test a correr:** Texto Grande vs Walking+Talking con mismo segmento B
+---
 
-## Formatos Visuales de la Semana
-- **Formato A:** Walking + Talking (#10, Nivel 1) — 5 guiones
-- **Formato B:** Texto Grande → Persona (#13, Nivel 2) — 5 guiones
-- *Justificación:* Ambos formatos NUNCA usados. Walking+Talking es el más natural para Jesús (sin setup). Texto Grande genera pattern interrupt con texto en pantalla negra.
-- *Formatos usados previamente:* Screenshot→Respuesta (5x), Chat WhatsApp (3x), Talking Head+Text (2x), Green Screen (1x), Split Screen (1x), Talking Head (1x)
+## Matriz de guiones
 
-## Guiones a grabar
+| # | ID | Familia | Ángulo | Body type | Venta modelo | Seg | Funnel | Nicho | Formato |
+|---|---|---------|--------|-----------|-------------|-----|--------|-------|---------|
+| 1 | `1dc68d84` | F3 Confrontación | 3.6 Anti-gurú | Demolición mito | Transparencia total | D | TOFU | General | W+T |
+| 2 | `975409b5` | F2 Oportunidad | 2.2 Tendencia huerta | Un día en la vida | Tiempo vs dinero | C | TOFU | Huerta urbana | TG→P |
+| 3 | `5450191e` | F4 Mecanismo | 4.6 Producto revelado | Demo/Proceso | Lean/Anti-riesgo | A | TOFU | Fotografía | TG→P |
+| 4 | `f551ab3f` | F1 Identidad | 1.6 Freelancer | Comparación caminos | Cementerio modelos | B | TOFU | Diseño | W+T |
+| 5 | `ee53f2da` | F5 Historia | 5.3 Micro-historia | Historia con giro | Prueba diversidad | D | TOFU | Tejido | TG→P |
+| 6 | `0a0e69b3` | F1 Identidad | 1.4 Jubilado +50 | Contraste emocional | Eliminación barreras | D | MOFU | Manualidades | W+T |
+| 7 | `b852e61b` | F2 Oportunidad | 2.4 Economía conocimiento | Analogía extendida | Democratización IA | B | TOFU | Educación | TG→P |
+| 8 | `61f2a108` | F3 Confrontación | 3.5 Costo invisible | Pregunta y respuesta | Matemática simple | A | MOFU | General | W+T |
+| 9 | `ff3f7e61` | F5 Historia | 5.5 Diálogo | Historia con giro | Ventana oportunidad | A | TOFU | Cocina | TG→P |
+| 10 | `f155f6e0` | F4 Mecanismo | 4.5 Matemática | Comparación caminos | Contraste físico | B | RETARGET | Nutrición | W+T |
 
-### 1. Skincare casero + IA (Formato A: Walking+Talking)
-- **Ángulo:** 6 — Proceso/demostración
-- **Segmento:** C | **Funnel:** TOFU | **Body:** Idea de nicho
-- **Nicho:** Belleza / skincare casero (NUEVO)
-- **Framework:** 3_Acts
-- **Cambio de creencia:** "Lo que sé de skincare es solo para mí" → "Mi experiencia real vale más que lo que se googlea"
-- **ID:** 3e02ce68
+---
 
-### 2. Fotografía celular + IA (Formato A: Walking+Talking)
-- **Ángulo:** 2 — Barrera tecnológica
-- **Segmento:** B | **Funnel:** TOFU | **Body:** Idea de nicho
-- **Nicho:** Fotografía con celular (NUEVO)
-- **Framework:** BAB
-- **Cambio de creencia:** "Sacar fotos es un hobby, no un negocio" → "Lo que ya sabés tiene un mercado esperando"
-- **ID:** 054c1412
+## Cobertura lograda
 
-### 3. LATAM: Venezuela + IA (Formato A: Walking+Talking)
-- **Ángulo:** 8 — LATAM/contexto regional (PRIMER USO — 0 guiones previos)
-- **Segmento:** A | **Funnel:** TOFU | **Body:** Storytelling
-- **Nicho:** General — contexto regional LATAM
-- **Framework:** HSO
-- **Cambio de creencia:** "En mi país no hay oportunidades" → "Con un celular y la IA puedo generar dólares desde cualquier lugar"
-- **ID:** 7072fadf
+### Familias de ángulo (5/5 ✅)
+- F1 Identidad: 2 (1.6 Freelancer, 1.4 Jubilado)
+- F2 Oportunidad: 2 (2.2 Tendencia, 2.4 Economía)
+- F3 Confrontación: 2 (3.6 Anti-gurú, 3.5 Costo invisible)
+- F4 Mecanismo: 2 (4.6 Producto revelado, 4.5 Matemática)
+- F5 Historia: 2 (5.3 Micro-historia, 5.5 Diálogo)
 
-### 4. Anti-gurú: los que enseñan nunca vendieron (Formato A: Walking+Talking)
-- **Ángulo:** 4 — Desconfianza/anti-estafa
-- **Segmento:** D | **Funnel:** TOFU | **Body:** Anti-gurú (PRIMER USO — 0 guiones previos)
-- **Nicho:** General — anti-gurú
-- **Framework:** BAB
-- **Cambio de creencia:** "Todos los cursos son estafa" → "Hay diferencia entre vendedores de humo y alguien que hace lo que enseña"
-- **ID:** 1e1714bf
+### Tipos de cuerpo (7/8 ✅)
+Demolición mito, Un día en la vida, Demo/Proceso, Comparación caminos (×2), Historia con giro (×2), Contraste emocional, Analogía extendida, Pregunta y respuesta
 
-### 5. Costura + IA — Analogía cotidiana (Formato A: Walking+Talking)
-- **Ángulo:** 7 — Edad/reinvención
-- **Segmento:** B | **Funnel:** TOFU | **Body:** Analogía cotidiana (solo 1 previo)
-- **Nicho:** Costura / arreglos de ropa (NUEVO)
-- **Framework:** Analogia_Giro
-- **Cambio de creencia:** "Coser es un oficio viejo sin valor digital" → "Lo que sé tiene un mercado enorme"
-- **ID:** 2846b1ea
+### Ventas del modelo (8/10 ✅)
+Transparencia, Tiempo vs dinero, Lean/Anti-riesgo, Cementerio modelos, Prueba diversidad, Eliminación barreras, Democratización IA, Matemática simple, Ventana oportunidad, Contraste físico
 
-### 6. Consumidor de IA (Formato B: Texto Grande→Persona)
-- **Ángulo:** 11 — Consumidor de IA (PRIMER USO — 0 guiones previos)
-- **Segmento:** B | **Funnel:** TOFU | **Body:** Cambio de creencia
-- **Nicho:** General — IA como herramienta de producción
-- **Framework:** PAS
-- **Cambio de creencia:** "Uso IA para tareas y está bien" → "Ya tengo la herramienta, solo necesito cambiar lo que le pido"
-- **ID:** cfefb1c9
+### Segmentos
+- A: 3 guiones (3, 8, 9)
+- B: 3 guiones (4, 7, 10)
+- C: 1 guion (2)
+- D: 3 guiones (1, 5, 6)
 
-### 7. Nutrición + IA — Comparación de alternativas (Formato B: Texto Grande→Persona)
-- **Ángulo:** 1 — Dolor económico
-- **Segmento:** A | **Funnel:** TOFU | **Body:** Comparación (PRIMER USO — 0 guiones previos)
-- **Nicho:** Nutrición / alimentación saludable (NUEVO)
-- **Framework:** 3_Acts
-- **Cambio de creencia:** "Ya probé todo y nada funciona" → "El problema era el modelo, no yo"
-- **ID:** 5c96a90d
+### Funnel
+- TOFU: 7 guiones
+- MOFU: 2 guiones (6, 8)
+- RETARGET: 1 guion (10)
 
-### 8. RETARGET: Ya te registraste, ahora vení en vivo (Formato B: Texto Grande→Persona)
-- **Ángulo:** 6 — Proceso/demostración
-- **Segmento:** A | **Funnel:** RETARGET (PRIMER USO — 0 guiones previos)
-- **Body:** Mecanismo
-- **Framework:** PAS
-- **Cambio de creencia:** "Ya me registré, puedo verlo grabado" → "Tengo que estar en vivo para acceder a lo que vale"
-- **ID:** 32b95c38
+### Nichos (todos distintos ✅)
+General/anti-gurú, huerta urbana, fotografía, diseño, tejido, manualidades, educación, general/matemática, cocina, nutrición
 
-### 9. Jardinería + IA — Storytelling alumno (Formato B: Texto Grande→Persona)
-- **Ángulo:** 7 — Edad/reinvención
-- **Segmento:** C | **Funnel:** TOFU | **Body:** Storytelling
-- **Nicho:** Jardinería / huerta urbana (NUEVO)
-- **Framework:** HSO
-- **Cambio de creencia:** "Lo que sé de plantas es solo un hobby" → "Cualquier conocimiento específico tiene un mercado"
-- **ID:** ba529f52
+### Formatos visuales
+- Walking + Talking: 5 (1, 4, 6, 8, 10)
+- Texto Grande → Persona: 5 (2, 3, 5, 7, 9)
 
-### 10. MOFU: Taller $5 — Freelancers atrapados (Formato B: Texto Grande→Persona)
-- **Ángulo:** 1 — Dolor económico
-- **Segmento:** A | **Funnel:** MOFU (sub-representado)
-- **Body:** Mecanismo
-- **Nicho:** General — freelancers
-- **Framework:** PAS
-- **Cambio de creencia:** "La única forma de ganar más es cobrar más por hora" → "Puedo generar ingresos pasivos con lo que ya sé"
-- **ID:** a3fdb552
+---
 
-## CTAs de la semana
-- CTA 1 (Directo): Sin cambios
-- CTA 2 (Taller $5): Sin cambios
-- CTA 3 (Instagram): Sin cambios
+## Orden de grabación sugerido
 
-## Tests programados
-- **Test de formato:** Walking+Talking vs Texto Grande→Persona con segmento B (guiones 2+5 vs 6)
-- **Variable aislada:** Formato visual (misma audiencia, mismo funnel)
-- **Hipótesis:** Texto Grande genera mayor hook rate por el pattern interrupt del texto en pantalla negra
-- **Cómo medir:** Hook rate + CTR a los 72h
+### Bloque Walking + Talking (5 guiones)
+1. G1 — Anti-gurú (arrancar fuerte, warm-up)
+2. G4 — Freelancer (energía confrontativa)
+3. G8 — Costo invisible Q&A (ritmo rápido)
+4. G10 — Matemática (pura lógica)
+5. G6 — Jubilado +50 (cerrar con tono más calmo)
 
-## Cobertura de esta semana
+### Bloque Texto Grande → Persona (5 guiones)
+6. G3 — Producto revelado fotos (demo)
+7. G2 — Huerta urbana (un día en la vida)
+8. G7 — Economía conocimiento (analogía)
+9. G9 — Diálogo cocina (actuación)
+10. G5 — Doña Marta tejido (historia)
 
-### Huecos cerrados:
-- ✅ LATAM/contexto regional: 0 → 1 (Venezuela)
-- ✅ Consumidor de IA: 0 → 1
-- ✅ Anti-gurú (body type): 0 → 1
-- ✅ Comparación (body type): 0 → 1
-- ✅ RETARGET (funnel): 0 → 1
-- ✅ Walking+Talking (formato): 0 → 5
-- ✅ Texto Grande (formato): 0 → 5
+### CTAs genéricos (3 grabaciones al final)
+- CTA Clase Gratuita — Variante A (Clásica)
+- CTA Taller $5 — Variante A (Día 1/2/3 + Transparencia)
+- CTA Instagram — Variante B (Micro-compromiso)
 
-### Diversidad lograda:
-- **Segmentos:** A(4), B(3), C(2), D(1) — 4 de 4 cubiertos
-- **Ángulos:** 6 distintos (1, 2, 4, 6, 7, 8, 11)
-- **Nichos nuevos:** 5 (skincare, fotografía, costura, jardinería, nutrición)
-- **Frameworks:** PAS(3), BAB(2), HSO(2), 3_Acts(2), Analogia_Giro(1) — 5 frameworks distintos
-- **Body types:** Idea de nicho(2), Storytelling(2), Mecanismo(2), Cambio de creencia(1), Anti-gurú(1), Analogía(1), Comparación(1)
-- **Funnel:** TOFU(8), MOFU(1), RETARGET(1) — 3 de 5 cubiertos
+---
 
-### Leads quemados respetados:
-- 50 leads quemados verificados — ningún lead de esta semana repite estructura ni ángulo de los quemados
-- Se evitaron: decoración, fitness, organización hogar, mecánica, viajes, manualidades (todos ya grabados)
-
-## Resumen ejecutivo (para presentar a Jesús)
-
-Esta semana cerramos los huecos más grandes de la matriz. Tres ángulos que nunca se testearon: LATAM/Venezuela, Consumidor de IA, y Anti-gurú como cuerpo. También es la primera vez que hacemos retargeting (nurture post-registro) y un MOFU de freelancers.
-
-Usamos 5 nichos completamente nuevos: skincare, fotografía, costura, jardinería y nutrición. Ninguno repite los ya grabados. Los 2 formatos visuales (Walking+Talking y Texto Grande→Persona) son nuevos — nunca se usaron en las 15 generaciones anteriores.
-
-Hay 50 leads quemados. Todos los leads de esta semana son nuevos en estructura y ángulo. Se verificó cada uno contra la base de quemados.
+## Notas para la sesión
+- Cada body se graba con su **transición** al final (capa 1)
+- Los CTAs se graban UNA vez y se combinan con cualquier body
+- Total grabaciones: 10 bodies + 3 CTAs = 13
+- Duración estimada de sesión: 45-60 minutos

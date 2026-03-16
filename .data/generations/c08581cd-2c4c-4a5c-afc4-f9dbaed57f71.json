@@ -1,0 +1,182 @@
+{
+  "id": "c08581cd-2c4c-4a5c-afc4-f9dbaed57f71",
+  "briefId": "6856d2ad-585d-4178-88f0-008a2261f0b6",
+  "title": "G3 — Historia Jesús: de pintura en la cara a productos digitales",
+  "batch": "semana-2026-03-17",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.1_historia_jesus_origen",
+    "body_type": "historia_con_giro",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "historia personal de transformación",
+    "model_sale_type": "cementerio_de_modelos",
+    "total_duration_seconds": 85,
+    "word_count": 195,
+    "belief_change": {
+      "old_belief": "Este tipo tuvo suerte o viene de una familia con plata",
+      "new_belief": "Viene de abajo, probó todo lo que yo probé, y encontró un camino que funciona"
+    },
+    "micro_beliefs": [
+      "Este tipo no tuvo nada regalado — viene de más abajo que yo",
+      "Probó todos los modelos que yo probé y todos le fallaron",
+      "El giro fue encontrar un modelo donde se crea una vez y se vende siempre",
+      "Si a él le fue así de mal y pudo salir, yo también puedo",
+      "No me vende humo — me cuenta exactamente lo que le pasó"
+    ],
+    "hooks": [
+      {
+        "hook_type": "historia_mini",
+        "script_text": "A los 15 años se me caía la pintura del techo en la cara mientras dormía. A los 20 laburaba 14 horas por día. A los 23 perdí toda la plata que tenía en un negocio. Lo que pasó después me cambió la vida."
+      },
+      {
+        "hook_type": "confesion",
+        "script_text": "Voy a contarte algo que no cuento en ningún ad. La primera vez que me quedé sin un peso, pensé que no servía para nada. Que emprender no era para mí. Estaba equivocado, pero no por las razones que pensás."
+      },
+      {
+        "hook_type": "contraintuitivo",
+        "script_text": "Perdí plata con un kiosco. Perdí plata con freelance. Perdí plata con una agencia. Y cada fracaso me acercó más al modelo de negocio que hoy funciona. El fracaso no fue el problema — fue el camino."
+      },
+      {
+        "hook_type": "provocacion",
+        "script_text": "La mayoría de los que te enseñan a ganar plata online nunca se quedaron sin un peso. Nunca durmieron con pintura cayéndoles en la cara. Yo sí. Y por eso te puedo decir exactamente qué funciona y qué no."
+      },
+      {
+        "hook_type": "negacion_directa",
+        "script_text": "Esto no es una historia de éxito de la noche a la mañana. Es una historia de fracasar una, dos, cinco veces. De probar todo y que todo falle. Hasta que algo distinto apareció."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "title": "Beat 1 — Identificación: el origen duro",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este tipo no tuvo nada regalado — viene de más abajo que yo",
+          "script_text": "Mi viejo tenía un kiosco. Yo dormía en una pieza donde se caía la pintura del techo. A los 16 empecé a laburar. No porque quisiera — porque no había otra opción. Si me ves hoy y pensás que siempre fue así, te equivocás. Empecé desde el piso."
+        },
+        {
+          "title": "Beat 2 — Quiebre: el cementerio de intentos",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Probó todos los modelos que yo probé y todos le fallaron",
+          "script_text": "Probé freelance — cobraba un dólar la hora y tenía 10 reuniones por día. Probé agencia — 100 clientes, no dormía, y la plata no alcanzaba. Probé afiliación — los márgenes eran una miseria. Cada modelo tenía el mismo problema: yo ponía todo el esfuerzo y el techo siempre estaba ahí."
+        },
+        {
+          "title": "Beat 3 — Mecanismo: el giro que cambió todo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El giro fue encontrar un modelo donde se crea una vez y se vende siempre",
+          "script_text": "Hasta que descubrí algo: podés crear un producto digital — una guía, un manual, un kit — y venderlo infinitas veces. Sin stock. Sin empleados. Sin horarios. La IA hace la parte pesada: vos ponés el conocimiento y ella lo empaqueta. Lo creás una vez. Y genera ingresos mientras dormís, viajás, o hacés otra cosa."
+        },
+        {
+          "title": "Beat 4 — Demolición: por qué esto es distinto",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Si a él le fue así de mal y pudo salir, yo también puedo",
+          "script_text": "La diferencia con todo lo anterior es que acá no cambiás horas por plata. No tenés techo. Y el riesgo es casi cero — arrancás con un celular y pocos dólares. Si yo pude salir de donde estaba con este modelo, con todo lo que me fue mal antes, vos también podés."
+        },
+        {
+          "title": "Beat 5 — Prueba: resultados reales",
+          "persuasion_function": "prueba",
+          "micro_belief": "No me vende humo — me cuenta exactamente lo que le pasó",
+          "script_text": "Hoy tengo más de 2.000 alumnos. Gente de todas las edades, todos los países. Algunos arrancaron como yo — desde el piso. Y encontraron la misma salida. No porque sean especiales. Porque el modelo funciona cuando los otros no."
+        },
+        {
+          "title": "Venta del modelo — Cementerio de modelos",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Todos los modelos anteriores fallaron pero este sobrevivió",
+          "script_text": "Probé 5 modelos de negocio. Todos fallaron. El único que sobrevivió es este: productos digitales con IA. Porque es el único donde el esfuerzo se acumula en vez de empezar de cero cada mes."
+        }
+      ]
+    },
+    "transition_text": "Todo lo que aprendí en estos años — los fracasos, los aciertos, el sistema completo — es lo que enseño paso a paso.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "E",
+        "ingredient_number": 60,
+        "ingredient_name": "Historia de Origen"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Anti-Autoridad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "New Opportunity"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 89,
+        "ingredient_name": "Prueba por Volumen"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional del Dolor"
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T22:36:53.805Z"
+}

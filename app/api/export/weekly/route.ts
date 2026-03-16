@@ -41,6 +41,20 @@ function buildTeleprompterDoc(slots: { slot: { index: number }; gen: StoredGener
     for (const section of gen.script.development.sections) {
       doc += `${section.script_text}\n\n`;
     }
+
+    // Offer bridge: solo en guiones legacy sin cta_blocks
+    const hasBlocks = (gen.script as unknown as Record<string, unknown>).cta_blocks as unknown[] | undefined;
+    if (gen.script.offer_bridge && (!hasBlocks || hasBlocks.length === 0)) {
+      doc += `[PUENTE A LA OFERTA]\n`;
+      doc += `${gen.script.offer_bridge.script_text}\n\n`;
+    }
+
+    // Transition
+    const transText = (gen.script as unknown as Record<string, unknown>).transition_text;
+    if (transText) {
+      doc += `[TRANSICION]\n`;
+      doc += `${transText}\n\n`;
+    }
   }
 
   return doc;
@@ -49,17 +63,53 @@ function buildTeleprompterDoc(slots: { slot: { index: number }; gen: StoredGener
 function formatScriptDoc(gen: StoredGeneration, slotIndex: number): string {
   const s = gen.script;
   const vf = s.visual_format;
+  const sc = s as unknown as Record<string, unknown>;
 
   let doc = `# Guion ${slotIndex + 1}: ${gen.title || "Sin título"}\n\n`;
   doc += `- **Formato:** ${s.platform_adaptation.platform}\n`;
   doc += `- **Framework:** ${s.development.framework_used}\n`;
   doc += `- **Duración:** ${s.total_duration_seconds}s | ${s.word_count} palabras\n`;
+  doc += `- **Arco emocional:** ${s.development.emotional_arc}\n`;
+
+  // Classification
+  if (sc.angle_family || sc.body_type || sc.segment || sc.funnel_stage || sc.niche) {
+    doc += `\n## Clasificacion\n`;
+    if (sc.angle_family) doc += `- **Familia:** ${String(sc.angle_family).replace(/_/g, ' ')}\n`;
+    if (sc.angle_specific) doc += `- **Angulo:** ${String(sc.angle_specific).replace(/_/g, ' ')}\n`;
+    if (sc.body_type) doc += `- **Tipo de cuerpo:** ${String(sc.body_type).replace(/_/g, ' ')}\n`;
+    if (sc.segment) doc += `- **Segmento:** ${sc.segment}\n`;
+    if (sc.funnel_stage) doc += `- **Funnel:** ${sc.funnel_stage}\n`;
+    if (sc.niche) doc += `- **Nicho:** ${sc.niche}\n`;
+  }
+
+  // Belief change
+  const bc = sc.belief_change as { old_belief?: string; mechanism?: string; new_belief?: string } | undefined;
+  if (bc) {
+    doc += `\n## Cambio de Creencia\n`;
+    if (bc.old_belief) doc += `- **Antes:** ${bc.old_belief}\n`;
+    if (bc.mechanism) doc += `- **Mecanismo:** ${bc.mechanism}\n`;
+    if (bc.new_belief) doc += `- **Después:** ${bc.new_belief}\n`;
+  }
 
   if (vf) {
     doc += `\n## Formato Visual: ${vf.format_name}\n`;
     doc += `- **Dificultad:** ${vf.difficulty_level}/5\n`;
     doc += `- **Setup:** ${vf.setup_instructions}\n`;
     doc += `- **Notas de grabación:** ${vf.recording_notes}\n`;
+  }
+
+  // Ingredients
+  const ingredients = sc.ingredients_used as Array<{ category: string; ingredient_number: number; ingredient_name: string }> | undefined;
+  if (ingredients && ingredients.length > 0) {
+    doc += `\n## Ingredientes Usados\n`;
+    for (const ing of ingredients) {
+      doc += `- ${ing.category}#${ing.ingredient_number} ${ing.ingredient_name}\n`;
+    }
+  }
+
+  // Venta del modelo
+  if (sc.model_sale_type) {
+    doc += `\n## Venta del Modelo\n${String(sc.model_sale_type).replace(/_/g, ' ')}\n`;
   }
 
   doc += `\n## Leads (${s.hooks.length} variantes)\n`;
@@ -75,10 +125,40 @@ function formatScriptDoc(gen: StoredGeneration, slotIndex: number): string {
     doc += `${section.script_text}\n`;
   }
 
+  // Offer bridge: solo en guiones legacy sin cta_blocks
+  const ctaBlocksForBridge = sc.cta_blocks as unknown[] | undefined;
+  const bridge = s.offer_bridge;
+  if (bridge && (!ctaBlocksForBridge || ctaBlocksForBridge.length === 0)) {
+    const productLabel = bridge.product_type === "webinar_gratis" ? "Webinar Gratis" : bridge.product_type === "taller_5" ? "Taller $5" : "Custom";
+    doc += `\n## Puente a la Oferta (${productLabel})\n`;
+    doc += `${bridge.script_text}\n`;
+  }
+
+  // Transition text
+  if (sc.transition_text) {
+    doc += `\n## Transicion (Capa 1)\n`;
+    doc += `${sc.transition_text}\n`;
+  }
+
   doc += `\n## CTA\n`;
   doc += `**${s.cta?.verbal_cta || "[CTA pendiente]"}**\n`;
   doc += `- Tipo: ${s.cta?.cta_type || "custom"}\n`;
   doc += `- Razón: ${s.cta?.reason_why || ""}\n`;
+
+  // 3 CTA Blocks (6 capas × 3 canales)
+  const ctaBlocks = sc.cta_blocks as Array<{ channel_label: string; variant: string; layers: { oferta: string; prueba: string; riesgo_cero: string; urgencia: string; orden_nlp: string }; timing_seconds: number }> | undefined;
+  if (ctaBlocks && ctaBlocks.length > 0) {
+    doc += `\n## 3 Bloques CTA (Capas 2-6)\n`;
+    doc += `*Se graban UNA vez por sesión y se combinan con cualquier body en edición.*\n`;
+    for (const block of ctaBlocks) {
+      doc += `\n### ${block.channel_label} (${block.variant}) — ~${block.timing_seconds}s\n`;
+      doc += `- **[OFERTA]** ${block.layers.oferta}\n`;
+      doc += `- **[PRUEBA]** ${block.layers.prueba}\n`;
+      doc += `- **[RIESGO CERO]** ${block.layers.riesgo_cero}\n`;
+      doc += `- **[URGENCIA]** ${block.layers.urgencia}\n`;
+      doc += `- **[ORDEN+NLP]** ${block.layers.orden_nlp}\n`;
+    }
+  }
 
   if (gen.sessionNotes) {
     doc += `\n## Notas de Sesión\n${gen.sessionNotes}\n`;

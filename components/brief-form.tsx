@@ -393,7 +393,7 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
             <option value="">Sin especificar</option>
             <option value="TOFU">TOFU</option>
             <option value="MOFU">MOFU</option>
-            <option value="BOFU">BOFU</option>
+            <option value="RETARGET">RETARGET</option>
           </select>
         </div>
       </div>

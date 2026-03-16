@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listGenerations, getBurnedLeads, getActiveCTAs } from "@/lib/storage/local";
+import { cachedListGenerations as listGenerations, getBurnedLeads, cachedGetActiveCTAs as getActiveCTAs } from "@/lib/storage/local";
 import SessionPack from "@/components/session-pack";
 import { Kbd } from "@/components/keyboard-nav";
 import Sparkline from "@/components/sparkline";

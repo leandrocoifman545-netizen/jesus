@@ -1,0 +1,190 @@
+{
+  "id": "4d1d6c55-caac-4592-9d15-28cab38dcc76",
+  "briefId": "8ac6fa9f-9b75-4fbb-865d-c76c44106cf1",
+  "title": "¿Sabías que hay gente pagando por esto?",
+  "batch": {
+    "name": "Semana 2026-03-17",
+    "weekOf": "2026-03-17"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok/Instagram",
+      "aspect_ratio": "9:16",
+      "captions_style": "dynamic"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "dato_concreto",
+        "script_text": "\"Cómo arreglar una canilla\" tiene 22 mil búsquedas por mes en Google. \"Cómo cambiar un cuerito\" tiene 12 mil. Y casi nadie vende una guía que lo explique bien. Eso es un negocio esperando.",
+        "estimated_duration_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "Tu viejo sabe arreglar más cosas en la casa que el 90% de los tutoriales de YouTube. Pero él cobra por hora y los de YouTube cobran por millón de views. Hay un tercer camino que ninguno de los dos conoce.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "situacion_especifica",
+        "script_text": "Cada vez que se te rompe algo en la casa, abrís YouTube y buscás cómo arreglarlo. Si vos lo hacés, hay millones de personas haciendo lo mismo. Y la mayoría pagaría por una guía clara que le ahorre 3 horas de videos.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que más saben de reparaciones del hogar son las que menos ganan con ese conocimiento. Porque lo regalan gratis en el barrio. Mientras tanto, un pibe de 22 años que nunca agarró un destornillador vende guías de bricolaje con IA.",
+        "estimated_duration_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "timeline_provocacion",
+        "script_text": "Día 1: le pedís a la IA que te arme una guía de reparaciones básicas del hogar. Día 2: la editás con lo que vos sabés. Día 3: la subís a Hotmart por 10 dólares. Día 7: ya tenés ventas. Sin mostrar tu cara.",
+        "estimated_duration_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "Demo/Proceso paso a paso",
+      "sections": [
+        {
+          "section_name": "Mirá, te muestro",
+          "script_text": "Te voy a mostrar algo. Abrís Google y escribís \"cómo arreglar canilla que gotea\". 22 mil personas buscan eso por mes. Solo en español. Ahora buscá \"guía de reparaciones del hogar\" — casi no hay resultados pagos. Eso significa que hay demanda y no hay oferta.",
+          "timing_seconds": 15,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Re-hook",
+          "script_text": "Ahora mirá lo que podés hacer con eso.",
+          "timing_seconds": 3,
+          "is_rehook": true
+        },
+        {
+          "section_name": "Paso 1 — Investigar",
+          "script_text": "Le pedís a la IA que te liste las 20 reparaciones del hogar más buscadas. En 2 minutos tenés la lista.",
+          "timing_seconds": 8,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Paso 2 — Crear",
+          "script_text": "Le decís: \"Armame una guía paso a paso para cada reparación, con herramientas necesarias y nivel de dificultad\". En una hora tenés un producto de 40 páginas.",
+          "timing_seconds": 12,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Paso 3 — Vender",
+          "script_text": "Lo subís a Hotmart por 10 dólares. Ponés un anuncio de 3 dólares por día apuntado a hombres de 30-55 que buscan reparaciones. Y la gente te escribe por WhatsApp para comprarlo.",
+          "timing_seconds": 12,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Venta del modelo — Matemática simple",
+          "script_text": "Hacé la cuenta. 3 dólares por día en publicidad. 2-3 ventas de 10 dólares. Te queda ganancia desde el primer día. Ahora multiplicá eso por 30 días.",
+          "timing_seconds": 10,
+          "is_rehook": false
+        }
+      ],
+      "emotional_arc": "Descubrimiento → demostración → claridad → acción"
+    },
+    "cta": {
+      "cta_type": "directo",
+      "verbal_cta": "Tocá el botón de acá abajo",
+      "reason_why": "3 bloques CTA separados"
+    },
+    "total_duration_seconds": 75,
+    "word_count": 195,
+    "visual_format": {
+      "format_name": "Split Screen 2 Pantallas",
+      "difficulty_level": 2,
+      "setup_instructions": "Arriba: screencast o imagen. Abajo: Jesús hablando. Editar con CapCut.",
+      "recording_notes": "Grabar parte de abajo mirando a cámara. La parte de arriba se agrega en edición."
+    },
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_nicho_invisible",
+    "body_type": "demo_proceso",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "reparaciones del hogar",
+    "model_sale_type": "matematica_simple",
+    "belief_change": {
+      "old_belief": "Las reparaciones del hogar son un conocimiento sin valor comercial",
+      "mechanism": "Hay demanda masiva sin oferta digital — la IA convierte ese saber en producto",
+      "new_belief": "Lo que sé arreglar en casa es un negocio digital esperando"
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 1,
+        "ingredient_name": "Dato Impactante"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 26,
+        "ingredient_name": "Oportunidad Desperdiciada"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 89,
+        "ingredient_name": "Prueba por Volumen"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "transition_text": "Y lo de reparaciones es solo un ejemplo. Hay cientos de nichos así esperando.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "En 2 horas te muestro cómo encontrar algo que la gente quiere comprar, cómo crearlo con IA y cómo empezar a venderlo. Sin experiencia. Sin saber de tecnología. Desde tu celular.",
+          "prueba": "Lo hicieron mamás, jubilados, pibes de 20, gente que nunca vendió nada. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, te puede cambiar todo.",
+          "urgencia": "Ya hay cientos de personas registradas para esta edición.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres, vas a entender por qué miles ya lo hicieron. Te espero."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "B",
+        "layers": {
+          "oferta": "En 3 días en vivo creás tu producto digital con IA, armás tu anuncio y hacés tu primera venta. Todo con acompañamiento.",
+          "prueba": "Un albañil de Tucumán, una jubilada de 63 años, una mamá de 3 hijos. Todos lo hicieron.",
+          "riesgo_cero": "Si no te sirve, perdiste 5 dólares y 3 tardes. Menos de lo que gastás en datos del celular. Si te sirve, te cambia la vida.",
+          "urgencia": "Cada día que no tenés tu producto en venta son ventas que alguien más está haciendo con el conocimiento que vos tenés.",
+          "orden_nlp": "Tocá el botón de acá abajo y anotate. Te espero el primer día."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "D",
+        "layers": {
+          "oferta": "Tengo una clase gratis donde te enseño a crear un producto digital con IA y empezar a venderlo.",
+          "prueba": "Miles ya lo hicieron.",
+          "riesgo_cero": "No te voy a vender nada. Es gratis.",
+          "urgencia": "Si solo querés scrollear, seguí de largo.",
+          "orden_nlp": "Pero si querés hacer algo, comentá 'IA' y andá al link de mi perfil. Te espero."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T21:25:02.057Z"
+}

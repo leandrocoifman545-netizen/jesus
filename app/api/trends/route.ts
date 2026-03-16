@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
     // Mode 1: Related queries (top + rising)
     if (related) {
       const raw = await googleTrends.relatedQueries({ keyword: related, geo, hl: "es" });
-      const data = JSON.parse(raw);
+      const data = typeof raw === "string" ? typeof raw === "string" ? JSON.parse(raw) : raw : raw;
       const rankedList = data?.default?.rankedList || [];
 
       const top = (rankedList[0]?.rankedKeyword || []).map(
@@ -63,7 +63,7 @@ export async function GET(req: NextRequest) {
         geo,
         hl: "es",
       });
-      const data = JSON.parse(raw);
+      const data = typeof raw === "string" ? JSON.parse(raw) : raw;
       const timeline = (data?.default?.timelineData || []).map(
         (point: { formattedAxisTime: string; value: number[] }) => ({
           date: point.formattedAxisTime,
@@ -100,7 +100,7 @@ export async function GET(req: NextRequest) {
         geo,
         hl: "es",
       });
-      const data = JSON.parse(raw);
+      const data = typeof raw === "string" ? JSON.parse(raw) : raw;
       const timeline = (data?.default?.timelineData || []).map(
         (point: { formattedAxisTime: string; value: number[] }) => ({
           date: point.formattedAxisTime,

@@ -1,0 +1,187 @@
+{
+  "id": "f155f6e0-76e3-4e10-871b-e7b2ef05ceb5",
+  "briefId": "4476d97a-19c9-4e67-bdea-85db835d5dd1",
+  "title": "La matemática: $10K local vs $10 digital — Comparación — Seg B",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 65,
+      "content_style": "Jesús caminando, tono de 'dejame explicarte algo que no vas a poder ignorar'",
+      "key_considerations": "Retargeting: esta persona ya sabe qué son los productos digitales. No repetir la explicación. Ir directo a la lógica."
+    },
+    "visual_format": {
+      "format_name": "Walking + Talking",
+      "difficulty_level": 1,
+      "setup_instructions": "Jesús caminando en exterior, ritmo decidido, como dando una clase ambulante",
+      "recording_notes": "Los números tienen que sonar naturales, no leídos. Practicar la cadena de números antes."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "dato_concreto",
+        "script_text": "Un local de comidas arranca en 10,000 dólares. Un producto digital de nutrición arranca en 10. La diferencia no es solo de precio. Es de modelo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "Una nutricionista que atiende 6 pacientes por día gana menos que una que vende una guía de 15 dólares por internet. ¿Cómo? Hacé la cuenta.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "negacion_directa",
+        "script_text": "No te voy a hablar de motivación. No te voy a hablar de sueños. Te voy a dar 3 números y que vos decidas.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Si un negocio físico te costara 10 dólares, tuviera cero empleados y funcionara 24 horas sin vos — ¿no lo abrirías hoy mismo?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas veces pensaste en arrancar algo propio y dijiste 'no tengo la plata'? ¿Y si te digo que se puede arrancar con menos de una pizza?",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "Comparación de caminos — Negocio físico vs digital con números",
+      "emotional_arc": "Confrontación con la realidad del negocio físico → revelación del modelo digital → la matemática cierra sola → urgencia lógica",
+      "sections": [
+        {
+          "section_name": "Camino A — El negocio físico",
+          "script_text": "Un negocio físico. Alquiler: mil dólares. Mercadería: 3 mil. Empleados: 2 mil. Antes de vender un solo producto ya metiste 6 mil dólares. Y el 80% cierra en el primer año. Mi viejo tuvo un kiosco 30 años. Sé de lo que te hablo.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Re-hook + Camino B — El modelo digital",
+          "is_rehook": true,
+          "script_text": "Ahora mirá esto. Una guía de planes nutricionales para embarazadas. La IA te la arma en 2 horas. La subís a Hotmart. Precio: 15 dólares. Le metés 5 dólares de publicidad. 10 mensajes. 3 ventas. 45 dólares. Te costó 5. ¿Me explico? Sin local. Sin empleados. Sin horario. Funciona mientras dormís.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Venta del modelo — Contraste con físico",
+          "script_text": "10,000 dólares para abrir un local, o 10 dólares para crear un producto digital. Si el negocio físico no funciona, perdiste todo. Si este no funciona, perdiste menos que una salida a comer. La realidad es que no hay comparación.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "offer_bridge": {
+      "product_type": "taller_5",
+      "script_text": "En el taller de 3 días te muestro exactamente lo que te acabo de explicar con los números. Cómo encontrar productos que ya se venden, cómo crearlos con IA y cómo venderlos. Día 1, día 2, día 3. Salís con tu producto listo.",
+      "timing_seconds": 10
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y anotate. Nos vemos el primer día.",
+      "reason_why": "Retargeting con taller $5 — esta persona ya fue expuesta, el precio bajo cierra la decisión",
+      "timing_seconds": 4,
+      "cta_type": "directo"
+    },
+    "transition_text": "Guías de nutrición es solo UN ejemplo de los cientos de productos que podés crear así.",
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 1,
+        "ingredient_name": "Dato Impactante"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 27,
+        "ingredient_name": "Dolor de Inversión Alta"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 39,
+        "ingredient_name": "Amplificación por Contraste"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Credencial por Experiencia Propia"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 103,
+        "ingredient_name": "Reducción al Absurdo"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      },
+      {
+        "category": "J",
+        "ingredient_number": 122,
+        "ingredient_name": "Costo de Esperar"
+      }
+    ],
+    "model_sale_type": "4 — Contraste con negocio físico",
+    "body_type": "Comparación de caminos",
+    "angle_family": "4 — Mecanismo y proceso",
+    "angle_specific": "4.5 — La matemática: pura lógica, cero emoción, que la cuenta cierre sola",
+    "segment": "B",
+    "funnel_stage": "RETARGET",
+    "niche": "Nutrición / planes alimentarios",
+    "belief_change": {
+      "old_belief": "Emprender requiere una inversión grande y es muy riesgoso — mejor no arriesgar",
+      "mechanism": "Comparación directa con números: negocio físico ($10,000, 80% cierra) vs digital ($10, cero riesgo). La matemática no miente.",
+      "new_belief": "Un negocio digital tiene riesgo cercano a cero y la matemática cierra: puedo empezar con $10 y escalar"
+    },
+    "total_duration_seconds": 65,
+    "word_count": 160,
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita (TOFU)",
+        "variant": "Variante A — Clásica",
+        "layers": {
+          "oferta": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo.",
+          "prueba": "Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros.",
+          "riesgo_cero": "Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo.",
+          "urgencia": "Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. Te espero adentro."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5 (MOFU)",
+        "variant": "Variante A — Día 1/2/3 + Transparencia",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien.",
+          "urgencia": "El taller arranca esta semana y los cupos son limitados porque es en vivo.",
+          "orden_nlp": "La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "Variante B — Micro-compromiso",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme \"QUIERO\" en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T17:15:36.788Z",
+  "batch": {
+    "id": "e6b59315-8791-4217-abeb-bec9ec364594",
+    "name": "Version 2.0"
+  }
+}

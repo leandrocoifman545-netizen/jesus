@@ -1,0 +1,182 @@
+{
+  "id": "60f42020-8052-4532-8c92-2fc49554179d",
+  "briefId": "bdbc876a-3de3-4e10-a3c9-68449b2080ab",
+  "title": "G1 — IA desperdiciada: la herramienta más cara que usás gratis",
+  "batch": "semana-2026-03-17",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.1_ia_desperdiciada_herramienta",
+    "body_type": "comparacion_caminos",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "uso productivo de IA para negocios",
+    "model_sale_type": "democratizacion_ia",
+    "total_duration_seconds": 80,
+    "word_count": 188,
+    "belief_change": {
+      "old_belief": "ChatGPT es para hacer tareas, resumir textos y pedir recetas",
+      "new_belief": "La misma herramienta que uso para boludeces puede armarme un negocio completo"
+    },
+    "micro_beliefs": [
+      "Estoy usando la herramienta más poderosa del mundo como si fuera un buscador",
+      "Hay dos formas de usar la IA: como juguete o como socio de negocios",
+      "La IA puede investigar mercados, crear productos y escribir anuncios por mí",
+      "No necesito aprender programación — necesito aprender a PEDIR bien",
+      "Gente que sabe menos que yo de tecnología ya genera ingresos con IA"
+    ],
+    "hooks": [
+      {
+        "hook_type": "provocacion",
+        "script_text": "Tenés acceso a la herramienta más poderosa de la historia de la humanidad. Y la usás para pedirle chistes y recetas de milanesas. Te cuento lo que podrías estar haciendo con la misma herramienta."
+      },
+      {
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Imaginate que te regalan un Ferrari y lo usás para ir al kiosco de la esquina. Con ChatGPT estás haciendo exactamente eso. Y hay gente que con el mismo auto está corriendo carreras. ¿Querés saber la diferencia?"
+      },
+      {
+        "hook_type": "error_categorizacion",
+        "script_text": "Hay dos tipos de personas con ChatGPT: las que le piden que les resuma un artículo, y las que le piden que les arme un negocio. Usan la misma herramienta. Los resultados son completamente distintos."
+      },
+      {
+        "hook_type": "dato_concreto",
+        "script_text": "El 95% de la gente que usa IA la usa para tareas que no generan un peso. El otro 5% la usa para crear productos que se venden solos. La herramienta es la misma. Lo que cambia es QUÉ le pedís."
+      },
+      {
+        "hook_type": "confesion",
+        "script_text": "Yo usé ChatGPT durante meses para boludeces. Recetas, chistes, resúmenes. Hasta que alguien me mostró lo que podía hacer de verdad. Y sentí que había desperdiciado la oportunidad más grande que tuve."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "title": "Beat 1 — Identificación: así usás la IA hoy",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Estoy usando la herramienta más poderosa del mundo como si fuera un buscador",
+          "script_text": "Abrís ChatGPT. Le pedís una receta. Le pedís que te resuma un texto. Le pedís un chiste para el grupo de WhatsApp. Cerrás la app. Mañana hacés lo mismo. Y mientras tanto, con la MISMA herramienta, hay gente creando productos, armando negocios y generando ingresos. ¿Cuál es la diferencia?"
+        },
+        {
+          "title": "Beat 2 — Quiebre: dos caminos con la misma herramienta",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay dos formas de usar la IA: como juguete o como socio de negocios",
+          "script_text": "Camino A: seguís usando la IA como un buscador con esteroides. Entretenido, cómodo, gratis. Pero no cambia nada. Camino B: le pedís que investigue qué producto se vende en un nicho, que te lo arme, que te escriba el anuncio. Mismo ChatGPT. Resultados opuestos."
+        },
+        {
+          "title": "Beat 3 — Mecanismo: qué puede hacer la IA por vos",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA puede investigar mercados, crear productos y escribir anuncios por mí",
+          "script_text": "La IA puede hacer esto por vos: investigar qué necesita la gente, organizar ese conocimiento en un producto digital, escribir los textos de venta, y hasta decirte a quién apuntar con la publicidad. Vos solo tenés que saber PEDIRLE. No programar. No diseñar. Pedir. Como mandar un audio de WhatsApp, pero con intención."
+        },
+        {
+          "title": "Beat 4 — Demolición: no necesitás ser técnico",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito aprender programación — necesito aprender a PEDIR bien",
+          "script_text": "'Pero yo no sé de tecnología.' No necesitás saber. Necesitás saber pedir. Es como ir a un restaurante: no necesitás saber cocinar para pedir un plato. La IA cocina. Vos elegís qué querés. Esa es la habilidad."
+        },
+        {
+          "title": "Beat 5 — Prueba: gente común que cambió el uso",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente que sabe menos que yo de tecnología ya genera ingresos con IA",
+          "script_text": "Gente que usaba ChatGPT exactamente como vos — recetas, tareas, resúmenes — cambió una sola cosa: aprendió a pedirle cosas que generan ingresos. No cambiaron de herramienta. Cambiaron de pregunta. Y los resultados fueron completamente distintos."
+        },
+        {
+          "title": "Venta del modelo — Democratización IA",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La IA eliminó las barreras que antes hacían imposible emprender",
+          "script_text": "Antes necesitabas plata, contactos, conocimientos técnicos. Hoy tenés una herramienta que hace todo eso por vos. La barrera ya no existe. Lo único que falta es que aprendas a usarla para algo que valga la pena y lo vendas por internet."
+        }
+      ]
+    },
+    "transition_text": "Aprender a usar la IA para crear y vender productos digitales es exactamente lo que enseño. Paso a paso.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "C",
+        "ingredient_number": 42,
+        "ingredient_name": "Espejo Brutal"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 52,
+        "ingredient_name": "Comparación de Caminos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora (Ferrari-kiosco)"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 86,
+        "ingredient_name": "Caso Anónimo Relatable"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Problema"
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T22:36:52.641Z"
+}

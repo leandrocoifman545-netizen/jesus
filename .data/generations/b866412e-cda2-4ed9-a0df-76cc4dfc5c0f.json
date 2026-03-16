@@ -1,0 +1,182 @@
+{
+  "id": "b866412e-cda2-4ed9-a0df-76cc4dfc5c0f",
+  "briefId": "db7a270d-1ef1-4579-af95-c0802b3fea78",
+  "title": "G4 — La matemática: $1 adentro $40 afuera",
+  "batch": "semana-2026-03-17",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.5_matematica_pura_roi",
+    "body_type": "pregunta_respuesta",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "modelo de negocio digital — números",
+    "model_sale_type": "matematica_simple",
+    "total_duration_seconds": 75,
+    "word_count": 172,
+    "belief_change": {
+      "old_belief": "Generar plata online suena a humo — nunca vi números reales",
+      "new_belief": "La matemática del modelo es simple, verificable, y cierra"
+    },
+    "micro_beliefs": [
+      "Los números son simples y cualquiera los puede verificar",
+      "Un producto de $10 vendido 5 veces por día ya cambia la ecuación",
+      "La publicidad es una inversión con retorno medible, no un gasto",
+      "No necesito vender caro ni vender mucho — necesito que la cuenta cierre",
+      "Estos números son conservadores, no promesas exageradas"
+    ],
+    "hooks": [
+      {
+        "hook_type": "simplificacion_error",
+        "script_text": "La gente piensa que generar ingresos online es complicado. No lo es. Es una cuenta de tercer grado: ponés $1 en publicidad, te llegan 10 mensajes, vendés a 2, tu producto vale $20. Hacé la cuenta."
+      },
+      {
+        "hook_type": "provocacion",
+        "script_text": "No te voy a contar una historia inspiradora. No te voy a hablar de sueños. Te voy a mostrar una cuenta. Y cuando la veas, vas a entender por qué esto funciona. Pura matemática."
+      },
+      {
+        "hook_type": "dato_concreto",
+        "script_text": "$1 en publicidad genera 10 mensajes de gente interesada. De esos 10, 2 compran tu producto de $20. Te quedan $39. Eso es UN día. Multiplicá por 30. No es magia — es aritmética."
+      },
+      {
+        "hook_type": "contraintuitivo",
+        "script_text": "El negocio online más rentable no es el que vende caro. Es el que vende barato a mucha gente con publicidad. Y la razón es una cuenta que nadie te muestra."
+      },
+      {
+        "hook_type": "negacion_directa",
+        "script_text": "Esto no es motivación. No es mindset. No es 'creé en vos'. Esto es matemática. Números que cierran. Si sabés sumar y multiplicar, podés entender por qué este modelo funciona."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "title": "Beat 1 — Identificación: la cuenta que nadie te muestra",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Los números son simples y cualquiera los puede verificar",
+          "script_text": "Todos te hablan de libertad financiera, de sueños, de emprender. Nadie te muestra los números. Porque la mayoría no tiene números que mostrar. Hoy te los muestro. Sin humo. Sin frases motivacionales. Solo matemática."
+        },
+        {
+          "title": "Beat 2 — Quiebre: la ecuación del negocio digital",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Un producto de $10 vendido 5 veces por día ya cambia la ecuación",
+          "script_text": "Un producto digital vale entre $7 y $20. Crearlo cuesta horas, no plata. Una vez creado, cada venta es ganancia pura. No hay stock, no hay envío, no hay costo variable. ¿Cuántas ventas necesitás por día para que te cambie la vida? Menos de las que pensás."
+        },
+        {
+          "title": "Beat 3 — Mecanismo: la máquina de $1 → $40",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La publicidad es una inversión con retorno medible, no un gasto",
+          "script_text": "Ponés $1 en publicidad. Te llegan 10 mensajes de gente interesada. De esos 10, vendés a 2 o 3 personas. Tu producto vale $15. Te quedan $29 limpios de ese dólar. Eso es UN anuncio, UN día. Ahora multiplicá eso por 30 días. Son $870 con $30 de inversión. ¿Ves cómo cierra?"
+        },
+        {
+          "title": "Beat 4 — Demolición: ráfaga numérica",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito vender caro ni vender mucho — necesito que la cuenta cierre",
+          "script_text": "'¿Y si no vendo a 2 de cada 10?' Vendé a 1. Sigue siendo rentable. '¿Y la publicidad?' Empezás con $2 por día. Menos que un café. '¿Y si el producto no se vende?' Lo validás ANTES de crearlo. Si no hay demanda, no lo hacés. Cero riesgo."
+        },
+        {
+          "title": "Beat 5 — Prueba: números reales",
+          "persuasion_function": "prueba",
+          "micro_belief": "Estos números son conservadores, no promesas exageradas",
+          "script_text": "Estos no son números ideales. Son conservadores. La conversión real es a veces mejor. Y lo más importante: son verificables. Podés testear con $5 de publicidad y ver vos mismo cuántos mensajes llegan. No te pido que me creas — te pido que hagas la cuenta."
+        },
+        {
+          "title": "Venta del modelo — Matemática simple",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Los números hablan solos",
+          "script_text": "Producto barato que se vende mucho. Publicidad barata que trae gente. Ganancia que se acumula todos los días. No hay modelo más simple ni más claro. Y los números están ahí para que los verifiques."
+        }
+      ]
+    },
+    "transition_text": "Si la cuenta te cerró, lo que sigue es aprender cómo armarlo. Eso es exactamente lo que enseño.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Matemática del ROI"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 43,
+        "ingredient_name": "La Verdad Incómoda"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 30,
+        "ingredient_name": "El Costo de No Actuar"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T22:36:54.755Z"
+}

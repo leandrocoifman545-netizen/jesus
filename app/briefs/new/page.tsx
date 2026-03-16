@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { listProjects } from "@/lib/storage/local";
+import { cachedListProjects as listProjects } from "@/lib/storage/local";
 import BriefForm from "@/components/brief-form";
 
 export default async function NewBriefPage() {
@@ -33,7 +33,14 @@ export default async function NewBriefPage() {
             : "Completa el brief para generar guiones listos para produccion"}
         </p>
       </div>
-      <Suspense>
+      <Suspense fallback={
+        <div className="space-y-6 animate-pulse">
+          <div className="h-12 bg-zinc-800/40 rounded-xl" />
+          <div className="h-32 bg-zinc-800/40 rounded-xl" />
+          <div className="h-12 bg-zinc-800/40 rounded-xl" />
+          <div className="h-12 bg-zinc-800/40 rounded-xl" />
+        </div>
+      }>
         <BriefForm projects={projectsForForm} />
       </Suspense>
     </div>

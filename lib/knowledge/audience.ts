@@ -160,9 +160,15 @@ export async function getAudienceContext(segment?: string): Promise<string> {
 
   const data = cached;
 
-  // If no data was loaded, return empty
+  // If no data was loaded, return minimal guidance
   if (data.painPoints.length === 0 && data.desires.length === 0) {
-    return "";
+    return `\n\n## AUDIENCIA — SIN DATOS DE WHATSAPP
+⚠️ No hay data de audiencia cargada. Usá estos dolores universales del avatar:
+- "No me alcanza la plata a fin de mes"
+- "Quiero hacer algo propio pero no sé por dónde empezar"
+- "Siento que perdí tiempo en cosas que no funcionaron"
+- "Tengo miedo de invertir y que no funcione"
+Adaptá al segmento ${segment || "general"}.`;
   }
 
   const pains = prioritize(data.painPoints, segment).slice(0, 5);

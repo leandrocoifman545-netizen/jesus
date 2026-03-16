@@ -234,7 +234,7 @@
 
 ## Resumen de Prioridades para Próximas Generaciones
 
-1. **Funnel:** Crear RETARGET y EVERGREEN. Más MOFU y BOFU.
+1. **Funnel:** Crear RETARGET. Más MOFU.
 2. **Ángulos:** LATAM, Consumidor de IA, más Edad/reinvención, más Mamá/tiempo.
 3. **Segmentos:** Más B y D. Menos A.
 4. **Body type:** Menos mecanismo. Más storytelling real, analogía cotidiana, historia de Jesús.

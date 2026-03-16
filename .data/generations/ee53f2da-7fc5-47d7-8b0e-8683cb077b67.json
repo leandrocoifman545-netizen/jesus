@@ -1,0 +1,187 @@
+{
+  "id": "ee53f2da-7fc5-47d7-8b0e-8683cb077b67",
+  "briefId": "e9af389f-6c94-440b-a09c-202020044d6f",
+  "title": "Doña Marta, 62 años, vendió tejido — Historia con giro — Seg D",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 65,
+      "content_style": "Jesús contando una historia, ritmo narrativo, pausa en el giro",
+      "key_considerations": "La historia tiene que sentirse real. No exagerar. El giro es sutil pero poderoso."
+    },
+    "visual_format": {
+      "format_name": "Texto Grande → Persona",
+      "difficulty_level": 1,
+      "setup_instructions": "Texto grande en pantalla con la frase gancho, luego transición a Jesús hablando",
+      "recording_notes": "El texto inicial puede ser: 'Una señora de 62 años'. Jesús arranca cuando aparece en cámara."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "script_text": "La semana pasada una alumna me mandó un mensaje. Tiene 62 años. Nunca había vendido nada por internet. Me dijo: 'Jesús, hice mi primera venta'. Y se largó a llorar.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "La persona que más vendió el mes pasado en mi programa no sabe programar, no tiene seguidores y tiene 62 años. Te cuento qué hizo.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "Si una señora de 62 años que no sabía ni qué era Hotmart pudo vender guías de tejido por internet, ¿cuál es tu excusa?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "script_text": "Te voy a ser honesto. Cuando ella se anotó, yo mismo dudé. Tiene 62 años. Apenas usaba WhatsApp. Tres semanas después me demostró que estaba equivocado.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Algo está cambiando. Las personas que más están vendiendo productos digitales no son marketeros ni programadores. Son jubilados, amas de casa y gente que nunca vendió nada.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Historia con giro — Narrativa in media res",
+      "emotional_arc": "Presentación del personaje improbable → la apuesta → el giro inesperado → la lección que destruye la creencia",
+      "sections": [
+        {
+          "section_name": "El personaje",
+          "script_text": "Doña Marta tiene 62 años. Vive en Tucumán. Teje desde los 15. Toda la vida le dijeron que eso era un hobby. Que no se podía vivir de tejer.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Re-hook + El giro",
+          "is_rehook": true,
+          "script_text": "Hace un mes le pregunté a la IA: '¿qué productos de tejido busca la gente en internet?' 40,000 búsquedas por mes de patrones de crochet. Le armó una guía con sus diseños. La subió a Hotmart. Precio: 12 dólares. Primera semana: 18 ventas. Sin mostrar la cara. Sin seguidores. Con 62 años.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "La lección",
+          "script_text": "¿Sabés cuál es la diferencia entre Marta y vos? Ella no sabía más que vos. Sabía menos. La diferencia es que alguien le mostró los 3 pasos: qué se vende, cómo crearlo con IA y cómo venderlo. Nada más.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo — Prueba por diversidad",
+          "script_text": "Mamás que nunca tocaron una computadora. Pibes de 20 que no sabían qué hacer. Un chef que vendió recetas. Un profe de yoga que vendió rutinas. Todos empezaron de cero. Todos con IA.",
+          "timing_seconds": 9
+        }
+      ]
+    },
+    "offer_bridge": {
+      "product_type": "webinar_gratis",
+      "script_text": "En la clase gratuita de esta semana te muestro exactamente lo que hizo Marta. Cómo encontrar productos que ya se están vendiendo, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas.",
+      "timing_seconds": 10
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate. Te espero adentro.",
+      "reason_why": "La historia de Marta elimina la objeción de edad/capacidad",
+      "timing_seconds": 4,
+      "cta_type": "directo"
+    },
+    "transition_text": "Y guías de tejido es solo UNO de los productos que podés crear con lo que ya sabés.",
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 9,
+        "ingredient_name": "Resultado Ajeno (Proof Before Promise)"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 25,
+        "ingredient_name": "Dolor de Identidad Limitada"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 38,
+        "ingredient_name": "Contraste Social"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Prueba por Persona Improbable"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 85,
+        "ingredient_name": "Testimonio Diverso"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "model_sale_type": "10 — Prueba por diversidad de perfiles",
+    "body_type": "Historia con giro",
+    "angle_family": "5 — Historia y emoción",
+    "angle_specific": "5.3 — Micro-historia de resultado: alumna improbable que lo logró",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "Tejido / crochet / manualidades",
+    "belief_change": {
+      "old_belief": "Esto es para gente joven que sabe de tecnología, yo ya estoy grande para esto",
+      "mechanism": "Historia real de persona de 62 años sin experiencia tech que vendió 18 copias en una semana con IA",
+      "new_belief": "Si ella pudo con 62 años y sin saber nada de tecnología, yo también puedo"
+    },
+    "total_duration_seconds": 65,
+    "word_count": 160,
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita (TOFU)",
+        "variant": "Variante A — Clásica",
+        "layers": {
+          "oferta": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo.",
+          "prueba": "Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros.",
+          "riesgo_cero": "Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo.",
+          "urgencia": "Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. Te espero adentro."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5 (MOFU)",
+        "variant": "Variante A — Día 1/2/3 + Transparencia",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien.",
+          "urgencia": "El taller arranca esta semana y los cupos son limitados porque es en vivo.",
+          "orden_nlp": "La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "Variante B — Micro-compromiso",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme \"QUIERO\" en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T17:12:07.252Z",
+  "batch": {
+    "id": "e6b59315-8791-4217-abeb-bec9ec364594",
+    "name": "Version 2.0"
+  }
+}

@@ -1,82 +1,113 @@
-# Tipos de Cuerpo — Sistema de rotación
+# Tipos de Cuerpo — Vehículos narrativos para micro-VSL de 5 beats
 
-El cuerpo es la parte central del guión (entre los leads y el CTA). Así como rotamos leads (15 tipos) y venta del modelo (10 tipos), el cuerpo también tiene que variar en ESTRUCTURA, no solo en contenido.
+El tipo de cuerpo es el **TONO/VEHÍCULO narrativo**, no la estructura del guion. La estructura son los **5 beats del micro-VSL** (identificación → quiebre → mecanismo → demolición → prueba). El vehículo define CÓMO se cuentan esos beats.
+
+**Primero se definen los beats con sus funciones persuasivas. Después se elige el vehículo que da el tono.**
 
 ---
 
-## 8 tipos de cuerpo
+## Arquitectura micro-VSL (estructura FIJA de todo guion)
+
+Cada guion es un micro-VSL: los 9 actos de Benson comprimidos en 5 beats cortos.
+
+### Los 5 beats obligatorios (75-90s):
+
+| Beat | Función (persuasion_function) | Qué instala | Duración | Origen VSL |
+|------|------|------|------|------|
+| **1. Identificación** | `identificacion` | "Este problema es MÍO y es urgente" | 12-18s | Acto 2 (Origen) |
+| **2. Quiebre** | `quiebre` | "Lo que creía está mal" | 12-18s | Acto 3a (Nueva Oportunidad) |
+| **3. Mecanismo** | `mecanismo` | "Existe un camino nuevo y simple" | 15-20s | Acto 3b (Cómo funciona) |
+| **4. Demolición** | `demolicion` | "Mi excusa principal no aplica" | 10-15s | Acto 4 (Objeciones) |
+| **5. Prueba** | `prueba` | "Gente como yo ya lo hizo" | 10-15s | Acto 3 (Casos reales) |
+
+Después: **Venta del modelo** (2-3 oraciones) → **Transición** (Capa 1) → [CORTE] → Bloques CTA
+
+### Beats por duración:
+- **45-60s:** 3 beats — quiebre + mecanismo + prueba
+- **60-75s:** 4 beats — identificación + quiebre + mecanismo + prueba
+- **75-90s:** 5 beats (todos) — micro-VSL completo
+
+### Regla de diversidad de funciones:
+NUNCA dos beats con la misma función. Si los 3 beats dicen "nueva oportunidad", el guion informa pero no persuade.
+
+---
+
+## 8 vehículos narrativos (el TONO del guion)
+
+El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro" tiene los mismos 5 beats pero contados como historia. Un guion de "demolición de mito" tiene los 5 beats con tono confrontativo.
 
 ### 1. Demolición de mito
-Identificar UNA creencia falsa que frena al avatar y destruirla con lógica + evidencia.
-- **Estructura:** Creencia vieja → Por qué la cree → Evidencia de que está mal → Creencia nueva
-- **Ejemplo:** "Pensás que necesitás ser experto para vender algo online. Mentira. Los que más venden son los que mejor ORGANIZAN información que ya existe."
+**Tono:** Confrontativo, revelador. "Te mintieron."
+- **Cómo tiñe los beats:** El quiebre es el beat estrella — destruye la creencia vieja con evidencia. La identificación arranca con "vos creés que...". La demolición es natural (ya venís rompiendo mitos).
+- **Mejor para:** Micro-creencias tipo "lo que creías es falso", "la barrera no existe"
 - **Ingredientes típicos:** D (Quiebre) + F (Mecanismo)
-- **Mejor con familias de ángulo:** 3 (Confrontación), 2 (Oportunidad)
 
 ### 2. Historia con giro
-Contar una historia (de Jesús, de un alumno, o del avatar) que tiene un punto de inflexión inesperado.
-- **Estructura:** Situación inicial → Complicación → Giro inesperado → Lección
-- **Ejemplo:** "Ernesto manejaba Uber 12 horas por día. Un día un pasajero le contó que vendía guías de nutrición. Ernesto se rió. Un mes después, Ernesto vendía más que ese pasajero."
+**Tono:** Narrativo, empático. "Conocí a alguien que..."
+- **Cómo tiñe los beats:** La identificación es la situación del personaje. El quiebre es el giro inesperado. La prueba ES la historia misma.
+- **Mejor para:** Micro-creencias tipo "alguien como yo lo logró", "la transformación es real"
 - **Ingredientes típicos:** E (Autoridad) + G (Prueba Social)
-- **Mejor con familias de ángulo:** 5 (Historia), 1 (Identidad)
 
 ### 3. Demo/Proceso paso a paso
-Mostrar CÓMO funciona algo de forma concreta. El viewer siente que ya aprendió algo.
-- **Estructura:** "Mirá, te muestro" → Paso 1 → Paso 2 → Paso 3 → Resultado
-- **Ejemplo:** "Abrís ChatGPT. Le decís: 'Creame una guía de 10 páginas sobre organización financiera para emprendedoras'. En 10 minutos tenés el producto."
-- **Ingredientes típicos:** F (Mecanismo) + #71 Proceso de N Pasos + #74 Eliminación de Complejidad
-- **Mejor con familias de ángulo:** 4 (Mecanismo), 2 (Oportunidad)
+**Tono:** Práctico, directo. "Mirá, te muestro."
+- **Cómo tiñe los beats:** El mecanismo es el beat estrella — muestra paso a paso. El quiebre es "no es lo que pensás". La prueba es el resultado visible.
+- **Mejor para:** Micro-creencias tipo "es simple", "no necesitás saber de tech"
+- **Ingredientes típicos:** F (Mecanismo) + #71 Proceso de N Pasos
 
 ### 4. Comparación de caminos
-Presentar 2-3 opciones/caminos y mostrar por qué uno es claramente mejor.
-- **Estructura:** Camino A (el que todos eligen) → Por qué falla → Camino B (el que funciona) → Por qué funciona
-- **Ejemplo:** "Podés hacer dropshipping: vos pagás la publicidad, otro se queda la ganancia. Podés hacer freelance: cambiás horas por plata, si no trabajás no cobrás. O podés crear algo una vez y venderlo infinitas veces."
+**Tono:** Lógico, contrastante. "Camino A vs Camino B."
+- **Cómo tiñe los beats:** La identificación muestra el camino que todos eligen. El quiebre muestra por qué falla. El mecanismo muestra el camino B.
+- **Mejor para:** Micro-creencias tipo "las alternativas son peores", "este modelo es superior"
 - **Ingredientes típicos:** D (Quiebre) + #72 New Opportunity
-- **Mejor con familias de ángulo:** 3 (Confrontación), 4 (Mecanismo)
 
 ### 5. Un día en la vida
-Pintar cómo se ve un día concreto del avatar DESPUÉS de implementar el sistema. Future pacing sensorial.
-- **Estructura:** Mañana → Tarde → Noche, con detalles sensoriales de la nueva realidad
-- **Ejemplo:** "Te levantás. Revisás el celular. 3 ventas mientras dormías. Desayunás tranquilo. A las 10 te sentás 1 hora a responder mensajes de WhatsApp. El resto del día es tuyo."
+**Tono:** Aspiracional, sensorial. "Te levantás. Revisás el celular."
+- **Cómo tiñe los beats:** La prueba es future pacing sensorial. La identificación contrasta con el "hoy". El mecanismo es breve.
+- **Mejor para:** Micro-creencias tipo "la vida después es mejor", "vale la pena"
 - **Ingredientes típicos:** H (Oferta) + #99/#100/#101 Future Pacing
-- **Mejor con familias de ángulo:** 1 (Identidad), 2 (Oportunidad)
 
 ### 6. Pregunta y respuesta
-Formato de objeciones/preguntas que el avatar tiene, respondidas una tras otra. Ritmo rápido.
-- **Estructura:** Pregunta 1 → Respuesta corta → Pregunta 2 → Respuesta → Pregunta 3 → Respuesta
-- **Ejemplo:** "'¿Necesito saber programar?' No. '¿Necesito plata para invertir?' 10 dólares. '¿Necesito mostrar mi cara?' Tampoco. '¿Y entonces qué necesito?' Un celular y saber pedirle a la IA."
-- **Ingredientes típicos:** D (Quiebre) + #53 El Permiso + #54 Analogía Simple
-- **Mejor con familias de ángulo:** 3 (Confrontación), 4 (Mecanismo)
+**Tono:** Rápido, eliminador. "'¿Necesito X?' No."
+- **Cómo tiñe los beats:** La demolición es el beat estrella — cada pregunta elimina una objeción. Ritmo ráfaga.
+- **Mejor para:** Micro-creencias tipo "no hay excusa válida", "es accesible"
+- **Ingredientes típicos:** D (Quiebre) + #53 El Permiso
 
 ### 7. Analogía extendida
-Tomar un objeto/situación cotidiana y usarla como metáfora para explicar todo el concepto.
-- **Estructura:** Presentar la analogía → Desarrollarla → Conectar con el producto/servicio
-- **Ejemplo:** "¿Viste cuando armás una playlist de Spotify? No componés las canciones. Las elegís, las ordenás, les ponés un nombre copado. Crear un producto digital es lo mismo. No inventás el conocimiento — lo organizás."
-- **Ingredientes típicos:** F (Mecanismo) + #76 Metáfora + #54 Analogía Simple
-- **Mejor con familias de ángulo:** 4 (Mecanismo), 2 (Oportunidad)
-- **Consultar:** `tecnica-analogia-franco-piso.md` para estructura completa
+**Tono:** Familiar, revelador. "¿Viste cuando armás una playlist?"
+- **Cómo tiñe los beats:** Todo el guion ES la analogía. El quiebre conecta lo familiar con lo nuevo. El mecanismo se explica VIA la analogía.
+- **Mejor para:** Micro-creencias tipo "ya sabés hacer algo parecido", "no es un mundo nuevo"
+- **Ingredientes típicos:** F (Mecanismo) + #76 Metáfora
+- **Consultar:** `tecnica-analogia-franco-piso.md`
 
 ### 8. Contraste emocional fuerte
-Arrancar desde un momento de máximo dolor/frustración y llevarlo a un momento de alivio/esperanza. Todo emocional, poca lógica.
-- **Estructura:** Momento oscuro (detalles sensoriales) → Pivote ("Hasta que...") → Momento de luz → "Vos también podés"
-- **Ejemplo:** "Son las 2 de la mañana. Estás haciendo cuentas para ver si llegás a fin de mes. Tu hijo duerme al lado. Y vos pensás: tiene que haber otra forma. La hay."
+**Tono:** Emocional, urgente. "Son las 2 de la mañana. Hacés cuentas."
+- **Cómo tiñe los beats:** La identificación es visceral (detalles sensoriales del dolor). El pivote es el quiebre emocional. La prueba es esperanza.
+- **Mejor para:** Micro-creencias tipo "no podés seguir así", "el cambio es urgente"
 - **Ingredientes típicos:** B (Problema) + C (Agitación) + #47 Contraste Emocional
-- **Mejor con familias de ángulo:** 1 (Identidad), 5 (Historia)
 
 ---
 
-## Reglas de uso
+## Mapa: micro-creencia → mejor vehículo
 
-1. **Elegir UN tipo de cuerpo por guion** — el que mejor se complementa con el ángulo
-2. **En estrategias de 10 guiones:** mínimo 5 tipos de cuerpo distintos
-3. **En estrategias de 5 guiones:** mínimo 3 tipos distintos
-4. **El tipo de cuerpo NO determina el ángulo** — son dimensiones independientes. Podés hacer "Demolición de mito" con ángulo de Familia 1 (Identidad) o de Familia 3 (Confrontación)
-5. **Registrar** en el JSON con el campo `body_type`
+| Micro-creencia a instalar | Vehículo #1 | Vehículo #2 |
+|--------------------------|-------------|-------------|
+| "Lo que creías es falso" | Demolición de mito | Comparación caminos |
+| "Gente como yo lo logró" | Historia con giro | Contraste emocional |
+| "El proceso es simple" | Demo/Proceso | Pregunta y respuesta |
+| "Hay demanda real" | Demo/Proceso | Historia con giro |
+| "Las alternativas son peores" | Comparación caminos | Demolición de mito |
+| "Así se siente cuando funciona" | Un día en la vida | Contraste emocional |
+| "No hay excusa válida" | Pregunta y respuesta | Demolición de mito |
+| "Ya sabés hacer algo parecido" | Analogía extendida | Demo/Proceso |
+| "No podés seguir así" | Contraste emocional | Un día en la vida |
+| "El cambio es urgente/temporal" | Contraste emocional | Comparación caminos |
 
-## Mapa tipo de cuerpo × familia de ángulo (mejores combos)
+---
 
-| Tipo de cuerpo | Familia 1 | Familia 2 | Familia 3 | Familia 4 | Familia 5 |
-|---------------|-----------|-----------|-----------|-----------|-----------|
+## Mapa vehículo × familia de ángulo (mejores combos)
+
+| Vehículo | Familia 1 | Familia 2 | Familia 3 | Familia 4 | Familia 5 |
+|----------|-----------|-----------|-----------|-----------|-----------|
 | Demolición de mito | ○ | ● | ● | ○ | ○ |
 | Historia con giro | ● | ○ | ○ | ○ | ● |
 | Demo/Proceso | ○ | ● | ○ | ● | ○ |
@@ -87,3 +118,14 @@ Arrancar desde un momento de máximo dolor/frustración y llevarlo a un momento 
 | Contraste emocional | ● | ○ | ○ | ○ | ● |
 
 ● = combo ideal | ○ = funciona pero no es el mejor
+
+---
+
+## Reglas de uso
+
+1. **Primero beats con funciones persuasivas, después vehículo** — la estructura es fija, el tono es variable
+2. **En estrategias de 10 guiones:** mínimo 5 vehículos distintos
+3. **En estrategias de 5 guiones:** mínimo 3 distintos
+4. **El vehículo NO determina el ángulo** — son dimensiones independientes
+5. **Registrar** en el JSON con el campo `body_type`
+6. **Cada sección** tiene `persuasion_function` + `micro_belief` — OBLIGATORIO

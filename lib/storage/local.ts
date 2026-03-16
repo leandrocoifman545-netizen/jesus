@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
+import { cache as reactCache } from "react";
 import type { ScriptOutput } from "../ai/schemas/script-output";
 import type { LongformOutput } from "../ai/schemas/longform-output";
 import type { ReferenceAnalysis } from "../ai/schemas/reference-analysis";
@@ -38,6 +39,36 @@ function setCache<T>(key: string, data: T): void {
 function invalidateCache(prefix: string): void {
   for (const key of cache.keys()) {
     if (key.startsWith(prefix)) cache.delete(key);
+  }
+}
+
+// Generic helper: list all JSON items from a directory with caching
+async function listItemsFromDir<T extends { createdAt: string }>(
+  dir: string,
+  cacheKey: string,
+  normalize?: (item: T) => T,
+): Promise<T[]> {
+  const cached = getCached<T[]>(cacheKey);
+  if (cached) return cached;
+
+  await ensureDirs();
+  try {
+    const files = await fs.readdir(dir);
+    const jsonFiles = files.filter((f) => f.endsWith(".json"));
+    const items = await Promise.all(
+      jsonFiles.map(async (file) => {
+        const data = await fs.readFile(path.join(dir, file), "utf-8");
+        const parsed = JSON.parse(data) as T;
+        return normalize ? normalize(parsed) : parsed;
+      })
+    );
+    const sorted = items.sort(
+      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    );
+    setCache(cacheKey, sorted);
+    return sorted;
+  } catch {
+    return [];
   }
 }
 
@@ -103,27 +134,7 @@ export async function deleteProject(id: string): Promise<boolean> {
 }
 
 export async function listProjects(): Promise<StoredProject[]> {
-  const cached = getCached<StoredProject[]>("projects:list");
-  if (cached) return cached;
-
-  await ensureDirs();
-  try {
-    const files = await fs.readdir(PROJECTS_DIR);
-    const jsonFiles = files.filter((f) => f.endsWith(".json"));
-    const projects = await Promise.all(
-      jsonFiles.map(async (file) => {
-        const data = await fs.readFile(path.join(PROJECTS_DIR, file), "utf-8");
-        return JSON.parse(data) as StoredProject;
-      })
-    );
-    const sorted = projects.sort(
-      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-    );
-    setCache("projects:list", sorted);
-    return sorted;
-  } catch {
-    return [];
-  }
+  return listItemsFromDir<StoredProject>(PROJECTS_DIR, "projects:list");
 }
 
 export interface StoredBrief {
@@ -258,9 +269,14 @@ export interface CaseStudy {
 }
 
 export async function getCaseStudies(): Promise<CaseStudy[]> {
+  const cached = getCached<CaseStudy[]>("case-studies:list");
+  if (cached) return cached;
+
   try {
     const data = await fs.readFile(CASE_STUDIES_FILE, "utf-8");
-    return (JSON.parse(data) as CaseStudy[]).filter((c) => c.active);
+    const result = (JSON.parse(data) as CaseStudy[]).filter((c) => c.active);
+    setCache("case-studies:list", result);
+    return result;
   } catch {
     return [];
   }
@@ -269,6 +285,7 @@ export async function getCaseStudies(): Promise<CaseStudy[]> {
 export async function saveCaseStudies(cases: CaseStudy[]): Promise<void> {
   await ensureDirs();
   await fs.writeFile(CASE_STUDIES_FILE, JSON.stringify(cases, null, 2));
+  invalidateCache("case-studies");
 }
 
 // --- Burned Leads ---
@@ -284,9 +301,14 @@ const BURNED_LEADS_FILE = path.join(DATA_DIR, "burned-leads.json");
 const ACTIVE_CTAS_FILE = path.join(DATA_DIR, "ctas-activos.json");
 
 export async function getBurnedLeads(): Promise<BurnedLead[]> {
+  const cached = getCached<BurnedLead[]>("burned-leads:list");
+  if (cached) return cached;
+
   try {
     const data = await fs.readFile(BURNED_LEADS_FILE, "utf-8");
-    return JSON.parse(data);
+    const result = JSON.parse(data) as BurnedLead[];
+    setCache("burned-leads:list", result);
+    return result;
   } catch {
     return [];
   }
@@ -294,6 +316,7 @@ export async function getBurnedLeads(): Promise<BurnedLead[]> {
 
 async function saveBurnedLeads(leads: BurnedLead[]): Promise<void> {
   await fs.writeFile(BURNED_LEADS_FILE, JSON.stringify(leads, null, 2));
+  invalidateCache("burned-leads");
 }
 
 // --- Active CTAs ---
@@ -361,10 +384,15 @@ const DEFAULT_CTAS: ActiveCTA[] = [
 ];
 
 export async function getActiveCTAs(): Promise<ActiveCTA[]> {
+  const cached = getCached<ActiveCTA[]>("active-ctas:list");
+  if (cached) return cached;
+
   try {
     const data = await fs.readFile(ACTIVE_CTAS_FILE, "utf-8");
     const parsed = JSON.parse(data) as ActiveCTA[];
-    return parsed.length > 0 ? parsed : DEFAULT_CTAS;
+    const result = parsed.length > 0 ? parsed : DEFAULT_CTAS;
+    setCache("active-ctas:list", result);
+    return result;
   } catch {
     return DEFAULT_CTAS;
   }
@@ -373,6 +401,7 @@ export async function getActiveCTAs(): Promise<ActiveCTA[]> {
 export async function saveActiveCTAs(ctas: ActiveCTA[]): Promise<void> {
   await ensureDirs();
   await fs.writeFile(ACTIVE_CTAS_FILE, JSON.stringify(ctas, null, 2));
+  invalidateCache("active-ctas");
 }
 
 export async function burnLeadsFromGeneration(gen: StoredGeneration): Promise<number> {
@@ -494,10 +523,10 @@ function normalizeGeneration(gen: StoredGeneration): StoredGeneration {
 
 export async function saveGeneration(gen: StoredGeneration): Promise<void> {
   await ensureDirs();
-  await fs.writeFile(
-    path.join(GENERATIONS_DIR, `${gen.id}.json`),
-    JSON.stringify(gen, null, 2)
-  );
+  const filePath = path.join(GENERATIONS_DIR, `${gen.id}.json`);
+  const tmpPath = `${filePath}.tmp`;
+  await fs.writeFile(tmpPath, JSON.stringify(gen, null, 2));
+  await fs.rename(tmpPath, filePath);
   invalidateCache("generations");
   // Fire-and-forget: refresh coverage cache after any generation save
   // Uses dynamic import to avoid circular dependency (coverage.ts imports from local.ts)
@@ -540,27 +569,7 @@ export async function getBrief(id: string): Promise<StoredBrief | null> {
 }
 
 export async function listGenerations(): Promise<StoredGeneration[]> {
-  const cached = getCached<StoredGeneration[]>("generations:list");
-  if (cached) return cached;
-
-  await ensureDirs();
-  try {
-    const files = await fs.readdir(GENERATIONS_DIR);
-    const jsonFiles = files.filter((f) => f.endsWith(".json"));
-    const generations = await Promise.all(
-      jsonFiles.map(async (file) => {
-        const data = await fs.readFile(path.join(GENERATIONS_DIR, file), "utf-8");
-        return normalizeGeneration(JSON.parse(data) as StoredGeneration);
-      })
-    );
-    const sorted = generations.sort(
-      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-    );
-    setCache("generations:list", sorted);
-    return sorted;
-  } catch {
-    return [];
-  }
+  return listItemsFromDir<StoredGeneration>(GENERATIONS_DIR, "generations:list", normalizeGeneration);
 }
 
 // --- References ---
@@ -617,27 +626,7 @@ export async function deleteReferencesByFolder(folder: string): Promise<number> 
 }
 
 export async function listReferences(): Promise<StoredReference[]> {
-  const cached = getCached<StoredReference[]>("references:list");
-  if (cached) return cached;
-
-  await ensureDirs();
-  try {
-    const files = await fs.readdir(REFERENCES_DIR);
-    const jsonFiles = files.filter((f) => f.endsWith(".json"));
-    const refs = await Promise.all(
-      jsonFiles.map(async (file) => {
-        const data = await fs.readFile(path.join(REFERENCES_DIR, file), "utf-8");
-        return JSON.parse(data) as StoredReference;
-      })
-    );
-    const sorted = refs.sort(
-      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-    );
-    setCache("references:list", sorted);
-    return sorted;
-  } catch {
-    return [];
-  }
+  return listItemsFromDir<StoredReference>(REFERENCES_DIR, "references:list");
 }
 
 // --- Plans CRUD ---
@@ -673,27 +662,7 @@ export async function deletePlan(id: string): Promise<boolean> {
 }
 
 export async function listPlans(): Promise<StoredPlan[]> {
-  const cached = getCached<StoredPlan[]>("plans:list");
-  if (cached) return cached;
-
-  await ensureDirs();
-  try {
-    const files = await fs.readdir(PLANS_DIR);
-    const jsonFiles = files.filter((f) => f.endsWith(".json"));
-    const plans = await Promise.all(
-      jsonFiles.map(async (file) => {
-        const data = await fs.readFile(path.join(PLANS_DIR, file), "utf-8");
-        return JSON.parse(data) as StoredPlan;
-      })
-    );
-    const sorted = plans.sort(
-      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-    );
-    setCache("plans:list", sorted);
-    return sorted;
-  } catch {
-    return [];
-  }
+  return listItemsFromDir<StoredPlan>(PLANS_DIR, "plans:list");
 }
 
 export async function linkGenerationToPlan(
@@ -717,3 +686,13 @@ export async function linkGenerationToPlan(
 
   return plan;
 }
+
+// --- React.cache() wrappers for server component deduplication ---
+// These deduplicate calls within the same server render pass.
+// Multiple server components calling the same function share one result.
+
+export const cachedListGenerations: typeof listGenerations = reactCache(listGenerations);
+export const cachedListReferences: typeof listReferences = reactCache(listReferences);
+export const cachedListProjects: typeof listProjects = reactCache(listProjects);
+export const cachedListPlans: typeof listPlans = reactCache(listPlans);
+export const cachedGetActiveCTAs: typeof getActiveCTAs = reactCache(getActiveCTAs);

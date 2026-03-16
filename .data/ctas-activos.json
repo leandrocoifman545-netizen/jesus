@@ -1,44 +1,44 @@
 [
   {
-    "id": "clase-gratis-A",
+    "id": "clase-gratis-B",
     "channel": "Clase Gratuita",
-    "variant": "A",
-    "ingredients": ["#98 Tres Deliverables", "#89 Prueba por Volumen", "#106 Garantía Implícita", "#117 Escasez Real", "#109 Directo", "#126 Presuposición"],
+    "variant": "B",
+    "ingredients": ["#89 Prueba por Volumen", "#90 Persona Improbable", "#58 Remoción de Riesgo", "#122 Costo de Esperar", "#125 Reframe", "#109 Directo"],
     "layers": {
-      "oferta": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo.",
-      "prueba": "Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros.",
-      "riesgo_cero": "Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo.",
-      "urgencia": "Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo.",
-      "orden_nlp": "Tocá el botón de acá abajo y registrate. Te espero adentro."
+      "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+      "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+      "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+      "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+      "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
     },
-    "text": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo. Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros. Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo. Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo. Tocá el botón de acá abajo y registrate. Te espero adentro."
+    "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
   },
   {
-    "id": "taller-5-A",
+    "id": "taller-5-C",
     "channel": "Taller $5",
-    "variant": "A",
-    "ingredients": ["#71 Proceso de N Pasos", "#98 Tres Deliverables", "#89 Prueba por Volumen", "#103 Reducción al Absurdo", "#118 Deadline", "#117 Escasez", "#125 Reframe", "#126 Presuposición"],
+    "variant": "C",
+    "ingredients": ["#85 Diversidad", "#106 Garantía Implícita", "#117 Escasez", "#127 Embedded Command", "#126 Presuposición"],
     "layers": {
-      "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
-      "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
-      "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien.",
-      "urgencia": "El taller arranca esta semana y los cupos son limitados porque es en vivo.",
-      "orden_nlp": "La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
+      "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+      "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+      "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+      "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+      "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
     },
-    "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. El taller arranca esta semana y los cupos son limitados porque es en vivo. La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
+    "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
   },
   {
-    "id": "instagram-A",
+    "id": "instagram-B",
     "channel": "Instagram Orgánico",
-    "variant": "A",
-    "ingredients": ["#89 Prueba por Volumen", "#110 Conversacional", "#127 Embedded Command"],
+    "variant": "B",
+    "ingredients": ["#85 Diversidad", "#112 Micro-compromiso", "#124 Cierre suave"],
     "layers": {
-      "oferta": "En la clase gratuita te muestro cómo encontrar productos que se venden, crearlos con IA y venderlos por WhatsApp. Paso a paso. Sin experiencia.",
-      "prueba": "Miles de personas ya lo hicieron.",
-      "riesgo_cero": "Es gratis. Son 2 horas. Sin compromiso.",
-      "urgencia": "Los cupos se están llenando.",
-      "orden_nlp": "Comentá 'CLASE' y andá al link de mi perfil para registrarte. Cuando entres, vas a ver exactamente cómo funciona. Te espero."
+      "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+      "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+      "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+      "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+      "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
     },
-    "text": "En la clase gratuita te muestro cómo encontrar productos que se venden, crearlos con IA y venderlos por WhatsApp. Paso a paso. Sin experiencia. Miles de personas ya lo hicieron. Es gratis. Son 2 horas. Sin compromiso. Los cupos se están llenando. Comentá 'CLASE' y andá al link de mi perfil para registrarte. Cuando entres, vas a ver exactamente cómo funciona. Te espero."
+    "text": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas. Lo hicieron mamás, jubilados, estudiantes. Gente como vos. No te pido nada. Solo tu tiempo. Si llegaste hasta acá, algo te hizo click. No ignores esa sensación. Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
   }
 ]

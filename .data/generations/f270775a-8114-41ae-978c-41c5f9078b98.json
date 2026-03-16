@@ -1,0 +1,184 @@
+{
+  "id": "f270775a-8114-41ae-978c-41c5f9078b98",
+  "briefId": "c2bc07ac-66a3-42c5-8c1d-9b6a677a39d0",
+  "title": "La IA no te va a reemplazar, pero el que la use sí",
+  "batch": {
+    "name": "Semana 2026-03-17",
+    "weekOf": "2026-03-17"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok/Instagram",
+      "aspect_ratio": "9:16",
+      "captions_style": "dynamic"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "script_text": "Pasás 2 horas por día pidiéndole a la IA memes, recetas y resúmenes de videos. Mientras tanto, hay gente usando la misma herramienta para generar ingresos. La diferencia no es la IA — es lo que le pedís.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "script_text": "Yo antes también usaba la IA para boludeces. Chistes, traducciones, resúmenes de libros. Hasta que entendí que la misma herramienta que me hacía reír podía hacerme facturar. Te cuento qué cambié.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "La gente que menos sabe de tecnología es la que mejor le está yendo con productos digitales. ¿Sabés por qué? No se complica. Le pide a la IA algo simple, lo empaqueta y lo vende. Sin filtros, sin excusas.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas horas por semana le dedicás a ChatGPT para cosas que no te dejan un peso? ¿Y si esas mismas horas las usaras para armar algo que se vende? No te estoy juzgando — me pasaba lo mismo.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Hay una brecha que se agranda cada día: los que usan IA para consumir y los que la usan para crear. Los primeros pierden tiempo. Los segundos generan ingresos. Estás eligiendo un lado sin darte cuenta.",
+        "estimated_duration_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "Demolición de mito",
+      "sections": [
+        {
+          "section_name": "Creencia vieja",
+          "script_text": "La mayoría piensa que la IA es para el laburo o para entretenerse. Le pedís que te resuma un artículo, que te arme un mail, que te cuente un chiste. Y listo. Pero eso es como tener un auto y usarlo solo para ir al kiosco de la esquina.",
+          "timing_seconds": 15,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Re-hook",
+          "script_text": "Y acá es donde se pone interesante.",
+          "timing_seconds": 3,
+          "is_rehook": true
+        },
+        {
+          "section_name": "Evidencia — nicho skincare",
+          "script_text": "Hay una mina que sabía de skincare casero. Nada profesional — cremas, tónicos, rutinas que armaba para ella. Le pidió a la IA que organizara todo lo que sabía en una guía de 30 páginas. Le llevó una tarde. La subió a Hotmart por 15 dólares. En el primer mes vendió 80 copias. Con publicidad de 3 dólares por día.",
+          "timing_seconds": 20,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Creencia nueva — mecanismo",
+          "script_text": "Ella no inventó nada. Organizó lo que ya sabía. La IA escribió, diseñó y estructuró. Ella solo le pidió. Tres pasos: investigás qué se vende, la IA te lo crea, lo vendés por WhatsApp.",
+          "timing_seconds": 15,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Venta del modelo — Ventana de oportunidad",
+          "script_text": "Esto no existía hace 2 años. La IA cambió todo. Hoy cualquier persona con un celular y WhatsApp puede crear un producto digital y empezar a venderlo en días. Pero esta ventana no va a durar para siempre.",
+          "timing_seconds": 12,
+          "is_rehook": false
+        }
+      ],
+      "emotional_arc": "Confrontación → curiosidad → revelación → urgencia"
+    },
+    "cta": {
+      "cta_type": "directo",
+      "verbal_cta": "Tocá el botón de acá abajo",
+      "reason_why": "3 bloques CTA separados"
+    },
+    "total_duration_seconds": 80,
+    "word_count": 185,
+    "visual_format": {
+      "format_name": "Split Screen 2 Pantallas",
+      "difficulty_level": 2,
+      "setup_instructions": "Arriba: screencast o imagen. Abajo: Jesús hablando. Editar con CapCut.",
+      "recording_notes": "Grabar parte de abajo mirando a cámara. La parte de arriba se agrega en edición."
+    },
+    "angle_family": "confrontacion",
+    "angle_specific": "3.2_consumidor_vs_creador",
+    "body_type": "demolicion_mito",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "belleza y skincare casero",
+    "model_sale_type": "ventana_de_oportunidad",
+    "belief_change": {
+      "old_belief": "La IA es para entretenerse o para el trabajo, no para ganar plata",
+      "mechanism": "La misma IA que usás para boludeces crea un producto digital vendible",
+      "new_belief": "La IA es una herramienta de ingresos que ya tengo en el celular"
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 3,
+        "ingredient_name": "Contrariano / Anti-Gurú"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 28,
+        "ingredient_name": "Dolor Silencioso"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 40,
+        "ingredient_name": "Costo de la Inacción"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 89,
+        "ingredient_name": "Prueba por Volumen"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "transition_text": "Y lo que te mostré con la guía de skincare es solo UNO de los productos que podés crear.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "En 2 horas te muestro cómo encontrar algo que la gente quiere comprar, cómo crearlo con IA y cómo empezar a venderlo. Sin experiencia. Sin saber de tecnología. Desde tu celular.",
+          "prueba": "Lo hicieron mamás, jubilados, pibes de 20, gente que nunca vendió nada. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, te puede cambiar todo.",
+          "urgencia": "Ya hay cientos de personas registradas para esta edición.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres, vas a entender por qué miles ya lo hicieron. Te espero."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "B",
+        "layers": {
+          "oferta": "En 3 días en vivo creás tu producto digital con IA, armás tu anuncio y hacés tu primera venta. Todo con acompañamiento.",
+          "prueba": "Un albañil de Tucumán, una jubilada de 63 años, una mamá de 3 hijos. Todos lo hicieron.",
+          "riesgo_cero": "Si no te sirve, perdiste 5 dólares y 3 tardes. Menos de lo que gastás en datos del celular. Si te sirve, te cambia la vida.",
+          "urgencia": "Cada día que no tenés tu producto en venta son ventas que alguien más está haciendo con el conocimiento que vos tenés.",
+          "orden_nlp": "Tocá el botón de acá abajo y anotate. Te espero el primer día."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "D",
+        "layers": {
+          "oferta": "Tengo una clase gratis donde te enseño a crear un producto digital con IA y empezar a venderlo.",
+          "prueba": "Miles ya lo hicieron.",
+          "riesgo_cero": "No te voy a vender nada. Es gratis.",
+          "urgencia": "Si solo querés scrollear, seguí de largo.",
+          "orden_nlp": "Pero si querés hacer algo, comentá 'IA' y andá al link de mi perfil. Te espero."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T21:25:02.057Z"
+}

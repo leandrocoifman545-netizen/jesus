@@ -1,0 +1,172 @@
+{
+  "id": "5209f661-f25f-4de8-9c75-9aaf3e1153c1",
+  "briefId": "91814843-b37e-40e8-8d14-79884620e93b",
+  "projectId": "adp",
+  "title": "#2 — Tatuajes × Joven frustrado (Talking Head)",
+  "script": {
+    "angle_family": "F1",
+    "angle_specific": "1.5_joven_frustrado",
+    "body_type": "contraste_emocional",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "Tatuajes / tattoo",
+    "model_sale_type": "lean_anti_riesgo",
+    "format_visual": "Talking Head — Close Up Íntimo",
+    "arc_narrative": "#2 Dolor puro → esperanza",
+    "tension": "T2",
+    "total_duration_seconds": 75,
+    "word_count": 172,
+    "belief_change": {
+      "old_belief": "Me esfuerzo pero no avanzo, no sé qué hacer con lo que me gusta",
+      "new_belief": "Puedo convertir mi interés por el tattoo en un producto digital sin riesgo",
+      "mechanism": "La IA empaqueta tu conocimiento/gusto en un producto vendible en un fin de semana"
+    },
+    "micro_beliefs": [
+      "MC1: Mi frustración no es por falta de esfuerzo — es porque estoy poniendo energía donde no hay retorno",
+      "MC2: Lo que me gusta del tattoo tiene demanda digital real que nadie atiende bien",
+      "MC3: Puedo probar sin riesgo — si no funciona, perdí un fin de semana y nada más"
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "number": 23,
+        "name": "Descripción situacional"
+      },
+      {
+        "category": "C",
+        "number": 40,
+        "name": "Futuro negativo"
+      },
+      {
+        "category": "D",
+        "number": 49,
+        "name": "Redefinición"
+      },
+      {
+        "category": "F",
+        "number": 75,
+        "name": "Método del Experto"
+      },
+      {
+        "category": "G",
+        "number": 91,
+        "name": "Antes/Después"
+      }
+    ],
+    "hooks": [
+      {
+        "type": "situacion_especifica",
+        "script_text": "Tenés 24 años. Laburás en algo que no te gusta. Llegás a tu casa destruido. Abrís Instagram y ves pibes de tu edad viajando, emprendiendo, armando cosas. Y vos sentís que estás cada vez más lejos. Si te copa el mundo del tattoo, escuchá esto."
+      },
+      {
+        "type": "historia_mini",
+        "script_text": "Un pibe de 22 dibujaba tatuajes en su cuaderno desde los 15. Nunca tuvo plata para abrir un estudio. Un día empaquetó sus diseños en un catálogo digital con IA. En la primera semana vendió 30 copias. Hoy vive de eso. Y empezó sin un peso."
+      },
+      {
+        "type": "pregunta_incomoda",
+        "script_text": "¿Hace cuánto que sentís que deberías estar más adelante? ¿Cuántos meses más vas a esperar a que aparezca algo? La realidad es que no va a aparecer. Lo tenés que crear vos. Y si te gusta el tattoo, tenés una ventaja que no estás usando."
+      },
+      {
+        "type": "contraintuitivo",
+        "script_text": "No necesitás ser tatuador para ganar plata con tatuajes. No necesitás un estudio. No necesitás clientes presenciales. Lo que sí necesitás es algo que ya tenés: un gusto desarrollado y conexión con ese mundo. El resto lo resuelve la inteligencia artificial."
+      },
+      {
+        "type": "dato_concreto",
+        "script_text": "'Diseños de tatuajes' se busca miles de veces por día en Google. La gente quiere inspiración, catálogos, plantillas listas para llevar al tatuador. Y la mayoría encuentra Pinterest desordenado y gratis. Hay un hueco enorme para alguien que lo haga bien."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "name": "MC1: Tu frustración es por falta de dirección, no de esfuerzo",
+          "micro_belief": "Mi frustración no es por falta de esfuerzo — es porque pongo energía donde no hay retorno",
+          "script_text": "Sé lo que se siente. Te matás laburando y las cosas no pasan. Cada mes igual. Cada año igual. Y te dicen 'tené paciencia' o 'estudiá otra cosa'. Pero el problema no es que no te esforzás. El problema es que estás poniendo toda tu energía en un lugar que no te devuelve nada. Y eso no se arregla con más esfuerzo. Se arregla cambiando de dirección.",
+          "ingredients": [
+            "B#23 Descripción situacional",
+            "C#40 Futuro negativo"
+          ]
+        },
+        {
+          "name": "MC2: El tattoo tiene demanda digital que nadie atiende",
+          "micro_belief": "Lo que me gusta del tattoo tiene demanda digital real que nadie atiende bien",
+          "script_text": "Lo que a vos te gusta — los tatuajes, el diseño, esa cultura — tiene una demanda enorme en internet que casi nadie está atendiendo. Miles de personas buscan catálogos de diseño, plantillas por estilo, guías de significados. Y lo que encuentran es un desastre: Pinterest desordenado, blogs viejos, PDFs genéricos. Falta alguien que lo haga bien. Y vos ya tenés el ojo para eso.",
+          "ingredients": [
+            "D#49 Redefinición",
+            "F#75 Método del Experto"
+          ]
+        },
+        {
+          "name": "MC3: Cero riesgo — si no funciona, perdiste un finde",
+          "micro_belief": "Puedo probar sin riesgo — si no funciona, perdí un fin de semana",
+          "script_text": "Con la IA armás un pack de diseños o una guía de estilos de tattoo en un fin de semana. Lo subís a internet. Si no vende, perdiste un fin de semana. Nada más. Pero si vende — y hay gente que ya vive de esto — es plata que entra mientras vos hacés otra cosa. Primero validás que alguien lo quiere. Después lo creás. Así no arriesgás nada. Y lo vendés por internet.",
+          "ingredients": [
+            "G#91 Antes/Después"
+          ]
+        }
+      ]
+    },
+    "transition_text": "Si el tattoo es lo tuyo, hay una forma de transformar eso en un negocio digital sin invertir un peso.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo.",
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora de 58 años que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#90 Persona Improbable",
+          "#58 Remoción de Riesgo",
+          "#122 Costo de Esperar",
+          "#125 Reframe",
+          "#109 Directo"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero.",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#106 Garantía Implícita",
+          "#117 Escasez",
+          "#127 Embedded Command",
+          "#126 Presuposición"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "B",
+        "text": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas. Lo hicieron mamás, jubilados, estudiantes. Gente como vos. No te pido nada. Solo tu tiempo. Si llegaste hasta acá, algo te hizo click. No ignores esa sensación. Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info.",
+        "layers": {
+          "oferta": "Te muestro cómo encontrar, crear y vender productos digitales con IA. Todo en una clase gratis de 2 horas.",
+          "prueba": "Lo hicieron mamás, jubilados, estudiantes. Gente como vos.",
+          "riesgo_cero": "No te pido nada. Solo tu tiempo.",
+          "urgencia": "Si llegaste hasta acá, algo te hizo click. No ignores esa sensación.",
+          "orden_nlp": "Poneme 'QUIERO' en los comentarios. Nada más. Yo te mando toda la info."
+        },
+        "ingredients": [
+          "#85 Diversidad",
+          "#112 Micro-compromiso",
+          "#124 Cierre suave"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-03-15T19:43:51.353Z"
+}

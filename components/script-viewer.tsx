@@ -2,90 +2,50 @@
 
 import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import type { ScriptOutput } from "@/lib/ai/schemas/script-output";
+import type { ScriptOutput, CTABlock } from "@/lib/ai/schemas/script-output";
 import { resolveFormatLabel } from "@/lib/ai/schemas/script-output";
 import InlineEdit from "./inline-edit";
 import { useToast } from "./toast";
 import CopyButton from "./copy-button";
 
-const HOOK_TYPE_LABELS: Record<string, string> = {
-  situacion_especifica: "Situación",
-  dato_concreto: "Dato Concreto",
-  pregunta_incomoda: "Pregunta",
-  confesion: "Confesión",
-  contraintuitivo: "Contraintuitivo",
-  provocacion: "Provocación",
-  historia_mini: "Historia Mini",
-  analogia: "Analogía",
-  negacion_directa: "Negación",
-  observacion_tendencia: "Tendencia",
-  timeline_provocacion: "Timeline",
-  contrato_compromiso: "Contrato",
-  actuacion_dialogo: "Diálogo",
-  anti_publico: "Anti-público",
-  // Legacy English types (for old data)
-  curiosity_gap: "Curiosity Gap",
-  contrarian: "Contrarian",
-  question: "Pregunta",
-  statistical: "Estadística",
-  pain_point: "Pain Point",
-  pattern_interrupt: "Pattern Interrupt",
-  reveal_teaser: "Reveal / Teaser",
-  authority_social_proof: "Social Proof",
-};
-
-const HOOK_TYPE_COLORS: Record<string, string> = {
-  situacion_especifica: "bg-amber-500/10 text-amber-400 border-amber-500/20",
-  dato_concreto: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-  pregunta_incomoda: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-  confesion: "bg-rose-500/10 text-rose-400 border-rose-500/20",
-  contraintuitivo: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-  provocacion: "bg-red-500/10 text-red-400 border-red-500/20",
-  historia_mini: "bg-teal-500/10 text-teal-400 border-teal-500/20",
-  analogia: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
-  negacion_directa: "bg-orange-500/10 text-orange-400 border-orange-500/20",
-  observacion_tendencia: "bg-lime-500/10 text-lime-400 border-lime-500/20",
-  timeline_provocacion: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
-  contrato_compromiso: "bg-sky-500/10 text-sky-400 border-sky-500/20",
-  actuacion_dialogo: "bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/20",
-  anti_publico: "bg-zinc-500/10 text-zinc-300 border-zinc-500/20",
-  curiosity_gap: "bg-amber-500/10 text-amber-400 border-amber-500/20",
-  contrarian: "bg-rose-500/10 text-rose-400 border-rose-500/20",
-  question: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-  statistical: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-  pain_point: "bg-orange-500/10 text-orange-400 border-orange-500/20",
-  pattern_interrupt: "bg-pink-500/10 text-pink-400 border-pink-500/20",
-  reveal_teaser: "bg-violet-500/10 text-violet-400 border-violet-500/20",
-  authority_social_proof: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-};
+import { HOOK_TYPE_LABELS, HOOK_TYPE_COLORS } from "@/lib/constants/hook-types";
 
 function formatFullScript(script: ScriptOutput, hookIndex: number): string {
   const hook = script.hooks[hookIndex];
-  let text = `GUION - ${resolveFormatLabel(script.platform_adaptation.platform)} (${script.total_duration_seconds}s) | ~${script.word_count} palabras\n`;
-  text += `Framework: ${script.development.framework_used} | Arco emocional: ${script.development.emotional_arc}\n`;
+  const platform = script.platform_adaptation?.platform ? resolveFormatLabel(script.platform_adaptation.platform) : 'N/A';
+  let text = `GUION - ${platform} (${script.total_duration_seconds || '?'}s) | ~${script.word_count || '?'} palabras\n`;
+  text += `Framework: ${script.development?.framework_used || 'N/A'} | Arco emocional: ${script.development?.emotional_arc || 'N/A'}\n`;
   text += `=`.repeat(70) + "\n\n";
 
-  text += `HOOK (Variante ${hook.variant_number} - ${HOOK_TYPE_LABELS[hook.hook_type] || hook.hook_type})\n`;
+  text += `HOOK (Variante ${hook?.variant_number || 1} - ${HOOK_TYPE_LABELS[hook?.hook_type] || (hook as any)?.hookType || 'lead'})\n`;
   text += `-`.repeat(50) + "\n";
-  text += `Tiempo: 0-${hook.timing_seconds}s\n`;
-  text += `"${hook.script_text}"\n\n`;
+  text += `Tiempo: 0-${hook?.timing_seconds || '?'}s\n`;
+  text += `"${hook?.script_text || (hook as any)?.text || ''}"\n\n`;
 
   text += `DESARROLLO\n`;
   text += `-`.repeat(50) + "\n";
-  let accTime = hook.timing_seconds;
-  for (const section of script.development.sections) {
+  let accTime = hook?.timing_seconds || 0;
+  for (const section of script.development?.sections || []) {
     const isRehook = section.is_rehook ? " [RE-HOOK]" : "";
-    text += `[${section.section_name}${isRehook}] (${accTime}-${accTime + section.timing_seconds}s)\n`;
+    const secName = section.section_name || (section as any).title || 'Sección';
+    const secTime = section.timing_seconds || 0;
+    text += `[${secName}${isRehook}] (${accTime}-${accTime + secTime}s)\n`;
     text += `"${section.script_text}"\n\n`;
-    accTime += section.timing_seconds;
+    accTime += secTime;
   }
 
-  if (script.offer_bridge) {
+  if (script.offer_bridge && !script.cta_blocks?.length) {
     text += `PUENTE A LA OFERTA (${script.offer_bridge.product_type === "webinar_gratis" ? "Webinar Gratis" : script.offer_bridge.product_type === "taller_5" ? "Taller $5" : "Custom"})\n`;
     text += `-`.repeat(50) + "\n";
     text += `[${accTime}-${accTime + script.offer_bridge.timing_seconds}s]\n`;
     text += `"${script.offer_bridge.script_text}"\n\n`;
     accTime += script.offer_bridge.timing_seconds;
+  }
+
+  if (script.transition_text) {
+    text += `TRANSICION (Capa 1)\n`;
+    text += `-`.repeat(50) + "\n";
+    text += `"${script.transition_text}"\n\n`;
   }
 
   text += `CTA\n`;
@@ -118,6 +78,24 @@ function formatFullScript(script: ScriptOutput, hookIndex: number): string {
     if (script.angle_family) text += `Familia: ${script.angle_family.replace(/_/g, ' ')}\n`;
     if (script.angle_specific) text += `Angulo: ${script.angle_specific.replace(/_/g, ' ')}\n`;
     if (script.body_type) text += `Tipo de cuerpo: ${script.body_type.replace(/_/g, ' ')}\n`;
+  }
+
+  if (script.cta_blocks && script.cta_blocks.length > 0) {
+    text += `\n3 BLOQUES CTA (Capas 2-6)\n`;
+    text += `=`.repeat(70) + "\n\n";
+    for (const block of script.cta_blocks) {
+      const label = block.channel_label || block.channel || "CTA";
+      text += `--- ${label} (${block.variant || ""}) ---\n`;
+      if (block.layers) {
+        text += `[OFERTA] "${block.layers.oferta}"\n`;
+        text += `[PRUEBA] "${block.layers.prueba}"\n`;
+        text += `[RIESGO CERO] "${block.layers.riesgo_cero}"\n`;
+        text += `[URGENCIA] "${block.layers.urgencia}"\n`;
+        text += `[ORDEN+NLP] "${block.layers.orden_nlp}"\n\n`;
+      } else if (block.text) {
+        text += `${block.text}\n\n`;
+      }
+    }
   }
 
   return text;
@@ -307,11 +285,11 @@ export default function ScriptViewer({
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
 
-      setScript((prev) => ({
-        ...prev,
-        hooks: [...prev.hooks, ...data.newHooks],
-      }));
-      setSelectedHook(script.hooks.length);
+      setScript((prev) => {
+        const updated = { ...prev, hooks: [...prev.hooks, ...data.newHooks] };
+        setSelectedHook(updated.hooks.length - 1);
+        return updated;
+      });
     } catch (err) {
       toast(err instanceof Error ? err.message : "Error generando hooks", "error");
     } finally {
@@ -492,9 +470,10 @@ export default function ScriptViewer({
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-sm font-semibold text-zinc-300">Formato</h2>
           <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">
-            {script.total_duration_seconds}s | ~{script.word_count} palabras | {script.development.framework_used}
+            {script.total_duration_seconds ? `${script.total_duration_seconds}s` : ''} {script.word_count ? `| ~${script.word_count} palabras` : ''} {script.development?.framework_used ? `| ${script.development.framework_used}` : ''}
           </span>
         </div>
+        {script.platform_adaptation && (
         <div className="grid grid-cols-2 gap-4 text-sm mb-4">
           <div>
             <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Formato</span>
@@ -505,15 +484,20 @@ export default function ScriptViewer({
             <p className="text-zinc-200">{script.platform_adaptation.content_style}</p>
           </div>
         </div>
+        )}
         <div className="grid grid-cols-2 gap-4 text-sm">
+          {script.platform_adaptation?.key_considerations && (
           <div>
             <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Consideraciones</span>
             <p className="text-zinc-200">{script.platform_adaptation.key_considerations}</p>
           </div>
+          )}
+          {script.development?.emotional_arc && (
           <div>
             <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Arco Emocional</span>
             <p className="text-purple-300 font-medium">{script.development.emotional_arc}</p>
           </div>
+          )}
         </div>
         {script.visual_format && (
           <div className="mt-4 border-l-2 border-purple-500/30 pl-4 ml-1 pt-2">
@@ -593,9 +577,42 @@ export default function ScriptViewer({
           <div className="mt-4 border-l-2 border-orange-500/30 pl-4 ml-1 pt-2">
             <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Cambio de creencia</span>
             <div className="mt-2 space-y-1 text-[12px]">
-              <div className="text-red-400/80"><span className="text-zinc-600">Antes:</span> {script.belief_change.old_belief}</div>
+              <div className="text-red-400/80"><span className="text-zinc-600">Antes:</span> {script.belief_change.old_belief || (script.belief_change as any).old}</div>
               <div className="text-zinc-500"><span className="text-zinc-600">Mecanismo:</span> {script.belief_change.mechanism}</div>
-              <div className="text-green-400/80"><span className="text-zinc-600">Después:</span> {script.belief_change.new_belief}</div>
+              <div className="text-green-400/80"><span className="text-zinc-600">Después:</span> {script.belief_change.new_belief || (script.belief_change as any).new}</div>
+            </div>
+          </div>
+        )}
+        {script.micro_beliefs && script.micro_beliefs.length > 0 && (
+          <div className="mt-4 border-l-2 border-violet-500/30 pl-4 ml-1 pt-2">
+            <span className="text-zinc-600 text-[11px] uppercase tracking-wider font-medium">Micro-creencias</span>
+            <div className="mt-2 space-y-2">
+              {script.micro_beliefs.map((mb: any, i: number) => {
+                const isString = typeof mb === 'string';
+                const beliefText = isString ? mb : mb.belief;
+                const section = !isString && mb.installed_via ? mb.installed_via : null;
+                const sectionName = !isString && mb.section_name ? mb.section_name : null;
+                const pf = !isString && mb.persuasion_function ? mb.persuasion_function : null;
+                // Try to find matching body section with this micro_belief
+                const matchedSection = script.development?.sections
+                  ? script.development.sections.find((s: any) => {
+                      if (isString) return s.micro_belief && s.micro_belief === beliefText?.replace(/^MC\d+:\s*/, '');
+                      return s.micro_belief && s.micro_belief === mb.belief;
+                    })
+                  : null;
+                const resolvedPf = pf || (matchedSection as any)?.persuasion_function;
+                const beatClass = resolvedPf ? `beat-${resolvedPf}` : '';
+                return (
+                  <div key={i} className={`text-[12px] rounded-lg p-2 ${beatClass || ''}`}>
+                    <div className={resolvedPf ? 'beat-indicator inline-block rounded px-1.5 py-0.5 text-[11px] font-medium mb-1' : 'text-violet-300/90'}>
+                      {resolvedPf && <span className="opacity-60 mr-1">{resolvedPf}</span>}
+                      {beliefText}
+                    </div>
+                    {section && <div className="text-zinc-600 text-[11px]">Instalada via: {section} {sectionName ? `(${sectionName})` : ''}</div>}
+                    {matchedSection && !sectionName && <div className="text-zinc-600 text-[11px]">→ Sección: {(matchedSection as any).section_name}</div>}
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
@@ -631,10 +648,10 @@ export default function ScriptViewer({
                   HOOK_TYPE_COLORS[hook.hook_type] || "bg-zinc-800 text-zinc-400 border-zinc-700"
                 }`}
               >
-                {HOOK_TYPE_LABELS[hook.hook_type] || hook.hook_type}
+                {HOOK_TYPE_LABELS[hook.hook_type || (hook as any).hookType] || hook.hook_type || (hook as any).hookType || 'lead'}
               </span>
               <p className="text-[11px] text-zinc-400 mt-2.5 line-clamp-2 leading-relaxed">
-                &ldquo;{hook.script_text}&rdquo;
+                &ldquo;{hook.script_text || (hook as any).text}&rdquo;
               </p>
             </button>
           ))}
@@ -688,68 +705,98 @@ export default function ScriptViewer({
           {(() => {
             const hook = script.hooks[selectedHook];
             if (!hook) return null;
+            const hookText = hook.script_text || (hook as any).text || '';
+            const hookType = hook.hook_type || (hook as any).hookType || 'lead';
             return (
               <div key={selectedHook} className="bg-purple-500/5 border border-purple-500/15 rounded-2xl p-6 animate-content-swap">
                 <div className="flex items-center gap-2 mb-2 flex-wrap">
-                  <span className="uppercase tracking-wider text-[11px] font-semibold text-purple-400">HOOK #{hook.variant_number}</span>
-                  <span className={`text-[10px] px-2 py-0.5 rounded-lg border ${HOOK_TYPE_COLORS[hook.hook_type] || ""}`}>{HOOK_TYPE_LABELS[hook.hook_type]}</span>
-                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">0-{hook.timing_seconds}s</span>
-                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{hook.script_text.trim().split(/\s+/).length} palabras</span>
+                  <span className="uppercase tracking-wider text-[11px] font-semibold text-purple-400">HOOK #{hook.variant_number || selectedHook + 1}</span>
+                  <span className={`text-[10px] px-2 py-0.5 rounded-lg border ${HOOK_TYPE_COLORS[hookType] || ""}`}>{HOOK_TYPE_LABELS[hookType] || hookType}</span>
+                  {hook.timing_seconds && <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">0-{hook.timing_seconds}s</span>}
+                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{hookText.trim().split(/\s+/).length} palabras</span>
                   <RegenButton
                     onClick={() => handleRegenerate("hook", selectedHook)}
                     loading={regenTarget === `hook-${selectedHook}`}
                   />
                 </div>
                 <InlineEdit
-                  value={hook.script_text}
-                  onSave={(v) => handleEdit(`hooks.${selectedHook}.script_text`, v)}
+                  value={hookText}
+                  onSave={(v) => handleEdit(`hooks.${selectedHook}.${hook.script_text !== undefined ? 'script_text' : 'text'}`, v)}
                   className="text-zinc-200 text-sm"
                 />
               </div>
             );
           })()}
 
-          {/* Development sections */}
-          {(() => {
+          {/* Development sections OR body text */}
+          {script.development?.sections?.length ? (() => {
             let accTime = script.hooks[selectedHook]?.timing_seconds || 0;
+            const pfn = (s: any) => s.persuasion_function || '';
             return script.development.sections.map((section, i) => {
               const startTime = accTime;
-              accTime += section.timing_seconds;
+              accTime += section.timing_seconds || 0;
               const isRehook = section.is_rehook;
+              const beatClass = pfn(section) ? `beat-${pfn(section)}` : '';
+              const hasBeat = !!pfn(section);
               return (
                 <div
                   key={i}
-                  className={`border rounded-2xl p-6 ${
+                  className={`border rounded-2xl p-6 relative ${
                     isRehook
                       ? "bg-amber-500/5 border-amber-500/15"
-                      : "bg-zinc-900/30 border-zinc-800/40"
+                      : hasBeat
+                        ? `${beatClass}`
+                        : "bg-zinc-900/30 border-zinc-800/40"
                   }`}
                 >
-                  <div className="flex items-center gap-2 mb-2">
+                  {hasBeat && <div className="beat-line absolute left-0 top-4 bottom-4 w-[3px] rounded-full" />}
+                  <div className="flex items-center gap-2 mb-2 flex-wrap">
                     <span className={`uppercase tracking-wider text-[11px] font-semibold ${isRehook ? "text-amber-400" : "text-zinc-400"}`}>
-                      {section.section_name}
+                      {section.section_name || (section as any).title || `Sección ${i + 1}`}
                     </span>
+                    {hasBeat && (
+                      <span className="beat-indicator rounded-lg px-2 py-0.5 text-[10px] font-medium">
+                        {pfn(section)}
+                      </span>
+                    )}
                     <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">{startTime}-{accTime}s</span>
-                    <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{section.script_text.trim().split(/\s+/).length} palabras</span>
+                    <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{(section.script_text || '').trim().split(/\s+/).length} palabras</span>
                     <RegenButton
                       onClick={() => handleRegenerate("section", i)}
                       loading={regenTarget === `section-${i}`}
                     />
                   </div>
+                  {(section as any).micro_belief && (
+                    <div className="beat-indicator rounded-lg px-2 py-1 text-[11px] mb-3 inline-block">
+                      MC: {(section as any).micro_belief}
+                    </div>
+                  )}
                   <InlineEdit
-                    value={section.script_text}
+                    value={section.script_text || ''}
                     onSave={(v) => handleEdit(`development.sections.${i}.script_text`, v)}
                     className="text-zinc-200 text-sm"
                   />
                 </div>
               );
             });
-          })()}
+          })() : script.body ? (
+            <div className="bg-zinc-900/30 border border-zinc-800/40 rounded-2xl p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="uppercase tracking-wider text-[11px] font-semibold text-zinc-400">CUERPO</span>
+                <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 text-[10px] text-zinc-600">{script.body.trim().split(/\s+/).length} palabras</span>
+              </div>
+              <InlineEdit
+                value={script.body}
+                onSave={(v) => handleEdit("body", v)}
+                className="text-zinc-200 text-sm whitespace-pre-line"
+              />
+            </div>
+          ) : null}
 
-          {/* Offer Bridge */}
-          {script.offer_bridge && (() => {
-            const bridgeStart = script.development.sections.reduce(
-              (sum, s) => sum + s.timing_seconds,
+          {/* Offer Bridge: solo mostrar si NO hay cta_blocks (legacy) */}
+          {script.offer_bridge && !script.cta_blocks?.length && (() => {
+            const bridgeStart = (script.development?.sections || []).reduce(
+              (sum, s) => sum + (s.timing_seconds || 0),
               script.hooks[selectedHook]?.timing_seconds || 0
             );
             return (
@@ -770,12 +817,33 @@ export default function ScriptViewer({
             );
           })()}
 
-          {/* CTA */}
-          {(() => {
-            const devTotal = script.development.sections.reduce(
-              (sum, s) => sum + s.timing_seconds,
+          {/* Transition Text */}
+          {script.transition_text && (() => {
+            const transStart = (script.development?.sections || []).reduce(
+              (sum, s) => sum + (s.timing_seconds || 0),
               script.hooks[selectedHook]?.timing_seconds || 0
             ) + (script.offer_bridge?.timing_seconds || 0);
+            return (
+              <div className="bg-sky-500/5 border border-sky-500/15 rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="uppercase tracking-wider text-[11px] font-semibold text-sky-400">TRANSICION (Capa 1)</span>
+                  <span className="bg-zinc-800/50 rounded-lg px-2 py-0.5 font-mono text-[10px] text-zinc-600">{transStart}-{transStart + 4}s</span>
+                </div>
+                <InlineEdit
+                  value={script.transition_text}
+                  onSave={(v) => handleEdit("transition_text", v)}
+                  className="text-zinc-200 text-sm"
+                />
+              </div>
+            );
+          })()}
+
+          {/* CTA suelto: solo mostrar si NO hay cta_blocks */}
+          {!script.cta_blocks?.length && (() => {
+            const devTotal = (script.development?.sections || []).reduce(
+              (sum, s) => sum + (s.timing_seconds || 0),
+              script.hooks[selectedHook]?.timing_seconds || 0
+            ) + (script.offer_bridge?.timing_seconds || 0) + (script.transition_text ? 4 : 0);
             const cta = script.cta;
             const ctaTiming = cta?.timing_seconds || 0;
             const ctaVerbal = cta?.verbal_cta || '[CTA genérico — se pega en edición]';
@@ -804,6 +872,54 @@ export default function ScriptViewer({
           })()}
         </div>
       </div>
+
+      {/* 3 CTA Blocks (6 capas × 3 canales) */}
+      {script.cta_blocks && script.cta_blocks.length > 0 && (
+        <div>
+          <h2 className="text-2xl font-bold tracking-tight mb-5 bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">3 Bloques CTA (capas 2-6)</h2>
+          <p className="text-zinc-500 text-xs mb-4">Se graban UNA vez por sesión y se combinan con cualquier body en edición. La transición (capa 1) va con el body.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {script.cta_blocks.map((block: CTABlock, i: number) => {
+              const channelColors: Record<string, string> = {
+                clase_gratuita: "border-emerald-500/20 bg-emerald-500/5",
+                taller_5: "border-amber-500/20 bg-amber-500/5",
+                instagram: "border-pink-500/20 bg-pink-500/5",
+              };
+              const labelColors: Record<string, string> = {
+                clase_gratuita: "text-emerald-400",
+                taller_5: "text-amber-400",
+                instagram: "text-pink-400",
+              };
+              return (
+                <div key={i} className={`border rounded-2xl p-5 space-y-3 ${channelColors[block.channel] || "border-zinc-800/40 bg-zinc-900/30"}`}>
+                  <div className="flex items-center justify-between">
+                    <span className={`uppercase tracking-wider text-[11px] font-semibold ${labelColors[block.channel] || "text-zinc-400"}`}>
+                      {block.channel_label || block.channel || "CTA"}
+                    </span>
+                    {block.timing_seconds && <span className="text-[10px] text-zinc-600">~{block.timing_seconds}s</span>}
+                  </div>
+                  <div className="space-y-2.5">
+                    {block.layers ? ([
+                      ["OFERTA", block.layers.oferta],
+                      ["PRUEBA", block.layers.prueba],
+                      ["RIESGO CERO", block.layers.riesgo_cero],
+                      ["URGENCIA", block.layers.urgencia],
+                      ["ORDEN + NLP", block.layers.orden_nlp],
+                    ] as const).map(([label, text]) => (
+                      <div key={label}>
+                        <span className="text-[9px] text-zinc-600 uppercase tracking-wider font-medium">{label}</span>
+                        <p className="text-zinc-300 text-xs leading-relaxed mt-0.5">&ldquo;{text}&rdquo;</p>
+                      </div>
+                    )) : block.text ? (
+                      <p className="text-zinc-300 text-xs leading-relaxed">&ldquo;{block.text}&rdquo;</p>
+                    ) : null}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Copy Buttons */}
       <div className="flex flex-wrap gap-2">

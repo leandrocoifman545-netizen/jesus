@@ -5,7 +5,15 @@ import { generateAutoTitle } from "@/lib/auto-title";
 import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
-  const body = await req.json();
+  let body;
+  try {
+    body = await req.json();
+  } catch {
+    return new Response(
+      `data: ${JSON.stringify({ type: "error", error: "JSON inválido en el request" })}\n\n`,
+      { status: 400, headers: { "Content-Type": "text/event-stream" } }
+    );
+  }
 
   let productDescription = body.productDescription;
   let targetAudience = body.targetAudience;

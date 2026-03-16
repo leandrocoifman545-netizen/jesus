@@ -16,7 +16,7 @@ Preguntar al usuario o inferir del argumento $ARGUMENTS:
 
 Listar los guiones del batch:
 ```bash
-curl -s http://localhost:3000/api/generations/search | python3 -c "
+curl -s http://localhost:3002/api/generations/search | python3 -c "
 import sys, json
 gens = json.load(sys.stdin)
 for g in gens:
@@ -35,7 +35,7 @@ Para cada guion, preguntar al usuario:
 
 Actualizar con:
 ```bash
-curl -s -X PATCH http://localhost:3000/api/generate/status \
+curl -s -X PATCH http://localhost:3002/api/generate/status \
   -H "Content-Type: application/json" \
   -d '{"generationId":"ID","status":"recorded"}'
 ```
@@ -50,7 +50,7 @@ Para cada guion grabado, preguntar:
 
 Guardar notas:
 ```bash
-curl -s -X PATCH http://localhost:3000/api/generate/status \
+curl -s -X PATCH http://localhost:3002/api/generate/status \
   -H "Content-Type: application/json" \
   -d '{"generationId":"ID","sessionNotes":"NOTAS"}'
 ```
@@ -59,7 +59,7 @@ curl -s -X PATCH http://localhost:3000/api/generate/status \
 
 Si ya se subieron los ads y hay métricas:
 ```bash
-curl -s -X PATCH http://localhost:3000/api/generate/status \
+curl -s -X PATCH http://localhost:3002/api/generate/status \
   -H "Content-Type: application/json" \
   -d '{"generationId":"ID","metrics":{"ctr":1.2,"hookRate":35,"holdRate":20,"cpa":5.0}}'
 ```
@@ -76,7 +76,7 @@ Referencia de métricas (Kill/Iterate/Scale):
 
 Si algún ad está funcionando bien:
 ```bash
-curl -s -X PATCH http://localhost:3000/api/generate/status \
+curl -s -X PATCH http://localhost:3002/api/generate/status \
   -H "Content-Type: application/json" \
   -d '{"generationId":"ID","status":"winner","sessionNotes":"Por qué ganó: lead X, formato Y, ángulo Z"}'
 ```
@@ -98,6 +98,6 @@ Mostrar al usuario:
 - Próximos pasos (subir ads, medir, planificar siguiente semana)
 
 ## Recordatorios:
-- La web tiene vista de sesión en http://localhost:3000/session
+- La web tiene vista de sesión en http://localhost:3002/session
 - Los guiones se pueden editar inline en la web
 - Los packs descargables están en cada guion individual

@@ -1,7 +1,10 @@
 import { listGenerations, type StoredGeneration } from "./storage/local";
+import { extractTags } from "./utils/classification";
+import { ALL_SEGMENTS, ALL_FUNNELS, ALL_HOOK_TYPES } from "./constants/hook-types";
 
 // Module-level cache for coverage data
 let coverageCache: CoverageData | null = null;
+let lastRefreshTime = 0;
 
 export interface CoverageData {
   totalGenerations: number;
@@ -17,47 +20,6 @@ export interface CoverageData {
   byStatus: Record<string, number>;
   gaps: string[];
   lastUpdated: string;
-}
-
-// Extract metadata from generation title/notes/script
-function extractTags(gen: StoredGeneration): {
-  angle?: string;
-  segment?: string;
-  funnel?: string;
-  bodyType?: string;
-  niche?: string;
-} {
-  const text = [gen.title, gen.sessionNotes, gen.script.development.emotional_arc].filter(Boolean).join(" ").toLowerCase();
-
-  // Angles (from jesus-adp.md)
-  const angles = [
-    "latam", "consumidor ia", "mamá", "crianza", "ventas visibles",
-    "storytelling", "edad", "anti-gurú", "ia desperdiciada",
-    "colombia", "anti-estafa", "fitness", "skincare", "fotografía",
-    "manualidades", "educación", "jardinería", "nutrición",
-  ];
-  const angle = angles.find((a) => text.includes(a));
-
-  // Segments
-  const segmentMatch = text.match(/seg(?:mento)?\s*([abcd])/i);
-  const segment = segmentMatch ? segmentMatch[1].toUpperCase() : undefined;
-
-  // Funnel
-  const funnels = ["tofu", "mofu", "bofu", "retarget", "evergreen"];
-  const funnel = funnels.find((f) => text.includes(f));
-
-  // Body types
-  const bodyTypes = [
-    "mecanismo", "idea de nicho", "cambio de creencia",
-    "storytelling", "analogía", "comparación", "anti-gurú",
-  ];
-  const bodyType = bodyTypes.find((b) => text.includes(b));
-
-  // Niche (from title usually)
-  const nicheMatch = gen.title?.match(/(?:nicho|idea):\s*(.+?)(?:\s*[-—|]|$)/i);
-  const niche = nicheMatch ? nicheMatch[1].trim() : undefined;
-
-  return { angle, segment, funnel, bodyType, niche };
 }
 
 export async function computeCoverage(): Promise<CoverageData> {
@@ -80,6 +42,9 @@ export async function computeCoverage(): Promise<CoverageData> {
   };
 
   for (const gen of generations) {
+    // Skip corrupt/incomplete generations
+    if (!gen.script?.development?.framework_used) continue;
+
     // Framework (always available from script)
     const fw = gen.script.development.framework_used;
     data.byFramework[fw] = (data.byFramework[fw] || 0) + 1;
@@ -91,8 +56,8 @@ export async function computeCoverage(): Promise<CoverageData> {
     }
 
     // Lead types from hooks
-    for (const hook of gen.script.hooks) {
-      data.byLeadType[hook.hook_type] = (data.byLeadType[hook.hook_type] || 0) + 1;
+    for (const hook of gen.script.hooks || []) {
+      if (hook.hook_type) data.byLeadType[hook.hook_type] = (data.byLeadType[hook.hook_type] || 0) + 1;
     }
 
     // Status
@@ -147,22 +112,13 @@ export async function computeCoverage(): Promise<CoverageData> {
   }
 
   // Detect gaps
-  const allSegments = ["A", "B", "C", "D"];
-  const allFunnels = ["TOFU", "MOFU", "BOFU", "RETARGET", "EVERGREEN"];
-  const allHookTypes = [
-    "situacion_especifica", "dato_concreto", "pregunta_incomoda", "confesion",
-    "contraintuitivo", "provocacion", "historia_mini", "analogia",
-    "negacion_directa", "observacion_tendencia", "timeline_provocacion",
-    "contrato_compromiso", "actuacion_dialogo", "anti_publico",
-  ];
-
-  for (const s of allSegments) {
+  for (const s of ALL_SEGMENTS) {
     if (!data.bySegment[s]) data.gaps.push(`Segmento ${s} sin cobertura`);
   }
-  for (const f of allFunnels) {
+  for (const f of ALL_FUNNELS) {
     if (!data.byFunnel[f] && !data.byFunnel[f.toLowerCase()]) data.gaps.push(`Funnel ${f} sin cobertura`);
   }
-  for (const h of allHookTypes) {
+  for (const h of ALL_HOOK_TYPES) {
     if (!data.byLeadType[h]) data.gaps.push(`Lead type "${h}" sin usar`);
   }
 
@@ -171,11 +127,18 @@ export async function computeCoverage(): Promise<CoverageData> {
 
 /**
  * Recompute coverage and update the module-level cache.
- * Call this after saving a generation to keep cache fresh.
+ * Debounced: skips recompute if called within 5 seconds of last refresh.
  */
+const REFRESH_DEBOUNCE_MS = 5_000;
+
 export async function refreshCoverageCache(): Promise<CoverageData> {
+  const now = Date.now();
+  if (coverageCache && now - lastRefreshTime < REFRESH_DEBOUNCE_MS) {
+    return coverageCache;
+  }
   const fresh = await computeCoverage();
   coverageCache = fresh;
+  lastRefreshTime = now;
   return fresh;
 }
 

@@ -4,16 +4,18 @@
 - **NUNCA usar "no te alcanza la plata" / "no llegás a fin de mes" como hook.** Filtra hacia abajo: atrae gente que no va a comprar. Entran con la objeción ya puesta.
 - **"Trabajos" → "Negocios".** La gente no quiere otro trabajo, quiere un negocio sencillo para salir de su trabajo actual.
 - **Nada de porcentajes en hooks.** "El 76% de las personas..." desconecta emocionalmente. No hay virales que usen porcentajes como gancho.
-- **No repetir CTAs ni hacerlos más largos que el cuerpo.** Máximo 4 CTAs, cada uno con enfoque diferente (gratuito, taller $5, comentar CLASE, link en bio).
+- **3 bloques CTA de 6 capas** (ver `.data/ctas-biblioteca.md`): Clase Gratuita, Taller $5, Instagram. Cada bloque tiene: Oferta → Prueba → Riesgo Cero → Urgencia → Orden+NLP. Se graban UNA vez por sesión y se combinan con cualquier body en edición. NO meter precio ni riesgo cero en el cuerpo — eso va SOLO en los bloques CTA.
 - **No exagerar cantidades.** "Millones" suena a humo en ads. Usar "miles" o "cientos" que son creíbles.
 
-## Estructura de Guión
-- El video NO es solo Hook → Cuerpo → CTA. El cuerpo tiene secciones internas, cada una con función específica.
+## Estructura de Guión (micro-VSL de 5 beats)
+- El video es un **micro-VSL**: 5 beats cortos (12-20s cada uno), cada uno con una función persuasiva distinta.
+- **Los 5 beats:** Identificación → Quiebre → Mecanismo → Demolición → Prueba → Venta del Modelo → Transición
 - **El cuerpo tiene que funcionar solo, sin hooks.** Los hooks son frases para que el cuerpo "perfore mejor", pero el cuerpo es lo que importa.
-- **Primero se piensa el cuerpo, después se agregan los leads.**
-- Dividir visualmente el guión para respetar tiempos y pausas (no bloques de texto).
-- **UN solo cuerpo + múltiples leads intercambiables.** Todos los leads deben conectar naturalmente con el mismo cuerpo. No se hacen cuerpos separados por lead.
-- **Orden de presentación: Leads → Cuerpo → CTAs.** Siempre mostrar en ese orden visual.
+- **Primero se piensan los beats con sus funciones, después se agregan los leads.**
+- Cada beat = 1 función persuasiva = 1 micro-creencia. Nada se mezcla.
+- **Duración objetivo: 75-90 segundos** (mínimo 75s para los 5 beats).
+- **UN solo cuerpo + múltiples leads intercambiables.** Todos los leads deben conectar naturalmente con el mismo cuerpo.
+- **Orden de presentación: Leads → Cuerpo (5 beats) → CTAs.** Siempre mostrar en ese orden visual.
 
 ## Leads (no hooks sueltos)
 - Los hooks de una sola frase NO alcanzan. Usar **leads**: entradas de 2-3 oraciones que trabajan juntas.

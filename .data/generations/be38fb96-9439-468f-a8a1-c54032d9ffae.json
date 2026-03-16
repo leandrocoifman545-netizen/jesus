@@ -1,0 +1,184 @@
+{
+  "id": "be38fb96-9439-468f-a8a1-c54032d9ffae",
+  "briefId": "c8f80dd3-64e3-4a6a-a4bc-855175cb52e8",
+  "title": "Tu profesión ya vale oro digital",
+  "batch": {
+    "name": "Semana 2026-03-17",
+    "weekOf": "2026-03-17"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok/Instagram",
+      "aspect_ratio": "9:16",
+      "captions_style": "dynamic"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "script_text": "Los veterinarios saben más de nutrición animal que el 99% de los ebooks que se venden en internet. Pero ningún veterinario vende uno. ¿Sabés quién los hace? Gente que buscó en Google y le pidió a la IA.",
+        "estimated_duration_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "analogia",
+        "script_text": "¿Viste esos libros de recetas para perros que venden en las veterinarias? Los escribió alguien que probablemente no es veterinario. Pero cobró como si fuera. Tu conocimiento vale más. Solo que nadie te mostró cómo empaquetarlo.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "situacion_especifica",
+        "script_text": "Sos veterinaria. Atendés 15 consultas por día. El 80% te pregunta lo mismo: qué comida darle, cómo cortarle las uñas, cuándo vacunarlo. ¿Y si esas respuestas se convirtieran en un producto que se vende solo?",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Cada vez más profesionales están dejando de solo atender pacientes o clientes para crear productos digitales con lo que ya saben. Psicólogos, nutricionistas, contadores, veterinarios. La IA les permite hacerlo en horas, no en meses.",
+        "estimated_duration_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas veces un cliente te pidió un consejo gratis por WhatsApp? ¿Cuántas veces contestaste sin cobrar? ¿Y si todo eso que regalás estuviera en una guía de 15 dólares que se vende sola?",
+        "estimated_duration_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "Un día en la vida",
+      "sections": [
+        {
+          "section_name": "Mañana",
+          "script_text": "Te levantás. Revisás el celular. 2 ventas de tu guía de nutrición para mascotas mientras dormías. 30 dólares. No hiciste nada. La publicidad de 3 dólares por día hizo el trabajo.",
+          "timing_seconds": 12,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Re-hook",
+          "script_text": "Y acá viene lo mejor.",
+          "timing_seconds": 3,
+          "is_rehook": true
+        },
+        {
+          "section_name": "Tarde",
+          "script_text": "A las 10 te sentás 30 minutos a responder mensajes de WhatsApp de gente interesada. Les explicás qué incluye la guía. Algunos compran, otros no. No importa — los que compraron ya se lo descargaron solos.",
+          "timing_seconds": 15,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Noche",
+          "script_text": "A la noche seguís con tu vida. Cuidás a tus hijos, mirás una serie, lo que quieras. La guía se sigue vendiendo. Porque es digital. Se crea una vez y se vende infinitas veces. Sin stock. Sin local. Sin horarios.",
+          "timing_seconds": 15,
+          "is_rehook": false
+        },
+        {
+          "section_name": "Venta del modelo — Democratización por IA",
+          "script_text": "Antes para hacer esto necesitabas un diseñador, un editor y meses de trabajo. Hoy le pedís a la IA que organice tu conocimiento en una guía profesional. Y en una tarde tenés un producto listo.",
+          "timing_seconds": 12,
+          "is_rehook": false
+        }
+      ],
+      "emotional_arc": "Proyección → deseo → claridad → posibilidad"
+    },
+    "cta": {
+      "cta_type": "directo",
+      "verbal_cta": "Tocá el botón de acá abajo",
+      "reason_why": "3 bloques CTA separados"
+    },
+    "total_duration_seconds": 75,
+    "word_count": 190,
+    "visual_format": {
+      "format_name": "Split Screen 2 Pantallas",
+      "difficulty_level": 2,
+      "setup_instructions": "Arriba: screencast o imagen. Abajo: Jesús hablando. Editar con CapCut.",
+      "recording_notes": "Grabar parte de abajo mirando a cámara. La parte de arriba se agrega en edición."
+    },
+    "angle_family": "oportunidad",
+    "angle_specific": "2.6_profesion_ia",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "veterinaria básica",
+    "model_sale_type": "democratizacion_por_ia",
+    "belief_change": {
+      "old_belief": "Mi profesión solo sirve para atender clientes uno a uno",
+      "mechanism": "La IA convierte tu conocimiento profesional en un producto digital escalable",
+      "new_belief": "Mi conocimiento profesional puede generar ingresos sin que yo esté presente"
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 3,
+        "ingredient_name": "Contrariano"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 26,
+        "ingredient_name": "Oportunidad Desperdiciada"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "Future Pacing Sensorial"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 85,
+        "ingredient_name": "Testimonio Diverso"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 109,
+        "ingredient_name": "CTA Directo"
+      }
+    ],
+    "transition_text": "Y lo de veterinaria es solo un ejemplo. Cualquier profesión se puede transformar así.",
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "En 2 horas te muestro cómo encontrar algo que la gente quiere comprar, cómo crearlo con IA y cómo empezar a venderlo. Sin experiencia. Sin saber de tecnología. Desde tu celular.",
+          "prueba": "Lo hicieron mamás, jubilados, pibes de 20, gente que nunca vendió nada. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, te puede cambiar todo.",
+          "urgencia": "Ya hay cientos de personas registradas para esta edición.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres, vas a entender por qué miles ya lo hicieron. Te espero."
+        },
+        "timing_seconds": 18
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "B",
+        "layers": {
+          "oferta": "En 3 días en vivo creás tu producto digital con IA, armás tu anuncio y hacés tu primera venta. Todo con acompañamiento.",
+          "prueba": "Un albañil de Tucumán, una jubilada de 63 años, una mamá de 3 hijos. Todos lo hicieron.",
+          "riesgo_cero": "Si no te sirve, perdiste 5 dólares y 3 tardes. Menos de lo que gastás en datos del celular. Si te sirve, te cambia la vida.",
+          "urgencia": "Cada día que no tenés tu producto en venta son ventas que alguien más está haciendo con el conocimiento que vos tenés.",
+          "orden_nlp": "Tocá el botón de acá abajo y anotate. Te espero el primer día."
+        },
+        "timing_seconds": 20
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "D",
+        "layers": {
+          "oferta": "Tengo una clase gratis donde te enseño a crear un producto digital con IA y empezar a venderlo.",
+          "prueba": "Miles ya lo hicieron.",
+          "riesgo_cero": "No te voy a vender nada. Es gratis.",
+          "urgencia": "Si solo querés scrollear, seguí de largo.",
+          "orden_nlp": "Pero si querés hacer algo, comentá 'IA' y andá al link de mi perfil. Te espero."
+        },
+        "timing_seconds": 15
+      }
+    ]
+  },
+  "createdAt": "2026-03-14T21:25:02.057Z"
+}

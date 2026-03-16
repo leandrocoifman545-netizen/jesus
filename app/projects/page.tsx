@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listProjects } from "@/lib/storage/local";
+import { cachedListProjects as listProjects } from "@/lib/storage/local";
 
 export default async function ProjectsPage() {
   const projects = await listProjects();

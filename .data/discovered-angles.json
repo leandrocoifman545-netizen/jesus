@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-03-15T17:59:21.254Z",
+  "total_candidates": 505,
+  "top_20": [
+    {
+      "niche": "auto-seleccionar",
+      "angle_family": "confrontacion",
+      "angle_specific": "3.x_gap",
+      "big_idea": "Familia \"confrontacion\" tiene solo 2/41 guiones — necesita más cobertura",
+      "source": "coverage_gap",
+      "score": 10900
+    },
+    {
+      "niche": "auto-seleccionar",
+      "angle_family": "identidad",
+      "angle_specific": "1.x_gap",
+      "big_idea": "Familia \"identidad\" tiene solo 3/41 guiones — necesita más cobertura",
+      "source": "coverage_gap",
+      "score": 10800
+    },
+    {
+      "niche": "auto-seleccionar",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.x_gap",
+      "big_idea": "Familia \"oportunidad\" tiene solo 3/41 guiones — necesita más cobertura",
+      "source": "coverage_gap",
+      "score": 10800
+    },
+    {
+      "niche": "auto-seleccionar",
+      "angle_family": "mecanismo",
+      "angle_specific": "4.x_gap",
+      "big_idea": "Familia \"mecanismo\" tiene solo 3/41 guiones — necesita más cobertura",
+      "source": "coverage_gap",
+      "score": 10800
+    },
+    {
+      "niche": "auto-seleccionar",
+      "angle_family": "historia",
+      "angle_specific": "5.x_gap",
+      "big_idea": "Familia \"historia\" tiene solo 3/41 guiones — necesita más cobertura",
+      "source": "coverage_gap",
+      "score": 10800
+    },
+    {
+      "niche": "trabajar desde casa haciendo manualidades",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.3_nicho_invisible",
+      "big_idea": "Miles buscan \"trabajar desde casa haciendo manualidades\" y casi nadie les vende una solución digital",
+      "source": "research",
+      "score": 8255,
+      "keyword": "trabajar desde casa haciendo manualidades",
+      "keyword_score": 6255
+    },
+    {
+      "niche": "como vender por internet sin tener productos",
+      "angle_family": "mecanismo",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Con IA + lo que sabés de como vender por, en una tarde tenés un producto digital vendible",
+      "source": "research",
+      "score": 8253,
+      "keyword": "como vender por internet sin tener productos",
+      "keyword_score": 6253
+    },
+    {
+      "niche": "trabajar desde casa haciendo manualidades en españa",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.3_nicho_invisible",
+      "big_idea": "Miles buscan \"trabajar desde casa haciendo manualidades en españa\" y casi nadie les vende una solución digital",
+      "source": "research",
+      "score": 8250,
+      "keyword": "trabajar desde casa haciendo manualidades en españa",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "para vender por internet que necesito",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Miles buscan \"para vender por internet que necesito\" y casi nadie les vende una solución digital",
+      "source": "research",
+      "score": 8250,
+      "keyword": "para vender por internet que necesito",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "productos digitales banco caja social",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Miles buscan \"productos digitales banco caja social\" y casi nadie les vende una solución digital",
+      "source": "research",
+      "score": 8250,
+      "keyword": "productos digitales banco caja social",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "para vender en hotmart hay que pagar",
+      "angle_family": "confrontacion",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Usás tu conocimiento de para vender en gratis todos los días — otros lo están cobrando",
+      "source": "research",
+      "score": 8250,
+      "keyword": "para vender en hotmart hay que pagar",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "negocio digital hijas de zapatero",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Miles buscan \"negocio digital hijas de zapatero\" y casi nadie les vende una solución digital",
+      "source": "research",
+      "score": 8250,
+      "keyword": "negocio digital hijas de zapatero",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "como ganar dinero con inteligencia artificial",
+      "angle_family": "identidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Hay personas que saben de como ganar dinero pero no saben que eso vale plata",
+      "source": "research",
+      "score": 8250,
+      "keyword": "como ganar dinero con inteligencia artificial",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "como vender con inteligencia artificial",
+      "angle_family": "mecanismo",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Con IA + lo que sabés de como vender con, en una tarde tenés un producto digital vendible",
+      "source": "research",
+      "score": 8250,
+      "keyword": "como vender con inteligencia artificial",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "como vender productos con inteligencia artificial",
+      "angle_family": "mecanismo",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Con IA + lo que sabés de como vender productos, en una tarde tenés un producto digital vendible",
+      "source": "research",
+      "score": 8250,
+      "keyword": "como vender productos con inteligencia artificial",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "cómo hacer dinero con inteligencia artificial",
+      "angle_family": "identidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Hay personas que saben de cómo hacer dinero pero no saben que eso vale plata",
+      "source": "research",
+      "score": 8250,
+      "keyword": "cómo hacer dinero con inteligencia artificial",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "trabajar desde casa respondiendo mensajes",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Miles buscan \"trabajar desde casa respondiendo mensajes\" y casi nadie les vende una solución digital",
+      "source": "research",
+      "score": 8250,
+      "keyword": "trabajar desde casa respondiendo mensajes",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "se puede ganar dinero con inteligencia artificial",
+      "angle_family": "identidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Hay personas que saben de se puede ganar pero no saben que eso vale plata",
+      "source": "research",
+      "score": 8250,
+      "keyword": "se puede ganar dinero con inteligencia artificial",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "productos digitales mas vendidos",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Miles buscan \"productos digitales mas vendidos\" y casi nadie les vende una solución digital",
+      "source": "research",
+      "score": 8101,
+      "keyword": "productos digitales mas vendidos",
+      "keyword_score": 6101
+    },
+    {
+      "niche": "ganar dinero con inteligencia artificial bot",
+      "angle_family": "identidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Hay personas que saben de ganar dinero con pero no saben que eso vale plata",
+      "source": "research",
+      "score": 8100,
+      "keyword": "ganar dinero con inteligencia artificial bot",
+      "keyword_score": 6100
+    }
+  ]
+}

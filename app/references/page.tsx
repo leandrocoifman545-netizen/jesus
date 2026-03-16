@@ -1,4 +1,4 @@
-import { listReferences } from "@/lib/storage/local";
+import { cachedListReferences as listReferences } from "@/lib/storage/local";
 import ReferenceLibrary from "@/components/reference-library";
 
 export default async function ReferencesPage() {
