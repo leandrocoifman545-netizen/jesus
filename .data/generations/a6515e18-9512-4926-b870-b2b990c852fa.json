@@ -1,0 +1,176 @@
+{
+  "id": "a6515e18-9512-4926-b870-b2b990c852fa",
+  "briefId": "8584179d-3249-49b2-b453-691c0335de69",
+  "title": "G3 — Nicho invisible: gente enseña inglés básico y factura más que un profesor con título",
+  "batch": "semana-2026-03-22",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_nicho_invisible",
+    "body_type": "historia_con_giro",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "inglés básico para adultos LATAM",
+    "model_sale_type": "matematica_simple",
+    "visual_format": "Split Screen 2 Pantallas",
+    "transition_text": "Y inglés es solo UN ejemplo. Hay cientos de nichos donde la gente busca guías y nadie las hace. Todo eso lo enseño paso a paso.",
+    "total_duration_seconds": 80,
+    "word_count": 175,
+    "belief_change": {
+      "old_belief": "Necesito ser experto o nativo para vender algo de inglés",
+      "mechanism": "Solo necesitás saber más que el que está un paso atrás, y la IA organiza el contenido",
+      "new_belief": "No necesito ser bilingüe — necesito saber más que el que recién empieza"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Hay un mercado enorme que nadie está atendiendo como producto digital",
+        "installed_via": "Dato de búsquedas + gap de mercado",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "No necesito ser nativo ni bilingüe",
+        "installed_via": "Declaración contraintuitiva con evidencia",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "La IA arma todo el curso por mí",
+        "installed_via": "Mecanismo concreto",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Los que más venden no son los más expertos",
+        "installed_via": "Evidencia de mercado real",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Gente normal ya lo hizo con resultados concretos",
+        "installed_via": "Case study con números",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "contraintuitivo",
+        "script_text": "Hay gente vendiendo cursos de inglés básico en internet que no son profesores ni nativos. Facturan más que un docente con título. ¿Sabés por qué? Porque organizaron lo que sabían y lo subieron.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "script_text": "Millones de personas buscan cada mes 'aprender inglés desde cero' en Google. La mayoría encuentra videos gratis y desorganizados. Casi nadie les vende una guía paso a paso que funcione.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "script_text": "Todo el mundo quiere aprender inglés. Vos sabés más inglés que la mayoría de los que buscan. Y seguís mirando cómo otros venden lo que vos podrías enseñar.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "script_text": "Sabés pedir comida en inglés, entendés canciones, ves series sin subtítulos. Eso que para vos es normal, para millones de personas en LATAM es un superpoder. Y están dispuestas a pagar por aprenderlo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "historia_mini",
+        "script_text": "Un tipo que vivió 2 años en Miami armó un curso de frases de inglés para viajeros. Lo hizo con IA en una tarde. Hoy vende 15 copias por semana sin mostrar la cara.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "provocacion_evidencia",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Hay un mercado enorme que nadie está atendiendo como producto digital",
+          "script_text": "Todo el mundo quiere aprender inglés. Millones lo buscan en Google cada mes. La mayoría encuentra videos sueltos, desorganizados, que no van a ningún lado. ¿Sabés qué falta? Una guía simple, paso a paso, que alguien pueda seguir.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No necesito ser nativo ni bilingüe",
+          "script_text": "Y no necesitás ser profesor de inglés. No necesitás un título. Necesitás saber más que el que está un paso atrás. Si entendés canciones, si podés pedir comida en otro país, ya sabés más que el que recién arranca.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA arma todo el curso por mí",
+          "script_text": "Le decís a la IA: 'Armame un curso de inglés básico para principiantes'. Te organiza vocabulario, frases, ejercicios, hasta audios. En una tarde tenés el producto. Lo subís y lo vendés.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Los que más venden no son los más expertos",
+          "script_text": "Los cursos de inglés más vendidos en Hotmart no los hicieron nativos. Los hicieron personas normales que organizaron lo que sabían y lo pusieron en un formato que se entiende. Nada más.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente normal ya lo hizo con resultados concretos",
+          "script_text": "Un pibe que vivió 2 años en Miami armó un curso de frases para viajeros con IA. No es profesor. Lo vende a $10. Saca 15 copias por semana sin mostrar la cara.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Los números cierran incluso con poco volumen",
+          "script_text": "Hacé la cuenta. Un producto de $10. Vendés 3 por día. Son $900 al mes. Con $1 de publicidad llegás a 10 personas interesadas. Los números cierran solos.",
+          "timing_seconds": 9
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "Declaración contraintuitiva"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con números"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad extrema"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legítimo"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "D"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-03-16T15:09:26.353Z"
+}

@@ -1,0 +1,185 @@
+{
+  "id": "ef7c51be-c6c0-44a8-b820-e8434677d9f0",
+  "briefId": "d5a8eb3f-4947-43f6-848a-a4dbaed60bb1",
+  "title": "Profesión + IA — masajes y terapias",
+  "batch": "semana-2026-03-22",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.6_profesion_ia",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "masajes y terapias corporales",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Y lo que te acabo de mostrar con masajes y terapias es solo UNO de los productos que podés crear con lo que ya sabés.",
+    "total_duration_seconds": 79,
+    "word_count": 170,
+    "belief_change": {
+      "old_belief": "Cobro por hora, si no trabajo no gano — no puedo emprender sin descuidar a mis hijos",
+      "mechanism": "La IA permite empaquetar conocimiento profesional en un producto digital que se vende solo por WhatsApp",
+      "new_belief": "Lo que ya sé se puede vender como producto digital mientras cuido a mis hijos"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi situación de cobrar por hora es insostenible y me limita",
+        "installed_via": "Descripción sensorial de su día a día real",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación — Cobrar por hora"
+      },
+      {
+        "belief": "Mi conocimiento tiene valor más allá de mis manos",
+        "installed_via": "Revelación de búsquedas de Google sobre su expertise",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre — Valor más allá de las manos"
+      },
+      {
+        "belief": "Puedo crear un producto con IA en una tarde que se vende solo",
+        "installed_via": "Proceso concreto: IA + WhatsApp + una tarde",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo — Guía en una tarde"
+      },
+      {
+        "belief": "No necesito cambiar nada de mi vida actual para empezar",
+        "installed_via": "Lista de negaciones de barreras comunes",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición — No necesitás nada extra"
+      },
+      {
+        "belief": "Alguien en mi misma profesión ya lo hizo y le funciona",
+        "installed_via": "Caso real terapeuta holística con números",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba — Terapeuta holística"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "script_text": "Marta es masajista. Atiende 6 pacientes por día. Gana bien. Pero el día que se enfermó, no cobró un peso. Hasta que descubrió algo que le cambió las cuentas.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "timeline_provocacion",
+        "script_text": "Lunes: 6 pacientes. Martes: 5. Miércoles: te duele la espalda y atendés 3. El mes que viene igual. Y el siguiente. ¿Hasta cuándo tu cuerpo va a sostener tu ingreso?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Imaginate que cada vez que alguien busca 'cómo aliviar una contractura' en Google, te caiga plata en la cuenta. Suena loco, pero es más simple de lo que pensás.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "script_text": "Una guía de automasaje de 15 páginas se vende a 4 dólares por WhatsApp. Se descarga 30 veces por semana. Cero consultorios. Cero agenda. Solo lo que ya sabés, organizado en un PDF.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "script_text": "No te estoy diciendo que dejes de ser masajista. Te estoy diciendo que lo que ya sabés tiene un valor que todavía no estás cobrando. Dejame explicarte.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "futuro_sensorial",
+      "sections": [
+        {
+          "section_name": "Identificación — Cobrar por hora",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi situación de cobrar por hora es insostenible y me limita",
+          "script_text": "Sos masajista. O terapeuta. Cobrás por hora. Si no trabajás, no cobrás. Y encima tenés hijos, casa, cosas que atender. Cada día que faltás al consultorio, no entra un peso.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Quiebre — Valor más allá de las manos",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi conocimiento tiene valor más allá de mis manos",
+          "script_text": "Pero pensá algo. Lo que vos sabés de nudos, contracturas, puntos de presión — hay miles de personas buscando eso en Google ahora mismo. Tu conocimiento tiene valor más allá de tus manos.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo — Guía en una tarde",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo crear un producto con IA en una tarde que se vende solo",
+          "script_text": "Con inteligencia artificial creás una guía de automasaje en una tarde. La subís. Se vende por WhatsApp mientras vos estás con tus hijos o atendiendo pacientes.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Demolición — No necesitás nada extra",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito cambiar nada de mi vida actual para empezar",
+          "script_text": "No necesitás dejar de atender. No necesitás ser influencer. No necesitás invertir plata. Solo necesitás lo que ya sabés.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Prueba — Terapeuta holística",
+          "persuasion_function": "prueba",
+          "micro_belief": "Alguien en mi misma profesión ya lo hizo y le funciona",
+          "script_text": "Una terapeuta holística creó una guía de puntos de presión con IA. La vende por WhatsApp. Sumó 800 dólares al mes sin una hora más de consultorio.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La IA niveló el campo de juego para personas como yo",
+          "script_text": "Antes crear un curso te costaba meses y miles de dólares. Hoy la IA te deja crear un producto profesional en una tarde. El campo de juego se niveló.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 2,
+        "ingredient_name": "Contraste"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 32,
+        "ingredient_name": "Future pacing negativo"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad estratégica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legítimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 91,
+        "ingredient_name": "Testimonio específico"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 108,
+        "ingredient_name": "CTA directo"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "D"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-03-16T15:17:45.488Z"
+}

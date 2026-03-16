@@ -47,6 +47,12 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | **Jerarquía de decisiones** | **`.data/jerarquia-decisiones.md`** | **No había regla de qué sistema gana en conflictos** |
 | **Auto-brief (anti-genérico)** | **`lib/ai/auto-brief.ts`** | **Claude elegía defaults genéricos cuando no había brief detallado** |
 | **Angle Discovery** | **`lib/ai/angle-discovery.ts`** | **Ángulos se elegían a mano — ahora se descubren de Google Suggest × cobertura** |
+| **Anti-repetición de hooks** | **`scripts/validate-hooks.mjs` + `.data/patrones-prohibidos-leads.md`** | **Hooks que sonaban iguales cambiando solo el nicho — ahora se bloquean por esqueleto estructural** |
+| **Avatares formales (7)** | **`.data/avatares-adp.md`** | **Segmentos genéricos → personas concretas con nombre, edad, situación y lenguaje** |
+| **5 niveles Schwartz** | **`lib/constants/hook-types.ts` + auto-brief** | **Solo TOFU/MOFU → 5 niveles de conciencia que cambian tono entero. Niveles 1-2 = orgánico/retargeting** |
+| **Ad Copy Embudo** | **`/api/generate/ad-copy-embudo`** | **No existía — texto de 200-350 palabras que recorre 5 niveles** |
+| **Retargeting Hammer Them** | **`/api/generate/retargeting`** | **No existía — 4 cuadrantes de piezas cortas para retargeting** |
+| **Explotar Ángulo** | **`/api/generate/explode-angle`** | **No existía — 1 ángulo → 5 niveles + ad copy + 4 retargeting hooks** |
 
 ## Sistema auto-brief (anti-genérico)
 
@@ -56,17 +62,21 @@ Cuando el usuario no especifica ángulo, cuerpo, segmento, funnel o venta del mo
 
 **Lo único que NO se auto-selecciona es la emoción dominante** — se rota aleatoriamente entre 8 arcos emocionales. El usuario puede forzarla con `[EMOCIÓN: miedo → alivio]` en las notas.
 
+**El auto-brief ahora selecciona AVATAR y AWARENESS LEVEL (Schwartz)** además de los campos anteriores. El avatar se elige por cobertura (menos usado gana) y el awareness level también. El nivel de awareness determina el funnel: niveles 1-2 → RETARGET (orgánico), niveles 3-5 → TOFU/MOFU (ads directos).
+
 **El usuario puede overridear cualquier campo** con tags en additionalNotes:
 - `[ÁNGULO: confrontacion]`, `[CUERPO: demolicion_mito]`, `[SEGMENTO: C]`
 - `[FUNNEL: RETARGET]`, `[VENTA: matematica_simple]`, `[EMOCIÓN: indignación → determinación]`
+- `[AVATAR: laura]`, `[AWARENESS: 3]` (o `[SCHWARTZ: 3]` o `[NIVEL: 3]`)
 
-**6 validaciones post-generación** aseguran que el output no sea genérico:
+**7 validaciones post-generación** aseguran que el output no sea genérico:
 1. Ingredientes prohibidos (máx 1 de F#73/F#74/G#90/B#29)
 2. Hooks saturados bloqueados (>25% = prohibido)
 3. Nichos de 1 palabra prohibidos
 4. Anti-decay (últimos hooks = misma calidad que los primeros)
 5. CTAs forzados desde `ctas-activos.json`
 6. Body type validado determinísticamente (estructura debe matchear el tipo)
+7. **Hooks anti-repetición estructural** (`validate-hooks.mjs`): 7 patrones prohibidos + similitud >55% contra hooks existentes = bloqueo
 
 ## Regla anti-repetición (P0)
 
@@ -75,6 +85,7 @@ Cuando el usuario no especifica ángulo, cuerpo, segmento, funnel o venta del mo
 - Patrones prohibidos como default (arco demo, frases muleta, ingredientes gastados)
 - Ingredientes frescos a priorizar
 - Categorías opcionales (se pueden saltear según el arco)
+- **7 esqueletos de leads prohibidos** (`.data/patrones-prohibidos-leads.md`) — cambiar el nicho NO alcanza, hay que cambiar el mecanismo emocional
 
 ## Estructura correcta de un guion (micro-VSL de 5 beats)
 

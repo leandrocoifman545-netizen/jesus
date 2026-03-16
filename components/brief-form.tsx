@@ -33,6 +33,8 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
   const [angleFamily, setAngleFamily] = useState("");
   const [bodyType, setBodyType] = useState("");
   const [funnelStage, setFunnelStage] = useState("");
+  const [avatar, setAvatar] = useState("");
+  const [awarenessLevel, setAwarenessLevel] = useState("");
 
   // Research insights state
   const [researchOpen, setResearchOpen] = useState(false);
@@ -105,6 +107,8 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
     if (bodyType) selectorParts.push(`[BODY TYPE: ${bodyType}]`);
     if (funnelStage) selectorParts.push(`[FUNNEL: ${funnelStage}]`);
     if (segment) selectorParts.push(`[SEGMENTO: ${segment}]`);
+    if (avatar) selectorParts.push(`[AVATAR: ${avatar}]`);
+    if (awarenessLevel) selectorParts.push(`[AWARENESS: ${awarenessLevel}]`);
     const selectorPrefix = selectorParts.length > 0 ? selectorParts.join(" ") : "";
     const finalNotes = [selectorPrefix, additionalNotes].filter(Boolean).join("\n") || undefined;
 
@@ -394,6 +398,42 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
             <option value="TOFU">TOFU</option>
             <option value="MOFU">MOFU</option>
             <option value="RETARGET">RETARGET</option>
+          </select>
+        </div>
+
+        {/* Avatar */}
+        <div>
+          <label className="block text-xs font-medium text-zinc-500 mb-1.5">Avatar</label>
+          <select
+            value={avatar}
+            onChange={(e) => setAvatar(e.target.value)}
+            className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 appearance-none cursor-pointer"
+          >
+            <option value="">Auto (menos usado)</option>
+            <option value="martin">Martin (26, oficinista)</option>
+            <option value="laura">Laura (38, mama)</option>
+            <option value="roberto">Roberto (58, jubilado)</option>
+            <option value="valentina">Valentina (32, freelancer)</option>
+            <option value="diego">Diego (44, esceptico)</option>
+            <option value="camila">Camila (29, inmigrante)</option>
+            <option value="soledad">Soledad (41, profesional)</option>
+          </select>
+        </div>
+
+        {/* Awareness Level (Schwartz) */}
+        <div>
+          <label className="block text-xs font-medium text-zinc-500 mb-1.5">Schwartz</label>
+          <select
+            value={awarenessLevel}
+            onChange={(e) => setAwarenessLevel(e.target.value)}
+            className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 appearance-none cursor-pointer"
+          >
+            <option value="">Auto (menos usado)</option>
+            <option value="1">1 — Unaware</option>
+            <option value="2">2 — Problem Aware</option>
+            <option value="3">3 — Solution Aware</option>
+            <option value="4">4 — Product Aware</option>
+            <option value="5">5 — Most Aware</option>
           </select>
         </div>
       </div>

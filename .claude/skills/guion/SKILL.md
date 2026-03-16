@@ -248,12 +248,38 @@ Cada lead = 2-3 oraciones: [Abrir gap] + [Negar respuesta obvia] + [Puente al cu
 ### 5 leads, cada uno con tipo DISTINTO. Tipos disponibles:
 situacion_especifica | dato_concreto | pregunta_incomoda | confesion | contraintuitivo | provocacion | historia_mini | analogia | negacion_directa | observacion_tendencia | timeline_provocacion | contrato_compromiso | actuacion_dialogo | anti_publico
 
+### REGLA ANTI-REPETICIÓN DE LEADS (P0 — validación automática)
+
+**El sistema valida automáticamente** (`scripts/validate-hooks.mjs` integrado en `save-generation.mjs`).
+Si un lead matchea un patrón prohibido o es >55% similar a un hook existente, **BLOQUEA el guardado**.
+
+**7 patrones estructurales PROHIBIDOS** (ver `.data/patrones-prohibidos-leads.md` para detalle):
+- **P1:** "¿Cuántas veces te dijeron/preguntaron [elogio]?" — halago → vale plata
+- **P2:** "[Persona] le pidió a la IA... armó guía... vende" — arco predecible
+- **P3:** "Son las [hora]. Los chicos durmieron. Tenés una hora..." — escena doméstica
+- **P4:** "Sabés más de X que la mayoría" — flattery + guilt
+- **P5:** "No necesitás X. No necesitás Y. No necesitás Z." — triple negación
+- **P6:** "¿Cuántos cursos compraste que no terminaste?" — quemado en RETARGET
+- **P7:** "Cada vez más gente busca [X] en Google" — tendencia genérica
+
+**Regla clave:** Si cambiar el sustantivo/nicho produce el mismo lead, es repetición estructural y está prohibido.
+
+**Qué SÍ funciona (mecanismos frescos):**
+- Historia personal con fracaso concreto y dato verificable
+- Voz de un tercero / diálogo inesperado (hijo, cliente, vecino)
+- Curiosidad geográfica o temporal específica
+- Flip contraintuitivo genuino (contradecir la expectativa real, no la obvia)
+- Timeline con proyección a futuro concreta
+- Analogía no-digital / mundo real
+- Provocación con dato específico anclado
+
 ### Prohibiciones en leads:
 - NUNCA "no te alcanza la plata"
 - NUNCA porcentajes inventados
 - NUNCA "Todo el mundo dice X. No es así." (requemado)
 - NUNCA leads motivacionales sin mecanismo
 - Lead ≠ primera sección del body (no repetir la misma revelación)
+- NUNCA los 7 patrones estructurales de arriba (validación automática los bloquea)
 
 ## Paso 8: Asignar 3 BLOQUES CTA (de ctas-biblioteca.md)
 

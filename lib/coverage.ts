@@ -1,6 +1,6 @@
 import { listGenerations, type StoredGeneration } from "./storage/local";
 import { extractTags } from "./utils/classification";
-import { ALL_SEGMENTS, ALL_FUNNELS, ALL_HOOK_TYPES } from "./constants/hook-types";
+import { ALL_SEGMENTS, ALL_FUNNELS, ALL_HOOK_TYPES, ALL_AVATARS, ALL_AWARENESS_LEVELS } from "./constants/hook-types";
 
 // Module-level cache for coverage data
 let coverageCache: CoverageData | null = null;
@@ -17,6 +17,8 @@ export interface CoverageData {
   byNiche: Record<string, number>;
   byLeadType: Record<string, number>;
   byModelSaleType: Record<string, number>;
+  byAvatar: Record<string, number>;
+  byAwareness: Record<string, number>;
   byStatus: Record<string, number>;
   gaps: string[];
   lastUpdated: string;
@@ -36,6 +38,8 @@ export async function computeCoverage(): Promise<CoverageData> {
     byNiche: {},
     byLeadType: {},
     byModelSaleType: {},
+    byAvatar: {},
+    byAwareness: {},
     byStatus: {},
     gaps: [],
     lastUpdated: new Date().toISOString(),
@@ -109,6 +113,17 @@ export async function computeCoverage(): Promise<CoverageData> {
     if (script.model_sale_type) {
       data.byModelSaleType[script.model_sale_type] = (data.byModelSaleType[script.model_sale_type] || 0) + 1;
     }
+
+    // Avatar
+    if (script.avatar) {
+      data.byAvatar[script.avatar] = (data.byAvatar[script.avatar] || 0) + 1;
+    }
+
+    // Awareness level (Schwartz)
+    if (script.awareness_level) {
+      const key = String(script.awareness_level);
+      data.byAwareness[key] = (data.byAwareness[key] || 0) + 1;
+    }
   }
 
   // Detect gaps
@@ -120,6 +135,12 @@ export async function computeCoverage(): Promise<CoverageData> {
   }
   for (const h of ALL_HOOK_TYPES) {
     if (!data.byLeadType[h]) data.gaps.push(`Lead type "${h}" sin usar`);
+  }
+  for (const a of ALL_AVATARS) {
+    if (!data.byAvatar[a]) data.gaps.push(`Avatar "${a}" sin cobertura`);
+  }
+  for (const level of ALL_AWARENESS_LEVELS) {
+    if (!data.byAwareness[String(level)]) data.gaps.push(`Awareness nivel ${level} sin cobertura`);
   }
 
   return data;

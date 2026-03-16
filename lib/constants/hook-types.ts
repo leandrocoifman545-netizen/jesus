@@ -77,6 +77,70 @@ export const ALL_SEGMENTS = ["A", "B", "C", "D"];
 // All funnels
 export const ALL_FUNNELS = ["TOFU", "MOFU", "RETARGET"];
 
+// All avatars (formal personas from avatares-adp.md)
+export const ALL_AVATARS = ["martin", "laura", "roberto", "valentina", "diego", "camila", "soledad"];
+
+export const AVATAR_LABELS: Record<string, string> = {
+  martin: "Martín (26, oficinista)",
+  laura: "Laura (38, mamá)",
+  roberto: "Roberto (58, jubilado)",
+  valentina: "Valentina (32, freelancer)",
+  diego: "Diego (44, escéptico)",
+  camila: "Camila (29, inmigrante)",
+  soledad: "Soledad (41, profesional)",
+};
+
+export const AVATAR_COLORS: Record<string, string> = {
+  martin: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+  laura: "bg-pink-500/10 text-pink-400 border-pink-500/20",
+  roberto: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+  valentina: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+  diego: "bg-red-500/10 text-red-400 border-red-500/20",
+  camila: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+  soledad: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+};
+
+// Avatar → segment mapping
+export const AVATAR_SEGMENT_MAP: Record<string, string> = {
+  martin: "A",
+  laura: "C",
+  roberto: "D",
+  valentina: "B",
+  diego: "D",
+  camila: "A",
+  soledad: "B",
+};
+
+// All awareness levels (Schwartz)
+export const ALL_AWARENESS_LEVELS = [1, 2, 3, 4, 5];
+
+export const AWARENESS_LABELS: Record<number, string> = {
+  1: "Unaware",
+  2: "Problem Aware",
+  3: "Solution Aware",
+  4: "Product Aware",
+  5: "Most Aware",
+};
+
+export const AWARENESS_COLORS: Record<number, string> = {
+  1: "bg-zinc-500/10 text-zinc-400 border-zinc-500/20",
+  2: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+  3: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+  4: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+  5: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+};
+
+// Awareness level → channel routing (Schwartz rules from La Máquina de Ángulos)
+// Niveles 1-2: NO van en ads directos — orgánico, retargeting, email
+// Niveles 3-5: Ads directos con CTA
+export const AWARENESS_CHANNEL_MAP: Record<number, string[]> = {
+  1: ["organico", "retargeting", "email"],
+  2: ["organico", "retargeting", "email"],
+  3: ["ads_directos", "organico"],
+  4: ["ads_directos", "retargeting"],
+  5: ["ads_directos", "retargeting"],
+};
+
 // All emotional arcs (from reglas-diversidad.md)
 export const ALL_EMOTIONAL_ARCS = [
   "revelacion_oportunidad",

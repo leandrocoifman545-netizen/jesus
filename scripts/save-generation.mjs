@@ -7,6 +7,7 @@
 import { randomUUID } from "crypto";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "fs";
 import { join } from "path";
+import { validateHooks } from "./validate-hooks.mjs";
 
 const DATA_DIR = join(import.meta.dirname, "..", ".data");
 const BRIEFS_DIR = join(DATA_DIR, "briefs");
@@ -67,6 +68,19 @@ if (!script.hooks || script.hooks.length === 0) {
   const hooksNoTiming = script.hooks.filter(h => h.timing_seconds == null);
   if (hooksNoTiming.length > 0) {
     warnings.push(`${hooksNoTiming.length} hook(s) sin timing_seconds`);
+  }
+
+  // Structural pattern + similarity validation
+  try {
+    const hookResult = validateHooks(script.hooks);
+    for (const e of hookResult.errors) {
+      errors.push(`🔁 ${e.message}`);
+    }
+    for (const w of hookResult.warnings) {
+      warnings.push(`🔁 ${w.message}`);
+    }
+  } catch (e) {
+    warnings.push(`Hook validation skipped: ${e.message}`);
   }
 }
 

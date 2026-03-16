@@ -136,6 +136,10 @@ export interface ScriptOutput {
   segment?: string;
   /** Etapa del funnel: TOFU/MOFU/RETARGET */
   funnel_stage?: string;
+  /** Avatar formal al que se dirige el guion (martin/laura/roberto/valentina/diego/camila/soledad) */
+  avatar?: string;
+  /** Nivel de conciencia de Schwartz (1-5): 1=Unaware, 2=Problem Aware, 3=Solution Aware, 4=Product Aware, 5=Most Aware */
+  awareness_level?: number;
   /** Nicho específico del guion */
   niche?: string;
   /** Cambio de creencia explícito */

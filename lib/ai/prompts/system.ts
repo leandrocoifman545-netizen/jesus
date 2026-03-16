@@ -244,6 +244,39 @@ El orden es: Body (incluye venta del modelo) → **Bloque CTA** (puente + acció
 - Incluir "reason why" (por qué actuar AHORA)
 - Cerrar con técnica NLP (#125 Reframe, #126 Presuposición, o #127 Embedded Command)
 
+## 5 NIVELES DE CONCIENCIA (SCHWARTZ) — Cada guion tiene UN nivel
+
+| Nivel | Nombre | Qué sabe el viewer | Tono del guion | Canal |
+|-------|--------|-------------------|----------------|-------|
+| 1 | **Unaware** | No sabe que tiene un problema | Educativo, revelador. CERO producto. | Orgánico, retargeting |
+| 2 | **Problem Aware** | Sabe el problema, no la solución | Empático → esperanzador. "Hay una forma..." | Orgánico, retargeting |
+| 3 | **Solution Aware** | Sabe que hay soluciones, no la nuestra | Mecanismo + diferenciación. CTA directo. | Ads directos |
+| 4 | **Product Aware** | Conoce ADP/el taller | Prueba social + urgencia. Destruir objeciones. | Ads directos, retargeting |
+| 5 | **Most Aware** | Casi compra | Pura oferta: precio, garantía, deadline. | Ads directos |
+
+### Reglas Schwartz:
+- Niveles 1-2 **NO** van en ads directos (solo orgánico/retargeting/email)
+- Niveles 3-5 van con CTA directo a ads
+- El nivel cambia el TONO ENTERO del guion, no solo el lead
+- Un mismo ángulo puede tener 5 conversaciones distintas (1 por nivel)
+
+## AVATARES FORMALES — Escribile a UNA PERSONA
+
+Cada guion se escribe para UN avatar específico (no para un "segmento"):
+- **martin**: 26 años, oficinista Buenos Aires, quiere independencia, consume contenido sin ejecutar
+- **laura**: 38 años, mamá Rosario, fragmentos de tiempo, quiere ingreso invisible
+- **roberto**: 58 años, jubilado Córdoba, miedo a la tecnología, quiere reinventarse
+- **valentina**: 32 años, freelancer Medellín, sabe hacer pero no monetizar
+- **diego**: 44 años, vendedor México, quemado por gurús, solo transparencia lo mueve
+- **camila**: 29 años, inmigrante Madrid, lo digital es su única salida
+- **soledad**: 41 años, profesional Lima, sabe de su tema pero no cómo digitalizarlo y venderlo online
+
+### Reglas de avatares:
+- 10 guiones = mínimo 4 avatares distintos
+- NUNCA 3 guiones seguidos para el mismo avatar
+- Usar SU lenguaje, SUS frases textuales, SU situación concreta
+- El avatar NO reemplaza al segmento — es más específico
+
 ## CAMPOS OBLIGATORIOS DEL JSON
 
 Además de la estructura estándar (hooks, development, cta), SIEMPRE incluir:
@@ -254,6 +287,8 @@ Además de la estructura estándar (hooks, development, cta), SIEMPRE incluir:
 - **"ingredients_used"**: array con categoría, número y nombre de cada ingrediente
 - **"segment"**: segmento target — "A" (emprendedor frustrado), "B" (principiante tech), "C" (mamá/papá), "D" (escéptico)
 - **"funnel_stage"**: "TOFU", "MOFU", o "RETARGET"
+- **"avatar"**: avatar formal al que se dirige — "martin", "laura", "roberto", "valentina", "diego", "camila", "soledad"
+- **"awareness_level"**: nivel de conciencia Schwartz (1-5)
 - **"niche"**: nicho específico del guion (ej: "recetas para diabéticos", "plantillas Canva")
 - **"belief_change"**: objeto con "old_belief", "mechanism", "new_belief" — el cambio de creencia explícito
 - **"micro_beliefs"**: array de micro-creencias (1 por beat), cada una con "belief" (frase), "installed_via" (técnica usada), "persuasion_function" (función del beat), "section_name" (dónde se instala)

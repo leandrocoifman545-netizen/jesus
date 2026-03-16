@@ -126,6 +126,8 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
   "angle_specific": string (ej: "1.2_oficinista_atrapado", "3.4_comparacion_social"),
   "segment": string ("A" | "B" | "C" | "D"),
   "funnel_stage": string ("TOFU" | "MOFU" | "RETARGET"),
+  "avatar": string ("martin" | "laura" | "roberto" | "valentina" | "diego" | "camila" | "soledad"),
+  "awareness_level": number (1-5, nivel de conciencia Schwartz: 1=Unaware, 2=Problem Aware, 3=Solution Aware, 4=Product Aware, 5=Most Aware),
   "niche": string (nicho específico del guion, ej: "recetas para diabéticos"),
   "belief_change": {
     "old_belief": string (creencia vieja que el viewer tiene),
@@ -676,6 +678,14 @@ function extractBriefOverrides(brief: BriefInput): Record<string, string | undef
   const emotionMatch = notes.match(/\[EMOCI[ÓO]N:\s*([^\]]+)\]/i);
   if (emotionMatch) overrides.emotion = emotionMatch[1].trim();
 
+  // Match [AVATAR: martin] or [AVATAR: laura]
+  const avatarMatch = notes.match(/\[AVATAR:\s*(\w+)\]/i);
+  if (avatarMatch) overrides.avatar = avatarMatch[1].toLowerCase();
+
+  // Match [AWARENESS: 3] or [SCHWARTZ: 3] or [NIVEL: 3]
+  const awarenessMatch = notes.match(/\[(AWARENESS|SCHWARTZ|NIVEL):\s*([1-5])\]/i);
+  if (awarenessMatch) overrides.awareness_level = awarenessMatch[2];
+
   return overrides;
 }
 
@@ -688,7 +698,11 @@ async function buildUserPrompt(brief: BriefInput): Promise<{ prompt: string; pat
   let prompt = buildBriefContext(brief);
 
   // AUTO-BRIEF: smart selection of all parameters based on coverage data
-  const overrides = extractBriefOverrides(brief);
+  const rawOverrides = extractBriefOverrides(brief);
+  const overrides = {
+    ...rawOverrides,
+    awareness_level: rawOverrides.awareness_level ? parseInt(rawOverrides.awareness_level, 10) : undefined,
+  };
 
   // Phase 1: Run all independent async operations in parallel
   const [refs, winnerExamples, coverageGaps, autoBrief, caseStudies, burnedLeads, activeCTAs] =
@@ -1773,4 +1787,340 @@ export async function extractPDFText(pdfBuffer: Buffer): Promise<string> {
     throw new Error("No se pudo extraer texto del PDF");
   }
   return textBlock.text.trim();
+}
+
+// --- Ad Copy Embudo (Schwartz funnel in a single text) ---
+
+export interface AdCopyEmbudo {
+  title: string;
+  copy_text: string;
+  word_count: number;
+  awareness_flow: string; // "1→2→3→4→5"
+  target_platform: string;
+  angle_used: string;
+  niche: string;
+}
+
+/**
+ * Generate an Ad Copy Embudo from an existing script.
+ * A single text (200-350 words) that walks through all 5 awareness levels.
+ */
+export async function generateAdCopyEmbudo(script: ScriptOutput): Promise<AdCopyEmbudo> {
+  const client = getAnthropicClient();
+
+  const bodyText = script.development.sections.map((s) => s.script_text).join("\n");
+  const hooksText = script.hooks.map((h) => `[${h.hook_type}] ${h.script_text}`).join("\n");
+
+  const prompt = `## TAREA: Generar un Ad Copy Embudo
+
+Tenés un guion de video existente. Tu tarea es convertirlo en un AD COPY EMBUDO: un SOLO texto de 200-350 palabras que recorre los 5 niveles de conciencia de Schwartz en secuencia.
+
+### El guion original:
+
+**Ángulo:** ${script.angle_family || "no especificado"} — ${script.angle_specific || ""}
+**Nicho:** ${script.niche || "no especificado"}
+**Segmento:** ${script.segment || "no especificado"}
+**Avatar:** ${script.avatar || "no especificado"}
+**Creencia central:** ${script.belief_change?.old_belief || ""} → ${script.belief_change?.new_belief || ""}
+
+**Hooks disponibles:**
+${hooksText}
+
+**Cuerpo:**
+${bodyText}
+
+### Estructura del Ad Copy Embudo (5 bloques en un solo texto):
+
+1. **UNAWARE (2-3 oraciones):** Despertar la conciencia del problema. "¿Sabías que...?" Sin vender nada.
+2. **PROBLEM AWARE (2-3 oraciones):** Amplificar el dolor. "Y lo peor es que..." Revelar que hay salida.
+3. **SOLUTION AWARE (3-4 oraciones):** Posicionar productos digitales con IA como LA solución. Diferenciar del resto.
+4. **PRODUCT AWARE (2-3 oraciones):** Presentar la oferta concreta (clase/taller). Prueba social.
+5. **MOST AWARE (1-2 oraciones):** CTA directo. Precio, urgencia, acción.
+
+### Reglas:
+- 200-350 palabras TOTAL (es un copy para Meta/TikTok ads, no un guion de video)
+- Voseo argentino SIEMPRE
+- Las transiciones entre niveles deben ser INVISIBLES — que fluya como un solo texto
+- Usar datos reales del guion original (no inventar)
+- El copy debe poder funcionar SOLO, sin video
+- NO usar emojis ni bullets — es prosa continua
+- Comprimir: cada palabra cuenta. Si se puede decir en menos palabras, hacelo.
+
+### Responde con JSON:
+{
+  "title": string (título interno del copy, 5-10 palabras),
+  "copy_text": string (el ad copy embudo completo, 200-350 palabras),
+  "word_count": number,
+  "awareness_flow": "1→2→3→4→5",
+  "target_platform": "Meta Ads",
+  "angle_used": string (ángulo del guion original),
+  "niche": string (nicho del guion original)
+}
+
+IMPORTANTE: Responde ÚNICAMENTE con el JSON.`;
+
+  const response = await client.messages.create({
+    model: CLAUDE_MODEL,
+    max_tokens: 2048,
+    system: [
+      {
+        type: "text",
+        text: "Eres un copywriter senior de performance marketing. Escribís en español argentino (voseo). Especializás en ad copies que convierten para Meta Ads y TikTok Ads.",
+      },
+    ],
+    messages: [{ role: "user", content: prompt }],
+    temperature: 0.7,
+  });
+
+  const textBlock = response.content.find((b) => b.type === "text");
+  if (!textBlock || textBlock.type !== "text") {
+    throw new Error("Sin respuesta de Claude para ad copy embudo");
+  }
+
+  return extractJSON(textBlock.text) as AdCopyEmbudo;
+}
+
+// --- Retargeting: Hammer Them (4 quadrants) ---
+
+export interface RetargetingQuadrant {
+  quadrant: "Q1_preguntas" | "Q2_preguntas_segundo_orden" | "Q3_expectativas" | "Q4_objeciones";
+  quadrant_label: string;
+  script_text: string;
+  hook: string;
+  timing_seconds: number;
+  awareness_level: number;
+}
+
+export interface RetargetingPack {
+  source_generation_id: string;
+  angle_used: string;
+  niche: string;
+  quadrants: RetargetingQuadrant[];
+}
+
+/**
+ * Generate retargeting pieces from an existing script using Hammer Them framework.
+ * 4 quadrants: Preguntas, Preguntas de 2do orden, Expectativas, Objeciones.
+ */
+export async function generateRetargeting(
+  script: ScriptOutput,
+  generationId: string,
+): Promise<RetargetingPack> {
+  const client = getAnthropicClient();
+
+  const bodyText = script.development.sections.map((s) => s.script_text).join("\n");
+
+  const prompt = `## TAREA: Generar 4 piezas de RETARGETING (Hammer Them)
+
+Tenés un guion de video que ya se usó en ads fríos. Ahora necesitás 4 piezas CORTAS de retargeting para la audiencia que ya vio el ad pero no convirtió.
+
+### El guion original:
+
+**Ángulo:** ${script.angle_family || "no especificado"} — ${script.angle_specific || ""}
+**Nicho:** ${script.niche || "no especificado"}
+**Segmento:** ${script.segment || "no especificado"}
+**Avatar:** ${script.avatar || "no especificado"}
+**Creencia central:** ${script.belief_change?.old_belief || ""} → ${script.belief_change?.new_belief || ""}
+
+**Cuerpo:**
+${bodyText}
+
+### Los 4 cuadrantes de Hammer Them:
+
+**Q1 — PREGUNTAS (awareness 2-3):**
+Preguntas que el viewer se hizo después de ver el ad original. "¿Pero cómo funciona exactamente?" / "¿Cuánto cuesta?" / "¿Es para mí?"
+- 20-30 segundos
+- Responder 1-2 preguntas concretas que quedaron abiertas
+- Tono: servicial, como un amigo que explica
+
+**Q2 — PREGUNTAS DE SEGUNDO ORDEN (awareness 3-4):**
+Preguntas más profundas que aparecen después de las primeras. "¿Y si no funciona para mi nicho?" / "¿Cuánto tiempo hasta ver resultados?"
+- 20-30 segundos
+- Responder la objeción implícita detrás de la pregunta
+- Tono: experto, con datos concretos
+
+**Q3 — EXPECTATIVAS (awareness 4):**
+Setear expectativas realistas. "Esto es lo que pasa en los primeros 7 días" / "Lo que NO te van a decir otros"
+- 25-35 segundos
+- Future pacing concreto y honesto
+- Tono: transparente, sin promesas exageradas
+
+**Q4 — OBJECIONES (awareness 4-5):**
+Destruir la objeción final que frena la compra. "Pero yo no sé de tecnología" / "Ya me estafaron antes"
+- 20-30 segundos
+- Confrontar la objeción de frente con evidencia o analogía
+- Tono: confrontativo pero empático
+
+### Reglas:
+- Cada pieza es INDEPENDIENTE (funciona sola)
+- Voseo argentino SIEMPRE
+- Referencia al ad original: "El otro día te mostré..." / "Si viste mi video sobre..."
+- NO repetir el contenido del ad original — EXPANDIR
+- Cada pieza tiene su propio hook de 1 oración
+
+### Responde con JSON:
+{
+  "source_generation_id": "${generationId}",
+  "angle_used": "${script.angle_family || ""}",
+  "niche": "${script.niche || ""}",
+  "quadrants": [
+    {
+      "quadrant": "Q1_preguntas",
+      "quadrant_label": "Preguntas directas",
+      "script_text": string (guion completo de la pieza),
+      "hook": string (hook de apertura, 1 oración),
+      "timing_seconds": number,
+      "awareness_level": number (2-5)
+    },
+    ... (4 cuadrantes total)
+  ]
+}
+
+IMPORTANTE: Responde ÚNICAMENTE con el JSON.`;
+
+  const response = await client.messages.create({
+    model: CLAUDE_MODEL,
+    max_tokens: 4096,
+    system: [
+      {
+        type: "text",
+        text: "Eres un director creativo senior de retargeting. Escribís en español argentino (voseo). Especialidad: piezas cortas que convierten audiencia tibia en compradores.",
+      },
+    ],
+    messages: [{ role: "user", content: prompt }],
+    temperature: 0.75,
+  });
+
+  const textBlock = response.content.find((b) => b.type === "text");
+  if (!textBlock || textBlock.type !== "text") {
+    throw new Error("Sin respuesta de Claude para retargeting");
+  }
+
+  return extractJSON(textBlock.text) as RetargetingPack;
+}
+
+// --- Explotar Ángulo (batch from 1 angle) ---
+
+export interface AngleExplosionResult {
+  angle_family: string;
+  angle_specific: string;
+  niche: string;
+  scripts_by_awareness: {
+    awareness_level: number;
+    awareness_label: string;
+    hook: string;
+    body_summary: string;
+    tone_description: string;
+  }[];
+  ad_copy_embudo: AdCopyEmbudo;
+  retargeting_hooks: {
+    quadrant: string;
+    hook: string;
+  }[];
+}
+
+/**
+ * "Exploit" a single angle: generate ideas across all 5 awareness levels,
+ * an ad copy embudo, and retargeting hooks.
+ * This is a planning tool — generates outlines, not full scripts.
+ */
+export async function explodeAngle(
+  angleFamily: string,
+  angleSpecific: string,
+  niche: string,
+  avatar: string,
+): Promise<AngleExplosionResult> {
+  const client = getAnthropicClient();
+
+  const prompt = `## TAREA: EXPLOTAR UN ÁNGULO — Generar plan completo
+
+Tenés UN ángulo de comunicación. Tu tarea es "explotarlo" en múltiples piezas planificadas.
+
+### El ángulo:
+- **Familia:** ${angleFamily}
+- **Ángulo específico:** ${angleSpecific}
+- **Nicho:** ${niche}
+- **Avatar:** ${avatar}
+
+### Qué generar:
+
+**1. 5 versiones por nivel de conciencia (Schwartz):**
+Para cada nivel (1-5), generar:
+- Un hook de apertura (2-3 oraciones)
+- Un resumen del cuerpo (qué diría el guion, 2-3 oraciones)
+- Descripción del tono que tendría
+
+**2. Un Ad Copy Embudo:**
+Un texto de 200-350 palabras que recorre los 5 niveles en secuencia.
+
+**3. 4 hooks de retargeting (Hammer Them):**
+Un hook por cuadrante (Q1 Preguntas, Q2 Preguntas 2do orden, Q3 Expectativas, Q4 Objeciones).
+
+### Reglas:
+- Voseo argentino SIEMPRE
+- Cada pieza es DISTINTA — no repetir el mismo mensaje con palabras distintas
+- Los niveles 1-2 NO venden producto. Los 3-5 sí.
+- Total: 5 outlines + 1 ad copy + 4 retargeting hooks = 10 piezas de 1 ángulo
+
+### Responde con JSON:
+{
+  "angle_family": "${angleFamily}",
+  "angle_specific": "${angleSpecific}",
+  "niche": "${niche}",
+  "scripts_by_awareness": [
+    {
+      "awareness_level": 1,
+      "awareness_label": "Unaware",
+      "hook": string (2-3 oraciones),
+      "body_summary": string (2-3 oraciones resumen),
+      "tone_description": string (cómo sonaría este guion)
+    },
+    ... (5 niveles)
+  ],
+  "ad_copy_embudo": {
+    "title": string,
+    "copy_text": string (200-350 palabras, recorre los 5 niveles),
+    "word_count": number,
+    "awareness_flow": "1→2→3→4→5",
+    "target_platform": "Meta Ads",
+    "angle_used": "${angleFamily}",
+    "niche": "${niche}"
+  },
+  "retargeting_hooks": [
+    { "quadrant": "Q1_preguntas", "hook": string },
+    { "quadrant": "Q2_preguntas_segundo_orden", "hook": string },
+    { "quadrant": "Q3_expectativas", "hook": string },
+    { "quadrant": "Q4_objeciones", "hook": string }
+  ]
+}
+
+IMPORTANTE: Responde ÚNICAMENTE con el JSON.`;
+
+  const knowledgeContext = await getKnowledgeContext();
+
+  const response = await client.messages.create({
+    model: CLAUDE_MODEL,
+    max_tokens: 8192,
+    system: [
+      {
+        type: "text",
+        text: "Eres un director creativo senior de performance marketing. Escribís en español argentino (voseo). Tu especialidad: multiplicar ángulos de comunicación en arsenales completos de creativos.",
+        cache_control: { type: "ephemeral" },
+      },
+      {
+        type: "text",
+        text: knowledgeContext,
+        cache_control: { type: "ephemeral" },
+      },
+    ],
+    messages: [{ role: "user", content: prompt }],
+    temperature: 0.75,
+  });
+
+  const textBlock = response.content.find((b) => b.type === "text");
+  if (!textBlock || textBlock.type !== "text") {
+    throw new Error("Sin respuesta de Claude para angle explosion");
+  }
+
+  return extractJSON(textBlock.text) as AngleExplosionResult;
 }

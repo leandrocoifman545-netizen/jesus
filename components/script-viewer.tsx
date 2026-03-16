@@ -184,6 +184,12 @@ export default function ScriptViewer({
   const [sessionNotes, setSessionNotes] = useState(initialSessionNotes);
   const [showMetrics, setShowMetrics] = useState(false);
   const [savingMeta, setSavingMeta] = useState(false);
+  const [adCopyLoading, setAdCopyLoading] = useState(false);
+  const [adCopyResult, setAdCopyResult] = useState<{ title: string; copy_text: string; word_count: number } | null>(null);
+  const [retargetingLoading, setRetargetingLoading] = useState(false);
+  const [retargetingResult, setRetargetingResult] = useState<{ quadrants: { quadrant_label: string; hook: string; script_text: string; timing_seconds: number }[] } | null>(null);
+  const [explodeLoading, setExplodeLoading] = useState(false);
+  const [explodeResult, setExplodeResult] = useState<{ scripts_by_awareness: { awareness_level: number; awareness_label: string; hook: string; body_summary: string }[]; ad_copy_embudo: { copy_text: string }; retargeting_hooks: { quadrant: string; hook: string }[] } | null>(null);
 
   async function saveTitle(newTitle: string) {
     setSavingTitle(true);
@@ -294,6 +300,68 @@ export default function ScriptViewer({
       toast(err instanceof Error ? err.message : "Error generando hooks", "error");
     } finally {
       setGenerating(false);
+    }
+  }
+
+  async function handleAdCopyEmbudo() {
+    setAdCopyLoading(true);
+    try {
+      const res = await fetch("/api/generate/ad-copy-embudo", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setAdCopyResult(data.adCopy);
+      toast("Ad Copy Embudo generado");
+    } catch (err) {
+      toast(err instanceof Error ? err.message : "Error generando ad copy", "error");
+    } finally {
+      setAdCopyLoading(false);
+    }
+  }
+
+  async function handleRetargeting() {
+    setRetargetingLoading(true);
+    try {
+      const res = await fetch("/api/generate/retargeting", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setRetargetingResult(data.pack);
+      toast("Retargeting generado (4 cuadrantes)");
+    } catch (err) {
+      toast(err instanceof Error ? err.message : "Error generando retargeting", "error");
+    } finally {
+      setRetargetingLoading(false);
+    }
+  }
+
+  async function handleExplodeAngle() {
+    setExplodeLoading(true);
+    try {
+      const res = await fetch("/api/generate/explode-angle", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          angleFamily: script.angle_family || "oportunidad",
+          angleSpecific: script.angle_specific || "",
+          niche: script.niche || "",
+          avatar: script.avatar || "martin",
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setExplodeResult(data.result);
+      toast("Ángulo explotado (10 piezas)");
+    } catch (err) {
+      toast(err instanceof Error ? err.message : "Error explotando ángulo", "error");
+    } finally {
+      setExplodeLoading(false);
     }
   }
 
@@ -568,6 +636,22 @@ export default function ScriptViewer({
               {script.funnel_stage && (
                 <span className="text-[11px] px-2 py-0.5 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">
                   {script.funnel_stage}
+                </span>
+              )}
+              {script.avatar && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                  Avatar: {script.avatar}
+                </span>
+              )}
+              {script.awareness_level && (
+                <span className="text-[11px] px-2 py-0.5 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
+                  Schwartz: {script.awareness_level} — {
+                    script.awareness_level === 1 ? "Unaware" :
+                    script.awareness_level === 2 ? "Problem Aware" :
+                    script.awareness_level === 3 ? "Solution Aware" :
+                    script.awareness_level === 4 ? "Product Aware" :
+                    "Most Aware"
+                  }
                 </span>
               )}
             </div>
@@ -920,6 +1004,96 @@ export default function ScriptViewer({
           </div>
         </div>
       )}
+
+      {/* Máquina de Ángulos — 3 herramientas */}
+      <div className="border border-zinc-800/40 rounded-2xl p-6 bg-zinc-900/20">
+        <h2 className="text-lg font-bold tracking-tight mb-4 text-zinc-300">Máquina de Ángulos</h2>
+        <div className="flex flex-wrap gap-3 mb-6">
+          <button
+            onClick={handleAdCopyEmbudo}
+            disabled={adCopyLoading}
+            className="px-4 py-2 text-xs rounded-xl border border-yellow-500/20 bg-yellow-500/5 text-yellow-400 hover:bg-yellow-500/10 disabled:opacity-50 transition-all"
+          >
+            {adCopyLoading ? "Generando..." : "Ad Copy Embudo"}
+          </button>
+          <button
+            onClick={handleRetargeting}
+            disabled={retargetingLoading}
+            className="px-4 py-2 text-xs rounded-xl border border-red-500/20 bg-red-500/5 text-red-400 hover:bg-red-500/10 disabled:opacity-50 transition-all"
+          >
+            {retargetingLoading ? "Generando..." : "Retargeting (4Q)"}
+          </button>
+          <button
+            onClick={handleExplodeAngle}
+            disabled={explodeLoading}
+            className="px-4 py-2 text-xs rounded-xl border border-purple-500/20 bg-purple-500/5 text-purple-400 hover:bg-purple-500/10 disabled:opacity-50 transition-all"
+          >
+            {explodeLoading ? "Generando..." : "Explotar Ángulo"}
+          </button>
+        </div>
+
+        {/* Ad Copy Embudo Result */}
+        {adCopyResult && (
+          <div className="mb-6 border border-yellow-500/20 rounded-xl p-5 bg-yellow-500/5">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-yellow-400 text-xs font-semibold uppercase tracking-wider">Ad Copy Embudo — {adCopyResult.word_count} palabras</span>
+              <CopyButton text={adCopyResult.copy_text} label="Copiar" className="text-[10px] px-2 py-1 rounded bg-yellow-500/10 text-yellow-400 border border-yellow-500/20" />
+            </div>
+            <p className="text-zinc-300 text-sm leading-relaxed whitespace-pre-wrap">{adCopyResult.copy_text}</p>
+          </div>
+        )}
+
+        {/* Retargeting Result */}
+        {retargetingResult && (
+          <div className="mb-6 space-y-3">
+            <span className="text-red-400 text-xs font-semibold uppercase tracking-wider">Retargeting — Hammer Them (4 cuadrantes)</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2">
+              {retargetingResult.quadrants.map((q, i) => (
+                <div key={i} className="border border-red-500/20 rounded-xl p-4 bg-red-500/5">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-red-400 text-[11px] font-semibold uppercase">{q.quadrant_label}</span>
+                    <span className="text-zinc-600 text-[10px]">{q.timing_seconds}s</span>
+                  </div>
+                  <p className="text-zinc-400 text-[11px] mb-1 italic">&ldquo;{q.hook}&rdquo;</p>
+                  <p className="text-zinc-300 text-xs leading-relaxed">{q.script_text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Explode Angle Result */}
+        {explodeResult && (
+          <div className="space-y-4">
+            <span className="text-purple-400 text-xs font-semibold uppercase tracking-wider">Ángulo Explotado — 5 niveles + Ad Copy + Retargeting</span>
+            <div className="space-y-3 mt-2">
+              {explodeResult.scripts_by_awareness.map((s, i) => (
+                <div key={i} className="border border-purple-500/20 rounded-xl p-4 bg-purple-500/5">
+                  <span className="text-purple-400 text-[11px] font-semibold">Nivel {s.awareness_level}: {s.awareness_label}</span>
+                  <p className="text-zinc-400 text-[11px] mt-1 italic">&ldquo;{s.hook}&rdquo;</p>
+                  <p className="text-zinc-500 text-[11px] mt-1">{s.body_summary}</p>
+                </div>
+              ))}
+            </div>
+            {explodeResult.ad_copy_embudo && (
+              <div className="border border-yellow-500/20 rounded-xl p-4 bg-yellow-500/5">
+                <span className="text-yellow-400 text-[11px] font-semibold uppercase">Ad Copy Embudo (incluido)</span>
+                <p className="text-zinc-300 text-xs leading-relaxed mt-2 whitespace-pre-wrap">{explodeResult.ad_copy_embudo.copy_text}</p>
+              </div>
+            )}
+            {explodeResult.retargeting_hooks && (
+              <div className="border border-red-500/20 rounded-xl p-4 bg-red-500/5">
+                <span className="text-red-400 text-[11px] font-semibold uppercase">Retargeting Hooks</span>
+                <div className="mt-2 space-y-1">
+                  {explodeResult.retargeting_hooks.map((rh, i) => (
+                    <p key={i} className="text-zinc-400 text-[11px]"><span className="text-zinc-600">{rh.quadrant}:</span> &ldquo;{rh.hook}&rdquo;</p>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
 
       {/* Copy Buttons */}
       <div className="flex flex-wrap gap-2">
