@@ -1,0 +1,249 @@
+{
+  "id": "60c12cf7-bb13-4f33-8b7e-0fa5c4b97933",
+  "title": "salazar 5",
+  "transcript": " Si estás viendo este video es porque estás cansada de no tener dinero. Y no es casualidad, el algoritmo no se equivoca y te está mostrando esto porque probablemente ya intentaste todos los modelos de negocio mágicos que te prometen allá afuera y una de dos. O no te funcionó o te prometieron algo que no era como lo mostraban. Pero el modelo de negocio del que quiero hablarte te puede llevar a generar entre 450 a 900 dólares semanales desde cualquier parte del mundo. Pero antes de explicarte de qué se trata, déjame contarte algo y cómo llegué ahí. Hace un tiempo me preguntaba cuál es la manera más sencilla de hacer dinero en el mundo real y descubrí que la forma más sencilla es tener un negocio propio, obviamente. Pero, ¿y si hubiera una manera de tener un negocio que funcione, que te dé libertad, que no tengas que operarlo todo el día y mejor aún, sin tener que inventar nada nuevo? Pues ya existe y son las franquicias. Mira, si hoy tú compraras una franquicia de McDonald's en una buena ubicación, desde el primer día empezarías a vender y harías alrededor de unos 150 mil dólares de ganancias netas en tu primer año. ¿Por qué? Porque ya hay clientes, hay una marca posicionada, hay demanda de personas queriendo comprar y un sistema de ventas ya validado. No tienes que convencer a todo el mundo de nada. El problema es que una franquicia así cuesta entre 1 y 2 millones de dólares. Pero y si hubiera una manera m sencilla de tener algo similar pues la hay Y son las franquicias digitales con inteligencia artificial exactamente el mismo concepto Tienes un sistema que ya funciona que ya vende y est todo estructurado para que tú solo tengas que operarlo, pero sin empleados, sin arriendo, sin inventario y con una barrera de entrada que cualquier persona en Latinoamérica podría pagar. Pues eso fue lo que yo hice, creé mi propia franquicia digital, en ella no tienes que crear nada ni subir vídeos a redes sociales, ni mucho menos si tienes que gastar un montón de dinero. Solo activas el sistema y lo dejas trabajar. Mira, se me está haciendo muy largo el vídeo, pero si esto resuena contigo y quieres aprender más del tema y de cómo tú también puedes tener tu propia franquicia digital, aquí abajo te dejo el link de una clase gratuita en la que te explico todo con lujo de detalles. Eso sí, mírala hasta el final, no te arrepentirás. Dale click y nos vemos dentro del vídeo. ¿Cuánto nos vimos? Nos vimos hace como 12, 3 semanas Llevaba como 750 dólares Algo así Llegué a los 7000 En un mes O sea, no lo puedo ni creer O sea, yo decía No puede ser Todavía me falta Estoy en el inicio Pero Tata, gracias De verdad Qué chévere O sea, qué chévere Lo que construiste Desde el día uno Te lo dije, Marica, tienes un súper equipo Es más, las peladas Que yo estoy coachando Acá en Cúcuta Que tenemos una reunión No sé qué Ya todas están vendiendo Gracias.",
+  "analysis": {
+    "hook": {
+      "text": "Si estás viendo este video es porque estás cansada de no tener dinero.",
+      "type": "situacion_especifica",
+      "word_count": 16,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Validación de frustración",
+          "summary": "Apertura directa que identifica al público cansado de intentos fallidos. Valida que el algoritmo los encontró por una razón.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Promesa de resultado",
+          "summary": "Introduce rango específico de ingresos ($450-900 USD semanales) antes de revelar el modelo.",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Story: Búsqueda personal",
+          "summary": "Narrativa de cómo el anunciante descubrió que tener negocio propio es la forma más sencilla de hacer dinero.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Analogía: Franquicias tradicionales",
+          "summary": "Compara franquicia McDonald's (150k USD anuales pero cuesta 1-2M) con el concepto de franquicia digital.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Mecanismo: Franquicia digital con IA",
+          "summary": "Revela el modelo: sistema que ya funciona, sin empleados, sin arriendo, sin inventario, barrera de entrada baja.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Transición + CTA",
+          "summary": "Reconoce que el video se está alargando, ofrece clase gratuita con detalles completos.",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Prueba social: Testimonios",
+          "summary": "Diálogos de personas reales que pasaron de $750 a $7000 en un mes, con reacciones auténticas.",
+          "estimated_seconds": 12
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Mira, se me está haciendo muy largo el vídeo, pero si esto resuena contigo y quieres aprender más del tema..."
+    },
+    "tone": {
+      "primary_tone": "Conversacional, empático, directo, con autoridad ganada",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "estás cansada de no tener dinero",
+        "el algoritmo no se equivoca",
+        "una de dos",
+        "¿y si hubiera una manera",
+        "Pues ya existe",
+        "Sin empleados, sin arriendo, sin inventario",
+        "Solo activas el sistema y lo dejas trabajar",
+        "Eso sí, mírala hasta el final, no te arrepentirás"
+      ]
+    },
+    "cta": {
+      "text": "Dale click y nos vemos dentro del vídeo",
+      "type": "conversacional",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 66,
+    "total_word_count": 612,
+    "emotional_arc": "Frustración (hook) → Validación (no eres el único) → Esperanza (existe solución) → Curiosidad (¿qué es?) → Asombro (comparación con franquicia) → Alivio (barrera baja) → Inspiración (testimonios reales) → Acción (CTA conversacional)",
+    "strengths": [
+      "Hook extremadamente específico y empático que identifica dolor inmediato",
+      "Uso de 'el algoritmo no se equivoca' para validar que el mensaje es para ellos",
+      "Estructura de 'una de dos' que cierra mentalmente las opciones previas",
+      "Analogía de franquicia McDonald's es brillante: establece credibilidad de concepto sin necesidad de explicar desde cero",
+      "Números concretos ($450-900, $150k, $1-2M, $750→$7000) crean especificidad y credibilidad",
+      "Transición natural hacia rehook reconociendo la duración",
+      "Testimonios auténticos al final con diálogos reales (no guionados) que generan confianza",
+      "Tono conversacional y UGC que reduce fricción psicológica",
+      "Eliminación sistemática de objeciones (sin empleados, sin arriendo, sin inventario, sin crear contenido)",
+      "CTA dual: verbal ('Dale click') + visual (link en descripción)"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con identificación de frustración específica + validación de que no es casualidad",
+      "Prometer resultado concreto (rango numérico) ANTES de revelar el mecanismo",
+      "Usar analogía de algo conocido (franquicia) para explicar algo nuevo (franquicia digital)",
+      "Estructura 'una de dos' para cerrar opciones previas y crear apertura mental",
+      "Listar eliminaciones de fricción (sin X, sin Y, sin Z) en lugar de solo beneficios",
+      "Rehook a mitad del video reconociendo la duración ('se me está haciendo muy largo')",
+      "Terminar con testimonios auténticos con números específicos y reacciones emocionales reales",
+      "CTA conversacional ('nos vemos dentro') en lugar de imperativo duro",
+      "Usar 'Pues ya existe' como transición que convierte problema en solución disponible",
+      "Incluir frase de cierre que reduce fricción ('Eso sí, mírala hasta el final, no te arrepentirás')"
+    ],
+    "advertiser": {
+      "name": "Franquicia Digital / Academia de Productos Digitales (inferido)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "CO"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "analogia_extendida",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Validación",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Promesa de resultado",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Story: Búsqueda personal",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Analogía: Franquicias",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Mecanismo: Franquicia digital",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Testimonios",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para hacer dinero real necesito capital masivo, empleados, inventario, o crear algo nuevo desde cero",
+        "mechanism": "Existe un modelo de negocio (franquicia digital con IA) que replica el éxito de franquicias tradicionales pero sin barreras de entrada, sin operación diaria, sin capital inicial alto",
+        "new_belief": "Puedo generar $450-900 USD semanales desde cualquier parte del mundo activando un sistema que ya funciona, sin empleados, sin arriendo, sin inventario"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de identificación directa"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (intentos previos fallidos)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 31,
+          "ingredient_name": "Frustración acumulada"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 52,
+          "ingredient_name": "Quiebre de expectativa (promesa específica antes de revelar)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 63,
+          "ingredient_name": "Autoridad ganada (historia personal)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita (analogía McDonald's)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 75,
+          "ingredient_name": "Eliminación de objeciones sistemática"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba social con números específicos"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 91,
+          "ingredient_name": "Testimonios auténticos con diálogos reales"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 110,
+          "ingredient_name": "Oferta de clase gratuita como micro-compromiso"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 120,
+          "ingredient_name": "CTA conversacional"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Validación de que el algoritmo los encontró por una razón"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Puedes tener un negocio que funciona sin capital masivo, operación diaria ni inventario, usando un sistema de franquicia digital con IA que ya está validado y genera $450-900 USD semanales"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura de analogía: usar algo conocido (franquicia McDonald's) para explicar algo nuevo (franquicia digital con IA). Aplicable: comparar crear curso tradicional vs. curso con IA automatizado",
+        "Hook de identificación + validación del algoritmo: 'Si estás viendo esto es porque X, y no es casualidad'. Aplicable: 'Si estás viendo esto es porque intentaste crear productos digitales sin IA y no funcionó'",
+        "Promesa numérica específica ANTES de revelar mecanismo: crea curiosidad sin spoilear. Aplicable: 'Puedes generar $X-Y mensuales con un producto digital que toma 2 horas crear'",
+        "Estructura 'una de dos': cierra opciones previas y abre mente a nueva solución. Aplicable: 'O gastas 6 meses creando un curso, o usas IA y lo tienes en 2 semanas'",
+        "Eliminación sistemática de objeciones: listar lo que NO necesitas (sin empleados, sin arriendo, sin inventario). Aplicable: 'Sin tener que aprender programación, sin tener que ser experto, sin tener que invertir capital'",
+        "Rehook a mitad del video: reconocer duración y reengancharse. Aplicable: 'Se me está haciendo largo, pero si esto te interesa...'",
+        "Testimonios auténticos con números + reacciones emocionales reales: más creíble que testimonios pulidos. Aplicable: incluir videos cortos de usuarios reales con resultados específicos",
+        "CTA conversacional dual: 'Dale click y nos vemos dentro' + link visual. Menos fricción que CTAs imperativas",
+        "Usar 'Pues ya existe' como transición: convierte problema en solución disponible ahora. Aplicable: 'Pues ya existe una forma de crear productos digitales con IA en 48 horas'",
+        "Frase de cierre que reduce fricción: 'Eso sí, mírala hasta el final, no te arrepentirás'. Crea expectativa de valor"
+      ],
+      "what_not_to_copy": [
+        "No copiar la analogía de franquicia McDonald's directamente: es muy específica al modelo de negocio del anunciante. Para ADP, buscar analogía diferente (ej: 'como tener un empleado que trabaja 24/7 sin sueldo')",
+        "No usar testimonios en video si no tienes acceso a usuarios reales con resultados verificables: los testimonios son el 40% del poder de este ad",
+        "No prometer rango de ingresos ($450-900) sin poder respaldarlo con datos reales: es el quiebre más fuerte del ad y si falla, destruye credibilidad",
+        "No usar tono UGC si la marca es muy corporativa o formal: el tono casual es crítico aquí y requiere coherencia en toda la marca",
+        "No copiar la estructura de 'una de dos' si el producto tiene más de dos opciones reales: funciona porque cierra mentalmente, pero puede parecer manipulador si es falso",
+        "No usar rehook si el video es corto (<30 segundos): aquí funciona porque el video es largo (66 segundos) y necesita reenganche"
+      ],
+      "craft_notes": [
+        "Ritmo: alternancia entre frases cortas impactantes ('Pues ya existe') y párrafos más largos que explican. Crea dinamismo sin ser frenético",
+        "Cadencia: uso de preguntas retóricas ('¿y si hubiera una manera') que crean pausa mental y anticipación",
+        "Power words: 'cansada', 'libertad', 'sin', 'solo', 'ya existe', 'gracias'. Palabras emocionales y de acción",
+        "Transiciones: 'Pero el modelo de negocio del que quiero hablarte', 'Pero antes de explicarte', 'Pues ya existe'. Suave y natural",
+        "Estructura de párrafos: comienzan con gancho ('Mira, si hoy tú compraras...') y terminan con quiebre ('El problema es que cuesta 1-2 millones')",
+        "Uso de números: siempre en contexto (no solo '$7000' sino '$750 → $7000 en un mes'). Crea comparación y credibilidad",
+        "Diálogos finales: fragmentados, naturales, con interjecciones ('O sea', 'Qué chévere'). Imita conversación real, no guión",
+        "Negaciones estratégicas: 'no tienes que crear nada', 'no tienes que subir videos', 'no tienes que gastar'. Acumula alivio psicológico",
+        "Frase de cierre: 'Eso sí, mírala hasta el final, no te arrepentirás'. Tono de amigo que te da consejo, no vendedor"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:15:56.916Z"
+}

@@ -1,0 +1,181 @@
+{
+  "id": "ref-amanda-afonso-entrevista-2",
+  "title": "Amanda Afonso - Formato entrevista: de CLT a +50K/mes vendiendo online",
+  "transcript": "PJ ou CLT? PJ, hoje PJ, mas por muitos anos CLT. E você é mãe? Eu vi que tem umas crianças ali, você é mãe? Sim, sou mãe de dois. Hoje trabalho por conta, né? E foi por conta deles. Queria ter mais liberdade, ser uma mãe presente e recomecei minha vida. E o que você faz atualmente? Eu vendo pela internet, trabalho com divulgação de produto online. Há quanto tempo que você faz isso? Há quase três anos já. Legal, e dá pra tirar um dinheiro legal, fazer um bom salário com isso? Com certeza. Mais que cinco mil? Mais que 10 mil? Mais que 10. Mais que 20? Mais que 20. Mais que 50? Mais que 50. Caramba, e como é que faz para a pessoa que quer começar, quer trabalhar nesse mercado, é difícil, como é que funciona? Não, eu comecei do zero, ainda trabalhava fora, foi conciliando. Eu como mãe, só me dedicava à noite, foi o tempo que eu tinha, totalmente leiga, então foi errando, aprendendo, mas seguindo passo a passo e me surpreendi. No primeiro mês tive lucro com as vendas, quase 700 reais, era metade do meu salário, e aí com tr meses larguei o CLT fazendo 4 mil em 30 dias e a foi um processo fui aumentando o an aumentando as vendas e crescendo E precisa ter uma experi com vendas uma experi de mercado de internet marketing alguma coisa nesse sentido Nada. Tudo a frente do zero. Não tem que comprar produto, nem fazer estoque, nem aparecer, não tem que usar seus perfis em redes sociais, seguidor, nada disso. Você vai representar o produto, divulgando produtos prontos. E aí você recebe comissões e fecha a venda diariamente. Então esse produto não tem que estocar, você não estoque esse produto, você não mexe com essa parte de logística também, por exemplo? Não, não, é só fechar a venda, entrega, transporte, não é por minha conta, é só faz divulgações, é o que eu faço. Se dedicando todos os dias, todo mundo chega lá, pessoas comuns hoje estão usando a internet para gerar renda, mudando a vida da família e é totalmente possível, mesmo do zero. Entendi, e a pessoa o que quer começar? Ela tem que ter uma estrutura, ela tem que ter um escritório, ela tem que ter um computador, um celular de última geração, como é que é isso? Nada, só um celular, eu comecei com um celular travado ainda, porque era o que eu tinha, comecei na condição que eu tive, e aí fui criando condições melhores, porque se eu fosse esperar ter dinheiro, comecei falida. Legal, show de bola. Então para quem quer começar, como é que funciona, como é que procura, como é que funciona? Aponta Amanda Afonso, meu perfil no Instagram.",
+  "analysis": {
+    "hook": {
+      "text": "PJ ou CLT? PJ, hoje PJ, mas por muitos anos CLT. E voce e mae? Sim, sou mae de dois.",
+      "type": "actuacion_dialogo",
+      "word_count": 22,
+      "estimated_seconds": 8
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Entrevista - Quien sos",
+          "summary": "PJ vs CLT, madre de 2, queria libertad y presencia con hijos",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Escalera de ingresos",
+          "summary": "Mas de 5K? Si. 10K? Si. 20K? Si. 50K? Si. Tension ascendente.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Historia de origen",
+          "summary": "Empezo de cero, solo de noche, primer mes 700 reais (mitad del salario), 3 meses dejo CLT haciendo 4K",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "Eliminacion de barreras",
+          "summary": "No experiencia, no stock, no aparecer, no redes sociales, no seguidores",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Mecanismo simplificado",
+          "summary": "Divulgar productos prontos, cerrar ventas, recibir comisiones diariamente",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Prueba de accesibilidad",
+          "summary": "Solo un celular trabado, empezo falida, fue creando condiciones",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "CTA",
+          "summary": "Buscar Amanda Afonso en Instagram",
+          "estimated_seconds": 8
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Caramba, e como e que faz para a pessoa que quer comecar?"
+    },
+    "tone": {
+      "primary_tone": "conversacional-autentico",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "comecei do zero",
+        "so me dedicava a noite",
+        "celular travado",
+        "comecei falida",
+        "pessoas comuns"
+      ]
+    },
+    "cta": {
+      "text": "Aponta Amanda Afonso, meu perfil no Instagram.",
+      "type": "comment",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 140,
+    "total_word_count": 466,
+    "emotional_arc": "Curiosidad (quien es?) -> Identificacion (madre, CLT) -> Sorpresa (escalera de ingresos) -> Esperanza (empezo de cero) -> Confianza (sin barreras) -> Accion",
+    "strengths": [
+      "Formato ENTREVISTA genera autenticidad que monologos no tienen",
+      "Escalera de ingresos (5K? 10K? 20K? 50K?) crea tension ascendente irresistible",
+      "Celular travado como detalle de credibilidad — ultra especifico",
+      "Comecei falida — vulnerabilidad genuina, no estrategica",
+      "Eliminacion de barreras en cascada respondiendo preguntas naturales"
+    ],
+    "patterns_to_replicate": [
+      "Formato entrevista/dialogo como estructura de ad — genera autenticidad",
+      "Escalera de ingresos ascendente como hook de retencion",
+      "Detalle ultra-especifico de pobreza (celular trabado) como ancla de credibilidad",
+      "Eliminacion de barreras via preguntas del entrevistador (no monologando)"
+    ],
+    "advertiser": {
+      "name": "Amanda Afonso",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "historia",
+      "body_type": "pregunta_respuesta",
+      "persuasion_functions": [
+        {
+          "section_name": "Entrevista - Quien sos",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Escalera de ingresos",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Historia de origen",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Eliminacion de barreras",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Mecanismo simplificado",
+          "function": "mecanismo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para ganar bien necesito experiencia, capital, seguidores y mostrar la cara",
+        "mechanism": "Una madre que empezo con un celular trabado, falida, de noche, y en 3 meses gano mas que su salario",
+        "new_belief": "Personas comunes sin experiencia ni capital pueden generar ingresos significativos vendiendo online"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 14,
+          "ingredient_name": "Actuacion/dialogo (formato entrevista)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad estrategica (celular travado, falida)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 82,
+          "ingredient_name": "Atajo legitimo (solo de noche, conciliando)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba de ingresos (escalera 5K-50K+)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba matematica (700 reais primer mes = mitad del salario)"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Una madre CLT que empezo falida con un celular trabado ahora gana +50K/mes vendiendo online solo de noche"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "FORMATO ENTREVISTA: alguien le pregunta a un alumno de Jesus. Mas autentico que monologo.",
+        "Escalera de ingresos ascendente como tecnica de retencion — Ganas mas de 1K? Si. 3K? Si. 5K? Si. 10K?...",
+        "Detalle de pobreza ultra-especifico como ancla de credibilidad (celular trabado = soy de madera en ADP)",
+        "Eliminacion de barreras via preguntas del entrevistador, no monologo"
+      ],
+      "what_not_to_copy": [
+        "Es afiliada, no creadora de productos — modelo distinto a ADP",
+        "CTA debil (buscar en Instagram)",
+        "Sin cambio de creencia explicito — es pura historia sin mecanismo",
+        "Demasiado largo (140s)"
+      ],
+      "craft_notes": [
+        "El formato entrevista es el mas diferenciador de Amanda. Genera una autenticidad que el monologo a camara no logra.",
+        "La escalera de ingresos funciona como open loop: el viewer NECESITA saber hasta donde llega.",
+        "Para ADP: filmar a un alumno real de Jesus respondiendo preguntas sobre su experiencia. Formato pregunta_respuesta."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:36:52.293Z"
+}

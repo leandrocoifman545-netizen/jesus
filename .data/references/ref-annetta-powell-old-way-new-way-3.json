@@ -1,0 +1,174 @@
+{
+  "id": "ref-annetta-powell-old-way-new-way-3",
+  "title": "Annetta Powell - Old Way vs New Way (AI): ebook en 5 min, teachers como target",
+  "transcript": "Hold up, teacher. You got something in your brain, and I want to show you a beginner-friendly way to make money on the internet. This the old way. You would literally create an e-book, take three to four weeks, content, hair, makeup, feminine. That takes about five hours. That's too long. Manually post, one post, ten minutes. Who posted manually? There's an AI way to show you how to be consistent. It's a new way, e-book, five minutes, AI content, one piece, five minutes to create. Thirty days, because you've got to drive traffic to that e-book. guess what if you sell an ebook 38 times times 27 that's 1026 that's a thousand dollars and if you do this for 30 days that's 30 000 come on now you better click that link right below this video people and teachers are doing this all over the world the only thing is you're not so you need to click the link so i can show you exactly how to do this",
+  "analysis": {
+    "hook": {
+      "text": "Hold up, teacher. You got something in your brain, and I want to show you a beginner-friendly way to make money on the internet.",
+      "type": "provocacion",
+      "word_count": 23,
+      "estimated_seconds": 7
+    },
+    "structure": {
+      "framework": "BAB",
+      "sections": [
+        {
+          "name": "Hook - Llamar al avatar",
+          "summary": "Hold up, teacher. Tenes algo en tu cerebro. Te muestro como monetizarlo.",
+          "estimated_seconds": 7
+        },
+        {
+          "name": "Old Way (antes)",
+          "summary": "Ebook = 3-4 semanas. Contenido con pelo/maquillaje = 5 horas. Postear manual = 10 min por post.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "New Way (AI)",
+          "summary": "Ebook = 5 minutos con IA. Contenido = 5 minutos. 30 dias consistente con IA automatizado.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Matematica",
+          "summary": "Ebook a $27 x 38 ventas = $1,026/dia. x 30 dias = $30,000/mes.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA con social proof",
+          "summary": "Teachers estan haciendo esto en todo el mundo. La unica diferencia es que vos no. Click the link.",
+          "estimated_seconds": 8
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "There's an AI way to show you how to be consistent. It's a new way."
+    },
+    "tone": {
+      "primary_tone": "energetico-directo",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Hold up, teacher",
+        "something in your brain",
+        "the old way",
+        "the AI way",
+        "five minutes",
+        "come on now"
+      ]
+    },
+    "cta": {
+      "text": "You better click that link right below this video. Teachers are doing this all over the world. The only thing is you're not.",
+      "type": "learn_more",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 50,
+    "total_word_count": 170,
+    "emotional_arc": "Atencion (hold up!) -> Dolor (old way = lento, tedioso) -> Esperanza (AI way = 5 min) -> Ambicion (matematica $30K) -> FOMO (otros ya lo hacen, vos no)",
+    "strengths": [
+      "OLD WAY vs NEW WAY en 2 columnas mentales — claridad total",
+      "Tiempos especificos: 3-4 semanas vs 5 minutos. El contraste es demoledor.",
+      "Llamar a una profesion especifica (teacher) como hook — filtra y genera identificacion",
+      "Matematica simple y memorable: $27 x 38 = $1,000",
+      "CTA con FOMO social: teachers are doing this, you're not",
+      "50 segundos, cero relleno"
+    ],
+    "patterns_to_replicate": [
+      "Estructura OLD WAY vs NEW WAY (AI) con tiempos concretos — adaptable directo a ADP",
+      "Llamar a una profesion especifica como hook: Hold up, [profesion]",
+      "Matematica memorable con multiplicacion simple: precio x ventas = ingreso diario x 30 = mensual",
+      "FOMO social en CTA: gente como vos ya lo hace, vos todavia no"
+    ],
+    "advertiser": {
+      "name": "Annetta Powell",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "mecanismo",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - Llamar al avatar",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Old Way",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "New Way AI",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Matematica",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Crear un ebook toma semanas de trabajo y crear contenido es agotador",
+        "mechanism": "Con IA: ebook en 5 minutos, contenido en 5 minutos, automatizado 30 dias",
+        "new_belief": "Con IA puedo crear y vender un ebook en minutos, no semanas"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 6,
+          "ingredient_name": "Provocacion con especificidad (Hold up, teacher)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 49,
+          "ingredient_name": "Redefinicion del juego (old way vs AI way)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 52,
+          "ingredient_name": "Comparacion de caminos (antes vs ahora)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo del mecanismo (5 min con IA)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 82,
+          "ingredient_name": "Atajo legitimo (AI reduce de semanas a minutos)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba matematica ($27 x 38 = $1,026)"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 3,
+      "segment_equivalent": "B",
+      "big_idea": "Crear un ebook antes tomaba semanas. Con IA toma 5 minutos. Vendelo a $27, 38 veces al dia = $30K/mes."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura OLD WAY vs NEW WAY: la forma vieja (3 semanas) vs la forma con IA (5 minutos). Aplicacion directa para ADP.",
+        "Hook que llama a una profesion: Pará, profesor / Pará, contador / Pará, nutricionista — genera identificacion inmediata",
+        "Matematica memorable: precio x ventas diarias = ingreso diario x 30 = mensual. ADP: $10 x 10 ventas = $100/dia = $3,000/mes",
+        "FOMO social en CTA: profesores/contadores/cocineros ya estan haciendo esto. Vos todavia no.",
+        "Duracion perfecta (50s) — denso, sin relleno. Ideal como referencia de ritmo."
+      ],
+      "what_not_to_copy": [
+        "38 ventas diarias a $27 es agresivo y poco creible para audience fria",
+        "No tiene cambio de creencia profundo — es pura mecanica sin emocion",
+        "El tono ultra-energetico no va con Jesus (mas calmo, mas voseo)"
+      ],
+      "craft_notes": [
+        "Old way vs new way es la estructura MAS adaptable que vimos. Para ADP: Antes para crear un recetario necesitabas 3 meses cocinando. Ahora le pedis a la IA y en 1 hora tenes un ebook de 50 recetas listo para vender.",
+        "El hook Hold up, [profesion] funciona porque INTERRUMPE y FILTRA en 2 palabras. Es el equivalente a situacion_especifica pero mas corto.",
+        "La matematica $27 x 38 es memorable porque es MULTIPLICACION que el viewer hace mentalmente. Eso genera engagement cognitivo."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T02:18:12.184Z"
+}

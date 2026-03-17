@@ -1,0 +1,149 @@
+{
+  "id": "ref-maria-wendt-calendar-copy",
+  "title": "Maria Wendt - Calendario antes/despues: de 8 calls por dia a checkout page que vende sola",
+  "transcript": "This is a picture of my actual calendar from five years ago. I was exhausted, spending hours on the phone, closing sales one by one. This is a picture of my calendar now. I figured out how to write copies so persuasive that my checkout page now does the heavy lifting for me. I used to take eight or more sales calls every single day. Now, people can read my checkout page anytime and decide to buy on their own without needing a call from me. If you want to learn how I do this, just click learn more to get the details.",
+  "analysis": {
+    "hook": {
+      "text": "This is a picture of my actual calendar from five years ago. I was exhausted, spending hours on the phone, closing sales one by one.",
+      "type": "historia_mini",
+      "word_count": 23,
+      "estimated_seconds": 7
+    },
+    "structure": {
+      "framework": "BAB",
+      "sections": [
+        {
+          "name": "Antes - Calendario viejo",
+          "summary": "Foto real del calendario de hace 5 anos. Agotada, horas al telefono, cerrando ventas una por una.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Despues - Calendario actual",
+          "summary": "Foto del calendario ahora. Copy tan persuasivo que el checkout page vende solo.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Mecanismo",
+          "summary": "Aprendi a escribir copy persuasivo. Antes 8+ calls por dia. Ahora la gente lee y compra sola.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA",
+          "summary": "Click learn more para los detalles.",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": false
+    },
+    "tone": {
+      "primary_tone": "directo-profesional",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "actual calendar",
+        "does the heavy lifting for me",
+        "decide to buy on their own",
+        "without needing a call"
+      ]
+    },
+    "cta": {
+      "text": "Just click learn more to get the details.",
+      "type": "learn_more",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 30,
+    "total_word_count": 103,
+    "emotional_arc": "Identificacion (agotada, calls todo el dia) -> Curiosidad (como cambio?) -> Revelacion (copy persuasivo) -> Deseo (quiero eso) -> Accion",
+    "strengths": [
+      "PRUEBA VISUAL real (foto del calendario) — no dice, MUESTRA",
+      "Contraste antes/despues ultra-compacto en 30 segundos",
+      "El mecanismo es claro y especifico: copy persuasivo en checkout page",
+      "Duracion perfecta (30s) — sin relleno, cada palabra cuenta",
+      "Show dont tell con la foto del calendario"
+    ],
+    "patterns_to_replicate": [
+      "Prueba visual REAL (captura, foto, screenshot) como ancla del ad entero",
+      "Estructura BAB ultra-compacta: antes (foto) -> despues (foto) -> como -> CTA",
+      "Contraste de calendarios/agendas como metafora visual de libertad",
+      "Ad de 30s sin desperdicio — cada oracion tiene funcion"
+    ],
+    "advertiser": {
+      "name": "Maria Wendt",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "mecanismo",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Antes - Calendario viejo",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Despues - Calendario actual",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Mecanismo",
+          "function": "mecanismo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para vender necesito hacer calls de ventas todo el dia",
+        "mechanism": "Copy persuasivo en la checkout page hace el trabajo de venta automaticamente",
+        "new_belief": "Con el copy correcto, la pagina vende sola sin necesidad de calls"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 7,
+          "ingredient_name": "Historia mini (calendario de hace 5 anos)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 52,
+          "ingredient_name": "Comparacion de caminos (8 calls/dia vs checkout automatico)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo del mecanismo (copy persuasivo en checkout)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba visual (foto real del calendario)"
+        }
+      ],
+      "model_sale_type": "none",
+      "awareness_level": 3,
+      "segment_equivalent": "C",
+      "big_idea": "Pase de 8 calls de ventas por dia a que mi checkout page venda sola gracias a copy persuasivo"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "PRUEBA VISUAL REAL como ancla del ad: captura de pantalla de Hotmart, WhatsApp, calendario — algo verificable",
+        "Estructura BAB de 30s: foto antes -> foto despues -> mecanismo en 1 oracion -> CTA",
+        "Contraste de calendarios/agendas: agenda llena de laburo vs agenda libre con ventas entrando",
+        "Ad ultra-corto (30s) donde cada oracion tiene funcion — formato ideal para testing rapido"
+      ],
+      "what_not_to_copy": [
+        "Vende copywriting, no productos digitales con IA — mecanismo distinto",
+        "Awareness level 3 (solucion-aware) — no sirve para TOFU de ADP"
+      ],
+      "craft_notes": [
+        "Este es un ad de 30s PERFECTO. Cero desperdicio. La foto del calendario es la estrella — todo lo demas es contexto.",
+        "Para ADP: Jesus muestra captura de Hotmart antes (0 ventas) y despues (X ventas). Mecanismo: un producto digital hecho con IA en 1 hora. 30 segundos, listo.",
+        "Maria Wendt es la que Brandon Belchure menciono que hace K/mes con productos de . Misma persona."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:49:37.020Z"
+}

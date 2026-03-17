@@ -1,0 +1,207 @@
+{
+  "id": "b353a17a-52e9-40ca-b3a3-188ceb0cec34",
+  "title": "hormozi 1",
+  "transcript": " And that's when you realize the biggest risk is just not taking any. And this is actually one of the stages of scaling. And so that's why we put together the $100 million scaling roadmap. All right. So it's a guide that shows you exactly what our companies had to do to get past each stage of scaling by function as they grew. And so if that's a little interesting, you can grab your own personalized copy of the roadmap. Absolutely free. Just put in your business information and it'll actually customize the roadmap for you.",
+  "analysis": {
+    "hook": {
+      "text": "And that's when you realize the biggest risk is just not taking any.",
+      "type": "contraintuitivo",
+      "word_count": 14,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Realization",
+          "summary": "Contraintuitivo sobre el riesgo de no actuar",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Context - Scaling Stage",
+          "summary": "Posiciona el problema dentro de un framework conocido (etapas de scaling)",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Solution Introduction",
+          "summary": "Introduce el $100M Scaling Roadmap como respuesta",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Mechanism Explanation",
+          "summary": "Explica qué es y cómo funciona el roadmap",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "CTA - Micro Commitment",
+          "summary": "Invita a descargar versión personalizada gratis",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "conversacional_experto",
+      "formality_level": "neutral",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "the biggest risk is just not taking any",
+        "one of the stages of scaling",
+        "exactly what our companies had to do",
+        "by function as they grew",
+        "personalized copy",
+        "customize the roadmap for you"
+      ]
+    },
+    "cta": {
+      "text": "Just put in your business information and it'll actually customize the roadmap for you.",
+      "type": "micro_compromiso",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 21,
+    "total_word_count": 102,
+    "emotional_arc": "Inquietud (riesgo de no actuar) → Validación (esto es una etapa conocida) → Alivio (existe una solución estructurada) → Empoderamiento (personalizado para ti)",
+    "strengths": [
+      "Hook contraintuitivo que invierte la lógica del riesgo (no actuar = mayor riesgo)",
+      "Posicionamiento como guía de expertos basada en datos reales ('nuestras empresas')",
+      "Mecanismo claro: roadmap estructurado por función y etapa de crecimiento",
+      "CTA de micro-compromiso (bajo fricción: solo datos de negocio)",
+      "Promesa de personalización (aumenta relevancia percibida)",
+      "Lenguaje de autoridad sin arrogancia ('exactly what', 'had to do')",
+      "Transiciones naturales entre secciones"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con verdad contraintuitiva que invierte creencia común",
+      "Nombrar explícitamente el framework/etapa (da contexto sin explicar todo)",
+      "Usar 'our companies' o 'nuestros clientes' para prueba social implícita",
+      "Describir el mecanismo por 'función' o 'componentes' (estructura > generalidades)",
+      "Ofrecer versión personalizada/customizada como diferenciador",
+      "CTA conversacional con 'just' (reduce fricción psicológica)",
+      "Cerrar con beneficio directo ('for you') no con acción abstracta"
+    ],
+    "advertiser": {
+      "name": "Unknown - Scaling/Business Growth Platform",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - Realization",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Context - Scaling Stage",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Solution Introduction",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Mechanism Explanation",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA - Micro Commitment",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "El riesgo principal en scaling es tomar decisiones equivocadas o invertir mal",
+        "mechanism": "Mostrar que existe un roadmap estructurado basado en datos de empresas reales que escalaron exitosamente",
+        "new_belief": "El riesgo principal es NO tomar acción; existe una guía comprobada que reduce incertidumbre en cada etapa"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook contraintuitivo"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 15,
+          "ingredient_name": "Problema implícito: incertidumbre en scaling"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 42,
+          "ingredient_name": "Quiebre de creencia: riesgo = no actuar"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 68,
+          "ingredient_name": "Autoridad de datos: 'nuestras empresas'"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita: estructura por función"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 85,
+          "ingredient_name": "Prueba social: múltiples empresas lo hicieron"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 102,
+          "ingredient_name": "Oferta de personalización"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 115,
+          "ingredient_name": "CTA micro-compromiso"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje de empoderamiento: 'for you'"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "El mayor riesgo en scaling no es equivocarse, es no actuar; existe un roadmap probado que te guía por cada etapa."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con contraintuitivo que invierte la creencia del prospect sobre el problema (para ADP: 'El mayor riesgo no es crear mal, es no crear nada')",
+        "Nombrar explícitamente el framework/etapa del viaje del cliente (ej: 'Esta es la etapa donde la mayoría falla')",
+        "Usar 'nuestros clientes' o 'nuestras empresas' como prueba social sin necesidad de testimonios largos",
+        "Describir el mecanismo por componentes/funciones/pasos (no por beneficios abstractos)",
+        "Ofrecer versión 'personalizada' o 'customizada' como diferenciador clave en CTA",
+        "Usar 'just' + acción simple en CTA para reducir fricción ('solo ingresa tu email')",
+        "Cerrar con beneficio directo al usuario ('para ti', 'tu negocio') no con acción genérica",
+        "Mantener tono conversacional-experto sin sonar vendedor (usa 'And that's when' para continuidad natural)"
+      ],
+      "what_not_to_copy": [
+        "El contexto de 'scaling' de $100M no aplica a principiantes en LATAM (ajustar a 'primeros $10k' o 'primeros clientes')",
+        "La falta de urgencia puede no funcionar en LATAM donde competencia es alta (considerar agregar scarcity o deadline)",
+        "No hay re-hook: en videos más largos (30s+) se necesita re-enganchar a los 10-15s",
+        "Ausencia de objeción/demolición: no anticipa por qué alguien podría no actuar",
+        "El CTA es muy suave para cold traffic (considerar versión más directa para awareness bajo)"
+      ],
+      "craft_notes": [
+        "Ritmo: Oraciones cortas en hook (14 palabras) crean impacto; luego se expanden naturalmente",
+        "Cadencia: 'And that's when you realize' + 'And this is actually' + 'And so that's why' = repetición de 'And' que crea fluidez conversacional sin sonar robótico",
+        "Transiciones: 'And so' conecta causa-efecto de forma natural (riesgo → solución)",
+        "Power words: 'exactly', 'actually', 'personalized' (especificidad + autenticidad + relevancia)",
+        "Estructura de oraciones: Sujeto-verbo-objeto claro; evita subordinadas complejas (legibilidad en vertical)",
+        "Voz activa dominante: 'you realize', 'we put together', 'it'll customize' (agencia del usuario)",
+        "Lenguaje de certeza: 'exactly what', 'had to do' (no 'might', 'could') = confianza sin arrogancia"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:07:12.273Z"
+}

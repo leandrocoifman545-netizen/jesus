@@ -502,6 +502,102 @@ function ReferenceCard({ reference, onDelete, selected, onToggleSelect }: {
               </div>
             </div>
           </div>
+          {a.advertiser && (
+            <div className="bg-zinc-950/50 rounded-xl p-3 space-y-1">
+              <span className="text-xs text-zinc-500 uppercase tracking-wider">Anunciante</span>
+              <div className="flex flex-wrap gap-1.5 mt-1">
+                {a.advertiser.name && <span className="text-xs bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full px-2 py-0.5">{a.advertiser.name}</span>}
+                {a.advertiser.platform && <span className="text-xs bg-zinc-800 text-zinc-300 rounded-full px-2 py-0.5">{a.advertiser.platform}</span>}
+                {a.advertiser.ranking_position && a.advertiser.ranking_position !== "unknown" && (
+                  <span className="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full px-2 py-0.5">{a.advertiser.ranking_position.replace("_", " ")}</span>
+                )}
+                {a.advertiser.language && <span className="text-xs bg-zinc-800 text-zinc-400 rounded-full px-2 py-0.5">{a.advertiser.language}</span>}
+                {a.advertiser.country && <span className="text-xs bg-zinc-800 text-zinc-400 rounded-full px-2 py-0.5">{a.advertiser.country}</span>}
+              </div>
+            </div>
+          )}
+          {a.generation_mapping && (
+            <div className="bg-purple-500/5 border border-purple-500/10 rounded-xl p-3 space-y-2">
+              <span className="text-xs text-purple-400 uppercase tracking-wider font-medium">Mapeo ADP</span>
+              <div className="flex flex-wrap gap-1.5">
+                {a.generation_mapping.angle_family && (
+                  <span className="text-xs bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-full px-2 py-0.5">F: {a.generation_mapping.angle_family}</span>
+                )}
+                {a.generation_mapping.body_type && (
+                  <span className="text-xs bg-violet-500/10 text-violet-400 border border-violet-500/20 rounded-full px-2 py-0.5">{a.generation_mapping.body_type.replace(/_/g, " ")}</span>
+                )}
+                {a.generation_mapping.awareness_level && (
+                  <span className="text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full px-2 py-0.5">Schwartz {a.generation_mapping.awareness_level}</span>
+                )}
+                {a.generation_mapping.segment_equivalent && (
+                  <span className="text-xs bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-full px-2 py-0.5">Seg {a.generation_mapping.segment_equivalent}</span>
+                )}
+                {a.generation_mapping.model_sale_type && a.generation_mapping.model_sale_type !== "none" && (
+                  <span className="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full px-2 py-0.5">{a.generation_mapping.model_sale_type.replace(/_/g, " ")}</span>
+                )}
+              </div>
+              {a.generation_mapping.big_idea && (
+                <p className="text-xs text-zinc-300 italic">&ldquo;{a.generation_mapping.big_idea}&rdquo;</p>
+              )}
+              {a.generation_mapping.belief_change && (
+                <p className="text-xs text-zinc-400">
+                  <span className="text-red-400">{a.generation_mapping.belief_change.old_belief}</span>
+                  <span className="text-zinc-600"> → </span>
+                  <span className="text-zinc-300">{a.generation_mapping.belief_change.mechanism}</span>
+                  <span className="text-zinc-600"> → </span>
+                  <span className="text-emerald-400">{a.generation_mapping.belief_change.new_belief}</span>
+                </p>
+              )}
+              {a.generation_mapping.persuasion_functions && a.generation_mapping.persuasion_functions.length > 0 && (
+                <div className="flex flex-wrap gap-1">
+                  {a.generation_mapping.persuasion_functions.map((pf, i) => (
+                    <span key={i} className="text-[10px] bg-zinc-800 text-zinc-400 rounded px-1.5 py-0.5">{pf.section_name}: {pf.function}</span>
+                  ))}
+                </div>
+              )}
+              {a.generation_mapping.ingredients_detected && a.generation_mapping.ingredients_detected.length > 0 && (
+                <div className="flex flex-wrap gap-1">
+                  {a.generation_mapping.ingredients_detected.map((ing, i) => (
+                    <span key={i} className="text-[10px] bg-zinc-800 text-zinc-300 rounded px-1.5 py-0.5">{ing.category}#{ing.ingredient_number}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+          {a.actionable && (
+            <div className="space-y-2">
+              {a.actionable.what_to_steal && a.actionable.what_to_steal.length > 0 && (
+                <div>
+                  <span className="text-xs text-emerald-400 uppercase tracking-wider">Que robar</span>
+                  <ul className="mt-1 space-y-0.5">
+                    {a.actionable.what_to_steal.map((s, i) => (
+                      <li key={i} className="text-xs text-emerald-300/80">+ {s}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {a.actionable.what_not_to_copy && a.actionable.what_not_to_copy.length > 0 && (
+                <div>
+                  <span className="text-xs text-red-400 uppercase tracking-wider">No copiar</span>
+                  <ul className="mt-1 space-y-0.5">
+                    {a.actionable.what_not_to_copy.map((s, i) => (
+                      <li key={i} className="text-xs text-red-300/80">- {s}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {a.actionable.craft_notes && a.actionable.craft_notes.length > 0 && (
+                <div>
+                  <span className="text-xs text-zinc-500 uppercase tracking-wider">Notas de craft</span>
+                  <ul className="mt-1 space-y-0.5">
+                    {a.actionable.craft_notes.map((s, i) => (
+                      <li key={i} className="text-xs text-zinc-400 italic">• {s}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
           <div>
             <span className="text-xs text-zinc-500 uppercase tracking-wider">Fortalezas</span>
             <div className="flex flex-wrap gap-1.5 mt-1">

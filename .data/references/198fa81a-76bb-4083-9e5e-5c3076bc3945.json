@@ -1,0 +1,199 @@
+{
+  "id": "198fa81a-76bb-4083-9e5e-5c3076bc3945",
+  "title": "Euge Oller 6",
+  "transcript": " Después de muchísimo tiempo he lanzado una formación por un euro que te voy a enseñar ahora. Se llama Método Impef y es todo mi conocimiento de emprendimiento para que puedas emprender y encontrar tu idea de negocio perfecta en tan solamente una hora y cuarenta y siete. Básicamente tienes toda la clase con pizarra explicando todo absolutamente y luego también tienes obviamente plantillas para poder rellenar cliente ideal, mapa del cliente, modelo de negocio y todas las plantillas súper potentes para que fácilmente puedas simplemente rellenar y ya está. y tienes agentes de inteligencia artificial por si quieres que la IA te ayude en todo el proceso",
+  "analysis": {
+    "hook": {
+      "text": "Después de muchísimo tiempo he lanzado una formación por un euro",
+      "type": "situacion_especifica",
+      "word_count": 12,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Anuncio",
+          "summary": "Revelación de lanzamiento exclusivo a precio mínimo",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Nombre + Promesa",
+          "summary": "Presenta 'Método Impef' y promesa de encontrar idea de negocio en 1h47m",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Contenido Incluido",
+          "summary": "Detalla clase con pizarra + plantillas (cliente ideal, mapa, modelo de negocio)",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Diferenciador IA",
+          "summary": "Menciona agentes de IA integrados para asistencia en el proceso",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "conversacional_entusiasta",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "después de muchísimo tiempo",
+        "por un euro",
+        "todo mi conocimiento",
+        "simplemente rellenar y ya está",
+        "súper potentes"
+      ]
+    },
+    "cta": {
+      "text": "Implícito: acceso a formación por 1 euro (sin CTA verbal explícito)",
+      "type": "embedded_command",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 18,
+    "total_word_count": 142,
+    "emotional_arc": "Sorpresa (lanzamiento raro) → Esperanza (promesa de claridad en 1h47m) → Confianza (contenido detallado + IA) → Facilidad (solo rellenar plantillas)",
+    "strengths": [
+      "Hook con precio provocador (1 euro) genera curiosidad inmediata",
+      "Promesa específica y medible (1h47m para idea de negocio)",
+      "Enumeración clara de deliverables (clase + plantillas + IA)",
+      "Tono UGC auténtico que genera confianza (confesión de tiempo de desarrollo)",
+      "Integración natural de IA como diferenciador sin sobreexplicar",
+      "Uso de 'simplemente' reduce fricción percibida",
+      "Repetición de 'plantillas' refuerza valor tangible"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con precio/oferta provocadora que rompe expectativas",
+      "Nombrar el método/sistema explícitamente (Método Impef) para crear identidad",
+      "Prometer resultado específico + tiempo exacto (no 'rápido', sino '1h47m')",
+      "Listar 3-4 componentes concretos (clase, plantillas, IA) en lugar de beneficios abstractos",
+      "Usar 'simplemente' + verbo de acción para reducir fricción mental",
+      "Mencionar IA como asistente, no como protagonista",
+      "Mantener tono conversacional con 'y ya está' para cerrar sin presión"
+    ],
+    "advertiser": {
+      "name": "Método Impef (Autor/Creador desconocido - inferido del contenido)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "ES"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Anuncio",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Nombre + Promesa",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Contenido Incluido",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Diferenciador IA",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Encontrar una idea de negocio viable requiere meses de investigación y es complicado",
+        "mechanism": "Método estructurado (Impef) + plantillas + IA que guían el proceso paso a paso en 1h47m",
+        "new_belief": "Puedo descubrir mi idea de negocio perfecta en menos de 2 horas con herramientas probadas"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de precio provocador"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (tiempo vs. resultado)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 45,
+          "ingredient_name": "Quiebre de expectativa (1 euro para formación premium)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 62,
+          "ingredient_name": "Autoridad implícita (autor con 'muchísimo tiempo' desarrollando)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita (enumeración de componentes)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 78,
+          "ingredient_name": "Simplificación (solo rellenar plantillas)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba de proceso (plantillas + IA)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 102,
+          "ingredient_name": "Oferta de precio mínimo (1 euro)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 125,
+          "ingredient_name": "Lenguaje de facilidad (simplemente, ya está)"
+        }
+      ],
+      "model_sale_type": "democratizacion_ia",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "Encuentra tu idea de negocio perfecta en 1h47m con un método estructurado, plantillas y IA por 1 euro"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con precio/oferta provocadora (1 euro, 50% descuento, etc.) que rompa el patrón de expectativa",
+        "Nombrar el sistema/método con identidad propia (Método X, Sistema Y) para crear marca mental",
+        "Prometer resultado específico + tiempo exacto medible (no 'rápido' sino '47 minutos')",
+        "Enumerar 3-4 deliverables concretos y tangibles (plantillas, videos, templates, agentes IA)",
+        "Usar verbos de acción simple + 'simplemente' para reducir fricción mental del prospect",
+        "Integrar IA como herramienta asistente, no como protagonista (IA te ayuda, no IA hace todo)",
+        "Cerrar con tono conversacional sin presión ('y ya está', 'listo')",
+        "Estructura: Hook provocador → Nombre del método → Promesa medible → Componentes → Diferenciador IA"
+      ],
+      "what_not_to_copy": [
+        "Falta de CTA explícito verbal (en ads de productos digitales LATAM, necesitas CTA claro: 'Accede ahora', 'Entra aquí', 'Compra por 1 euro')",
+        "No menciona garantía, reembolso o riesgo cero (crítico para LATAM donde confianza es baja)",
+        "No hay urgencia temporal (sin 'solo hoy', 'solo 100 lugares', 'antes de mañana')",
+        "Duración muy corta para video vertical (18 seg es insuficiente para plataformas como TikTok/Reels que optimizan 30-60 seg)",
+        "No hay social proof explícito (testimonios, números de estudiantes, resultados)",
+        "Tono muy español (vosotros implícito) puede no resonar en LATAM; adaptar a 'tú' neutro"
+      ],
+      "craft_notes": [
+        "Cadencia fuerte en apertura: 'Después de muchísimo tiempo' crea pausa mental antes de revelación",
+        "Repetición de 'plantillas' (3 veces) refuerza valor pero roza redundancia; considerar sinonimia",
+        "Transición 'Básicamente' es débil; reemplazar con 'Lo que incluye es' o 'Dentro tienes'",
+        "Frase 'y luego también tienes obviamente' es coloquial pero 'obviamente' suena defensivo; cambiar a 'además tienes'",
+        "Power word 'súper potentes' es genérico; especificar: 'plantillas que se rellenan en 5 minutos'",
+        "Cierre 'y ya está' es conversacional pero ambiguo; cambiar a 'y listo para empezar' o 'y empiezas hoy'",
+        "Ritmo: oraciones largas sin puntuación crean sensación de atropello; dividir en frases más cortas",
+        "Falta de énfasis en beneficio emocional (libertad, claridad, confianza); agregar: 'sin dudas sobre qué hacer'"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:06:45.686Z"
+}

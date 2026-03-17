@@ -1,0 +1,238 @@
+{
+  "id": "22e5d6a2-b0a8-40ee-8108-180838c613d7",
+  "title": "salazar 4",
+  "transcript": " María Bení, mira, mira, es ella. No. Es ella la que está teniendo dudas en entrar a la panquecia. No, pero si se puede ganar hasta 95 dólares a la semana. Imagínate. Y así tiene dudas. No. ¿Y sabes qué es lo mejor? Que lo pueda hacer desde la casa y dedicando solo 55 minutos al día. Nada. ¿Tú sabías que las que ya tomaron acción están generando juntas más de 50 mil dólares solo este mes? Así que deja de estar perdiendo el tiempo en redes y utiliza tu celular para facturar. Así que toca el botón que aparece aquí abajo para que empieces a generar comisiones desde el primer día. Entra ya y nos vemos adentro. Te vas a sorprender con lo rápido que te empiezan a llegar las comisiones. Y recuerda, ahorra al menos el 35% de lo que vas a facturar. Toca el botón, nos vemos adentro. Llevo muy poquito, llevo desde el 31, ya tuve como la primera venta y digamos que después del 6 he vendido todos los días. Creo que 725 dólares, algo así. Y el primer día me trajo 4 ventas y yo, que no puede ser, ¿cómo así? ¿Qué es esto? ¿Qué es eso? Bueno, el segundo día, otras cuatro ventas. Y pues nada, ahí voy, ahí voy, juiciosa. Ya estamos acercándonos a los mil dólares. Llevo como 300, 300 dólares. En una semana. A ver, ahora está revisando. 291 dólares.",
+  "analysis": {
+    "hook": {
+      "text": "María Bení, mira, mira, es ella. No. Es ella la que está teniendo dudas en entrar a la panquecia.",
+      "type": "actuacion_dialogo",
+      "word_count": 24,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Identificación",
+          "summary": "Llamada directa a persona específica (María Bení) con diálogo que crea tensión: ella tiene dudas pero hay oportunidad.",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Quiebre + Mecanismo",
+          "summary": "Revelación de números: $95/semana, 55 minutos/día, $50k generado en el mes. Contraste entre tiempo invertido y dinero ganado.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Agitación + Demolición",
+          "summary": "Crítica directa: 'deja de estar perdiendo el tiempo en redes'. Reframe del celular como herramienta de facturación.",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "CTA + Promesa",
+          "summary": "Botón de acción con promesa de sorpresa ('comisiones desde el primer día'). Consejo de ahorro (35%).",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Prueba Social + Testimonial",
+          "summary": "Testimonio de usuario (desde 31, primeras ventas, $725 en días, $291 en una semana). Progresión de resultados.",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "¿Tú sabías que las que ya tomaron acción están generando juntas más de 50 mil dólares solo este mes?"
+    },
+    "tone": {
+      "primary_tone": "conversacional, urgente, celebratorio, de complicidad",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "mira, mira",
+        "es ella",
+        "¿Y sabes qué es lo mejor?",
+        "Imagínate",
+        "deja de estar perdiendo el tiempo",
+        "utiliza tu celular para facturar",
+        "Te vas a sorprender",
+        "Ahí voy, ahí voy, juiciosa",
+        "¿Cómo así?"
+      ]
+    },
+    "cta": {
+      "text": "Toca el botón que aparece aquí abajo para que empieces a generar comisiones desde el primer día. Entra ya y nos vemos adentro.",
+      "type": "directo",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 36,
+    "total_word_count": 287,
+    "emotional_arc": "Intriga (¿quién es María?) → Sorpresa (números altos) → Frustración (tiempo perdido en redes) → Esperanza (es posible) → Excitación (testimonios reales) → Urgencia (actúa ahora)",
+    "strengths": [
+      "Hook con nombre específico crea sensación de comunidad y reconocimiento",
+      "Números concretos y progresivos ($95, $50k, $725, $291) generan credibilidad",
+      "Contraste tiempo/dinero (55 minutos = $95) es matemáticamente convincente",
+      "Testimonial integrado muestra progresión real (primer día, segundo día, semana completa)",
+      "Tono UGC genuino (dudas, sorpresas, 'juiciosa') genera confianza vs. voz corporativa",
+      "Rehook a mitad del video mantiene atención en momento crítico",
+      "Dual CTA (verbal + visual 'botón') refuerza acción",
+      "Reframe del celular como herramienta de trabajo (no entretenimiento) es poderoso"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con nombre/persona específica para crear sensación de comunidad cerrada",
+      "Usar diálogo interno (No. Es ella.) para crear tensión y curiosidad",
+      "Presentar números en progresión: pequeño → medio → grande (efecto acumulativo)",
+      "Contraste explícito: tiempo invertido vs. dinero ganado (la ecuación mágica)",
+      "Rehook a mitad del video con dato sorprendente ($50k en un mes)",
+      "Crítica directa a comportamiento actual ('perdiendo tiempo en redes') antes de ofrecer solución",
+      "Integrar testimonial con detalles específicos de timeline (31, 6, primer día, segundo día)",
+      "Usar lenguaje de sorpresa genuina en testimonial ('¿Cómo así? ¿Qué es esto?')",
+      "Cerrar con consejo práctico (ahorrar 35%) para parecer mentor, no vendedor",
+      "Dual CTA: instrucción verbal + referencia visual (botón)"
+    ],
+    "advertiser": {
+      "name": "Panquecia (o programa de comisiones/afiliación similar)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "LATAM (probablemente CO, MX, AR, VE por contexto de dólares y lenguaje)"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Identificación",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Quiebre + Mecanismo",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Números + Contraste",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Agitación",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Testimonial",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Ganar dinero requiere mucho tiempo, educación formal, o es imposible desde casa",
+        "mechanism": "Demostración de matemática simple: 55 minutos/día = $95/semana, con prueba social de $50k generado en un mes y testimonial de $725 en días",
+        "new_belief": "Puedo generar dinero real en poco tiempo desde mi celular, sin experiencia previa, si tomo acción hoy"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de nombre específico (personalization)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (tiempo perdido en redes vs. dinero ganado)"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 45,
+          "ingredient_name": "Agitación por exclusión (otros ya ganaron $50k, tú no)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 58,
+          "ingredient_name": "Quiebre de creencia (55 minutos = $95 es contraintuitivo)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 72,
+          "ingredient_name": "Autoridad por números (comunidad de mujeres generando juntas)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 85,
+          "ingredient_name": "Mecanismo de tiempo (55 minutos específicos, no 'poco tiempo')"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 92,
+          "ingredient_name": "Prueba social por progresión (primer día 4 ventas, segundo día 4 ventas, semana $291)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 95,
+          "ingredient_name": "Testimonio con detalles específicos de timeline"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 108,
+          "ingredient_name": "Oferta implícita: acceso al sistema de comisiones"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 118,
+          "ingredient_name": "CTA directo con instrucción clara (toca el botón)"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 125,
+          "ingredient_name": "Urgencia por FOMO (otros ya ganaron, tú estás perdiendo tiempo)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 130,
+          "ingredient_name": "Lenguaje de sorpresa genuina ('¿Cómo así? ¿Qué es esto?')"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 2,
+      "segment_equivalent": "C",
+      "big_idea": "Gana dinero real en 55 minutos diarios desde tu celular, sin experiencia, con prueba de $50k generado en un mes por tu comunidad"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con nombre específico o persona identificable para crear sensación de comunidad y reconocimiento (aplicable a cursos de IA: 'Juan, mira, es él el que estaba dudando de la IA')",
+        "Presentar la ecuación mágica: tiempo invertido = dinero ganado de forma muy específica (ej: '2 horas/día = $500/semana con tu bot de IA')",
+        "Usar rehook a mitad del video con dato sorprendente que refuerce la oportunidad (ej: '$2.3M generados por nuestros estudiantes este trimestre')",
+        "Integrar testimonial con timeline específico y detalles de progresión (primer día X, segundo día Y, semana Z) para parecer real",
+        "Criticar directamente el comportamiento actual antes de ofrecer solución ('deja de vender servicios por hora, usa IA para escalar')",
+        "Usar lenguaje de sorpresa genuina en testimonios ('¿Cómo así? ¿Qué es esto?') para humanizar resultados",
+        "Cerrar con consejo práctico (ej: 'reinvierte el 40% en más bots') para parecer mentor, no solo vendedor",
+        "Dual CTA: instrucción verbal clara + referencia visual (botón, link, etc.)",
+        "Mantener tono UGC muy casual (dudas, risas, lenguaje coloquial) incluso en números grandes",
+        "Usar contraste emocional: frustración (tiempo perdido) → esperanza (es posible) → excitación (resultados reales)"
+      ],
+      "what_not_to_copy": [
+        "No copiar el contexto específico de 'panquecia' o modelos de comisiones directas (no aplica a productos digitales de IA)",
+        "No usar nombres reales de personas sin consentimiento (riesgo legal y de privacidad)",
+        "No prometer resultados garantizados en 'primer día' para cursos de IA (es menos creíble y más regulado)",
+        "No abusar del tono de 'deja de perder tiempo' si tu audiencia es principiante 45+ (puede sonar condescendiente)",
+        "No usar solo testimonios de mujeres si tu producto es para todos (puede alienar a otros segmentos)",
+        "No enfatizar tanto el 'celular' si tu producto requiere computadora o herramientas más complejas"
+      ],
+      "craft_notes": [
+        "Ritmo: Frases muy cortas al inicio ('mira, mira', 'es ella', 'No.') crean cadencia rápida y atención. Luego se expande con números. Efecto: tensión → revelación.",
+        "Repetición estratégica: 'Ahí voy, ahí voy, juiciosa' y 'toca el botón' aparecen dos veces, refuerza acción sin parecer redundante.",
+        "Transiciones naturales: 'Y así tiene dudas' → '¿Y sabes qué es lo mejor?' → 'Imagínate' crean flujo conversacional, no publicitario.",
+        "Power words: 'facturar' (vs. ganar), 'juiciosa' (vs. trabajadora), 'sorprender' (vs. gustar), 'comisiones' (vs. dinero) son específicos y generan confianza.",
+        "Números con contexto: No solo '$95/semana' sino '$95/semana en 55 minutos' crea la ecuación mágica.",
+        "Diálogo interno: 'No. Es ella.' crea tensión narrativa sin necesidad de explicación.",
+        "Lenguaje de sorpresa genuina: '¿Cómo así? ¿Qué es esto? ¿Qué es eso?' parece real, no actuado, aumenta credibilidad.",
+        "Progresión de números: $95 → $50k → $725 → $291 crea sensación de acumulación y momentum.",
+        "Cierre con consejo: 'Ahorra al menos el 35%' añade valor y parecer de mentor, no solo vendedor."
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:17:13.719Z"
+}

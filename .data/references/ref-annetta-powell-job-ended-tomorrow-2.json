@@ -1,0 +1,165 @@
+{
+  "id": "ref-annetta-powell-job-ended-tomorrow-2",
+  "title": "Annetta Powell - Si tu trabajo termina manana: digital product + AI + objection handling",
+  "transcript": "If your job ended tomorrow, would your bank account be okay next month? And if the answer is no, let me tell you why. Because you did not create a digital product. And right now you have something in your brain that literally you can turn that knowledge into a digital product. You're going to create it one time. You're going to get paid over and over and over. You're going to put it on a system. You're going to automate it. Now you have something where you can get paid whether you go to work or whether you don't go to work. But I know what you're saying. But Nada, I don't have the expertise. I don't have, you know, no big tech skills. And then I don't have a large audience. And you don't need none of that. You just need to come to my free digital product masterclass. And the best part about it is it's an AI way where you can do this in five minutes. And now you are making money in your sleep. So who cares about that job now, right? just click the link right below this video so I can show you how.",
+  "analysis": {
+    "hook": {
+      "text": "If your job ended tomorrow, would your bank account be okay next month? And if the answer is no, let me tell you why. Because you did not create a digital product.",
+      "type": "pregunta_incomoda",
+      "word_count": 32,
+      "estimated_seconds": 10
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook - Pregunta incomoda",
+          "summary": "Si tu trabajo termina manana, tu cuenta bancaria aguanta? No? Porque no creaste un producto digital.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Mecanismo",
+          "summary": "Lo creas una vez, te pagan una y otra vez. Lo automatizas. Ganas vayas o no al trabajo.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Demolicion de objeciones",
+          "summary": "No tengo expertise. No tengo tech skills. No tengo audiencia. No necesitas nada de eso.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "IA como atajo",
+          "summary": "Con IA lo haces en 5 minutos. Ganas plata mientras dormis.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA",
+          "summary": "Masterclass gratis. Click the link.",
+          "estimated_seconds": 5
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "But I know what you're saying."
+    },
+    "tone": {
+      "primary_tone": "confrontativo-empatico",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "if your job ended tomorrow",
+        "you did not create a digital product",
+        "get paid over and over and over",
+        "making money in your sleep",
+        "who cares about that job now"
+      ]
+    },
+    "cta": {
+      "text": "Just click the link right below this video so I can show you how.",
+      "type": "learn_more",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 55,
+    "total_word_count": 201,
+    "emotional_arc": "Miedo (tu trabajo termina manana) -> Culpa (porque no creaste un producto digital) -> Esperanza (crear una vez, cobrar siempre) -> Confianza (no necesitas nada especial) -> Deseo (plata mientras dormis)",
+    "strengths": [
+      "Hook que genera MIEDO inmediato y luego da la CAUSA — doble golpe",
+      "Demolicion de 3 objeciones en cascada rapida (expertise, tech, audiencia)",
+      "Cierre perfecto: who cares about that job now? — resignifica el miedo del hook",
+      "55 segundos, estructura PAS perfecta"
+    ],
+    "patterns_to_replicate": [
+      "Pregunta de miedo + causa inmediata: Si X pasa, Y aguanta? No? Porque no hiciste Z.",
+      "Demolicion de 3 objeciones en cascada rapida (el avatar las dice, vos las descartas)",
+      "Cierre que resignifica el hook: quien se preocupa por ese trabajo ahora?",
+      "IA como atajo que elimina la barrera de tiempo y complejidad"
+    ],
+    "advertiser": {
+      "name": "Annetta Powell",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "confrontacion",
+      "body_type": "demolicion_mito",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - Pregunta incomoda",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Mecanismo",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Demolicion objeciones",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "IA como atajo",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Mi trabajo es mi unica fuente de ingreso y no tengo skills para crear algo online",
+        "mechanism": "Un producto digital se crea una vez con IA (5 min) y paga repetidamente. No necesitas expertise, tech skills ni audiencia.",
+        "new_belief": "Puedo crear un ingreso automatico con un producto digital hecho con IA sin habilidades especiales"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 3,
+          "ingredient_name": "Pregunta incomoda (si tu trabajo termina manana)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 30,
+          "ingredient_name": "Miedo a la dependencia (una sola fuente de ingreso)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 49,
+          "ingredient_name": "Redefinicion (quien se preocupa por ese trabajo ahora?)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 82,
+          "ingredient_name": "Atajo legitimo (IA en 5 min)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 98,
+          "ingredient_name": "Riesgo cero (masterclass gratis)"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Si tu trabajo termina manana no sobrevivis — porque no creaste un producto digital que te pague mientras dormis"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Hook MIEDO + CAUSA: Si manana te echan, tu cuenta aguanta? No? Porque no creaste un ingreso extra. Adaptable directo a ADP.",
+        "Demolicion rapida de 3 objeciones: el avatar las dice (no tengo X, no se Y, no tengo Z) y las descarta en 1 oracion cada una",
+        "Cierre circular que resignifica el hook: despues de mostrar el mecanismo, volver al miedo y decir y ahora, quien se preocupa por ese trabajo?",
+        "Estructura PAS compacta de 55s como referencia de ritmo"
+      ],
+      "what_not_to_copy": [
+        "Making money in your sleep es cliche gastado",
+        "No tiene nicho especifico — es generico (any knowledge)",
+        "Falta prueba social concreta"
+      ],
+      "craft_notes": [
+        "El hook es el mejor de Annetta. Funciona porque primero genera MIEDO (tu trabajo termina) y ENSEGUIDA da la CAUSA (porque no creaste X). El viewer siente culpa + urgencia.",
+        "Para ADP: Si manana te echan del laburo, cuantos meses aguantas? Si la respuesta te da miedo, es porque dependes de un solo ingreso. Te muestro como crear otro en una tarde con IA.",
+        "La demolicion de objeciones en cascada es rapida y efectiva: el viewer piensa pero yo no se... y ella ya lo dijo y lo descarto."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T02:18:51.064Z"
+}

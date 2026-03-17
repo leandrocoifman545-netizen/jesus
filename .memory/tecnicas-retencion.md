@@ -43,6 +43,14 @@ Abrir una pregunta o misterio que no se resuelve hasta más adelante.
 - Empezar a hablar en el milisegundo 0. Cero pausa antes de la primera palabra.
 - Cero "Hola", "Bueno", "Hoy voy a...", saludos o presentaciones.
 
+## Anclaje sensorial (5 sentidos)
+Activar al menos 1 sentido no-visual en el guion. El cerebro retiene más cuando "siente" algo concreto además de ver/escuchar.
+- **Kinestésico:** "Sentís ese nudo en el pecho cuando abrís el home banking" — sensación física
+- **Olfativo/gustativo:** "El olor a café de las 6AM mientras tu celu te muestra la primera venta" — future pacing sensorial
+- **Auditivo específico:** "El sonido de la notificación de MercadoPago a las 3 de la mañana" — ancla concreta
+- Especialmente útil en beats de **identificación** (anclar el dolor al cuerpo) y **prueba/future pacing** (hacer tangible el resultado)
+- NO forzar si no sale natural. 1 anclaje sensorial bien puesto > 3 forzados.
+
 ## Reglas descartadas (contradicen a Jesús)
 - NO porcentajes en hooks ("el 99% comete este error")
 - NO ataques agresivos al ego (no es el tono de ADP)

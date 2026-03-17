@@ -1,0 +1,154 @@
+{
+  "id": "ref-amanda-afonso-no-es-sobre-carro-1",
+  "title": "Amanda Afonso - Este video no es sobre un carro, es sobre libertad (storytelling puro)",
+  "transcript": "Esse vídeo não é sobre um carro, é sobre tudo que aconteceu por trás disso, sobre os momentos em que ninguém estava vendo, sobre as vezes que riram, duvidaram, e mesmo assim eu fui lá e comecei. É sobre uma mãe cansada, cansada de trabalhar fora e viver sem tempo para os filhos, cansada de ser desvalorizada ou humilhada no trabalho, de passar vontade no mercado, de negar um pedido simples só porque o dinheiro não dava, de viver no aperto. É sobre recomeçar do zero, escolher um caminho que ninguém entendia, seguir em frente mesmo sem estar pronta, trabalhar em silêncio até o resultado falar por mim. Esse vídeo não é sobre o carro, é sobre liberdade, sobre provar pra mim mesma o que eu podia e mostrar pros meus filhos que é possível sim e vale a pena acreditar na gente.",
+  "analysis": {
+    "hook": {
+      "text": "Esse video nao e sobre um carro, e sobre tudo que aconteceu por tras disso.",
+      "type": "contraintuitivo",
+      "word_count": 15,
+      "estimated_seconds": 5
+    },
+    "structure": {
+      "framework": "other",
+      "sections": [
+        {
+          "name": "Hook - No es sobre el carro",
+          "summary": "Contraintuitivo: video con carro nuevo pero no es sobre eso.",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Lo que nadie vio",
+          "summary": "Momentos invisibles, risas, dudas, y aun asi empezo.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Retrato de la madre cansada",
+          "summary": "Cansada de trabajar fuera, sin tiempo, desvalorizada, humillada, pasar necesidades, negar pedidos.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "El recomienzo",
+          "summary": "Recomenco de cero, camino que nadie entendia, seguir sin estar lista.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Cierre - Es sobre libertad",
+          "summary": "No es sobre el carro. Es sobre libertad, probar que podia, mostrar a los hijos que es posible.",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": false
+    },
+    "tone": {
+      "primary_tone": "poetico-emocional",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "nao e sobre um carro",
+        "mae cansada",
+        "negar um pedido simples",
+        "trabalhar em silencio",
+        "provar pra mim mesma"
+      ]
+    },
+    "cta": {
+      "text": "",
+      "type": "none",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 50,
+    "total_word_count": 143,
+    "emotional_arc": "Curiosidad (no es sobre el carro) -> Empatia (nadie veia) -> Dolor (madre cansada, humillada) -> Admiracion (recomenco sola) -> Inspiracion (libertad)",
+    "strengths": [
+      "Hook contraintuitivo perfecto: video de un carro pero dice que no es sobre eso",
+      "Estructura de negacion repetida: cansada de X, cansada de Y, cansada de Z — ritmo poetico",
+      "Cierre circular: abre y cierra con este video no es sobre el carro",
+      "Duracion perfecta para ad (50s)",
+      "Cero mencion de producto/metodo — pura emocion que genera marca"
+    ],
+    "patterns_to_replicate": [
+      "Hook Este video no es sobre X — estructura contraintuitiva replicable",
+      "Repeticion ritmica (cansada de... cansada de... cansada de...) como recurso poetico",
+      "Cierre circular que vuelve al hook",
+      "Mostrar resultado fisico (carro) pero resignificarlo emocionalmente"
+    ],
+    "advertiser": {
+      "name": "Amanda Afonso",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "historia",
+      "body_type": "contraste_emocional",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - No es sobre el carro",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Retrato madre cansada",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "El recomienzo",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Mi situacion actual (cansada, sin tiempo, sin plata) es permanente",
+        "mechanism": "Una madre en la misma situacion recomenco de cero y ahora tiene libertad",
+        "new_belief": "Es posible recomencar y lograr libertad incluso desde el peor momento"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 5,
+          "ingredient_name": "Contraintuitivo (no es sobre el carro)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 33,
+          "ingredient_name": "Detalle sensorial del dolor (negar pedido simple, pasar necesidades)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad (humillada en el trabajo, riram de mi)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 125,
+          "ingredient_name": "Cierre NLP (mostrar a mis hijos que es posible)"
+        }
+      ],
+      "model_sale_type": "none",
+      "awareness_level": 1,
+      "segment_equivalent": "A",
+      "big_idea": "Este video no es sobre un carro — es sobre una madre que recomenco de cero y se dio libertad"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura ESTE VIDEO NO ES SOBRE X — hook contraintuitivo adaptable a cualquier resultado visible",
+        "Repeticion ritmica como recurso poetico (cansado de... cansado de... cansado de...)",
+        "Cierre circular que vuelve al hook — estructura elegante",
+        "Resignificar un objeto material como simbolo emocional"
+      ],
+      "what_not_to_copy": [
+        "Sin CTA, sin mecanismo, sin producto — es branding puro, no convierte",
+        "Para ADP necesitamos cambio de creencia ligado al metodo"
+      ],
+      "craft_notes": [
+        "Este ad tiene nivel de copywriting profesional. La estructura circular + repeticion ritmica es tecnica de escritura avanzada.",
+        "Para ADP: Este video no es sobre un ebook. No es sobre IA. Es sobre [dolor del avatar]. Adaptar con mecanismo y CTA al final."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:39:22.745Z"
+}

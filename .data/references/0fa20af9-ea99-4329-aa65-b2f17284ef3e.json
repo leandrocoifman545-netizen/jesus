@@ -1,0 +1,213 @@
+{
+  "id": "0fa20af9-ea99-4329-aa65-b2f17284ef3e",
+  "title": "sabri 1",
+  "transcript": " Excuse me, sir. Is this your Ferrari? It is. What did you do to afford a car like this? I flip eyeballs into money. I basically run these very simple ads on the internet that turn $1 into $3, and I just kept on doing that, and things kind of blew up for me. And how much money do you make from something like this? Last month, I did $3 million, and we've done over $7.8 billion in sales for our clients doing the very same stuff. If you want to know how I do it, I put all of those secrets into my book, and I'm actually giving it away for free. I've got to roll. Thank you.",
+  "analysis": {
+    "hook": {
+      "text": "Excuse me, sir. Is this your Ferrari?",
+      "type": "situacion_especifica",
+      "word_count": 8,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook & Setup",
+          "summary": "Pregunta directa sobre Ferrari para captar atención y establecer contexto de riqueza",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Identificación & Confesión",
+          "summary": "Respuesta que revela la identidad del personaje y su método simple",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Mecanismo Explicado",
+          "summary": "Explicación clara del modelo: $1 → $3, repetición, escalado",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Prueba Social & Números",
+          "summary": "Validación con números concretos: $3M personal, $7.8B para clientes",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Oferta & CTA",
+          "summary": "Libro gratuito con secretos, cierre abrupto con salida física",
+          "estimated_seconds": 3
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Conversacional, confiado, accesible, ligeramente jactancioso",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "I flip eyeballs into money",
+        "very simple ads",
+        "turn $1 into $3",
+        "things kind of blew up for me",
+        "I've got to roll"
+      ]
+    },
+    "cta": {
+      "text": "If you want to know how I do it, I put all of those secrets into my book, and I'm actually giving it away for free.",
+      "type": "embedded_command",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 19,
+    "total_word_count": 127,
+    "emotional_arc": "Intriga (Ferrari) → Sorpresa (método simple) → Credibilidad (números grandes) → Curiosidad (secretos) → Cierre abrupto (FOMO por salida)",
+    "strengths": [
+      "Hook visual y narrativo extremadamente fuerte: pregunta sobre Ferrari crea curiosidad inmediata",
+      "Mecanismo matemático simple y repetible ($1→$3) es fácil de entender y memorizar",
+      "Prueba social masiva: números concretos ($3M, $7.8B) generan credibilidad sin parecer fabricado",
+      "Personaje carismático y accesible: habla como persona real, no como vendedor",
+      "Oferta de bajo riesgo: libro gratis elimina barrera de entrada",
+      "Cierre físico abrupto: 'I've got to roll' crea sensación de urgencia y autenticidad",
+      "Lenguaje coloquial: 'flip eyeballs into money', 'things kind of blew up' suena genuino",
+      "Estructura de diálogo: formato de entrevista callejera es altamente engageable"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con pregunta visual provocadora sobre símbolo de éxito (Ferrari, casa, viaje)",
+      "Revelar método en lenguaje ultra-simple: 'I do X, then Y, then Z happened'",
+      "Usar matemática concreta y repetible como mecanismo central ($1→$3, no 'gano mucho')",
+      "Incluir números de prueba social que parecen verificables (específicos, no redondos)",
+      "Mantener tono conversacional y de primera persona durante todo el anuncio",
+      "Ofrecer algo gratis (libro, guía, acceso) como puerta de entrada",
+      "Cerrar con acción física o salida abrupta que crea FOMO",
+      "Usar formato de diálogo o entrevista para mayor engagement",
+      "Mencionar 'secretos' o 'cómo lo hago' para generar curiosidad residual"
+    ],
+    "advertiser": {
+      "name": "Russell Brunson / ClickFunnels (inferido)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook & Setup",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Identificación & Confesión",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Mecanismo Explicado",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba Social & Números",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Oferta & CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Ganar dinero requiere trabajo duro, inversión grande, o suerte extraordinaria",
+        "mechanism": "Demostración de un sistema matemático simple ($1→$3) que se repite y escala, validado con números reales",
+        "new_belief": "Existe un método simple y repetible para convertir pequeñas inversiones en ganancias multiplicadas, accesible para cualquiera"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook visual: símbolo de éxito (Ferrari)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 12,
+          "ingredient_name": "Problema implícito: no saber cómo ganar dinero rápido"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 45,
+          "ingredient_name": "Quiebre: método es 'very simple', no complejo"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Autoridad: números personales ($3M) y de clientes ($7.8B)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Mecanismo explícito: $1 → $3, repetición, escalado"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba social: volumen de clientes y resultados agregados"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 102,
+          "ingredient_name": "Oferta de bajo riesgo: libro gratis"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 115,
+          "ingredient_name": "CTA conversacional: 'If you want to know how I do it...'"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje NLP: 'flip eyeballs into money', 'things kind of blew up'"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Un sistema matemático simple y repetible ($1→$3) puede escalar a millones si lo repites consistentemente"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con pregunta sobre símbolo visual de éxito específico a LATAM: casa propia, viaje a Europa, auto de lujo, libertad financiera",
+        "Revelar el mecanismo en términos matemáticos simples y verificables: 'Invierto $X en ads, gano $Y, repito Z veces'",
+        "Usar números concretos de prueba social: clientes reales, resultados agregados, no testimonios genéricos",
+        "Mantener tono de persona real, no guru: hablar como si estuvieras en la calle, no desde un escenario",
+        "Ofrecer acceso gratuito a 'secretos' o 'cómo lo hago' como puerta de entrada a producto digital",
+        "Cerrar con acción física o urgencia implícita que cree FOMO sin ser agresivo",
+        "Usar formato de diálogo o entrevista para mayor engagement en video vertical",
+        "Mencionar que el método es 'simple' o 'muy simple' para reducir fricción psicológica",
+        "Incluir números personales ($3M) Y de clientes ($7.8B) para credibilidad dual"
+      ],
+      "what_not_to_copy": [
+        "No copiar el contexto de Ferrari/lujo extremo si tu audiencia LATAM es de clase media-baja; adaptar a símbolos locales de éxito",
+        "No prometer $3M personales si no tienes números verificables; la credibilidad es crítica",
+        "No usar formato de entrevista callejera si tu marca es B2B o muy formal; adaptar al tono de tu industria",
+        "No hacer CTA tan suave si tu producto requiere conversión inmediata; este anuncio es top-funnel",
+        "No omitir el mecanismo matemático si tu producto es sobre dinero; la claridad es lo que vende",
+        "No usar lenguaje demasiado coloquial si tu audiencia es profesional o corporativa"
+      ],
+      "craft_notes": [
+        "Ritmo: alternancia perfecta entre preguntas cortas (3-4 palabras) y respuestas largas (15-20 palabras) crea cadencia hipnótica",
+        "Power words: 'flip', 'blew up', 'secrets' son verbos y sustantivos de alto impacto emocional",
+        "Transiciones: el salto de 'What did you do' a 'I flip eyeballs into money' es abrupto y memorable; no hay suavidad",
+        "Estructura de oración: mezcla de oraciones cortas ('It is.') con complejas ('I basically run these very simple ads...') mantiene atención",
+        "Repetición: 'very simple ads' se repite conceptualmente en 'turn $1 into $3' y 'very same stuff'; refuerza mensaje",
+        "Lenguaje figurado: 'flip eyeballs into money' es metáfora visual que sustituye explicación técnica",
+        "Números: $1→$3 es ratio simple (3x), $3M y $7.8B son números que parecen reales (no redondos como $5M)",
+        "Cierre: 'I've got to roll' es coloquialismo que rompe el patrón y crea sensación de urgencia sin decirlo explícitamente",
+        "Tono de voz: primera persona singular ('I flip', 'I do', 'I put') crea intimidad y responsabilidad personal"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:10:02.675Z"
+}

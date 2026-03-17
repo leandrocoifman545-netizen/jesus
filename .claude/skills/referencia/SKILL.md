@@ -6,7 +6,7 @@ argument-hint: [archivo.mp4 o URL o texto]
 
 # Analizador de Referencias — ADP
 
-Recibís un video, link de redes sociales, archivo de audio o texto. Tu trabajo es transcribirlo (si hace falta), analizarlo, decidir si sirve para ADP y guardarlo solo si aporta valor.
+Recibís un video, link de redes sociales, archivo de audio o texto. Tu trabajo es transcribirlo (si hace falta), analizarlo y guardarlo mapeando al sistema de generación de ADP.
 
 ## Paso 1: Obtener la transcripción
 
@@ -24,62 +24,118 @@ Leé las reglas para saber contra qué filtrar:
 - `!cat /Users/lean/.claude/projects/-Users-lean-Documents/memory/consejos-jesus.md`
 - `!cat /Users/lean/.claude/projects/-Users-lean-Documents/memory/jesus-tono-adp-nuevo.md`
 
-## Paso 3: Analizar
+## Paso 3: Analizar (mapeo completo al sistema ADP)
 
 Evaluar la transcripción en estas dimensiones:
-1. **Hook/Lead** — ¿Cómo arranca? ¿Es efectivo? ¿Qué tipo de hook usa?
-2. **Estructura** — ¿Qué framework sigue? (PAS, AIDA, BAB, Hook-Story-Offer, etc.)
-3. **Tono** — ¿Cómo habla? ¿Qué registro usa?
-4. **Mecanismo** — ¿Cómo presenta la solución/producto?
-5. **CTA** — ¿Qué pide y cómo?
-6. **Patrones clave** — ¿Qué técnicas de retención usa?
-7. **Arco emocional** — ¿Qué recorrido emocional hace el espectador?
 
-## Paso 4: Filtrar
+### Análisis básico
+1. **Hook/Lead** — ¿Cómo arranca? ¿Qué tipo de hook usa? (mapear a nuestros 15 tipos)
+2. **Estructura** — ¿Qué framework sigue? (PAS, AIDA, BAB, Hook-Story-Offer, micro_vsl, otro)
+3. **Tono** — ¿Cómo habla? ¿Qué registro usa? ¿UGC? ¿Humor?
+4. **CTA** — ¿Qué pide y cómo? ¿Tiene urgencia? ¿Es dual?
+5. **Arco emocional** — ¿Qué recorrido emocional hace?
 
-Decidir si sirve para ADP. Preguntas de filtro:
-- ¿Aporta una técnica, estructura o ángulo que no tenemos?
-- ¿Es coherente con el tono y las reglas de Jesús?
-- ¿Podríamos adaptar algo de esto a los guiones de ADP?
+### Mapeo ADP (NUEVO — obligatorio)
+6. **Familia de ángulo** — ¿identidad, oportunidad, confrontacion, mecanismo o historia?
+7. **Vehículo narrativo** — ¿Cuál de los 8 tipos de cuerpo usa?
+8. **Funciones persuasivas** — ¿Qué beats tiene? (identificacion, quiebre, mecanismo, demolicion, prueba)
+9. **Cambio de creencia** — ¿Creencia vieja → mecanismo → creencia nueva?
+10. **Ingredientes** — ¿Qué ingredientes de la enciclopedia ADP (A-K) se detectan?
+11. **Venta del modelo** — ¿Qué tipo de los 10 usa? (si aplica)
+12. **Awareness Schwartz** — ¿A qué nivel habla? (1-5)
+13. **Segmento equivalente** — ¿A, B, C o D?
+14. **Big idea** — ¿Cuál es LA idea central en una frase?
 
-Si NO sirve:
-- Decirle al usuario POR QUÉ no sirve
-- NO guardarlo
-- Sugerir qué tipo de contenido sí sería útil
+### Extracción accionable (NUEVO — obligatorio)
+15. **Qué robar** — Técnicas específicas que podemos adaptar para ADP
+16. **Qué NO copiar** — Qué no aplica o sería contraproducente
+17. **Notas de craft** — Observaciones sobre calidad de escritura a nivel de oración
 
-Si SÍ sirve:
-- Explicar QUÉ aporta específicamente
-- Preguntar al usuario si quiere guardarlo
-- Proceder al paso 5
+## Paso 4: Preguntar metadata al usuario
 
-## Paso 5: Guardar como referencia (solo si sirve Y el usuario aprueba)
+Antes de guardar, preguntar lo que no se puede inferir:
+- **Anunciante** (si no es obvio del contenido)
+- **Ranking** — ¿Estaba en el top 5/10/20 por impresiones en Ad Library?
+- **Plataforma** — ¿Meta, TikTok, YouTube?
 
-Crear el JSON de referencia y guardarlo:
+## Paso 5: Guardar como referencia
+
+El guardado usa la web (POST /api/references) que analiza con AI automáticamente. Pero cuando se guarda desde conversación, construir el JSON completo:
 
 ```bash
 echo '{
   "id": "ref-NOMBRE-DESCRIPTIVO",
   "title": "TÍTULO DESCRIPTIVO",
-  "type": "video|text|audio",
   "transcript": "TRANSCRIPCIÓN COMPLETA",
   "analysis": {
-    "hook_type": "tipo de hook",
-    "hook_text": "texto del hook",
-    "structure": "descripción de la estructura",
-    "framework": "PAS|AIDA|BAB|Hook-Story-Offer|otro",
-    "tone": "descripción del tono",
-    "cta_type": "tipo de CTA",
-    "cta_text": "texto del CTA",
-    "duration_seconds": NÚMERO,
-    "key_patterns": ["patrón 1", "patrón 2"],
-    "language": "es-AR|es-MX|en|pt",
-    "emotional_arc": "descripción del arco emocional"
-  },
-  "createdAt": "ISO_DATE",
-  "competitor": true|false,
-  "reference_type": "competitor|own_brand|inspiration",
-  "notes": "Por qué se guardó y qué aporta"
+    "hook": {
+      "text": "texto del hook",
+      "type": "tipo_de_hook",
+      "word_count": N,
+      "estimated_seconds": N
+    },
+    "structure": {
+      "framework": "PAS|micro_vsl|otro",
+      "sections": [{ "name": "nombre", "summary": "resumen", "estimated_seconds": N }],
+      "has_rehook": true|false,
+      "rehook_text": "texto o null"
+    },
+    "tone": {
+      "primary_tone": "confrontativo|empático|curioso|urgente|etc",
+      "formality_level": "very_casual|casual|neutral",
+      "uses_first_person": true|false,
+      "ugc_style": true|false,
+      "humor_level": "none|light|moderate",
+      "key_phrases": ["frase 1", "frase 2"]
+    },
+    "cta": {
+      "text": "texto del CTA",
+      "type": "directo|reframe|embedded_command|micro_compromiso|exclusion|conversacional|custom|none",
+      "has_urgency": true|false,
+      "has_reason_why": true|false,
+      "is_dual": true|false
+    },
+    "estimated_total_duration_seconds": N,
+    "total_word_count": N,
+    "emotional_arc": "descripción del arco",
+    "strengths": ["fortaleza 1", "fortaleza 2"],
+    "patterns_to_replicate": ["patrón 1", "patrón 2"],
+    "advertiser": {
+      "name": "Nombre del anunciante",
+      "platform": "meta|tiktok|youtube|unknown",
+      "ranking_position": "top_5|top_10|top_20|unknown",
+      "language": "es|en|pt",
+      "country": "AR|US|BR|etc"
+    },
+    "generation_mapping": {
+      "angle_family": "identidad|oportunidad|confrontacion|mecanismo|historia",
+      "body_type": "demolicion_mito|historia_con_giro|demo_proceso|comparacion_caminos|un_dia_en_la_vida|pregunta_respuesta|analogia_extendida|contraste_emocional",
+      "persuasion_functions": [
+        { "section_name": "nombre", "function": "identificacion|quiebre|mecanismo|demolicion|prueba|venta_modelo" }
+      ],
+      "belief_change": {
+        "old_belief": "creencia vieja",
+        "mechanism": "mecanismo que la refuta",
+        "new_belief": "creencia nueva"
+      },
+      "ingredients_detected": [
+        { "category": "B", "ingredient_number": 29, "ingredient_name": "Dolor comparativo social" }
+      ],
+      "model_sale_type": "tipo o none",
+      "awareness_level": 1-5,
+      "segment_equivalent": "A|B|C|D",
+      "big_idea": "La idea central en una frase"
+    },
+    "actionable": {
+      "what_to_steal": ["técnica 1", "técnica 2"],
+      "what_not_to_copy": ["razón 1"],
+      "craft_notes": ["observación sobre escritura"]
+    }
+  }
 }' | node scripts/save-reference.mjs
 ```
 
-Confirmar al usuario que se guardó y resumir qué aporta.
+Confirmar al usuario que se guardó y resumir:
+- Big idea del ad
+- Qué se puede robar para ADP
+- Qué mapeo tiene (ángulo, cuerpo, awareness)

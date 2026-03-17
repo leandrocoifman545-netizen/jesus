@@ -1,0 +1,204 @@
+{
+  "id": "1ad608dc-8024-4da7-84a8-2251e85024f6",
+  "title": "hormozi 5",
+  "transcript": " If you want to remodel in companies over a million dollars a year and you want to scale, I have a free gift for you. And so my team spent 200 plus hours reviewing portfolio companies and companies we advised to figure out exactly where people got stuck at each revenue level and looked at it across function. So that means marketing, sales, CS, finance, legal, tech, ops, the whole gamut, and more importantly, not where they get stuck, but how to get unstuck at each revenue level. It's a gift. It's absolutely free. If you want that, it'll give you a customized scaling roadmap to where you're at right now and what specific actions to take. The whole thing's a gift, no strings attached. So if you want it, click, put your information in and it'll send it to you all personalized and yeah, it rocks. And so you should use it. That's all I got. All right, grab it and have a good year.",
+  "analysis": {
+    "hook": {
+      "text": "If you want to remodel in companies over a million dollars a year and you want to scale, I have a free gift for you.",
+      "type": "situacion_especifica",
+      "word_count": 26,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Calificación",
+          "summary": "Identifica el público específico (empresas $1M+) y promete un regalo gratuito",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Credibilidad + Investigación",
+          "summary": "Establece autoridad: 200+ horas revisando portfolio companies, análisis multifuncional",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Problema Mapeado",
+          "summary": "Revela dónde se quedan atascadas las empresas en cada nivel de ingresos",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Solución + Beneficio",
+          "summary": "Ofrece roadmap personalizado con acciones específicas, sin costo",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "CTA + Cierre",
+          "summary": "Instrucción directa, reafirmación de valor, cierre conversacional",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Experto confiado, directo, sin pretensiones",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "I have a free gift for you",
+        "no strings attached",
+        "it rocks",
+        "That's all I got",
+        "grab it and have a good year"
+      ]
+    },
+    "cta": {
+      "text": "click, put your information in and it'll send it to you all personalized",
+      "type": "directo",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 30,
+    "total_word_count": 178,
+    "emotional_arc": "Esperanza (identificación con el problema) → Confianza (autoridad demostrada) → Alivio (solución clara) → Acción (CTA simple)",
+    "strengths": [
+      "Hook ultra-específico: segmenta por revenue level ($1M+), no es genérico",
+      "Credibilidad construida con datos concretos (200+ horas, múltiples funciones)",
+      "Problema mapeado a través de múltiples dimensiones (marketing, sales, CS, finance, legal, tech, ops)",
+      "Énfasis en solución accionable: no solo identifica dónde se quedan atascadas, sino cómo desatascarse",
+      "Tono conversacional y sin pretensiones genera confianza (UGC style)",
+      "Objeción preemptiva: 'no strings attached' elimina fricción",
+      "Personalización prometida reduce fricción de implementación",
+      "CTA simple y clara sin presión artificial"
+    ],
+    "patterns_to_replicate": [
+      "Segmentación por métrica de negocio (revenue, etapa, función) en el hook",
+      "Demostración de investigación profunda (número de horas, amplitud de análisis) para construir autoridad sin jactancia",
+      "Mapeo de problema a través de múltiples dimensiones (no solo 1-2 puntos de dolor)",
+      "Promesa de solución accionable y específica (roadmap personalizado, acciones concretas)",
+      "Lenguaje conversacional con contracciones y frases naturales ('it rocks', 'That's all I got')",
+      "Objeción preemptiva integrada naturalmente ('no strings attached')",
+      "CTA que combina instrucción clara + beneficio personalizado",
+      "Cierre amable y desenfadado que refuerza el tono de experto accesible"
+    ],
+    "advertiser": {
+      "name": "Unknown (Likely B2B SaaS/Scaling Consultant)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Calificación",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Credibilidad + Investigación",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Problema Mapeado",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Solución + Beneficio",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "CTA + Cierre",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "No sé dónde están mis cuellos de botella específicos en cada nivel de ingresos",
+        "mechanism": "Análisis multifuncional de 200+ empresas que mapea exactamente dónde se quedan atascadas y cómo desatascarse",
+        "new_belief": "Tengo un roadmap personalizado y accionable para escalar sin adivinar"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de segmentación específica"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (dónde se quedan atascadas vs. cómo desatascarse)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 73,
+          "ingredient_name": "Autoridad por investigación (200+ horas, análisis multifuncional)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 85,
+          "ingredient_name": "Mecanismo de personalización (roadmap customizado)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba social implícita (portfolio companies, empresas asesoradas)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 110,
+          "ingredient_name": "Oferta de bajo riesgo (gratuito, sin compromisos)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 118,
+          "ingredient_name": "CTA directo y conversacional"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje de accesibilidad (no strings attached, it rocks)"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "Si tu empresa hace $1M+ pero no sabes exactamente dónde escalar, tengo un roadmap personalizado basado en 200+ casos que te muestra exactamente qué hacer."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Segmentación por métrica de negocio en el hook (ej: 'Si generás $X en ingresos mensuales con tu producto digital y querés escalar') en lugar de genérico",
+        "Demostración de investigación profunda sin sonar académico: mencionar horas invertidas, cantidad de casos analizados, dimensiones estudiadas",
+        "Mapeo multidimensional del problema (no solo 1-2 puntos de dolor, sino 5-7 áreas donde se quedan atascadas)",
+        "Promesa de solución accionable y personalizada (no solo diagnóstico, sino roadmap con pasos concretos)",
+        "Tono conversacional con contracciones, frases naturales y humor light para generar confianza sin perder autoridad",
+        "Objeción preemptiva integrada naturalmente ('sin costo oculto', 'sin compromiso') para reducir fricción",
+        "CTA que combina instrucción clara + beneficio personalizado + cierre amable",
+        "Uso de 'free gift' como reframing de lead magnet (genera más apertura que 'descarga gratis')"
+      ],
+      "what_not_to_copy": [
+        "El hook específico de $1M+ no aplica a productos digitales de menor ticket (adaptar a métricas relevantes: estudiantes, ingresos mensuales, etc.)",
+        "La referencia a 'portfolio companies' y 'empresas asesoradas' es específica de consultoría B2B; para ADP, reemplazar con 'estudiantes que escalaron', 'productos que generan $X'",
+        "La duración de 30 segundos es larga para TikTok/Reels; adaptar a 15-20 segundos máximo para LATAM",
+        "El tono muy americano ('have a good year') puede no resonar igual en LATAM; localizar el cierre",
+        "No hay urgencia explícita; para productos digitales con IA, considerar agregar ventana de tiempo si aplica"
+      ],
+      "craft_notes": [
+        "Ritmo: Alternancia entre frases cortas ('I have a free gift for you') y frases largas (la lista de funciones) mantiene atención sin cansar",
+        "Cadencia: Uso de 'and so' como transición natural entre ideas (no suena forzado, es conversacional)",
+        "Power words: 'remodel', 'scale', 'stuck', 'unstuck', 'customized', 'specific actions' son concretos y orientados a acción",
+        "Transiciones: El flujo Hook → Credibilidad → Problema → Solución → CTA es lógico y fácil de seguir",
+        "Repetición estratégica: 'stuck/unstuck' crea paralelismo; 'free gift/absolutely free/no strings attached' refuerza el valor sin costo",
+        "Lenguaje de agencia: 'my team spent', 'we figured out', 'we advised' construye autoridad sin sonar arrogante",
+        "Cierre: 'That's all I got. All right, grab it and have a good year' es desenfadado y genera simpatía (no suena como vendedor típico)",
+        "Falta de jargon: Evita términos técnicos innecesarios; todo es accesible incluso para principiantes"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:09:27.995Z"
+}

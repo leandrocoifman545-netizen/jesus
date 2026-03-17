@@ -1,0 +1,207 @@
+{
+  "id": "dd06e6fc-62da-4847-a0bd-88ebcf69b1d9",
+  "title": "tony 1",
+  "transcript": " Your little business could become a big business. Your business could be bigger than you dream, but you've got to master a few skills. I'm going to take you through a seven-step system for running any business. We call these the seven courses of business mastery. I've got some tools that are going to blow your mind. Listen, I come from nothing. I have no business background. I have 105 companies. We're doing over $7 billion in business. I built those because I began to understand the power of patterns. We're going to start seeing if we can't recognize the patterns that control your business. And when we do, then start to use them. And then over the next few days, we're going to actually have you create some new patterns for your business that can change it all. So if you're interested, bring the very best tools in the world to your business and show you how you can grow your business 30 to 100 percent by taking your sales teams and developing the best systems, transforming and growing them and training them, then this might be the program for you. Thanks for watching!",
+  "analysis": {
+    "hook": {
+      "text": "Your little business could become a big business.",
+      "type": "contraintuitivo",
+      "word_count": 11,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Promise",
+          "summary": "Abre con posibilidad de crecimiento exponencial, establece que se necesitan habilidades específicas",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Authority + Origin Story",
+          "summary": "Credibilidad: sin background, 105 empresas, $7B en negocios. Descubrimiento del poder de los patrones",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Mechanism + Transformation",
+          "summary": "Explica el sistema de 7 pasos, reconocimiento de patrones, creación de nuevos patrones para cambio",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Offer + CTA",
+          "summary": "Herramientas, crecimiento 30-100%, transformación de equipos de ventas, sistemas y entrenamiento",
+          "estimated_seconds": 8
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "I've got some tools that are going to blow your mind."
+    },
+    "tone": {
+      "primary_tone": "Mentor inspirador, confianza absoluta, tono conversacional directo",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "light",
+      "key_phrases": [
+        "blow your mind",
+        "I come from nothing",
+        "power of patterns",
+        "change it all",
+        "the very best tools in the world"
+      ]
+    },
+    "cta": {
+      "text": "if you're interested, bring the very best tools in the world to your business and show you how you can grow your business 30 to 100 percent by taking your sales teams and developing the best systems, transforming and growing them and training them, then this might be the program for you",
+      "type": "reframe",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 35,
+    "total_word_count": 247,
+    "emotional_arc": "Esperanza (pequeño negocio) → Inspiración (historia de origen) → Empoderamiento (patrones descubiertos) → Confianza (herramientas y sistema) → Invitación suave (si te interesa)",
+    "strengths": [
+      "Hook contraintuitivo que invierte expectativas (pequeño → grande)",
+      "Credibilidad demoledora: números específicos ($7B, 105 empresas) sin background",
+      "Mecanismo claro y repetible: 'patrones' como concepto unificador",
+      "Rehook estratégico a mitad del mensaje ('blow your mind')",
+      "Tono mentor sin arrogancia, accesible pero aspiracional",
+      "Promesa cuantificada (30-100% crecimiento)",
+      "Estructura de transformación: reconocer → usar → crear nuevos patrones",
+      "CTA suave pero específico en beneficios (sistemas, equipos, entrenamiento)"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con contraste: estado actual vs. potencial (pequeño → grande)",
+      "Insertar credibilidad temprana con números específicos y origen humilde",
+      "Usar una palabra-clave repetida como mecanismo unificador ('patrones')",
+      "Rehook a los 40-50% del video con frase de impacto emocional",
+      "Estructura de 3 actos: promesa → autoridad → mecanismo → oferta",
+      "Beneficios cuantificados y específicos en el CTA",
+      "Tono conversacional directo (sin guiones obvios)",
+      "Énfasis en transformación de sistemas/procesos, no solo resultados",
+      "CTA como invitación suave ('if you're interested... then this might be')",
+      "Cierre con 'Thanks for watching' para humanizar"
+    ],
+    "advertiser": {
+      "name": "Russell Brunson / ClickFunnels (inferido)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "historia_con_giro",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Promise",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Authority + Origin Story",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Mechanism + Transformation",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Offer + CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Mi negocio pequeño está limitado por mi falta de background o recursos",
+        "mechanism": "Los patrones que controlan los negocios son reconocibles y replicables; si los dominas, puedes escalar exponencialmente",
+        "new_belief": "Puedo crecer 30-100% dominando sistemas, patrones y entrenamiento de equipos, sin importar mi origen"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook contraintuitivo (pequeño → grande)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (yo sin background vs. 105 empresas)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 73,
+          "ingredient_name": "Autoridad por números específicos ($7B, 105 empresas)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 74,
+          "ingredient_name": "Autoridad por origen humilde (I come from nothing)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 85,
+          "ingredient_name": "Mecanismo unificador (patrones)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 86,
+          "ingredient_name": "Sistema de pasos (7 cursos de business mastery)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 110,
+          "ingredient_name": "Oferta con beneficio cuantificado (30-100% crecimiento)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 118,
+          "ingredient_name": "CTA conversacional (if you're interested... then this might be)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje de transformación (change it all, transform, grow)"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Los patrones que controlan los negocios son reconocibles y replicables; domínalos y crece exponencialmente sin importar tu origen"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Hook contraintuitivo que invierte expectativas: 'Tu pequeño negocio podría ser MUCHO más grande' (aplicable: 'Tu producto digital podría valer 10x más si dominas IA')",
+        "Credibilidad por números específicos + origen humilde: 'Sin background en IA, creé X productos que generan $Y' (muy potente para LATAM)",
+        "Mecanismo unificador repetido: usar UNA palabra clave ('patrones', 'fórmulas', 'sistemas') como columna vertebral del mensaje",
+        "Rehook a mitad del video con frase de impacto emocional ('herramientas que te volarán la mente')",
+        "Estructura de 3 actos: promesa → autoridad → mecanismo → oferta (replicable en cualquier producto digital)",
+        "Beneficios cuantificados en CTA: '30-100% de crecimiento' (específico, creíble, aspiracional)",
+        "Tono mentor conversacional sin guión obvio (grabar como si fuera un consejo entre amigos)",
+        "Énfasis en transformación de SISTEMAS/PROCESOS, no solo resultados finales",
+        "CTA suave como invitación: 'Si te interesa... entonces este programa podría ser para ti' (reduce fricción psicológica)",
+        "Cierre humanizado: 'Thanks for watching' (genera conexión, no venta agresiva)"
+      ],
+      "what_not_to_copy": [
+        "No copiar el nivel de autoridad ($7B, 105 empresas) si no es verificable en tu contexto LATAM (mejor: casos de clientes reales, testimonios)",
+        "No asumir que el tono 'mentor experto' funciona igual en LATAM; adaptar a 'colega que descubrió algo' (menos distancia jerárquica)",
+        "No usar 'seven courses' como estructura si tu producto es más simple; adaptar a 3-5 pasos máximo",
+        "No hacer CTA tan larga y condicional si el objetivo es conversión rápida en mobile (acortar a 1-2 líneas)",
+        "No omitir urgencia si el producto tiene oferta limitada o precio temporal (este ad es para awareness, no para conversión inmediata)",
+        "No replicar la duración (35 seg) en plataformas como TikTok donde 15-20 seg es óptimo",
+        "No asumir que 'business mastery' resuena igual en LATAM; localizar a 'domina el sistema de tu producto digital'"
+      ],
+      "craft_notes": [
+        "Ritmo: frases cortas al inicio (3-5 palabras) que aceleran, luego párrafos más largos que desaceleran. Efecto: atención → profundidad.",
+        "Cadencia: repetición de 'business' en primeras líneas crea familiaridad; luego pivota a 'patterns' para introducir mecanismo.",
+        "Power words: 'blow your mind', 'change it all', 'very best tools' — lenguaje de impacto sin ser agresivo.",
+        "Transiciones: 'Listen' (rehook), 'I come from nothing' (giro emocional), 'And when we do' (mecanismo), 'So if you're interested' (oferta). Cada una marca un acto.",
+        "Estructura de oración: mezcla de imperativas ('Listen'), declarativas ('I have 105 companies'), condicionales ('if you're interested'). Variedad mantiene atención.",
+        "Pronombre 'you': usado 8 veces para dirigirse directamente al oyente; crea intimidad sin ser invasivo.",
+        "Negación + afirmación: 'I have no business background' (quiebre) + 'I have 105 companies' (prueba). Contraste que genera credibilidad.",
+        "Cierre suave: 'this might be the program for you' (no es 'DEBES comprar', es 'podría ser para ti'). Reduce resistencia psicológica.",
+        "Falta de urgencia explícita: estrategia para awareness/top-of-funnel, no para conversión inmediata. Nota: adaptar si es para bottom-funnel."
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:16:30.336Z"
+}

@@ -1,0 +1,203 @@
+{
+  "id": "ref-nati-demolicion-shopee-4",
+  "title": "Nati - Demolicion de Shopee: 5 reais vs 97 reais con producto propio",
+  "transcript": "Ok, entonces déjame ser muy sincera con el personal que cree que va a ganar dinero divulgando el producto de Shopee, ¿sí? Te voy a contar la realidad, porque ya testé todo esto, ¿sí? Cuando comencé, también pensé que era solo entrar en estos programas de afiliado, pegar los links de los productos, salir divulgando y listo. El dinero iba a caer en mi cuenta, pero déjame contarte la verdad. La realidad es completamente diferente, ¿sí? Primero, te quedas refén de comisión, ¿sí? Michuruca. Tipo, vendes un producto de 100 reais y no ganas ni cinco de comisión. Y para hacer 3 mil reais por mes, tú necesitas vender mucho, pero mucho producto. Segundo, no tienes control de absolutamente nada. El producto puede salir del stock, el precio puede aumentar, la comisión puede disminuir y tú no mandas en nada. Tercero, tú necesitas estar creando contenido todo el día, postando stories, haciendo vídeos, implorando al pueblo, clicando en tu link y al final de cuentas, ¿sabes qué sucede? Después de meses quebrando la cabeza, ¿El resultado? Una mixtura de dinero. Sí. Ahora, cuando descubrí, chicas, el sistema de renda invisible, todo cambió. Porque en vez de estar promoviendo el producto de los otros, ganando migalhas, aprend a crear mi propio producto digital usando inteligencia artificial gratuita sabe cu es la diferencia La margen de lucro Ella es 100 m Porque si yo vendo un producto de por ejemplo 97 reais, yo emboso 97 reais y no 5 reais. ¿Entendió la diferencia? Además de eso, yo no necesito estar creando contenidos, yo no necesito aparecer en la Internet, no dependo de stock, no dependo de oficina, no dependo de nada. Es solo conectar a la estructura automática que vende por ti 24 horas al día. Y, mira, entiendo la frustración de quien ya intentó estas estrategias de vender en Shopee, ¿vale? Y no funcionó, entiendo completamente, porque yo recibo mensajes todos los días de miles de mujeres diciendo, Nati do céu, pasé seis meses divulgando el producto de Shopee y no hice ni 500 reais. Cuando descubrí su método, en un mes, ya había ganado más de 3 mil reais. Entonces, si estás rompiendo la cabeza intentando vender en Shopee o pensando en entrar en esta, Yo quiero mostrarte un camino mucho más simple, un camino mucho más rápido y lucrativo. Editor, ¿tienes cómo poner un botón en la pantalla? Maravilloso. Entonces, tú que estás viendo este vídeo, voy a liberar una aula gratuita enseñando cómo funciona esta estrategia para que también te ganes de 3 a 5 mil reais vendiendo productos digitales en la Internet. Y para que tú veas esta aula, es solo clicar aquí abajo en el botón de saber más. Pero antes que esta aula salga del aire, ¿está bien? Clica ahí, estoy esperando.",
+  "analysis": {
+    "hook": {
+      "text": "Ok, entonces dejame ser muy sincera con el personal que cree que va a ganar dinero divulgando el producto de Shopee.",
+      "type": "provocacion",
+      "word_count": 22,
+      "estimated_seconds": 6
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook provocacion",
+          "summary": "Voy a ser sincera con los que creen que van a ganar con Shopee",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Identificacion",
+          "summary": "Yo tambien lo pense, entre en programas de afiliado, pegue links, sali a divulgar",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Demolicion Shopee 3 puntos",
+          "summary": "1) Comision miserable (5 de 100). 2) No controlas nada (stock, precio, comision). 3) Crear contenido todo el dia para migajas.",
+          "estimated_seconds": 30
+        },
+        {
+          "name": "Giro - Sistema Renda Invisible",
+          "summary": "Cuando descubri el sistema, todo cambio. Crear mi propio producto digital con IA gratuita.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Contraste de margenes",
+          "summary": "Producto de 97 reais = embolso 97 reais. No 5 reais. 100% de margen.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Eliminacion de barreras",
+          "summary": "No contenido, no aparecer, no stock, no oficina, no nada. Estructura automatica 24h.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Social proof de alumnas",
+          "summary": "Miles de mujeres: 6 meses en Shopee = menos de 500 reais. 1 mes con mi metodo = mas de 3 mil.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "CTA con urgencia",
+          "summary": "Aula gratuita ensenando el sistema. Antes que salga del aire.",
+          "estimated_seconds": 12
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Y mira, entiendo la frustracion de quien ya intento estas estrategias de vender en Shopee y no funciono."
+    },
+    "tone": {
+      "primary_tone": "confrontativo-empatico",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "dejame ser muy sincera",
+        "comision michuruca",
+        "la realidad es completamente diferente",
+        "sistema de renda invisible",
+        "margen de lucro 100%"
+      ]
+    },
+    "cta": {
+      "text": "Voy a liberar una aula gratuita ensenando como funciona esta estrategia para ganar 3 a 5 mil reais. Clica aqui abajo. Antes que salga del aire.",
+      "type": "learn_more",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 140,
+    "total_word_count": 467,
+    "emotional_arc": "Confrontacion (voy a ser sincera) - Identificacion (yo tambien lo intente) - Frustracion (3 problemas de Shopee) - Esperanza (descubri algo) - Ambicion (97 reais vs 5 reais) - Confianza (social proof alumnas) - FOMO (antes que salga del aire)",
+    "strengths": [
+      "Hook confrontativo que filtra la audiencia exacta (gente que intenta Shopee)",
+      "Demolicion estructurada en 3 puntos claros y concretos",
+      "Contraste numerico letal: 5 reais vs 97 reais (mismo producto)",
+      "Social proof con contraste temporal: 6 meses Shopee < 500 vs 1 mes metodo > 3000",
+      "La empatia antes del social proof (entiendo la frustracion) hace que no suene presumido"
+    ],
+    "patterns_to_replicate": [
+      "Hook confrontativo que filtra audiencia: Dejame ser sincera con los que creen que...",
+      "Demolicion en 3 puntos numerados — estructura clara y memorable",
+      "Contraste numerico en la misma oracion: 5 reais vs 97 reais",
+      "Social proof con contraste temporal (meses fracasando vs semanas triunfando)",
+      "Empatia ANTES del social proof para no sonar arrogante"
+    ],
+    "advertiser": {
+      "name": "Nati (Sistema de Renda Invisible)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "confrontacion",
+      "body_type": "demolicion_mito",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook provocacion",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Identificacion",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Demolicion Shopee",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Sistema Renda Invisible",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Social proof alumnas",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Puedo ganar dinero siendo afiliada de Shopee divulgando links",
+        "mechanism": "Shopee paga migajas (5 de 100), no controlas nada, y necesitas crear contenido todo el dia. Con producto propio digital + IA, el margen es 100%.",
+        "new_belief": "Crear mi propio producto digital con IA es mas rentable (97 reais vs 5) y mas simple (sin contenido, sin aparecer)"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 6,
+          "ingredient_name": "Provocacion con especificidad (sincera con los de Shopee)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (5 reais de comision)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 49,
+          "ingredient_name": "Redefinicion del juego (producto propio > afiliado)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad estrategica (yo tambien lo intente)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 75,
+          "ingredient_name": "Mecanismo con nombre (Sistema de Renda Invisible)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba matematica (97 vs 5 reais)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 94,
+          "ingredient_name": "Meta-proof (miles de mujeres, testimonios)"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 112,
+          "ingredient_name": "Urgencia (antes que salga del aire)"
+        }
+      ],
+      "model_sale_type": "cementerio_de_modelos",
+      "awareness_level": 3,
+      "segment_equivalent": "C",
+      "big_idea": "Shopee te paga 5 reais por venta — con tu propio producto digital hecho con IA te quedas con los 97 reais completos"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Hook confrontativo que filtra: Dejame ser sincero con los que creen que X — adaptable a freelancers, dropshippers, etc.",
+        "Demolicion en 3 puntos concretos y numerados — estructura replicable para cualquier alternativa",
+        "Contraste numerico en la misma oracion (5 vs 97) — adaptable a ADP: cuanto ganas por hora en tu laburo vs vendiendo un producto digital",
+        "Social proof con contraste temporal — alumnas: 6 meses fracasando vs 1 mes con el metodo",
+        "Empatia antes de social proof — entiendo la frustracion, yo tambien lo intente"
+      ],
+      "what_not_to_copy": [
+        "Antes que salga del aire es urgencia falsa clasica — ADP deberia usar urgencia real",
+        "Demasiado largo (140s) para formato ADP",
+        "Sistema de Renda Invisible sigue sin explicar que es realmente"
+      ],
+      "craft_notes": [
+        "Este es el MEJOR ad de los 4 de Nati. Tiene los 5 beats del micro-VSL completos.",
+        "El contraste 5 vs 97 funciona porque es en la MISMA oracion, no en parrafos separados.",
+        "La estructura es casi identica a lo que ADP hace con confrontacion + demolicion_mito. Buena referencia de ejecucion.",
+        "Para ADP: este ad adaptado a espanol seria Dejame ser sincero con los que creen que van a ganar plata haciendo dropshipping..."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:28:45.923Z"
+}

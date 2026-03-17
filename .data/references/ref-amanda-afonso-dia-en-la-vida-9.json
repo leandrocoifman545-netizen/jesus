@@ -1,0 +1,184 @@
+{
+  "id": "ref-amanda-afonso-dia-en-la-vida-9",
+  "title": "Amanda Afonso - Un dia en mi vida: de rezar a las 4am a facturar 4K un lunes",
+  "transcript": "E eu que estou acordando às quatro da manhã para rezar o rosário com o Frei Gilson. E não porque eu sou melhor que alguém, mas porque eu preciso, por amor a Deus. Quatro da manhã o meu dia já está começando, ainda está escuro lá fora. E seis horas da manhã já estou começando a acordar as crianças para ir na escola. Meu marido me ajuda muito também, a gente troca eles, escova os dentes, coloca o uniforme. E aí a gente leva eles para a escola. Depois que eu volto, eu tomo meu café da manhã. E eu não consigo comer nada muito cedo assim. Então eu chego, tomo meu café com calma, eu gosto de fazer a reflexão do evangelho. Depois eu lavo a louça do café e eu vou trabalhar. Eu respondo o WhatsApp, eu crio conteúdo pra eu poder postar no TikTok, postar no Instagram, avalio meus anúncios no gerenciador. Quando a gente vê, já tá na hora de buscar eles na escola. E pra mim, buscar eles é muito importante. Pode até parecer simples, mas eu trabalhei fora por muitos anos. Eu almoçava lá na empresa, numa cozinha apertada, esquentando comida no micro-ondas. Hoje eu busco, eu consigo estar presente, ver eles quando me olham ali na porta da escola, dando aqueles sorrisos, pra mim é tudo. Depois eu vou pra casa, posso almoçar com eles. Eu sempre quis trabalhar em casa por isso, pra ter mais tempo, sabe? Pra poder viver os meus horários. Depois do almoço, a gente fica ali em casa, vai conciliando criança, a casa, o trabalho, sabe? Essa é a rotina que eu sempre sonhei em viver. Eu nunca comecei aqui pra ficar ostentando, pra ser milionária. Sempre comecei aqui pra poder ganhar bem, dar o melhor pros meus filhos e ser presente também na vida deles. E olha isso, em plena segunda-feira hoje eu faturo quase 4 mil reais com as vendas. Mas eu não comecei assim, viu? Eu comecei perdida, pra aprender a vender mesmo. Me dedicava só à noite, conciliando com o meu trabalho. Minha primeira comissão foi de 122 reais. E eu lembro que foi ali que tudo começou. Comecei a adquirir experiência e vender cada vez mais. A internet mudou a minha vida. E isso não tem como negar.",
+  "analysis": {
+    "hook": {
+      "text": "E eu que estou acordando as quatro da manha para rezar o rosario com o Frei Gilson.",
+      "type": "historia_mini",
+      "word_count": 16,
+      "estimated_seconds": 5
+    },
+    "structure": {
+      "framework": "other",
+      "sections": [
+        {
+          "name": "Hook - 4am rezando",
+          "summary": "Se despierta a las 4am a rezar. Genera curiosidad por lo inesperado.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Rutina matutina con hijos",
+          "summary": "6am despiertan ninos, uniforme, llevar a escuela.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Desayuno y reflexion",
+          "summary": "Cafe con calma, reflexion del evangelio. Ritmo tranquilo.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Trabajo digital",
+          "summary": "WhatsApp, crear contenido TikTok/IG, evaluar anuncios en gerenciador.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Buscar hijos - momento emotivo",
+          "summary": "Buscar en la escuela es lo mas importante. Antes almorzaba en cocina apertada calentando comida.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Contraste pasado vs presente",
+          "summary": "Siempre quiso trabajar en casa para tener tiempo. Rutina sonada.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Prueba del lunes",
+          "summary": "Un lunes facturo casi 4 mil reais. Pero empezo perdida, primera comision 122 reais.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Cierre",
+          "summary": "La internet cambio mi vida, no tiene como negar.",
+          "estimated_seconds": 8
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Pode ate parecer simples, mas eu trabalhei fora por muitos anos."
+    },
+    "tone": {
+      "primary_tone": "intimo-reflexivo",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "quatro da manha",
+        "buscar eles na escola",
+        "cozinha apertada esquentando comida no microondas",
+        "rotina que eu sempre sonhei",
+        "primeira comissao 122 reais"
+      ]
+    },
+    "cta": {
+      "text": "",
+      "type": "none",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 120,
+    "total_word_count": 386,
+    "emotional_arc": "Sorpresa (4am rezando?) -> Ternura (rutina con hijos) -> Calma (cafe, reflexion) -> Trabajo (breve, liviano) -> Emocion (buscar hijos en escuela) -> Contraste (cocina apertada antes) -> Aspiracion (rutina sonada) -> Prueba (4K un lunes)",
+    "strengths": [
+      "Day in the life con detalles sensoriales exquisitos (cocina apertada, microondas, sonrisas en la puerta)",
+      "El hook de las 4am rezando es totalmente inesperado — rompe el patron de ads de dinero",
+      "El contraste no es numerico sino SENSORIAL: cocina apertada vs buscar hijos en la escuela",
+      "La primera comision de 122 reais ancla la historia en la realidad",
+      "No vende en ningun momento — puro contenido aspiracional que genera deseo"
+    ],
+    "patterns_to_replicate": [
+      "Formato dia en la vida con contraste sensorial pasado vs presente",
+      "Hook inesperado que no tiene nada que ver con dinero (4am rezando)",
+      "Detalles sensoriales micro: cocina apertada, microondas, sonrisas en la puerta de la escuela",
+      "Anclar la historia con el numero exacto de la primera comision (122 reais)",
+      "Mencionar el trabajo (WhatsApp, contenido, anuncios) de forma casual y breve — parece facil"
+    ],
+    "advertiser": {
+      "name": "Amanda Afonso",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "identidad",
+      "body_type": "un_dia_en_la_vida",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - 4am rezando",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Contraste pasado vs presente",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Trabajo digital",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba del lunes",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Trabajar online significa estar pegada a la computadora todo el dia sin vida",
+        "mechanism": "Un dia real muestra: reza, lleva hijos, cafe con calma, un rato de WhatsApp/contenido, y factura 4K un lunes",
+        "new_belief": "Trabajar online puede ser una vida con mas libertad, presencia familiar y buenos ingresos"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 7,
+          "ingredient_name": "Historia mini como hook (4am rezando)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 33,
+          "ingredient_name": "Detalle sensorial del dolor (cocina apertada, microondas)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad (empezo perdida, primera comision 122 reais)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba de ingresos (4K un lunes)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 125,
+          "ingredient_name": "Future pacing sensorial (rutina sonada)"
+        }
+      ],
+      "model_sale_type": "none",
+      "awareness_level": 1,
+      "segment_equivalent": "A",
+      "big_idea": "Un lunes tipico de una madre que trabaja desde casa: reza a las 4am, lleva los hijos a la escuela, y factura 4 mil reais"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "FORMATO DIA EN LA VIDA con detalles sensoriales — adaptable a alumno de Jesus mostrando su rutina",
+        "Hook totalmente inesperado que no menciona dinero (4am rezando) — genera curiosidad pura",
+        "Contraste SENSORIAL (no numerico): cocina apertada calentando comida vs buscar hijos en la escuela",
+        "Numero exacto de primera comision como ancla de credibilidad (122 reais = esto es real)",
+        "Mencionar el trabajo de forma casual y breve — parece facil y liviano"
+      ],
+      "what_not_to_copy": [
+        "Sin CTA — no convierte",
+        "Demasiado largo (120s) para formato ADP",
+        "Tono religioso no aplica a ADP",
+        "No explica QUE vende ni COMO — puro lifestyle"
+      ],
+      "craft_notes": [
+        "Este es el MEJOR ad de Amanda a nivel de craft. Los detalles sensoriales son de nivel profesional.",
+        "La cocina apertada calentando comida en el microondas es un detalle que cualquier empleado reconoce instantaneamente.",
+        "Para ADP: un dia en la vida de un alumno. Se despierta, abre la compu, revisa ventas de la noche, trabaja 1 hora con IA, lleva los hijos al colegio. Contraste con su vida anterior."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:38:41.868Z"
+}

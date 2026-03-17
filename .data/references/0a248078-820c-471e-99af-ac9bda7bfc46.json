@@ -1,0 +1,207 @@
+{
+  "id": "0a248078-820c-471e-99af-ac9bda7bfc46",
+  "title": "Euge Oller",
+  "transcript": " Si eres de Argentina y quieres emprender, esto te interesa. Sabías que Argentina está volviendo a crecer económicamente y eso es bueno para los emprendedores. Nuevas oportunidades de negocio y un montón de posibilidades. Mi nombre es Eugeo Oyer, llevo más de 10 años emprendiendo y en 2018 me incluyeron en la lista 30 under 30 de Forbes por tener la academia de emprendimiento con más alto impacto aquí en España. Y ahora he condensado todo lo que sé en una clase de 1 hora y 47 minutos en la que te explico exactamente cómo encontrar la idea perfecta de negocio y lanzarla al mercado. Y vas a poder acceder a ella por tan solamente un euro o lo que es lo mismo, menos de 1.600 pesos argentinos. Puedes ver más información haciendo clic aquí abajo.",
+  "analysis": {
+    "hook": {
+      "text": "Si eres de Argentina y quieres emprender, esto te interesa.",
+      "type": "situacion_especifica",
+      "word_count": 12,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Contexto Macro",
+          "summary": "Apertura geolocalizada + dato de oportunidad económica",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Autoridad + Credencial",
+          "summary": "Presentación del experto, 10 años de experiencia, Forbes 30 under 30, academia de impacto",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Oferta + Mecanismo",
+          "summary": "Clase de 1h47m sobre cómo encontrar idea perfecta y lanzarla, condensado de 10 años",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Precio + Accesibilidad",
+          "summary": "1 euro / menos de 1.600 pesos argentinos para eliminar barrera de entrada",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "CTA",
+          "summary": "Instrucción clara de acción: clic en enlace abajo",
+          "estimated_seconds": 2
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Experto accesible, conversacional, optimista sobre oportunidad",
+      "formality_level": "neutral",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "esto te interesa",
+        "Argentina está volviendo a crecer",
+        "nuevas oportunidades",
+        "he condensado todo lo que sé",
+        "exactamente cómo",
+        "tan solamente un euro"
+      ]
+    },
+    "cta": {
+      "text": "Puedes ver más información haciendo clic aquí abajo.",
+      "type": "directo",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 28,
+    "total_word_count": 168,
+    "emotional_arc": "Esperanza (contexto económico positivo) → Admiración (credencial Forbes) → Confianza (10 años de experiencia) → Alivio (precio accesible) → Acción (CTA clara)",
+    "strengths": [
+      "Hook geolocalizado crea identificación inmediata con audiencia argentina",
+      "Credencial Forbes es prueba social de alto impacto",
+      "Precio en moneda local (pesos) reduce fricción psicológica",
+      "Estructura clara: problema macro → solución → oferta → precio → acción",
+      "Uso de 'exactamente cómo' crea expectativa de claridad",
+      "Condensación de 10 años en 1h47m suena como valor comprimido",
+      "Tono conversacional sin ser demasiado casual"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con geolocalización + problema/oportunidad macro relevante al país",
+      "Insertar credencial de tercero (Forbes, reconocimiento externo) antes de pitch",
+      "Usar 'exactamente cómo' para prometer claridad y especificidad",
+      "Convertir tiempo/experiencia en compresión de valor ('10 años en 1h47m')",
+      "Expresar precio en moneda local para reducir fricción",
+      "Usar 'tan solamente' para reframing de precio como accesible",
+      "CTA dual: verbal (instrucción clara) + visual (clic abajo)",
+      "Estructura de 5 secciones cortas mantiene ritmo en vertical"
+    ],
+    "advertiser": {
+      "name": "Eugeo Oyer / Academia de Emprendimiento",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "AR"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Contexto Macro",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Autoridad + Credencial",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Oferta + Mecanismo",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Precio + Accesibilidad",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "No sé cómo encontrar la idea de negocio perfecta o lanzarla al mercado",
+        "mechanism": "Acceso a clase de 1h47m de experto con 10 años de experiencia y credencial Forbes, a precio accesible (1 euro)",
+        "new_belief": "Puedo aprender exactamente cómo hacerlo de alguien probado, sin riesgo financiero"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook geolocalizado"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 5,
+          "ingredient_name": "Problema implícito: no saber cómo emprender"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 45,
+          "ingredient_name": "Credencial de tercero (Forbes 30 under 30)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 50,
+          "ingredient_name": "Experiencia cuantificada (10 años)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita: clase de 1h47m"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 85,
+          "ingredient_name": "Precio en moneda local"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 88,
+          "ingredient_name": "Reframing de precio bajo ('tan solamente')"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 105,
+          "ingredient_name": "CTA directo con instrucción clara"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "Argentina está en crecimiento económico y tú puedes aprender exactamente cómo emprender de un experto probado por menos de lo que cuesta un café."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con geolocalización + macro trend relevante (ej: 'Si eres de LATAM y quieres crear productos digitales con IA, esto te interesa' + dato sobre adopción de IA en región)",
+        "Insertar credencial de tercero (certificaciones, reconocimientos, números de impacto) antes de pitch de producto",
+        "Usar 'exactamente cómo' para prometer claridad y especificidad en el mecanismo",
+        "Comprimir valor temporal: 'X años de experiencia en Y horas de contenido'",
+        "Expresar precio en moneda local del país objetivo para reducir fricción psicológica",
+        "Usar reframing de precio bajo con adverbios ('tan solamente', 'apenas', 'menos de')",
+        "Estructura de 5 secciones cortas (3-8 segundos cada una) mantiene ritmo en vertical",
+        "CTA dual: instrucción verbal clara + indicación visual (clic abajo)",
+        "Usar 'nuevas oportunidades' y 'posibilidades' para agitar esperanza sin ser alarmista"
+      ],
+      "what_not_to_copy": [
+        "No copiar la mención de Forbes si no tienes credencial equivalente (sería contraproducente sin prueba)",
+        "No usar 'tan solamente' si el precio no es realmente bajo en contexto local (pierde credibilidad)",
+        "No prometer 'exactamente cómo' si el contenido es vago o genérico (crea expectativa que no se cumple)",
+        "No geolocalizar si el producto no está disponible en ese país (frustración inmediata)",
+        "No usar tono de experto si el anunciante no tiene autoridad demostrable (mejor UGC o testimonios)",
+        "No asumir que el macro trend (crecimiento económico) es universalmente positivo en LATAM (varía por país y contexto)",
+        "No usar estructura de 5 secciones si el video es más corto que 20 segundos (se siente apresurado)"
+      ],
+      "craft_notes": [
+        "Ritmo: alternancia entre frases cortas (hook) y frases largas (credencial) mantiene atención",
+        "Cadencia: 'Si eres de Argentina y quieres emprender' usa paralelismo (Si X y quieres Y) que es pegadizo",
+        "Power words: 'volviendo', 'nuevas', 'exactamente', 'condensado' crean movimiento y precisión",
+        "Transición débil: salto de 'nuevas oportunidades' a 'Mi nombre es' es abrupto, podría suavizarse con 'Por eso, mi nombre es'",
+        "Repetición efectiva: 'Argentina' aparece 2 veces en primeros 20 segundos, refuerza geolocalización",
+        "Precio como reframing: '1 euro o lo que es lo mismo, menos de 1.600 pesos' usa equivalencia para hacer número grande parecer pequeño",
+        "CTA final es clara pero genérica: 'haciendo clic aquí abajo' es instrucción directa pero sin urgencia",
+        "Falta de contraste emocional: tono es consistentemente positivo, sin quiebre o tensión que genere curiosidad"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:04:16.171Z"
+}

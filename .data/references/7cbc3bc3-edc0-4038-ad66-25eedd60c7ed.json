@@ -1,0 +1,223 @@
+{
+  "id": "7cbc3bc3-edc0-4038-ad66-25eedd60c7ed",
+  "title": "hormozi 3",
+  "transcript": " Most business owners don't change. They live the same six months of their lives a hundred times in a row, then they die. So if you want to have a different outcome, you have to walk a different path. And so that's why we spent 200 plus hours analyzing companies in our portfolio. And we documented each of it into a single roadmap across 10 stages of growth. And so it looks like this. And if you want to stop Groundhog Day, it's the most valuable thing that I can possibly give you. And yes, it's free. You can grab a personalized copy by hitting the link and just plopping in your business information. and if you're a legitimate business owner who's looking to scale, we run workshops at our headquarters here in Las Vegas and you can book a call on the thank you page to see if it's a good fit for you. We look forward to meeting you potentially in person.",
+  "analysis": {
+    "hook": {
+      "text": "Most business owners don't change. They live the same six months of their lives a hundred times in a row, then they die.",
+      "type": "observacion_tendencia",
+      "word_count": 28,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Observación provocadora",
+          "summary": "Establece el problema universal: estancamiento empresarial repetitivo",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Quiebre - Contraste de caminos",
+          "summary": "Si quieres diferente resultado, necesitas diferente camino",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Mecanismo - Autoridad y proceso",
+          "summary": "200+ horas analizando empresas, documentadas en roadmap de 10 etapas",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Demolición - Reframing del problema",
+          "summary": "Detener Groundhog Day es lo más valioso que puedo darte",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Oferta - CTA dual",
+          "summary": "Descarga gratuita + workshop en Las Vegas con call booking",
+          "estimated_seconds": 6
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Conversacional, directo, mentor-como, ligeramente dramático",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "light",
+      "key_phrases": [
+        "live the same six months of their lives a hundred times in a row, then they die",
+        "walk a different path",
+        "stop Groundhog Day",
+        "most valuable thing that I can possibly give you",
+        "legitimate business owner",
+        "we look forward to meeting you potentially in person"
+      ]
+    },
+    "cta": {
+      "text": "You can grab a personalized copy by hitting the link and just plopping in your business information. And if you're a legitimate business owner who's looking to scale, we run workshops at our headquarters here in Las Vegas and you can book a call on the thank you page to see if it's a good fit for you.",
+      "type": "dual",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 21,
+    "total_word_count": 187,
+    "emotional_arc": "Shock/Recognition (problema universal) → Esperanza (existe un camino diferente) → Confianza (autoridad demostrada) → Alivio (solución gratuita disponible) → Exclusividad (oportunidad de escala premium)",
+    "strengths": [
+      "Hook extremadamente memorable con analogía de Groundhog Day que crea identificación inmediata",
+      "Contraste claro entre problema (repetición) y solución (roadmap de 10 etapas)",
+      "Autoridad construida con números concretos (200+ horas) y documentación tangible",
+      "CTA dual inteligente: opción gratuita de bajo compromiso + opción premium de alto valor",
+      "Lenguaje conversacional que reduce fricción psicológica",
+      "Cierre con elemento de localidad (Las Vegas) que humaniza y crea conexión",
+      "Uso de 'legitimate business owner' como filtro de audiencia implícito"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con observación universal sobre el problema que genera identificación emocional inmediata",
+      "Usar analogía cultural conocida (Groundhog Day) para anclar el concepto",
+      "Demostrar autoridad con números específicos de investigación/trabajo invertido",
+      "Crear contraste binario claro: camino viejo vs. camino nuevo",
+      "Ofrecer versión gratuita como micro-compromiso antes de upsell premium",
+      "Incluir elemento de exclusividad/filtro ('legitimate business owner', 'see if it's a good fit')",
+      "Cerrar con humanización: localidad específica, encuentro en persona",
+      "Mantener ritmo conversacional con transiciones suaves ('And so', 'And yes')",
+      "Usar reframing positivo del problema como solución ('most valuable thing I can give you')"
+    ],
+    "advertiser": {
+      "name": "Unknown - Likely B2B Business Growth/Scaling Platform",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "confrontacion",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Quiebre",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Mecanismo",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Demolición",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Oferta",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Mi negocio está estancado en un ciclo repetitivo inevitable",
+        "mechanism": "Existe un roadmap documentado de 10 etapas basado en análisis de 200+ empresas que muestra el camino diferente",
+        "new_belief": "Puedo acceder a un sistema probado para escalar mi negocio, empezando gratis y escalando con mentoring premium"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de observación universal"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 5,
+          "ingredient_name": "Problema de estancamiento/repetición"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 12,
+          "ingredient_name": "Agitación emocional (Groundhog Day)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 8,
+          "ingredient_name": "Quiebre de contraste (camino viejo vs nuevo)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 3,
+          "ingredient_name": "Autoridad por números (200+ horas)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 7,
+          "ingredient_name": "Autoridad por documentación (roadmap de 10 etapas)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 2,
+          "ingredient_name": "Mecanismo de proceso estructurado"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 15,
+          "ingredient_name": "Filtro de audiencia (legitimate business owner)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 4,
+          "ingredient_name": "Oferta dual (gratuita + premium)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 6,
+          "ingredient_name": "CTA conversacional con micro-compromiso"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 9,
+          "ingredient_name": "Lenguaje de exclusividad y filtro"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "La mayoría de empresarios viven el mismo ciclo repetitivo; accede a un roadmap de 10 etapas probado para romper ese patrón y escalar."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con observación universal sobre frustración del emprendedor (estancamiento, falta de progreso) que genera identificación inmediata",
+        "Usar analogía cultural/película conocida para anclar el problema de forma memorable",
+        "Demostrar autoridad con números concretos de investigación/análisis invertido (ej: '200+ horas analizando casos de éxito con IA')",
+        "Crear contraste binario claro: 'sin sistema' vs 'con sistema' o 'manual' vs 'automatizado con IA'",
+        "Ofrecer versión gratuita/descargable como micro-compromiso antes de upsell de curso/comunidad premium",
+        "Incluir filtro de audiencia implícito ('legitimate business owner', 'serious entrepreneurs') para auto-seleccionar",
+        "Usar transiciones conversacionales suaves ('And so', 'And yes') que mantienen ritmo natural",
+        "Cerrar con elemento de exclusividad/escasez suave (workshops limitados, call booking para 'ver si es buen fit')",
+        "Reframing positivo: lo que parece ser el problema ('free roadmap') es realmente lo más valioso"
+      ],
+      "what_not_to_copy": [
+        "No copiar la referencia específica a Las Vegas/ubicación física si no tienes presencia local real (reduce credibilidad en LATAM)",
+        "No usar 'Groundhog Day' directamente en LATAM sin adaptación cultural (usar referencia local equivalente)",
+        "No prometer 'workshops en persona' si tu modelo es 100% digital (crea fricción de expectativa)",
+        "No usar 'legitimate business owner' como filtro si tu producto es para principiantes/solopreneurs (contradice tu mercado real)",
+        "No mantener la falta de urgencia si tu oferta tiene fecha de cierre (agrega urgencia explícita)",
+        "No copiar el tono de 'mentor establecido' si eres nuevo/desconocido en el mercado (requiere autoridad previa)"
+      ],
+      "craft_notes": [
+        "La frase de apertura usa paralelismo y repetición ('live the same six months... a hundred times... then they die') que crea ritmo hipnótico y memorabilidad",
+        "Transición 'And so that's why' conecta problema → solución de forma causal natural",
+        "Uso de números específicos (200+, 10 etapas) crea credibilidad sin sonar exagerado",
+        "La frase 'stop Groundhog Day' es reframing brillante del problema como solución tangible",
+        "Estructura de oración corta + larga + corta mantiene ritmo visual para video vertical",
+        "Lenguaje de 'plopping in your business information' es coloquial y reduce fricción psicológica",
+        "Cierre con 'we look forward to meeting you potentially in person' humaniza y crea reciprocidad",
+        "Ausencia de urgencia típica (countdown, limited spots) funciona porque la autoridad es suficiente para generar acción",
+        "Power words detectados: 'change', 'different', 'walk', 'valuable', 'legitimate', 'scale' — todos orientados a transformación y crecimiento"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:08:11.108Z"
+}

@@ -1,0 +1,186 @@
+{
+  "id": "118547c5-44e5-4852-a0c5-01c46c55710b",
+  "title": "hormozi 4",
+  "transcript": " All three of the $100 million series, the Guinness World Record-breaking series, that'll show you how to figure out what to sell, who to sell it to, and once you have them, how to make money. And I wrote a book on all three of those because they're the three big questions every entrepreneur needs to answer. Once you have all three of those questions answered, there's still another thing that comes up, which is like, how do I actually apply this, right? Like, I can tell you exactly how to power wash a deck, but if all you had was a hose, you're not going to get very far. You need a power washer and that's because the tools are what allow you to Realize the information that you have in your head. And so i'll give you the steps I'll give you the information and then we'll also give you the tools and all of this For 15 bucks and there's also training that I included to show you how to apply this stuff To school so you can get started click it grab it and i'll see on the inside",
+  "analysis": {
+    "hook": {
+      "text": "All three of the $100 million series, the Guinness World Record-breaking series, that'll show you how to figure out what to sell, who to sell it to, and once you have them, how to make money.",
+      "type": "dato_concreto",
+      "word_count": 42,
+      "estimated_seconds": 8
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Authority",
+          "summary": "Establece credibilidad con cifras ($100M series, Guinness World Record) y promete resolver las 3 preguntas fundamentales del emprendedor",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Problem Identification",
+          "summary": "Identifica la brecha entre conocimiento teórico y aplicación práctica mediante analogía del power washer",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Solution + Mechanism",
+          "summary": "Presenta la solución completa: steps + information + tools, explicando por qué los tools son críticos",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Offer + CTA",
+          "summary": "Precio ($15), inclusión de training, y CTA directo con micro-compromiso",
+          "estimated_seconds": 6
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Conversacional, experto accesible, mentor directo",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "the three big questions every entrepreneur needs to answer",
+        "I can tell you exactly how to power wash a deck",
+        "the tools are what allow you to realize the information",
+        "For 15 bucks",
+        "click it grab it and i'll see on the inside"
+      ]
+    },
+    "cta": {
+      "text": "click it grab it and i'll see on the inside",
+      "type": "conversacional",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 36,
+    "total_word_count": 198,
+    "emotional_arc": "Confianza (autoridad) → Frustración (brecha conocimiento-acción) → Alivio (solución completa) → Entusiasmo (precio accesible + invitación personal)",
+    "strengths": [
+      "Hook con números concretos y credencial de terceros (Guinness) genera autoridad inmediata",
+      "Analogía del power washer es visceral y memorable, comunica el mecanismo de forma no-abstracta",
+      "Estructura de 3 preguntas fundamentales crea sensación de completitud y cobertura total",
+      "Precio ultra-bajo ($15) crea contraste con valor percibido (libro + tools + training)",
+      "Cierre personal ('i'll see on the inside') humaniza y crea expectativa de relación",
+      "Tono conversacional y UGC-like reduce fricción psicológica de venta",
+      "Transición clara entre problema (falta de tools) y solución (tools incluidos)"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con credencial de terceros + número concreto (ej: 'Ayudé a 2,847 emprendedores a generar $X con IA')",
+      "Usar analogía visceral para explicar mecanismo abstracto (power washer = herramientas necesarias)",
+      "Estructurar la solución como 'steps + information + tools' (triple promesa de completitud)",
+      "Crear contraste precio/valor explícito ('todo esto por $X')",
+      "Cierre conversacional y personal que invite a comunidad, no solo transacción",
+      "Mantener UGC-style incluso en copy formal (contracciones, ritmo de habla natural)",
+      "Identificar y nombrar las 3 preguntas clave que el público se hace (framework mental)"
+    ],
+    "advertiser": {
+      "name": "Russell Brunson / ClickFunnels (inferido del contenido sobre venta y funnels)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "analogia_extendida",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Authority",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Problem Identification",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Solution + Mechanism",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Offer + CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Conocer la teoría es suficiente para tener éxito en ventas",
+        "mechanism": "La analogía del power washer demuestra que sin herramientas (tools), el conocimiento es inerte",
+        "new_belief": "Necesito steps + information + tools concretos para aplicar y monetizar el conocimiento"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de autoridad con números"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (sé la teoría pero no puedo aplicarla)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 45,
+          "ingredient_name": "Quiebre mediante analogía (power washer)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Credencial de terceros (Guinness World Record)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Mecanismo explícito (tools permiten realizar información)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 91,
+          "ingredient_name": "Oferta de precio bajo con múltiples componentes"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 105,
+          "ingredient_name": "CTA conversacional y personal"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "El conocimiento sin herramientas es inerte; necesitas steps + information + tools para monetizar"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con credencial de terceros verificable + número concreto ($100M, Guinness) para generar autoridad sin sonar arrogante",
+        "Usar analogía visceral (power washer/hose) para explicar por qué las herramientas/templates/IA son críticas en productos digitales",
+        "Estructurar la promesa como 'steps + information + tools' para comunicar completitud (especialmente relevante para cursos de IA donde falta aplicación)",
+        "Crear contraste explícito precio/valor ('todo esto por $15') para romper resistencia de precio",
+        "Mantener tono conversacional y UGC incluso en copy de venta (contracciones, ritmo natural, primera persona)",
+        "Cierre personal que invite a comunidad ('i'll see on the inside') en lugar de cierre transaccional",
+        "Identificar y nombrar las 3 preguntas clave que el público se hace (para IA: qué vender, a quién, cómo monetizar)"
+      ],
+      "what_not_to_copy": [
+        "No copiar la estructura de 'libro + serie' si no tienes credencial de Guinness World Record (sería increíble sin autoridad previa)",
+        "No asumir que el público está en nivel de awareness 3 (solution aware) — en LATAM muchos están en nivel 1-2 para IA",
+        "No usar analogía del power washer literalmente — buscar analogías culturalmente relevantes para LATAM",
+        "No hacer CTA tan suave si el segmento es escéptico (D) — necesitaría más urgencia o razón-por-qué",
+        "No asumir que $15 es precio bajo en todos los mercados LATAM — ajustar según poder adquisitivo local"
+      ],
+      "craft_notes": [
+        "Ritmo: Las frases cortas ('I can tell you exactly how to power wash a deck, but if all you had was a hose, you're not going to get very far') crean cadencia de conversación natural, no de venta",
+        "Transiciones: 'And so' y 'And that's because' conectan causa-efecto de forma orgánica, no forzada",
+        "Power words: 'Realize' es más fuerte que 'apply' — sugiere transformación, no solo acción",
+        "Estructura de tres: 'what to sell, who to sell it to, how to make money' es memorable porque es triada (regla de tres)",
+        "Contraste: 'I can tell you exactly... but if all you had was a hose' crea tensión que se resuelve con la solución",
+        "Precio como cierre: 'For 15 bucks' viene después de toda la justificación, no antes — orden psicológico correcto",
+        "Inclusión de training: 'training that I included to show you how to apply this stuff' añade componente de aplicación sin sonar como upsell"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:08:43.444Z"
+}

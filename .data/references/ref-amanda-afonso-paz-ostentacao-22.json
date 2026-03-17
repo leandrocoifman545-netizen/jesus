@@ -1,0 +1,157 @@
+{
+  "id": "ref-amanda-afonso-paz-ostentacao-22",
+  "title": "Amanda Afonso - Paz > Ostentacion: lluvia, silencio, evangelio, calma (craft sensorial top)",
+  "transcript": "Na internet a gente ouve falar muito sobre ostentação, ganhar muito dinheiro e carrões. E sabe que o meu maior objetivo quando comecei aqui, claro que foi ganhar mais. Eu precisava ganhar mais por necessidade, né? Eu queria ter uma vida melhor pra mim e pra minha família. Mas pra mim o principal é a paz de não precisar ir pra um trabalho que não me fazia bem. Aquela correria no dia a dia, por exemplo, ó. Agora de manhã, eu e meu marido a gente leva as crianças à escola. E o fato de eu ter largado o emprego e ele também pra trabalhar em casa, pra viver das vendas aqui na internet, olha a tranquilidade. Eu tô lendo aqui o evangelho, depois do café eu faço isso, ele tá ali trabalhando. E é um silêncio aqui, a gente vai pegar as crianças na escola já já. E uma chuvinha ali, ó, não sei se dá pra ver, tá chovendo. Ó. Esse barulhinho, essa calma, né amor? É bom. A gente passa a manhã junto, a gente pega as crianças. E eu falo que não existe nada melhor do que batalhar em família. do que os dois juntos construir pelo mesmo objetivo, que são os nossos filhos. Não tem ninguém que vai estar do teu lado tão próximo, querendo as mesmas coisas do que o teu marido, do que a tua família. E pra mim foi a melhor coisa que a gente fez, né amor? Com certeza. A internet mudou muita coisa aqui, mas não só sobre dinheiro, também sobre paz, tranquilidade, sobre presença um com o outro, porque ele ficava fora o dia todo, eu trabalhava fora, as crianças a gente só via no final do dia, e hoje a família está sempre juntas, continuamos trabalhando, e nós dois, às vezes até tarde da noite, nós dois juntos, acordar cedo, nós dois juntos, final de semana, às vezes a gente precisa trabalhar, e nós dois juntos, mas sempre também priorizando os filhos, a família, e para mim isso é o que mais importa, não é?",
+  "analysis": {
+    "hook": {
+      "text": "Na internet a gente ouve falar muito sobre ostentacao, ganhar muito dinheiro e carroes. E sabe que o meu maior objetivo quando comecei aqui, claro que foi ganhar mais. Mas pra mim o principal e a paz.",
+      "type": "contraintuitivo",
+      "word_count": 36,
+      "estimated_seconds": 12
+    },
+    "structure": {
+      "framework": "other",
+      "sections": [
+        {
+          "name": "Hook - Paz > ostentacion",
+          "summary": "Internet habla de ostentacion. Mi objetivo era paz, no correria.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Rutina matutina sensorial",
+          "summary": "Llevan hijos a la escuela. El lee evangelio, ella trabaja. Silencio. Lluvia afuera. Barulhinho, calma.",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "Reflexion en pareja",
+          "summary": "Batallar en familia. Nadie quiere las mismas cosas que tu marido/familia.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Contraste sensorial",
+          "summary": "Antes: el fuera todo el dia, ella fuera, hijos solo al final del dia. Ahora: familia siempre junta.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Cierre",
+          "summary": "Internet cambio no solo dinero sino paz, tranquilidad, presencia. Eso es lo que importa.",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Esse barulhinho, essa calma."
+    },
+    "tone": {
+      "primary_tone": "intimo-sereno",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "a paz de nao precisar ir pra um trabalho",
+        "esse barulhinho, essa calma",
+        "batalhar em familia",
+        "nao so sobre dinheiro, tambem sobre paz"
+      ]
+    },
+    "cta": {
+      "text": "",
+      "type": "none",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 85,
+    "total_word_count": 349,
+    "emotional_arc": "Expectativa rota (no es sobre plata) -> Calma (rutina serena) -> Ternura (lluvia, silencio, evangelio) -> Conexion (pareja, familia) -> Contraste suave (antes vs ahora) -> Paz",
+    "strengths": [
+      "SONIDO REAL de la lluvia como elemento narrativo — el viewer LO ESCUCHA",
+      "Esse barulhinho, essa calma — 4 palabras que transmiten mas que 100 de copy",
+      "Anti-ostentacion como posicionamiento: no es sobre carroes, es sobre paz",
+      "Detalles sensoriales en tiempo real: esta lloviendo AHORA, el esta leyendo AHORA, el silencio es AHORA",
+      "El ad no vende — construye un mundo aspiracional que el viewer quiere habitar"
+    ],
+    "patterns_to_replicate": [
+      "SONIDOS AMBIENTALES como elemento narrativo (lluvia, silencio, pajaros) — el ad se SIENTE, no solo se ve",
+      "Anti-ostentacion como hook: todo el mundo habla de X, pero lo que yo realmente queria era Y",
+      "Detalles EN TIEMPO REAL: esto esta pasando AHORA mientras grabo — autenticidad maxima",
+      "Construir un mundo aspiracional sensorial que el viewer quiera habitar, no solo admirar",
+      "Pareja como co-protagonista: el dialogo casual entre los dos genera intimidad"
+    ],
+    "advertiser": {
+      "name": "Amanda Afonso",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "identidad",
+      "body_type": "un_dia_en_la_vida",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - Paz > ostentacion",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Rutina matutina sensorial",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Contraste sensorial",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Ganar plata online es para ostentar carroes y lujo",
+        "mechanism": "Lo que realmente cambia es la paz: silencio, calma, familia junta, lluvia afuera, sin correria",
+        "new_belief": "Trabajar online es sobre paz y presencia familiar, no sobre ostentacion"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 5,
+          "ingredient_name": "Contraintuitivo (paz > ostentacion)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 33,
+          "ingredient_name": "Detalle sensorial (lluvia, silencio, barulhinho)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad (antes no nos veiamos en todo el dia)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 125,
+          "ingredient_name": "Future pacing sensorial (el viewer se imagina EN esa calma)"
+        }
+      ],
+      "model_sale_type": "none",
+      "awareness_level": 1,
+      "segment_equivalent": "A",
+      "big_idea": "Lo mejor de trabajar online no es la plata — es el silencio, la lluvia afuera y tu familia al lado"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "SONIDOS AMBIENTALES como storytelling: grabar con sonido de lluvia, pajaros, silencio. El ad se SIENTE.",
+        "Anti-ostentacion como hook para segmento A: no es sobre hacerte rico, es sobre tener paz y tiempo",
+        "Detalles en tiempo real: mostrar lo que pasa AHORA MISMO mientras graba — autenticidad imbatible",
+        "Construir mundo aspiracional SENSORIAL: no decir libertad, MOSTRAR la lluvia y el silencio",
+        "Adaptar a Jesus: graba mientras toma mate en su casa, silencio, muestra la tranquilidad de su vida"
+      ],
+      "what_not_to_copy": [
+        "Sin CTA, sin mecanismo — no convierte solo",
+        "Demasiado pasivo para MOFU/RETARGET — es TOFU puro awareness"
+      ],
+      "craft_notes": [
+        "Este es el ad con MEJOR craft de todas las 75+ referencias que tenemos. Las 4 palabras esse barulhinho, essa calma hacen mas que cualquier dato o matematica.",
+        "La lluvia no es decoracion — es ARGUMENTO. Dice: mi vida es tan tranquila que el unico sonido es la lluvia.",
+        "Para Jesus: grabar un ad asi. Sentado tomando mate, silencio, quizas lluvia. Decir: todo el mundo habla de hacerse millonario online. Yo lo que queria era esto. Y mostrar la calma. Despues agregar mecanismo y CTA en post."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T02:33:57.515Z"
+}

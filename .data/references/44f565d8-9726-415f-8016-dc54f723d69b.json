@@ -1,0 +1,244 @@
+{
+  "id": "44f565d8-9726-415f-8016-dc54f723d69b",
+  "title": "laura 2",
+  "transcript": " ¿Qué haría yo si necesitara 3 mil dólares en los próximos 30 días? Bueno, si ya tienes un celular e internet, ya puedes empezar por ahí. Voy a mostrar cómo empezar de la manera más simple y rápida. Tu caso es conseguir un ingreso extra urgente. No puedes fijarte en esas estrategias que tardan meses, en dar resultados, ser afiliado, vender con dropshipping, cursos de vender, cursos y nada de eso. Esas cosas hasta funcionan, pero si necesitas dinero ahora, eso no es lo que va a resolver tu vida. Y vamos a ser sinceros, listo, si lo necesitas con urgencia probablemente tampoco tengas algo que vender. Yo sé cómo es, yo ya estuve en ese mismo lugar y por eso es que te voy a decir exactamente lo que yo haría. Y es que si yo quisiera hacer más de $2.000 o $3.000 dólares al mes, entonces puedes empezar con una estrategia que yo uso y que cualquier persona puede aplicar desde hoy. Es lo que yo llamo productos extranjeros virales, que creo con una serie de herramientas de inteligencia artificial, sin que yo necesite ser especialista en nada. y venden autom las 24 horas del d sin aparecer sin crear contenidos sin mostrar mi rostro sin hablar con clientes y es s sencillo porque yo configuro todas estas herramientas de inteligencia artificial y estas inteligencias artificial funcionan como unos robots empleados Estos robots crean el producto por mí, crean la estructura y ellos venden en automático, mientras yo hago otras cosas en el día. Solo ayer mira por ejemplo cuánto pude hacer y sin hacer prácticamente nada. Todas estas ventas sucedieron en automático. No hablé con nadie, las ventas ocurren simplemente con esta estructura que permite vender productos extranjeros virales. Y es que si tienes un celular y acceso a internet, ya puedes empezar. Y para ayudarte, grabé un video que va al punto con el paso a paso completo, donde aprenderás cómo hacerlo. Puedes hacer clic debajo del botón de este video para que vayas a ver esa presentación. Porque después la voy a quitar y probablemente ya no la puedas ver. Que con esta clase vas a aprender a hacer por lo menos 100, 200 y hasta 500 dólares al día. Sin tener seguidores, sin saber nada de tecnología y sin mostrar tu rostro. Por eso es que es una muy buena estrategia para comenzar a implementar ahora mismo. Poder tener resultados esta o la próxima semana. A este año le quedan menos de tres meses. Y si tú aplicas esta estrategia, puedes hacer que este año termine súper bien para ti.",
+  "analysis": {
+    "hook": {
+      "text": "¿Qué haría yo si necesitara 3 mil dólares en los próximos 30 días?",
+      "type": "pregunta_incomoda",
+      "word_count": 15,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook + Identificación",
+          "summary": "Pregunta provocadora + confesión de empatía (yo estuve ahí)",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Agitación + Demolición de alternativas",
+          "summary": "Descarta estrategias lentas (afiliación, dropshipping, cursos) y explica por qué no funcionan para urgencia",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Mecanismo: Presentación de la solución",
+          "summary": "Introduce 'productos extranjeros virales' + IA como robots empleados que venden 24/7 sin intervención",
+          "estimated_seconds": 18
+        },
+        {
+          "name": "Prueba social + Demostración",
+          "summary": "Ejemplo de ventas en automático (ayer), sin hablar con nadie, sin aparecer",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "CTA + Urgencia + Beneficios",
+          "summary": "Invitación a video con paso a paso, promesa de $100-500/día, límite temporal (3 meses del año)",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Y es que si tienes un celular y acceso a internet, ya puedes empezar."
+    },
+    "tone": {
+      "primary_tone": "Confidente, empático, urgente, directo",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Yo ya estuve en ese mismo lugar",
+        "vamos a ser sinceros",
+        "robots empleados",
+        "venden automático las 24 horas del día",
+        "sin mostrar mi rostro",
+        "es tan sencillo porque",
+        "Todas estas ventas sucedieron en automático"
+      ]
+    },
+    "cta": {
+      "text": "Puedes hacer clic debajo del botón de este video para que vayas a ver esa presentación. Porque después la voy a quitar y probablemente ya no la puedas ver.",
+      "type": "embedded_command",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 56,
+    "total_word_count": 487,
+    "emotional_arc": "Esperanza (hook) → Frustración (demolición de alternativas) → Alivio (mecanismo revelado) → Validación (prueba social) → Urgencia + Esperanza (CTA)",
+    "strengths": [
+      "Hook con pregunta específica y cuantificada ($3k en 30 días) que genera curiosidad inmediata",
+      "Empatía temprana ('yo ya estuve ahí') que rompe la barrera anunciante-audiencia",
+      "Demolición sistemática de alternativas populares antes de presentar la solución (evita objeciones)",
+      "Mecanismo claramente explicado: IA como 'robots empleados' (analogía accesible)",
+      "Beneficio sin fricción: sin rostro, sin seguidores, sin tecnología previa",
+      "Prueba social concreta: ejemplo de ayer con ventas en automático",
+      "Urgencia dual: límite temporal del video + 3 meses restantes del año",
+      "Rehook a mitad del guión mantiene atención",
+      "Lenguaje conversacional que suena auténtico (no pulido, UGC-style)"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con pregunta cuantificada que refleja el deseo del prospect",
+      "Incluir confesión de vulnerabilidad temprana para generar conexión",
+      "Descartar alternativas populares ANTES de presentar tu solución (inocula objeciones)",
+      "Usar analogía simple para explicar mecanismo complejo (IA = robots empleados)",
+      "Enfatizar beneficios sin fricción: sin aparecer, sin seguidores, sin expertise",
+      "Incluir prueba social específica y reciente (ayer, esta semana)",
+      "Crear urgencia con límite temporal del recurso (video se quita) + contexto temporal (fin de año)",
+      "Rehook a mitad del guión para retener atención",
+      "Usar frases de transición que suenen conversacionales ('vamos a ser sinceros', 'yo sé cómo es')",
+      "Repetir el beneficio principal en múltiples formatos (sin rostro, sin seguidores, sin tecnología)"
+    ],
+    "advertiser": {
+      "name": "Unknown (Posiblemente creador individual o agencia de IA/dropshipping)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "LATAM (probablemente MX, CO, AR)"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Identificación",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Agitación + Demolición",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Mecanismo: Presentación de solución",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba social",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA + Urgencia",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para ganar dinero rápido necesito estrategias complejas (afiliación, dropshipping, cursos) que tardan meses",
+        "mechanism": "IA configurable como 'robots empleados' que venden 24/7 sin intervención humana, sin expertise previo",
+        "new_belief": "Puedo generar $100-500/día en 1-2 semanas usando IA para vender productos extranjeros en automático, sin aparecer ni tener seguidores"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook pregunta cuantificada"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 5,
+          "ingredient_name": "Dolor de urgencia financiera"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (alternativas lentas vs solución rápida)"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 15,
+          "ingredient_name": "Agitación por tiempo perdido"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 8,
+          "ingredient_name": "Quiebre: confesión de vulnerabilidad (yo estuve ahí)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 3,
+          "ingredient_name": "Autoridad por experiencia personal"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 12,
+          "ingredient_name": "Mecanismo: IA como robots empleados"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita (ejemplo de ayer con ventas)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 5,
+          "ingredient_name": "Prueba social: resultados recientes"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 2,
+          "ingredient_name": "Beneficio cuantificado ($100-500/día)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 7,
+          "ingredient_name": "CTA directo: hacer clic en botón"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 3,
+          "ingredient_name": "Urgencia por límite temporal (video se quita)"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 8,
+          "ingredient_name": "Urgencia contextual (3 meses restantes del año)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 2,
+          "ingredient_name": "Lenguaje conversacional (vamos a ser sinceros)"
+        }
+      ],
+      "model_sale_type": "ventana_oportunidad",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Usa IA como robots empleados para vender productos extranjeros en automático 24/7 y genera $100-500/día sin aparecer ni tener expertise"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura PAS con demolición de alternativas ANTES de presentar solución (inocula objeciones de forma elegante)",
+        "Hook con pregunta cuantificada específica ($3k en 30 días) que refleja el deseo del prospect",
+        "Confesión temprana de vulnerabilidad para romper barrera anunciante-audiencia ('yo ya estuve ahí')",
+        "Analogía simple para explicar mecanismo complejo (IA = robots empleados que trabajan 24/7)",
+        "Énfasis en beneficios sin fricción: sin rostro, sin seguidores, sin expertise técnico (aplicable a productos digitales con IA)",
+        "Prueba social específica y reciente (ejemplo de ayer) que valida el mecanismo",
+        "Urgencia dual: límite temporal del recurso (video se quita) + contexto temporal (fin de año)",
+        "Rehook a mitad del guión para mantener atención en videos largos",
+        "Repetición del beneficio principal en múltiples formatos para reforzar mensaje",
+        "Lenguaje conversacional que suena auténtico (UGC-style) en lugar de pulido corporativo",
+        "Transiciones naturales ('vamos a ser sinceros', 'yo sé cómo es') que generan conexión"
+      ],
+      "what_not_to_copy": [
+        "Promesas de dinero específicas ($100-500/día) sin contexto de esfuerzo o inversión inicial (riesgo legal/regulatorio en LATAM)",
+        "Afirmación de 'sin hacer prácticamente nada' (puede generar escepticismo en audiencia más sofisticada o regulatoria)",
+        "Falta de disclaimer sobre resultados no garantizados (importante para productos digitales en LATAM)",
+        "Énfasis excesivo en 'sin mostrar rostro' como beneficio (puede sonar a estafa o falta de autenticidad en algunos segmentos)",
+        "No mencionar inversión inicial o costo de herramientas IA (genera objeción tardía en el funnel)",
+        "Estructura que no incluye objection handling sobre por qué IA no lo hace todo (deja vacío de credibilidad)"
+      ],
+      "craft_notes": [
+        "Ritmo: Alternancia entre oraciones cortas (impacto) y largas (explicación) crea cadencia hipnótica. Ej: 'Yo sé cómo es, yo ya estuve en ese mismo lugar' (corta) + 'y por eso es que te voy a decir exactamente lo que yo haría' (larga)",
+        "Power words: 'automático', 'urgente', 'sinceros', 'robots', 'viral' generan emoción y claridad",
+        "Transiciones naturales: 'Y es que', 'Vamos a ser sinceros', 'Yo sé cómo es' suena conversacional, no publicitario",
+        "Repetición estratégica: 'sin mostrar rostro', 'sin seguidores', 'sin tecnología' se repite 3+ veces para reforzar",
+        "Estructura de negación: 'No puedes fijarte en...', 'Esas cosas hasta funcionan, pero...' anticipa objeciones de forma elegante",
+        "Cuantificación: Números específicos ($3k, $2-3k/mes, $100-500/día) generan credibilidad vs promesas vagas",
+        "Voz activa predominante: 'yo configuro', 'yo hago', 'yo uso' crea agencia y confianza",
+        "Falta de puntuación en algunos puntos ('venden autom las 24 horas') sugiere grabación natural/UGC (fortaleza, no debilidad)",
+        "Cierre con contexto temporal: 'A este año le quedan menos de tres meses' ancla urgencia en realidad del prospect"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:11:35.977Z"
+}

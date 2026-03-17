@@ -1,0 +1,168 @@
+{
+  "id": "ref-brook-hiddink-toy-vs-sauna",
+  "title": "Brook Hiddink - Toy vs Sauna: masterclass de comparacion paralela (1300 ads activos)",
+  "transcript": "This is a toy and this is a $10,000 sauna and believe it or not you don't need to own one to be able to sell them. And I'm going to teach you how you can sell luxury items that you never have to see or touch. So props like these sell for $3 and you might make 50 cents. This sells for $8,000 and pays you $2,000. These require you to sell 2,000 units to pay your rent. This requires you to sell one to pay your rent. These require you to buy inventory that you have to keep in your garage. This ships directly from a brand's warehouse, directly to your customer, without you ever seeing or touching it. These get you competing with 10,000 other sellers. This has almost nobody trying to sell it online. And these get returned, reviewed badly, and end up in the trash. This gets installed in a millionaire's home gym, and they thank you for selling it to them. So I went from $180,000 in debt to making over $40 million online in just four years. And I am running a free workshop where I will break down AI-powered luxury e-commerce step-by-step and how you can do it even if you have no prior experience and if you've never sold anything online before. All you have to do is just tap the link below to lock in your spot. There's limited spots available, so if you're still selling the link below, there's still room left. So I would tap the button below right now to lock in your seat before it's too late, and I will see you on the workshop later on.",
+  "analysis": {
+    "hook": {
+      "text": "This is a toy and this is a $10,000 sauna and believe it or not you don't need to own one to be able to sell them.",
+      "type": "contraintuitivo",
+      "word_count": 22,
+      "estimated_seconds": 7
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Hook - Toy vs Sauna",
+          "summary": "Muestra juguete barato vs sauna de $10K. No necesitas tener uno para venderlo.",
+          "estimated_seconds": 7
+        },
+        {
+          "name": "Comparacion paralela x5",
+          "summary": "5 contrastes escalados: precio ($3 vs $8K), esfuerzo (2000 unidades vs 1), logistica (garage vs directo), competencia (10K sellers vs nadie), outcome (basura vs instalado en gym de millonario)",
+          "estimated_seconds": 40
+        },
+        {
+          "name": "Credencial",
+          "summary": "De $180K en deuda a $40M online en 4 anos.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "CTA",
+          "summary": "Workshop gratis, AI-powered luxury e-commerce, spots limitados.",
+          "estimated_seconds": 15
+        }
+      ],
+      "has_rehook": false
+    },
+    "tone": {
+      "primary_tone": "directo-visual",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "you never have to see or touch",
+        "2000 units to pay your rent vs one",
+        "gets installed in a millionaire's home gym",
+        "they thank you for selling it to them"
+      ]
+    },
+    "cta": {
+      "text": "Tap the link below to lock in your spot for the free workshop.",
+      "type": "learn_more",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 75,
+    "total_word_count": 281,
+    "emotional_arc": "Curiosidad (toy vs sauna?) -> Revelacion (no necesitas tenerlo) -> Contraste x5 (cada uno mas impactante) -> Ambicion (40M) -> Accion",
+    "strengths": [
+      "PROPS FISICOS en camara: muestra el juguete y la sauna. Visual > verbal.",
+      "5 contrastes paralelos que ESCALAN en impacto — cada uno es peor para el barato y mejor para el luxury",
+      "La ultima comparacion es emocional: basura vs millonario que te agradece",
+      "Duracion perfecta (75s) con densidad maxima de informacion",
+      "Con 1300 ads activos, este es uno de los que mas repite (ad 1 = ad 9) = probablemente winner"
+    ],
+    "patterns_to_replicate": [
+      "COMPARACION PARALELA ESCALADA: 5+ contrastes entre el camino malo y el bueno, cada uno peor/mejor",
+      "PROPS FISICOS en camara: mostrar objetos reales para anclar la comparacion visualmente",
+      "Estructura ESTOS vs ESTE: These sell for $3... This sells for $8K. These require 2000... This requires 1.",
+      "Ultima comparacion EMOCIONAL (no numerica): basura vs millonario que te agradece",
+      "TESTEO MASIVO DE HOOKS: mismo cuerpo x muchos hooks = 1300 ads. El cuerpo es el asset, los hooks son tests."
+    ],
+    "advertiser": {
+      "name": "Brook Hiddink",
+      "platform": "meta",
+      "ranking_position": "top_5",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "confrontacion",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - Toy vs Sauna",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Comparacion paralela x5",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Credencial",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA workshop",
+          "function": "mecanismo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para vender online necesito productos baratos, stock e inventario",
+        "mechanism": "5 contrastes muestran que vender productos baratos = mucho trabajo, poca ganancia, competencia brutal. Vender luxury = 1 venta paga el alquiler, sin stock, sin competencia.",
+        "new_belief": "Vender productos luxury sin stock es mas facil, mas rentable y tiene menos competencia"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 5,
+          "ingredient_name": "Contraintuitivo (no necesitas tenerlo para venderlo)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (2000 unidades vs 1)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 49,
+          "ingredient_name": "Redefinicion del juego (luxury > cheap)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 52,
+          "ingredient_name": "Comparacion de caminos (5 contrastes paralelos)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 76,
+          "ingredient_name": "Metafora/analogia (toy como simbolo del camino malo)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba matematica ($180K deuda -> $40M)"
+        }
+      ],
+      "model_sale_type": "cementerio_de_modelos",
+      "awareness_level": 3,
+      "segment_equivalent": "C",
+      "big_idea": "Vender juguetes de $3 requiere 2000 ventas para pagar el alquiler. Vender una sauna de $10K requiere una."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "COMPARACION PARALELA ESCALADA: adaptar a ADP. Estos venden cursos de $497 y necesitan 100 alumnos. Esto es un ebook de $10 que se vende solo 300 veces al mes.",
+        "PROPS FISICOS: Jesus muestra algo en camara (celular, pantalla de Hotmart, producto impreso). Visual > palabras.",
+        "Estructura ESTOS vs ESTE repetida 5 veces: cada contraste refuerza el anterior. El ultimo es emocional, no numerico.",
+        "TESTEO MASIVO: el mismo cuerpo con 20+ hooks distintos. ADP puede hacer esto: 1 cuerpo bueno x 5 leads = lo que ya hacemos, pero podriamos llevar a 10-15 leads por cuerpo.",
+        "Duplicar el ad 1=9 confirma que es winner — cuando un ad se repite en la libreria es senial de que funciona."
+      ],
+      "what_not_to_copy": [
+        "Luxury e-commerce no es el modelo de ADP",
+        "Las versiones largas (ads 2,4,5,7,8) son repetitivas y flojas — el cuerpo core es mediocre, solo el hook del toy vs sauna es excepcional",
+        "Lifestyle Dubai/penthouse es irrelevante para el avatar de Jesus",
+        "Urgencia falsa (limited spots, training coming down) repetida en todos los ads"
+      ],
+      "craft_notes": [
+        "Brook tiene 1300 ads porque testea hooks masivamente sobre pocos cuerpos. De 9 ads, hay solo 3 cuerpos unicos (toy vs sauna, walmart model, hyperbaric chamber).",
+        "El ad toy vs sauna funciona porque es VISUAL y PARALELO. No dice 'es mejor'. MUESTRA por que es mejor con 5 contrastes que escalan.",
+        "Para ADP: adaptar la estructura paralela. Estos trabajan 8 horas en una oficina por $1500. Esto es 1 hora con IA y un ebook que vende mientras dormis. Estos necesitan titulo universitario. Esto necesita saber pedirle a la IA.",
+        "La clave de los 1300 ads: el CUERPO es el asset fijo. Los hooks son variables de test. ADP ya hace 5 leads por cuerpo — podria escalar a 10-15."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T02:09:59.259Z"
+}

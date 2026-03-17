@@ -1,0 +1,180 @@
+{
+  "id": "ref-nati-sistema-renda-invisible-1",
+  "title": "Nati - Madre 42 años + Sistema Renda Invisible vs Shopee",
+  "transcript": "Tengo 42 años, soy madre y estoy empezando ahora en la Internet. ¿Afiliada Shopee o TikTok Shop? Ixi, en realidad, ninguna de las dos opciones es maravillosa. ¿Sabes por qué? Como afiliada de Shopee, vas a ganar muy poco para cada venta que vas a hacer. Solo para que tengas una noción. Si vendes un producto de más o menos 30 reais, vas a ganar 5 reais. Y TikTok Shop es la misma cosa. Resumiendo, mucho trabajo grabando contenido todo el día para ganar muy poco. Entonces, presta atención a una cosa. si estás empezando ahora, no tienes mucho tiempo para dedicarse, y incluso no tienes mucho dinero para invertir, principalmente para ti que tienes otras prioridades y no quieres arriesgar mucho, lo que te indico es empezar usando una estrategia que yo llamo de sistema de renda invisible. ¿Por qué? Porque es absolutamente simple. No necesitas aparecer, no necesitas tener un producto o algún conocimiento para poder vender. No necesitas, inclusive, perder tiempo creando contenidos en Instagram, creando contenidos en la Internet. Y lo mejor, hoy mismo ya puedes aplicar y en menos de 24 horas puedes generar un caixa rápido y tener los primeros resultados. Y es obvio que por ser tan simple y la barrera de entrada ser bien baja, no puedes hacer mucho dinero. ¿Vas a conseguir hacer 3, 4, 5 mil reais por mes? Aunque para mucha gente eso sea poco dinero, pero si para ti eso ya es algo, Y si te ayuda a pagar las cuentas del mes y tener una renda extra, puedes empezar con esta estrategia. Para ti que estás aquí, voy a dejar una aula enseñando esta estrategia. Es solo clicar aquí abajo en el botón.",
+  "analysis": {
+    "hook": {
+      "text": "Tengo 42 años, soy madre y estoy empezando ahora en la Internet. ¿Afiliada Shopee o TikTok Shop? Ixi, en realidad, ninguna de las dos opciones es maravillosa.",
+      "type": "situacion_especifica",
+      "word_count": 28,
+      "estimated_seconds": 8
+    },
+    "structure": {
+      "framework": "PAS",
+      "sections": [
+        {
+          "name": "Identificación avatar",
+          "summary": "42 años, madre, empezando en internet. Se pone en los zapatos del avatar.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Demolición alternativas",
+          "summary": "Shopee = 5 reais por venta de 30. TikTok Shop igual. Mucho trabajo, poca ganancia.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Transición al mecanismo",
+          "summary": "Si no tenés tiempo ni dinero y no querés arriesgar...",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Mecanismo con nombre",
+          "summary": "Sistema de Renda Invisible: no aparecer, no crear contenido, no necesitar producto.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Prueba de facilidad",
+          "summary": "Hoy mismo podés aplicar, en menos de 24h primeros resultados.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Expectativa calibrada",
+          "summary": "3-5 mil reais por mes. No es mucho pero paga las cuentas.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "CTA",
+          "summary": "Aula gratuita, clicar abajo.",
+          "estimated_seconds": 5
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Entonces, presta atención a una cosa."
+    },
+    "tone": {
+      "primary_tone": "empático-maternal",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "sistema de renda invisible",
+        "no necesitas aparecer",
+        "caixa rápido",
+        "renda extra"
+      ]
+    },
+    "cta": {
+      "text": "Voy a dejar una aula enseñando esta estrategia. Es solo clicar aquí abajo en el botón.",
+      "type": "learn_more",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 90,
+    "total_word_count": 286,
+    "emotional_arc": "Identificación (soy como vos) → Frustración (Shopee/TikTok no sirven) → Esperanza (existe otro camino) → Curiosidad (Sistema Renda Invisible) → Confianza (es simple) → Acción",
+    "strengths": [
+      "Hook que ES el avatar hablando en primera persona — identificación inmediata",
+      "Demolición con números concretos (5 reais de 30)",
+      "Mecanismo con nombre propio: Sistema de Renda Invisible",
+      "Expectativa calibrada — no promete millones, promete 3-5 mil reais",
+      "Elimina barreras una por una (no aparecer, no producto, no contenido, no dinero)"
+    ],
+    "patterns_to_replicate": [
+      "Hook donde el avatar habla en primera persona (no el vendedor)",
+      "Demolición de alternativa popular con números exactos",
+      "Mecanismo con nombre propio (Sistema de Renda Invisible = F#75)",
+      "Expectativa calibrada como técnica de credibilidad"
+    ],
+    "advertiser": {
+      "name": "Nati (Sistema de Renda Invisible)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "identidad",
+      "body_type": "demolicion_mito",
+      "persuasion_functions": [
+        {
+          "section_name": "Identificación avatar",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Demolición alternativas",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Mecanismo con nombre",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba de facilidad",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para ganar dinero online siendo madre tengo que ser afiliada de Shopee o TikTok Shop",
+        "mechanism": "Sistema de Renda Invisible: producto digital propio sin aparecer, sin crear contenido, activable en 24h",
+        "new_belief": "Puedo ganar 3-5 mil reais/mes con un sistema invisible que no requiere contenido ni aparecer"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Situación específica del avatar (42 años, madre)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo social (Shopee = 5 reais)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 49,
+          "ingredient_name": "Redefinición del juego (invisible > contenido)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 75,
+          "ingredient_name": "Mecanismo con nombre (Sistema de Renda Invisible)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 82,
+          "ingredient_name": "Atajo legítimo (hoy mismo, 24h resultados)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 105,
+          "ingredient_name": "CTA a clase gratuita"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "Ser afiliada de Shopee es mucho trabajo para ganar migajas — con un sistema invisible ganás 3-5 mil reais sin aparecer"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Hook en primera persona del avatar (42 años, madre, empezando) — adaptable a segmentos de ADP",
+        "Demolición con números exactos de la alternativa (5 reais de 30 = migajas)",
+        "Mecanismo con nombre propio — Jesús debería nombrar su sistema",
+        "Expectativa calibrada (3-5 mil reais, no millones) como técnica de credibilidad",
+        "Eliminación de barreras en cascada (no X, no Y, no Z, no W)"
+      ],
+      "what_not_to_copy": [
+        "El tono maternal no aplica al avatar de Jesús (más joven, más masculino)",
+        "Sistema de Renda Invisible es vago — no explica qué es realmente"
+      ],
+      "craft_notes": [
+        "El hook funciona porque NO es el vendedor hablando — es el avatar. Genera identificación instantánea.",
+        "La demolición con números concretos (5 reais de 30) es más poderosa que decir es poco.",
+        "Calibrar expectativas hacia abajo paradójicamente genera más confianza que prometer mucho."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:26:22.388Z"
+}

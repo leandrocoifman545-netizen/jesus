@@ -1,0 +1,202 @@
+{
+  "id": "929910d0-0f1d-475d-8fd7-7d5adc60e3f9",
+  "title": "Euge Oller 2",
+  "transcript": " Llevo trabajando meses en compactar todo mi conocimiento sobre emprendimiento y desarrollar una metodología que sea fácil de entender y de llevar a la práctica. Lo llamo método IMPEF, básicamente es dándole la vuelta a lo que me enseñaron a mí en la universidad y en el máster, que eso me hizo perder bastante dinero y tiempo sobre todo. Y lo he compactado todo en una masterclass de 1 hora y 47. He añadido un montón de plantillas para que puedas rellenar de forma fácil agentes de inteligencia artificial para que te ayuden en tu proceso. Y si quieres acceder a ella, la he puesto tan solamente a un euro. Así que la puedes acceder por aquí.",
+  "analysis": {
+    "hook": {
+      "text": "Llevo trabajando meses en compactar todo mi conocimiento sobre emprendimiento y desarrollar una metodología que sea fácil de entender y de llevar a la práctica.",
+      "type": "situacion_especifica",
+      "word_count": 32,
+      "estimated_seconds": 8
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Contexto",
+          "summary": "Presentación del trabajo realizado (meses de compactación de conocimiento)",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Presentación del Método",
+          "summary": "Introducción del método IMPEF y su diferenciación vs educación tradicional",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Mecanismo + Prueba",
+          "summary": "Detalles de la masterclass (1h47), plantillas, agentes de IA",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Oferta + CTA",
+          "summary": "Precio (1 euro) y llamada a la acción directa",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "confessional_authority",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Llevo trabajando meses",
+        "compactar todo mi conocimiento",
+        "dándole la vuelta a lo que me enseñaron",
+        "eso me hizo perder bastante dinero y tiempo",
+        "tan solamente a un euro"
+      ]
+    },
+    "cta": {
+      "text": "Y si quieres acceder a ella, la he puesto tan solamente a un euro. Así que la puedes acceder por aquí.",
+      "type": "directo",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 34,
+    "total_word_count": 156,
+    "emotional_arc": "Credibilidad (trabajo invertido) → Frustración (educación tradicional falló) → Esperanza (solución compactada) → Alivio (precio accesible)",
+    "strengths": [
+      "Hook específico con inversión de tiempo (credibilidad inmediata)",
+      "Contraste claro: educación tradicional vs metodología propia",
+      "Cuantificación del daño (dinero y tiempo perdidos) genera empatía",
+      "Nombre de método memorable (IMPEF) crea sensación de sistema",
+      "Precio psicológico extremadamente bajo (1 euro) elimina fricción",
+      "Mención de IA como ingrediente moderno sin sobreexplicar",
+      "Tono conversacional y auténtico (UGC-like)",
+      "Razón por la que el precio es bajo (accesibilidad genuina)"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con inversión de tiempo/trabajo personal ('Llevo X meses...')",
+      "Nombrar el método/sistema para crear sensación de estructura",
+      "Contrastar educación vieja vs nueva forma de pensar",
+      "Cuantificar el daño de la creencia anterior (dinero, tiempo)",
+      "Mencionar componentes tangibles (plantillas, herramientas, duración exacta)",
+      "Usar precio psicológico extremadamente bajo como cierre",
+      "Mantener tono conversacional sin perder autoridad",
+      "Incluir IA como feature moderna pero no como protagonista"
+    ],
+    "advertiser": {
+      "name": "Unknown (Creador/Emprendedor Individual)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "ES"
+    },
+    "generation_mapping": {
+      "angle_family": "mecanismo",
+      "body_type": "demolicion_mito",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Contexto",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Presentación del Método",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Mecanismo + Prueba",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Oferta + CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "La educación formal (universidad, máster) es la mejor forma de aprender emprendimiento",
+        "mechanism": "Presentación de método alternativo (IMPEF) que invierte la lógica tradicional y añade herramientas modernas (IA)",
+        "new_belief": "Existe una metodología compactada y práctica que evita los errores costosos de la educación tradicional"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de Inversión de Tiempo"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor Comparativo (educación tradicional vs nueva)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 45,
+          "ingredient_name": "Quiebre de Expectativa (método que invierte lo aprendido)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 62,
+          "ingredient_name": "Autoridad por Experiencia Negativa Resuelta"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Mecanismo Explícito (método IMPEF + plantillas + IA)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba Social Implícita (tiempo invertido = validación)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 101,
+          "ingredient_name": "Precio Psicológico Extremo (1 euro)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 115,
+          "ingredient_name": "CTA Directo con Razón Why"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje de Accesibilidad ('tan solamente')"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "Un método que invierte todo lo que te enseñaron sobre emprendimiento, compactado en una hora y accesible por 1 euro"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con inversión de tiempo personal ('Llevo X meses/años desarrollando...') para generar credibilidad instantánea",
+        "Nombrar el sistema/método con acrónimo memorable para crear sensación de estructura (IMPEF → similar a 'Framework X')",
+        "Contrastar creencia vieja vs nueva de forma explícita ('dándole la vuelta a lo que me enseñaron')",
+        "Cuantificar el daño de la creencia anterior en términos emocionales (dinero, tiempo, frustración)",
+        "Mencionar componentes tangibles y modernos (plantillas, IA, herramientas) sin sobreexplicar",
+        "Usar precio psicológico extremadamente bajo (1 euro, 0.99, etc.) como eliminador de fricción final",
+        "Mantener tono conversacional y UGC-like incluso con contenido de autoridad",
+        "Incluir IA como feature secundaria que suma valor, no como protagonista del pitch",
+        "Proporcionar razón why clara para el precio bajo ('para que sea accesible')",
+        "Usar duración exacta de contenido (1h47) como señal de completitud"
+      ],
+      "what_not_to_copy": [
+        "No copiar la falta de urgencia (sin deadline, sin scarcity) - para LATAM conviene añadir ventana temporal",
+        "No usar solo UGC sin mencionar resultados o métricas (este ad funciona porque el creador tiene autoridad previa)",
+        "No confiar en que el precio bajo sea suficiente CTA - necesita más contexto de valor en ads de productos digitales",
+        "No omitir beneficios específicos (este ad asume que el audience ya sabe qué es un método de emprendimiento)",
+        "No usar metodología propia sin validación social visible (funciona aquí porque es confesional, pero en frío necesita prueba)"
+      ],
+      "craft_notes": [
+        "Ritmo: Oraciones largas al inicio crean sensación de proceso/trabajo invertido. Luego se acortan para velocidad final.",
+        "Cadencia: 'Llevo trabajando meses' (pasado) → 'lo llamo método IMPEF' (presente) → 'la he puesto' (acción completada) crea progresión temporal clara",
+        "Power words: 'compactar' (eficiencia), 'dándole la vuelta' (inversión radical), 'perder' (dolor concreto), 'tan solamente' (minimización psicológica)",
+        "Transiciones: 'Lo llamo' introduce nombre. 'Básicamente' explica. 'Y lo he compactado' suma. 'Y si quieres' abre puerta sin presión.",
+        "Estructura de oración: Sujeto claro (yo) + acción específica + resultado tangible. Evita jerga innecesaria.",
+        "Lenguaje de accesibilidad: 'fácil de entender', 'fácil de llevar a la práctica', 'tan solamente a un euro' repite concepto de simplicidad",
+        "Ausencia de hype: No hay 'revolucionario', 'increíble', 'nunca visto'. Confianza por subestimación.",
+        "Mención de IA: Integrada naturalmente como herramienta ('agentes de inteligencia artificial para que te ayuden') sin ser el gancho principal"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:04:40.588Z"
+}

@@ -1,0 +1,261 @@
+{
+  "id": "2fe73f15-de3d-4355-b222-2a0fea3875c3",
+  "title": "laura 3",
+  "transcript": " Te lo voy a dibujar clarito cómo hacer entre 3.000 a 10.000 por mes usando ese mismo celular que tienes en ese momento en la mano para mirar redes sociales y hacer scroll. Préstame mucha atención que sólo lo voy a explicar una vez, pero antes mira esto. Son las 4 de la tarde y ya hice más de 2.000 en este solo día. Y seguramente estés pensando, ay sí Lau, pero es que tú ya tienes experiencia, ya llevas muchos años en el mercado. Así, entonces dile eso mismo a esas personas que estás viendo aquí. Porque todos ellos que ves aquí son completos principiantes y ahora están generando entre 200, 500, 1000, incluso 2000 y hasta 5000 en un solo mes. Sin tener que crear contenido, sin mostrar su rostro, sin tener que hablar con los clientes y sin tener que estar publicando por ahí en redes sociales. Literalmente ellos están activando un sistema que les permite vender 100% en automático a todos los países del mundo sin ni siquiera saber su idioma. Sin aparecer en redes sociales sin mostrar su rostro y eso fue exactamente lo que a m me dio resultados y me sigue dando resultados desde hace m de cuatro a Y es lo mismo que me sigue generando resultados hasta el d de hoy Muchos esconden este sistema y esconden su estrategia pero yo hoy decid entregarte todo este paso a paso de lo que vengo aplicando por tanto tiempo en una presentaci donde te voy a mostrar a detalle el paso a paso para que hoy mismo t salgas a aplicar esta misma metodolog metodología. Lo único que tienes que hacer es clic debajo de este vídeo, asegurarte de ver completica la presentación que te voy a entregar en este momento y asegurarte de hacerlo ahora mismo porque estoy completamente segura que este vídeo jamás te volverá a aparecer. Y sí, yo podría cobrarte muy caro por enseñarte, pero no te preocupes porque no tendría sentido que te cobre una fortuna a una persona como tú que apenas está iniciando. Una oportunidad como esta no aparece todos los días, así que haz clic debajo del botón de este video, asegúrate de ver la presentación completa y hazlo rápido porque yo estoy completamente segura que este video va a desaparecer en las próximas horas y confía en mí porque yo jamás pondría mi rostro, mi nombre, mi empresa para enseñarte algo que no funcione o que no estoy segura que te va a dar resultados. Así que te veo del otro lado, haz clic y nos vemos allá.",
+  "analysis": {
+    "hook": {
+      "text": "Te lo voy a dibujar clarito cómo hacer entre 3.000 a 10.000 por mes usando ese mismo celular que tienes en ese momento en la mano para mirar redes sociales y hacer scroll.",
+      "type": "situacion_especifica",
+      "word_count": 38,
+      "estimated_seconds": 8
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Atención",
+          "summary": "Promesa clara de ingresos + pedido de atención enfático",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Prueba Social (Autoridad del Anunciante)",
+          "summary": "Demostración personal: $2000 en un día, luego objeción anticipada",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Prueba Social (Estudiantes/Casos)",
+          "summary": "Listado de resultados de principiantes ($200-$5000/mes)",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Mecanismo (Sistema Automático)",
+          "summary": "Explicación del sistema: venta 100% automática, sin rostro, sin contenido, sin idioma",
+          "estimated_seconds": 18
+        },
+        {
+          "name": "Autoridad + Exclusividad",
+          "summary": "Anunciante revela que otros esconden esto, ella lo entrega en presentación",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "CTA + Urgencia + Demolición de Objeción",
+          "summary": "Click, ver presentación completa, hacerlo ahora, video desaparece, confianza personal",
+          "estimated_seconds": 20
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Así, entonces dile eso mismo a esas personas que estás viendo aquí. Porque todos ellos que ves aquí son completos principiantes..."
+    },
+    "tone": {
+      "primary_tone": "Conversacional, urgente, confidencial, de hermana mayor",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Te lo voy a dibujar clarito",
+        "Préstame mucha atención",
+        "Literalmente ellos están activando un sistema",
+        "Sin ni siquiera saber su idioma",
+        "Muchos esconden este sistema",
+        "Yo hoy decid entregarte todo",
+        "Confía en mí",
+        "Te veo del otro lado"
+      ]
+    },
+    "cta": {
+      "text": "Haz clic debajo de este vídeo, asegúrate de ver completica la presentación que te voy a entregar en este momento y asegúrate de hacerlo ahora mismo... haz clic debajo del botón de este video, asegúrate de ver la presentación completa y hazlo rápido",
+      "type": "embedded_command",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 85,
+    "total_word_count": 487,
+    "emotional_arc": "Intriga (hook) → Validación (prueba personal) → Inspiración (casos de principiantes) → Revelación (mecanismo secreto) → FOMO (exclusividad + desaparición) → Confianza (compromiso personal del anunciante)",
+    "strengths": [
+      "Hook extremadamente específico con número ($3-10k) + objeto cotidiano (celular) = relatable",
+      "Objeción anticipada y demolida inmediatamente (ay sí, pero tú tienes experiencia)",
+      "Prueba social masiva: múltiples casos de principiantes con números concretos",
+      "Mecanismo claro: sistema automático, sin rostro, sin contenido, sin idioma = elimina 4 barreras de entrada",
+      "Rehook estratégico a mitad del video para mantener atención",
+      "Urgencia multiplicada: video desaparece + presentación limitada + ahora mismo",
+      "Demolición de objeción de precio (no te cobre una fortuna a una persona como tú que apenas está iniciando)",
+      "Cierre con compromiso personal (rostro, nombre, empresa) = confianza máxima",
+      "Lenguaje ultra-conversacional y natural, sin jerga",
+      "Repetición estratégica del CTA (3 veces con variaciones)"
+    ],
+    "patterns_to_replicate": [
+      "Número específico en el hook ($3-10k) + objeto cotidiano (celular) para máxima relevancia",
+      "Objeción anticipada en segundo beat (ay sí, pero...) para demolerla con prueba social inmediata",
+      "Listar 4-5 barreras de entrada y demostrar que el sistema las elimina todas",
+      "Usar casos de principiantes (no expertos) como prueba social principal",
+      "Rehook a los 30-40 segundos con pregunta retórica o giro narrativo",
+      "Crear urgencia con 2-3 razones diferentes (video desaparece, presentación limitada, ahora mismo)",
+      "Demoler objeción de precio con reframe (no es para ricos, es para principiantes)",
+      "Cierre con compromiso personal del anunciante (rostro, nombre, empresa)",
+      "Repetir CTA 3 veces con variaciones de palabras pero mismo significado",
+      "Usar 'literalmente', 'sin ni siquiera', 'completamente' para énfasis sin sonar forzado"
+    ],
+    "advertiser": {
+      "name": "Lau (nombre de pila del anunciante, marca personal)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "LATAM (inferido por español conversacional, sin acento específico, mención de 'todos los países del mundo')"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Atención",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Prueba Social (Autoridad del Anunciante)",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Prueba Social (Estudiantes/Casos)",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Mecanismo (Sistema Automático)",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Autoridad + Exclusividad",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "CTA + Urgencia + Demolición de Objeción",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para ganar dinero online necesito experiencia, mostrar mi rostro, crear contenido, hablar con clientes y estar activo en redes sociales",
+        "mechanism": "Sistema automático que vende 100% sin rostro, sin contenido, sin idioma, en todos los países",
+        "new_belief": "Puedo ganar $3-10k/mes desde mi celular usando un sistema automático que funciona mientras duermo, sin experiencia previa"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de número específico + objeto cotidiano"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 5,
+          "ingredient_name": "Problema implícito: falta de ingresos, necesidad de flexibilidad"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo: tú vs. principiantes que ya ganan"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 12,
+          "ingredient_name": "Agitación de creencia limitante (necesitas experiencia)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 8,
+          "ingredient_name": "Quiebre: objeción anticipada y demolida"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 3,
+          "ingredient_name": "Autoridad: demostración personal ($2000 en un día)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 15,
+          "ingredient_name": "Autoridad: múltiples casos de estudiantes con números"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita: descripción del sistema automático"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Persona improbable: principiantes ganando $5000/mes"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 2,
+          "ingredient_name": "Prueba social: listado de resultados"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 5,
+          "ingredient_name": "Oferta: presentación paso a paso"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 1,
+          "ingredient_name": "CTA directo: haz clic"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 3,
+          "ingredient_name": "Urgencia: video desaparece en horas"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 7,
+          "ingredient_name": "Urgencia: presentación limitada"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 2,
+          "ingredient_name": "Presupuesto: 'confía en mí', compromiso personal"
+        }
+      ],
+      "model_sale_type": "democratizacion_ia",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Ganar $3-10k/mes desde tu celular con un sistema automático que no requiere experiencia, rostro, contenido ni idioma"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Hook con número específico + objeto cotidiano ultra-relatable (celular, laptop, etc.)",
+        "Anticipar y demoler objeción principal en segundo beat con prueba social inmediata",
+        "Listar 4-5 barreras de entrada que el producto elimina (sin rostro, sin contenido, sin experiencia, sin idioma, sin atención al cliente)",
+        "Usar casos de principiantes como prueba social principal, no expertos",
+        "Rehook a los 30-40 segundos con giro narrativo o pregunta retórica",
+        "Crear urgencia con 2-3 razones diferentes (desaparición, limitación, ahora mismo)",
+        "Demoler objeción de precio con reframe hacia el segmento (no es para ricos, es para principiantes)",
+        "Cierre con compromiso personal del anunciante (rostro, nombre, empresa en juego)",
+        "Repetir CTA 3 veces con variaciones pero mismo significado",
+        "Usar intensificadores naturales: 'literalmente', 'sin ni siquiera', 'completamente', 'clarito'",
+        "Tone conversacional de hermana mayor/mentor, no vendedor"
+      ],
+      "what_not_to_copy": [
+        "No copiar la estructura de 'presentación en otro video' para ADP: es bait-and-switch que no aplica a cursos de pago directo",
+        "No usar urgencia de 'video desaparece' si el producto es un curso de acceso permanente (crearía fricción post-venta)",
+        "No prometer resultados específicos ($3-10k) sin disclaimers legales en LATAM (riesgo regulatorio)",
+        "No usar 'sin mostrar rostro' si ADP requiere que el estudiante cree contenido con IA (contradicción)",
+        "No enfatizar 'sin hablar con clientes' si el curso enseña a vender productos digitales (muchos requieren soporte)",
+        "No usar 'todos los países del mundo' sin aclarar restricciones de pago/impuestos por país"
+      ],
+      "craft_notes": [
+        "Ritmo: oraciones cortas en hook (8 palabras promedio) crean urgencia; luego se expanden para mecanismo",
+        "Cadencia: alternancia entre afirmación + objeción anticipada + demolición crea movimiento narrativo",
+        "Power words: 'clarito', 'literalmente', 'completamente', 'jamás' (negación enfática) generan confianza sin sonar forzado",
+        "Transiciones: 'Así, entonces...' y 'Porque todos ellos...' conectan prueba social con mecanismo de forma natural",
+        "Repetición estratégica: 'asegúrate de' se repite 3 veces en CTA, creando ritmo hipnótico sin ser molesto",
+        "Pronombre 'tú' aparece 12+ veces: máxima personalización, sensación de conversación 1-a-1",
+        "Estructura de objeción: 'Y seguramente estés pensando, ay sí Lau, pero...' es conversacional, no defensiva",
+        "Cierre: 'Te veo del otro lado' es cálido y personal, no transaccional",
+        "Errores tipográficos ('completica', 'metodolog metodología') refuerzan UGC authenticity, no parecen pulidos",
+        "Uso de 'sin' repetido (sin contenido, sin rostro, sin idioma, sin clientes) crea paralelismo que facilita memorización"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:14:54.630Z"
+}

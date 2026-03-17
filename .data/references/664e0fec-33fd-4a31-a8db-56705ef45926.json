@@ -1,0 +1,257 @@
+{
+  "id": "664e0fec-33fd-4a31-a8db-56705ef45926",
+  "title": "Euge Oller 3",
+  "transcript": " Te voy a contar la historia de cómo perdí muchísimo dinero con mi primer negocio y es que yo salí de un máster de emprendimiento y management y a mí me habían enseñado que para empezar un negocio tenías que crear un plan de empresa, tenías que hacer todo un plan financiero, súper trabajado, con escenarios positivos, negativos y medios, vale. Y luego con ese plan tenías que ir a conseguir dinero y con ese dinero tenías que construir ese negocio y luego ya salir al mercado. Entonces básicamente con mi socio decidimos hacer eso y estuvimos un año en el que planeamos mucho, al final encontramos una idea de negocio que venía de otro país, creamos un plan de empresa, nos inventamos los números en el Excel porque, como es un Excel hecho en el aire, incluso en el peor escenario íbamos a ganar algo de dinero. La empresa era una empresa de zapatillas personalizables. Estuvimos un año que nos fuimos, incluso nos mudamos a otro sitio donde estaban las fábricas, compramos una maquinaria para imprimir, alquilamos un local, desarrollamos el logo, la web, pagamos incluso a unos programadores para que nos hicieran un personalizador, que estuviera todo súper bien. Entonces, con ese coste hundido de ir gastando, nos dimos cuenta que al final, oye, lo que teníamos que hacer también era hacer un primer pedido de zapatillas, porque cómo no íbamos a amortizar todo lo que estábamos haciendo. Hicimos ese pedido y cuando nos enfrentamos al mercado después de un año, me di cuenta de que era mucho m dif de vender eso de lo que pens los costes no sal rentables y despu de empujarlo durante meses tuvimos que cerrar el negocio Con eso yo me fui a dormir y pens algo hemos hecho mal no puede ser que en un a no hayamos conseguido información que podíamos haber conseguido muchísimo antes y de ahí desarrollé esta metodología que lo llamo el método INPEF que es darle la vuelta completamente a la forma tradicional de montar negocios que es oye en vez de montar un plan de empresa lo primero que tienes que hacer es encontrar una idea que encaje contigo. Luego esa idea, lo que tienes que hacer es crear un experimento rápido para llevarlo al mercado, lo antes posible para coger información y de ahí empezar a crear este ciclo vicioso positivo. Y luego ya si eso hacemos un plan de empresa y vamos a buscar financiación, si la necesitamos. Entonces, esta es la metodología que he utilizado para desarrollar todos los diferentes proyectos. Me dieron el premio Forbes 30 Under 30 en 2018 precisamente por esta metodología, porque conseguimos montar una empresa de resúmenes de libros, creamos Emprenda Aprendiendo y todos los demás proyectos y empresas que he creado siempre es con esta metodología. Y ahora he creado una clase de 1 hora y 47 donde toda la metodología está comprimida para que la puedas aprender, también te doy plantillas para que rellenes bien y que no caigas en ese error que a mí me costó tanto dinero y tanto tiempo. Y esta clase vale 1 euro, solamente 1 euro puedes acceder a todo y ahorrarte todo ese tiempo y dinero que a mí me llevó de cabeza muchísimo tiempo. Así que te dejo por aquí para que puedas acceder y espero que no caigas en esos errores que caí yo en su momento.",
+  "analysis": {
+    "hook": {
+      "text": "Te voy a contar la historia de cómo perdí muchísimo dinero con mi primer negocio",
+      "type": "confesion",
+      "word_count": 17,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Confesión de fracaso",
+          "summary": "Apertura directa con pérdida de dinero para captar atención emocional",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Contexto - Educación tradicional",
+          "summary": "Explica la formación recibida (máster) y el modelo enseñado (plan de empresa → financiación → ejecución)",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Caso de estudio - Zapatillas personalizables",
+          "summary": "Detalla la ejecución del modelo tradicional: un año de planeación, costes hundidos, maquinaria, desarrollo, fracaso en mercado",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "Quiebre - Insight nocturno",
+          "summary": "Momento de realización: 'algo hemos hecho mal' después de un año sin información del mercado",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Mecanismo - Metodología INPEF",
+          "summary": "Presenta la solución inversa: idea → experimento rápido → mercado → información → ciclo positivo → plan",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Prueba social - Autoridad y resultados",
+          "summary": "Forbes 30 Under 30 (2018), múltiples empresas exitosas usando la metodología (resúmenes de libros, Emprenda Aprendiendo)",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Oferta - Clase comprimida",
+          "summary": "Clase de 1h47m con metodología completa, plantillas, precio de 1 euro",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA - Cierre conversacional",
+          "summary": "Invitación a acceder y evitar los errores que le costaron tiempo y dinero",
+          "estimated_seconds": 5
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Confesional, mentor vulnerable, conversacional, narrativo",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "perdí muchísimo dinero",
+        "nos inventamos los números en el Excel",
+        "coste hundido",
+        "fue mucho más difícil de vender",
+        "algo hemos hecho mal",
+        "darle la vuelta completamente",
+        "ciclo vicioso positivo",
+        "no caigas en esos errores"
+      ]
+    },
+    "cta": {
+      "text": "Te dejo por aquí para que puedas acceder y espero que no caigas en esos errores que caí yo en su momento",
+      "type": "conversacional",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 98,
+    "total_word_count": 687,
+    "emotional_arc": "Confianza inicial → Frustración/Identificación (fracaso) → Tensión (costes hundidos, cierre) → Alivio/Esperanza (insight) → Empoderamiento (metodología) → Validación (premios) → Alivio final (solución accesible)",
+    "strengths": [
+      "Hook emocional inmediato con confesión de fracaso (genera identificación en emprendedores frustrados)",
+      "Narrativa detallada del caso de estudio (zapatillas) hace creíble el problema y el aprendizaje",
+      "Contraste claro entre método tradicional (fracaso) y método nuevo (éxito)",
+      "Autoridad demostrada con premio Forbes 30 Under 30 y múltiples empresas exitosas",
+      "Precio psicológico de 1 euro elimina objeción de inversión",
+      "Tono vulnerable y conversacional genera confianza (no es guru distante)",
+      "Razón por qué clara: 'no caigas en esos errores que me costaron tiempo y dinero'",
+      "Estructura narrativa con giro (problema → insight → solución) es altamente persuasiva",
+      "Uso de detalles específicos (un año, Excel, maquinaria, programadores) aumenta credibilidad"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con confesión de fracaso personal relevante al público objetivo",
+      "Usar caso de estudio detallado (no abstracto) para demostrar el problema",
+      "Crear contraste explícito entre 'forma antigua' (fracaso) y 'forma nueva' (éxito)",
+      "Incluir insight o 'momento de realización' como pivote narrativo",
+      "Demostrar autoridad con resultados concretos (premios, empresas, números)",
+      "Mantener tono conversacional y vulnerable (primera persona, confesional)",
+      "Ofrecer precio psicológico bajo (1 euro) como micro-compromiso",
+      "Cerrar con razón por qué clara y específica",
+      "Usar repetición de estructura ('tenías que...', 'lo que tienes que hacer es...') para ritmo"
+    ],
+    "advertiser": {
+      "name": "Emprendedor/Mentor (nombre específico no mencionado, posiblemente Andrés Pérez Ortega o similar basado en contexto de Emprenda Aprendiendo)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "ES"
+    },
+    "generation_mapping": {
+      "angle_family": "historia",
+      "body_type": "historia_con_giro",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - Confesión",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Contexto - Educación tradicional",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Caso de estudio - Zapatillas",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Quiebre - Insight nocturno",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Mecanismo - Metodología INPEF",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba social - Autoridad",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Oferta - Clase",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para empezar un negocio debes planificar exhaustivamente, conseguir financiación y luego ejecutar",
+        "mechanism": "Caso real donde este método causó un año de pérdida de dinero sin información del mercado; metodología inversa (idea → experimento → mercado → información) validada por Forbes 30 Under 30",
+        "new_belief": "Debes validar rápidamente en el mercado primero, luego planificar y buscar financiación si es necesario"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de confesión personal"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (año de trabajo vs. información que podía haber obtenido antes)"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 45,
+          "ingredient_name": "Agitación de coste hundido (maquinaria, local, programadores)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 67,
+          "ingredient_name": "Quiebre de creencia (insight nocturno: 'algo hemos hecho mal')"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 78,
+          "ingredient_name": "Autoridad por premio (Forbes 30 Under 30)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 79,
+          "ingredient_name": "Autoridad por resultados múltiples (varias empresas exitosas)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 88,
+          "ingredient_name": "Mecanismo explícito (metodología INPEF con pasos claros)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 95,
+          "ingredient_name": "Prueba social por logros (Forbes, empresas nombradas)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 112,
+          "ingredient_name": "Precio psicológico bajo (1 euro)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 115,
+          "ingredient_name": "Oferta con plantillas incluidas (valor agregado tangible)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 125,
+          "ingredient_name": "CTA conversacional (no agresivo)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 140,
+          "ingredient_name": "Lenguaje de evitación (no caigas en esos errores)"
+        }
+      ],
+      "model_sale_type": "lean_anti_riesgo",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "La forma tradicional de emprender (planificar primero) es la que causa fracaso; debes invertir el proceso (validar mercado primero) para tener éxito"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con confesión de fracaso personal del creador del producto (genera identificación inmediata con emprendedores frustrados)",
+        "Usar caso de estudio detallado y específico (zapatillas personalizables) en lugar de hablar abstractamente del problema",
+        "Crear contraste visual/narrativo entre 'método antiguo' (fracaso) y 'método nuevo' (éxito) para demoler creencias",
+        "Incluir un 'momento de quiebre' o insight personal como pivote emocional (la noche pensando 'algo hemos hecho mal')",
+        "Validar autoridad con logros concretos y nombrados (Forbes 30 Under 30, empresas específicas) no solo palabras",
+        "Mantener tono conversacional y vulnerable en primera persona (no sonar como guru distante)",
+        "Usar precio psicológico ultra-bajo (1 euro) como micro-compromiso para eliminar fricción",
+        "Incluir 'plantillas' o herramientas tangibles en la oferta (aumenta percepción de valor)",
+        "Cerrar con razón por qué clara y específica ('no caigas en esos errores que me costaron tiempo y dinero')",
+        "Usar repetición de estructura sintáctica para crear ritmo y memorabilidad ('tenías que...', 'lo que tienes que hacer es...')",
+        "Detallar costes hundidos específicos (maquinaria, local, programadores) para hacer el dolor más real"
+      ],
+      "what_not_to_copy": [
+        "No copiar la duración total (98 segundos es muy larga para video vertical moderno; optimizar a 45-60 segundos máximo para TikTok/Reels)",
+        "No usar este formato si el producto no tiene una metodología clara y diferenciada (el éxito aquí depende de que INPEF sea real y validable)",
+        "No copiar si no tienes autoridad demostrable (el anunciante tiene Forbes 30 Under 30; sin esto, la credibilidad cae)",
+        "No abusar de detalles del caso de estudio si no son relevantes (aquí funcionan porque muestran el problema, pero pueden aburrir si son excesivos)",
+        "No usar precio de 1 euro si el margen no lo permite o si devalúa el producto (funciona aquí como micro-compromiso a clase, no al producto final)",
+        "No copiar el tono vulnerable si el posicionamiento es de 'experto infalible' (hay que ser consistente con la marca)"
+      ],
+      "craft_notes": [
+        "Ritmo: Usa oraciones largas conectadas con 'y' para crear sensación de flujo narrativo ('estuvimos un año que planeamos mucho, al final encontramos una idea...')",
+        "Cadencia: Alterna entre oraciones largas (contexto) y cortas (quiebre: 'algo hemos hecho mal') para mantener atención",
+        "Power words: 'perdí muchísimo dinero', 'coste hundido', 'nos inventamos', 'fue mucho más difícil' — lenguaje visceral, no abstracto",
+        "Transiciones: Usa 'entonces' y 'de ahí' para conectar causa-efecto de forma natural (no fuerza el argumento)",
+        "Repetición estructural: 'tenías que crear...', 'tenías que hacer...', 'lo que tienes que hacer es...' crea ritmo hipnótico",
+        "Especificidad: Números concretos (un año, 1 hora 47 minutos, 1 euro) vs. generalizaciones aumentan credibilidad",
+        "Vulnerabilidad: Frases como 'me fui a dormir y pensé' humaniza al speaker (no es robótico)",
+        "Contraste: Estructura paralela entre método viejo y nuevo ('en vez de montar un plan de empresa lo primero que tienes que hacer es...') es clara y memorable",
+        "Cierre: El CTA no es agresivo ('espero que no caigas en esos errores') — usa lenguaje de cuidado, no de venta dura"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:05:11.728Z"
+}

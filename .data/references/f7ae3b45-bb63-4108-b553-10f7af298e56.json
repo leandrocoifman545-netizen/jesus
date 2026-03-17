@@ -1,0 +1,236 @@
+{
+  "id": "f7ae3b45-bb63-4108-b553-10f7af298e56",
+  "title": "salazar 2",
+  "transcript": " Hasta conviérteme este billete de 50 mil en 5 millones en menos de 30 días. Mira, si me hubieras dicho eso hace un año, te diría que es imposible. Pero ahora con las franquicias digitales y la inteligencia artificial, lo único que tienes que saber es activarla. Activarla y ya. No hay que vender ni hablar con gente. Exacto. Esto no es vender PDF, ni ser afiliada en Amazon, ni bailar, ni hacer TikToks. Es una franquicia digital y ya tiene los productos validados que mejor se están vendiendo. Tú solo ingresas, activas el sistema y listo. Y de verdad se puede pagar de 50 mil pesos a 5 millones. Mira esto, este mes Andrea inició con la franquicia y ya hizo más de mil dólares sin experiencia. Listo, ¿dónde firmo? No tienes que firmar nada, solamente tienes que mirar la clase que grabé gratuita para ti, tocando el botón de aquí abajo en el que te explico cómo puedes hacer entre 400 y 900 dólares a la semana solamente activando mi franquicia digital. Pero te advierto, después de esto tu celular nunca volverá a verse igual. Así que haz clic aquí abajo y mira la clase gratuita.",
+  "analysis": {
+    "hook": {
+      "text": "Hasta conviérteme este billete de 50 mil en 5 millones en menos de 30 días.",
+      "type": "contrato_compromiso",
+      "word_count": 16,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook provocador",
+          "summary": "Desafío directo con números específicos (50k a 5M en 30 días)",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Quiebre de creencia",
+          "summary": "Confesión de incredulidad previa + revelación del mecanismo (franquicias digitales + IA)",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Demolición de alternativas",
+          "summary": "Negación explícita de modelos competidores (PDFs, afiliación, TikTok, bailar)",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Explicación del sistema",
+          "summary": "Descripción del mecanismo: productos validados, solo activar, sin venta",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Prueba social",
+          "summary": "Caso de Andrea: $1000 sin experiencia en primer mes",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "CTA con reframe",
+          "summary": "Micro-compromiso (clase gratuita) + promesa de rango de ingresos + advertencia de transformación",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Pero te advierto, después de esto tu celular nunca volverá a verse igual."
+    },
+    "tone": {
+      "primary_tone": "conversacional_desafiante_cómplice",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "Mira",
+        "Exacto",
+        "Listo",
+        "Activarla y ya",
+        "No hay que vender ni hablar con gente",
+        "Pero te advierto",
+        "tu celular nunca volverá a verse igual"
+      ]
+    },
+    "cta": {
+      "text": "Haz clic aquí abajo y mira la clase gratuita.",
+      "type": "embedded_command",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 37,
+    "total_word_count": 287,
+    "emotional_arc": "Provocación (incredulidad) → Revelación (asombro) → Validación (prueba) → Urgencia transformacional (advertencia + FOMO)",
+    "strengths": [
+      "Hook con números específicos y timeline que genera curiosidad inmediata",
+      "Quiebre de creencia explícito ('hace un año te diría que es imposible')",
+      "Demolición sistemática de alternativas competidoras (PDF, afiliación, TikTok, bailar)",
+      "Mecanismo ultra-simplificado ('activarla y ya') que reduce fricción percibida",
+      "Prueba social con métrica concreta ($1000 sin experiencia)",
+      "Re-hook emocional potente ('tu celular nunca volverá a verse igual') que crea FOMO",
+      "Tono conversacional y cómplice que genera identificación",
+      "Micro-compromiso (clase gratuita) que baja barrera de entrada",
+      "Rango de ingresos ($400-900/semana) que da credibilidad vs. promesa única",
+      "Uso de 'Exacto' y 'Listo' que crean ritmo y complicidad"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con un desafío numérico específico + timeline corto (genera curiosidad + urgencia)",
+      "Incluir confesión de incredulidad previa ('hace un año te diría que es imposible') para validar objeción del prospect",
+      "Demoler alternativas competidoras por nombre explícito (PDF, afiliación, TikTok) para posicionar diferenciación",
+      "Simplificar el mecanismo a una frase ultra-corta ('activarla y ya') que reduce fricción cognitiva",
+      "Usar prueba social con métrica específica + contexto de falta de experiencia (aumenta credibilidad)",
+      "Insertar re-hook emocional a mitad/final que crea FOMO transformacional",
+      "Mantener tono conversacional con palabras de complicidad ('Mira', 'Exacto', 'Listo')",
+      "Ofrecer micro-compromiso (clase gratuita) antes del CTA principal",
+      "Dar rango de ingresos en lugar de número único (más creíble)",
+      "Usar advertencia como CTA ('Pero te advierto...') que invierte la dirección del persuasión"
+    ],
+    "advertiser": {
+      "name": "Franquicias Digitales / Academia de Franquicias Digitales (inferido)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "CO"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook provocador",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Quiebre de creencia",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Demolición de alternativas",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Explicación del sistema",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba social",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA con reframe",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Hacer 5 millones en 30 días es imposible; los modelos de ingresos online requieren vender, hablar con gente, o crear contenido viral",
+        "mechanism": "Franquicias digitales con IA + productos ya validados = solo activar el sistema sin venta ni interacción",
+        "new_belief": "Es posible generar $400-900/semana simplemente activando un sistema de franquicia digital sin experiencia previa"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook numérico específico con timeline"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (vs. modelos alternativos)"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 45,
+          "ingredient_name": "Agitación por exclusión (lo que NO es)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 52,
+          "ingredient_name": "Quiebre por confesión de incredulidad"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 68,
+          "ingredient_name": "Autoridad implícita (creador del sistema)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita (caso Andrea)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Persona improbable (sin experiencia)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 105,
+          "ingredient_name": "Oferta de micro-compromiso (clase gratuita)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 118,
+          "ingredient_name": "CTA dual (clic + mira)"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 125,
+          "ingredient_name": "Urgencia transformacional (advertencia FOMO)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje de complicidad (Exacto, Listo, Mira)"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "Ganar dinero sin vender ni hablar con gente: solo activar una franquicia digital con productos ya validados."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con desafío numérico específico + timeline corto (ej: '50k a 5M en 30 días') para generar curiosidad inmediata en productos digitales con IA",
+        "Incluir confesión de incredulidad previa ('hace un año te diría que es imposible') para validar la objeción más común del prospect",
+        "Demoler alternativas competidoras por nombre explícito (PDF, afiliación, TikTok, bailar) para posicionar diferenciación clara del curso/producto",
+        "Simplificar el mecanismo a una frase ultra-corta ('activarla y ya') que reduce fricción cognitiva en productos complejos",
+        "Usar prueba social con métrica específica + contexto de falta de experiencia (ej: 'Andrea hizo $1000 sin experiencia') para aumentar credibilidad",
+        "Insertar re-hook emocional a mitad/final que crea FOMO transformacional ('tu celular nunca volverá a verse igual')",
+        "Mantener tono conversacional con palabras de complicidad ('Mira', 'Exacto', 'Listo') para generar identificación",
+        "Ofrecer micro-compromiso (clase gratuita) antes del CTA principal para bajar barrera de entrada",
+        "Dar rango de ingresos en lugar de número único ($400-900/semana vs. $X fijo) para mayor credibilidad",
+        "Usar advertencia como CTA ('Pero te advierto...') que invierte la dirección de la persuasión y crea urgencia"
+      ],
+      "what_not_to_copy": [
+        "No copiar la promesa de '5 millones en 30 días' literalmente si el producto es un curso de IA; es demasiado específico y puede generar expectativas imposibles en LATAM",
+        "No usar 'bailar' o 'TikTok' como alternativa demolida si el target es B (principiante 45+) o D (escéptico); sería contraproducente",
+        "No asumir que el mecanismo 'solo activar' funciona igual para todos los productos digitales; requiere validación previa del sistema",
+        "No replicar la estructura de prueba social (Andrea) sin tener casos reales verificables; en LATAM hay mayor escepticismo sobre testimonios",
+        "No usar la advertencia FOMO ('tu celular nunca volverá a verse igual') si el producto es educativo puro; funciona mejor para oportunidades de ingresos"
+      ],
+      "craft_notes": [
+        "Ritmo: Alternancia entre frases cortas ('Exacto', 'Listo') y frases largas crea cadencia conversacional que mantiene atención",
+        "Power words: 'Conviérteme', 'Activarla', 'Validados', 'Advierto' son verbos de acción que generan sensación de control y urgencia",
+        "Transiciones: 'Mira esto' y 'Pero te advierto' funcionan como pivotes narrativos que cambian dirección sin perder coherencia",
+        "Negación como estructura: 'No hay que vender ni hablar con gente' + 'Esto no es vender PDF...' crea demolición sistemática sin sonar defensivo",
+        "Especificidad numérica: '50 mil', '5 millones', '30 días', '$1000', '$400-900' anclan credibilidad vs. promesas vagas",
+        "Diálogo implícito: 'Listo, ¿dónde firmo?' responde objeción antes de que se formule, creando complicidad",
+        "Cierre con advertencia: Invertir la dirección del CTA ('Pero te advierto...') es más persuasivo que 'Haz clic ahora' porque crea FOMO inverso",
+        "Uso de 'Exacto': Palabra de validación que hace sentir al prospect que está en la conversación correcta, no siendo vendido"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:13:33.927Z"
+}

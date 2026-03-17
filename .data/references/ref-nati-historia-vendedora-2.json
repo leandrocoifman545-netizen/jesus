@@ -1,0 +1,157 @@
+{
+  "id": "ref-nati-historia-vendedora-2",
+  "title": "Nati - Historia personal: de vendedora de shopping a emprendedora digital",
+  "transcript": "Yo quité todo después de que conseguí hacer un año de salario en solo un día. Deja que te explique mejor. Yo era vendedora de tiendas de ropa en el shopping. Ganaba un poco más que un salario mínimo por mes. Y hoy consigo ganar este valor aquí todos los meses. Pero en realidad es mucho más que eso, pero no quiero asustarte. ¿Y tú? ¿Quieres saber cómo? Lo que usé para llegar aquí no tiene nada que ver con curso o mentoría. Y si clicas aquí abajo en el botón de Saber Más, verás que del otro lado lo que menos tiene es un curso o una mentoría para ofrecerte. Lo que te voy a mostrar es algo completamente diferente y nadie nunca hizo eso por ti. Y si quieres tener resultados de verdad, así como yo, haz lo siguiente. Clica aquí abajo en el botón de Aprenda Más, que te voy a mostrar una novedad para que puedas empezar aún hoy y aprovechar. Y aprovecha mientras este contenido aún es gratuito. Clica ahí, te estoy esperando.",
+  "analysis": {
+    "hook": {
+      "text": "Yo quité todo después de que conseguí hacer un año de salario en solo un día. Deja que te explique mejor.",
+      "type": "confesion",
+      "word_count": 20,
+      "estimated_seconds": 6
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook resultado impactante",
+          "summary": "Un año de salario en un día. Curiosidad máxima.",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Historia de origen",
+          "summary": "Era vendedora de ropa en shopping, ganaba poco más que salario mínimo.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Prueba visual",
+          "summary": "Muestra captura de ganancias actuales. Dice que es mucho más pero no quiere asustar.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Misterio del método",
+          "summary": "Lo que usé no tiene nada que ver con curso o mentoría. Genera curiosidad.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA con urgencia",
+          "summary": "Clicar en Saber Más. Algo completamente diferente. Aprovecha mientras es gratuito.",
+          "estimated_seconds": 15
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Y si clicas aquí abajo en el botón de Saber Más, verás que del otro lado lo que menos tiene es un curso."
+    },
+    "tone": {
+      "primary_tone": "misterioso-aspiracional",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "un año de salario en solo un día",
+        "no tiene nada que ver con curso o mentoría",
+        "nadie nunca hizo eso por ti",
+        "mientras este contenido aún es gratuito"
+      ]
+    },
+    "cta": {
+      "text": "Clica aquí abajo en el botón de Aprenda Más, que te voy a mostrar una novedad para que puedas empezar aún hoy.",
+      "type": "learn_more",
+      "has_urgency": true,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 55,
+    "total_word_count": 178,
+    "emotional_arc": "Impacto (un año en un día) → Identificación (era vendedora) → Aspiración (ahora gana mucho) → Curiosidad (qué es?) → FOMO (es gratuito por ahora)",
+    "strengths": [
+      "Hook ultra-corto con contraste temporal extremo (1 año → 1 día)",
+      "Historia de transformación en 2 oraciones",
+      "Misterio sostenido — nunca dice qué es el producto",
+      "No quiero asustarte — dosifica la prueba para generar más curiosidad"
+    ],
+    "patterns_to_replicate": [
+      "Contraste temporal extremo en hook (1 año de salario en 1 día)",
+      "Historia de origen en 2 oraciones (era X, ahora gano Y)",
+      "Dosificar la prueba: mostrar pero decir es mucho más, no quiero asustarte",
+      "Anti-posicionamiento: no es curso ni mentoría"
+    ],
+    "advertiser": {
+      "name": "Nati (Sistema de Renda Invisible)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "historia",
+      "body_type": "historia_con_giro",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook resultado impactante",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Historia de origen",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Prueba visual",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Misterio del método",
+          "function": "quiebre"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para ganar bien necesito un empleo o un curso caro",
+        "mechanism": "Algo completamente diferente a cursos/mentorías que genera un año de salario en un día",
+        "new_belief": "Existe un método simple que una ex-vendedora de shopping usa para ganar mucho más que su salario anterior"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 7,
+          "ingredient_name": "Historia mini como hook (de vendedora a emprendedora)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad estratégica (era vendedora de shopping)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba visual de ingresos"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 112,
+          "ingredient_name": "Urgencia temporal (mientras es gratuito)"
+        }
+      ],
+      "model_sale_type": "none",
+      "awareness_level": 1,
+      "segment_equivalent": "A",
+      "big_idea": "Una vendedora de shopping que ganaba salario mínimo ahora hace un año de salario en un día con algo que no es curso ni mentoría"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Contraste temporal extremo como hook: 1 año de salario → 1 día",
+        "Dosificar prueba: mostrar captura + decir es mucho más pero no quiero asustarte",
+        "Anti-posicionamiento: lo que usé no tiene nada que ver con curso o mentoría"
+      ],
+      "what_not_to_copy": [
+        "Demasiado misterioso — nunca revela qué es. ADP necesita cambio de creencia.",
+        "Sin mecanismo visible — puro hype sin sustancia",
+        "Aprovecha mientras es gratuito sin razón = urgencia falsa"
+      ],
+      "craft_notes": [
+        "El hook es efectivo por el contraste temporal, pero el ad entero es puro mystery box sin sustancia.",
+        "Para ADP: usar el contraste temporal pero SÍ mostrar el mecanismo. La curiosidad sin payoff no convierte en audiences frías."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:26:57.238Z"
+}

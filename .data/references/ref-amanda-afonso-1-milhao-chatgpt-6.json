@@ -1,0 +1,154 @@
+{
+  "id": "ref-amanda-afonso-1-milhao-chatgpt-6",
+  "title": "Amanda Afonso - 1 millon de reais + ChatGPT calcula 36 anos al salario actual",
+  "transcript": "Eu bati um milhão de reais. Um milhão de reais! Olha o que eu perguntei pra ele aqui, ó. Se eu ainda estivesse ganhando um salário de 2.300, quanto tempo eu levaria pra chegar a um milhão faturados, trabalhando ainda como CLT neste emprego? Olha só a resposta, gente. Que me fez chorar. Olha isso. Você levaria cerca de 36 anos pra atingir um milhão líquidos, ganhando 2.300 por mês como CLT. Você me pergunta assim, Amanda, quando você começou, foi buscando isso ou não? Você acreditaria que isso ia acontecer? Não Eu nunca imaginei que eu fosse aprender, que eu fosse crescer tanto, que eu fosse tão longe Eu comecei pra sair do meu emprego, pra fazer o meu dinheiro em casa Porque eu não queria ficar longe dos meus filhos, mas eu também queria o meu dinheiro Eu não queria mais ganhar tão pouco Eu não queria mais ficar passando a vontade das coisas, sabe? A gente não conseguia sair de casa às vezes pra não gastar Não tinha um plano de saúde, eu cansei de ficar em postinho De tudo ter que ser do pior, da marca mais barata Eu não queria isso, eu comecei pra mudar isso Eu queria ganhar mais Eu queria melhorar a nossa vida, melhorar a vida pros meus filhos Poder dar o melhor pra eles Isso aqui eu falo que foi Deus, Deus foi maravilhoso Cada dificuldade, sabe Valeu a pena, valeu a pena o meu esforço Valeu a pena as horas que eu me dediquei, valeu a pena tudo",
+  "analysis": {
+    "hook": {
+      "text": "Eu bati um milhao de reais. Um milhao de reais\\!",
+      "type": "dato_concreto",
+      "word_count": 10,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - 1 millon",
+          "summary": "Bati 1 millon de reais. Impacto inmediato.",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Calculo ChatGPT",
+          "summary": "Le pregunto a ChatGPT: con 2.300/mes como CLT, cuanto tardaria en llegar a 1 millon? Respuesta: 36 anos.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Reflexion - No lo imaginaba",
+          "summary": "Nunca imagine que iba a crecer tanto. Empezo solo para salir de su empleo.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Dolor del pasado",
+          "summary": "No queria ganar tan poco, pasar necesidades, no tener plan de salud, todo de la marca mas barata.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Cierre emocional",
+          "summary": "Fue Dios. Cada dificultad valio la pena por el esfuerzo.",
+          "estimated_seconds": 15
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Olha o que eu perguntei pra ele aqui."
+    },
+    "tone": {
+      "primary_tone": "emocional-vulnerable",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "bati um milhao",
+        "36 anos",
+        "2.300 por mes",
+        "passar vontade",
+        "marca mais barata"
+      ]
+    },
+    "cta": {
+      "text": "",
+      "type": "none",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 80,
+    "total_word_count": 259,
+    "emotional_arc": "Impacto (1 millon\\!) -> Contraste brutal (36 anos al salario viejo) -> Humildad (no lo imaginaba) -> Dolor del pasado (necesidades) -> Gratitud/emocion",
+    "strengths": [
+      "Usar ChatGPT como herramienta de contraste dentro del ad — meta y novedoso",
+      "El numero 36 anos es devastador — hace tangible la diferencia entre caminos",
+      "No tiene CTA — es puro branding/awareness. Funciona como top of funnel.",
+      "La vulnerabilidad es genuina (marca mas barata, postinho, pasar necesidades)"
+    ],
+    "patterns_to_replicate": [
+      "Usar ChatGPT/IA DENTRO del ad como herramienta que revela un dato impactante",
+      "Calculo de contraste temporal: cuanto tardarias con tu salario actual vs lo que lograste",
+      "Detalles sensoriales de pobreza (marca mas barata, postinho, pasar necesidades) como ancla emocional"
+    ],
+    "advertiser": {
+      "name": "Amanda Afonso",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "historia",
+      "body_type": "contraste_emocional",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - 1 millon",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Calculo ChatGPT",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Dolor del pasado",
+          "function": "identificacion"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Con mi salario de empleada eventualmente voy a estar bien",
+        "mechanism": "ChatGPT calcula que tardarias 36 anos en llegar a 1 millon con 2.300/mes",
+        "new_belief": "El camino tradicional es matematicamente inviable — necesito otro modelo"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 2,
+          "ingredient_name": "Dato concreto (1 millon de reais)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 49,
+          "ingredient_name": "Redefinicion del juego (36 anos vs ahora)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad estrategica (marca mas barata, postinho)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba matematica (36 anos a 2.300/mes)"
+        }
+      ],
+      "model_sale_type": "matematica_simple",
+      "awareness_level": 1,
+      "segment_equivalent": "A",
+      "big_idea": "Con tu salario actual tardarias 36 anos en hacer lo que hice en menos de 3 con ventas online"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Usar ChatGPT/IA DENTRO del ad como revelador de datos — pedirle que calcule algo frente a camara",
+        "Contraste temporal devastador: X anos al salario actual vs lo que lograste en Y meses",
+        "Detalles sensoriales de la vida anterior como ancla emocional (adaptar al avatar de ADP)"
+      ],
+      "what_not_to_copy": [
+        "Sin CTA — no sirve para conversion directa",
+        "Puro emocional sin mecanismo — ADP necesita cambio de creencia ligado al metodo",
+        "Tono religioso (Deus) no aplica al tono de Jesus"
+      ],
+      "craft_notes": [
+        "La idea de usar ChatGPT DENTRO del ad es brillante para ADP: Jesus le pide a la IA que calcule algo en vivo. Doble funcion: prueba del metodo + dato impactante.",
+        "El numero 36 funciona porque es absurdamente largo pero matematicamente real. El viewer hace la cuenta mental y se horroriza.",
+        "Para ADP: Cuanto tardarias en ganar X con tu sueldo actual? Pedile a ChatGPT. Y despues mostrar que con un producto digital lo haces en Y meses."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:37:34.904Z"
+}

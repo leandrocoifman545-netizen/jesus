@@ -1,0 +1,259 @@
+{
+  "id": "5049e548-5c4c-40a1-8d63-9f49a5f0473d",
+  "title": "laura 1",
+  "transcript": " Esta mujer dijo que tú vas a renunciar después de ver esto. Y lo peor, creo que ella tiene razón. Vas a renunciar después de ver este video. ¿Quieres apostar conmigo? Mira, si quieres una manera 100% legítima de ganar dinero online, tranquilo, guarda tu tarjeta de crédito porque en este momento estoy revelando justamente eso que yo hago desde 2021 para ganar más de 100 a 200 y hasta 500 dólares al día, literal, en piloto automático, haciendo uso de la inteligencia artificial. Entonces, si eres principiante y ya intentaste ganar dinero online con marketing de afiliados, dropshipping, con el curso de vender cursos y todas esas cosas y no tuviste resultados, este video es para ti. Te prometo que eso que estabas buscando nunca antes viste algo igual. Todo lo que necesitas hacer es tener acceso a una estrategia completamente validada que pocas personas conocen, porque al final de cuentas eso es lo que la mayoría de los gurús hacen. Ellos te muestran una manera de ganar dinero, pero cuando te muestran la estrategia, ellos ya ganaron el dinero de toda esa estrategia y ya está completamente desactualizada y es por eso que no tiene resultados no me crees entra a youtube y escribe cómo ganar dinero online implementa una estrategia que ves allí y te vas a dar cuenta que no vas a tener resultados eso pasa porque están ense estrategias que ya est saturadas y est completamente desactualizadas entonces si quieres una nueva forma de hacer 100 200 y hasta 500 d diarios como un completo principiante, todo lo que necesitas hacer es dar click debajo de este video porque hice un video donde te voy a mostrar paso a paso este negocio revolucionario. Te voy a revelar todo en este video. Cómo facturar con productos digitales vendiéndolos netamente al extranjero sin necesidad de mostrar tu rostro, sin crear contenido, sin tener que hablar con clientes, sin tener experiencia y literal en automático. Todo con ayuda de unos robots empleados. Y es que es muy simple, no importa si eres ama de casa, si trabajas todo el día, si tienes que cuidar a los niños, si no tienes tiempo o si nunca has vendido algo en internet. Y esto es súper fácil porque cualquier persona con el paso a paso que voy a dejar aquí debajo lo logra. Y después de configurar esos robots que yo voy a enseñarte cómo funcionan, vas a recibir notificaciones de ventas como estas sin parar. Y hasta vas a salirte de tu trabajo. Yo ya vi gente hacer esto en un par de días. Entonces, haz clic aquí abajo y mira y comprueba por ti mismo todo lo que yo te estoy diciendo. Yo sé que nunca viste nada igual, así que haz clic aquí debajo, comprueba si el video aún está disponible para que lo veas, porque quizás en un par de horas desaparezca.",
+  "analysis": {
+    "hook": {
+      "text": "Esta mujer dijo que tú vas a renunciar después de ver esto. Y lo peor, creo que ella tiene razón.",
+      "type": "provocacion",
+      "word_count": 24,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "micro_vsl",
+      "sections": [
+        {
+          "name": "Hook provocador",
+          "summary": "Provocación directa con apuesta emocional sobre renuncia laboral",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Promesa de revelación",
+          "summary": "Anuncio de método legítimo de $100-500/día con IA desde 2021",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Identificación del problema",
+          "summary": "Validación de intentos fallidos previos (afiliados, dropshipping, cursos)",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Demolición de gurús",
+          "summary": "Crítica a estrategias desactualizadas y saturadas de otros creadores",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Mecanismo: robots empleados",
+          "summary": "Explicación del sistema automatizado sin rostro, contenido ni atención al cliente",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Prueba social implícita",
+          "summary": "Mención de personas que lo lograron en días, notificaciones de ventas",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "CTA con urgencia",
+          "summary": "Click para ver video, con razón de urgencia (desaparición en horas)",
+          "estimated_seconds": 4
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Te prometo que eso que estabas buscando nunca antes viste algo igual."
+    },
+    "tone": {
+      "primary_tone": "conversacional_urgente_confianzudo",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "literal",
+        "en piloto automático",
+        "tranquilo",
+        "no me crees",
+        "súper fácil",
+        "yo ya vi gente",
+        "comprueba por ti mismo"
+      ]
+    },
+    "cta": {
+      "text": "Haz clic aquí abajo y mira y comprueba por ti mismo todo lo que yo te estoy diciendo. Yo sé que nunca viste nada igual, así que haz clic aquí debajo, comprueba si el video aún está disponible para que lo veas, porque quizás en un par de horas desaparezca.",
+      "type": "embedded_command",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 55,
+    "total_word_count": 612,
+    "emotional_arc": "Provocación (sorpresa) → Esperanza (revelación) → Validación (reconocimiento de fracasos) → Indignación (gurús falsos) → Empoderamiento (mecanismo simple) → Prueba social (otros lo lograron) → Urgencia (desaparición)",
+    "strengths": [
+      "Hook extremadamente provocador que genera curiosidad inmediata",
+      "Validación temprana de frustraciones previas del audiencia (afiliados, dropshipping)",
+      "Demolición clara de competencia (gurús con estrategias desactualizadas)",
+      "Mecanismo simple y repetido: robots, automático, sin rostro, sin contenido",
+      "Inclusión radical (ama de casa, sin experiencia, sin tiempo)",
+      "Prueba social implícita (notificaciones de ventas, gente que lo logró en días)",
+      "Urgencia doble: video desaparece + renuncia laboral inminente",
+      "Tono UGC auténtico que genera confianza vs. publicidad corporativa",
+      "Rehook estratégico a mitad del guión para retención"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con provocación que cuestiona creencia del espectador sobre su futuro",
+      "Validar intentos fallidos específicos antes de ofrecer solución",
+      "Atacar directamente a competencia (gurús, estrategias saturadas) para posicionar diferencia",
+      "Repetir el mecanismo central 3+ veces con variaciones (robots, automático, sin rostro)",
+      "Usar inclusión radical para expandir TAM (ama de casa, sin experiencia, sin tiempo)",
+      "Insertar rehook a los 20-30 segundos para retención",
+      "Mencionar números concretos ($100-500/día) con timeline (desde 2021)",
+      "Crear urgencia con razón específica (video desaparece en horas)",
+      "Usar lenguaje conversacional y first-person para autenticidad UGC",
+      "Terminar con micro-compromiso (click) antes de venta mayor"
+    ],
+    "advertiser": {
+      "name": "Unknown (Creador de contenido sobre IA y dinero online)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "LATAM (probablemente CO, MX, AR)"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demolicion_mito",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook provocador",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Promesa de revelación",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Identificación del problema",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Demolición de gurús",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Mecanismo: robots empleados",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba social implícita",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA con urgencia",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Ganar dinero online requiere experiencia, rostro visible, contenido constante y atención al cliente",
+        "mechanism": "Robots empleados (IA) automatiza todo el proceso sin necesidad de presencia personal",
+        "new_belief": "Cualquier principiante puede ganar $100-500/día en automático usando IA, sin experiencia ni tiempo"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook provocación directa"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (vs. gurús desactualizados)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 15,
+          "ingredient_name": "Frustración acumulada (intentos fallidos previos)"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 42,
+          "ingredient_name": "Agitación por oportunidad perdida"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 58,
+          "ingredient_name": "Quiebre: revelación de método secreto"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 71,
+          "ingredient_name": "Autoridad por experiencia (desde 2021)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 85,
+          "ingredient_name": "Mecanismo: robots empleados automatizados"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita (notificaciones de ventas)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba social: gente que lo logró en días"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 95,
+          "ingredient_name": "Inclusión radical (ama de casa, sin experiencia)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 112,
+          "ingredient_name": "CTA directo: haz clic aquí abajo"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 125,
+          "ingredient_name": "Urgencia temporal (video desaparece en horas)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 140,
+          "ingredient_name": "Lenguaje conversacional UGC (literal, tranquilo, súper fácil)"
+        }
+      ],
+      "model_sale_type": "democratizacion_ia",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Cualquier principiante puede ganar $100-500/día en automático usando robots de IA sin experiencia, rostro ni contenido"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura de provocación inicial que cuestiona creencia sobre futuro laboral del espectador",
+        "Validación temprana de intentos fallidos específicos (afiliados, dropshipping, cursos) antes de ofrecer solución",
+        "Demolición directa de competencia (gurús con estrategias desactualizadas) para posicionar diferencia clara",
+        "Repetición del mecanismo central 3+ veces con variaciones (robots, automático, sin rostro, sin contenido)",
+        "Inclusión radical explícita (ama de casa, sin experiencia, sin tiempo) para expandir TAM",
+        "Rehook estratégico a mitad del guión ('Te prometo que nunca antes viste algo igual')",
+        "Números concretos con timeline de credibilidad ($100-500/día desde 2021)",
+        "Urgencia específica y creíble (video desaparece en horas, no genérica)",
+        "Lenguaje conversacional first-person para autenticidad UGC (literal, tranquilo, súper fácil)",
+        "CTA dual: verbal (haz clic) + visual (comprueba por ti mismo) + razón de urgencia",
+        "Micro-compromiso antes de venta mayor (click para ver video, no compra directa)"
+      ],
+      "what_not_to_copy": [
+        "No copiar números de ingresos ($100-500/día) sin validación propia; puede generar desconfianza si no se respalda",
+        "No usar 'desaparece en horas' si no es verdad; ADP debe mantener credibilidad a largo plazo",
+        "No atacar a otros creadores/competencia directamente; ADP posiciona como educador, no como crítico",
+        "No prometer 'sin experiencia' de forma absoluta; ADP requiere cierto nivel de ejecución",
+        "No usar UGC tan extremo que pierda profesionalismo; ADP es marca educativa, no influencer de dinero rápido",
+        "No omitir mencionar trabajo/esfuerzo requerido; puede generar expectativas falsas y refunds",
+        "No usar tono de 'secreto revelado' si es contenido público; ADP debe ser transparente"
+      ],
+      "craft_notes": [
+        "Ritmo acelerado con frases cortas (3-5 palabras) alternadas con explicaciones más largas crea tensión y retención",
+        "Uso de 'literal' y 'tranquilo' como marcadores de autenticidad que rompen formalidad corporativa",
+        "Transiciones abruptas ('Y lo peor', 'Entonces', 'Y es que') crean sensación de urgencia y revelación",
+        "Repetición anafórica de 'sin' (sin rostro, sin contenido, sin clientes) crea ritmo hipnótico",
+        "Power words: 'renunciar', 'revolucionario', 'robots empleados', 'piloto automático' generan aspiración",
+        "Estructura de negación + afirmación ('no me crees... entra a youtube') crea engagement conversacional",
+        "Uso de números concretos ($100-500, desde 2021, un par de días) vs. genéricos aumenta credibilidad",
+        "Cierre con razón de urgencia específica (desaparece en horas) vs. CTA genérico aumenta conversión",
+        "Tono de 'compañero que te ayuda' vs. 'experto que te vende' reduce fricción de venta",
+        "Cadencia de revelación: problema → solución → mecanismo → prueba → urgencia mantiene atención"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:11:04.227Z"
+}

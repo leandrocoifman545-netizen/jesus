@@ -1,0 +1,186 @@
+{
+  "id": "ref-nati-ranking-7-formas-3",
+  "title": "Nati - Ranking 7 formas de ganar dinero online 2026 (listicle ad)",
+  "transcript": "Etim formas de ganar dinero en la Internet en 2026. ¡Vamos! Revena de productos. Shopee, Amazon, AX. Mira, yo pondría en séptimo lugar. ¿Por qué? Vamos allá. Puntos positivos. No necesita crear nada, pero como puntos negativos, tiene una margen muy pequeña, depende de stock y también depende de logística. O sea, funciona, pero trabajas mucho para ganar. Muy poco. Canal en YouTube. Mira, canal en YouTube, yo pondría en quinto lugar. Tiene algunos puntos positivos. Es una renda automática y es súper escalable, o sea, da para ganar cada vez más. Pero demora mucho para crecer, necesita mucho tiempo y también paciencia, y usted necesita aparecer y producir mucho contenido. Y la mayoría de las personas no gustan ni de aparecer ni de producir contenido. Afiliado de infoprodutos. Yo colocaría en tercer lugar. Ponsos positivos. Comisiones altas, pero depende también del producto. puede rodar anuncios en automático, pero depende mucho del productor y también necesita de una estrategia muy buena. Entonces ya empieza a ser interesante, es genial, pero existe una constancia absurda. Servicios como social media, edición, designer. ¿Freelancer? Eso. Cierto, yo colocaría en sexto lugar, ¿vale? Puntos positivos. Puede empezar solo con un celular, tiene alta demanda, muchas personas necesitan, pero vendes tu tiempo trocas tu tiempo por dinero y no es escalable o porque no tenemos tiempo infinito Y acabas siendo empleado de varios clientes y a veces no compensa por eso en sexto lugar Dropship. Lo pondría en cuarto lugar, vamos allá, punto positivo. Producto físico sin stock, esto es genial, también puede escalar, pero puntos negativos. Depende del oficinador y la margen es muy pequeña, muy abierta. Mini curso digital. Lo pondría en segundo lugar, puntos positivos. Es extremadamente escalable. Como dije, grabas una vez y vendes para siempre. Y también es un mercado gigantesco. Pero necesitas organizar el contenido. Entonces, creas un activo. Sistema de renda automática con IA. Ah, pero este es el primer disparado. ¿Sabes por qué? Porque este es diferente. Vamos allá. La inteligencia artificial mapea los productos que más venden en el mundo entero. Tanto en real como en dólar. Entonces, activas en pocos clics. Puedes empezar también usando solo tu celular y con 10 minutos de tu horario de almuerzo, 10 minutos que tienes sobrando en tu día, puedes activar este sistema. Y sí, puedes hacer 300, 400, 500 reais fácil en un único día cuando aprendes el proceso correcto. Y yo dejé un vídeo explicando exactamente cómo funciona. Entonces, haz lo siguiente, clica en el botón de Saber Más aquí abajo. Fíjate, te estoy esperando.",
+  "analysis": {
+    "hook": {
+      "text": "7 formas de ganar dinero en la Internet en 2026. ¡Vamos\\!",
+      "type": "dato_concreto",
+      "word_count": 12,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "other",
+      "sections": [
+        {
+          "name": "Hook listicle",
+          "summary": "7 formas de ganar dinero online en 2026",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "7° Reventa (Shopee/Amazon)",
+          "summary": "Margen pequeña, depende de stock y logística. Mucho trabajo, poca ganancia.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "5° Canal YouTube",
+          "summary": "Escalable pero demora mucho, necesita aparecer y crear contenido.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "3° Afiliado infoproductos",
+          "summary": "Comisiones altas pero depende del productor y necesita buena estrategia.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "6° Freelancer/servicios",
+          "summary": "Alta demanda pero cambias tiempo por dinero, no escalable.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "4° Dropshipping",
+          "summary": "Sin stock pero margen pequeña y depende del proveedor.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "2° Mini curso digital",
+          "summary": "Escalable, grabas una vez y vendes para siempre. Mercado gigante.",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "1° Sistema de renda automática con IA",
+          "summary": "IA mapea productos que más venden. Activas en pocos clics. Solo celular + 10 min.",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "CTA",
+          "summary": "Video explicando cómo funciona. Clicar en Saber Más.",
+          "estimated_seconds": 8
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Ah, pero este es el primer disparado. ¿Sabes por qué? Porque este es diferente."
+    },
+    "tone": {
+      "primary_tone": "educativo-ranking",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "sistema de renda automática con IA",
+        "primer disparado",
+        "solo con tu celular",
+        "10 minutos de tu horario de almuerzo"
+      ]
+    },
+    "cta": {
+      "text": "Dejé un vídeo explicando exactamente cómo funciona. Clica en el botón de Saber Más.",
+      "type": "learn_more",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 130,
+    "total_word_count": 428,
+    "emotional_arc": "Curiosidad (7 formas) → Demolición progresiva (cada opción tiene fallas) → Esperanza creciente (el ranking sube) → Revelación (#1 es IA) → Acción",
+    "strengths": [
+      "Formato listicle genera retención — el viewer quiere ver el #1",
+      "Demolición implícita de 6 alternativas antes de presentar la suya",
+      "El orden desordenado (7,5,3,6,4,2,1) genera curiosidad extra",
+      "El #1 tiene beneficios que resuelven TODOS los problemas de los otros 6",
+      "10 minutos del horario de almuerzo — ultra-específico y creíble"
+    ],
+    "patterns_to_replicate": [
+      "Formato ranking/listicle como estructura de ad — retención natural",
+      "Demolición de alternativas una por una antes de presentar la solución",
+      "Orden desordenado del ranking genera más curiosidad que secuencial",
+      "El #1 resuelve todas las objeciones de los otros — efecto acumulativo",
+      "10 minutos del horario de almuerzo — micro-compromiso temporal ultra-específico"
+    ],
+    "advertiser": {
+      "name": "Nati (Sistema de Renda Invisible)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "confrontacion",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook listicle",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Alternativas 7-2",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Sistema IA #1",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Beneficios del #1",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Hay muchas formas de ganar dinero online y todas son parecidas",
+        "mechanism": "Ranking que muestra las fallas de cada una — solo el sistema con IA no tiene los problemas de los otros",
+        "new_belief": "El sistema de renda automática con IA es superior porque no tiene las desventajas de las 6 alternativas"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 2,
+          "ingredient_name": "Dato concreto (7 formas, ranking)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (cada alternativa tiene fallas)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 52,
+          "ingredient_name": "Comparación de caminos (6 malos vs 1 bueno)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo del mecanismo (IA mapea productos)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 82,
+          "ingredient_name": "Atajo legítimo (10 min, solo celular)"
+        }
+      ],
+      "model_sale_type": "cementerio_de_modelos",
+      "awareness_level": 3,
+      "segment_equivalent": "B",
+      "big_idea": "De 7 formas de ganar dinero online, 6 tienen fallas graves — solo el sistema con IA las resuelve todas"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Formato ranking como estructura de ad — adaptable a ADP: 5 formas de ganar con IA (ranking del peor al mejor)",
+        "Demolición acumulativa: cada alternativa deja una objeción que la siguiente resuelve",
+        "Cementerio de modelos pero como RANKING — más entretenido que listar",
+        "10 minutos del horario de almuerzo — micro-compromiso temporal para ADP"
+      ],
+      "what_not_to_copy": [
+        "Demasiado largo para ad (130s) — en ADP máximo 90s",
+        "El #1 es vago: IA mapea productos no explica realmente cómo",
+        "No tiene cambio de creencia real — es comparación sin profundidad"
+      ],
+      "craft_notes": [
+        "El ranking funciona como retención porque el cerebro NECESITA ver el #1. Es un open loop gratuito.",
+        "El orden desordenado (7,5,3,6,4,2,1) es intencional — si fuera 7,6,5,4,3,2,1 sería predecible.",
+        "Para ADP: un ranking de 5 (no 7) cabría en 75-90s. Demoler 4 alternativas + presentar ADP como #1."
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:27:38.584Z"
+}

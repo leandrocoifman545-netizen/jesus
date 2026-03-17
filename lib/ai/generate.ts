@@ -190,7 +190,7 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
     "estimated_seconds": number
   },
   "structure": {
-    "framework": "AIDA" | "PAS" | "BAB" | "Hook-Story-Offer" | "3_Acts" | "other",
+    "framework": "AIDA" | "PAS" | "BAB" | "Hook-Story-Offer" | "3_Acts" | "micro_vsl" | "other",
     "sections": [{ "name": string, "summary": string, "estimated_seconds": number }],
     "has_rehook": boolean,
     "rehook_text": string | null
@@ -214,7 +214,30 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
   "total_word_count": number,
   "emotional_arc": string,
   "strengths": string[],
-  "patterns_to_replicate": string[]
+  "patterns_to_replicate": string[],
+  "advertiser": {
+    "name": string (nombre del anunciante/marca),
+    "platform": "meta" | "tiktok" | "youtube" | "unknown",
+    "ranking_position": "top_5" | "top_10" | "top_20" | "unknown" (posición en ranking por impresiones en Ad Library),
+    "language": string (ej: "es", "en", "pt"),
+    "country": string (ej: "AR", "US", "BR")
+  },
+  "generation_mapping": {
+    "angle_family": "identidad" | "oportunidad" | "confrontacion" | "mecanismo" | "historia" (familia de ángulo más cercana),
+    "body_type": "demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional" (vehículo narrativo más cercano),
+    "persuasion_functions": [{ "section_name": string, "function": "identificacion" | "quiebre" | "mecanismo" | "demolicion" | "prueba" | "venta_modelo" }] (funciones persuasivas detectadas en cada sección del cuerpo),
+    "belief_change": { "old_belief": string, "mechanism": string, "new_belief": string } (cambio de creencia implícito o explícito),
+    "ingredients_detected": [{ "category": "A"-"K", "ingredient_number": number, "ingredient_name": string }] (ingredientes de la enciclopedia ADP detectados, ej: B#29 Dolor comparativo, F#73 Demo implícita, G#90 Persona improbable),
+    "model_sale_type": string (tipo de venta del modelo: "matematica_simple" | "cementerio_de_modelos" | "transparencia_total" | "ventana_oportunidad" | "eliminacion_barreras" | "lean_anti_riesgo" | "tiempo_vs_dinero" | "democratizacion_ia" | "prueba_diversidad" | "contraste_fisico" | "none"),
+    "awareness_level": 1-5 (nivel Schwartz: 1=Unaware, 2=Problem Aware, 3=Solution Aware, 4=Product Aware, 5=Most Aware),
+    "segment_equivalent": "A" | "B" | "C" | "D" (A=emprendedor frustrado, B=principiante 45+, C=mamá/papá sobrecargado, D=escéptico),
+    "big_idea": string (la UNA idea central del anuncio en una frase)
+  },
+  "actionable": {
+    "what_to_steal": string[] (técnicas específicas aplicables a ads de productos digitales con IA en LATAM),
+    "what_not_to_copy": string[] (qué no aplica o sería contraproducente copiar),
+    "craft_notes": string[] (observaciones sobre calidad de escritura a nivel de oración: ritmo, cadencia, word choice, transiciones)
+  }
 }`;
 
 // --- Brief context builders ---
@@ -1160,6 +1183,21 @@ Extrae:
 6. El arco emocional
 7. Las fortalezas principales del guión
 8. Patrones específicos que vale la pena replicar en futuros guiones
+9. Metadata del anunciante (nombre/marca, plataforma, idioma, país — inferir del contenido)
+10. Mapeo al sistema ADP de generación de guiones:
+    - Familia de ángulo (identidad/oportunidad/confrontacion/mecanismo/historia)
+    - Vehículo narrativo (demolicion_mito/historia_con_giro/demo_proceso/comparacion_caminos/un_dia_en_la_vida/pregunta_respuesta/analogia_extendida/contraste_emocional)
+    - Funciones persuasivas por sección (identificacion/quiebre/mecanismo/demolicion/prueba/venta_modelo)
+    - Cambio de creencia (creencia vieja → mecanismo → creencia nueva)
+    - Ingredientes detectados de la enciclopedia ADP (categorías A-K, ej: B#29, F#73, G#90)
+    - Tipo de venta del modelo de negocio (si aplica)
+    - Nivel de awareness Schwartz (1-5)
+    - Segmento equivalente (A=emprendedor frustrado, B=principiante 45+, C=mamá/papá, D=escéptico)
+    - Big idea (la UNA idea central en una frase)
+11. Extracción accionable para ADP:
+    - Qué técnicas específicas se pueden adaptar para ads de productos digitales con IA en LATAM
+    - Qué NO copiar (no aplica o sería contraproducente)
+    - Notas de craft: observaciones sobre calidad de escritura a nivel de oración (ritmo, cadencia, transiciones, power words)
 
 TRANSCRIPCIÓN:
 """
@@ -1172,11 +1210,22 @@ Responde ÚNICAMENTE con el JSON.`;
 
   const response = await client.messages.create({
     model: CLAUDE_MODEL_FAST,
-    max_tokens: 2048,
+    max_tokens: 4096,
     system: [
       {
         type: "text",
-        text: "Eres un analista de publicidad para video vertical. Analizás transcripciones de anuncios exitosos y extraés patrones estructurales, de tono y de copywriting. Respondés únicamente con JSON válido.",
+        text: `Eres un analista experto de publicidad de respuesta directa para video vertical. Analizás transcripciones de anuncios exitosos y extraés patrones estructurales, de tono y de copywriting.
+
+CONTEXTO: Trabajás para ADP (Academia de Productos Digitales), que vende cursos sobre crear y vender productos digitales con IA en LATAM. Tu análisis mapea cada ad al sistema de generación de ADP que usa:
+- 5 familias de ángulos: identidad, oportunidad, confrontacion, mecanismo, historia
+- 8 vehículos narrativos: demolicion_mito, historia_con_giro, demo_proceso, comparacion_caminos, un_dia_en_la_vida, pregunta_respuesta, analogia_extendida, contraste_emocional
+- 5 funciones persuasivas por beat: identificacion, quiebre, mecanismo, demolicion, prueba
+- Enciclopedia de 127 ingredientes en categorías A-K (A=hooks, B=problema, C=agitación, D=quiebre, E=autoridad, F=mecanismo, G=prueba social, H=oferta, I=CTA, J=urgencia, K=NLP)
+- 10 tipos de venta del modelo de negocio
+- 5 niveles de awareness Schwartz (1=Unaware a 5=Most Aware)
+- 4 segmentos: A(emprendedor frustrado), B(principiante 45+), C(mamá/papá sobrecargado), D(escéptico)
+
+Respondés únicamente con JSON válido.`,
         cache_control: { type: "ephemeral" },
       },
     ],

@@ -1,0 +1,159 @@
+{
+  "id": "ref-josh-schwerdtfeger-2m-ecommerce",
+  "title": "Josh Schwerdtfeger - 2M en 6 meses + programa gratis con transparencia del modelo",
+  "transcript": "$2 million in less than six months. I'm going to show you just how powerful an e-commerce brand is. So at the end of March, I started a new e-commerce brand. And look, it's just something that we know how to do. We know how to do it really well. So as you can see, from the 20th of March until today, done just shy of $2 million. Now, that's because we know what we're doing, right? You can't just jump in and expect to get that your first go but when it comes to starting we've built so many brands we've used so many advanced techniques that one thing we really know how to do is how to tweak and how to get that first sale how to make it get stuck how to start the motor and get you rolling and we've done that across thousands of students inside the freedom club and some of the stuff we might be a little bit more advanced, but that's the process. You start simple and you're learning something new. So if you guys wanna upskill before the end of the year, you do have Q4 coming up. Our program's completely free, so you don need to worry about paying anything And another thing is that it better than most of the other paid programs out there I mean I got this little Shopify trophy within six weeks of launching the brand That's something that most people strive for so long to get. And we want to help you guys. We want to share it. Now, why would we give away something free? Why would I pay to run this ad to give you something free? It's pretty simple. We do offer paid coaching. That's just later in the journey. And if you want it, it's optional and it's there. And trust me, when you do want it and you do need it there, you're going to be very happy and grateful to pay it because you will have already gotten your results. So if you're keen, check out the free program. As I said, it's better than all everyone else's paid stuff. And that's what we wanted to do. We wanted to make sure that it was. So check it out. Join the Freedom Club and build your own brand. Get your own sale. Change the way you're earning your money. and change the way you're living your life, really. You're going to have more time. You're going to have the ability to move around and spend time with the people you want to spend time with. Spend time doing the things you want to do, not just sacrificing your entire life to work. So, peace. That's my little insight for today and hopefully see you guys inside of our community.",
+  "analysis": {
+    "hook": {
+      "text": "2 million in less than six months.",
+      "type": "dato_concreto",
+      "word_count": 19,
+      "estimated_seconds": 6
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook",
+          "summary": "2M en 6 meses",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Prueba visual",
+          "summary": "Dashboard Shopify",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Calibracion",
+          "summary": "No esperes eso al principio",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Oferta gratuita",
+          "summary": "Programa gratis mejor que pagos",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Transparencia",
+          "summary": "Por que gratis? Coaching pago despues opcional",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "CTA",
+          "summary": "Libertad, tiempo",
+          "estimated_seconds": 20
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Why would I pay to run this ad to give you something free?"
+    },
+    "tone": {
+      "primary_tone": "casual-transparente",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "just shy of 2 million",
+        "start the motor",
+        "better than most paid programs"
+      ]
+    },
+    "cta": {
+      "text": "Check out the free program. Join the Freedom Club.",
+      "type": "learn_more",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 140,
+    "total_word_count": 471,
+    "emotional_arc": "Impacto -> Realismo -> Sorpresa (gratis) -> Confianza (transparencia) -> Deseo",
+    "strengths": [
+      "Calibracion post-hook genera credibilidad",
+      "Transparencia total del modelo",
+      "Meta-pregunta rehook: por que pago este ad para darte algo gratis?"
+    ],
+    "patterns_to_replicate": [
+      "Resultado grande + calibracion = credibilidad",
+      "Transparencia: gratis porque despues hay algo pago",
+      "Meta-pregunta como rehook"
+    ],
+    "advertiser": {
+      "name": "Josh Schwerdtfeger (Freedom Club)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "mecanismo",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Calibracion",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Oferta gratuita",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Transparencia",
+          "function": "demolicion"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Si algo es gratis no vale o me van a estafar",
+        "mechanism": "Programa gratis mejor que pagos. Coaching pago despues opcional.",
+        "new_belief": "Puedo empezar gratis ver resultados y decidir despues"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 2,
+          "ingredient_name": "Dato concreto"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Transparencia"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba visual"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 98,
+          "ingredient_name": "Riesgo cero"
+        }
+      ],
+      "model_sale_type": "transparencia_total",
+      "awareness_level": 2,
+      "segment_equivalent": "B",
+      "big_idea": "Te doy mi programa gratis porque se que cuando veas resultados vas a querer el coaching pago"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Transparencia del modelo: Jesus explica por que la clase es gratis",
+        "Calibracion post-hook: resultado grande + no esperes eso",
+        "Meta-pregunta rehook: por que te doy esto gratis?"
+      ],
+      "what_not_to_copy": [
+        "E-commerce no ADP",
+        "Demasiado largo",
+        "Ads 1-3 mediocres"
+      ],
+      "craft_notes": [
+        "Transparencia responde objecion silenciosa: si es bueno por que es gratis?",
+        "Para ADP: Te doy la clase gratis porque se que 5 dolares por el taller te va a parecer nada"
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T01:56:14.993Z"
+}

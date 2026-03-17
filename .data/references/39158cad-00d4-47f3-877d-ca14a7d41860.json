@@ -1,0 +1,235 @@
+{
+  "id": "39158cad-00d4-47f3-877d-ca14a7d41860",
+  "title": "salazar 3",
+  "transcript": " ¿Alguna vez te has preguntado en qué trabaja esa gente que va al gimnasio a las 11 de la mañana? Se va de brunch los martes y todos los meses está en un país diferente. Y uno ahí, trabajando 8 horas al día, con suerte, viendo Netflix a las 10 de la noche y dejando las películas a la mitad del sueño tan horrible, porque hay que madrugar para ir a trabajar. Y ellos viajan, compran, disfrutan su vida, pero uno nunca los ve trabajar. Pues hace poco descubrí su secreto. Y no, no es un sugar daddy ni tiene un página azul. Y tampoco son personas que nacieron con dinero. Es gente que está usando franquicias digitales que ya vienen listas. Negocios que funcionan 24-7, apalancados por inteligencia artificial y que les permiten generar ingresos desde el celular, sin tener que crear nada, sin ser expertos en ventas o tecnología. Y si tú también estás cansada de trabajar tanto y no ves resultados, haz clic en el botón y mira el video donde te explico cómo funciona este sistema. Yo empecé de ceros y hoy gracias a este sistema puedo viajar con mi esposo y con mi hija, tener el carro de mis sueños y lo más importante, disfrutarme el proceso de ser mamá con mi bebé Sophie. Así que aprovecha y vea el video ahora mismo. ¡Toca! ¡Nos vemos adentro!",
+  "analysis": {
+    "hook": {
+      "text": "¿Alguna vez te has preguntado en qué trabaja esa gente que va al gimnasio a las 11 de la mañana?",
+      "type": "pregunta_incomoda",
+      "word_count": 18,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Pregunta provocadora",
+          "summary": "Pregunta que crea curiosidad sobre el estilo de vida de personas que parecen no trabajar",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Agitación - Contraste de vidas",
+          "summary": "Descripción detallada del contraste entre la vida del espectador (8 horas de trabajo, cansancio) y la vida de esa gente (viajes, brunch, libertad)",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Quiebre - Revelación del secreto",
+          "summary": "Negación de mitos (sugar daddy, dinero heredado) y presentación del mecanismo real: franquicias digitales con IA",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Mecanismo - Explicación del sistema",
+          "summary": "Descripción de cómo funcionan las franquicias digitales: 24/7, IA, sin crear nada, sin ser experto",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Prueba social - Testimonio personal",
+          "summary": "Anunciante comparte su transformación personal: viajes, carro, tiempo con familia",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "CTA - Llamada a la acción",
+          "summary": "Invitación urgente a hacer clic y ver el video explicativo",
+          "estimated_seconds": 3
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Y si tú también estás cansada de trabajar tanto y no ves resultados, haz clic en el botón"
+    },
+    "tone": {
+      "primary_tone": "conversacional, confidente, aspiracional",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "¿Alguna vez te has preguntado",
+        "Pues hace poco descubrí su secreto",
+        "Y no, no es un sugar daddy",
+        "Yo empecé de ceros",
+        "lo más importante, disfrutarme el proceso",
+        "¡Toca! ¡Nos vemos adentro!"
+      ]
+    },
+    "cta": {
+      "text": "haz clic en el botón y mira el video donde te explico cómo funciona este sistema... Así que aprovecha y vea el video ahora mismo. ¡Toca! ¡Nos vemos adentro!",
+      "type": "directo",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 43,
+    "total_word_count": 287,
+    "emotional_arc": "Curiosidad (hook) → Frustración/Envidia (agitación) → Esperanza (quiebre) → Empoderamiento (mecanismo) → Inspiración (prueba social) → Urgencia (CTA)",
+    "strengths": [
+      "Hook extremadamente fuerte que crea curiosidad inmediata con pregunta específica y relatable",
+      "Contraste emocional muy efectivo entre la vida actual del espectador y la vida deseada",
+      "Negación de mitos (sugar daddy, dinero heredado) que demoliza creencias limitantes comunes",
+      "Testimonio personal creíble que humaniza el mensaje y genera identificación",
+      "Mecanismo claro y simple: franquicias digitales + IA = ingresos sin crear nada",
+      "Uso estratégico de detalles sensoriales (brunch los martes, películas a las 10 de la noche, carro de mis sueños)",
+      "Rehook inteligente que vuelve a enganchar antes del CTA final",
+      "Cierre emotivo que apela a valores profundos (tiempo con familia, disfrutar la maternidad)",
+      "Lenguaje muy natural y conversacional que genera confianza",
+      "CTA dual con urgencia (ahora mismo, ¡Toca!) y razón clara (si estás cansada y no ves resultados)"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con pregunta que crea curiosidad sobre un comportamiento observable (¿Alguna vez te has preguntado...?)",
+      "Construir contraste emocional entre status quo (frustración, cansancio) y aspiración (libertad, viajes)",
+      "Usar negaciones para demoler mitos limitantes antes de presentar la solución (Y no, no es...)",
+      "Incluir un rehook a mitad del guión que vuelva a enganchar después de la agitación",
+      "Presentar el mecanismo de forma extremadamente simple (sin crear nada, sin ser experto)",
+      "Terminar con testimonio personal que incluya detalles emocionales profundos (tiempo con familia)",
+      "Usar lenguaje muy casual y conversacional (¡Toca!, Nos vemos adentro)",
+      "Crear urgencia con adverbios temporales (ahora mismo) y comandos directos",
+      "Incluir detalles sensoriales específicos que hagan el contraste más vívido"
+    ],
+    "advertiser": {
+      "name": "Academia de Productos Digitales (ADP) o similar",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "LATAM (posiblemente CO, MX, AR)"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "contraste_emocional",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Agitación",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Revelación del secreto",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Mecanismo",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Testimonio personal",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para tener libertad financiera y viajar necesito trabajar 8 horas diarias, ser experto en ventas/tecnología, o haber nacido con dinero",
+        "mechanism": "Existen franquicias digitales listas para usar, potenciadas por IA, que generan ingresos 24/7 sin necesidad de crear nada ni ser experto",
+        "new_belief": "Puedo generar ingresos pasivos desde mi celular usando sistemas digitales listos, permitiéndome viajar, disfrutar mi familia y vivir con libertad"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de pregunta provocadora"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (mi vida vs. su vida)"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 45,
+          "ingredient_name": "Agitación por contraste emocional"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 67,
+          "ingredient_name": "Quiebre por negación de mitos"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 82,
+          "ingredient_name": "Autoridad por experiencia personal (Yo empecé de ceros)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Mecanismo simplificado (franquicias digitales + IA)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Prueba social por testimonio personal con detalles emocionales"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 105,
+          "ingredient_name": "Oferta implícita (acceso al sistema/video)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 118,
+          "ingredient_name": "CTA directo dual (haz clic + mira el video)"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 125,
+          "ingredient_name": "Urgencia temporal (ahora mismo)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje conversacional y de confianza (¡Toca! Nos vemos adentro)"
+        }
+      ],
+      "model_sale_type": "democratizacion_ia",
+      "awareness_level": 2,
+      "segment_equivalent": "C",
+      "big_idea": "La gente que parece no trabajar usa franquicias digitales con IA que generan ingresos 24/7 sin necesidad de ser experto, y tú también puedes hacerlo desde tu celular"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura de contraste emocional: vida actual frustrada vs. vida deseada aspiracional. Aplicable a cualquier producto digital mostrando antes/después",
+        "Hook de pregunta observable: '¿Alguna vez te has preguntado en qué trabaja esa gente que...' Funciona para cualquier comportamiento que el público observa pero no entiende",
+        "Demolición de mitos antes de presentar solución: 'Y no, no es sugar daddy ni tiene página azul'. Ideal para eliminar objeciones comunes sobre productos digitales con IA",
+        "Mecanismo ultra-simplificado: 'sin tener que crear nada, sin ser expertos en ventas o tecnología'. Crítico para productos complejos, hacerlos parecer accesibles",
+        "Rehook a mitad del guión: 'Y si tú también estás cansada de trabajar tanto...' Mantiene engagement después de la agitación",
+        "Testimonio con detalles emocionales profundos: no solo dinero, sino 'disfrutarme el proceso de ser mamá con mi bebé Sophie'. Genera conexión emocional real",
+        "Lenguaje ultra-casual y conversacional: 'Pues hace poco descubrí', '¡Toca!', 'Nos vemos adentro'. Genera confianza y reduce fricción psicológica",
+        "CTA dual verbal + visual: comando verbal (haz clic) + comando visual (botón) + urgencia (ahora mismo)",
+        "Detalles sensoriales específicos: 'brunch los martes', 'películas a las 10 de la noche', 'carro de mis sueños'. Hacen el contraste más vívido y memorable",
+        "Identificación por género/rol: dirigirse específicamente a mamás/papás sobrecargados con detalles de su realidad (8 horas de trabajo, sueño horrible, madrugar)"
+      ],
+      "what_not_to_copy": [
+        "No copiar el tono de 'descubrí un secreto' si el producto no es realmente un secreto o si ya es conocido en el mercado. Puede generar desconfianza si se siente manipulador",
+        "No usar 'sugar daddy' o referencias culturales muy específicas sin adaptarlas al contexto local. Puede no resonar o parecer inapropiado en algunos mercados",
+        "No prometer libertad total sin mencionar el esfuerzo inicial. Este guión funciona porque el público ya sabe que hay un video explicativo, pero en otros contextos podría parecer demasiado fácil",
+        "No usar 'franquicias digitales' como término si el producto es diferente. El término específico es crucial para la credibilidad",
+        "No copiar la estructura de testimonio personal si el anunciante no tiene credibilidad real o resultados verificables. La prueba social solo funciona si es creíble"
+      ],
+      "craft_notes": [
+        "Ritmo: El guión usa oraciones cortas y largas alternadas para mantener momentum. 'Se va de brunch los martes y todos los meses está en un país diferente. Y uno ahí, trabajando 8 horas al día...' - la alternancia crea cadencia natural",
+        "Cadencia: Las negaciones ('Y no, no es...') crean pausa y énfasis. El uso de 'Y' al inicio de oraciones es muy oral y conversacional, no literario",
+        "Transiciones: 'Pues hace poco descubrí su secreto' es una transición perfecta que cambia de tono de observación a revelación. 'Y si tú también estás cansada...' es un rehook que vuelve a enganchar",
+        "Power words: 'secreto', 'descubrí', 'apalancados', 'disfrutarme', 'Sophie' (nombre específico que humaniza). El nombre del bebé es particularmente poderoso",
+        "Repetición estratégica: 'viajan, compran, disfrutan' - lista de acciones que crean visualización. 'sin tener que crear nada, sin ser expertos' - repetición de estructura para énfasis",
+        "Especificidad: 'gimnasio a las 11 de la mañana', 'brunch los martes', 'películas a las 10 de la noche' - detalles concretos hacen el contraste más creíble que generalizaciones",
+        "Voz: Primera persona ('Yo empecé de ceros', 'hoy gracias a este sistema') crea intimidad. El cambio de 'ellos' a 'yo' es un giro narrativo que genera identificación",
+        "Cierre: '¡Toca! ¡Nos vemos adentro!' es extremadamente conversacional y genera sensación de comunidad. No es un CTA frío, es una invitación entre amigos",
+        "Puntuación: El uso de puntos suspensivos y exclamaciones crea énfasis oral. 'Y lo más importante, disfrutarme el proceso de ser mamá con mi bebé Sophie' - la coma antes de 'disfrutarme' crea pausa emocional"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:14:10.249Z"
+}

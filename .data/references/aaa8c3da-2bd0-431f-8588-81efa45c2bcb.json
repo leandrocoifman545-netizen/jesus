@@ -1,0 +1,195 @@
+{
+  "id": "aaa8c3da-2bd0-431f-8588-81efa45c2bcb",
+  "title": "Euge Oller 4",
+  "transcript": " Después de ocho años con una academia de emprendimiento, he condensado todo lo que sé en una sola masterclass y cuesta solamente un euro. Se llama Método Impef y es todo mi conocimiento de emprendimiento para que puedas emprender y encontrar tu idea de negocio perfecta en tan solamente una hora y cuarenta y siete. Básicamente tienes toda la clase con pizarra explicando todo absolutamente y luego también tienes obviamente plantillas para poder rellenar cliente ideal, mapa del cliente, modelo de negocio y todas las plantillas súper potentes para que fácilmente puedas simplemente rellenar y ya está. y tienes agentes de inteligencia artificial por si quieres que la IA te ayude en todo el proceso",
+  "analysis": {
+    "hook": {
+      "text": "Después de ocho años con una academia de emprendimiento, he condensado todo lo que sé en una sola masterclass y cuesta solamente un euro.",
+      "type": "situacion_especifica",
+      "word_count": 28,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Credibilidad",
+          "summary": "Establece autoridad (8 años) y propuesta de valor (todo condensado en 1€)",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Nombre + Promesa",
+          "summary": "Introduce 'Método Impef' y promesa de tiempo (1h47m para encontrar idea de negocio)",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Contenido Tangible",
+          "summary": "Describe formato (pizarra), plantillas específicas (cliente ideal, mapa, modelo de negocio)",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Diferenciador IA",
+          "summary": "Cierre con agentes de IA como valor agregado",
+          "estimated_seconds": 3
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "conversacional, directo, confiado",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "he condensado todo lo que sé",
+        "solamente un euro",
+        "todo mi conocimiento",
+        "súper potentes",
+        "simplemente rellenar y ya está"
+      ]
+    },
+    "cta": {
+      "text": "Implícito: acceso al Método Impef por 1€ (no hay CTA verbal explícito en la transcripción)",
+      "type": "embedded_command",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 20,
+    "total_word_count": 145,
+    "emotional_arc": "Confianza (autoridad 8 años) → Sorpresa (precio bajo) → Alivio (solución simple y completa) → Empoderamiento (herramientas + IA)",
+    "strengths": [
+      "Hook con credibilidad temporal específica (8 años) que genera autoridad inmediata",
+      "Precio psicológico extremadamente bajo (1€) crea fricción mínima y sensación de oportunidad",
+      "Promesa de tiempo específico (1h47m) es concreta y creíble",
+      "Enumeración de deliverables tangibles (pizarra, plantillas, IA) reduce fricción de compra",
+      "Lenguaje de primera persona genera conexión y vulnerabilidad",
+      "Cierre con IA como diferenciador moderno sin sobreenfatizar",
+      "Estructura progresiva: credibilidad → promesa → contenido → diferenciador"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con credencial temporal específica (años de experiencia) antes de la propuesta",
+      "Usar precio psicológico extremadamente bajo como hook secundario",
+      "Prometer resultado en tiempo específico y creíble (no 'en 5 minutos')",
+      "Enumerar 3-4 deliverables tangibles con adjetivos simples (súper potentes, fácilmente)",
+      "Usar 'simplemente' + verbo para reducir fricción percibida",
+      "Cerrar con diferenciador moderno (IA) sin que sea el foco principal",
+      "Mantener tono conversacional con 'obviamente', 'básicamente' para sonar auténtico",
+      "Estructura: Credibilidad → Nombre del producto → Promesa de tiempo → Contenido → Diferenciador"
+    ],
+    "advertiser": {
+      "name": "Método Impef (Academia de Emprendimiento)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "ES"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Credibilidad",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Nombre + Promesa",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Contenido Tangible",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Diferenciador IA",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Encontrar una idea de negocio requiere años de estudio, dinero y complejidad",
+        "mechanism": "Método estructurado + plantillas + IA que automatiza el proceso en 1h47m por 1€",
+        "new_belief": "Cualquiera puede encontrar su idea de negocio perfecta en menos de 2 horas con herramientas simples"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de credibilidad temporal (8 años)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo implícito (años vs 1h47m)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 45,
+          "ingredient_name": "Precio psicológico extremadamente bajo (1€)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 62,
+          "ingredient_name": "Autoridad por experiencia acumulada"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita (descripción de contenido: pizarra, plantillas)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 78,
+          "ingredient_name": "Mecanismo de simplificación (rellenar plantillas)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 95,
+          "ingredient_name": "Oferta de valor múltiple (clase + plantillas + IA)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje de facilidad (simplemente, ya está, fácilmente)"
+        }
+      ],
+      "model_sale_type": "democratizacion_ia",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "Tu idea de negocio perfecta está a 1h47m y 1€ de distancia, con plantillas y IA que hacen el trabajo por ti"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con credencial temporal específica (años/meses de experiencia) antes de cualquier promesa — genera autoridad instantánea sin sonar arrogante",
+        "Usar precio psicológico extremadamente bajo (1€, 2€) como hook secundario para productos digitales de bajo ticket que generan leads para upsell",
+        "Prometer resultado en tiempo específico y creíble (1h47m, 3 horas) — más creíble que 'en 5 minutos' y genera urgencia sin parecer falso",
+        "Enumerar 3-4 deliverables tangibles con adjetivos simples y repetitivos (súper potentes, fácilmente, simplemente) para reducir fricción percibida",
+        "Usar palabras de facilidad (simplemente, ya está, obviamente) para sonar auténtico y UGC, no corporativo",
+        "Cerrar con diferenciador moderno (IA, automatización) sin que sea el foco principal — lo coloca como bonus, no como razón principal",
+        "Estructura progresiva para productos digitales: Credibilidad → Nombre/Marca → Promesa de resultado → Contenido tangible → Diferenciador moderno",
+        "Para cursos con IA en LATAM: enfatizar 'plantillas + IA' como combo que reduce fricción de implementación",
+        "Usar 'método' + nombre propio para crear sensación de sistema probado (Método Impef, Método X, Método Y)"
+      ],
+      "what_not_to_copy": [
+        "No copiar el precio de 1€ literalmente — funciona para lead magnet pero ADP vende cursos de mayor valor; adaptar a 9€-19€ como entrada",
+        "No usar 'solamente' + tiempo si el resultado requiere más trabajo post-compra — aquí funciona porque es masterclass, no para cursos extensos",
+        "No enumerar más de 4 deliverables — la transcripción mantiene brevedad; más detalles diluyen el mensaje",
+        "No enfatizar IA como razón principal de compra en LATAM — aquí es bonus; para ADP, IA es diferenciador pero no debe eclipsar el método",
+        "No usar tono UGC si el anunciante es corporativo o B2B — aquí funciona porque es persona individual; para ADP, calibrar según posicionamiento"
+      ],
+      "craft_notes": [
+        "Ritmo: oraciones largas con comas que mantienen fluidez conversacional sin parecer escritas — 'Después de ocho años... he condensado todo lo que sé en una sola masterclass y cuesta solamente un euro' es una sola idea en dos líneas",
+        "Cadencia: alternancia entre afirmaciones cortas (cuesta solamente un euro) y explicaciones largas (tienes toda la clase con pizarra...) mantiene atención",
+        "Power words: 'condensado' (compresión de valor), 'solamente' (fricción mínima), 'súper potentes' (adjetivo coloquial que genera confianza), 'simplemente' (facilidad)",
+        "Transiciones: 'Básicamente' y 'obviamente' funcionan como conectores conversacionales que no requieren puntuación formal",
+        "Repetición estratégica: 'tienes' se repite 3 veces (tienes toda la clase, tienes plantillas, tienes agentes) — crea sensación de abundancia",
+        "Estructura de lista sin puntos: enumera beneficios en párrafo corrido (pizarra, plantillas, IA) en lugar de bullets — más conversacional para video",
+        "Cierre abierto: 'por si quieres que la IA te ayude' es permisivo, no mandatorio — reduce fricción psicológica de compra",
+        "Ausencia de CTA explícito: confía en que el precio bajo y la promesa generan acción — funciona para awareness pero ADP debe incluir CTA claro"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:05:38.573Z"
+}

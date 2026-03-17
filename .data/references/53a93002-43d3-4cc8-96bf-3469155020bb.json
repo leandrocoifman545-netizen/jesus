@@ -1,0 +1,222 @@
+{
+  "id": "53a93002-43d3-4cc8-96bf-3469155020bb",
+  "title": "sabri 2",
+  "transcript": " So I can see that you've been checking out my book, but you are yet to pull the trigger and actually buy this thing. And I assume that that is because there is a teeny tiny shipping and handling fee associated with actually getting this thing to you. I will send this thing to you anywhere in the world and the information that is contained in this is responsible for generating over $7.8 billion in sales in over a thousand different industries. I've also deployed it in over 2,000 funnels that I have personally built here inside my agency for my clients. I'll show you everything from how to write Facebook ads, how to write Google ads, how to put together a compelling offer that literally is impossible for your prospects to say no to. I will ship it to you anywhere in the world. All you need to do is gently caress the link below. You just help me out with the shipping and handling. It's not a thin little shitty lead gen book. This thing is substantial. It's not a pitch for my agency. I literally give you all of the systems that I have deployed to generate billions of dollars in revenue. Click the link and pick up your copy today.",
+  "analysis": {
+    "hook": {
+      "text": "So I can see that you've been checking out my book, but you are yet to pull the trigger and actually buy this thing.",
+      "type": "situacion_especifica",
+      "word_count": 28,
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Observación directa",
+          "summary": "Confronta al prospect con su inacción, asumiendo que conoce el producto pero no ha comprado",
+          "estimated_seconds": 4
+        },
+        {
+          "name": "Quiebre - Objeción anticipada",
+          "summary": "Identifica la barrera (shipping fee) y la reencuadra como insignificante",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Autoridad - Prueba social masiva",
+          "summary": "Despliega credibilidad con números: $7.8B en ventas, 1000+ industrias, 2000+ funnels",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Mecanismo - Especificidad de contenido",
+          "summary": "Detalla qué enseña: Facebook ads, Google ads, ofertas irresistibles",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Demolición - Reencuadre del producto",
+          "summary": "Niega que sea lead gen barato; afirma que es sustancial y no es pitch de agencia",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "CTA - Acción inmediata",
+          "summary": "Cierra con lenguaje conversacional y urgencia suave",
+          "estimated_seconds": 3
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "I will ship it to you anywhere in the world. All you need to do is gently caress the link below."
+    },
+    "tone": {
+      "primary_tone": "Conversacional, directo, con humor irreverente y confianza extrema",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "moderate",
+      "key_phrases": [
+        "pull the trigger",
+        "teeny tiny",
+        "gently caress the link",
+        "not a thin little shitty lead gen book",
+        "literally impossible to say no to",
+        "pick up your copy"
+      ]
+    },
+    "cta": {
+      "text": "Click the link and pick up your copy today.",
+      "type": "directo",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 28,
+    "total_word_count": 234,
+    "emotional_arc": "Confrontación → Alivio (objeción resuelta) → Asombro (números masivos) → Confianza (especificidad) → Indignación (defensa del producto) → Acción",
+    "strengths": [
+      "Hook de confrontación directa que asume familiaridad con el producto (reduce fricción de awareness)",
+      "Anticipación y demolición de objeción principal (shipping) en los primeros 10 segundos",
+      "Números específicos y masivos ($7.8B, 1000+ industrias, 2000+ funnels) crean credibilidad sin parecer genéricos",
+      "Lenguaje conversacional y humor (gently caress, shitty) humaniza al anunciante y reduce distancia",
+      "Reencuadre defensivo (no es lead gen, no es pitch) anticipa escepticismo del segmento D",
+      "Rehook a mitad del copy mantiene atención en momento de caída potencial",
+      "Cierre con urgencia suave pero clara (today) sin presión agresiva"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con observación de comportamiento del prospect (asunción de familiaridad) en lugar de beneficio genérico",
+      "Anticipar y demoler la objeción más común en los primeros 15 segundos",
+      "Usar números específicos y contextualizados (no solo 'millones', sino 'en 1000+ industrias')",
+      "Insertar humor irreverente que refleje la personalidad del founder (humanización)",
+      "Reencuadrar el producto contra expectativas bajas (no es lead gen barato, es sistema real)",
+      "Usar rehook conversacional a mitad del copy para mantener engagement",
+      "Cierre con micro-urgencia (today) sin presión de escasez artificial",
+      "Lenguaje de acción simple y conversacional (gently caress, pick up) en lugar de corporate"
+    ],
+    "advertiser": {
+      "name": "Russell Brunson / ClickFunnels (inferido)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "US"
+    },
+    "generation_mapping": {
+      "angle_family": "confrontacion",
+      "body_type": "demolicion_mito",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Quiebre - Objeción",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Autoridad",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Mecanismo",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Demolición",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Este libro es caro y probablemente sea un lead gen barato sin valor real",
+        "mechanism": "Números masivos de aplicación + especificidad de contenido + defensa contra expectativas bajas",
+        "new_belief": "Este libro contiene sistemas reales que generaron $7.8B y vale la pena el envío"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de confrontación directa (asunción de familiaridad)"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 29,
+          "ingredient_name": "Dolor comparativo (vs. lead gen barato)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 45,
+          "ingredient_name": "Quiebre de objeción anticipada (shipping fee)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Números masivos contextualizados ($7.8B, 1000+ industrias)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 68,
+          "ingredient_name": "Prueba de volumen (2000+ funnels personales)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Demo implícita (qué enseña: Facebook ads, Google ads, ofertas)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Defensa contra expectativas bajas (no es lead gen, no es pitch)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 110,
+          "ingredient_name": "CTA directo conversacional (gently caress the link)"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 120,
+          "ingredient_name": "Micro-urgencia suave (today)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 127,
+          "ingredient_name": "Lenguaje de acción simple (pick up, click)"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 4,
+      "segment_equivalent": "D",
+      "big_idea": "El libro que ya conoces pero no compraste contiene los sistemas reales que generaron miles de millones, y el envío es irrelevante comparado con su valor"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Abrir con observación de comportamiento del prospect (asunción de familiaridad) para reducir fricción de awareness en segmento D (escéptico)",
+        "Anticipar y demoler la objeción más común (precio/costo) en los primeros 10-15 segundos, reencuadrándola como insignificante",
+        "Usar números específicos y contextualizados (no solo 'miles de usuarios', sino 'en 1000+ industrias' o 'con 2000+ productos digitales creados')",
+        "Insertar humor irreverente que refleje la personalidad del founder/marca para humanizar y reducir distancia con escépticos",
+        "Reencuadrar el producto contra expectativas bajas del segmento (no es curso barato de IA, es sistema que generó $X en resultados reales)",
+        "Usar rehook conversacional a mitad del copy cuando la atención tiende a caer (especialmente en vertical video)",
+        "Cierre con micro-urgencia (hoy, esta semana) sin presión de escasez artificial que suene desesperada",
+        "Lenguaje de acción simple y conversacional (haz clic, obtén tu copia) en lugar de corporate (adquiere, procede)"
+      ],
+      "what_not_to_copy": [
+        "No copiar la lenguaje explícitamente vulgar (shitty) en LATAM donde la audiencia es más sensible a tono; adaptar a irreverencia local",
+        "No asumir que el prospect ya conoce el producto si el awareness es bajo (nivel 1-2); este hook funciona en nivel 4",
+        "No usar números masivos sin contexto (la fuerza está en '1000+ industrias', no solo '$7.8B')",
+        "No replicar el tono ultra-casual si la marca es B2B formal o dirigida a segmento B (principiante 45+) que valora profesionalismo",
+        "No usar rehook idéntico al hook principal; variar el ángulo (aquí es sobre envío, podría ser sobre contenido)"
+      ],
+      "craft_notes": [
+        "Ritmo: Oraciones cortas en hook (28 palabras) crean impacto; luego se expande en secciones de autoridad. Cadencia de tensión-alivio funciona bien.",
+        "Transiciones: 'I assume that' + 'I will send' crea flujo natural de objeción → solución sin conectores forzados",
+        "Power words: 'pull the trigger' (acción decisiva), 'teeny tiny' (minimización de objeción), 'literally impossible' (absoluto), 'gently caress' (humor + acción)",
+        "Repetición estratégica: 'I will send it to you anywhere in the world' aparece 2 veces, reforzando disponibilidad sin parecer redundante",
+        "Especificidad: 'Facebook ads, Google ads, compelling offer' son ejemplos concretos, no genéricos ('marketing strategies')",
+        "Defensa integrada: 'not a thin little shitty lead gen book' + 'not a pitch for my agency' + 'I literally give you all systems' = triple demolición en 3 oraciones",
+        "Cierre: 'Click the link and pick up your copy today' combina acción (click) + posesión (pick up) + urgencia (today) en 10 palabras"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:10:33.757Z"
+}

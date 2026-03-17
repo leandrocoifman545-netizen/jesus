@@ -1,0 +1,164 @@
+{
+  "id": "ref-amanda-afonso-dialogo-marido-16",
+  "title": "Amanda Afonso - Dialogo con marido: de no creer a apoyar 100% (cambio de creencia EN VIVO)",
+  "transcript": "Amor, o que você me falou quando eu te falei que ia aprender a vender produto na internet? Achei que era uma besteira, que não ia dar certo. E agora eu penso assim, se hoje, a nossa filha, a Analu, que ela tem 8 anos, se ela falasse que ia trabalhar com a internet, o que você falaria pra ela? Com toda certeza, vamos embora. Você ia apoiar. Com toda certeza. Olha só que incrível, gente. Quando eu comecei, eu vi na internet uma oportunidade, né? E eu queria uma forma real de trabalho. Eu queria que fosse honesto, eu queria sair do CLT. e eu comecei tão perdida, devagar, para aprender as coisas, mas eu falei, poxa, é uma oportunidade para eu sair do meu emprego e ficar mais em casa com os meus filhos. Comecei perdida para aprender mesmo. Comecei a anunciar produtos sem estoque, totalmente sem aparecer e o resultado me surpreendeu. Eu, no meu primeiro mês, eu já fiz quase 700 reais, já recuperei investimento, que eu tinha feito um curso para aprender, já tive lucro, paguei a pessoa que me emprestou, que eu não tinha dinheiro nem para isso. E aí, com três meses, eu estava fazendo 4 mil por mês, foi quando eu larguei o meu emprego para viver das vendas. Eu estou há três anos no mercado hoje e faturo todos os meses mais de 50 mil reais. Quanto a vida muda quando a gente vê uma oportunidade e fala poxa, deixa eu entender melhor. Preciso dessa chance. E isso mudou a vida da nossa família, não é amor? E hoje o nosso pensamento é completamente diferente. Eu amo o meu trabalho. E se você quer começar do zero, Amanda, como que eu aprendo a vender? Como que eu trabalho também vendendo sem estoque, sem aparecer? Clique aqui no botão abaixo que você fala comigo.",
+  "analysis": {
+    "hook": {
+      "text": "Amor, o que voce me falou quando eu te falei que ia aprender a vender produto na internet? Achei que era uma besteira, que nao ia dar certo.",
+      "type": "actuacion_dialogo",
+      "word_count": 28,
+      "estimated_seconds": 8
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook - Pregunta al marido",
+          "summary": "Que dijiste cuando te dije que iba a vender online? Pense que era tonteria.",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Giro - La hija",
+          "summary": "Y si nuestra hija de 8 anos dijera que va a trabajar con internet? Con toda certeza la apoyo.",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Historia de origen",
+          "summary": "Vi una oportunidad, queria algo honesto, salir del CLT, estar con mis hijos. Empece perdida.",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Timeline de resultados",
+          "summary": "Primer mes: 700 reais. Pague el curso que pedi prestado. Mes 3: 4K, largue el empleo. Hoy: 50K+/mes, 3 anos.",
+          "estimated_seconds": 20
+        },
+        {
+          "name": "Cierre emocional + CTA",
+          "summary": "Cuanto cambia la vida cuando ves una oportunidad. Queres empezar? Click abajo.",
+          "estimated_seconds": 15
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Olha so que incrivel, gente."
+    },
+    "tone": {
+      "primary_tone": "intimo-autentico",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "achei que era uma besteira",
+        "com toda certeza, vamos embora",
+        "nao tinha dinheiro nem para isso",
+        "quanto a vida muda"
+      ]
+    },
+    "cta": {
+      "text": "Clique aqui no botao abaixo que voce fala comigo.",
+      "type": "learn_more",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 75,
+    "total_word_count": 312,
+    "emotional_arc": "Curiosidad (que dijo?) -> Rechazo (tonteria) -> Giro (ahora apoyaria 100%) -> Empatia (empece perdida, sin plata) -> Escalada (700 -> 4K -> 50K) -> Inspiracion",
+    "strengths": [
+      "EL MARIDO COMO PROXY del viewer: su cambio de creencia ES el cambio que el ad quiere generar",
+      "La pregunta sobre la hija es BRILLANTE: obliga al marido a contradecirse y muestra el cambio",
+      "Detalles de pobreza genuinos: pedi prestado para el curso, no tenia plata ni para eso",
+      "Timeline de crecimiento con numeros exactos: 700 -> 4K -> 50K",
+      "El CTA es natural: si queres saber, habla conmigo"
+    ],
+    "patterns_to_replicate": [
+      "TERCERO COMO PROXY: el cambio de creencia NO lo dice el vendedor, lo VIVE otra persona en camara",
+      "Pregunta trampa que genera contradiccion: que dijiste antes? Y ahora? — el viewer ve el cambio",
+      "Detalles de pobreza como ancla de credibilidad (pedi prestado, no tenia ni para eso)",
+      "Dialogo real entre pareja como formato de ad — intimidad que no se puede fabricar"
+    ],
+    "advertiser": {
+      "name": "Amanda Afonso",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "pt",
+      "country": "BR"
+    },
+    "generation_mapping": {
+      "angle_family": "historia",
+      "body_type": "historia_con_giro",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook - Pregunta al marido",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Giro - La hija",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Historia de origen",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Timeline resultados",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Vender por internet es una tonteria que no va a funcionar",
+        "mechanism": "El marido que no creia ahora apoyaria 100% a su hija para hacer lo mismo",
+        "new_belief": "Trabajar con internet es una oportunidad real que cambia la vida de toda la familia"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 14,
+          "ingredient_name": "Actuacion/dialogo (pregunta real al marido)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 49,
+          "ingredient_name": "Redefinicion (de tonteria a apoyo total)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Vulnerabilidad (pedi prestado, no tenia plata)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 88,
+          "ingredient_name": "Prueba de ingresos (700 -> 4K -> 50K)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 94,
+          "ingredient_name": "Meta-proof (el marido como testigo del cambio)"
+        }
+      ],
+      "model_sale_type": "none",
+      "awareness_level": 1,
+      "segment_equivalent": "A",
+      "big_idea": "Mi marido penso que era una tonteria. Hoy apoyaria a nuestra hija a hacer lo mismo."
+    },
+    "actionable": {
+      "what_to_steal": [
+        "TERCERO COMO PROXY DEL CAMBIO: filmar a alguien cercano a Jesus (socio, alumno, familiar) y preguntarle que pensaba antes vs ahora",
+        "Pregunta trampa que genera contradiccion visible: que me dijiste cuando empece? vs que le dirias a tu hijo hoy?",
+        "Formato dialogo casual en pareja/amigos como ad — imposible de fabricar, se siente real",
+        "Timeline con numeros exactos: primer mes -> 3 meses -> hoy. Curva de crecimiento creible."
+      ],
+      "what_not_to_copy": [
+        "No explica que vende — puro storytelling",
+        "El CTA es debil"
+      ],
+      "craft_notes": [
+        "El marido ES el avatar. Su cambio de tonteria a apoyo total es EXACTAMENTE el cambio de creencia que el ad quiere generar en el viewer.",
+        "La pregunta sobre la hija es un golpe maestro: obliga al marido a demostrar que cambio de opinion sin decirlo explicitamente.",
+        "Para ADP: Jesus le pregunta a alguien (alumno, amigo): Que pensabas cuando te dije que se podia ganar plata vendiendo ebooks con IA? Y que pensas ahora?"
+      ]
+    }
+  },
+  "createdAt": "2026-03-17T02:34:42.205Z"
+}

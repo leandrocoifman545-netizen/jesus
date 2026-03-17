@@ -34,7 +34,7 @@ export const REFERENCE_ANALYSIS_SCHEMA = {
       properties: {
         framework: {
           type: "STRING" as const,
-          enum: ["AIDA", "PAS", "BAB", "Hook-Story-Offer", "3_Acts", "other"],
+          enum: ["AIDA", "PAS", "BAB", "Hook-Story-Offer", "3_Acts", "micro_vsl", "other"],
         },
         sections: {
           type: "ARRAY" as const,
@@ -99,6 +99,97 @@ export const REFERENCE_ANALYSIS_SCHEMA = {
       type: "ARRAY" as const,
       items: { type: "STRING" as const },
     },
+    advertiser: {
+      type: "OBJECT" as const,
+      properties: {
+        name: { type: "STRING" as const },
+        platform: { type: "STRING" as const },
+        ranking_position: {
+          type: "STRING" as const,
+          enum: ["top_5", "top_10", "top_20", "unknown"],
+        },
+        language: { type: "STRING" as const },
+        country: { type: "STRING" as const },
+      },
+    },
+    generation_mapping: {
+      type: "OBJECT" as const,
+      properties: {
+        angle_family: {
+          type: "STRING" as const,
+          enum: ["identidad", "oportunidad", "confrontacion", "mecanismo", "historia"],
+        },
+        body_type: {
+          type: "STRING" as const,
+          enum: [
+            "demolicion_mito",
+            "historia_con_giro",
+            "demo_proceso",
+            "comparacion_caminos",
+            "un_dia_en_la_vida",
+            "pregunta_respuesta",
+            "analogia_extendida",
+            "contraste_emocional",
+          ],
+        },
+        persuasion_functions: {
+          type: "ARRAY" as const,
+          items: {
+            type: "OBJECT" as const,
+            properties: {
+              section_name: { type: "STRING" as const },
+              function: {
+                type: "STRING" as const,
+                enum: ["identificacion", "quiebre", "mecanismo", "demolicion", "prueba", "venta_modelo"],
+              },
+            },
+          },
+        },
+        belief_change: {
+          type: "OBJECT" as const,
+          properties: {
+            old_belief: { type: "STRING" as const },
+            mechanism: { type: "STRING" as const },
+            new_belief: { type: "STRING" as const },
+          },
+        },
+        ingredients_detected: {
+          type: "ARRAY" as const,
+          items: {
+            type: "OBJECT" as const,
+            properties: {
+              category: { type: "STRING" as const },
+              ingredient_number: { type: "INTEGER" as const },
+              ingredient_name: { type: "STRING" as const },
+            },
+          },
+        },
+        model_sale_type: { type: "STRING" as const },
+        awareness_level: { type: "INTEGER" as const },
+        segment_equivalent: {
+          type: "STRING" as const,
+          enum: ["A", "B", "C", "D"],
+        },
+        big_idea: { type: "STRING" as const },
+      },
+    },
+    actionable: {
+      type: "OBJECT" as const,
+      properties: {
+        what_to_steal: {
+          type: "ARRAY" as const,
+          items: { type: "STRING" as const },
+        },
+        what_not_to_copy: {
+          type: "ARRAY" as const,
+          items: { type: "STRING" as const },
+        },
+        craft_notes: {
+          type: "ARRAY" as const,
+          items: { type: "STRING" as const },
+        },
+      },
+    },
   },
   required: [
     "hook",
@@ -146,4 +237,27 @@ export interface ReferenceAnalysis {
   emotional_arc: string;
   strengths: string[];
   patterns_to_replicate: string[];
+  advertiser?: {
+    name: string;
+    platform: string;
+    ranking_position?: "top_5" | "top_10" | "top_20" | "unknown";
+    language?: string;
+    country?: string;
+  };
+  generation_mapping?: {
+    angle_family?: "identidad" | "oportunidad" | "confrontacion" | "mecanismo" | "historia";
+    body_type?: "demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional";
+    persuasion_functions?: { section_name: string; function: string }[];
+    belief_change?: { old_belief: string; mechanism: string; new_belief: string };
+    ingredients_detected?: { category: string; ingredient_number: number; ingredient_name: string }[];
+    model_sale_type?: string;
+    awareness_level?: number;
+    segment_equivalent?: "A" | "B" | "C" | "D";
+    big_idea?: string;
+  };
+  actionable?: {
+    what_to_steal: string[];
+    what_not_to_copy: string[];
+    craft_notes: string[];
+  };
 }

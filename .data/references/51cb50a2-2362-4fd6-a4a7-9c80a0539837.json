@@ -1,0 +1,202 @@
+{
+  "id": "51cb50a2-2362-4fd6-a4a7-9c80a0539837",
+  "title": "Euge Oller 5",
+  "transcript": " Si quieres crear un emprendimiento que tenga éxito, hay una cosa que es fundamental, y es que escoge una idea que vaya alineada con algo que se te dé bien hacer. Me acuerdo que en la universidad, cuando estudié emprendimiento y management, nos hacían hacer un plan de empresa, y todo el mundo intentaba buscar como la idea más loca, más innovadora posible, porque pensaban que la idea iba a sacarles de la mediocridad de la ejecución. Pero cuando emprendes, lo que tienes que hacer es ponértelo fácil, ya suficientemente complicado. Y para eso tienes que buscar ideas que vayan alineadas con lo que ya has hecho, con tus fortalezas. Y eso para mí es el principio de cualquier idea. Luego hay que testear lo antes posible con el mercado y encontrar maneras para poder acercarte lo antes posible a la realidad. Y si quieres aprender a emprender sin malgastar tiempo y dinero, he creado una masterclass de 1 hora y 47 con plantillas, con un montón de información para ponértelo fácil y esto lo puedes conseguir por tan solamente un euro. Así que si quieres desbloquear esta clase, puedes hacerlo aquí abajo.",
+  "analysis": {
+    "hook": {
+      "text": "Si quieres crear un emprendimiento que tenga éxito, hay una cosa que es fundamental",
+      "type": "situacion_especifica",
+      "word_count": 18,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Identificación",
+          "summary": "Plantea el problema fundamental del emprendimiento exitoso",
+          "estimated_seconds": 3
+        },
+        {
+          "name": "Story/Anécdota Universitaria",
+          "summary": "Narra experiencia personal en universidad sobre planes de empresa y la falsa creencia de que la idea innovadora compensa mala ejecución",
+          "estimated_seconds": 18
+        },
+        {
+          "name": "Quiebre + Mecanismo",
+          "summary": "Revela el principio correcto: alinear ideas con fortalezas propias y testear con mercado temprano",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Oferta + CTA",
+          "summary": "Presenta masterclass de 1h47 con plantillas a precio de entrada bajo (1 euro)",
+          "estimated_seconds": 8
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "Conversacional, mentor cercano, reflexivo",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "light",
+      "key_phrases": [
+        "hay una cosa que es fundamental",
+        "me acuerdo que",
+        "ya suficientemente complicado",
+        "ponértelo fácil",
+        "sin malgastar tiempo y dinero"
+      ]
+    },
+    "cta": {
+      "text": "Si quieres desbloquear esta clase, puedes hacerlo aquí abajo",
+      "type": "conversacional",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 44,
+    "total_word_count": 287,
+    "emotional_arc": "Identificación (frustración con creencias falsas) → Validación (experiencia personal) → Revelación (el verdadero principio) → Alivio (solución accesible a bajo costo)",
+    "strengths": [
+      "Hook directo y específico que captura atención inmediata",
+      "Anécdota personal creíble que desactiva escepticismo (experiencia universitaria)",
+      "Demolición clara de mito: la idea innovadora NO compensa mala ejecución",
+      "Mecanismo simple y replicable: alinear con fortalezas + testear temprano",
+      "Precio de entrada psicológicamente irresistible (1 euro) reduce fricción",
+      "Tono conversacional y cercano genera confianza (UGC style)",
+      "Repetición de 'ponértelo fácil' refuerza el beneficio emocional",
+      "Estructura lógica: problema → falsa solución → verdadera solución → oferta"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con 'Si quieres [objetivo], hay una cosa que es fundamental' para captar atención de audiencia con intención clara",
+      "Usar anécdota personal de contexto académico/profesional para establecer autoridad sin sonar arrogante",
+      "Contrastar creencia falsa vs. verdad mediante 'pero cuando [acción], lo que tienes que hacer es [verdad opuesta]'",
+      "Repetir frase clave ('ponértelo fácil') para crear pegajosidad y refuerzo de beneficio emocional",
+      "Ofrecer precio de entrada extremadamente bajo (1 euro) como micro-compromiso que reduce fricción",
+      "Cerrar con CTA conversacional ('puedes hacerlo aquí abajo') en lugar de imperativo agresivo",
+      "Usar 'me acuerdo que' para humanizar y crear conexión emocional con audiencia",
+      "Incluir 'reason why' explícito en oferta ('plantillas, información para ponértelo fácil')"
+    ],
+    "advertiser": {
+      "name": "Desconocido (posible ADP o similar academy de emprendimiento/productos digitales)",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "ES"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demolicion_mito",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Anécdota Universitaria",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Quiebre + Mecanismo",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Oferta + CTA",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Una idea innovadora y loca compensa la mala ejecución en un emprendimiento",
+        "mechanism": "Anécdota personal que muestra que todos en universidad buscaban ideas locas pero fallaban; el verdadero éxito viene de alinear ideas con fortalezas propias y testear temprano con mercado",
+        "new_belief": "El éxito en emprendimiento requiere elegir ideas alineadas con tus fortalezas y validar rápidamente con el mercado, no buscar la idea más innovadora"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook de situación específica"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 12,
+          "ingredient_name": "Problema de creencia falsa (mito del emprendedor)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 45,
+          "ingredient_name": "Quiebre mediante contraste (idea loca vs. ejecución)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 67,
+          "ingredient_name": "Autoridad personal (experiencia universitaria + emprendedor)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 73,
+          "ingredient_name": "Mecanismo simple (alinear fortalezas + testear mercado)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 88,
+          "ingredient_name": "Oferta de bajo precio de entrada (1 euro)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 91,
+          "ingredient_name": "Oferta con componentes tangibles (plantillas + información)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 102,
+          "ingredient_name": "CTA conversacional y permisiva"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 119,
+          "ingredient_name": "Repetición de frase clave para pegajosidad"
+        }
+      ],
+      "model_sale_type": "eliminacion_barreras",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "El éxito en emprendimiento no viene de la idea más innovadora, sino de alinear tus fortalezas con la idea y validar rápidamente con el mercado"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura Hook-Anécdota-Quiebre-Oferta es altamente replicable para ads de cursos de IA/productos digitales: abrir con problema específico, validar con historia personal, revelar mecanismo, cerrar con oferta accesible",
+        "Usar precio de entrada extremadamente bajo (1 euro, 1 dólar) como micro-compromiso para reducir fricción en ads de masterclass o cursos introductorios sobre IA",
+        "Demoler mito específico del mercado LATAM: 'necesito la idea de IA más innovadora' → verdad: 'necesito aplicar IA a lo que ya sé hacer bien'",
+        "Repetir frase clave 2-3 veces en el guión para crear pegajosidad (ej: 'ponértelo fácil' aparece 2 veces)",
+        "Usar 'me acuerdo que' + anécdota académica/profesional para humanizar y generar confianza sin sonar como vendedor",
+        "Incluir 'reason why' explícito en la oferta: no solo 'masterclass' sino 'masterclass con plantillas para ponértelo fácil'",
+        "CTA conversacional y permisiva ('puedes hacerlo aquí abajo') funciona mejor que imperativo agresivo en LATAM",
+        "Contrastar creencia falsa vs. verdad mediante estructura 'pero cuando [acción], lo que tienes que hacer es [verdad]'",
+        "Mencionar componentes tangibles (plantillas, información, duración específica) para aumentar percepción de valor"
+      ],
+      "what_not_to_copy": [
+        "No copiar el nivel de awareness 3 (Solution Aware) si tu audiencia es Unaware (nivel 1) de IA o productos digitales; necesitarías más educación previa",
+        "No usar anécdota universitaria si no tienes credibilidad académica; adaptar a contexto profesional/emprendedor real",
+        "No asumir que 1 euro funciona igual en todos los países LATAM; testear precios locales (puede ser 1 dólar, 100 pesos, etc.)",
+        "No replicar el tono tan conversacional si la marca requiere posicionamiento premium o formal",
+        "No usar 'ponértelo fácil' como frase clave si no es natural en tu voz de marca; buscar equivalente que suene auténtico"
+      ],
+      "craft_notes": [
+        "Ritmo: Oraciones largas en el hook (18 palabras) seguidas de oraciones más cortas en la anécdota crean variación que mantiene atención",
+        "Cadencia: 'Me acuerdo que... nos hacían... intentaban buscar... pensaban que' usa paralelismo de estructura para crear fluidez",
+        "Power words: 'fundamental', 'éxito', 'mediocridad', 'complicado', 'desbloquear' generan emoción sin ser manipuladores",
+        "Transiciones: 'Pero cuando emprendes' es transición clara que señala cambio de creencia; 'Y para eso' conecta mecanismo con beneficio",
+        "Repetición estratégica: 'ponértelo fácil' aparece 2 veces (línea 4 y línea 8) creando pegajosidad sin sonar forzado",
+        "Contraste: 'idea loca vs. ejecución', 'suficientemente complicado vs. ponértelo fácil' crea tensión que se resuelve con oferta",
+        "Especificidad: '1 hora y 47 minutos' + '1 euro' son números concretos que aumentan credibilidad vs. 'masterclass barata'",
+        "Tono conversacional: 'hay abajo', 'puedes hacerlo' son construcciones coloquiales españolas que generan cercanía",
+        "Falta de urgencia explícita es fortaleza: no dice 'solo hoy' o 'limitado', lo que reduce fricción psicológica de FOMO falso"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:06:10.758Z"
+}

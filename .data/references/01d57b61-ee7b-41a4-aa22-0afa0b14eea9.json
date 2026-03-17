@@ -1,0 +1,244 @@
+{
+  "id": "01d57b61-ee7b-41a4-aa22-0afa0b14eea9",
+  "title": "salazar 1",
+  "transcript": " ¿Cómo hacer dinero un día cualquiera mientras duermes? Me acabo de despertar y vamos a ver las notificaciones que recibe mi celular mientras dormía. Estas notificaciones me llegan todos los días y cualquier persona sin conocimiento ni experiencia también las puede tener. Es la manera más honesta y efectiva que conozco de ganar dinero por internet. Con la franquicia IA puedes ganar de 450 a 900 dólares semanales. Hoy en día lo que más resultados trae, lo que más funciona es la venta de productos digitales por internet. Ahora te estarás preguntando ¿qué producto digital vender? La franquicia IA te entrega el negocio listo, producto, páginas, anuncios, videos y mensajes automatizados. Tu único trabajo es activar el sistema dedicando solo 45 minutos al día y dejar que la IA haga el 90% del trabajo por ti. Ahora entiendes por qué cualquier persona puede recibir estas notificaciones de venta. Más de 200 franquiciados comprobaron que la franquicia IA es efectiva y funciona y está generando comisiones de 450 a 900 dólares semanales. Si tú también quieres generar comisiones con la franquicia, toca el botón que sale aquí abajo y mira el video donde te explico los 3 pasos que debes seguir. Toca el botón y conviértete en un franquiciado antes de que otra persona lo haga por ti. Entra y nos vemos en el video.",
+  "analysis": {
+    "hook": {
+      "text": "¿Cómo hacer dinero un día cualquiera mientras duermes?",
+      "type": "pregunta_incomoda",
+      "word_count": 10,
+      "estimated_seconds": 3
+    },
+    "structure": {
+      "framework": "Hook-Story-Offer",
+      "sections": [
+        {
+          "name": "Hook + Apertura",
+          "summary": "Pregunta provocadora sobre ganar dinero durmiendo, seguida de demostración visual de notificaciones",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Identificación del problema",
+          "summary": "Establece que cualquier persona sin experiencia puede hacerlo, presenta la solución como 'honesta y efectiva'",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "Presentación de la oportunidad",
+          "summary": "Introduce rango de ingresos ($450-900 semanales) y posiciona venta de productos digitales como lo que 'más funciona'",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Objeción anticipada + Mecanismo",
+          "summary": "Responde 'qué producto vender' con la propuesta: franquicia IA entrega todo listo, solo 45 min/día, IA hace 90%",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Prueba social + Demolición",
+          "summary": "200+ franquiciados comprobaron efectividad, genera comisiones confirmadas",
+          "estimated_seconds": 6
+        },
+        {
+          "name": "CTA + Urgencia",
+          "summary": "Botón para ver video de 3 pasos, urgencia por exclusión ('antes de que otra persona lo haga')",
+          "estimated_seconds": 5
+        }
+      ],
+      "has_rehook": true,
+      "rehook_text": "Ahora entiendes por qué cualquier persona puede recibir estas notificaciones de venta."
+    },
+    "tone": {
+      "primary_tone": "Conversacional, aspiracional, directo, con confianza",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "mientras duermes",
+        "manera más honesta y efectiva",
+        "cualquier persona sin conocimiento ni experiencia",
+        "negocio listo",
+        "dejar que la IA haga el 90% del trabajo",
+        "comprobaron que funciona",
+        "antes de que otra persona lo haga por ti"
+      ]
+    },
+    "cta": {
+      "text": "Toca el botón que sale aquí abajo y mira el video donde te explico los 3 pasos que debes seguir. Toca el botón y conviértete en un franquiciado antes de que otra persona lo haga por ti.",
+      "type": "directo",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": true
+    },
+    "estimated_total_duration_seconds": 43,
+    "total_word_count": 287,
+    "emotional_arc": "Curiosidad (hook) → Identificación (yo también puedo) → Esperanza (rango de ingresos) → Alivio (IA hace el trabajo) → Validación (200+ casos) → FOMO/Urgencia (antes de que otro lo haga)",
+    "strengths": [
+      "Hook con pregunta provocadora que genera curiosidad inmediata",
+      "Demostración visual implícita (notificaciones en celular) crea credibilidad",
+      "Anticipación de objeción clave ('qué producto vender') y respuesta clara",
+      "Mecanismo simple y creíble: 45 min/día + IA hace 90%",
+      "Prueba social específica (200+ franquiciados) con métrica concreta",
+      "Urgencia por exclusión (FOMO) en lugar de escasez temporal",
+      "CTA dual: visual (botón) + verbal (instrucción clara)",
+      "Rango de ingresos ($450-900) es específico pero aspiracional",
+      "Lenguaje de 'franquicia' posiciona como modelo probado vs. experimento"
+    ],
+    "patterns_to_replicate": [
+      "Abrir con pregunta que invierte la creencia (ganar dinero MIENTRAS duermes, no trabajando)",
+      "Usar 'cualquier persona sin experiencia' para demoler barrera de entrada percibida",
+      "Presentar rango de ingresos específico (no 'mucho dinero') para credibilidad",
+      "Anticipar objeción más común y responderla con mecanismo claro (45 min + IA)",
+      "Incluir re-hook a mitad del guión para mantener atención en vertical",
+      "Usar prueba social con número específico (200+) antes del CTA",
+      "Crear urgencia por exclusión/FOMO ('antes de que otro lo haga') vs. escasez",
+      "CTA dual: instrucción verbal + referencia a elemento visual (botón)",
+      "Estructura: Hook → Identificación → Oportunidad → Objeción → Mecanismo → Prueba → Urgencia"
+    ],
+    "advertiser": {
+      "name": "Franquicia IA",
+      "platform": "unknown",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "LATAM"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Hook + Apertura",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Identificación del problema",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Presentación de la oportunidad",
+          "function": "quiebre"
+        },
+        {
+          "section_name": "Objeción anticipada + Mecanismo",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Prueba social + Demolición",
+          "function": "prueba"
+        },
+        {
+          "section_name": "CTA + Urgencia",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Ganar dinero por internet requiere experiencia, conocimiento, mucho tiempo y es complicado",
+        "mechanism": "La IA automatiza el 90% del trabajo, el modelo viene listo (producto, páginas, anuncios, videos), solo necesitas 45 min/día para activarlo",
+        "new_belief": "Cualquier persona sin experiencia puede ganar $450-900 semanales en una semana usando una franquicia IA que hace el trabajo por ti"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Hook pregunta provocadora"
+        },
+        {
+          "category": "B",
+          "ingredient_number": 5,
+          "ingredient_name": "Barrera de entrada (experiencia/conocimiento)"
+        },
+        {
+          "category": "C",
+          "ingredient_number": 12,
+          "ingredient_name": "Agitación por aspiración (ganar dinero durmiendo)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 18,
+          "ingredient_name": "Quiebre por inversión de creencia (sin experiencia puede hacerlo)"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 22,
+          "ingredient_name": "Autoridad por modelo probado (franquicia)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 35,
+          "ingredient_name": "Mecanismo: automatización IA (90% del trabajo)"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 38,
+          "ingredient_name": "Mecanismo: tiempo mínimo (45 min/día)"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 52,
+          "ingredient_name": "Prueba social: número específico (200+ franquiciados)"
+        },
+        {
+          "category": "H",
+          "ingredient_number": 61,
+          "ingredient_name": "Oferta: rango de ingresos específico ($450-900 semanales)"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 74,
+          "ingredient_name": "CTA directo con instrucción clara (toca el botón)"
+        },
+        {
+          "category": "J",
+          "ingredient_number": 88,
+          "ingredient_name": "Urgencia por FOMO/exclusión (antes de que otro lo haga)"
+        },
+        {
+          "category": "K",
+          "ingredient_number": 105,
+          "ingredient_name": "Lenguaje de democratización (cualquier persona)"
+        }
+      ],
+      "model_sale_type": "democratizacion_ia",
+      "awareness_level": 2,
+      "segment_equivalent": "A",
+      "big_idea": "Cualquier persona sin experiencia puede ganar $450-900 semanales dejando que una IA automatizada haga el 90% del trabajo en solo 45 minutos al día"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Estructura Hook-Identificación-Oportunidad-Objeción-Mecanismo-Prueba-Urgencia para ads de productos digitales con IA",
+        "Usar pregunta provocadora que invierte creencia común ('mientras duermes' vs. 'trabajando duro')",
+        "Demoler barrera de entrada con 'cualquier persona sin experiencia' al inicio",
+        "Presentar mecanismo IA como automatización de % específico (90%) + tiempo mínimo (45 min)",
+        "Incluir re-hook a mitad del guión para mantener atención en vertical video",
+        "Usar rango de ingresos específico ($450-900) en lugar de 'mucho dinero'",
+        "Prueba social con número específico (200+) antes de CTA",
+        "Urgencia por FOMO/exclusión ('antes de que otro lo haga') vs. escasez temporal",
+        "CTA dual: instrucción verbal + referencia visual (botón)",
+        "Posicionar como 'franquicia' o 'modelo probado' para credibilidad",
+        "Anticipar objeción más común ('qué producto vender') y responderla con solución lista",
+        "Usar lenguaje de 'negocio listo' (producto, páginas, anuncios, videos) para eliminar fricción"
+      ],
+      "what_not_to_copy": [
+        "No copiar el rango de ingresos específico ($450-900) sin validación local en LATAM (varía por país)",
+        "No usar '200+ franquiciados' sin tener prueba real (número puede parecer inflado)",
+        "No prometer '90% del trabajo por IA' sin especificar qué tipo de trabajo (puede generar expectativas falsas)",
+        "No usar 'mientras duermes' literalmente para productos que requieren activación diaria (crea disonancia)",
+        "No copiar el tono de 'franquicia' si el modelo no es realmente una franquicia legal (riesgo regulatorio en LATAM)",
+        "No usar urgencia por exclusión sin crear escasez real (puede parecer manipulador si se repite mucho)",
+        "No prometer 'cualquier persona' sin segmentar por edad/capacidad técnica mínima (expectativas falsas)"
+      ],
+      "craft_notes": [
+        "Ritmo: Oraciones cortas en hook (10 palabras) crean impacto. Mantener brevedad en secciones de apertura.",
+        "Cadencia: Alternancia entre preguntas y afirmaciones crea movimiento ('¿Cómo...?' → 'Es la manera...' → 'Ahora te estarás preguntando...')",
+        "Power words: 'honesta', 'efectiva', 'comprobaron', 'funciona' generan confianza. 'Franquicia' posiciona como modelo establecido.",
+        "Transiciones: 'Ahora entiendes por qué' es re-hook que conecta demostración con conclusión lógica",
+        "Estructura de objeción: '¿Qué producto vender?' es pregunta anticipada que crea tensión resuelta inmediatamente",
+        "Repetición estratégica: 'Toca el botón' se repite 2x para refuerzo (no es redundancia, es énfasis)",
+        "Especificidad: Números concretos ($450-900, 45 minutos, 90%, 200+) vs. vagos ('mucho', 'poco tiempo') crean credibilidad",
+        "Lenguaje de agencia: 'Tu único trabajo', 'dejar que la IA haga' invierte control (usuario delega, no trabaja)",
+        "Cierre: 'Entra y nos vemos en el video' es conversacional y crea continuidad (no es adiós, es 'nos vemos')"
+      ]
+    }
+  },
+  "folder": "individuales",
+  "createdAt": "2026-03-16T22:13:04.609Z"
+}
