@@ -13,7 +13,12 @@ export type HookType =
   | "contrato_compromiso"
   | "actuacion_dialogo"
   | "anti_publico"
-  | "simplificacion_error";
+  | "simplificacion_error"
+  | "nadie_explica"
+  | "hipotetico_personal"
+  | "identidad_dolor"
+  | "pregunta_limitacion"
+  | "asimetria_temporal";
 
 export type CTAType =
   | "directo"
@@ -55,6 +60,8 @@ export interface DevelopmentSection {
   is_rehook?: boolean;
   script_text: string;
   timing_seconds: number;
+  ipad_directions?: string[];
+  ipad_status?: "pending" | "ready" | "rejected";
 }
 
 export interface VisualFormat {

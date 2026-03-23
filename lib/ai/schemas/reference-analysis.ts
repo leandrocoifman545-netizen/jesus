@@ -130,6 +130,8 @@ export const REFERENCE_ANALYSIS_SCHEMA = {
             "pregunta_respuesta",
             "analogia_extendida",
             "contraste_emocional",
+            "demolicion_alternativas",
+            "qa_conversacional",
           ],
         },
         persuasion_functions: {
@@ -246,7 +248,7 @@ export interface ReferenceAnalysis {
   };
   generation_mapping?: {
     angle_family?: "identidad" | "oportunidad" | "confrontacion" | "mecanismo" | "historia";
-    body_type?: "demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional";
+    body_type?: "demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional" | "demolicion_alternativas" | "qa_conversacional";
     persuasion_functions?: { section_name: string; function: string }[];
     belief_change?: { old_belief: string; mechanism: string; new_belief: string };
     ingredients_detected?: { category: string; ingredient_number: number; ingredient_name: string }[];

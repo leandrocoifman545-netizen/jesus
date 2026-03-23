@@ -63,12 +63,19 @@ Una vez que el nivel 2 definió QUÉ decir, este nivel define la forma.
 
 ## Nivel 4 — ENRIQUECIMIENTO (agrega sabor real)
 
-**Fuentes:** `avatar-frases-reales.md`, `inteligencia-audiencia.md`, `jesus-historia.md`, `formatos-visuales.md`
+**Fuentes:** `inteligencia-compradores.md`, `avatar-frases-reales.md`, `inteligencia-audiencia.md`, `jesus-historia.md`, `formatos-visuales.md`
 
 Este nivel NUNCA define la dirección ni la estructura. Enriquece lo que los niveles 2 y 3 ya decidieron.
 
+### Jerarquía de frases reales (de mayor a menor peso):
+1. **Frases de COMPRADORES** (`inteligencia-compradores.md`) → máxima prioridad. Son de 562 personas que YA PAGARON. Reflejan dolores y lenguaje de quien CONVIERTE.
+2. **Frases de LEADS** (`avatar-frases-reales.md`, `inteligencia-audiencia.md`) → complementarias. Más volumen (8,074 leads) pero incluyen gente que no compró.
+3. **Frases escritas** → solo si no hay frase real que encaje. Usar VOCABULARIO del segmento (`motor-audiencia.md` sección 3).
+4. **Frases inventadas** → NUNCA.
+
 ### Regla sobre frases reales:
 - **SIEMPRE usar frases reales del avatar** cuando existan para el contexto.
+- **Priorizar frases de compradores sobre frases de leads** cuando ambas estén disponibles para el mismo dolor/contexto.
 - Si la frase real es de un segmento distinto al elegido → **adaptar la frase al tono del segmento correcto**, manteniendo la esencia y las palabras clave.
 - Si no hay frase real que encaje → escribir una nueva usando el VOCABULARIO del segmento (de `motor-audiencia.md` sección 3).
 - Las frases reales son COMPLEMENTO que da autenticidad, no la base de todo lead o sección.

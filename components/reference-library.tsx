@@ -137,6 +137,7 @@ interface AudioFileEntry {
 
 function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targetFolder?: string }) {
   const [files, setFiles] = useState<AudioFileEntry[]>([]);
+  const [groqTier, setGroqTier] = useState<"free" | "paid" | "">("");
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<{ name: string; ok: boolean; error?: string }[] | null>(null);
 
@@ -161,7 +162,7 @@ function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targe
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (files.length === 0) return;
+    if (files.length === 0 || !groqTier) return;
     setLoading(true);
     setResults(null);
 
@@ -174,6 +175,7 @@ function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targe
         const formData = new FormData();
         formData.append("file", entry.file);
         formData.append("title", entry.title);
+        formData.append("groqTier", groqTier);
         if (targetFolder) {
           formData.append("folder", targetFolder);
         }
@@ -269,9 +271,39 @@ function AudioUploadForm({ onAdded, targetFolder }: { onAdded: () => void; targe
           {results.filter((r) => r.ok).length}/{results.length} archivos procesados correctamente
         </div>
       )}
+      {files.length > 0 && (
+        <div className="space-y-2">
+          <label className="text-xs font-medium text-zinc-400">Groq API Key <span className="text-red-400">*</span></label>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setGroqTier("free")}
+              className={`flex-1 px-3 py-2 rounded-lg text-xs font-medium border transition-all duration-200 ${
+                groqTier === "free"
+                  ? "border-green-500/50 bg-green-500/10 text-green-400"
+                  : "border-zinc-700 bg-zinc-800/50 text-zinc-500 hover:border-zinc-600"
+              }`}
+            >
+              Gratis
+            </button>
+            <button
+              type="button"
+              onClick={() => setGroqTier("paid")}
+              className={`flex-1 px-3 py-2 rounded-lg text-xs font-medium border transition-all duration-200 ${
+                groqTier === "paid"
+                  ? "border-amber-500/50 bg-amber-500/10 text-amber-400"
+                  : "border-zinc-700 bg-zinc-800/50 text-zinc-500 hover:border-zinc-600"
+              }`}
+            >
+              Paga (videos largos)
+            </button>
+          </div>
+          {!groqTier && <p className="text-[10px] text-red-400/70">Elegí qué key usar antes de transcribir</p>}
+        </div>
+      )}
       <button
         type="submit"
-        disabled={loading || files.length === 0 || files.every((f) => f.status === "done")}
+        disabled={loading || files.length === 0 || !groqTier || files.every((f) => f.status === "done")}
         className="bg-gradient-to-r from-purple-600 to-violet-600 hover:shadow-lg hover:shadow-purple-500/20 disabled:bg-zinc-800 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-600 disabled:shadow-none text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2"
       >
         {loading ? (

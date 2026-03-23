@@ -58,7 +58,15 @@ export async function POST(req: NextRequest) {
       createdAt: new Date().toISOString(),
     });
 
-    const script = await generateScript(brief);
+    const { script, validation } = await generateScript(brief);
+
+    // Block save if validation still fails after retry (hard errors only)
+    if (!validation.passed) {
+      return NextResponse.json({
+        error: "El guion no pasó la validación después de 2 intentos",
+        validation_issues: validation.issues,
+      }, { status: 422 });
+    }
 
     const generationId = crypto.randomUUID();
     const title = generateAutoTitle(script, brief.additionalNotes);

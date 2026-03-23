@@ -1,0 +1,70 @@
+{
+  "id": "explicativa-que-hago-01",
+  "title": "Explicativa: Que Hago (Highlight nuevos seguidores)",
+  "sequence_type": "explicativa_servicio",
+  "status": "draft",
+  "notes": "Para highlight fijo. Nuevos seguidores ven esto primero. Estilo Joaco Coronel + pizarra a mano.",
+  "slides": [
+    {
+      "number": 1,
+      "narration": "",
+      "visual": "Foto selfie de Jesus sonriendo, texto: 'Si recien me seguis, mira esto'",
+      "format": "F1",
+      "seconds": 5,
+      "interaction": null
+    },
+    {
+      "number": 2,
+      "narration": "Mucha gente me pregunta que hago. Te lo explico en 30 segundos.",
+      "visual": "Video selfie hablando a camara",
+      "format": "V1",
+      "seconds": 6,
+      "interaction": null
+    },
+    {
+      "number": 3,
+      "narration": "Hay 3 enemigos que te frenan de ganar plata por internet.",
+      "visual": "Pizarra dibujada a mano: 3 monigotes con X roja. 1) Solo mirar videos 2) Comprar cursos y no hacer nada 3) Intentar solo sin sistema",
+      "format": "A2",
+      "seconds": 8,
+      "interaction": null
+    },
+    {
+      "number": 4,
+      "narration": "Yo te enseno un sistema de 3 pasos. Paso 1: investigas que productos se estan vendiendo. Paso 2: lo creas con inteligencia artificial. Paso 3: lo vendes con campanas de publicidad.",
+      "visual": "Pizarra: 3 flechas con los pasos dibujados. Investigar -> Crear con IA -> Vender con ads",
+      "format": "A2",
+      "seconds": 12,
+      "interaction": null
+    },
+    {
+      "number": 5,
+      "narration": "",
+      "visual": "Capturas de DMs y comentarios de alumnos con resultados. Fondo negro + capturas agrupadas + texto: 'Esto dicen ellos'",
+      "format": "C3",
+      "seconds": 5,
+      "interaction": null
+    },
+    {
+      "number": 6,
+      "narration": "Si queres aprender como funciona, tengo una clase gratuita. Escribime CLASE y te mando el link.",
+      "visual": "Video selfie. Keyword CLASE grande en color distinto",
+      "format": "V1",
+      "seconds": 7,
+      "interaction": "keyword_response"
+    },
+    {
+      "number": 7,
+      "narration": "",
+      "visual": "Foto del documento/recurso (clase gratuita) por fuera + por dentro. Encuesta: 'Te interesa?' Si/No",
+      "format": "F9",
+      "seconds": 5,
+      "interaction": "encuesta"
+    }
+  ],
+  "total_seconds": 48,
+  "rules_applied": ["R1", "R3", "R7", "R14", "R15", "R38", "R39", "R40", "R45"],
+  "triggers": ["autoridad", "prueba_social", "curiosidad"],
+  "highlight_name": "COMO FUNCIONA",
+  "createdAt": "2026-03-23T10:00:00.000Z"
+}

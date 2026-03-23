@@ -46,6 +46,16 @@ Evaluar la transcripción en estas dimensiones:
 13. **Segmento equivalente** — ¿A, B, C o D?
 14. **Big idea** — ¿Cuál es LA idea central en una frase?
 
+#### Análisis de Copy Escrito (si es un ad de imagen/texto)
+Si la referencia es un ad de imagen (no video), analizar también con el Winner Teardown Template:
+- **Copy structure:** ¿Cuál de las 8 estructuras usa? (storytelling/testimonio/math-based/contrarian/listicle/before-after/descubrimiento/comparación)
+- **Anatomía de 6 bloques:** Identificar HOOK (15-25 palabras) → AGITACIÓN → PIVOTE → PRUEBA → PUENTE → CTA
+- **Anti-ficción:** ¿Tiene detalles que nadie inventaría? Listar los mejores.
+- **Mecanismo:** ¿Tiene nombre propietario? ¿Cómo lo introduce?
+- **Quality Scorecard:** Evaluar 1-5 en: hook power, especificidad, emoción visceral, prueba creíble, CTA baja fricción, voz (si es en español)
+- **Señales de winner:** Tiempo activo (3+ meses = winner confirmado), múltiples variantes del mismo anunciante = están testeando
+- **Qué robar para copies ADP:** Elementos adaptables a nuestro sistema
+
 ### Extracción accionable (NUEVO — obligatorio)
 15. **Qué robar** — Técnicas específicas que podemos adaptar para ADP
 16. **Qué NO copiar** — Qué no aplica o sería contraproducente

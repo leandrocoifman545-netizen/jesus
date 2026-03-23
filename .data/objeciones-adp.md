@@ -75,3 +75,60 @@ Solo el verbatim de la objeción + la respuesta de una línea. Sin contexto. Dir
 | No sé qué crear | A (jóvenes 25-35) | B (intentaron y fallaron) |
 | ¿Y si no vendo? | B (intentaron) | A (escépticos jóvenes) |
 | Vi videos y no hice nada | B (intentaron) | C (mamás ocupadas) |
+
+---
+
+## Objeciones adicionales (del Ad Factory Objection Bank)
+
+Estas 6 objeciones complementan las 4 universales de arriba. Vienen del research de 50+ ads winners.
+
+### 5. "No tengo tiempo"
+**Frase real:** "Entre el trabajo y los chicos no tengo ni una hora libre"
+**Respuesta para copy:** "Martín armó su producto en un fin de semana. Sofía lo hizo mientras cocinaba. No necesitás 8 horas libres — necesitás 2 tardes."
+- **Ingredientes:** #54 Analogía Simple, #84 Stack de Herramientas Simples
+- **Mejor para:** Segmento C (mamás), Segmento A (empleados)
+
+### 6. "Eso funciona en EEUU, acá no"
+**Frase real:** "Allá es otro mercado, acá la gente no compra online"
+**Respuesta para copy:** "Marta en Salta. Héctor en Mendoza. Diego en Buenos Aires. Valeria en Rosario. Funciona acá. Con pesos argentinos. Con clientes argentinos."
+- **Ingredientes:** #44 Prueba Social Apilada, #98 Tres Deliverables Claros
+- **Mejor para:** Segmento D (escépticos mayores), Segmento B (intentaron y fallaron)
+
+### 7. "No tengo seguidores"
+**Frase real:** "Ni 100 seguidores tengo, ¿quién me va a comprar?"
+**Respuesta para copy:** "Valeria vendió $134.750 compartiéndolo en 3 grupos de Facebook. Cero seguidores. Cero página web. Cero inversión en ads."
+- **Ingredientes:** #74 Eliminación de Complejidad, #44 Prueba Social Apilada
+- **Mejor para:** Segmento A (empleados que quieren empezar), Segmento C (mamás)
+
+### 8. "Suena muy fácil, debe ser mentira"
+**Frase real:** "Si fuera tan fácil todo el mundo lo haría"
+**Respuesta para copy:** "No es fácil. Es SIMPLE. Que no es lo mismo. Requiere trabajo — pero trabajo inteligente. La diferencia es que antes necesitabas saber programar, diseñar y escribir. Hoy la IA hace eso por vos."
+- **Ingredientes:** #43 La Verdad Incómoda, #63 Anti-Autoridad
+- **Mejor para:** Segmento B (escépticos que intentaron), Segmento D (mayores cautelosos)
+
+### 9. "No sé qué vender"
+**Frase real:** "No tengo ninguna habilidad especial, ¿qué producto voy a hacer?"
+**Respuesta para copy:** "Tu producto está escondido en la pregunta que más te hacen. Héctor sabía hacer asados. Marta sabía matemáticas de primaria. Valeria tenía planillas de Excel. Todos tenemos algo que otros pagarían por aprender."
+- **Ingredientes:** #53 El Permiso, #72 New Opportunity
+- **Mejor para:** Todos los segmentos (objeción universal)
+
+### 10. "Ya probé y no funcionó"
+**Frase real:** "Compré 3 cursos y nunca hice nada con ninguno"
+**Respuesta para copy:** "El 90% que falla crea el producto antes de validar. Invierte meses en algo que nadie quiere. Este método valida PRIMERO — con $5 sabés si tu idea tiene mercado. Sin arriesgar meses de tu vida."
+- **Ingredientes:** #72 New Opportunity (REEMPLAZO), #43 La Verdad Incómoda
+- **Mejor para:** Segmento B (primario), Segmento A (secundario)
+
+### Mapeo completo Objeción → Segmento (10 objeciones)
+
+| # | Objeción | Segmento primario | Segmento secundario |
+|---|---------|-------------------|---------------------|
+| 1 | "No sé de tecnología" | C (mamás 40+) | D (jubilados) |
+| 2 | "No sé qué crear" | A (empleados) | B (intentaron) |
+| 3 | "¿Y si no vendo?" | B (intentaron) | A (empleados) |
+| 4 | "Vi videos y no hice nada" | B (intentaron) | C (mamás) |
+| 5 | "No tengo tiempo" | C (mamás) | A (empleados) |
+| 6 | "Eso no funciona acá" | D (escépticos) | B (intentaron) |
+| 7 | "No tengo seguidores" | A (empleados) | C (mamás) |
+| 8 | "Suena muy fácil" | B (escépticos) | D (mayores) |
+| 9 | "No sé qué vender" | Todos | Todos |
+| 10 | "Ya probé y no funcionó" | B (intentaron) | A (empleados) |

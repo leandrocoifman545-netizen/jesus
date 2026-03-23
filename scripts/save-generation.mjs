@@ -210,6 +210,45 @@ if (bodyText && (bodyText.includes(" tú ") || bodyText.includes(" tienes ") || 
   errors.push("El cuerpo usa 'tú/tienes/puedes' en vez de voseo argentino");
 }
 
+// ── Vocabulario prohibido: Jesús habla informal, no como consultor ──
+const VOCABULARIO_PROHIBIDO = [
+  { regex: /\btransform(ar|ación|ando|ó|á)\b/i, palabra: "transformar/transformación", reemplazo: "cambiar" },
+  { regex: /\bgenerar?\s+ingresos\b/i, palabra: "generar ingresos", reemplazo: "ganar plata / hacer plata" },
+  { regex: /\bemprendimiento\b/i, palabra: "emprendimiento", reemplazo: "negocio / producto" },
+  { regex: /\bpotenci(ar|ando|á)\b/i, palabra: "potenciar", reemplazo: "eliminarlo (no tiene reemplazo)" },
+  { regex: /\boptimiz(ar|ando|á)\b/i, palabra: "optimizar", reemplazo: "mejorar" },
+  { regex: /\bimplement(ar|ando|ó|á)\b/i, palabra: "implementar", reemplazo: "hacer / armar" },
+  { regex: /\bmonetiz(ar|ando|á)\b/i, palabra: "monetizar", reemplazo: "vender / cobrar" },
+  { regex: /\bdiversific(ar|ando|á)\b/i, palabra: "diversificar", reemplazo: "tener más de una fuente" },
+  { regex: /\bsostenible\b/i, palabra: "sostenible", reemplazo: "que dure / consistente" },
+  { regex: /\bparadigma\b/i, palabra: "paradigma", reemplazo: "NUNCA usar" },
+  { regex: /\becosistema\b/i, palabra: "ecosistema", reemplazo: "NUNCA usar (figurativo)" },
+  { regex: /\bapalancarse?\b/i, palabra: "apalancarse", reemplazo: "NUNCA usar" },
+  { regex: /\bsinergia\b/i, palabra: "sinergia", reemplazo: "NUNCA usar" },
+  { regex: /\bdisruptivo\b/i, palabra: "disruptivo", reemplazo: "NUNCA usar" },
+  { regex: /\bingresos?\s+pasivos?\b/i, palabra: "ingresos pasivos", reemplazo: "plata mientras dormís" },
+  { regex: /\bescalable\b/i, palabra: "escalable", reemplazo: "que crece solo / que se vende solo" },
+];
+
+// Combine all script text: body sections + hooks + transition
+const allScriptText = [
+  bodyText,
+  (script.hooks || []).map(h => h.script_text || h.text || "").join(" "),
+  script.transition_text || "",
+].join(" ");
+
+if (allScriptText.trim()) {
+  const vocabViolations = [];
+  for (const rule of VOCABULARIO_PROHIBIDO) {
+    if (rule.regex.test(allScriptText)) {
+      vocabViolations.push(`"${rule.palabra}" → usá: ${rule.reemplazo}`);
+    }
+  }
+  if (vocabViolations.length > 0) {
+    errors.push(`🗣️ Vocabulario prohibido (Jesús no habla así):\n    ${vocabViolations.join("\n    ")}`);
+  }
+}
+
 // ── Angle duplicate check: block if angle_specific exists in confirmed/recorded generations ──
 // Only checks generations with status "confirmed" or "recorded" (not drafts).
 // Drafts get deleted by the user, so they don't count.

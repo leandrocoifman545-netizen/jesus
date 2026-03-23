@@ -323,5 +323,245 @@
     "text": "Las búsquedas de 'cómo manejar la ansiedad' y 'terapias online' se duplicaron en 2 años. Millones de personas buscan ayuda con su salud mental. Y la mayoría encuentra artículos genéricos que no sirven. Ahí hay una oportunidad enorme para alguien que sepa del tema.",
     "fromGenerationId": "34afd107-abae-445d-b7d1-169af2dfc0d5",
     "burnedAt": "2026-03-15T18:53:08.612Z"
+  },
+  {
+    "text": "Estoy en la cama de un hotel. No es vacaciones — estoy laburando. Pero mi negocio no necesita que esté en ningún lugar fijo. El tuyo sí. Y ese es el problema.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+    "burnedAt": "2026-03-18T18:54:33.705Z"
+  },
+  {
+    "text": "Si mañana te enfermás, tu negocio de coaching se para. Si te querés tomar una semana, no cobrás. Eso no es un negocio — es un empleo donde vos sos el jefe y el empleado.",
+    "hookType": "provocacion",
+    "fromGenerationId": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+    "burnedAt": "2026-03-18T18:54:33.705Z"
+  },
+  {
+    "text": "Sos como un chef que cocina platos increíbles pero solo puede servir una mesa por vez. Mientras tanto, otro chef empaquetó sus recetas y las vende a miles. Mismo talento. Distinto modelo.",
+    "hookType": "analogia_cotidiana",
+    "fromGenerationId": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+    "burnedAt": "2026-03-18T18:54:33.705Z"
+  },
+  {
+    "text": "Hace 3 años empezaste a hacer coaching. Hoy cobrás un poco más. Dentro de 3 años vas a cobrar un poco más. Pero vas a seguir cambiando horas por plata. A menos que cambies el modelo.",
+    "hookType": "timeline_provocacion",
+    "fromGenerationId": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+    "burnedAt": "2026-03-18T18:54:33.705Z"
+  },
+  {
+    "text": "Tuve 100 clientes. Ganaba $10,000 al mes. Y fue el peor momento de mi vida. No dormía. Hoy estoy en la cama de un hotel generando plata con productos digitales. Te cuento qué cambié.",
+    "hookType": "confesion",
+    "fromGenerationId": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+    "burnedAt": "2026-03-18T18:54:33.705Z"
+  },
+  {
+    "text": "Estás en otro país. Trabajás de lo que hay. Mandás plata a tu familia y con lo que te queda apenas cubrís el alquiler. Si pudieras generar ingresos desde el celular, sin depender de papeles ni horarios, ¿lo harías?",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+    "burnedAt": "2026-03-18T19:32:58.019Z"
+  },
+  {
+    "text": "La gente está buscando desesperadamente cómo manejar su plata. 'Cómo organizar mis gastos' está en máximos en Google. Miles de personas buscando algo que vos podrías crear en una tarde. Y casi nadie se lo vende.",
+    "hookType": "observacion_tendencia",
+    "fromGenerationId": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+    "burnedAt": "2026-03-18T19:32:58.019Z"
+  },
+  {
+    "text": "Laburás 10 horas por día para ganar lo que alguien gana vendiendo una guía de $8 desde su celular. No es magia — es un modelo de negocio que no existía hace 2 años y que funciona desde cualquier país.",
+    "hookType": "provocacion",
+    "fromGenerationId": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+    "burnedAt": "2026-03-18T19:32:58.019Z"
+  },
+  {
+    "text": "No necesitás ser economista para vender una guía de finanzas. Si alguna vez le explicaste a un amigo cómo armar un presupuesto, ya tenés más que suficiente. El título lo pone la IA. El conocimiento lo ponés vos.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+    "burnedAt": "2026-03-18T19:32:58.019Z"
+  },
+  {
+    "text": "Yo también arranqué sin nada. Sin contactos, sin plata, en otro país. Y lo primero que entendí es que internet no tiene código postal. Si tenés un celular y Wi-Fi, tenés un negocio. Te cuento cómo.",
+    "hookType": "confesion",
+    "fromGenerationId": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+    "burnedAt": "2026-03-18T19:32:58.019Z"
+  },
+  {
+    "text": "Hay alguien ganando plata con algo que vos hacés mejor que él. Y sí, es injusto. Pero no por lo que pensás.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+    "burnedAt": "2026-03-19T17:34:17.015Z"
+  },
+  {
+    "text": "\"Tenés un trabajo de oficina. Llegás a tu casa, abrís el celular y te ponés a mirar videos de cómo ganar plata. Todos los días. ¿Y sabés qué es lo más loco? Que ya tenés todo lo que necesitás para hacerlo. Te muestro la ÚNICA cosa que te falta.\"                                                                                                                                                                                                                       \n                   ",
+    "hookType": "historia_mini",
+    "fromGenerationId": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+    "burnedAt": "2026-03-19T17:34:17.015Z"
+  },
+  {
+    "text": "Vos mismo lo dijiste: 'me fuerzo y las cosas no pasan'. ¿Sabés por qué no pasan? Porque estás usando lo que sabés para todo menos para lo único que te puede dar plata.",
+    "hookType": "provocacion",
+    "fromGenerationId": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+    "burnedAt": "2026-03-19T17:34:17.015Z"
+  },
+  {
+    "text": "Yo ya estuve donde vos estás. Sabía un montón de cosas y no ganaba un peso con ninguna. Hasta que entendí que el problema no era lo que me faltaba. Era algo que estaba haciendo todos los días sin darme cuenta. Y vos probablemente lo estás haciendo ahora mismo",
+    "hookType": "dato_concreto",
+    "fromGenerationId": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+    "burnedAt": "2026-03-19T17:34:17.015Z"
+  },
+  {
+    "text": "Cuanto más aprendés, más lejos estás de ganar plata. Suena raro pero es exactamente lo que te está pasando. Te explico por qué y qué hacer en vez de seguir mirando videos.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+    "burnedAt": "2026-03-19T17:34:17.015Z"
+  },
+  {
+    "text": "Hay un sonido que te arruina la vida. Escucha: Es el de la alarma de cada lunes a la mañana. Seguro ahora la estás escuchando ahora en tu cabeza. Yo dejé de escucharla. Y no fue cambiando de trabajo.",
+    "hookType": "sensorial",
+    "fromGenerationId": "93700f4a-1f41-45e6-b593-6243470fa50a",
+    "burnedAt": "2026-03-19T22:54:20.543Z"
+  },
+  {
+    "text": "1.560 domingos a la noche. Eso es lo que te quedan hasta jubilarte si tenés 30 años. 1.560 veces más vas a sentir eso que sentís cada domingo. A menos que cambies una sola cosa.",
+    "hookType": "dato_impacto",
+    "fromGenerationId": "93700f4a-1f41-45e6-b593-6243470fa50a",
+    "burnedAt": "2026-03-19T22:54:20.543Z"
+  },
+  {
+    "text": "Tu viejo odiaba los domingos a la noche. Tu abuelo también. Y vos estás repitiendo exactamente lo mismo. Pero no tiene por qué ser hereditario.",
+    "hookType": "generacional",
+    "fromGenerationId": "93700f4a-1f41-45e6-b593-6243470fa50a",
+    "burnedAt": "2026-03-19T22:54:20.543Z"
+  },
+  {
+    "text": "Mañana a las 7:05 vas a estar mirando el techo con la alarma sonando. Y vas a pensar 'un ratito más'. No porque tengas sueño. Porque no querés arrancar. Y eso no se arregla con un mejor trabajo. Se arregla con otro modelo. Mira.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "93700f4a-1f41-45e6-b593-6243470fa50a",
+    "burnedAt": "2026-03-19T22:54:20.543Z"
+  },
+  {
+    "text": "¿Sabés cuál es el día más corto de la semana? El domingo. Porque desde las 5 de la tarde ya estás pensando en el lunes. Te roban medio día todas las semanas. Y vos lo dejás pasar.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "93700f4a-1f41-45e6-b593-6243470fa50a",
+    "burnedAt": "2026-03-19T22:54:20.543Z"
+  },
+  {
+    "text": "Lo que te voy a contar no lo cuento mucho. No porque me dé vergüenza. Sino porque cada vez que lo cuento se me hace un nudo en la garganta",
+    "hookType": "confesion",
+    "fromGenerationId": "bbbec157-8080-4b0b-b470-14500a23cfea",
+    "burnedAt": "2026-03-20T00:44:35.212Z"
+  },
+  {
+    "text": "Hay cosas que no se cuentan en un video. Cosas que te guardás. Hoy me voy a dejar de guardar una y te voy a contar mi historia.",
+    "hookType": "historia_mini",
+    "fromGenerationId": "bbbec157-8080-4b0b-b470-14500a23cfea",
+    "burnedAt": "2026-03-20T00:44:35.212Z"
+  },
+  {
+    "text": "Vos me ves acá en la cama y pensás que siempre fue así. Que nací en cuna de plata. Que tuve contactos. Te equivocás en las tres.\"",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "bbbec157-8080-4b0b-b470-14500a23cfea",
+    "burnedAt": "2026-03-20T00:44:35.212Z"
+  },
+  {
+    "text": "Estoy en la cama. Cómodo. Y eso es raro para mí. Porque durante mucho tiempo la cama no era un lugar cómodo.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "bbbec157-8080-4b0b-b470-14500a23cfea",
+    "burnedAt": "2026-03-20T00:44:35.212Z"
+  },
+  {
+    "text": "Yo no debería estar acá. Estadísticamente, alguien de donde vengo no llega a esto. Y menos a generar un millón de dólares con un solo producto. Pero acá estoy.",
+    "hookType": "timeline_provocacion",
+    "fromGenerationId": "bbbec157-8080-4b0b-b470-14500a23cfea",
+    "burnedAt": "2026-03-20T00:44:35.212Z"
+  },
+  {
+    "text": "Mañana a las 7:05 vas a abrir los ojos y lo primero que vas a sentir no es sueño. Es peso. El peso de saber que las próximas 9 horas no son tuyas. Te dibujo dos versiones de ese lunes.",
+    "hookType": "futuro_sensorial",
+    "fromGenerationId": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+    "burnedAt": "2026-03-20T03:10:50.720Z"
+  },
+  {
+    "text": "2.340 horas. Eso es lo que le regalás por año a un trabajo que no te deja nada propio. ¿Y no sos capaz de usar 30 minutos por día para construir algo tuyo? ",
+    "hookType": "dato_concreto",
+    "fromGenerationId": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+    "burnedAt": "2026-03-20T03:10:50.720Z"
+  },
+  {
+    "text": "Tu jefe duerme tranquilo porque sabe que mañana vas a estar ahí. Vos no dormís tranquilo porque sabés que mañana vas a estar ahí. ",
+    "hookType": "provocacion",
+    "fromGenerationId": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+    "burnedAt": "2026-03-20T03:10:50.720Z"
+  },
+  {
+    "text": "Yo odiaba los lunes. No por el trabajo — por saber que las mejores horas de mi vida se las daba a alguien más. Hasta que encontré la forma de quedarme con esas horas. Sin renunciar.",
+    "hookType": "confesion",
+    "fromGenerationId": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+    "burnedAt": "2026-03-20T03:10:50.720Z"
+  },
+  {
+    "text": "Las personas que mejor les va con productos digitales no renunciaron a su trabajo. Empezaron mientras seguían cobrando su sueldo. Y esa es la ventaja que vos tenés ahora y no estás viendo.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+    "burnedAt": "2026-03-20T03:10:50.720Z"
+  },
+  {
+    "text": "¿Qué modelo de vida les estás mostrando a tus hijos? No lo que les decís. Lo que VEN. Porque ellos ven todo. Y están aprendiendo de eso.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "690611ec-f293-493b-b4e5-e8899c33a235",
+    "burnedAt": "2026-03-20T05:08:38.281Z"
+  },
+  {
+    "text": "Cada trabajo que mirás te pide lo mismo: estar ahí 8 horas. Pero con este modelo solo necesitás 30 minutos a la noche. Con eso alcanza.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "690611ec-f293-493b-b4e5-e8899c33a235",
+    "burnedAt": "2026-03-20T05:08:38.281Z"
+  },
+  {
+    "text": "La última vez que pensaste en generar plata, lo primero que dijiste fue 'no tengo tiempo'. ¿Y si el tiempo no fuera el problema?\" mira",
+    "hookType": "confesion",
+    "fromGenerationId": "690611ec-f293-493b-b4e5-e8899c33a235",
+    "burnedAt": "2026-03-20T05:08:38.281Z"
+  },
+  {
+    "text": "Le decís a tus hijos 'pueden ser lo que quieran'. Pero cada día te ven corriendo de un lado al otro, estresada, sin tiempo. ¿Qué están aprendiendo realmente?",
+    "hookType": "provocacion",
+    "fromGenerationId": "690611ec-f293-493b-b4e5-e8899c33a235",
+    "burnedAt": "2026-03-20T05:08:38.281Z"
+  },
+  {
+    "text": "No necesitás elegir entre tus hijos y generar plata. Ese dilema es mentira. Y te lo voy a demostrar en el pizarrón.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "690611ec-f293-493b-b4e5-e8899c33a235",
+    "burnedAt": "2026-03-20T05:08:38.281Z"
+  },
+  {
+    "text": "No importa si tenés entre 25 o 55 años. No importa si nunca vendiste nada online. Hay tres modelos de negocio que podés arrancar hoy desde tu casa.",
+    "hookType": "eliminacion_barreras",
+    "fromGenerationId": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
+    "burnedAt": "2026-03-21T13:38:43.869Z"
+  },
+  {
+    "text": "Hay 3 formas de ganar plata por internet. 2 te hacen laburar para otro. La tercera es la que yo hago y te genera ingresos en dólares mientras dormís.",
+    "hookType": "dato_concreto",
+    "fromGenerationId": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
+    "burnedAt": "2026-03-21T13:38:43.869Z"
+  },
+  {
+    "text": "Si estás pensando en Fiverr o en vender productos de otro, pará un segundo. Te estás metiendo en el modelo equivocado y te lo voy a demostrar acá.",
+    "hookType": "provocacion",
+    "fromGenerationId": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
+    "burnedAt": "2026-03-21T13:38:43.869Z"
+  },
+  {
+    "text": "¿Sabías que la mayoría de la gente que intenta ganar plata online elige el peor de los 3 modelos que existen? Te dibujo los 3 y vos me decís cuál elegirías.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
+    "burnedAt": "2026-03-21T13:38:43.869Z"
+  },
+  {
+    "text": "El modelo de negocio online más fácil de arrancar es el que menos gente conoce. No es freelancing. No es afiliados. Es algo que podés hacer con tu celular y sin saber de tecnología.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
+    "burnedAt": "2026-03-21T13:38:43.869Z"
   }
 ]

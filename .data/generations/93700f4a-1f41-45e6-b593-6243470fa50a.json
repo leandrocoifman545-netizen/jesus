@@ -1,0 +1,442 @@
+{
+  "id": "93700f4a-1f41-45e6-b593-6243470fa50a",
+  "briefId": "14c8c0f6-f430-46af-8247-4f316316c3b5",
+  "title": "El domingo a la noche — Ese nudo en el estómago",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.2_oficinista_atrapado",
+    "body_type": "contraste_emocional",
+    "segment": "A",
+    "funnel_stage": "RETARGET",
+    "niche": "ninguno / emoción universal",
+    "model_sale_type": "tiempo_vs_dinero",
+    "visual_format": "split_screen_cama_ipad",
+    "avatar": "martin",
+    "awareness_level": 2,
+    "emotional_arc": "dolor_puro_esperanza",
+    "tension": "T1",
+    "transition_text": "Y ese modelo te lo puedo enseñar.",
+    "total_duration_seconds": 85,
+    "word_count": 205,
+    "belief_change": {
+      "old_belief": "Los domingos a la noche siempre van a ser así",
+      "mechanism": "Existe un modelo donde tu ingreso no depende de que estés presente el lunes",
+      "new_belief": "La angustia del domingo no es inevitable — es un síntoma del modelo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Este tipo sentía exactamente lo que yo siento",
+        "installed_via": "Descripción visceral del domingo a la noche",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "El problema no es el lunes — es que mi ingreso depende de estar ahí",
+        "installed_via": "Redefinición: no es el trabajo, es el modelo",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe algo que funciona sin que yo esté",
+        "installed_via": "Su domingo a la noche vs el mío — ventas automáticas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito nada especial para hacerlo",
+        "installed_via": "IA hace el producto, no necesitás título ni seguidores",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Esto funciona ahora mismo, en tiempo real",
+        "installed_via": "Ventas del fin de semana en pantalla",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "sensorial",
+        "script_text": "Hay un sonido que te arruina la vida. Escucha: Es el de la alarma de cada lunes a la mañana. Seguro ahora la estás escuchando ahora en tu cabeza. Yo dejé de escucharla. Y no fue cambiando de trabajo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_impacto",
+        "script_text": "1.560 domingos a la noche. Eso es lo que te quedan hasta jubilarte si tenés 30 años. 1.560 veces más vas a sentir eso que sentís cada domingo. A menos que cambies una sola cosa.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "generacional",
+        "script_text": "Tu viejo odiaba los domingos a la noche. Tu abuelo también. Y vos estás repitiendo exactamente lo mismo. Pero no tiene por qué ser hereditario.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "script_text": "Mañana a las 7:05 vas a estar mirando el techo con la alarma sonando. Y vas a pensar 'un ratito más'. No porque tengas sueño. Porque no querés arrancar. Y eso no se arregla con un mejor trabajo. Se arregla con otro modelo. Mira.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "script_text": "¿Sabés cuál es el día más corto de la semana? El domingo. Porque desde las 5 de la tarde ya estás pensando en el lunes. Te roban medio día todas las semanas. Y vos lo dejás pasar.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este tipo sentía exactamente lo que yo siento",
+          "script_text": "Imaganite esto. Es domingo a la noche. Esa sensación en el estómago. Sabés exactamente de qué te estoy hablando. Mañana arranca otra semana. El despertador a las 7. El subte lleno. El jefe. Las 8 horas. Y vos acá en la cama, pensando en todo eso en vez de descansar.",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "reloj mostrando \"Domingo 23:47\"",
+            "alarma configurada: \"Lunes 7:00 AM\" — lista para sonar en 7 horas"
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El problema no es el lunes — es que mi ingreso depende de estar ahí",
+          "script_text": "Yo sentía exactamente lo mismo. Todos los domingos. Esa angustia que no te deja dormir. Hasta que un día entendí algo: el problema no era el lunes. El problema era que mi ingreso dependía de que yo estuviera ahí. Si no iba, no cobraba. Mi tiempo no era mío. Ese era el problema real.",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "calendario semanal lleno — bloques de 9:00 a 18:00, lunes a viernes, todo ocupado",
+            "calculadora: \"Si no voy = no cobro. 1 día enfermo = 1 día sin plata\""
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe algo que funciona sin que yo esté",
+          "script_text": "Hoy es domingo a la noche y estoy en la cama. Pero mañana no suena ningún despertador. ¿Sabés por qué? Porque armé algo que funciona sin que yo esté. Un producto digital que se vende solo. La gente lo encuentra, me escribe por WhatsApp, paga, y lo recibe. Yo puedo estar durmiendo, descansando, donde quiera.",
+          "timing_seconds": 18,
+          "ipad_directions": [
+            "su calendario del lunes — completamente vacío, sin alarma, sin bloques",
+            "WhatsApp Business — ventas que entraron este fin de semana, con timestamps sábado y domingo",
+            "notificación de pago recibido mientras habla"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito nada especial para hacerlo",
+          "script_text": "\"Pero yo no sé de tecnología.\" No hace falta. La inteligencia artificial te arma el producto. Vos ponés lo que sabés — de lo que sea — y la IA hace el resto. No necesitás seguidores. No necesitás título. No necesitás invertir miles.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "ChatGPT armando un producto digital — prompt simple, respuesta generándose",
+            "el producto terminado en PDF con diseño profesional"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto funciona ahora mismo, en tiempo real",
+          "script_text": "Tengo más de 17.000 alumnos. Y muchos de ellos hoy están ganando plata mientras descansan. Ventas automáticas de un producto que crearon una sola vez. Y mañana lunes, cuando suene tu despertador a las 7... nosotros vamos a seguir en la cama.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "dashboard de ventas del fin de semana — sábado: 3 ventas, domingo: 2 ventas, con horarios",
+            "total facturado del fin de semana mientras él descansaba"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La angustia del domingo es un síntoma del modelo",
+          "script_text": "La diferencia entre tu domingo a la noche y el mío no es suerte. Es un modelo. Un modelo que hoy, con inteligencia artificial, cualquiera puede armar. Y ese modelo te lo puedo enseñar.",
+          "timing_seconds": 8,
+          "ipad_directions": [
+            "resumen visual del proceso: \"Lo que sabés + IA → Producto → Anuncio → WhatsApp → Venta automática\""
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 28,
+        "ingredient_name": "Costo de No Actuar"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. [...] Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "orden_nlp": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. [...] Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      }
+    ]
+  },
+  "createdAt": "2026-03-18T17:53:22.916Z",
+  "status": "confirmed",
+  "batch": {
+    "id": "b36369e3-48f1-4299-94b8-04bf0960e43e",
+    "name": "Version 2.0"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "ad_copies_matrix": {
+    "generation_id": "93700f4a-1f41-45e6-b593-6243470fa50a",
+    "angle": "identidad — 1.2_oficinista_atrapado",
+    "niche": "ninguno / emoción universal",
+    "total_versions": 15,
+    "versions": [
+      {
+        "hook_index": 0,
+        "hook_type": "sensorial",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H1-ClaseGratuita",
+        "headline": "Dejé de escuchar esa alarma",
+        "description": "Clase gratuita: cómo crear un producto digital con IA y venderlo solo. Sin título, sin seguidores.",
+        "primary_text": "Estaba en el baño, duchándome un domingo a la noche, y me di cuenta de que ya estaba tensa.\n\nNo había pasado nada. Era simplemente domingo.\n\nEl cuerpo ya anticipaba el lunes. El subte. La cara del jefe. Las ocho horas.\n\nEse día entendí que el problema no era el trabajo. Era el modelo. Mi ingreso dependía de que yo apareciera. Si no aparecía, no cobraba. Mi tiempo no era mío — era de ellos.\n\nEmpecé a buscar formas de romper eso. Sin renunciar de golpe, sin ahorros mágicos, sin «hacerse influencer».\n\nMe topé con algo que no esperaba: la posibilidad de crear un producto digital en base a lo que ya sabía — de lo que fuera — y que la inteligencia artificial hiciera la parte técnica.\n\nLo armé un fin de semana.\n\nLa primera venta llegó un martes a las 3 de la mañana. Yo estaba durmiendo.\n\nNo fue suerte. Fue un sistema. Un modelo que funciona sin que estés presente.\n\nHoy son 9 meses desde esa ducha. La alarma del lunes ya no me arruina el domingo.\n\nJesús Álvarez tiene más de 17.000 alumnos que aprendieron exactamente esto. Y da una clase gratuita de 2 horas donde explica cómo encontrar el producto, crearlo con IA y venderlo con publicidad.\n\nSin inversión. Sin título. Sin seguidores.\n\nSi querés entender el modelo, entrá 👇",
+        "word_count": 218,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "sensorial",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H1-InstagramOrgánico",
+        "headline": "Ya no escucho esa alarma.",
+        "description": "Instagram orgánico",
+        "primary_text": "Ya no escucho esa alarma.\n\nHace unos años, los domingos a la noche eran un infierno silencioso. No era tristeza. Era esa cosa rara en el estómago que te avisa que mañana arranca todo de nuevo.\n\nEl subte. El jefe. Las ocho horas. Y la sensación de que tu tiempo no era tuyo.\n\nLa verdad es que no lo era. Si yo no iba, no cobraba. Así de simple.\n\nUn día entendí que el problema no era el trabajo. Era el modelo. Que mi ingreso dependía de que yo estuviera presente. Y eso no tiene solución cambiando de empresa.\n\nHoy es domingo. Estoy tranquilo. Mañana no suena nada.\n\nNo porque sea suertudo. Sino porque armé algo que funciona sin que yo esté mirando.\n\nSi te resuena esto, escribime. Sin compromiso. Solo cuéntame cómo son tus domingos.",
+        "word_count": 138,
+        "structure_used": "Anecdótico → Diagnóstico → Contraste → CTA suave"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "sensorial",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H1-Taller$5",
+        "headline": "Dejé de escuchar esa alarma",
+        "description": "Taller 3 días en vivo por $5. Salís con tu producto digital armado y listo para vender.",
+        "primary_text": "Estaba parado en el andén del subte un martes a las 7:43 AM, mirando las vías, cuando me di cuenta de algo que me dejó helado.\n\nNo era la primera vez que hacía ese viaje. Era la vez número 1.847.\n\nY cada una de esas mañanas, el mismo sonido me había arrancado de la cama. El mismo tono. La misma vibración en la mesita de noche. La alarma que no te avisa que empieza el día — te avisa que empieza la cuenta regresiva para llegar a tiempo.\n\nEse día, por accidente, mientras esperaba el tren, abrí un video sobre productos digitales. No lo busqué. Me apareció.\n\n9 minutos después cerré el video y pensé: ¿por qué alguien necesita estar físicamente en algún lugar para que le entre plata?\n\nNo lo necesita. Yo no lo necesitaba. Pero nadie me lo había dicho nunca.\n\nHoy tengo más de 17.000 alumnos que aprendieron a armar un producto digital con inteligencia artificial. Gente que no sabía de tecnología. Que no tenía seguidores. Que no invirtió miles.\n\nArmaron algo una sola vez. Y ese algo se sigue vendiendo.\n\nLa alarma del lunes sigue existiendo. Yo simplemente dejé de tener que escucharla.\n\nSi querés entender el modelo, tengo un taller de 3 días en vivo. Cuesta $5. Salís con tu producto creado, tu anuncio listo y tu sistema funcionando.\n\nEl link está abajo. 👇",
+        "word_count": 218,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_impacto",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H2-ClaseGratuita",
+        "headline": "1.560 domingos. O los que quedan.",
+        "description": "Clase gratuita en vivo: el modelo de productos digitales con IA que cambia el domingo de noche.",
+        "primary_text": "Son las 6:47 del domingo a la noche.\n\nMartín apaga Netflix a mitad de una serie. No porque terminó. Porque dejó de poder concentrarse.\n\nEn 37 minutos empieza el lunes. En su cabeza, ya empezó.\n\nSe queda mirando el techo del departamento en Palermo. Tres años en esa empresa. Sueldo que no le alcanza para nada que valga la pena. Y la certeza, fría y puntual como un reloj, de que mañana a las 7:05 va a estar haciendo exactamente lo mismo.\n\nLo que Martín no sabe todavía es que esa angustia no es un defecto de carácter. No es que sea débil o que le falte actitud.\n\nEs un síntoma. El síntoma de un modelo donde su tiempo vale solo si él está presente para entregarlo.\n\nTres semanas después, Martín se anota en una clase gratuita. Dos horas. Un tipo llamado Jesús Álvarez le explica cómo encontrar algo que ya sabe, convertirlo en un producto digital con inteligencia artificial, y hacer que ese producto se venda solo.\n\nEl primer domingo que Martín no siente esa presión en el pecho, no lo puede creer.\n\nNo cambió de trabajo. No ganó la lotería. Cambió el modelo.\n\nEsa misma clase existe hoy. Es gratuita, dura 2 horas, y no te pide nada a cambio.\n\nSi te quedaste mirando el techo algún domingo, entrá.",
+        "word_count": 223,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_impacto",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H2-InstagramOrgánico",
+        "headline": "1.560 domingos más. Fijate esto.",
+        "description": "Instagram orgánico",
+        "primary_text": "1.560 domingos más. Fijate esto.\n\nMe lo calculé un día que estaba particularmente harto. Si tenés 30 años y te jubilás a los 65, te quedan 1.560 domingos a la noche.\n\n1.560 veces más esa sensación.\n\nNo sé, a mí ese número me pegó distinto. Porque no es \"toda la vida\". Es un número concreto. Finito. Y cada uno que pasa sin cambiar nada... se va.\n\nLo que aprendí es que la angustia del domingo no es un rasgo de personalidad. No sos ansioso. No sos negativo. Es que tu ingreso depende de que aparezcas. Y eso pesa.\n\nCuando eso cambia, cambia el domingo.\n\nMirá el link en bio si querés entender cómo funciona lo que armé. 🗓️",
+        "word_count": 120,
+        "structure_used": "Dato concreto → Golpe emocional → Reencuadre → CTA"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_impacto",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H2-Taller$5",
+        "headline": "3 señales de que el modelo te está fallando",
+        "description": "Taller en vivo, 3 días, $5 USD. Día 1 al 3: producto, anuncio y sistema. Salís con todo hecho.",
+        "primary_text": "Tengo 30 años. Hice el cálculo el miércoles pasado a las 11 de la noche, sentada en el escritorio de mi departamento, con una hoja y una calculadora.\n\n1.560 domingos más. Eso me quedaba hasta jubilarme.\n\nY en ese momento identifiqué 3 señales de que algo estaba mal en el modelo que estaba usando para vivir:\n\n— El primer signo de que llega el fin de semana no es alegría. Es alivio. Y el domingo a la tarde ese alivio ya desapareció.\n\n— Cuando me enfermo, me estreso más por el trabajo que me voy a perder que por la enfermedad en sí. Porque si no voy, no cobra nadie.\n\n— Llevo 4 años \"ahorrando para hacer algo propio\" y el número en la cuenta casi no se movió.\n\nLas tres señales apuntan a lo mismo: mi tiempo y mi ingreso están atados con el mismo nudo.\n\nLo que cambió no fue conseguir mejor trabajo. Fue entender que existe un modelo donde armás un producto digital una sola vez — con inteligencia artificial, sin saber de tecnología — y ese producto se vende mientras vos hacés otra cosa.\n\nHoy ese modelo lo enseña Jesús Mirás en un taller de 3 días en vivo. Cuesta $5.\n\nDía 1: encontrás tu producto. Día 2: lo creás completo. Día 3: armás cómo venderlo.\n\nSalís con algo concreto, no con apuntes.",
+        "word_count": 222,
+        "structure_used": "Listicle de señales"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "generacional",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H3-ClaseGratuita",
+        "headline": "Tu abuelo no tenía otra opción. Vos sí.",
+        "description": "Clase gratuita: Jesús Álvarez te muestra cómo crear un producto digital con IA desde cero.",
+        "primary_text": "Te voy a ser directo.\n\nTu abuelo odiaba los domingos a la noche. Tu viejo también. Y vos lo estás repitiendo.\n\nNo porque seas igual a ellos. Sino porque nadie te enseñó que existe otro modelo.\n\nYo tengo 17.000 alumnos. Y la pregunta que me hacen casi todos al principio es la misma: «¿Pero esto funciona para alguien como yo?»\n\nAsí que te voy a compartir lo que me mandó Luciana, 34 años, administrativa en una empresa de logística:\n\n«Jesús, te escribo un domingo a la noche porque es la primera vez en años que no siento esa angustia. Armé mi producto digital hace 53 días. Esta semana tuve 11 ventas automáticas. No hice nada. La gente lo encontró, pagó y lo recibió sola. Yo estaba en casa de mis viejos comiendo asado. Esto no lo puedo explicar todavía del todo, pero gracias.»\n\nLuciana no sabía de tecnología. No tenía seguidores. No invirtió miles de pesos.\n\nLo que hizo fue entender el modelo. Un producto digital que se vende sin que estés presente. Y la inteligencia artificial que te ayuda a crearlo aunque no tengas idea de cómo empezar.\n\nEso es exactamente lo que enseño en mi clase gratuita. Dos horas en vivo. Sin compromiso.\n\nTe muestro cómo encontrar el producto, crearlo con IA y venderlo con publicidad.\n\nSi querés cortar la cadena, es por acá.",
+        "word_count": 230,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "generacional",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H3-InstagramOrgánico",
+        "headline": "Mi viejo odiaba los domingos.",
+        "description": "Instagram orgánico",
+        "primary_text": "Mi viejo odiaba los domingos.\n\nNo lo decía, pero se notaba. Se ponía raro desde el mediodía. Callado. Y yo de chico no entendía por qué.\n\nDespués lo entendí porque me pasó exactamente lo mismo.\n\nY me acuerdo cuando caí: estaba en la cama un domingo a la noche, mirando el techo, y pensé \"esto es lo mismo que le pasaba a él\". Heredé la angustia sin que nadie me la explicara.\n\nLa diferencia es que yo en algún momento pregunté: ¿esto tiene que ser así?\n\nY la verdad es que no. No es hereditario. Es un modelo de vida que te pasan sin cuestionarlo.\n\nHoy mis domingos son distintos. No perfectos. Distintos.\n\nSi querés contarme cómo son los tuyos, estoy acá en los comentarios.",
+        "word_count": 133,
+        "structure_used": "Memoria familiar → Identificación → Quiebre → Contraste → CTA"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "generacional",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H3-Taller$5",
+        "headline": "No es herencia. Es un modelo roto.",
+        "description": "3 días en vivo por $5. Producto digital, anuncio y sistema. Salís con todo armado desde cero.",
+        "primary_text": "El abuelo de Martín odiaba los domingos a la noche. El padre de Martín también. Y Martín, 34 años, contador, dos hijos, repite exactamente lo mismo sin preguntarse por qué.\n\nAntes: cada domingo desde las 6 de la tarde el estómago se le cerraba. No podía ver una película entera. Se quedaba mirando el techo a las 11 PM calculando cuánto faltaba para que sonara la alarma. Desayunaba parado. Llegaba al trabajo 7 minutos tarde los lunes. Siempre los lunes.\n\nNo era flojo. No odiaba su trabajo más de lo normal. El problema era más simple y más brutal: si Martín no aparecía, no entraba un peso. Su presencia era el producto. Y eso lo sabía su cuerpo antes de que su cabeza lo pudiera nombrar.\n\nDespués: Martín armó un producto digital en 3 días. Usó inteligencia artificial para crearlo — no sabe programar, tiene cero seguidores en redes. Lo subió. Empezó a venderlo. El primer mes facturó mientras estaba en una reunión de trabajo. El segundo mes, mientras dormía.\n\nLo que cambió no fue su vida entera. Fue una sola cosa: dejó de ser el único engranaje del sistema.\n\nEse proceso — encontrar el producto, crearlo y armarlo para que se venda — es lo que Jesús Mirás enseña en un taller de 3 días en vivo por $5.\n\nNo es un curso grabado. Es en vivo. Salís con el producto hecho.",
+        "word_count": 235,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H4-ClaseGratuita",
+        "headline": "3 señales de que el lunes te ganó",
+        "description": "Clase gratuita de 2 horas: el modelo de ingresos digitales que no depende de que estés presente.",
+        "primary_text": "Mañana a las 7:05 vas a estar mirando el techo.\n\nAntes de que suene la alarma, ya sabés lo que viene. Y hay 3 señales de que esto dejó de ser «estrés normal» y se convirtió en un problema de modelo:\n\n1. El domingo te dura hasta las 5 de la tarde. Después ya no podés disfrutar nada porque el lunes te aplasta antes de llegar.\n\n2. Calculás mentalmente cuántos años te faltan para jubilarte. Y el número te da náuseas.\n\n3. Fantaseás con renunciar pero no podés porque si no vas, no cobrás. Tu ingreso depende de tu presencia. Siempre.\n\nEsa tercera señal es la más importante. No es un problema de trabajo. Es un problema de modelo.\n\nYo trabajé así durante años. Hasta que entendí que existía otra forma: crear algo una sola vez — un producto digital — y que ese algo se vendiera solo. Sin que yo estuviera mirando.\n\nHoy, con inteligencia artificial, cualquiera puede armarlo. No necesitás saber de tecnología. No necesitás seguidores ni título universitario.\n\nLa IA te construye el producto. Vos ponés lo que sabés — de lo que sea — y el sistema hace el resto.\n\nTengo una clase gratuita de 2 horas donde te muestro exactamente cómo funciona. Sin venderle nada a nadie.\n\nSi reconociste alguna de esas 3 señales, es para vos.",
+        "word_count": 222,
+        "structure_used": "Listicle de señales"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H4-InstagramOrgánico",
+        "headline": "Mañana a las 7. Ya sé lo que hacés.",
+        "description": "Instagram orgánico",
+        "primary_text": "Mañana a las 7. Ya sé lo que hacés.\n\nSuena la alarma. La apagás. Mirás el techo. \"Cinco minutos más\".\n\nPero no es sueño. Es que no querés arrancar. Y eso es muy distinto.\n\nMe pasó años. Todos los lunes. Y lo peor no era el cansancio, era saber que no importaba cuánto descansara el fin de semana — el domingo a la noche volvía igual.\n\nHasta que entendí algo que nadie me había dicho así de claro: el problema no era el trabajo. Era que si yo no aparecía, no pasaba nada. Mi presencia era el negocio.\n\nCambié eso. Armé un producto digital que se vende sin que yo esté mirando. Hoy tengo más de 17.000 personas que hicieron lo mismo.\n\nNo te digo que es fácil. Te digo que es posible. Y que el primer paso es entender el modelo.\n\nLink en bio.",
+        "word_count": 151,
+        "structure_used": "Escena específica → Diagnóstico real → Historia personal → Prueba social → CTA directo"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H4-Taller$5",
+        "headline": "\"Vendí mientras miraba el techo\"",
+        "description": "Taller 3 días en vivo, $5 USD. Producto digital con IA, sin seguidores ni inversión grande.",
+        "primary_text": "Me llegan audios de WhatsApp todos los días. Este llegó un lunes a las 7:23 AM.\n\n\"Jesús, te mando este audio desde la cama. Acaba de sonar la alarma. Pero hoy es distinto — ayer a la noche entró una venta mientras yo estaba mirando el techo pensando en el lunes. Literal: mirando el techo. Me llegó la notificación de pago a las 11:47 PM. Yo no hice nada. El producto hizo el trabajo. Hace 53 días no me podía imaginar esto.\"\n\nEsa persona no sabía de tecnología cuando empezó. No tenía seguidores. No invirtió miles de pesos en herramientas.\n\nLo que hizo fue tomarse 3 días para entender un modelo y ejecutarlo.\n\nDía 1: encontró un producto digital que la gente ya estaba buscando. Día 2: lo armó completo usando inteligencia artificial — la IA hizo la parte técnica, ella puso lo que sabía. Día 3: armó el sistema para que se vendiera solo.\n\nHoy ese mismo proceso lo enseño en un taller en vivo de 3 días. El precio es $5.\n\nNo es para que \"lo pienses\". Es para que lo hagas mientras estamos juntos. Salís con tu producto creado, tu anuncio escrito y tu sistema listo.\n\nMañana a las 7:05 va a sonar tu alarma. Lo que pase el domingo siguiente depende de lo que hagás hoy.\n\nEl link está abajo.",
+        "word_count": 220,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H5-ClaseGratuita",
+        "headline": "El domingo dejó de ser el peor día",
+        "description": "Clase gratuita en vivo: cómo pasar de vender tu tiempo a tener un producto que trabaja por vos.",
+        "primary_text": "Antes, el domingo era el día más corto de la semana.\n\nNo porque durara menos. Sino porque desde las 5 de la tarde ya no era domingo. Era el lunes en modo previo. La angustia instalada en el pecho. El celular que no querías mirar. La serie que no podías seguir porque el cerebro ya estaba en la oficina.\n\nEra perder medio día, todas las semanas, sin que nadie te lo robara. Vos solo, entregándoselo al miedo.\n\nHoy, Valeria vive el domingo diferente.\n\nSe levanta tarde. Toma mate en el balcón de su departamento en Rosario. Revisa el teléfono y ve 3 notificaciones de pago que llegaron mientras dormía. Un producto digital que creó en un fin de semana, hace 4 meses. Que la inteligencia artificial le ayudó a construir. Que se vende solo, sin que ella esté presente.\n\nNo renunció de golpe. No tuvo un golpe de suerte. Aprendió un modelo.\n\nLa diferencia entre el antes y el después no fue el esfuerzo. Fue entender que el problema nunca fue el trabajo — fue que su tiempo solo valía si ella lo entregaba en persona.\n\nEse modelo tiene una clase gratuita. Dos horas en vivo. Jesús Álvarez te muestra cómo encontrar tu producto, crearlo con IA y hacer que se venda con publicidad.\n\nSin inversión inicial. Sin seguidores. Sin título.\n\nEl próximo domingo puede ser distinto. Entrá y fijate cómo.",
+        "word_count": 238,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H5-InstagramOrgánico",
+        "headline": "El domingo te roban medio día.",
+        "description": "Instagram orgánico",
+        "primary_text": "El domingo te roban medio día.\n\nDesde las 5 de la tarde ya estás pensando en el lunes. No es joda. El domingo deja de ser tuyo antes de que termine.\n\nY lo dejamos pasar como si fuera normal.\n\nLa verdad es que no es un problema de actitud. No se arregla con mindfulness ni con \"disfrutar el presente\". Si tu bienestar del domingo depende de lo que pase el lunes, el problema está en el lunes.\n\nYo lo resolví cuando dejé de depender de estar presente para ganar plata. Suena raro dicho así, pero es lo que es.\n\nHoy es domingo y escribí esto tranquilo. Sin esa cosa en el estómago.\n\nSi te interesa entender cómo funciona eso, comentá \"domingo\" y te cuento.",
+        "word_count": 122,
+        "structure_used": "Observación contraintuitiva → Desmontaje del consejo típico → Experiencia propia → CTA conversacional"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H5-Taller$5",
+        "headline": "Te roban 104 días al año. Hacé la cuenta.",
+        "description": "Taller 3 días en vivo por $5. Salís con producto digital, anuncio y sistema armado. Sin tecnología previa.",
+        "primary_text": "Empecé a llevar un registro en una libreta que tengo en la mesita de luz. Una tilde por cada domingo a la tarde que perdí pensando en el lunes.\n\nA los 3 meses conté: 11 domingos. Desde las 5 PM hasta las 11 PM son 6 horas. 11 domingos × 6 horas = 66 horas de fin de semana que no disfruté.\n\nProyectado al año: 26 domingos × 6 horas = 156 horas. Casi 7 días completos al año. Despierto, en casa, sin poder descansar porque tu cabeza ya está en el lunes.\n\nHacé la cuenta vos: ¿cuántos años llevás así? Multiplicalo.\n\nEl problema no es que seas ansioso. El problema es que tu ingreso depende de que vos estés presente. Y tu sistema nervioso lo sabe antes que vos. Por eso el domingo a la tarde se acorta solo.\n\nLo que cambia esa ecuación no es un mejor trabajo ni más vacaciones. Es tener algo que genere ingresos sin que vos tengas que estar ahí.\n\nUn producto digital, creado una sola vez con inteligencia artificial, que se vende mientras vos hacés otra cosa.\n\nJesús Mirás tiene 17.000 alumnos que aprendieron a armarlo. Y ahora lo enseña en un taller de 3 días en vivo por $5.\n\nTres días. Un producto completo. Un anuncio listo. Un sistema funcionando.\n\nEl domingo que viene puede ser distinto. El link está abajo.",
+        "word_count": 227,
+        "structure_used": "Math-based / calculadora"
+      }
+    ],
+    "diversity_warnings": [],
+    "createdAt": "2026-03-23T20:30:20.675Z"
+  }
+}

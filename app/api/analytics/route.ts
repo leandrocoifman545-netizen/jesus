@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { listGenerations, type StoredGeneration } from "@/lib/storage/local";
 import { inferAngleFamily, inferBodyType } from "@/lib/utils/classification";
-import { ALL_ANGLE_FAMILIES, ALL_BODY_TYPES } from "@/lib/constants/hook-types";
+import { ALL_ANGLE_FAMILIES, ALL_BODY_TYPES, ALL_AVATARS, AVATAR_BUYER_WEIGHTS } from "@/lib/constants/hook-types";
 
 export async function GET() {
   try {
@@ -16,6 +16,9 @@ export async function GET() {
     const byHookType: Record<string, number> = {};
     const byFramework: Record<string, number> = {};
     const byVisualFormat: Record<string, number> = {};
+    const byAvatar: Record<string, number> = {};
+    const byAwareness: Record<string, number> = {};
+    const byNiche: Record<string, number> = {};
     const angleFamilyDetail: Record<string, string[]> = {};
 
     // Performance tracking
@@ -58,6 +61,22 @@ export async function GET() {
       const vf = gen.script.visual_format?.format_name || "sin_formato";
       byVisualFormat[vf] = (byVisualFormat[vf] || 0) + 1;
 
+      // Avatar tracking
+      const avatar = script.avatar || "sin_avatar";
+      byAvatar[avatar] = (byAvatar[avatar] || 0) + 1;
+
+      // Awareness level tracking
+      if (script.awareness_level) {
+        const aw = String(script.awareness_level);
+        byAwareness[aw] = (byAwareness[aw] || 0) + 1;
+      }
+
+      // Niche tracking
+      if (script.niche) {
+        const niche = script.niche.toLowerCase();
+        byNiche[niche] = (byNiche[niche] || 0) + 1;
+      }
+
       if (gen.metrics && Object.keys(gen.metrics).length > 0) {
         withMetrics.push({
           id: gen.id,
@@ -81,8 +100,8 @@ export async function GET() {
       angleFamilies: last10Families.size,
       angleFamiliesMax: 5,
       bodyTypes: last10BodyTypes.size,
-      bodyTypesMax: 8,
-      score: Math.round(((last10Families.size / 5) + (last10BodyTypes.size / 8)) / 2 * 100),
+      bodyTypesMax: 10,
+      score: Math.round(((last10Families.size / 5) + (last10BodyTypes.size / 10)) / 2 * 100),
     };
 
     // --- Saturation alerts ---
@@ -99,6 +118,23 @@ export async function GET() {
         saturationAlerts.push(`Tipo de cuerpo "${type}" tiene ${pct}% (${count}/${total})`);
       }
     }
+    // Niche saturation
+    for (const [niche, count] of Object.entries(byNiche)) {
+      if (count >= 4) {
+        saturationAlerts.push(`Nicho "${niche}" usado ${count} veces — considerar nuevos nichos`);
+      }
+    }
+
+    // --- Avatar weight comparison (actual vs target from buyer data) ---
+    const avatarWeightComparison = ALL_AVATARS.map((a) => {
+      const actual = total > 0 ? Math.round(((byAvatar[a] || 0) / total) * 100) : 0;
+      const target = Math.round((AVATAR_BUYER_WEIGHTS[a] || 0) * 100);
+      const diff = actual - target;
+      if (Math.abs(diff) > 15) {
+        saturationAlerts.push(`Avatar "${a}": ${actual}% actual vs ${target}% target (${diff > 0 ? "sobre" : "sub"}-representado)`);
+      }
+      return { avatar: a, actual, target, count: byAvatar[a] || 0 };
+    });
 
     // --- Winners analysis ---
     const winners = generations.filter(g => g.status === "winner");
@@ -125,6 +161,10 @@ export async function GET() {
       byHookType,
       byFramework,
       byVisualFormat,
+      byAvatar,
+      byAwareness,
+      byNiche,
+      avatarWeightComparison,
       diversityScore,
       saturationAlerts,
       winners: winners.length,

@@ -1,0 +1,98 @@
+{
+  "id": "ref-david-turu-que-hago-cocina",
+  "title": "David Turu (@¿Qué hago?) — Triángulo de 3 personajes: Román (cocinero) + Alina (cliente) + David (infoproductor)",
+  "source": "Instagram Stories @¿Qué hago? — 11 julio 2024",
+  "format": "Secuencia de 7 stories (video narrado con subtítulos)",
+  "transcript": "Bienvenidos, este es Román y es un gran cocinero, pero no sabe vender. Y esta es Alina y no sabe cocinar, pero tiene muchas ganas de aprender. Este es David y es un infoproductor. Ayuda a los expertos influencers a vender sus cursos online. Yo ayudo a Román a hacer un curso de buena calidad y venderlo usando las redes sociales. Los expertos pueden ganar dinero incluso si solo tienen 100 seguidores. No necesitas ser un influencer grande para hacer esto. Alina compró un curso de Román y ahora cocina para su novio mejor que todos sus ex e incluso mejor que su abuela. De esos 10 mil euros, Román se queda con el 50% y yo me llevo el otro 50% por ayudarle con toda la estrategia de lanzamiento.",
+  "analysis": {
+    "hook": {
+      "text": "Este es Román y es un gran cocinero, pero no sabe vender.",
+      "type": "personaje_con_tension",
+      "estimated_seconds": 4
+    },
+    "structure": {
+      "framework": "triangulo_3_personajes",
+      "sections": [
+        {
+          "name": "Personaje A — El experto atrapado",
+          "summary": "Román: gran cocinero, no sabe vender. Tiene la habilidad pero no el sistema.",
+          "visual": "Román en la cocina cocinando",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Personaje B — El cliente con deseo",
+          "summary": "Alina: no sabe cocinar, quiere aprender. ES la demanda.",
+          "visual": "Alina intentando cocinar (mal)",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Personaje C — El puente (yo)",
+          "summary": "David: infoproductor. Ayuda a expertos a vender cursos online.",
+          "visual": "David sentado con celular, trabajando",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Mecanismo — Cómo funciona",
+          "summary": "David ayuda a Román a hacer el curso y venderlo con redes. Solo necesitás 100 seguidores.",
+          "visual": "David con Román, mostrando el proceso",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Resultado del cliente",
+          "summary": "Alina compró el curso y ahora cocina mejor que su abuela. Cierra el ciclo: el producto FUNCIONA.",
+          "visual": "Alina cocinando bien, con confianza",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Los números",
+          "summary": "10.000€ — 50% Román, 50% David. Calculadora en pantalla.",
+          "visual": "David muestra celular con calculadora: 10.000",
+          "estimated_seconds": 5
+        }
+      ]
+    },
+    "techniques": [
+      "Triángulo de 3 personajes con nombre: experto + cliente + puente",
+      "Ejemplo tangible y universal (cocina) — no abstracto",
+      "Muestra resultado del CLIENTE (Alina cocina bien), no solo la plata",
+      "Demolición al pasar: 'solo 100 seguidores, no necesitás ser influencer grande'",
+      "Calculadora visible en pantalla — prueba visual de los números",
+      "Tono accesible: cocina limpia, ropa simple, sin lujo",
+      "Humor sutil: 'cocina mejor que todos sus ex y su abuela'",
+      "Cada personaje ACTÚA en su escena — no son fotos con texto"
+    ],
+    "total_duration_seconds": 37,
+    "word_count": 120
+  },
+  "applicability_adp": {
+    "score": 9,
+    "why": "El formato de 3 personajes es perfecto para explicar el modelo ADP. Ejemplo tangible (cocina), tono accesible (sin lujo), y mostrar el resultado del cliente final. Más cercano al tono de Jesús que la versión de Xavi.",
+    "adaptation": {
+      "personaje_a_experto": "Soledad (terapeuta 12 años, 2 métodos propios, solo vende presencial) o cualquier avatar con conocimiento",
+      "personaje_b_cliente": "María (persona real que busca ese conocimiento online)",
+      "personaje_c_puente": "Jesús (te enseña a empaquetar con IA)",
+      "ejemplo_mecanismo": "Soledad empaqueta sus métodos con IA → guía digital → María la encuentra por WhatsApp → paga $10 → 40 copias = $400",
+      "numeros_adp": "Calculadora: 40 × $10 = $400 (más realista para LATAM que 10.000€)"
+    },
+    "ejemplo_secuencia_stories": [
+      "Story 1: 'Esta es Soledad. Es terapeuta holística hace 12 años. Tiene 2 métodos propios. Pero solo los puede dar presencial.'",
+      "Story 2: 'Y esta es María. Tiene ansiedad, vive en otra ciudad, y busca ayuda online.'",
+      "Story 3: 'Yo le enseñé a Soledad a empaquetar sus métodos en un producto digital usando IA.'",
+      "Story 4: 'María encontró el producto de Soledad por un anuncio, le escribió por WhatsApp, pagó $10, y lo recibió al instante.'",
+      "Story 5: 'Soledad vendió 40 copias. Sin estar presente. Sin consultorio. Desde su casa.' [calculadora: 40 × $10 = $400]",
+      "Story 6: '¿Tenés un conocimiento que hoy solo vendés presencial? Respondé QUIERO y te cuento cómo empaquetarlo.'"
+    ]
+  },
+  "comparison_xavi": {
+    "same_framework": true,
+    "differences": {
+      "ejemplo": "Cocina (universal) vs Agencia de marketing (abstracto) → David gana",
+      "resultado_cliente": "Se ve (Alina cocina bien) vs No se ve → David gana",
+      "tono_visual": "Accesible (cocina, ropa simple) vs Lifestyle agresivo (autos, LV) → David gana para ADP",
+      "numeros": "Calculadora visible (10.000€) vs Texto (1.000€) → David gana"
+    },
+    "verdict": "David Turu > Xavi para lo que hace Jesús. Ejemplo tangible, tono accesible, resultado visible."
+  },
+  "createdAt": "2026-03-23T10:00:00.000Z",
+  "tags": ["stories", "triangulo_personajes", "infoproduccion", "formato_narrativo", "benchmark"]
+}

@@ -158,6 +158,8 @@ export default function ScriptViewer({
   initialStatus = "draft",
   initialMetrics,
   initialSessionNotes = "",
+  initialHookApprovals = {},
+  initialCopiesMatrix = null,
 }: {
   script: ScriptOutput;
   generationId: string;
@@ -165,6 +167,8 @@ export default function ScriptViewer({
   initialStatus?: GenerationStatus;
   initialMetrics?: WinnerMetrics;
   initialSessionNotes?: string;
+  initialHookApprovals?: Record<number, "approved" | "rejected">;
+  initialCopiesMatrix?: { generation_id: string; total_versions: number; diversity_warnings?: string[]; versions: { hook_index: number; hook_type: string; cta_channel: string; cta_label: string; version_name: string; headline: string; description: string; primary_text: string; word_count: number; structure_used: string }[] } | null;
 }) {
   const router = useRouter();
   const toast = useToast();
@@ -182,6 +186,7 @@ export default function ScriptViewer({
   const [statusOpen, setStatusOpen] = useState(false);
   const [metrics, setMetrics] = useState<WinnerMetrics>(initialMetrics || {});
   const [sessionNotes, setSessionNotes] = useState(initialSessionNotes);
+  const [hookApprovals, setHookApprovals] = useState<Record<number, "approved" | "rejected">>(initialHookApprovals);
   const [showMetrics, setShowMetrics] = useState(false);
   const [savingMeta, setSavingMeta] = useState(false);
   const [adCopyLoading, setAdCopyLoading] = useState(false);
@@ -190,6 +195,26 @@ export default function ScriptViewer({
   const [retargetingResult, setRetargetingResult] = useState<{ quadrants: { quadrant_label: string; hook: string; script_text: string; timing_seconds: number }[] } | null>(null);
   const [explodeLoading, setExplodeLoading] = useState(false);
   const [explodeResult, setExplodeResult] = useState<{ scripts_by_awareness: { awareness_level: number; awareness_label: string; hook: string; body_summary: string }[]; ad_copy_embudo: { copy_text: string }; retargeting_hooks: { quadrant: string; hook: string }[] } | null>(null);
+  const [copiesMatrixLoading, setCopiesMatrixLoading] = useState(false);
+  const [copiesMatrix, setCopiesMatrix] = useState<{ generation_id: string; total_versions: number; diversity_warnings?: string[]; versions: { hook_index: number; hook_type: string; cta_channel: string; cta_label: string; version_name: string; headline: string; description: string; primary_text: string; word_count: number; structure_used: string }[] } | null>(initialCopiesMatrix);
+  const [copiesExpandedIdx, setCopiesExpandedIdx] = useState<number | null>(null);
+
+  async function toggleHookApproval(index: number, value: "approved" | "rejected") {
+    const next = { ...hookApprovals };
+    if (next[index] === value) {
+      delete next[index];
+    } else {
+      next[index] = value;
+    }
+    setHookApprovals(next);
+    try {
+      await fetch("/api/generate/status", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId, hookApprovals: next }),
+      });
+    } catch { /* silent */ }
+  }
 
   async function saveTitle(newTitle: string) {
     setSavingTitle(true);
@@ -319,6 +344,25 @@ export default function ScriptViewer({
       toast(err instanceof Error ? err.message : "Error generando ad copy", "error");
     } finally {
       setAdCopyLoading(false);
+    }
+  }
+
+  async function handleCopiesMatrix() {
+    setCopiesMatrixLoading(true);
+    try {
+      const res = await fetch("/api/generate/ad-copies-matrix", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ generationId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setCopiesMatrix(data);
+      toast(`${data.total_versions} copies generados`);
+    } catch (err) {
+      toast(err instanceof Error ? err.message : "Error generando copies", "error");
+    } finally {
+      setCopiesMatrixLoading(false);
     }
   }
 
@@ -454,6 +498,19 @@ export default function ScriptViewer({
               {showMetrics ? "Ocultar metricas" : "Metricas + notas"}
             </button>
           </>
+        )}
+
+        {/* CSV Download — visible cuando hay copies */}
+        {copiesMatrix && copiesMatrix.total_versions > 0 && (
+          <a
+            href={`/api/export/copies?generationId=${generationId}`}
+            className="ml-auto px-4 py-1.5 text-xs rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all flex items-center gap-1.5 font-medium"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            CSV {copiesMatrix.total_versions} copies
+          </a>
         )}
       </div>
 
@@ -714,18 +771,49 @@ export default function ScriptViewer({
         {/* Scrollable hook selector */}
         <div className="flex gap-3 mb-6 overflow-x-auto pb-2 scrollbar-thin">
           {script.hooks.map((hook, i) => (
-            <button
+            <div
               key={i}
               onClick={() => setSelectedHook(i)}
-              className={`border rounded-2xl p-4 text-left transition-all duration-300 shrink-0 w-44 hover-glow ${
-                selectedHook === i
+              className={`border rounded-2xl p-4 text-left transition-all duration-300 shrink-0 w-44 hover-glow cursor-pointer relative ${
+                hookApprovals[i] === "approved"
+                  ? `bg-emerald-500/5 border-emerald-500/30 ${selectedHook === i ? "ring-1 ring-emerald-500/30 shadow-lg shadow-emerald-500/5" : ""}`
+                  : hookApprovals[i] === "rejected"
+                  ? `bg-red-500/5 border-red-500/30 ${selectedHook === i ? "ring-1 ring-red-500/30 shadow-lg shadow-red-500/5" : ""}`
+                  : selectedHook === i
                   ? "border-purple-500/30 bg-purple-500/5 ring-1 ring-purple-500/20 shadow-lg shadow-purple-500/5"
                   : "bg-zinc-900/30 border-zinc-800/40 hover:border-zinc-700/40"
               }`}
             >
               <div className="flex items-center justify-between mb-2">
                 <span className={`text-xs font-bold ${selectedHook === i ? "text-purple-400" : "text-zinc-400"}`}>#{hook.variant_number}</span>
-                <span className="text-[10px] text-zinc-600 font-medium">{hook.timing_seconds}s</span>
+                <div className="flex items-center gap-1">
+                  <button
+                    onClick={(e) => { e.stopPropagation(); toggleHookApproval(i, "approved"); }}
+                    title="Aprobar hook"
+                    className={`w-5 h-5 rounded-full flex items-center justify-center transition-all ${
+                      hookApprovals[i] === "approved"
+                        ? "bg-emerald-500/20 text-emerald-400"
+                        : "text-zinc-700 hover:text-emerald-400 hover:bg-emerald-500/10"
+                    }`}
+                  >
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                  </button>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); toggleHookApproval(i, "rejected"); }}
+                    title="Rechazar hook"
+                    className={`w-5 h-5 rounded-full flex items-center justify-center transition-all ${
+                      hookApprovals[i] === "rejected"
+                        ? "bg-red-500/20 text-red-400"
+                        : "text-zinc-700 hover:text-red-400 hover:bg-red-500/10"
+                    }`}
+                  >
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               <span
                 className={`badge ${
@@ -737,7 +825,7 @@ export default function ScriptViewer({
               <p className="text-[11px] text-zinc-400 mt-2.5 line-clamp-2 leading-relaxed">
                 &ldquo;{hook.script_text || (hook as any).text}&rdquo;
               </p>
-            </button>
+            </div>
           ))}
 
           {/* Generate More button inline */}
@@ -822,6 +910,8 @@ export default function ScriptViewer({
               const isRehook = section.is_rehook;
               const beatClass = pfn(section) ? `beat-${pfn(section)}` : '';
               const hasBeat = !!pfn(section);
+              const ipadDirs = (section as any).ipad_directions as string[] | undefined;
+              const pizarronDirs = (section as any).pizarron_directions as string[] | undefined;
               return (
                 <div
                   key={i}
@@ -855,11 +945,114 @@ export default function ScriptViewer({
                       MC: {(section as any).micro_belief}
                     </div>
                   )}
-                  <InlineEdit
-                    value={section.script_text || ''}
-                    onSave={(v) => handleEdit(`development.sections.${i}.script_text`, v)}
-                    className="text-zinc-200 text-sm"
-                  />
+                  <div>
+                    <InlineEdit
+                      value={section.script_text || ''}
+                      onSave={(v) => handleEdit(`development.sections.${i}.script_text`, v)}
+                      className="text-zinc-200 text-sm"
+                    />
+                    {ipadDirs?.length ? (() => {
+                      const ipadStatus = (section as any).ipad_status as string | undefined;
+                      const borderColor = ipadStatus === "ready" ? "border-green-500/40" : ipadStatus === "rejected" ? "border-red-500/40" : "border-zinc-700/30";
+                      const bgColor = ipadStatus === "ready" ? "bg-green-900/20" : ipadStatus === "rejected" ? "bg-red-900/20" : "bg-zinc-800/40";
+                      return (
+                      <div className={`mt-3 ${bgColor} border ${borderColor} rounded-lg p-2.5 transition-colors duration-200`}>
+                        <div className="flex items-center gap-1.5 mb-2">
+                          <svg className="w-3.5 h-3.5 text-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5h3m-6.75 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-15a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 4.5v15a2.25 2.25 0 0 0 2.25 2.25Z" />
+                          </svg>
+                          <span className="text-[10px] font-semibold text-blue-400 uppercase tracking-wider">iPad</span>
+                          <div className="flex items-center gap-1 ml-auto">
+                            <button
+                              onClick={async () => {
+                                const newStatus = ipadStatus === "ready" ? undefined : "ready";
+                                const res = await fetch("/api/generate/edit", {
+                                  method: "PATCH",
+                                  headers: { "Content-Type": "application/json" },
+                                  body: JSON.stringify({ generationId, path: `development.sections.${i}.ipad_status`, value: newStatus ?? "" }),
+                                });
+                                const data = await res.json();
+                                if (res.ok) setScript(data.script);
+                              }}
+                              className={`w-5 h-5 rounded flex items-center justify-center transition-all ${
+                                ipadStatus === "ready"
+                                  ? "bg-green-500/30 text-green-400"
+                                  : "bg-zinc-700/40 text-zinc-600 hover:text-green-400 hover:bg-green-500/10"
+                              }`}
+                              title="Material listo"
+                            >
+                              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                              </svg>
+                            </button>
+                            <button
+                              onClick={async () => {
+                                const newStatus = ipadStatus === "rejected" ? undefined : "rejected";
+                                const res = await fetch("/api/generate/edit", {
+                                  method: "PATCH",
+                                  headers: { "Content-Type": "application/json" },
+                                  body: JSON.stringify({ generationId, path: `development.sections.${i}.ipad_status`, value: newStatus ?? "" }),
+                                });
+                                const data = await res.json();
+                                if (res.ok) setScript(data.script);
+                              }}
+                              className={`w-5 h-5 rounded flex items-center justify-center transition-all ${
+                                ipadStatus === "rejected"
+                                  ? "bg-red-500/30 text-red-400"
+                                  : "bg-zinc-700/40 text-zinc-600 hover:text-red-400 hover:bg-red-500/10"
+                              }`}
+                              title="Falta material"
+                            >
+                              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <InlineEdit
+                          value={ipadDirs.join("\n")}
+                          onSave={async (v) => {
+                            const newDirs = v.split("\n").map(l => l.trim()).filter(Boolean);
+                            const res = await fetch("/api/generate/edit", {
+                              method: "PATCH",
+                              headers: { "Content-Type": "application/json" },
+                              body: JSON.stringify({ generationId, path: `development.sections.${i}.ipad_directions`, value: newDirs }),
+                            });
+                            const data = await res.json();
+                            if (!res.ok) throw new Error(data.error);
+                            setScript(data.script);
+                          }}
+                          className="text-[11px] text-zinc-400 leading-tight"
+                          compact
+                        />
+                      </div>
+                      );
+                    })() : null}
+                    {pizarronDirs?.length ? (
+                      <div className="mt-3 bg-emerald-900/20 border border-emerald-500/20 rounded-lg p-2.5">
+                        <div className="flex items-center gap-1.5 mb-2">
+                          <span className="text-base">🎨</span>
+                          <span className="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider">Pizarrón / Lámina</span>
+                        </div>
+                        <InlineEdit
+                          value={pizarronDirs.join("\n")}
+                          onSave={async (v) => {
+                            const newDirs = v.split("\n").map(l => l.trim()).filter(Boolean);
+                            const res = await fetch("/api/generate/edit", {
+                              method: "PATCH",
+                              headers: { "Content-Type": "application/json" },
+                              body: JSON.stringify({ generationId, path: `development.sections.${i}.pizarron_directions`, value: newDirs }),
+                            });
+                            const data = await res.json();
+                            if (!res.ok) throw new Error(data.error);
+                            setScript(data.script);
+                          }}
+                          className="text-[11px] text-emerald-300/70 leading-tight"
+                          compact
+                        />
+                      </div>
+                    ) : null}
+                  </div>
                 </div>
               );
             });
@@ -1030,6 +1223,24 @@ export default function ScriptViewer({
           >
             {explodeLoading ? "Generando..." : "Explotar Ángulo"}
           </button>
+          <button
+            onClick={handleCopiesMatrix}
+            disabled={copiesMatrixLoading}
+            className="px-4 py-2 text-xs rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 hover:bg-emerald-500/10 disabled:opacity-50 transition-all"
+          >
+            {copiesMatrixLoading ? "Generando 15 copies..." : "15 Copies (5H × 3CTA)"}
+          </button>
+          {copiesMatrix && copiesMatrix.total_versions > 0 && (
+            <a
+              href={`/api/export/copies?generationId=${generationId}`}
+              className="px-4 py-2 text-xs rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all flex items-center gap-1.5 font-medium"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              Descargar CSV ({copiesMatrix.total_versions} copies)
+            </a>
+          )}
         </div>
 
         {/* Ad Copy Embudo Result */}
@@ -1091,6 +1302,93 @@ export default function ScriptViewer({
                 </div>
               </div>
             )}
+          </div>
+        )}
+
+        {/* 15 Copies Matrix Result */}
+        {copiesMatrix && (
+          <div className="mt-6">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+                {copiesMatrix.total_versions} Copies — 5 Hooks × 3 CTAs
+              </span>
+              <a
+                href={`/api/export/copies?generationId=${generationId}`}
+                className="text-[10px] px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition-all flex items-center gap-1"
+              >
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                CSV
+              </a>
+            </div>
+
+            {/* Diversity warnings */}
+            {copiesMatrix.diversity_warnings && copiesMatrix.diversity_warnings.length > 0 && (
+              <div className="mb-4 border border-amber-500/30 rounded-xl p-3 bg-amber-500/5">
+                <span className="text-amber-400 text-[10px] font-semibold uppercase">Copies demasiado parecidos:</span>
+                <ul className="mt-1 space-y-0.5">
+                  {copiesMatrix.diversity_warnings.map((w, i) => (
+                    <li key={i} className="text-amber-300/80 text-[11px]">{w}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Group by CTA channel */}
+            {["clase_gratuita", "taller_5", "instagram"].map((channel) => {
+              const channelCopies = copiesMatrix.versions.filter((v) => v.cta_channel === channel);
+              if (channelCopies.length === 0) return null;
+              const label = channelCopies[0].cta_label;
+              return (
+                <div key={channel} className="mb-4">
+                  <h4 className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                    <span className={`w-2 h-2 rounded-full ${channel === "clase_gratuita" ? "bg-blue-500" : channel === "taller_5" ? "bg-amber-500" : "bg-pink-500"}`} />
+                    {label} ({channelCopies.length})
+                  </h4>
+                  <div className="space-y-1.5">
+                    {channelCopies.map((copy, ci) => {
+                      const globalIdx = copiesMatrix.versions.indexOf(copy);
+                      const isExpanded = copiesExpandedIdx === globalIdx;
+                      return (
+                        <div key={ci} className={`border rounded-xl transition-all ${isExpanded ? "border-emerald-500/30 bg-emerald-500/5" : "border-zinc-800/30 bg-zinc-900/20 hover:border-zinc-700/40"}`}>
+                          <button
+                            onClick={() => setCopiesExpandedIdx(isExpanded ? null : globalIdx)}
+                            className="w-full px-3.5 py-2.5 flex items-center gap-3 text-left"
+                          >
+                            <span className="text-[10px] font-mono text-zinc-600 bg-zinc-800/60 px-1.5 py-0.5 rounded shrink-0">H{copy.hook_index + 1}</span>
+                            <span className="text-xs text-zinc-400 truncate flex-1">{copy.headline}</span>
+                            <span className="text-[10px] text-zinc-600 shrink-0">{copy.word_count}w</span>
+                            <span className="text-[10px] text-zinc-700 shrink-0">{copy.structure_used}</span>
+                            <svg className={`w-3 h-3 text-zinc-600 transition-transform ${isExpanded ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                          </button>
+                          {isExpanded && (
+                            <div className="px-3.5 pb-3.5 space-y-2">
+                              <div className="flex gap-4 text-[10px]">
+                                <div>
+                                  <span className="text-zinc-600 uppercase">Headline</span>
+                                  <p className="text-emerald-400 font-medium">{copy.headline}</p>
+                                </div>
+                                <div>
+                                  <span className="text-zinc-600 uppercase">Descripción</span>
+                                  <p className="text-zinc-400">{copy.description}</p>
+                                </div>
+                              </div>
+                              <div>
+                                <span className="text-[10px] text-zinc-600 uppercase">Texto Principal</span>
+                                <p className="text-zinc-300 text-xs leading-relaxed whitespace-pre-wrap mt-1">{copy.primary_text}</p>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         )}
       </div>

@@ -1,0 +1,439 @@
+{
+  "id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+  "briefId": "a4415183-f3f9-4835-8cd1-fe93cd7f2abd",
+  "title": "100 clientes fue mi peor momento — coaching (Valentina)",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.4_economia_del_conocimiento",
+    "body_type": "demolicion_mito",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "Coaching/consultoría (sesiones 1:1)",
+    "model_sale_type": "cementerio_de_modelos",
+    "transition_text": "Y ese modelo es exactamente lo que enseño.",
+    "total_duration_seconds": 82,
+    "word_count": 220,
+    "belief_change": {
+      "old_belief": "Si soy buena en lo que hago y cobro por hora, con el tiempo voy a ganar más",
+      "mechanism": "El modelo de cobrar por hora tiene techo matemático — empaquetar tu conocimiento en producto digital lo elimina",
+      "new_belief": "Mi conocimiento vale más como producto que como hora de trabajo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi negocio tiene techo porque depende de mi presencia",
+        "installed_via": "escena del hotel: si no estás, no cobrás",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Cobrar más por hora no cambia la estructura — el techo sigue",
+        "installed_via": "destrucción del mito de 'ganar más con experiencia'",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo empaquetar lo que ya sé en producto digital con IA",
+        "installed_via": "proceso: frameworks + IA + venta automatizada",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Lo que repito en cada sesión se puede sistematizar",
+        "installed_via": "demolición de 'mis clientes necesitan el uno a uno'",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Jesús pasó de 100 clientes hora a productos digitales — funciona",
+        "installed_via": "historia real de Jesús: 100 clientes fue su peor momento",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Estoy en la cama de mi casa. Son las 10 de la mañana y todavía no me levanté. ¿Vos podrías quedarte en la cama a las 10? Si tu respuesta es no, deberías escuchar esto.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "Si mañana te enfermás, tu negocio de coaching se para. Si te querés tomar una semana, no cobrás. Eso no es un negocio — es un empleo donde vos sos el jefe y el empleado.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Sos como un médico que atiende un paciente por vez. Puede ser el mejor del mundo, pero si no está en el consultorio, no cobra. Ahora imaginate que ese médico escribe un libro con todo lo que sabe. Ese libro se vende solo. Mismo conocimiento. Distinto modelo",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "timeline_provocacion",
+        "script_text": "Tuve 100 clientes. Cobraba por hora. Ganaba bien. Y fue el peor momento de mi vida. Hoy estoy acostado a las 10 de la mañana y gano más. Te cuento qué cambié pero primero decime si me equivoco con esto.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "script_text": "Tardé 5 años en darme cuenta que me estaba cagando la vida. Te lo explico en 60 segundos para que no te pase lo mismo.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "destruccion_creencia_limitante",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi negocio tiene techo porque depende de mi presencia",
+          "script_text": "Seguro cobrás por hora. Hacés coaching, consultoría o sesiones uno a uno. Y está bien, sos buena en lo tuyo. Pero fijate algo: si esta semana no trabajás, esta semana no cobrás. Si te enfermás, chau ingresos. Si querés quedarte en la cama un martes como yo ahora, tu negocio se frena. Porque tu negocio sos vos. Y eso tiene un techo.",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "Google Calendar lleno de sesiones 1:1 — todos los horarios ocupados, sin espacio libre",
+            "calculadora — \"Semana sin trabajar = $0 ingresos\""
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Cobrar más por hora no cambia la estructura — el techo sigue",
+          "script_text": "El mito es: \"Si soy buena en lo que hago, voy a ganar más con el tiempo.\" La realidad es que no. Vas a ganar lo MISMO — solo que con más cansancio. Porque el modelo de cobrar por hora tiene un límite matemático: hay 24 horas en el día. Y por más que subas el precio, la estructura no cambia. Seguís cambiando tiempo por plata.",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "gráfico dibujado — línea de ingresos que sube y se aplana contra un techo, con texto \"Techo = tus horas disponibles\"",
+            "calculadora — \"$50/hora × 8 horas × 5 días = $2.000/semana (máximo)\""
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo empaquetar lo que ya sé en producto digital con IA",
+          "script_text": "El mundo cambió. Hoy no se paga solo por HACER, se paga por SABER. Agarrás todo lo que aprendiste haciendo coaching — esos frameworks, esos ejercicios, esas preguntas que siempre funcionan — y lo empaquetás en un producto digital. Una guía. Un programa. Un kit de herramientas. La IA te ayuda a armarlo en una tarde. Y lo vendés mientras hacés tus sesiones. O mientras dormís. O mientras viajás.",
+          "timing_seconds": 18,
+          "ipad_directions": [
+            "ChatGPT con prompt \"Tengo 5 años de experiencia en coaching. Ayudame a empaquetar mis frameworks en una guía digital\"",
+            "ChatGPT generando índice — \"Módulo 1: Diagnóstico inicial\", \"Módulo 2: Ejercicios de autoconocimiento\", \"Módulo 3: Plan de acción\"",
+            "el producto terminado en PDF — diseño profesional con plantillas y ejercicios",
+            "Hotmart — notificación de venta entrando mientras está acostado en casa"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Lo que repito en cada sesión se puede sistematizar",
+          "script_text": "\"Pero mis clientes necesitan el uno a uno.\" Algunos sí. Pero la mayoría de lo que enseñás se puede sistematizar. Las preguntas que repetís en cada sesión, los ejercicios de siempre, el paso a paso que ya tenés en la cabeza. Eso no necesita tu presencia en vivo. Necesita estar bien empaquetado. Y la IA lo empaqueta por vos.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "lista en Notas del iPhone — \"Lo que repito en CADA sesión:\" con 5-6 items tipo \"ejercicio de valores\", \"rueda de la vida\", \"plan 90 días\"",
+            "la misma lista convertida en capítulos de un producto digital — cada item es un módulo"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Jesús pasó de 100 clientes hora a productos digitales — funciona",
+          "script_text": "Yo tuve 100 clientes de agencia cobrando por hora. Fue mi peor momento. No dormía. Hoy genero ingresos con productos digitales desde la cama de mi casa. Sin reuniones. Sin horarios fijos. Mismo conocimiento. Distinto modelo.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "foto o captura de época — agenda saturada con 100 clientes, mensajes sin responder",
+            "Hotmart dashboard — ventas del mes con gráfico subiendo, todo automático"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Productos digitales es el único modelo sin techo",
+          "script_text": "Probé freelance — cobraba un dólar la hora. Probé agencia — 100 clientes y no dormía. El único modelo donde creás algo una vez y lo vendés infinitas veces, sin horarios, sin techo, sin depender de estar presente... es este.",
+          "timing_seconds": 8,
+          "ipad_directions": [
+            "timeline visual — \"Freelance: $1/hora\" → \"Agencia: 100 clientes, no dormía\" → \"Productos digitales: libertad\"",
+            "Hotmart dashboard — ventas entrando mientras Jesús está acostado en casa hablando"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 37,
+        "ingredient_name": "Techo de Modelo"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 42,
+        "ingredient_name": "Ironía Dolorosa"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Nuevo Marco"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 68,
+        "ingredient_name": "Timeline Comprimido"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "Pregunta Retórica"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. [...] Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "orden_nlp": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. [...] Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      }
+    ]
+  },
+  "createdAt": "2026-03-18T18:10:14.894Z",
+  "status": "confirmed",
+  "batch": {
+    "id": "b36369e3-48f1-4299-94b8-04bf0960e43e",
+    "name": "Version 2.0"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "ad_copies_matrix": {
+    "generation_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+    "angle": "oportunidad — 2.4_economia_del_conocimiento",
+    "niche": "Coaching/consultoría (sesiones 1:1)",
+    "total_versions": 15,
+    "versions": [
+      {
+        "hook_index": 0,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H1-ClaseGratuita",
+        "headline": "Mismo saber, distinto modelo",
+        "description": "Clase gratuita 2hs en vivo: cómo crear y vender productos digitales con IA. Sin compromiso.",
+        "primary_text": "Hace 3 años yo también tenía la agenda llena.\nSesiones de lunes a viernes, lista de espera, todo bien en papel.\nPero el domingo a la noche ya sentía el pecho apretado pensando en el lunes.\n\nCamino A: seguís como estás.\nCada hora que no trabajás es una hora que no cobrás.\nSubís el precio, sí. Pero el techo sigue ahí — 24 horas tiene el día, no hay forma de estirarlas.\nY cuando te querés tomar 9 días de vacaciones, el negocio no te espera.\n\nCamino B: empaquetás lo que ya sabés.\nEsos frameworks que usás en cada sesión, las 7 preguntas que siempre funcionan, el paso a paso que tenés en la cabeza desde hace años.\nLo convertís en un producto digital. La IA te ayuda a armarlo.\nY ese producto se vende mientras hacés tus sesiones, mientras viajás, mientras dormís.\n\nLa diferencia no es el conocimiento — ese ya lo tenés.\nLa diferencia es la estructura.\n\nEn el camino A, vos sos el producto. En el camino B, tu conocimiento es el producto.\nUno tiene techo. El otro no.\n\nEl martes pasado me quedé en cama hasta las 10. Sin culpa. Sin cancelar nada. Sin perder un peso.\nEso no fue suerte. Fue cambiar el modelo.\n\nSi querés entender cómo funciona esto en la práctica, hay una clase gratuita de 2 horas donde se explica todo — cómo encontrar qué crear, cómo armarlo con IA y cómo venderlo.\nEs en vivo. Sin costo. Sin compromiso.\nEl link está abajo. 👇",
+        "word_count": 234,
+        "structure_used": "Comparación directa"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H1-InstagramOrgánico",
+        "headline": "Son las 10 y sigo en la cama.",
+        "description": "Instagram orgánico",
+        "primary_text": "Son las 10 de la mañana y sigo en la cama.\n\nNo porque esté enfermo. No porque sea feriado.\n\nSino porque puedo.\n\nHace tres años esto era imposible para mí. Tenía 100 clientes, cobraba por hora, y si no trabajaba, no comía. Literal.\n\nLa trampa del coaching por hora es que parece libertad pero no lo es. Sos vos quien tiene que estar presente, siempre. El negocio sos vos. Y eso tiene un techo muy concreto: 24 horas.\n\nLo que cambié fue simple: agarré todo lo que ya sabía — los ejercicios, las preguntas, el paso a paso que repetía en cada sesión — y lo empaquété.\n\nMismo conocimiento. Distinto modelo.\n\nHoy eso se vende sin que yo esté. Y yo me quedo en la cama hasta las 10.\n\nSi te dedicás al coaching y querés entender cómo funciona esto, escribime. Te cuento sin vueltas.",
+        "word_count": 148,
+        "structure_used": "Situación cotidiana → contraste pasado/presente → insight → CTA suave"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H1-Taller$5",
+        "headline": "Cobrar por hora es el problema",
+        "description": "Taller 3 días, $5 USD. Salís con tu producto digital armado y listo para vender.",
+        "primary_text": "Estoy en la cama de mi casa. Son las 10 de la mañana y todavía no me levanté.\n\nY mientras escribo esto, hay coaches brillantes — mejores que yo en muchas cosas — que ya llevan 3 horas trabajando porque si no trabajan, no cobran.\n\nEl mito que te vendieron es este: «Soy buena en lo que hago, con el tiempo voy a ganar más.»\n\nMentira.\n\nVas a ganar lo mismo. Solo que con más cansancio, más reuniones y más dependencia de tu agenda.\n\nEl modelo de cobrar por hora tiene un techo matemático que no se negocia: hay 24 horas en el día. Podés subir tu precio, podés sumar clientes, pero la estructura no cambia. Seguís cambiando tiempo por plata.\n\nY lo más irónico: cuanto mejor sos, más demanda tenés. Cuanta más demanda, más agotada estás. El éxito te juega en contra.\n\nLo que nadie te dice es que todo lo que aprendiste haciendo sesiones — esos frameworks, esas preguntas que repetís en cada cliente, ese paso a paso que ya tenés en la cabeza — puede existir sin que vos estés presente.\n\nEmpaquetado como producto digital. Armado con IA en una tarde. Vendiéndose mientras hacés tus sesiones, mientras viajás, o mientras seguís en la cama a las 10.\n\nMismo conocimiento. Distinto modelo.\n\nEn el Taller de 3 días por $5, salís con tu producto creado, tu anuncio listo y tu sistema funcionando.\n\nTres días. Cinco dólares. Algo concreto en tus manos. 👇",
+        "word_count": 228,
+        "structure_used": "Contrarian manifesto"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "provocacion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H2-ClaseGratuita",
+        "headline": "Un martes roto cambió todo",
+        "description": "Clase gratuita en vivo: cómo vender tu conocimiento como producto digital. Gratis, sin compromiso.",
+        "primary_text": "Valeria estaba en la guardia del hospital un miércoles a las 2 de la mañana.\nNo por ella — por su hijo, fiebre de 39.7.\nMientras esperaba turno, abrió el celular y vio 3 mensajes de clientes preguntando si podían reprogramar.\n\nEn ese momento no lo procesó como una revelación. Lo procesó como culpa.\n\nSemanas después, buscando algo completamente distinto en YouTube, se topó con un video que mostraba cómo una coach de productividad había armado una guía digital con sus metodologías y la vendía de forma automática.\nNo era famosa. No tenía miles de seguidores. Tenía el mismo conocimiento que Valeria — solo que empaquetado distinto.\n\nLo que Valeria descubrió no fue un truco nuevo.\nFue que el modelo de cobrar por hora tiene una falla de base: te pone a vos como cuello de botella de tu propio negocio.\nSi no estás, no hay negocio.\n\nPero el conocimiento que acumulaste en 4 años de sesiones — los ejercicios que repetís, las preguntas que siempre abren algo, el mapa mental que dibujás en cada encuentro — ese conocimiento puede existir sin tu presencia.\nPuede estar en un producto. Puede venderse solo.\nY la IA hoy lo arma en una tarde.\n\nEso es lo que muestra la clase gratuita de 2 horas: cómo identificar qué empaquetar, cómo crearlo con IA y cómo venderlo con publicidad.\nEs en vivo. Sin costo.\nEl link está abajo.",
+        "word_count": 227,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "provocacion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H2-InstagramOrgánico",
+        "headline": "Tu negocio de coaching es un empleo.",
+        "description": "Instagram orgánico",
+        "primary_text": "Te lo digo así, directo: si mañana te enfermás, tu negocio se para.\n\nEso no es un negocio. Es un empleo donde vos ponés el cuerpo, la cabeza y encima el riesgo.\n\nY la verdad es que no es culpa tuya. Es el modelo. Cobrar por hora tiene un límite matemático que no se puede romper por más que subas el precio o laburés más rápido.\n\nEl problema no es lo que sabés. El problema es cómo lo estás vendiendo.\n\nTodo lo que enseñás en tus sesiones — esas preguntas que siempre funcionan, ese ejercicio que repetís, ese orden que ya tenés en la cabeza — eso puede existir sin que vos estés presente.\n\nNo estoy diciendo que dejes de hacer sesiones. Estoy diciendo que eso no puede ser lo único.\n\nMirá el link en bio si querés ver cómo lo armé yo. 🧵",
+        "word_count": 145,
+        "structure_used": "Provocación directa → diagnóstico del modelo → reencuadre → CTA"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "provocacion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H2-Taller$5",
+        "headline": "\"Armé mi producto en 2 tardes\"",
+        "description": "Taller 3 días, $5 USD. Producto digital terminado, anuncio y sistema incluidos.",
+        "primary_text": "Me llegó este mensaje el jueves pasado a las 11 de la noche:\n\n«Jesús, te mando esto medio en shock. Llevo 4 años dando sesiones uno a uno. La semana pasada me agarró una gripe horrible y perdí $340 en consultas canceladas. Eso me hizo click. Entré al taller medio escéptica porque cinco dólares me parecía raro. Pero el Día 1 me ayudaste a identificar el producto. El Día 2 lo armamos con IA — literalmente en 2 tardes. El Día 3 escribí el anuncio. Esta semana tuve 3 ventas de $37 mientras estaba en cama con fiebre. No es una fortuna. Pero es la primera vez en 4 años que cobré sin trabajar. Eso no tiene precio.»\n\nEsto no es un caso excepcional.\n\nEs lo que pasa cuando una coach que ya sabe lo que hace entiende que su conocimiento vale más empaquetado que vendido por hora.\n\nLas preguntas que repetís en cada sesión. Los ejercicios de siempre. El paso a paso que ya tenés en la cabeza. Nada de eso necesita tu presencia en vivo. Necesita estar bien armado.\n\nY la IA lo arma con vos en una tarde.\n\nEl Taller dura 3 días. Cuesta $5. No es una promesa de ingresos pasivos mágicos — es que salís con tu producto terminado, tu anuncio escrito y tu sistema listo.\n\nTres días. Algo real en tus manos. 👇",
+        "word_count": 224,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "analogia_cotidiana",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H3-ClaseGratuita",
+        "headline": "Antes: 100 clientes. Después: cama.",
+        "description": "Clase gratuita 2hs: cómo transformar tu conocimiento en producto digital con IA. Sin costo.",
+        "primary_text": "Antes, el escritorio era un campo minado.\n53 audios de WhatsApp sin escuchar. Tres hojas de ruta a medias. Una planilla de seguimiento de clientes que ya no entraba en pantalla.\nYo era bueno en lo que hacía. Eso no estaba en discusión.\nPero el modelo me estaba comiendo.\n\nCada semana que no trabajaba era una semana sin ingresos.\nCada enfermedad, cada viaje, cada día que simplemente no tenía ganas — todo se pagaba en plata o en culpa.\nEl problema no era mi habilidad. Era la estructura.\n\nDespués, el mismo escritorio. Pero ahora con una taza de café que se enfría a las 10 de la mañana porque no hay apuro.\nLo que cambió no fue lo que sé — eso es exactamente igual.\nLo que cambió es que ese conocimiento ya no depende de mi presencia para generar ingresos.\n\nEmpaqué los frameworks que usaba en cada sesión. Las 11 preguntas que siempre abrían algo. El proceso que tenía en la cabeza pero nunca había escrito.\nLa IA me ayudó a estructurarlo en menos de una tarde.\nY ese producto se vende mientras duermo.\n\nNo te estoy diciendo que abandones tus sesiones.\nTe estoy diciendo que lo que ya sabés vale más de lo que te están pagando por hora.\n\nHay una clase gratuita de 2 horas donde se explica exactamente cómo hacer esto — qué crear, cómo armarlo con IA y cómo venderlo.\nEs en vivo. Sin costo. Sin compromiso.\nEl link está abajo.",
+        "word_count": 242,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "analogia_cotidiana",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H3-InstagramOrgánico",
+        "headline": "El médico más caro del mundo.",
+        "description": "Instagram orgánico",
+        "primary_text": "Me acuerdo cuando me cayó la ficha con esta imagen.\n\nUn médico puede ser el mejor del mundo. Pero si no está en el consultorio, no cobra. No importa cuánto sepa. No importa cuántos años estudió.\n\nAhora imaginate que ese mismo médico escribe un libro con todo lo que sabe. Ese libro se vende mientras duerme.\n\nVos como coach tenés exactamente lo mismo que ese médico: conocimiento que vale. La diferencia es que todavía lo estás vendiendo como si fuera una consulta.\n\nFijate esto: las preguntas que hacés en cada sesión, los ejercicios de siempre, el orden que ya tenés automatizado... eso no necesita tu presencia. Necesita estar bien armado.\n\nYo lo hice. Tardé más de lo que debería haber tardado, pero lo hice.\n\nSi te interesa entender cómo, comentá \"libro\" y te mando info.",
+        "word_count": 141,
+        "structure_used": "Analogía → espejo al lector → insight práctico → CTA con palabra clave"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "analogia_cotidiana",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H3-Taller$5",
+        "headline": "El médico que dejó de atender",
+        "description": "Taller 3 días, $5. Salís con producto, anuncio y sistema. Sin magia, sin humo.",
+        "primary_text": "Consultorio privado, tercer piso, Palermo. Martes a las 9 de la mañana.\n\nEl médico lleva 17 años atendiendo pacientes. Es el mejor en lo suyo. Lista de espera de 53 días. Cobra $180 la consulta y trabaja de lunes a sábado.\n\nUn día se sienta a hacer la cuenta: si no abre el consultorio, no entra un peso. Si se enferma, pierde. Si quiere tomarse vacaciones, pierde. Cuanto más exitoso es, más atado está.\n\nEntonces hace algo que sus colegas no entienden: escribe un libro con todo lo que sabe. Los protocolos que repite en cada consulta. Las preguntas que siempre funcionan. El paso a paso que tiene grabado en la memoria.\n\nEse libro se vende 9 veces mientras él duerme el primer martes que publica.\n\nMismo conocimiento. Distinto modelo.\n\nVos hacés coaching o consultoría. Sos buena en lo tuyo. Pero si esta semana no trabajás, esta semana no cobrás. Y por más que subas el precio de tus sesiones, la estructura no cambia: seguís cambiando tiempo por plata.\n\nTodo lo que aprendiste — esos frameworks, esas preguntas que repetís, esos ejercicios que siempre funcionan — puede existir sin que estés presente.\n\nEmpaquetado. Vendido una vez, entregado infinitas.\n\nEn el Taller de 3 días por $5 construís ese producto con IA, escribís tu anuncio y armás el sistema completo.\n\nNo es teoría. Salís con algo hecho. 👇",
+        "word_count": 221,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "timeline_provocacion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H4-ClaseGratuita",
+        "headline": "3 señales de que tu modelo tiene techo",
+        "description": "Clase gratuita en vivo: convertí tu conocimiento en producto digital con IA. Sin costo, sin presión.",
+        "primary_text": "Yo tuve 100 clientes cobrando por hora. Ganaba bien. Y fue el peor momento de mi vida.\nHoy estoy en cama a las 10 de la mañana y gano más. Te cuento qué cambié.\nPero primero, fijate si te pasa algo de esto.\n\n1. Si esta semana no trabajás, esta semana no cobrás.\nNo importa cuánto subiste el precio ni cuántos años de experiencia tenés. La ecuación es la misma: horas trabajadas = ingresos. Sin excepción.\n\n2. Pensar en vacaciones te genera ansiedad, no alivio.\nNo es que no querés descansar. Es que el costo de parar es demasiado concreto. Entonces seguís.\n\n3. Estás repitiendo las mismas explicaciones desde hace años.\nLas mismas preguntas en cada sesión. Los mismos ejercicios. El mismo mapa mental. Todo en tu cabeza, nunca escrito. Nunca sistematizado.\n\nSi te identificaste con al menos 2 de estas, no es un problema tuyo — es un problema del modelo.\nEl modelo de cobrar por hora tiene un límite matemático. Y por más que seas brillante en lo que hacés, ese límite no desaparece.\n\nLo que sí cambia es empaquetar lo que ya sabés en un producto digital.\nEso que repetís en cada sesión puede existir sin vos. Puede venderse solo. La IA lo arma.\n\nHay una clase gratuita de 2 horas donde se muestra exactamente cómo: qué crear, cómo armarlo con IA y cómo venderlo con publicidad.\nEs en vivo. Sin costo.\nEl link está abajo.",
+        "word_count": 239,
+        "structure_used": "Listicle de señales"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "timeline_provocacion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H4-InstagramOrgánico",
+        "headline": "100 clientes y era el peor momento.",
+        "description": "Instagram orgánico",
+        "primary_text": "Tuve 100 clientes cobrando por hora.\n\nTodo el mundo me decía que me estaba yendo bien. Y en papel, sí.\n\nPero no dormía. Cada mes empezaba de cero. Cada vez que quería tomarme un respiro, sentía que se me caía todo.\n\nEl problema no era que no laburara. El problema era que el modelo me exigía estar siempre presente para que existiera.\n\nLo que aprendí — y me costó cinco años entenderlo — es que hay una diferencia enorme entre vender lo que hacés y vender lo que sabés.\n\nCuando vendés lo que hacés, estás en el modelo del tiempo por plata. Cuando empaquetás lo que sabés, creás algo que puede existir sin vos.\n\nNo es magia. Es sentarse a sistematizar lo que ya tenés en la cabeza.\n\nHoy genero ingresos sin reuniones ni horarios fijos. Mismo conocimiento. Distinto modelo.\n\n¿Querés que te cuente cómo? Escribime.",
+        "word_count": 152,
+        "structure_used": "Confesión con contraste → diagnóstico → distinción clave → resultado → CTA"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "timeline_provocacion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H4-Taller$5",
+        "headline": "100 clientes. Sin dormir. Y cambié.",
+        "description": "Taller 3 días, $5 USD. Producto digital armado con IA. Anuncio y sistema incluidos.",
+        "primary_text": "Tuve 100 clientes de agencia cobrando por hora.\n\nGanaba bien. En papel, todo era éxito. Pero me acuerdo de un miércoles a las 2 de la mañana respondiendo el mensaje número 37 del día, pensando: «¿Esto es lo que quería?»\n\nNo dormía. No podía enfermarme. No podía desaparecer 3 días. Cada peso que entraba dependía de que yo estuviera presente, disponible, respondiendo.\n\nFue el peor momento de mi vida profesional.\n\nHoy son las 10 de la mañana y sigo en la cama. Hay productos digitales que se vendieron mientras dormía. No tengo reuniones. No tengo horario fijo. Tengo el mismo conocimiento de antes — empaquetado distinto.\n\nEl cambio no fue mágico. Fue estructural.\n\nAgarré todo lo que sabía hacer — los frameworks, los ejercicios, las preguntas que repetía en cada sesión — y lo armé como producto. La IA me ayudó a construirlo en una tarde. Y ese producto existe sin mí.\n\nSi hacés coaching o consultoría y sentís que tu negocio se frena cuando vos te frenás, no es un problema de precio ni de clientes. Es un problema de modelo.\n\nTu conocimiento vale más empaquetado que vendido por hora.\n\nEn el Taller de 3 días por $5 te ayudo a hacer ese cambio: Día 1, encontrás tu producto ganador. Día 2, lo armás con IA. Día 3, escribís tu anuncio y montás el sistema.\n\nCinco dólares. Tres días. Algo concreto en tus manos. 👇",
+        "word_count": 237,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "confesion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H5-ClaseGratuita",
+        "headline": "\"Más experiencia = más ingresos\" es mentira",
+        "description": "Clase gratuita 2hs en vivo: cómo crear y vender tu conocimiento con IA. Gratis, sin compromiso.",
+        "primary_text": "Hay una idea que circula en el mundo del coaching y la consultoría que suena muy razonable.\nTanto que casi nadie la cuestiona.\n\nDice así: si sos buena en lo que hacés y seguís creciendo, con el tiempo vas a ganar más.\n\nEs una mentira bien intencionada.\n\nLo que en realidad pasa es esto: ganás lo mismo, pero con más cansancio.\nPorque el modelo de cobrar por hora no escala con tu experiencia — escala con tus horas disponibles.\nY esas horas tienen un techo que no cambia sin importar cuánto sepas.\n\nEl mundo de los ingresos cambió hace años, pero nadie se lo dijo a la industria del coaching.\nHoy no se paga solo por hacer. Se paga por saber.\nY hay una diferencia enorme entre vender tu tiempo y vender tu conocimiento.\n\nTu conocimiento puede existir en un producto digital.\nEsos ejercicios que repetís en cada sesión, esas 7 preguntas que siempre funcionan, ese framework que desarrollaste en 5 años de práctica.\nNada de eso necesita tu presencia en vivo para ser útil.\nNecesita estar bien empaquetado. Y la IA hoy lo empaqueta en una tarde.\n\nNo es un camino mágico. Es un modelo distinto.\nUno donde creás algo una vez y lo vendés infinitas veces, sin horarios, sin techo.\n\nHay una clase gratuita de 2 horas que muestra exactamente cómo funciona esto — qué crear, cómo armarlo con IA y cómo venderlo.\nEs en vivo. Sin costo. Sin compromiso.\nEl link está abajo.",
+        "word_count": 241,
+        "structure_used": "Contrarian manifesto"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "confesion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H5-InstagramOrgánico",
+        "headline": "Tardé 5 años en darme cuenta.",
+        "description": "Instagram orgánico",
+        "primary_text": "Tardé 5 años en entender que me estaba cagando la vida.\n\nNo porque no supiera lo que hacía. Sino porque nunca cuestioné el modelo.\n\nPrimero fui freelance. Un dólar la hora, pero bueno, era el principio.\nDespués armé una agencia. 100 clientes. Ganaba bien. Y fue lo peor que me pasó.\n\nEl problema con cobrar por hora es que escala hasta cierto punto y después te aplasta. Más clientes es más vos, más tiempo, más presencia. No hay salida dentro de ese modelo.\n\nLa verdad es que el conocimiento que usás en cada sesión — eso que ya tenés automatizado, esas preguntas que siempre funcionan — vale mucho más de lo que cobrás por hora.\n\nSolo que nadie te enseña a empaquetarlo.\n\nYo lo aprendí a los golpes. Si querés saltarte esa parte, mirá el link en bio.",
+        "word_count": 137,
+        "structure_used": "Confesión cronológica → diagnóstico → reencuadre del valor → CTA suave"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "confesion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H5-Taller$5",
+        "headline": "3 señales de que tu modelo tiene techo",
+        "description": "Taller 3 días, $5. Creás tu producto digital con IA. Para coaches y consultoras.",
+        "primary_text": "Tardé 5 años en darme cuenta. No quiero que te pase lo mismo.\n\nHay 3 señales de que tu modelo de coaching tiene un techo que ya no podés ignorar:\n\n1. Si esta semana no trabajás, esta semana no cobrás.\nNo importa cuánto valgas. No importa cuántos años de experiencia tenés. Cuando cerrás la agenda, se cierra el ingreso. Eso no es un negocio — es un trabajo con vos como empleada y jefa al mismo tiempo.\n\n2. Cada vez que subís el precio, también sube la exigencia.\nMás plata por sesión suena bien hasta que te das cuenta de que los clientes que pagan más exigen más. Más mensajes. Más disponibilidad. Más de vos. El modelo te atrapa igual.\n\n3. Tenés frameworks, preguntas y ejercicios que repetís en cada sesión — y no los monetizás por separado.\nEso que ya tenés en la cabeza, ese paso a paso que funciona siempre, puede existir sin que estés presente. Empaquetado como producto digital. Armado con IA. Vendiéndose mientras hacés tus sesiones o mientras viajás.\n\nYo pasé por las 3. Reconocerlas fue el primer paso.\n\nEl segundo fue armar mi primer producto en 2 tardes con IA y venderlo sin reuniones, sin horarios, sin techo.\n\nEn el Taller de 3 días por $5 hacemos eso con vos: encontrás tu producto, lo armás y escribís tu anuncio.\n\nTres días. Cinco dólares. Salís con algo real. 👇",
+        "word_count": 229,
+        "structure_used": "Listicle de señales"
+      }
+    ],
+    "diversity_warnings": [],
+    "createdAt": "2026-03-23T20:34:29.669Z"
+  }
+}

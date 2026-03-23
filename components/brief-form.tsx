@@ -43,18 +43,23 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
     top_keywords: Array<{ keyword: string; total_score: number; angles: string[]; niche: string | null }>;
     by_angle: Record<string, Array<{ keyword: string; total_score: number }>>;
     generated_at: string;
+    freshness?: { days_old: number; stale: boolean };
   } | null>(null);
   const [researchError, setResearchError] = useState(false);
+  const [researchRefreshing, setResearchRefreshing] = useState(false);
 
   async function fetchResearch() {
-    if (researchData) return; // already loaded
+    if (researchData?.top_keywords?.length) return; // already fully loaded
     setResearchLoading(true);
     setResearchError(false);
     try {
       const res = await fetch("/api/research?limit=15");
       if (!res.ok) throw new Error();
       const data = await res.json();
-      setResearchData(data);
+      setResearchData({
+        ...data,
+        freshness: data.freshness,
+      });
     } catch {
       setResearchError(true);
     } finally {
@@ -62,10 +67,33 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
     }
   }
 
+  // Check research freshness on mount (lightweight)
+  useEffect(() => {
+    fetch("/api/research?limit=1")
+      .then((r) => r.ok ? r.json() : null)
+      .then((data) => {
+        if (data?.freshness) {
+          setResearchData((prev) => prev ? { ...prev, freshness: data.freshness } : {
+            top_keywords: [],
+            by_angle: {},
+            generated_at: data.generated_at,
+            freshness: data.freshness,
+          });
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   function handleToggleResearch() {
     const next = !researchOpen;
     setResearchOpen(next);
-    if (next) fetchResearch();
+    if (next) {
+      // Force reload when opening (in case we only have freshness data)
+      if (!researchData?.top_keywords?.length) {
+        setResearchData(null);
+      }
+      fetchResearch();
+    }
   }
 
   function handleKeywordClick(keyword: string) {
@@ -409,14 +437,15 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
             onChange={(e) => setAvatar(e.target.value)}
             className="w-full bg-zinc-800/30 border border-zinc-800/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 appearance-none cursor-pointer"
           >
-            <option value="">Auto (menos usado)</option>
-            <option value="martin">Martin (26, oficinista)</option>
-            <option value="laura">Laura (38, mama)</option>
-            <option value="roberto">Roberto (58, jubilado)</option>
-            <option value="valentina">Valentina (32, freelancer)</option>
-            <option value="diego">Diego (44, esceptico)</option>
-            <option value="camila">Camila (29, inmigrante)</option>
+            <option value="">Auto (por peso de compradores)</option>
+            <option value="patricia">Patricia (48, empleada) ★</option>
+            <option value="roberto">Roberto (62, jubilado) ★</option>
             <option value="soledad">Soledad (41, profesional)</option>
+            <option value="diego">Diego (44, esceptico)</option>
+            <option value="valentina">Valentina (32, freelancer)</option>
+            <option value="laura">Laura (38, mama)</option>
+            <option value="camila">Camila (29, inmigrante)</option>
+            <option value="martin">Martin (26, oficinista)</option>
           </select>
         </div>
 
@@ -455,6 +484,11 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
           Ver tendencias
+          {researchData?.freshness?.stale && (
+            <span className="ml-2 px-1.5 py-0.5 text-[10px] bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-md">
+              {researchData.freshness.days_old}d viejo
+            </span>
+          )}
         </button>
 
         {researchOpen && (
@@ -471,6 +505,32 @@ export default function BriefForm({ projects }: { projects: Project[] }) {
 
             {researchError && (
               <p className="text-xs text-zinc-600">Sin datos de research</p>
+            )}
+
+            {researchData?.freshness?.stale && (
+              <div className="flex items-center justify-between bg-orange-500/5 border border-orange-500/20 rounded-xl px-3 py-2">
+                <span className="text-xs text-orange-400">
+                  Research tiene {researchData.freshness.days_old} dias — los trends pueden estar desactualizados
+                </span>
+                <button
+                  type="button"
+                  disabled={researchRefreshing}
+                  onClick={async () => {
+                    setResearchRefreshing(true);
+                    try {
+                      await fetch("/api/research/refresh", { method: "POST" });
+                      // Clear cached data so it reloads
+                      setResearchData(null);
+                      setTimeout(() => fetchResearch(), 3000);
+                    } catch {} finally {
+                      setResearchRefreshing(false);
+                    }
+                  }}
+                  className="text-[10px] px-2 py-1 bg-orange-500/10 hover:bg-orange-500/20 text-orange-400 rounded-lg transition-colors shrink-0 ml-2 disabled:opacity-50"
+                >
+                  {researchRefreshing ? "Refrescando..." : "Refrescar"}
+                </button>
+              </div>
             )}
 
             {researchData && (

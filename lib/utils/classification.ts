@@ -38,6 +38,8 @@ export function inferBodyType(gen: StoredGeneration): string {
   const sections = gen.script.development?.sections?.map((s: any) => s.section_name?.toLowerCase() || "").join(" ") || "";
   const text = `${framework} ${sections}`;
 
+  if (/alternativa|fiverr|digistore|3 modelo|tres modelo|demolicion_alternativas/.test(text)) return "demolicion_alternativas";
+  if (/qa_conversacional|conversacional.*obje|respondo.*pregunta|me preguntan/.test(text)) return "qa_conversacional";
   if (/analog/.test(text)) return "analogia_extendida";
   if (/compar|camino|versus|vs/.test(text)) return "comparacion_caminos";
   if (/demo|proceso|paso/.test(text)) return "demo_proceso";

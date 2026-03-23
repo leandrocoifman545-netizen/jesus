@@ -68,3 +68,8 @@ Hooks que pasaron la validación de "genuinamente distintos":
 - **Timeline con proyección a futuro** ("Hace 5 años tejías por hobby. Hoy por plata. Dentro de 5...") — urgencia temporal
 - **Analogía concreta no-digital** ("Querés clavar un clavo y lo intentás con una piedra") — sale del mundo online
 - **Provocación con dato específico** ("$15K en tele, radio, revistas. Resultado: 1 cliente.") — el número ancla
+- **Nadie Explica** ("Todos te dicen [consejo obvio] pero NADIE te explica cómo verga hacerlo.") — frustración con el consejo genérico, el "cómo" es el hook real
+- **Hipotético Personal** ("Si mañana me despertara en [situación jodida] y quisiera [resultado soñado] en [menor tiempo posible], esto es exactamente lo que haría.") — empatía + plan concreto + urgencia temporal
+- **Identidad + Dolor** ("Si sos [identidad amplia] y no querés volver a [problema que duele], mirá esto.") — filtra audiencia + activa dolor de repetición
+- **Pregunta Limitación** ("¿Se puede [lograr resultado soñado] incluso si [insertar limitación] en solo [tiempo concreto]?") — la limitación hace que se sientan representados, el tiempo concreto da credibilidad
+- **Asimetría Temporal** ("Tardé [tiempo largo] en aprender esto, pero te lo enseño en menos de [tiempo corto].") — contraste de esfuerzo largo vs entrega corta = valor percibido altísimo

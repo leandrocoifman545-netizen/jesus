@@ -355,7 +355,7 @@ export default function AnalyticsPage() {
               <p className="text-2xl font-bold mt-1">
                 {data.diversityScore.bodyTypes} <span className="text-zinc-600 text-lg">/ {data.diversityScore.bodyTypesMax}</span>
               </p>
-              <p className="text-xs text-zinc-600 mt-1">Objetivo: 5+ de 8</p>
+              <p className="text-xs text-zinc-600 mt-1">Objetivo: 5+ de 10</p>
             </div>
           </div>
 

@@ -16,6 +16,15 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 ### Si pasa un video/link/texto para analizar (detectar: "mirá este video", "analizá esto", archivo .mp4, URL)
 → **Ejecutar skill `/referencia`**
 
+### Si pide STORIES DE INSTAGRAM (detectar: "stories", "historias", "secuencia", "calentamiento", "stories de la semana", "plan de stories", "armame stories", "instagram stories")
+→ **Ejecutar skill `/stories`** — tiene el proceso completo con Constructor de Calentamiento, 7 tipos de secuencia, integración con motor de audiencia, avatares y setter scripts.
+
+### Si pide un AD COPY / COPY DE META ADS (detectar: "copy", "ad copy", "texto del ad", "descripción del ad", "generame el copy", "copy para meta", "copy para facebook")
+→ **Ejecutar skill `/ad-copy`** — genera headline + descripción + texto principal para anuncios de imagen en Meta Ads.
+
+### Si pide PRODUCCIÓN MASIVA DE ADS (detectar: "100 ads", "ad factory", "producción masiva", "batch de ads", "campaña masiva", "100 copies")
+→ **Ejecutar skill `/ad-factory`** — produce 100+ creativos: 7 fases (research → nichos → ángulos → copies → imágenes → organización → campaña Meta).
+
 ### Si pide revisar errores o consistencia (detectar: "audit", "errores", "revisá", "algo roto", "inconsistencias")
 → **Ejecutar skill `/audit`**
 
@@ -48,11 +57,19 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | **Auto-brief (anti-genérico)** | **`lib/ai/auto-brief.ts`** | **Claude elegía defaults genéricos cuando no había brief detallado** |
 | **Angle Discovery** | **`lib/ai/angle-discovery.ts`** | **Ángulos se elegían a mano — ahora se descubren de Google Suggest × cobertura** |
 | **Anti-repetición de hooks** | **`scripts/validate-hooks.mjs` + `.data/patrones-prohibidos-leads.md`** | **Hooks que sonaban iguales cambiando solo el nicho — ahora se bloquean por esqueleto estructural** |
-| **Avatares formales (7)** | **`.data/avatares-adp.md`** | **Segmentos genéricos → personas concretas con nombre, edad, situación y lenguaje** |
+| **Avatares formales (8)** | **`.data/avatares-adp.md`** | **Segmentos genéricos → 8 personas concretas con pesos basados en data de 562 compradores reales** |
+| **Inteligencia de compradores** | **`.data/inteligencia-compradores.md`** | **No existía — 562 compradores reales: demografía, dolores, triggers, miedos, frases textuales** |
 | **5 niveles Schwartz** | **`lib/constants/hook-types.ts` + auto-brief** | **Solo TOFU/MOFU → 5 niveles de conciencia que cambian tono entero. Niveles 1-2 = orgánico/retargeting** |
 | **Ad Copy Embudo** | **`/api/generate/ad-copy-embudo`** | **No existía — texto de 200-350 palabras que recorre 5 niveles** |
 | **Retargeting Hammer Them** | **`/api/generate/retargeting`** | **No existía — 4 cuadrantes de piezas cortas para retargeting** |
 | **Explotar Ángulo** | **`/api/generate/explode-angle`** | **No existía — 1 ángulo → 5 niveles + ad copy + 4 retargeting hooks** |
+| **Copy Engine para Meta Ads** | **`.data/copy-engine-ads.md`** | **No existía — 8 estructuras de copy escrito, Quality Scorecard, anti-ficción, 10 mandamientos, Schwartz para image ads** |
+| **5 copies ejemplo clase mundial** | **`.data/copies-ejemplo-clase-mundial.md`** | **No existía — 5 copies de referencia con análisis de por qué funcionan** |
+| **100 image patterns** | **`.data/image-patterns-ads.md`** | **No existía — 100 entornos únicos para imágenes de ads con texto camuflado** |
+| **Skill Ad Copy** | **`.claude/skills/ad-copy/SKILL.md`** | **No existía — genera headline + descripción + texto principal para Meta Ads** |
+| **Research Engine Ads** | **`.data/research-engine-ads.md`** | **No existía — pipeline de investigación: 6 fuentes, teardown template, voice mining, 4 documentos output** |
+| **Niche Mapping Ads** | **`.data/niche-mapping-ads.md`** | **No existía — 20 nichos × 20 ángulos, Matriz de Multiplicación, 8 tipos de hook, validation checklist** |
+| **Skill Ad Factory** | **`.claude/skills/ad-factory/SKILL.md`** | **No existía — producción masiva: 7 fases, 100+ copies + imágenes + campaña Meta Ads** |
 
 ## Sistema auto-brief (anti-genérico)
 
@@ -62,7 +79,7 @@ Cuando el usuario no especifica ángulo, cuerpo, segmento, funnel o venta del mo
 
 **Lo único que NO se auto-selecciona es la emoción dominante** — se rota aleatoriamente entre 8 arcos emocionales. El usuario puede forzarla con `[EMOCIÓN: miedo → alivio]` en las notas.
 
-**El auto-brief ahora selecciona AVATAR y AWARENESS LEVEL (Schwartz)** además de los campos anteriores. El avatar se elige por cobertura (menos usado gana) y el awareness level también. El nivel de awareness determina el funnel: niveles 1-2 → RETARGET (orgánico), niveles 3-5 → TOFU/MOFU (ads directos).
+**El auto-brief ahora selecciona AVATAR y AWARENESS LEVEL (Schwartz)** además de los campos anteriores. El avatar se elige por cobertura (menos usado gana) **con pesos basados en data de 562 compradores reales**: Patricia(48)+Roberto(62) = 56% de compradores → deben dominar. Martín(26) = 5% → máx 1 de 10. El awareness level también se elige por cobertura. Niveles 1-2 → RETARGET (orgánico), niveles 3-5 → TOFU/MOFU (ads directos).
 
 **El usuario puede overridear cualquier campo** con tags en additionalNotes:
 - `[ÁNGULO: confrontacion]`, `[CUERPO: demolicion_mito]`, `[SEGMENTO: C]`

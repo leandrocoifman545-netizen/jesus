@@ -1,0 +1,207 @@
+{
+  "id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+  "briefId": "275d5426-43f8-40bf-bf2f-98fffa5f613c",
+  "title": "Sabés usar Excel mejor que el 90% y no lo monetizás — Pizarrón (Soledad)",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.6_producto_especifico",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "Excel / ofimática / plantillas",
+    "model_sale_type": "contraste_negocio_fisico",
+    "visual_format": "pizarron",
+    "avatar": "soledad",
+    "awareness_level": 2,
+    "emotional_arc": "futuro_sensorial",
+    "tension": "T9",
+    "transition_text": "Y lo de Excel es solo un ejemplo. Cualquier cosa que sepas hacer puede ser un producto digital.",
+    "total_duration_seconds": 85,
+    "word_count": 220,
+    "belief_change": {
+      "old_belief": "Lo que hago en el trabajo es aburrido y no vale plata extra",
+      "mechanism": "Plantillas de Excel se venden a $10-20 online y hay demanda creciente",
+      "new_belief": "Mi habilidad de oficina cotidiana es un producto digital"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Eso hago yo todos los días",
+        "installed_via": "Describe la rutina de Excel en oficina",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "¿Pagan por eso?",
+        "installed_via": "Plantillas con precio: $10-20 cada una",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Así se siente el resultado",
+        "installed_via": "Future pacing: ventas mientras dormís",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Hay demanda comprobada",
+        "installed_via": "Excel +130K% crecimiento Google",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Puedo probar sin riesgo",
+        "installed_via": "IA arma plantilla, si no vende probás otra",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Usás Excel todos los días en tu trabajo. Hacés fórmulas, tablas dinámicas, reportes. Y cuando un compañero te pregunta cómo lo hacés, le explicás en 5 minutos. Eso que acabás de explicar vale plata.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "script_text": "\"Curso Excel online\" creció más de 130 mil por ciento en búsquedas de Google. Y la mayoría de la gente busca plantillas listas, no cursos de 40 horas. Te muestro qué significa eso para vos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las habilidades más aburridas de tu trabajo son las que más plata generan como producto digital. Excel, Word, presentaciones. Te explico por qué.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas veces un compañero te pidió que le hagas una planilla y vos la armaste en 10 minutos? Eso que hacés sin pensar vale 10 o 20 dólares online. Y hay gente comprándolo ahora mismo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "¿Viste cuando le explicás a alguien cómo usar el filtro de Excel y te mira como si fueras un genio? Bueno, hay miles de personas que pagarían por esa explicación. En serio.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "futuro_sensorial",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Eso hago yo todos los días",
+          "script_text": "Usás Excel todos los días. Hacés fórmulas, tablas, reportes. Es tan automático que ni lo pensás. Lo hacés como tomás café. Pero mientras vos hacés eso gratis para tu jefe, hay gente pagando por lo mismo.",
+          "timing_seconds": 14,
+          "pizarron_directions": [
+            "Dibuja computadora + escribe 'FÓRMULAS + TABLAS + REPORTES = gratis'"
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "¿Pagan por eso?",
+          "script_text": "Plantilla de control de gastos: 15 dólares. Plantilla de inventario para negocios: 12 dólares. Presupuesto familiar: 10 dólares. Se venden en Hotmart, Gumroad, Amazon. Y son EXACTAMENTE las cosas que vos hacés en el trabajo sin que nadie te pague extra.",
+          "timing_seconds": 15,
+          "pizarron_directions": [
+            "Escribe 'Plantilla control gastos → $15' / 'Plantilla inventario → $12' / 'Presupuesto familiar → $10'"
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Así se siente el resultado",
+          "script_text": "Future pacing. Te despertás un martes. Revisás el celular antes de salir a trabajar. 2 ventas mientras dormías. Una plantilla de control de gastos y una de presupuesto familiar. 25 dólares. No hiciste nada. Se vendieron solas. Y tu día todavía no empezó.",
+          "timing_seconds": 18,
+          "pizarron_directions": [
+            "Dibuja escena: celular + notificaciones '$15' '$12' con luna/estrellas"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Hay demanda comprobada",
+          "script_text": "\"Curso Excel online\" creció más de 130 mil por ciento en Google. Pero la gente no quiere otro curso de 40 horas. Quiere plantillas listas que pueda usar ya. Y casi nadie las está vendiendo como producto digital.",
+          "timing_seconds": 12,
+          "pizarron_directions": [
+            "Escribe 'Excel → +130K% crecimiento Google' con flecha subiendo"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Puedo probar sin riesgo",
+          "script_text": "La IA te ayuda a armar la plantilla perfecta. Le ponés un precio, la subís. Si vende, genial. Si no, probás con otra. No perdés plata. No perdés tiempo. Probás y aprendés.",
+          "timing_seconds": 10,
+          "pizarron_directions": [
+            "Escribe 'IA → plantilla lista → subís → si vende: bien. Si no: probás otra.'"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "No necesitás inversión",
+          "script_text": "Un local te cuesta 10 mil dólares para arrancar. Alquiler, mercadería, empleados. Esto te cuesta cero y una tarde de trabajo. Si no funciona, perdiste menos que una salida a comer.",
+          "timing_seconds": 8,
+          "pizarron_directions": [
+            "'Local: $10K + alquiler + empleados' vs 'Esto: $0 + 1 tarde + celular'"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "Future 7 Días"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Extrema"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C"
+      }
+    ]
+  },
+  "createdAt": "2026-03-20T22:49:33.015Z",
+  "status": "draft",
+  "batch": {
+    "id": "pizarron-semana-2026-03-24",
+    "name": "Pizarrón Winners Semana 24/03"
+  }
+}

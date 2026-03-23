@@ -78,9 +78,18 @@ export async function POST(req: NextRequest) {
 
         send({ type: "start" });
 
-        const script = await generateScriptStream(brief, (chunk) => {
+        const { script, validation } = await generateScriptStream(brief, (chunk) => {
           send({ type: "chunk", text: chunk });
         });
+
+        // Block save if validation still fails after retry
+        if (!validation.passed) {
+          send({
+            type: "error",
+            error: `Validación fallida después de 2 intentos: ${validation.issues.join("; ")}`,
+          });
+          return;
+        }
 
         const generationId = crypto.randomUUID();
         const title = generateAutoTitle(script, brief.additionalNotes);

@@ -164,9 +164,22 @@ export async function refreshCoverageCache(): Promise<CoverageData> {
 }
 
 /**
- * Get cached coverage data, or compute if cache is empty.
+ * Get cached coverage data, or compute if cache is empty/stale.
+ * Cache has a 5-minute TTL — auto-brief always gets reasonably fresh data.
  */
+const COVERAGE_CACHE_TTL = 300_000; // 5 minutes
+
 export async function getCoverage(): Promise<CoverageData> {
-  if (coverageCache) return coverageCache;
+  if (coverageCache && Date.now() - lastRefreshTime < COVERAGE_CACHE_TTL) {
+    return coverageCache;
+  }
   return refreshCoverageCache();
+}
+
+/**
+ * Force-invalidate the coverage cache (e.g. after saving a generation).
+ */
+export function invalidateCoverageCache(): void {
+  coverageCache = null;
+  lastRefreshTime = 0;
 }

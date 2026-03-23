@@ -7,9 +7,10 @@ interface InlineEditProps {
   onSave: (newValue: string) => Promise<void>;
   className?: string;
   tag?: "p" | "span";
+  compact?: boolean;
 }
 
-export default function InlineEdit({ value, onSave, className = "", tag: Tag = "p" }: InlineEditProps) {
+export default function InlineEdit({ value, onSave, className = "", tag: Tag = "p", compact = false }: InlineEditProps) {
   const [editing, setEditing] = useState(false);
   const [text, setText] = useState(value);
   const [saving, setSaving] = useState(false);
@@ -135,26 +136,34 @@ export default function InlineEdit({ value, onSave, className = "", tag: Tag = "
             e.target.style.height = e.target.scrollHeight + "px";
           }}
           onKeyDown={handleKeyDown}
-          className={`w-full bg-zinc-800/30 border border-zinc-800/50 rounded-xl px-3 py-2 text-sm text-zinc-200 resize-none focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 ${className}`}
+          className={`w-full bg-zinc-800/30 border border-zinc-800/50 resize-none focus:outline-none focus:ring-2 focus:ring-purple-500/10 focus:border-purple-500/30 transition-all duration-200 ${
+            compact ? "rounded-lg px-2 py-1.5 text-[11px] text-zinc-300" : "rounded-xl px-3 py-2 text-sm text-zinc-200"
+          } ${className}`}
           disabled={saving}
         />
-        <div className="flex items-center gap-2 mt-2">
+        <div className={`flex items-center gap-1.5 ${compact ? "mt-1.5" : "mt-2"}`}>
           <button
             onClick={() => handleSave()}
             disabled={saving}
-            className="text-xs bg-gradient-to-r from-purple-600 to-violet-600 text-white rounded-xl px-4 py-1.5 font-medium hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-200 disabled:bg-zinc-700 disabled:from-zinc-700 disabled:to-zinc-700"
+            className={`bg-gradient-to-r from-purple-600 to-violet-600 text-white font-medium hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-200 disabled:bg-zinc-700 disabled:from-zinc-700 disabled:to-zinc-700 ${
+              compact ? "text-[10px] rounded-lg px-2.5 py-1" : "text-xs rounded-xl px-4 py-1.5"
+            }`}
           >
-            {saving ? "Guardando..." : "Guardar"}
+            {saving ? "..." : "Guardar"}
           </button>
           <button
             onClick={() => { setText(value); setEditing(false); stopListening(); }}
-            className="text-xs bg-zinc-800/50 hover:bg-zinc-700/50 text-zinc-400 border border-zinc-700/50 rounded-xl px-3 py-1.5 transition-all duration-200"
+            className={`bg-zinc-800/50 hover:bg-zinc-700/50 text-zinc-400 border border-zinc-700/50 transition-all duration-200 ${
+              compact ? "text-[10px] rounded-lg px-2 py-1" : "text-xs rounded-xl px-3 py-1.5"
+            }`}
           >
             Cancelar
           </button>
           <button
             onClick={toggleVoice}
-            className={`text-xs px-3 py-1.5 rounded-xl transition-all duration-200 flex items-center gap-1 ${
+            className={`flex items-center gap-1 transition-all duration-200 ${
+              compact ? "text-[10px] rounded-lg px-2 py-1" : "text-xs rounded-xl px-3 py-1.5"
+            } ${
               listening
                 ? "bg-red-500/20 text-red-400 border border-red-500/30"
                 : "bg-zinc-800/50 hover:bg-zinc-700/50 text-zinc-400 border border-zinc-700/50"
@@ -164,16 +173,16 @@ export default function InlineEdit({ value, onSave, className = "", tag: Tag = "
             {listening ? (
               <>
                 <MicOnIcon />
-                <span className="animate-pulse">Escuchando...</span>
+                {!compact && <span className="animate-pulse">Escuchando...</span>}
               </>
             ) : (
               <>
                 <MicOffIcon />
-                Voz
+                {!compact && "Voz"}
               </>
             )}
           </button>
-          <span className="text-[10px] text-zinc-700 ml-auto">Cmd+Enter para guardar · Esc para cancelar</span>
+          {!compact && <span className="text-[10px] text-zinc-700 ml-auto">Cmd+Enter para guardar · Esc para cancelar</span>}
         </div>
       </div>
     );

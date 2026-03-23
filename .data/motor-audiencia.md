@@ -23,6 +23,7 @@ Cada tensión emocional es un arco narrativo listo. NO elegir la tensión al aza
 | T10 | Dignidad vs. necesidad | "Recurre a rifas para cubrir gastos" | #2 Dolor puro → esperanza (tono de RESPETO, no aspiracional) | F1 Identidad | D | "Necesito algo digno" → "Esto es un negocio real, no un esquema" |
 | T11 | Geografía como limitante | "Vive en Francia sin papeles" | #1 Revelación de oportunidad | F2 Oportunidad | Todos | "Mi lugar me limita" → "Solo necesitás internet y WhatsApp" |
 | T12 | Información sin estructura | "Demasiada información junta" | #5 Pregunta tras pregunta (simplicidad extrema) | F4 Mecanismo | B, C | "Necesito aprender más" → "Necesitás UN camino de 3 pasos" |
+| T13 | Hartazgo acumulado | "Ya no puedo seguir así" / "Llegué a mi punto de cansancio máximo" | #2 Dolor puro → esperanza | F1 Identidad | **TODOS** (trigger #1 de 562 compradores reales) | "Algo va a cambiar solo" → "Nada cambia si no hacés algo distinto HOY" |
 
 ### Cómo usar:
 1. Elegir tensión según segmento

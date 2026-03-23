@@ -17,6 +17,11 @@ export const HOOK_TYPE_LABELS: Record<string, string> = {
   actuacion_dialogo: "Diálogo",
   anti_publico: "Anti-público",
   simplificacion_error: "Simplificación + Error",
+  nadie_explica: "Nadie Explica",
+  hipotetico_personal: "Hipotético Personal",
+  identidad_dolor: "Identidad + Dolor",
+  pregunta_limitacion: "Pregunta Limitación",
+  asimetria_temporal: "Asimetría Temporal",
   // Legacy English types (for old data/references)
   curiosity_gap: "Curiosity Gap",
   contrarian: "Contrarian",
@@ -44,6 +49,11 @@ export const HOOK_TYPE_COLORS: Record<string, string> = {
   actuacion_dialogo: "bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/20",
   anti_publico: "bg-zinc-500/10 text-zinc-300 border-zinc-500/20",
   simplificacion_error: "bg-pink-500/10 text-pink-400 border-pink-500/20",
+  nadie_explica: "bg-red-500/10 text-red-300 border-red-500/20",
+  hipotetico_personal: "bg-violet-500/10 text-violet-400 border-violet-500/20",
+  identidad_dolor: "bg-amber-500/10 text-amber-300 border-amber-500/20",
+  pregunta_limitacion: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+  asimetria_temporal: "bg-lime-500/10 text-lime-300 border-lime-500/20",
   curiosity_gap: "bg-amber-500/10 text-amber-400 border-amber-500/20",
   contrarian: "bg-rose-500/10 text-rose-400 border-rose-500/20",
   question: "bg-blue-500/10 text-blue-400 border-blue-500/20",
@@ -60,6 +70,7 @@ export const ALL_HOOK_TYPES = [
   "contraintuitivo", "provocacion", "historia_mini", "analogia",
   "negacion_directa", "observacion_tendencia", "timeline_provocacion",
   "contrato_compromiso", "actuacion_dialogo", "anti_publico", "simplificacion_error",
+  "nadie_explica", "hipotetico_personal", "identidad_dolor", "pregunta_limitacion", "asimetria_temporal",
 ];
 
 // All angle families
@@ -69,6 +80,7 @@ export const ALL_ANGLE_FAMILIES = ["identidad", "oportunidad", "confrontacion", 
 export const ALL_BODY_TYPES = [
   "demolicion_mito", "historia_con_giro", "demo_proceso", "comparacion_caminos",
   "un_dia_en_la_vida", "pregunta_respuesta", "analogia_extendida", "contraste_emocional",
+  "demolicion_alternativas", "qa_conversacional",
 ];
 
 // All segments
@@ -78,12 +90,13 @@ export const ALL_SEGMENTS = ["A", "B", "C", "D"];
 export const ALL_FUNNELS = ["TOFU", "MOFU", "RETARGET"];
 
 // All avatars (formal personas from avatares-adp.md)
-export const ALL_AVATARS = ["martin", "laura", "roberto", "valentina", "diego", "camila", "soledad"];
+export const ALL_AVATARS = ["patricia", "martin", "laura", "roberto", "valentina", "diego", "camila", "soledad"];
 
 export const AVATAR_LABELS: Record<string, string> = {
+  patricia: "Patricia (48, empleada estancada)",
   martin: "Martín (26, oficinista)",
   laura: "Laura (38, mamá)",
-  roberto: "Roberto (58, jubilado)",
+  roberto: "Roberto (62, jubilado)",
   valentina: "Valentina (32, freelancer)",
   diego: "Diego (44, escéptico)",
   camila: "Camila (29, inmigrante)",
@@ -91,6 +104,7 @@ export const AVATAR_LABELS: Record<string, string> = {
 };
 
 export const AVATAR_COLORS: Record<string, string> = {
+  patricia: "bg-rose-500/10 text-rose-400 border-rose-500/20",
   martin: "bg-blue-500/10 text-blue-400 border-blue-500/20",
   laura: "bg-pink-500/10 text-pink-400 border-pink-500/20",
   roberto: "bg-amber-500/10 text-amber-400 border-amber-500/20",
@@ -102,6 +116,7 @@ export const AVATAR_COLORS: Record<string, string> = {
 
 // Avatar → segment mapping
 export const AVATAR_SEGMENT_MAP: Record<string, string> = {
+  patricia: "C",
   martin: "A",
   laura: "C",
   roberto: "D",
@@ -109,6 +124,20 @@ export const AVATAR_SEGMENT_MAP: Record<string, string> = {
   diego: "D",
   camila: "A",
   soledad: "B",
+};
+
+// Avatar → buyer weight (based on 562 real buyers data)
+// Patricia(48)+Roberto(62) = 56% of buyers → must dominate
+// Martín(26) = 5% → max 1 of 10 scripts
+export const AVATAR_BUYER_WEIGHTS: Record<string, number> = {
+  patricia: 0.30,
+  roberto: 0.26,
+  soledad: 0.15,
+  diego: 0.12,
+  valentina: 0.07,
+  laura: 0.05,
+  camila: 0.03,
+  martin: 0.02,
 };
 
 // All awareness levels (Schwartz)

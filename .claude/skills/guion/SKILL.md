@@ -127,6 +127,18 @@ Cada beat tiene una FUNCIÓN PERSUASIVA distinta y una micro-creencia que instal
 
 **NUNCA dos beats con la misma función persuasiva.** Si los beats dicen lo mismo con distintas palabras, el guion informa pero no persuade.
 
+#### Anti-ficción obligatoria (del Copy Engine)
+Cada beat debe tener al menos 1 detalle anti-ficción: algo tan específico que NADIE lo inventaría.
+- MALO: "Tenía problemas económicos" → BUENO: "Le pidió plata a su hermana por quinta vez en el año"
+- MALO: "Empezó a vender online" → BUENO: "Subió una guía a Hotmart a $2.800"
+- **Regla:** Si un detalle puede existir en CUALQUIER guion de CUALQUIER producto → es genérico → eliminalo.
+
+#### Mecanismo con nombre
+El mecanismo del producto debe tener NOMBRE PROPIETARIO en el guion.
+- MALO: "mi curso", "el programa", "la herramienta"
+- BUENO: "El Sistema de Producto en 48hs", "El Método de los 53 Audios"
+- El mecanismo va en el Beat 3 (Mecanismo) — es el momento donde el espectador pasa de "tengo un problema" a "hay una solución diferente".
+
 ### 4d. Elegir el vehículo narrativo
 Consultar `tipos-cuerpo.md` → el vehículo da el TONO a los 5 beats. La estructura es fija (los beats), el tono es variable (el vehículo).
 
@@ -326,6 +338,32 @@ Copiar las capas textuales de `ctas-biblioteca.md`. NO inventar. NO meter precio
 - [ ] **Motor audiencia:** al menos 1 lead viene de intentos fallidos (tabla motor)
 - [ ] **Motor audiencia:** triggers de engagement coinciden con ingredientes elegidos
 - [ ] **Motor audiencia:** cadena micro-yes presente si duración > 60s
+- [ ] **Anti-ficción:** Cada beat tiene al menos 1 detalle que nadie inventaría (no genéricos)
+- [ ] **Mecanismo nombrado:** El producto/método tiene nombre propietario, no genérico
+- [ ] **Números no-redondos:** Usar $35.000 (no $30.000), 9 días (no 1 semana), 53 audios (no "muchos")
+
+## Paso 9b: Humanizar — Check de voz (OBLIGATORIO)
+
+**Correr el skill `/humanizer` integrado** sobre leads + cuerpo + transición ANTES de presentar.
+
+Escanear contra los 10 patrones anti-IA del humanizer:
+- P-IA1 (regla de tres), P-IA2 (paralelismo negativo), P-IA3 (sinónimo cycling)
+- P-IA4 (filler de transición), P-IA5 (cierre motivacional genérico)
+- P-IA6 (estructura simétrica), P-IA7 (vocabulario elevado)
+- P-IA8 (estructura expositiva), P-IA9 (datos sin anclaje), P-IA10 (preguntas predecibles)
+
+Correr los 6 checks de voz de Jesús: V1-V6.
+
+**Si hay 3+ problemas → reescribir ANTES de presentar.**
+**Si hay 1-2 → presentar con ⚠️.**
+
+Incluir al final del guion:
+```
+## Check de humanidad
+- P-IA detectados: [lista o "ninguno"]
+- Checks de voz: V1 ✅/❌ | V2 ✅/❌ | V3 ✅/❌ | V4 ✅/❌ | V5 ✅/❌ | V6 ✅/❌
+- Ajustes hechos: [lista o "ninguno"]
+```
 
 ## Paso 10: Presentar al usuario
 
@@ -335,6 +373,7 @@ Mostrar en markdown:
 3. **CUERPO** (secciones internas con nombre + venta del modelo)
 4. **TRANSICION** (Capa 1)
 5. **3 BLOQUES CTA** (con las 5 capas cada uno)
+6. **CHECK DE HUMANIDAD** (resultado del paso 9b)
 
 ## Paso 11: Guardar (solo si el usuario aprueba)
 
@@ -405,3 +444,16 @@ echo '{ JSON }' | node scripts/save-generation.mjs
 **Si falla la validación:** corregir y volver a intentar. NUNCA usar `--force` para saltear errores.
 
 Dar URL: `http://localhost:3002/scripts/{generationId}`
+
+### Paso 12: Ofrecer Ad Copy
+
+Después de guardar el guion, preguntar al usuario:
+
+> "¿Generamos el copy del ad para este guion? (headline + descripción + texto principal para Meta Ads)"
+
+Si dice que sí → ejecutar `/ad-copy` usando:
+- Mismo ángulo y big idea del guion
+- Mismo avatar y nivel Schwartz
+- Misma venta del modelo
+- Elegir estructura de copy con la Angle-to-Structure Matrix (`.data/copy-engine-ads.md` sección 12)
+- El copy NO es una copia del guion — es otra pieza, más corta (200-250 palabras), para LECTURA (no video)

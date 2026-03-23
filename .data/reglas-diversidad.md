@@ -197,3 +197,29 @@ Antes de generar los guiones, verificar en la tabla del plan:
 ```
 
 Si falla alguno, ajustar ANTES de generar.
+
+---
+
+## Nichos validados por compradores (usar como ejemplos en guiones)
+
+> **Fuente:** 562 compradores reales indicaron sus talentos y a quién quieren ayudar.
+> Estos nichos son los que la propia audiencia TIENE. Usarlos como ejemplo = el espectador se ve reflejado.
+
+### Tier 1 — Nichos que más tienen los compradores (priorizar)
+- **Educación/Enseñanza** (14%): "Una profesora armó un curso digital con lo que ya enseñaba en el aula"
+- **Ventas/Marketing** (14%): "Un vendedor empaquetó sus técnicas de cierre en una guía"
+- **Diseño/Arte/Foto** (11%): "Una diseñadora gráfica vende templates y kits de branding"
+- **Salud/Fitness** (9%): "Una instructora de yoga creó una guía de rutinas con IA"
+- **Cocina/Gastronomía** (6%): "Una pastelera armó un ebook de recetas con IA en una tarde"
+
+### Tier 2 — Nichos de compradores reales (rotar)
+- **Coaching/Terapia** (4%): "Una psicóloga empaquetó sus ejercicios de ansiedad en un kit digital"
+- **Finanzas/Admin** (3%): "Un contador creó plantillas de Excel para emprendedores"
+- **Manualidades/Artesanía** (1%): "Una señora que hace crochet vende patrones por WhatsApp"
+- **Música** (1%): "Un profe de guitarra armó un método paso a paso con IA"
+
+### Regla de uso:
+- En beats de Mecanismo y Prueba, priorizar nichos Tier 1
+- En beat de Demolición ("pero yo no soy expert@"), usar nichos Tier 2 para sorprender
+- NUNCA usar siempre el mismo nicho de ejemplo — rotar entre las 9+ opciones
+- Los nichos de ejemplo deben matchear el avatar: Patricia → educación/admin, Laura → cocina/manualidades, Roberto → oficios/finanzas, Valentina → diseño/marketing

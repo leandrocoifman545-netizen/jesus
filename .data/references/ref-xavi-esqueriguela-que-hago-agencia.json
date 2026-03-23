@@ -1,0 +1,87 @@
+{
+  "id": "ref-xavi-esqueriguela-que-hago-agencia",
+  "title": "Xavi Esqueriguela (@¿Qué hago?) — Triángulo de 3 personajes: Alejandro (fontanero) + Sofía (experta) + Xavi (intermediario)",
+  "source": "Instagram Stories @¿Qué hago? — 5 agosto 2024",
+  "format": "Secuencia de 5 stories + 2 slides CTA (video narrado con subtítulos)",
+  "transcript": "Bienvenidos, este es Alejandro, siempre ha sido fontanero y está harto de su trabajo. Sueña con tener un trabajo online que le permita tener libertad, aunque no tenga ni idea de nada relacionado con el mundo online ni de los ordenadores. Y esta es Sofía, sabe muchísimo de marketing digital y ofrece muy buenos precios por sus servicios. Y este es Xavi, ayuda a personas que no tienen ni idea de marketing digital a crear su propia agencia de marketing paso a paso. Ayuda a Alejandro a conseguir clientes para su agencia de marketing. Como él no tiene ni idea de marketing, le doy el contacto de Sofía y él subcontrata a Sofía para que sea ella quien ofrezca este servicio a sus clientes. Él puede cobrar 1.000 euros por el cliente y pagarle a Sofía 400 por cada uno. Es así como ganamos dinero, tanto yo como mis alumnos con nuestras agencias de marketing. Da igual que no tengan conocimientos previos, actúan como intermediarios, con mi ayuda captan clientes y luego delegan el servicio a una persona experta en marketing que es quien da el servicio al cliente. Mis alumnos ganan la diferencia entre lo que cobran a los clientes y lo que le pagan al experto o experta. Gracias.",
+  "analysis": {
+    "hook": {
+      "text": "Este es Alejandro, siempre ha sido fontanero y está harto de su trabajo.",
+      "type": "personaje_con_tension",
+      "estimated_seconds": 5
+    },
+    "structure": {
+      "framework": "triangulo_3_personajes",
+      "sections": [
+        {
+          "name": "Personaje A — El que no sabe",
+          "summary": "Alejandro: fontanero harto, quiere trabajo online, no sabe nada del mundo digital.",
+          "visual": "Alejandro en el suelo, pose casual, gorra",
+          "estimated_seconds": 7
+        },
+        {
+          "name": "Personaje B — La experta",
+          "summary": "Sofía: experta en marketing digital, buenos precios.",
+          "visual": "Sofía sonriendo, frente a computadora, lentes",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Personaje C — El puente (yo)",
+          "summary": "Xavi: ayuda a crear agencias de marketing paso a paso.",
+          "visual": "Xavi bajándose de auto deportivo, lentes de sol",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Mecanismo — Modelo intermediario",
+          "summary": "Alejandro consigue clientes con ayuda de Xavi → subcontrata a Sofía → cobra 1000€, paga 400€, se queda 600€.",
+          "visual": "Xavi y Alejandro juntos frente a laptop",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Cierre a cámara",
+          "summary": "Así ganamos dinero. Da igual conocimientos previos, actúan como intermediarios.",
+          "visual": "Xavi hablando a cámara, primer plano",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "CTA slide 1 — Aspiracional",
+          "summary": "Si tú también quieres crear tu agencia SIN TENER NI IDEA del mundo online.",
+          "visual": "Foto lifestyle: ropa LV, pose urbana",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "CTA slide 2 — Respuesta directa",
+          "summary": "Responde a esta historia con la palabra YO y me pondré en contacto contigo 1 a 1.",
+          "visual": "Foto con 2 autos deportivos (BMW) en montaña",
+          "estimated_seconds": 5
+        }
+      ]
+    },
+    "techniques": [
+      "Triángulo de 3 personajes con nombre: novato + experta + puente",
+      "Demolición integrada: 'da igual que no tengan conocimientos previos'",
+      "Números concretos en 1 oración: cobra 1000€, paga 400€",
+      "CTA 'Responde YO' — simple, baja fricción",
+      "Progresión visual: casual (accesible) → lifestyle (aspiracional)",
+      "Subtítulos con palabras clave en color (NADA en rojo, paso a paso en rojo, CLIENTES en rojo)"
+    ],
+    "total_duration_seconds": 63,
+    "word_count": 160
+  },
+  "applicability_adp": {
+    "score": 6,
+    "why": "El framework de 3 personajes funciona pero el ejemplo (agencia de marketing) es abstracto y el tono lifestyle (autos, LV) no encaja con ADP. David Turu usa el mismo framework de forma más adaptable.",
+    "what_to_copy": [
+      "El framework de triángulo de 3 personajes",
+      "CTA 'Responde [PALABRA]' para DMs",
+      "Subtítulos con palabras clave resaltadas en color"
+    ],
+    "what_not_to_copy": [
+      "Tono lifestyle agresivo (autos, ropa de marca)",
+      "Modelo de negocio intermediario (ADP vende productos propios)",
+      "Ejemplo abstracto (agencia de marketing)"
+    ]
+  },
+  "createdAt": "2026-03-23T10:00:00.000Z",
+  "tags": ["stories", "triangulo_personajes", "agencia_marketing", "formato_narrativo", "benchmark"]
+}

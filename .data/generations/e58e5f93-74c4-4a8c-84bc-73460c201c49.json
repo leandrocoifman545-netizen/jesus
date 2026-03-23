@@ -1,0 +1,433 @@
+{
+  "id": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
+  "briefId": "8375bd57-b8fe-465b-ad71-8b3cee05eea0",
+  "title": "Hay 3 modelos de negocio online — Pizarrón (Winner #46 replicado)",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.7_modelo_equivocado",
+    "body_type": "demolicion_alternativas",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "modelos de negocio online",
+    "model_sale_type": "cementerio_modelos",
+    "visual_format": "pizarron",
+    "avatar": "martin",
+    "awareness_level": 3,
+    "emotional_arc": "provocacion_evidencia",
+    "tension": "T8",
+    "transition_text": "¿Y cómo arrancás con este modelo de negocio?",
+    "total_duration_seconds": 65,
+    "word_count": 160,
+    "belief_change": {
+      "old_belief": "Todos los modelos online son iguales o son humo",
+      "mechanism": "Muestra 3 modelos reales con nombre, destruye 2 con lógica concreta, deja productos digitales como opción creíble con números reales",
+      "new_belief": "Hay UN modelo que es lógico, real y alcanzable"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto es para gente como yo",
+        "installed_via": "Elimina barreras de edad y experiencia desde el primer segundo",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Fiverr no me conviene porque dependo de laburar",
+        "installed_via": "Muestra el techo de Fiverr: si no laburás, no cobrás",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición Fiverr"
+      },
+      {
+        "belief": "Digistore es riesgoso porque no soy dueño de nada",
+        "installed_via": "Si te quitan el producto, te quedás sin nada",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición Digistore"
+      },
+      {
+        "belief": "Productos digitales es el modelo más lógico",
+        "installed_via": "Anti-hype con números creíbles: 50-60 dólares por día, no millonario",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Puedo aprender cómo hacerlo gratis",
+        "installed_via": "Clase gratuita con todo el proceso paso a paso",
+        "persuasion_function": "prueba",
+        "section_name": "CTA"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "eliminacion_barreras",
+        "script_text": "No importa si tenés entre 25 o 55 años. No importa si nunca vendiste nada online. Hay tres modelos de negocio que podés arrancar hoy desde tu casa.",
+        "timing_seconds": 7,
+        "notes": "HOOK WINNER #46 — Hook_16 original. NO MODIFICAR."
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "script_text": "Estos son los 3 modelos de negocio para ganar plata por internet. Te los voy a explicar en menos de un minuto y vos elegís con cuál arrancar.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "script_text": "Todo el mundo habla de ganar plata por internet pero nadie te muestra que existen solo 3 caminos. Y 2 de esos tienen una trampa que no ves hasta que ya estás adentro.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "curiosidad",
+        "script_text": "Antes de buscar cómo ganar plata por internet, tenés que saber cuáles son los 3 mejores modelos de negocio.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "eliminacion_barreras",
+        "script_text": "No importa si no sabés nada de tecnología. No importa si nunca ganaste un peso por internet. Hay 3 modelos de negocio online que podés empezar hoy.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "provocacion_evidencia",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Esto es para gente como yo",
+          "script_text": "Solo tenés que tener un teléfono, conexión a internet y hablar en español. Las ganancias son en dólares o en la moneda de tu país. Yo hago el último y no necesitás ser experto en nada para poder comenzar.",
+          "timing_seconds": 10,
+          "pizarron_directions": [
+            "LÁMINA ÚNICA — Jesús señala la parte superior mientras habla",
+            "Lámina tiene los 3 modelos listados con logos de Fiverr y Digistore"
+          ]
+        },
+        {
+          "section_name": "Demolición Fiverr",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Fiverr no me conviene porque dependo de laburar",
+          "script_text": "La primera es Fiverr. Acá podés ganar entre 15 y 30 dólares por trabajo, pero si no laburás, no cobrás.",
+          "timing_seconds": 8,
+          "pizarron_directions": [
+            "LÁMINA ÚNICA — Señalar fila 1:",
+            "1. [logo Fiverr]  $15-30/trabajo  ❌ Si no laburás, no cobrás"
+          ]
+        },
+        {
+          "section_name": "Demolición Digistore",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Digistore es riesgoso porque no soy dueño de nada",
+          "script_text": "La segunda es Digistore. Es venta de productos de otra persona y te pueden pagar hasta 30 dólares al día por esto. Pero no sos dueño de nada y si esa persona te quita el producto, no tenés nada para vender y adiós.",
+          "timing_seconds": 10,
+          "pizarron_directions": [
+            "LÁMINA ÚNICA — Señalar fila 2:",
+            "2. [logo Digistore]  $30/día  ❌ No sos dueño — te lo quitan"
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Productos digitales es el modelo más lógico",
+          "script_text": "Y la última es la que yo hago, que es la venta de productos digitales. Y a ver, la realidad es que no te vas a hacer millonario, pero con que ganes 50, 60 dólares por día ya estás en un promedio de 1500 a 2000 dólares al mes. Y te aseguro que eso va a ser la diferencia.",
+          "timing_seconds": 14,
+          "pizarron_directions": [
+            "LÁMINA ÚNICA — Señalar fila 3 (con ✅):",
+            "3. PRODUCTOS DIGITALES  $50-60/día = $1500-2000/mes  ✅ TUYO",
+            "Abajo de todo: 'No te vas a hacer millonario. Pero va a ser la diferencia.'"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Es el modelo que Jesús usa y funciona",
+          "script_text": "Es tuyo. No dependés de nadie. Y una vez que lo creás, se vende solo.",
+          "timing_seconds": 5,
+          "pizarron_directions": [
+            "LÁMINA ÚNICA — Señalar el ✅ de productos digitales y mirar a cámara"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "C",
+        "ingredient_number": 44,
+        "ingredient_name": "Comparación de Modelos"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Numérica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 80,
+        "ingredient_name": "Contraste Extremo"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 29,
+        "ingredient_name": "Dolor Comparativo Social"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 55,
+        "ingredient_name": "Eliminación de Barreras"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Anti-hype"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. [...] Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "orden_nlp": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. [...] Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      }
+    ]
+  },
+  "createdAt": "2026-03-21T13:23:43.270Z",
+  "status": "confirmed",
+  "batch": {
+    "id": "b36369e3-48f1-4299-94b8-04bf0960e43e",
+    "name": "Version 2.0"
+  },
+  "notes": "Réplica del winner #46 (Hook_16 + Cuerpo_3). Cuerpo casi idéntico al original, adaptado a formato pizarrón. Hook 1 es el hook ganador original.",
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "ad_copies_matrix": {
+    "generation_id": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
+    "angle": "confrontacion — 3.7_modelo_equivocado",
+    "niche": "modelos de negocio online",
+    "total_versions": 15,
+    "versions": [
+      {
+        "hook_index": 0,
+        "hook_type": "eliminacion_barreras",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H1-ClaseGratuita",
+        "headline": "3 señales de que elegiste mal",
+        "description": "Clase gratuita: encontrá el modelo online que sí funciona. Sin humo, sin trampa. Anotate gratis.",
+        "primary_text": "Estaba sentada en el colectivo, con el celular en la mano y 47 pestañas abiertas buscando \"cómo ganar plata por internet\".\n\nCada resultado decía algo distinto. Y yo seguía igual: sin arrancar.\n\nSi te pasa algo parecido, hay 3 señales de que estás eligiendo el modelo equivocado.\n\n**Señal 1: Si no trabajás, no cobrás.**\nFreelance, Fiverr, servicios por hora. Está bien para empezar, pero si te enfermás 9 días, tu ingreso es cero. No es un negocio, es un trabajo sin jefe.\n\n**Señal 2: No sos dueño de nada.**\nVender productos de otros puede darte $30 por día. Pero si ese proveedor desaparece mañana, vos desaparecés con él. Construiste sobre arena.\n\n**Señal 3: Necesitás más y más clientes nuevos para mantener el mismo ingreso.**\nSi cada mes arrancás de cero, el modelo tiene una falla estructural que no se soluciona trabajando más duro.\n\nEl tercer modelo que existe no tiene ninguna de esas tres trampas.\n\nEs un producto digital tuyo. Lo creás una vez. Se vende mientras dormís. Y $53 por día ya son casi $1.600 al mes.\n\nJesús lo enseña en una clase gratuita de 2 horas, en vivo.\n\nTe muestra cómo encontrar qué vender, cómo crearlo con IA y cómo ponerle publicidad.\n\nSin compromiso. Sin venta disfrazada de clase.\n\nAnotate 👇",
+        "word_count": 218,
+        "structure_used": "Listicle de señales"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "eliminacion_barreras",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H1-InstagramOrgánico",
+        "headline": "El modelo que se vende solo",
+        "description": "3 modelos online explicados sin humo. Para quien quiere empezar desde cero. Comentá CLASE.",
+        "primary_text": "Sebastián tenía 38 años y una planilla de Excel con 7 ideas de negocio online que nunca arrancaron.\n\nUna noche, buscando algo completamente distinto, se topó con un video que comparaba tres modelos. No era un guru. Era un tipo con auriculares baratos y fondo de pared blanca.\n\nEl primer modelo era Fiverr. Ganás entre 15 y 30 dólares por trabajo. El problema: si no trabajás ese día, no entra nada. Es un trabajo disfrazado de negocio.\n\nEl segundo era Digistore. Vendés productos de otra persona y podés llegar a 30 dólares diarios. Suena bien hasta que te das cuenta de que si el dueño del producto lo retira, te quedás con cero. No sos dueño de nada.\n\nEl tercero era la venta de productos digitales propios. No te hacés millonario de un día para el otro, pero entre 50 y 60 dólares por día son 1.500 a 2.000 dólares al mes. Y lo que creás es tuyo. No depende de que otro te siga pagando.\n\nSebastián cerró la planilla de Excel esa noche.\n\nNo porque hubiera encontrado magia. Sino porque por primera vez entendió la diferencia entre trabajar para internet e internet trabajando para vos.\n\nSi querés ver exactamente cómo funciona el tercer modelo, comentá CLASE acá abajo y te mando el link directo. 👇",
+        "word_count": 218,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "eliminacion_barreras",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H1-Taller$5",
+        "headline": "3 modelos. Uno solo es tuyo.",
+        "description": "Taller de 3 días en vivo por $5. Salís con tu producto, tu anuncio y tu sistema listo.",
+        "primary_text": "Estaba en el colectivo, un martes a las 11 de la noche, mirando el techo.\n\nNi siquiera buscaba un negocio. Buscaba cómo pagar el resumen de la tarjeta.\n\nAhí me topé con algo que no esperaba: un video que comparaba 3 modelos para ganar plata por internet. No un tutorial. No un curso de 47 módulos. Una comparación.\n\nFiverr. Digistore. Productos digitales propios.\n\nEl primero: ganás entre 15 y 30 dólares por trabajo. Pero si no laburás, no cobrás. Es un trabajo freelance, no un negocio.\n\nEl segundo: vendés productos de otro. Te pueden pagar hasta 30 dólares al día. Pero si ese proveedor desaparece, vos también desaparecés.\n\nEl tercero es el que cambió todo para mí. Creás algo que es tuyo. Se vende mientras dormís. No dependés de nadie. Y con 50 o 60 dólares por día ya estás en $1.500 a $2.000 al mes.\n\nNo es hacerse millonario. Es tener algo propio que funciona.\n\nSolo necesitás un teléfono, internet y hablar en español.\n\nEso es todo. No hace falta haber vendido nada antes. No hace falta ser experto en tecnología.\n\nYo armé un taller de 3 días en vivo para que salgas con tu producto creado, tu anuncio listo y tu sistema funcionando.\n\nCuesta $5.\n\nSi ya estás listo para arrancar con el modelo que tiene más sentido, el link está abajo 👇",
+        "word_count": 218,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_concreto",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H2-ClaseGratuita",
+        "headline": "Ganar online no es lo que te dijeron",
+        "description": "Hay 3 modelos reales. 2 tienen trampa. Este narrador te lo dice sin rodeos. Clase gratis.",
+        "primary_text": "Hay una mentira que circula hace años en el mundo del negocio online y nadie la nombra en voz alta.\n\nLa mentira dice que todos los modelos son iguales. Que si trabajás duro en cualquiera, vas a llegar.\n\nNo es verdad. Y la diferencia no es de esfuerzo, es de estructura.\n\nModelo 1: vendés tu tiempo en plataformas como Fiverr. Ganás entre $15 y $30 por trabajo. El problema no es el dinero, es la lógica: cuando parás, para todo.\n\nModelo 2: revendés productos digitales de otros. Puede darte hasta $30 por día. Pero el día que ese creador baja el producto, vos no tenés nada. Cero activos. Cero control.\n\nModelo 3: creás tu propio producto digital. No necesitás ser experto. No necesitás una audiencia de miles. Con $57 por día ya superás los $1.700 al mes, y ese producto es tuyo para siempre.\n\nLo que nadie te dice es que la mayoría de los cursos, tutoriales y gurus te mandan al modelo 1 o al modelo 2. Porque son más fáciles de vender como promesa rápida.\n\nEl modelo 3 requiere entender 3 pasos concretos. Nada más.\n\nHay una clase gratuita de 2 horas donde Jesús los explica todos, en vivo, sin venderle nada a nadie.\n\nSolo aprendizaje real. Si después querés ir más lejos, vos decidís.\n\nEl lugar para anotarte está acá abajo.",
+        "word_count": 224,
+        "structure_used": "Contrarian manifesto"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_concreto",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H2-InstagramOrgánico",
+        "headline": "Dos caminos. Uno te deja sin nada.",
+        "description": "Fiverr, Digistore o productos propios: la diferencia importa. Para quien quiere elegir bien. Comentá CLASE.",
+        "primary_text": "Pará un segundo antes de arrancar con cualquier modelo online.\n\nTe voy a mostrar los tres que existen y vos decidís. Pero necesito que entiendas algo primero: no todos los caminos llegan al mismo lugar.\n\nCamino A — Fiverr o plataformas de servicios: entrás, ofrecés algo, te pagan. Entre 15 y 30 dólares por tarea. El día que no trabajás, no cobrás. Es un empleo. Uno flexible, sí. Pero un empleo al fin.\n\nCamino B — Digistore o afiliados: vendés el producto de otra persona. Podés llegar a 30 dólares por día. Pero ese producto no es tuyo. Si el dueño lo baja, si cambia las condiciones, si se cansa, vos quedás en cero. Construiste sobre terreno ajeno.\n\nCamino C — Productos digitales propios: creás algo una vez. Se vende mientras dormís, mientras viajás, mientras hacés otra cosa. No te prometemos millones. Pero 50 o 60 dólares por día son entre 1.500 y 2.000 al mes. Y eso es tuyo. Nadie te lo puede quitar.\n\nLa diferencia entre los tres no es el esfuerzo inicial. Es quién tiene el control al final del mes.\n\nSolo necesitás un teléfono, internet y hablar español. Eso es todo.\n\nSi querés ver cómo arranca el Camino C, escribime CLASE en los comentarios y te mando todo.",
+        "word_count": 224,
+        "structure_used": "Comparación directa"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_concreto",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H2-Taller$5",
+        "headline": "Elegí mal el modelo. Acá está la diferencia.",
+        "description": "Taller 3 días en vivo, $5 USD. Día 1 producto, Día 2 crearlo, Día 3 venderlo. Salís con todo hecho.",
+        "primary_text": "Durante 9 meses estuve en Fiverr haciendo diseños de miniaturas para YouTube.\n\nCobré en total unos 340 dólares. Suena bien hasta que hacés la cuenta: 37 dólares por mes, trabajando 4 o 5 horas por día.\n\nEl problema no era yo. Era el modelo.\n\nSi no entregaba, no cobraba. Si me enfermaba, no cobraba. Si el cliente cancelaba, no cobraba. Era un trabajo disfrazado de negocio.\n\nDespués probé Digistore. Vendí productos de otro. Llegué a 28 dólares en un día y pensé que lo había encontrado. Tres semanas después, el creador del producto bajó la comisión a la mitad sin avisar.\n\nOtra vez de cero.\n\nHasta que entendí que la diferencia entre esos modelos y vender tu propio producto digital es una sola palabra: propiedad.\n\nCon tu propio producto, cada venta es tuya. No hay jefe, no hay proveedor, no hay plataforma que te pueda sacar lo que construiste.\n\nHoy genero entre 1.500 y 2.000 dólares al mes con algo que creé una vez y que se sigue vendiendo.\n\nNo fue magia. Fue elegir el modelo correcto.\n\nJesús armó un taller de 3 días en vivo, $5, donde en el Día 1 encontrás tu producto, en el Día 2 lo creás completo y en el Día 3 lo ponés a vender.\n\nSalís con todo hecho. No con teoría.\n\nEl link está abajo 👇",
+        "word_count": 224,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H3-ClaseGratuita",
+        "headline": "Hacé la cuenta antes de arrancar",
+        "description": "Jesús muestra los números reales de 3 modelos online. Clase gratis, 2 horas, en vivo. Anotate.",
+        "primary_text": "Escuchame un segundo porque esto vale que lo anotes.\n\nAntes de elegir un modelo de negocio online, hacé la cuenta.\n\nFreelance en Fiverr: $20 promedio por trabajo. Para llegar a $1.500 al mes, necesitás 75 trabajos. Son 19 trabajos por semana. ¿Cuándo descansás?\n\nAfiliados o reventa (Digistore y similares): $30 por venta en un buen día. Para $1.500 al mes necesitás 50 ventas. Suena razonable hasta que el proveedor decide bajar el producto. Entonces: $0. Sin aviso.\n\nAhora el tercer modelo. Producto digital propio.\n\nNo hace falta vender 50 cosas. Con 3 ventas al día a $19 cada una ya estás en $57 diarios. Multiplicalo por 27 días hábiles: $1.539 al mes.\n\nEse número no desaparece si te enfermás. No desaparece si el mercado cambia. Es tuyo.\n\nY la parte que más me sorprendió cuando empecé: no necesitás saber diseño, ni programación, ni tener una marca conocida. Solo necesitás entender qué problema resolver y cómo empaquetarlo.\n\nEso es exactamente lo que enseño en una clase gratuita de 2 horas, en vivo.\n\nTe muestro cómo encontrar el producto, cómo crearlo con IA y cómo venderlo con publicidad desde el primer día.\n\nNo hay trampa. No hay venta escondida. Es una clase.\n\nSi los números que hiciste recién te cerraron, el link para anotarte está abajo.",
+        "word_count": 226,
+        "structure_used": "Math-based / calculadora"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H3-InstagramOrgánico",
+        "headline": "Dos de tres modelos tienen trampa",
+        "description": "Lo que nadie te cuenta sobre los modelos online más populares. Para quien no quiere caer. Comentá CLASE.",
+        "primary_text": "Empecé a vender online creyendo que todos los modelos eran básicamente lo mismo.\n\nQue el secreto estaba en el esfuerzo, en la constancia, en madrugar más que el resto.\n\nEstaba equivocado.\n\nProbé Fiverr primero. Gané plata. De verdad. Pero un martes que me enfermé y no pude trabajar, no entró nada. Ahí entendí que había cambiado un jefe por otro: el cliente.\n\nDespués probé afiliados con Digistore. Mejor margen, menos tiempo. Hasta que el producto que más vendía lo dieron de baja sin aviso. Tres semanas de trabajo, cero. No era mío. Nunca lo fue.\n\nLo que nadie te dice es que la mayoría de los modelos que se promocionan online te hacen depender de algo o de alguien externo. Una plataforma, un dueño, un algoritmo.\n\nEl único que no funciona así es la venta de productos digitales propios. Lo creás una vez. Es tuyo. Se vende aunque no estés mirando el teléfono.\n\nNo estoy hablando de hacerse rico. Estoy hablando de 50, 60 dólares por día. Que en un mes son entre 1.500 y 2.000 dólares. Y que el mes siguiente siguen ahí sin que vos empieces de cero.\n\nEsa diferencia la aprendí tarde. Vos podés aprenderla ahora.\n\nComentá CLASE y te mando la clase donde explico cómo funciona este modelo desde el principio.",
+        "word_count": 227,
+        "structure_used": "Contrarian manifesto"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H3-Taller$5",
+        "headline": "2 de los 3 modelos tienen trampa.",
+        "description": "Taller en vivo, 3 días, $5. Salís con producto, anuncio y sistema. No con apuntes: con algo real.",
+        "primary_text": "Martín abrió su notebook en la mesa de la cocina un domingo a las 7 de la mañana.\n\nLlevaba 11 meses buscando cómo ganar plata por internet. Había probado de todo. Nada le duró más de 6 semanas.\n\nEsa mañana encontró un video que prometía mostrarle los únicos 3 modelos que realmente funcionan. Arrugó el ceño. Ya había visto ese título 53 veces.\n\nPero algo era distinto.\n\nEl tipo no vendía el sueño. Mostraba la trampa.\n\nFiverr: ganás por hora, no por sistema. Cuando parás, para el dinero.\nDigistore: vendés lo de otro. Un día ese otro desaparece y vos te quedás con las manos vacías.\n\nY después el tercer modelo. Productos digitales propios.\n\nMartín escuchó la lógica: creás algo una vez, es tuyo para siempre, se vende mientras vivís tu vida. Con 50 dólares al día ya son 1.500 al mes. No hace falta ser famoso. No hace falta tener audiencia. Solo un teléfono, internet y hablar en español.\n\nCerró la notebook. La volvió a abrir.\n\nBuscó el taller.\n\n3 días en vivo. Día 1: tu producto ganador. Día 2: lo creás completo. Día 3: lo vendés. Todo por $5.\n\nNo salís con un PDF de 80 páginas. Salís con algo concreto, hecho, listo.\n\nSi reconocés algo de Martín en vos, el link está abajo 👇",
+        "word_count": 213,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "curiosidad",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H4-ClaseGratuita",
+        "headline": "Camino A vs Camino B: elegí bien",
+        "description": "Dos caminos online, un solo ganador. El alumno lo vivió. Clase gratis para que vos también lo veas.",
+        "primary_text": "Pasé 11 meses en el Camino A. Te cuento cómo termina.\n\nCamino A: empezás a vender servicios o productos de otros. Hay movimiento, hay ingresos, hay la sensación de que funciona. Pero en el mes 4 me di cuenta de algo incómodo: dependía de que otro siguiera existiendo para que yo siguiera cobrando.\n\nUn proveedor bajó un producto que yo estaba vendiendo. De un día para el otro, esa fuente de ingresos desapareció. Sin aviso. Sin indemnización. Sin nada.\n\nCamino B: empezás con tu propio producto digital.\n\nSí, requiere más esfuerzo al principio. Hay que entender qué vender, cómo crearlo, cómo ponerle publicidad. Pero cuando lo tenés, es tuyo. Nadie te lo puede quitar.\n\nLa diferencia entre los dos caminos no es el esfuerzo, es quién tiene el control.\n\nEn el Camino A, el control lo tiene otro.\nEn el Camino B, lo tenés vos.\n\nY la parte que más me sorprendió: no necesitás una audiencia, ni experiencia previa, ni ser experto en nada técnico. Con un teléfono y conexión a internet alcanza para empezar.\n\nHay una clase gratuita donde Jesús explica exactamente cómo se hace el Camino B. Son 2 horas en vivo, sin costo, sin compromiso.\n\nTe muestra desde cómo encontrar el producto hasta cómo venderlo con publicidad.\n\nSi querés ver cómo es antes de decidir cualquier cosa, el link está abajo 👇",
+        "word_count": 233,
+        "structure_used": "Comparación directa"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "curiosidad",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H4-InstagramOrgánico",
+        "headline": "¿Cuánto es 60 dólares al día en un año?",
+        "description": "La cuenta que cambia cómo ves los modelos online. Para quien quiere números reales. Comentá CLASE.",
+        "primary_text": "Antes de buscar cómo ganar plata por internet, hay una cuenta que vale la pena hacer.\n\nMarcela tenía 41 años, dos hijos y exactamente 3 horas libres por día entre las 9 y las 12 de la mañana.\n\nNo buscaba un segundo trabajo. Buscaba algo que siguiera funcionando cuando ella no estuviera mirando.\n\nLa cuenta que cambió todo fue esta:\n\nFiverr: 25 dólares por trabajo. Si hace 2 trabajos por día, son 50 dólares. Bien. Pero si no trabaja, no cobra. En vacaciones: cero. En una semana difícil: cero.\n\nDigistore: hasta 30 dólares por día vendiendo productos ajenos. Mejor. Hasta que el dueño del producto lo retira. Días trabajados: muchos. Resultado: cero.\n\nProductos digitales propios: 60 dólares por día promedio. En un mes: 1.800 dólares. En un año: 21.600 dólares. Sin depender de clientes ni de plataformas. Sin empezar de cero cada vez.\n\nLo que Marcela entendió no fue que el tercer modelo era el más fácil. Fue que era el único donde el esfuerzo se acumula en lugar de reiniciarse.\n\nCreás algo una vez. Se vende. Volvés a venderlo. Y al mes siguiente está ahí de nuevo.\n\nSolo necesitás un teléfono, internet y hablar español.\n\nHacé la cuenta vos. Y si los números te convencen, comentá CLASE y te mando el link con todo explicado.",
+        "word_count": 233,
+        "structure_used": "Math-based / calculadora"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "curiosidad",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H4-Taller$5",
+        "headline": "Lo que nadie te dice antes de arrancar.",
+        "description": "Taller de 3 días en vivo por $5. Para quienes quieren un modelo propio, real y que no dependa de nadie.",
+        "primary_text": "La semana pasada me llegó este mensaje por WhatsApp:\n\n\"Jesús, te escribo porque llevo 7 meses mirando videos sobre negocios online y nunca arranqué. Probé Fiverr dos semanas, no me salió nada. Vi cosas de Digistore y me pareció raro vender lo de otro. Pero lo tuyo tiene otra lógica. Entré al taller el martes. El miércoles ya tenía el tema de mi producto. El jueves lo terminé. El viernes publiqué el anuncio. No puedo creer que haya tardado más en decidirme que en hacerlo. Y pagué 5 dólares. Cinco. Me da vergüenza haber esperado tanto.\"\n\nEso pasa cuando encontrás el modelo correcto.\n\nNo el que te hace trabajar por hora como Fiverr.\nNo el que te pone a vender lo de otro como Digistore.\nEl que te da algo propio, que se vende solo y que nadie te puede quitar.\n\nCon 50 o 60 dólares al día ya estás en $1.500 a $2.000 al mes. No es una fortuna. Es suficiente para cambiar cómo vivís.\n\nSolo necesitás un teléfono, internet y hablar en español. Nada más.\n\nEl taller dura 3 días en vivo. Día 1: encontrás tu producto. Día 2: lo creás completo. Día 3: aprendés a venderlo.\n\nSalís con tu producto, tu anuncio y tu sistema. Todo por $5.\n\nSi querés arrancar de verdad esta semana, el link está abajo 👇",
+        "word_count": 221,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "eliminacion_barreras",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H5-ClaseGratuita",
+        "headline": "Le llegó un audio que cambió todo",
+        "description": "Un mensaje de WhatsApp, un modelo que nadie le había explicado. Clase gratis, 2 horas, en vivo.",
+        "primary_text": "Rodrigo tenía 38 años, trabajaba en logística y llevaba 7 meses intentando ganar algo extra por internet sin resultados concretos.\n\nUn martes a las 11 de la noche, le llegó un audio de un conocido. Lo transcribimos acá:\n\n*\"Bro, para. Antes de meterte en otro curso, escuchame. Hay tres modelos reales. Dos tienen una trampa que no ves hasta que ya perdiste tiempo. El tercero no depende de nadie más que vos. Es un producto digital tuyo. Una vez que lo creás, se vende. Jesús lo explica gratis, en una clase de dos horas. Sin venta, sin verso. Solo entrá y mirá.\"*\n\nRodrigo entró a la clase sin muchas expectativas.\n\nLo que encontró fue una explicación de 3 modelos de negocio online con números reales: cuánto genera cada uno, qué pasa cuando parás de trabajar, y por qué el tercero es el único donde vos sos dueño del activo.\n\nDos meses después de esa clase, tenía su primer producto digital funcionando. No $10.000 al mes. Algo más honesto: $63 por día en promedio, que son casi $1.900 al mes.\n\nLa clase sigue siendo gratuita. Son 2 horas en vivo.\n\nJesús muestra cómo encontrar qué vender, cómo crearlo con IA y cómo arrancar con publicidad.\n\nSin tecnología complicada. Sin experiencia previa necesaria.\n\nEl link para anotarte está abajo.",
+        "word_count": 219,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "eliminacion_barreras",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H5-InstagramOrgánico",
+        "headline": "Antes dependía. Ahora es mío.",
+        "description": "El antes y después de elegir el modelo equivocado. Para quien quiere empezar bien. Comentá CLASE.",
+        "primary_text": "Voy a ser directo con vos.\n\nHace dos años estaba haciendo servicios en Fiverr. Ganaba plata. Me sentía bien. Hasta que me tomé 9 días de vacaciones y volví con la cuenta exactamente igual que cuando me fui.\n\nCada peso que había ganado requirió que yo estuviera ahí, activo, entregando algo.\n\nDespués probé Digistore. Vendía productos de otros. Llegué a facturar 30 dólares por día en mi mejor semana. Y un jueves a las 11 de la noche me llegó un mail: el producto que más vendía había sido dado de baja. Sin aviso. Sin compensación. Sin nada.\n\nEso fue el antes.\n\nEl después empezó cuando entendí que hay un solo modelo donde lo que construís es realmente tuyo: la venta de productos digitales propios.\n\nNo te prometo que te vas a hacer millonario. Te prometo algo más útil: entre 50 y 60 dólares por día son 1.500 a 2.000 dólares al mes. Y ese ingreso no desaparece cuando te enfermás, cuando viajás, cuando apagás el teléfono.\n\nUna vez que lo creás, se vende solo.\n\nSolo necesitás un teléfono, conexión a internet y hablar español. Nada más.\n\nSi querés ver cómo arranca esto desde cero, comentame CLASE acá abajo y te mando el link. Sin vueltas.",
+        "word_count": 215,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "eliminacion_barreras",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H5-Taller$5",
+        "headline": "Hacé la cuenta antes de elegir modelo.",
+        "description": "Taller $5, 3 días en vivo. Para quien quiere un ingreso en dólares con algo 100% propio. Empezá hoy.",
+        "primary_text": "Mirá estos números y decime cuál modelo elegiría alguien que piensa:\n\nFiverr: $25 por trabajo. Para llegar a $1.500 al mes necesitás cerrar 60 trabajos. Son 2 por día, todos los días, sin descanso. Y si un mes te enfermás, ganás $0.\n\nDigistore: $30 al día en un buen mes son $900. Pero ese dinero depende de que el creador del producto no cambie las reglas. Cuando lo hace, volvés a cero sin previo aviso.\n\nProducto digital propio: $50 al día. Hacé la cuenta: $1.500 al mes. $60 al día: $1.800. Y ese producto lo creaste una vez. Se sigue vendiendo. No hay jefe, no hay proveedor, no hay plataforma que te lo pueda sacar.\n\nLa diferencia no es el esfuerzo. Es a quién le pertenece lo que construís.\n\nYo empecé sin haber vendido nada online. Sin saber de tecnología. Con el teléfono que tenía y conexión a internet. Hablo español, igual que vos.\n\nNo te pido que me creas. Te pido que hagas la cuenta.\n\nArmé un taller de 3 días en vivo para que en 72 horas tengas tu producto creado, tu anuncio listo y tu sistema funcionando.\n\nCuesta $5 USD.\n\nDía 1: elegís tu producto ganador. Día 2: lo creás completo. Día 3: lo ponés a vender.\n\nSalís con algo hecho, no con teoría.\n\nEl link está abajo 👇",
+        "word_count": 234,
+        "structure_used": "Math-based / calculadora"
+      }
+    ],
+    "diversity_warnings": [],
+    "createdAt": "2026-03-23T19:50:29.847Z"
+  }
+}

@@ -9,13 +9,16 @@
 [CAPA 1 — TRANSICIÓN]     Se graba CON el body. Específica al nicho. 1 oración, 3-5 seg.
 ────── CORTE ──────
 [CAPA 2 — OFERTA]         QUÉ se lleva. 3 promesas + formato. 5-7 seg.
-[CAPA 3 — PRUEBA MICRO]   Prueba social comprimida. 1 frase. 2-3 seg.
-[CAPA 4 — RIESGO CERO]    Eliminar el miedo a actuar. 1-2 frases. 3-4 seg.
-[CAPA 5 — URGENCIA]       Por qué AHORA. 1 frase. 2-3 seg.
-[CAPA 6 — ORDEN + NLP]    Instrucción directa + cierre subconsciente. 2-3 seg.
+[CAPA 6a — ORDEN]         Primera instrucción de acción. Atrapa a los ya convencidos. 2 seg.
+[CAPA 3 — PRUEBA MICRO]   Prueba social comprimida. 1-2 frases. 3-4 seg.
+[CAPA 4 — RIESGO CERO]    Eliminar el miedo + beneficio concreto ($). 2-3 frases. 4-5 seg.
+[CAPA 5 — URGENCIA]       Por qué AHORA + justificación real. 2-3 frases. 4-5 seg.
+[CIERRE — ORDEN reforzado] Segunda instrucción + frase de peso + cierre cálido. 3-4 seg.
 ```
 
-**Duración total del bloque (capas 2-6):** ~15-20 seg
+**Patrón doble CTA:** la orden aparece 2 veces. La primera (6a) después de la oferta atrapa a los que ya están convencidos. El cierre atrapa a los que necesitaron prueba + riesgo + urgencia.
+
+**Duración total del bloque (capas 2-cierre):** ~20-25 seg
 **Duración de la transición (capa 1):** ~3-5 seg
 
 ---
@@ -36,6 +39,22 @@ La transición conecta el ejemplo específico del body con el bloque CTA genéri
 - Máximo 1-2 oraciones
 - Tiene que sonar como cierre natural del body, no como inicio del CTA
 - Se graba DE CORRIDO después de la última sección del body
+- El body debe CERRAR el mecanismo con la venta ANTES de la transición:
+  - MAL: "La IA te arma una guía profesional." (queda colgado)
+  - BIEN: "La IA te arma una guía profesional. Y la vendés a la gente que busca eso todos los días." (cierra el loop)
+
+### Variantes reales de Jesús (grabación 2026-03-14) — Referencia de tono
+
+Estas son transiciones reales que Jesús improvisó en sesión. Usar como referencia de tono y naturalidad:
+
+1. Crianza: "En la clase gratuita de esta próxima semana te voy a mostrar cómo podés crearlo."
+2. Decoración: "En la clase gratuita te voy a mostrar el proceso completo. Es una clase que dura aproximadamente dos horas. Te enseño a encontrar productos ganadores, cómo crearlos y a venderlos."
+3. Fitness: "En la clase gratuita de la próxima semana te voy a mostrar exactamente eso. Cómo vos, sin experiencia en absolutamente nada, podés utilizar la IA para crear un producto digital y comenzar a venderlo."
+4. Viajes: "En la clase gratuita te voy a enseñar qué productos digitales podés crear que están en tendencia y podés vender, cómo crearlos y cómo venderlos a través de campañas y anuncios."
+5. Organización: "En la clase gratuita de la próxima semana te voy a mostrar eso paso a paso. Cómo vender algo que para vos es cotidiano, crear un producto en base a eso, y venderlo a través de redes sociales y WhatsApp."
+6. Mecánica: "Eso es lo que te voy a enseñar esta próxima semana en un taller completamente gratis donde te explico cómo crear productos digitales, cómo encontrar los que están vendiendo y venderlos."
+7. Manualidades: "Preparo una clase la próxima semana donde te voy a explicar exactamente cómo agarrar tu conocimiento y crear un producto digital alrededor de eso y generar ventas todos los días por WhatsApp."
+8. IA Consumidor: "Es una clase gratis de dos horas donde te explico exactamente cómo crear productos digitales con IA, cómo venderlo y cómo encontrar lo que se están vendiendo."
 
 ---
 
@@ -79,22 +98,25 @@ La transición conecta el ejemplo específico del body con el bloque CTA genéri
 
 ---
 
-### Variante C — Emocional (para audiencia fría)
+### Variante C — Emocional + Doble CTA (para audiencia fría) ✅ ACTIVA v2.0
 
-**[CAPA 2 — OFERTA]** 3 promesas + visión
-> "En 2 horas te muestro cómo encontrar algo que la gente quiere comprar, cómo crearlo con IA y cómo empezar a venderlo. Sin experiencia. Sin saber de tecnología. Desde tu celular."
+**[CAPA 2 — OFERTA]**
+> "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa."
+
+**[CAPA 6a — ORDEN]**
+> "Tocá el botón de acá abajo y registrate."
 
 **[CAPA 3 — PRUEBA]** #85 Testimonio Diverso
-> "Lo hicieron mamás, jubilados, pibes de 20, gente que nunca vendió nada. Todos empezaron de cero."
+> "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero."
 
-**[CAPA 4 — RIESGO CERO]** #106 Garantía Implícita
-> "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, te puede cambiar todo."
+**[CAPA 4 — RIESGO CERO]** #106 Garantía Implícita + beneficio concreto
+> "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí."
 
-**[CAPA 5 — URGENCIA]** #120 FOMO Social
-> "Ya hay cientos de personas registradas para esta edición."
+**[CAPA 5 — URGENCIA]** #117 Escasez + justificación real
+> "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte."
 
-**[CAPA 6 — ORDEN + NLP]** #127 Embedded Command + #126 Presuposición
-> "Cuando toques el botón de acá abajo y entres, vas a entender por qué miles ya lo hicieron. Te espero."
+**[CIERRE — ORDEN reforzado]**
+> "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
 
 ---
 
@@ -119,7 +141,7 @@ La transición conecta el ejemplo específico del body con el bloque CTA genéri
 
 ## CANAL 2 — Taller $5 (ads pagos, MOFU / retargeting)
 
-### Variante A — Día 1/2/3 + Transparencia
+### Variante A — Día 1/2/3 + Transparencia + Doble CTA ✅ ACTIVA v2.0
 
 **[CAPA 2 — OFERTA]** #71 Proceso de N Pasos + #98 Tres Deliverables
 > "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando."
@@ -128,13 +150,13 @@ La transición conecta el ejemplo específico del body con el bloque CTA genéri
 > "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España."
 
 **[CAPA 4 — RIESGO CERO]** #103 Reducción al Absurdo + Transparencia
-> "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien."
+> "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo."
 
-**[CAPA 5 — URGENCIA]** #118 Deadline + #117 Escasez
-> "El taller arranca esta semana y los cupos son limitados porque es en vivo."
+**[CAPA 5 — URGENCIA]** #122 Costo de Esperar
+> "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta."
 
-**[CAPA 6 — ORDEN + NLP]** #125 Reframe + #126 Presuposición
-> "La pregunta no es si funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo. Nos vemos adentro."
+**[CIERRE — ORDEN reforzado]** #103 Reducción al Absurdo + beneficio concreto
+> "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
 
 ---
 
@@ -235,22 +257,25 @@ La transición conecta el ejemplo específico del body con el bloque CTA genéri
 
 ---
 
-### Variante C — FOMO + Directo
+### Variante C — Doble CTA + WhatsApp anchor ✅ ACTIVA v2.0
 
-**[CAPA 2 — OFERTA]** 3 promesas
-> "En la clase gratuita te enseño a encontrar productos digitales con demanda, crearlos con IA y venderlos."
+**[CAPA 2 — OFERTA]**
+> "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí."
 
-**[CAPA 3 — PRUEBA]** #120 FOMO Social
-> "Ya hay cientos de personas registradas para esta edición."
+**[CAPA 6a — ORDEN]**
+> "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil."
 
-**[CAPA 4 — RIESGO CERO]**
-> "Sin costo. Sin compromiso."
+**[CAPA 3 — PRUEBA]** #89 Volumen
+> "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora."
 
-**[CAPA 5 — URGENCIA]** #117 Escasez
-> "Los lugares son limitados."
+**[CAPA 4 — RIESGO CERO]** beneficio concreto
+> "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día."
 
-**[CAPA 6 — ORDEN + NLP]** #109 Directo + #126 Presuposición
-> "Comentá 'CLASE' y registrate en el link de mi perfil. Te veo adentro."
+**[CAPA 5 — URGENCIA]** #117 Escasez + justificación real
+> "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte."
+
+**[CIERRE — ORDEN reforzado]**
+> "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
 
 ---
 

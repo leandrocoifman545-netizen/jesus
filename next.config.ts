@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "200mb",
     },
   },
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.watchOptions = {
+        ...config.watchOptions,
+        ignored: /\.data/,
+      };
+    }
+    return config;
+  },
 };
 
 export default nextConfig;

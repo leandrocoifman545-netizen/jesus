@@ -253,9 +253,6 @@ async function anglesFromCoverageGaps(): Promise<AngleCandidate[]> {
     }
   }
 
-  // Find niches never used
-  const usedNiches = new Set(Object.keys(coverage.byNiche).map(n => n.toLowerCase()));
-
   return candidates;
 }
 
@@ -311,7 +308,7 @@ export async function getDiscoveredAngles(): Promise<AngleCandidate[]> {
   anglesCache = ranked;
   anglesCacheTime = Date.now();
 
-  // Also persist to disk for inspection
+  // Persist summary to disk for inspection (full list lives in memory cache)
   try {
     await fs.writeFile(
       ANGLES_CACHE_FILE,

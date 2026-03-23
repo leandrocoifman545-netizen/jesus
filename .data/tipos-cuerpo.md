@@ -2,6 +2,8 @@
 
 El tipo de cuerpo es el **TONO/VEHÍCULO narrativo**, no la estructura del guion. La estructura son los **5 beats del micro-VSL** (identificación → quiebre → mecanismo → demolición → prueba). El vehículo define CÓMO se cuentan esos beats.
 
+> **⭐ WINNER DATA (Marzo 2026):** Los vehículos #9 (Demolición de alternativas) y #10 (Q&A conversacional) fueron validados con ads ganadores reales. Priorizarlos sin abusar.
+
 **Primero se definen los beats con sus funciones persuasivas. Después se elige el vehículo que da el tono.**
 
 ---
@@ -32,7 +34,7 @@ NUNCA dos beats con la misma función. Si los 3 beats dicen "nueva oportunidad",
 
 ---
 
-## 8 vehículos narrativos (el TONO del guion)
+## 10 vehículos narrativos (el TONO del guion)
 
 El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro" tiene los mismos 5 beats pero contados como historia. Un guion de "demolición de mito" tiene los 5 beats con tono confrontativo.
 
@@ -85,6 +87,29 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 - **Mejor para:** Micro-creencias tipo "no podés seguir así", "el cambio es urgente"
 - **Ingredientes típicos:** B (Problema) + C (Agitación) + #47 Contraste Emocional
 
+### 9. Demolición de alternativas ⭐ WINNER
+**Tono:** Honesto, lógico-progresivo, anti-hype. "Hay 3 formas. Te muestro cada una."
+- **Cómo tiñe los beats:** Presenta 2-3 alternativas reales (con nombres propios: Fiverr, Digistore, etc.), cada una con un "pero" que la descalifica progresivamente. PD con IA queda como la opción lógica sin necesidad de venderla.
+- **Beat 1 (Identificación):** Requisitos mínimos ("teléfono + internet + español") → "esto es para vos"
+- **Beat 2 (Quiebre):** Alternativa 1 parece buena "pero terminás con muchos jefes"
+- **Beat 3 (Mecanismo):** Alternativa 2 tiene otro problema → PD con IA no tiene ninguno
+- **Beat 4 (Demolición):** Anti-hype ("no te vas a hacer millonario") como prueba de honestidad
+- **Beat 5 (Prueba):** Números reales sin exagerar ($50-60/día = $1500-2000/mes)
+- **Mejor para:** Micro-creencias tipo "las alternativas son peores", "este es el camino más lógico"
+- **Ingredientes típicos:** D (Quiebre) + F (Mecanismo) + #72 New Opportunity + números reales
+- **Diferencia con Comparación de caminos (#4):** #4 es conceptual (Camino A vs B). #9 es concreto: alternativas con nombre propio + demolición secuencial + anti-hype. Es más agresivo y más conversacional.
+- **Validado:** 3 de 5 winners usan este vehículo (ads #33, #34, #48). Funciona tanto en versión larga (~100s) como condensada (~40s).
+
+### 10. Q&A conversacional ⭐ WINNER
+**Tono:** Consejero, cercano, cero presión. "Me preguntan mucho esto. Te lo respondo."
+- **Cómo tiñe los beats:** No sigue beats rígidos — fluye como una conversación respondiendo una objeción o pregunta real del avatar. El "quiebre" es sutil (desmonta la preocupación). La "prueba" es la experiencia personal de Jesús.
+- **Estructura natural:** Pregunta del avatar → Respuesta directa → Desarrollo honesto → Consejo personal → Cierre sin presión
+- **Mejor para:** Micro-creencias tipo "mi caso tiene solución", "no es tan complicado como pienso"
+- **Ingredientes típicos:** E (Autoridad personal) + #53 El Permiso + #76 Metáfora simple
+- **Diferencia con Pregunta y respuesta (#6):** #6 es ráfaga rápida de Q&A. #10 es UNA sola pregunta/objeción desarrollada a fondo, como si Jesús respondiera un DM.
+- **CTA:** Puede no tener CTA formal — el consejo final ES el CTA. Funciona para orgánico/retargeting.
+- **Validado:** Winner #16 [BN]. Ads que no parecen ads convierten más. Awareness 3+ (gente que ya conoce ADP).
+
 ---
 
 ## Mapa: micro-creencia → mejor vehículo
@@ -95,12 +120,14 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 | "Gente como yo lo logró" | Historia con giro | Contraste emocional |
 | "El proceso es simple" | Demo/Proceso | Pregunta y respuesta |
 | "Hay demanda real" | Demo/Proceso | Historia con giro |
-| "Las alternativas son peores" | Comparación caminos | Demolición de mito |
+| "Las alternativas son peores" | **Demolición de alternativas ⭐** | Comparación caminos |
 | "Así se siente cuando funciona" | Un día en la vida | Contraste emocional |
 | "No hay excusa válida" | Pregunta y respuesta | Demolición de mito |
 | "Ya sabés hacer algo parecido" | Analogía extendida | Demo/Proceso |
 | "No podés seguir así" | Contraste emocional | Un día en la vida |
 | "El cambio es urgente/temporal" | Contraste emocional | Comparación caminos |
+| "Mi caso particular tiene solución" | **Q&A conversacional ⭐** | Pregunta y respuesta |
+| "Este es el camino más lógico" | **Demolición de alternativas ⭐** | Demolición de mito |
 
 ---
 
@@ -116,6 +143,8 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 | Pregunta y respuesta | ○ | ○ | ● | ● | ○ |
 | Analogía extendida | ○ | ● | ○ | ● | ○ |
 | Contraste emocional | ● | ○ | ○ | ○ | ● |
+| **Demolición alternativas ⭐** | ○ | ○ | **●** | **●** | ○ |
+| **Q&A conversacional ⭐** | ○ | ○ | **●** | ○ | **●** |
 
 ● = combo ideal | ○ = funciona pero no es el mejor
 
@@ -129,3 +158,5 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 4. **El vehículo NO determina el ángulo** — son dimensiones independientes
 5. **Registrar** en el JSON con el campo `body_type`
 6. **Cada sección** tiene `persuasion_function` + `micro_belief` — OBLIGATORIO
+7. **Winners validados:** Demolición de alternativas (#9) y Q&A conversacional (#10) tienen data real de ads ganadores. Sesgar hacia ellos sin abusar (máx 2 de 10 del mismo vehículo winner).
+8. **Q&A conversacional (#10)** es ideal para awareness 3+ y retargeting/orgánico — puede no tener CTA formal

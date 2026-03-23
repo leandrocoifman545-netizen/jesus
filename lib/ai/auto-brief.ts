@@ -18,6 +18,7 @@ import {
   ALL_AVATARS,
   ALL_AWARENESS_LEVELS,
   AVATAR_SEGMENT_MAP,
+  AVATAR_BUYER_WEIGHTS,
   AWARENESS_LABELS,
   AWARENESS_CHANNEL_MAP,
 } from "../constants/hook-types";
@@ -30,10 +31,10 @@ import { pickAngleForFamily, type AngleCandidate } from "./angle-discovery";
  */
 const ANGLE_BODY_COMPAT: Record<string, string[]> = {
   identidad: ["historia_con_giro", "contraste_emocional", "un_dia_en_la_vida", "analogia_extendida"],
-  oportunidad: ["demo_proceso", "comparacion_caminos", "demolicion_mito", "analogia_extendida"],
-  confrontacion: ["demolicion_mito", "comparacion_caminos", "contraste_emocional", "pregunta_respuesta"],
-  mecanismo: ["demo_proceso", "analogia_extendida", "demolicion_mito", "comparacion_caminos"],
-  historia: ["historia_con_giro", "un_dia_en_la_vida", "contraste_emocional", "analogia_extendida"],
+  oportunidad: ["demo_proceso", "comparacion_caminos", "demolicion_mito", "analogia_extendida", "demolicion_alternativas"],
+  confrontacion: ["demolicion_mito", "comparacion_caminos", "contraste_emocional", "pregunta_respuesta", "demolicion_alternativas"],
+  mecanismo: ["demo_proceso", "analogia_extendida", "demolicion_mito", "comparacion_caminos", "demolicion_alternativas"],
+  historia: ["historia_con_giro", "un_dia_en_la_vida", "contraste_emocional", "analogia_extendida", "qa_conversacional"],
 };
 
 const ALL_MODEL_SALE_TYPES = [
@@ -71,6 +72,38 @@ export interface AutoBriefResult {
   awareness_level: number;
   discovered_angle: AngleCandidate | null; // enrichment from research data
   constraints_text: string; // pre-formatted text to inject into the prompt
+}
+
+/**
+ * Pick avatar using buyer weights × inverse coverage.
+ * High-weight avatars (Patricia 30%, Roberto 26%) get selected more,
+ * but underrepresented avatars get a boost to maintain diversity.
+ * Martín (2% weight) is capped at ~1 of 10 scripts.
+ */
+function pickWeightedAvatar(
+  all: readonly string[],
+  counts: Record<string, number>,
+  totalGenerations: number,
+): string {
+  const scores = all.map((avatar) => {
+    const weight = AVATAR_BUYER_WEIGHTS[avatar] || 0.05;
+    const used = counts[avatar] || 0;
+    const targetCount = Math.max(1, Math.round(weight * totalGenerations));
+    // Gap: how much this avatar is underrepresented vs its target
+    const gap = Math.max(0, targetCount - used);
+    // Score = buyer weight × (1 + gap bonus). Never-used avatars get extra boost.
+    const score = weight * (1 + gap * 0.5 + (used === 0 ? 2 : 0));
+    return { avatar, score };
+  });
+
+  // Weighted random selection from top candidates
+  const totalScore = scores.reduce((sum, s) => sum + s.score, 0);
+  let rand = Math.random() * totalScore;
+  for (const s of scores) {
+    rand -= s.score;
+    if (rand <= 0) return s.avatar;
+  }
+  return scores[0].avatar;
 }
 
 /**
@@ -121,8 +154,9 @@ export async function buildAutoBrief(overrides?: {
       body = pickLeastUsed(ALL_BODY_TYPES, coverage.byBodyType);
     }
   }
-  // Avatar selection: pick least used, then derive segment from avatar
-  const avatar = overrides?.avatar || pickLeastUsed(ALL_AVATARS, coverage.byAvatar);
+  // Avatar selection: weighted by real buyer data (562 compradores)
+  // Uses buyer weights × inverse coverage to balance representation with diversity
+  const avatar = overrides?.avatar || pickWeightedAvatar(ALL_AVATARS, coverage.byAvatar, coverage.totalGenerations);
   // If no segment override, derive from avatar mapping (avatar is more specific than segment)
   const segment = overrides?.segment || AVATAR_SEGMENT_MAP[avatar] || pickLeastUsed(ALL_SEGMENTS, coverage.bySegment);
 

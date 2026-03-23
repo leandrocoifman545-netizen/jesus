@@ -1,4 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
+import fs from "fs";
+import path from "path";
 
 import { SYSTEM_PROMPT } from "./prompts/system";
 import { SYSTEM_PROMPT_LONGFORM } from "./prompts/system-longform";
@@ -62,10 +64,18 @@ function getAnthropicClient() {
   return new Anthropic({ apiKey });
 }
 
-function getGroqApiKey() {
-  const apiKey = process.env.GROQ_API_KEY;
-  if (!apiKey) throw new Error("GROQ_API_KEY no está configurada. Agregala en .env.local");
-  return apiKey;
+function getGroqApiKey(forcePaid = false) {
+  const freeKey = process.env.GROQ_API_KEY_FREE;
+  const paidKey = process.env.GROQ_API_KEY;
+
+  // Force paid for very long videos that would hit free rate limits
+  if (forcePaid && paidKey) return paidKey;
+
+  // Default: free key first
+  if (freeKey) return freeKey;
+  if (paidKey) return paidKey;
+
+  throw new Error("GROQ_API_KEY no está configurada. Agregala en .env.local");
 }
 
 // --- JSON Schema descriptions for Claude ---
@@ -86,7 +96,7 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
   },
   "hooks": [{
     "variant_number": number,
-    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error",
+    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
     "script_text": string,
     "timing_seconds": number
   }],
@@ -121,12 +131,12 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
     "script_text": string (texto que vende QUE se lleva el viewer al hacer clic — 3 promesas: encontrar + crear + vender),
     "timing_seconds": number
   },
-  "body_type": string ("demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional"),
+  "body_type": string ("demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional" | "demolicion_alternativas" | "qa_conversacional"),
   "angle_family": string ("identidad" | "oportunidad" | "confrontacion" | "mecanismo" | "historia"),
   "angle_specific": string (ej: "1.2_oficinista_atrapado", "3.4_comparacion_social"),
   "segment": string ("A" | "B" | "C" | "D"),
   "funnel_stage": string ("TOFU" | "MOFU" | "RETARGET"),
-  "avatar": string ("martin" | "laura" | "roberto" | "valentina" | "diego" | "camila" | "soledad"),
+  "avatar": string ("patricia" | "martin" | "laura" | "roberto" | "valentina" | "diego" | "camila" | "soledad"),
   "awareness_level": number (1-5, nivel de conciencia Schwartz: 1=Unaware, 2=Problem Aware, 3=Solution Aware, 4=Product Aware, 5=Most Aware),
   "niche": string (nicho específico del guion, ej: "recetas para diabéticos"),
   "belief_change": {
@@ -151,7 +161,7 @@ const HOOKS_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 {
   "hooks": [{
     "variant_number": number,
-    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error",
+    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
     "script_text": string,
     "timing_seconds": number
   }]
@@ -160,7 +170,7 @@ const HOOKS_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 const SINGLE_HOOK_SCHEMA_DESC = `Responde con un JSON con esta estructura (un solo hook, NO un array):
 {
   "variant_number": number,
-  "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico",
+  "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
   "script_text": string,
   "timing_seconds": number
 }`;
@@ -185,7 +195,7 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 {
   "hook": {
     "text": string,
-    "type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico",
+    "type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
     "word_count": number,
     "estimated_seconds": number
   },
@@ -224,7 +234,7 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
   },
   "generation_mapping": {
     "angle_family": "identidad" | "oportunidad" | "confrontacion" | "mecanismo" | "historia" (familia de ángulo más cercana),
-    "body_type": "demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional" (vehículo narrativo más cercano),
+    "body_type": "demolicion_mito" | "historia_con_giro" | "demo_proceso" | "comparacion_caminos" | "un_dia_en_la_vida" | "pregunta_respuesta" | "analogia_extendida" | "contraste_emocional" | "demolicion_alternativas" | "qa_conversacional" (vehículo narrativo más cercano),
     "persuasion_functions": [{ "section_name": string, "function": "identificacion" | "quiebre" | "mecanismo" | "demolicion" | "prueba" | "venta_modelo" }] (funciones persuasivas detectadas en cada sección del cuerpo),
     "belief_change": { "old_belief": string, "mechanism": string, "new_belief": string } (cambio de creencia implícito o explícito),
     "ingredients_detected": [{ "category": "A"-"K", "ingredient_number": number, "ingredient_name": string }] (ingredientes de la enciclopedia ADP detectados, ej: B#29 Dolor comparativo, F#73 Demo implícita, G#90 Persona improbable),
@@ -505,7 +515,7 @@ Los siguientes ingredientes están SOBREUSADOS en el sistema. NO los uses salvo 
 OBLIGATORIO: Incluí al menos 1 ingrediente de la lista FRESCOS del system prompt (D#49, E#67, F#75, F#76, F#82, G#94, K#125-127, B#31, C#42).`;
 
     // [FIX #6] Body type anti-convergence — force different body types to FEEL different
-    section += `\n\n### ANTI-CONVERGENCIA DE CUERPOS — Los 8 tipos tienen que SONAR distinto
+    section += `\n\n### ANTI-CONVERGENCIA DE CUERPOS — Los 10 tipos tienen que SONAR distinto
 Cada tipo de cuerpo tiene un RITMO NARRATIVO propio. No alcanza con poner el label correcto — el texto tiene que reflejarlo:
 
 - **demolicion_mito**: Arranca AFIRMANDO la creencia falsa como si fuera verdad. Después la destruye con evidencia. Ritmo: certeza → quiebre → reconstrucción. NUNCA empieza con pregunta.
@@ -516,6 +526,8 @@ Cada tipo de cuerpo tiene un RITMO NARRATIVO propio. No alcanza con poner el lab
 - **pregunta_respuesta**: Ritmo rápido de objeción → respuesta → objeción → respuesta. Mínimo 3 pares pregunta/respuesta. Si tiene menos de 3, no es P&R.
 - **analogia_extendida**: La analogía DOMINA todo el cuerpo (no es 1 frase). El objeto cotidiano se desarrolla en paralelo al producto durante al menos 3 beats.
 - **contraste_emocional**: Momento oscuro PRIMERO (mínimo 2 oraciones de dolor real). Después pivote. Después momento de luz. El contraste tiene que ser EMOCIONAL, no lógico.
+- **demolicion_alternativas** ⭐ WINNER: Presenta 2-3 alternativas REALES con nombres propios (Fiverr, Digistore, freelance). Cada una tiene un "pero" que la descalifica progresivamente. PD con IA queda como la opción lógica. Anti-hype obligatorio ("no te vas a hacer millonario"). Números reales sin exagerar ($50-60/día). Requisitos mínimos como eliminador de excusas ("teléfono + internet + español").
+- **qa_conversacional** ⭐ WINNER: UNA sola pregunta u objeción del avatar desarrollada a fondo. Tono de consejero respondiendo un DM. Fluye naturalmente sin beats rígidos. Puede no tener CTA formal — el consejo final ES el cierre. Ideal para awareness 3+ y orgánico/retargeting.
 
 REGLA: Si dos cuerpos del mismo batch podrían intercambiar su body_type sin que se note, REESCRIBÍ uno.`;
 
@@ -673,7 +685,7 @@ NO inventes CTAs sueltos. Seguí las 6 capas.`;
 }
 
 /** Extract structured overrides from additionalNotes if the user specified them */
-function extractBriefOverrides(brief: BriefInput): Record<string, string | undefined> {
+export function extractBriefOverrides(brief: BriefInput): Record<string, string | undefined> {
   const notes = brief.additionalNotes || "";
   const overrides: Record<string, string | undefined> = {};
 
@@ -834,7 +846,42 @@ function extractJSON(text: string): unknown {
   // Strip markdown code blocks if present
   const jsonMatch = cleaned.match(/```(?:json)?\s*([\s\S]*?)```/);
   if (jsonMatch) cleaned = jsonMatch[1].trim();
-  return JSON.parse(cleaned);
+  try {
+    return JSON.parse(cleaned);
+  } catch {
+    // Fix unescaped newlines/tabs inside JSON string values
+    // Walk character by character to find strings and escape their newlines
+    let inString = false;
+    let escaped = false;
+    let fixed = "";
+    for (const ch of cleaned) {
+      if (escaped) {
+        fixed += ch;
+        escaped = false;
+        continue;
+      }
+      if (ch === "\\") {
+        fixed += ch;
+        escaped = true;
+        continue;
+      }
+      if (ch === '"') {
+        inString = !inString;
+        fixed += ch;
+        continue;
+      }
+      if (inString && ch === "\n") {
+        fixed += "\\n";
+        continue;
+      }
+      if (inString && ch === "\t") {
+        fixed += "\\t";
+        continue;
+      }
+      fixed += ch;
+    }
+    return JSON.parse(fixed);
+  }
 }
 
 async function callClaude(
@@ -1007,6 +1054,26 @@ function validateBodyTypeCoherence(script: ScriptOutput): string[] {
       }
       break;
     }
+    case "demolicion_alternativas": {
+      // Must mention at least 2 alternatives by name or description, each with a "pero/but" that disqualifies them
+      const altMarkers = (bodyText.match(/\b(primer[oa]|segund[oa]|tercer[oa]|la primera|la segunda|la tercera|fiverr|digistore|freelanc|afiliado|marketing de afiliado)\b/g) || []);
+      const butMarkers = (bodyText.match(/\b(pero|sin embargo|el problema|lo malo|la contra|ojo que|cuidado)\b/g) || []);
+      if (altMarkers.length < 2) {
+        issues.push(`body_type es "demolicion_alternativas" pero se mencionan menos de 2 alternativas. Necesita 2-3 alternativas reales con nombres o descripciones concretas.`);
+      }
+      if (butMarkers.length < 2) {
+        issues.push(`body_type es "demolicion_alternativas" pero falta demolición de cada alternativa. Cada una necesita un "pero" que la descalifique.`);
+      }
+      break;
+    }
+    case "qa_conversacional": {
+      // Should have a question/objection being addressed, conversational tone
+      const questionPresent = bodyText.includes("?") || /\b(me preguntan|la pregunta|mucha gente|puedo|se puede|necesito)\b/.test(bodyText);
+      if (!questionPresent) {
+        issues.push(`body_type es "qa_conversacional" pero no se detecta una pregunta u objeción central. Debe responder UNA pregunta/objeción como si fuera un DM.`);
+      }
+      break;
+    }
   }
 
   return issues;
@@ -1070,27 +1137,37 @@ Solo marcá passed=false si hay problemas GRAVES (tú en vez de vos, hooks de 1 
 
 // --- Main generation functions (Claude) ---
 
-export async function generateScript(brief: BriefInput): Promise<ScriptOutput> {
+export interface GenerationResult {
+  script: ScriptOutput;
+  validation: ValidationResult;
+}
+
+export async function generateScript(brief: BriefInput): Promise<GenerationResult> {
   const { prompt, patterns } = await buildUserPrompt(brief);
   const promptWithoutPatterns = prompt.replace(patterns, "");
 
   let script = await callClaude(promptWithoutPatterns, patterns || undefined, 16384, brief.generationRules) as ScriptOutput;
 
   // Auto-validate and retry once if critical issues found (ALWAYS runs)
-  const validation = await validateScript(script, brief.generationRules);
+  let validation = await validateScript(script, brief.generationRules);
   if (!validation.passed) {
     console.log("[validate] Issues found, regenerating:", validation.issues);
     const fixPrompt = promptWithoutPatterns + `\n\n## CORRECCIONES OBLIGATORIAS\nLa generación anterior tenía estos problemas. Corregí TODOS:\n${validation.issues.map((i) => `- ${i}`).join("\n")}`;
     script = await callClaude(fixPrompt, patterns || undefined, 16384, brief.generationRules) as ScriptOutput;
+    // After retry: only run deterministic checks (no extra API call)
+    const bodyTypeIssues = validateBodyTypeCoherence(script);
+    validation = bodyTypeIssues.length > 0
+      ? { passed: false, issues: bodyTypeIssues }
+      : { passed: true, issues: [] };
   }
 
-  return script;
+  return { script, validation };
 }
 
 export async function generateScriptStream(
   brief: BriefInput,
   onChunk: (text: string) => void,
-): Promise<ScriptOutput> {
+): Promise<GenerationResult> {
   const client = getAnthropicClient();
   const { prompt, patterns } = await buildUserPrompt(brief);
   const promptWithoutPatterns = prompt.replace(patterns, "");
@@ -1155,18 +1232,21 @@ export async function generateScriptStream(
 
   let script = extractJSON(fullText) as ScriptOutput;
 
-  // Auto-validate streamed output and retry if critical issues
-  if (brief.generationRules) {
-    const validation = await validateScript(script, brief.generationRules);
-    if (!validation.passed) {
-      console.log("[validate-stream] Issues found, regenerating:", validation.issues);
-      onChunk("\n\n--- VALIDANDO Y CORRIGIENDO ---\n\n");
-      const fixPrompt = promptWithoutPatterns + `\n\n## CORRECCIONES OBLIGATORIAS\nLa generación anterior tenía estos problemas. Corregí TODOS:\n${validation.issues.map((i) => `- ${i}`).join("\n")}`;
-      script = await callClaude(fixPrompt, patterns || undefined, 16384, brief.generationRules) as ScriptOutput;
-    }
+  // Auto-validate streamed output and retry if critical issues (ALWAYS runs)
+  let validation = await validateScript(script, brief.generationRules);
+  if (!validation.passed) {
+    console.log("[validate-stream] Issues found, regenerating:", validation.issues);
+    onChunk("\n\n--- VALIDANDO Y CORRIGIENDO ---\n\n");
+    const fixPrompt = promptWithoutPatterns + `\n\n## CORRECCIONES OBLIGATORIAS\nLa generación anterior tenía estos problemas. Corregí TODOS:\n${validation.issues.map((i) => `- ${i}`).join("\n")}`;
+    script = await callClaude(fixPrompt, patterns || undefined, 16384, brief.generationRules) as ScriptOutput;
+    // After retry: only run deterministic checks (no extra API call)
+    const bodyTypeIssues = validateBodyTypeCoherence(script);
+    validation = bodyTypeIssues.length > 0
+      ? { passed: false, issues: bodyTypeIssues }
+      : { passed: true, issues: [] };
   }
 
-  return script;
+  return { script, validation };
 }
 
 export async function analyzeTranscript(transcript: string): Promise<ReferenceAnalysis> {
@@ -1186,7 +1266,7 @@ Extrae:
 9. Metadata del anunciante (nombre/marca, plataforma, idioma, país — inferir del contenido)
 10. Mapeo al sistema ADP de generación de guiones:
     - Familia de ángulo (identidad/oportunidad/confrontacion/mecanismo/historia)
-    - Vehículo narrativo (demolicion_mito/historia_con_giro/demo_proceso/comparacion_caminos/un_dia_en_la_vida/pregunta_respuesta/analogia_extendida/contraste_emocional)
+    - Vehículo narrativo (demolicion_mito/historia_con_giro/demo_proceso/comparacion_caminos/un_dia_en_la_vida/pregunta_respuesta/analogia_extendida/contraste_emocional/demolicion_alternativas/qa_conversacional)
     - Funciones persuasivas por sección (identificacion/quiebre/mecanismo/demolicion/prueba/venta_modelo)
     - Cambio de creencia (creencia vieja → mecanismo → creencia nueva)
     - Ingredientes detectados de la enciclopedia ADP (categorías A-K, ej: B#29, F#73, G#90)
@@ -1218,7 +1298,7 @@ Responde ÚNICAMENTE con el JSON.`;
 
 CONTEXTO: Trabajás para ADP (Academia de Productos Digitales), que vende cursos sobre crear y vender productos digitales con IA en LATAM. Tu análisis mapea cada ad al sistema de generación de ADP que usa:
 - 5 familias de ángulos: identidad, oportunidad, confrontacion, mecanismo, historia
-- 8 vehículos narrativos: demolicion_mito, historia_con_giro, demo_proceso, comparacion_caminos, un_dia_en_la_vida, pregunta_respuesta, analogia_extendida, contraste_emocional
+- 10 vehículos narrativos: demolicion_mito, historia_con_giro, demo_proceso, comparacion_caminos, un_dia_en_la_vida, pregunta_respuesta, analogia_extendida, contraste_emocional, demolicion_alternativas, qa_conversacional
 - 5 funciones persuasivas por beat: identificacion, quiebre, mecanismo, demolicion, prueba
 - Enciclopedia de 127 ingredientes en categorías A-K (A=hooks, B=problema, C=agitación, D=quiebre, E=autoridad, F=mecanismo, G=prueba social, H=oferta, I=CTA, J=urgencia, K=NLP)
 - 10 tipos de venta del modelo de negocio
@@ -1773,8 +1853,8 @@ Responde ÚNICAMENTE con el JSON.`;
 
 // --- Audio transcription (Groq Whisper) ---
 
-export async function transcribeAudio(audioBuffer: Buffer, mimeType: string): Promise<string> {
-  const apiKey = getGroqApiKey();
+export async function transcribeAudio(audioBuffer: Buffer, mimeType: string, forcePaid = false): Promise<string> {
+  const apiKey = getGroqApiKey(forcePaid);
 
   // Build multipart form with the audio buffer
   const ext = mimeType.includes("webm") ? "webm" : mimeType.includes("mp4") ? "mp4" : mimeType.includes("wav") ? "wav" : "mp3";
@@ -2172,4 +2252,441 @@ IMPORTANTE: Responde ÚNICAMENTE con el JSON.`;
   }
 
   return extractJSON(textBlock.text) as AngleExplosionResult;
+}
+
+// --- Ad Copies Matrix: 5 hooks × 3 CTAs = 15 copies ---
+
+export interface AdCopyVersion {
+  hook_index: number;
+  hook_type: string;
+  cta_channel: string;
+  cta_label: string;
+  version_name: string;
+  headline: string;
+  description: string;
+  primary_text: string;
+  word_count: number;
+  structure_used: string;
+}
+
+export interface AdCopiesMatrix {
+  generation_id: string;
+  angle: string;
+  niche: string;
+  total_versions: number;
+  versions: AdCopyVersion[];
+  diversity_warnings?: string[];
+  createdAt: string;
+}
+
+/**
+ * Pre-assign 15 unique structure+tone combos across the matrix.
+ * No two copies share the same (structure × tone × persona) combo.
+ */
+function buildDiversityGrid(): { structure: string; tone: string; persona: string }[] {
+  const structures = [
+    "Storytelling cinematográfico",
+    "Testimonio con audio/WhatsApp",
+    "Math-based / calculadora",
+    "Contrarian manifesto",
+    "Listicle de señales",
+    "Before/After emocional",
+    "Descubrimiento accidental",
+    "Comparación directa",
+  ];
+  const tones = [
+    "empático-cálido", "urgente-directo", "analítico-frío",
+    "rebelde-confrontativo", "aspiracional-esperanzador",
+  ];
+  const personas = [
+    "protagonista (el alumno cuenta)",
+    "narrador omnisciente (tercera persona)",
+    "Jesús habla directo",
+  ];
+
+  // 15 slots: 5 hooks × 3 CTAs
+  // Assign so no two in same CTA channel share structure, and no two in same hook share tone
+  const grid: { structure: string; tone: string; persona: string }[] = [];
+
+  for (let ctaIdx = 0; ctaIdx < 3; ctaIdx++) {
+    // Shuffle structures for this channel
+    const shuffled = [...structures].sort(() => Math.random() - 0.5);
+    for (let hookIdx = 0; hookIdx < 5; hookIdx++) {
+      grid.push({
+        structure: shuffled[hookIdx % structures.length],
+        tone: tones[(hookIdx + ctaIdx) % tones.length],
+        persona: personas[(hookIdx + ctaIdx * 2) % personas.length],
+      });
+    }
+  }
+
+  return grid;
+}
+
+/**
+ * Generate 15 ad copies for a script: 5 hooks × 3 CTAs.
+ * Each copy is GENUINELY DIFFERENT: distinct structure, tone, persona, opening scene, and proof angle.
+ * 3 parallel calls (one per CTA channel, 5 hooks each).
+ */
+export async function generateAdCopiesMatrix(
+  script: ScriptOutput,
+  generationId: string,
+): Promise<AdCopiesMatrix> {
+  const client = getAnthropicClient();
+
+  const bodyText = script.development.sections.map((s) => s.script_text).join("\n");
+  const angle = `${script.angle_family || "no especificado"} — ${script.angle_specific || ""}`;
+  const niche = script.niche || "no especificado";
+
+  const hooksInfo = script.hooks.map((h) =>
+    `Hook ${h.variant_number} [${h.hook_type}]: "${h.script_text}"`
+  ).join("\n");
+
+  const ctaChannels = [
+    {
+      key: "clase_gratuita",
+      label: "Clase Gratuita",
+      offer: "Clase gratuita de 2 horas en vivo. Gratis. Sin compromiso. Muestra cómo encontrar productos que se venden, crearlos con IA y venderlos con publicidad.",
+      ctaTone: "educativo — invitar a aprender, cero presión",
+    },
+    {
+      key: "taller_5",
+      label: "Taller $5",
+      offer: "Taller de 3 días en vivo por $5 USD. Día 1: producto ganador. Día 2: crearlo completo. Día 3: venderlo. Salís con tu producto, tu anuncio y tu sistema.",
+      ctaTone: "práctico — enfatizar que salís con algo concreto hecho, precio ridículo",
+    },
+    {
+      key: "instagram",
+      label: "Instagram Orgánico",
+      offer: "Comentar una keyword (ej: CLASE) para recibir el link. CTA conversacional, no agresivo.",
+      ctaTone: "casual y conversacional — como un amigo que te dice 'escribime'",
+    },
+  ];
+
+  const diversityGrid = buildDiversityGrid();
+
+  // Load IG reference captions for organic channel
+  let igReferenceCaptions = "";
+  try {
+    const igDir = path.join(process.cwd(), ".data", "ig-references");
+    const igFiles = fs.readdirSync(igDir).filter((f: string) => f.endsWith(".json"));
+    const allCaptions: string[] = [];
+    for (const file of igFiles) {
+      const data = JSON.parse(fs.readFileSync(path.join(igDir, file), "utf8"));
+      // Top 5 captions by engagement per profile
+      const top = (data.captions || []).slice(0, 5);
+      for (const c of top) {
+        if (c.caption && c.caption.length > 30) {
+          allCaptions.push(`[@${data.username}] ${c.caption.slice(0, 500)}`);
+        }
+      }
+    }
+    if (allCaptions.length > 0) {
+      // Max 15 reference captions to keep prompt reasonable
+      igReferenceCaptions = allCaptions.slice(0, 15).join("\n\n---\n\n");
+    }
+  } catch { /* no ig references yet, that's ok */ }
+
+  const systemPrompt = `Sos un copywriter senior de performance marketing para Meta Ads. Escribís en español argentino (voseo).
+
+REGLAS INQUEBRANTABLES:
+- SIEMPRE abrís con escena cinematográfica, NUNCA con pregunta
+- Anti-ficción: detalles tan específicos que nadie los inventaría
+- Números impares y no-redondos ($35k, 9 días, 53 audios — NUNCA redondos)
+- Español argentino (voseo) SIEMPRE
+- 200-250 palabras cold
+- Párrafos de 1-3 líneas máximo
+- CTA suave, baja fricción
+- NUNCA "no te alcanza la plata", NUNCA datos inventados, NUNCA emojis (máx 1 👇)
+- Headline = SEGUNDO hook (no resumen). Máx 40 chars.
+- Descripción = qué es + para quién + CTA. Máx 125 chars.
+
+LAS 8 ESTRUCTURAS:
+1. Storytelling cinematográfico — historia con escena, personaje, conflicto, descubrimiento, resultado
+2. Testimonio con audio/WhatsApp — simula mensaje real, comillas extensas del alumno
+3. Math-based / calculadora — números, cuentas, "hacé la cuenta vos"
+4. Contrarian manifesto — "lo que te dijeron está mal", rebeldía contra lo convencional
+5. Listicle de señales — "3 señales de que...", identificación por lista
+6. Before/After emocional — contraste crudo entre antes y después
+7. Descubrimiento accidental — "un día se topó con...", serendipia
+8. Comparación directa — comparar camino A vs camino B`;
+
+  const allVersions: AdCopyVersion[] = [];
+
+  await Promise.all(
+    ctaChannels.map(async (channel, ctaIdx) => {
+      const MAX_RETRIES = 3;
+      for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+      try {
+      const assignments = diversityGrid.slice(ctaIdx * 5, ctaIdx * 5 + 5);
+
+      const assignmentTable = assignments.map((a, i) =>
+        `| Hook ${i + 1} | ${a.structure} | ${a.tone} | ${a.persona} |`
+      ).join("\n");
+
+      const isOrganic = channel.key === "instagram";
+
+      const prompt = isOrganic
+        ? `## TAREA: Generar 5 CAPTIONS de Instagram GENUINAMENTE DISTINTOS
+
+### CONTEXTO:
+Estos NO son ads. Son posts orgánicos para el Instagram de Jesús (@jesustassarolo).
+El tono es como si Jesús estuviera hablando con un amigo. Nada de venta dura.
+El CTA es suave: "comentá X", "escribime", "mirá el link en bio".
+
+### REGLA PRINCIPAL:
+Tienen que sonar a post REAL de alguien que postea seguido. Como una reflexión, una historia corta, o un pensamiento que tira al pasar. NO como un anuncio ni como un copy de marketing.
+
+### TONO:
+- Conversacional, como un mensaje de WhatsApp largo o una story hablada
+- Primera persona SIEMPRE (Jesús habla)
+- Puede arrancar con algo cotidiano: "Ayer estaba...", "Me acuerdo cuando...", "Hoy me preguntaron..."
+- Párrafos cortos, ritmo de lectura rápida
+- Puede tener 1 emoji máximo por caption (o ninguno)
+- NO usar frases de marketing: "descubrí", "aprovechá", "no te pierdas", "método", "sistema"
+- SÍ usar frases reales: "la verdad es que", "lo que nadie te dice", "me pasó algo", "fijate"
+
+### Las 5 variantes deben diferir en:
+1. **Apertura** — 5 inicios completamente distintos
+2. **Tono emocional** — reflexivo, provocador, vulnerable, directo, anecdótico
+3. **Largo** — variar entre 80 y 200 palabras (no todos iguales)
+
+### Guion base (extraer la IDEA, no copiar):
+**Ángulo:** ${angle}
+**Nicho:** ${niche}
+**Creencia:** ${script.belief_change?.old_belief || ""} → ${script.belief_change?.new_belief || ""}
+
+**Cuerpo del guion (referencia):**
+${bodyText}
+
+### Los 5 hooks del VIDEO:
+${hooksInfo}
+
+### INSTRUCCIONES DE RESPUESTA:
+Usá la herramienta submit_copies para enviar los 5 captions.
+- hook_index: 0 a 4
+- headline: primera línea del caption (lo que se ve antes del "más"). Máx 40 chars.
+- description: no aplica, poné "Instagram orgánico"
+- primary_text: el caption completo, 80-200 palabras. Usá \\n para saltos de línea.
+- Si 2 captions se parecen, REESCRIBÍ antes de enviar.
+${igReferenceCaptions ? `
+### CAPTIONS DE REFERENCIA (estudiá el tono, NO copies):
+Estos son captions reales de cuentas que nos gustan. Usá el TONO y ESTILO como referencia, pero escribí contenido ORIGINAL sobre el ángulo del guion.
+
+${igReferenceCaptions}
+` : ""}`
+
+        : `## TAREA: Generar 5 Ad Copies GENUINAMENTE DISTINTOS para "${channel.label}"
+
+### REGLA #1 DE DIVERSIDAD — LA MÁS IMPORTANTE:
+Los 15 copies (5 hooks × 3 canales) se van a testear en Meta Ads SIMULTÁNEAMENTE.
+Si dos copies se parecen, estamos desperdiciando presupuesto.
+
+**CADA COPY DEBE DIFERIR EN ESTAS 5 DIMENSIONES:**
+1. **ESTRUCTURA:** ya asignada abajo — NO cambiar
+2. **TONO:** ya asignado abajo — escena inicial cambia según el tono
+3. **PERSONA narrativa:** ya asignada — quién "habla" en el copy
+4. **ESCENA DE APERTURA:** 5 escenas COMPLETAMENTE distintas (lugar, momento, acción)
+5. **ÁNGULO DE PRUEBA:** usar distinto tipo de evidencia (número, cita, timeline, contraste, cálculo)
+
+### Asignaciones forzadas (NO modificar):
+| Hook | Estructura | Tono | Persona |
+|------|-----------|------|---------|
+${assignmentTable}
+
+### Guion base (extraer la IDEA, no copiar texto):
+**Ángulo:** ${angle}
+**Nicho:** ${niche}
+**Segmento:** ${script.segment || "no especificado"}
+**Avatar:** ${script.avatar || "no especificado"}
+**Awareness:** ${script.awareness_level || "no especificado"}
+**Creencia:** ${script.belief_change?.old_belief || ""} → ${script.belief_change?.new_belief || ""}
+
+**Cuerpo del guion (referencia, NO copiar):**
+${bodyText}
+
+### Los 5 hooks del VIDEO (el copy debe MATCHEAR lo que se ve):
+${hooksInfo}
+
+### Canal CTA: ${channel.label}
+**Oferta:** ${channel.offer}
+**Tono del CTA:** ${channel.ctaTone}
+
+### CHECKLIST DE DIVERSIDAD (verificar ANTES de responder):
+- [ ] ¿Las 5 escenas de apertura son en LUGARES distintos? (no 2 en cocina, no 2 mirando celular)
+- [ ] ¿Los 5 headlines son estructuralmente distintos? (no 2 que empiecen igual)
+- [ ] ¿Los 5 tipos de prueba son distintos? (no 2 con "X ventas", no 2 con timeline)
+- [ ] ¿Ningún copy comparte más de 1 oración con otro?
+- [ ] ¿Los word counts varían? (entre 200 y 250, no todos 230)
+
+### INSTRUCCIONES DE RESPUESTA:
+Usá la herramienta submit_copies para enviar los 5 copies.
+- hook_index: 0 a 4
+- primary_text: 200-250 palabras. Usá \\n para saltos de línea.
+- Si 2 copies se parecen, REESCRIBÍ antes de enviar.`;
+
+      const systemForChannel = isOrganic
+        ? `Sos Jesús Tassarolo escribiendo captions para tu Instagram personal. Escribís en español argentino (voseo).
+Tu estilo: directo, sin rodeos, como si hablaras con un amigo. Contás tu experiencia real. No vendés — compartís.
+NUNCA usás lenguaje de marketing. NUNCA empezás con preguntas retóricas. Sos una persona real posteando, no un copywriter.
+Frases típicas tuyas: "la verdad es que", "te lo digo así", "me pasó algo", "fijate esto", "lo que aprendí", "no es joda".`
+        : systemPrompt;
+
+      // Use tool_use to force valid JSON output
+      const response = await client.messages.create({
+        model: CLAUDE_MODEL,
+        max_tokens: 16384,
+        system: [{ type: "text", text: systemForChannel }],
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.8,
+        tool_choice: { type: "tool", name: "submit_copies" },
+        tools: [{
+          name: "submit_copies",
+          description: "Submit the 5 ad copies for this CTA channel",
+          input_schema: {
+            type: "object" as const,
+            properties: {
+              copies: {
+                type: "array",
+                minItems: 5,
+                maxItems: 5,
+                items: {
+                  type: "object",
+                  properties: {
+                    hook_index: { type: "number" },
+                    hook_type: { type: "string" },
+                    headline: { type: "string", description: "Max 40 chars" },
+                    description: { type: "string", description: "Max 125 chars" },
+                    primary_text: { type: "string", description: "200-250 words, use \\n for line breaks" },
+                    word_count: { type: "number" },
+                    structure_used: { type: "string" },
+                  },
+                  required: ["hook_index", "hook_type", "headline", "description", "primary_text", "word_count", "structure_used"],
+                },
+              },
+            },
+            required: ["copies"],
+          },
+        }],
+      });
+
+      // Check if response was truncated
+      if (response.stop_reason !== "tool_use") {
+        console.warn(`[copies-matrix] ${channel.label} stop_reason: ${response.stop_reason} (expected tool_use)`);
+      }
+
+      const toolBlock = response.content.find((b) => b.type === "tool_use");
+      if (!toolBlock || toolBlock.type !== "tool_use") {
+        throw new Error(`Sin respuesta tool_use para copies ${channel.label} (stop: ${response.stop_reason})`);
+      }
+
+      const toolInput = toolBlock.input as Record<string, unknown>;
+      let copies = toolInput.copies;
+
+      // If copies came as string (model bug), try to parse it
+      if (typeof copies === "string") {
+        console.log(`[copies-matrix] ${channel.label} got string copies, first 200 chars: ${(copies as string).slice(0, 200)}`);
+        try { copies = JSON.parse(copies as string); } catch (e) {
+          // Try extracting JSON array from the string
+          const match = (copies as string).match(/\[[\s\S]*\]/);
+          if (match) {
+            try { copies = JSON.parse(match[0]); } catch { /* fall through */ }
+          }
+        }
+      }
+
+      // If toolInput itself is the copies array (no wrapper object)
+      if (!copies || (typeof copies === "string")) {
+        // Check if the entire input has copy-like fields
+        if (toolInput && typeof toolInput === "object" && "hook_index" in toolInput) {
+          copies = [toolInput]; // single copy returned as object
+        }
+      }
+
+      // Removed debug log
+
+      type CopyItem = {
+        hook_index: number;
+        hook_type: string;
+        headline: string;
+        description: string;
+        primary_text: string;
+        word_count: number;
+        structure_used: string;
+      };
+
+      if (!Array.isArray(copies) || copies.length < 1 || typeof copies[0] !== "object" || !(copies[0] as CopyItem).headline) {
+        throw new Error(`Respuesta inválida para ${channel.label}: esperaba 5 copies, recibí ${Array.isArray(copies) ? `${copies.length} items (first type: ${typeof copies[0]})` : typeof copies}`);
+      }
+
+      const typedCopies = copies as CopyItem[];
+
+      for (const copy of typedCopies) {
+        allVersions.push({
+          hook_index: copy.hook_index,
+          hook_type: copy.hook_type,
+          cta_channel: channel.key,
+          cta_label: channel.label,
+          version_name: `H${copy.hook_index + 1}-${channel.label.replace(/\s+/g, "")}`,
+          headline: copy.headline,
+          description: copy.description,
+          primary_text: copy.primary_text,
+          word_count: copy.word_count,
+          structure_used: copy.structure_used,
+        });
+      }
+      break; // success, exit retry loop
+      } catch (err) {
+        if (attempt === MAX_RETRIES - 1) throw err;
+        console.warn(`Retry ${attempt + 1} for ${channel.label}: ${err}`);
+      }
+      } // end retry loop
+    }),
+  );
+
+  allVersions.sort((a, b) => a.hook_index - b.hook_index || a.cta_channel.localeCompare(b.cta_channel));
+
+  // Post-generation diversity check: flag copies that share too many words
+  const warnings: string[] = [];
+  for (let i = 0; i < allVersions.length; i++) {
+    for (let j = i + 1; j < allVersions.length; j++) {
+      const similarity = textSimilarity(allVersions[i].primary_text, allVersions[j].primary_text);
+      if (similarity > 0.4) {
+        warnings.push(
+          `${allVersions[i].version_name} y ${allVersions[j].version_name} tienen ${Math.round(similarity * 100)}% similitud`
+        );
+      }
+    }
+  }
+
+  return {
+    generation_id: generationId,
+    angle,
+    niche,
+    total_versions: allVersions.length,
+    versions: allVersions,
+    diversity_warnings: warnings,
+    createdAt: new Date().toISOString(),
+  };
+}
+
+/** Simple word-overlap similarity (Jaccard on word trigrams) */
+function textSimilarity(a: string, b: string): number {
+  if (!a || !b) return 0;
+  const trigrams = (text: string) => {
+    const words = text.toLowerCase().replace(/[^a-záéíóúñü\s]/g, "").split(/\s+/).filter(Boolean);
+    const set = new Set<string>();
+    for (let i = 0; i <= words.length - 3; i++) {
+      set.add(words.slice(i, i + 3).join(" "));
+    }
+    return set;
+  };
+  const setA = trigrams(a);
+  const setB = trigrams(b);
+  if (setA.size === 0 || setB.size === 0) return 0;
+  let intersection = 0;
+  for (const t of setA) {
+    if (setB.has(t)) intersection++;
+  }
+  return intersection / Math.min(setA.size, setB.size);
 }

@@ -9,14 +9,14 @@ import {
 
 export async function PATCH(req: NextRequest) {
   try {
-    const { generationId, status, metrics, sessionNotes, title, batch } = await req.json();
+    const { generationId, status, metrics, sessionNotes, title, batch, hookApprovals } = await req.json();
 
     if (!generationId) {
       return NextResponse.json({ error: "Missing generationId" }, { status: 400 });
     }
 
-    // If only updating metrics/notes/title (no status change)
-    if (!status && (metrics || sessionNotes !== undefined || title !== undefined)) {
+    // If only updating metrics/notes/title/hookApprovals (no status change)
+    if (!status && (metrics || sessionNotes !== undefined || title !== undefined || hookApprovals !== undefined)) {
       const gen = await getGeneration(generationId);
       if (!gen) {
         return NextResponse.json({ error: "Generation not found" }, { status: 404 });
@@ -24,8 +24,9 @@ export async function PATCH(req: NextRequest) {
       if (metrics) gen.metrics = { ...gen.metrics, ...metrics };
       if (sessionNotes !== undefined) gen.sessionNotes = sessionNotes;
       if (title !== undefined) gen.title = title;
+      if (hookApprovals !== undefined) gen.hookApprovals = hookApprovals;
       await saveGeneration(gen);
-      return NextResponse.json({ success: true, status: gen.status, metrics: gen.metrics, sessionNotes: gen.sessionNotes, title: gen.title });
+      return NextResponse.json({ success: true, status: gen.status, metrics: gen.metrics, sessionNotes: gen.sessionNotes, title: gen.title, hookApprovals: gen.hookApprovals });
     }
 
     if (!status) {

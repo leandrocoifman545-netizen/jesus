@@ -133,6 +133,26 @@
 
 ---
 
+## Avatar 8: Patricia (Segmento A/C — Empleada estancada)
+
+| Campo | Dato |
+|-------|------|
+| **Nombre** | Patricia |
+| **Edad** | 48 años |
+| **Ubicación** | Buenos Aires, Argentina |
+| **Situación** | Empleada administrativa hace 18 años en la misma empresa/universidad/organismo. Divorciada, un hijo adolescente. Gana $800/mes. Tiene una vida estable pero se siente atrapada. Consume contenido de desarrollo personal en Instagram. Sabe que tiene que hacer algo diferente pero le da miedo el cambio a esta altura. |
+| **Dolor principal** | "Trabajo mucho y gano poco. Ya no puedo seguir así." Siente hartazgo acumulado — no es crisis aguda, es desgaste de años. Cada lunes es igual al anterior. |
+| **Deseo** | Un ingreso extra que le dé aire. No sueña con millones — quiere pasar de $800 a $2500/mes. Quiere sentir que su experiencia vale algo fuera de la oficina. Quiere tener algo propio por primera vez en su vida. |
+| **Objeción** | "A mi edad, ¿puedo aprender esto?" / "No tengo tiempo después del trabajo." No duda de que funciona — duda de que funcione PARA ELLA. |
+| **Intentos previos** | Buscó "cómo ganar plata extra" en Google varias veces. Vio videos de emprendimiento pero sentía que eran para gente joven. Pensó en vender cosas por Marketplace pero no le alcanzaba el tiempo. Nunca pagó un curso online hasta ahora. |
+| **Lenguaje** | "Más de 20 años trabajando en la misma empresa, la rutina", "no tengo tiempo para mí, se gana poco para la cantidad de horas", "Me siento desganada, cansada y frustrada con mi trabajo, me exigen mucho y pagan poco", "41 años trabajando 10 horas diarias, poca valoración", "Necesito algo que me permita tener una entrada extra", "Siento que en mi trabajo se gana poco para todo lo que se hace", "Estoy atada a horarios, no gano lo que me gustaría", "en primer lugar tiempo, luego los ingresos, y me siento estancada ya que no veo posibilidad de ascenso" |
+| **Tensiones dominantes** | T13 (Hartazgo acumulado), T1 (Sacrificio vs. vivir), T4 (Urgencia de edad) |
+| **Trigger de conversión** | Cuando ve que NO necesita renunciar para empezar. "Armá tu salida MIENTRAS seguís cobrando." Cuando el precio es accesible ($5 o gratis). Cuando alguien de su edad y situación lo logró. La frase "ya no puedo seguir así" la describe perfectamente. |
+
+> **Nota:** Patricia es el avatar MÁS REPRESENTATIVO según data de 562 compradores reales (marzo 2026). El perfil "mujer, 45-54, empleada, argentina, $500-1000/mes" es el grupo más grande de compradores.
+
+---
+
 ## Reglas de uso en generación
 
 1. **Cada guion se escribe PARA un avatar.** No para "segmento A" — para Martín, con su lenguaje, sus miedos y su situación.
@@ -153,24 +173,33 @@
 | Diego | D | — |
 | Camila | A | B |
 | Soledad | B | C |
+| **Patricia** | **A** | **C** |
 
-### Datos de la semana 10-16 marzo 2026 (distribución real)
+### Peso de avatares según data de 562 compradores (marzo 2026)
 
-| Perfil | % del tráfico | Avatar que lo cubre |
-|--------|--------------|---------------------|
-| Emprendedores en crisis | 30-40% | Valentina (principal), Martín |
-| Situación económica crítica | 20-25% | Roberto, Camila |
-| Profesionales que quieren digitalizar | 15-20% | **Soledad** |
-| Curiosos sin idea clara | 15-20% | Martín |
-| Personas mayores | 5-10% | Roberto |
+> **Fuente:** `inteligencia-compradores.md` — 562 personas que YA PAGARON.
+> Los pesos reflejan quién COMPRA, no quién mira.
 
-### Top objeciones reales (semana 10-16 marzo)
+| Avatar | Edad | Representa a | % compradores | Peso en plan de 10 guiones |
+|--------|------|-------------|---------------|---------------------------|
+| Martín | 26 | Jóvenes 18-24 | 5% | **1 guion máx** |
+| Laura | 38 | Mamás 35-44 | ~15% | **1-2 guiones** |
+| **Patricia** | **48** | **Empleadas 45-54** | **26%** | **2-3 guiones** |
+| Roberto | 62 | Mayores 55+ | 30% | **2-3 guiones** |
+| Valentina | 32 | Emprendedoras 25-34 | ~12% | **1 guion** |
+| Diego | 44 | Escépticos 35-54 | ~5% | **1 guion** |
+| Camila | 29 | Inmigrantes | ~4% | **0-1 guion** |
+| Soledad | 41 | Profesionales digitalizando | ~3% | **0-1 guion** |
 
-| Objeción | Frecuencia | Avatar más afectado |
-|----------|-----------|---------------------|
-| "No puedo estar a las 20hs" | Muy alta | Laura, Roberto |
-| "¿Queda grabada?" | Alta | Laura |
-| "No tengo plata" / "$20 puede parecer mucho" | Alta | Camila, Roberto, Diego |
-| "Es estafa?" | Media | Diego |
-| "No sé de tecnología" | Media | Roberto |
-| "No quiero grupos de WhatsApp" | Baja | Diego |
+**Regla clave:** Patricia + Roberto = 56% de compradores. En CADA plan semanal deben tener mínimo 4-5 guiones entre los dos.
+
+### Top objeciones reales (verificadas con 562 compradores)
+
+| Objeción | Frecuencia en compradores | Avatar más afectado |
+|----------|--------------------------|---------------------|
+| "Que sea estafa / humo" | 30% | Diego, Patricia |
+| "No sé de tecnología" | 25% | Roberto, Patricia |
+| "Perder la plata / no funciona" | 20% | Camila, Roberto, Diego |
+| "Mi edad" | 10% | Roberto, Patricia |
+| "No tengo tiempo" | 10% | Laura, Patricia |
+| "No puedo estar a las 20hs" | Alta (leads) | Laura, Roberto |

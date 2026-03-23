@@ -1,0 +1,218 @@
+{
+  "id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+  "briefId": "64c59295-bfbf-457f-9e17-034ec09ead85",
+  "title": "Un alumno me mandó un audio llorando — Pizarrón (Camila)",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.3_microhistoria_resultado",
+    "body_type": "historia_con_giro",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "historia de resultado real (genérico)",
+    "model_sale_type": "prueba_por_diversidad",
+    "visual_format": "pizarron",
+    "avatar": "camila",
+    "awareness_level": 2,
+    "emotional_arc": "dolor_puro_esperanza",
+    "tension": "T10",
+    "transition_text": "Lo que hizo esta persona es exactamente lo que enseño. Paso a paso.",
+    "total_duration_seconds": 83,
+    "word_count": 200,
+    "belief_change": {
+      "old_belief": "Las historias de éxito online son falsas o son para gente con ventajas",
+      "mechanism": "Una persona real, sin ventajas, hizo su primera venta con un proceso simple",
+      "new_belief": "Si alguien como ella pudo, yo también puedo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esta persona estaba peor que yo",
+        "installed_via": "Descripción visceral de la situación: sin laburo fijo, mandando plata a su familia, sin tiempo",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "No fue suerte — fue un proceso",
+        "installed_via": "Timeline en pizarrón: día 1, día 2, día 3 → primera venta",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "El proceso es tan simple que da miedo",
+        "installed_via": "3 pasos escritos en el pizarrón",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesitó nada que yo no tenga",
+        "installed_via": "Lista de lo que NO tenía: ni seguidores, ni experiencia, ni plata",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Esto le pasa a gente real, no a actores",
+        "installed_via": "El audio llorando de la primera venta — emoción genuina",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "script_text": "Hace dos semanas me llegó un audio de WhatsApp de una alumna. Estaba llorando. Pero no de tristeza. Había hecho su primera venta online. Con algo que creó en una tarde.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "script_text": "Trabajaba de delivery 10 horas por día. Le sobraban 40 minutos a la noche. Con esos 40 minutos creó algo que hoy le genera plata mientras duerme. Te cuento la historia.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "La persona que más rápido vendió su primer producto digital en mi programa no sabía ni qué era un producto digital. Y eso fue justamente lo que la ayudó.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "script_text": "Primera venta: 7 dólares. No suena a mucho. Pero para alguien que venía de no poder generar un peso por su cuenta, esos 7 dólares cambiaron todo. Te cuento por qué.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuándo fue la última vez que ganaste plata por algo que VOS creaste? No por tu tiempo. No por tu trabajo. Por algo TUYO. Si no te acordás, escuchá esta historia.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Esta persona estaba peor que yo",
+          "script_text": "Te voy a contar una historia real. Una chica que trabaja de delivery en Madrid. Emigró hace 2 años. Labura 10 horas por día para mandar plata a su familia. Llega a la noche destruida. Un día me escribió y me dijo: 'Jesús, necesito encontrar otra forma. Esto no puede ser todo.'",
+          "timing_seconds": 15,
+          "pizarron_directions": [
+            "Escribe: DELIVERY | 10HS/DÍA | PLATA → FAMILIA",
+            "Abajo: 'NECESITO OTRA FORMA'"
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No fue suerte — fue un proceso",
+          "script_text": "Se anotó al taller. Día 1: con la IA investigó qué productos la gente ya estaba buscando en su país. Día 2: la IA le armó una guía completa con lo que ella sabía de su cultura. Día 3: la subió a Hotmart y activó un anuncio.",
+          "timing_seconds": 15,
+          "pizarron_directions": [
+            "Escribe timeline: DÍA 1 → Investigar | DÍA 2 → Crear con IA | DÍA 3 → Vender",
+            "Subraya 'lo que ELLA SABÍA'"
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El proceso es tan simple que da miedo",
+          "script_text": "Tres pasos. Investigar qué se vende. Crearlo con inteligencia artificial. Y venderlo por WhatsApp. No necesitó una computadora. Lo hizo desde el celular. Entre los turnos del delivery. La IA hizo el trabajo pesado.",
+          "timing_seconds": 15,
+          "pizarron_directions": [
+            "Escribe los 3 pasos numerados: 1. INVESTIGAR | 2. CREAR CON IA | 3. VENDER POR WHATSAPP",
+            "Al costado: 📱 SOLO CELULAR"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesitó nada que yo no tenga",
+          "script_text": "No tenía seguidores. No tenía experiencia en ventas. No tenía plata para invertir. Tenía un celular, WhatsApp y 40 minutos libres por día. Nada más.",
+          "timing_seconds": 10,
+          "pizarron_directions": [
+            "Escribe lista tachada: ❌ Seguidores ❌ Experiencia ❌ Plata",
+            "Escribe lo que SÍ tenía: ✓ Celular ✓ WhatsApp ✓ 40 min/día"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto le pasa a gente real, no a actores",
+          "script_text": "A la semana me mandó un audio llorando. Había hecho su primera venta. 7 dólares. Y me dijo algo que no me voy a olvidar: 'Es la primera vez que gano plata por algo que YO creé.' Esa frase. Eso es lo que vale.",
+          "timing_seconds": 12,
+          "pizarron_directions": [
+            "Escribe grande: '$7 — PRIMERA VENTA'",
+            "Abajo: 'Primera vez que gano plata por algo MÍO'"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Esto les pasa a muchos, no solo a ella",
+          "script_text": "Y no fue la única. Más de 17 mil personas ya lo hicieron. Mamás, jubilados, profesionales, pibes que no sabían por dónde arrancar. Todos empezaron con lo mismo: un celular y ganas.",
+          "timing_seconds": 8,
+          "pizarron_directions": [
+            "Escribe: 17.000+ PERSONAS",
+            "Abajo: todos empezaron de cero"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Historia de Origen Humilde"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case Study Mini"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "B"
+      }
+    ]
+  },
+  "createdAt": "2026-03-19T14:05:00.000Z",
+  "status": "draft",
+  "batch": {
+    "id": "pizarron-semana-2026-03-19",
+    "name": "Pizarrón Semana 19/03"
+  }
+}

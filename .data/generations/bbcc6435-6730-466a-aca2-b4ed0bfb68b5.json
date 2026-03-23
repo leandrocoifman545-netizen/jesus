@@ -1,0 +1,207 @@
+{
+  "id": "bbcc6435-6730-466a-aca2-b4ed0bfb68b5",
+  "briefId": "0e1bc515-30d6-4ae1-8260-9a82b0b676a2",
+  "title": "Miles buscan cursos de manejo y nadie les vende uno — Pizarrón (Camila)",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_nicho_invisible",
+    "body_type": "historia_con_giro",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "autoescuela / examen de conducir",
+    "model_sale_type": "tiempo_vs_dinero",
+    "visual_format": "pizarron",
+    "avatar": "camila",
+    "awareness_level": 2,
+    "emotional_arc": "revelacion_oportunidad",
+    "tension": "T11",
+    "transition_text": "Y ese ejemplo de la guía de manejo es solo UNA de las ideas que te enseño a encontrar.",
+    "total_duration_seconds": 85,
+    "word_count": 215,
+    "belief_change": {
+      "old_belief": "No sé qué producto digital podría vender",
+      "mechanism": "Hay nichos con demanda creciente y cero competencia digital",
+      "new_belief": "Hay oportunidades invisibles que puedo aprovechar con lo que ya sé"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Yo sé hacer cosas útiles",
+        "installed_via": "Lista de habilidades cotidianas con demanda",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Hay mercados vacíos",
+        "installed_via": "Dato: curso de conducir online +360%",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Se puede hacer con cualquier tema",
+        "installed_via": "Historia de alguien que armó guía de examen de conducir",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Mi ubicación no me limita",
+        "installed_via": "Internet no tiene código postal — vende a toda LATAM",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Hay muchos nichos así",
+        "installed_via": "Lista: Excel, italiano, seguridad vial",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "dato_concreto",
+        "script_text": "\"Curso de conducir online\" creció 360% en Google este año. ¿Sabés cuánta gente está vendiendo uno? Casi nadie. Te muestro lo que eso significa.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "script_text": "Estás en otro país. O en una ciudad donde no hay laburo presencial. Pero tenés internet, un celular y algo que sabés hacer. Eso alcanza. Te explico por qué.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "Los nichos más aburridos son los más rentables en productos digitales. Manejo, Excel, seguridad vial. Suenan aburridos. Venden fortunas. Te muestro los números.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Cada vez más gente quiere aprender cosas específicas por internet. No carreras universitarias — cosas puntuales. Y casi nadie las empaqueta como producto digital. Mirá los datos.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Sabés hacer algo que otros no? ¿Manejar? ¿Cocinar? ¿Armar planillas? Hay miles de personas buscando exactamente eso en Google. Y no encuentran nada bueno. ¿Por qué no lo vendés vos?",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "revelacion_oportunidad",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Yo sé hacer cosas útiles",
+          "script_text": "¿Sabés manejar? ¿Sabés cocinar? ¿Sabés de jardinería? ¿De Excel? Entonces sabés algo que miles de personas están buscando ahora mismo en Google. El problema es que no sabías que eso se podía vender.",
+          "timing_seconds": 14,
+          "pizarron_directions": [
+            "Escribe '¿QUÉ SABÉS HACER?' y lista: 'Manejar? Cocinar? Excel? Jardinería?'"
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay mercados vacíos",
+          "script_text": "Te doy un ejemplo. \"Curso de conducir online\" creció 360% este año en búsquedas de Google. ¿Y sabés qué? Casi nadie está vendiendo una guía de preparación para el examen de conducir. Es un mercado vacío. Con demanda real.",
+          "timing_seconds": 15,
+          "pizarron_directions": [
+            "Escribe 'curso de conducir online → +360%' con flecha subiendo"
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Se puede hacer con cualquier tema",
+          "script_text": "Alguien armó exactamente eso. Una guía de preparación para el examen. Le pidió a la IA que le hiciera el contenido: preguntas tipo examen, consejos, todo. La vendió a 7 dólares. Hoy le entran más de 20 ventas por semana. Desde su celular.",
+          "timing_seconds": 18,
+          "pizarron_directions": [
+            "Dibuja historia: 'Persona → guía examen conducir → IA hizo contenido → $7 → +20 ventas/semana'"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Mi ubicación no me limita",
+          "script_text": "No importa dónde estés. Una guía de conducir sirve en Argentina, México, Colombia, España. Internet no tiene código postal. Vendés desde cualquier lugar a cualquier lugar.",
+          "timing_seconds": 12,
+          "pizarron_directions": [
+            "Dibuja mapa de LATAM con flechas: 'AR ← guía → MX → CO'"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay muchos nichos así",
+          "script_text": "Y no es solo manejo. \"Curso Excel online\" creció más de 130 mil por ciento. Italiano, seguridad vial, tejido. Nichos que crecen y donde no hay competencia digital. El que entra primero, gana.",
+          "timing_seconds": 10,
+          "pizarron_directions": [
+            "Lista: 'Excel +130K% ✓', 'Italiano ✓', 'Seguridad vial ✓', 'Manejo ✓'"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "No cambiás horas por plata",
+          "script_text": "Creás la guía en 2 horas. Se vende sola. No cambiás horas por plata. No tenés que estar conectada para cobrar. El producto trabaja por vos.",
+          "timing_seconds": 8,
+          "pizarron_directions": [
+            "Escribe '2 horas crearlo → se vende SOLO → no cambiás horas por $'"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "Declaración Contraintuitiva"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 29,
+        "ingredient_name": "Dolor Comparativo"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo Legítimo"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C"
+      }
+    ]
+  },
+  "createdAt": "2026-03-20T22:49:33.015Z",
+  "status": "draft",
+  "batch": {
+    "id": "pizarron-semana-2026-03-24",
+    "name": "Pizarrón Winners Semana 24/03"
+  }
+}

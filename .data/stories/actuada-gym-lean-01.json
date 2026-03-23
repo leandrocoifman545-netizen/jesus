@@ -1,0 +1,143 @@
+{
+  "id": "actuada-gym-lean-01",
+  "title": "¿Qué hago? — Lean entrenamiento (David Turu style v2)",
+  "sequence_type": "actuada_triangulo",
+  "status": "draft",
+  "format_note": "1 video continuo con cortes rápidos entre personajes. Narración fluida de Jesús. NO son stories separadas — es un video tipo reel con cortes. Igual que David Turu.",
+  "notes": "Estilo David Turu exacto: narración continua, 1 personaje por corte, fluido. Lean trabaja en oficina + sabe de entrenamiento (NO es trainer). Romina SÍ tiene plata, busca a quién comprarle. Jesús se presenta en tercera y pasa a primera. Motor de persuasión invisible activo: dolor #1 (46%), trigger #1, objeciones disueltas dentro de la narrativa. CTA → clase gratuita, keyword CLASE.",
+  "avatar_target": "patricia_soledad",
+  "tension": "T13",
+  "dolor_activado": "Trabajo mucho y gano poco (46% de 562 compradores)",
+  "trigger_activado": "Ya no puedo seguir así (hartazgo)",
+  "objeciones_disueltas": [
+    {
+      "objecion": "No sé qué vender",
+      "donde": "corte 1+4+7",
+      "como": "Lean ya sabía de entrenamiento, nunca pensó que era un producto. Si no tenés conocimiento, la IA te ayuda a encontrarlo."
+    },
+    {
+      "objecion": "No sé de tecnología",
+      "donde": "corte 4",
+      "como": "Le mandó un audio a la IA y la IA lo convirtió en guía"
+    },
+    {
+      "objecion": "No tengo seguidores",
+      "donde": "corte 4+6",
+      "como": "Sin seguidores, cuenta de IG desde cero"
+    },
+    {
+      "objecion": "Tengo que renunciar",
+      "donde": "corte 6",
+      "como": "Sin dejar la oficina"
+    },
+    {
+      "objecion": "No quiero mostrar la cara",
+      "donde": "corte 4",
+      "como": "Sin mostrar la cara"
+    }
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "visual": "Lean en el gym corrigiendo postura, seguro, en su elemento → corte a oficina agotado",
+      "text_on_screen": "Este es Lean · Sabe de entrenamiento · Pero labura 10 horas en una oficina y no le alcanza",
+      "narration": "Mira, este es Lean y sabe de entrenamiento, pero labura 10 horas en una oficina y no le alcanza.",
+      "format": "A1",
+      "seconds": 6,
+      "persuasion": "Dolor #1: trabajo mucho gano poco (46% compradores) + revelación de conocimiento oculto. Estructura Turu: habilidad + PERO + dolor."
+    },
+    {
+      "number": 2,
+      "visual": "Romina scrolleando Instagram buscando planes de entrenamiento",
+      "text_on_screen": "Esta es Romina · Quiere entrenar en su casa · Está buscando un buen plan",
+      "narration": "Y este es Juan, quiere entrenar en su casa y está buscando un buen plan.",
+      "format": "A1",
+      "seconds": 4,
+      "persuasion": "Romina tiene plata y busca activamente. No es pobre — es clienta. Demanda real visible."
+    },
+    {
+      "number": 3,
+      "visual": "Jesús relajado en su casa, directo a cámara",
+      "text_on_screen": "Y yo soy Jesús · Le enseño a la gente a crear productos digitales usando IA",
+      "narration": "Y yo soy Jesús, yo le enseño a la gente a crear productos digitales usando inteligencia artificial.",
+      "format": "A1",
+      "seconds": 5,
+      "persuasion": "Jesús se presenta en primera persona. Transición natural de tercera a primera (como Turu)."
+    },
+    {
+      "number": 4,
+      "visual": "Lean mandando audio desde el celular → pantalla: guía de entrenamiento terminada",
+      "text_on_screen": "Yo le enseñé a Lean a mandarle un audio a la IA · La IA lo convirtió en una guía completa",
+      "narration": "Le enseñé a Lean a agarrar todo lo que sabe de entrenamiento, mandarle un audio a la IA, y la IA lo convirtió en una guía de entrenamiento completo. Lo pudo hacer sin seguidores, sin saber de tecnología y sin mostrar la cara.",
+      "format": "A1",
+      "seconds": 9,
+      "persuasion": "Objeciones disueltas: tech (audio a la IA), seguidores (sin seguidores), cara (sin mostrar la cara). Mecanismo revelado de forma simple."
+    },
+    {
+      "number": 5,
+      "visual": "Romina entrenando en su casa motivada, celular con la guía al lado",
+      "text_on_screen": "Romina compró la guía de Lean · Entrena mejor que con el personal al que le pagaba $60.000",
+      "narration": "Juan compró la guía de Lean y ahora entrena en su casa mejor que con el personal al que le pagaba $60.000.",
+      "format": "A1",
+      "seconds": 5,
+      "persuasion": "Resultado del CLIENTE (no solo plata). Romina contenta. Comparación con gasto anterior = valor percibido."
+    },
+    {
+      "number": 6,
+      "visual": "Lean mostrando cuenta de Instagram nueva + notificaciones de ventas del día",
+      "text_on_screen": "Lean creó una cuenta de IG desde cero · Genera $50-$60 extra por día · Sin dejar la oficina",
+      "narration": "Lean creó una cuenta de Instagram desde cero, con el paso a paso que le di, ahora puede genera $50, $60 extra por día vendiendo su guía. Sin dejar su trabjo.",
+      "format": "A1",
+      "seconds": 7,
+      "persuasion": "Objeción renunciar disuelta (sin dejar oficina) + objeción seguidores (desde cero) + resultado específico y creíble ($50-60/día, no promesa exagerada)"
+    },
+    {
+      "number": 7,
+      "visual": "Jesús directo a cámara, texto CLASE grande en pantalla",
+      "text_on_screen": "CLASE · Clase gratuita · Paso a paso completo · Comentá CLASE",
+      "narration": "Si vos también querés aprender a hacer lo mismo, tengo una clase gratuita donde te muestro el paso a paso completo. Y si no tenés un conocimiento o no sabés qué producto crear, la propia IA te ayuda a encontrarlo. Comentá CLASE y te mando el link.",
+      "format": "A1",
+      "seconds": 10,
+      "persuasion": "CTA a clase gratuita. Objeción 'no sé qué vender' disuelta (la IA te ayuda). Keyword: CLASE. Barrera mínima."
+    }
+  ],
+  "total_seconds": 46,
+  "content_bank": [
+    "Video: Lean en gym corrigiendo postura → corte a oficina agotado",
+    "Video: Romina scrolleando Instagram buscando planes",
+    "Video: Jesús relajado en su casa, directo a cámara",
+    "Video: Lean mandando audio desde celular + pantalla guía terminada",
+    "Video: Romina entrenando en casa, celular con guía",
+    "Video: Lean mostrando cuenta IG nueva + ventas del día",
+    "Video: Jesús directo a cámara, texto CLASE grande"
+  ],
+  "recording_notes": [
+    "1 video continuo con cortes, NO stories separadas",
+    "Narración fluida de Jesús — cortes 1-2 en tercera persona, corte 3 pasa a primera",
+    "Lean en oficina = agotado. Lean en gym = vivo. Contraste visual.",
+    "Romina NO es pobre — busca activamente, tiene la plata",
+    "Lean muestra SU cuenta de IG y SUS ventas, no Jesús",
+    "Locaciones: oficina real, gym de barrio, living normal. CERO lujo",
+    "Subtítulos en todo el video",
+    "Corte 7: CLASE en texto grande, imposible de perder"
+  ],
+  "reference": "David Turu — ¿Qué hago? (cocina, Román + Alina, julio 2024)",
+  "triggers": [
+    "identificacion",
+    "prueba_social",
+    "especificidad",
+    "curiosidad",
+    "hartazgo"
+  ],
+  "rules_applied": [
+    "R31",
+    "R32",
+    "R33",
+    "R34",
+    "R35",
+    "R36",
+    "R37",
+    "R45"
+  ],
+  "createdAt": "2026-03-23T12:00:00.000Z"
+}

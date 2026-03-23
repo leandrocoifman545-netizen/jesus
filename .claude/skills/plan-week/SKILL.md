@@ -175,6 +175,13 @@ De formatos-visuales.md:
 □ ¿El vocabulario de cada guion corresponde a su segmento?
 ```
 
+#### Planificación de copies (Ad Factory)
+Para cada guion del plan, pre-asignar la estructura de copy ideal usando la Angle-to-Structure Matrix (`.data/copy-engine-ads.md` sección 12):
+- Verificar que los 10 guiones resulten en al menos 5 estructuras de copy DIFERENTES
+- Priorizar: Storytelling (3-4), Testimonio (1-2), Math-based (1), Contrarian (1), Listicle (1), otros (1-2)
+- Anotar en la tabla del plan: columna "Copy Structure" con la estructura sugerida
+- Después de grabar cada guion, ofrecer generar el ad copy con `/ad-copy`
+
 ## Paso 8: Elegir 3 bloques CTA para la sesión
 
 De `ctas-biblioteca.md`, elegir 1 variante por canal:
@@ -205,11 +212,15 @@ Total grabaciones: 10 bodies con transición + 3 bloques CTA = 13
 6. **Orden de grabación**
 7. **Huecos cubiertos** vs semana anterior
 
+**Nota:** Cada guion incluye estructura de copy sugerida (Angle-to-Structure Matrix) para generar el ad copy después de grabar.
+
 ## Paso 11: Generar los guiones
 
 Cuando el usuario apruebe, generar **UNO POR UNO** usando el proceso completo del skill `/guion`.
 
 Cada guion debe tener: 5 beats micro-VSL (con persuasion_function + micro_belief) + venta del modelo + transición + 5 leads + 3 bloques CTA. Duración mínima: 75 segundos.
+
+**Cada guion pasa por el humanizer (paso 9b de /guion)** antes de presentar. Los 10 patrones anti-IA + 6 checks de voz de Jesús se corren en CADA guion, no solo en el primero.
 
 Guardar cada uno y dar URL. Mostrar al usuario para aprobación ANTES de pasar al siguiente.
 

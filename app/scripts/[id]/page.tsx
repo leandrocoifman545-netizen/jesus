@@ -1,16 +1,22 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getGeneration } from "@/lib/storage/local";
+import { getGeneration, getGenerationNeighbors } from "@/lib/storage/local";
 import ScriptViewer from "@/components/script-viewer";
 import { Kbd } from "@/components/keyboard-nav";
+import ScriptNav from "./script-nav";
 
-export default async function ScriptPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function ScriptPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ batch?: string }> }) {
   const { id } = await params;
+  const { batch: batchParam } = await searchParams;
   const generation = await getGeneration(id);
 
   if (!generation) {
     notFound();
   }
+
+  // Use batch from URL param, or from the generation itself
+  const batchId = batchParam || generation.batch?.id;
+  const neighbors = await getGenerationNeighbors(id, batchId);
 
   return (
     <div className="animate-fade-in">
@@ -35,18 +41,21 @@ export default async function ScriptPage({ params }: { params: Promise<{ id: str
             {new Date(generation.createdAt).toLocaleString("es-AR")}
           </p>
         </div>
-        <Link
-          href="/briefs/new"
-          className="group bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 hover:shadow-lg hover:shadow-purple-500/25 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 active:scale-[0.98]"
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-          Nuevo Guion
-          <span className="hidden md:inline-flex items-center gap-0.5 ml-1 opacity-60">
-            <Kbd>&#8984;</Kbd><Kbd>N</Kbd>
-          </span>
-        </Link>
+        <div className="flex items-center gap-3">
+          <ScriptNav prev={neighbors.prev} next={neighbors.next} batchId={batchId} />
+          <Link
+            href="/briefs/new"
+            className="group bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 hover:shadow-lg hover:shadow-purple-500/25 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 active:scale-[0.98]"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+            Nuevo Guion
+            <span className="hidden md:inline-flex items-center gap-0.5 ml-1 opacity-60">
+              <Kbd>&#8984;</Kbd><Kbd>N</Kbd>
+            </span>
+          </Link>
+        </div>
       </div>
       <ScriptViewer
         script={generation.script}
@@ -55,7 +64,16 @@ export default async function ScriptPage({ params }: { params: Promise<{ id: str
         initialStatus={generation.status || "draft"}
         initialMetrics={generation.metrics}
         initialSessionNotes={generation.sessionNotes || ""}
+        initialHookApprovals={generation.hookApprovals || {}}
+        initialCopiesMatrix={(generation as unknown as Record<string, unknown>).ad_copies_matrix as any}
       />
+
+      {/* Bottom navigation */}
+      {(neighbors.prev || neighbors.next) && (
+        <div className="mt-10 pt-6 border-t border-zinc-800/50 flex items-center justify-end">
+          <ScriptNav prev={neighbors.prev} next={neighbors.next} batchId={batchId} />
+        </div>
+      )}
     </div>
   );
 }

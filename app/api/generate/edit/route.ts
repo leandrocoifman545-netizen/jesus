@@ -6,8 +6,8 @@ export async function PATCH(req: NextRequest) {
     const body = await req.json();
     const { generationId, path, value } = body as {
       generationId: string;
-      path: string; // e.g. "hooks.0.script_text", "development.sections.1.script_text", "cta.verbal_cta", "longform.hook.script_text", "longform.chapters.0.content"
-      value: string;
+      path: string; // e.g. "hooks.0.script_text", "development.sections.1.script_text", "development.sections.0.ipad_directions"
+      value: string | string[];
     };
 
     if (!generationId || !path || value === undefined) {
@@ -58,7 +58,12 @@ export async function PATCH(req: NextRequest) {
     const lastKey = isNaN(Number(navParts[navParts.length - 1]))
       ? navParts[navParts.length - 1]
       : Number(navParts[navParts.length - 1]);
-    current[lastKey] = value;
+    // Empty string on status fields means "remove"
+    if (value === "" && String(lastKey).endsWith("status")) {
+      delete current[lastKey];
+    } else {
+      current[lastKey] = value;
+    }
 
     await saveGeneration(generation);
 

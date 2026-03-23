@@ -413,7 +413,8 @@ function generatePackText(selected: GenerationSummary[], ctas: ActiveCTA[]): str
 }
 
 function esc(s: string): string {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  if (!s) return "";
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
 function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): string {
@@ -839,11 +840,45 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
   const [draggingId, setDraggingId] = useState<string | null>(null);
   const [dragOverBatchId, setDragOverBatchId] = useState<string | null>(null);
   const [dragOverUngrouped, setDragOverUngrouped] = useState(false);
+  const [batchOrders, setBatchOrders] = useState<Record<string, string[]>>({});
+  const [reorderDropTarget, setReorderDropTarget] = useState<{ genId: string; position: "before" | "after" } | null>(null);
+  const [showCopies, setShowCopies] = useState(false);
+  const [copiesData, setCopiesData] = useState<Record<string, { title: string; versions: { hook_index: number; hook_type: string; cta_label: string; version_name: string; headline: string; description: string; primary_text: string; word_count: number; structure_used: string }[] }>>({});
+  const [copiesLoading, setCopiesLoading] = useState(false);
+  const [copiesFilter, setCopiesFilter] = useState<"all" | "clase" | "taller" | "ig">("all");
+
+  async function loadCopies() {
+    setCopiesLoading(true);
+    try {
+      const ids = Array.from(selected);
+      const results: typeof copiesData = {};
+      await Promise.all(ids.map(async (id) => {
+        const res = await fetch(`/api/generate/ad-copies-matrix?generationId=${id}`);
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data && data.versions) {
+          const gen = filteredGenerations.find(g => g.id === id);
+          results[id] = { title: gen?.title || "Sin título", versions: data.versions };
+        }
+      }));
+      setCopiesData(results);
+      setShowCopies(true);
+    } catch {
+      toast("Error cargando copies", "error");
+    } finally {
+      setCopiesLoading(false);
+    }
+  }
 
   useEffect(() => {
     const timer = setTimeout(() => setDebouncedSearch(search), 200);
     return () => clearTimeout(timer);
   }, [search]);
+
+  // Load batch orders on mount
+  useEffect(() => {
+    fetch("/api/batch-order").then((r) => r.json()).then(setBatchOrders).catch(() => {});
+  }, []);
 
   function toggleSelect(id: string) {
     setSelected((prev) => {
@@ -1039,6 +1074,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
     setDraggingId(null);
     setDragOverBatchId(null);
     setDragOverUngrouped(false);
+    setReorderDropTarget(null);
   }
 
   async function handleDropOnBatch(e: React.DragEvent, batchId: string, batchName: string) {
@@ -1095,27 +1131,141 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
     }
   }
 
+  // --- Reorder within batch ---
+
+  function handleReorderDragOver(e: React.DragEvent, targetGenId: string) {
+    e.preventDefault();
+    e.stopPropagation();
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    const midY = rect.top + rect.height / 2;
+    const position = e.clientY < midY ? "before" : "after";
+    setReorderDropTarget({ genId: targetGenId, position });
+    e.dataTransfer.dropEffect = "move";
+  }
+
+  async function handleReorderDrop(e: React.DragEvent, targetGenId: string, batchId: string, batchItems: GenerationSummary[]) {
+    e.preventDefault();
+    e.stopPropagation();
+    setReorderDropTarget(null);
+    setDraggingId(null);
+    const draggedId = e.dataTransfer.getData("text/plain");
+    if (!draggedId || draggedId === targetGenId) return;
+
+    // Build current order
+    const currentOrder = batchOrders[batchId] || batchItems.map((g) => g.id);
+    const ordered = [...currentOrder];
+
+    // Make sure all items are in the order array
+    for (const item of batchItems) {
+      if (!ordered.includes(item.id)) ordered.push(item.id);
+    }
+
+    // Remove dragged item from its current position
+    const dragIdx = ordered.indexOf(draggedId);
+    if (dragIdx === -1) return;
+    ordered.splice(dragIdx, 1);
+
+    // Find target position
+    let targetIdx = ordered.indexOf(targetGenId);
+    if (targetIdx === -1) return;
+
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    const midY = rect.top + rect.height / 2;
+    if (e.clientY >= midY) targetIdx += 1;
+
+    ordered.splice(targetIdx, 0, draggedId);
+
+    // Update state immediately
+    setBatchOrders((prev) => ({ ...prev, [batchId]: ordered }));
+
+    // Persist
+    try {
+      await fetch("/api/batch-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ batchId, order: ordered }),
+      });
+    } catch {
+      // Revert on error
+      setBatchOrders((prev) => {
+        const next = { ...prev };
+        delete next[batchId];
+        return next;
+      });
+    }
+  }
+
+  function sortByBatchOrder(items: GenerationSummary[], batchId: string): GenerationSummary[] {
+    const order = batchOrders[batchId];
+    if (!order || order.length === 0) return items;
+    return [...items].sort((a, b) => {
+      const aIdx = order.indexOf(a.id);
+      const bIdx = order.indexOf(b.id);
+      if (aIdx === -1 && bIdx === -1) return 0;
+      if (aIdx === -1) return 1;
+      if (bIdx === -1) return -1;
+      return aIdx - bIdx;
+    });
+  }
+
   // --- Download/copy ---
 
-  function downloadPack() {
+  function getSelectedOrdered(): GenerationSummary[] {
     const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
+    // Sort by batch order if all selected are in the same batch
+    const batchIds = new Set(selectedGens.filter((g) => g.batch).map((g) => g.batch!.id));
+    if (batchIds.size === 1) {
+      const batchId = [...batchIds][0];
+      return sortByBatchOrder(selectedGens, batchId);
+    }
+    // Multiple batches: sort each batch's items, keep batch order
+    const result: GenerationSummary[] = [];
+    const seen = new Set<string>();
+    for (const group of groupGenerations(filteredGenerations)) {
+      if (group.type === "batch") {
+        const ordered = sortByBatchOrder(group.items, group.batchId);
+        for (const g of ordered) {
+          if (selected.has(g.id) && !seen.has(g.id)) { result.push(g); seen.add(g.id); }
+        }
+      } else {
+        for (const g of group.items) {
+          if (selected.has(g.id) && !seen.has(g.id)) { result.push(g); seen.add(g.id); }
+        }
+      }
+    }
+    return result;
+  }
+
+  function downloadPack() {
+    const selectedGens = getSelectedOrdered();
     const text = generatePackText(selectedGens, CTAS);
     downloadFile(text, `pack-grabacion-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.txt`);
     toast(`Pack descargado (${selectedGens.length} guiones)`);
   }
 
   function downloadPackPDF() {
-    const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
+    const selectedGens = getSelectedOrdered();
+    if (selectedGens.length === 0) { toast("Seleccioná al menos un guion"); return; }
     const html = generatePackHTML(selectedGens, CTAS);
-    const w = window.open("", "_blank");
-    if (!w) { toast("Permití popups para descargar el PDF"); return; }
-    w.document.write(html);
-    w.document.close();
-    toast(`PDF listo — usá Cmd+P para guardar (${selectedGens.length} guiones)`);
+    const htmlWithPrint = html.replace("</body>", "<script>window.onload=function(){setTimeout(function(){window.print()},400)}<\/script></body>");
+    const blob = new Blob([htmlWithPrint], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const w = window.open(url, "_blank");
+    if (w) {
+      toast(`PDF listo — guardalo como PDF (${selectedGens.length} guiones)`);
+    } else {
+      // Fallback: descarga como HTML si el popup es bloqueado
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `pack-grabacion-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.html`;
+      link.click();
+      URL.revokeObjectURL(url);
+      toast(`Pack descargado — abrilo y usá Cmd+P para guardar como PDF`);
+    }
   }
 
   function downloadTeleprompter() {
-    const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
+    const selectedGens = getSelectedOrdered();
     const text = generateTeleprompterText(selectedGens);
     downloadFile(text, `teleprompter-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.txt`);
     toast(`Teleprompter descargado (${selectedGens.length} guiones)`);
@@ -1132,7 +1282,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
   }
 
   function copyPack() {
-    const selectedGens = filteredGenerations.filter((g) => selected.has(g.id));
+    const selectedGens = getSelectedOrdered();
     const text = generatePackText(selectedGens, CTAS);
     navigator.clipboard.writeText(text);
     toast("Pack copiado al portapapeles");
@@ -1196,7 +1346,7 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
             )}
           </div>
         </button>
-        <a href={`/scripts/${gen.id}`} className="flex-1 min-w-0">
+        <a href={`/scripts/${gen.id}${gen.batch ? `?batch=${gen.batch.id}` : ""}`} className="flex-1 min-w-0">
           {gen.title && (
             <p className="text-sm font-medium text-zinc-100 mb-1 truncate">{gen.title}</p>
           )}
@@ -1411,6 +1561,25 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
               TXT
             </button>
             <button
+              onClick={() => showCopies ? setShowCopies(false) : loadCopies()}
+              disabled={copiesLoading}
+              className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5 ${showCopies ? "bg-emerald-500/20 border border-emerald-500/40 text-emerald-300" : "bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400"}`}
+            >
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+              </svg>
+              {copiesLoading ? "Cargando..." : showCopies ? "Ocultar Copies" : "Ver Copies"}
+            </button>
+            <a
+              href={`/api/export/copies-batch?ids=${Array.from(selected).join(",")}`}
+              className="bg-zinc-800/50 hover:bg-zinc-700/50 border border-zinc-700/50 text-zinc-300 px-3 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
+            >
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              CSV
+            </a>
+            <button
               onClick={downloadPackPDF}
               className="bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 shadow-lg shadow-purple-500/20 text-white px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5"
             >
@@ -1429,6 +1598,66 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
           >
             Seleccionar todo
           </button>
+        </div>
+      )}
+
+      {/* Copies viewer inline */}
+      {showCopies && Object.keys(copiesData).length > 0 && (
+        <div className="mb-6 border border-emerald-500/20 rounded-2xl bg-emerald-500/[0.03] overflow-hidden">
+          <div className="px-5 py-3 border-b border-emerald-500/10 flex items-center gap-3">
+            <span className="text-xs font-semibold text-emerald-400">
+              {Object.values(copiesData).reduce((sum, d) => sum + d.versions.length, 0)} copies — {Object.keys(copiesData).length} guiones
+            </span>
+            <div className="flex gap-1 ml-auto">
+              {(["all", "clase", "taller", "ig"] as const).map((f) => (
+                <button
+                  key={f}
+                  onClick={() => setCopiesFilter(f)}
+                  className={`px-2.5 py-1 rounded-lg text-[10px] font-medium transition-all ${copiesFilter === f ? "bg-emerald-500/20 text-emerald-300" : "text-zinc-500 hover:text-zinc-300"}`}
+                >
+                  {f === "all" ? "Todos" : f === "clase" ? "Clase Gratuita" : f === "taller" ? "Taller $5" : "IG Orgánico"}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="max-h-[600px] overflow-y-auto">
+            {Object.entries(copiesData).map(([genId, data]) => {
+              const filtered = data.versions.filter((v) => {
+                if (copiesFilter === "all") return true;
+                if (copiesFilter === "clase") return v.cta_label.includes("Clase") || v.cta_label.includes("Gratuita");
+                if (copiesFilter === "taller") return v.cta_label.includes("Taller");
+                return v.cta_label.includes("Instagram") || v.cta_label.includes("Orgánico");
+              });
+              if (filtered.length === 0) return null;
+              return (
+                <div key={genId}>
+                  <div className="px-5 py-2 bg-zinc-900/50 border-b border-zinc-800/30">
+                    <span className="text-[11px] font-semibold text-zinc-300">{data.title}</span>
+                    <span className="text-[10px] text-zinc-600 ml-2">{filtered.length} copies</span>
+                  </div>
+                  <div className="divide-y divide-zinc-800/20">
+                    {filtered.map((v, i) => (
+                      <div key={i} className="px-5 py-3 hover:bg-white/[0.02] transition-colors">
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <span className="text-[10px] font-mono text-zinc-500">{v.version_name}</span>
+                          <span className={`text-[9px] px-1.5 py-0.5 rounded-full font-medium ${
+                            v.cta_label.includes("Clase") || v.cta_label.includes("Gratuita") ? "bg-blue-500/10 text-blue-400" :
+                            v.cta_label.includes("Taller") ? "bg-amber-500/10 text-amber-400" :
+                            "bg-pink-500/10 text-pink-400"
+                          }`}>{v.cta_label}</span>
+                          <span className="text-[9px] text-zinc-600">{v.structure_used}</span>
+                          <span className="text-[9px] text-zinc-600 ml-auto">{v.word_count}w</span>
+                        </div>
+                        <div className="text-[11px] text-zinc-200 font-semibold mb-0.5">{v.headline}</div>
+                        <div className="text-[10px] text-zinc-400 mb-1">{v.description}</div>
+                        <div className="text-[10px] text-zinc-500 line-clamp-3 leading-relaxed">{v.primary_text}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
 
@@ -1559,7 +1788,33 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
                   {/* Batch items */}
                   {!isCollapsed && (
                     <div className="grid gap-3 pl-4 border-l-2 border-purple-500/10 ml-2 mt-1 mb-4">
-                      {group.items.map(renderGenCard)}
+                      {sortByBatchOrder(group.items, group.batchId).map((gen) => (
+                        <div
+                          key={gen.id}
+                          className="relative"
+                          onDragOver={(e) => {
+                            const draggedGen = generations.find((g) => g.id === draggingId);
+                            if (draggedGen?.batch?.id === group.batchId) {
+                              handleReorderDragOver(e, gen.id);
+                            }
+                          }}
+                          onDragLeave={() => setReorderDropTarget(null)}
+                          onDrop={(e) => {
+                            const draggedGen = generations.find((g) => g.id === draggingId);
+                            if (draggedGen?.batch?.id === group.batchId) {
+                              handleReorderDrop(e, gen.id, group.batchId, group.items);
+                            }
+                          }}
+                        >
+                          {reorderDropTarget?.genId === gen.id && reorderDropTarget.position === "before" && (
+                            <div className="absolute -top-1.5 left-0 right-0 h-0.5 bg-purple-500 rounded-full z-10" />
+                          )}
+                          {renderGenCard(gen)}
+                          {reorderDropTarget?.genId === gen.id && reorderDropTarget.position === "after" && (
+                            <div className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-purple-500 rounded-full z-10" />
+                          )}
+                        </div>
+                      ))}
                     </div>
                   )}
                 </div>

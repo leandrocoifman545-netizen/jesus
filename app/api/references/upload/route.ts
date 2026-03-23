@@ -40,9 +40,12 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const groqTier = formData.get("groqTier") as string | null;
+    const forcePaid = groqTier === "paid";
+
     const buffer = Buffer.from(await file.arrayBuffer());
 
-    const transcript = await transcribeAudio(buffer, mimeType);
+    const transcript = await transcribeAudio(buffer, mimeType, forcePaid);
 
     if (!transcript || transcript.length < 10) {
       return NextResponse.json(

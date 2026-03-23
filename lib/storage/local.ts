@@ -11,6 +11,7 @@ const DATA_DIR = path.join(process.cwd(), ".data");
 const BRIEFS_DIR = path.join(DATA_DIR, "briefs");
 const GENERATIONS_DIR = path.join(DATA_DIR, "generations");
 const PLANS_DIR = path.join(DATA_DIR, "plans");
+const STORIES_DIR = path.join(DATA_DIR, "stories");
 
 // --- In-memory cache (survives across requests in same process) ---
 
@@ -183,6 +184,7 @@ export interface StoredGeneration {
   status?: GenerationStatus;
   metrics?: WinnerMetrics;
   sessionNotes?: string;
+  hookApprovals?: Record<number, "approved" | "rejected">; // index → status
   ctaBlockId?: string; // ID of the CTA block variant used (e.g. "clase-gratis-A")
   createdAt: string;
 }
@@ -485,6 +487,7 @@ async function ensureDirs() {
     fs.mkdir(REFERENCES_DIR, { recursive: true }),
     fs.mkdir(PROJECTS_DIR, { recursive: true }),
     fs.mkdir(PLANS_DIR, { recursive: true }),
+    fs.mkdir(STORIES_DIR, { recursive: true }),
   ]);
   dirsEnsured = true;
 }
@@ -570,6 +573,22 @@ export async function getBrief(id: string): Promise<StoredBrief | null> {
 
 export async function listGenerations(): Promise<StoredGeneration[]> {
   return listItemsFromDir<StoredGeneration>(GENERATIONS_DIR, "generations:list", normalizeGeneration);
+}
+
+/** Returns prev/next generation IDs (sorted by createdAt desc, same as dashboard). */
+export async function getGenerationNeighbors(id: string, batchId?: string): Promise<{ prev: { id: string; title: string } | null; next: { id: string; title: string } | null }> {
+  let all = await listGenerations();
+  // Filter by batch if provided
+  if (batchId) {
+    all = all.filter((g) => g.batch?.id === batchId);
+  }
+  // Sort newest first (same order as dashboard)
+  all.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+  const idx = all.findIndex((g) => g.id === id);
+  if (idx === -1) return { prev: null, next: null };
+  const prev = idx > 0 ? { id: all[idx - 1].id, title: all[idx - 1].title || "Sin título" } : null;
+  const next = idx < all.length - 1 ? { id: all[idx + 1].id, title: all[idx + 1].title || "Sin título" } : null;
+  return { prev, next };
 }
 
 // --- References ---
@@ -686,6 +705,83 @@ export async function linkGenerationToPlan(
 
   return plan;
 }
+
+// --- React.cache() wrappers for server component deduplication ---
+// These deduplicate calls within the same server render pass.
+// Multiple server components calling the same function share one result.
+
+// --- Stories ---
+
+export type StorySequenceType =
+  | "personalidad"
+  | "cta_lead_magnet"
+  | "cta_volumen"
+  | "cta_directo"
+  | "objecion"
+  | "nicho"
+  | "expertise"
+  | "actuada_triangulo"
+  | "explicativa_servicio"
+  | "behind_the_scenes";
+
+export type StoryStatus = "draft" | "recorded" | "published";
+
+export interface StorySlide {
+  number: number;
+  narration: string;
+  visual: string;
+  format: string;
+  seconds: number;
+  interaction: string | null;
+}
+
+export interface StoredStory {
+  id: string;
+  title: string;
+  sequence_type: StorySequenceType;
+  status: StoryStatus;
+  notes: string;
+  slides: StorySlide[];
+  total_seconds: number;
+  rules_applied: string[];
+  triggers: string[];
+  highlight_name: string | null;
+  createdAt: string;
+}
+
+export async function saveStory(story: StoredStory): Promise<void> {
+  await ensureDirs();
+  const filePath = path.join(STORIES_DIR, `${story.id}.json`);
+  await fs.writeFile(filePath, JSON.stringify(story, null, 2));
+  invalidateCache("stories");
+}
+
+export async function getStory(id: string): Promise<StoredStory | null> {
+  await ensureDirs();
+  try {
+    const data = await fs.readFile(path.join(STORIES_DIR, `${id}.json`), "utf-8");
+    return JSON.parse(data);
+  } catch {
+    return null;
+  }
+}
+
+export async function deleteStory(id: string): Promise<boolean> {
+  await ensureDirs();
+  try {
+    await fs.unlink(path.join(STORIES_DIR, `${id}.json`));
+    invalidateCache("stories");
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function listStories(): Promise<StoredStory[]> {
+  return listItemsFromDir<StoredStory>(STORIES_DIR, "stories:list");
+}
+
+export const cachedListStories: typeof listStories = reactCache(listStories);
 
 // --- React.cache() wrappers for server component deduplication ---
 // These deduplicate calls within the same server render pass.
