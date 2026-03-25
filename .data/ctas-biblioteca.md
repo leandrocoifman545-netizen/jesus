@@ -298,6 +298,58 @@ Estas son transiciones reales que Jesús improvisó en sesión. Usar como refere
 
 ---
 
+### Variante E — Doble Intención (comment + compra directa) 🆕
+
+Para orgánico donde querés capturar leads Y compradores en el mismo post. Inspirado en @niksetting (CLR 55.72% en el post donde lo usa).
+
+**[CAPA 2 — OFERTA]** Comprimida + recurso específico
+> "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso."
+
+**[CAPA 6a — ORDEN 1: LEAD]** #110 Conversacional + palabra contextual
+> "Comentá 'NICHO' acá abajo y te lo mando por DM."
+
+**[CAPA 3 — PRUEBA]** #89 Volumen
+> "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos."
+
+**[CAPA 4 — RIESGO CERO]** Implícita
+> "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo."
+
+**[CIERRE — ORDEN 2: COMPRA DIRECTA]**
+> "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+
+**Por qué funciona:** Dos CTAs para dos niveles de intención. El curioso comenta → entra al funnel. El que ya está listo → va directo a comprar. No se pisán, se complementan.
+
+**Regla de la palabra contextual:** La palabra del comment tiene que salir del contenido del video. Si el video habla de nichos → "NICHO". Si habla de IA → "IA". Si muestra un resultado → el número ("47" por $47/día). NUNCA palabras genéricas tipo "INFO" o "QUIERO".
+
+---
+
+## Reglas de Canal 3 — CTA doble caption + video (validado @hormozi)
+
+> **Fuente:** @hormozi 200 posts. Posts con comment CTA = CLR 10.08% vs 1.16% sin CTA (8.7x multiplicador). Keywords contextuales (que matchean el contenido del video) tienen 2-3x mejor CLR que keywords genéricas.
+
+### Regla 1: Keyword contextual obligatoria
+La palabra del comment SIEMPRE sale del contenido del video:
+- Video sobre cocina → "COCINA"
+- Video sobre crochet → "CROCHET"
+- Video con resultado de $47/día → "47"
+- Video sobre IA → "IA"
+- **NUNCA** palabras genéricas: "INFO", "QUIERO", "YO", "CLASE" (salvo que el video hable específicamente de la clase)
+
+### Regla 2: CTA doble (caption + cierre de video)
+Los top performers de Hormozi tienen el CTA en AMBOS lugares:
+1. **Caption primera línea:** `Comentá "[KEYWORD]" y te mando [recurso]`
+2. **Cierre del video (audio):** Jesús dice la keyword y la oferta
+
+El caption NO resume el video. Es CTA puro o frase-hook independiente.
+
+### Regla 3: Proporción 75/25 awareness/conversión
+De cada 4 posts orgánicos, 3 son sin CTA (awareness/autoridad) y 1 tiene keyword (conversión). El CTA no penaliza views — los posts de conversión tienen views similares a los de awareness.
+
+### Regla 4: "Reconocimiento de densidad" pre-CTA
+Después de un video denso/largo, agregar transición tipo: "Sé que es mucha información" o "Eso fue bastante" ANTES del CTA. Reconoce el esfuerzo del viewer. NO es un resumen — es un puente.
+
+---
+
 ## Reglas de rotación
 
 1. **Cada estrategia semanal elige 3 bloques CTA** (uno por canal) distintos a la semana anterior

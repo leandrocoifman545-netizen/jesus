@@ -747,6 +747,11 @@ export interface StoredStory {
   triggers: string[];
   highlight_name: string | null;
   createdAt: string;
+  recording_notes?: string[];
+  content_bank?: string[];
+  objeciones_disueltas?: string[];
+  avatar_target?: string;
+  tension?: string;
 }
 
 export async function saveStory(story: StoredStory): Promise<void> {

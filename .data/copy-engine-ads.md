@@ -399,6 +399,14 @@ DESCRIPCIÓN: Uno te limita a tus horas. El otro vende mientras dormís. Clase g
 - MALO: "COMPRÁ AHORA antes de que suba el precio" → Urgencia falsa = desconfianza.
 - BUENO: "Registrate gratis. Si no te sirve, no perdiste nada." → Cero riesgo.
 
+### 5b. CTA doble por intención (para MOFU/retargeting)
+Cuando la audiencia tiene MEZCLA de niveles de intención, usar 2 CTAs en el mismo copy:
+- **CTA 1 (curiosos):** "Comentá X / Registrate a la clase gratis" — baja fricción, captura lead
+- **CTA 2 (listos):** "Si ya sabés que querés arrancar, el link está en bio / mandame DM" — directo a compra
+
+Nunca usar CTA doble en TOFU/cold (confunde). Solo en MOFU donde parte de la audiencia ya te conoce.
+Fuente: @niksetting — CLR 55.72% en post con "Comment 100k + if you are ready to PIF, just dm me".
+
 ### 6. Números redondos vs creíbles
 - MALO: "$50.000 por mes" → Suena inventado.
 - BUENO: "Primer mes: $134.750. Once ventas a $3.500 cada una." → Desglose verificable.

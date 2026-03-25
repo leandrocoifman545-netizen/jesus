@@ -656,6 +656,17 @@ Asumis que ya decidio. Hablas como si la decision ya estuviera tomada.
 Una orden escondida dentro de una frase normal. El consciente no la detecta, el subconsciente si.
 > *"Cuando hagas click y entres al taller, vas a entender por que miles de personas ya lo hicieron." (La orden es "hace click y entra".)*
 
+### #128 — Remate Analógico (Punchline Visual)
+Una sola frase-imagen que encapsula TODO el argumento del guion en una analogía memorable. Va ANTES de la transición al CTA. El viewer se queda con esa imagen mental resonando.
+- NO es una frase motivacional genérica — es una analogía ESPECÍFICA al argumento que acabás de hacer
+- Funciona mejor cuando exagera la analogía original con 3 elementos (escalation)
+- Se usa 1 vez por guion, máximo. Si no sale natural, no forzarlo.
+> *"Dejá de darle a la gente el pez, el rodillo y las coordenadas de GPS. Mostrales el océano y vendeles el barco." (Nik Setting — escalation del refrán clásico, contextual a su argumento de "dejá de dar contenido gratis")*
+> *"Es como si tuvieras un restaurant lleno de gente pero les regalaras la comida y después te sorprendieras de que no te pagan." (contextual a venta de productos digitales)*
+> *"Es como lavar la ropa a mano teniendo un lavarropas al lado. El lavarropas es la IA." (contextual a resistencia a usar IA)*
+**Cuándo usarlo:** Cuando el cuerpo del guion desarrolla un argumento lógico (anti-consejo, demolición de mito, confrontación directa) y necesitás un cierre que sea memorable antes de la transición al CTA.
+**Cuándo NO usarlo:** Cuando el arco es emocional/vulnerable (historia personal, futuro sensorial). Ahí el remate sería disonante.
+
 ---
 
 ## Regla de Oro
@@ -664,7 +675,7 @@ Cada guion es una **COMBINACION UNICA** de estos ingredientes.
 
 Elegis 1-3 de cada categoria, los mezclas en orden, y tenes un guion diferente cada vez.
 
-Con 127 ingredientes y 11 categorias, las combinaciones posibles son **practicamente infinitas**.
+Con 128 ingredientes y 11 categorias, las combinaciones posibles son **practicamente infinitas**.
 
 Mas ingredientes conoces → mas combinaciones podes hacer → mas control tenes → mas guiones ganadores producis.
 

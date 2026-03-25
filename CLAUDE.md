@@ -25,6 +25,9 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 ### Si pide PRODUCCIÓN MASIVA DE ADS (detectar: "100 ads", "ad factory", "producción masiva", "batch de ads", "campaña masiva", "100 copies")
 → **Ejecutar skill `/ad-factory`** — produce 100+ creativos: 7 fases (research → nichos → ángulos → copies → imágenes → organización → campaña Meta).
 
+### Si pide ANALIZAR UN PERFIL DE INSTAGRAM (detectar: "analizá este perfil", "scrapeá", "analisis de @", "analizá @", "escrapear", "@username")
+→ **Ejecutar skill `/analisis-ig`** — pipeline completo: scrape → descarga → transcripción → análisis de patrones → documento consolidado.
+
 ### Si pide revisar errores o consistencia (detectar: "audit", "errores", "revisá", "algo roto", "inconsistencias")
 → **Ejecutar skill `/audit`**
 
@@ -47,10 +50,10 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | Sistema | Archivo | Reemplaza |
 |---------|---------|-----------|
 | 5 familias de ángulos | `.data/angulos-expandidos.md` | Los 11 ángulos viejos |
-| 5 beats micro-VSL + 8 vehículos narrativos | `.data/tipos-cuerpo.md` | Micro-creencias sueltas + tipos de cuerpo como estructura |
+| 5 beats micro-VSL + 11 vehículos narrativos | `.data/tipos-cuerpo.md` | Micro-creencias sueltas + tipos de cuerpo como estructura (11vo = tier-list/rating para orgánico, de análisis @hormozi) |
 | 10 ventas del modelo | `.data/venta-modelo-negocio.md` | No existía |
 | 3 bloques CTA (6 capas) | `.data/ctas-biblioteca.md` | Los 3 CTAs genéricos de 1 frase |
-| 127 ingredientes | `.data/enciclopedia-127-ingredientes.md` | No existía |
+| 128 ingredientes | `.data/enciclopedia-127-ingredientes.md` | No existía (128vo = remate analógico, de análisis @niksetting) |
 | **Reglas de diversidad** | **`.data/reglas-diversidad.md`** | **Guiones que sonaban todos iguales** |
 | **Motor de audiencia** | **`.data/motor-audiencia.md`** | **Data de WhatsApp sin activar** |
 | **Jerarquía de decisiones** | **`.data/jerarquia-decisiones.md`** | **No había regla de qué sistema gana en conflictos** |
@@ -70,6 +73,7 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | **Research Engine Ads** | **`.data/research-engine-ads.md`** | **No existía — pipeline de investigación: 6 fuentes, teardown template, voice mining, 4 documentos output** |
 | **Niche Mapping Ads** | **`.data/niche-mapping-ads.md`** | **No existía — 20 nichos × 20 ángulos, Matriz de Multiplicación, 8 tipos de hook, validation checklist** |
 | **Skill Ad Factory** | **`.claude/skills/ad-factory/SKILL.md`** | **No existía — producción masiva: 7 fases, 100+ copies + imágenes + campaña Meta Ads** |
+| **Skill Análisis IG** | **`.claude/skills/analisis-ig/SKILL.md`** | **No existía — pipeline completo: scrape → descarga → transcripción → análisis de patrones → documento consolidado** |
 
 ## Sistema auto-brief (anti-genérico)
 

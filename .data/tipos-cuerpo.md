@@ -29,6 +29,18 @@ Después: **Venta del modelo** (2-3 oraciones) → **Transición** (Capa 1) → 
 - **60-75s:** 4 beats — identificación + quiebre + mecanismo + prueba
 - **75-90s:** 5 beats (todos) — micro-VSL completo
 
+### Variante de Mecanismo: "Escalado en niveles" 🆕
+Cuando el vehículo es Demo/Proceso (#3) o Demolición de alternativas (#9), el beat de Mecanismo puede usar **el mismo ejemplo empaquetado en niveles crecientes de precio**. No mostrás más conocimiento — mostrás más packaging.
+
+**Estructura:** `Mismo saber → nivel 1 ($X) → nivel 2 ($XX) → nivel 3 ($XXX)`
+
+**Ejemplo ADP:**
+> "Agarrás lo que sabés de nutrición deportiva. Lo metés en un ebook → $5. Le agregás plan personalizado → $27. Le sumás acompañamiento por WhatsApp → $97. Mismo conocimiento, tres productos."
+
+**Por qué funciona:** Destruye la objeción "no sé lo suficiente" sin nombrarla. El viewer ve que el valor está en el empaquetado, no en ser experto. Validado: @hormozi usa esta estructura en sus posts de mayor CLR (24.30%).
+
+**Regla:** Los precios deben ser creíbles para el avatar (no $997). Usar $5→$27→$97 o $3→$15→$47 según el segmento.
+
 ### Regla de diversidad de funciones:
 NUNCA dos beats con la misma función. Si los 3 beats dicen "nueva oportunidad", el guion informa pero no persuade.
 
@@ -55,6 +67,7 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 - **Cómo tiñe los beats:** El mecanismo es el beat estrella — muestra paso a paso. El quiebre es "no es lo que pensás". La prueba es el resultado visible.
 - **Mejor para:** Micro-creencias tipo "es simple", "no necesitás saber de tech"
 - **Ingredientes típicos:** F (Mecanismo) + #71 Proceso de N Pasos
+- **Variante "Proceso en vivo":** En lugar de explicar pasos, MOSTRAR el proceso real del negocio mientras se hace. No es un tutorial — es documentación. Ej: "Te muestro cómo creo un producto digital con IA EN VIVO" donde Jesús abre ChatGPT y lo hace de verdad. El tono es informal/improvisado, no guionado. Funciona especialmente bien con CTA de comentario contextual ("Comentá PRODUCTO y te mando el template que usé"). Validado: @niksetting video de 3 min mostrando proceso real de onboarding → 814 comments, CLR 15.83% (el más alto de sus videos). Ideal para orgánico.
 
 ### 4. Comparación de caminos
 **Tono:** Lógico, contrastante. "Camino A vs Camino B."
@@ -110,6 +123,33 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 - **CTA:** Puede no tener CTA formal — el consejo final ES el CTA. Funciona para orgánico/retargeting.
 - **Validado:** Winner #16 [BN]. Ads que no parecen ads convierten más. Awareness 3+ (gente que ya conoce ADP).
 
+### 11. Tier-list / Rating (SOLO ORGÁNICO) 🆕
+**Tono:** Opinión experta, casual, polémico. "Esto es un 3. Esto es un 8. Esto es S-Tier."
+- **Cómo tiñe los beats:** NO sigue la estructura de 5 beats del micro-VSL. Es un formato distinto: lista de items, cada uno con rating + justificación de 5-15 segundos. El viewer se engancha por curiosidad ("¿coincido?") y por la dopamina de ver cada rating nuevo.
+- **Mejor para:** Awareness/autoridad. NO para venta directa. Genera saves y shares, no comments (salvo con comment keyword).
+- **Ingredientes típicos:** Opinión personal + E (Autoridad) + credibilidad implícita por conocimiento
+- **Diferencia con Pregunta y respuesta (#6):** #6 elimina objeciones. #11 demuestra expertise calificando alternativas.
+- **Formatos posibles:** "Tier-list de formas de ganar plata online", "Rating de negocios digitales por facilidad", "Ranking de herramientas de IA para emprendedores"
+- **Tono ADP:** Jesús hace los ratings desde la perspectiva de "alguien de 40-60 años que empieza de cero", NO desde "$250M founder". Ej: "Dropshipping: 3 de 10. Necesitás mucha plata, mucho tiempo, y competís con Amazon."
+- **CTA:** "Follow" o comment keyword. Nunca venta directa.
+- **Validado:** @hormozi tier-lists consiguen 50-120K likes. Formato probado para awareness en perfiles de negocios.
+- **Límite:** Máximo 1 de cada 10 en estrategia semanal. Es complemento, no formato principal.
+
+### 12. Quiz de comparación (SOLO ORGÁNICO) 🆕
+**Tono:** Interactivo, educativo, cero presión. "¿Cuál vendió más? ¿A o B?"
+- **Cómo funciona:** Jesús presenta 2-3 pares de productos/nichos/estrategias y pregunta cuál tuvo mejor resultado. Después revela la respuesta y explica POR QUÉ. El viewer aprende sobre nichos, demanda y empaquetado sin sentir que le venden.
+- **Estructura:** `Par 1: A vs B → respuesta + explicación (15s) → Par 2: A vs B → respuesta (15s) → Par 3 (opcional) → Cierre con lección`
+- **NO sigue los 5 beats.** Es un formato propio para orgánico.
+- **Mejor para:** Educar sobre nichos y demanda. El viewer entiende qué hace que un producto venda sin que nadie se lo "enseñe".
+- **Ejemplos concretos:**
+  - "¿Qué vendió más esta semana? ¿Una guía de recetas saludables... o una guía de cómo organizar tu casa?" (respuesta: organización, porque el nicho es más específico y el dolor es más urgente)
+  - "¿Cuál tuvo más ventas? ¿Un curso de Excel para emprendedores... o uno de Excel para contadores?" (respuesta: contadores, porque el avatar es más específico)
+  - "¿Qué funciona mejor como producto digital? ¿Un ebook de 200 páginas a $5... o una plantilla descargable a $15?" (respuesta: la plantilla, menos trabajo, más margen)
+- **CTA:** Comment keyword contextual. "¿Cuál pensabas vos? Comentá A o B." O: "Comentá tu nicho y te digo cuál formato le conviene."
+- **Ingredientes típicos:** F#72 New Opportunity + D#54 Analogía simple
+- **Validado:** @hormozi "Ad A vs Ad B" = CLR 26.4% (DU5_RFTji5j). El formato quiz genera engagement natural porque el viewer quiere saber si acertó.
+- **Límite:** Máximo 1 de cada 10. Requiere datos reales — NUNCA inventar qué vendió más.
+
 ---
 
 ## Mapa: micro-creencia → mejor vehículo
@@ -128,6 +168,7 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 | "El cambio es urgente/temporal" | Contraste emocional | Comparación caminos |
 | "Mi caso particular tiene solución" | **Q&A conversacional ⭐** | Pregunta y respuesta |
 | "Este es el camino más lógico" | **Demolición de alternativas ⭐** | Demolición de mito |
+| "Sé de lo que hablo" (awareness) | **Tier-list / Rating 🆕** | Q&A conversacional |
 
 ---
 
@@ -145,6 +186,7 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 | Contraste emocional | ● | ○ | ○ | ○ | ● |
 | **Demolición alternativas ⭐** | ○ | ○ | **●** | **●** | ○ |
 | **Q&A conversacional ⭐** | ○ | ○ | **●** | ○ | **●** |
+| **Tier-list / Rating 🆕** | ○ | ○ | **●** | **●** | ○ |
 
 ● = combo ideal | ○ = funciona pero no es el mejor
 

@@ -140,7 +140,7 @@ No todos los guiones siguen el mismo viaje emocional. Estos son 8 arcos DIFERENT
 | **Combinación única** | Ningún guion puede tener la misma combinación de ingredientes B+C+D+F+G que otro del batch |
 | **Ingredientes gastados** | F#73, F#74, G#90, B#29 → máximo 3 de 10 guiones |
 | **Categorías opcionales** | Mínimo 2 guiones deben SALTARSE una categoría mayor (ej: sin demo, sin prueba social, sin agitación) |
-| **Ingredientes frescos** | Mínimo 3 guiones deben usar ingredientes que NUNCA se usaron antes: D#49, E#67, F#75, F#82, G#94, K#125-127 |
+| **Ingredientes frescos** | Mínimo 3 guiones deben usar ingredientes que NUNCA se usaron antes: D#49, E#67, F#75, F#82, G#94, K#125-128 |
 | **Diversidad dentro de categoría** | En Cat. F (Mecanismo), usar mínimo 4 ingredientes DISTINTOS en 10 guiones. No siempre #73/#74. |
 
 ### Arcos narrativos
@@ -173,7 +173,14 @@ No todos los guiones siguen el mismo viaje emocional. Estos son 8 arcos DIFERENT
 | **Variedad de energía** | No todos en el mismo tono. Mezclar: confrontativo, empático, curioso, urgente, calmo |
 | **Jesús confrontativo** | Mínimo 2 de 10 con tono duro/directo |
 | **Jesús vulnerable** | Mínimo 1 de 10 con historia personal/emocional |
-| **Ritmo** | Mínimo 2 de 10 con ritmo rápido (Q&A, lista) vs. lento (historia, analogía) |
+| **Ritmo** | Mínimo 2 de 10 con ritmo rápido (Q&A, lista, tier-list) vs. lento (historia, analogía) |
+
+### Orgánico Instagram (reglas específicas)
+| Regla | Requisito |
+|-------|-----------|
+| **Proporción 75/25** | De cada 4 posts orgánicos, 3 son awareness (sin CTA) y 1 es conversión (con keyword). Validado: @hormozi — el CTA no penaliza views. |
+| **Tier-list/Rating** | Máximo 1 de cada 10. Solo para awareness/autoridad. Jesús opina desde la perspectiva del avatar (no desde experto lejano). |
+| **Caption ≠ resumen** | La caption de un post orgánico NUNCA resume el video. Es CTA puro o frase-hook independiente. Validado: @hormozi y @niksetting. |
 
 ---
 

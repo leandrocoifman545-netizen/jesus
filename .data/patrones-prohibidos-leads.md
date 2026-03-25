@@ -70,6 +70,28 @@ Hooks que pasaron la validación de "genuinamente distintos":
 - **Provocación con dato específico** ("$15K en tele, radio, revistas. Resultado: 1 cliente.") — el número ancla
 - **Nadie Explica** ("Todos te dicen [consejo obvio] pero NADIE te explica cómo verga hacerlo.") — frustración con el consejo genérico, el "cómo" es el hook real
 - **Hipotético Personal** ("Si mañana me despertara en [situación jodida] y quisiera [resultado soñado] en [menor tiempo posible], esto es exactamente lo que haría.") — empatía + plan concreto + urgencia temporal
+
+#### Variante ADP: "Si empezara de cero a los 50" 🆕
+**Fórmula:** "Si tuviera [edad avatar], [limitación 1], [limitación 2], [limitación 3], y quisiera [resultado modesto]... esto es lo que haría."
+
+**Ejemplo completo:**
+> "Si tuviera 50 años, no supiera nada de internet, no tuviera seguidores, y quisiera ganar $50 extra por día... esto es exactamente lo que haría."
+
+**Por qué funciona para ADP:**
+1. La edad (50) matchea el avatar dominante (Patricia 48, Roberto 62 = 56% de compradores)
+2. Las limitaciones son las REALES de la audiencia (no internet, no seguidores, no saber de tecnología)
+3. El resultado es modesto ($50/día) → creíble → no activa el filtro de "scam"
+4. Jesús hablando desde hipotético = empatía sin condescendencia
+5. Validado: @hormozi — posts con esta estructura tienen CLR 24.30% (top 5)
+
+**Variantes para rotar:**
+- "Si tuviera 55 años y mi único ingreso fuera una jubilación mínima..."
+- "Si supiera cocinar pero no tuviera idea de qué es un producto digital..."
+- "Si quisiera dejar de depender de un sueldo pero no supiera ni abrir una cuenta de Gmail..."
+
+**Regla:** El resultado soñado SIEMPRE modesto ($50/día, "plata extra", "un ingreso más"). NUNCA "$10K/mes" ni "libertad financiera". La limitación debe ser REAL del avatar, no inventada.
+**Avatar ideal:** Patricia, Roberto, Carlos (los 3 de mayor peso en compradores reales).
+**Awareness ideal:** Nivel 4-5 (Problem Aware / Most Aware) — la persona ya sabe que quiere algo pero cree que no puede.
 - **Identidad + Dolor** ("Si sos [identidad amplia] y no querés volver a [problema que duele], mirá esto.") — filtra audiencia + activa dolor de repetición
 - **Pregunta Limitación** ("¿Se puede [lograr resultado soñado] incluso si [insertar limitación] en solo [tiempo concreto]?") — la limitación hace que se sientan representados, el tiempo concreto da credibilidad
 - **Asimetría Temporal** ("Tardé [tiempo largo] en aprender esto, pero te lo enseño en menos de [tiempo corto].") — contraste de esfuerzo largo vs entrega corta = valor percibido altísimo

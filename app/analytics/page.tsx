@@ -1,6 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const MatrixView = dynamic(() => import("@/components/matrix-view"), { ssr: false });
+const MinerView = dynamic(() => import("@/components/miner-view"), { ssr: false });
 
 interface AnalyticsData {
   total: number;
@@ -246,7 +250,7 @@ function TrendsSection() {
 export default function AnalyticsPage() {
   const [data, setData] = useState<AnalyticsData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [tab, setTab] = useState<"overview" | "diversity" | "performance" | "gaps" | "trends">("overview");
+  const [tab, setTab] = useState<"overview" | "diversity" | "performance" | "gaps" | "trends" | "matriz" | "miner">("overview");
 
   useEffect(() => {
     fetch("/api/analytics")
@@ -273,16 +277,16 @@ export default function AnalyticsPage() {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-1 mb-8 p-1 bg-zinc-900/50 rounded-xl w-fit">
-        {(["overview", "diversity", "performance", "gaps", "trends"] as const).map(t => (
+      <div className="flex gap-1 mb-8 p-1 bg-zinc-900/50 rounded-xl w-fit overflow-x-auto">
+        {(["overview", "diversity", "performance", "gaps", "trends", "matriz", "miner"] as const).map(t => (
           <button
             key={t}
             onClick={() => setTab(t)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
               tab === t ? "bg-white/10 text-white" : "text-zinc-500 hover:text-zinc-300"
             }`}
           >
-            {t === "overview" ? "General" : t === "diversity" ? "Diversidad" : t === "performance" ? "Performance" : t === "gaps" ? "Gaps" : "Trends"}
+            {t === "overview" ? "General" : t === "diversity" ? "Diversidad" : t === "performance" ? "Performance" : t === "gaps" ? "Gaps" : t === "trends" ? "Trends" : t === "matriz" ? "Matriz 3D" : "Miner"}
           </button>
         ))}
       </div>
@@ -490,6 +494,14 @@ export default function AnalyticsPage() {
 
       {tab === "trends" && (
         <TrendsSection />
+      )}
+
+      {tab === "matriz" && (
+        <MatrixView />
+      )}
+
+      {tab === "miner" && (
+        <MinerView />
       )}
     </div>
   );
