@@ -28,7 +28,7 @@ export default function YouTubeBriefForm({ projects }: Props) {
   const [targetAudience, setTargetAudience] = useState("");
   const [additionalNotes, setAdditionalNotes] = useState("");
   const [outputMode, setOutputMode] = useState<"full_script" | "structure" | "both">("full_script");
-  const [videoType, setVideoType] = useState<"auto" | "vsl_camuflado">("auto");
+  const [videoType, setVideoType] = useState<"auto" | "educational" | "storytelling" | "listicle" | "case_study" | "tutorial" | "debate" | "reaction_analysis" | "vsl_camuflado">("auto");
   const [targetDuration, setTargetDuration] = useState(10);
   const [youtubeRef, setYoutubeRef] = useState("");
 
@@ -45,8 +45,8 @@ export default function YouTubeBriefForm({ projects }: Props) {
       projectId: projectId || undefined,
       productDescription: productDescription || selectedProject?.productDescription || "",
       targetAudience: targetAudience || selectedProject?.targetAudience || "",
-      additionalNotes: videoType === "vsl_camuflado"
-        ? `[FRAMEWORK: vsl_camuflado] Video tipo VSL camuflado — debe seguir la estructura de 9 actos (Ruptura → Origen → Nueva Oportunidad → Objeciones → Oferta → Precio → Urgencia → Garantía → Cierre). Parece contenido educativo pero vende.${additionalNotes ? "\n\n" + additionalNotes : ""}`
+      additionalNotes: videoType !== "auto"
+        ? `[FRAMEWORK: ${videoType}]${additionalNotes ? "\n\n" + additionalNotes : ""}`
         : (additionalNotes || undefined),
       outputMode,
       targetDurationMinutes: targetDuration,
@@ -89,7 +89,11 @@ export default function YouTubeBriefForm({ projects }: Props) {
               setProgress(Math.min(95, Math.round((progressRef.current / estimatedChars) * 100)));
             } else if (data.type === "done") {
               setProgress(100);
-              toast("Video generado");
+              if (data.validation?.issues?.length > 0) {
+                toast(`Video generado con ${data.validation.issues.length} advertencia(s)`);
+              } else {
+                toast("Video generado");
+              }
               router.push(`/youtube/${data.generationId}`);
               return;
             } else if (data.type === "error") {
@@ -196,14 +200,21 @@ export default function YouTubeBriefForm({ projects }: Props) {
           </div>
         </div>
 
-        {/* Video type */}
+        {/* Framework selector */}
         <div>
-          <label className="block text-sm font-medium text-zinc-300 mb-3">Tipo de video</label>
-          <div className="grid grid-cols-2 gap-3">
+          <label className="block text-sm font-medium text-zinc-300 mb-3">Framework</label>
+          <div className="grid grid-cols-3 gap-2">
             {([
-              { value: "auto" as const, label: "Auto", desc: "El sistema elige el framework ideal.", icon: "M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" },
-              { value: "vsl_camuflado" as const, label: "VSL Camuflado", desc: "Video que parece contenido pero vende (9 actos Benson).", icon: "M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" },
-            ]).map((opt) => {
+              { value: "auto" as const, label: "Auto", desc: "El sistema elige", pct: "" },
+              { value: "educational" as const, label: "Educativo", desc: "Enseñar algo valioso", pct: "30%" },
+              { value: "storytelling" as const, label: "Storytelling", desc: "Historia con arco", pct: "20%" },
+              { value: "listicle" as const, label: "Listicle", desc: "\"5 errores\", \"3 formas\"", pct: "15%" },
+              { value: "case_study" as const, label: "Caso de estudio", desc: "Análisis de UN resultado", pct: "10%" },
+              { value: "tutorial" as const, label: "Tutorial", desc: "Paso a paso en vivo", pct: "10%" },
+              { value: "debate" as const, label: "Debate", desc: "Dos lados, dar opinión", pct: "5%" },
+              { value: "reaction_analysis" as const, label: "Reacción", desc: "Analizar tendencia", pct: "5%" },
+              { value: "vsl_camuflado" as const, label: "VSL Camuflado", desc: "Contenido que vende", pct: "5%" },
+            ] as const).map((opt) => {
               const selected = videoType === opt.value;
               return (
                 <button
@@ -211,21 +222,21 @@ export default function YouTubeBriefForm({ projects }: Props) {
                   type="button"
                   onClick={() => setVideoType(opt.value)}
                   disabled={loading}
-                  className={`relative p-4 rounded-xl border text-left transition-all disabled:opacity-50 cursor-pointer ${
+                  className={`relative p-3 rounded-xl border text-left transition-all disabled:opacity-50 cursor-pointer ${
                     selected
                       ? "border-red-500/50 bg-red-500/5 ring-1 ring-red-500/20"
                       : "border-zinc-800 bg-zinc-900/30 hover:border-zinc-700"
                   }`}
                 >
-                  <div className="flex items-center gap-2 mb-1 pointer-events-none">
-                    <svg className={`w-4 h-4 ${selected ? "text-red-400" : "text-zinc-500"}`} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d={opt.icon} />
-                    </svg>
+                  <div className="flex items-center justify-between mb-0.5 pointer-events-none">
                     <span className={`text-sm font-semibold ${selected ? "text-white" : "text-zinc-400"}`}>
                       {opt.label}
                     </span>
+                    {opt.pct && (
+                      <span className={`text-[10px] font-mono ${selected ? "text-red-400" : "text-zinc-600"}`}>{opt.pct}</span>
+                    )}
                   </div>
-                  <p className="text-xs text-zinc-500 pointer-events-none">{opt.desc}</p>
+                  <p className="text-[11px] text-zinc-500 pointer-events-none leading-tight">{opt.desc}</p>
                 </button>
               );
             })}

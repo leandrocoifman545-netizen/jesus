@@ -92,9 +92,16 @@ export async function POST(req: NextRequest) {
       try {
         send({ type: "start" });
 
-        const longform = await generateLongformStream(brief, (chunk) => {
+        const result = await generateLongformStream(brief, (chunk) => {
           send({ type: "chunk", text: chunk });
         });
+
+        const { longform, validation } = result;
+
+        // Log validation issues (non-blocking — we still save and return)
+        if (validation.issues.length > 0) {
+          console.log(`[longform-validate] ${validation.issues.length} issues:`, validation.issues);
+        }
 
         const generationId = crypto.randomUUID();
         await saveGeneration({
@@ -133,17 +140,30 @@ export async function POST(req: NextRequest) {
               timing_seconds: 15,
               cta_type: "custom" as const,
             },
-            ingredients_used: [],
+            ingredients_used: (longform.ingredients_used || []).map((ing) => ({
+              category: ing.category,
+              ingredient_number: ing.ingredient_number,
+              ingredient_name: ing.ingredient_name,
+            })),
             model_sale_type: "custom",
-            body_type: "longform",
-            angle_family: "contenido",
+            body_type: longform.framework || "longform",
+            angle_family: longform.angle_family || "contenido",
+            avatar: longform.avatar,
+            awareness_level: longform.awareness_level,
+            niche: longform.niche,
             total_duration_seconds: longform.total_duration_seconds,
             word_count: longform.word_count,
           },
           createdAt: new Date().toISOString(),
         });
 
-        send({ type: "done", generationId, title: longform.title, longform });
+        send({
+          type: "done",
+          generationId,
+          title: longform.title,
+          longform,
+          validation: validation.issues.length > 0 ? validation : undefined,
+        });
       } catch (err) {
         const message = err instanceof Error ? err.message : "Error desconocido";
         send({ type: "error", error: message });

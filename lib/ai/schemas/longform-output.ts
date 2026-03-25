@@ -54,6 +54,13 @@ export interface LongformSEO {
   thumbnail_idea: string;
 }
 
+export interface LongformIngredient {
+  category: string;
+  ingredient_number: number;
+  ingredient_name: string;
+  chapter_number?: number;
+}
+
 export interface LongformOutput {
   output_mode: LongformOutputMode;
   title: string;
@@ -73,4 +80,18 @@ export interface LongformOutput {
   emotional_arc: string;
   /** Notas generales de producción */
   production_notes: string;
+  /** Avatar ADP principal (patricia, roberto, martin, laura, valentina, diego, camila, soledad) */
+  avatar?: string;
+  /** Nivel Schwartz 1-5 */
+  awareness_level?: number;
+  /** Familia de ángulo (identidad, oportunidad, confrontacion, mecanismo, historia) */
+  angle_family?: string;
+  /** Nicho específico */
+  niche?: string;
+  /** Tensión del motor de audiencia */
+  tension?: string;
+  /** Objeción principal que disuelve el video */
+  primary_objection?: string;
+  /** Ingredientes usados por capítulo */
+  ingredients_used?: LongformIngredient[];
 }

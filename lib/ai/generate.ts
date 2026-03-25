@@ -18,7 +18,7 @@ import { listReferences, listGenerations, getBurnedLeads, getCaseStudies, getAct
 import { getCoverage } from "../coverage";
 import { getAudienceContext } from "../knowledge/audience";
 import { getObjectionsContext } from "../knowledge/objections";
-import { getKnowledgeContext } from "../knowledge/data-files";
+import { getKnowledgeContext, getKnowledgeContextLongform } from "../knowledge/data-files";
 import { buildAutoBrief } from "./auto-brief";
 import { isResearchStale, triggerResearchRefresh } from "./angle-discovery";
 
@@ -1479,7 +1479,7 @@ const LONGFORM_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
 {
   "output_mode": "full_script" | "structure",
   "title": string,
-  "framework": "educational" | "storytelling" | "listicle" | "case_study" | "debate" | "tutorial" | "reaction_analysis",
+  "framework": "educational" | "storytelling" | "listicle" | "case_study" | "debate" | "tutorial" | "reaction_analysis" | "vsl_camuflado",
   "hook": {
     "script_text": string (texto completo del hook, primeros 30-60 segundos),
     "visual_notes": string (qué mostrar en pantalla durante el hook),
@@ -1516,7 +1516,19 @@ const LONGFORM_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
   "total_duration_seconds": number,
   "word_count": number,
   "emotional_arc": string,
-  "production_notes": string
+  "production_notes": string,
+  "avatar": string (patricia | roberto | martin | laura | valentina | diego | camila | soledad),
+  "awareness_level": number (1-5, nivel Schwartz),
+  "angle_family": string (identidad | oportunidad | confrontacion | mecanismo | historia),
+  "niche": string (nicho específico del video),
+  "tension": string (tensión del motor de audiencia elegida),
+  "primary_objection": string (objeción principal que disuelve el video),
+  "ingredients_used": [{
+    "category": string (A-K),
+    "ingredient_number": number,
+    "ingredient_name": string,
+    "chapter_number": number (en qué capítulo se usa)
+  }]
 }`;
 
 const LONGFORM_REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
@@ -1605,12 +1617,272 @@ function buildLongformBriefContext(brief: BriefInput): string {
   return prompt;
 }
 
-function buildLongformUserPrompt(brief: BriefInput): string {
+async function buildLongformDiversityContext(): Promise<string> {
+  try {
+    const allGenerations = await listGenerations();
+    const longformGens = allGenerations
+      .filter((g) => g.contentType === "longform" && g.longform)
+      .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+      .slice(0, 10);
+
+    if (longformGens.length === 0) return "";
+
+    const lines = longformGens.map((g) => {
+      const lf = g.longform!;
+      return `- "${g.title}" | framework: ${lf.framework} | avatar: ${lf.avatar || "?"} | ángulo: ${lf.angle_family || "?"} | tensión: ${lf.tension || "?"} | hook: "${lf.hook.script_text.slice(0, 80)}..."`;
+    });
+
+    return `\n\n## VIDEOS ANTERIORES (DIVERSIDAD — NO REPETIR)
+
+Últimos ${longformGens.length} videos generados:
+${lines.join("\n")}
+
+**Reglas de diversidad:**
+- NUNCA repetir el mismo framework 2 videos seguidos
+- NUNCA el mismo avatar 2 videos seguidos
+- NUNCA el mismo ángulo 2 videos seguidos
+- Si el hook anterior era dato/número, usá otro tipo
+- Rotar arcos emocionales`;
+  } catch {
+    return "";
+  }
+}
+
+// --- Longform auto-brief (coverage-based selection) ---
+
+import { getLongformCoverage } from "../coverage";
+import { ALL_ANGLE_FAMILIES, ALL_AVATARS, AVATAR_BUYER_WEIGHTS, ALL_AWARENESS_LEVELS } from "../constants/hook-types";
+
+const ALL_LONGFORM_FRAMEWORKS = ["educational", "storytelling", "listicle", "case_study", "tutorial", "debate", "reaction_analysis", "vsl_camuflado"];
+const LONGFORM_FRAMEWORK_WEIGHTS: Record<string, number> = {
+  educational: 0.30,
+  storytelling: 0.20,
+  listicle: 0.15,
+  case_study: 0.10,
+  tutorial: 0.10,
+  debate: 0.05,
+  reaction_analysis: 0.05,
+  vsl_camuflado: 0.05,
+};
+
+const LONGFORM_ANGLE_FRAMEWORK_COMPAT: Record<string, string[]> = {
+  identidad: ["storytelling", "educational", "case_study"],
+  oportunidad: ["educational", "listicle", "reaction_analysis"],
+  confrontacion: ["debate", "educational", "listicle"],
+  mecanismo: ["tutorial", "educational", "listicle"],
+  historia: ["storytelling", "case_study"],
+};
+
+function pickLongformWeighted(
+  all: string[],
+  weights: Record<string, number>,
+  counts: Record<string, number>,
+  total: number,
+): string {
+  const scores = all.map((item) => {
+    const weight = weights[item] || 0.05;
+    const used = counts[item] || 0;
+    const target = Math.max(1, Math.round(weight * total));
+    const gap = Math.max(0, target - used);
+    const score = weight * (1 + gap * 0.5 + (used === 0 ? 2 : 0));
+    return { item, score };
+  });
+  const totalScore = scores.reduce((sum, s) => sum + s.score, 0);
+  let rand = Math.random() * totalScore;
+  for (const s of scores) {
+    rand -= s.score;
+    if (rand <= 0) return s.item;
+  }
+  return scores[0].item;
+}
+
+function pickLeastUsedFrom(all: readonly string[], counts: Record<string, number>): string {
+  const withCounts = all.map((item) => ({ item, count: counts[item] || 0 }));
+  const minCount = Math.min(...withCounts.map((x) => x.count));
+  const candidates = withCounts.filter((x) => x.count === minCount);
+  return candidates[Math.floor(Math.random() * candidates.length)].item;
+}
+
+function pickLongformAvatar(counts: Record<string, number>, total: number): string {
+  const scores = ALL_AVATARS.map((avatar) => {
+    const weight = AVATAR_BUYER_WEIGHTS[avatar] || 0.05;
+    const used = counts[avatar] || 0;
+    const target = Math.max(1, Math.round(weight * total));
+    const gap = Math.max(0, target - used);
+    const score = weight * (1 + gap * 0.5 + (used === 0 ? 2 : 0));
+    return { avatar, score };
+  });
+  const totalScore = scores.reduce((sum, s) => sum + s.score, 0);
+  let rand = Math.random() * totalScore;
+  for (const s of scores) {
+    rand -= s.score;
+    if (rand <= 0) return s.avatar;
+  }
+  return scores[0].avatar;
+}
+
+async function buildLongformAutoBrief(brief: BriefInput): Promise<string> {
+  try {
+    const coverage = await getLongformCoverage();
+    const total = coverage.totalLongform;
+
+    // Parse user overrides from additionalNotes
+    const notes = brief.additionalNotes || "";
+    const frameworkMatch = notes.match(/\[FRAMEWORK:\s*(\w+)\]/i);
+    const avatarMatch = notes.match(/\[AVATAR:\s*(\w+)\]/i);
+    const angleMatch = notes.match(/\[ÁNGULO:\s*(\w+)\]/i) || notes.match(/\[ANGULO:\s*(\w+)\]/i);
+    const awarenessMatch = notes.match(/\[AWARENESS:\s*(\d)\]/i) || notes.match(/\[SCHWARTZ:\s*(\d)\]/i);
+
+    // Select framework (weighted by distribution %)
+    const framework = frameworkMatch?.[1] || pickLongformWeighted(ALL_LONGFORM_FRAMEWORKS, LONGFORM_FRAMEWORK_WEIGHTS, coverage.byFramework, total);
+
+    // Select angle compatible with framework
+    let angle: string;
+    if (angleMatch?.[1]) {
+      angle = angleMatch[1];
+    } else {
+      const compatAngles = Object.entries(LONGFORM_ANGLE_FRAMEWORK_COMPAT)
+        .filter(([, frameworks]) => frameworks.includes(framework))
+        .map(([family]) => family);
+      angle = compatAngles.length > 0
+        ? pickLeastUsedFrom(compatAngles, coverage.byAngle)
+        : pickLeastUsedFrom(ALL_ANGLE_FAMILIES, coverage.byAngle);
+    }
+
+    // Select avatar (weighted by buyer data)
+    const avatar = avatarMatch?.[1] || pickLongformAvatar(coverage.byAvatar, total);
+
+    // Select awareness level
+    const awarenessStrs = ALL_AWARENESS_LEVELS.map(String);
+    const awareness = awarenessMatch?.[1] || pickLeastUsedFrom(awarenessStrs, coverage.byAwareness);
+
+    return `\n\n## SELECCIÓN AUTOMÁTICA (basada en ${total} videos longform generados)
+
+### RESTRICCIONES DURAS — usá EXACTAMENTE estos valores:
+- **Framework:** ${framework} (usado ${coverage.byFramework[framework] || 0}/${total} veces)
+- **Familia de ángulo:** ${angle} (usado ${coverage.byAngle[angle] || 0}/${total} veces)
+- **Avatar principal:** ${avatar} (usado ${coverage.byAvatar[avatar] || 0}/${total} veces)
+- **Nivel de conciencia (Schwartz):** ${awareness} (usado ${coverage.byAwareness[awareness] || 0}/${total} veces)
+
+Estos valores son restricciones DURAS. Usá exactamente el framework, ángulo y avatar indicados.
+El avatar define el TONO entero del video — escribile a esa persona.`;
+  } catch {
+    return "";
+  }
+}
+
+// --- Longform post-validation (deterministic — no API call) ---
+
+interface LongformValidationResult {
+  passed: boolean;
+  issues: string[];
+}
+
+function validateLongform(longform: LongformOutput, targetMinutes: number): LongformValidationResult {
+  const issues: string[] = [];
+
+  // 1. Voseo check — scan all text for "tú/tienes/puedes"
+  const allText = [
+    longform.hook.script_text,
+    ...longform.chapters.map((ch) => ch.content),
+    longform.conclusion.content,
+    longform.cta.primary_text,
+    longform.cta.midroll_text || "",
+  ].join(" ").toLowerCase();
+
+  const tuteoPatterns = /\b(tú |tienes|puedes|debes|quieres|sabes que tú|haces|necesitas|piensas)\b/;
+  if (tuteoPatterns.test(allText)) {
+    issues.push("GRAVE: Se detectó tuteo (tú/tienes/puedes). Todo debe ser voseo argentino (vos/tenés/podés).");
+  }
+
+  // 2. Duration within ±10%
+  const targetSeconds = targetMinutes * 60;
+  const tolerance = targetSeconds * 0.1;
+  if (longform.total_duration_seconds < targetSeconds - tolerance) {
+    issues.push(`Duración (${Math.round(longform.total_duration_seconds / 60)}min) está por debajo del target (${targetMinutes}min ±10%).`);
+  }
+  if (longform.total_duration_seconds > targetSeconds + tolerance) {
+    issues.push(`Duración (${Math.round(longform.total_duration_seconds / 60)}min) excede el target (${targetMinutes}min ±10%).`);
+  }
+
+  // 3. Hook specificity — if it's under 20 words, probably too generic
+  const hookWords = longform.hook.script_text.split(/\s+/).length;
+  if (hookWords < 15) {
+    issues.push("Hook demasiado corto (< 15 palabras). Debería ser específico e irrepetible, no genérico.");
+  }
+
+  // 4. SEO title length
+  if (longform.seo.title.length > 60) {
+    issues.push(`Título SEO tiene ${longform.seo.title.length} chars (máx 60).`);
+  }
+
+  // 5. Missing required fields
+  if (!longform.avatar) {
+    issues.push("Falta campo 'avatar' — debe elegir UN avatar del sistema.");
+  }
+  if (!longform.angle_family) {
+    issues.push("Falta campo 'angle_family' — debe indicar la familia de ángulo.");
+  }
+  if (!longform.tension) {
+    issues.push("Falta campo 'tension' — debe activar el motor de audiencia.");
+  }
+  if (!longform.primary_objection) {
+    issues.push("Falta campo 'primary_objection' — el video debe disolver una objeción.");
+  }
+  if (!longform.ingredients_used || longform.ingredients_used.length === 0) {
+    issues.push("Falta campo 'ingredients_used' — debe distribuir ingredientes por capítulo.");
+  }
+
+  // 6. Ingredient count by duration
+  const minIngredients = targetMinutes <= 10 ? 15 : 25;
+  if (longform.ingredients_used && longform.ingredients_used.length < minIngredients) {
+    issues.push(`Solo ${longform.ingredients_used.length} ingredientes (mínimo ${minIngredients} para ${targetMinutes}min).`);
+  }
+
+  // 7. Chapters must have transitions between them
+  if (longform.chapters.length > 1 && longform.transitions.length < longform.chapters.length - 1) {
+    issues.push(`Faltan transiciones: ${longform.chapters.length} capítulos pero solo ${longform.transitions.length} transiciones.`);
+  }
+
+  // 8. Each chapter should have content
+  for (const ch of longform.chapters) {
+    if (!ch.content || ch.content.length < 50) {
+      issues.push(`Capítulo ${ch.number} ("${ch.title}") tiene contenido muy corto.`);
+    }
+  }
+
+  // 9. Pattern interrupts — for videos > 8 min, should have visual_notes on most chapters
+  if (targetMinutes >= 8) {
+    const chaptersWithVisuals = longform.chapters.filter((ch) => ch.visual_notes && ch.visual_notes.length > 10).length;
+    if (chaptersWithVisuals < Math.ceil(longform.chapters.length * 0.5)) {
+      issues.push("Menos de la mitad de los capítulos tienen notas de producción (visual_notes). Necesita pattern interrupts.");
+    }
+  }
+
+  return {
+    passed: issues.filter((i) => i.startsWith("GRAVE")).length === 0,
+    issues,
+  };
+}
+
+async function buildLongformUserPrompt(brief: BriefInput): Promise<string> {
   const outputMode = brief.outputMode || "full_script";
   const duration = brief.targetDurationMinutes || 10;
   const chapters = Math.max(3, Math.min(5, Math.round(duration / 3)));
 
   let prompt = buildLongformBriefContext(brief);
+
+  // Inject auto-brief (coverage-based framework/avatar/angle selection)
+  const autoBriefContext = await buildLongformAutoBrief(brief);
+  if (autoBriefContext) {
+    prompt += autoBriefContext;
+  }
+
+  // Inject diversity context from previous longform generations
+  const diversityContext = await buildLongformDiversityContext();
+  if (diversityContext) {
+    prompt += diversityContext;
+  }
 
   const modeInstruction = outputMode === "both"
     ? `Generá un guión de YouTube largo con AMBOS: guión completo Y estructura. En cada capítulo:
@@ -1621,12 +1893,16 @@ Así el presentador tiene las dos opciones.`
 
   prompt += `\n\n## INSTRUCCIÓN
 ${modeInstruction}
-1. Hook potente de 30-60 segundos que enganche y prometa algo claro
-2. ${chapters} capítulos de contenido (cada uno con título, contenido y notas visuales)
-3. Transiciones entre capítulos que mantengan la curiosidad
-4. Conclusión con impacto (no resumen aburrido)
-5. CTA nativo de YouTube (suscribirse, ver otro video, link en descripción)
-6. SEO completo: título (máx 60 chars), descripción, tags, idea de thumbnail
+1. Elegí UN avatar y escribile a él/ella durante todo el video
+2. Activá el motor de audiencia: elegí tensión + vocabulario + objeción a disolver
+3. Hook potente de 30-60 segundos que enganche y prometa algo claro
+4. ${chapters} capítulos de contenido (cada uno con título, contenido y notas visuales)
+5. Distribuí ingredientes de la enciclopedia por capítulo (15-25 para 8-10min, 25-40 para 15-20min)
+6. Transiciones entre capítulos que mantengan la curiosidad
+7. Conclusión con impacto (no resumen aburrido)
+8. CTA nativo de YouTube (suscribirse, ver otro video, link en descripción)
+9. SEO completo: título (máx 60 chars), descripción, tags, idea de thumbnail
+10. Completá TODOS los campos del JSON: avatar, awareness_level, angle_family, niche, tension, primary_objection, ingredients_used
 
 Duración objetivo: ${duration} minutos (~${duration * 150} palabras en full_script).
 ${outputMode === "both" ? 'En el campo "output_mode" del JSON, usá "both".' : ""}
@@ -1648,8 +1924,8 @@ async function callClaudeLongform(
 ): Promise<unknown> {
   const client = getAnthropicClient();
 
-  // Load knowledge files (cached in memory for 60s)
-  const knowledgeContext = await getKnowledgeContext();
+  // Load longform-specific knowledge (12 files: avatares, compradores, motor audiencia, objeciones, ingredientes, etc.)
+  const knowledgeContext = await getKnowledgeContextLongform();
 
   const staticContext = [AVATAR_CONTEXT, TONE_JESUS, TECHNIQUES_CONTEXT].join("\n\n---\n\n");
 
@@ -1698,20 +1974,27 @@ async function callClaudeLongform(
   return extractJSON(textBlock.text);
 }
 
-export async function generateLongform(brief: BriefInput): Promise<LongformOutput> {
-  const prompt = buildLongformUserPrompt(brief);
-  return callClaudeLongform(prompt, brief.generationRules) as Promise<LongformOutput>;
+export interface LongformGenerationResult {
+  longform: LongformOutput;
+  validation: LongformValidationResult;
+}
+
+export async function generateLongform(brief: BriefInput): Promise<LongformGenerationResult> {
+  const prompt = await buildLongformUserPrompt(brief);
+  const longform = await callClaudeLongform(prompt, brief.generationRules) as LongformOutput;
+  const validation = validateLongform(longform, brief.targetDurationMinutes || 10);
+  return { longform, validation };
 }
 
 export async function generateLongformStream(
   brief: BriefInput,
   onChunk: (text: string) => void,
-): Promise<LongformOutput> {
+): Promise<LongformGenerationResult> {
   const client = getAnthropicClient();
-  const prompt = buildLongformUserPrompt(brief);
+  const prompt = await buildLongformUserPrompt(brief);
 
-  // Load knowledge files (cached in memory for 60s)
-  const knowledgeContext = await getKnowledgeContext();
+  // Load longform-specific knowledge (12 files: avatares, compradores, motor audiencia, objeciones, ingredientes, etc.)
+  const knowledgeContext = await getKnowledgeContextLongform();
 
   const staticContext = [AVATAR_CONTEXT, TONE_JESUS, TECHNIQUES_CONTEXT].join("\n\n---\n\n");
 
@@ -1761,7 +2044,9 @@ export async function generateLongformStream(
     }
   }
 
-  return extractJSON(fullText) as LongformOutput;
+  const longform = extractJSON(fullText) as LongformOutput;
+  const validation = validateLongform(longform, brief.targetDurationMinutes || 10);
+  return { longform, validation };
 }
 
 export async function analyzeLongformReference(transcript: string): Promise<LongformReferenceAnalysis> {

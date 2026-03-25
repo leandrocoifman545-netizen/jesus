@@ -46,6 +46,32 @@ export async function computeCoverage(): Promise<CoverageData> {
   };
 
   for (const gen of generations) {
+    // Longform generations: track framework, avatar, angle, awareness, niche
+    if (gen.contentType === "longform" && gen.longform) {
+      const lf = gen.longform;
+      if (lf.framework) {
+        const lfKey = `lf_${lf.framework}`;
+        data.byFramework[lfKey] = (data.byFramework[lfKey] || 0) + 1;
+      }
+      if (lf.avatar) {
+        data.byAvatar[lf.avatar] = (data.byAvatar[lf.avatar] || 0) + 1;
+      }
+      if (lf.angle_family) {
+        data.byAngle[lf.angle_family] = (data.byAngle[lf.angle_family] || 0) + 1;
+      }
+      if (lf.awareness_level) {
+        const key = String(lf.awareness_level);
+        data.byAwareness[key] = (data.byAwareness[key] || 0) + 1;
+      }
+      if (lf.niche) {
+        data.byNiche[lf.niche] = (data.byNiche[lf.niche] || 0) + 1;
+      }
+      const status = gen.status || "draft";
+      data.byStatus[status] = (data.byStatus[status] || 0) + 1;
+      data.totalGenerations++;
+      continue;
+    }
+
     // Skip corrupt/incomplete generations
     if (!gen.script?.development?.framework_used) continue;
 
@@ -182,4 +208,45 @@ export async function getCoverage(): Promise<CoverageData> {
 export function invalidateCoverageCache(): void {
   coverageCache = null;
   lastRefreshTime = 0;
+}
+
+// --- Longform-specific coverage ---
+
+export interface LongformCoverageData {
+  totalLongform: number;
+  byFramework: Record<string, number>;
+  byAvatar: Record<string, number>;
+  byAngle: Record<string, number>;
+  byAwareness: Record<string, number>;
+  byNiche: Record<string, number>;
+  byTension: Record<string, number>;
+}
+
+const ALL_LONGFORM_FRAMEWORKS = ["educational", "storytelling", "listicle", "case_study", "tutorial", "debate", "reaction_analysis", "vsl_camuflado"];
+
+export async function getLongformCoverage(): Promise<LongformCoverageData> {
+  const generations = await listGenerations();
+  const longformGens = generations.filter((g) => g.contentType === "longform" && g.longform);
+
+  const data: LongformCoverageData = {
+    totalLongform: longformGens.length,
+    byFramework: {},
+    byAvatar: {},
+    byAngle: {},
+    byAwareness: {},
+    byNiche: {},
+    byTension: {},
+  };
+
+  for (const gen of longformGens) {
+    const lf = gen.longform!;
+    if (lf.framework) data.byFramework[lf.framework] = (data.byFramework[lf.framework] || 0) + 1;
+    if (lf.avatar) data.byAvatar[lf.avatar] = (data.byAvatar[lf.avatar] || 0) + 1;
+    if (lf.angle_family) data.byAngle[lf.angle_family] = (data.byAngle[lf.angle_family] || 0) + 1;
+    if (lf.awareness_level) data.byAwareness[String(lf.awareness_level)] = (data.byAwareness[String(lf.awareness_level)] || 0) + 1;
+    if (lf.niche) data.byNiche[lf.niche] = (data.byNiche[lf.niche] || 0) + 1;
+    if (lf.tension) data.byTension[lf.tension] = (data.byTension[lf.tension] || 0) + 1;
+  }
+
+  return data;
 }
