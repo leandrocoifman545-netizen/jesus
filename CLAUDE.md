@@ -19,6 +19,9 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 ### Si pide STORIES DE INSTAGRAM (detectar: "stories", "historias", "secuencia", "calentamiento", "stories de la semana", "plan de stories", "armame stories", "instagram stories")
 → **Ejecutar skill `/stories`** — tiene el proceso completo con Constructor de Calentamiento, 7 tipos de secuencia, integración con motor de audiencia, avatares y setter scripts.
 
+### Si pide POSTS DE INSTAGRAM / CARRUSELES (detectar: "posts", "carrusel", "carruseles", "post de instagram", "publicaciones", "feed", "plan de posts", "armame posts", "contenido del feed")
+→ **Ejecutar skill `/posts-ig`** — genera batch semanal de 3-5 posts (carruseles educativos + imágenes estáticas) con slides, caption, keyword y lead magnet. SEPARADO de `/plan-week` (videos) y `/stories` (historias).
+
 ### Si pide un AD COPY / COPY DE META ADS (detectar: "copy", "ad copy", "texto del ad", "descripción del ad", "generame el copy", "copy para meta", "copy para facebook")
 → **Ejecutar skill `/ad-copy`** — genera headline + descripción + texto principal para anuncios de imagen en Meta Ads.
 
@@ -73,7 +76,7 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | **Research Engine Ads** | **`.data/research-engine-ads.md`** | **No existía — pipeline de investigación: 6 fuentes, teardown template, voice mining, 4 documentos output** |
 | **Niche Mapping Ads** | **`.data/niche-mapping-ads.md`** | **No existía — 20 nichos × 20 ángulos, Matriz de Multiplicación, 8 tipos de hook, validation checklist** |
 | **Skill Ad Factory** | **`.claude/skills/ad-factory/SKILL.md`** | **No existía — producción masiva: 7 fases, 100+ copies + imágenes + campaña Meta Ads** |
-| **Skill Análisis IG** | **`.claude/skills/analisis-ig/SKILL.md`** | **No existía — pipeline completo: scrape → descarga → transcripción → análisis de patrones → documento consolidado** |
+| **Skill Análisis IG** | **`.claude/skills/analisis-ig/SKILL.md`** | **Pipeline IG: `ig-pipeline.mjs` (orquestador), `ig-analyze.mjs` (métricas auto), `ig-search.mjs` (búsqueda cross-profile), `ig-patterns.mjs` (máquina de patrones), `ig-cross-generations.mjs` (patrones×generaciones). 7 perfiles, 1475 posts, 526 transcripciones, 517 hooks extraídos. Patterns feed into `/guion` y `/plan-week`.** |
 
 ## Sistema auto-brief (anti-genérico)
 

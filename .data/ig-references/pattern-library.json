@@ -1,0 +1,2224 @@
+{
+  "generated_at": "2026-03-25T10:51:50.101Z",
+  "total_videos": 517,
+  "total_profiles": 6,
+  "profiles": [
+    "faridieck",
+    "herasmedia",
+    "hormozi",
+    "niksetting",
+    "ramiro.cubria",
+    "tino.mossu"
+  ],
+  "opening_patterns": [
+    {
+      "pattern": "ancla_precio_invertida",
+      "count": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "avg_clr": 345.19,
+      "weighted_clr": 345.19,
+      "median_clr": 345.19,
+      "avg_views": 130079,
+      "examples": [
+        {
+          "text": "10.000 dólares te debería cobrar por estos tres prompts de ChatGPT Pero hoy me agarraste de buen humor Así que más te va",
+          "clr": 345.19,
+          "views": 130079,
+          "shortCode": "DNXEA4GMDDT",
+          "profile": "ramiro.cubria"
+        }
+      ]
+    },
+    {
+      "pattern": "segunda_persona",
+      "count": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "avg_clr": 174.28,
+      "weighted_clr": 215.42,
+      "median_clr": 174.28,
+      "avg_views": 28376,
+      "examples": [
+        {
+          "text": "Te voy a regalar mi sistema de contenido de 3.000 dólares completamente gratis. Esta plantilla de Notion no solamente me",
+          "clr": 293.37,
+          "views": 6528,
+          "shortCode": "DRF7PQyEvWQ",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "A vos te gustan grandes y venosas, ¿no? Querido, correcto, a mí me gustan grandes y bien ramificadas. Las automatizacion",
+          "clr": 55.19,
+          "views": 50224,
+          "shortCode": "DNdlV5utMPL",
+          "profile": "ramiro.cubria"
+        }
+      ]
+    },
+    {
+      "pattern": "exclusividad",
+      "count": 15,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 186.62,
+      "weighted_clr": 194.74,
+      "median_clr": 177.04,
+      "avg_views": 48506,
+      "examples": [
+        {
+          "text": "Se acaba de filtrar esta base de datos con 15.286 agentes de inteligencia artificial que automatizan todas las tareas de",
+          "clr": 276.52,
+          "views": 11655,
+          "shortCode": "DQcxD8aksHu",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Se acaba de filtrar esta Wikipedia secreta con más de 1500 agentes de inteligencia artificial que te automatizan todas l",
+          "clr": 275.68,
+          "views": 9145,
+          "shortCode": "DQCVUlNjUnf",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Este video lo borro en 24 horas. Se acaba de filtrar este nuevo agente de inteligencia artificial que es una puta locura",
+          "clr": 272.34,
+          "views": 4348,
+          "shortCode": "DPy3IFLjUuc",
+          "profile": "ramiro.cubria"
+        }
+      ]
+    },
+    {
+      "pattern": "imperativo",
+      "count": 11,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 99.48,
+      "weighted_clr": 172.24,
+      "median_clr": 82.26,
+      "avg_views": 93436,
+      "examples": [
+        {
+          "text": "No vuelvas a escribir tus guiones con el chat GPT porque son una mierrrrrrr. Chat GPT es una mierda y los guiones suenan",
+          "clr": 254.68,
+          "views": 13397,
+          "shortCode": "DVOHHIwDrae",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "No vuelvas a escribir tus guiones con el chat GPT porque son una mierda. Cada vez que haces un guión con el chat GPT par",
+          "clr": 187.04,
+          "views": 21203,
+          "shortCode": "DNCaZHEM1lu",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Para crecer en Instagram me importa una mierda lo que dices siempre y cuando consigas lo que acabo de hacer contigo en e",
+          "clr": 121.05,
+          "views": 46782,
+          "shortCode": "C7cMxvxpj0B",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "incredulidad",
+      "count": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "avg_clr": 202.8,
+      "weighted_clr": 164.88,
+      "median_clr": 202.8,
+      "avg_views": 12092,
+      "examples": [
+        {
+          "text": "No entiendo cómo todavía no tenés acceso a este documento. 4 prompts de chat GPT para hacer 30 mil dólares por mes. Es u",
+          "clr": 314.37,
+          "views": 14304,
+          "shortCode": "DQuFQTHDiCB",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Yo no entiendo por qué mierda vas a gastarte toda tu propia guita en anuncios si podés aprovecharte de la billetera gord",
+          "clr": 91.22,
+          "views": 9880,
+          "shortCode": "DUZoMI0DP3Q",
+          "profile": "ramiro.cubria"
+        }
+      ]
+    },
+    {
+      "pattern": "provocacion",
+      "count": 90,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 86.27,
+      "weighted_clr": 89.77,
+      "median_clr": 68.41,
+      "avg_views": 328465,
+      "examples": [
+        {
+          "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
+          "clr": 191.13,
+          "views": 1533,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "2020, 2021, 2022, 2023, 2024, 5 años han pasado y sigues sin crecer en Instagram. Pero hay una solución que nunca antes ",
+          "clr": 121.55,
+          "views": 17116,
+          "shortCode": "DFVOFvQuj1M",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Las mujeres tienen expectativas de los hombres imposibles de cumplir. ¿A qué te refieres? Esperan que a los 20, 25 años ",
+          "clr": 0.58,
+          "views": 998101,
+          "shortCode": "DOKT4IdjPL3",
+          "profile": "faridieck"
+        }
+      ]
+    },
+    {
+      "pattern": "pregunta",
+      "count": 120,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 66.28,
+      "weighted_clr": 57.53,
+      "median_clr": 53.52,
+      "avg_views": 137023,
+      "examples": [
+        {
+          "text": "No sé qué coño publicar, ¿me ayudas? Ok, ¿cuánto tiempo tienes para hacer contenido? No sé, no mucho. Ok, entonces vas a",
+          "clr": 136.86,
+          "views": 25785,
+          "shortCode": "DVylb4_DdNi",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Este es un gancho interrupción de patrón ¿Esta casa es rentada o es tuya? Este es un gancho pregunta polémica Millonario",
+          "clr": 110.15,
+          "views": 33609,
+          "shortCode": "DUWHpuskZkF",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Se puede ganar 100.000 seguidores en 30 días? ¿Qué? Ah, es imposible. Sí, los viejos debes estar locos. ¡Callaos, coño!",
+          "clr": 102.15,
+          "views": 2602,
+          "shortCode": "DLAxyB-RfrW",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "dato_numero",
+      "count": 178,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 79.47,
+      "weighted_clr": 56.65,
+      "median_clr": 66.82,
+      "avg_views": 81245,
+      "examples": [
+        {
+          "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
+          "clr": 191.13,
+          "views": 1533,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Hace solo 5 días tenía 10.000 seguidores. Y esta mañana se despertó con 150.000 seguidores y en este video te voy a expl",
+          "clr": 175.36,
+          "views": 147504,
+          "shortCode": "DH33thfx8H4",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "2020, 2021, 2022, 2023, 2024, 5 años han pasado y sigues sin crecer en Instagram. Pero hay una solución que nunca antes ",
+          "clr": 121.55,
+          "views": 17116,
+          "shortCode": "DFVOFvQuj1M",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "credencial",
+      "count": 36,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 64.12,
+      "weighted_clr": 40.77,
+      "median_clr": 46.06,
+      "avg_views": 71638,
+      "examples": [
+        {
+          "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
+          "clr": 191.13,
+          "views": 1533,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Se puede ganar 100.000 seguidores en 30 días? ¿Qué? Ah, es imposible. Sí, los viejos debes estar locos. ¡Callaos, coño!",
+          "clr": 102.15,
+          "views": 2602,
+          "shortCode": "DLAxyB-RfrW",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "En los últimos 7 días gané 23.000 seguidores con esta estructura de vídeo viral. Que, por cierto, puedes copiar para tus",
+          "clr": 89.7,
+          "views": 25283,
+          "shortCode": "DGWOTHUtfHF",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "historia",
+      "count": 28,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 57.33,
+      "weighted_clr": 40.14,
+      "median_clr": 41.25,
+      "avg_views": 123828,
+      "examples": [
+        {
+          "text": "Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en e",
+          "clr": 156.98,
+          "views": 137921,
+          "shortCode": "DNvc-qX4uUe",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Es bueno resubrir tus Reels a tu historia cuando lo publicas? Sí, si quieres que no lo vea nadie y que el vídeo no cons",
+          "clr": 89.84,
+          "views": 76604,
+          "shortCode": "DPRxECdEV01",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Cuánto dinero puedo ganar con 1.000 seguidores? Con 1.000 seguidores puedes ganar muy fácilmente entre 8.000 a 10.000 e",
+          "clr": 86,
+          "views": 779068,
+          "shortCode": "DAxxAenPU-9",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "neutro",
+      "count": 136,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 49.27,
+      "weighted_clr": 39.81,
+      "median_clr": 20.95,
+      "avg_views": 297636,
+      "examples": [
+        {
+          "text": "Yo tampoco sabía que era el RI de Instagram y cuando lo descubrí, mis vídeos pasaron de esto a esto sin hacer absolutame",
+          "clr": 128.63,
+          "views": 22874,
+          "shortCode": "DG_caYLRPQ6",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "La mejor hora para publicar en Instagram está muy cerca de la peor hora para publicar en Instagram. Y cuidado porque com",
+          "clr": 112.03,
+          "views": 119551,
+          "shortCode": "C7zV8ceOAtJ",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Esta es Greta Thunberg, la activista medioambiental que ha sido arrestada por manifestarse. Bueno, hace un tiempo salió ",
+          "clr": 0.56,
+          "views": 1568783,
+          "shortCode": "DRLXb2TEUhN",
+          "profile": "faridieck"
+        }
+      ]
+    },
+    {
+      "pattern": "negacion_en_serie",
+      "count": 7,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 51.78,
+      "weighted_clr": 36.65,
+      "median_clr": 70.55,
+      "avg_views": 145405,
+      "examples": [
+        {
+          "text": "Este pibe dice que hace 200 mil dólares por mes. Ja, ja, ja, ja, ja. Fantasma. A ver, estoy de acuerdo acá con nuestro a",
+          "clr": 89.13,
+          "views": 148,
+          "shortCode": "DLVvGpluMW9",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Si en Instagram no creces una mierda, no es por los hashtags, no es por cómo editas, no es porque el algoritmo te odie, ",
+          "clr": 76.63,
+          "views": 14132,
+          "shortCode": "C9AhJKuucQW",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Cómo coño hace la gente para hacer guiones virales? Así, entendiendo que hacer guiones virales no es arte, no es suerte",
+          "clr": 74.73,
+          "views": 110460,
+          "shortCode": "DJUhEpARdHG",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "lista_framework",
+      "count": 20,
+      "profiles": [
+        "herasmedia",
+        "hormozi"
+      ],
+      "avg_clr": 51.81,
+      "weighted_clr": 31.55,
+      "median_clr": 47.57,
+      "avg_views": 75510,
+      "examples": [
+        {
+          "text": "Hace solo 5 días tenía 10.000 seguidores. Y esta mañana se despertó con 150.000 seguidores y en este video te voy a expl",
+          "clr": 175.36,
+          "views": 147504,
+          "shortCode": "DH33thfx8H4",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "50.000 seguidores conseguidos con un solo vídeo. ¿Qué te explico cómo puedes hacerlo tú también? Es solamente tres pasos",
+          "clr": 92.03,
+          "views": 5168,
+          "shortCode": "DLxsVHSxZuR",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Si quieres que tu cuenta de Instagram nunca crezca, tienes que hacer estas tres cosas. Uno, publica todos los días. Obvi",
+          "clr": 86.96,
+          "views": 14818,
+          "shortCode": "DIEvmvWRsJz",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "hipotetico",
+      "count": 23,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 49.84,
+      "weighted_clr": 29.45,
+      "median_clr": 49.8,
+      "avg_views": 89031,
+      "examples": [
+        {
+          "text": "Si mañana me despertara con cero seguidores, esto es exactamente lo que haría para crecer 100.000 seguidores antes del f",
+          "clr": 98.95,
+          "views": 77346,
+          "shortCode": "C_Ls-ywt-pn",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Si mañana me despertara con cero seguidores, esto es exactamente lo que haría para ganar 100.000 seguidores antes de fin",
+          "clr": 96.16,
+          "views": 49612,
+          "shortCode": "DMvTFqkxMyc",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Si quieres que tu cuenta de Instagram nunca crezca, tienes que hacer estas tres cosas. Uno, publica todos los días. Obvi",
+          "clr": 86.96,
+          "views": 14818,
+          "shortCode": "DIEvmvWRsJz",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "acumulacion",
+      "count": 62,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 51.22,
+      "weighted_clr": 23.7,
+      "median_clr": 42.43,
+      "avg_views": 207682,
+      "examples": [
+        {
+          "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
+          "clr": 191.13,
+          "views": 1533,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en e",
+          "clr": 156.98,
+          "views": 137921,
+          "shortCode": "DNvc-qX4uUe",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Se puede ganar 100.000 seguidores en 30 días? ¿Qué? Ah, es imposible. Sí, los viejos debes estar locos. ¡Callaos, coño!",
+          "clr": 102.15,
+          "views": 2602,
+          "shortCode": "DLAxyB-RfrW",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "oportunidad_tendencia",
+      "count": 4,
+      "profiles": [
+        "herasmedia",
+        "hormozi"
+      ],
+      "avg_clr": 69.15,
+      "weighted_clr": 22.5,
+      "median_clr": 87.75,
+      "avg_views": 87937,
+      "examples": [
+        {
+          "text": "Si mañana me despertara con cero seguidores, esto es exactamente lo que haría para crecer 100.000 seguidores antes del f",
+          "clr": 98.95,
+          "views": 77346,
+          "shortCode": "C_Ls-ywt-pn",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Si mañana me despertara con cero seguidores, esto es exactamente lo que haría para ganar 100.000 seguidores antes de fin",
+          "clr": 96.16,
+          "views": 49612,
+          "shortCode": "DMvTFqkxMyc",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Si mañana me despertara con cero seguidoras, esto es exactamente lo que haría para crecer 10.000 seguidores antes de 202",
+          "clr": 79.34,
+          "views": 42706,
+          "shortCode": "DDU1g0mvNhx",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "identidad",
+      "count": 9,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 36.43,
+      "weighted_clr": 19.74,
+      "median_clr": 37.88,
+      "avg_views": 168402,
+      "examples": [
+        {
+          "text": "Perdón, ¿Eres Víctor, la que hace todos los vídeos viral? Sí, soy yo. Me puedes ayudar con mi página de ropa como que no",
+          "clr": 65.71,
+          "views": 23473,
+          "shortCode": "DPJzWRSkVrD",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Cuántos vídeos tengo que publicar por semana para crecer en Instagram? Consejo 8 de 25 para crecer en Instagram en 2021",
+          "clr": 47.07,
+          "views": 23223,
+          "shortCode": "DGlc_3qtkk4",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Si tienes $1,000, aquí es cómo invertir en tus 20s para construir un robot. Paso 1. Identifica tu valor de mercado de ba",
+          "clr": 7.53,
+          "views": 100577,
+          "shortCode": "DU12E9FDuhV",
+          "profile": "hormozi"
+        }
+      ]
+    },
+    {
+      "pattern": "paradoja",
+      "count": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "avg_clr": 4.26,
+      "weighted_clr": 4.26,
+      "median_clr": 4.26,
+      "avg_views": 9900,
+      "examples": [
+        {
+          "text": "¿No te parece absurdo pagar por ir a conciertos a escuchar canciones que ya has escuchado antes? Y me dirás, Víctor, per",
+          "clr": 4.26,
+          "views": 9900,
+          "shortCode": "C8FVt_ZuC6B",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "storytelling_personal",
+      "count": 5,
+      "profiles": [
+        "hormozi"
+      ],
+      "avg_clr": 1.93,
+      "weighted_clr": 2,
+      "median_clr": 1.75,
+      "avg_views": 145069,
+      "examples": [
+        {
+          "text": "Yo vendía servicios de casamiento a hombres solos. El rendimiento era entre $250 a $900. Consistente streamaba live. Así",
+          "clr": 3.39,
+          "views": 103932,
+          "shortCode": "DVzW25LAV6e",
+          "profile": "hormozi"
+        },
+        {
+          "text": "Yo vendía sueños y construía un ecosistema para que sucediera, básicamente. ¿Qué significa eso? Vamos a entrar. Yo flipa",
+          "clr": 2.07,
+          "views": 120315,
+          "shortCode": "DWOnzkYjnh3",
+          "profile": "hormozi"
+        },
+        {
+          "text": "Yo vendía SEO, redes sociales y PPC. Hacemos 7 millones de ingresos. Me gustaría hacer 14 y vender por 20.",
+          "clr": 1.75,
+          "views": 79520,
+          "shortCode": "DU3lwzjjx2_",
+          "profile": "hormozi"
+        }
+      ]
+    },
+    {
+      "pattern": "timeline_rapido",
+      "count": 1,
+      "profiles": [
+        "hormozi"
+      ],
+      "avg_clr": 1.42,
+      "weighted_clr": 1.42,
+      "median_clr": 1.42,
+      "avg_views": 292453,
+      "examples": [
+        {
+          "text": "sellamos entrenamiento de motocross, tenemos campos de 5 días, un día es $300, que probablemente no es suficiente, el dí",
+          "clr": 1.42,
+          "views": 292453,
+          "shortCode": "DVq6GZsDoRX",
+          "profile": "hormozi"
+        }
+      ]
+    }
+  ],
+  "body_patterns": [
+    {
+      "pattern": "autoridad",
+      "count": 144,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 83.42,
+      "weighted_clr": 78.8,
+      "median_clr": 68.01,
+      "avg_views": 78733,
+      "examples": []
+    },
+    {
+      "pattern": "caso_real",
+      "count": 24,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 91.97,
+      "weighted_clr": 77.64,
+      "median_clr": 68.78,
+      "avg_views": 122676,
+      "examples": []
+    },
+    {
+      "pattern": "matematica",
+      "count": 130,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 83.56,
+      "weighted_clr": 70.88,
+      "median_clr": 67.14,
+      "avg_views": 81607,
+      "examples": []
+    },
+    {
+      "pattern": "demo_proceso",
+      "count": 244,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 72.84,
+      "weighted_clr": 55.54,
+      "median_clr": 56.03,
+      "avg_views": 117844,
+      "examples": []
+    },
+    {
+      "pattern": "agitacion_leve",
+      "count": 92,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 69.77,
+      "weighted_clr": 54.06,
+      "median_clr": 58.3,
+      "avg_views": 209643,
+      "examples": []
+    },
+    {
+      "pattern": "narrativa_general",
+      "count": 95,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 61.09,
+      "weighted_clr": 52.08,
+      "median_clr": 9.17,
+      "avg_views": 447458,
+      "examples": []
+    },
+    {
+      "pattern": "agitacion_fuerte",
+      "count": 65,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 64.02,
+      "weighted_clr": 51.47,
+      "median_clr": 57.74,
+      "avg_views": 169195,
+      "examples": []
+    },
+    {
+      "pattern": "comparacion",
+      "count": 31,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 54.98,
+      "weighted_clr": 46.56,
+      "median_clr": 48.12,
+      "avg_views": 197354,
+      "examples": []
+    },
+    {
+      "pattern": "tension",
+      "count": 39,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 58.54,
+      "weighted_clr": 44.87,
+      "median_clr": 49.74,
+      "avg_views": 141200,
+      "examples": []
+    },
+    {
+      "pattern": "future_pacing",
+      "count": 63,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 63.45,
+      "weighted_clr": 39.4,
+      "median_clr": 49.01,
+      "avg_views": 119346,
+      "examples": []
+    },
+    {
+      "pattern": "demolicion_objecion",
+      "count": 34,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 47.27,
+      "weighted_clr": 37.86,
+      "median_clr": 25.4,
+      "avg_views": 136569,
+      "examples": []
+    },
+    {
+      "pattern": "analogia",
+      "count": 68,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 51.4,
+      "weighted_clr": 33.38,
+      "median_clr": 51.33,
+      "avg_views": 89873,
+      "examples": []
+    },
+    {
+      "pattern": "qa_rapido",
+      "count": 106,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 39.24,
+      "weighted_clr": 25.27,
+      "median_clr": 27.83,
+      "avg_views": 133728,
+      "examples": []
+    }
+  ],
+  "closing_patterns": [
+    {
+      "pattern": "dm",
+      "count": 169,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 127.29,
+      "weighted_clr": 122.23,
+      "median_clr": 115.51,
+      "avg_views": 81995,
+      "examples": [
+        {
+          "text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti? Tranquilo, si comentas guión en este vídeo te envío ",
+          "clr": 136.86,
+          "shortCode": "DVylb4_DdNi",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Simplemente comentando tu nicho aquí en comentarios te digo exactamente cómo hacerte viral con tu nicho, con tu producto",
+          "clr": 58.53,
+          "shortCode": "DQZxmb7ESyw",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Y si encima comentas bio en este vídeo, voy a explicarte exactamente cómo optimizar tu biografía para tu caso, para tu n",
+          "clr": 56.23,
+          "shortCode": "DVWdIb4kayv",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "cta_doble",
+      "count": 270,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 101.42,
+      "weighted_clr": 105.76,
+      "median_clr": 80.05,
+      "avg_views": 57359,
+      "examples": [
+        {
+          "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
+          "clr": 191.13,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "sube mucho las visitas ¿usar ganchos? es lo que más sube las visitas pero hay una lista más de 21 cosas que te bajan las",
+          "clr": 156.98,
+          "shortCode": "DNvc-qX4uUe",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti? Tranquilo, si comentas guión en este vídeo te envío ",
+          "clr": 136.86,
+          "shortCode": "DVylb4_DdNi",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "cta_video",
+      "count": 276,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 100.52,
+      "weighted_clr": 104.89,
+      "median_clr": 80.05,
+      "avg_views": 57961,
+      "examples": [
+        {
+          "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
+          "clr": 191.13,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "sube mucho las visitas ¿usar ganchos? es lo que más sube las visitas pero hay una lista más de 21 cosas que te bajan las",
+          "clr": 156.98,
+          "shortCode": "DNvc-qX4uUe",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti? Tranquilo, si comentas guión en este vídeo te envío ",
+          "clr": 136.86,
+          "shortCode": "DVylb4_DdNi",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "desafio",
+      "count": 4,
+      "profiles": [
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 106.14,
+      "weighted_clr": 98.82,
+      "median_clr": 125.48,
+      "avg_views": 93723,
+      "examples": [
+        {
+          "text": "Entonces, si no configuraste la apertura a nuevos seguidores, hacelo ahora, no seas pelotudo. Y si lo configuraste, come",
+          "clr": 172.27,
+          "shortCode": "DV6Ms06jpVe",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "¿Y qué tan difícil es? Literal, escribís lo que querés que hagan, lo probás y lo lanzan todo desde una interfaz ultra si",
+          "clr": 153.47,
+          "shortCode": "DRAol4gEveB",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Así que nada, es una absoluta locura estar trabajando con el mejor del mundo en esto. Y bueno, tengo mil libros para reg",
+          "clr": 97.49,
+          "shortCode": "DNoR01PpMFK",
+          "profile": "ramiro.cubria"
+        }
+      ]
+    },
+    {
+      "pattern": "link_bio",
+      "count": 21,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 75.41,
+      "weighted_clr": 88.67,
+      "median_clr": 55.87,
+      "avg_views": 953276,
+      "examples": [
+        {
+          "text": "Con este método con el que yo he hecho más de mil millones de visitas voy a darte las ideas para que las copies y las pe",
+          "clr": 64.08,
+          "shortCode": "DES4wEJPwo7",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Y si encima comentas bio en este vídeo, voy a explicarte exactamente cómo optimizar tu biografía para tu caso, para tu n",
+          "clr": 56.23,
+          "shortCode": "DVWdIb4kayv",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Los hashtags, mucho menos aún Qué mono la gente que piensa que así filtra audiencia o algo así 7 vídeos, 7 virales El re",
+          "clr": 55.87,
+          "shortCode": "DEYEdBKvF7t",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "open_loop",
+      "count": 9,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 97.5,
+      "weighted_clr": 87.41,
+      "median_clr": 104.06,
+      "avg_views": 52033,
+      "examples": [
+        {
+          "text": "y abrir conversaciones calificadas todo el día. No tiene sentido lo bueno que es. Si querés saber cómo activar la config",
+          "clr": 238.59,
+          "shortCode": "DQN3pc_DHD6",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Hago 300 mil dólares por mes con esta cuenta de Instagram vendiendo high ticket. Y gran parte de mi contenido lo genera ",
+          "clr": 156.13,
+          "shortCode": "DOxHeeCjEFv",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Y además le podemos abrir una conversación nueva de manera automática con ManyChat a cada nuevo seguidor Es increíble Si",
+          "clr": 121.19,
+          "shortCode": "DP0F_dzDFu1",
+          "profile": "ramiro.cubria"
+        }
+      ]
+    },
+    {
+      "pattern": "future_pacing",
+      "count": 51,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 83.91,
+      "weighted_clr": 83.64,
+      "median_clr": 58.53,
+      "avg_views": 220866,
+      "examples": [
+        {
+          "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
+          "clr": 191.13,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti? Tranquilo, si comentas guión en este vídeo te envío ",
+          "clr": 136.86,
+          "shortCode": "DVylb4_DdNi",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Por eso yo aplico la metodología con la que he hecho viral a todos mis clientes para llevarlo a 100.000 seguidores y 100",
+          "clr": 102.15,
+          "shortCode": "DLAxyB-RfrW",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "cta_caption",
+      "count": 373,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 88.64,
+      "weighted_clr": 83.23,
+      "median_clr": 66.83,
+      "avg_views": 78699,
+      "examples": [
+        {
+          "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
+          "clr": 191.13,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Vamos a hacer una cosa. Para toda la gente que comente viral en este vídeo, voy a enviarles una clase privada en la que ",
+          "clr": 175.36,
+          "shortCode": "DH33thfx8H4",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "sube mucho las visitas ¿usar ganchos? es lo que más sube las visitas pero hay una lista más de 21 cosas que te bajan las",
+          "clr": 156.98,
+          "shortCode": "DNvc-qX4uUe",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "cierre_resumen",
+      "count": 86,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 81.26,
+      "weighted_clr": 60.16,
+      "median_clr": 52.29,
+      "avg_views": 87006,
+      "examples": [
+        {
+          "text": "Comenta la palabra viral en comentarios y te la mando. Que por cierto pensaba borrarla en unos días, así que si la quier",
+          "clr": 79.79,
+          "shortCode": "DGv5FLoCp4w",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Si no, no. ¿Y en cuánto tiempo puedo ganar 100.000 seguidores? En menos de 30 días Entonces estoy haciendo un reto en el",
+          "clr": 61.98,
+          "shortCode": "DKaOK66x2re",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Pero Víctor, ¿qué estructura tengo que seguir? Justamente para eso he creado esta clase en la que explico paso a paso có",
+          "clr": 58.92,
+          "shortCode": "DMf5MBfxZTT",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
+      "pattern": "corte_seco",
+      "count": 11,
+      "profiles": [
+        "faridieck",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 3.66,
+      "weighted_clr": 4.43,
+      "median_clr": 1.49,
+      "avg_views": 296687,
+      "examples": [
+        {
+          "text": "",
+          "clr": 23.92,
+          "shortCode": "C4tUqCNikgt",
+          "profile": "niksetting"
+        },
+        {
+          "text": "¡Suscríbete al canal!",
+          "clr": 1.78,
+          "shortCode": "DVGq8NnDk7L",
+          "profile": "hormozi"
+        },
+        {
+          "text": "",
+          "clr": 1.66,
+          "shortCode": "DV9KeeLD3Fo",
+          "profile": "hormozi"
+        }
+      ]
+    },
+    {
+      "pattern": "sin_cta",
+      "count": 89,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 9.69,
+      "weighted_clr": 4.02,
+      "median_clr": 1.12,
+      "avg_views": 466109,
+      "examples": [
+        {
+          "text": "escribiendo en comentarios la palabra viral y te voy a enviar un vídeo de 4 minutos en el que te explico cómo crear un v",
+          "clr": 112.03,
+          "shortCode": "C7zV8ceOAtJ",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Y con esta misma chéguese he generado vídeos como este, como este, como este o como este para mis alumnos y clientes. Y ",
+          "clr": 87.35,
+          "shortCode": "C7hTsI-JDDp",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Creo que los dos sienten que merecen lo mejor de lo mejor y no pasa nada. Pero háganse esta pregunta. ¿Ustedes también s",
+          "clr": 0.58,
+          "shortCode": "DOKT4IdjPL3",
+          "profile": "faridieck"
+        }
+      ]
+    },
+    {
+      "pattern": "reframe",
+      "count": 1,
+      "profiles": [
+        "hormozi"
+      ],
+      "avg_clr": 0.77,
+      "weighted_clr": 0.77,
+      "median_clr": 0.77,
+      "avg_views": 160038,
+      "examples": [
+        {
+          "text": "Creo que lo que importa es tener tiempo para ti mismo y no interrumpirlo. Buena fitness física. 7, 8, 9, 10. 7 en tus 20",
+          "clr": 0.77,
+          "shortCode": "DUdVvAkExYD",
+          "profile": "hormozi"
+        }
+      ]
+    }
+  ],
+  "top_hooks_global": [
+    {
+      "shortCode": "DNXEA4GMDDT",
+      "opening_text": "10.000 dólares te debería cobrar por estos tres prompts de ChatGPT Pero hoy me agarraste de buen humor Así que más te vale que me prestes atención porque te los voy a dar gratis",
+      "opening_duration": 9.44,
+      "opening_patterns": [
+        "dato_numero",
+        "ancla_precio_invertida"
+      ],
+      "clr": 345.19,
+      "views": 130079,
+      "comments": 7784,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQmhYGnia6g",
+      "opening_text": "Todos los dueños de negocio necesitan tener acceso al coach de 100 millones de dólares de Alex Hormozy. Esto es una puta locura. Tiene toda la información gratuita de Alex Hormozy cargada en su cerebro y te responde como si fuera él.",
+      "opening_duration": 10.9,
+      "opening_patterns": [
+        "dato_numero",
+        "credencial"
+      ],
+      "clr": 329.67,
+      "views": 12775,
+      "comments": 2311,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DP46BJsCbFR",
+      "opening_text": "Este video lo borro en 24 horas. Todo el mundo conoce los famosos libros de Alex Hormozy. Ahora, lo que nadie sabe es que hay una colección de 12 libros privada",
+      "opening_duration": 8.98,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 316.56,
+      "views": 3486,
+      "comments": 478,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQuFQTHDiCB",
+      "opening_text": "No entiendo cómo todavía no tenés acceso a este documento. 4 prompts de chat GPT para hacer 30 mil dólares por mes. Es una puta locura. Antes de que te lo muestre, este documento solo lo compartí con clientes privados",
+      "opening_duration": 10,
+      "opening_patterns": [
+        "dato_numero",
+        "incredulidad"
+      ],
+      "clr": 314.37,
+      "views": 14304,
+      "comments": 2034,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DM06hWfOwrv",
+      "opening_text": "No soy Alex Hormozy, pero esta cuenta de Instagram hace 10 mil dólares por día. Y en este video te voy a mostrar en 5 segundos cómo optimizar tu perfil de Instagram para vender más.",
+      "opening_duration": 8.68,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 314.21,
+      "views": 247504,
+      "comments": 1216,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DRF7PQyEvWQ",
+      "opening_text": "Te voy a regalar mi sistema de contenido de 3.000 dólares completamente gratis. Esta plantilla de Notion no solamente me consiguió millones de visitas,",
+      "opening_duration": 8.06,
+      "opening_patterns": [
+        "dato_numero",
+        "segunda_persona"
+      ],
+      "clr": 293.37,
+      "views": 6528,
+      "comments": 1150,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DRdTH8QCYzj",
+      "opening_text": "Esta plataforma de inteligencia artificial te permite hacer tu propio clon para grabar reels que se ven 100% reales, que se escuchan perfecto y lo mejor de todo, que los podes usar tanto para reels como para anuncios para atraer miles de potenciales clientes.",
+      "opening_duration": 12.08,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 288.77,
+      "views": 3751,
+      "comments": 540,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DOzHh5GEn19",
+      "opening_text": "¿Es difícil clonarse con inteligencia artificial? La verdad que no. Genuinamente es una pelotudez. De hecho, yo no soy real. Soy un clon. Lo único que tenés que hacer es entrar al software de clonación,",
+      "opening_duration": 10.18,
+      "opening_patterns": [
+        "pregunta",
+        "provocacion"
+      ],
+      "clr": 286.07,
+      "views": 282594,
+      "comments": 1499,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQcxD8aksHu",
+      "opening_text": "Se acaba de filtrar esta base de datos con 15.286 agentes de inteligencia artificial que automatizan todas las tareas de tu negocio.",
+      "opening_duration": 8.76,
+      "opening_patterns": [
+        "exclusividad"
+      ],
+      "clr": 276.52,
+      "views": 11655,
+      "comments": 2132,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQCVUlNjUnf",
+      "opening_text": "Se acaba de filtrar esta Wikipedia secreta con más de 1500 agentes de inteligencia artificial que te automatizan todas las tareas de tu negocio. Así es, es un repositorio con más de 1500 agentes de IA",
+      "opening_duration": 10.6,
+      "opening_patterns": [
+        "exclusividad"
+      ],
+      "clr": 275.68,
+      "views": 9145,
+      "comments": 1428,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DPy3IFLjUuc",
+      "opening_text": "Este video lo borro en 24 horas. Se acaba de filtrar este nuevo agente de inteligencia artificial que es una puta locura. ¿Qué hace? Escribe carruseles ganadores que generan miles de comentarios.",
+      "opening_duration": 11.2,
+      "opening_patterns": [
+        "exclusividad"
+      ],
+      "clr": 272.34,
+      "views": 4348,
+      "comments": 640,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DOKgssZDOGR",
+      "opening_text": "Me acabo de comprar este bolso nuevo de Louis Vuitton y me salió demasiado caro. ¿Por qué me lo compré? Por un momento de impulsividad. Ahora, hay algo adentro de este bolso que importa muchísimo más que la mierda esta.",
+      "opening_duration": 11.82,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 271.05,
+      "views": 65095,
+      "comments": 1217,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DOont73CaLd",
+      "opening_text": "Se acaba de filtrar esta base de datos de más de 2.000 agentes de inteligencia artificial que te resuelven todas las tareas de tu negocio. Y no, no es clickbait.",
+      "opening_duration": 8.02,
+      "opening_patterns": [
+        "exclusividad"
+      ],
+      "clr": 263.15,
+      "views": 147297,
+      "comments": 2542,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQQBRo4ie_U",
+      "opening_text": "¿Cómo arreglar tu cuenta de Instagram en 30 segundos? Paso 1. Saca una captura de pantalla de tu perfil. Paso 2. Arrastra y solta la captura en chat GPT.",
+      "opening_duration": 8.16,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 260.72,
+      "views": 8245,
+      "comments": 1593,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQ4rw_liZYf",
+      "opening_text": "Estos carruseles hechos con inteligencia artificial están explotando Instagram. Son carruseles que se hacen literalmente en 5 minutos, súper fáciles,",
+      "opening_duration": 8.26,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 257.4,
+      "views": 8119,
+      "comments": 852,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DVOHHIwDrae",
+      "opening_text": "No vuelvas a escribir tus guiones con el chat GPT porque son una mierrrrrrr. Chat GPT es una mierda y los guiones suenan genéricos.",
+      "opening_duration": 8.72,
+      "opening_patterns": [
+        "imperativo",
+        "provocacion"
+      ],
+      "clr": 254.68,
+      "views": 13397,
+      "comments": 2124,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DM_4GylM0tX",
+      "opening_text": "¡Mil dólares! Es lo que te debería cobrar por pasarte mi GPT customizado para hacer guiones. Con ese GPT vas a poder crear hasta 100 guiones en solo dos horas.",
+      "opening_duration": 9.58,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 251.39,
+      "views": 8644,
+      "comments": 998,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DVgebe_Dg5Q",
+      "opening_text": "Ya no tenés más excusa para grabar contenido. Estoy en mi cama en este momento y vos me estás viendo como si fuera un estudio profesional con una cámara profesional con un setup profesional para grabar.",
+      "opening_duration": 10.4,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 244.33,
+      "views": 4915,
+      "comments": 711,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DSNbyZ2Dgnf",
+      "opening_text": "Le pagué 24 mil dólares a Alex Hormozy y desarrollé esta guía que te responde exactamente igual a él. Tiene toda la información gratuita que hay de él en internet y además tiene todo lo que aprendí trabajando con él por 24 mil dólares.",
+      "opening_duration": 11.24,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 241.3,
+      "views": 6657,
+      "comments": 555,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DTG-2aNjA6z",
+      "opening_text": "Cualquier pelotudo que tenga entre mil y cinco mil seguidores puede hacer 30 mil dólares por mes en ventas. Apestosamente rico, me dicen el 2025.",
+      "opening_duration": 8.2,
+      "opening_patterns": [
+        "dato_numero",
+        "provocacion"
+      ],
+      "clr": 238.76,
+      "views": 26022,
+      "comments": 2113,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DJ984GKRjwI",
+      "opening_text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perdón, mentira.",
+      "opening_duration": 8.7,
+      "opening_patterns": [
+        "dato_numero",
+        "provocacion",
+        "credencial",
+        "acumulacion"
+      ],
+      "clr": 191.13,
+      "views": 1533,
+      "comments": 4568,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DH33thfx8H4",
+      "opening_text": "Hace solo 5 días tenía 10.000 seguidores. Y esta mañana se despertó con 150.000 seguidores y en este video te voy a explicar las 3 cosas que hicimos para crecer su cuenta.",
+      "opening_duration": 8.4,
+      "opening_patterns": [
+        "dato_numero",
+        "lista_framework"
+      ],
+      "clr": 175.36,
+      "views": 147504,
+      "comments": 17348,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DNvc-qX4uUe",
+      "opening_text": "Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en el video. Sube las visitas.",
+      "opening_duration": 8.42,
+      "opening_patterns": [
+        "historia",
+        "acumulacion"
+      ],
+      "clr": 156.98,
+      "views": 137921,
+      "comments": 17141,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DVylb4_DdNi",
+      "opening_text": "No sé qué coño publicar, ¿me ayudas? Ok, ¿cuánto tiempo tienes para hacer contenido? No sé, no mucho. Ok, entonces vas a publicar tres veces por semana.",
+      "opening_duration": 7.96,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 136.86,
+      "views": 25785,
+      "comments": 4753,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DG_caYLRPQ6",
+      "opening_text": "Yo tampoco sabía que era el RI de Instagram y cuando lo descubrí, mis vídeos pasaron de esto a esto sin hacer absolutamente nada. Y si tú sabes usarlo, no hace falta que tengas una buena cámara, ni siquiera que sepas editar.",
+      "opening_duration": 10.96,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 128.63,
+      "views": 22874,
+      "comments": 3091,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DFVOFvQuj1M",
+      "opening_text": "2020, 2021, 2022, 2023, 2024, 5 años han pasado y sigues sin crecer en Instagram. Pero hay una solución que nunca antes habías pensado.",
+      "opening_duration": 10.34,
+      "opening_patterns": [
+        "dato_numero",
+        "provocacion"
+      ],
+      "clr": 121.55,
+      "views": 17116,
+      "comments": 1179,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "C7cMxvxpj0B",
+      "opening_text": "Para crecer en Instagram me importa una mierda lo que dices siempre y cuando consigas lo que acabo de hacer contigo en este vídeo que me ha generado 30 millones de visualizaciones este último mes. He hecho viral a miles de personas en Instagram y esto es lo único que importa para crecer en esta plataforma.",
+      "opening_duration": 13.26,
+      "opening_patterns": [
+        "dato_numero",
+        "imperativo",
+        "provocacion"
+      ],
+      "clr": 121.05,
+      "views": 46782,
+      "comments": 4929,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DVteuVKEWGL",
+      "opening_text": "Esta fue la plantilla de guiones exacta que utilicé para hacer este contenido viral para este cliente. Y por ejemplo, esta que está aquí abajo es la que usé para hacer este vídeo viral con más de 2 millones de views en el sector del Real Estate.",
+      "opening_duration": 13.54,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 116.71,
+      "views": 29073,
+      "comments": 2019,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "C7zV8ceOAtJ",
+      "opening_text": "La mejor hora para publicar en Instagram está muy cerca de la peor hora para publicar en Instagram. Y cuidado porque como te equivoques un poco, tus vídeos no van a funcionar.",
+      "opening_duration": 8.16,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 112.03,
+      "views": 119551,
+      "comments": 22151,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DUWHpuskZkF",
+      "opening_text": "Este es un gancho interrupción de patrón ¿Esta casa es rentada o es tuya? Este es un gancho pregunta polémica Millonario, y por supuesto, no tengo un Ferrari para impresionar a otro",
+      "opening_duration": 11.02,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 110.15,
+      "views": 33609,
+      "comments": 2777,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DSvbEZRjobb",
+      "opening_text": "500 mil pesos. Barrendero. Un millón de pesos. Trabaja en Uber. Dos millones de pesos. Trabaja para una corpo, una multinacional. Tres millones de pesos.",
+      "opening_duration": 7.94,
+      "opening_patterns": [
+        "dato_numero",
+        "acumulacion"
+      ],
+      "clr": 108.43,
+      "views": 87322,
+      "comments": 2689,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DIb7WtOR9do",
+      "opening_text": "Pon 20 hashtags, aporta valor en tus vídeos, publica las 8 y 27. Esto es lo que todos los gurús de redes sociales te dicen que hagas. Y eso es justo lo que no tienes que hacer para crecer en Instagram.",
+      "opening_duration": 11.28,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 107.32,
+      "views": 12540,
+      "comments": 1305,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DSLX9M5DhAe",
+      "opening_text": "Esto que te voy a decir es aburrido, pero hace ganar más de 3.000 dólares al mes al que lo aplica. Este chico lo copió tal cual y el mes pasado se llevó 3.500 dólares directo a su bolsillo.",
+      "opening_duration": 12.86,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 106.63,
+      "views": 110253,
+      "comments": 5776,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "C8KFAm0O2jI",
+      "opening_text": "Es absurdo que esto me haya generado 100 millones de visitas este último mes solamente haciendo una cosa. Y es tan simple que literalmente cualquier persona con un teléfono móvil, aunque tenga cero experiencia en redes sociales, puede hacerse viral.",
+      "opening_duration": 10.46,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 102.73,
+      "views": 46678,
+      "comments": 4925,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DLAxyB-RfrW",
+      "opening_text": "¿Se puede ganar 100.000 seguidores en 30 días? ¿Qué? Ah, es imposible. Sí, los viejos debes estar locos. ¡Callaos, coño! ¡Vamos a grabar!",
+      "opening_duration": 8.76,
+      "opening_patterns": [
+        "pregunta",
+        "dato_numero",
+        "provocacion",
+        "credencial",
+        "acumulacion"
+      ],
+      "clr": 102.15,
+      "views": 2602,
+      "comments": 1850,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DM567LgRgZ0",
+      "opening_text": "La forma más sencilla de crecer en redes sociales que nadie está usando y que es muy, muy simple, es usando las IG. ¿Qué son las IG?",
+      "opening_duration": 8.48,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 99.3,
+      "views": 18448,
+      "comments": 1284,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "C_Ls-ywt-pn",
+      "opening_text": "Si mañana me despertara con cero seguidores, esto es exactamente lo que haría para crecer 100.000 seguidores antes del final del año. Y no, no voy a hablarte de hashtags, ni de audios en tendencia, ni de la mejor hora para publicar.",
+      "opening_duration": 9.94,
+      "opening_patterns": [
+        "dato_numero",
+        "hipotetico",
+        "oportunidad_tendencia"
+      ],
+      "clr": 98.95,
+      "views": 77346,
+      "comments": 9621,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DLIoCAUxAV7",
+      "opening_text": "Hace dos días tenía 30.000 seguidores. Y hoy se despertó con 200.000 seguidores únicamente publicando dos vídeos. Y así es como lo hicimos.",
+      "opening_duration": 7.6,
+      "opening_patterns": [
+        "dato_numero",
+        "acumulacion"
+      ],
+      "clr": 97.64,
+      "views": 85465,
+      "comments": 6197,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DMvTFqkxMyc",
+      "opening_text": "Si mañana me despertara con cero seguidores, esto es exactamente lo que haría para ganar 100.000 seguidores antes de final de año. Y no, no voy a hablarte de ganchos, ni de hashtags, ni de audios en tendencia.",
+      "opening_duration": 9.26,
+      "opening_patterns": [
+        "dato_numero",
+        "hipotetico",
+        "oportunidad_tendencia"
+      ],
+      "clr": 96.16,
+      "views": 49612,
+      "comments": 5305,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DGbSfVptyPi",
+      "opening_text": "Esto es un gancho de interrupción de patrón. Tres negocios con lo que te puedes ganar 100.000 dólares. Este es un gancho regla del 3.",
+      "opening_duration": 9.24,
+      "opening_patterns": [
+        "dato_numero",
+        "acumulacion"
+      ],
+      "clr": 92.84,
+      "views": 58154,
+      "comments": 4916,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DCMxgSBPLIU",
+      "opening_text": "¿Cuánto dinero has ganado este mes con tu cuenta de Instagram? Este mes he hecho con mi cuenta de Instagram 140.000 euros. ¿Y qué tienes tú, como un millón de followers?",
+      "opening_duration": 9.02,
+      "opening_patterns": [
+        "pregunta",
+        "dato_numero"
+      ],
+      "clr": 92.2,
+      "views": 333256,
+      "comments": 23113,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DLxsVHSxZuR",
+      "opening_text": "50.000 seguidores conseguidos con un solo vídeo. ¿Qué te explico cómo puedes hacerlo tú también? Es solamente tres pasos. Uno, este creador llevaba meses publicando contenido sin ningún resultado",
+      "opening_duration": 8.68,
+      "opening_patterns": [
+        "dato_numero",
+        "lista_framework"
+      ],
+      "clr": 92.03,
+      "views": 5168,
+      "comments": 1385,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DSBEuY1jpzB",
+      "opening_text": "Respondiendo preguntas frecuentes sobre la profesión Closer de Ventas. ¿Es necesario saber hablar inglés? La respuesta es no, no tenés que hablar inglés. ¿Por qué?",
+      "opening_duration": 9.12,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 90.95,
+      "views": 19106,
+      "comments": 935,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DWRuPKigG8g",
+      "opening_text": "Tino, Tino, ¿qué negocio crees vos que me va a hacer millonario? A ver. ¿Me hago un restaurante o me hago una marca de ropa? Es un dolor de huevo. ¿Para qué vas a abrirte un restaurante o una marca de ropa?",
+      "opening_duration": 8.42,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 70.44,
+      "views": 14568,
+      "comments": 598,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DICnGBWBOd2",
+      "opening_text": "¿Qué es ser un closer de ventas y por qué es el mejor camino para hacer plata hoy por internet? Te voy a explicar bien qué es un closer de ventas. Bien, imagínate que esta es una empresa.",
+      "opening_duration": 10.22,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 51.26,
+      "views": 23150,
+      "comments": 549,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DWKZA78gAqR",
+      "opening_text": "Tino, este es tu Super Daddy, ¿no? ¿Cómo? Es tu Super Daddy este, ¿no? Ojalá, bro. Y sí, todas las cosas que vos subías en la red, el auto, qué sé yo, el reloj.",
+      "opening_duration": 8.46,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 41.12,
+      "views": 33237,
+      "comments": 632,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DV1oYg_iVpW",
+      "opening_text": "Ey, disculpa, disculpa, ¿vos sos Tino Mosu? Sí, soy yo. Ah, sos un influencer. Sí, no soy ese influencer, pero sí. Decime una cosa, porque quiero saber si es verdad todo lo que decía ahí en la playa de...",
+      "opening_duration": 9.48,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 39.24,
+      "views": 17571,
+      "comments": 463,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DSGOUTflFId",
+      "opening_text": "Estamos acá con el asador, mi viejo. Pa, ¿qué estás haciendo? Un asadito rico para comer hoy, que es un día hermoso. Bueno, Pa, explícale bien a la gente vos que entendés de closer de venta.",
+      "opening_duration": 10.66,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 38.63,
+      "views": 13065,
+      "comments": 338,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DV7BzO-iUr3",
+      "opening_text": "Esta chica que ves acá se llama Lady. A Lady la conocí después de haber ido más de 100 veces al mismo restaurante. Nos llevamos súper bien porque era la chica que me atendía siempre.",
+      "opening_duration": 9.5,
+      "opening_patterns": [
+        "historia"
+      ],
+      "clr": 32.33,
+      "views": 25430,
+      "comments": 546,
+      "profile": "tino.mossu"
+    },
+    {
+      "shortCode": "DUG5LHyElnK",
+      "opening_text": "El año pasado, mis compañías hicieron más de $250 millones en ingresos agrícolas. Mi nombre es Alex Ramozy, soy el fundador y partner de Acquisition.com. Es un oficio familiar, que es una forma formal de decir que investimos nuestro dinero en compañías.",
+      "opening_duration": 11.2,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 31.66,
+      "views": 164024,
+      "comments": 5848,
+      "profile": "hormozi"
+    }
+  ],
+  "top_cta_buildups_global": [
+    {
+      "shortCode": "DNXEA4GMDDT",
+      "closing_text": "¿Por qué de nicho? Porque el contenido viral atrae seguidores pobres. Por eso necesitas este prompt para armar tu propio calendario de contenido de nicho. Y si quieres los tres prompts, ¿qué tenés que hacer? Comenta tres acá abajo en este video y te llegan los tres en menos de un minuto por mensaje privado. Adiós amigos.",
+      "buildup": {
+        "buildup_text": "¿Por qué de nicho? Porque el contenido viral atrae seguidores pobres. Por eso necesitas este prompt para armar tu propio calendario de contenido de nicho. Y si quieres los tres prompts, ¿qué tenés que hacer?",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 4,
+        "buildup_duration": 7.52,
+        "cta_text": "Comenta tres acá abajo en este video y te llegan los tres en menos de un minuto por mensaje privado. Adiós amigos.",
+        "cta_segments": 2
+      },
+      "clr": 345.19,
+      "views": 130079,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQmhYGnia6g",
+      "closing_text": "Así que si lo querés probar por tu cuenta solamente comenta 100M acá abajo y te envío el coach de 100 millones de dólares de Alex Hormozy gratis en menos de 5 segundos por mensaje privado. Comenta 100M y es tuyo en menos de un segundo.",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "Así que si lo querés probar por tu cuenta solamente comenta 100M acá abajo y te envío el coach de 100 millones de dólares de Alex Hormozy gratis en menos de 5 segundos por mensaje privado. Comenta 100M y es tuyo en menos de un segundo.",
+        "cta_segments": 4
+      },
+      "clr": 329.67,
+      "views": 12775,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DP46BJsCbFR",
+      "closing_text": "de los 12 libros de la colección oculta de Hormousy y de su círculo privado. Cuando se terminen las 24 horas, borro este video a la mierda. Comenta Hormousy y te mando el PDF de 20 páginas con toda la información de la colección privada de 12 libros que Hormousy le envió únicamente a su círculo privado. Tenés 24 horas. Adiós.",
+      "buildup": {
+        "buildup_text": "de los 12 libros de la colección oculta de Hormousy y de su círculo privado. Cuando se terminen las 24 horas, borro este video a la mierda.",
+        "buildup_type": "directo",
+        "buildup_segments": 2,
+        "buildup_duration": 5.88,
+        "cta_text": "Comenta Hormousy y te mando el PDF de 20 páginas con toda la información de la colección privada de 12 libros que Hormousy le envió únicamente a su círculo privado. Tenés 24 horas. Adiós.",
+        "cta_segments": 3
+      },
+      "clr": 316.56,
+      "views": 3486,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQuFQTHDiCB",
+      "closing_text": "Te devuelve guiones completos para copiar y pegar con la estructura ganadora. Estos guiones que sacas son una máquina de generar consultas de clientes potenciales. Es una locura. Así que si querés todo el documento con los cuatro prompts, solamente comenta cuatro y te envío el documento entero en menos de un minuto por mensaje privado. Comenta cuatro y te envío todo el documento.",
+      "buildup": {
+        "buildup_text": "Te devuelve guiones completos para copiar y pegar con la estructura ganadora. Estos guiones que sacas son una máquina de generar consultas de clientes potenciales. Es una locura.",
+        "buildup_type": "directo",
+        "buildup_segments": 3,
+        "buildup_duration": 6.66,
+        "cta_text": "Así que si querés todo el documento con los cuatro prompts, solamente comenta cuatro y te envío el documento entero en menos de un minuto por mensaje privado. Comenta cuatro y te envío todo el documento.",
+        "cta_segments": 3
+      },
+      "clr": 314.37,
+      "views": 14304,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DM06hWfOwrv",
+      "closing_text": "Lo único que tenés que hacer es comentar IA y te voy a mandar el prompt exacto para que copies, lo pegues en ChatGPT, tengas la auditoría completa de tu perfil y empieces a convertir más seguidores en clientes. Comentá IA y te envío el prompt en menos de un minuto. Adiós, amigos.",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "Lo único que tenés que hacer es comentar IA y te voy a mandar el prompt exacto para que copies, lo pegues en ChatGPT, tengas la auditoría completa de tu perfil y empieces a convertir más seguidores en clientes. Comentá IA y te envío el prompt en menos de un minuto. Adiós, amigos.",
+        "cta_segments": 3
+      },
+      "clr": 314.21,
+      "views": 247504,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DRdTH8QCYzj",
+      "closing_text": "Simplemente con un video tuyo de 10 minutos ya podés tener el clon entrenado que habla igual que vos y que gesticula igual que vos. Si querés tener acceso a la plataforma de inteligencia artificial solamente comenta IA y te lo envío por mensaje privado en menos de un minuto. Adiós amigos.",
+      "buildup": {
+        "buildup_text": "Simplemente con un video tuyo de 10 minutos ya podés tener el clon entrenado que habla igual que vos y que gesticula igual que vos.",
+        "buildup_type": "simplificacion",
+        "buildup_segments": 2,
+        "buildup_duration": 5.9,
+        "cta_text": "Si querés tener acceso a la plataforma de inteligencia artificial solamente comenta IA y te lo envío por mensaje privado en menos de un minuto. Adiós amigos.",
+        "cta_segments": 3
+      },
+      "clr": 288.77,
+      "views": 3751,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DOzHh5GEn19",
+      "closing_text": "que me generan todos los días miles de conversaciones con potenciales clientes calificados. Pero podés usarlo para lo que quieras. Reels, anuncios, cursos La gente ni se va a dar cuenta que es un clon Es más, si querés que te mande acceso al software que uso Comenta Matrix y te lo mando en menos de un minuto",
+      "buildup": {
+        "buildup_text": "que me generan todos los días miles de conversaciones con potenciales clientes calificados. Pero podés usarlo para lo que quieras. Reels, anuncios, cursos La gente ni se va a dar cuenta que es un clon Es más, si querés que te mande acceso al software que uso",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 5,
+        "buildup_duration": 12.2,
+        "cta_text": "Comenta Matrix y te lo mando en menos de un minuto",
+        "cta_segments": 1
+      },
+      "clr": 286.07,
+      "views": 282594,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQcxD8aksHu",
+      "closing_text": "tener acceso a estos 15.000 agentes de inteligencia artificial que son increíbles, solamente tenés que comentar IA y yo te voy a mandar por privado el repositorio entero de agentes y un manual también de cómo instalarlos en menos de un minuto por mensaje privado, nos vemos amigos",
+      "buildup": {
+        "buildup_text": "tener acceso a estos 15.000 agentes de inteligencia artificial que son increíbles, solamente",
+        "buildup_type": "directo",
+        "buildup_segments": 3,
+        "buildup_duration": 5.92,
+        "cta_text": "tenés que comentar IA y yo te voy a mandar por privado el repositorio entero de agentes y un manual también de cómo instalarlos en menos de un minuto por mensaje privado, nos vemos amigos",
+        "cta_segments": 4
+      },
+      "clr": 276.52,
+      "views": 11655,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DQCVUlNjUnf",
+      "closing_text": "que tiene todos los agentes de inteligencia artificial que necesita tu negocio para poder prosperar. ¿Quieres acceso? Lo único que tienes que hacer es comentar agente en este video y te voy a mandar todo el repositorio de agentes de IA en menos de un minuto por mensaje privado. Comenta agente y te envío todo el repositorio en menos de un minuto.",
+      "buildup": {
+        "buildup_text": "que tiene todos los agentes de inteligencia artificial que necesita tu negocio para poder prosperar. ¿Quieres acceso?",
+        "buildup_type": "directo",
+        "buildup_segments": 2,
+        "buildup_duration": 4.26,
+        "cta_text": "Lo único que tienes que hacer es comentar agente en este video y te voy a mandar todo el repositorio de agentes de IA en menos de un minuto por mensaje privado. Comenta agente y te envío todo el repositorio en menos de un minuto.",
+        "cta_segments": 3
+      },
+      "clr": 275.68,
+      "views": 9145,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DPy3IFLjUuc",
+      "closing_text": "El agente es una puta locura y por no implementarlo en tu cuenta de Instagram estás perdiendo decenas de miles de dólares por semana. Y si la querés probar lo único que tenés que hacer es comentar IA y te la envío por mensaje privado en menos de un minuto. Comentá IA y te llega enseguida.",
+      "buildup": {
+        "buildup_text": "El agente es una puta locura y por no implementarlo en tu cuenta de Instagram estás perdiendo decenas de miles de dólares por semana.",
+        "buildup_type": "directo",
+        "buildup_segments": 1,
+        "buildup_duration": 5.92,
+        "cta_text": "Y si la querés probar lo único que tenés que hacer es comentar IA y te la envío por mensaje privado en menos de un minuto. Comentá IA y te llega enseguida.",
+        "cta_segments": 2
+      },
+      "clr": 272.34,
+      "views": 4348,
+      "profile": "ramiro.cubria"
+    },
+    {
+      "shortCode": "DJ984GKRjwI",
+      "closing_text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 seguidores y 100.000 euros en 30 días, comenta Reto en este vídeo para darte acceso al grupo. Y ya te prensan porque se ha cerrado el grupo.",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 seguidores y 100.000 euros en 30 días, comenta Reto en este vídeo para darte acceso al grupo. Y ya te prensan porque se ha cerrado el grupo.",
+        "cta_segments": 2
+      },
+      "clr": 191.13,
+      "views": 1533,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DH33thfx8H4",
+      "closing_text": "Vamos a hacer una cosa. Para toda la gente que comente viral en este vídeo, voy a enviarles una clase privada en la que explico cómo creé esos vídeos y cómo llevamos a 150.000 seguidores en menos de una semana. ¿Y qué tienen que hacer? Simplemente comentar viral en este vídeo. Comentar viral y os lo mando. Perfecto.",
+      "buildup": {
+        "buildup_text": "Vamos a hacer una cosa. Para toda la gente que comente viral en este vídeo, voy a enviarles una clase privada en la que explico cómo creé esos vídeos y cómo llevamos a 150.000 seguidores en menos de una semana. ¿Y qué tienen que hacer?",
+        "buildup_type": "directo",
+        "buildup_segments": 4,
+        "buildup_duration": 9.64,
+        "cta_text": "Simplemente comentar viral en este vídeo. Comentar viral y os lo mando. Perfecto.",
+        "cta_segments": 2
+      },
+      "clr": 175.36,
+      "views": 147504,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DNvc-qX4uUe",
+      "closing_text": "sube mucho las visitas ¿usar ganchos? es lo que más sube las visitas pero hay una lista más de 21 cosas que te bajan las visitas y si comentas aquí lista te la mando para que hagas contenido y las visitas no bajen sino que suban comenta aquí lista y te la mando",
+      "buildup": {
+        "buildup_text": "sube mucho las visitas ¿usar ganchos? es lo que más sube las visitas pero hay una lista más de 21 cosas que te bajan las visitas",
+        "buildup_type": "directo",
+        "buildup_segments": 5,
+        "buildup_duration": 7.18,
+        "cta_text": "y si comentas aquí lista te la mando para que hagas contenido y las visitas no bajen sino que suban comenta aquí lista y te la mando",
+        "cta_segments": 5
+      },
+      "clr": 156.98,
+      "views": 137921,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DVylb4_DdNi",
+      "closing_text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti? Tranquilo, si comentas guión en este vídeo te envío la estructura exacta para tu nicho en concreto por mensaje directo. Comenta guión y te lo mando. Guión.",
+      "buildup": {
+        "buildup_text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti?",
+        "buildup_type": "directo",
+        "buildup_segments": 1,
+        "buildup_duration": 1.98,
+        "cta_text": "Tranquilo, si comentas guión en este vídeo te envío la estructura exacta para tu nicho en concreto por mensaje directo. Comenta guión y te lo mando. Guión.",
+        "cta_segments": 3
+      },
+      "clr": 136.86,
+      "views": 25785,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DG_caYLRPQ6",
+      "closing_text": "simplemente comentando la palabra 5 en este vídeo en el que te voy a enviar la clase privada de cómo hice ese vídeo paso a paso para que tú puedas copiarlo para tu marca de Instagram, comenta 5 y te lo mando",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "simplemente comentando la palabra 5 en este vídeo en el que te voy a enviar la clase privada de cómo hice ese vídeo paso a paso para que tú puedas copiarlo para tu marca de Instagram, comenta 5 y te lo mando",
+        "cta_segments": 2
+      },
+      "clr": 128.63,
+      "views": 22874,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "C7cMxvxpj0B",
+      "closing_text": "Un gancho como en este vídeo O como en este O como en este O como en este Y si quieres saber cómo he creado todos estos vídeos Tengo una clase en la que te explico cómo crear un vídeo con un millón de visitas en Instagram Escribe en comentarios la palabra viral y te lo mando para que lo veas",
+      "buildup": {
+        "buildup_text": "Un gancho como en este vídeo O como en este O como en este O como en este Y si quieres saber cómo he creado todos estos vídeos Tengo una clase en la que te explico cómo crear un vídeo con un millón de visitas en Instagram",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 6,
+        "buildup_duration": 10.48,
+        "cta_text": "Escribe en comentarios la palabra viral y te lo mando para que lo veas",
+        "cta_segments": 1
+      },
+      "clr": 121.05,
+      "views": 46782,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DVteuVKEWGL",
+      "closing_text": "O esta plantilla es la que usé para hacer este vídeo con más de 1 millón de views en el sector de la salud. Si quieres tener tu plantilla para tu nicho, para tu caso, para lo que tú vendes, si haces para hacerte viral y ganar 100.000 seguidores, comenta guión en este vídeo y te la mando.",
+      "buildup": {
+        "buildup_text": "O esta plantilla es la que usé para hacer este vídeo con más de 1 millón de views en el sector de la salud.",
+        "buildup_type": "directo",
+        "buildup_segments": 1,
+        "buildup_duration": 4.98,
+        "cta_text": "Si quieres tener tu plantilla para tu nicho, para tu caso, para lo que tú vendes, si haces para hacerte viral y ganar 100.000 seguidores, comenta guión en este vídeo y te la mando.",
+        "cta_segments": 1
+      },
+      "clr": 116.71,
+      "views": 29073,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "C7zV8ceOAtJ",
+      "closing_text": "escribiendo en comentarios la palabra viral y te voy a enviar un vídeo de 4 minutos en el que te explico cómo crear un vídeo con un millón de visitas paso a paso. El vídeo ya lo han visto más de 10.000 personas y puede ser que lo borre, puede ser que no. Chao.",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "escribiendo en comentarios la palabra viral y te voy a enviar un vídeo de 4 minutos en el que te explico cómo crear un vídeo con un millón de visitas paso a paso. El vídeo ya lo han visto más de 10.000 personas y puede ser que lo borre, puede ser que no. Chao.",
+        "cta_segments": 4
+      },
+      "clr": 112.03,
+      "views": 119551,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DUWHpuskZkF",
+      "closing_text": "Escribe la palabra lista en comentarios y te envío los ganchos que tienes que utilizar según tu nicho, según tu sector, para que te hagas viral como todos estos vídeos. Comenta lista y te la mando.",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "Escribe la palabra lista en comentarios y te envío los ganchos que tienes que utilizar según tu nicho, según tu sector, para que te hagas viral como todos estos vídeos. Comenta lista y te la mando.",
+        "cta_segments": 2
+      },
+      "clr": 110.15,
+      "views": 33609,
+      "profile": "herasmedia"
+    },
+    {
+      "shortCode": "DIb7WtOR9do",
+      "closing_text": "Si quieres ver exactamente cómo crea este vídeo y cómo tú puedes crear cualquier vídeo viral de tu sector, comenta aquí clase y te mando esta clase privada en la que te explico exactamente paso a paso cómo crear cualquier reel viral. Comenta clase y te la mando antes de que labore.",
+      "buildup": {
+        "buildup_text": "Si quieres ver exactamente cómo crea este vídeo y cómo tú puedes crear cualquier vídeo viral de tu sector,",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 2,
+        "buildup_duration": 4.74,
+        "cta_text": "comenta aquí clase y te mando esta clase privada en la que te explico exactamente paso a paso cómo crear cualquier reel viral. Comenta clase y te la mando antes de que labore.",
+        "cta_segments": 2
+      },
+      "clr": 107.32,
+      "views": 12540,
+      "profile": "herasmedia"
+    }
+  ]
+}

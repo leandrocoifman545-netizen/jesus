@@ -1,0 +1,91 @@
+{
+  "profile": "jesustassarolo",
+  "analyzed_at": "2026-03-25T10:54:12.122Z",
+  "total_posts": 0,
+  "total_videos": 0,
+  "total_sidecars": 0,
+  "total_transcripts": 0,
+  "top_pct": 25,
+  "top_count": 1,
+  "top_clr_threshold": 0,
+  "bottom_clr_threshold": null,
+  "linguistic": {
+    "top_only_phrases": [],
+    "killer_phrases": [],
+    "transition_analysis": [],
+    "opening_types": [],
+    "closing_types": [],
+    "word_frequency_diff": {
+      "topDiff": [],
+      "bottomDiff": []
+    },
+    "enthusiasm_markers": []
+  },
+  "structural": {
+    "duration_vs_clr": [],
+    "rhythm_top_vs_bottom": null,
+    "cta_formulas": [],
+    "comenta_repetition": [],
+    "revenue_vs_clr": [],
+    "scarcity_patterns": [],
+    "objection_patterns": []
+  },
+  "caption": {
+    "length_vs_clr": [],
+    "features_top_vs_bottom": [
+      {
+        "feature": "Tiene \"comenta/comentá\"",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Tiene emoji",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Tiene hashtag",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Tiene pregunta",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Tiene exclamación",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Menciona DM/mensaje",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Largo <= 15 palabras",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      }
+    ],
+    "avg_word_count_top": 0,
+    "avg_word_count_bottom": 0,
+    "cta_keywords": []
+  },
+  "post_type": {
+    "video": {
+      "count": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_views": 0,
+      "avg_clr": 0
+    },
+    "sidecar": {
+      "count": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_clr": 0
+    }
+  }
+}

@@ -1,9 +1,11 @@
-# Patrones de Orgánico IG — Consolidado para ADP
+# Patrones de IG — Consolidado para ADP (Orgánico + Ads)
 
-> Fuente: 368 posts de 4 perfiles (@herasmedia, @tino.mossu, @niksetting, @faridieck)
-> Análisis: 5 dimensiones (hooks, captions, temporal, beats, cross-analysis)
-> Fecha: 2026-03-24
-> **Este archivo se consulta al generar guiones orgánicos y al planificar la semana.**
+> Fuente: 1475 posts de 7 perfiles (@herasmedia, @tino.mossu, @niksetting, @faridieck, @hormozi, @ramiro.cubria, @jesustassarolo)
+> Análisis: 7 dimensiones (hooks, captions, temporal, beats, cross-analysis, **patrones estructurales**, **pattern library**)
+> Fecha: 2026-03-25
+> **APLICA A ORGÁNICO Y ADS.** Con Andromeda, Meta optimiza orgánico y ads con el mismo sistema de distribución. Un video que retiene en IG retiene en un ad. Los patrones de apertura, cuerpo y cierre son transferibles.
+> **Este archivo se consulta al generar guiones (orgánicos Y ads) y al planificar la semana.**
+> **Para data machine-readable:** `pattern-library.json` + `metrics-summary.json` + `pattern-coverage.json`
 
 ---
 
@@ -12,6 +14,11 @@
 **Data:** Los 2 perfiles que usan keyword inbound (Heras, Tino) tienen CLR 40%+ en videos de venta. Los que no lo usan (Nik, Faridieck) tienen CLR <6%.
 
 **Multiplicador CTA:** 5.56x (10.30% vs 1.85% sin CTA — dato de cross_analysis.md, n=220 videos).
+
+**Confirmado cross-profile (517 videos, 6 perfiles):**
+- Con CTA en video: avg CLR 100.52% | Sin CTA: 9.69% → **10.4x multiplicador**
+- CTA doble (video + caption) = 101.42% CLR → la combinación más poderosa
+- DM como CTA = 127.29% CLR (dato de pattern-library.json, dominado por @ramiro.cubria)
 
 ### Reglas para ADP
 - **SIEMPRE** poner CTA keyword en videos de venta
@@ -58,7 +65,97 @@ Cada guion de venta debe tener una keyword **única al contenido**: si el caso e
 
 ---
 
-## 4. Tipos de Hook × Performance
+## 4. Estructura completa del video: APERTURA × CUERPO × CIERRE (517 videos)
+
+**Data de pattern-library.json — análisis por zonas usando timestamps de Whisper:**
+
+### 4a. Aperturas (primeros 8 segundos) — NO es la primera frase, son las primeras 3
+
+| Patrón de apertura | Usos | Avg CLR | Para qué |
+|--------------------|-----:|--------:|----------|
+| **ancla_precio_invertida** ("$10K debería cobrar... gratis") | 1 | 345.19% | **NUEVO — CLR récord.** Precio alto → gratis en 8s |
+| **segunda_persona** ("Vos que estás...", "Te cuento") | 2 | 174.28% | **NUEVO.** Conexión directa, intimidad |
+| **exclusividad** ("se filtró", "acaba de lanzar") | 15 | 186.62% | Escasez + novedad |
+| **imperativo** ("mirá", "dejá de", "no vuelvas") | 11 | 99.48% | Comando directo, rompe scroll |
+| **provocación** ("mentira", "nadie", "basura") | 90 | 86.27% | Volumen + engagement |
+| **dato/número** ($, %, cifra concreta) | 178 | 79.47% | **El más usado.** Ancla credibilidad |
+| **credencial** ("facturé X", "mis clientes") | 36 | 64.12% | Autoridad directa |
+| **hipotético** ("si tuviera", "imaginá") | 23 | 49.84% | Empatía + conexión con avatar |
+| **identidad** ("si sos X", "los que hacen Y") | 9 | 36.43% | Filtro de audiencia |
+
+**Temporal decay (weighted CLR — half-life 90 días, posts recientes pesan más):**
+- `imperativo` sube de 99% → **172% weighted** (+73) — **patrón fresco, priorizar**
+- `segunda_persona` sube de 174% → **215% weighted** (+41) — trending up
+- `dato_numero` baja de 79% → **57% weighted** (-23) — **saturándose**
+- `pregunta` baja de 66% → **58% weighted** (-9) — decayendo
+
+**Cross con 36 generaciones ADP (ver `pattern-coverage.md`):**
+- ADP sobreusa: `acumulacion` (58x), `dato_numero` (34x), `pregunta` (34x)
+- ADP NUNCA usó: `ancla_precio_invertida`, `exclusividad`, `segunda_persona`, `imperativo`, `credencial`, `lista_framework`
+- ADP inventó (no existe en IG): `herencia_emocional`, `escena_cinematografica`, `espejo_situacion`, `revelacion_personal`, `anti_guru`
+
+**Insight clave:** La apertura NO es la primera oración. Son las primeras 3 oraciones / 8 segundos. Ejemplo ganador de @ramiro.cubria (CLR 345%):
+> "10.000 dólares te debería cobrar por estos tres prompts de ChatGPT. Pero hoy me agarraste de buen humor. Así que más te vale que me prestes atención porque te los voy a dar gratis."
+→ Oración 1: ancla precio. Oración 2: exclusividad. Oración 3: imperativo + remoción de riesgo. **3 técnicas en 8 segundos.**
+
+### 4b. Cuerpo (8s hasta -15s del final) — Qué estructuras generan más engagement
+
+| Patrón de cuerpo | Usos | Avg CLR | Para qué |
+|-------------------|-----:|--------:|----------|
+| **caso_real** (alumno, cliente, caso concreto) | 24 | 91.97% | **Prueba > promesa** |
+| **matemática** ($5→$27→$97, calculadora) | 130 | 83.56% | Credibilidad numérica |
+| **agitación leve** (1 dolor mencionado) | 92 | 69.77% | Conexión emocional sin ser heavy |
+| **future pacing** ("imaginá tu vida así") | 63 | 63.45% | Aspiración |
+| **tensión** ("lo peor", "el error", "la trampa") | 39 | 58.54% | Mantiene atención |
+| **comparación** ("en vez de X, hacé Y") | 31 | 54.98% | Claridad de decisión |
+
+### 4c. Cierre (últimos 15 segundos) — El buildup al CTA importa más que el CTA
+
+| Patrón de cierre | Usos | Avg CLR | Nota |
+|-------------------|-----:|--------:|------|
+| **DM** | 169 | 127.29% | Máximo CLR de cierre |
+| **desafío** ("te reto", "probá") | 4 | 106.14% | Poco usado, muy potente |
+| **CTA doble** (video + caption) | 270 | 101.42% | La combinación estándar |
+| **open loop** ("pero eso te lo cuento...") | 9 | 97.50% | Retiene para siguiente video |
+| **sin CTA** | 89 | 9.69% | 10x menos comments |
+
+### 4d. Buildup al CTA — Qué hay ANTES de "comentá X"
+
+| Tipo de buildup | Usos | Avg CLR | Duración prom |
+|-----------------|-----:|--------:|--------------:|
+| **simplificación** ("es fácil", "solo tenés que") | 16 | 112.12% | 6.8s |
+| **promesa de valor** ("te mando", "te voy a dar") | 67 | 105.97% | 8.3s |
+| **directo** (sin transición, va al CTA) | 240 | 95.09% | 5.0s |
+| **remoción de riesgo** ("gratis", "sin costo") | 11 | 72.80% | 9.5s |
+
+**Insight clave:** El buildup de **simplificación** antes del CTA genera más CLR que el buildup directo. No es "comentá X" solo — es "Es muy fácil. Solo tenés que hacer esto. Comentá X y te lo mando."
+
+### 4e. Combos ganadores (apertura → cierre, 2+ usos)
+
+Los combos con mejor CLR promedio across all profiles:
+
+| Combo | Usos | Avg CLR |
+|-------|-----:|--------:|
+| exclusividad → cta_video | 14 | 189.90% |
+| dato_número → cta_video | 78 | 125.32% |
+| imperativo → cta_video | 4 | 120.22% |
+| provocación → cta_video | 16 | 115.78% |
+
+**Regla para ADP:** El combo dominante es **dato/exclusividad → buildup de simplificación → CTA doble (video+caption)**. Esto no es opinión — es el patrón que aparece en el top 10 CLR de los 3 perfiles más exitosos.
+
+### 4f. Densidad (palabras por segundo) × Performance
+
+| Velocidad | Videos | Avg CLR |
+|-----------|-------:|--------:|
+| Rápido (>3 wps) | 458 | 79.83% |
+| Normal (2-3 wps) | 38 | 36.03% |
+| Lento (<2 wps) | 21 | 15.13% |
+
+**Hablar rápido = más engagement.** Consistente across 6 perfiles. Ramiro, Heras y Tino hablan a >3 wps en sus mejores videos.
+
+---
+
+## 5. Tipos de Hook detallados (Heras, 167 hooks)
 
 **Data de herasmedia_hooks_bank.md (167 hooks):**
 
@@ -284,5 +381,8 @@ Este documento **complementa** (no reemplaza) los archivos existentes:
 - **Para captions:** Consultar `caption_analysis.md` (correlación palabras × CLR)
 - **Para timing:** Consultar `temporal_analysis.md` (decay, frecuencia, día de semana)
 - **Para duración/CTA:** Consultar `cross_analysis.md` (sweet spots por duración × CTA)
+- **Para patrones estructurales cross-profile:** Consultar `pattern-library.md` (517 videos, apertura×cuerpo×cierre × performance)
+- **Para búsqueda temática:** `node scripts/ig-search.mjs "término"` (busca en 526 transcripciones + 1475 captions)
+- **Para top hooks:** `node scripts/ig-search.mjs --top-hooks 30 --min-views 10000`
 - **Para estructura de 5 beats:** Seguir usando `tipos-cuerpo.md` (los templates de Tino son variantes del mismo sistema)
 - **Para ingredientes:** Seguir usando `enciclopedia-127-ingredientes.md`

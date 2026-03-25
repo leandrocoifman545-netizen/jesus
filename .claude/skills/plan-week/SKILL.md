@@ -57,6 +57,11 @@ Leer `.data/jerarquia-decisiones.md`:
 20. `.data/winner-patterns.md` — Qué combinaciones funcionaron → sesgar el plan hacia ellas
 21. `.data/session-insights.md` — Feedback de Jesús → evitar lo que no funcionó, repetir lo que sí
 
+### Archivos de INTELIGENCIA IG (leer si existen — especialmente para Canal 3 orgánico):
+22. `.data/ig-references/patrones-organico-ig.md` — 14 patrones de 1475 posts: hooks×objetivo, duración sweet spot, keywords, caption rules
+23. `.data/ig-references/pattern-coverage.md` — Qué patrones de IG ADP ya usó vs oportunidades no explotadas. **Priorizar los UNTAPPED con alto CLR.**
+24. `.data/ig-references/pattern-library.md` — Top 30 hooks reales rankeados por CLR de 517 videos (para inspiración)
+
 ## Paso 2: Chequear leads quemados
 
 ```bash

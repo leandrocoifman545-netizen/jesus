@@ -73,6 +73,10 @@ Estos archivos dan contexto que necesitás para tomar decisiones creativas que e
 ### Condicionales:
 - Si el cuerpo es analogía: `tecnica-analogia-franco-piso.md`
 - Si se necesitan objeciones específicas: `.data/objeciones-adp.md`
+- **Para TODOS los guiones (orgánico Y ads — Andromeda convergió ambos):**
+  - `ig-references/patrones-organico-ig.md` — 14 patrones + aperturas/cierres rankeados por CLR (aplica a ads también: lo que retiene en IG retiene en ads)
+  - `ig-references/pattern-coverage.md` — qué patrones ADP aún no usó vs cuáles tiene sobreexplotados. **Priorizar UNTAPPED de alto CLR.**
+- **Para inspiración de hooks/aperturas:** `ig-references/pattern-library.md` — top 30 hooks reales rankeados por CLR de 517 videos
 
 ## Paso 2: Chequear leads quemados
 
@@ -253,6 +257,23 @@ Templates:
 
 SIEMPRE mencionar el ejemplo específico del body.
 
+### Frases PROHIBIDAS en la transición (Capa 1):
+La transición al CTA NUNCA debe empezar con:
+- "Pero bueno..." — señala rendición narrativa (0 apariciones en top 25% de 191 videos)
+- "De todos modos..." — el creador se desconecta emocionalmente del CTA
+- "En fin..." — afterthought, no culminación (6.3x más frecuente en videos bottom)
+- "Como sea..." — descarta lo anterior
+
+La transición debe REFORMULAR el valor o ASUMIR el deseo. La energía de la transición debe ser IGUAL o MAYOR que la del cuerpo — nunca menor.
+
+NOTA: "Entonces" como conector general dentro del cuerpo está bien (muletilla natural de Jesús). Lo que no puede hacer es ser la PRIMERA palabra de la transición al CTA.
+
+### Regla de cierre:
+En videos CON CTA, la última frase audible debe ser la INSTRUCCIÓN, no la despedida.
+Dato: cierre con acción = CLR 1.48-1.61 vs cierre con despedida = CLR 0.92 (-37%).
+La despedida puede ir en el caption o como texto en pantalla — no como última palabra hablada.
+Excepción: videos de awareness puro (sin CTA) pueden cerrar con despedida cálida.
+
 ## Paso 7: Escribir los LEADS (5 variantes)
 
 Cada lead = 2-3 oraciones: [Abrir gap] + [Negar respuesta obvia] + [Puente al cuerpo]
@@ -292,6 +313,7 @@ Si un lead matchea un patrón prohibido o es >55% similar a un hook existente, *
 - NUNCA leads motivacionales sin mecanismo
 - Lead ≠ primera sección del body (no repetir la misma revelación)
 - NUNCA los 7 patrones estructurales de arriba (validación automática los bloquea)
+- NUNCA abrir un lead con "Mi/Mis..." ("Mi sistema", "Mis clientes", "Mi método"). Dato: CLR 0.95 (el más bajo de 12 tipos de apertura en 191 videos analizados). El possessive sin ancla al espectador se siente narcisista. Siempre anclar al avatar primero.
 
 ## Paso 8: Asignar 3 BLOQUES CTA (de ctas-biblioteca.md)
 
@@ -341,6 +363,11 @@ Copiar las capas textuales de `ctas-biblioteca.md`. NO inventar. NO meter precio
 - [ ] **Anti-ficción:** Cada beat tiene al menos 1 detalle que nadie inventaría (no genéricos)
 - [ ] **Mecanismo nombrado:** El producto/método tiene nombre propietario, no genérico
 - [ ] **Números no-redondos:** Usar $35.000 (no $30.000), 9 días (no 1 semana), 53 audios (no "muchos")
+- [ ] **Sin jerga de marketing en el cuerpo:** NUNCA usar "funnel", "embudo", "lanzamiento", "call-to-action", "leads", "orgánico" (como estrategia). Dato: concentradas en videos bottom (hasta 18x más). El avatar dice "clientes", "gente que te compra", "publicidad", "seguidores". Excepción: "anuncios" y "campañas" sí.
+- [ ] **Sin apertura possessive:** Ningún lead empieza con "Mi/Mis..." (CLR 0.95, el peor tipo)
+- [ ] **Transición sin rendición:** No empieza con "Pero bueno", "De todos modos", "En fin"
+- [ ] **Cierre = acción:** En videos con CTA, la última frase hablada es la instrucción (no despedida)
+- [ ] **Si orgánico IG:** duración 45-65s, keyword repetida 2-3 veces, "en menos de un minuto" en CTA, fórmula "lo único que tenés que hacer es" preferida sobre "si querés"
 
 ## Paso 9b: Humanizar — Check de voz (OBLIGATORIO)
 

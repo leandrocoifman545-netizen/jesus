@@ -1,0 +1,2013 @@
+{
+  "username": "tino.mossu",
+  "analyzed_at": "2026-03-25T10:51:50.100Z",
+  "total_analyzed": 27,
+  "opening_patterns": [
+    {
+      "pattern": "acumulacion",
+      "count": 1,
+      "avg_clr": 108.43,
+      "weighted_clr": 108.43,
+      "median_clr": 108.43,
+      "avg_views": 87322,
+      "examples": [
+        {
+          "text": "500 mil pesos. Barrendero. Un millón de pesos. Trabaja en Uber. Dos millones de pesos. Trabaja para una corpo, una multi",
+          "clr": 108.43,
+          "views": 87322,
+          "shortCode": "DSvbEZRjobb"
+        }
+      ]
+    },
+    {
+      "pattern": "dato_numero",
+      "count": 3,
+      "avg_clr": 71.74,
+      "weighted_clr": 58.09,
+      "median_clr": 106.63,
+      "avg_views": 138135,
+      "examples": [
+        {
+          "text": "500 mil pesos. Barrendero. Un millón de pesos. Trabaja en Uber. Dos millones de pesos. Trabaja para una corpo, una multi",
+          "clr": 108.43,
+          "views": 87322,
+          "shortCode": "DSvbEZRjobb"
+        },
+        {
+          "text": "Esto que te voy a decir es aburrido, pero hace ganar más de 3.000 dólares al mes al que lo aplica. Este chico lo copió t",
+          "clr": 106.63,
+          "views": 110253,
+          "shortCode": "DSLX9M5DhAe"
+        },
+        {
+          "text": "Aquí los chicos están pensando con 15 años en que tienen que sacar a la familia, en que tienen que salvar a la familia. ",
+          "clr": 0.15,
+          "views": 216829,
+          "shortCode": "DVSOvaIjrUE"
+        }
+      ]
+    },
+    {
+      "pattern": "pregunta",
+      "count": 13,
+      "avg_clr": 20.34,
+      "weighted_clr": 22.17,
+      "median_clr": 5.71,
+      "avg_views": 237500,
+      "examples": [
+        {
+          "text": "Tino, Tino, ¿qué negocio crees vos que me va a hacer millonario? A ver. ¿Me hago un restaurante o me hago una marca de r",
+          "clr": 70.44,
+          "views": 14568,
+          "shortCode": "DWRuPKigG8g"
+        },
+        {
+          "text": "¿Qué es ser un closer de ventas y por qué es el mejor camino para hacer plata hoy por internet? Te voy a explicar bien q",
+          "clr": 51.26,
+          "views": 23150,
+          "shortCode": "DICnGBWBOd2"
+        },
+        {
+          "text": "Tino, este es tu Super Daddy, ¿no? ¿Cómo? Es tu Super Daddy este, ¿no? Ojalá, bro. Y sí, todas las cosas que vos subías ",
+          "clr": 41.12,
+          "views": 33237,
+          "shortCode": "DWKZA78gAqR"
+        }
+      ]
+    },
+    {
+      "pattern": "historia",
+      "count": 2,
+      "avg_clr": 16.95,
+      "weighted_clr": 20.9,
+      "median_clr": 16.95,
+      "avg_views": 314910,
+      "examples": [
+        {
+          "text": "Esta chica que ves acá se llama Lady. A Lady la conocí después de haber ido más de 100 veces al mismo restaurante. Nos l",
+          "clr": 32.33,
+          "views": 25430,
+          "shortCode": "DV7BzO-iUr3"
+        },
+        {
+          "text": "Hino, ¿por qué decís que la mayoría de tus amigos no son tus amigos? ¿Querés saber si tenés un amigo, verdad? Sí. ¿Queré",
+          "clr": 1.56,
+          "views": 604390,
+          "shortCode": "DTMMSFLiGoI"
+        }
+      ]
+    },
+    {
+      "pattern": "neutro",
+      "count": 9,
+      "avg_clr": 19.96,
+      "weighted_clr": 15.94,
+      "median_clr": 6.82,
+      "avg_views": 350935,
+      "examples": [
+        {
+          "text": "Respondiendo preguntas frecuentes sobre la profesión Closer de Ventas. ¿Es necesario saber hablar inglés? La respuesta e",
+          "clr": 90.95,
+          "views": 19106,
+          "shortCode": "DSBEuY1jpzB"
+        },
+        {
+          "text": "Estamos acá con el asador, mi viejo. Pa, ¿qué estás haciendo? Un asadito rico para comer hoy, que es un día hermoso. Bue",
+          "clr": 38.63,
+          "views": 13065,
+          "shortCode": "DSGOUTflFId"
+        },
+        {
+          "text": "Este chico que ves acá se llama Michael. Michael me escribía por Instagram diciéndome, ti no estoy cansado, estoy trabaj",
+          "clr": 27.03,
+          "views": 134317,
+          "shortCode": "DKQcX1kNlpo"
+        }
+      ]
+    },
+    {
+      "pattern": "identidad",
+      "count": 1,
+      "avg_clr": 1.56,
+      "weighted_clr": 1.56,
+      "median_clr": 1.56,
+      "avg_views": 604390,
+      "examples": [
+        {
+          "text": "Hino, ¿por qué decís que la mayoría de tus amigos no son tus amigos? ¿Querés saber si tenés un amigo, verdad? Sí. ¿Queré",
+          "clr": 1.56,
+          "views": 604390,
+          "shortCode": "DTMMSFLiGoI"
+        }
+      ]
+    },
+    {
+      "pattern": "provocacion",
+      "count": 1,
+      "avg_clr": 0.63,
+      "weighted_clr": 0.63,
+      "median_clr": 0.63,
+      "avg_views": 753911,
+      "examples": [
+        {
+          "text": "Yo estoy súper a favor de la mujer interesada. De hecho, yo no la llamaría interesada. No. La llamaría inteligente. La m",
+          "clr": 0.63,
+          "views": 753911,
+          "shortCode": "DVwtDRpjcIb"
+        }
+      ]
+    }
+  ],
+  "body_patterns": [
+    {
+      "pattern": "agitacion_leve",
+      "count": 4,
+      "avg_clr": 58.79,
+      "weighted_clr": 62.05,
+      "median_clr": 60.85,
+      "avg_views": 125139,
+      "examples": []
+    },
+    {
+      "pattern": "autoridad",
+      "count": 3,
+      "avg_clr": 39.13,
+      "weighted_clr": 49.82,
+      "median_clr": 8.96,
+      "avg_views": 105107,
+      "examples": []
+    },
+    {
+      "pattern": "matematica",
+      "count": 4,
+      "avg_clr": 44.19,
+      "weighted_clr": 45.37,
+      "median_clr": 29.68,
+      "avg_views": 82075,
+      "examples": []
+    },
+    {
+      "pattern": "tension",
+      "count": 2,
+      "avg_clr": 53.42,
+      "weighted_clr": 35.42,
+      "median_clr": 53.42,
+      "avg_views": 156527,
+      "examples": []
+    },
+    {
+      "pattern": "qa_rapido",
+      "count": 10,
+      "avg_clr": 36.28,
+      "weighted_clr": 34.3,
+      "median_clr": 27.75,
+      "avg_views": 166321,
+      "examples": []
+    },
+    {
+      "pattern": "caso_real",
+      "count": 1,
+      "avg_clr": 32.33,
+      "weighted_clr": 32.33,
+      "median_clr": 32.33,
+      "avg_views": 25430,
+      "examples": []
+    },
+    {
+      "pattern": "demo_proceso",
+      "count": 12,
+      "avg_clr": 27.41,
+      "weighted_clr": 26.99,
+      "median_clr": 7.34,
+      "avg_views": 248142,
+      "examples": []
+    },
+    {
+      "pattern": "analogia",
+      "count": 3,
+      "avg_clr": 21.98,
+      "weighted_clr": 9.5,
+      "median_clr": 8.96,
+      "avg_views": 349072,
+      "examples": []
+    },
+    {
+      "pattern": "future_pacing",
+      "count": 2,
+      "avg_clr": 7.89,
+      "weighted_clr": 7.89,
+      "median_clr": 7.89,
+      "avg_views": 216908,
+      "examples": []
+    },
+    {
+      "pattern": "agitacion_fuerte",
+      "count": 2,
+      "avg_clr": 4.9,
+      "weighted_clr": 3.7,
+      "median_clr": 4.9,
+      "avg_views": 665910,
+      "examples": []
+    },
+    {
+      "pattern": "demolicion_objecion",
+      "count": 2,
+      "avg_clr": 4.9,
+      "weighted_clr": 3.7,
+      "median_clr": 4.9,
+      "avg_views": 665910,
+      "examples": []
+    },
+    {
+      "pattern": "narrativa_general",
+      "count": 6,
+      "avg_clr": 1.28,
+      "weighted_clr": 1.02,
+      "median_clr": 0.56,
+      "avg_views": 403739,
+      "examples": []
+    }
+  ],
+  "closing_patterns": [
+    {
+      "pattern": "cierre_resumen",
+      "count": 6,
+      "avg_clr": 38.34,
+      "weighted_clr": 43.37,
+      "median_clr": 30.4,
+      "avg_views": 63933,
+      "examples": [
+        {
+          "text": "Lo único que tenés que hacer es responderme este video con la palabra clase y te envío una clase de 20 minutos donde te ",
+          "clr": 90.95,
+          "shortCode": "DSBEuY1jpzB"
+        },
+        {
+          "text": "Así que, si querés ser Closer de venta y recibir toda la información, comentame la palabra Closer debajo y te mando toda",
+          "clr": 51.26,
+          "shortCode": "DICnGBWBOd2"
+        },
+        {
+          "text": "Así que si querés saber cuál fue el sistema que aplicamos con Lady para que vos también lo puedas aplicar, comentame en ",
+          "clr": 32.33,
+          "shortCode": "DV7BzO-iUr3"
+        }
+      ]
+    },
+    {
+      "pattern": "cta_caption",
+      "count": 8,
+      "avg_clr": 39.35,
+      "weighted_clr": 41.46,
+      "median_clr": 35.78,
+      "avg_views": 48095,
+      "examples": [
+        {
+          "text": "ok pero yo como puedo empezar a eso bueno si querés si yo creo que podés de hecho te pregunto vos usas whatsapp si y te ",
+          "clr": 70.44,
+          "shortCode": "DWRuPKigG8g"
+        },
+        {
+          "text": "Así que, si querés ser Closer de venta y recibir toda la información, comentame la palabra Closer debajo y te mando toda",
+          "clr": 51.26,
+          "shortCode": "DICnGBWBOd2"
+        },
+        {
+          "text": "No vamos a la pileta, pero si querés Te puedo dar una mano Bueno, dale, ¿qué tengo que hacer? Comentame en este video la",
+          "clr": 41.12,
+          "shortCode": "DWKZA78gAqR"
+        }
+      ]
+    },
+    {
+      "pattern": "open_loop",
+      "count": 1,
+      "avg_clr": 32.33,
+      "weighted_clr": 32.33,
+      "median_clr": 32.33,
+      "avg_views": 25430,
+      "examples": [
+        {
+          "text": "Así que si querés saber cuál fue el sistema que aplicamos con Lady para que vos también lo puedas aplicar, comentame en ",
+          "clr": 32.33,
+          "shortCode": "DV7BzO-iUr3"
+        }
+      ]
+    },
+    {
+      "pattern": "cta_video",
+      "count": 1,
+      "avg_clr": 28.46,
+      "weighted_clr": 28.46,
+      "median_clr": 28.46,
+      "avg_views": 34825,
+      "examples": [
+        {
+          "text": "para que de un día para el otro tengas vendedores que vendan por vos. Y si sos una persona que quiere generar ingresos, ",
+          "clr": 28.46,
+          "shortCode": "DJkOn44Pod9"
+        }
+      ]
+    },
+    {
+      "pattern": "cta_doble",
+      "count": 1,
+      "avg_clr": 28.46,
+      "weighted_clr": 28.46,
+      "median_clr": 28.46,
+      "avg_views": 34825,
+      "examples": [
+        {
+          "text": "para que de un día para el otro tengas vendedores que vendan por vos. Y si sos una persona que quiere generar ingresos, ",
+          "clr": 28.46,
+          "shortCode": "DJkOn44Pod9"
+        }
+      ]
+    },
+    {
+      "pattern": "sin_cta",
+      "count": 16,
+      "avg_clr": 17.85,
+      "weighted_clr": 14.22,
+      "median_clr": 1.38,
+      "avg_views": 352402,
+      "examples": [
+        {
+          "text": "es literalmente esto, respondeme este video con la palabra clase y te envío una clase gratuita de 20 minutos donde te en",
+          "clr": 108.43,
+          "shortCode": "DSvbEZRjobb"
+        },
+        {
+          "text": "regalo un entrenamiento de 20 minutos donde te enseño paso a paso a cómo hacer un clóuser y cómo hacer que una empresa t",
+          "clr": 106.63,
+          "shortCode": "DSLX9M5DhAe"
+        },
+        {
+          "text": "de cómo vos también serlo para lograr la libertad financiera por internet, respondeme este video con la palabra clase y ",
+          "clr": 38.63,
+          "shortCode": "DSGOUTflFId"
+        }
+      ]
+    },
+    {
+      "pattern": "link_bio",
+      "count": 1,
+      "avg_clr": 0.84,
+      "weighted_clr": 0.84,
+      "median_clr": 0.84,
+      "avg_views": 1250589,
+      "examples": [
+        {
+          "text": "Por eso son las más sencillas No es que sean regaladas De que es fácil Pero es como que no vas a estar Claro, le llevas ",
+          "clr": 0.84,
+          "shortCode": "DV4-STcCGay"
+        }
+      ]
+    },
+    {
+      "pattern": "future_pacing",
+      "count": 2,
+      "avg_clr": 0.42,
+      "weighted_clr": 0.7,
+      "median_clr": 0.42,
+      "avg_views": 698679,
+      "examples": [
+        {
+          "text": "Por eso son las más sencillas No es que sean regaladas De que es fácil Pero es como que no vas a estar Claro, le llevas ",
+          "clr": 0.84,
+          "shortCode": "DV4-STcCGay"
+        },
+        {
+          "text": "Así es como funciona la U del closer. Así que espero que realmente pronto te vamos dentro del programa y que pronto te e",
+          "clr": 0,
+          "shortCode": "DNomGYJpa47"
+        }
+      ]
+    }
+  ],
+  "cta_buildup_patterns": [
+    {
+      "pattern": "promesa_valor",
+      "count": 4,
+      "avg_clr": 60.44,
+      "weighted_clr": 60.44,
+      "median_clr": 55.78,
+      "avg_views": 0,
+      "examples": [],
+      "avg_duration": 9.44
+    },
+    {
+      "pattern": "directo",
+      "count": 4,
+      "avg_clr": 34.24,
+      "weighted_clr": 34.24,
+      "median_clr": 30.4,
+      "avg_views": 0,
+      "examples": [],
+      "avg_duration": 2.52
+    },
+    {
+      "pattern": "simplificacion",
+      "count": 1,
+      "avg_clr": 0.84,
+      "weighted_clr": 0.84,
+      "median_clr": 0.84,
+      "avg_views": 0,
+      "examples": [],
+      "avg_duration": 10.22
+    }
+  ],
+  "winning_combos": [
+    {
+      "combo": "dato_numero→sin_cta",
+      "count": 3,
+      "avg_clr": 71.74,
+      "avg_views": 138135
+    },
+    {
+      "combo": "pregunta→cta_caption",
+      "count": 5,
+      "avg_clr": 45.39,
+      "avg_views": 38038
+    },
+    {
+      "combo": "neutro→sin_cta",
+      "count": 6,
+      "avg_clr": 10.14,
+      "avg_views": 292401
+    },
+    {
+      "combo": "pregunta→sin_cta",
+      "count": 6,
+      "avg_clr": 1.5,
+      "avg_views": 452619
+    }
+  ],
+  "density_performance": [
+    {
+      "bucket": "lento(<2wps)",
+      "count": 1,
+      "avg_clr": 0.18,
+      "avg_views": 792581
+    },
+    {
+      "bucket": "normal(2-3wps)",
+      "count": 1,
+      "avg_clr": 1.2,
+      "avg_views": 226912
+    },
+    {
+      "bucket": "rapido(>3wps)",
+      "count": 25,
+      "avg_clr": 27.63,
+      "avg_views": 256807
+    }
+  ],
+  "top_hooks": [
+    {
+      "shortCode": "DSvbEZRjobb",
+      "opening_text": "500 mil pesos. Barrendero. Un millón de pesos. Trabaja en Uber. Dos millones de pesos. Trabaja para una corpo, una multinacional. Tres millones de pesos.",
+      "opening_duration": 7.94,
+      "opening_patterns": [
+        "dato_numero",
+        "acumulacion"
+      ],
+      "clr": 108.43,
+      "views": 87322,
+      "comments": 2689
+    },
+    {
+      "shortCode": "DSLX9M5DhAe",
+      "opening_text": "Esto que te voy a decir es aburrido, pero hace ganar más de 3.000 dólares al mes al que lo aplica. Este chico lo copió tal cual y el mes pasado se llevó 3.500 dólares directo a su bolsillo.",
+      "opening_duration": 12.86,
+      "opening_patterns": [
+        "dato_numero"
+      ],
+      "clr": 106.63,
+      "views": 110253,
+      "comments": 5776
+    },
+    {
+      "shortCode": "DSBEuY1jpzB",
+      "opening_text": "Respondiendo preguntas frecuentes sobre la profesión Closer de Ventas. ¿Es necesario saber hablar inglés? La respuesta es no, no tenés que hablar inglés. ¿Por qué?",
+      "opening_duration": 9.12,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 90.95,
+      "views": 19106,
+      "comments": 935
+    },
+    {
+      "shortCode": "DWRuPKigG8g",
+      "opening_text": "Tino, Tino, ¿qué negocio crees vos que me va a hacer millonario? A ver. ¿Me hago un restaurante o me hago una marca de ropa? Es un dolor de huevo. ¿Para qué vas a abrirte un restaurante o una marca de ropa?",
+      "opening_duration": 8.42,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 70.44,
+      "views": 14568,
+      "comments": 598
+    },
+    {
+      "shortCode": "DICnGBWBOd2",
+      "opening_text": "¿Qué es ser un closer de ventas y por qué es el mejor camino para hacer plata hoy por internet? Te voy a explicar bien qué es un closer de ventas. Bien, imagínate que esta es una empresa.",
+      "opening_duration": 10.22,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 51.26,
+      "views": 23150,
+      "comments": 549
+    },
+    {
+      "shortCode": "DWKZA78gAqR",
+      "opening_text": "Tino, este es tu Super Daddy, ¿no? ¿Cómo? Es tu Super Daddy este, ¿no? Ojalá, bro. Y sí, todas las cosas que vos subías en la red, el auto, qué sé yo, el reloj.",
+      "opening_duration": 8.46,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 41.12,
+      "views": 33237,
+      "comments": 632
+    },
+    {
+      "shortCode": "DV1oYg_iVpW",
+      "opening_text": "Ey, disculpa, disculpa, ¿vos sos Tino Mosu? Sí, soy yo. Ah, sos un influencer. Sí, no soy ese influencer, pero sí. Decime una cosa, porque quiero saber si es verdad todo lo que decía ahí en la playa de...",
+      "opening_duration": 9.48,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 39.24,
+      "views": 17571,
+      "comments": 463
+    },
+    {
+      "shortCode": "DSGOUTflFId",
+      "opening_text": "Estamos acá con el asador, mi viejo. Pa, ¿qué estás haciendo? Un asadito rico para comer hoy, que es un día hermoso. Bueno, Pa, explícale bien a la gente vos que entendés de closer de venta.",
+      "opening_duration": 10.66,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 38.63,
+      "views": 13065,
+      "comments": 338
+    },
+    {
+      "shortCode": "DV7BzO-iUr3",
+      "opening_text": "Esta chica que ves acá se llama Lady. A Lady la conocí después de haber ido más de 100 veces al mismo restaurante. Nos llevamos súper bien porque era la chica que me atendía siempre.",
+      "opening_duration": 9.5,
+      "opening_patterns": [
+        "historia"
+      ],
+      "clr": 32.33,
+      "views": 25430,
+      "comments": 546
+    },
+    {
+      "shortCode": "DJkOn44Pod9",
+      "opening_text": "¿A qué se dedican? Yo entreno a personas normales como closers de ventas y los vuelvo muy profesionales. ¿Y vos? Yo ayudo a empresas que están buscando tener mejores vendedores",
+      "opening_duration": 8.76,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 28.46,
+      "views": 34825,
+      "comments": 642
+    },
+    {
+      "shortCode": "DKQcX1kNlpo",
+      "opening_text": "Este chico que ves acá se llama Michael. Michael me escribía por Instagram diciéndome, ti no estoy cansado, estoy trabajando 10 horas al día, no gano lo que quiero, quiero hacer algo diferente.",
+      "opening_duration": 8.78,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 27.03,
+      "views": 134317,
+      "comments": 1241
+    },
+    {
+      "shortCode": "DWFt5aPEUJ9",
+      "opening_text": "Pero no sé boludo, estoy bajando boludo y tengo este accidente, ¿cómo no se puede salir la rueda hermano? A ver aguantamos un segundo. Amigo, amigo, ¿está bien? Vi que tuviste un accidente. ¿Cómo? ¿Está todo bien acá? Vi que tuviste un accidente. Sí, sí, está bien, está bien.",
+      "opening_duration": 8.66,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 24.89,
+      "views": 101662,
+      "comments": 2846
+    },
+    {
+      "shortCode": "DSp2CkSjhkg",
+      "opening_text": "Vamos a reaccionar a otra de mis haters, a ver qué se inventan ahora, vamos. Me infiltré en el curso del salame del año para mostrarte cómo es que te roba.",
+      "opening_duration": 9.7,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 8.96,
+      "views": 81231,
+      "comments": 323
+    },
+    {
+      "shortCode": "DSpj6hEjsfN",
+      "opening_text": "Ay, qué rico, cómo me pones tan tiradito. Qué carajo, imaginate llevar a tus hijos a un colegio,",
+      "opening_duration": 7.92,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 6.82,
+      "views": 352585,
+      "comments": 2588
+    },
+    {
+      "shortCode": "DUbpCYKibHr",
+      "opening_text": "Disculpá, disculpame un minuto, ¿es el presidencial? Sí, el presidente, sí. No me digas, mirá, tengo contenido de relojes, no te he robado mucho tiempo.",
+      "opening_duration": 10.66,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 5.71,
+      "views": 942835,
+      "comments": 1250
+    },
+    {
+      "shortCode": "DS8Irr3AKOU",
+      "opening_text": "La gente de Guita, Guita, Guita, Guita, Guita, Guita, Guita, Guita, Guita, no vive en Nordelta. La gente de más de plata de la Argentina vive en San Isidro y no vive en un country, vive en la calle, en la calle normal.",
+      "opening_duration": 13.28,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 5.02,
+      "views": 288031,
+      "comments": 524
+    },
+    {
+      "shortCode": "DTMMSFLiGoI",
+      "opening_text": "Hino, ¿por qué decís que la mayoría de tus amigos no son tus amigos? ¿Querés saber si tenés un amigo, verdad? Sí. ¿Querés hacer una prueba? ¿Cómo sería?",
+      "opening_duration": 8.3,
+      "opening_patterns": [
+        "pregunta",
+        "historia",
+        "identidad"
+      ],
+      "clr": 1.56,
+      "views": 604390,
+      "comments": 415
+    },
+    {
+      "shortCode": "DPSNXV6CUSP",
+      "opening_text": "Este joven con 22 años, cuando me dijo Leano no lo pudo creer, un poco como un joven. Muy bien, mi hermano, mucho éxito para ti, porque 22 años,",
+      "opening_duration": 8.4,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 1.2,
+      "views": 226912,
+      "comments": 247
+    },
+    {
+      "shortCode": "DV4-STcCGay",
+      "opening_text": "Siempre la mujer más linda va a ser la más fácil. ¿Por qué? Porque la mujer más linda no está acostumbrada a que venga un hombre y se la quiera levantar.",
+      "opening_duration": 8.3,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.84,
+      "views": 1250589,
+      "comments": 1549
+    },
+    {
+      "shortCode": "DVwtDRpjcIb",
+      "opening_text": "Yo estoy súper a favor de la mujer interesada. De hecho, yo no la llamaría interesada. No. La llamaría inteligente. La mujer nunca va a salir con un hombre que esté por debajo de su estatus.",
+      "opening_duration": 10.82,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 0.63,
+      "views": 753911,
+      "comments": 1031
+    }
+  ],
+  "top_cta_buildups": [
+    {
+      "shortCode": "DSBEuY1jpzB",
+      "closing_text": "Lo único que tenés que hacer es responderme este video con la palabra clase y te envío una clase de 20 minutos donde te enseño paso a paso a cómo puedes arrancar en este mundo del closer de ventas y lograr la gran libertad financiera. Así que comentame la palabra clase y te la envío.",
+      "buildup": {
+        "buildup_text": "Lo único que tenés que hacer es responderme este video con la palabra clase y te envío una clase de 20 minutos donde te enseño paso a paso a cómo puedes arrancar en este mundo del closer de ventas y lograr la gran libertad financiera.",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 3,
+        "buildup_duration": 12.56,
+        "cta_text": "Así que comentame la palabra clase y te la envío.",
+        "cta_segments": 1
+      },
+      "clr": 90.95,
+      "views": 19106
+    },
+    {
+      "shortCode": "DWRuPKigG8g",
+      "closing_text": "ok pero yo como puedo empezar a eso bueno si querés si yo creo que podés de hecho te pregunto vos usas whatsapp si y te paga whatsapp por eso y no bueno ahora te pueden empezar a pagar comentame en este video la palabra whatsapp y te mando una clase enseñándote lo que hago vale",
+      "buildup": {
+        "buildup_text": "ok pero yo como puedo empezar a eso bueno si querés si yo creo que podés de hecho te pregunto vos usas whatsapp si y te paga whatsapp por eso y no bueno ahora te pueden empezar a pagar",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 12,
+        "buildup_duration": 10.22,
+        "cta_text": "comentame en este video la palabra whatsapp y te mando una clase enseñándote lo que hago vale",
+        "cta_segments": 5
+      },
+      "clr": 70.44,
+      "views": 14568
+    },
+    {
+      "shortCode": "DICnGBWBOd2",
+      "closing_text": "Así que, si querés ser Closer de venta y recibir toda la información, comentame la palabra Closer debajo y te mando toda la info para que entiendas bien cómo vamos a hacer para que vos empieces a trabajar con una empresa al extranjero. Nos vemos pronto.",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "Así que, si querés ser Closer de venta y recibir toda la información, comentame la palabra Closer debajo y te mando toda la info para que entiendas bien cómo vamos a hacer para que vos empieces a trabajar con una empresa al extranjero. Nos vemos pronto.",
+        "cta_segments": 2
+      },
+      "clr": 51.26,
+      "views": 23150
+    },
+    {
+      "shortCode": "DWKZA78gAqR",
+      "closing_text": "No vamos a la pileta, pero si querés Te puedo dar una mano Bueno, dale, ¿qué tengo que hacer? Comentame en este video la palabra clase Y te mido un entrenamiento gratis Ahora termino la pileta, salgo y lo hago Dale, nos vemos animal",
+      "buildup": {
+        "buildup_text": "No vamos a la pileta, pero si querés Te puedo dar una mano Bueno, dale, ¿qué tengo que hacer?",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 3,
+        "buildup_duration": 5,
+        "cta_text": "Comentame en este video la palabra clase Y te mido un entrenamiento gratis Ahora termino la pileta, salgo y lo hago Dale, nos vemos animal",
+        "cta_segments": 4
+      },
+      "clr": 41.12,
+      "views": 33237
+    },
+    {
+      "shortCode": "DV1oYg_iVpW",
+      "closing_text": "¿Qué me recomendabas para buscar ahí en internet algún video? ¿Me recomiendas? Sí, sí, yo ahora tengo una reunión Pero si querés te armo una clase y te la mando Para que la veas Uh, tremendo ¿Qué tengo que hacer? Comentame en este video la palabra clase y te la mando Dale, listo Dale papá Nos vemos Nos vemos",
+      "buildup": {
+        "buildup_text": "¿Qué me recomendabas para buscar ahí en internet algún video? ¿Me recomiendas? Sí, sí, yo ahora tengo una reunión Pero si querés te armo una clase y te la mando Para que la veas Uh, tremendo ¿Qué tengo que hacer?",
+        "buildup_type": "promesa_valor",
+        "buildup_segments": 7,
+        "buildup_duration": 9.96,
+        "cta_text": "Comentame en este video la palabra clase y te la mando Dale, listo Dale papá Nos vemos Nos vemos",
+        "cta_segments": 5
+      },
+      "clr": 39.24,
+      "views": 17571
+    },
+    {
+      "shortCode": "DV7BzO-iUr3",
+      "closing_text": "Así que si querés saber cuál fue el sistema que aplicamos con Lady para que vos también lo puedas aplicar, comentame en este video la palabra. Lady y yo personalmente te ayudo A vos también, comentame Lady y te ayudo",
+      "buildup": {
+        "buildup_text": "",
+        "buildup_type": "directo",
+        "buildup_segments": 0,
+        "buildup_duration": 0,
+        "cta_text": "Así que si querés saber cuál fue el sistema que aplicamos con Lady para que vos también lo puedas aplicar, comentame en este video la palabra. Lady y yo personalmente te ayudo A vos también, comentame Lady y te ayudo",
+        "cta_segments": 3
+      },
+      "clr": 32.33,
+      "views": 25430
+    },
+    {
+      "shortCode": "DJkOn44Pod9",
+      "closing_text": "para que de un día para el otro tengas vendedores que vendan por vos. Y si sos una persona que quiere generar ingresos, comenta la palabra QUIERO que yo te voy a escribir para entrenarte como Closer y después conectarte con una empresa. Así que ya lo sabes, sos una empresa, comenta CLOSER. Sos una persona que quiere generar ingresos, comenta QUIERO.",
+      "buildup": {
+        "buildup_text": "para que de un día para el otro tengas vendedores que vendan por vos. Y si sos una persona que quiere generar ingresos,",
+        "buildup_type": "directo",
+        "buildup_segments": 2,
+        "buildup_duration": 4.74,
+        "cta_text": "comenta la palabra QUIERO que yo te voy a escribir para entrenarte como Closer y después conectarte con una empresa. Así que ya lo sabes, sos una empresa, comenta CLOSER. Sos una persona que quiere generar ingresos, comenta QUIERO.",
+        "cta_segments": 4
+      },
+      "clr": 28.46,
+      "views": 34825
+    },
+    {
+      "shortCode": "DWFt5aPEUJ9",
+      "closing_text": "Obvio, papá Lo estás viendo acá Está hecho mierda ¿Te puedo molestar una última cosa? ¿Dónde puedo aprender eso? Comentame la palabra clase y te envío una clase gratuita ahora cuando llegue a mi casa cuando esté bien que gracias a Dios estoy bien de salud te la mando Dale, disculpa Amigo, gracias por la buena onda nos vemos, dale",
+      "buildup": {
+        "buildup_text": "Obvio, papá Lo estás viendo acá Está hecho mierda ¿Te puedo molestar una última cosa? ¿Dónde puedo aprender eso?",
+        "buildup_type": "directo",
+        "buildup_segments": 6,
+        "buildup_duration": 5.34,
+        "cta_text": "Comentame la palabra clase y te envío una clase gratuita ahora cuando llegue a mi casa cuando esté bien que gracias a Dios estoy bien de salud te la mando Dale, disculpa Amigo, gracias por la buena onda nos vemos, dale",
+        "cta_segments": 10
+      },
+      "clr": 24.89,
+      "views": 101662
+    },
+    {
+      "shortCode": "DV4-STcCGay",
+      "closing_text": "Por eso son las más sencillas No es que sean regaladas De que es fácil Pero es como que no vas a estar Claro, le llevas bien Hablas, puedes platicar En cambio, la que no es tan linda, es maldita.",
+      "buildup": {
+        "buildup_text": "Por eso son las más sencillas No es que sean regaladas De que es fácil Pero es como que no vas a estar Claro, le llevas bien Hablas, puedes platicar",
+        "buildup_type": "simplificacion",
+        "buildup_segments": 6,
+        "buildup_duration": 10.22,
+        "cta_text": "En cambio, la que no es tan linda, es maldita.",
+        "cta_segments": 1
+      },
+      "clr": 0.84,
+      "views": 1250589
+    }
+  ],
+  "all_videos": [
+    {
+      "shortCode": "DSvbEZRjobb",
+      "url": "https://www.instagram.com/p/DSvbEZRjobb/",
+      "timestamp": "2025-12-26T21:00:00.000Z",
+      "decay_weight": 0.51,
+      "views": 87322,
+      "likes": 2480,
+      "comments": 2689,
+      "clr": 108.43,
+      "duration": 58.12,
+      "words_per_second": 3.22,
+      "opening": {
+        "text": "500 mil pesos. Barrendero. Un millón de pesos. Trabaja en Uber. Dos millones de pesos. Trabaja para una corpo, una multinacional. Tres millones de pesos.",
+        "duration": 7.94,
+        "segments": 7,
+        "patterns": [
+          "dato_numero",
+          "acumulacion"
+        ]
+      },
+      "body": {
+        "text_preview": "Programador, probablemente para Mercado Libre o empresas grandes. Cinco millones de pesos. Cinco millones de pesos, gerente de un banco o alguien con un gran puesto en una corpo. O filmmaker de un día",
+        "duration": 38.74,
+        "segments": 14,
+        "patterns": [
+          "demo_proceso",
+          "matematica",
+          "autoridad"
+        ],
+        "word_count": 122
+      },
+      "closing": {
+        "text": "es literalmente esto, respondeme este video con la palabra clase y te envío una clase gratuita de 20 minutos donde te enseño qué es, cómo ser un Glouser de ventas y cómo empezar a ganar plata. ¿Te parece? Ya.",
+        "duration": 11.44,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "De qué trabaja según lo que gana…"
+    },
+    {
+      "shortCode": "DSLX9M5DhAe",
+      "url": "https://www.instagram.com/p/DSLX9M5DhAe/",
+      "timestamp": "2025-12-12T21:00:00.000Z",
+      "decay_weight": 0.45,
+      "views": 110253,
+      "likes": 5417,
+      "comments": 5776,
+      "clr": 106.63,
+      "duration": 123.88,
+      "words_per_second": 3,
+      "opening": {
+        "text": "Esto que te voy a decir es aburrido, pero hace ganar más de 3.000 dólares al mes al que lo aplica. Este chico lo copió tal cual y el mes pasado se llevó 3.500 dólares directo a su bolsillo.",
+        "duration": 12.86,
+        "segments": 2,
+        "patterns": [
+          "dato_numero"
+        ]
+      },
+      "body": {
+        "text_preview": "Y seamos sinceros, todos los gurús te venden el camino perfecto, ¿no? Trading, e-commerce, Amazon FBA. Pero lo que no te dicen es que para todo su modelo de negocio tenés que invertir plata de tu bols",
+        "duration": 100.2,
+        "segments": 21,
+        "patterns": [
+          "agitacion_leve",
+          "qa_rapido",
+          "tension"
+        ],
+        "word_count": 297
+      },
+      "closing": {
+        "text": "regalo un entrenamiento de 20 minutos donde te enseño paso a paso a cómo hacer un clóuser y cómo hacer que una empresa te contrate responde este vídeo y nos vemos del otro lado chau",
+        "duration": 10.82,
+        "segments": 2,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Top secret 🤫"
+    },
+    {
+      "shortCode": "DSBEuY1jpzB",
+      "url": "https://www.instagram.com/p/DSBEuY1jpzB/",
+      "timestamp": "2025-12-08T21:00:00.000Z",
+      "decay_weight": 0.44,
+      "views": 19106,
+      "likes": 1028,
+      "comments": 935,
+      "clr": 90.95,
+      "duration": 46.33,
+      "words_per_second": 3.3,
+      "opening": {
+        "text": "Respondiendo preguntas frecuentes sobre la profesión Closer de Ventas. ¿Es necesario saber hablar inglés? La respuesta es no, no tenés que hablar inglés. ¿Por qué?",
+        "duration": 9.12,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Porque vas a trabajar muchas veces para empresas en Estados Unidos, pero son de latinos y le venden a latinos. Así que vas a usar el español. ¿Para qué tipo de empresa voy a trabajar? Vas a trabajar p",
+        "duration": 22.65,
+        "segments": 6,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 72
+      },
+      "closing": {
+        "text": "Lo único que tenés que hacer es responderme este video con la palabra clase y te envío una clase de 20 minutos donde te enseño paso a paso a cómo puedes arrancar en este mundo del closer de ventas y lograr la gran libertad financiera. Así que comentame la palabra clase y te la envío.",
+        "duration": 14.56,
+        "segments": 4,
+        "patterns": [
+          "cierre_resumen"
+        ],
+        "cta_buildup": {
+          "buildup_text": "Lo único que tenés que hacer es responderme este video con la palabra clase y te envío una clase de 20 minutos donde te enseño paso a paso a cómo puedes arrancar en este mundo del closer de ventas y lograr la gran libertad financiera.",
+          "buildup_type": "promesa_valor",
+          "buildup_segments": 3,
+          "buildup_duration": 12.56,
+          "cta_text": "Así que comentame la palabra clase y te la envío.",
+          "cta_segments": 1
+        }
+      },
+      "caption_preview": "Respondeme “clase” y te doy una mano."
+    },
+    {
+      "shortCode": "DWRuPKigG8g",
+      "url": "https://www.instagram.com/p/DWRuPKigG8g/",
+      "timestamp": "2026-03-24T18:17:41.000Z",
+      "decay_weight": 0.99,
+      "views": 14568,
+      "likes": 849,
+      "comments": 598,
+      "clr": 70.44,
+      "duration": 51.31,
+      "words_per_second": 4.15,
+      "opening": {
+        "text": "Tino, Tino, ¿qué negocio crees vos que me va a hacer millonario? A ver. ¿Me hago un restaurante o me hago una marca de ropa? Es un dolor de huevo. ¿Para qué vas a abrirte un restaurante o una marca de ropa?",
+        "duration": 8.42,
+        "segments": 5,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Tenés que lidiar con empleados, gente, te han imitado de la zona. Es un quilombo. ¿Quién te dijo esa estupidez? Pero es lo único que conozco yo. ¿Qué me recomiendas vos? Bueno, déjame decirte que hay ",
+        "duration": 28.59,
+        "segments": 16,
+        "patterns": [
+          "agitacion_leve",
+          "qa_rapido"
+        ],
+        "word_count": 114
+      },
+      "closing": {
+        "text": "ok pero yo como puedo empezar a eso bueno si querés si yo creo que podés de hecho te pregunto vos usas whatsapp si y te paga whatsapp por eso y no bueno ahora te pueden empezar a pagar comentame en este video la palabra whatsapp y te mando una clase enseñándote lo que hago vale",
+        "duration": 14.3,
+        "segments": 17,
+        "patterns": [
+          "cta_caption"
+        ],
+        "cta_buildup": {
+          "buildup_text": "ok pero yo como puedo empezar a eso bueno si querés si yo creo que podés de hecho te pregunto vos usas whatsapp si y te paga whatsapp por eso y no bueno ahora te pueden empezar a pagar",
+          "buildup_type": "promesa_valor",
+          "buildup_segments": 12,
+          "buildup_duration": 10.22,
+          "cta_text": "comentame en este video la palabra whatsapp y te mando una clase enseñándote lo que hago vale",
+          "cta_segments": 5
+        }
+      },
+      "caption_preview": "Comenta la palabra Whatsapp y te mando un video explicando lo que yo hago \n\n#tinomossu #lifestyle #c"
+    },
+    {
+      "shortCode": "DICnGBWBOd2",
+      "url": "https://www.instagram.com/p/DICnGBWBOd2/",
+      "timestamp": "2025-04-04T22:08:45.000Z",
+      "decay_weight": 0.07,
+      "views": 23150,
+      "likes": 1071,
+      "comments": 549,
+      "clr": 51.26,
+      "duration": 100.47,
+      "words_per_second": 3.21,
+      "opening": {
+        "text": "¿Qué es ser un closer de ventas y por qué es el mejor camino para hacer plata hoy por internet? Te voy a explicar bien qué es un closer de ventas. Bien, imagínate que esta es una empresa.",
+        "duration": 10.22,
+        "segments": 3,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Esta es la empresa que te va a contratar. La tenemos acá. Esta empresa vende productos o servicios por internet. Y lo que hace esta empresa es invertir mucho dinero en publicidad. ¿Para qué? Para atra",
+        "duration": 77.93,
+        "segments": 18,
+        "patterns": [
+          "agitacion_leve",
+          "analogia",
+          "qa_rapido"
+        ],
+        "word_count": 238
+      },
+      "closing": {
+        "text": "Así que, si querés ser Closer de venta y recibir toda la información, comentame la palabra Closer debajo y te mando toda la info para que entiendas bien cómo vamos a hacer para que vos empieces a trabajar con una empresa al extranjero. Nos vemos pronto.",
+        "duration": 12.32,
+        "segments": 2,
+        "patterns": [
+          "cta_caption",
+          "cierre_resumen"
+        ],
+        "cta_buildup": {
+          "buildup_text": "",
+          "buildup_type": "directo",
+          "buildup_segments": 0,
+          "buildup_duration": 0,
+          "cta_text": "Así que, si querés ser Closer de venta y recibir toda la información, comentame la palabra Closer debajo y te mando toda la info para que entiendas bien cómo vamos a hacer para que vos empieces a trabajar con una empresa al extranjero. Nos vemos pronto.",
+          "cta_segments": 2
+        }
+      },
+      "caption_preview": "Comenta \"Closer\" y hablamos por privado"
+    },
+    {
+      "shortCode": "DWKZA78gAqR",
+      "url": "https://www.instagram.com/p/DWKZA78gAqR/",
+      "timestamp": "2026-03-21T21:57:45.000Z",
+      "decay_weight": 0.97,
+      "views": 33237,
+      "likes": 1537,
+      "comments": 632,
+      "clr": 41.12,
+      "duration": 57,
+      "words_per_second": 3.75,
+      "opening": {
+        "text": "Tino, este es tu Super Daddy, ¿no? ¿Cómo? Es tu Super Daddy este, ¿no? Ojalá, bro. Y sí, todas las cosas que vos subías en la red, el auto, qué sé yo, el reloj.",
+        "duration": 8.46,
+        "segments": 5,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Sí. Eso, decime la verdad. Lo paga el señor, seguro. Ojalá que me lo pagaría el señor, brother, no. Te juro que no. No, pero ¿qué es lo que haces vos? Nunca entendí lo que haces, flaco. Yo lo que hago",
+        "duration": 35.98,
+        "segments": 20,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 135
+      },
+      "closing": {
+        "text": "No vamos a la pileta, pero si querés Te puedo dar una mano Bueno, dale, ¿qué tengo que hacer? Comentame en este video la palabra clase Y te mido un entrenamiento gratis Ahora termino la pileta, salgo y lo hago Dale, nos vemos animal",
+        "duration": 12.56,
+        "segments": 7,
+        "patterns": [
+          "cta_caption"
+        ],
+        "cta_buildup": {
+          "buildup_text": "No vamos a la pileta, pero si querés Te puedo dar una mano Bueno, dale, ¿qué tengo que hacer?",
+          "buildup_type": "promesa_valor",
+          "buildup_segments": 3,
+          "buildup_duration": 5,
+          "cta_text": "Comentame en este video la palabra clase Y te mido un entrenamiento gratis Ahora termino la pileta, salgo y lo hago Dale, nos vemos animal",
+          "cta_segments": 4
+        }
+      },
+      "caption_preview": "Comenta la palabra CLASE y te envio un entrenamiento totalmente gratis\n\n#closer #ventas #mensajes #l"
+    },
+    {
+      "shortCode": "DV1oYg_iVpW",
+      "url": "https://www.instagram.com/p/DV1oYg_iVpW/",
+      "timestamp": "2026-03-13T20:28:01.000Z",
+      "decay_weight": 0.91,
+      "views": 17571,
+      "likes": 1180,
+      "comments": 463,
+      "clr": 39.24,
+      "duration": 72.77,
+      "words_per_second": 4.15,
+      "opening": {
+        "text": "Ey, disculpa, disculpa, ¿vos sos Tino Mosu? Sí, soy yo. Ah, sos un influencer. Sí, no soy ese influencer, pero sí. Decime una cosa, porque quiero saber si es verdad todo lo que decía ahí en la playa de...",
+        "duration": 9.48,
+        "segments": 5,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "¿Funciona o no funciona eso? Porque... Y depende, realmente depende de quién lo haga, pero si pones un compromiso, 100% seguro que te funciona. No termino de entender de qué trata eso, porque decís qu",
+        "duration": 49.39,
+        "segments": 27,
+        "patterns": [
+          "qa_rapido"
+        ],
+        "word_count": 203
+      },
+      "closing": {
+        "text": "¿Qué me recomendabas para buscar ahí en internet algún video? ¿Me recomiendas? Sí, sí, yo ahora tengo una reunión Pero si querés te armo una clase y te la mando Para que la veas Uh, tremendo ¿Qué tengo que hacer? Comentame en este video la palabra clase y te la mando Dale, listo Dale papá Nos vemos Nos vemos",
+        "duration": 13.9,
+        "segments": 12,
+        "patterns": [
+          "cta_caption"
+        ],
+        "cta_buildup": {
+          "buildup_text": "¿Qué me recomendabas para buscar ahí en internet algún video? ¿Me recomiendas? Sí, sí, yo ahora tengo una reunión Pero si querés te armo una clase y te la mando Para que la veas Uh, tremendo ¿Qué tengo que hacer?",
+          "buildup_type": "promesa_valor",
+          "buildup_segments": 7,
+          "buildup_duration": 9.96,
+          "cta_text": "Comentame en este video la palabra clase y te la mando Dale, listo Dale papá Nos vemos Nos vemos",
+          "cta_segments": 5
+        }
+      },
+      "caption_preview": "Comenta “CLASE” y te la mando al privado."
+    },
+    {
+      "shortCode": "DSGOUTflFId",
+      "url": "https://www.instagram.com/p/DSGOUTflFId/",
+      "timestamp": "2025-12-10T21:00:00.000Z",
+      "decay_weight": 0.45,
+      "views": 13065,
+      "likes": 875,
+      "comments": 338,
+      "clr": 38.63,
+      "duration": 71.27,
+      "words_per_second": 3.51,
+      "opening": {
+        "text": "Estamos acá con el asador, mi viejo. Pa, ¿qué estás haciendo? Un asadito rico para comer hoy, que es un día hermoso. Bueno, Pa, explícale bien a la gente vos que entendés de closer de venta.",
+        "duration": 10.66,
+        "segments": 4,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "¿Qué es? A mí déjame con la parrilla, con la colina. Para que yo te explico qué es ser un closer de venta. Vení. Ser un closer de venta es algo bastante simple. Básicamente lo que haces es respondés c",
+        "duration": 47.37,
+        "segments": 18,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 165
+      },
+      "closing": {
+        "text": "de cómo vos también serlo para lograr la libertad financiera por internet, respondeme este video con la palabra clase y te envío una clase 100% gratuita donde te doy el paso a paso para hacer un close up de ventas y lograr la libertad financiera por internet. Chau.",
+        "duration": 13.24,
+        "segments": 6,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Te doy una mano! Si queres ser Closer respóndeme con la palabra “clase” y te ayudo personalmente."
+    },
+    {
+      "shortCode": "DV7BzO-iUr3",
+      "url": "https://www.instagram.com/p/DV7BzO-iUr3/",
+      "timestamp": "2026-03-15T23:04:47.000Z",
+      "decay_weight": 0.93,
+      "views": 25430,
+      "likes": 1689,
+      "comments": 546,
+      "clr": 32.33,
+      "duration": 89.88,
+      "words_per_second": 3.78,
+      "opening": {
+        "text": "Esta chica que ves acá se llama Lady. A Lady la conocí después de haber ido más de 100 veces al mismo restaurante. Nos llevamos súper bien porque era la chica que me atendía siempre.",
+        "duration": 9.5,
+        "segments": 3,
+        "patterns": [
+          "historia"
+        ]
+      },
+      "body": {
+        "text_preview": "Ya sabía lo que pedía y en un momento me dijo, Tino, ¿te puedo preguntar a qué te dedicas? Te veo siempre con la computadora. Yo le expliqué lo que me dedicaba y Lady no tardó en interesarse. Me dijo,",
+        "duration": 70.96,
+        "segments": 21,
+        "patterns": [
+          "caso_real",
+          "demo_proceso",
+          "matematica"
+        ],
+        "word_count": 264
+      },
+      "closing": {
+        "text": "Así que si querés saber cuál fue el sistema que aplicamos con Lady para que vos también lo puedas aplicar, comentame en este video la palabra. Lady y yo personalmente te ayudo A vos también, comentame Lady y te ayudo",
+        "duration": 9.42,
+        "segments": 3,
+        "patterns": [
+          "cta_caption",
+          "cierre_resumen",
+          "open_loop"
+        ],
+        "cta_buildup": {
+          "buildup_text": "",
+          "buildup_type": "directo",
+          "buildup_segments": 0,
+          "buildup_duration": 0,
+          "cta_text": "Así que si querés saber cuál fue el sistema que aplicamos con Lady para que vos también lo puedas aplicar, comentame en este video la palabra. Lady y yo personalmente te ayudo A vos también, comentame Lady y te ayudo",
+          "cta_segments": 3
+        }
+      },
+      "caption_preview": "Comenta “LADY” para tener el mismo sistema que ella."
+    },
+    {
+      "shortCode": "DJkOn44Pod9",
+      "url": "https://www.instagram.com/p/DJkOn44Pod9/",
+      "timestamp": "2025-05-12T19:58:57.000Z",
+      "decay_weight": 0.09,
+      "views": 34825,
+      "likes": 2256,
+      "comments": 642,
+      "clr": 28.46,
+      "duration": 72.37,
+      "words_per_second": 3.69,
+      "opening": {
+        "text": "¿A qué se dedican? Yo entreno a personas normales como closers de ventas y los vuelvo muy profesionales. ¿Y vos? Yo ayudo a empresas que están buscando tener mejores vendedores",
+        "duration": 8.76,
+        "segments": 4,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "y los closers que él entrena se los pongo en sus equipos comerciales. ¿Y hace cuánto tiempo se dedican a esto? Mirá, yo empecé como closer de ventas hace cuatro años trabajando para Teo y empecé a ens",
+        "duration": 49.21,
+        "segments": 14,
+        "patterns": [
+          "qa_rapido"
+        ],
+        "word_count": 174
+      },
+      "closing": {
+        "text": "para que de un día para el otro tengas vendedores que vendan por vos. Y si sos una persona que quiere generar ingresos, comenta la palabra QUIERO que yo te voy a escribir para entrenarte como Closer y después conectarte con una empresa. Así que ya lo sabes, sos una empresa, comenta CLOSER. Sos una persona que quiere generar ingresos, comenta QUIERO.",
+        "duration": 14.4,
+        "segments": 6,
+        "patterns": [
+          "cta_video",
+          "cta_caption",
+          "cta_doble",
+          "cierre_resumen"
+        ],
+        "cta_buildup": {
+          "buildup_text": "para que de un día para el otro tengas vendedores que vendan por vos. Y si sos una persona que quiere generar ingresos,",
+          "buildup_type": "directo",
+          "buildup_segments": 2,
+          "buildup_duration": 4.74,
+          "cta_text": "comenta la palabra QUIERO que yo te voy a escribir para entrenarte como Closer y después conectarte con una empresa. Así que ya lo sabes, sos una empresa, comenta CLOSER. Sos una persona que quiere generar ingresos, comenta QUIERO.",
+          "cta_segments": 4
+        }
+      },
+      "caption_preview": "Nosotros no empezamos ayer, son más de 4 años dedicándonos a los negocios digitales.\n\nComenta la pal"
+    },
+    {
+      "shortCode": "DKQcX1kNlpo",
+      "url": "https://www.instagram.com/p/DKQcX1kNlpo/",
+      "timestamp": "2025-05-30T00:05:09.000Z",
+      "decay_weight": 0.1,
+      "views": 134317,
+      "likes": 4591,
+      "comments": 1241,
+      "clr": 27.03,
+      "duration": 80.59,
+      "words_per_second": 3.86,
+      "opening": {
+        "text": "Este chico que ves acá se llama Michael. Michael me escribía por Instagram diciéndome, ti no estoy cansado, estoy trabajando 10 horas al día, no gano lo que quiero, quiero hacer algo diferente.",
+        "duration": 8.78,
+        "segments": 4,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "¿Cómo lo escuchás? Acá. Yo lo malo que tiene, bro, es que paso todo el día trabajando acá. Estoy todo el día trabajando para eso mismo, para juntar una buena plata y dedicarme totalmente a esto. Porqu",
+        "duration": 61.13,
+        "segments": 21,
+        "patterns": [
+          "matematica",
+          "qa_rapido"
+        ],
+        "word_count": 239
+      },
+      "closing": {
+        "text": "Y a veces hay que cambiar de lugar y poner el mismo trabajo para ganar muchísimo más. Así que Michael, como a ustedes les gusta decir, vamos arriba, aguanta Uruguay, aguanta Argentina y gracias Michael por la confianza.",
+        "duration": 10.68,
+        "segments": 2,
+        "patterns": [
+          "cta_caption",
+          "cierre_resumen"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Gran alumno y persona.\n\nComenta “closer” y te mando un video explicándote cómo funciona."
+    },
+    {
+      "shortCode": "DWFt5aPEUJ9",
+      "url": "https://www.instagram.com/p/DWFt5aPEUJ9/",
+      "timestamp": "2026-03-20T02:23:34.000Z",
+      "decay_weight": 0.96,
+      "views": 101662,
+      "likes": 11435,
+      "comments": 2846,
+      "clr": 24.89,
+      "duration": 58.72,
+      "words_per_second": 4.87,
+      "opening": {
+        "text": "Pero no sé boludo, estoy bajando boludo y tengo este accidente, ¿cómo no se puede salir la rueda hermano? A ver aguantamos un segundo. Amigo, amigo, ¿está bien? Vi que tuviste un accidente. ¿Cómo? ¿Está todo bien acá? Vi que tuviste un accidente. Sí, sí, está bien, está bien.",
+        "duration": 8.66,
+        "segments": 6,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Y vos, tu amigo, tu amigo que está ahí. Este está enojado pero está bien. ¿No les pasó nada? Estamos perfectos crack. Gracias por estar. Me llamó la atención también el auto que tenés. ¿Qué hiciste pa",
+        "duration": 35.98,
+        "segments": 33,
+        "patterns": [
+          "qa_rapido"
+        ],
+        "word_count": 176
+      },
+      "closing": {
+        "text": "Obvio, papá Lo estás viendo acá Está hecho mierda ¿Te puedo molestar una última cosa? ¿Dónde puedo aprender eso? Comentame la palabra clase y te envío una clase gratuita ahora cuando llegue a mi casa cuando esté bien que gracias a Dios estoy bien de salud te la mando Dale, disculpa Amigo, gracias por la buena onda nos vemos, dale",
+        "duration": 14.08,
+        "segments": 16,
+        "patterns": [
+          "cta_caption"
+        ],
+        "cta_buildup": {
+          "buildup_text": "Obvio, papá Lo estás viendo acá Está hecho mierda ¿Te puedo molestar una última cosa? ¿Dónde puedo aprender eso?",
+          "buildup_type": "directo",
+          "buildup_segments": 6,
+          "buildup_duration": 5.34,
+          "cta_text": "Comentame la palabra clase y te envío una clase gratuita ahora cuando llegue a mi casa cuando esté bien que gracias a Dios estoy bien de salud te la mando Dale, disculpa Amigo, gracias por la buena onda nos vemos, dale",
+          "cta_segments": 10
+        }
+      },
+      "caption_preview": "Comentá clase y te la envío al privado\n\n#closer #ventas #lifestyle #tinomossu"
+    },
+    {
+      "shortCode": "DSp2CkSjhkg",
+      "url": "https://www.instagram.com/p/DSp2CkSjhkg/",
+      "timestamp": "2025-12-24T17:00:00.000Z",
+      "decay_weight": 0.5,
+      "views": 81231,
+      "likes": 3604,
+      "comments": 323,
+      "clr": 8.96,
+      "duration": 209.21,
+      "words_per_second": 3.49,
+      "opening": {
+        "text": "Vamos a reaccionar a otra de mis haters, a ver qué se inventan ahora, vamos. Me infiltré en el curso del salame del año para mostrarte cómo es que te roba.",
+        "duration": 9.7,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Me encantó, ¿de dónde salió? ¿Del balcón? De el balcón ahí con las medias, mirála. Y no tiene corpiño por lo que veo. Mamadera. Tino, ¿cuánta plata tenés en tu billetera? Tengo tanto que no pude traer",
+        "duration": 187.19,
+        "segments": 83,
+        "patterns": [
+          "agitacion_fuerte",
+          "demo_proceso",
+          "matematica",
+          "demolicion_objecion",
+          "analogia",
+          "future_pacing",
+          "autoridad",
+          "qa_rapido"
+        ],
+        "word_count": 656
+      },
+      "closing": {
+        "text": "Sí, tenés razón Es como, dejate de joder O sea, no tiene ni idea de lo que hago esta chica Pero nada, le mando un abrazo enorme Y cualquier cosita, si llega a querer grabar un par de entrevistas Estoy, ¿vale? Abrazo grande",
+        "duration": 12.32,
+        "segments": 7,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Me desenmascaró 🥹"
+    },
+    {
+      "shortCode": "DSpj6hEjsfN",
+      "url": "https://www.instagram.com/p/DSpj6hEjsfN/",
+      "timestamp": "2025-12-24T14:23:07.000Z",
+      "decay_weight": 0.5,
+      "views": 352585,
+      "likes": 37924,
+      "comments": 2588,
+      "clr": 6.82,
+      "duration": 45.02,
+      "words_per_second": 3.58,
+      "opening": {
+        "text": "Ay, qué rico, cómo me pones tan tiradito. Qué carajo, imaginate llevar a tus hijos a un colegio,",
+        "duration": 7.92,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "que viene una cantante roñosa como esta, y tu hija te cantando qué rico, cómo me pones, papi, de ladito. ¿Vos te imaginás eso como padre? Ver a tu hija cantar qué rico, papi, cómo me pones de ladito. ",
+        "duration": 23.32,
+        "segments": 8,
+        "patterns": [
+          "agitacion_leve",
+          "future_pacing"
+        ],
+        "word_count": 78
+      },
+      "closing": {
+        "text": "joven. Porque ellos los ven y dicen no, mira, yo quiero ser como esta tiktoker que es una boluda que lo único que hace es sacar temas de mierda y mostrar el culo por internet. Ese es el problema hoy con las redes sociales. O te pueden ayudar a construir o te pueden destruir. Y esto es un gran ejemplo que te pueden destruir.",
+        "duration": 13.78,
+        "segments": 7,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Qué opinas ⬇️"
+    },
+    {
+      "shortCode": "DUbpCYKibHr",
+      "url": "https://www.instagram.com/p/DUbpCYKibHr/",
+      "timestamp": "2026-02-06T21:40:00.000Z",
+      "decay_weight": 0.7,
+      "views": 942835,
+      "likes": 21890,
+      "comments": 1250,
+      "clr": 5.71,
+      "duration": 157.29,
+      "words_per_second": 3.08,
+      "opening": {
+        "text": "Disculpá, disculpame un minuto, ¿es el presidencial? Sí, el presidente, sí. No me digas, mirá, tengo contenido de relojes, no te he robado mucho tiempo.",
+        "duration": 10.66,
+        "segments": 3,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "¿Cómo te llamás? Valentino. Ah, ¿y vos? Lucía. ¿Cómo estás? Un gusto. ¿Cómo andás? ¿Todo bien? Caso. ¿A qué te dedicas? Yo tengo una empresa donde entreno a la gente en ventas y le doy trabajo con com",
+        "duration": 133.67,
+        "segments": 63,
+        "patterns": [
+          "demo_proceso",
+          "analogia",
+          "qa_rapido"
+        ],
+        "word_count": 423
+      },
+      "closing": {
+        "text": "che como estuviste tenés instagram me imagino si como estuviste en la cita de etiqueta ahí abajo tino.mosu tino.mosu listo ahora te agrego bueno papá un gusto felicitaciones nos vemos que andes bien chau chau",
+        "duration": 12.96,
+        "segments": 18,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Rolex Presidente de @tino.mossu"
+    },
+    {
+      "shortCode": "DS8Irr3AKOU",
+      "url": "https://www.instagram.com/p/DS8Irr3AKOU/",
+      "timestamp": "2025-12-31T19:30:42.000Z",
+      "decay_weight": 0.53,
+      "views": 288031,
+      "likes": 10437,
+      "comments": 524,
+      "clr": 5.02,
+      "duration": 35.52,
+      "words_per_second": 3.04,
+      "opening": {
+        "text": "La gente de Guita, Guita, Guita, Guita, Guita, Guita, Guita, Guita, Guita, no vive en Nordelta. La gente de más de plata de la Argentina vive en San Isidro y no vive en un country, vive en la calle, en la calle normal.",
+        "duration": 13.28,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Literal, amigo, vos vas por las calles, la gente de San Isidro, los ricos, ricos, ricos, vos claro, la ves de lejos, tiene un paredón, no lo ves.",
+        "duration": 9.8,
+        "segments": 1,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 28
+      },
+      "closing": {
+        "text": "Una manzana con un paredón. veas por arriba que yo pasé en helicóptero y decís, mierda amigo, ¿y estas casas? y no solo en un country es en la calle, porque no quieren que nos jodan",
+        "duration": 12.44,
+        "segments": 6,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "La gente de mucha guita no vive en nordelta #nordelta #sanisidro #buenosaires #tinomossu"
+    },
+    {
+      "shortCode": "DTMMSFLiGoI",
+      "url": "https://www.instagram.com/p/DTMMSFLiGoI/",
+      "timestamp": "2026-01-07T01:09:50.000Z",
+      "decay_weight": 0.55,
+      "views": 604390,
+      "likes": 26536,
+      "comments": 415,
+      "clr": 1.56,
+      "duration": 38.47,
+      "words_per_second": 3.12,
+      "opening": {
+        "text": "Hino, ¿por qué decís que la mayoría de tus amigos no son tus amigos? ¿Querés saber si tenés un amigo, verdad? Sí. ¿Querés hacer una prueba? ¿Cómo sería?",
+        "duration": 8.3,
+        "segments": 5,
+        "patterns": [
+          "pregunta",
+          "historia",
+          "identidad"
+        ]
+      },
+      "body": {
+        "text_preview": "Abrí tu negocio. Arrancó un negocio desde cero. Y fíjate qué onda. Si el tipo o la chica... No, amiga, qué hora te diste negocio. Che, me vas a hacer un precio, ¿no? Che, después te lo pago. O no te p",
+        "duration": 21.75,
+        "segments": 11,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 59
+      },
+      "closing": {
+        "text": "Es tu primer cliente. Es más, te deja la mejor propina. El verdadero amigo te publica tu emprendimiento a las redes. Che, vayan, abrió su negocio mi amiga Vayan a... te recomienda",
+        "duration": 8.42,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "\"LA MAYORIA DE TUS AMIGOS SON FALSOS\" #tinomossu #viralreels #fyp #paratí"
+    },
+    {
+      "shortCode": "DPSNXV6CUSP",
+      "url": "https://www.instagram.com/p/DPSNXV6CUSP/",
+      "timestamp": "2025-10-01T23:09:31.000Z",
+      "decay_weight": 0.26,
+      "views": 226912,
+      "likes": 20523,
+      "comments": 247,
+      "clr": 1.2,
+      "duration": 33.22,
+      "words_per_second": 2.59,
+      "opening": {
+        "text": "Este joven con 22 años, cuando me dijo Leano no lo pudo creer, un poco como un joven. Muy bien, mi hermano, mucho éxito para ti, porque 22 años,",
+        "duration": 8.4,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "compraste un relojito de ese calibre, 45.700. Sí, 46.000 dólares. Y escuchen esto, el año que viene te voy a comprar a esta fecha un IP de 180.000.",
+        "duration": 15.32,
+        "segments": 3,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 28
+      },
+      "closing": {
+        "text": "Reparámelo. Mira, aunque no me lo compres, es difícil que te compres eso, ¿no? Y mucho más. Eso lo merecen, hermano. Gracias. Bendiciones. Gracias por tenerme al corazón",
+        "duration": 9.5,
+        "segments": 7,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Argentina en la casa 🇦🇷🔥\n\nGracias @arieljoyerias"
+    },
+    {
+      "shortCode": "DV4-STcCGay",
+      "url": "https://www.instagram.com/p/DV4-STcCGay/",
+      "timestamp": "2026-03-15T03:36:27.000Z",
+      "decay_weight": 0.92,
+      "views": 1250589,
+      "likes": 184119,
+      "comments": 1549,
+      "clr": 0.84,
+      "duration": 60.52,
+      "words_per_second": 3.4,
+      "opening": {
+        "text": "Siempre la mujer más linda va a ser la más fácil. ¿Por qué? Porque la mujer más linda no está acostumbrada a que venga un hombre y se la quiera levantar.",
+        "duration": 8.3,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Aunque vos no lo creas, la más linda, la más linda, la más linda de todas, los hombres no se la animan. Les da miedo. Entonces, como les das miedo, ellos se creen que las van a rechazar, que los van a",
+        "duration": 38.68,
+        "segments": 15,
+        "patterns": [
+          "agitacion_fuerte",
+          "demolicion_objecion"
+        ],
+        "word_count": 134
+      },
+      "closing": {
+        "text": "Por eso son las más sencillas No es que sean regaladas De que es fácil Pero es como que no vas a estar Claro, le llevas bien Hablas, puedes platicar En cambio, la que no es tan linda, es maldita.",
+        "duration": 13.54,
+        "segments": 7,
+        "patterns": [
+          "link_bio",
+          "future_pacing"
+        ],
+        "cta_buildup": {
+          "buildup_text": "Por eso son las más sencillas No es que sean regaladas De que es fácil Pero es como que no vas a estar Claro, le llevas bien Hablas, puedes platicar",
+          "buildup_type": "simplificacion",
+          "buildup_segments": 6,
+          "buildup_duration": 10.22,
+          "cta_text": "En cambio, la que no es tan linda, es maldita.",
+          "cta_segments": 1
+        }
+      },
+      "caption_preview": "Los hombres le tienen miedo a la mujer linda."
+    },
+    {
+      "shortCode": "DVwtDRpjcIb",
+      "url": "https://www.instagram.com/p/DVwtDRpjcIb/",
+      "timestamp": "2026-03-11T22:31:40.000Z",
+      "decay_weight": 0.9,
+      "views": 753911,
+      "likes": 164587,
+      "comments": 1031,
+      "clr": 0.63,
+      "duration": 19.39,
+      "words_per_second": 3.66,
+      "opening": {
+        "text": "Yo estoy súper a favor de la mujer interesada. De hecho, yo no la llamaría interesada. No. La llamaría inteligente. La mujer nunca va a salir con un hombre que esté por debajo de su estatus.",
+        "duration": 10.82,
+        "segments": 5,
+        "patterns": [
+          "provocacion"
+        ]
+      },
+      "body": {
+        "text_preview": "",
+        "duration": 2.09,
+        "segments": 0,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 1
+      },
+      "closing": {
+        "text": "Nunca va a salir con un tipo que gane menos plata. Nunca va a salir con un tipo que sea menos que ella. Es un atraso. Es un atraso. La mujer no es estúpida.",
+        "duration": 6.48,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Enviáselo 😂"
+    },
+    {
+      "shortCode": "DRs3wtkiVxM",
+      "url": "https://www.instagram.com/p/DRs3wtkiVxM/",
+      "timestamp": "2025-12-01T00:42:23.000Z",
+      "decay_weight": 0.41,
+      "views": 221668,
+      "likes": 14915,
+      "comments": 82,
+      "clr": 0.55,
+      "duration": 31.69,
+      "words_per_second": 3.53,
+      "opening": {
+        "text": "Dino, ¿cuál es tu top 3 de libros que todo hombre debería leer para hacer su primer millón de dólares? Primer millón de dólares. Yo lo hice con 22 años. Mis mejores 3 libros hasta ese momento fueron Vendes o vendes de gran cardón,",
+        "duration": 10.78,
+        "segments": 3,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Liberazo, aprendés a vender, aprendés a comunicarte y a relacionarte con la gente. Segundo libro, Los secretos de la mente millonaria, cambiás tu mente,",
+        "duration": 8.25,
+        "segments": 2,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 24
+      },
+      "closing": {
+        "text": "pasá de una mente pobre a una mente millonario. Y tercer libro, The Millionaire Bucket, el folleto del millonario de gran cardón. Liberazo, es un libro de 60 páginas, es un folleto, mejor dicho, de 60 páginas. buenísimo, lo tenés que leer también",
+        "duration": 12.66,
+        "segments": 4,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Top 3 mejores libros."
+    },
+    {
+      "shortCode": "DVeD12BgGak",
+      "url": "https://www.instagram.com/p/DVeD12BgGak/",
+      "timestamp": "2026-03-04T16:46:02.000Z",
+      "decay_weight": 0.85,
+      "views": 144171,
+      "likes": 10320,
+      "comments": 52,
+      "clr": 0.5,
+      "duration": 63.16,
+      "words_per_second": 3.21,
+      "opening": {
+        "text": "Dino, ¿qué serie o película te hizo aprender mucho de negocios? Ok, hay dos series que yo aprendí más en estas dos series que muchos libros de los cuales leí.",
+        "duration": 9.74,
+        "segments": 2,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Aprendes de negociación, de cómo levantarte si estás en quiebra, de cómo negociar con gente con muchísima plata. Tenés que anotarla y la tenés que leer. La tenés que ver, perdón, son muy buenas. Uno, ",
+        "duration": 40.3,
+        "segments": 16,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 127
+      },
+      "closing": {
+        "text": "con 100 dólares y tiene que hacer un negocio de un millón de dólares en tres meses. Es real. y durante tres meses lo están grabando todo el tiempo. Qué hace, cómo lo hace, cómo habla, cómo no habla. Es buenísima. Se llama Undercover Billionaire.",
+        "duration": 13.12,
+        "segments": 7,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Estas dos series te van a hacer millonario #tinomossu #lifestyle #millonario #serie #undercovermillo"
+    },
+    {
+      "shortCode": "DTa-JlOgB6k",
+      "url": "https://www.instagram.com/p/DTa-JlOgB6k/",
+      "timestamp": "2026-01-12T18:54:53.000Z",
+      "decay_weight": 0.58,
+      "views": 599851,
+      "likes": 29996,
+      "comments": 144,
+      "clr": 0.48,
+      "duration": 34.24,
+      "words_per_second": 3.01,
+      "opening": {
+        "text": "Dino, ¿qué libro debería leer para volverme millonaria? ¿Este año? Este año. ¿Tenés 12 meses? ¿Tenés bastante? Sí. Ok. Número 1, rápido, para cambiar tu mentalidad,",
+        "duration": 10.56,
+        "segments": 6,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Los secretos de la mente millonaria. Vas a pensar como una persona de Gita. Está muy bueno. Los secretos de la mente millonaria. Número 2, para aprender de ventas.",
+        "duration": 9.34,
+        "segments": 5,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 29
+      },
+      "closing": {
+        "text": "Vendes o vendes de gran cardón. Y número 3, para empezar a crear fuentes de ingreso, El folleto del millonario de gran cardón. 60 páginas tiene. Es el mejor libro que me leí Porque es un folleto, el mejor 60 páginas en un día te lo lees",
+        "duration": 14.34,
+        "segments": 7,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Estos son los libros que te van a hacer millonario este 2026 #tinomossu #lifestyle #millonaria #2026"
+    },
+    {
+      "shortCode": "DVz2X4QDRjQ",
+      "url": "https://www.instagram.com/p/DVz2X4QDRjQ/",
+      "timestamp": "2026-03-13T03:53:05.000Z",
+      "decay_weight": 0.91,
+      "views": 202801,
+      "likes": 42215,
+      "comments": 87,
+      "clr": 0.21,
+      "duration": 74.32,
+      "words_per_second": 3.44,
+      "opening": {
+        "text": "¿Sabías que la plata que tenés en el banco, realmente el banco no la tiene? ¿Cómo que no la tiene? Tu plata el banco no la tiene. ¿Cómo que no? Y más, vos en Estados Unidos, ¿querés ir a retirar montos grandes?",
+        "duration": 8.96,
+        "segments": 5,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Y lo primero que te dicen es, no, no lo tenemos. Danos cinco días y te lo damos. ¡Tu plata, morena! ¡Tu plata! ¿Querés saber cómo funciona el sistema bancario y cómo gana plata a costa de la gente? Sí",
+        "duration": 53.8,
+        "segments": 25,
+        "patterns": [
+          "demo_proceso",
+          "qa_rapido",
+          "tension"
+        ],
+        "word_count": 170
+      },
+      "closing": {
+        "text": "y vos cuando querés tus mil dólares te doy 1050 me dejaste en un plazo fijo me llené de plata a costa de tu plata y soy un sistema ponzi de la putísima madre legalmente hablando eso lo que hace el banco mora",
+        "duration": 11.56,
+        "segments": 3,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": ""
+    },
+    {
+      "shortCode": "DVO__XPCdi8",
+      "url": "https://www.instagram.com/p/DVO__XPCdi8/",
+      "timestamp": "2026-02-26T20:22:58.000Z",
+      "decay_weight": 0.81,
+      "views": 792581,
+      "likes": 126433,
+      "comments": 230,
+      "clr": 0.18,
+      "duration": 54.49,
+      "words_per_second": 1.87,
+      "opening": {
+        "text": "Música",
+        "duration": 29.98,
+        "segments": 1,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "totalmente de acuerdo, cuando sea padre voy a crear a mis hijos así, no le voy a dar un teléfono hasta que tengan 15 años, van a salir a jugar, van a salir a hacer deportes en la calle,",
+        "duration": 9.99,
+        "segments": 3,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 39
+      },
+      "closing": {
+        "text": "van a conocer la naturaleza, se van a lastimar, si se tienen que quebrar, que se quiebren, pero que sean chicos que salgan a la calle, que interactúen con la gente, no unos estúpidos introvertidos ahí con el teléfono y cuando los sacas a la calle no saben ni para dónde mirar. Estos son los padres que realmente valen la pena.",
+        "duration": 14.52,
+        "segments": 6,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Mis hijos no van a ser unos tarados pegados a un teléfono.\n#tinomossu #hijosfelices #crianzaconscien"
+    },
+    {
+      "shortCode": "DVSOvaIjrUE",
+      "url": "https://www.instagram.com/p/DVSOvaIjrUE/",
+      "timestamp": "2026-02-28T02:29:33.000Z",
+      "decay_weight": 0.82,
+      "views": 216829,
+      "likes": 40831,
+      "comments": 61,
+      "clr": 0.15,
+      "duration": 46.18,
+      "words_per_second": 3.68,
+      "opening": {
+        "text": "Aquí los chicos están pensando con 15 años en que tienen que sacar a la familia, en que tienen que salvar a la familia. Yo hablo mucho con la psicóloga del club y el 90% o el 85% de los chicos de las inferiores de boca están en índices de pobreza familiar.",
+        "duration": 14.04,
+        "segments": 2,
+        "patterns": [
+          "dato_numero"
+        ]
+      },
+      "body": {
+        "text_preview": "Hay un chico de boca que a veces no iba, me contó la psicóloga, que no va a entrenar porque va a recoger cartón con los padres para ganarse la vida. O sea, tú imagínate la presión que tienen esos chic",
+        "duration": 18.38,
+        "segments": 4,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 65
+      },
+      "closing": {
+        "text": "O muy muy muy rico Pero el fútbol te va a seguir apasionando Podés literalmente jugar con una botellita O una tapita Y ser competitivo Y llorar por ese deporte Y ponerte contento por ese deporte El fútbol es mágico Hay un montón de gente que ha salido adelante gracias al fútbol",
+        "duration": 13.76,
+        "segments": 9,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "En la pobreza el 90% de los chicos de las inferiores de #bocajuniors #CABJ \n#futbolargentino #pobrez"
+    },
+    {
+      "shortCode": "DNomGYJpa47",
+      "url": "https://www.instagram.com/p/DNomGYJpa47/",
+      "timestamp": "2025-08-21T22:47:07.000Z",
+      "decay_weight": 0.19,
+      "views": 146768,
+      "likes": -1,
+      "comments": 2231,
+      "clr": 0,
+      "duration": 179.53,
+      "words_per_second": 3.49,
+      "opening": {
+        "text": "¿Cómo funciona mi programa La U del Closer? ¿Y por qué puede ser un antes y un después en tu vida? Bueno, primero para que entiendas, nosotros tenemos más de 8000 estudiantes,",
+        "duration": 9.34,
+        "segments": 4,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "somos los número uno de todo el mundo prácticamente. Hemos aparecido en un montón de medios de comunicación, Forbes, Ámbito Financiero, TN, todos los medios de comunicación más importantes hemos apare",
+        "duration": 157.61,
+        "segments": 54,
+        "patterns": [
+          "demo_proceso",
+          "autoridad"
+        ],
+        "word_count": 546
+      },
+      "closing": {
+        "text": "Así es como funciona la U del closer. Así que espero que realmente pronto te vamos dentro del programa y que pronto te entrenemos como Closer de Ventas. Así empezaste a trabajar para empresas del extranjero. Te mando un gran abrazo. Gracias por la confianza. Abrazo enorme.",
+        "duration": 12.58,
+        "segments": 6,
+        "patterns": [
+          "cierre_resumen",
+          "future_pacing"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Así funciona mi programa."
+    }
+  ]
+}

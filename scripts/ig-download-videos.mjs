@@ -7,6 +7,7 @@
  *   node scripts/ig-download-videos.mjs @username --top 5    (solo top 5 por vistas)
  *   node scripts/ig-download-videos.mjs @username --top-performers  (top CLR + views proporcional)
  *   node scripts/ig-download-videos.mjs @username --skip-transcribe  (solo descarga)
+ *   node scripts/ig-download-videos.mjs @username --lang es   (forzar idioma, default: auto-detect)
  *
  * Requiere:
  *   - Perfil ya scrapeado en .data/ig-references/{username}.json
@@ -38,6 +39,7 @@ const args = process.argv.slice(2);
 let topN = 0; // 0 = todos los videos
 let skipTranscribe = false;
 let topPerformers = false;
+let forceLang = null; // null = auto-detect, "es"/"en"/etc = forzar
 const usernames = [];
 
 for (let i = 0; i < args.length; i++) {
@@ -48,6 +50,9 @@ for (let i = 0; i < args.length; i++) {
     topPerformers = true;
   } else if (args[i] === "--skip-transcribe") {
     skipTranscribe = true;
+  } else if (args[i] === "--lang" && args[i + 1]) {
+    forceLang = args[i + 1];
+    i++;
   } else {
     usernames.push(args[i].replace(/^@/, ""));
   }
@@ -138,12 +143,14 @@ async function transcribeWithGroq(filePath) {
     `whisper-large-v3\r\n`
   );
 
-  // Language part
-  parts.push(
-    `--${boundary}\r\n` +
-    `Content-Disposition: form-data; name="language"\r\n\r\n` +
-    `es\r\n`
-  );
+  // Language part (only if forced via --lang, otherwise auto-detect)
+  if (forceLang) {
+    parts.push(
+      `--${boundary}\r\n` +
+      `Content-Disposition: form-data; name="language"\r\n\r\n` +
+      `${forceLang}\r\n`
+    );
+  }
 
   // Response format
   parts.push(

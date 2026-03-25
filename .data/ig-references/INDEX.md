@@ -1,104 +1,88 @@
 # Índice de Análisis de Perfiles de Instagram
 
-> Última actualización: 2026-03-24
+> Última actualización: 2026-03-25 (auto-generado por ig-update-index.mjs)
+> Total: 1475 posts, 526 transcripciones, 517 hooks
 
 ---
 
 ## Tabla comparativa
 
-| Perfil | Tipo | Posts | Videos | Carousels | Avg Views | Avg Likes | Avg Comments | CLR Global | Qué vende | Archivo análisis |
-|--------|------|------:|-------:|----------:|----------:|----------:|-------------:|-----------:|-----------|-----------------|
-| **@herasmedia** | A (vendedor) | 168 | 167 | 1 | 70,045 | 7,586 | 3,421 | **45.1%** | Crecimiento IG (programa pago) | `herasmedia_analisis.md` |
-| **@tino.mossu** | C (competidor) | 64 | 43 | 21 | 266,749 | 18,622 | 640 | 3.4% | "La U del Closer" ($700) | `tino.mossu_analisis.md` |
-| **@niksetting** | A (vendedor) | 36 | 11 | 23 | 73,758 | 4,128 | 141 | 3.4% | Consultoría setting ($2.5M claim) | `niksetting_analisis.md` |
-| **@faridieck** | B (contenido) | 100 | 87 | 12 | 956,403 | 198,850 | 506 | 0.3% | Nada (creador puro) | ❌ Descartado |
+| Perfil | Posts | Videos | Avg Views | CLR Global | CTA Mult | Top Keyword | Transcripciones |
+|--------|------:|-------:|----------:|-----------:|---------:|------------|----------------:|
+| **@faridieck** | 100 | 87 | 956,403 | 0.25% | 0.66x | N/A | 20 |
+| **@herasmedia** | 90 | 89 | 61,672 | 41.59% | 1.53x | LISTA (133.57%) | 167 |
+| **@hormozi** | 200 | 181 | 155,516 | 3.53% | 6.56x | ALAN (31.66%) | 109 |
+| **@niksetting** | 15 | 5 | 105,467 | 3.06% | 43.39x | PIF (65.85%) | 11 |
+| **@ramiro.cubria** | 1017 | 831 | 22,966 | 61.07% | 17.98x | GUIONES (240.93%) | 191 |
+| **@tino.mossu** | 53 | 40 | 283,611 | 3.48% | N/Ax | CLASE (40.18%) | 28 |
 
 ---
 
-## Comparativa Videos vs Carousels
+## Patrones cross-profile (517 videos)
 
-| Perfil | Videos: Avg Likes | Videos: CLR | Carousels: Avg Likes | Carousels: CLR | ¿Quién gana? |
-|--------|------------------:|------------:|---------------------:|---------------:|-------------|
-| @herasmedia | 7,610 | 45.1% | 3,903 (1 solo) | 31.2% | Videos (todo su contenido es video) |
-| @tino.mossu | 24,952 | 3.4% | 5,663 | 4.0% | Videos en likes (4.4x), Carousels en CLR (+18%) |
-| @niksetting | 13,521 | 1.9% | 2,360 | 5.9% | Carousels ganan en CLR (3x), Videos en likes |
-| @faridieck | 206,159 | 0.3% | 177,067 | 0.2% | Videos marginalmente |
+### Aperturas que más engagement generan
 
----
+| Patrón | Usos | Avg CLR | Perfiles |
+|--------|-----:|--------:|---------|
+| **exclusividad** | 15 | 186.62% | herasmedia, ramiro.cubria |
+| **imperativo** | 11 | 99.48% | herasmedia, ramiro.cubria |
+| **provocacion** | 90 | 86.27% | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **dato_numero** | 178 | 79.47% | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **credencial** | 36 | 64.12% | herasmedia, hormozi, ramiro.cubria |
+| **historia** | 28 | 57.33% | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **lista_framework** | 20 | 51.81% | herasmedia, hormozi |
+| **hipotetico** | 23 | 49.84% | herasmedia, hormozi, ramiro.cubria |
 
-## Hallazgos clave por perfil
+### Cierres que más comments generan
 
-### @herasmedia (Victor Heras)
-- **El perfil con más CLR de todos (45.1%)** — casi 1 comment cada 2 likes
-- 167 de 168 posts son video — prácticamente no usa carousels
-- Keyword inbound como sistema principal de captación
-- Funnel: reel → "comentá X" → DM automático → clase gratis → programa
-- **Lo más útil para ADP:** Sistema de CTA keyword probado a escala masiva, 168 videos de data
-
-### @tino.mossu (Tino Mossu)
-- Competidor directo: vende formación digital a jóvenes LATAM
-- **Dos estrategias separadas:** contenido viral (340K avg views, 2.4% CLR) vs venta (51K views, 41.6% CLR)
-- **21 carousels** = storytelling personal (lifestyle, historia de origen, flexeo)
-- 11 videos de CTA analizados beat-por-beat con 10 patrones extraídos
-- **Lo más útil para ADP:** Formato FAQ (91% CLR), pregunta-trampa, prueba visual, escasez narrativa
-
-### @niksetting (Nik)
-- Perfil en INGLÉS — transcripciones auto-traducidas con errores
-- **64% carousels** — es el perfil más carousel-heavy
-- Carousels: storytelling aspiracional, "de 0 a millones" timelines
-- Invierte en ads → engagement inflado en algunos posts
-- **Lo más útil para ADP:** Ingrediente #128 (remate analógico), estructura de carousels como mini-VSL
-
-### @faridieck — DESCARTADO
-- Creador de contenido puro, no vende nada
-- CLR 0.3% — views masivos pero cero conversión
-- Scrapeamos sin pre-screening → lección aprendida → ahora el skill tiene Paso 0
+| Patrón | Usos | Avg CLR | Perfiles |
+|--------|-----:|--------:|---------|
+| **dm** | 169 | 127.29% | herasmedia, hormozi, niksetting, ramiro.cubria |
+| **cta_doble** | 270 | 101.42% | herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **cta_video** | 276 | 100.52% | herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **open_loop** | 9 | 97.5% | herasmedia, ramiro.cubria, tino.mossu |
+| **cta_caption** | 373 | 88.64% | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **link_bio** | 21 | 75.41% | faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
 
 ---
 
 ## Archivos disponibles por perfil
 
-| Perfil | `.json` (posts) | `_transcripts.json` | `_analisis.md` | `_videos/` |
-|--------|:---:|:---:|:---:|:---:|
-| @herasmedia | ✅ 168 posts | ✅ 167 transcripciones | ✅ | ✅ |
-| @tino.mossu | ✅ 64 posts | ✅ 28 transcripciones | ✅ | ✅ |
-| @niksetting | ✅ 36 posts | ✅ 11 transcripciones | ✅ | ✅ |
-| @faridieck | ✅ 100 posts | ✅ 20 transcripciones | ❌ | ✅ |
+| Perfil | .json | _transcripts | _metrics | _tables | _patterns | _analisis | _videos/ |
+|--------|:-----:|:------------:|:--------:|:-------:|:---------:|:---------:|:--------:|
+| @faridieck | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ (20) |
+| @herasmedia | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ (167) |
+| @hormozi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ (181) |
+| @jesustassarolo | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| @niksetting | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ (11) |
+| @ramiro.cubria | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ (191) |
+| @tino.mossu | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ (30) |
 
 ---
 
-## Patrones cruzados entre perfiles
+## Documentos de análisis cruzado
 
-### Keyword inbound (CTA por comentario)
-- **@herasmedia:** Lo usa en el 90%+ de sus videos → CLR 45.1%
-- **@tino.mossu:** Lo usa en 11 de 43 videos → CLR 41.6% en esos videos
-- **Conclusión:** El sistema funciona consistentemente. Los dos perfiles que lo usan tienen CLR 40%+ en videos de venta.
-
-### Ratio contenido:venta
-- **@herasmedia:** Casi todo es CTA (CLR global 45%) — no separa contenido de venta
-- **@tino.mossu:** 4:1 (32 contenido, 11 venta) — separa claramente
-- **@niksetting:** Mayormente carousels de marca personal, pocos CTAs directos
-
-### Carousels como herramienta
-- **@niksetting:** Los usa como contenido PRINCIPAL (64% del perfil) — storytelling aspiracional
-- **@tino.mossu:** Los usa para storytelling PERSONAL (lifestyle, familia, eventos)
-- **@herasmedia:** Prácticamente no los usa (1 de 168)
-- **Conclusión:** Los carousels funcionan para engagement orgánico y marca personal, pero NO para conversión directa. Los perfiles con más conversión (herasmedia, tino.mossu) usan VIDEO para vender.
+| Archivo | Qué contiene | Existe |
+|---------|-------------|:------:|
+| `pattern-library.md` | Patrones de apertura×cuerpo×cierre cross-profile con CLR | ✅ |
+| `pattern-library.json` | Misma data en JSON (machine-readable) | ✅ |
+| `metrics-summary.json` | KPIs comparativos de todos los perfiles | ✅ |
+| `patrones-organico-ig.md` | 14 reglas accionables para ADP (de 4 perfiles) | ✅ |
+| `cross_analysis.md` | Duración × CTA × CLR, sweet spots, outliers | ✅ |
+| `caption_analysis.md` | Palabras × CLR, caption length sweet spot | ✅ |
+| `temporal_analysis.md` | Keyword decay, frecuencia, timing | ✅ |
+| `herasmedia_hooks_bank.md` | 167 hooks categorizados con métricas | ✅ |
+| `tino_beat_mapping.md` | 28 videos mapeados beat-por-beat + 8 templates | ✅ |
 
 ---
 
-## Análisis profundos (5 dimensiones)
+## Scripts disponibles
 
-| Archivo | Qué contiene | Dato clave |
-|---------|-------------|-----------|
-| `herasmedia_hooks_bank.md` | 167 hooks categorizados (6 tipos) con métricas reales | dato/número = CLR 73.13 (mejor), pregunta directa = 103K views (más reach) |
-| `caption_analysis.md` | Correlación palabras × CLR en 266 posts de 3 perfiles | "lista" (+60 CLR delta), "millonario" (-15 delta), 21-40 palabras = sweet spot |
-| `temporal_analysis.md` | Keyword decay, frecuencia óptima, día de semana, recency | VIRAL decae en 69 usos, cada 4-7 días = mejor CLR, martes = mejor engagement |
-| `tino_beat_mapping.md` | 28 videos mapeados beat-por-beat + 8 templates reutilizables | Demo en vivo (#3) = vehículo dominante, 8 adaptaciones concretas para ADP |
-| `cross_analysis.md` | Duración × CTA × CLR, outliers, keyword ranking | 30-45s+CTA = 14.46% CLR, multiplicador CTA = 5.56x, RETO = mejor keyword |
-
----
-
-## Documento de aplicación para ADP
-
-**`patrones-organico-ig.md`** — 14 patrones consolidados de los 5 análisis con implementación concreta para Jesús. Incluye reglas de keyword decay, tipos de hook × objetivo, templates narrativos, timing, caption rules, y tabla de priorización esfuerzo/impacto.
+| Script | Qué hace |
+|--------|----------|
+| `ig-pipeline.mjs @user` | Pipeline completo: scrape→download→transcribe→analyze |
+| `ig-analyze.mjs --all` | Regenera métricas + comparativa cross-profile |
+| `ig-patterns.mjs --all --export` | Análisis de patrones estructurales + pattern-library.md |
+| `ig-search.mjs "término"` | Búsqueda cross-profile en transcripciones + captions |
+| `ig-search.mjs --top-hooks 30` | Top hooks por CLR cross-profile |
+| `ig-update-index.mjs` | Regenera este INDEX.md |

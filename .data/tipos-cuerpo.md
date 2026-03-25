@@ -46,7 +46,7 @@ NUNCA dos beats con la misma función. Si los 3 beats dicen "nueva oportunidad",
 
 ---
 
-## 10 vehículos narrativos (el TONO del guion)
+## 13 vehículos narrativos (el TONO del guion)
 
 El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro" tiene los mismos 5 beats pero contados como historia. Un guion de "demolición de mito" tiene los 5 beats con tono confrontativo.
 
@@ -135,7 +135,25 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 - **Validado:** @hormozi tier-lists consiguen 50-120K likes. Formato probado para awareness en perfiles de negocios.
 - **Límite:** Máximo 1 de cada 10 en estrategia semanal. Es complemento, no formato principal.
 
-### 12. Quiz de comparación (SOLO ORGÁNICO) 🆕
+### 12. Trailer de recurso (SOLO ORGÁNICO) 🆕
+**Tono:** Entusiasta, rápido, apilamiento de valor. "Mirá todo lo que tiene esto."
+- **Cómo funciona:** NO sigue los 5 beats del micro-VSL. Es una ráfaga de 3-7 value props del recurso que se ofrece (PDF, prompt, template, base de datos), cada una con su resultado propio en 1 oración. El video muestra pero NO entrega — genera hambre por el recurso.
+- **Estructura:** `Hook (urgencia/novedad) → Prop 1 con resultado → Prop 2 con resultado → Prop 3 con resultado → [Credencial tejida: 1 oración] → CTA con keyword`
+- **Duración ideal:** 55-65s (sweet spot de CLR para orgánico)
+- **Mejor para:** Lead magnets, recursos descargables, listas de prompts, checklists. CTA de keyword inbound (ManyChat o DM).
+- **Diferencia con Demo/Proceso (#3):** #3 enseña paso a paso, #12 muestra la CANTIDAD de valor sin entregar ninguno. #3 satisface, #12 genera hambre.
+- **Diferencia con Demolición de alternativas (#9):** #9 compara alternativas del mercado. #12 apila valor de UN solo recurso.
+- **Reglas de uso:**
+  - Cada prop necesita un resultado propio ("Con esto vas a poder X")
+  - La credencial va TEJIDA entre props (1 oración), NUNCA como bloque separado
+  - Amplificadores de emoción obligatorios: "literalmente", "una locura", "es impresionante"
+  - El CTA debe repetir "comenta" 2-3 veces + "en menos de un minuto"
+  - Caption = SOLO instrucción: "Comenta [KEYWORD] y te mando el recurso por DM 💬"
+- **Validado:** 5 de 10 top CLR de @ramiro.cubria usan esta estructura (CLR promedio 2.9). Es su vehículo estrella para orgánico. ADP tiene 0 guiones con esta estructura.
+- **Límite:** Máximo 2 de cada 10 en estrategia semanal. Solo orgánico.
+- **Avatar ideal:** Patricia (48), Roberto (62) — el recurso tangible reduce la barrera de entrada vs "te explico"
+
+### 13. Quiz de comparación (SOLO ORGÁNICO) 🆕
 **Tono:** Interactivo, educativo, cero presión. "¿Cuál vendió más? ¿A o B?"
 - **Cómo funciona:** Jesús presenta 2-3 pares de productos/nichos/estrategias y pregunta cuál tuvo mejor resultado. Después revela la respuesta y explica POR QUÉ. El viewer aprende sobre nichos, demanda y empaquetado sin sentir que le venden.
 - **Estructura:** `Par 1: A vs B → respuesta + explicación (15s) → Par 2: A vs B → respuesta (15s) → Par 3 (opcional) → Cierre con lección`
@@ -168,6 +186,7 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 | "El cambio es urgente/temporal" | Contraste emocional | Comparación caminos |
 | "Mi caso particular tiene solución" | **Q&A conversacional ⭐** | Pregunta y respuesta |
 | "Este es el camino más lógico" | **Demolición de alternativas ⭐** | Demolición de mito |
+| "Esto vale más de lo que creés" | **Trailer de recurso 🆕** | Demo/Proceso |
 | "Sé de lo que hablo" (awareness) | **Tier-list / Rating 🆕** | Q&A conversacional |
 
 ---
@@ -186,7 +205,9 @@ El vehículo define cómo se CUENTAN los 5 beats. Un guion de "historia con giro
 | Contraste emocional | ● | ○ | ○ | ○ | ● |
 | **Demolición alternativas ⭐** | ○ | ○ | **●** | **●** | ○ |
 | **Q&A conversacional ⭐** | ○ | ○ | **●** | ○ | **●** |
+| **Trailer de recurso 🆕** | ○ | ● | ○ | **●** | ○ |
 | **Tier-list / Rating 🆕** | ○ | ○ | **●** | **●** | ○ |
+| **Quiz de comparación 🆕** | ○ | ○ | **●** | **●** | ○ |
 
 ● = combo ideal | ○ = funciona pero no es el mejor
 

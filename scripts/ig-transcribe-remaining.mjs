@@ -4,6 +4,7 @@
  * Lee las transcripciones existentes, encuentra los faltantes, y los transcribe.
  *
  * Uso: node scripts/ig-transcribe-remaining.mjs @username
+ *       node scripts/ig-transcribe-remaining.mjs @username --lang es  (forzar idioma, default: auto-detect)
  */
 
 import fs from "fs";
@@ -25,9 +26,22 @@ if (!GROQ_KEY) {
   process.exit(1);
 }
 
-const username = (process.argv[2] || "").replace(/^@/, "");
+// Parse args
+const cliArgs = process.argv.slice(2);
+let username = "";
+let forceLang = null; // null = auto-detect, "es"/"en"/etc = forzar
+
+for (let i = 0; i < cliArgs.length; i++) {
+  if (cliArgs[i] === "--lang" && cliArgs[i + 1]) {
+    forceLang = cliArgs[i + 1];
+    i++;
+  } else {
+    username = cliArgs[i].replace(/^@/, "");
+  }
+}
+
 if (!username) {
-  console.error("Uso: node scripts/ig-transcribe-remaining.mjs @username");
+  console.error("Uso: node scripts/ig-transcribe-remaining.mjs @username [--lang es]");
   process.exit(1);
 }
 
@@ -73,7 +87,9 @@ async function transcribeWithGroq(filePath) {
   ));
   parts.push(fileBuffer);
   parts.push(Buffer.from(`\r\n--${boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\nwhisper-large-v3\r\n`));
-  parts.push(Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="language"\r\n\r\nes\r\n`));
+  if (forceLang) {
+    parts.push(Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="language"\r\n\r\n${forceLang}\r\n`));
+  }
   parts.push(Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="response_format"\r\n\r\nverbose_json\r\n`));
   parts.push(Buffer.from(`--${boundary}--\r\n`));
 

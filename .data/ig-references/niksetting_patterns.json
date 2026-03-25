@@ -1,0 +1,835 @@
+{
+  "username": "niksetting",
+  "analyzed_at": "2026-03-25T10:51:50.061Z",
+  "total_analyzed": 10,
+  "opening_patterns": [
+    {
+      "pattern": "neutro",
+      "count": 6,
+      "avg_clr": 8.98,
+      "weighted_clr": 15.06,
+      "median_clr": 5.3,
+      "avg_views": 80028,
+      "examples": [
+        {
+          "text": "Gracias por ver el video.",
+          "clr": 23.92,
+          "views": 8743,
+          "shortCode": "C4tUqCNikgt"
+        },
+        {
+          "text": "Estaba trabajando en esto en la última hora con el equipo, acabamos de hacer una llamada al equipo y quería mostrarles e",
+          "clr": 15.83,
+          "views": 15456,
+          "shortCode": "DWEUr3RjNDq"
+        },
+        {
+          "text": "Literalmente Nick es un G A través de Nick me encuentro con tantas personas En la primera semana, un día, 22 llamadas en",
+          "clr": 5.61,
+          "views": 19603,
+          "shortCode": "C_dG_nSC1ek"
+        }
+      ]
+    },
+    {
+      "pattern": "provocacion",
+      "count": 2,
+      "avg_clr": 4.1,
+      "weighted_clr": 1.18,
+      "median_clr": 4.1,
+      "avg_views": 142678,
+      "examples": [
+        {
+          "text": "En febrero estábamos en 3.5 al mes y ahora estamos en 20. La mejor experiencia que he tenido en el negocio y estoy hacie",
+          "clr": 7.1,
+          "views": 193025,
+          "shortCode": "C7n3FzGiYfv"
+        },
+        {
+          "text": "Te dieron tanto contenido gratuito que tu audiencia ahora cree que nunca deberían pagarte en primer lugar. Piénsalo en l",
+          "clr": 1.11,
+          "views": 92331,
+          "shortCode": "DVJ2VZNDMMO"
+        }
+      ]
+    },
+    {
+      "pattern": "pregunta",
+      "count": 1,
+      "avg_clr": 0.9,
+      "weighted_clr": 0.9,
+      "median_clr": 0.9,
+      "avg_views": 13126,
+      "examples": [
+        {
+          "text": "¿Ves de dónde viene mi frustración? He estado trabajando con mi setter por más de ocho meses y hoy tuve que disparar a m",
+          "clr": 0.9,
+          "views": 13126,
+          "shortCode": "DWOo1s2DFrF"
+        }
+      ]
+    },
+    {
+      "pattern": "dato_numero",
+      "count": 1,
+      "avg_clr": 0.85,
+      "weighted_clr": 0.85,
+      "median_clr": 0.85,
+      "avg_views": 21634,
+      "examples": [
+        {
+          "text": "Pesqué $10.000 volando a un extraño que conocí en internet de Filipinas a Dubai. ¿Por qué? Para darle el tiempo de su vi",
+          "clr": 0.85,
+          "views": 21634,
+          "shortCode": "DLrNyIMTvig"
+        }
+      ]
+    },
+    {
+      "pattern": "historia",
+      "count": 1,
+      "avg_clr": 0.85,
+      "weighted_clr": 0.85,
+      "median_clr": 0.85,
+      "avg_views": 21634,
+      "examples": [
+        {
+          "text": "Pesqué $10.000 volando a un extraño que conocí en internet de Filipinas a Dubai. ¿Por qué? Para darle el tiempo de su vi",
+          "clr": 0.85,
+          "views": 21634,
+          "shortCode": "DLrNyIMTvig"
+        }
+      ]
+    }
+  ],
+  "body_patterns": [
+    {
+      "pattern": "comparacion",
+      "count": 1,
+      "avg_clr": 15.83,
+      "weighted_clr": 15.83,
+      "median_clr": 15.83,
+      "avg_views": 15456,
+      "examples": []
+    },
+    {
+      "pattern": "demolicion_objecion",
+      "count": 2,
+      "avg_clr": 10.72,
+      "weighted_clr": 15.72,
+      "median_clr": 10.72,
+      "avg_views": 17530,
+      "examples": []
+    },
+    {
+      "pattern": "narrativa_general",
+      "count": 5,
+      "avg_clr": 7.47,
+      "weighted_clr": 14,
+      "median_clr": 4.99,
+      "avg_views": 129723,
+      "examples": []
+    },
+    {
+      "pattern": "future_pacing",
+      "count": 2,
+      "avg_clr": 8.47,
+      "weighted_clr": 9.14,
+      "median_clr": 8.47,
+      "avg_views": 53894,
+      "examples": []
+    },
+    {
+      "pattern": "qa_rapido",
+      "count": 2,
+      "avg_clr": 8.37,
+      "weighted_clr": 8.25,
+      "median_clr": 8.37,
+      "avg_views": 14291,
+      "examples": []
+    },
+    {
+      "pattern": "demo_proceso",
+      "count": 3,
+      "avg_clr": 6.57,
+      "weighted_clr": 8.09,
+      "median_clr": 2.99,
+      "avg_views": 13246,
+      "examples": []
+    },
+    {
+      "pattern": "autoridad",
+      "count": 1,
+      "avg_clr": 2.99,
+      "weighted_clr": 2.99,
+      "median_clr": 2.99,
+      "avg_views": 11157,
+      "examples": []
+    },
+    {
+      "pattern": "agitacion_fuerte",
+      "count": 1,
+      "avg_clr": 1.11,
+      "weighted_clr": 1.11,
+      "median_clr": 1.11,
+      "avg_views": 92331,
+      "examples": []
+    },
+    {
+      "pattern": "tension",
+      "count": 1,
+      "avg_clr": 0.9,
+      "weighted_clr": 0.9,
+      "median_clr": 0.9,
+      "avg_views": 13126,
+      "examples": []
+    }
+  ],
+  "closing_patterns": [
+    {
+      "pattern": "cta_caption",
+      "count": 1,
+      "avg_clr": 15.83,
+      "weighted_clr": 15.83,
+      "median_clr": 15.83,
+      "avg_views": 15456,
+      "examples": [
+        {
+          "text": "como... lo hemos hablado tantas veces, Max, ¿cuánto contenido estamos creando esta semana? La razón por la que tengo ide",
+          "clr": 15.83,
+          "shortCode": "DWEUr3RjNDq"
+        }
+      ]
+    },
+    {
+      "pattern": "dm",
+      "count": 2,
+      "avg_clr": 11.47,
+      "weighted_clr": 15.74,
+      "median_clr": 11.47,
+      "avg_views": 104241,
+      "examples": [
+        {
+          "text": "como... lo hemos hablado tantas veces, Max, ¿cuánto contenido estamos creando esta semana? La razón por la que tengo ide",
+          "clr": 15.83,
+          "shortCode": "DWEUr3RjNDq"
+        },
+        {
+          "text": "Genialmente, si quieres escalar, si quieres hacer dinero, si quieres escalar 10, 20, 30, 40, 50, 100, ¿verdad? Ponga a e",
+          "clr": 7.1,
+          "shortCode": "C7n3FzGiYfv"
+        }
+      ]
+    },
+    {
+      "pattern": "corte_seco",
+      "count": 4,
+      "avg_clr": 8.1,
+      "weighted_clr": 14.67,
+      "median_clr": 3.99,
+      "avg_views": 111278,
+      "examples": [
+        {
+          "text": "",
+          "clr": 23.92,
+          "shortCode": "C4tUqCNikgt"
+        },
+        {
+          "text": "que decirte. ¡Suscríbete al canal!",
+          "clr": 4.99,
+          "shortCode": "DBBO493AVlo"
+        },
+        {
+          "text": "",
+          "clr": 2.99,
+          "shortCode": "DHiILp7CTPj"
+        }
+      ]
+    },
+    {
+      "pattern": "cierre_resumen",
+      "count": 1,
+      "avg_clr": 5.61,
+      "weighted_clr": 5.61,
+      "median_clr": 5.61,
+      "avg_views": 19603,
+      "examples": [
+        {
+          "text": "Y en la primera semana, cerré 7 negocios 10.5k de día, absolutamente Sí, no sé si la gente hace revo y cosas, bro Litera",
+          "clr": 5.61,
+          "shortCode": "C_dG_nSC1ek"
+        }
+      ]
+    },
+    {
+      "pattern": "sin_cta",
+      "count": 3,
+      "avg_clr": 0.95,
+      "weighted_clr": 0.98,
+      "median_clr": 0.9,
+      "avg_views": 42364,
+      "examples": [
+        {
+          "text": "Porque tu audiencia puede resolverlo sin ti. Te has hecho irrelevante por gratis. Y eso es estúpido. Deja de dar a la ge",
+          "clr": 1.11,
+          "shortCode": "DVJ2VZNDMMO"
+        },
+        {
+          "text": "El hecho de que no te encajes en el equipo de adquisición de Grohe no significa que no eres una buena persona, no signif",
+          "clr": 0.9,
+          "shortCode": "DWOo1s2DFrF"
+        },
+        {
+          "text": "Y yo comparto cada paso del proceso con mi equipo para mover con la velocidad máxima, para expandir la adquisición, haci",
+          "clr": 0.85,
+          "shortCode": "DLrNyIMTvig"
+        }
+      ]
+    }
+  ],
+  "cta_buildup_patterns": [],
+  "winning_combos": [
+    {
+      "combo": "neutro→corte_seco",
+      "count": 4,
+      "avg_clr": 8.1,
+      "avg_views": 111278
+    }
+  ],
+  "density_performance": [
+    {
+      "bucket": "lento(<2wps)",
+      "count": 3,
+      "avg_clr": 9.14,
+      "avg_views": 134896
+    },
+    {
+      "bucket": "normal(2-3wps)",
+      "count": 4,
+      "avg_clr": 1.96,
+      "avg_views": 41878
+    },
+    {
+      "bucket": "rapido(>3wps)",
+      "count": 3,
+      "avg_clr": 9.51,
+      "avg_views": 76028
+    }
+  ],
+  "top_hooks": [
+    {
+      "shortCode": "C4tUqCNikgt",
+      "opening_text": "Gracias por ver el video.",
+      "opening_duration": 20.98,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 23.92,
+      "views": 8743,
+      "comments": 105
+    },
+    {
+      "shortCode": "DWEUr3RjNDq",
+      "opening_text": "Estaba trabajando en esto en la última hora con el equipo, acabamos de hacer una llamada al equipo y quería mostrarles esto rápidamente porque hemos resuelto todo el problema interno",
+      "opening_duration": 8.72,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 15.83,
+      "views": 15456,
+      "comments": 814
+    },
+    {
+      "shortCode": "C7n3FzGiYfv",
+      "opening_text": "En febrero estábamos en 3.5 al mes y ahora estamos en 20. La mejor experiencia que he tenido en el negocio y estoy haciendo más dinero que nunca antes. Y estoy escalando más rápido que nunca antes, hermano.",
+      "opening_duration": 9.36,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 7.1,
+      "views": 193025,
+      "comments": 181
+    },
+    {
+      "shortCode": "C_dG_nSC1ek",
+      "opening_text": "Literalmente Nick es un G A través de Nick me encuentro con tantas personas En la primera semana, un día, 22 llamadas en un día El próximo día, 16 llamadas Y entonces yo estaba como, wow",
+      "opening_duration": 9.04,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 5.61,
+      "views": 19603,
+      "comments": 38
+    },
+    {
+      "shortCode": "DBBO493AVlo",
+      "opening_text": "Quiero más dinero, quiero más clientes. Y es como, ¿qué diablos estás haciendo? Investe en Nick Setti. ¿Te gusta eso? Ahí está. La próxima vez que te conozcas, tienes un 30k al mes.",
+      "opening_duration": 9.46,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 4.99,
+      "views": 40422,
+      "comments": 65
+    },
+    {
+      "shortCode": "DHiILp7CTPj",
+      "opening_text": "He hecho mis primeros 300k de Outbound. He hecho mis primeros millones de advertencias y personales.",
+      "opening_duration": 8.24,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 2.99,
+      "views": 11157,
+      "comments": 37
+    },
+    {
+      "shortCode": "DVJ2VZNDMMO",
+      "opening_text": "Te dieron tanto contenido gratuito que tu audiencia ahora cree que nunca deberían pagarte en primer lugar. Piénsalo en lo que has hecho. Cada día durante los últimos seis meses has estado enviando estrategias,",
+      "opening_duration": 9.34,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 1.11,
+      "views": 92331,
+      "comments": 173
+    },
+    {
+      "shortCode": "DWOo1s2DFrF",
+      "opening_text": "¿Ves de dónde viene mi frustración? He estado trabajando con mi setter por más de ocho meses y hoy tuve que disparar a mi setter.",
+      "opening_duration": 8,
+      "opening_patterns": [
+        "pregunta"
+      ],
+      "clr": 0.9,
+      "views": 13126,
+      "comments": 19
+    },
+    {
+      "shortCode": "DLrNyIMTvig",
+      "opening_text": "Pesqué $10.000 volando a un extraño que conocí en internet de Filipinas a Dubai. ¿Por qué? Para darle el tiempo de su vida.",
+      "opening_duration": 8,
+      "opening_patterns": [
+        "dato_numero",
+        "historia"
+      ],
+      "clr": 0.85,
+      "views": 21634,
+      "comments": 40
+    },
+    {
+      "shortCode": "DTlWocdjD6C",
+      "opening_text": "Tengo un minuto. Great, thanks. I'm actually calling from Forbes magazine that's putting together a feature for Moche. Yes?",
+      "opening_duration": 7.96,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.51,
+      "views": 384789,
+      "comments": 281
+    }
+  ],
+  "top_cta_buildups": [],
+  "all_videos": [
+    {
+      "shortCode": "C4tUqCNikgt",
+      "url": "https://www.instagram.com/p/C4tUqCNikgt/",
+      "timestamp": "2024-03-19T19:50:13.000Z",
+      "decay_weight": 0,
+      "views": 8743,
+      "likes": 439,
+      "comments": 105,
+      "clr": 23.92,
+      "duration": 21.01,
+      "words_per_second": 0.29,
+      "opening": {
+        "text": "Gracias por ver el video.",
+        "duration": 20.98,
+        "segments": 1,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "",
+        "duration": 0.03,
+        "segments": 0,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 1
+      },
+      "closing": {
+        "text": "",
+        "duration": 0,
+        "segments": 0,
+        "patterns": [
+          "corte_seco"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "quick stop in norway"
+    },
+    {
+      "shortCode": "DWEUr3RjNDq",
+      "url": "https://www.instagram.com/p/DWEUr3RjNDq/",
+      "timestamp": "2026-03-19T13:26:23.000Z",
+      "decay_weight": 0.96,
+      "views": 15456,
+      "likes": 5143,
+      "comments": 814,
+      "clr": 15.83,
+      "duration": 179.22,
+      "words_per_second": 3.44,
+      "opening": {
+        "text": "Estaba trabajando en esto en la última hora con el equipo, acabamos de hacer una llamada al equipo y quería mostrarles esto rápidamente porque hemos resuelto todo el problema interno",
+        "duration": 8.72,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "en saber exactamente qué prevene a un comprador de comprar. Cuando tienes un nuevo cliente en marcha, la primera cosa que quieres hacer es que le hagas 10 preguntas y son estas preguntas muy emocionad",
+        "duration": 157.56,
+        "segments": 50,
+        "patterns": [
+          "demo_proceso",
+          "demolicion_objecion",
+          "comparacion",
+          "future_pacing",
+          "qa_rapido"
+        ],
+        "word_count": 539
+      },
+      "closing": {
+        "text": "como... lo hemos hablado tantas veces, Max, ¿cuánto contenido estamos creando esta semana? La razón por la que tengo ideas ilimitadas es porque el mercado me da ideas para hablar porque extrajo la información de ella y creo que esto va a resolver muchos de tus problemas.",
+        "duration": 12.94,
+        "segments": 4,
+        "patterns": [
+          "cta_caption",
+          "dm"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "comment “form” and i’ll send you the 10 questions necessary to ask every client when they get onboar"
+    },
+    {
+      "shortCode": "C7n3FzGiYfv",
+      "url": "https://www.instagram.com/p/C7n3FzGiYfv/",
+      "timestamp": "2024-05-31T06:34:37.000Z",
+      "decay_weight": 0.01,
+      "views": 193025,
+      "likes": 2550,
+      "comments": 181,
+      "clr": 7.1,
+      "duration": 27.23,
+      "words_per_second": 3.42,
+      "opening": {
+        "text": "En febrero estábamos en 3.5 al mes y ahora estamos en 20. La mejor experiencia que he tenido en el negocio y estoy haciendo más dinero que nunca antes. Y estoy escalando más rápido que nunca antes, hermano.",
+        "duration": 9.36,
+        "segments": 3,
+        "patterns": [
+          "provocacion"
+        ]
+      },
+      "body": {
+        "text_preview": "¿Qué dirías a alguien que está dispuesto a trabajar con nosotros, que está viendo este video ahora mismo?",
+        "duration": 4.21,
+        "segments": 1,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 18
+      },
+      "closing": {
+        "text": "Genialmente, si quieres escalar, si quieres hacer dinero, si quieres escalar 10, 20, 30, 40, 50, 100, ¿verdad? Ponga a este chico y síguelo, genialmente. Fue la mejor decisión que he hecho en mi vida entera.",
+        "duration": 13.66,
+        "segments": 3,
+        "patterns": [
+          "dm"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Elias scaled from $3,5k to $20k/mo in 14 days 🤝\n\nHe was stuck below $5k/mo tor over 6 months becaus"
+    },
+    {
+      "shortCode": "C_dG_nSC1ek",
+      "url": "https://www.instagram.com/p/C_dG_nSC1ek/",
+      "timestamp": "2024-09-03T12:27:29.000Z",
+      "decay_weight": 0.01,
+      "views": 19603,
+      "likes": 677,
+      "comments": 38,
+      "clr": 5.61,
+      "duration": 29.74,
+      "words_per_second": 4,
+      "opening": {
+        "text": "Literalmente Nick es un G A través de Nick me encuentro con tantas personas En la primera semana, un día, 22 llamadas en un día El próximo día, 16 llamadas Y entonces yo estaba como, wow",
+        "duration": 9.04,
+        "segments": 5,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "No puedo incluso tomar más llamadas en mi calendario La gente está confundiendo, yo no tengo más en mi calendario Tengo que salir del sistema porque tengo demasiadas aportaciones",
+        "duration": 7.2,
+        "segments": 3,
+        "patterns": [
+          "demolicion_objecion"
+        ],
+        "word_count": 29
+      },
+      "closing": {
+        "text": "Y en la primera semana, cerré 7 negocios 10.5k de día, absolutamente Sí, no sé si la gente hace revo y cosas, bro Literalmente, no me importa eso, bro No una vez he regretido Básicamente, invertirme en mí mismo así Así que no hay ninguna razón por la que no tomaría el dinero",
+        "duration": 13.5,
+        "segments": 7,
+        "patterns": [
+          "cierre_resumen"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "High-ticket clients, the key to scale past $100k/mo.\n\nFollow @niksetting👇"
+    },
+    {
+      "shortCode": "DBBO493AVlo",
+      "url": "https://www.instagram.com/p/DBBO493AVlo/",
+      "timestamp": "2024-10-12T09:45:32.000Z",
+      "decay_weight": 0.02,
+      "views": 40422,
+      "likes": 1302,
+      "comments": 65,
+      "clr": 4.99,
+      "duration": 58.21,
+      "words_per_second": 2.54,
+      "opening": {
+        "text": "Quiero más dinero, quiero más clientes. Y es como, ¿qué diablos estás haciendo? Investe en Nick Setti. ¿Te gusta eso? Ahí está. La próxima vez que te conozcas, tienes un 30k al mes.",
+        "duration": 9.46,
+        "segments": 6,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "¿Esto? 10 apuntes. Estás pensando en invertir con Nick. Mira dónde estamos. Y, quiero decir, si quieres un mentor verdadero, un mentor verdadero, mira dónde estás. Yo ofrecería un retreat de clientes ",
+        "duration": 33.83,
+        "segments": 27,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 109
+      },
+      "closing": {
+        "text": "que decirte. ¡Suscríbete al canal!",
+        "duration": 14.92,
+        "segments": 2,
+        "patterns": [
+          "corte_seco"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Dubai Client Retreat\n\nI want to express my gratitude for everything that happened in my life the las"
+    },
+    {
+      "shortCode": "DHiILp7CTPj",
+      "url": "https://www.instagram.com/p/DHiILp7CTPj/",
+      "timestamp": "2025-03-23T07:24:56.000Z",
+      "decay_weight": 0.06,
+      "views": 11157,
+      "likes": 1236,
+      "comments": 37,
+      "clr": 2.99,
+      "duration": 51.01,
+      "words_per_second": 1.41,
+      "opening": {
+        "text": "He hecho mis primeros 300k de Outbound. He hecho mis primeros millones de advertencias y personales.",
+        "duration": 8.24,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Voy a hacer mis primeros 10 millones de conexiones que he hecho en todo el mundo. Ella tiene el conocimiento, tiene la experiencia. ¿Qué estás perdiendo trabajando con este tipo? Nick tiene increíbles",
+        "duration": 42.77,
+        "segments": 6,
+        "patterns": [
+          "demo_proceso",
+          "autoridad"
+        ],
+        "word_count": 55
+      },
+      "closing": {
+        "text": "",
+        "duration": 0,
+        "segments": 0,
+        "patterns": [
+          "corte_seco"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Capetown Client Retreat.\n\nAfter months of hard work, celebrating with the people you have achieved a"
+    },
+    {
+      "shortCode": "DVJ2VZNDMMO",
+      "url": "https://www.instagram.com/p/DVJ2VZNDMMO/",
+      "timestamp": "2026-02-24T20:29:30.000Z",
+      "decay_weight": 0.8,
+      "views": 92331,
+      "likes": 15594,
+      "comments": 173,
+      "clr": 1.11,
+      "duration": 82.4,
+      "words_per_second": 2.97,
+      "opening": {
+        "text": "Te dieron tanto contenido gratuito que tu audiencia ahora cree que nunca deberían pagarte en primer lugar. Piénsalo en lo que has hecho. Cada día durante los últimos seis meses has estado enviando estrategias,",
+        "duration": 9.34,
+        "segments": 3,
+        "patterns": [
+          "provocacion"
+        ]
+      },
+      "body": {
+        "text_preview": "frameworks, breakdowns de paso a paso, la misma mierda que te pagaste 10.000 por lo que te pagaste gratuito. Esperando que la gente pensara, wow, si esto es bueno, imagina qué sería lo que sería pagad",
+        "duration": 60.88,
+        "segments": 24,
+        "patterns": [
+          "agitacion_fuerte",
+          "future_pacing"
+        ],
+        "word_count": 171
+      },
+      "closing": {
+        "text": "Porque tu audiencia puede resolverlo sin ti. Te has hecho irrelevante por gratis. Y eso es estúpido. Deja de dar a la gente el pez, el rodillo y las coordenadas de GPS. Díganles el océano y vendanles el barco.",
+        "duration": 12.18,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "frustrating…"
+    },
+    {
+      "shortCode": "DWOo1s2DFrF",
+      "url": "https://www.instagram.com/p/DWOo1s2DFrF/",
+      "timestamp": "2026-03-23T13:33:17.000Z",
+      "decay_weight": 0.99,
+      "views": 13126,
+      "likes": 2112,
+      "comments": 19,
+      "clr": 0.9,
+      "duration": 164.44,
+      "words_per_second": 2.96,
+      "opening": {
+        "text": "¿Ves de dónde viene mi frustración? He estado trabajando con mi setter por más de ocho meses y hoy tuve que disparar a mi setter.",
+        "duration": 8,
+        "segments": 3,
+        "patterns": [
+          "pregunta"
+        ]
+      },
+      "body": {
+        "text_preview": "Sí, sí, lo vi. Sabes a todos en el equipo. ¿Cuántas personas has visto ir y unirse en los últimos ocho meses? Oh, casi todas. ¿Por qué? Porque ellos no... No me ayudan. Porque todos están f****** comp",
+        "duration": 145.94,
+        "segments": 41,
+        "patterns": [
+          "demo_proceso",
+          "qa_rapido",
+          "tension"
+        ],
+        "word_count": 414
+      },
+      "closing": {
+        "text": "El hecho de que no te encajes en el equipo de adquisición de Grohe no significa que no eres una buena persona, no significa que no tienes el set de habilidades, no significa que no tienes la visión, No está alineado con lo que estamos haciendo aquí",
+        "duration": 10.5,
+        "segments": 3,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "building an 8 figure company is not easy…\n\nthe only thing that matters is your team. they build your"
+    },
+    {
+      "shortCode": "DLrNyIMTvig",
+      "url": "https://www.instagram.com/p/DLrNyIMTvig/",
+      "timestamp": "2025-07-04T06:09:11.000Z",
+      "decay_weight": 0.13,
+      "views": 21634,
+      "likes": 4719,
+      "comments": 40,
+      "clr": 0.85,
+      "duration": 51.24,
+      "words_per_second": 2.83,
+      "opening": {
+        "text": "Pesqué $10.000 volando a un extraño que conocí en internet de Filipinas a Dubai. ¿Por qué? Para darle el tiempo de su vida.",
+        "duration": 8,
+        "segments": 2,
+        "patterns": [
+          "dato_numero",
+          "historia"
+        ]
+      },
+      "body": {
+        "text_preview": "Este es Jude, y ha sido mi estrategista de contenido durante los últimos tres meses. Escribe contenido, edita asuntos de marketing y entiende la psicología de los compradores. Y es la razón exacta por",
+        "duration": 34.1,
+        "segments": 7,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 95
+      },
+      "closing": {
+        "text": "Y yo comparto cada paso del proceso con mi equipo para mover con la velocidad máxima, para expandir la adquisición, haciendo su mercado el mejor consultorio.",
+        "duration": 9.14,
+        "segments": 4,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "I spent $10.000 flying out a stranger from the Philippines to Dubai."
+    },
+    {
+      "shortCode": "DTlWocdjD6C",
+      "url": "https://www.instagram.com/p/DTlWocdjD6C/",
+      "timestamp": "2026-01-16T19:43:00.000Z",
+      "decay_weight": 0.59,
+      "views": 384789,
+      "likes": 54633,
+      "comments": 281,
+      "clr": 0.51,
+      "duration": 55.33,
+      "words_per_second": 1.28,
+      "opening": {
+        "text": "Tengo un minuto. Great, thanks. I'm actually calling from Forbes magazine that's putting together a feature for Moche. Yes?",
+        "duration": 7.96,
+        "segments": 5,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "It would be a short interview, a quick photo or video shoot, ideally to be scheduled soon. Okay, cool. That's great news. How would that work? We'll have the team coordinate the next steps in time wit",
+        "duration": 47.37,
+        "segments": 14,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 51
+      },
+      "closing": {
+        "text": "",
+        "duration": 0,
+        "segments": 0,
+        "patterns": [
+          "corte_seco"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Officially on Forbes.\n\nI have a lot to talk about, which i will soon when it’s officially announced."
+    }
+  ]
+}

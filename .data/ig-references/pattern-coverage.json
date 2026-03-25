@@ -1,0 +1,1616 @@
+{
+  "generated_at": "2026-03-25T10:52:06.720Z",
+  "total_generations": 36,
+  "total_ig_videos": 517,
+  "ig_profiles": [
+    "faridieck",
+    "herasmedia",
+    "hormozi",
+    "niksetting",
+    "ramiro.cubria",
+    "tino.mossu"
+  ],
+  "summary": {
+    "total_patterns": 52,
+    "untapped": 14,
+    "underused": 3,
+    "used": 6,
+    "overused": 22
+  },
+  "top_untapped": [
+    {
+      "pattern": "ancla_precio_invertida",
+      "zone": "opening",
+      "ig_avg_clr": 345.19,
+      "ig_count": 1,
+      "ig_profiles": [
+        "ramiro.cubria"
+      ]
+    },
+    {
+      "pattern": "exclusividad",
+      "zone": "opening",
+      "ig_avg_clr": 186.62,
+      "ig_count": 15,
+      "ig_profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ]
+    },
+    {
+      "pattern": "segunda_persona",
+      "zone": "opening",
+      "ig_avg_clr": 174.28,
+      "ig_count": 2,
+      "ig_profiles": [
+        "ramiro.cubria"
+      ]
+    },
+    {
+      "pattern": "dm",
+      "zone": "closing",
+      "ig_avg_clr": 127.29,
+      "ig_count": 169,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ]
+    },
+    {
+      "pattern": "desafio",
+      "zone": "closing",
+      "ig_avg_clr": 106.14,
+      "ig_count": 4,
+      "ig_profiles": [
+        "hormozi",
+        "ramiro.cubria"
+      ]
+    },
+    {
+      "pattern": "cta_doble",
+      "zone": "closing",
+      "ig_avg_clr": 101.42,
+      "ig_count": 270,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ]
+    },
+    {
+      "pattern": "imperativo",
+      "zone": "opening",
+      "ig_avg_clr": 99.48,
+      "ig_count": 11,
+      "ig_profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ]
+    },
+    {
+      "pattern": "open_loop",
+      "zone": "closing",
+      "ig_avg_clr": 97.5,
+      "ig_count": 9,
+      "ig_profiles": [
+        "herasmedia",
+        "ramiro.cubria",
+        "tino.mossu"
+      ]
+    },
+    {
+      "pattern": "cta_caption",
+      "zone": "closing",
+      "ig_avg_clr": 88.64,
+      "ig_count": 373,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ]
+    },
+    {
+      "pattern": "credencial",
+      "zone": "opening",
+      "ig_avg_clr": 64.12,
+      "ig_count": 36,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ]
+    }
+  ],
+  "opening_coverage": [
+    {
+      "pattern": "ancla_precio_invertida",
+      "ig_count": 1,
+      "ig_avg_clr": 345.19,
+      "ig_median_clr": 345.19,
+      "ig_profiles": [
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "segunda_persona",
+      "ig_count": 2,
+      "ig_avg_clr": 174.28,
+      "ig_median_clr": 174.28,
+      "ig_profiles": [
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "exclusividad",
+      "ig_count": 15,
+      "ig_avg_clr": 186.62,
+      "ig_median_clr": 177.04,
+      "ig_profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "imperativo",
+      "ig_count": 11,
+      "ig_avg_clr": 99.48,
+      "ig_median_clr": 82.26,
+      "ig_profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "incredulidad",
+      "ig_count": 2,
+      "ig_avg_clr": 202.8,
+      "ig_median_clr": 202.8,
+      "ig_profiles": [
+        "ramiro.cubria"
+      ],
+      "adp_uses": 2,
+      "status": "Underused",
+      "status_emoji": "🔄",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 3,
+          "hook_type": "provocacion",
+          "text": "Todos te dicen 'buscate algo mejor'. Nadie te dice que ya tenés algo encima que vale más que cualquier sueldo. Y no, no "
+        },
+        {
+          "gen_id": "76d68a12-86d5-4733-ba48-f394b0878bdb",
+          "hook_variant": 3,
+          "hook_type": "situacion_especifica",
+          "text": "Ayer una alumna me dijo: 'Jesús, yo no sé de tecnología, no entiendo nada.' Le pregunté: ¿tenés Spotify en el celular? M"
+        }
+      ]
+    },
+    {
+      "pattern": "provocacion",
+      "ig_count": 90,
+      "ig_avg_clr": 86.27,
+      "ig_median_clr": 68.41,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 26,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 3,
+          "hook_type": "dato_concreto",
+          "text": "Miles de personas buscan en Google cada mes cómo cuidar plantas, cómo organizar sus finanzas, cómo cocinar saludable. Y "
+        },
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 2,
+          "hook_type": "observacion_tendencia",
+          "text": "Yo me fui de mi pueblo a otro país con 100 dólares. No conocía a nadie. Si esto te suena familiar, deberías escuchar est"
+        },
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 3,
+          "hook_type": "provocacion",
+          "text": "Todos te dicen 'buscate algo mejor'. Nadie te dice que ya tenés algo encima que vale más que cualquier sueldo. Y no, no "
+        }
+      ]
+    },
+    {
+      "pattern": "pregunta",
+      "ig_count": 120,
+      "ig_avg_clr": 66.28,
+      "ig_median_clr": 53.52,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 34,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 1,
+          "hook_type": "situacion_especifica",
+          "text": "¿Para esto te fuiste de tu país? ¿Para laburar 12 horas haciendo algo que no elegiste? Yo estuve ahí."
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "hook_variant": 5,
+          "hook_type": "pregunta_incomoda",
+          "text": "¿Cuándo fue la última vez que ganaste plata por algo que VOS creaste? No por tu tiempo. No por tu trabajo."
+        },
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "hook_variant": 1,
+          "hook_type": "pregunta_incomoda",
+          "text": "¿Cuánta plata perdiste probando negocios online que no funcionaron? ¿200 dólares? ¿500?"
+        }
+      ]
+    },
+    {
+      "pattern": "dato_numero",
+      "ig_count": 178,
+      "ig_avg_clr": 79.47,
+      "ig_median_clr": 66.82,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 34,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 2,
+          "hook_type": "observacion_tendencia",
+          "text": "Yo me fui de mi pueblo a otro país con 100 dólares. No conocía a nadie. Si esto te suena familiar, deberías escuchar est"
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "hook_variant": 4,
+          "hook_type": "dato_concreto",
+          "text": "Primera venta: 7 dólares. No suena a mucho. Pero para alguien que venía de no poder generar un peso por su cuenta, esos "
+        },
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "hook_variant": 4,
+          "hook_type": "timeline_provocacion",
+          "text": "Tuve 100 clientes. Cobraba por hora. Ganaba bien."
+        }
+      ]
+    },
+    {
+      "pattern": "credencial",
+      "ig_count": 36,
+      "ig_avg_clr": 64.12,
+      "ig_median_clr": 46.06,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "historia",
+      "ig_count": 28,
+      "ig_avg_clr": 57.33,
+      "ig_median_clr": 41.25,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 10,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 2,
+          "hook_type": "observacion_tendencia",
+          "text": "Yo me fui de mi pueblo a otro país con 100 dólares. No conocía a nadie. Si esto te suena familiar, deberías escuchar est"
+        },
+        {
+          "gen_id": "3907bcfe-0ea0-451b-8399-ff8a747717bf",
+          "hook_variant": 5,
+          "hook_type": "historia_mini",
+          "text": "Una señora que hace pastelería casera empaquetó sus 30 mejores recetas en un ebook. La IA le hizo el diseño. Lo vendió a"
+        },
+        {
+          "gen_id": "3fc2d487-010c-4477-83e9-e3042977a95c",
+          "hook_variant": 5,
+          "hook_type": "historia_mini",
+          "text": "Compré un curso de 500 dólares de un tipo con 200 mil seguidores. ¿Sabés qué me enseñó? A comprar su siguiente curso."
+        }
+      ]
+    },
+    {
+      "pattern": "neutro",
+      "ig_count": 136,
+      "ig_avg_clr": 49.27,
+      "ig_median_clr": 20.95,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 25,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 1,
+          "hook_type": "contraintuitivo",
+          "text": "Las personas que más saben son las que menos ganan. ¿Sabés por qué? Porque regalan su conocimiento en vez de venderlo."
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "hook_variant": 1,
+          "hook_type": "historia_mini",
+          "text": "Hace dos semanas me llegó un audio de WhatsApp de una alumna. Estaba llorando. Pero no de tristeza."
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "hook_variant": 2,
+          "hook_type": "situacion_especifica",
+          "text": "Trabajaba de delivery 10 horas por día. Le sobraban 40 minutos a la noche. Con esos 40 minutos creó algo que hoy le gene"
+        }
+      ]
+    },
+    {
+      "pattern": "negacion_en_serie",
+      "ig_count": 7,
+      "ig_avg_clr": 51.78,
+      "ig_median_clr": 70.55,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 5,
+      "status": "Used",
+      "status_emoji": "✅",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 5,
+          "hook_type": "negacion_directa",
+          "text": "No necesitás un título. No necesitás un certificado. No necesitás ser influencer."
+        },
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "hook_variant": 2,
+          "hook_type": "negacion_directa",
+          "text": "Esto no es dropshipping. No es trading. No es afiliación."
+        },
+        {
+          "gen_id": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+          "hook_variant": 5,
+          "hook_type": "negacion_directa",
+          "text": "Esto no es para programadores. No es para diseñadores. No es para gente que sabe de marketing."
+        }
+      ]
+    },
+    {
+      "pattern": "lista_framework",
+      "ig_count": 20,
+      "ig_avg_clr": 51.81,
+      "ig_median_clr": 47.57,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "hipotetico",
+      "ig_count": 23,
+      "ig_avg_clr": 49.84,
+      "ig_median_clr": 49.8,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 5,
+      "status": "Used",
+      "status_emoji": "✅",
+      "adp_examples": [
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "hook_variant": 2,
+          "hook_type": "provocacion",
+          "text": "Si mañana te enfermás, tu negocio de coaching se para. Si te querés tomar una semana, no cobrás. Eso no es un negocio — "
+        },
+        {
+          "gen_id": "4796b678-01ad-4268-b3ed-dbe0d85874c2",
+          "hook_variant": 2,
+          "hook_type": "contrato_compromiso",
+          "text": "Si sabés cambiar una rueda o revisar el aceite, ya tenés más conocimiento que el que necesitás para ganar plata con un p"
+        },
+        {
+          "gen_id": "6be64c4d-4d35-4e4e-be5c-4a19f8d58fb6",
+          "hook_variant": 1,
+          "hook_type": "provocacion",
+          "text": "Si buscás \"ganar plata online\" te aparecen 200 resultados. Dropshipping, afiliados, trading, freelance. Todos prometen l"
+        }
+      ]
+    },
+    {
+      "pattern": "acumulacion",
+      "ig_count": 62,
+      "ig_avg_clr": 51.22,
+      "ig_median_clr": 42.43,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 58,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 2,
+          "hook_type": "provocacion",
+          "text": "Trabajaste 30 años. Acumulaste conocimiento que otros necesitan. Y no estás cobrando un peso por eso."
+        },
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 4,
+          "hook_type": "analogia_cotidiana",
+          "text": "Tu abuelo sabía reparar todo. Tu abuela cocinaba sin receta. Ese conocimiento hoy vale plata."
+        },
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 5,
+          "hook_type": "negacion_directa",
+          "text": "No necesitás un título. No necesitás un certificado. No necesitás ser influencer."
+        }
+      ]
+    },
+    {
+      "pattern": "oportunidad_tendencia",
+      "ig_count": 4,
+      "ig_avg_clr": 69.15,
+      "ig_median_clr": 87.75,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi"
+      ],
+      "adp_uses": 6,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "hook_variant": 5,
+          "hook_type": "observacion_tendencia",
+          "text": "Cada vez más gente está dejando el dropshipping, la afiliación y el freelance. No porque no funcionen. Porque descubrier"
+        },
+        {
+          "gen_id": "3907bcfe-0ea0-451b-8399-ff8a747717bf",
+          "hook_variant": 4,
+          "hook_type": "observacion_tendencia",
+          "text": "Cada vez más gente busca recetas caseras en Google. No recetas de chef — recetas de mamá. Y casi nadie las vende como pr"
+        },
+        {
+          "gen_id": "94a33d60-d12b-42e7-a1c8-10293a21a7f9",
+          "hook_variant": 2,
+          "hook_type": "observacion_tendencia",
+          "text": "Cada vez más gente quiere aprender crochet, macramé, tejido. Buscan tutoriales, patrones, guías. Y la mayoría no encuent"
+        }
+      ]
+    },
+    {
+      "pattern": "identidad",
+      "ig_count": 9,
+      "ig_avg_clr": 36.43,
+      "ig_median_clr": 37.88,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 7,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "Los que menos saben de tecnología son los que más rápido crean productos digitales. Suena loco. Pero tienen una ventaja "
+        },
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "hook_variant": 4,
+          "hook_type": "dato_concreto",
+          "text": "15 mil dólares en prensa. 1 solo cliente. Si hacés la cuenta, ese cliente me costó 15 mil dólares."
+        },
+        {
+          "gen_id": "3fc2d487-010c-4477-83e9-e3042977a95c",
+          "hook_variant": 1,
+          "hook_type": "provocacion",
+          "text": "La mayoría de los que te enseñan a vender productos digitales nunca vendieron uno. Su negocio es venderte el curso. Te l"
+        }
+      ]
+    },
+    {
+      "pattern": "paradoja",
+      "ig_count": 1,
+      "ig_avg_clr": 4.26,
+      "ig_median_clr": 4.26,
+      "ig_profiles": [
+        "herasmedia"
+      ],
+      "adp_uses": 4,
+      "status": "Used",
+      "status_emoji": "✅",
+      "adp_examples": [
+        {
+          "gen_id": "3fc2d487-010c-4477-83e9-e3042977a95c",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "Cuantos más seguidores tiene alguien, menos probable es que realmente gane plata con lo que enseña. Suena raro. Te lo ex"
+        },
+        {
+          "gen_id": "9e0941c9-5f9e-42db-842c-4e2f5025c41c",
+          "hook_variant": 4,
+          "hook_type": "contraintuitivo",
+          "text": "Los que más cursos compraron son los que menos resultados tienen. Suena raro. Pero cuando lo dibujás en un pizarrón, se "
+        },
+        {
+          "gen_id": "ac97c351-11b6-403f-8ad1-98adbf00b0b0",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "Cuanto más horas trabajás, menos vale tu hora. Suena raro pero es matemática pura. Te lo demuestro en el pizarrón."
+        }
+      ]
+    },
+    {
+      "pattern": "storytelling_personal",
+      "ig_count": 5,
+      "ig_avg_clr": 1.93,
+      "ig_median_clr": 1.75,
+      "ig_profiles": [
+        "hormozi"
+      ],
+      "adp_uses": 4,
+      "status": "Used",
+      "status_emoji": "✅",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 5,
+          "hook_type": "confesion",
+          "text": "Yo también arranqué sin nada. Sin contactos, sin plata, en otro país. Si estás en esa situación ahora, lo que te voy a c"
+        },
+        {
+          "gen_id": "6be64c4d-4d35-4e4e-be5c-4a19f8d58fb6",
+          "hook_variant": 3,
+          "hook_type": "confesion",
+          "text": "Yo probé 5 modelos de negocio online antes de encontrar el que funciona. Perdí plata, tiempo y salud mental. Te ahorro 6"
+        },
+        {
+          "gen_id": "9e0941c9-5f9e-42db-842c-4e2f5025c41c",
+          "hook_variant": 1,
+          "hook_type": "confesion",
+          "text": "Yo también pagué cursos que no terminé. Pagué uno de marketing, uno de ventas y uno de IA. Ninguno me sirvió."
+        }
+      ]
+    },
+    {
+      "pattern": "timeline_rapido",
+      "ig_count": 1,
+      "ig_avg_clr": 1.42,
+      "ig_median_clr": 1.42,
+      "ig_profiles": [
+        "hormozi"
+      ],
+      "adp_uses": 4,
+      "status": "Used",
+      "status_emoji": "✅",
+      "adp_examples": [
+        {
+          "gen_id": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+          "hook_variant": 4,
+          "hook_type": "historia_mini",
+          "text": "Una mamá de 3 hijos le pidió a la IA que organice todo lo que aprendió sobre rutinas de sueño para bebés. En una hora te"
+        },
+        {
+          "gen_id": "a220390f-1c20-4f36-b85f-75dbf5416c3f",
+          "hook_variant": 2,
+          "hook_type": "timeline_provocacion",
+          "text": "Día 1: elegís tu nicho. Día 2: la IA te arma el producto. Día 3: ya está en Hotmart listo para vender."
+        },
+        {
+          "gen_id": "dc7628bb-4881-44c0-9986-0f16979ce668",
+          "hook_variant": 3,
+          "hook_type": "timeline_provocacion",
+          "text": "Día 1: le pedís a la IA que te arme una guía de ejercicios en casa. Día 2: la subís a Hotmart por 7 dólares. Día 7: empi"
+        }
+      ]
+    },
+    {
+      "pattern": "herencia_emocional",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 6,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 4,
+          "hook_type": "analogia_cotidiana",
+          "text": "Tu abuelo sabía reparar todo. Tu abuela cocinaba sin receta. Ese conocimiento hoy vale plata."
+        },
+        {
+          "gen_id": "92ee50e3-da4a-4b83-95b8-da7265ec0abd",
+          "hook_variant": 1,
+          "hook_type": "analogia_cotidiana",
+          "text": "Tu abuela cocinaba sin receta. Sabía de memoria 200 platos. Ese conocimiento murió con ella."
+        },
+        {
+          "gen_id": "92ee50e3-da4a-4b83-95b8-da7265ec0abd",
+          "hook_variant": 2,
+          "hook_type": "provocacion",
+          "text": "Tu viejo sabía arreglar TODO. Le golpeaban la puerta y lo ayudaba gratis. Murió sin cobrar un peso por eso."
+        }
+      ]
+    },
+    {
+      "pattern": "revelacion_personal",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 5,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 5,
+          "hook_type": "confesion",
+          "text": "Yo también arranqué sin nada. Sin contactos, sin plata, en otro país. Si estás en esa situación ahora, lo que te voy a c"
+        },
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "El peor error de mi carrera me enseñó más que cualquier curso. Pero me costó 15 mil dólares. Te ahorro esa plata con lo "
+        },
+        {
+          "gen_id": "bbbec157-8080-4b0b-b470-14500a23cfea",
+          "hook_variant": 1,
+          "hook_type": "confesion",
+          "text": "Lo que te voy a contar no lo cuento mucho. No porque me dé vergüenza. Sino porque cada vez que lo cuento se me hace un n"
+        }
+      ]
+    },
+    {
+      "pattern": "escena_cinematografica",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 8,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "hook_variant": 1,
+          "hook_type": "situacion_especifica",
+          "text": "Estoy en la cama de mi casa. Son las 10 de la mañana y todavía no me levanté. ¿Vos podrías quedarte en la cama a las 10?"
+        },
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "hook_variant": 4,
+          "hook_type": "situacion_especifica",
+          "text": "Llegás a tu casa después de laburar. Te tirás en el sillón. Abrís Instagram."
+        },
+        {
+          "gen_id": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+          "hook_variant": 1,
+          "hook_type": "situacion_especifica",
+          "text": "Son las 10 de la noche. Los chicos durmieron. Tenés una hora antes de acostarte."
+        }
+      ]
+    },
+    {
+      "pattern": "espejo_situacion",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 8,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "hook_variant": 1,
+          "hook_type": "situacion_especifica",
+          "text": "Usás Excel todos los días en tu trabajo. Hacés fórmulas, tablas dinámicas, reportes. Y cuando un compañero te pregunta c"
+        },
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "hook_variant": 4,
+          "hook_type": "situacion_especifica",
+          "text": "Llegás a tu casa después de laburar. Te tirás en el sillón. Abrís Instagram."
+        },
+        {
+          "gen_id": "3907bcfe-0ea0-451b-8399-ff8a747717bf",
+          "hook_variant": 1,
+          "hook_type": "situacion_especifica",
+          "text": "Cocinás todos los días. Tu familia te pide las recetas. Tus amigas te dicen \"deberías vender esto\"."
+        }
+      ]
+    },
+    {
+      "pattern": "anti_guru",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 4,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "hook_variant": 5,
+          "hook_type": "negacion_directa",
+          "text": "No te voy a decir que dejes las redes. No te voy a decir que te levantes a las 5 de la mañana. Te voy a decir algo mucho"
+        },
+        {
+          "gen_id": "6be64c4d-4d35-4e4e-be5c-4a19f8d58fb6",
+          "hook_variant": 2,
+          "hook_type": "negacion_directa",
+          "text": "No te voy a prometer que te vas a hacer millonario. No te voy a mostrar un Lamborghini. Te voy a dibujar 3 modelos de ne"
+        },
+        {
+          "gen_id": "99458443-dc9d-43c4-90c3-9f9bb9af5242",
+          "hook_variant": 4,
+          "hook_type": "negacion_directa",
+          "text": "No te voy a decir \"confiá en vos\". No te voy a decir \"el éxito es cuestión de actitud\". Te voy a mostrar un sistema para"
+        }
+      ]
+    },
+    {
+      "pattern": "matematica_reveladora",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 2,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "ac97c351-11b6-403f-8ad1-98adbf00b0b0",
+          "hook_variant": 1,
+          "hook_type": "provocacion",
+          "text": "Hay una cuenta que tu jefe no quiere que hagas. Es simple. Agarrá tu sueldo, dividilo por las horas que realmente trabaj"
+        },
+        {
+          "gen_id": "ac97c351-11b6-403f-8ad1-98adbf00b0b0",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "Cuanto más horas trabajás, menos vale tu hora. Suena raro pero es matemática pura. Te lo demuestro en el pizarrón."
+        }
+      ]
+    },
+    {
+      "pattern": "injusticia",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 1,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+          "hook_variant": 1,
+          "hook_type": "situacion_especifica",
+          "text": "Hay alguien ganando plata con algo que vos hacés mejor que él. Y sí, es injusto. Pero no por lo que pensás."
+        }
+      ]
+    }
+  ],
+  "body_coverage": [
+    {
+      "pattern": "autoridad",
+      "ig_count": 144,
+      "ig_avg_clr": 83.42,
+      "ig_median_clr": 68.01,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 7,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "body_type": "contraste_emocional",
+          "niche": "historia personal / publicidad (genérico)",
+          "angle": "5.4_historia_fracaso_leccion",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "52c686f0-dae2-4bde-b6b7-e977661bfb46",
+          "body_type": "demo_proceso",
+          "niche": "ebooks Amazon / KDP",
+          "angle": "2.2_tendencia_mercado",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "6be64c4d-4d35-4e4e-be5c-4a19f8d58fb6",
+          "body_type": "demolicion_alternativas",
+          "niche": "modelos de negocio online",
+          "angle": "3.7_modelo_equivocado",
+          "source": "regex_on_development"
+        }
+      ]
+    },
+    {
+      "pattern": "caso_real",
+      "ig_count": 24,
+      "ig_avg_clr": 91.97,
+      "ig_median_clr": 68.78,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 5,
+      "status": "Used",
+      "status_emoji": "✅",
+      "adp_examples": [
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "body_type": "historia_con_giro",
+          "niche": "historia de resultado real (genérico)",
+          "angle": "5.3_microhistoria_resultado"
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "body_type": "historia_con_giro",
+          "niche": "historia de resultado real (genérico)",
+          "angle": "5.3_microhistoria_resultado",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "92ee50e3-da4a-4b83-95b8-da7265ec0abd",
+          "body_type": "historia_con_giro",
+          "niche": "sabiduría generacional / revalorización del saber (genérico)",
+          "angle": "2.3_nicho_invisible"
+        }
+      ]
+    },
+    {
+      "pattern": "matematica",
+      "ig_count": 130,
+      "ig_avg_clr": 83.56,
+      "ig_median_clr": 67.14,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 14,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "body_type": "historia_con_giro",
+          "niche": "historia de resultado real (genérico)",
+          "angle": "5.3_microhistoria_resultado",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "body_type": "un_dia_en_la_vida",
+          "niche": "Excel / ofimática / plantillas",
+          "angle": "4.6_producto_especifico",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "body_type": "contraste_emocional",
+          "niche": "historia personal / publicidad (genérico)",
+          "angle": "5.4_historia_fracaso_leccion",
+          "source": "regex_on_development"
+        }
+      ]
+    },
+    {
+      "pattern": "demo_proceso",
+      "ig_count": 244,
+      "ig_avg_clr": 72.84,
+      "ig_median_clr": 56.03,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 21,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "body_type": "comparacion_caminos",
+          "niche": "comidas típicas / recetas de tu país",
+          "angle": "2.1_ventana_ia",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "body_type": "demolicion_mito",
+          "niche": "Coaching/consultoría (sesiones 1:1)",
+          "angle": "2.4_economia_del_conocimiento",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "body_type": "un_dia_en_la_vida",
+          "niche": "Excel / ofimática / plantillas",
+          "angle": "4.6_producto_especifico",
+          "source": "regex_on_development"
+        }
+      ]
+    },
+    {
+      "pattern": "agitacion_leve",
+      "ig_count": 92,
+      "ig_avg_clr": 69.77,
+      "ig_median_clr": 58.3,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 6,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "body_type": "demolicion_mito",
+          "niche": "Coaching/consultoría (sesiones 1:1)",
+          "angle": "2.4_economia_del_conocimiento",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "body_type": "comparacion_caminos",
+          "niche": "modelos de negocio online (genérico)",
+          "angle": "3.7_modelo_equivocado",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "body_type": "contraste_emocional",
+          "niche": "historia personal / publicidad (genérico)",
+          "angle": "5.4_historia_fracaso_leccion",
+          "source": "regex_on_development"
+        }
+      ]
+    },
+    {
+      "pattern": "narrativa_general",
+      "ig_count": 95,
+      "ig_avg_clr": 61.09,
+      "ig_median_clr": 9.17,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "agitacion_fuerte",
+      "ig_count": 65,
+      "ig_avg_clr": 64.02,
+      "ig_median_clr": 57.74,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 13,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "body_type": "contraste_emocional",
+          "niche": "historia personal / publicidad (genérico)",
+          "angle": "5.4_historia_fracaso_leccion"
+        },
+        {
+          "gen_id": "690611ec-f293-493b-b4e5-e8899c33a235",
+          "body_type": "un_dia_en_la_vida",
+          "niche": "identidad como padre/madre (genérico)",
+          "angle": "1.1_mama_papa_sin_tiempo",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+          "body_type": "contraste_emocional",
+          "niche": "rutina de oficina / escape laboral (genérico)",
+          "angle": "1.2_oficinista_atrapado"
+        }
+      ]
+    },
+    {
+      "pattern": "comparacion",
+      "ig_count": 31,
+      "ig_avg_clr": 54.98,
+      "ig_median_clr": 48.12,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 10,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "body_type": "comparacion_caminos",
+          "niche": "comidas típicas / recetas de tu país",
+          "angle": "2.1_ventana_ia"
+        },
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "body_type": "comparacion_caminos",
+          "niche": "modelos de negocio online (genérico)",
+          "angle": "3.7_modelo_equivocado"
+        },
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "body_type": "pregunta_respuesta",
+          "niche": "contenido digital / productividad",
+          "angle": "3.2_consumidor_vs_creador",
+          "source": "regex_on_development"
+        }
+      ]
+    },
+    {
+      "pattern": "tension",
+      "ig_count": 39,
+      "ig_avg_clr": 58.54,
+      "ig_median_clr": 49.74,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 6,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "body_type": "comparacion_caminos",
+          "niche": "modelos de negocio online (genérico)",
+          "angle": "3.7_modelo_equivocado",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "body_type": "un_dia_en_la_vida",
+          "niche": "Excel / ofimática / plantillas",
+          "angle": "4.6_producto_especifico",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "body_type": "contraste_emocional",
+          "niche": "historia personal / publicidad (genérico)",
+          "angle": "5.4_historia_fracaso_leccion",
+          "source": "regex_on_development"
+        }
+      ]
+    },
+    {
+      "pattern": "future_pacing",
+      "ig_count": 63,
+      "ig_avg_clr": 63.45,
+      "ig_median_clr": 49.01,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 8,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "body_type": "un_dia_en_la_vida",
+          "niche": "Excel / ofimática / plantillas",
+          "angle": "4.6_producto_especifico"
+        },
+        {
+          "gen_id": "3907bcfe-0ea0-451b-8399-ff8a747717bf",
+          "body_type": "analogia_extendida",
+          "niche": "gastronomía / recetas caseras",
+          "angle": "1.6_freelancer_profesional",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "690611ec-f293-493b-b4e5-e8899c33a235",
+          "body_type": "un_dia_en_la_vida",
+          "niche": "identidad como padre/madre (genérico)",
+          "angle": "1.1_mama_papa_sin_tiempo"
+        }
+      ]
+    },
+    {
+      "pattern": "demolicion_objecion",
+      "ig_count": 34,
+      "ig_avg_clr": 47.27,
+      "ig_median_clr": 25.4,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 10,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "body_type": "demolicion_mito",
+          "niche": "conocimiento como activo (genérico)",
+          "angle": "2.4_economia_del_conocimiento"
+        },
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "body_type": "demolicion_mito",
+          "niche": "Coaching/consultoría (sesiones 1:1)",
+          "angle": "2.4_economia_del_conocimiento"
+        },
+        {
+          "gen_id": "6be64c4d-4d35-4e4e-be5c-4a19f8d58fb6",
+          "body_type": "demolicion_alternativas",
+          "niche": "modelos de negocio online",
+          "angle": "3.7_modelo_equivocado"
+        }
+      ]
+    },
+    {
+      "pattern": "analogia",
+      "ig_count": 68,
+      "ig_avg_clr": 51.4,
+      "ig_median_clr": 51.33,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 7,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "body_type": "demolicion_mito",
+          "niche": "Coaching/consultoría (sesiones 1:1)",
+          "angle": "2.4_economia_del_conocimiento",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "3907bcfe-0ea0-451b-8399-ff8a747717bf",
+          "body_type": "analogia_extendida",
+          "niche": "gastronomía / recetas caseras",
+          "angle": "1.6_freelancer_profesional"
+        },
+        {
+          "gen_id": "3fc2d487-010c-4477-83e9-e3042977a95c",
+          "body_type": "pregunta_respuesta",
+          "niche": "industria de cursos online (genérico)",
+          "angle": "3.6_anti_guru",
+          "source": "regex_on_development"
+        }
+      ]
+    },
+    {
+      "pattern": "qa_rapido",
+      "ig_count": 106,
+      "ig_avg_clr": 39.24,
+      "ig_median_clr": 27.83,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 9,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "body_type": "demolicion_mito",
+          "niche": "conocimiento como activo (genérico)",
+          "angle": "2.4_economia_del_conocimiento",
+          "source": "regex_on_development"
+        },
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "body_type": "pregunta_respuesta",
+          "niche": "contenido digital / productividad",
+          "angle": "3.2_consumidor_vs_creador"
+        },
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "body_type": "pregunta_respuesta",
+          "niche": "contenido digital / productividad",
+          "angle": "3.2_consumidor_vs_creador",
+          "source": "regex_on_development"
+        }
+      ]
+    }
+  ],
+  "closing_coverage": [
+    {
+      "pattern": "dm",
+      "ig_count": 169,
+      "ig_avg_clr": 127.29,
+      "ig_median_clr": 115.51,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "cta_doble",
+      "ig_count": 270,
+      "ig_avg_clr": 101.42,
+      "ig_median_clr": 80.05,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "cta_video",
+      "ig_count": 276,
+      "ig_avg_clr": 100.52,
+      "ig_median_clr": 80.05,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 8,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "niche": "comidas típicas / recetas de tu país",
+          "text": "Pero hoy, desde tu casa, podés dar el primer paso. Tengo una clase gratis de 2 horas donde te muestro cómo encontrar pro"
+        },
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "niche": "Coaching/consultoría (sesiones 1:1)",
+          "text": "Y ese modelo es exactamente lo que enseño. Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos d"
+        },
+        {
+          "gen_id": "690611ec-f293-493b-b4e5-e8899c33a235",
+          "niche": "identidad como padre/madre (genérico)",
+          "text": "¿Y cómo se hace? te lo muestro paso a paso. Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos "
+        }
+      ]
+    },
+    {
+      "pattern": "desafio",
+      "ig_count": 4,
+      "ig_avg_clr": 106.14,
+      "ig_median_clr": 125.48,
+      "ig_profiles": [
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "link_bio",
+      "ig_count": 21,
+      "ig_avg_clr": 75.41,
+      "ig_median_clr": 55.87,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 8,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "niche": "comidas típicas / recetas de tu país",
+          "text": "Pero hoy, desde tu casa, podés dar el primer paso. Tengo una clase gratis de 2 horas donde te muestro cómo encontrar pro"
+        },
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "niche": "Coaching/consultoría (sesiones 1:1)",
+          "text": "Y ese modelo es exactamente lo que enseño. Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos d"
+        },
+        {
+          "gen_id": "690611ec-f293-493b-b4e5-e8899c33a235",
+          "niche": "identidad como padre/madre (genérico)",
+          "text": "¿Y cómo se hace? te lo muestro paso a paso. Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos "
+        }
+      ]
+    },
+    {
+      "pattern": "open_loop",
+      "ig_count": 9,
+      "ig_avg_clr": 97.5,
+      "ig_median_clr": 104.06,
+      "ig_profiles": [
+        "herasmedia",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "future_pacing",
+      "ig_count": 51,
+      "ig_avg_clr": 83.91,
+      "ig_median_clr": 58.53,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 1,
+      "status": "Underused",
+      "status_emoji": "🔄",
+      "adp_examples": [
+        {
+          "gen_id": "da156076-2131-45fa-9146-454fc95857b8",
+          "niche": "historia personal de Jesús",
+          "text": "Todo lo que viví y aprendí en 6 años te lo enseño en 3 días.   "
+        }
+      ]
+    },
+    {
+      "pattern": "cta_caption",
+      "ig_count": 373,
+      "ig_avg_clr": 88.64,
+      "ig_median_clr": 66.83,
+      "ig_profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "cierre_resumen",
+      "ig_count": 86,
+      "ig_avg_clr": 81.26,
+      "ig_median_clr": 52.29,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 1,
+      "status": "Underused",
+      "status_emoji": "🔄",
+      "adp_examples": [
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "niche": "historia personal / publicidad (genérico)",
+          "text": "Lo que aprendí de esa pérdida es exactamente lo que hoy enseño.   "
+        }
+      ]
+    },
+    {
+      "pattern": "corte_seco",
+      "ig_count": 11,
+      "ig_avg_clr": 3.66,
+      "ig_median_clr": 1.49,
+      "ig_profiles": [
+        "faridieck",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    },
+    {
+      "pattern": "sin_cta",
+      "ig_count": 89,
+      "ig_avg_clr": 9.69,
+      "ig_median_clr": 1.12,
+      "ig_profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 16,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "niche": "conocimiento como activo (genérico)",
+          "text": "Y cómo convertir lo que sabés en un producto que se vende solo, eso es lo que enseño.   "
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "niche": "historia de resultado real (genérico)",
+          "text": "Lo que hizo esta persona es exactamente lo que enseño. Paso a paso.   "
+        },
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "niche": "modelos de negocio online (genérico)",
+          "text": "Y todo lo que te mostré en el pizarrón te lo enseño paso a paso.   "
+        }
+      ]
+    },
+    {
+      "pattern": "reframe",
+      "ig_count": 1,
+      "ig_avg_clr": 0.77,
+      "ig_median_clr": 0.77,
+      "ig_profiles": [
+        "hormozi"
+      ],
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
+    }
+  ]
+}

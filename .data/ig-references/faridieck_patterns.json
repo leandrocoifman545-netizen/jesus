@@ -1,0 +1,1352 @@
+{
+  "username": "faridieck",
+  "analyzed_at": "2026-03-25T10:51:49.973Z",
+  "total_analyzed": 20,
+  "opening_patterns": [
+    {
+      "pattern": "acumulacion",
+      "count": 2,
+      "avg_clr": 0.32,
+      "weighted_clr": 0.36,
+      "median_clr": 0.32,
+      "avg_views": 2200989,
+      "examples": [
+        {
+          "text": "No sé exactamente por qué estás llorando hoy. Tal vez ni tú lo sepas. Quizás sea por algo que acaba de pasar. O por algo",
+          "clr": 0.4,
+          "views": 2963561,
+          "shortCode": "DUHPPx9jyXL"
+        },
+        {
+          "text": "Le iba a cortar a mi novia, pero murió su abuela. ¿Qué hago? Dile ya. Espérate un rato. No quiere ser mentiroso. No quie",
+          "clr": 0.23,
+          "views": 1438417,
+          "shortCode": "DOuXv5hjBcf"
+        }
+      ]
+    },
+    {
+      "pattern": "neutro",
+      "count": 14,
+      "avg_clr": 0.29,
+      "weighted_clr": 0.3,
+      "median_clr": 0.25,
+      "avg_views": 1728619,
+      "examples": [
+        {
+          "text": "Esta es Greta Thunberg, la activista medioambiental que ha sido arrestada por manifestarse. Bueno, hace un tiempo salió ",
+          "clr": 0.56,
+          "views": 1568783,
+          "shortCode": "DRLXb2TEUhN"
+        },
+        {
+          "text": "Tal vez a ti también te esté pasando esto en las redes sociales y es importante que lo sepas. ¿Has escuchado del fenómen",
+          "clr": 0.55,
+          "views": 2424733,
+          "shortCode": "DRuTL7Fjc73"
+        },
+        {
+          "text": "Ey tú, acércate. Esto te interesa si normalmente escuchas relatos y reflexiones para pasar el rato mientras lavas los pl",
+          "clr": 0.5,
+          "views": 2047702,
+          "shortCode": "DPACR8lD1BU"
+        }
+      ]
+    },
+    {
+      "pattern": "provocacion",
+      "count": 4,
+      "avg_clr": 0.29,
+      "weighted_clr": 0.29,
+      "median_clr": 0.22,
+      "avg_views": 5373321,
+      "examples": [
+        {
+          "text": "Las mujeres tienen expectativas de los hombres imposibles de cumplir. ¿A qué te refieres? Esperan que a los 20, 25 años ",
+          "clr": 0.58,
+          "views": 998101,
+          "shortCode": "DOKT4IdjPL3"
+        },
+        {
+          "text": "Cuando decimos adiós a un ser querido no estamos borrando su presencia, sino transformando nuestra relación con él. Ya n",
+          "clr": 0.27,
+          "views": 987352,
+          "shortCode": "DPCYF7RiWUN"
+        },
+        {
+          "text": "Hace años lo dije, pero nunca está de más recordarlo. No se puede modificar la conducta de quien no ve ningún problema e",
+          "clr": 0.16,
+          "views": 16818301,
+          "shortCode": "DOY1aAwDc0p"
+        }
+      ]
+    }
+  ],
+  "body_patterns": [
+    {
+      "pattern": "future_pacing",
+      "count": 1,
+      "avg_clr": 0.56,
+      "weighted_clr": 0.56,
+      "median_clr": 0.56,
+      "avg_views": 1568783,
+      "examples": []
+    },
+    {
+      "pattern": "autoridad",
+      "count": 1,
+      "avg_clr": 0.56,
+      "weighted_clr": 0.56,
+      "median_clr": 0.56,
+      "avg_views": 1568783,
+      "examples": []
+    },
+    {
+      "pattern": "tension",
+      "count": 1,
+      "avg_clr": 0.55,
+      "weighted_clr": 0.55,
+      "median_clr": 0.55,
+      "avg_views": 2424733,
+      "examples": []
+    },
+    {
+      "pattern": "demo_proceso",
+      "count": 5,
+      "avg_clr": 0.43,
+      "weighted_clr": 0.42,
+      "median_clr": 0.5,
+      "avg_views": 1309699,
+      "examples": []
+    },
+    {
+      "pattern": "comparacion",
+      "count": 2,
+      "avg_clr": 0.35,
+      "weighted_clr": 0.39,
+      "median_clr": 0.35,
+      "avg_views": 1834262,
+      "examples": []
+    },
+    {
+      "pattern": "qa_rapido",
+      "count": 3,
+      "avg_clr": 0.37,
+      "weighted_clr": 0.37,
+      "median_clr": 0.31,
+      "avg_views": 1115264,
+      "examples": []
+    },
+    {
+      "pattern": "agitacion_fuerte",
+      "count": 3,
+      "avg_clr": 0.36,
+      "weighted_clr": 0.36,
+      "median_clr": 0.27,
+      "avg_views": 1311240,
+      "examples": []
+    },
+    {
+      "pattern": "agitacion_leve",
+      "count": 5,
+      "avg_clr": 0.25,
+      "weighted_clr": 0.29,
+      "median_clr": 0.2,
+      "avg_views": 2436313,
+      "examples": []
+    },
+    {
+      "pattern": "demolicion_objecion",
+      "count": 1,
+      "avg_clr": 0.23,
+      "weighted_clr": 0.23,
+      "median_clr": 0.23,
+      "avg_views": 1438417,
+      "examples": []
+    },
+    {
+      "pattern": "narrativa_general",
+      "count": 7,
+      "avg_clr": 0.2,
+      "weighted_clr": 0.2,
+      "median_clr": 0.18,
+      "avg_views": 3724290,
+      "examples": []
+    }
+  ],
+  "closing_patterns": [
+    {
+      "pattern": "sin_cta",
+      "count": 16,
+      "avg_clr": 0.31,
+      "weighted_clr": 0.32,
+      "median_clr": 0.26,
+      "avg_views": 1580028,
+      "examples": [
+        {
+          "text": "Creo que los dos sienten que merecen lo mejor de lo mejor y no pasa nada. Pero háganse esta pregunta. ¿Ustedes también s",
+          "clr": 0.58,
+          "shortCode": "DOKT4IdjPL3"
+        },
+        {
+          "text": "Ojalá que estos videos sirvan para abrir paso a conversaciones más informadas, más responsables y sobre todo, más humana",
+          "clr": 0.56,
+          "shortCode": "DRLXb2TEUhN"
+        },
+        {
+          "text": "dejar de ser manipulados y actuar con más conciencia en una época donde cada vez es más difícil distinguir lo que es ver",
+          "clr": 0.55,
+          "shortCode": "DRuTL7Fjc73"
+        }
+      ]
+    },
+    {
+      "pattern": "corte_seco",
+      "count": 1,
+      "avg_clr": 0.27,
+      "weighted_clr": 0.27,
+      "median_clr": 0.27,
+      "avg_views": 932244,
+      "examples": [
+        {
+          "text": "",
+          "clr": 0.27,
+          "shortCode": "DSk31YmlCNW"
+        }
+      ]
+    },
+    {
+      "pattern": "future_pacing",
+      "count": 1,
+      "avg_clr": 0.2,
+      "weighted_clr": 0.2,
+      "median_clr": 0.2,
+      "avg_views": 6104890,
+      "examples": [
+        {
+          "text": "Solo sentir que nuestros pensamientos no rebotan siempre contra las paredes de nuestra cabeza. Cuando alguien escucha de",
+          "clr": 0.2,
+          "shortCode": "DOlrCGCiI0k"
+        }
+      ]
+    },
+    {
+      "pattern": "cierre_resumen",
+      "count": 1,
+      "avg_clr": 0.2,
+      "weighted_clr": 0.2,
+      "median_clr": 0.2,
+      "avg_views": 960048,
+      "examples": [
+        {
+          "text": "Y no pasa nada si aún duele. El progreso no siempre se mide en sonrisas. Lo importante ahora es que sigues, que estás de",
+          "clr": 0.2,
+          "shortCode": "DOq0kjNjgdj"
+        }
+      ]
+    },
+    {
+      "pattern": "link_bio",
+      "count": 1,
+      "avg_clr": 0.16,
+      "weighted_clr": 0.16,
+      "median_clr": 0.16,
+      "avg_views": 16818301,
+      "examples": [
+        {
+          "text": "si la otra persona no reconoce que hay algo que atender, el cambio simplemente no llegará.",
+          "clr": 0.16,
+          "shortCode": "DOY1aAwDc0p"
+        }
+      ]
+    }
+  ],
+  "cta_buildup_patterns": [
+    {
+      "pattern": "directo",
+      "count": 1,
+      "avg_clr": 0.16,
+      "weighted_clr": 0.16,
+      "median_clr": 0.16,
+      "avg_views": 0,
+      "examples": [],
+      "avg_duration": 2.84
+    }
+  ],
+  "winning_combos": [
+    {
+      "combo": "provocacion→sin_cta",
+      "count": 3,
+      "avg_clr": 0.33,
+      "avg_views": 1558327
+    },
+    {
+      "combo": "acumulacion→sin_cta",
+      "count": 2,
+      "avg_clr": 0.32,
+      "avg_views": 2200989
+    },
+    {
+      "combo": "neutro→sin_cta",
+      "count": 11,
+      "avg_clr": 0.3,
+      "avg_views": 1473044
+    }
+  ],
+  "density_performance": [
+    {
+      "bucket": "lento(<2wps)",
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0
+    },
+    {
+      "bucket": "normal(2-3wps)",
+      "count": 4,
+      "avg_clr": 0.21,
+      "avg_views": 1125984
+    },
+    {
+      "bucket": "rapido(>3wps)",
+      "count": 16,
+      "avg_clr": 0.31,
+      "avg_views": 2849500
+    }
+  ],
+  "top_hooks": [
+    {
+      "shortCode": "DOKT4IdjPL3",
+      "opening_text": "Las mujeres tienen expectativas de los hombres imposibles de cumplir. ¿A qué te refieres? Esperan que a los 20, 25 años ya tenga la vida resuelta y les pueda dar la misma vida que les dio su papá, que hizo su dinero antes de Cristo.",
+      "opening_duration": 9.78,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 0.58,
+      "views": 998101,
+      "comments": 1278
+    },
+    {
+      "shortCode": "DRLXb2TEUhN",
+      "opening_text": "Esta es Greta Thunberg, la activista medioambiental que ha sido arrestada por manifestarse. Bueno, hace un tiempo salió un clip donde parecía contradecir su propio discurso por completo.",
+      "opening_duration": 8.24,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.56,
+      "views": 1568783,
+      "comments": 903
+    },
+    {
+      "shortCode": "DRuTL7Fjc73",
+      "opening_text": "Tal vez a ti también te esté pasando esto en las redes sociales y es importante que lo sepas. ¿Has escuchado del fenómeno del filtro grubuja? Te explico. Los algoritmos de las plataformas tienen la función de mostrarte lo que creen que te va a interesar",
+      "opening_duration": 10.58,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.55,
+      "views": 2424733,
+      "comments": 2572
+    },
+    {
+      "shortCode": "DPACR8lD1BU",
+      "opening_text": "Ey tú, acércate. Esto te interesa si normalmente escuchas relatos y reflexiones para pasar el rato mientras lavas los platos, cocinas o simplemente para llenar el vacío que hay en tu habitación los domingos por la tarde.",
+      "opening_duration": 11.18,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.5,
+      "views": 2047702,
+      "comments": 2689
+    },
+    {
+      "shortCode": "DUHPPx9jyXL",
+      "opening_text": "No sé exactamente por qué estás llorando hoy. Tal vez ni tú lo sepas. Quizás sea por algo que acaba de pasar. O por algo que acumulaste en silencio durante mucho tiempo.",
+      "opening_duration": 8.86,
+      "opening_patterns": [
+        "acumulacion"
+      ],
+      "clr": 0.4,
+      "views": 2963561,
+      "comments": 3418
+    },
+    {
+      "shortCode": "DOSA0scDPmz",
+      "opening_text": "Buenos días a todos excepto a idiotas que graban el concierto. ¿Sabes que una persona cuenta con un IQ de aire acondicionado cuando, en vez de escuchar a un artista con su celular,",
+      "opening_duration": 7.94,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.31,
+      "views": 909274,
+      "comments": 627
+    },
+    {
+      "shortCode": "DPCYF7RiWUN",
+      "opening_text": "Cuando decimos adiós a un ser querido no estamos borrando su presencia, sino transformando nuestra relación con él. Ya no está contigo, pero ahora vive en ti. El adiós nunca es para siempre porque la muerte no borra lo que el amor ya escribió.",
+      "opening_duration": 12.5,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 0.27,
+      "views": 987352,
+      "comments": 670
+    },
+    {
+      "shortCode": "DSk31YmlCNW",
+      "opening_text": "Al final de la película aparece la siguiente frase de Lord Byron. Y así, el corazón se rompe, pero aún roto, pervive. Me encanta esa palabra, pervive.",
+      "opening_duration": 9.54,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.27,
+      "views": 932244,
+      "comments": 391
+    },
+    {
+      "shortCode": "DO3sdrVDWKg",
+      "opening_text": "Cuando me recuerdas, llevas conmigo una parte de lo que fui. He dejado una huella en ti, y eso me devuelve la vida cada vez que me convocas en tu memoria, sin importar los años o la distancia.",
+      "opening_duration": 9.96,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.26,
+      "views": 1001664,
+      "comments": 727
+    },
+    {
+      "shortCode": "DQSeaZaj0u3",
+      "opening_text": "Rituales. Suena como algo misterioso y oscuro, pero no me refiero a ese tipo de rituales que te imaginas.",
+      "opening_duration": 8.32,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.25,
+      "views": 1081981,
+      "comments": 415
+    },
+    {
+      "shortCode": "DOyi70gkU-O",
+      "opening_text": "Cuando sientas que tu mente corre y no puedes dejar de pensar en todo lo que podría salir mal, respira hondo. Deja que el aire entre despacio.",
+      "opening_duration": 8.12,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.24,
+      "views": 1432694,
+      "comments": 951
+    },
+    {
+      "shortCode": "DOuXv5hjBcf",
+      "opening_text": "Le iba a cortar a mi novia, pero murió su abuela. ¿Qué hago? Dile ya. Espérate un rato. No quiere ser mentiroso. No quiere sumarle al dolor. Siempre es mejor decir la verdad. ¿Qué cuesta posponer la verdad un rato?",
+      "opening_duration": 8.8,
+      "opening_patterns": [
+        "acumulacion"
+      ],
+      "clr": 0.23,
+      "views": 1438417,
+      "comments": 587
+    },
+    {
+      "shortCode": "DOlrCGCiI0k",
+      "opening_text": "Quiero hablar de todo con al menos una persona como hablo conmigo mismo. Con esa frase Dostoyevsky resumió la conexión que todos buscamos.",
+      "opening_duration": 8.36,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.2,
+      "views": 6104890,
+      "comments": 3161
+    },
+    {
+      "shortCode": "DTdtS3QD0yT",
+      "opening_text": "Se ve bien solo con el corazón porque lo esencial es invisible a los ojos. El zorro le explicó al principito que su rosa era única porque le había dedicado tiempo. La gente suele olvidar eso, pero el principito debía recordarlo.",
+      "opening_duration": 10.54,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.2,
+      "views": 2006509,
+      "comments": 926
+    },
+    {
+      "shortCode": "DOq0kjNjgdj",
+      "opening_text": "Perdiste algo que creías irreemplazable. Y aún así aquí estás, con cicatrices y recuerdos que todavía duelen, pero también con una nueva forma de mirar la vida.",
+      "opening_duration": 7.88,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.2,
+      "views": 960048,
+      "comments": 566
+    },
+    {
+      "shortCode": "DP_0W7wDw42",
+      "opening_text": "El alma también se cansa de fingir que todo está bien, no de aparentar fuerza cuando lo único que quiere es descansar. Y cuando finalmente se rinde, no siempre es debilidad, a veces es sabiduría.",
+      "opening_duration": 11.02,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.18,
+      "views": 1245918,
+      "comments": 610
+    },
+    {
+      "shortCode": "DOY1aAwDc0p",
+      "opening_text": "Hace años lo dije, pero nunca está de más recordarlo. No se puede modificar la conducta de quien no ve ningún problema en ella. No importa cuánto quieras ayudar, cuánto insistas o cuánto te esfuerces,",
+      "opening_duration": 10.52,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 0.16,
+      "views": 16818301,
+      "comments": 5264
+    },
+    {
+      "shortCode": "DOoPri_iACP",
+      "opening_text": "Sé que a veces tu mente no se calla, que te pinta escenarios terribles que todavía no han pasado. Ha de ser muy cansado, has de estar muy cansado. No olvides que no todo lo que piensas es verdad, que eres mucho más que tus miedos",
+      "opening_duration": 12.18,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.16,
+      "views": 1240437,
+      "comments": 663
+    },
+    {
+      "shortCode": "DOTtT79iovA",
+      "opening_text": "A alguien que fue importante no se lo olvida, como si nunca hubiera existido. Simplemente se deja de atender. El enamoramiento, en el fondo, como dijo Ortega y Gasset, es un fenómeno de atención.",
+      "opening_duration": 10.5,
+      "opening_patterns": [
+        "provocacion"
+      ],
+      "clr": 0.15,
+      "views": 2689529,
+      "comments": 972
+    },
+    {
+      "shortCode": "DPWyX1ggqh3",
+      "opening_text": "Siempre falta algo. Falta lo que no tuvimos, falta lo que deseamos, falta alguien. Alguien que ya no está y no puede volver.",
+      "opening_duration": 9.46,
+      "opening_patterns": [
+        "neutro"
+      ],
+      "clr": 0.14,
+      "views": 1243791,
+      "comments": 489
+    }
+  ],
+  "top_cta_buildups": [
+    {
+      "shortCode": "DOY1aAwDc0p",
+      "closing_text": "si la otra persona no reconoce que hay algo que atender, el cambio simplemente no llegará.",
+      "buildup": {
+        "buildup_text": "si la otra persona no reconoce que hay algo que atender,",
+        "buildup_type": "directo",
+        "buildup_segments": 1,
+        "buildup_duration": 2.84,
+        "cta_text": "el cambio simplemente no llegará.",
+        "cta_segments": 1
+      },
+      "clr": 0.16,
+      "views": 16818301
+    }
+  ],
+  "all_videos": [
+    {
+      "shortCode": "DOKT4IdjPL3",
+      "url": "https://www.instagram.com/p/DOKT4IdjPL3/",
+      "timestamp": "2025-09-04T01:01:11.000Z",
+      "decay_weight": 0.21,
+      "views": 998101,
+      "likes": 221854,
+      "comments": 1278,
+      "clr": 0.58,
+      "duration": 101.49,
+      "words_per_second": 3.56,
+      "opening": {
+        "text": "Las mujeres tienen expectativas de los hombres imposibles de cumplir. ¿A qué te refieres? Esperan que a los 20, 25 años ya tenga la vida resuelta y les pueda dar la misma vida que les dio su papá, que hizo su dinero antes de Cristo.",
+        "duration": 9.78,
+        "segments": 3,
+        "patterns": [
+          "provocacion"
+        ]
+      },
+      "body": {
+        "text_preview": "Es una tontería altamente ignorante y egoísta que nada más daña su relación. Yo creo que se vale que una mujer sepa lo que quiere. Sí, y eso que quieren no existe. Sí existe. Sí, sí ha de ser algo que",
+        "duration": 82.77,
+        "segments": 38,
+        "patterns": [
+          "demo_proceso",
+          "qa_rapido"
+        ],
+        "word_count": 282
+      },
+      "closing": {
+        "text": "Creo que los dos sienten que merecen lo mejor de lo mejor y no pasa nada. Pero háganse esta pregunta. ¿Ustedes también son lo mejor de lo mejor? Supongo que no. Yo sé.",
+        "duration": 8.94,
+        "segments": 4,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "AXEL - EXPECTATIVAS ALTAS #cinema #arte por @oscartoon.sn y voz de @reginag.rdz"
+    },
+    {
+      "shortCode": "DRLXb2TEUhN",
+      "url": "https://www.instagram.com/p/DRLXb2TEUhN/",
+      "timestamp": "2025-11-18T00:25:54.000Z",
+      "decay_weight": 0.37,
+      "views": 1568783,
+      "likes": 159840,
+      "comments": 903,
+      "clr": 0.56,
+      "duration": 266.22,
+      "words_per_second": 3.02,
+      "opening": {
+        "text": "Esta es Greta Thunberg, la activista medioambiental que ha sido arrestada por manifestarse. Bueno, hace un tiempo salió un clip donde parecía contradecir su propio discurso por completo.",
+        "duration": 8.24,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Evidentemente, el clip generó mucha indignación. La gente se enojó, comenzó a comentar, a compartir y el video se volvió viral en cuestión de horas. Y resultó que el clip había sido editado para sacar",
+        "duration": 250.88,
+        "segments": 50,
+        "patterns": [
+          "agitacion_fuerte",
+          "demo_proceso",
+          "future_pacing",
+          "autoridad"
+        ],
+        "word_count": 755
+      },
+      "closing": {
+        "text": "Ojalá que estos videos sirvan para abrir paso a conversaciones más informadas, más responsables y sobre todo, más humanas.",
+        "duration": 7.1,
+        "segments": 1,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "RAGEBAIT – Cuando convierten tu indignación en negocio #FueraDeContexto Clip 1/6."
+    },
+    {
+      "shortCode": "DRuTL7Fjc73",
+      "url": "https://www.instagram.com/p/DRuTL7Fjc73/",
+      "timestamp": "2025-12-01T14:02:17.000Z",
+      "decay_weight": 0.42,
+      "views": 2424733,
+      "likes": 466134,
+      "comments": 2572,
+      "clr": 0.55,
+      "duration": 149.59,
+      "words_per_second": 3.41,
+      "opening": {
+        "text": "Tal vez a ti también te esté pasando esto en las redes sociales y es importante que lo sepas. ¿Has escuchado del fenómeno del filtro grubuja? Te explico. Los algoritmos de las plataformas tienen la función de mostrarte lo que creen que te va a interesar",
+        "duration": 10.58,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "para que sigas frente a la pantalla el mayor tiempo posible. Y para adivinar eso, analizan qué clics das, qué compartes, qué te gusta, qué te enoja, qué buscas, cuánto dura tu atención en un video, qu",
+        "duration": 126.45,
+        "segments": 32,
+        "patterns": [
+          "comparacion",
+          "tension"
+        ],
+        "word_count": 421
+      },
+      "closing": {
+        "text": "dejar de ser manipulados y actuar con más conciencia en una época donde cada vez es más difícil distinguir lo que es verdad. Ojalá que estos videos sirvan para abrir paso a conversaciones más informadas, más responsables y sobre todo más humanos.",
+        "duration": 12.56,
+        "segments": 3,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Fenómeno del filtro burbuja #FueraDeContexto Clip 6/6"
+    },
+    {
+      "shortCode": "DPACR8lD1BU",
+      "url": "https://www.instagram.com/p/DPACR8lD1BU/",
+      "timestamp": "2025-09-24T21:46:41.000Z",
+      "decay_weight": 0.25,
+      "views": 2047702,
+      "likes": 533250,
+      "comments": 2689,
+      "clr": 0.5,
+      "duration": 45.76,
+      "words_per_second": 3.65,
+      "opening": {
+        "text": "Ey tú, acércate. Esto te interesa si normalmente escuchas relatos y reflexiones para pasar el rato mientras lavas los platos, cocinas o simplemente para llenar el vacío que hay en tu habitación los domingos por la tarde.",
+        "duration": 11.18,
+        "segments": 1,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Esas tardes que saben a desilusión, pues después de una semana completa esperando a que algo pasara, nada pasó. Lo escuchas para sentir compañía o solo para sentir algo antes de que la tarde agonizant",
+        "duration": 22.3,
+        "segments": 5,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 72
+      },
+      "closing": {
+        "text": "Te invito a que te des una vuelta por Amazon Music, solo tienes que descargar la app, la cual es gratis, y le des un vistazo a todo el contenido que ya está disponible y a todo lo que está por venir. Gracias por ver este video y tú y yo nos estaremos escuchando en Amazon Music.",
+        "duration": 12.28,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Escucha relatos y reflexiones en formato de audio de manera exclusiva en Amazon Music @amazonmusicmx"
+    },
+    {
+      "shortCode": "DUHPPx9jyXL",
+      "url": "https://www.instagram.com/p/DUHPPx9jyXL/",
+      "timestamp": "2026-01-29T23:30:57.000Z",
+      "decay_weight": 0.66,
+      "views": 2963561,
+      "likes": 857569,
+      "comments": 3418,
+      "clr": 0.4,
+      "duration": 42.9,
+      "words_per_second": 3.5,
+      "opening": {
+        "text": "No sé exactamente por qué estás llorando hoy. Tal vez ni tú lo sepas. Quizás sea por algo que acaba de pasar. O por algo que acumulaste en silencio durante mucho tiempo.",
+        "duration": 8.86,
+        "segments": 4,
+        "patterns": [
+          "acumulacion"
+        ]
+      },
+      "body": {
+        "text_preview": "O tal vez por todo lo que no lloraste en su debido momento. Por esas veces en que te tragaste el dolor para no preocupar a nadie. En que tuviste que seguir funcionando aunque por dentro te derrumbabas",
+        "duration": 20.2,
+        "segments": 8,
+        "patterns": [
+          "agitacion_leve"
+        ],
+        "word_count": 73
+      },
+      "closing": {
+        "text": "Déjalo salir. Aunque no sepas de dónde viene Tal vez estés llorando por todas tus versiones Que aguantaron demasiado Y si es así, está bien Cada lágrima que cae hoy pertenece también A lo que alguna vez te dolió Y no supiste cómo decir",
+        "duration": 13.84,
+        "segments": 8,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "No sé exactamente por qué estás llorando hoy. Tal vez ni tú lo sepas. Quizás sea por algo que acaba "
+    },
+    {
+      "shortCode": "DOSA0scDPmz",
+      "url": "https://www.instagram.com/p/DOSA0scDPmz/",
+      "timestamp": "2025-09-07T00:48:36.000Z",
+      "decay_weight": 0.22,
+      "views": 909274,
+      "likes": 201110,
+      "comments": 627,
+      "clr": 0.31,
+      "duration": 86.91,
+      "words_per_second": 3.36,
+      "opening": {
+        "text": "Buenos días a todos excepto a idiotas que graban el concierto. ¿Sabes que una persona cuenta con un IQ de aire acondicionado cuando, en vez de escuchar a un artista con su celular,",
+        "duration": 7.94,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "paga 1,800 pesos para verlo en vivo y aún así decide verlo por el celular? Muy buena idea documentar esto, no se nos vaya a olvidar. Y el video que terminan consiguiendo es el equivalente audiovisual ",
+        "duration": 69.57,
+        "segments": 27,
+        "patterns": [
+          "agitacion_leve",
+          "qa_rapido"
+        ],
+        "word_count": 237
+      },
+      "closing": {
+        "text": "Y deja que haga lo suyo Hay personas que quieren entrar Diles que estamos bien ¿Seguro? Se ven buena onda Seguro",
+        "duration": 9.4,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "AXEL - GRABAR EN CONCIERTO #cinema #arte por @ileidyosc y voz de @diegoarcq"
+    },
+    {
+      "shortCode": "DPCYF7RiWUN",
+      "url": "https://www.instagram.com/p/DPCYF7RiWUN/",
+      "timestamp": "2025-09-25T19:34:56.000Z",
+      "decay_weight": 0.25,
+      "views": 987352,
+      "likes": 245478,
+      "comments": 670,
+      "clr": 0.27,
+      "duration": 27.2,
+      "words_per_second": 3.42,
+      "opening": {
+        "text": "Cuando decimos adiós a un ser querido no estamos borrando su presencia, sino transformando nuestra relación con él. Ya no está contigo, pero ahora vive en ti. El adiós nunca es para siempre porque la muerte no borra lo que el amor ya escribió.",
+        "duration": 12.5,
+        "segments": 4,
+        "patterns": [
+          "provocacion"
+        ]
+      },
+      "body": {
+        "text_preview": "",
+        "duration": 0.36,
+        "segments": 0,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 1
+      },
+      "closing": {
+        "text": "En cada paso que des, en cada recuerdo que honres, en cada gesto de amor que compartas, esa persona sigue ahí. No como antes, pero de una forma que nada ni nadie podrá arrebatarte. El amor no muere, cambia de lugar, se transforma y se queda para siempre.",
+        "duration": 14.34,
+        "segments": 4,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Cuando decimos adiós a un ser querido, no estamos borrando su presencia, sino transformando nuestra "
+    },
+    {
+      "shortCode": "DSk31YmlCNW",
+      "url": "https://www.instagram.com/p/DSk31YmlCNW/",
+      "timestamp": "2025-12-22T18:40:58.000Z",
+      "decay_weight": 0.49,
+      "views": 932244,
+      "likes": 143031,
+      "comments": 391,
+      "clr": 0.27,
+      "duration": 100.33,
+      "words_per_second": 2.88,
+      "opening": {
+        "text": "Al final de la película aparece la siguiente frase de Lord Byron. Y así, el corazón se rompe, pero aún roto, pervive. Me encanta esa palabra, pervive.",
+        "duration": 9.54,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Seguir existiendo a pesar del tiempo y a pesar de lo que duele. Me parece una frase terriblemente bella para describir el viaje de la criatura. La criatura nació deseando amor, y lo primero que encont",
+        "duration": 90.79,
+        "segments": 26,
+        "patterns": [
+          "agitacion_fuerte",
+          "demo_proceso"
+        ],
+        "word_count": 261
+      },
+      "closing": {
+        "text": "",
+        "duration": 0,
+        "segments": 0,
+        "patterns": [
+          "corte_seco"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Al final de la película aparece la siguiente frase de Lord Byron: Y así, el corazón se rompe, pero a"
+    },
+    {
+      "shortCode": "DO3sdrVDWKg",
+      "url": "https://www.instagram.com/p/DO3sdrVDWKg/",
+      "timestamp": "2025-09-21T16:01:21.000Z",
+      "decay_weight": 0.24,
+      "views": 1001664,
+      "likes": 276170,
+      "comments": 727,
+      "clr": 0.26,
+      "duration": 38.37,
+      "words_per_second": 3.41,
+      "opening": {
+        "text": "Cuando me recuerdas, llevas conmigo una parte de lo que fui. He dejado una huella en ti, y eso me devuelve la vida cada vez que me convocas en tu memoria, sin importar los años o la distancia.",
+        "duration": 9.96,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "El amor trasciende el tiempo y el espacio, y mientras me recuerdes, sigo existiendo. En tu mente, en tu corazón, o en esa voz que puedes volver a escuchar cuando cierras los ojos. Si me recuerdas, no ",
+        "duration": 15.47,
+        "segments": 4,
+        "patterns": [
+          "demo_proceso"
+        ],
+        "word_count": 50
+      },
+      "closing": {
+        "text": "Cuando me recuerdas en tus momentos de tristeza, soy consuelo. Cuando lo haces en tus momentos de alegría, soy parte de esa alegría. Si un día me olvidaras, una parte de mí se borraría contigo. Pero mientras sigas recordándome, viviré en ti.",
+        "duration": 12.94,
+        "segments": 4,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Cuando me recuerdas, llevas conmigo una parte de lo que fui. Sígueme aquí @faridieck para más relato"
+    },
+    {
+      "shortCode": "DQSeaZaj0u3",
+      "url": "https://www.instagram.com/p/DQSeaZaj0u3/",
+      "timestamp": "2025-10-26T22:10:19.000Z",
+      "decay_weight": 0.32,
+      "views": 1081981,
+      "likes": 166035,
+      "comments": 415,
+      "clr": 0.25,
+      "duration": 92.25,
+      "words_per_second": 2.87,
+      "opening": {
+        "text": "Rituales. Suena como algo misterioso y oscuro, pero no me refiero a ese tipo de rituales que te imaginas.",
+        "duration": 8.32,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "En realidad hablo de los que todos conocemos. Bodas, bautizos, funerales e incluso las fiestas patrias. Todos comparten ciertos rasgos. Tienen una estructura repetitiva, tienen un significado que va m",
+        "duration": 73.75,
+        "segments": 16,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 214
+      },
+      "closing": {
+        "text": "Porque aunque no seas de aquí, créeme que cuando veas los juegos, recorras el estado y sus ciudades y veas todo lo que tiene para ofrecer, te sentirás como en casa.",
+        "duration": 10.18,
+        "segments": 1,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Como embajador del mundial en Nuevo León, les presento el ritual de la carne Asada 🤠 @nuevoleonmx"
+    },
+    {
+      "shortCode": "DOyi70gkU-O",
+      "url": "https://www.instagram.com/p/DOyi70gkU-O/",
+      "timestamp": "2025-09-19T16:01:55.000Z",
+      "decay_weight": 0.24,
+      "views": 1432694,
+      "likes": 392375,
+      "comments": 951,
+      "clr": 0.24,
+      "duration": 54.29,
+      "words_per_second": 3.39,
+      "opening": {
+        "text": "Cuando sientas que tu mente corre y no puedes dejar de pensar en todo lo que podría salir mal, respira hondo. Deja que el aire entre despacio.",
+        "duration": 8.12,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Quizás sientas ese nudo en la garganta o ese latido rápido que asusta y está bien. No significa que estés roto ni que no puedas con esto. Solo significa que estás sintiendo mucho. Y eso no te hace déb",
+        "duration": 32.63,
+        "segments": 14,
+        "patterns": [
+          "agitacion_fuerte"
+        ],
+        "word_count": 112
+      },
+      "closing": {
+        "text": "Estás haciendo lo mejor que puedes con lo que tienes ahora. Esto que sientes ahora no durará para siempre, aunque parezca eterno mientras lo estás viviendo. Lo sé porque pasa. Siempre pasa, aunque sea poco a poco. Y cuando pase, tú seguirás aquí, respirando.",
+        "duration": 13.54,
+        "segments": 7,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Cuando sientas que tu mente corre y no puedes dejar de pensar en todo lo que podría salir mal, respi"
+    },
+    {
+      "shortCode": "DOuXv5hjBcf",
+      "url": "https://www.instagram.com/p/DOuXv5hjBcf/",
+      "timestamp": "2025-09-18T01:07:28.000Z",
+      "decay_weight": 0.23,
+      "views": 1438417,
+      "likes": 256486,
+      "comments": 587,
+      "clr": 0.23,
+      "duration": 49.94,
+      "words_per_second": 3.32,
+      "opening": {
+        "text": "Le iba a cortar a mi novia, pero murió su abuela. ¿Qué hago? Dile ya. Espérate un rato. No quiere ser mentiroso. No quiere sumarle al dolor. Siempre es mejor decir la verdad. ¿Qué cuesta posponer la verdad un rato?",
+        "duration": 8.8,
+        "segments": 8,
+        "patterns": [
+          "acumulacion"
+        ]
+      },
+      "body": {
+        "text_preview": "Mentir. No toda mentira es mala. Además, sí le va a cortar, nada más no hoy. ¿Entonces cuándo? No sé, cuando se recupere. Nadie se recupera de una pérdida así. Pero sí avanzan. ¿Cuándo? Cada quien es ",
+        "duration": 30.8,
+        "segments": 19,
+        "patterns": [
+          "demolicion_objecion",
+          "qa_rapido"
+        ],
+        "word_count": 94
+      },
+      "closing": {
+        "text": "¿Es en serio? ¿Se esperó 10 días para cortarte? ¿Qué tipo de psicópata se esperaría 10 días para cortarte? O sea, ¿ahí andaba el güey pretendiendo que te quería? ¡Qué miedo!",
+        "duration": 10.34,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "AXEL - ABUELA #cinema #arte por @oscartoon.sn"
+    },
+    {
+      "shortCode": "DOlrCGCiI0k",
+      "url": "https://www.instagram.com/p/DOlrCGCiI0k/",
+      "timestamp": "2025-09-14T16:02:35.000Z",
+      "decay_weight": 0.23,
+      "views": 6104890,
+      "likes": 1542408,
+      "comments": 3161,
+      "clr": 0.2,
+      "duration": 31.76,
+      "words_per_second": 3.31,
+      "opening": {
+        "text": "Quiero hablar de todo con al menos una persona como hablo conmigo mismo. Con esa frase Dostoyevsky resumió la conexión que todos buscamos.",
+        "duration": 8.36,
+        "segments": 2,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Queremos al menos una persona con quien hablar sin máscaras. De lo incómodo y lo torpe. De los miedos que nos dan vergüenza nombrar. De las contradicciones que nos atraviesan. No buscamos que nos resu",
+        "duration": 10.04,
+        "segments": 5,
+        "patterns": [
+          "agitacion_leve"
+        ],
+        "word_count": 36
+      },
+      "closing": {
+        "text": "Solo sentir que nuestros pensamientos no rebotan siempre contra las paredes de nuestra cabeza. Cuando alguien escucha de verdad, con paciencia y sin juicio, la carga se vuelve más ligera. y por un momento sientes que por fin ya no estás solo dentro de ti.",
+        "duration": 13.36,
+        "segments": 3,
+        "patterns": [
+          "future_pacing"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "\"Quiero hablar de todo con al menos una persona, como hablo conmigo mismo\" Sígueme aquí @faridieck p"
+    },
+    {
+      "shortCode": "DTdtS3QD0yT",
+      "url": "https://www.instagram.com/p/DTdtS3QD0yT/",
+      "timestamp": "2026-01-13T20:25:27.000Z",
+      "decay_weight": 0.58,
+      "views": 2006509,
+      "likes": 468167,
+      "comments": 926,
+      "clr": 0.2,
+      "duration": 52.11,
+      "words_per_second": 3.44,
+      "opening": {
+        "text": "Se ve bien solo con el corazón porque lo esencial es invisible a los ojos. El zorro le explicó al principito que su rosa era única porque le había dedicado tiempo. La gente suele olvidar eso, pero el principito debía recordarlo.",
+        "duration": 10.54,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Uno es responsable de lo que ha domesticado. A simple vista, su flor podría parecer como cualquier otra. Pero si mira más allá, puede ver que es única por el tiempo, el cariño y la atención que le ha ",
+        "duration": 28.21,
+        "segments": 9,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 96
+      },
+      "closing": {
+        "text": "Creamos vínculos profundos, pero los buscamos con prisa. El zorro le enseña al principito y a nosotros que las relaciones significativas se cultivan. No son algo dado ni estático, sino algo vivo que necesita ser atendido, nutrido y acompañado con paciencia.",
+        "duration": 13.36,
+        "segments": 4,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "“Se ve bien solo con el corazón, porque lo esencial es invisible a los ojos.” El zorro le explicó al"
+    },
+    {
+      "shortCode": "DOq0kjNjgdj",
+      "url": "https://www.instagram.com/p/DOq0kjNjgdj/",
+      "timestamp": "2025-09-16T16:02:02.000Z",
+      "decay_weight": 0.23,
+      "views": 960048,
+      "likes": 284694,
+      "comments": 566,
+      "clr": 0.2,
+      "duration": 21.99,
+      "words_per_second": 3.68,
+      "opening": {
+        "text": "Perdiste algo que creías irreemplazable. Y aún así aquí estás, con cicatrices y recuerdos que todavía duelen, pero también con una nueva forma de mirar la vida.",
+        "duration": 7.88,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "El dolor no se va de un día para otro.",
+        "duration": 2.33,
+        "segments": 1,
+        "patterns": [
+          "agitacion_leve"
+        ],
+        "word_count": 10
+      },
+      "closing": {
+        "text": "Y no pasa nada si aún duele. El progreso no siempre se mide en sonrisas. Lo importante ahora es que sigues, que estás de pie. Eso, aunque no siempre lo sientas, ya es un triunfo enorme. Y recuerda algo, ninguna situación es eterna.",
+        "duration": 11.78,
+        "segments": 5,
+        "patterns": [
+          "cierre_resumen"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Perdiste algo que creías irremplazable... Sígueme aquí @faridieck para más relatos y reflexiones."
+    },
+    {
+      "shortCode": "DP_0W7wDw42",
+      "url": "https://www.instagram.com/p/DP_0W7wDw42/",
+      "timestamp": "2025-10-19T16:15:39.000Z",
+      "decay_weight": 0.3,
+      "views": 1245918,
+      "likes": 346579,
+      "comments": 610,
+      "clr": 0.18,
+      "duration": 26.9,
+      "words_per_second": 2.71,
+      "opening": {
+        "text": "El alma también se cansa de fingir que todo está bien, no de aparentar fuerza cuando lo único que quiere es descansar. Y cuando finalmente se rinde, no siempre es debilidad, a veces es sabiduría.",
+        "duration": 11.02,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "El cuerpo también sabe cuando ya no puede más.",
+        "duration": 4.9,
+        "segments": 1,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 9
+      },
+      "closing": {
+        "text": "Ese rendirse es rendirse a uno mismo, a la verdad de lo que se siente. Dejarse caer a veces es la única manera de volver a levantarse distinto.",
+        "duration": 10.98,
+        "segments": 2,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "El alma también se cansa… Sígueme aquí @faridieck para más relatos y reflexiones."
+    },
+    {
+      "shortCode": "DOY1aAwDc0p",
+      "url": "https://www.instagram.com/p/DOY1aAwDc0p/",
+      "timestamp": "2025-09-09T16:22:58.000Z",
+      "decay_weight": 0.22,
+      "views": 16818301,
+      "likes": 3363476,
+      "comments": 5264,
+      "clr": 0.16,
+      "duration": 16.19,
+      "words_per_second": 3.21,
+      "opening": {
+        "text": "Hace años lo dije, pero nunca está de más recordarlo. No se puede modificar la conducta de quien no ve ningún problema en ella. No importa cuánto quieras ayudar, cuánto insistas o cuánto te esfuerces,",
+        "duration": 10.52,
+        "segments": 3,
+        "patterns": [
+          "provocacion"
+        ]
+      },
+      "body": {
+        "text_preview": "",
+        "duration": 0.39,
+        "segments": 0,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 1
+      },
+      "closing": {
+        "text": "si la otra persona no reconoce que hay algo que atender, el cambio simplemente no llegará.",
+        "duration": 5.28,
+        "segments": 2,
+        "patterns": [
+          "link_bio"
+        ],
+        "cta_buildup": {
+          "buildup_text": "si la otra persona no reconoce que hay algo que atender,",
+          "buildup_type": "directo",
+          "buildup_segments": 1,
+          "buildup_duration": 2.84,
+          "cta_text": "el cambio simplemente no llegará.",
+          "cta_segments": 1
+        }
+      },
+      "caption_preview": "Hace años lo dije, pero nunca está de más recordarlo. Sígueme aquí @faridieck para más relatos y ref"
+    },
+    {
+      "shortCode": "DOoPri_iACP",
+      "url": "https://www.instagram.com/p/DOoPri_iACP/",
+      "timestamp": "2025-09-15T16:01:14.000Z",
+      "decay_weight": 0.23,
+      "views": 1240437,
+      "likes": 403038,
+      "comments": 663,
+      "clr": 0.16,
+      "duration": 19.13,
+      "words_per_second": 3.45,
+      "opening": {
+        "text": "Sé que a veces tu mente no se calla, que te pinta escenarios terribles que todavía no han pasado. Ha de ser muy cansado, has de estar muy cansado. No olvides que no todo lo que piensas es verdad, que eres mucho más que tus miedos",
+        "duration": 12.18,
+        "segments": 3,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "",
+        "duration": 2.09,
+        "segments": 0,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 1
+      },
+      "closing": {
+        "text": "y que el futuro no se vive de golpe, sino paso a paso. Y tú, tú puedes con este.",
+        "duration": 4.86,
+        "segments": 2,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Sé que a veces tu mente no se calla, que te pinta escenarios terribles que todavía no han pasado... "
+    },
+    {
+      "shortCode": "DOTtT79iovA",
+      "url": "https://www.instagram.com/p/DOTtT79iovA/",
+      "timestamp": "2025-09-07T16:36:12.000Z",
+      "decay_weight": 0.22,
+      "views": 2689529,
+      "likes": 643063,
+      "comments": 972,
+      "clr": 0.15,
+      "duration": 31.04,
+      "words_per_second": 3.35,
+      "opening": {
+        "text": "A alguien que fue importante no se lo olvida, como si nunca hubiera existido. Simplemente se deja de atender. El enamoramiento, en el fondo, como dijo Ortega y Gasset, es un fenómeno de atención.",
+        "duration": 10.5,
+        "segments": 3,
+        "patterns": [
+          "provocacion"
+        ]
+      },
+      "body": {
+        "text_preview": "Tu mente gira y gira alrededor de una sola persona, como si no existiera nada más. Y cuando esa persona se va, no desaparece ya.",
+        "duration": 6.64,
+        "segments": 2,
+        "patterns": [
+          "narrativa_general"
+        ],
+        "word_count": 25
+      },
+      "closing": {
+        "text": "Solo empieza a desocupar tu conciencia, poquito a poco. Como cuando apagas una luz y tus ojos se van adaptando a la oscuridad. Se vuelve un recuerdo, no una presencia. Y eso, aunque duela, es parte de sanar. No olvidar, sino dejar de atender.",
+        "duration": 13.9,
+        "segments": 5,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "A alguien que fue importante no se le olvida, como si nunca hubiera existido… simplemente, se deja d"
+    },
+    {
+      "shortCode": "DPWyX1ggqh3",
+      "url": "https://www.instagram.com/p/DPWyX1ggqh3/",
+      "timestamp": "2025-10-03T17:49:35.000Z",
+      "decay_weight": 0.26,
+      "views": 1243791,
+      "likes": 346129,
+      "comments": 489,
+      "clr": 0.14,
+      "duration": 61.93,
+      "words_per_second": 2.5,
+      "opening": {
+        "text": "Siempre falta algo. Falta lo que no tuvimos, falta lo que deseamos, falta alguien. Alguien que ya no está y no puede volver.",
+        "duration": 9.46,
+        "segments": 1,
+        "patterns": [
+          "neutro"
+        ]
+      },
+      "body": {
+        "text_preview": "Un hueco imposible de tapar. No puede cerrarse del todo. ¿Y qué pasa si no intento llenarlo? ¿Y si en lugar de eso le doy espacio? Quizás hay dolores que no se alivian, pérdidas que no se sustituyen. ",
+        "duration": 41.93,
+        "segments": 9,
+        "patterns": [
+          "agitacion_leve",
+          "comparacion"
+        ],
+        "word_count": 105
+      },
+      "closing": {
+        "text": "Quizás no se trate de sanar la falta, sino de aprender a vivir con ella, dejar que en su hueco nazca un nuevo movimiento de vida.",
+        "duration": 10.54,
+        "segments": 2,
+        "patterns": [
+          "sin_cta"
+        ],
+        "cta_buildup": null
+      },
+      "caption_preview": "Siempre falta algo. Falta lo que no tuvimos, falta lo que deseamos, falta alguien… alguien que ya no"
+    }
+  ]
+}

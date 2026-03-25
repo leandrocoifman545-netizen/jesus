@@ -1,0 +1,2069 @@
+{
+  "generated_at": "2026-03-25T06:55:43.932Z",
+  "profiles": [
+    {
+      "username": "faridieck",
+      "posts": 100,
+      "videos": 87,
+      "avg_views": 956403,
+      "avg_likes": 198850,
+      "avg_comments": 506,
+      "clr_global": 0.25,
+      "lvr_global": 21.22,
+      "posting_frequency": 2.07,
+      "cta_multiplier": 0.66,
+      "transcripts": 20,
+      "hooks_extracted": 20,
+      "top_keyword": null
+    },
+    {
+      "username": "herasmedia",
+      "posts": 90,
+      "videos": 89,
+      "avg_views": 61672,
+      "avg_likes": 6914,
+      "avg_comments": 2876,
+      "clr_global": 41.59,
+      "lvr_global": 11.27,
+      "posting_frequency": 4.04,
+      "cta_multiplier": 1.53,
+      "transcripts": 167,
+      "hooks_extracted": 166,
+      "top_keyword": {
+        "keyword": "LISTA",
+        "clr": 133.57
+      }
+    },
+    {
+      "username": "hormozi",
+      "posts": 200,
+      "videos": 181,
+      "avg_views": 155516,
+      "avg_likes": 13319,
+      "avg_comments": 471,
+      "clr_global": 3.53,
+      "lvr_global": 7.97,
+      "posting_frequency": 0.34,
+      "cta_multiplier": 6.56,
+      "transcripts": 109,
+      "hooks_extracted": 103,
+      "top_keyword": {
+        "keyword": "ALAN",
+        "clr": 31.66
+      }
+    },
+    {
+      "username": "jesustassarolo",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "niksetting",
+      "posts": 15,
+      "videos": 5,
+      "avg_views": 105467,
+      "avg_likes": 8829,
+      "avg_comments": 270,
+      "clr_global": 3.06,
+      "lvr_global": 15.59,
+      "posting_frequency": 22.44,
+      "cta_multiplier": 43.39,
+      "transcripts": 11,
+      "hooks_extracted": 10,
+      "top_keyword": {
+        "keyword": "PIF",
+        "clr": 65.85
+      }
+    },
+    {
+      "username": "ramiro.cubria",
+      "posts": 1017,
+      "videos": 831,
+      "avg_views": 22966,
+      "avg_likes": 743,
+      "avg_comments": 454,
+      "clr_global": 61.07,
+      "lvr_global": 3.13,
+      "posting_frequency": 0.36,
+      "cta_multiplier": 17.98,
+      "transcripts": 191,
+      "hooks_extracted": 191,
+      "top_keyword": {
+        "keyword": "GUIONES",
+        "clr": 240.93
+      }
+    },
+    {
+      "username": "tino.mossu",
+      "posts": 53,
+      "videos": 40,
+      "avg_views": 283611,
+      "avg_likes": 21831,
+      "avg_comments": 759,
+      "clr_global": 3.48,
+      "lvr_global": 9.36,
+      "posting_frequency": 6.8,
+      "cta_multiplier": "N/A",
+      "transcripts": 28,
+      "hooks_extracted": 27,
+      "top_keyword": {
+        "keyword": "CLASE",
+        "clr": 40.18
+      }
+    }
+  ],
+  "total_posts_analyzed": 1475,
+  "total_transcripts": 526,
+  "total_hooks": 517,
+  "best_clr": "ramiro.cubria",
+  "best_views": "faridieck",
+  "all_keywords": [
+    {
+      "keyword": "GUIONES",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        240.93
+      ],
+      "avg_clr": 240.93
+    },
+    {
+      "keyword": "INCREÍBLES",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        240.93
+      ],
+      "avg_clr": 240.93
+    },
+    {
+      "keyword": "MINUTOS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        240.93
+      ],
+      "avg_clr": 240.93
+    },
+    {
+      "keyword": "HORAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        238.76
+      ],
+      "avg_clr": 238.76
+    },
+    {
+      "keyword": "COACH",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        230.74
+      ],
+      "avg_clr": 230.74
+    },
+    {
+      "keyword": "HOOKS",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        229.61
+      ],
+      "avg_clr": 229.61
+    },
+    {
+      "keyword": "MATRIX",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        221.1
+      ],
+      "avg_clr": 221.1
+    },
+    {
+      "keyword": "AGENTE",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        220.68
+      ],
+      "avg_clr": 220.68
+    },
+    {
+      "keyword": "IMÁN",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        209.8
+      ],
+      "avg_clr": 209.8
+    },
+    {
+      "keyword": "APP",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        204.5
+      ],
+      "avg_clr": 204.5
+    },
+    {
+      "keyword": "PROMPT",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        183.69
+      ],
+      "avg_clr": 183.69
+    },
+    {
+      "keyword": "MEGA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        181.18
+      ],
+      "avg_clr": 181.18
+    },
+    {
+      "keyword": "IA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        176.86
+      ],
+      "avg_clr": 176.86
+    },
+    {
+      "keyword": "GANCHO",
+      "total_uses": 5,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        173.47
+      ],
+      "avg_clr": 173.47
+    },
+    {
+      "keyword": "PERFIL",
+      "total_uses": 5,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        164.67
+      ],
+      "avg_clr": 164.67
+    },
+    {
+      "keyword": "CLON",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        161.31
+      ],
+      "avg_clr": 161.31
+    },
+    {
+      "keyword": "TUTORIAL",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        160.91
+      ],
+      "avg_clr": 160.91
+    },
+    {
+      "keyword": "CAMBIO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        157.02
+      ],
+      "avg_clr": 157.02
+    },
+    {
+      "keyword": "FLUJOS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        152.91
+      ],
+      "avg_clr": 152.91
+    },
+    {
+      "keyword": "INSTANTE",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        152.91
+      ],
+      "avg_clr": 152.91
+    },
+    {
+      "keyword": "HORMOZI",
+      "total_uses": 18,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        152.42
+      ],
+      "avg_clr": 152.42
+    },
+    {
+      "keyword": "MIAMI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        149.82
+      ],
+      "avg_clr": 149.82
+    },
+    {
+      "keyword": "SETTERS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        144.19
+      ],
+      "avg_clr": 144.19
+    },
+    {
+      "keyword": "CLAUDE",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        138.4
+      ],
+      "avg_clr": 138.4
+    },
+    {
+      "keyword": "DICCIONARIO",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        137.46
+      ],
+      "avg_clr": 137.46
+    },
+    {
+      "keyword": "LISTA",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        133.57
+      ],
+      "avg_clr": 133.57
+    },
+    {
+      "keyword": "REELS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        130.95
+      ],
+      "avg_clr": 130.95
+    },
+    {
+      "keyword": "GUIÓN",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        126.79
+      ],
+      "avg_clr": 126.79
+    },
+    {
+      "keyword": "ABRIDOR",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        126.32
+      ],
+      "avg_clr": 126.32
+    },
+    {
+      "keyword": "BOT",
+      "total_uses": 6,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        124.93
+      ],
+      "avg_clr": 124.93
+    },
+    {
+      "keyword": "FUP",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        118.93
+      ],
+      "avg_clr": 118.93
+    },
+    {
+      "keyword": "CONTENIDO",
+      "total_uses": 6,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        116.71
+      ],
+      "avg_clr": 116.71
+    },
+    {
+      "keyword": "VIDEO",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        114.76
+      ],
+      "avg_clr": 114.76
+    },
+    {
+      "keyword": "LIMITADAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        114.17
+      ],
+      "avg_clr": 114.17
+    },
+    {
+      "keyword": "CARRUSEL",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        107.66
+      ],
+      "avg_clr": 107.66
+    },
+    {
+      "keyword": "LLAMADAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        100
+      ],
+      "avg_clr": 100
+    },
+    {
+      "keyword": "MANY",
+      "total_uses": 28,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        92.62
+      ],
+      "avg_clr": 92.62
+    },
+    {
+      "keyword": "MÉTODO",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        92.03
+      ],
+      "avg_clr": 92.03
+    },
+    {
+      "keyword": "PLAN",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        27.19,
+        155.38
+      ],
+      "avg_clr": 91.29
+    },
+    {
+      "keyword": "SETTER",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        88.77
+      ],
+      "avg_clr": 88.77
+    },
+    {
+      "keyword": "CURSOS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        87.84
+      ],
+      "avg_clr": 87.84
+    },
+    {
+      "keyword": "TODOS",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        86.3
+      ],
+      "avg_clr": 86.3
+    },
+    {
+      "keyword": "SISTEMA",
+      "total_uses": 4,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        57.68,
+        114.3
+      ],
+      "avg_clr": 85.99
+    },
+    {
+      "keyword": "CUALQUIER",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        85.87
+      ],
+      "avg_clr": 85.87
+    },
+    {
+      "keyword": "BLD",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        85.87
+      ],
+      "avg_clr": 85.87
+    },
+    {
+      "keyword": "BIBLIA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        81.46
+      ],
+      "avg_clr": 81.46
+    },
+    {
+      "keyword": "BIBLIOTECA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        78.96
+      ],
+      "avg_clr": 78.96
+    },
+    {
+      "keyword": "GPT",
+      "total_uses": 9,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        76.78
+      ],
+      "avg_clr": 76.78
+    },
+    {
+      "keyword": "TODAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        75.91
+      ],
+      "avg_clr": 75.91
+    },
+    {
+      "keyword": "PDF",
+      "total_uses": 21,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        74.36
+      ],
+      "avg_clr": 74.36
+    },
+    {
+      "keyword": "RBOL",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        74.01
+      ],
+      "avg_clr": 74.01
+    },
+    {
+      "keyword": "RETO",
+      "total_uses": 10,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        69.76
+      ],
+      "avg_clr": 69.76
+    },
+    {
+      "keyword": "ALFREDO",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        68.91
+      ],
+      "avg_clr": 68.91
+    },
+    {
+      "keyword": "WEB",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        68.26
+      ],
+      "avg_clr": 68.26
+    },
+    {
+      "keyword": "RECURSO",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        68.03
+      ],
+      "avg_clr": 68.03
+    },
+    {
+      "keyword": "PIF",
+      "total_uses": 2,
+      "profiles": [
+        "niksetting"
+      ],
+      "clrs": [
+        65.85
+      ],
+      "avg_clr": 65.85
+    },
+    {
+      "keyword": "DETALLE",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        65.62
+      ],
+      "avg_clr": 65.62
+    },
+    {
+      "keyword": "IDEA",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        64.53
+      ],
+      "avg_clr": 64.53
+    },
+    {
+      "keyword": "DIEGO",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        61.53
+      ],
+      "avg_clr": 61.53
+    },
+    {
+      "keyword": "LANDING",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        61.32
+      ],
+      "avg_clr": 61.32
+    },
+    {
+      "keyword": "IMAN",
+      "total_uses": 10,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        57.51
+      ],
+      "avg_clr": 57.51
+    },
+    {
+      "keyword": "CUENTA",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        56.95
+      ],
+      "avg_clr": 56.95
+    },
+    {
+      "keyword": "BIO",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        56.23
+      ],
+      "avg_clr": 56.23
+    },
+    {
+      "keyword": "ICP",
+      "total_uses": 1,
+      "profiles": [
+        "niksetting"
+      ],
+      "clrs": [
+        55.72
+      ],
+      "avg_clr": 55.72
+    },
+    {
+      "keyword": "BASE",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        53.68
+      ],
+      "avg_clr": 53.68
+    },
+    {
+      "keyword": "SEO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        53.59
+      ],
+      "avg_clr": 53.59
+    },
+    {
+      "keyword": "RODRI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        53.02
+      ],
+      "avg_clr": 53.02
+    },
+    {
+      "keyword": "GIOVANI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        52.46
+      ],
+      "avg_clr": 52.46
+    },
+    {
+      "keyword": "CLASE",
+      "total_uses": 60,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "clrs": [
+        70.57,
+        42.92,
+        40.18
+      ],
+      "avg_clr": 51.22
+    },
+    {
+      "keyword": "GUÍAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        50.94
+      ],
+      "avg_clr": 50.94
+    },
+    {
+      "keyword": "FÍA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        50.14
+      ],
+      "avg_clr": 50.14
+    },
+    {
+      "keyword": "COMENTA",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        49.8
+      ],
+      "avg_clr": 49.8
+    },
+    {
+      "keyword": "BASURA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        47.68
+      ],
+      "avg_clr": 47.68
+    },
+    {
+      "keyword": "CRM",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        47.61
+      ],
+      "avg_clr": 47.61
+    },
+    {
+      "keyword": "JUANMA",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        46.32
+      ],
+      "avg_clr": 46.32
+    },
+    {
+      "keyword": "CURSO",
+      "total_uses": 38,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        45.75
+      ],
+      "avg_clr": 45.75
+    },
+    {
+      "keyword": "SENSEI",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        45.64
+      ],
+      "avg_clr": 45.64
+    },
+    {
+      "keyword": "NICHO",
+      "total_uses": 9,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        45.12
+      ],
+      "avg_clr": 45.12
+    },
+    {
+      "keyword": "ESTRUCTURA",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        44.69
+      ],
+      "avg_clr": 44.69
+    },
+    {
+      "keyword": "DISCLAIMER",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        44.27
+      ],
+      "avg_clr": 44.27
+    },
+    {
+      "keyword": "ADS",
+      "total_uses": 46,
+      "profiles": [
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        26.44,
+        61.2
+      ],
+      "avg_clr": 43.82
+    },
+    {
+      "keyword": "CALIDAD",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        43.51
+      ],
+      "avg_clr": 43.51
+    },
+    {
+      "keyword": "ATENTO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        42.8
+      ],
+      "avg_clr": 42.8
+    },
+    {
+      "keyword": "NUEVA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        42.8
+      ],
+      "avg_clr": 42.8
+    },
+    {
+      "keyword": "CONFIGURACIÓN",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        42.8
+      ],
+      "avg_clr": 42.8
+    },
+    {
+      "keyword": "MANUAL",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        42.27
+      ],
+      "avg_clr": 42.27
+    },
+    {
+      "keyword": "VSL",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        42.09
+      ],
+      "avg_clr": 42.09
+    },
+    {
+      "keyword": "IDEAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        41.88
+      ],
+      "avg_clr": 41.88
+    },
+    {
+      "keyword": "CTA",
+      "total_uses": 9,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        41.46
+      ],
+      "avg_clr": 41.46
+    },
+    {
+      "keyword": "SOLUCIÓN",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        41.28
+      ],
+      "avg_clr": 41.28
+    },
+    {
+      "keyword": "2026",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        41.17
+      ],
+      "avg_clr": 41.17
+    },
+    {
+      "keyword": "CLOSER",
+      "total_uses": 2,
+      "profiles": [
+        "tino.mossu"
+      ],
+      "clrs": [
+        39.86
+      ],
+      "avg_clr": 39.86
+    },
+    {
+      "keyword": "NADIE",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        39.53
+      ],
+      "avg_clr": 39.53
+    },
+    {
+      "keyword": "VIRAL",
+      "total_uses": 7,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        39
+      ],
+      "avg_clr": 39
+    },
+    {
+      "keyword": "EVERGREEN",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        37.3
+      ],
+      "avg_clr": 37.3
+    },
+    {
+      "keyword": "JERO",
+      "total_uses": 6,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        37
+      ],
+      "avg_clr": 37
+    },
+    {
+      "keyword": "VÍDEO",
+      "total_uses": 2,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        36.25
+      ],
+      "avg_clr": 36.25
+    },
+    {
+      "keyword": "LOOM",
+      "total_uses": 8,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        35.4
+      ],
+      "avg_clr": 35.4
+    },
+    {
+      "keyword": "GUION",
+      "total_uses": 6,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        34.2
+      ],
+      "avg_clr": 34.2
+    },
+    {
+      "keyword": "JUAN",
+      "total_uses": 15,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        33.4
+      ],
+      "avg_clr": 33.4
+    },
+    {
+      "keyword": "OFERTA",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        32.42
+      ],
+      "avg_clr": 32.42
+    },
+    {
+      "keyword": "LADY",
+      "total_uses": 1,
+      "profiles": [
+        "tino.mossu"
+      ],
+      "clrs": [
+        32.33
+      ],
+      "avg_clr": 32.33
+    },
+    {
+      "keyword": "ALAN",
+      "total_uses": 1,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        31.66
+      ],
+      "avg_clr": 31.66
+    },
+    {
+      "keyword": "DOC",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        31.59
+      ],
+      "avg_clr": 31.59
+    },
+    {
+      "keyword": "LOBO",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        31.21
+      ],
+      "avg_clr": 31.21
+    },
+    {
+      "keyword": "COMUNICACIÓN",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        30.7
+      ],
+      "avg_clr": 30.7
+    },
+    {
+      "keyword": "JOSEPH",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        30.63
+      ],
+      "avg_clr": 30.63
+    },
+    {
+      "keyword": "AMEYALI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        29.89
+      ],
+      "avg_clr": 29.89
+    },
+    {
+      "keyword": "MICA",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        29.74
+      ],
+      "avg_clr": 29.74
+    },
+    {
+      "keyword": "JUANI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        29.36
+      ],
+      "avg_clr": 29.36
+    },
+    {
+      "keyword": "HORA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        29.28
+      ],
+      "avg_clr": 29.28
+    },
+    {
+      "keyword": "EMI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        28.81
+      ],
+      "avg_clr": 28.81
+    },
+    {
+      "keyword": "ESTRATEGIA",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        28.67
+      ],
+      "avg_clr": 28.67
+    },
+    {
+      "keyword": "NGULOS",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        28.67
+      ],
+      "avg_clr": 28.67
+    },
+    {
+      "keyword": "SERGIO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        28.1
+      ],
+      "avg_clr": 28.1
+    },
+    {
+      "keyword": "PAZ",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        27.91
+      ],
+      "avg_clr": 27.91
+    },
+    {
+      "keyword": "AOV",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        27.57
+      ],
+      "avg_clr": 27.57
+    },
+    {
+      "keyword": "ESENCIAL",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        26.77
+      ],
+      "avg_clr": 26.77
+    },
+    {
+      "keyword": "GUÍA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        26.72
+      ],
+      "avg_clr": 26.72
+    },
+    {
+      "keyword": "YO",
+      "total_uses": 5,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        42.59,
+        9.82
+      ],
+      "avg_clr": 26.21
+    },
+    {
+      "keyword": "ORGÁNICO",
+      "total_uses": 5,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        26.02
+      ],
+      "avg_clr": 26.02
+    },
+    {
+      "keyword": "BALLENA",
+      "total_uses": 9,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        25.98
+      ],
+      "avg_clr": 25.98
+    },
+    {
+      "keyword": "WEBINAR",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        25.63
+      ],
+      "avg_clr": 25.63
+    },
+    {
+      "keyword": "DOCUMENTO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        24.34
+      ],
+      "avg_clr": 24.34
+    },
+    {
+      "keyword": "MICRO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        23.99
+      ],
+      "avg_clr": 23.99
+    },
+    {
+      "keyword": "VICENTE",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        23.9
+      ],
+      "avg_clr": 23.9
+    },
+    {
+      "keyword": "MALO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        23.48
+      ],
+      "avg_clr": 23.48
+    },
+    {
+      "keyword": "VALEN",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        22.97
+      ],
+      "avg_clr": 22.97
+    },
+    {
+      "keyword": "ESCALAR",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        22.73
+      ],
+      "avg_clr": 22.73
+    },
+    {
+      "keyword": "PUNTUAL",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        22.46
+      ],
+      "avg_clr": 22.46
+    },
+    {
+      "keyword": "ARCHIVO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        22.46
+      ],
+      "avg_clr": 22.46
+    },
+    {
+      "keyword": "MÓDULOS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        21.88
+      ],
+      "avg_clr": 21.88
+    },
+    {
+      "keyword": "CONSULTA",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        21.64
+      ],
+      "avg_clr": 21.64
+    },
+    {
+      "keyword": "JOSE",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        21.33
+      ],
+      "avg_clr": 21.33
+    },
+    {
+      "keyword": "STORY",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        21.25
+      ],
+      "avg_clr": 21.25
+    },
+    {
+      "keyword": "JUAMPI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        21.05
+      ],
+      "avg_clr": 21.05
+    },
+    {
+      "keyword": "NICHOS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        21.01
+      ],
+      "avg_clr": 21.01
+    },
+    {
+      "keyword": "ANGULO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        19.87
+      ],
+      "avg_clr": 19.87
+    },
+    {
+      "keyword": "TOMÁS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        19.61
+      ],
+      "avg_clr": 19.61
+    },
+    {
+      "keyword": "EMBUDO",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        18.67
+      ],
+      "avg_clr": 18.67
+    },
+    {
+      "keyword": "ABOGADOS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        18.64
+      ],
+      "avg_clr": 18.64
+    },
+    {
+      "keyword": "SISTEMAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        18
+      ],
+      "avg_clr": 18
+    },
+    {
+      "keyword": "EBOOK",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        17.13
+      ],
+      "avg_clr": 17.13
+    },
+    {
+      "keyword": "TODA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        15.37
+      ],
+      "avg_clr": 15.37
+    },
+    {
+      "keyword": "FIA",
+      "total_uses": 4,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        15.32
+      ],
+      "avg_clr": 15.32
+    },
+    {
+      "keyword": "GRATIS",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        15.18
+      ],
+      "avg_clr": 15.18
+    },
+    {
+      "keyword": "INFO",
+      "total_uses": 6,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        14.6
+      ],
+      "avg_clr": 14.6
+    },
+    {
+      "keyword": "EVALDO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        13.89
+      ],
+      "avg_clr": 13.89
+    },
+    {
+      "keyword": "CALENDARIO",
+      "total_uses": 2,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        13.88
+      ],
+      "avg_clr": 13.88
+    },
+    {
+      "keyword": "MAP",
+      "total_uses": 15,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        13.72
+      ],
+      "avg_clr": 13.72
+    },
+    {
+      "keyword": "ANGULOS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        12.73
+      ],
+      "avg_clr": 12.73
+    },
+    {
+      "keyword": "EMPRESA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        12.18
+      ],
+      "avg_clr": 12.18
+    },
+    {
+      "keyword": "SANTIAGO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        12.07
+      ],
+      "avg_clr": 12.07
+    },
+    {
+      "keyword": "TÉSIS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        11.57
+      ],
+      "avg_clr": 11.57
+    },
+    {
+      "keyword": "FEDE",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        11.54
+      ],
+      "avg_clr": 11.54
+    },
+    {
+      "keyword": "OPPS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        11.43
+      ],
+      "avg_clr": 11.43
+    },
+    {
+      "keyword": "CITA",
+      "total_uses": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "clrs": [
+        11.11
+      ],
+      "avg_clr": 11.11
+    },
+    {
+      "keyword": "LEAN",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        9.83
+      ],
+      "avg_clr": 9.83
+    },
+    {
+      "keyword": "MESES",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        9.73
+      ],
+      "avg_clr": 9.73
+    },
+    {
+      "keyword": "CARA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        9.73
+      ],
+      "avg_clr": 9.73
+    },
+    {
+      "keyword": "GAUSS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        9.73
+      ],
+      "avg_clr": 9.73
+    },
+    {
+      "keyword": "DATA",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        9.69
+      ],
+      "avg_clr": 9.69
+    },
+    {
+      "keyword": "GONZALO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        9.52
+      ],
+      "avg_clr": 9.52
+    },
+    {
+      "keyword": "CRISTIAN",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        8.33
+      ],
+      "avg_clr": 8.33
+    },
+    {
+      "keyword": "SKOOL",
+      "total_uses": 2,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        8.29
+      ],
+      "avg_clr": 8.29
+    },
+    {
+      "keyword": "SYK",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        6.85
+      ],
+      "avg_clr": 6.85
+    },
+    {
+      "keyword": "FRANCO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        6.25
+      ],
+      "avg_clr": 6.25
+    },
+    {
+      "keyword": "ALEX",
+      "total_uses": 1,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        4.6
+      ],
+      "avg_clr": 4.6
+    },
+    {
+      "keyword": "NICO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        4.46
+      ],
+      "avg_clr": 4.46
+    },
+    {
+      "keyword": "DUTY",
+      "total_uses": 1,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        4.37
+      ],
+      "avg_clr": 4.37
+    },
+    {
+      "keyword": "CEO",
+      "total_uses": 1,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        3.77
+      ],
+      "avg_clr": 3.77
+    },
+    {
+      "keyword": "JUANPI",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        3.57
+      ],
+      "avg_clr": 3.57
+    },
+    {
+      "keyword": "POD",
+      "total_uses": 2,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        3.39
+      ],
+      "avg_clr": 3.39
+    },
+    {
+      "keyword": "TOMAS",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        2.5
+      ],
+      "avg_clr": 2.5
+    },
+    {
+      "keyword": "HOTLINE",
+      "total_uses": 1,
+      "profiles": [
+        "hormozi"
+      ],
+      "clrs": [
+        1.28
+      ],
+      "avg_clr": 1.28
+    }
+  ]
+}

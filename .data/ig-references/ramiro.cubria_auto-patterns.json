@@ -1,0 +1,2003 @@
+{
+  "profile": "ramiro.cubria",
+  "analyzed_at": "2026-03-25T10:54:31.959Z",
+  "total_posts": 1078,
+  "total_videos": 888,
+  "total_sidecars": 190,
+  "total_transcripts": 191,
+  "top_pct": 25,
+  "top_count": 47,
+  "top_clr_threshold": 1.77,
+  "bottom_clr_threshold": 0.55,
+  "linguistic": {
+    "top_only_phrases": [
+      {
+        "phrase": "es una puta locura",
+        "top_videos": 10,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "comenta ia y te",
+        "top_videos": 10,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "acá abajo y te",
+        "top_videos": 7,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "y te envío el",
+        "top_videos": 7,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "privado en menos de",
+        "top_videos": 7,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "esto es una puta",
+        "top_videos": 6,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "por mensaje privado en",
+        "top_videos": 6,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "mensaje privado en menos",
+        "top_videos": 6,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "tu perfil de instagram",
+        "top_videos": 5,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "si querés tener acceso",
+        "top_videos": 5,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "envío por mensaje privado",
+        "top_videos": 5,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "como yo estoy haciendo",
+        "top_videos": 5,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "una captura de pantalla",
+        "top_videos": 5,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "de 300 mil dólares",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "toda la información gratuita",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "con toda la información",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "miles de conversaciones con",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "la plataforma de clonación",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "ia y te lo",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "se acaba de filtrar",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "ia y te llega",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "atención problema solución prueba",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "problema solución prueba social",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "a cada nuevo seguidor",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "me agarraste de buen",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "agarraste de buen humor",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "de buen humor así",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "buen humor así que",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "voy a dar gratis",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "optimizar tu perfil de",
+        "top_videos": 3,
+        "bottom_videos": 0
+      }
+    ],
+    "killer_phrases": [
+      {
+        "phrase": "en fin si querés",
+        "top_videos": 0,
+        "bottom_videos": 6
+      },
+      {
+        "phrase": "el mes pasado y",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "call to actions en",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "mil dólares en cash",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "que te estoy mostrando",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "te estoy mostrando acá",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "exactamente lo mismo que",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "con historias de instagram",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "hice 248 mil dólares",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "248 mil dólares en",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "dólares en ventas el",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "en ventas el mes",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "ventas el mes pasado",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "con mis historias de",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "mis historias de instagram",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "con tu cuenta de",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "dólares en cash collected",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "de call to actions",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "los call to actions",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "pero bueno en fin",
+        "top_videos": 0,
+        "bottom_videos": 3
+      }
+    ],
+    "transition_analysis": [
+      {
+        "phrase": "puta locura",
+        "top_per_video": 0.3,
+        "bottom_per_video": 0,
+        "top_total": 14,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "es una puta locura",
+        "top_per_video": 0.28,
+        "bottom_per_video": 0,
+        "top_total": 13,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "lo único que tenés",
+        "top_per_video": 0.17,
+        "bottom_per_video": 0.02,
+        "top_total": 8,
+        "bottom_total": 1,
+        "ratio": "8.5x más en TOP"
+      },
+      {
+        "phrase": "literalmente",
+        "top_per_video": 0.32,
+        "bottom_per_video": 0.04,
+        "top_total": 15,
+        "bottom_total": 2,
+        "ratio": "8x más en TOP"
+      },
+      {
+        "phrase": "es una locura",
+        "top_per_video": 0.3,
+        "bottom_per_video": 0.04,
+        "top_total": 14,
+        "bottom_total": 2,
+        "ratio": "7.5x más en TOP"
+      },
+      {
+        "phrase": "más te vale",
+        "top_per_video": 0.06,
+        "bottom_per_video": 0,
+        "top_total": 3,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "una locura",
+        "top_per_video": 0.3,
+        "bottom_per_video": 0.06,
+        "top_total": 14,
+        "bottom_total": 3,
+        "ratio": "5x más en TOP"
+      },
+      {
+        "phrase": "te lo envío",
+        "top_per_video": 0.28,
+        "bottom_per_video": 0.06,
+        "top_total": 13,
+        "bottom_total": 3,
+        "ratio": "4.67x más en TOP"
+      },
+      {
+        "phrase": "es impresionante",
+        "top_per_video": 0.04,
+        "bottom_per_video": 0,
+        "top_total": 2,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "es increíble",
+        "top_per_video": 0.11,
+        "bottom_per_video": 0.04,
+        "top_total": 5,
+        "bottom_total": 2,
+        "ratio": "2.75x más en TOP"
+      },
+      {
+        "phrase": "comenta",
+        "top_per_video": 1.72,
+        "bottom_per_video": 0.7,
+        "top_total": 81,
+        "bottom_total": 33,
+        "ratio": "2.46x más en TOP"
+      },
+      {
+        "phrase": "lo único que tienes",
+        "top_per_video": 0.02,
+        "bottom_per_video": 0,
+        "top_total": 1,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "en menos de un minuto",
+        "top_per_video": 0.89,
+        "bottom_per_video": 0.47,
+        "top_total": 42,
+        "bottom_total": 22,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "así que",
+        "top_per_video": 0.53,
+        "bottom_per_video": 0.28,
+        "top_total": 25,
+        "bottom_total": 13,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "si quieres",
+        "top_per_video": 0.06,
+        "bottom_per_video": 0.04,
+        "top_total": 3,
+        "bottom_total": 2,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "si querés",
+        "top_per_video": 0.72,
+        "bottom_per_video": 0.51,
+        "top_total": 34,
+        "bottom_total": 24,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "solamente",
+        "top_per_video": 0.64,
+        "bottom_per_video": 0.53,
+        "top_total": 30,
+        "bottom_total": 25,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "adiós amigos",
+        "top_per_video": 0.17,
+        "bottom_per_video": 0.19,
+        "top_total": 8,
+        "bottom_total": 9,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "simplemente",
+        "top_per_video": 0.09,
+        "bottom_per_video": 0.19,
+        "top_total": 4,
+        "bottom_total": 9,
+        "ratio": "2.11x más en BOTTOM"
+      },
+      {
+        "phrase": "nos vemos amigos",
+        "top_per_video": 0.04,
+        "bottom_per_video": 0.17,
+        "top_total": 2,
+        "bottom_total": 8,
+        "ratio": "4.25x más en BOTTOM"
+      },
+      {
+        "phrase": "te lo mando",
+        "top_per_video": 0.02,
+        "bottom_per_video": 0.11,
+        "top_total": 1,
+        "bottom_total": 5,
+        "ratio": "5.5x más en BOTTOM"
+      },
+      {
+        "phrase": "la verdad",
+        "top_per_video": 0.02,
+        "bottom_per_video": 0.11,
+        "top_total": 1,
+        "bottom_total": 5,
+        "ratio": "5.5x más en BOTTOM"
+      },
+      {
+        "phrase": "en fin",
+        "top_per_video": 0.04,
+        "bottom_per_video": 0.26,
+        "top_total": 2,
+        "bottom_total": 12,
+        "ratio": "6.5x más en BOTTOM"
+      },
+      {
+        "phrase": "pero bueno",
+        "top_per_video": 0,
+        "bottom_per_video": 0.09,
+        "top_total": 0,
+        "bottom_total": 4,
+        "ratio": "Solo en BOTTOM"
+      },
+      {
+        "phrase": "de todos modos",
+        "top_per_video": 0,
+        "bottom_per_video": 0.13,
+        "top_total": 0,
+        "bottom_total": 6,
+        "ratio": "Solo en BOTTOM"
+      },
+      {
+        "phrase": "entonces",
+        "top_per_video": 0,
+        "bottom_per_video": 0.15,
+        "top_total": 0,
+        "bottom_total": 7,
+        "ratio": "Solo en BOTTOM"
+      },
+      {
+        "phrase": "en realidad",
+        "top_per_video": 0,
+        "bottom_per_video": 0.06,
+        "top_total": 0,
+        "bottom_total": 3,
+        "ratio": "Solo en BOTTOM"
+      }
+    ],
+    "opening_types": [
+      {
+        "type": "Direct-to-you",
+        "count": 1,
+        "avg_clr": 2.93,
+        "max_clr": 2.93
+      },
+      {
+        "type": "Urgencia",
+        "count": 3,
+        "avg_clr": 2.72,
+        "max_clr": 2.77
+      },
+      {
+        "type": "Universal",
+        "count": 2,
+        "avg_clr": 2.63,
+        "max_clr": 3.3
+      },
+      {
+        "type": "Cualquier",
+        "count": 1,
+        "avg_clr": 2.39,
+        "max_clr": 2.39
+      },
+      {
+        "type": "Self",
+        "count": 3,
+        "avg_clr": 2.06,
+        "max_clr": 2.71
+      },
+      {
+        "type": "Negation",
+        "count": 12,
+        "avg_clr": 1.62,
+        "max_clr": 3.14
+      },
+      {
+        "type": "Action",
+        "count": 5,
+        "avg_clr": 1.62,
+        "max_clr": 2.41
+      },
+      {
+        "type": "Nobody",
+        "count": 3,
+        "avg_clr": 1.52,
+        "max_clr": 2.17
+      },
+      {
+        "type": "Demonstrative",
+        "count": 21,
+        "avg_clr": 1.4,
+        "max_clr": 3.17
+      },
+      {
+        "type": "Question",
+        "count": 37,
+        "avg_clr": 1.25,
+        "max_clr": 2.86
+      },
+      {
+        "type": "Number-lead",
+        "count": 6,
+        "avg_clr": 1.22,
+        "max_clr": 3.45
+      },
+      {
+        "type": "Otro",
+        "count": 88,
+        "avg_clr": 1,
+        "max_clr": 2.51
+      },
+      {
+        "type": "Possessive",
+        "count": 6,
+        "avg_clr": 0.95,
+        "max_clr": 1.81
+      },
+      {
+        "type": "Conditional",
+        "count": 3,
+        "avg_clr": 0.65,
+        "max_clr": 1.02
+      }
+    ],
+    "closing_types": [
+      {
+        "type": "Termina con \"comenta [keyword]\"",
+        "count": 1,
+        "avg_clr": 2.31
+      },
+      {
+        "type": "\"Nos vemos\"",
+        "count": 2,
+        "avg_clr": 1.45
+      },
+      {
+        "type": "\"...por mensaje privado\"",
+        "count": 77,
+        "avg_clr": 1.41
+      },
+      {
+        "type": "\"...en menos de un minuto\"",
+        "count": 42,
+        "avg_clr": 1.38
+      },
+      {
+        "type": "Otro",
+        "count": 47,
+        "avg_clr": 0.94
+      },
+      {
+        "type": "\"Adiós amigos\"",
+        "count": 11,
+        "avg_clr": 0.89
+      },
+      {
+        "type": "\"Nos vemos amigos\"",
+        "count": 11,
+        "avg_clr": 0.86
+      }
+    ],
+    "word_frequency_diff": {
+      "topDiff": [
+        {
+          "word": "hormozy",
+          "top": 26,
+          "bottom": 0,
+          "ratio": "Solo top (26)"
+        },
+        {
+          "word": "libros",
+          "top": 18,
+          "bottom": 0,
+          "ratio": "Solo top (18)"
+        },
+        {
+          "word": "clon",
+          "top": 17,
+          "bottom": 0,
+          "ratio": "Solo top (17)"
+        },
+        {
+          "word": "agentes",
+          "top": 17,
+          "bottom": 0,
+          "ratio": "Solo top (17)"
+        },
+        {
+          "word": "páginas",
+          "top": 16,
+          "bottom": 0,
+          "ratio": "Solo top (16)"
+        },
+        {
+          "word": "chat",
+          "top": 14,
+          "bottom": 0,
+          "ratio": "Solo top (14)"
+        },
+        {
+          "word": "secuencias",
+          "top": 13,
+          "bottom": 0,
+          "ratio": "Solo top (13)"
+        },
+        {
+          "word": "listo",
+          "top": 11,
+          "bottom": 0,
+          "ratio": "Solo top (11)"
+        },
+        {
+          "word": "guión",
+          "top": 11,
+          "bottom": 0,
+          "ratio": "Solo top (11)"
+        },
+        {
+          "word": "libro",
+          "top": 11,
+          "bottom": 0,
+          "ratio": "Solo top (11)"
+        },
+        {
+          "word": "claude",
+          "top": 11,
+          "bottom": 0,
+          "ratio": "Solo top (11)"
+        },
+        {
+          "word": "respuesta",
+          "top": 11,
+          "bottom": 0,
+          "ratio": "Solo top (11)"
+        },
+        {
+          "word": "audio",
+          "top": 10,
+          "bottom": 0,
+          "ratio": "Solo top (10)"
+        },
+        {
+          "word": "clonación",
+          "top": 10,
+          "bottom": 0,
+          "ratio": "Solo top (10)"
+        },
+        {
+          "word": "gratuita",
+          "top": 9,
+          "bottom": 0,
+          "ratio": "Solo top (9)"
+        },
+        {
+          "word": "resultado",
+          "top": 9,
+          "bottom": 0,
+          "ratio": "Solo top (9)"
+        },
+        {
+          "word": "acaba",
+          "top": 8,
+          "bottom": 0,
+          "ratio": "Solo top (8)"
+        },
+        {
+          "word": "agente",
+          "top": 8,
+          "bottom": 0,
+          "ratio": "Solo top (8)"
+        },
+        {
+          "word": "carrusel",
+          "top": 8,
+          "bottom": 0,
+          "ratio": "Solo top (8)"
+        },
+        {
+          "word": "prompts",
+          "top": 7,
+          "bottom": 0,
+          "ratio": "Solo top (7)"
+        },
+        {
+          "word": "coach",
+          "top": 7,
+          "bottom": 0,
+          "ratio": "Solo top (7)"
+        },
+        {
+          "word": "destacadas",
+          "top": 7,
+          "bottom": 0,
+          "ratio": "Solo top (7)"
+        },
+        {
+          "word": "feedback",
+          "top": 7,
+          "bottom": 0,
+          "ratio": "Solo top (7)"
+        },
+        {
+          "word": "archivo",
+          "top": 7,
+          "bottom": 0,
+          "ratio": "Solo top (7)"
+        },
+        {
+          "word": "automático",
+          "top": 7,
+          "bottom": 0,
+          "ratio": "Solo top (7)"
+        }
+      ],
+      "bottomDiff": [
+        {
+          "word": "call",
+          "top": 0,
+          "bottom": 22,
+          "ratio": "Solo bottom (22)"
+        },
+        {
+          "word": "micro",
+          "top": 0,
+          "bottom": 20,
+          "ratio": "Solo bottom (20)"
+        },
+        {
+          "word": "actions",
+          "top": 0,
+          "bottom": 15,
+          "ratio": "Solo bottom (15)"
+        },
+        {
+          "word": "embudo",
+          "top": 0,
+          "bottom": 15,
+          "ratio": "Solo bottom (15)"
+        },
+        {
+          "word": "lanzamiento",
+          "top": 0,
+          "bottom": 15,
+          "ratio": "Solo bottom (15)"
+        },
+        {
+          "word": "ballenas",
+          "top": 0,
+          "bottom": 13,
+          "ratio": "Solo bottom (13)"
+        },
+        {
+          "word": "parece",
+          "top": 0,
+          "bottom": 12,
+          "ratio": "Solo bottom (12)"
+        },
+        {
+          "word": "márgenes",
+          "top": 0,
+          "bottom": 11,
+          "ratio": "Solo bottom (11)"
+        },
+        {
+          "word": "comunicación",
+          "top": 0,
+          "bottom": 11,
+          "ratio": "Solo bottom (11)"
+        },
+        {
+          "word": "valor",
+          "top": 0,
+          "bottom": 10,
+          "ratio": "Solo bottom (10)"
+        },
+        {
+          "word": "ángulos",
+          "top": 0,
+          "bottom": 10,
+          "ratio": "Solo bottom (10)"
+        },
+        {
+          "word": "podridos",
+          "top": 0,
+          "bottom": 8,
+          "ratio": "Solo bottom (8)"
+        },
+        {
+          "word": "hora",
+          "top": 0,
+          "bottom": 8,
+          "ratio": "Solo bottom (8)"
+        },
+        {
+          "word": "hacemos",
+          "top": 0,
+          "bottom": 8,
+          "ratio": "Solo bottom (8)"
+        },
+        {
+          "word": "250",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "lead",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "cantidad",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "action",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "puedo",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "cupos",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "setter",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "entonces",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "retorno",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "trazabilidad",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "ctas",
+          "top": 0,
+          "bottom": 6,
+          "ratio": "Solo bottom (6)"
+        }
+      ]
+    },
+    "enthusiasm_markers": [
+      {
+        "phrase": "es una locura",
+        "top": 14,
+        "bottom": 2
+      },
+      {
+        "phrase": "es una puta locura",
+        "top": 13,
+        "bottom": 0
+      },
+      {
+        "phrase": "es impresionante",
+        "top": 2,
+        "bottom": 0
+      },
+      {
+        "phrase": "es increíble",
+        "top": 5,
+        "bottom": 2
+      },
+      {
+        "phrase": "son increíbles",
+        "top": 2,
+        "bottom": 0
+      },
+      {
+        "phrase": "es una pelotudez",
+        "top": 1,
+        "bottom": 0
+      }
+    ]
+  },
+  "structural": {
+    "duration_vs_clr": [
+      {
+        "bucket": "0-15s",
+        "count": 1,
+        "avg_clr": 0.05,
+        "start": 0
+      },
+      {
+        "bucket": "15-30s",
+        "count": 7,
+        "avg_clr": 0.54,
+        "start": 15
+      },
+      {
+        "bucket": "30-45s",
+        "count": 25,
+        "avg_clr": 0.86,
+        "start": 30
+      },
+      {
+        "bucket": "45-60s",
+        "count": 101,
+        "avg_clr": 0.75,
+        "start": 45
+      },
+      {
+        "bucket": "60-75s",
+        "count": 270,
+        "avg_clr": 0.56,
+        "start": 60
+      },
+      {
+        "bucket": "75-90s",
+        "count": 349,
+        "avg_clr": 0.44,
+        "start": 75
+      },
+      {
+        "bucket": "90-105s",
+        "count": 93,
+        "avg_clr": 0.33,
+        "start": 90
+      },
+      {
+        "bucket": "105-120s",
+        "count": 32,
+        "avg_clr": 0.3,
+        "start": 105
+      },
+      {
+        "bucket": "120-135s",
+        "count": 4,
+        "avg_clr": 0.34,
+        "start": 120
+      },
+      {
+        "bucket": "135-150s",
+        "count": 3,
+        "avg_clr": 0.21,
+        "start": 135
+      },
+      {
+        "bucket": "195-210s",
+        "count": 1,
+        "avg_clr": 0.19,
+        "start": 195
+      },
+      {
+        "bucket": "210-225s",
+        "count": 1,
+        "avg_clr": 0.31,
+        "start": 210
+      }
+    ],
+    "rhythm_top_vs_bottom": {
+      "top": {
+        "avg_duration": 62.12,
+        "avg_words": 235.3,
+        "avg_wps": 3.78,
+        "avg_sentences": 15.13,
+        "avg_questions": 1.21,
+        "avg_revenue_claims": 1.77,
+        "avg_speed_promises": 1.72,
+        "avg_comenta_count": 1.72,
+        "avg_alternation": "53.96%"
+      },
+      "bottom": {
+        "avg_duration": 80.44,
+        "avg_words": 259.55,
+        "avg_wps": 3.14,
+        "avg_sentences": 17.34,
+        "avg_questions": 2.17,
+        "avg_revenue_claims": 2.53,
+        "avg_speed_promises": 0.51,
+        "avg_comenta_count": 0.7,
+        "avg_alternation": "53.28%"
+      }
+    },
+    "cta_formulas": [
+      {
+        "formula": "\"lo único que tenés\" + comenta",
+        "count": 15,
+        "avg_clr": 2.05
+      },
+      {
+        "formula": "\"solamente comenta\"",
+        "count": 15,
+        "avg_clr": 1.87
+      },
+      {
+        "formula": "\"comenta\" + \"te envío\" + \"en menos de un minuto\"",
+        "count": 37,
+        "avg_clr": 1.57
+      },
+      {
+        "formula": "\"si querés\" + comenta + \"en menos de\"",
+        "count": 70,
+        "avg_clr": 1.56
+      },
+      {
+        "formula": "\"comenta\" SIN \"en menos de\"",
+        "count": 45,
+        "avg_clr": 1.15
+      }
+    ],
+    "comenta_repetition": [
+      {
+        "repetitions": "0 veces",
+        "count": 14,
+        "avg_clr": 0.2
+      },
+      {
+        "repetitions": "1 vez",
+        "count": 88,
+        "avg_clr": 1.24
+      },
+      {
+        "repetitions": "2 veces",
+        "count": 68,
+        "avg_clr": 1.33
+      },
+      {
+        "repetitions": "3+ veces",
+        "count": 21,
+        "avg_clr": 1.57
+      }
+    ],
+    "revenue_vs_clr": [
+      {
+        "clr_range": "0-0.5",
+        "videos": 41,
+        "avg_revenue_claims": 2.49,
+        "order": 1
+      },
+      {
+        "clr_range": "0.5-1.0",
+        "videos": 42,
+        "avg_revenue_claims": 4.67,
+        "order": 2
+      },
+      {
+        "clr_range": "1.0-1.5",
+        "videos": 40,
+        "avg_revenue_claims": 2.88,
+        "order": 3
+      },
+      {
+        "clr_range": "1.5-2.0",
+        "videos": 35,
+        "avg_revenue_claims": 1.89,
+        "order": 4
+      },
+      {
+        "clr_range": "2.0-2.5",
+        "videos": 16,
+        "avg_revenue_claims": 1.63,
+        "order": 5
+      },
+      {
+        "clr_range": "2.5+",
+        "videos": 17,
+        "avg_revenue_claims": 1.76,
+        "order": 6
+      }
+    ],
+    "scarcity_patterns": [
+      {
+        "phrase": "se acaba de filtrar",
+        "top_videos": 4,
+        "top_pct": "8.51%",
+        "bottom_videos": 0,
+        "bottom_pct": "0%"
+      },
+      {
+        "phrase": "acaba de",
+        "top_videos": 7,
+        "top_pct": "14.89%",
+        "bottom_videos": 0,
+        "bottom_pct": "0%"
+      },
+      {
+        "phrase": "nuevo",
+        "top_videos": 14,
+        "top_pct": "29.79%",
+        "bottom_videos": 2,
+        "bottom_pct": "4.26%"
+      },
+      {
+        "phrase": "nueva",
+        "top_videos": 11,
+        "top_pct": "23.4%",
+        "bottom_videos": 4,
+        "bottom_pct": "8.51%"
+      },
+      {
+        "phrase": "24 horas",
+        "top_videos": 4,
+        "top_pct": "8.51%",
+        "bottom_videos": 0,
+        "bottom_pct": "0%"
+      },
+      {
+        "phrase": "lo borro",
+        "top_videos": 2,
+        "top_pct": "4.26%",
+        "bottom_videos": 0,
+        "bottom_pct": "0%"
+      },
+      {
+        "phrase": "limitado",
+        "top_videos": 0,
+        "top_pct": "0%",
+        "bottom_videos": 2,
+        "bottom_pct": "4.26%"
+      },
+      {
+        "phrase": "últimos",
+        "top_videos": 3,
+        "top_pct": "6.38%",
+        "bottom_videos": 11,
+        "bottom_pct": "23.4%"
+      }
+    ],
+    "objection_patterns": [
+      {
+        "phrase": "completamente gratis",
+        "top": 3,
+        "bottom": 0
+      },
+      {
+        "phrase": "100% gratis",
+        "top": 3,
+        "bottom": 0
+      },
+      {
+        "phrase": "no te preocupes",
+        "top": 2,
+        "bottom": 7
+      },
+      {
+        "phrase": "cualquier pelotudo",
+        "top": 2,
+        "bottom": 0
+      },
+      {
+        "phrase": "es una pelotudez",
+        "top": 1,
+        "bottom": 0
+      },
+      {
+        "phrase": "nadie me cree",
+        "top": 1,
+        "bottom": 0
+      },
+      {
+        "phrase": "sin pagar",
+        "top": 1,
+        "bottom": 1
+      }
+    ]
+  },
+  "caption": {
+    "length_vs_clr": [
+      {
+        "bucket": "1-10",
+        "count": 387,
+        "avg_clr": 0.39,
+        "order": 1
+      },
+      {
+        "bucket": "11-20",
+        "count": 584,
+        "avg_clr": 0.81,
+        "order": 2
+      },
+      {
+        "bucket": "21-35",
+        "count": 61,
+        "avg_clr": 0.31,
+        "order": 3
+      },
+      {
+        "bucket": "36-60",
+        "count": 46,
+        "avg_clr": 0.31,
+        "order": 4
+      }
+    ],
+    "features_top_vs_bottom": [
+      {
+        "feature": "Tiene \"comenta/comentá\"",
+        "top_pct": "100%",
+        "bottom_pct": "44.98%"
+      },
+      {
+        "feature": "Tiene emoji",
+        "top_pct": "77.32%",
+        "bottom_pct": "25.28%"
+      },
+      {
+        "feature": "Tiene hashtag",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Tiene pregunta",
+        "top_pct": "0.37%",
+        "bottom_pct": "3.72%"
+      },
+      {
+        "feature": "Tiene exclamación",
+        "top_pct": "77.32%",
+        "bottom_pct": "14.87%"
+      },
+      {
+        "feature": "Menciona DM/mensaje",
+        "top_pct": "77.7%",
+        "bottom_pct": "8.92%"
+      },
+      {
+        "feature": "Largo <= 15 palabras",
+        "top_pct": "98.14%",
+        "bottom_pct": "82.9%"
+      }
+    ],
+    "avg_word_count_top": 10.7,
+    "avg_word_count_bottom": 9.68,
+    "cta_keywords": [
+      {
+        "keyword": "100M",
+        "uses": 1,
+        "avg_clr": 3.3
+      },
+      {
+        "keyword": "COACH",
+        "uses": 1,
+        "avg_clr": 2.31
+      },
+      {
+        "keyword": "HOOKS",
+        "uses": 2,
+        "avg_clr": 2.3
+      },
+      {
+        "keyword": "MATRIX",
+        "uses": 2,
+        "avg_clr": 2.21
+      },
+      {
+        "keyword": "AGENTE",
+        "uses": 4,
+        "avg_clr": 2.21
+      },
+      {
+        "keyword": "IM",
+        "uses": 1,
+        "avg_clr": 2.1
+      },
+      {
+        "keyword": "PROMPT",
+        "uses": 2,
+        "avg_clr": 2.08
+      },
+      {
+        "keyword": "APP",
+        "uses": 2,
+        "avg_clr": 2.05
+      },
+      {
+        "keyword": "IG",
+        "uses": 2,
+        "avg_clr": 1.87
+      },
+      {
+        "keyword": "PERFIL",
+        "uses": 4,
+        "avg_clr": 1.86
+      },
+      {
+        "keyword": "MEGA",
+        "uses": 1,
+        "avg_clr": 1.81
+      },
+      {
+        "keyword": "GANCHO",
+        "uses": 5,
+        "avg_clr": 1.74
+      },
+      {
+        "keyword": "TUTORIAL",
+        "uses": 2,
+        "avg_clr": 1.73
+      },
+      {
+        "keyword": "CLON",
+        "uses": 3,
+        "avg_clr": 1.62
+      },
+      {
+        "keyword": "HORMOZI",
+        "uses": 16,
+        "avg_clr": 1.61
+      },
+      {
+        "keyword": "PLAN",
+        "uses": 1,
+        "avg_clr": 1.55
+      },
+      {
+        "keyword": "MIAMI",
+        "uses": 1,
+        "avg_clr": 1.5
+      },
+      {
+        "keyword": "IA",
+        "uses": 86,
+        "avg_clr": 1.42
+      },
+      {
+        "keyword": "TODO",
+        "uses": 3,
+        "avg_clr": 1.41
+      },
+      {
+        "keyword": "CLAUDE",
+        "uses": 2,
+        "avg_clr": 1.39
+      },
+      {
+        "keyword": "DICCIONARIO",
+        "uses": 2,
+        "avg_clr": 1.38
+      },
+      {
+        "keyword": "REELS",
+        "uses": 1,
+        "avg_clr": 1.31
+      },
+      {
+        "keyword": "BOT",
+        "uses": 6,
+        "avg_clr": 1.25
+      },
+      {
+        "keyword": "FUP",
+        "uses": 1,
+        "avg_clr": 1.19
+      },
+      {
+        "keyword": "SISTEMA",
+        "uses": 3,
+        "avg_clr": 1.14
+      },
+      {
+        "keyword": "CARRUSEL",
+        "uses": 2,
+        "avg_clr": 1.08
+      },
+      {
+        "keyword": "CONTENIDO",
+        "uses": 5,
+        "avg_clr": 1
+      },
+      {
+        "keyword": "LLAMADAS",
+        "uses": 1,
+        "avg_clr": 1
+      },
+      {
+        "keyword": "MANY",
+        "uses": 23,
+        "avg_clr": 0.96
+      },
+      {
+        "keyword": "VIDEO",
+        "uses": 4,
+        "avg_clr": 0.91
+      },
+      {
+        "keyword": "SETTER",
+        "uses": 2,
+        "avg_clr": 0.89
+      },
+      {
+        "keyword": "CURSOS",
+        "uses": 1,
+        "avg_clr": 0.88
+      },
+      {
+        "keyword": "500",
+        "uses": 2,
+        "avg_clr": 0.85
+      },
+      {
+        "keyword": "RECURSO",
+        "uses": 2,
+        "avg_clr": 0.83
+      },
+      {
+        "keyword": "30",
+        "uses": 7,
+        "avg_clr": 0.82
+      },
+      {
+        "keyword": "40",
+        "uses": 14,
+        "avg_clr": 0.82
+      },
+      {
+        "keyword": "BIBLIA",
+        "uses": 1,
+        "avg_clr": 0.81
+      },
+      {
+        "keyword": "BIBLIOTECA",
+        "uses": 1,
+        "avg_clr": 0.79
+      },
+      {
+        "keyword": "GPT",
+        "uses": 9,
+        "avg_clr": 0.77
+      },
+      {
+        "keyword": "PDF",
+        "uses": 20,
+        "avg_clr": 0.77
+      },
+      {
+        "keyword": "10",
+        "uses": 11,
+        "avg_clr": 0.74
+      },
+      {
+        "keyword": "SO",
+        "uses": 1,
+        "avg_clr": 0.71
+      },
+      {
+        "keyword": "4M",
+        "uses": 1,
+        "avg_clr": 0.71
+      },
+      {
+        "keyword": "WEB",
+        "uses": 2,
+        "avg_clr": 0.68
+      },
+      {
+        "keyword": "5M",
+        "uses": 1,
+        "avg_clr": 0.64
+      },
+      {
+        "keyword": "CAMBIO",
+        "uses": 3,
+        "avg_clr": 0.63
+      },
+      {
+        "keyword": "ADS",
+        "uses": 45,
+        "avg_clr": 0.6
+      },
+      {
+        "keyword": "IMAN",
+        "uses": 9,
+        "avg_clr": 0.56
+      },
+      {
+        "keyword": "20",
+        "uses": 3,
+        "avg_clr": 0.55
+      },
+      {
+        "keyword": "50",
+        "uses": 1,
+        "avg_clr": 0.55
+      },
+      {
+        "keyword": "SEO",
+        "uses": 1,
+        "avg_clr": 0.54
+      },
+      {
+        "keyword": "BASE",
+        "uses": 1,
+        "avg_clr": 0.54
+      },
+      {
+        "keyword": "70",
+        "uses": 8,
+        "avg_clr": 0.53
+      },
+      {
+        "keyword": "JUANMA",
+        "uses": 3,
+        "avg_clr": 0.53
+      },
+      {
+        "keyword": "RODRI",
+        "uses": 1,
+        "avg_clr": 0.53
+      },
+      {
+        "keyword": "GIOVANI",
+        "uses": 1,
+        "avg_clr": 0.52
+      },
+      {
+        "keyword": "ESTRUCTURA",
+        "uses": 3,
+        "avg_clr": 0.51
+      },
+      {
+        "keyword": "YO",
+        "uses": 190,
+        "avg_clr": 0.49
+      },
+      {
+        "keyword": "MART",
+        "uses": 1,
+        "avg_clr": 0.49
+      },
+      {
+        "keyword": "CRM",
+        "uses": 5,
+        "avg_clr": 0.47
+      },
+      {
+        "keyword": "NICHO",
+        "uses": 10,
+        "avg_clr": 0.44
+      },
+      {
+        "keyword": "VSL",
+        "uses": 1,
+        "avg_clr": 0.44
+      },
+      {
+        "keyword": "LANDING",
+        "uses": 1,
+        "avg_clr": 0.44
+      },
+      {
+        "keyword": "CURSO",
+        "uses": 33,
+        "avg_clr": 0.42
+      },
+      {
+        "keyword": "CTA",
+        "uses": 10,
+        "avg_clr": 0.42
+      },
+      {
+        "keyword": "IDEAS",
+        "uses": 1,
+        "avg_clr": 0.42
+      },
+      {
+        "keyword": "CLASE",
+        "uses": 49,
+        "avg_clr": 0.41
+      },
+      {
+        "keyword": "100",
+        "uses": 21,
+        "avg_clr": 0.4
+      },
+      {
+        "keyword": "DOC",
+        "uses": 6,
+        "avg_clr": 0.4
+      },
+      {
+        "keyword": "GU",
+        "uses": 2,
+        "avg_clr": 0.39
+      },
+      {
+        "keyword": "50K",
+        "uses": 1,
+        "avg_clr": 0.39
+      },
+      {
+        "keyword": "DJ",
+        "uses": 2,
+        "avg_clr": 0.38
+      },
+      {
+        "keyword": "CEBOLLA",
+        "uses": 1,
+        "avg_clr": 0.38
+      },
+      {
+        "keyword": "LOOM",
+        "uses": 8,
+        "avg_clr": 0.36
+      },
+      {
+        "keyword": "EMI",
+        "uses": 2,
+        "avg_clr": 0.35
+      },
+      {
+        "keyword": "JUAN",
+        "uses": 14,
+        "avg_clr": 0.34
+      },
+      {
+        "keyword": "MANUAL",
+        "uses": 3,
+        "avg_clr": 0.33
+      },
+      {
+        "keyword": "OFERTA",
+        "uses": 4,
+        "avg_clr": 0.32
+      },
+      {
+        "keyword": "GUION",
+        "uses": 7,
+        "avg_clr": 0.31
+      },
+      {
+        "keyword": "JOSEPH",
+        "uses": 1,
+        "avg_clr": 0.31
+      },
+      {
+        "keyword": "MICA",
+        "uses": 2,
+        "avg_clr": 0.3
+      },
+      {
+        "keyword": "AMEYALI",
+        "uses": 1,
+        "avg_clr": 0.3
+      },
+      {
+        "keyword": "ROLEX",
+        "uses": 1,
+        "avg_clr": 0.3
+      },
+      {
+        "keyword": "ESTRATEGIA",
+        "uses": 3,
+        "avg_clr": 0.29
+      },
+      {
+        "keyword": "JUANI",
+        "uses": 1,
+        "avg_clr": 0.29
+      },
+      {
+        "keyword": "AYUDA",
+        "uses": 1,
+        "avg_clr": 0.29
+      },
+      {
+        "keyword": "SERGIO",
+        "uses": 1,
+        "avg_clr": 0.28
+      },
+      {
+        "keyword": "AOV",
+        "uses": 1,
+        "avg_clr": 0.28
+      },
+      {
+        "keyword": "2026",
+        "uses": 3,
+        "avg_clr": 0.27
+      },
+      {
+        "keyword": "PARA",
+        "uses": 2,
+        "avg_clr": 0.27
+      },
+      {
+        "keyword": "ORG",
+        "uses": 5,
+        "avg_clr": 0.26
+      },
+      {
+        "keyword": "WEBINAR",
+        "uses": 1,
+        "avg_clr": 0.26
+      },
+      {
+        "keyword": "BALLENA",
+        "uses": 13,
+        "avg_clr": 0.25
+      },
+      {
+        "keyword": "DOCUMENTO",
+        "uses": 2,
+        "avg_clr": 0.25
+      },
+      {
+        "keyword": "AURA",
+        "uses": 1,
+        "avg_clr": 0.25
+      },
+      {
+        "keyword": "VICENTE",
+        "uses": 2,
+        "avg_clr": 0.24
+      },
+      {
+        "keyword": "100K",
+        "uses": 2,
+        "avg_clr": 0.24
+      },
+      {
+        "keyword": "MICRO",
+        "uses": 1,
+        "avg_clr": 0.24
+      },
+      {
+        "keyword": "VALEN",
+        "uses": 1,
+        "avg_clr": 0.23
+      },
+      {
+        "keyword": "JERO",
+        "uses": 4,
+        "avg_clr": 0.22
+      },
+      {
+        "keyword": "ARCHIVO",
+        "uses": 1,
+        "avg_clr": 0.22
+      },
+      {
+        "keyword": "JUAMPI",
+        "uses": 1,
+        "avg_clr": 0.21
+      },
+      {
+        "keyword": "STORY",
+        "uses": 1,
+        "avg_clr": 0.21
+      },
+      {
+        "keyword": "JOSE",
+        "uses": 2,
+        "avg_clr": 0.2
+      },
+      {
+        "keyword": "TOM",
+        "uses": 1,
+        "avg_clr": 0.2
+      },
+      {
+        "keyword": "ANGULO",
+        "uses": 1,
+        "avg_clr": 0.2
+      },
+      {
+        "keyword": "LT",
+        "uses": 1,
+        "avg_clr": 0.2
+      },
+      {
+        "keyword": "10K",
+        "uses": 1,
+        "avg_clr": 0.2
+      },
+      {
+        "keyword": "EMBUDO",
+        "uses": 2,
+        "avg_clr": 0.19
+      },
+      {
+        "keyword": "ABOGADOS",
+        "uses": 1,
+        "avg_clr": 0.19
+      },
+      {
+        "keyword": "ESCALAR",
+        "uses": 2,
+        "avg_clr": 0.18
+      },
+      {
+        "keyword": "SISTEMAS",
+        "uses": 1,
+        "avg_clr": 0.18
+      },
+      {
+        "keyword": "EBOOK",
+        "uses": 1,
+        "avg_clr": 0.17
+      },
+      {
+        "keyword": "VALOR",
+        "uses": 1,
+        "avg_clr": 0.17
+      },
+      {
+        "keyword": "INFO",
+        "uses": 4,
+        "avg_clr": 0.16
+      },
+      {
+        "keyword": "FIA",
+        "uses": 4,
+        "avg_clr": 0.15
+      },
+      {
+        "keyword": "CALENDARIO",
+        "uses": 2,
+        "avg_clr": 0.14
+      },
+      {
+        "keyword": "BF",
+        "uses": 4,
+        "avg_clr": 0.14
+      },
+      {
+        "keyword": "EVALDO",
+        "uses": 1,
+        "avg_clr": 0.14
+      },
+      {
+        "keyword": "ANGULOS",
+        "uses": 1,
+        "avg_clr": 0.13
+      },
+      {
+        "keyword": "CLASES",
+        "uses": 1,
+        "avg_clr": 0.13
+      },
+      {
+        "keyword": "2025",
+        "uses": 1,
+        "avg_clr": 0.12
+      },
+      {
+        "keyword": "FEDE",
+        "uses": 1,
+        "avg_clr": 0.12
+      },
+      {
+        "keyword": "SANTIAGO",
+        "uses": 1,
+        "avg_clr": 0.12
+      },
+      {
+        "keyword": "EMPRESA",
+        "uses": 1,
+        "avg_clr": 0.12
+      },
+      {
+        "keyword": "15",
+        "uses": 1,
+        "avg_clr": 0.11
+      },
+      {
+        "keyword": "OPPS",
+        "uses": 1,
+        "avg_clr": 0.11
+      },
+      {
+        "keyword": "GONZALO",
+        "uses": 1,
+        "avg_clr": 0.1
+      },
+      {
+        "keyword": "LEAN",
+        "uses": 1,
+        "avg_clr": 0.1
+      },
+      {
+        "keyword": "DATA",
+        "uses": 1,
+        "avg_clr": 0.1
+      },
+      {
+        "keyword": "GAUSS",
+        "uses": 1,
+        "avg_clr": 0.1
+      },
+      {
+        "keyword": "390",
+        "uses": 1,
+        "avg_clr": 0.08
+      },
+      {
+        "keyword": "CRISTIAN",
+        "uses": 1,
+        "avg_clr": 0.08
+      },
+      {
+        "keyword": "FRANCO",
+        "uses": 1,
+        "avg_clr": 0.06
+      },
+      {
+        "keyword": "150",
+        "uses": 1,
+        "avg_clr": 0.05
+      },
+      {
+        "keyword": "NICO",
+        "uses": 1,
+        "avg_clr": 0.04
+      },
+      {
+        "keyword": "JUANPI",
+        "uses": 1,
+        "avg_clr": 0.04
+      },
+      {
+        "keyword": "TOMAS",
+        "uses": 1,
+        "avg_clr": 0.03
+      }
+    ]
+  },
+  "post_type": {
+    "video": {
+      "count": 888,
+      "avg_likes": 711,
+      "avg_comments": 290,
+      "avg_views": 23134,
+      "avg_clr": 0.51
+    },
+    "sidecar": {
+      "count": 190,
+      "avg_likes": 869,
+      "avg_comments": 1128,
+      "avg_clr": 1.1
+    }
+  }
+}
