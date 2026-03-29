@@ -59,7 +59,7 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | 5 beats micro-VSL + 13 vehículos narrativos | `.data/tipos-cuerpo.md` | Micro-creencias sueltas + tipos de cuerpo como estructura (#11 = tier-list/rating, #12 = trailer de recurso, #13 = variante mecanismo escalado — los 3 últimos orgánico-only) |
 | 10 ventas del modelo | `.data/venta-modelo-negocio.md` | No existía |
 | 3 bloques CTA (6 capas) | `.data/ctas-biblioteca.md` | Los 3 CTAs genéricos de 1 frase |
-| 128 ingredientes | `.data/enciclopedia-127-ingredientes.md` | No existía (128vo = remate analógico, de análisis @niksetting) |
+| 136 ingredientes | `.data/enciclopedia-127-ingredientes.md` | No existía (136 total, últimos 9 de análisis hooks virales, de análisis @niksetting) |
 | **Reglas de diversidad** | **`.data/reglas-diversidad.md`** | **Guiones que sonaban todos iguales** |
 | **Motor de audiencia** | **`.data/motor-audiencia.md`** | **Data de WhatsApp sin activar** |
 | **Jerarquía de decisiones** | **`.data/jerarquia-decisiones.md`** | **No había regla de qué sistema gana en conflictos** |

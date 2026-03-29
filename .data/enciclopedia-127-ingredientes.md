@@ -1,4 +1,4 @@
-# Enciclopedia de Secciones — 127 Ingredientes para Guiones de Anuncios y VSLs
+# Enciclopedia de Secciones — 136 Ingredientes para Guiones de Anuncios y VSLs
 
 **Autor:** Jesus Tassarolo — Marzo 2026
 
@@ -40,7 +40,7 @@ Para crear VARIACIONES de un guion existente: cambia SOLO los ingredientes de 1-
 
 | # | Categoria | Funcion | Ingredientes |
 |---|-----------|---------|:------------:|
-| A | Hooks / Aperturas | Frenar el scroll en 0-3 segundos | 22 |
+| A | Hooks / Aperturas | Frenar el scroll en 0-3 segundos | 31 |
 | B | Problema / Dolor | Que diga "me esta hablando a mi" | 15 |
 | C | Agitacion | Hacer el problema MAS grande | 10 |
 | D | Quiebre de Creencia | Destruir LA creencia que los frena | 12 |
@@ -51,7 +51,7 @@ Para crear VARIACIONES de un guion existente: cambia SOLO los ingredientes de 1-
 | I | CTA / Llamada a la Accion | Decirle EXACTAMENTE que hacer | 8 |
 | J | Urgencia / Escasez | Que actue AHORA, no despues | 8 |
 | K | Cierre NLP | Cerrar la decision a nivel subconsciente | 3 |
-| | **TOTAL** | | **127** |
+| | **TOTAL** | | **136** |
 
 ---
 
@@ -149,6 +149,52 @@ Nombras directamente a quien le hablas. Filtro instantaneo: si sos esto, segui m
 ### #22 — Meta-Hook (el anuncio habla de si mismo)
 Rompes la cuarta pared. El anuncio mismo es la demostracion del producto.
 > *"Este anuncio fue hecho con IA. El texto fue escrito con IA. Y te voy a ensenar como hacerlo."*
+
+### #23 — Ego-Check / Micro-Test
+Desafias al espectador con algo que DEBERIA poder hacer. Si no puede, le duele el ego y sigue mirando para resolverlo.
+> *"Si no podes resolver esto en 5 segundos, volve a primaria."*
+> *"Como entrenador deberias poder hacer 20 flexiones. Si no podes, tenes un problema de fuerza."*
+
+### #24 — Contraste A/B de Resultados
+Mismo punto de partida, resultados opuestos. Genera curiosidad por la variable oculta que explica la diferencia.
+> *"Este es exactamente el mismo anuncio, pero el primero consiguio 100 leads y el segundo ninguno."*
+> *"Dos personas empezaron el mismo dia. Una gana $5K/mes. La otra abandono. ¿Que hizo diferente?"*
+
+### #25 — Confesion Contra-Status
+Confesas indiferencia hacia algo que todos valoran. No es vulnerabilidad (A#16) — es desprecio calculado que genera intriga.
+> *"No me odies, pero la verdad es que no me importa tanto el engagement. Te voy a mostrar algo mejor."*
+> *"No soy fan del marketing de contenido, pero voy a mostrarte como vendo sin crear ni un solo post."*
+
+### #26 — Insight Demorado
+El contraste entre cuanto tardaste en descubrirlo vs. cuanto tarda la explicacion. A diferencia de Asimetria Temporal, aca el peso esta en el MOMENTO DE DARSE CUENTA, no en ensenar.
+> *"¿Por que me tomo mas de 10 anos darme cuenta de que puedo generar ingresos online en 30 minutos?"*
+> *"Tarde 5 anos en entender que el problema no era mi producto. Era una sola palabra en mi oferta."*
+
+### #27 — Anti-Consejo Universal
+Atacas el consejo que todos repiten pero nadie desglosa. El dolor no es la ignorancia — es la frustracion de recibir consejos INUTILES por vagos.
+> *"Todos te dicen que medites, pero nadie te dice como hacerlo. Aca tenes un tutorial paso a paso de 60 segundos."*
+> *"Todo el mundo te dice 'vende lo que sabes'. Genial. ¿Y COMO se hace eso exactamente?"*
+
+### #28 — Reto Absurdo / Performance Pura
+Cero reflexion. Pura energia y accion inmediata. Funciona porque rompe el patron de "alguien hablando a camara". Es entretenimiento que ATRAPA y despues vende.
+> *"A la m*****, voy a hacer 50 flexiones en 60 segundos."*
+> *"Presento un reto: fuerza y resistencia. Mira."*
+
+### #29 — Inventario de Obsesion
+Mostras la escala de tu preparacion personal. La cantidad absurda genera autoridad instantanea: "si hizo todo ESO, sabe de lo que habla".
+> *"He hecho una hoja de calculo con mas de 1,000 ideas de negocio."*
+> *"Compre todos los micrófonos para que pudieras descubrir cuales son los mejores y cuales no valen la pena."*
+
+### #30 — Precio-Perspectiva
+Usas un monto de plata como lente para ver el mundo. El precio NO es la oferta — es el HOOK. Reframea lo que la plata compra o lo que se pierde.
+> *"Esto es lo que $500 te da en Buenos Aires."*
+> *"¿Cuantos desayunos podes hacer con solo $10?"*
+> *"Si estas pagando mas de $100 por un curso online, mejor compra una mentoria personalizada."*
+
+### #31 — Sketch / Dialogo de 2 Voces
+Formato mini-escena con 2 personajes. Rompe el patron de monólogo a camara. Funciona especialmente bien para mostrar la BRECHA entre donde esta el avatar y donde quiere estar.
+> *"Persona #1: 1.000 repeticiones. / Persona #2: ¿Que estas haciendo? / Persona #1: Entrenar, quiero un cuerpo definido antes de verano."*
+> *"Persona #1: ¿Por que mis abdominales no se marcan? / Persona #2: Es porque tu dieta es mala."*
 
 ---
 
