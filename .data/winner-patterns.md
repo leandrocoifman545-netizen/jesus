@@ -114,3 +114,33 @@ Los videos de HERRAMIENTA/RECURSO tienen 2.5× más CLR que los de CASO DE CLIEN
 - **Tono:** consejero > vendedor. Siempre.
 - **NUNCA copiar:** estos patterns son para SESGAR decisiones, no para copiar guiones.
 - **Winner patterns INFORMAN, no MANDAN** — diversidad sigue siendo la regla #1
+
+---
+
+## Session Insights (fusionado)
+
+> Contenido único migrado desde `session-insights.md` (2026-03-20). Lo duplicado ya estaba arriba.
+
+### Diferencias: Guiones generados vs Jesús solo (BN)
+
+| Aspecto | Generados (#33, #34, #48) | Jesús solo (#16, #51) |
+|---------|--------------------------|----------------------|
+| Estructura | 5 beats claros, organizado | Flow libre, conversacional |
+| Tono | Más "vendedor suave" | Más "amigo que te cuenta" |
+| Datos | Números integrados en estructura | Números casuales, como anécdota |
+| CTA | Bloque formal | A veces no hay CTA explícito |
+| Duración | 60-100s controlado | Variable, puede extenderse |
+
+**Conclusión:** Los BN de Jesús marcan el norte del tono — si un guion generado suena más "vendedor" que #16, ajustar.
+
+### 5 ajustes para futuras generaciones
+
+1. **Más anti-hype**: Abrir con lo que NO es antes de lo que sí es
+2. **Nombres reales de competencia**: Mencionar Fiverr, Hotmart, Digistore por nombre — da credibilidad
+3. **Números de a uno**: Un número por beat, no acumular. "60 dólares por día" pega más que "$60/día + $1800/mes + $21K/año"
+4. **Tono consejero por default**: El tono "te lo cuento porque ya pasé por esto" > el tono "descubrí el secreto"
+5. **Permitir guiones sin CTA formal**: Para awareness 3+ y orgánico, el consejo ES el cierre
+
+### Oportunidad no explotada
+
+- **Carruseles educativos con CTA keyword** son una oportunidad no explotada por ADP para orgánico IG

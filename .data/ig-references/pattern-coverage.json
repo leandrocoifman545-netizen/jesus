@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T10:52:06.720Z",
+  "generated_at": "2026-03-25T11:17:33.687Z",
   "total_generations": 36,
   "total_ig_videos": 517,
   "ig_profiles": [
@@ -11,10 +11,10 @@
     "tino.mossu"
   ],
   "summary": {
-    "total_patterns": 52,
-    "untapped": 14,
+    "total_patterns": 62,
+    "untapped": 15,
     "underused": 3,
-    "used": 6,
+    "used": 7,
     "overused": 22
   },
   "top_untapped": [
@@ -208,6 +208,72 @@
       ]
     },
     {
+      "pattern": "promesa_directa",
+      "ig_count": 7,
+      "ig_avg_clr": 127.42,
+      "ig_median_clr": 108.78,
+      "ig_profiles": [
+        "herasmedia",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "adp_uses": 12,
+      "status": "Overused",
+      "status_emoji": "⚠️",
+      "adp_examples": [
+        {
+          "gen_id": "09251dd7-fbb0-4d70-a8d3-a180120de330",
+          "hook_variant": 5,
+          "hook_type": "confesion",
+          "text": "Yo también arranqué sin nada. Sin contactos, sin plata, en otro país. Si estás en esa situación ahora, lo que te voy a c"
+        },
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "Las habilidades más aburridas de tu trabajo son las que más plata generan como producto digital. Excel, Word, presentaci"
+        },
+        {
+          "gen_id": "39a3cd4b-10f4-402d-b0cb-2c708521ceda",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "El peor error de mi carrera me enseñó más que cualquier curso. Pero me costó 15 mil dólares. Te ahorro esa plata con lo "
+        }
+      ]
+    },
+    {
+      "pattern": "situacion_narrativa",
+      "ig_count": 1,
+      "ig_avg_clr": 97.64,
+      "ig_median_clr": 97.64,
+      "ig_profiles": [
+        "herasmedia"
+      ],
+      "adp_uses": 5,
+      "status": "Used",
+      "status_emoji": "✅",
+      "adp_examples": [
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "hook_variant": 1,
+          "hook_type": "historia_mini",
+          "text": "Hace dos semanas me llegó un audio de WhatsApp de una alumna. Estaba llorando. Pero no de tristeza."
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "hook_variant": 2,
+          "hook_type": "situacion_especifica",
+          "text": "Trabajaba de delivery 10 horas por día. Le sobraban 40 minutos a la noche. Con esos 40 minutos creó algo que hoy le gene"
+        },
+        {
+          "gen_id": "690611ec-f293-493b-b4e5-e8899c33a235",
+          "hook_variant": 3,
+          "hook_type": "confesion",
+          "text": "La última vez que pensaste en generar plata, lo primero que dijiste fue 'no tengo tiempo'. ¿Y si el tiempo no fuera el p"
+        }
+      ]
+    },
+    {
       "pattern": "provocacion",
       "ig_count": 90,
       "ig_avg_clr": 86.27,
@@ -220,7 +286,7 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "adp_uses": 26,
+      "adp_uses": 27,
       "status": "Overused",
       "status_emoji": "⚠️",
       "adp_examples": [
@@ -380,29 +446,10 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "adp_uses": 25,
-      "status": "Overused",
-      "status_emoji": "⚠️",
-      "adp_examples": [
-        {
-          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
-          "hook_variant": 1,
-          "hook_type": "contraintuitivo",
-          "text": "Las personas que más saben son las que menos ganan. ¿Sabés por qué? Porque regalan su conocimiento en vez de venderlo."
-        },
-        {
-          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
-          "hook_variant": 1,
-          "hook_type": "historia_mini",
-          "text": "Hace dos semanas me llegó un audio de WhatsApp de una alumna. Estaba llorando. Pero no de tristeza."
-        },
-        {
-          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
-          "hook_variant": 2,
-          "hook_type": "situacion_especifica",
-          "text": "Trabajaba de delivery 10 horas por día. Le sobraban 40 minutos a la noche. Con esos 40 minutos creó algo que hoy le gene"
-        }
-      ]
+      "adp_uses": 0,
+      "status": "UNTAPPED",
+      "status_emoji": "🆕",
+      "adp_examples": []
     },
     {
       "pattern": "negacion_en_serie",
@@ -687,6 +734,36 @@
       ]
     },
     {
+      "pattern": "contraintuitivo_declarativo",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 5,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "025c31c7-4c9c-4ff7-98a9-b8f92d3a23e5",
+          "hook_variant": 1,
+          "hook_type": "contraintuitivo",
+          "text": "Las personas que más saben son las que menos ganan. ¿Sabés por qué? Porque regalan su conocimiento en vez de venderlo."
+        },
+        {
+          "gen_id": "0ac4accf-21e0-4b28-8450-ca587207f255",
+          "hook_variant": 3,
+          "hook_type": "contraintuitivo",
+          "text": "La persona que más rápido vendió su primer producto digital en mi programa no sabía ni qué era un producto digital. Y es"
+        },
+        {
+          "gen_id": "43422594-2466-494c-a646-6aa8fc286266",
+          "hook_variant": 5,
+          "hook_type": "contraintuitivo",
+          "text": "Las personas que menos saben de tecnología son las que mejor les va con esto. ¿Sabés por qué? Porque no intentan hacerlo"
+        }
+      ]
+    },
+    {
       "pattern": "herencia_emocional",
       "ig_count": 0,
       "ig_avg_clr": 0,
@@ -777,6 +854,72 @@
       ]
     },
     {
+      "pattern": "analogia_abierta",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 1,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "hook_variant": 3,
+          "hook_type": "analogia_cotidiana",
+          "text": "Sos como un médico que atiende un paciente por vez. Puede ser el mejor del mundo, pero si no está en el consultorio, no "
+        }
+      ]
+    },
+    {
+      "pattern": "confesion_temporal",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 4,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "0cfa05e7-1461-4caa-b176-a136acaad1fc",
+          "hook_variant": 5,
+          "hook_type": "confesion",
+          "text": "Tardé 5 años en darme cuenta que me estaba cagando la vida. Te lo explico en 60 segundos para que no te pase lo mismo."
+        },
+        {
+          "gen_id": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+          "hook_variant": 5,
+          "hook_type": "confesion",
+          "text": "Yo pensaba que para vender algo online necesitabas saber de tecnología o de marketing. Después descubrí que lo que más s"
+        },
+        {
+          "gen_id": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+          "hook_variant": 4,
+          "hook_type": "confesion",
+          "text": "Yo odiaba los lunes. No por el trabajo — por saber que las mejores horas de mi vida se las daba a alguien más. Hasta que"
+        }
+      ]
+    },
+    {
+      "pattern": "acusacion_directa",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 1,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "10abfdb6-f7cb-4858-a8a4-1f4fa279b9be",
+          "hook_variant": 4,
+          "hook_type": "provocacion",
+          "text": "El modelo de negocio que estás siguiendo fue diseñado para que otro gane. No vos. Y te lo voy a demostrar acá en el piza"
+        }
+      ]
+    },
+    {
       "pattern": "espejo_situacion",
       "ig_count": 0,
       "ig_avg_clr": 0,
@@ -803,6 +946,120 @@
           "hook_variant": 1,
           "hook_type": "situacion_especifica",
           "text": "Cocinás todos los días. Tu familia te pide las recetas. Tus amigas te dicen \"deberías vender esto\"."
+        }
+      ]
+    },
+    {
+      "pattern": "dialogo_actuacion",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 6,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "hook_variant": 2,
+          "hook_type": "dato_concreto",
+          "text": "\"Curso Excel online\" creció más de 130 mil por ciento en búsquedas de Google. Y la mayoría de la gente busca plantillas "
+        },
+        {
+          "gen_id": "266556fb-14f6-4402-9151-7026c4db362f",
+          "hook_variant": 3,
+          "hook_type": "dato_concreto",
+          "text": "\"Cómo decorar mi casa\" tiene 110 mil búsquedas por mes en Google en español. La mayoría encuentra blogs genéricos con fo"
+        },
+        {
+          "gen_id": "52c686f0-dae2-4bde-b6b7-e977661bfb46",
+          "hook_variant": 1,
+          "hook_type": "dato_concreto",
+          "text": "\"Amazon vender ebook\" creció más de un millón por ciento en Google este año. Y la mayoría de los ebooks que se venden cu"
+        }
+      ]
+    },
+    {
+      "pattern": "cita_avatar",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 5,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "1f596c5a-138f-475a-ab6d-f0afa8b63808",
+          "hook_variant": 2,
+          "hook_type": "dato_concreto",
+          "text": "\"Curso Excel online\" creció más de 130 mil por ciento en búsquedas de Google. Y la mayoría de la gente busca plantillas "
+        },
+        {
+          "gen_id": "266556fb-14f6-4402-9151-7026c4db362f",
+          "hook_variant": 3,
+          "hook_type": "dato_concreto",
+          "text": "\"Cómo decorar mi casa\" tiene 110 mil búsquedas por mes en Google en español. La mayoría encuentra blogs genéricos con fo"
+        },
+        {
+          "gen_id": "52c686f0-dae2-4bde-b6b7-e977661bfb46",
+          "hook_variant": 1,
+          "hook_type": "dato_concreto",
+          "text": "\"Amazon vender ebook\" creció más de un millón por ciento en Google este año. Y la mayoría de los ebooks que se venden cu"
+        }
+      ]
+    },
+    {
+      "pattern": "observacion_directa",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 4,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "266556fb-14f6-4402-9151-7026c4db362f",
+          "hook_variant": 1,
+          "hook_type": "situacion_especifica",
+          "text": "Estás scrolleando en Pinterest buscando ideas para el living. Guardás 50 fotos de inspiración. Tenés un gusto increíble "
+        },
+        {
+          "gen_id": "690611ec-f293-493b-b4e5-e8899c33a235",
+          "hook_variant": 4,
+          "hook_type": "provocacion",
+          "text": "Le decís a tus hijos 'pueden ser lo que quieran'. Pero cada día te ven corriendo de un lado al otro, estresada, sin tiem"
+        },
+        {
+          "gen_id": "9e0941c9-5f9e-42db-842c-4e2f5025c41c",
+          "hook_variant": 5,
+          "hook_type": "provocacion",
+          "text": "Seguís comprando cursos como si fueran figuritas. Y el de 200 horas que compraste el mes pasado lo miraste 40 minutos. ¿"
+        }
+      ]
+    },
+    {
+      "pattern": "contraste_juxtaposicion",
+      "ig_count": 0,
+      "ig_avg_clr": 0,
+      "ig_median_clr": 0,
+      "ig_profiles": [],
+      "adp_uses": 2,
+      "status": "ADP-only",
+      "status_emoji": "🔵",
+      "adp_examples": [
+        {
+          "gen_id": "267d9745-5bd7-4c76-9399-6af89d2bfc01",
+          "hook_variant": 1,
+          "hook_type": "provocacion",
+          "text": "Mientras scrolleás TikTok, alguien está vendiendo un producto digital que hizo con la misma IA que vos usás para memes. "
+        },
+        {
+          "gen_id": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+          "hook_variant": 3,
+          "hook_type": "provocacion",
+          "text": "Tu jefe duerme tranquilo porque sabe que mañana vas a estar ahí. Vos no dormís tranquilo porque sabés que mañana vas a e"
         }
       ]
     },

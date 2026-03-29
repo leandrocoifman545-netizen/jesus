@@ -1,0 +1,52 @@
+{
+  "id": "7c31cbc2-627c-4b80-aacf-b1276862b352",
+  "briefId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "planId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "title": "Mi viejo me dice que consiga un laburo de verdad",
+  "contentType": "shortform",
+  "script": {
+    "angle_family": "1",
+    "angle_specific": "F1-1.4 Jubilado",
+    "body_type": "conversacion_experto_novato",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "Presión familiar — padre tradicional",
+    "model_sale_type": "prueba_diversidad",
+    "visual_format": "split_screen_dialogo",
+    "avatar": "martin",
+    "awareness_level": 3,
+    "emotional_arc": "presion_autonomia",
+    "tension": "T4",
+    "transition_text": "Link acá abajo. Nos vemos adentro.",
+    "total_duration_seconds": 60,
+    "word_count": 220,
+    "belief_change": {
+      "old_belief": "Mi viejo tiene razón, esto no es un laburo de verdad",
+      "mechanism": "Diálogo experto/novato — prueba por demo/math, sin screenshots de clientes",
+      "new_belief": "El mundo cambió y mi viejo no se actualizó"
+    },
+    "micro_beliefs": [],
+    "hooks": [],
+    "development": {
+      "framework_used": "conversacion_victor_eraso",
+      "emotional_arc": "miedo_dignidad",
+      "sections": []
+    },
+    "ingredients_used": [],
+    "cta_blocks": [
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T07:03:05.085Z",
+  "status": "draft",
+  "batch": {
+    "id": "3a744f23-03e4-4cb0-b83c-f80c35ef559a",
+    "name": "victor-eraso-v2"
+  },
+  "hookApprovals": {}
+}

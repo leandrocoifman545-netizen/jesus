@@ -1,0 +1,27 @@
+{
+  "_description": "Vocabulario por segmento extraído de motor-audiencia.md. Usado por save-generation.mjs para validar que el guion usa las palabras del avatar correcto.",
+  "A": {
+    "label": "Emprendedor frustrado (20-35 años)",
+    "must_use": ["ideas", "proyecto", "negocio", "salir de ahí", "avanzar", "estancado", "independencia"],
+    "must_avoid": ["jubilarse", "ahorros", "a tu edad"],
+    "phrases": ["tengo varias ideas pero nada aún", "quisiera salir de ahí pronto", "debería estar haciendo mucho más", "me fuerzo y las cosas no pasan"]
+  },
+  "B": {
+    "label": "Principiante tecnológico (40-60 años)",
+    "must_use": ["aprender", "herramientas", "paso a paso", "sencillo", "no entiendo", "ayuda"],
+    "must_avoid": ["fácil", "hasta un niño puede"],
+    "phrases": ["no conozco las herramientas", "paso a paso", "no logró convertir"]
+  },
+  "C": {
+    "label": "Mamá/Papá sobrecargado",
+    "must_use": ["hijos", "tiempo", "casa", "cuidado", "sin descuidar", "ingresos"],
+    "must_avoid": ["dejá todo", "metele 4 horas", "riesgo"],
+    "phrases": ["sin descuidar el cuidado de mis hijos", "limitaciones de tiempo", "ocupada con tareas"]
+  },
+  "D": {
+    "label": "Escéptico con estafa previa",
+    "must_use": ["estafa", "verdad", "enseñar de verdad", "gratis", "sin compromiso", "demostrar"],
+    "must_avoid": ["te vas a hacer rico", "promesas grandes", "presión"],
+    "phrases": ["me están estafando", "cuando empezará a enseñar de verdad", "el pago es por única vez"]
+  }
+}

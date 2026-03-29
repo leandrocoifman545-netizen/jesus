@@ -23,10 +23,10 @@ URL: `http://localhost:3002/scripts/{generationId}`
 | Sistema | Archivo | Nota |
 |---------|---------|------|
 | 5 familias de ángulos | `.data/angulos-expandidos.md` | Reemplaza los 11 ángulos viejos |
-| 8 tipos de cuerpo | `.data/tipos-cuerpo.md` | Con mapa de combos por familia |
+| 13 tipos de cuerpo | `.data/tipos-cuerpo.md` | Con mapa de combos por familia |
 | 10 ventas del modelo | `.data/venta-modelo-negocio.md` | Va después del mecanismo en el body |
 | 3 bloques CTA × 6 capas | `.data/ctas-biblioteca.md` | Clase Gratuita / Taller $5 / Instagram |
-| 127 ingredientes | `.data/enciclopedia-127-ingredientes.md` | Fórmula por duración |
+| 128 ingredientes | `.data/enciclopedia-127-ingredientes.md` | Fórmula por duración |
 
 ## Estructura correcta de un guion
 

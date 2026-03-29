@@ -1,0 +1,173 @@
+{
+  "id": "f1e1d114-ce6d-4e36-91de-7d4c58023f0b",
+  "briefId": "d860bac3-c8b3-4eaa-b0b5-bb6a9a23057c",
+  "title": "Necesitás mucha plata para arrancar",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.5_la_matematica",
+    "body_type": "victor_elas_conversation",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "mito: inversión alta",
+    "model_sale_type": "matematica_simple",
+    "visual_format": "split_screen",
+    "avatar": "patricia",
+    "awareness_level": 3,
+    "emotional_arc": "revelacion",
+    "tension": "T13",
+    "transition_text": "PERSONA A: Esperá, ¿dónde me anoto?\nJESÚS: Tocá el botón de acá abajo.",
+    "total_duration_seconds": 57,
+    "word_count": 333,
+    "belief_change": {
+      "old_belief": "Necesitás miles de dólares para arrancar",
+      "mechanism": "$2/día + IA gratis",
+      "new_belief": "Arrancar cuesta menos que un café"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Hola, sí, quería consultar algo. ¿Cuánta plata necesito para arrancar con esto?\nJESÚS: ¿Cuánto pensás que cuesta?\nPERSONA A: No sé, ¿cinco mil dólares? ¿Diez?\nJESÚS: Dos.\nPERSONA A: ¿Dos mil?\nJESÚS: Dos. Pesos no. Dólares. Dos dólares.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, yo quiero arrancar pero no llego a fin de mes. Para esto necesitás capital.\nJESÚS: ¿Cuánto gastás en nafta para ir a un trabajo que no te gusta?\nPERSONA A: ...bastante.\nJESÚS: Arrancar esto cuesta menos que un tanque de nafta. Te hago la cuenta.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: A ver, necesito que me digas el número real. ¿Cuánto sale arrancar?\nJESÚS: ¿Tenés dos dólares?\nPERSONA A: Obvio.\nJESÚS: Entonces ya tenés capital suficiente. Sentate que te explico.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Che, yo hace meses que quiero arrancar algo propio pero no tengo un mango.\nJESÚS: ¿Quién te dijo que necesitás plata?\nPERSONA A: Todo el mundo. Local, stock, publicidad...\nJESÚS: Todo el mundo está hablando del 2015. Esto es 2026. Cambió todo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Te soy sincero, tengo miedo de meter plata y perderla. Ya me pasó.\nJESÚS: ¿Cuánto perdiste la última vez?\nPERSONA A: Como quinientos dólares.\nJESÚS: Acá el riesgo total es dos dólares. Si eso te da miedo, el problema es otro.\nPERSONA A: Trabajo todo el día y no me sobra un peso. Para arrancar algo necesitás capital, ¿o no?\nJESÚS: ¿De dónde sacaste eso?\nPERSONA A: Página web, publicidad, diseñador...\nJESÚS: Eso era antes. Hoy abrís la IA, le decís qué querés y te lo arma. Gratis. Es como pedirle un licuado al mozo.\nPERSONA A: ¿Gratis en serio?\nJESÚS: Cero pesos. Lo único que pagás son dos dólares de publicidad por día.\nPERSONA A: Pará pará. ¿Dos dólares de publicidad? Eso no puede funcionar.\nJESÚS: Menos que cargar nafta para ir a un trabajo que no te gusta. Con eso te llegan 5, 10 mensajes de gente interesada.\nPERSONA A: ¿Por WhatsApp?\nJESÚS: Por WhatsApp. La gente ve tu anuncio, te escribe, le mandás el link y cobras. Sin página web. Sin nada.\nPERSONA A: Haceme la cuenta.\nJESÚS: Invertís $2. Te escriben 10. Vendés a 3. Producto de $15. Son $45 por $2. ¿Necesito seguir?\nPERSONA A: Dale, pero yo no tengo idea de qué vender. Laburo en un call center.\nJESÚS: ¿Sabés usar Excel?\nPERSONA A: Sí, bastante bien.\nJESÚS: Hay un pibe que hizo un mini-curso de Excel con la IA. Le tomó un fin de semana. Hoy factura $50 por día.\nPERSONA A: ¿Con Excel?\nJESÚS: Con Excel. Porque todo el mundo necesita Excel y nadie te lo enseña bien.\nPERSONA A: Entonces con $2 arranco, la IA me arma todo y ya tengo algo para vender.\nJESÚS: Sí.\nPERSONA A: Listo, entendí.\nJESÚS: No. Entendiste la cuenta. Te falta el proceso. Porque saber que 2+2 es 4 no te hace contador. El paso a paso es lo que te enseño.\nPERSONA A: ¿Dónde?\nJESÚS: Tocá el botón de acá abajo.\nPERSONA A: ¿Y cuánto sale aprender?\nJESÚS: Menos que lo que gastaste en el café de hoy.\nPERSONA A: Esperá, ¿dónde me anoto?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "revelacion",
+      "sections": [
+        {
+          "section_name": "Necesito miles para empezar",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Trabajo todo el día y no me sobra un peso. Para arrancar algo necesitás capital, ¿o no?\nJESÚS: ¿De dónde sacaste eso?\nPERSONA A: Página web, publicidad, diseñador...\nJESÚS: Eso era antes. Hoy abrís la IA, le decís qué querés y te lo arma. Gratis. Es como pedirle un licuado al mozo.\nPERSONA A: ¿Gratis en serio?\nJESÚS: Cero pesos. Lo único que pagás son dos dólares de publicidad por día.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "La publicidad es carísima",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pará pará. ¿Dos dólares de publicidad? Eso no puede funcionar.\nJESÚS: Menos que cargar nafta para ir a un trabajo que no te gusta. Con eso te llegan 5, 10 mensajes de gente interesada.\nPERSONA A: ¿Por WhatsApp?\nJESÚS: Por WhatsApp. La gente ve tu anuncio, te escribe, le mandás el link y cobras. Sin página web. Sin nada.\nPERSONA A: Haceme la cuenta.\nJESÚS: Invertís $2. Te escriben 10. Vendés a 3. Producto de $15. Son $45 por $2. ¿Necesito seguir?",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "No sé de qué hacer un producto",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Dale, pero yo no tengo idea de qué vender. Laburo en un call center.\nJESÚS: ¿Sabés usar Excel?\nPERSONA A: Sí, bastante bien.\nJESÚS: Hay un pibe que hizo un mini-curso de Excel con la IA. Le tomó un fin de semana. Hoy factura $50 por día.\nPERSONA A: ¿Con Excel?\nJESÚS: Con Excel. Porque todo el mundo necesita Excel y nadie te lo enseña bien.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Entonces con $2 arranco, la IA me arma todo y ya tengo algo para vender.\nJESÚS: Sí.\nPERSONA A: Listo, entendí.\nJESÚS: No. Entendiste la cuenta. Te falta el proceso. Porque saber que 2+2 es 4 no te hace contador. El paso a paso es lo que te enseño.\nPERSONA A: ¿Dónde?\nJESÚS: Tocá el botón de acá abajo.\nPERSONA A: ¿Y cuánto sale aprender?\nJESÚS: Menos que lo que gastaste en el café de hoy.\nPERSONA A: Esperá, ¿dónde me anoto?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y cuánto sale aprender?\nJESÚS: Menos que lo que gastaste en el café de hoy.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T00:33:24.541Z",
+  "status": "draft",
+  "batch": {
+    "id": "cf67a1fc-1f33-4369-b723-0cc0973e60fc",
+    "name": "Víctor Elas × 562 compradores — V5"
+  }
+}

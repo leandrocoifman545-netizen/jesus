@@ -28,7 +28,7 @@
 
 import fs from "fs";
 import path from "path";
-import { classifyOpening, classifyBody, classifyClosing } from "./lib/classifiers.mjs";
+import { classifyOpening, classifyBody, classifyClosing, classifyCaption } from "./lib/classifiers.mjs";
 
 const REF_DIR = path.join(process.cwd(), ".data", "ig-references");
 
@@ -151,6 +151,46 @@ function extractZones(transcript) {
 }
 
 // ──────────────────────────────────────────
+// Beat mapping — body divided into 4 temporal quarters
+// ──────────────────────────────────────────
+
+function mapBodyBeats(bodyZone) {
+  const segments = bodyZone.segments;
+  if (segments.length < 4) return null;
+
+  const bodyStart = Math.min(...segments.map(s => s.start));
+  const bodyEnd = Math.max(...segments.map(s => s.end));
+  const bodyDuration = bodyEnd - bodyStart;
+  if (bodyDuration < 10) return null; // too short to meaningfully split
+
+  const quarterDur = bodyDuration / 4;
+  const quarters = [
+    { label: "Q1_setup", start: bodyStart, end: bodyStart + quarterDur, segments: [], text: "" },
+    { label: "Q2_develop", start: bodyStart + quarterDur, end: bodyStart + 2 * quarterDur, segments: [], text: "" },
+    { label: "Q3_escalate", start: bodyStart + 2 * quarterDur, end: bodyStart + 3 * quarterDur, segments: [], text: "" },
+    { label: "Q4_resolve", start: bodyStart + 3 * quarterDur, end: bodyEnd + 0.01, segments: [], text: "" },
+  ];
+
+  for (const seg of segments) {
+    const segMid = (seg.start + seg.end) / 2;
+    for (const q of quarters) {
+      if (segMid >= q.start && segMid < q.end) {
+        q.segments.push(seg);
+        q.text += " " + (seg.text || "").trim();
+        break;
+      }
+    }
+  }
+
+  return quarters.map(q => ({
+    label: q.label,
+    text: q.text.trim(),
+    patterns: classifyBody(q.text.trim()),
+    word_count: q.text.trim().split(/\s+/).filter(w => w).length,
+  }));
+}
+
+// ──────────────────────────────────────────
 // CTA buildup analysis
 // ──────────────────────────────────────────
 
@@ -251,6 +291,7 @@ function analyzeProfile(username) {
     const bodyPatterns = classifyBody(zones.body.text);
     const closingPatterns = classifyClosing(zones.closing.text, t.caption);
     const ctaBuildup = analyzeCTABuildup(zones.closing);
+    const beatMap = mapBodyBeats(zones.body);
 
     // Word density (words per second)
     const totalWords = (t.transcript || "").split(/\s+/).length;
@@ -283,6 +324,7 @@ function analyzeProfile(username) {
         segments: zones.body.segments.length,
         patterns: bodyPatterns,
         word_count: zones.body.text.split(/\s+/).length,
+        beat_map: beatMap,
       },
       closing: {
         text: zones.closing.text,
@@ -293,6 +335,7 @@ function analyzeProfile(username) {
       },
 
       caption_preview: (t.caption || "").slice(0, 100),
+      caption_patterns: classifyCaption(t.caption),
     });
   }
 
@@ -416,6 +459,74 @@ function analyzeProfile(username) {
       avg_views: Math.round(avg(videos.map(v => v.views))),
     })),
 
+    // Caption patterns × performance
+    caption_patterns: (() => {
+      const capStats = {};
+      for (const v of analyzed) {
+        for (const p of (v.caption_patterns || [])) {
+          if (!capStats[p]) capStats[p] = { count: 0, clrs: [], views: [] };
+          capStats[p].count++;
+          capStats[p].clrs.push(v.clr);
+          capStats[p].views.push(v.views);
+        }
+      }
+      return Object.entries(capStats)
+        .map(([pattern, d]) => ({
+          pattern,
+          count: d.count,
+          avg_clr: round2(avg(d.clrs)),
+          avg_views: Math.round(avg(d.views)),
+        }))
+        .sort((a, b) => b.avg_clr - a.avg_clr);
+    })(),
+
+    // Beat sequences — body quarter patterns × CLR
+    beat_sequences: (() => {
+      const seqStats = {};
+      for (const v of analyzed) {
+        if (!v.body.beat_map) continue;
+        const seq = v.body.beat_map.map(q => q.patterns[0] || "narrativa_general").join("→");
+        if (!seqStats[seq]) seqStats[seq] = { count: 0, clrs: [], views: [] };
+        seqStats[seq].count++;
+        seqStats[seq].clrs.push(v.clr);
+        seqStats[seq].views.push(v.views);
+      }
+      return Object.entries(seqStats)
+        .map(([seq, d]) => ({
+          sequence: seq,
+          count: d.count,
+          avg_clr: round2(avg(d.clrs)),
+          avg_views: Math.round(avg(d.views)),
+        }))
+        .filter(s => s.count >= 2)
+        .sort((a, b) => b.avg_clr - a.avg_clr);
+    })(),
+
+    // Beat position patterns — what patterns work best in Q1/Q2/Q3/Q4
+    beat_position_stats: (() => {
+      const posStats = { Q1_setup: {}, Q2_develop: {}, Q3_escalate: {}, Q4_resolve: {} };
+      for (const v of analyzed) {
+        if (!v.body.beat_map) continue;
+        for (const q of v.body.beat_map) {
+          const pos = posStats[q.label];
+          if (!pos) continue;
+          for (const p of q.patterns) {
+            if (!pos[p]) pos[p] = { count: 0, clrs: [] };
+            pos[p].count++;
+            pos[p].clrs.push(v.clr);
+          }
+        }
+      }
+      const result = {};
+      for (const [label, stats] of Object.entries(posStats)) {
+        result[label] = Object.entries(stats)
+          .map(([pattern, d]) => ({ pattern, count: d.count, avg_clr: round2(avg(d.clrs)) }))
+          .sort((a, b) => b.avg_clr - a.avg_clr)
+          .slice(0, 8);
+      }
+      return result;
+    })(),
+
     // Top 20 hooks (by CLR, with full opening text)
     top_hooks: analyzed.slice(0, 20).map(v => ({
       shortCode: v.shortCode,
@@ -485,6 +596,20 @@ function analyzeProfile(username) {
   console.log(`\n  DENSIDAD (palabras/segundo):`);
   for (const d of results.density_performance) {
     console.log(`    ${d.bucket.padEnd(20)} | ${String(d.count).padStart(3)}x | CLR: ${String(d.avg_clr + "%").padStart(8)} | Views: ${d.avg_views.toLocaleString()}`);
+  }
+
+  if (results.beat_sequences.length > 0) {
+    console.log(`\n  SECUENCIAS DE BEATS (Q1→Q2→Q3→Q4, 2+ usos):`);
+    for (const s of results.beat_sequences.slice(0, 5)) {
+      console.log(`    ${s.sequence.padEnd(55)} | ${String(s.count).padStart(3)}x | CLR: ${String(s.avg_clr + "%").padStart(8)}`);
+    }
+  }
+
+  if (results.caption_patterns.length > 0) {
+    console.log(`\n  CAPTIONS:`);
+    for (const p of results.caption_patterns.slice(0, 8)) {
+      console.log(`    ${p.pattern.padEnd(20)} | ${String(p.count).padStart(3)}x | CLR: ${String(p.avg_clr + "%").padStart(8)} | Views: ${p.avg_views.toLocaleString()}`);
+    }
   }
 
   return results;
@@ -563,6 +688,59 @@ function generatePatternLibrary(allResults) {
       .flatMap(r => r.top_cta_buildups.map(c => ({ ...c, profile: r.username })))
       .sort((a, b) => b.clr - a.clr)
       .slice(0, 20),
+
+    // Merge caption patterns cross-profile
+    caption_patterns: (() => {
+      const merged = {};
+      for (const result of allResults) {
+        for (const p of (result.caption_patterns || [])) {
+          if (!merged[p.pattern]) merged[p.pattern] = { count: 0, clrs: [], views: [], profiles: new Set() };
+          merged[p.pattern].count += p.count;
+          // Get CLR from source videos
+          for (const v of result.all_videos) {
+            if ((v.caption_patterns || []).includes(p.pattern)) {
+              merged[p.pattern].clrs.push(v.clr);
+              merged[p.pattern].views.push(v.views);
+            }
+          }
+          merged[p.pattern].profiles.add(result.username);
+        }
+      }
+      return Object.entries(merged)
+        .map(([pattern, d]) => ({
+          pattern,
+          count: d.count,
+          profiles: [...d.profiles],
+          avg_clr: round2(avg(d.clrs)),
+          avg_views: Math.round(avg(d.views)),
+        }))
+        .sort((a, b) => b.avg_clr - a.avg_clr);
+    })(),
+
+    // Merge beat sequences cross-profile
+    beat_sequences: (() => {
+      const merged = {};
+      for (const result of allResults) {
+        for (const s of (result.beat_sequences || [])) {
+          if (!merged[s.sequence]) merged[s.sequence] = { count: 0, clrs: [], views: [] };
+          merged[s.sequence].count += s.count;
+          // Approximate from avg × count (not perfect but avoids re-processing all videos)
+          for (let i = 0; i < s.count; i++) {
+            merged[s.sequence].clrs.push(s.avg_clr);
+            merged[s.sequence].views.push(s.avg_views);
+          }
+        }
+      }
+      return Object.entries(merged)
+        .map(([seq, d]) => ({
+          sequence: seq,
+          count: d.count,
+          avg_clr: round2(avg(d.clrs)),
+          avg_views: Math.round(avg(d.views)),
+        }))
+        .filter(s => s.count >= 3)
+        .sort((a, b) => b.avg_clr - a.avg_clr);
+    })(),
   };
 
   const libPath = path.join(REF_DIR, "pattern-library.json");
@@ -583,6 +761,13 @@ function generatePatternLibrary(allResults) {
   console.log(`\n  CIERRES — Ranking cross-profile:`);
   for (const p of library.closing_patterns.filter(p => p.count >= 3).slice(0, 8)) {
     console.log(`    ${p.pattern.padEnd(20)} | ${String(p.count).padStart(4)}x | CLR: ${String(p.avg_clr + "%").padStart(8)} | ${p.profiles.join(", ")}`);
+  }
+
+  if (library.caption_patterns.length > 0) {
+    console.log(`\n  CAPTIONS — Ranking cross-profile:`);
+    for (const p of library.caption_patterns.filter(p => p.count >= 10).slice(0, 8)) {
+      console.log(`    ${p.pattern.padEnd(20)} | ${String(p.count).padStart(4)}x | CLR: ${String(p.avg_clr + "%").padStart(8)} | ${p.profiles.join(", ")}`);
+    }
   }
 
   // Export markdown
@@ -632,6 +817,28 @@ function generatePatternLibrary(allResults) {
       md += `${i + 1}. **@${c.profile}** (CLR ${c.clr}%, ${c.views.toLocaleString()} views)\n`;
       md += `   Buildup (${c.buildup.buildup_type}, ${c.buildup.buildup_duration}s): "${c.buildup.buildup_text.slice(0, 150)}"\n`;
       md += `   CTA: "${c.buildup.cta_text.slice(0, 100)}"\n\n`;
+    }
+
+    if (library.caption_patterns && library.caption_patterns.length > 0) {
+      md += `\n---\n\n`;
+      md += `## Patrones de CAPTION × Performance\n\n`;
+      md += `Qué tipo de descripción correlaciona con mejor engagement.\n\n`;
+      md += `| Patrón | Usos | Avg CLR | Avg Views | Perfiles |\n`;
+      md += `|--------|-----:|--------:|----------:|---------|\n`;
+      for (const p of library.caption_patterns.filter(p => p.count >= 5)) {
+        md += `| **${p.pattern}** | ${p.count} | ${p.avg_clr}% | ${p.avg_views.toLocaleString()} | ${p.profiles.join(", ")} |\n`;
+      }
+    }
+
+    if (library.beat_sequences && library.beat_sequences.length > 0) {
+      md += `\n---\n\n`;
+      md += `## Secuencias de BEATS (Q1→Q2→Q3→Q4) × Performance\n\n`;
+      md += `Cómo se estructura el cuerpo del video en 4 cuartos temporales.\n\n`;
+      md += `| Secuencia | Usos | Avg CLR | Avg Views |\n`;
+      md += `|-----------|-----:|--------:|----------:|\n`;
+      for (const s of library.beat_sequences.slice(0, 15)) {
+        md += `| ${s.sequence} | ${s.count} | ${s.avg_clr}% | ${s.avg_views.toLocaleString()} |\n`;
+      }
     }
 
     md += `---\n\n`;

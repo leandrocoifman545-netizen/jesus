@@ -19,9 +19,13 @@ argument-hint: [semana] [avatar] [tema]
 2. `.data/ig-references/ramiro.cubria_captions-carruseles.md` — data de carruseles (190 posts)
 3. `.data/ig-references/ramiro.cubria_micro-patrones.md` — micro-patrones de engagement
 4. `.data/motor-audiencia.md` — tensiones, vocabulario, objeciones, triggers
-5. `.data/avatares-adp.md` — los 7 avatares con pesos
+5. `.data/avatares-adp.md` — los 8 avatares con pesos
 6. `.data/stories-lead-magnets.md` — lead magnets disponibles para CTA
 7. `.memory/jesus-tono-adp-nuevo.md` — tono de Jesús (voseo argentino, consejero)
+
+### Para optimización de captions y timing:
+8. `.data/ig-references/caption_analysis.md` — correlación palabras×CLR (usar para elegir palabras que retienen)
+9. `.data/ig-references/temporal_analysis.md` — mejores días/horas para publicar (usar para recomendar timing)
 
 ### Condicionales:
 - Si se necesitan ángulos frescos: `.data/angulos-expandidos.md`

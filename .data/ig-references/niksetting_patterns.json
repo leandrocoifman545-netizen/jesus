@@ -1,6 +1,6 @@
 {
   "username": "niksetting",
-  "analyzed_at": "2026-03-25T10:51:50.061Z",
+  "analyzed_at": "2026-03-25T11:17:26.928Z",
   "total_analyzed": 10,
   "opening_patterns": [
     {
@@ -316,6 +316,158 @@
       "avg_views": 76028
     }
   ],
+  "caption_patterns": [
+    {
+      "pattern": "dm_cta",
+      "count": 2,
+      "avg_clr": 11.47,
+      "avg_views": 104241
+    },
+    {
+      "pattern": "corta",
+      "count": 3,
+      "avg_clr": 10.21,
+      "avg_views": 40226
+    },
+    {
+      "pattern": "cta_generico",
+      "count": 3,
+      "avg_clr": 9.51,
+      "avg_views": 76028
+    },
+    {
+      "pattern": "larga",
+      "count": 3,
+      "avg_clr": 7.94,
+      "avg_views": 22345
+    },
+    {
+      "pattern": "sin_hashtags",
+      "count": 10,
+      "avg_clr": 6.38,
+      "avg_views": 80029
+    },
+    {
+      "pattern": "muy_larga",
+      "count": 3,
+      "avg_clr": 2.84,
+      "avg_views": 196980
+    },
+    {
+      "pattern": "media",
+      "count": 1,
+      "avg_clr": 0.85,
+      "avg_views": 21634
+    }
+  ],
+  "beat_sequences": [
+    {
+      "sequence": "narrativa_general→narrativa_general→narrativa_general→narrativa_general",
+      "count": 3,
+      "avg_clr": 2.12,
+      "avg_views": 148948
+    }
+  ],
+  "beat_position_stats": {
+    "Q1_setup": [
+      {
+        "pattern": "narrativa_general",
+        "count": 5,
+        "avg_clr": 4.62
+      },
+      {
+        "pattern": "demo_proceso",
+        "count": 1,
+        "avg_clr": 2.99
+      },
+      {
+        "pattern": "autoridad",
+        "count": 1,
+        "avg_clr": 2.99
+      },
+      {
+        "pattern": "agitacion_leve",
+        "count": 1,
+        "avg_clr": 1.11
+      },
+      {
+        "pattern": "future_pacing",
+        "count": 1,
+        "avg_clr": 1.11
+      }
+    ],
+    "Q2_develop": [
+      {
+        "pattern": "demolicion_objecion",
+        "count": 1,
+        "avg_clr": 15.83
+      },
+      {
+        "pattern": "future_pacing",
+        "count": 1,
+        "avg_clr": 15.83
+      },
+      {
+        "pattern": "qa_rapido",
+        "count": 1,
+        "avg_clr": 15.83
+      },
+      {
+        "pattern": "narrativa_general",
+        "count": 5,
+        "avg_clr": 2.09
+      },
+      {
+        "pattern": "demo_proceso",
+        "count": 1,
+        "avg_clr": 0.9
+      }
+    ],
+    "Q3_escalate": [
+      {
+        "pattern": "comparacion",
+        "count": 1,
+        "avg_clr": 15.83
+      },
+      {
+        "pattern": "qa_rapido",
+        "count": 1,
+        "avg_clr": 15.83
+      },
+      {
+        "pattern": "narrativa_general",
+        "count": 5,
+        "avg_clr": 2.09
+      },
+      {
+        "pattern": "demo_proceso",
+        "count": 1,
+        "avg_clr": 0.9
+      }
+    ],
+    "Q4_resolve": [
+      {
+        "pattern": "demo_proceso",
+        "count": 1,
+        "avg_clr": 15.83
+      },
+      {
+        "pattern": "narrativa_general",
+        "count": 4,
+        "avg_clr": 2.34
+      },
+      {
+        "pattern": "agitacion_leve",
+        "count": 1,
+        "avg_clr": 1.11
+      },
+      {
+        "pattern": "tension",
+        "count": 1,
+        "avg_clr": 0.9
+      }
+    ]
+  },
   "top_hooks": [
     {
       "shortCode": "C4tUqCNikgt",
@@ -457,7 +609,8 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 1
+        "word_count": 1,
+        "beat_map": null
       },
       "closing": {
         "text": "",
@@ -468,7 +621,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "quick stop in norway"
+      "caption_preview": "quick stop in norway",
+      "caption_patterns": [
+        "corta",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DWEUr3RjNDq",
@@ -500,7 +657,44 @@
           "future_pacing",
           "qa_rapido"
         ],
-        "word_count": 539
+        "word_count": 539,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "en saber exactamente qué prevene a un comprador de comprar. Cuando tienes un nuevo cliente en marcha, la primera cosa que quieres hacer es que le hagas 10 preguntas y son estas preguntas muy emocionado que llegaste a la mesa para empezar con nosotros, ¿cuál es tu nombre? La segunda pregunta es por favor díme me lo que era el primer punto de contacto de saber que era la tercera pregunta es de las opciones que te convirtieron en un caldo a calma y qué te hizo pagar en completo, lo que espero que hicieras porque siempre pregunto el hecho de que la gente necesita pagar en completo dentro de mi marketing ahora la gente puede tener diferentes opciones y selecciones que pueden elegir de también quiero saber lo que específicamente les hizo convertir, ¿verdad? Quiero elaborar en su",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 139
+          },
+          {
+            "label": "Q2_develop",
+            "text": "respuesta anterior para que entienda su comportamiento de compra en lo que es la razón por la que pagaron pero no sólo pagaron, por qué pagaron de mí. La siguiente, la quinta, es cuánto tiempo te tomó para decidir empezar a trabajar con nosotros. Imagina que sabes el ciclo de conversión average en el que cuánto tiempo toma para que la gente haga la decisión de trabajar con ti. Puede ser dos semanas después de conocerte o un día. La siguiente es, ¿qué podría haber mejorado para que te empujes la triga más rápido? ¿Es que el proceso de establecimiento de la reunión? ¿Es que la optimización de las ventas? ¿Es que ahora vamos a ir a un estudio de contenido haciendo mejor contenido? No sé qué es.",
+            "patterns": [
+              "demolicion_objecion",
+              "future_pacing",
+              "qa_rapido"
+            ],
+            "word_count": 128
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "quiz algunos testimonios o credibilidad Luego tenemos es la opci que has elegido anteriormente podr ser mejorado espec para que podamos tener la capacidad de mejorar lo que estamos haciendo en tu opci son los ángulos de marketing más poderosos que estás buscando resolver? Así que sé ahora, ¿verdad? lo que estoy haciendo ahora haciendo un video, qué es específicamente decir, ya sea hablar de equipos de jugadores lento, hablar de alta venta, hablar de trabajar en el negocio, en el negocio, hablar de por qué es mejor para cerrar a los DMs en lugar de llamadas de ventas basado en el hecho de que estamos en una economía de confianza. Y, finalmente, ¿cómo convencidos eres antes de que realmente nos signes con nosotros? Y la razón por la que esto es importante es porque queremos saber cuánto leverage tenía el cerrador",
+            "patterns": [
+              "comparacion",
+              "qa_rapido"
+            ],
+            "word_count": 142
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "y lo que hizo el cerrador, ¿verdad? Si esto es un 7 de 10, el cerrador hizo un gran trabajo. Si esto era un 9 de 10, probablemente es solo una transición fácil. Ahora, sabiendo que tenemos el datos, podemos pensar manualmente sobre lo que tenemos que hacer en términos de pasos de acción. También podemos descargar este archivo, que es algo que he hecho ahora, vas a Claude, quiero que copies este formulario lo copies aquí, pones el download aquí ahora, la próxima vez que lo leas Claude te dirá exactamente lo que debes hacer para hacer lo mejor de tu contenido y Claude te dirá lo que te importa el público para que te diga qué más contenido puedes impulsar lo haces mucho más fácil para ti mismo",
+            "patterns": [
+              "demo_proceso"
+            ],
+            "word_count": 130
+          }
+        ]
       },
       "closing": {
         "text": "como... lo hemos hablado tantas veces, Max, ¿cuánto contenido estamos creando esta semana? La razón por la que tengo ideas ilimitadas es porque el mercado me da ideas para hablar porque extrajo la información de ella y creo que esto va a resolver muchos de tus problemas.",
@@ -512,7 +706,13 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "comment “form” and i’ll send you the 10 questions necessary to ask every client when they get onboar"
+      "caption_preview": "comment “form” and i’ll send you the 10 questions necessary to ask every client when they get onboar",
+      "caption_patterns": [
+        "larga",
+        "cta_generico",
+        "dm_cta",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "C7n3FzGiYfv",
@@ -540,7 +740,8 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 18
+        "word_count": 18,
+        "beat_map": null
       },
       "closing": {
         "text": "Genialmente, si quieres escalar, si quieres hacer dinero, si quieres escalar 10, 20, 30, 40, 50, 100, ¿verdad? Ponga a este chico y síguelo, genialmente. Fue la mejor decisión que he hecho en mi vida entera.",
@@ -551,7 +752,13 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Elias scaled from $3,5k to $20k/mo in 14 days 🤝\n\nHe was stuck below $5k/mo tor over 6 months becaus"
+      "caption_preview": "Elias scaled from $3,5k to $20k/mo in 14 days 🤝\n\nHe was stuck below $5k/mo tor over 6 months becaus",
+      "caption_patterns": [
+        "muy_larga",
+        "cta_generico",
+        "dm_cta",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "C_dG_nSC1ek",
@@ -579,7 +786,8 @@
         "patterns": [
           "demolicion_objecion"
         ],
-        "word_count": 29
+        "word_count": 29,
+        "beat_map": null
       },
       "closing": {
         "text": "Y en la primera semana, cerré 7 negocios 10.5k de día, absolutamente Sí, no sé si la gente hace revo y cosas, bro Literalmente, no me importa eso, bro No una vez he regretido Básicamente, invertirme en mí mismo así Así que no hay ninguna razón por la que no tomaría el dinero",
@@ -590,7 +798,12 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "High-ticket clients, the key to scale past $100k/mo.\n\nFollow @niksetting👇"
+      "caption_preview": "High-ticket clients, the key to scale past $100k/mo.\n\nFollow @niksetting👇",
+      "caption_patterns": [
+        "corta",
+        "cta_generico",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DBBO493AVlo",
@@ -618,7 +831,41 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 109
+        "word_count": 109,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "¿Esto? 10 apuntes. Estás pensando en invertir con Nick. Mira dónde estamos. Y, quiero decir, si quieres un mentor verdadero, un mentor verdadero, mira dónde estás.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 26
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Yo ofrecería un retreat de clientes para que 7 clientes aquí, hagan un montón de dinero, de 30 a 100 mil dólares al mes. ¡Viva! Vamos.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 26
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "El tiempo y la implementación son la cosa más importante en business y consiste exactamente en por qué soy rápido,",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 20
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "por qué mis clientes son rápidos y por qué tengo, de todas formas, los mejores resultados de clientes en el mercado. Siete. Siete. Pon tu teléfono. Pon tu laptop en su lado y escucha lo que tengo",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 37
+          }
+        ]
       },
       "closing": {
         "text": "que decirte. ¡Suscríbete al canal!",
@@ -629,7 +876,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Dubai Client Retreat\n\nI want to express my gratitude for everything that happened in my life the las"
+      "caption_preview": "Dubai Client Retreat\n\nI want to express my gratitude for everything that happened in my life the las",
+      "caption_patterns": [
+        "larga",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DHiILp7CTPj",
@@ -658,7 +909,42 @@
           "demo_proceso",
           "autoridad"
         ],
-        "word_count": 55
+        "word_count": 55,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Voy a hacer mis primeros 10 millones de conexiones que he hecho en todo el mundo.",
+            "patterns": [
+              "demo_proceso",
+              "autoridad"
+            ],
+            "word_count": 16
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Ella tiene el conocimiento, tiene la experiencia. ¿Qué estás perdiendo trabajando con este tipo?",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 14
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Nick tiene increíbles testimonios, increíbles productos, increíbles cosas.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 8
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "El hecho de que hay 9 chicos aquí, que son clientes de Nick, lo ha demostrado. ¡Gracias!",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 17
+          }
+        ]
       },
       "closing": {
         "text": "",
@@ -669,7 +955,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Capetown Client Retreat.\n\nAfter months of hard work, celebrating with the people you have achieved a"
+      "caption_preview": "Capetown Client Retreat.\n\nAfter months of hard work, celebrating with the people you have achieved a",
+      "caption_patterns": [
+        "larga",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DVJ2VZNDMMO",
@@ -698,7 +988,42 @@
           "agitacion_fuerte",
           "future_pacing"
         ],
-        "word_count": 171
+        "word_count": 171,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "frameworks, breakdowns de paso a paso, la misma mierda que te pagaste 10.000 por lo que te pagaste gratuito. Esperando que la gente pensara, wow, si esto es bueno, imagina qué sería lo que sería pagado.",
+            "patterns": [
+              "agitacion_leve",
+              "future_pacing"
+            ],
+            "word_count": 36
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Pero eso no es lo que pasó, porque mira tu situación. Lo que pasó es que tomaron tu contenido gratuito, They tried to implement it themselves They got mediocre results And now they think your method doesn't work The people consuming the most of your free content Are the least likely to ever buy from you",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 56
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Because in their mind They already have everything they need And you fucking trained them to believe that The best content doesn't teach people how to do it It teaches them Why the way they're currently doing it",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 38
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Is broken And makes the solution feel obvious sin darlas a ellos. Deberías crear brechas en tu contenido. No deberías llenarlas. Cada post debería dejarlas más cerca de entender el problema y más lejos de poder pensar que pueden resolverlo solos.",
+            "patterns": [
+              "agitacion_leve"
+            ],
+            "word_count": 41
+          }
+        ]
       },
       "closing": {
         "text": "Porque tu audiencia puede resolverlo sin ti. Te has hecho irrelevante por gratis. Y eso es estúpido. Deja de dar a la gente el pez, el rodillo y las coordenadas de GPS. Díganles el océano y vendanles el barco.",
@@ -709,7 +1034,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "frustrating…"
+      "caption_preview": "frustrating…",
+      "caption_patterns": [
+        "corta",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DWOo1s2DFrF",
@@ -739,7 +1068,41 @@
           "qa_rapido",
           "tension"
         ],
-        "word_count": 414
+        "word_count": 414,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Sí, sí, lo vi. Sabes a todos en el equipo. ¿Cuántas personas has visto ir y unirse en los últimos ocho meses? Oh, casi todas. ¿Por qué? Porque ellos no... No me ayudan. Porque todos están f****** comprometidos. todos están comprometidos con uno a otro, no con ellos mismos, nadie se importa con ellos mismos nadie habla de lo importante que es tener un equipo increíble, lo importante que es liderar y compartir y valorar la opinión de tu equipo, en el feedback que tienen, en la visión que tienen",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 90
+          },
+          {
+            "label": "Q2_develop",
+            "text": "en el trabajo que quieren hacer, estos son los componentes de la familia y estos son los que construirán tu negocio cada día. La razón por la que todos están creciendo es porque todos se ponen en segundo lugar. Sí, no entiendo tu perspectiva. Es que he estado luchando desde hace tiempo. Entiendo. Es completamente mi error que no tuviera este teléfono con ti antes. Estas son las personas que se despiertan,",
+            "patterns": [
+              "demo_proceso"
+            ],
+            "word_count": 72
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "llegan a trabajar para la empresa cada d Yo dir que los errores principales fueron en mi parte Porque t como fundador gu el equipo muy bien Es solo eso Pero aparentemente no, porque aparentemente no hicimos este trabajo. Y el hecho de que no hicimos este trabajo no es tu responsabilidad. Es también mi responsabilidad. Es la responsabilidad de ambos. Y la peor cosa de esto es que estamos teniendo este encuentro ahora mismo mientras el equipo tiene fricción con el otro trabajo que hacen. Cuando no hay sinergia en el equipo, cuando no hay una cultura real que la gente pueda aprender, que la gente pueda crecer en nuevas reglas. Nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca, nunca. ¿Por qué ganamos? No es porque estamos motivados a hacer nuestro trabajo cada día.",
+            "patterns": [
+              "demo_proceso"
+            ],
+            "word_count": 146
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "No es porque somos disciplinados. Esto es lo que son las compañías. Están ya motivados o disciplinados. Todos estamos obsesionados con lo que hacemos. Nacimos para ganar. No podemos perder de ninguna manera. Son ellos los que ayudan a que la compañía haga más dinero. Así que la cosa más mínima que puedes hacer como fundador es aprender a comunicarte bien con ellos, aprender a establecer expectativas y aprender a ser un buen líder. Y, de nuevo, disculpa por levantar mi voz a veces, pero creo que es necesario decirte esto, porque yo genuinomente creo que mereces lo mejor, pero nadie te lo va a decir.",
+            "patterns": [
+              "tension"
+            ],
+            "word_count": 106
+          }
+        ]
       },
       "closing": {
         "text": "El hecho de que no te encajes en el equipo de adquisición de Grohe no significa que no eres una buena persona, no significa que no tienes el set de habilidades, no significa que no tienes la visión, No está alineado con lo que estamos haciendo aquí",
@@ -750,7 +1113,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "building an 8 figure company is not easy…\n\nthe only thing that matters is your team. they build your"
+      "caption_preview": "building an 8 figure company is not easy…\n\nthe only thing that matters is your team. they build your",
+      "caption_patterns": [
+        "muy_larga",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DLrNyIMTvig",
@@ -779,7 +1146,41 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 95
+        "word_count": 95,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Este es Jude, y ha sido mi estrategista de contenido durante los últimos tres meses. Escribe contenido, edita asuntos de marketing y entiende la psicología de los compradores.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 28
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Y es la razón exacta por la que voló a Dubai, porque a veces todo lo que alguien necesita es un nuevo medio de vida y alguien que realmente crea en él.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 32
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Los grandes líderes no solo construyen negocios, sino que inspiran y invierten en talento.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 14
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Yo construyo compañías con el propósito de crear fundaciones donde la gente y las ideas escalan más allá de los límites.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 21
+          }
+        ]
       },
       "closing": {
         "text": "Y yo comparto cada paso del proceso con mi equipo para mover con la velocidad máxima, para expandir la adquisición, haciendo su mercado el mejor consultorio.",
@@ -790,7 +1191,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "I spent $10.000 flying out a stranger from the Philippines to Dubai."
+      "caption_preview": "I spent $10.000 flying out a stranger from the Philippines to Dubai.",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DTlWocdjD6C",
@@ -818,7 +1223,41 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 51
+        "word_count": 51,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "It would be a short interview, a quick photo or video shoot, ideally to be scheduled soon.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 17
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Okay, cool. That's great news. How would that work?",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 9
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "We'll have the team coordinate the next steps in time with you. It's okay. Yeah, that's amazing news.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 18
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "That's fucking crazy. Congratulations. Thank you. ¡Gracias!",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 7
+          }
+        ]
       },
       "closing": {
         "text": "",
@@ -829,7 +1268,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Officially on Forbes.\n\nI have a lot to talk about, which i will soon when it’s officially announced."
+      "caption_preview": "Officially on Forbes.\n\nI have a lot to talk about, which i will soon when it’s officially announced.",
+      "caption_patterns": [
+        "muy_larga",
+        "sin_hashtags"
+      ]
     }
   ]
 }

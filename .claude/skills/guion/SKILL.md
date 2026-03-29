@@ -10,12 +10,16 @@ argument-hint: [nicho] [ángulo] [segmento] [funnel] [formato]
 
 ## Paso 0: Pre-flight + Audit rápido (OBLIGATORIO)
 
-### 0a. Extraer winner patterns + session insights:
+### 0a. Extraer winner patterns + session insights + feedback loop:
 ```bash
 node scripts/extract-winner-patterns.mjs
 node scripts/extract-session-insights.mjs
+node scripts/update-winners.mjs
 ```
-Esto actualiza `.data/winner-patterns.md` y `.data/session-insights.md` con data fresca de lo que funcionó y lo que Jesús dijo en sesiones.
+Esto actualiza:
+- `.data/winner-patterns.md` — patterns de los 5 winners originales
+- `.data/session-insights.md` — feedback de Jesús en sesiones
+- `.data/winner-patterns-auto.md` — **FEEDBACK LOOP**: analiza TODAS las generaciones marcadas como winner/recorded y calcula win rates por body type, arco, familia, segmento, ingredientes. Sesgar decisiones hacia lo que tiene mayor win rate.
 
 ### 0b. Correr pre-flight (con nicho si ya se sabe):
 ```bash
@@ -42,6 +46,8 @@ Esto devuelve:
 
 ### 0d. Leer winner patterns y session insights:
 Si existen `.data/winner-patterns.md` y `.data/session-insights.md`, leerlos. Los winner patterns sesgan decisiones (no copiar, sesgar). Las session insights de Jesús tienen más peso que la teoría.
+
+**NUEVO: Si existe `.data/winner-patterns-auto.md`, leerlo también.** Este archivo tiene win rates calculados de TODAS las generaciones. Si un body type tiene 80% win rate y otro tiene 0%, sesgar hacia el de 80%.
 
 ### 0e. Jerarquía de decisiones:
 Leer `.data/jerarquia-decisiones.md`:
@@ -77,6 +83,9 @@ Estos archivos dan contexto que necesitás para tomar decisiones creativas que e
   - `ig-references/patrones-organico-ig.md` — 14 patrones + aperturas/cierres rankeados por CLR (aplica a ads también: lo que retiene en IG retiene en ads)
   - `ig-references/pattern-coverage.md` — qué patrones ADP aún no usó vs cuáles tiene sobreexplotados. **Priorizar UNTAPPED de alto CLR.**
 - **Para inspiración de hooks/aperturas:** `ig-references/pattern-library.md` — top 30 hooks reales rankeados por CLR de 517 videos
+- **Para leads con hooks reales:** `ig-references/herasmedia_hooks_bank.md` — 167 hooks reales con métricas de engagement (consultar en Paso 7)
+- **Para templates de beats probados:** `ig-references/tino_beat_mapping.md` — 28 videos mapeados a 5 beats con 8 templates (consultar en Paso 4c)
+- **Para persuasión invisible:** `.data/stories-persuasion-engine.md` — disolver objeciones DENTRO de la narrativa sin nombrarlas (consultar en Paso 5)
 
 ## Paso 2: Chequear leads quemados
 
@@ -95,19 +104,92 @@ Consultar `.data/motor-audiencia.md` y definir:
 4. **Intento fallido** (para leads) — al menos 1 lead debe venir de la tabla de intentos fallidos.
 5. **Triggers de engagement** — elegir ingredientes que coincidan con los triggers del segmento.
 
-## Paso 4: Definir la BIG IDEA y la cadena de creencias
+## Paso 3b: Validaciones automáticas (enforcement en scripts)
 
-### 4a. Big idea (lo más importante del guion)
-UNA idea específica, no genérica, que es el TEMA de todo el guion. Viene del ángulo elegido:
-- **F1:** big idea sobre QUIÉN SOS → "Sos freelancer y cada mes arrancás de cero"
-- **F2:** big idea sobre UN NICHO/TENDENCIA → "Miles buscan crochet y nadie les vende una guía"
-- **F3:** big idea sobre QUÉ ESTÁS HACIENDO MAL → "Usás IA 4 horas y no generás un peso"
-- **F4:** big idea sobre CÓMO FUNCIONA → "3 pasos, 1 celular, tu primer producto"
-- **F5:** big idea ES UNA HISTORIA → "Cuando perdí $150K aprendí algo"
+**Las siguientes reglas se validan AUTOMÁTICAMENTE por `save-generation.mjs` y `preflight-guion.mjs`. Si se violan, el guardado se BLOQUEA — no hace falta revisión manual.**
+
+### Qué bloquea `save-generation.mjs` (errores que impiden guardar):
+
+**Texto:**
+- **Vocabulario de segmento**: si elegiste segmento B pero no usás "paso a paso", "herramientas", "aprender" → bloqueado. Mínimo 2 palabras del vocabulario del avatar. También bloquea palabras incorrectas para el segmento (ej: "jubilarse" para segmento A joven).
+- **Anti-ficción negativa** (3+ frases genéricas = bloqueo): "cambió su vida", "sin experiencia previa", "miles de personas", "desde la comodidad de su casa", "ingresos extras", etc.
+- **Anti-ficción positiva** (3+ beats sin marcadores de especificidad = bloqueo): cada beat debe tener al menos 1 de: número concreto, nombre propio, objeto cotidiano, producto específico, ciudad. Si un beat es pura abstracción → bloqueado.
+- **Jerga de marketing**: funnel, embudo, lanzamiento, leads, copywriting, engagement, retargeting, awareness, branding
+- **Palabras CLR killer**: "pero bueno", "de todos modos", "en fin", "como sea"
+- **Transición rendida**: empieza con "Pero bueno", "De todos modos", "En fin", "Como sea"
+- **Data interna filtrada**: porcentajes, "562 compradores", "según datos/estudios"
+- **Patrones de escritura IA** (3+ = bloqueo): P-IA1 regla de tres, P-IA2 paralelismo negativo, P-IA4 fillers excesivos, P-IA5 cierre motivacional, P-IA6 beats simétricos, P-IA8 arranques expositivos, P-IA9 datos sin anclaje emocional, P-IA10 preguntas predecibles
+
+**Diversidad:**
+- **Arco repetido** en últimos 3 guiones
+- **Vehículo repetido** 2+ veces en últimos 5
+- **Ingredientes gastados** >3 de F#73/F#74/G#90/B#29
+- **Batch cross-check**: arco o familia repetidos dentro del mismo batch
+
+**Estructura:**
+- **Micro-yes chain** obligatoria si duración > 60s (mínimo 5 puntos, cada frase debe existir en el texto real)
+- Vocabulario prohibido, voseo, hooks repetidos, ángulos duplicados, funciones persuasivas duplicadas
+
+### Qué alerta (warnings, se guarda pero avisa):
+- Cierre con despedida (CLR 0.92 vs 1.48)
+- Sin palabras CLR booster
+- 1-2 patrones IA (no bloquea pero avisa)
+- P-IA3 sinónimo cycling ("producto/negocio/emprendimiento/proyecto" = IA disfrazando repetición)
+- 1-2 frases genéricas o 1-2 beats sin especificidad (anti-ficción)
+- Ingredientes gastados (1-3)
+- Vehículo/venta del modelo repetidos en batch
+- Duración >95s (>110s = bloqueo)
+
+### Qué muestra `preflight-guion.mjs` (data para decidir):
+- Últimas 10 generaciones con arcos, vehículos e ingredientes
+- **Alertas de diversidad automáticas**: sobreuso detectado → dice qué evitar
+- Trends de Google, leads quemados, winner patterns
+
+**No se necesita aprobación manual para avanzar. El preflight informa, el save-generation bloquea.**
+
+## Paso 4: Definir la BIG IDEA (el 80% del resultado se decide ACÁ)
+
+> **La big idea es lo que más mueve la aguja.** Una big idea brutal con ejecución decente le gana a una ejecución perfecta con big idea mediocre. Este paso DEBE llevar más tiempo y esfuerzo que escribir los beats.
+
+### 4a. Generar 3 candidatas de big idea (NO elegir la primera)
+
+**REGLA: Nunca usar la primera big idea que se me ocurre.** Generar mínimo 3 candidatas y evaluar.
+
+Cada candidata debe:
+- Venir del ángulo elegido (F1-F5)
+- Ser específica al nicho (si cambiar el nicho produce la misma idea → es genérica)
+- Tener datos de Google Trends o motor de audiencia que la respalden
+
+| # | Big Idea candidata | Familia | Test de especificidad | Datos que la respaldan |
+|---|---|---|---|---|
+| 1 | "..." | F# | ¿Cambiando nicho sigue igual? Sí/No | Trend/verbatim/dato |
+| 2 | "..." | F# | ¿Cambiando nicho sigue igual? Sí/No | Trend/verbatim/dato |
+| 3 | "..." | F# | ¿Cambiando nicho sigue igual? Sí/No | Trend/verbatim/dato |
+
+**Evaluar cada una con estos 4 criterios:**
+1. **Especificidad** — ¿Solo funciona para ESTE nicho? (si es intercambiable → descartarla)
+2. **Resonancia emocional** — ¿Toca una tensión real del motor de audiencia? (T1-T13)
+3. **Novedad** — ¿Se dijo antes en los últimos 10 guiones? (preflight lo muestra)
+4. **Capacidad de demostración** — ¿Se puede MOSTRAR en 75 segundos? (si es abstracta → no sirve para video)
+
+**Elegir la que gane en más criterios.** Presentar las 3 al usuario con la recomendación.
 
 **Si la big idea es "productos digitales con IA", es genérica y NO SIRVE.** Todo el guion gira alrededor de la big idea.
 
 Para encontrar big ideas nuevas: usar Google Trends (`trends-scan.mjs` o `curl http://localhost:3002/api/trends`). Un dato de Trends × 5 familias = 5+ big ideas distintas. Ver `reglas-diversidad.md` para el proceso completo.
+
+### Elegir nicho por POTENCIAL DE VENTA, no solo cobertura
+
+El auto-brief elige el nicho "menos usado" para cubrir la matriz. Pero cobertura ≠ potencial. Al evaluar un nicho, considerar estos 3 factores:
+
+1. **Búsqueda activa** — ¿La gente busca esto en Google? (Trends subiendo > estable > bajando)
+2. **Dolor urgente** — ¿Es un problema que NECESITA solución ahora, o un hobby? (urgente: "necesito ganar plata" > hobby: "quiero aprender macramé por diversión")
+3. **Capacidad de pago** — ¿El avatar de ese nicho puede pagar $5? (profesional de salud > estudiante secundario)
+
+**Si un nicho tiene alta búsqueda + dolor urgente + capacidad de pago → priorizarlo aunque tenga buena cobertura.**
+**Si un nicho solo "falta en la matriz" pero tiene búsqueda baja + sin urgencia → no priorizarlo solo por cobertura.**
+
+El preflight trae datos de Trends. Cruzarlos con esta evaluación antes de elegir.
 
 ### 4b. Creencia central
 La UNA cosa que, si el viewer la acepta, la venta es inevitable. Se deriva de la big idea.
@@ -190,6 +272,23 @@ Consultar `reglas-diversidad.md` → sección "Ingredientes gastados". Si vas a 
 
 **Ingredientes frescos a priorizar:** D#49 (redefinición del juego), E#67 (vulnerabilidad estratégica), F#75 (mecanismo con nombre), F#76 (metáfora), F#82 (atajo legítimo), G#94 (meta-proof), K#125-127 (cierre NLP).
 
+## Paso 4.5: CALIBRAR VOZ antes de escribir (no después)
+
+> **No escribir como IA y después parchear.** Leer la voz de Jesús ANTES de escribir una palabra. Es como un actor que entra en personaje antes de la escena, no después.
+
+**OBLIGATORIO antes de escribir el cuerpo:**
+
+1. Releer 3-5 frases textuales de `jesus-tono-adp-nuevo.md` que sean del MISMO tono que el vehículo elegido:
+   - Si vehículo es confrontativo → buscar frases de Jesús en modo duro
+   - Si es empático → buscar frases en modo cálido
+   - Si es demo → buscar frases en modo explicativo
+
+2. Releer 2-3 verbatims del avatar del segmento elegido (de `motor-audiencia.md` sección 3)
+
+3. **Ancla de voz:** Antes de escribir cada beat, preguntarse: "¿Jesús diría esto en voz alta frente a cámara, tal cual?" Si la respuesta es no → reescribirlo como lo diría él ANTES de avanzar al siguiente beat.
+
+**Esto reemplaza la corrección post-hoc del humanizer como paso principal.** El humanizer sigue corriendo como red de seguridad (Paso 9b), pero el objetivo es que no tenga nada que corregir.
+
 ## Paso 5: Escribir el CUERPO como micro-VSL de 5 beats
 
 **Regla cardinal: el cuerpo funciona SOLO, sin leads.** Primero el cuerpo, después los leads.
@@ -199,12 +298,32 @@ Consultar `reglas-diversidad.md` → sección "Ingredientes gastados". Si vas a 
 LEAD (5-8s) → Beat 1: Identificación → Beat 2: Quiebre → Beat 3: Mecanismo → Beat 4: Demolición → Beat 5: Prueba → VENTA DEL MODELO → TRANSICION (Capa 1) → [CORTE] → BLOQUE CTA (capas 2-6)
 ```
 
+### ANTES de escribir: diseñar el VIAJE EMOCIONAL del espectador
+
+> **No llenar casillas — diseñar una experiencia.** Definir en qué estado emocional está el espectador DESPUÉS de cada beat. Si no podés nombrar la emoción, el beat no está haciendo su trabajo.
+
+| Beat | Función | El espectador SIENTE después de este beat | Turning point? |
+|------|---------|------------------------------------------|----------------|
+| 1. Identificación | `identificacion` | "Esto me está pasando a mí" — reconocimiento + leve ansiedad | |
+| 2. Quiebre | `quiebre` | "Mierda, lo que estoy haciendo no funciona" — sorpresa + incomodidad | ⭐ **Este suele ser EL momento** |
+| 3. Mecanismo | `mecanismo` | "Ah, hay otra forma" — alivio + curiosidad | |
+| 4. Demolición | `demolicion` | "Mi excusa no aplica acá" — resistencia desarmada | |
+| 5. Prueba | `prueba` | "Si esa persona pudo, yo puedo" — esperanza concreta | |
+
+**El TURNING POINT** es el segundo exacto donde el espectador pasa de escuchar pasivamente a escuchar activamente. Decidir cuál beat lo tiene y dedicarle la MEJOR frase del guion. Generalmente es el quiebre, pero puede ser la demolición (si la objeción es fuerte) o el mecanismo (si el cómo es lo que sorprende).
+
+**En la metadata, registrar:** `turning_point_beat` y `viewer_emotion_after` en cada sección del JSON.
+
+### Persuasión invisible (del motor de stories → aplica igual a ads):
+Antes de escribir, elegir 1-2 objeciones del avatar y **disolverlas DENTRO de la narrativa** sin nombrarlas explícitamente. No decir "no necesitás experiencia" → mostrar a alguien sin experiencia logrando el resultado. Ver `stories-persuasion-engine.md` para técnicas.
+
 ### Cómo escribir cada beat:
 1. **Tomar los 5 beats** definidos en el Paso 4c, cada uno con su función persuasiva y micro-creencia
 2. **Escribir cada beat como una sección corta (12-20s, 30-45 palabras)**
 3. **Cada beat tiene 1 función = 1 micro-creencia** — nada se mezcla, nada se diluye
 4. **Los beats se apilan**: al final del beat 5, la creencia central tiene que sentirse inevitable
 5. **El vehículo elegido da el TONO** — un guion de "historia con giro" cuenta los 5 beats como historia; uno de "demolición" los cuenta con tono confrontativo
+6. **Verificar el viaje emocional**: ¿cada beat genera la emoción declarada arriba? Si no, reescribir
 
 ### Cómo el vehículo tiñe los beats (guía, no camisa de fuerza):
 - **Demolición de mito:** El quiebre es el beat estrella. La identificación arranca con "vos creés que..."
@@ -220,6 +339,18 @@ LEAD (5-8s) → Beat 1: Identificación → Beat 2: Quiebre → Beat 3: Mecanism
 - 15s=30-40 | 30s=65-85 | 45s=95-115 | 60s=125-150 | 75s=155-185 | 90s=190-220
 
 ### Duración objetivo: 75-90 segundos (mínimo 75s para micro-VSL completo de 5 beats)
+
+### TONO según nivel de funnel (no solo CTA distinto — TODO cambia)
+
+El funnel no es solo qué CTA usar. Es cuánto sabe el espectador y qué asumís.
+
+| Nivel | El espectador... | Tono | Lo que cambia |
+|-------|-----------------|------|---------------|
+| **TOFU** | Nunca vio a Jesús. No sabe qué es ADP. | 100% curiosidad, cero presión. No asumís nada. El guion debe funcionar para alguien que nunca escuchó de productos digitales. | Más contexto, más analogías cotidianas, beat de identificación más largo. |
+| **MOFU** | Vio 1-3 ads. Sabe que existe algo con IA y productos digitales. | Profundización. Ya no explicás qué es — explicás por qué FUNCIONA y por qué AHORA. | Menos contexto básico, más mecanismo y demolición, puede nombrar "el taller". |
+| **RETARGET** | Vio 5+ ads, visitó la página, quizás habló con el bot. | Ataque directo a la objeción que los frenó. Asumís que ya saben todo. | Sin introducción, entrar directo al dolor/objeción, tono más personal ("sé que ya viste esto"), urgencia real. |
+
+**REGLA: Si escribís un guion RETARGET con tono de TOFU (explicando todo desde cero), estás desperdiciando la atención de alguien que ya te conoce.**
 
 ### La venta del modelo (VA DENTRO del cuerpo, después del mecanismo):
 Elegir 1 de los 10 tipos de `venta-modelo-negocio.md`. 2-3 oraciones que cierran la lógica de POR QUÉ productos digitales con IA es el camino. NO mencionar precio, NO mencionar riesgo cero — eso va en los bloques CTA.
@@ -244,6 +375,8 @@ Elegir 1 de los 10 tipos de `venta-modelo-negocio.md`. 2-3 oraciones que cierran
 - [ ] El mecanismo cierra con VENDERLO ("y lo vendés")
 - [ ] Si usa historia de Jesús: SOLO citas de jesus-historia.md
 - [ ] Punchy y compacto — cada beat es 12-20s, no más
+- [ ] **Turning point definido:** ¿cuál beat tiene EL MOMENTO donde el espectador pasa de pasivo a activo? Ese beat tiene la mejor frase del guion
+- [ ] **Viaje emocional verificado:** ¿cada beat genera la emoción declarada en la tabla? Si no → reescribir
 
 ## Paso 6: Escribir la TRANSICION (Capa 1)
 
@@ -274,9 +407,30 @@ Dato: cierre con acción = CLR 1.48-1.61 vs cierre con despedida = CLR 0.92 (-37
 La despedida puede ir en el caption o como texto en pantalla — no como última palabra hablada.
 Excepción: videos de awareness puro (sin CTA) pueden cerrar con despedida cálida.
 
-## Paso 7: Escribir los LEADS (5 variantes)
+## Paso 7: Escribir los LEADS como 5 EXPERIMENTOS (no solo variantes)
+
+> **Cada lead testea una HIPÓTESIS distinta sobre qué hace que este avatar mire.** No son 5 formas de decir lo mismo — son 5 apuestas sobre qué palanca emocional funciona. Después de testear, sabés QUÉ hipótesis ganó, no solo qué frase.
 
 Cada lead = 2-3 oraciones: [Abrir gap] + [Negar respuesta obvia] + [Puente al cuerpo]
+
+### 5 leads = 5 hipótesis. Definir la hipótesis ANTES de escribir:
+
+| Lead | Hipótesis | Tipo | Palanca emocional |
+|------|-----------|------|-------------------|
+| 1 | "El avatar responde a ver su situación exacta" | situacion_especifica | Reconocimiento |
+| 2 | "El avatar responde a un dato que lo sorprende" | dato_concreto / contraintuitivo | Curiosidad |
+| 3 | "El avatar responde a que le señalen lo que hace mal" | provocacion / pregunta_incomoda | Confrontación |
+| 4 | "El avatar responde a ver que alguien como él lo logró" | historia_mini | Prueba social |
+| 5 | "El avatar responde a una promesa de proceso simple" | negacion_directa / timeline | Esperanza concreta |
+
+**Las 5 palancas deben ser DISTINTAS.** Si 3 leads apelan a la curiosidad con distinta frase, estás testeando frases — no hipótesis. Mínimo 4 palancas emocionales distintas en los 5 leads.
+
+**Inspiración de hooks reales:** Consultar `ig-references/herasmedia_hooks_bank.md` (167 hooks con métricas). No copiar — usar como semilla para hipótesis. Los hooks con mayor engagement sugieren qué palancas emocionales funcionan en la práctica.
+
+**En la metadata del JSON, registrar la hipótesis:**
+Agregar `hypothesis` a cada hook: `{ "hook_type": "provocacion", "hypothesis": "confrontación directa sobre lo que hace mal", ... }`
+
+Esto permite después cruzar: ¿qué hipótesis gana más? ¿Reconocimiento le gana a confrontación para segmento B?
 
 ### 5 leads, cada uno con tipo DISTINTO. Tipos disponibles:
 situacion_especifica | dato_concreto | pregunta_incomoda | confesion | contraintuitivo | provocacion | historia_mini | analogia | negacion_directa | observacion_tendencia | timeline_provocacion | contrato_compromiso | actuacion_dialogo | anti_publico
@@ -314,6 +468,30 @@ Si un lead matchea un patrón prohibido o es >55% similar a un hook existente, *
 - Lead ≠ primera sección del body (no repetir la misma revelación)
 - NUNCA los 7 patrones estructurales de arriba (validación automática los bloquea)
 - NUNCA abrir un lead con "Mi/Mis..." ("Mi sistema", "Mis clientes", "Mi método"). Dato: CLR 0.95 (el más bajo de 12 tipos de apertura en 191 videos analizados). El possessive sin ancla al espectador se siente narcisista. Siempre anclar al avatar primero.
+
+## Paso 7b: Verificar coherencia LEAD → BODY (la promesa se cumple)
+
+> **Si el lead promete algo que el body no entrega, el espectador se siente estafado y corta.** Cada lead hace una promesa implícita. El body debe cumplirla.
+
+Para cada lead, responder:
+1. **¿Qué promete este lead?** (implícita o explícitamente)
+2. **¿En qué beat del body se cumple?**
+3. **Si no se cumple → reescribir el lead o ajustar el body**
+
+Ejemplos:
+- Lead dice "3 modelos de negocio online" → el body DEBE mencionar al menos 3 modelos (no solo 1)
+- Lead dice "lo que nadie te cuenta sobre vender con IA" → el body DEBE tener una revelación no-obvia (no solo "usá ChatGPT")
+- Lead dice "una señora de 58 años..." → el body DEBE incluir esa prueba social (no puede ser solo en el lead)
+
+**Formato rápido para verificar:**
+
+| Lead # | Promesa implícita | Beat donde se cumple | ¿Se cumple? |
+|--------|-------------------|---------------------|-------------|
+| 1 | ... | Beat # | ✅/❌ |
+| 2 | ... | Beat # | ✅/❌ |
+| ... | | | |
+
+**Si algún lead tiene ❌ → reescribir antes de avanzar.** Un lead brillante que no conecta con el body es peor que uno mediocre que sí conecta, porque genera expectativa y la rompe.
 
 ## Paso 8: Asignar 3 BLOQUES CTA (de ctas-biblioteca.md)
 
@@ -359,7 +537,7 @@ Copiar las capas textuales de `ctas-biblioteca.md`. NO inventar. NO meter precio
 - [ ] **Motor audiencia:** vocabulario del segmento usado (palabras EXACTAS del avatar, no genéricas)
 - [ ] **Motor audiencia:** al menos 1 lead viene de intentos fallidos (tabla motor)
 - [ ] **Motor audiencia:** triggers de engagement coinciden con ingredientes elegidos
-- [ ] **Motor audiencia:** cadena micro-yes presente si duración > 60s
+- [ ] **Motor audiencia:** cadena micro-yes presente si duración > 60s (5+ puntos en `micro_yes_chain`, cada frase REAL del guion — save-generation valida cross-reference)
 - [ ] **Anti-ficción:** Cada beat tiene al menos 1 detalle que nadie inventaría (no genéricos)
 - [ ] **Mecanismo nombrado:** El producto/método tiene nombre propietario, no genérico
 - [ ] **Números no-redondos:** Usar $35.000 (no $30.000), 9 días (no 1 semana), 53 audios (no "muchos")
@@ -373,13 +551,20 @@ Copiar las capas textuales de `ctas-biblioteca.md`. NO inventar. NO meter precio
 
 **Correr el skill `/humanizer` integrado** sobre leads + cuerpo + transición ANTES de presentar.
 
-Escanear contra los 10 patrones anti-IA del humanizer:
+Escanear contra los 13 patrones anti-IA del humanizer:
 - P-IA1 (regla de tres), P-IA2 (paralelismo negativo), P-IA3 (sinónimo cycling)
 - P-IA4 (filler de transición), P-IA5 (cierre motivacional genérico)
 - P-IA6 (estructura simétrica), P-IA7 (vocabulario elevado)
 - P-IA8 (estructura expositiva), P-IA9 (datos sin anclaje), P-IA10 (preguntas predecibles)
+- **P-IA9 (datos sin anclaje emocional)** — números de resultado sueltos sin contexto sensorial/emocional
+- **P-IA11 (data interna filtrada)** — porcentajes, "562 compradores", estadísticas en el copy
+- **P-IA12 (palabras CLR killer)** — "pero bueno", "en fin", "funnel", "curso", despedidas como cierre
+- **P-IA13 (jerga de marketing)** — "leads", "monetizar", "escalable", "conversión" en el body
 
-Correr los 6 checks de voz de Jesús: V1-V6.
+Correr los 8 checks de voz de Jesús: V1-V8.
+- V1-V6: checks originales (pregunta con filo, ritmo, muletillas, cierre concreto, monólogo hablado, tough love)
+- **V7: transición sin rendición** — energía igual o mayor que el cuerpo
+- **V8: cierre = instrucción** — última frase hablada es acción, no despedida (CLR 1.48 vs 0.92)
 
 **Si hay 3+ problemas → reescribir ANTES de presentar.**
 **Si hay 1-2 → presentar con ⚠️.**
@@ -387,8 +572,12 @@ Correr los 6 checks de voz de Jesús: V1-V6.
 Incluir al final del guion:
 ```
 ## Check de humanidad
-- P-IA detectados: [lista o "ninguno"]
-- Checks de voz: V1 ✅/❌ | V2 ✅/❌ | V3 ✅/❌ | V4 ✅/❌ | V5 ✅/❌ | V6 ✅/❌
+- P-IA detectados (1-10): [lista o "ninguno"]
+- P-IA11 (data interna): ✅/❌
+- P-IA12 (palabras CLR killer): ✅/❌ [palabras encontradas]
+- P-IA12 (palabras CLR booster): [boosters presentes o "⚠️ Ninguna — considerar agregar"]
+- P-IA13 (jerga marketing): ✅/❌
+- Checks de voz: V1 ✅/❌ | V2 ✅/❌ | V3 ✅/❌ | V4 ✅/❌ | V5 ✅/❌ | V6 ✅/❌ | V7 ✅/❌ | V8 ✅/❌
 - Ajustes hechos: [lista o "ninguno"]
 ```
 
@@ -408,6 +597,7 @@ Mostrar en markdown:
 ```json
 {
   "title": "Título corto del guion",
+  "batch": "nombre-del-batch (OBLIGATORIO si es parte de un plan semanal o batch — permite cross-check de diversidad dentro del batch)",
   "script": {
     "angle_family": "identidad|oportunidad|confrontacion|mecanismo|historia",
     "angle_specific": "1.2_oficinista_atrapado",
@@ -428,15 +618,23 @@ Mostrar en markdown:
       { "belief": "micro-creencia 1", "installed_via": "técnica usada", "persuasion_function": "identificacion", "section_name": "Nombre sección" }
     ],
     "hooks": [
-      { "variant_number": 1, "hook_type": "situacion_especifica", "script_text": "texto del lead", "timing_seconds": 7 }
+      { "variant_number": 1, "hook_type": "situacion_especifica", "hypothesis": "el avatar responde a ver su situación exacta", "emotional_lever": "reconocimiento", "script_text": "texto del lead", "timing_seconds": 7 }
     ],
     "development": {
       "framework_used": "micro_vsl_5_beats",
       "emotional_arc": "revelacion_oportunidad",
       "sections": [
-        { "section_name": "Identificación", "persuasion_function": "identificacion", "micro_belief": "Este problema es mío", "script_text": "texto", "timing_seconds": 15 }
+        { "section_name": "Identificación", "persuasion_function": "identificacion", "micro_belief": "Este problema es mío", "viewer_emotion_after": "reconocimiento + leve ansiedad", "is_turning_point": false, "script_text": "texto", "timing_seconds": 15 }
       ]
     },
+    "micro_yes_chain": [
+      { "location": "lead", "technique": "afirmación|pregunta_retórica|dato_anclado|future_pacing", "phrase": "frase EXACTA del guion que actúa como micro-yes" },
+      { "location": "beat_1", "technique": "...", "phrase": "..." },
+      { "location": "beat_2", "technique": "...", "phrase": "..." },
+      { "location": "beat_3", "technique": "...", "phrase": "..." },
+      { "location": "beat_4", "technique": "...", "phrase": "..." },
+      { "location": "pre_cta", "technique": "...", "phrase": "..." }
+    ],
     "ingredients_used": [
       { "category": "A", "ingredient_number": 1, "ingredient_name": "nombre" }
     ],
@@ -454,19 +652,35 @@ Mostrar en markdown:
 - `timing_seconds` en cada sección y cada hook
 - `belief_change.mechanism` (los 3 campos: old_belief, mechanism, new_belief)
 - `micro_beliefs` como array de OBJETOS (no strings)
+- `micro_yes_chain` como array de OBJETOS con `location`, `technique` y `phrase` (la phrase debe existir en el texto real del guion)
 
 ```bash
 echo '{ JSON }' | node scripts/save-generation.mjs
 ```
 
-**El script valida automáticamente antes de guardar.** Si faltan campos obligatorios, RECHAZA el guardado. Campos validados:
+**El script valida automáticamente antes de guardar.** Si faltan campos o hay violaciones, RECHAZA el guardado:
+
+**Estructura:**
 - `angle_family`, `angle_specific`, `body_type`, `segment`, `funnel_stage`, `niche`, `model_sale_type`, `transition_text`
-- hooks con 2+ oraciones
-- cuerpo (development.sections con `persuasion_function` + `micro_belief` en cada sección)
-- `belief_change`, `micro_beliefs` (1 por beat), `ingredients_used`
+- hooks con 2+ oraciones, cuerpo con `persuasion_function` + `micro_belief` por sección
+- `belief_change`, `micro_beliefs` (1 por beat), `ingredients_used`, `cta_blocks` (3)
 - funciones persuasivas DISTINTAS entre beats (sin duplicados)
-- `cta_blocks` (3 bloques)
-- Voseo argentino (no tú/tienes/puedes en el cuerpo)
+- Voseo argentino (no tú/tienes/puedes)
+
+**Calidad (nuevo):**
+- `micro_yes_chain` con 5+ puntos si duración > 60s, cada frase debe existir en el texto real (cross-reference)
+- 🤖 **Patrones de escritura IA** (P-IA1 regla de tres, P-IA2 paralelismo negativo, P-IA4 fillers, P-IA5 cierre motivacional, P-IA6 beats simétricos, P-IA8 arranques expositivos, P-IA10 preguntas predecibles) → 3+ patrones = BLOQUEO
+- 📉 **Jerga de marketing** (funnel, embudo, leads, etc.) → BLOQUEO
+- 📉 **Palabras CLR killer** (pero bueno, en fin, de todos modos) → BLOQUEO
+- 📉 **Transición rendida** (empieza con "Pero bueno", "En fin") → BLOQUEO
+- 🔒 **Data interna filtrada** (porcentajes, "562 compradores") → BLOQUEO
+- 🔁 **Arco repetido** en últimos 3 guiones → BLOQUEO
+- 🔁 **Vehículo repetido** 2+ veces en últimos 5 → BLOQUEO
+- 🔁 **Ingredientes gastados** >3 de F#73/F#74/G#90/B#29 → BLOQUEO
+- 🔁 **Batch cross-check** (arco/familia repetidos dentro del mismo batch) → BLOQUEO
+
+**Warnings (se guarda pero avisa):**
+- Cierre con despedida, sin palabras CLR booster, ingredientes gastados (1-3), 1-2 patrones IA
 
 **Si falla la validación:** corregir y volver a intentar. NUNCA usar `--force` para saltear errores.
 

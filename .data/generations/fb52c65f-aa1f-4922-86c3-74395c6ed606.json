@@ -1,0 +1,173 @@
+{
+  "id": "fb52c65f-aa1f-4922-86c3-74395c6ed606",
+  "briefId": "35bfea5c-9584-4c9e-b161-8ccc0473fdf7",
+  "title": "¿En qué se diferencia de lo que ya existe?",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.7_modelo_equivocado",
+    "body_type": "victor_elas_conversation",
+    "segment": "A",
+    "funnel_stage": "MOFU",
+    "niche": "comparación: Hotmart/Fiverr/afiliados",
+    "model_sale_type": "cementerio_modelos",
+    "visual_format": "split_screen",
+    "avatar": "martin",
+    "awareness_level": 4,
+    "emotional_arc": "provocacion_evidencia",
+    "tension": "T9",
+    "transition_text": "PERSONA A: ¿Dónde veo el proceso completo?\nJESÚS: Tocá el botón de acá abajo.",
+    "total_duration_seconds": 55,
+    "word_count": 360,
+    "belief_change": {
+      "old_belief": "Es lo mismo que Hotmart/Fiverr/afiliados",
+      "mechanism": "En esos trabajás para otro — acá sos dueño del 100%",
+      "new_belief": "Este es un modelo completamente distinto"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, esto que hacés... ¿no es lo mismo que Hotmart pero con otro nombre?\nJESÚS: Hotmart es una plataforma. Yo te enseño a crear algo que la gente quiera ANTES de subirlo a cualquier lado.\nPERSONA A: Explicame la diferencia.\nJESÚS: Sentate porque son varias.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Probé Fiverr, probé Hotmart, me hablaron de Digistore. ¿Qué tiene de distinto lo tuyo?\nJESÚS: En los 3 sos un número. Acá sos dueño de tu negocio. Escuchá la diferencia.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: A ver, convenceme. ¿Por qué no voy a Hotmart, subo algo y listo?\nJESÚS: Porque vas a subir algo que nadie quiere, no vas a vender nada, y vas a decir \"esto no funciona.\" Te apuesto lo que quieras.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Me estás vendiendo lo mismo que los otros pero con distinto packaging.\nJESÚS: Los otros te venden la plataforma. Yo te enseño el proceso. Subir algo a Hotmart sin saber qué vender es como abrir un local sin saber qué vendés. Sentate.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Freelance, afiliados, dropshipping, cursos online. Ya escuché de todo. Dame UNA razón para escucharte.\nJESÚS: Una: en todos esos modelos trabajás para otro. En este, sos dueño. ¿Querés saber por qué eso importa?\nPERSONA A: ¿Qué diferencia hay entre lo tuyo y subir algo a Hotmart?\nJESÚS: Hotmart es un estante. Si subís basura al estante, no vende. El estante no tiene la culpa.\nPERSONA A: Entonces el problema no es la plataforma.\nJESÚS: El problema es que la gente sube cosas que NADIE BUSCA. Primero investigás qué quiere la gente. Después lo creás. No al revés.\nPERSONA A: ¿Y eso te lo enseñan en Hotmart?\nJESÚS: No. Porque a Hotmart le conviene que subas 50 productos. Les da lo mismo si vendés o no.\nPERSONA A: Bueno, y Fiverr? Al menos ahí vendés servicios, algo más concreto.\nJESÚS: ¿Sabés qué pasa con Fiverr? Cambiás horas por plata. Igual que tu trabajo. Frenás, dejás de ganar.\nPERSONA A: ¿Y con productos digitales?\nJESÚS: Los creás UNA vez. Después se venden solos. Vos dormís, el producto trabaja. Es la diferencia entre pintar una casa y vender el manual de pintura.\nPERSONA A: Ah...\nJESÚS: Pintás UNA casa, te pagan UNA vez. El manual se vende mil veces.\nPERSONA A: ¿Y los programas de afiliados?\nJESÚS: Vendés el producto de otro y te dan el 10%. ¿Tenés idea lo que es eso? Vendés algo de $100 y te quedás con $10.\nPERSONA A: Pero no tenés que crear nada.\nJESÚS: Tampoco te quedás con nada. Con TU producto te quedás con el 100%. Producto de $15, son $15 tuyos. Multiplicá por 10 ventas al día.\nPERSONA A: Ok, suena mejor que las otras opciones.\nJESÚS: No es \"mejor.\" Es un modelo completamente distinto. En los otros trabajás para otro. En este, sos dueño. Pero eso lo entendés cuando lo ves de adentro. No cuando te lo cuento.\nPERSONA A: Bueno, por $5 lo pruebo y comparo yo mismo.\nJESÚS: Tocá el botón de acá abajo.\nJESÚS: Yo probé freelance, afiliados, agencia. Todo tiene un techo. Productos digitales no. Porque los creás una vez y los vendés infinitas veces.\nPERSONA A: ¿Dónde veo el proceso completo?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "provocacion_evidencia",
+      "sections": [
+        {
+          "section_name": "Es lo mismo que Hotmart",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Qué diferencia hay entre lo tuyo y subir algo a Hotmart?\nJESÚS: Hotmart es un estante. Si subís basura al estante, no vende. El estante no tiene la culpa.\nPERSONA A: Entonces el problema no es la plataforma.\nJESÚS: El problema es que la gente sube cosas que NADIE BUSCA. Primero investigás qué quiere la gente. Después lo creás. No al revés.\nPERSONA A: ¿Y eso te lo enseñan en Hotmart?\nJESÚS: No. Porque a Hotmart le conviene que subas 50 productos. Les da lo mismo si vendés o no.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Freelance es más seguro",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Bueno, y Fiverr? Al menos ahí vendés servicios, algo más concreto.\nJESÚS: ¿Sabés qué pasa con Fiverr? Cambiás horas por plata. Igual que tu trabajo. Frenás, dejás de ganar.\nPERSONA A: ¿Y con productos digitales?\nJESÚS: Los creás UNA vez. Después se venden solos. Vos dormís, el producto trabaja. Es la diferencia entre pintar una casa y vender el manual de pintura.\nPERSONA A: Ah...\nJESÚS: Pintás UNA casa, te pagan UNA vez. El manual se vende mil veces.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "¿Y los afiliados?",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y los programas de afiliados?\nJESÚS: Vendés el producto de otro y te dan el 10%. ¿Tenés idea lo que es eso? Vendés algo de $100 y te quedás con $10.\nPERSONA A: Pero no tenés que crear nada.\nJESÚS: Tampoco te quedás con nada. Con TU producto te quedás con el 100%. Producto de $15, son $15 tuyos. Multiplicá por 10 ventas al día.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Ok, suena mejor que las otras opciones.\nJESÚS: No es \"mejor.\" Es un modelo completamente distinto. En los otros trabajás para otro. En este, sos dueño. Pero eso lo entendés cuando lo ves de adentro. No cuando te lo cuento.\nPERSONA A: Bueno, por $5 lo pruebo y comparo yo mismo.\nJESÚS: Tocá el botón de acá abajo.\nJESÚS: Yo probé freelance, afiliados, agencia. Todo tiene un techo. Productos digitales no. Porque los creás una vez y los vendés infinitas veces.\nPERSONA A: ¿Dónde veo el proceso completo?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "JESÚS: Yo probé freelance, afiliados, agencia. Todo tiene un techo. Productos digitales no. Porque los creás una vez y los vendés infinitas veces.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 43,
+        "ingredient_name": "Verdad Incómoda"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T00:40:24.541Z",
+  "status": "draft",
+  "batch": {
+    "id": "cf67a1fc-1f33-4369-b723-0cc0973e60fc",
+    "name": "Víctor Elas × 562 compradores — V5"
+  }
+}

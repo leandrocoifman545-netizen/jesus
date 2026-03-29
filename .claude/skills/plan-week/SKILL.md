@@ -45,10 +45,10 @@ Leer `.data/jerarquia-decisiones.md`:
 
 ### Archivos de SISTEMAS NUEVOS (OBLIGATORIOS):
 12. `.data/angulos-expandidos.md` — 5 familias de ángulos con reglas de diversidad
-13. `.data/tipos-cuerpo.md` — 8 vehículos narrativos con mapa de micro-creencias
+13. `.data/tipos-cuerpo.md` — 13 vehículos narrativos con mapa de micro-creencias
 14. `.data/venta-modelo-negocio.md` — 10 tipos de venta del modelo
 15. `.data/ctas-biblioteca.md` — 3 bloques CTA de 6 capas
-16. `.data/enciclopedia-127-ingredientes.md` — 127 ingredientes
+16. `.data/enciclopedia-127-ingredientes.md` — 128 ingredientes
 17. `.data/reglas-diversidad.md` — **CRÍTICO:** 8 arcos narrativos, patrones prohibidos, checklist de diversidad
 18. `.data/motor-audiencia.md` — **OBLIGATORIO:** Tensiones→arcos, objeciones→guiones, vocabulario por segmento, intentos fallidos→leads, señales de compra, micro-yes, triggers→ingredientes
 19. `.data/jerarquia-decisiones.md` — 5 niveles de prioridad para resolver conflictos
@@ -104,7 +104,7 @@ De la matriz de cobertura + ángulos expandidos, identificar:
 - **Familias de ángulo** sin cubrir o con < 2 guiones
 - **Ángulos específicos** saturados (1.1 Mamá 5+, 3.1 IA desperdiciada 8+)
 - **Ángulos frescos** a priorizar (2.2, 2.4, 3.2, 3.4, 4.5, 4.6)
-- **Tipos de cuerpo** sin usar (mín 5 de 8 en 10 guiones)
+- **Tipos de cuerpo** sin usar (mín 5 de 13 en 10 guiones — 3 son orgánico-only)
 - **Ventas del modelo** sin usar (nunca repetir consecutiva)
 - **Segmentos** subrepresentados (A/B/C/D)
 - **Funnels** sin cubrir (TOFU/MOFU/RETARGET)
@@ -128,7 +128,7 @@ De formatos-visuales.md:
 | **5 familias** | Todas representadas (2 por familia) |
 | **Ángulos** | NUNCA repetir el mismo ángulo específico |
 | **Consecutivos** | NUNCA 2 guiones seguidos de la misma familia |
-| **Vehículos** | Mínimo 5 distintos de 8 |
+| **Vehículos** | Mínimo 5 distintos de 13 (3 son orgánico-only) |
 | **Venta del modelo** | Mín 6 distintos, matemática simple máx 2, ventana oportunidad máx 1 |
 | **Segmentos** | Mín 3 de 4 cubiertos |
 | **Funnels** | Mín 5 TOFU + 2 MOFU + 1 RETARGET |

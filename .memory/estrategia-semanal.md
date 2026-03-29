@@ -35,20 +35,16 @@ Se graban los 3 cada sesión (UNA vez) y se combinan con cualquier body en edici
 
 ## Dimensiones de la Matriz
 
-### Ángulos (11 definidos, 8 testeados + 3 sin testear)
-| # | Ángulo | Segmentos naturales | Estado |
-|---|--------|-------------------|--------|
-| 1 | Dolor económico | A+D | Activo |
-| 2 | Barrera tecnológica | B | Activo |
-| 3 | Libertad/sueño | A | Activo |
-| 4 | Desconfianza/anti-estafa | D | Activo |
-| 5 | Mamá/tiempo limitado | C | Activo |
-| 6 | Proceso/demostración | Todos | Activo |
-| 7 | Edad/reinvención | B (45-65) | Activo |
-| 8 | LATAM/contexto regional | Por país | Activo |
-| 9 | Ventas visibles | Todos | Sin testear |
-| 10 | IA desperdiciada | B | Sin testear |
-| 11 | Consumidor de IA | B | Sin testear |
+### Ángulos (5 familias × 31 ángulos — ver `angulos-expandidos.md`)
+| Familia | Ángulos | Perspectiva | Ejemplos |
+|---------|---------|-------------|----------|
+| **1. Identidad y Situación** | 1.1–1.7 (7) | Quién sos | Mamá sin tiempo, oficinista, desempleado, jubilado, joven frustrado, freelancer, emprendedor quemado |
+| **2. Oportunidad y Tendencia** | 2.1–2.6 (6) | Qué está pasando | Ventana de IA, tendencia de mercado, nicho invisible, economía del conocimiento, caso real trending, profesión+IA |
+| **3. Contraste y Confrontación** | 3.1–3.7 (7) | Qué hacés mal | IA desperdiciada, consumidor vs creador, ciclo roto, comparación tóxica, costo invisible, anti-gurú, modelo equivocado |
+| **4. Mecanismo y Proceso** | 4.1–4.6 (6) | Cómo funciona | Demo en vivo, 3 pasos, antes vs después IA, detrás de escena, la matemática, producto específico |
+| **5. Historia y Emoción** | 5.1–5.5 (5) | Storytelling | Historia de Jesús, historia de alumno, micro-historia resultado, fracaso como lección, diálogo/actuación |
+
+**Regla:** Las 5 familias deben estar en cada estrategia de 10 guiones (2 por familia). Máx 1 guion por ángulo específico. Ver reglas de diversidad y ángulos saturados/frescos en `angulos-expandidos.md`.
 
 ### Segmentos
 - **A)** Emprendedor frustrado — quiere independencia, ya intentó y falló
@@ -61,16 +57,21 @@ Se graban los 3 cada sesión (UNA vez) y se combinan con cualquier body en edici
 - **MOFU** — Taller $5 (compromiso bajo, demostración)
 - **RETARGET** — Nurture post-registro (que asistan al vivo, que compren)
 
-### Tipos de Cuerpo (vehículos narrativos — dan el TONO al micro-VSL)
-La estructura de todo guion son **5 beats** (identificación → quiebre → mecanismo → demolición → prueba). El vehículo define cómo se CUENTAN esos beats:
+### Tipos de Cuerpo (13 vehículos narrativos — dan el TONO al micro-VSL)
+La estructura de todo guion son **5 beats** (identificación → quiebre → mecanismo → demolición → prueba). El vehículo define cómo se CUENTAN esos beats (ver `tipos-cuerpo.md` para detalle completo):
 1. **Demolición de mito** — Tono confrontativo, "te mintieron"
 2. **Historia con giro** — Narrativo, empático
-3. **Demo/Proceso** — Práctico, "mirá, te muestro"
+3. **Demo/Proceso** — Práctico, "mirá, te muestro" (variante: proceso en vivo)
 4. **Comparación de caminos** — Lógico, contrastante
 5. **Un día en la vida** — Aspiracional, sensorial
 6. **Pregunta y respuesta** — Rápido, eliminador
 7. **Analogía extendida** — Familiar, revelador
 8. **Contraste emocional** — Emocional, urgente
+9. **Demolición de alternativas** ⭐ WINNER — Honesto, anti-hype, alternativas con nombre propio
+10. **Q&A conversacional** ⭐ WINNER — Consejero, como responder un DM a fondo
+11. **Tier-list / Rating** 🆕 SOLO ORGÁNICO — Opinión experta, polémico (máx 1/10)
+12. **Trailer de recurso** 🆕 SOLO ORGÁNICO — Apilamiento de valor sin entregar (máx 2/10)
+13. **Quiz de comparación** 🆕 SOLO ORGÁNICO — Interactivo, "¿cuál vendió más?" (máx 1/10)
 
 ### Técnicas disponibles (rotar)
 - Micro-loops entre secciones
@@ -109,8 +110,8 @@ La estructura de todo guion son **5 beats** (identificación → quiebre → mec
 5. **Leads demasiado largos** — Algunos pasan de 5 oraciones. Máx 2-3.
    - *Acción:* Revisión automática: si un lead pasa de 3 oraciones, alertar.
 
-6. **Ángulos sin testear** — Ventas visibles, IA desperdiciada, Consumidor de IA nunca se probaron.
-   - *Acción:* Incluir 1 ángulo nuevo por sesión para testear.
+6. **Ángulos frescos sin explotar** — Varios ángulos de las 5 familias están marcados como frescos en `angulos-expandidos.md` (2.2, 2.4, 3.2, 3.4, 4.5, 4.6, etc.).
+   - *Acción:* Incluir 1 ángulo fresco por sesión. Consultar lista de saturados/frescos en `angulos-expandidos.md`.
 
 7. **Falta retargeting/nurture** — No hay guiones de nurture post-registro.
    - *Acción:* Armar 2-3 guiones de retargeting para webinar/taller.

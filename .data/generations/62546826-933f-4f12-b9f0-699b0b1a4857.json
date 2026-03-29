@@ -1,0 +1,194 @@
+{
+  "id": "62546826-933f-4f12-b9f0-699b0b1a4857",
+  "briefId": "manual",
+  "title": "Reel Hollywood v2 — La Historia de Jesús (desde cero)",
+  "contentType": "shortform",
+  "script": {
+    "angle_family": "historia_personal",
+    "angle_specific": "origen_hollywood_reel_nativo",
+    "body_type": "storytelling_hollywood",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "productos digitales + IA",
+    "model_sale_type": "historia_origen",
+    "avatar": "patricia",
+    "awareness_level": 5,
+    "emotional_arc": "montaña_rusa_hollywood",
+    "total_duration_seconds": 85,
+    "word_count": 350,
+    "belief_change": {
+      "old_belief": "Ganar plata online requiere años de sufrimiento",
+      "mechanism": "La historia de Jesús muestra que el sufrimiento no era necesario — era falta de camino",
+      "new_belief": "Hoy existe un camino que antes no existía"
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "flash_forward",
+        "script_text": "¿Ves estos dos premios? Uno por vender más de 200 mil dólares. El otro por vender más de un millón de dólares con un solo producto digital. Estos premios no tendrían que ser míos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "flash_forward",
+        "script_text": "¿Ves estos dos premios? Uno por vender más de 200 mil dólares. El otro por vender más de un millón de dólares con un solo producto digital. Estadísticamente, yo no tendría que tener ninguno de los dos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "flash_forward",
+        "script_text": "¿Ves estos dos premios? Uno por vender más de 200 mil dólares. El otro por vender más de un millón de dólares con un solo producto digital. Si vos supieras de dónde vengo, no me creerías que son míos.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "save_the_cat_reel_nativo_4_momentos",
+      "emotional_arc": "flash_forward → el pibe (fondo) → la apuesta → la falsa victoria → el crash → hoy (espejo)",
+      "sections": [
+        {
+          "section_name": "EL PIBE",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este pibe no tenía nada a favor",
+          "script_text": "Yo crecí en Gualeguaychú, Entre Ríos. Dormía con un cuchillo debajo de la almohada porque tenía miedo de que entren a robar. Tenía 12 años.\n\nEn mi casa la plata no alcanzaba para nada. Mi viejo tuvo un kiosco, puso todo lo que tenía ahí, y la mercadería se le venció antes de que la pudiera vender. Y yo pensaba: si laburás toda tu vida y no te alcanza, algo está mal. Pero no sabía qué.",
+          "timing_seconds": 22,
+          "ipad_directions": [
+            "Piano suave. Plano cerrado. Ritmo lento, que cada frase respire. En 'tenía 12 años' pausa LARGA de 2 segundos, que el espectador se quede con la imagen del pibe con el cuchillo. En 'algo está mal' la música cambia apenas, primer giro de energía."
+          ]
+        },
+        {
+          "section_name": "LA APUESTA",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Apostó todo lo que tenía",
+          "script_text": "Entonces a los 19, pesando 47 kilos, agarré todo lo que había juntado en mi vida — 2.000 dólares — y los puse en un solo lugar. Un curso de marketing digital. Mi familia pensó que estaba loco.\n\nTardé 9 meses en conseguir mi primer cliente. Y ni siquiera me pagó. Le regalé el trabajo para tener un caso de éxito.",
+          "timing_seconds": 14,
+          "ipad_directions": [
+            "En '2.000 dólares' texto en pantalla, que resalte. En 'mi familia pensó que estaba loco' pausa breve, música baja. En 'ni siquiera me pagó' que pegue como dato seco."
+          ]
+        },
+        {
+          "section_name": "LA FALSA VICTORIA",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Parecía que lo había logrado",
+          "script_text": "Pero no paré. Y un día empezó a funcionar. Un cliente, cinco, veinte, ciencuenta, cien, Armé una agencia que trabajo 4 países. Formé a 17.000 alumnos.\n\nY pensé: lo logré.",
+          "timing_seconds": 8,
+          "ipad_directions": [
+            "Música SUBE. Ritmo acelera. Cortes rápidos entre frases. Energía crece, crece, crece. En 'lo logré' llega al máximo. El espectador está arriba. Pausa de 1 segundo en SILENCIO total."
+          ]
+        },
+        {
+          "section_name": "EL CRASH",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Llegar no significa que llegó",
+          "script_text": "Pero no.\n\nTuve 100 clientes a la vez y fue el peor momento de mi vida. Me despertaba a las 4 de la mañana todos los días y me quedaba mirando el techo sin poder volver a dormir. Perdí a una persona que me importaba porque no me quedaba nada para dar, solo ansiedad.\n\n7 años. Cayéndome y levantándome.",
+          "timing_seconds": 17,
+          "ipad_directions": [
+            "'Pero no.' → SILENCIO. Nada de música. Solo su voz. Este es el corazón del video. Zoom lento hacia su cara. 'mirando el techo' → dejar 1 segundo de silencio después. 'no me quedaba nada para dar' → la frase más vulnerable. NO apurar. '7 años' → texto en pantalla."
+          ]
+        },
+        {
+          "section_name": "HOY",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El camino que él no tuvo hoy existe",
+          "script_text": "Y en algún punto de esos 7 años apareció la inteligencia artificial. Y cambió las reglas. Porque lo que a mí me costó todo eso, hoy se puede hacer en horas.\n\nEstos premios no tendrían que ser míos. Pero lo son. Y lo que yo hice en 7 años, hoy vos lo podés hacer en días.",
+          "timing_seconds": 14,
+          "ipad_directions": [
+            "'apareció la inteligencia artificial' → música vuelve, suave, orgánica. 'estos premios no tendrían que ser míos' → señala los premios, callback al hook. 'pero lo son' → pausa."
+          ]
+        }
+      ]
+    },
+    "transition_text": "",
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 62,
+        "ingredient_name": "Historia de Origen Humilde"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estratégica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 68,
+        "ingredient_name": "Timeline Comprimido"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 77,
+        "ingredient_name": "Antes de IA vs Después de IA"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 125,
+        "ingredient_name": "Reframe"
+      }
+    ],
+    "cta": {
+      "verbal_cta": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+      "reason_why": "CTA directo después del callback al hook (premios)",
+      "timing_seconds": 3,
+      "cta_type": "directo"
+    },
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "timing_seconds": 30,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con inteligencia artificial y empezar a venderlo. No necesitás experiencia. No necesitás saber de tecnología. Solo saber usar WhatsApp.",
+          "orden_1": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+          "prueba": "No me creas. En serio, no me creas. Vení a la clase y fijate vos mismo si es verdad o mentira lo que te estoy diciendo. Ya pasaron más de 20 mil personas por mis clases. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es gratis. No tenés que pasar por lo que yo pasé. Solo tenés que venir a una clase. Lo único que podés perder son 2 horas. Lo que podés ganar es el negocio que a mí me cambió la vida.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "orden_2": "Comentá CLASE acá abajo y registrate en el link de mi perfil. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con inteligencia artificial y empezar a venderlo. No necesitás experiencia. No necesitás saber de tecnología. Solo saber usar WhatsApp.\n\nComentá CLASE acá abajo y registrate en el link de mi perfil.\n\nNo me creas. En serio, no me creas. Vení a la clase y fijate vos mismo si es verdad o mentira lo que te estoy diciendo. Ya pasaron más de 20 mil personas por mis clases. Gente que arrancó exactamente donde estás vos ahora.\n\nEs gratis. No tenés que pasar por lo que yo pasé. Solo tenés que venir a una clase. Lo único que podés perder son 2 horas. Lo que podés ganar es el negocio que a mí me cambió la vida.\n\nLa clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.\n\nComentá CLASE acá abajo y registrate en el link de mi perfil. Te espero adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "timing_seconds": 30,
+        "layers": {
+          "oferta": "Tengo un taller de 3 días, en vivo, conmigo. Día 1: encontrás tu producto ganador con inteligencia artificial. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "orden_1": "Tocá el botón de acá abajo y anotate.",
+          "prueba": "No me creas. Vení y fijate. Ya lo hicieron más de 20 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. No tenés que pasar por lo que yo pasé. Solo necesitás 3 tardes.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "orden_2": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "text": "Tengo un taller de 3 días, en vivo, conmigo. Día 1: encontrás tu producto ganador con inteligencia artificial. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.\n\nTocá el botón de acá abajo y anotate.\n\nNo me creas. Vení y fijate. Ya lo hicieron más de 20 mil personas en Argentina, Colombia, México y España.\n\n¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. No tenés que pasar por lo que yo pasé. Solo necesitás 3 tardes.\n\nEl taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.\n\nTocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "timing_seconds": 30,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con inteligencia artificial y empezar a venderlo. No necesitás experiencia. No necesitás saber de tecnología. Solo saber usar WhatsApp.",
+          "orden_1": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+          "prueba": "No me creas. En serio, no me creas. Vení a la clase y fijate vos mismo si es verdad o mentira lo que te estoy diciendo. Ya pasaron más de 20 mil personas por mis clases. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es gratis. No tenés que pasar por lo que yo pasé. Solo tenés que venir a una clase. Lo único que podés perder son 2 horas. Lo que podés ganar es el negocio que a mí me cambió la vida.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "orden_2": "Comentá CLASE acá abajo y registrate en el link de mi perfil. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con inteligencia artificial y empezar a venderlo. No necesitás experiencia. No necesitás saber de tecnología. Solo saber usar WhatsApp.\n\nComentá CLASE acá abajo y registrate en el link de mi perfil.\n\nNo me creas. En serio, no me creas. Vení a la clase y fijate vos mismo si es verdad o mentira lo que te estoy diciendo. Ya pasaron más de 20 mil personas por mis clases. Gente que arrancó exactamente donde estás vos ahora.\n\nEs gratis. No tenés que pasar por lo que yo pasé. Solo tenés que venir a una clase. Lo único que podés perder son 2 horas. Lo que podés ganar es el negocio que a mí me cambió la vida.\n\nLa clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.\n\nComentá CLASE acá abajo y registrate en el link de mi perfil. Te espero adentro."
+      }
+    ],
+    "platform_adaptation": {
+      "platform": "Reel / TikTok (9:16)",
+      "recommended_duration_seconds": 85,
+      "content_style": "Storytelling Hollywood nativo reel. 4 momentos con aire. La falsa victoria es el centro del video.",
+      "key_considerations": "Pensado desde el reel, no comprimido desde algo largo. Solo 4 momentos: el pibe, la apuesta, lo logré/pero no, y hoy. La música es el director: sube en la falsa victoria, PARA en seco en el crash, vuelve suave al final. El 'pero no' en silencio total es el momento más importante."
+    }
+  },
+  "createdAt": "2026-03-26T03:15:00.000Z",
+  "status": "draft",
+  "batch": {
+    "id": "4164d97f-055d-46cf-8cb3-a52cba4fecfd",
+    "name": "Version 3.0"
+  }
+}

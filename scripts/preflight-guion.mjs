@@ -21,7 +21,7 @@ const MANDATORY_FILES = [
   { path: join(MEMORY_DIR, "jesus-tono-adp-nuevo.md"), label: "jesus-tono-adp-nuevo.md" },
   { path: join(MEMORY_DIR, "jesus-historia.md"), label: "jesus-historia.md" },
   { path: join(MEMORY_DIR, "avatar-frases-reales.md"), label: "avatar-frases-reales.md" },
-  { path: join(MEMORY_DIR, "inteligencia-audiencia.md"), label: "inteligencia-audiencia.md" },
+  // inteligencia-audiencia.md fusionado en avatar-frases-reales.md (2026-03-27)
   { path: join(MEMORY_DIR, "tecnicas-retencion.md"), label: "tecnicas-retencion.md" },
   { path: join(MEMORY_DIR, "tecnicas-venta-emiliano.md"), label: "tecnicas-venta-emiliano.md" },
   { path: join(MEMORY_DIR, "formatos-visuales.md"), label: "formatos-visuales.md" },
@@ -52,8 +52,9 @@ if (existsSync(burnedPath)) {
   } catch { /* ignore */ }
 }
 
-// ── 3. Get recent generations (last 5) for diversity check ──
+// ── 3. Get recent generations (last 10) for diversity check ──
 let recentGenerations = [];
+let diversityAlerts = [];
 const gensDir = join(DATA_DIR, "generations");
 if (existsSync(gensDir)) {
   try {
@@ -61,6 +62,7 @@ if (existsSync(gensDir)) {
       .filter(f => f.endsWith(".json"))
       .map(f => {
         const data = JSON.parse(readFileSync(join(gensDir, f), "utf-8"));
+        const ings = (data.script?.ingredients_used || []).map(i => `${i.category}#${i.ingredient_number}`);
         return {
           id: data.id,
           createdAt: data.createdAt,
@@ -73,11 +75,52 @@ if (existsSync(gensDir)) {
           funnel_stage: data.script?.funnel_stage || "?",
           niche: data.script?.niche || "?",
           arc: data.script?.development?.emotional_arc || "?",
+          ingredients: ings,
         };
       })
       .sort((a, b) => (b.createdAt || "").localeCompare(a.createdAt || ""))
-      .slice(0, 5);
+      .slice(0, 10);
     recentGenerations = files;
+
+    // ── Diversity alerts: detect overused arcs, vehicles, ingredients ──
+    const last3 = files.slice(0, 3);
+    const last5 = files.slice(0, 5);
+
+    // Arcs used in last 3
+    const recentArcs = last3.map(g => g.arc).filter(a => a !== "?");
+    const arcCounts = {};
+    recentArcs.forEach(a => { arcCounts[a] = (arcCounts[a] || 0) + 1; });
+    const overusedArcs = Object.entries(arcCounts).filter(([, c]) => c >= 2).map(([a]) => a);
+    if (overusedArcs.length > 0) {
+      diversityAlerts.push(`⚠️ ARCOS REPETIDOS en últimos 3: ${overusedArcs.join(", ")} — save-generation BLOQUEARÁ si se repiten`);
+    }
+
+    // Vehicles used in last 5
+    const recentVehicles = last5.map(g => g.body_type).filter(v => v !== "?");
+    const vehCounts = {};
+    recentVehicles.forEach(v => { vehCounts[v] = (vehCounts[v] || 0) + 1; });
+    const overusedVeh = Object.entries(vehCounts).filter(([, c]) => c >= 2).map(([v, c]) => `${v} (${c}x)`);
+    if (overusedVeh.length > 0) {
+      diversityAlerts.push(`⚠️ VEHÍCULOS REPETIDOS en últimos 5: ${overusedVeh.join(", ")} — save-generation BLOQUEARÁ si se usan 2+ veces`);
+    }
+
+    // Gastado ingredients in last 10
+    const GASTADO = new Set(["F#73", "F#74", "G#90", "B#29"]);
+    const allIngs = files.flatMap(g => g.ingredients);
+    const gastadoCount = allIngs.filter(i => GASTADO.has(i)).length;
+    if (gastadoCount > 5) {
+      diversityAlerts.push(`⚠️ Ingredientes GASTADOS (F#73/F#74/G#90/B#29) usados ${gastadoCount}x en últimos 10. Priorizar frescos: D#49, E#67, F#75, F#76, F#82, G#94, K#125-127`);
+    }
+
+    // Ingredient variety
+    const uniqueIngs = new Set(allIngs);
+    if (allIngs.length > 0 && uniqueIngs.size < allIngs.length * 0.5) {
+      diversityAlerts.push(`⚠️ Poca variedad de ingredientes: ${uniqueIngs.size} únicos de ${allIngs.length} totales en últimos 10 guiones`);
+    }
+
+    if (diversityAlerts.length === 0) {
+      diversityAlerts.push("✅ Diversidad OK — no hay arcos, vehículos ni ingredientes sobreusados");
+    }
   } catch { /* ignore */ }
 }
 
@@ -216,6 +259,7 @@ const result = {
     leads: burnedLeads,
   },
   recent_generations: recentGenerations,
+  diversity_alerts: diversityAlerts,
   trends: trendsData,
   winner_patterns_summary: winnerPatterns,
   session_insights_summary: sessionInsights,

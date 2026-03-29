@@ -130,8 +130,8 @@ export const AVATAR_SEGMENT_MAP: Record<string, string> = {
 // Patricia(48)+Roberto(62) = 56% of buyers → must dominate
 // Martín(26) = 5% → max 1 of 10 scripts
 export const AVATAR_BUYER_WEIGHTS: Record<string, number> = {
-  patricia: 0.30,
-  roberto: 0.26,
+  patricia: 0.26,
+  roberto: 0.30,
   soledad: 0.15,
   diego: 0.12,
   valentina: 0.07,

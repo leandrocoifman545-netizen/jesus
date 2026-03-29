@@ -630,7 +630,7 @@ El mecanismo es el CÓMO y POR QUÉ tu solución funciona diferente. No es featu
 
 ## 14. Mapeo Copy Structure ↔ Vehículo Narrativo (Video)
 
-Las 8 estructuras de copy escrito tienen equivalentes en los 8 vehículos narrativos de guiones de video. Esta tabla conecta ambos sistemas para que un guion y su ad copy sean coherentes.
+Las 8 estructuras de copy escrito tienen equivalentes en los 13 vehículos narrativos de guiones de video. Esta tabla conecta ambos sistemas para que un guion y su ad copy sean coherentes.
 
 | # | Estructura de Copy (escrito) | Vehículo Narrativo (video) | Por qué se conectan |
 |---|------------------------------|---------------------------|-------------------|

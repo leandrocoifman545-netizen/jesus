@@ -62,6 +62,6 @@
 - Directo, sin rodeos corporativos
 - Números concretos siempre ("$50K", "9 meses", "100 clientes")
 - Historias primero, lección después
-- Muletillas: "Yo siempre digo que...", "Te voy a contar...", "A mí me pasó...", "Fíjense...", "¿Me siguen?", "¿Viste?"
+- Muletillas: → Ver lista completa en `jesus-tono-adp-nuevo.md` (basado en 51 guiones analizados). Únicas de este archivo: "Yo siempre digo que...", "Te voy a contar...", "A mí me pasó...", "Fíjense...", "¿Viste?"
 
 ## Regla: SOLO usar anécdotas y citas que están en este documento. NUNCA inventar.

@@ -237,7 +237,7 @@
     ]
   },
   "createdAt": "2026-03-18T17:53:22.916Z",
-  "status": "confirmed",
+  "status": "recorded",
   "batch": {
     "id": "b36369e3-48f1-4299-94b8-04bf0960e43e",
     "name": "Version 2.0"

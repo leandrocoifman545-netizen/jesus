@@ -1,0 +1,173 @@
+{
+  "id": "f60a971a-a765-479c-8024-9fb7adabc2b1",
+  "briefId": "313b2b4b-235c-461f-ba90-675d3d22643d",
+  "title": "Es una estafa más",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.6_anti_guru",
+    "body_type": "victor_elas_conversation",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "mito: estafa/confianza",
+    "model_sale_type": "transparencia_total",
+    "visual_format": "split_screen",
+    "avatar": "diego",
+    "awareness_level": 4,
+    "emotional_arc": "confrontacion",
+    "tension": "T8",
+    "transition_text": "PERSONA A: Dale, un café he perdido peor.\nJESÚS: Tocá el botón de acá abajo.",
+    "total_duration_seconds": 57,
+    "word_count": 381,
+    "belief_change": {
+      "old_belief": "Todo lo online es estafa",
+      "mechanism": "$5 sin letra chica, transparencia total",
+      "new_belief": "El riesgo es un café y puedo verificar todo"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, te lo digo en la cara: esto tiene toda la pinta de estafa.\nJESÚS: Me encanta que me lo digas.\nPERSONA A: ¿Cómo te va a encantar?\nJESÚS: Porque los que entran desconfiando son los que mejor les va. Siempre.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: ¿Y el Lambo? Si esto funciona tan bien, ¿dónde está el auto caro y la mansión?\nJESÚS: No tengo Lambo. Tengo una oficina en Gualeguaychú y facturo más de 100 mil dólares al año. Sin Lambo.\nPERSONA A: ...seguí.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Ya me cagaron 3 veces con cosas online. No me van a cagar una cuarta.\nJESÚS: A mí me cagaron 3 veces también. Compré 3 cursos, ninguno sirvió. Por eso armé algo distinto.\nPERSONA A: Eso dicen todos.\nJESÚS: Todos cobran $500 y te dejan solo. Yo cobro $5 y me quedo 3 días con vos. Escuchame.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Explicame algo: si esto es tan bueno, ¿por qué cobrás $5? Nadie regala nada.\nJESÚS: Porque no gano con los $5. Gano cuando te va bien y querés seguir. Si no te sirve, perdiste un café.\nPERSONA A: Eso suena a trampa.\nJESÚS: Escuchá la trampa entera y después decidí.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Mi viejo me dijo \"eso es estafa, nene.\" ¿Qué le digo?\nJESÚS: Decile que tiene razón en desconfiar. Pero que se equivoca en esto. Te explico por qué.\nPERSONA A: A ver, explicame. ¿En qué se diferencia esto de los 500 gurús que prometen plata fácil?\nJESÚS: Primero, yo no prometo plata fácil. Segundo, yo facturo con productos digitales, no dando cursos de cómo dar cursos.\nPERSONA A: ¿Y cómo sé que es verdad?\nJESÚS: Porque te lo muestro en vivo. 3 días conmigo. Si es humo, te diste cuenta en el día 1 y perdiste $5.\nPERSONA A: ¿Cinco dólares?\nJESÚS: Cinco dólares. El que vende humo cobra caro de entrada. Yo te cobro un café.\nPERSONA A: ¿Y después qué? Te enganchan con una suscripción, te llaman por teléfono...\nJESÚS: Cero. Nadie te llama. Nadie te vende nada adentro. Entrás, aprendés, vos decidís.\nPERSONA A: ¿En serio no hay upsell escondido?\nJESÚS: Si después querés seguir, hay más. Pero NADIE te empuja. Hay gente que hizo solo el taller de $5 y vende.\nPERSONA A: Eso no lo vi nunca.\nJESÚS: Porque a los demás les conviene encerrarte. A mí me conviene que vendas. Porque si vendés, hablás bien de mí. Me explico?\nPERSONA A: Suena muy lindo todo.\nJESÚS: No dije lindo. Dije simple. Tenés que sentarte y laburar. No es magia. Es un proceso.\nPERSONA A: ¿Y si soy un desastre con la tecnología?\nJESÚS: Mejor. Los que menos saben de tech son los que menos complican las cosas. Hacen lo que les digo y les funciona.\nPERSONA A: Bueno, al menos no es MLM.\nJESÚS: ¿Pensabas que era MLM?\nPERSONA A: Medio que sí.\nJESÚS: Esto no tiene pirámide, no tiene red, no tenés que venderle a tu tía. Vendés TU producto a desconocidos que lo buscan. Pero eso lo entendés cuando lo ves. No cuando te lo cuento.\nPERSONA A: Bueno, $5 no es nada. Si es estafa pierdo un café.\nJESÚS: Tocá el botón de acá abajo.\nJESÚS: La realidad es que yo facturo bien con esto. Lo que aprendí te lo enseño en 3 días. Funciona: genial. No funciona: perdiste $5 y seguís exactamente donde estás.\nPERSONA A: Dale, un café he perdido peor.\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "confrontacion",
+      "sections": [
+        {
+          "section_name": "Todos venden humo",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: A ver, explicame. ¿En qué se diferencia esto de los 500 gurús que prometen plata fácil?\nJESÚS: Primero, yo no prometo plata fácil. Segundo, yo facturo con productos digitales, no dando cursos de cómo dar cursos.\nPERSONA A: ¿Y cómo sé que es verdad?\nJESÚS: Porque te lo muestro en vivo. 3 días conmigo. Si es humo, te diste cuenta en el día 1 y perdiste $5.\nPERSONA A: ¿Cinco dólares?\nJESÚS: Cinco dólares. El que vende humo cobra caro de entrada. Yo te cobro un café.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Hay letra chica seguro",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y después qué? Te enganchan con una suscripción, te llaman por teléfono...\nJESÚS: Cero. Nadie te llama. Nadie te vende nada adentro. Entrás, aprendés, vos decidís.\nPERSONA A: ¿En serio no hay upsell escondido?\nJESÚS: Si después querés seguir, hay más. Pero NADIE te empuja. Hay gente que hizo solo el taller de $5 y vende.\nPERSONA A: Eso no lo vi nunca.\nJESÚS: Porque a los demás les conviene encerrarte. A mí me conviene que vendas. Porque si vendés, hablás bien de mí. Me explico?",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Suena demasiado fácil",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Suena muy lindo todo.\nJESÚS: No dije lindo. Dije simple. Tenés que sentarte y laburar. No es magia. Es un proceso.\nPERSONA A: ¿Y si soy un desastre con la tecnología?\nJESÚS: Mejor. Los que menos saben de tech son los que menos complican las cosas. Hacen lo que les digo y les funciona.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Bueno, al menos no es MLM.\nJESÚS: ¿Pensabas que era MLM?\nPERSONA A: Medio que sí.\nJESÚS: Esto no tiene pirámide, no tiene red, no tenés que venderle a tu tía. Vendés TU producto a desconocidos que lo buscan. Pero eso lo entendés cuando lo ves. No cuando te lo cuento.\nPERSONA A: Bueno, $5 no es nada. Si es estafa pierdo un café.\nJESÚS: Tocá el botón de acá abajo.\nJESÚS: La realidad es que yo facturo bien con esto. Lo que aprendí te lo enseño en 3 días. Funciona: genial. No funciona: perdiste $5 y seguís exactamente donde estás.\nPERSONA A: Dale, un café he perdido peor.\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "JESÚS: La realidad es que yo facturo bien con esto. Lo que aprendí te lo enseño en 3 días. Funciona: genial. No funciona: perdiste $5 y seguís exactamente donde estás.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "Contraintuitivo"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estratégica"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T00:34:24.541Z",
+  "status": "draft",
+  "batch": {
+    "id": "cf67a1fc-1f33-4369-b723-0cc0973e60fc",
+    "name": "Víctor Elas × 562 compradores — V5"
+  }
+}

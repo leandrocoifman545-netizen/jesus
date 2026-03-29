@@ -17,7 +17,7 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 → **Ejecutar skill `/referencia`**
 
 ### Si pide STORIES DE INSTAGRAM (detectar: "stories", "historias", "secuencia", "calentamiento", "stories de la semana", "plan de stories", "armame stories", "instagram stories")
-→ **Ejecutar skill `/stories`** — tiene el proceso completo con Constructor de Calentamiento, 7 tipos de secuencia, integración con motor de audiencia, avatares y setter scripts.
+→ **Ejecutar skill `/stories`** — tiene el proceso completo con Constructor de Calentamiento, 10 tipos de secuencia, integración con motor de audiencia, avatares y setter scripts.
 
 ### Si pide POSTS DE INSTAGRAM / CARRUSELES (detectar: "posts", "carrusel", "carruseles", "post de instagram", "publicaciones", "feed", "plan de posts", "armame posts", "contenido del feed")
 → **Ejecutar skill `/posts-ig`** — genera batch semanal de 3-5 posts (carruseles educativos + imágenes estáticas) con slides, caption, keyword y lead magnet. SEPARADO de `/plan-week` (videos) y `/stories` (historias).
@@ -30,6 +30,9 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 
 ### Si pide ANALIZAR UN PERFIL DE INSTAGRAM (detectar: "analizá este perfil", "scrapeá", "analisis de @", "analizá @", "escrapear", "@username")
 → **Ejecutar skill `/analisis-ig`** — pipeline completo: scrape → descarga → transcripción → análisis de patrones → documento consolidado.
+
+### Si pide ANALIZAR STORIES DESCARGADAS (detectar: "analizá estas stories", "historias descargadas", "stories de referencia", "extraé patrones de stories", "analizar stories de")
+→ **Ejecutar skill `/analisis-stories`** — pipeline: inventario → frames + audio → transcripción Whisper → lectura visual en orden → análisis visual + persuasión + secuencia + copy hablado → patrones generales + aplicados a ADP.
 
 ### Si pide revisar errores o consistencia (detectar: "audit", "errores", "revisá", "algo roto", "inconsistencias")
 → **Ejecutar skill `/audit`**
@@ -53,7 +56,7 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | Sistema | Archivo | Reemplaza |
 |---------|---------|-----------|
 | 5 familias de ángulos | `.data/angulos-expandidos.md` | Los 11 ángulos viejos |
-| 5 beats micro-VSL + 11 vehículos narrativos | `.data/tipos-cuerpo.md` | Micro-creencias sueltas + tipos de cuerpo como estructura (11vo = tier-list/rating para orgánico, de análisis @hormozi) |
+| 5 beats micro-VSL + 13 vehículos narrativos | `.data/tipos-cuerpo.md` | Micro-creencias sueltas + tipos de cuerpo como estructura (#11 = tier-list/rating, #12 = trailer de recurso, #13 = variante mecanismo escalado — los 3 últimos orgánico-only) |
 | 10 ventas del modelo | `.data/venta-modelo-negocio.md` | No existía |
 | 3 bloques CTA (6 capas) | `.data/ctas-biblioteca.md` | Los 3 CTAs genéricos de 1 frase |
 | 128 ingredientes | `.data/enciclopedia-127-ingredientes.md` | No existía (128vo = remate analógico, de análisis @niksetting) |
@@ -77,6 +80,8 @@ Cuando el usuario pida algo relacionado con guiones o estrategia, **ejecutar el 
 | **Niche Mapping Ads** | **`.data/niche-mapping-ads.md`** | **No existía — 20 nichos × 20 ángulos, Matriz de Multiplicación, 8 tipos de hook, validation checklist** |
 | **Skill Ad Factory** | **`.claude/skills/ad-factory/SKILL.md`** | **No existía — producción masiva: 7 fases, 100+ copies + imágenes + campaña Meta Ads** |
 | **Skill Análisis IG** | **`.claude/skills/analisis-ig/SKILL.md`** | **Pipeline IG: `ig-pipeline.mjs` (orquestador), `ig-analyze.mjs` (métricas auto), `ig-search.mjs` (búsqueda cross-profile), `ig-patterns.mjs` (máquina de patrones), `ig-cross-generations.mjs` (patrones×generaciones). 7 perfiles, 1475 posts, 526 transcripciones, 517 hooks extraídos. Patterns feed into `/guion` y `/plan-week`.** |
+| **Skill Análisis Stories** | **`.claude/skills/analisis-stories/SKILL.md`** | **No existía — pipeline: inventario → frames (ffmpeg) + audio → transcripción Whisper → lectura visual en orden → patrones visuales/persuasión/secuencia/copy → output general + ADP** |
+| **Patrones reales stories** | **`.data/stories-patrones-reales-3-creadores.md`** | **No existía — 472 piezas de 3 creadores (Xavi, NicoFast, CreatorFound): 10 layouts, 10 CTAs, 8 arquetipos, 33 transcripciones, scripts adaptados a Jesús, 5 secuencias listas** |
 
 ## Sistema auto-brief (anti-genérico)
 

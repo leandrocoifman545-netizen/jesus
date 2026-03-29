@@ -12,6 +12,7 @@ const BRIEFS_DIR = path.join(DATA_DIR, "briefs");
 const GENERATIONS_DIR = path.join(DATA_DIR, "generations");
 const PLANS_DIR = path.join(DATA_DIR, "plans");
 const STORIES_DIR = path.join(DATA_DIR, "stories");
+const POSTS_DIR = path.join(DATA_DIR, "posts-ig");
 
 // --- In-memory cache (survives across requests in same process) ---
 
@@ -488,6 +489,7 @@ async function ensureDirs() {
     fs.mkdir(PROJECTS_DIR, { recursive: true }),
     fs.mkdir(PLANS_DIR, { recursive: true }),
     fs.mkdir(STORIES_DIR, { recursive: true }),
+    fs.mkdir(POSTS_DIR, { recursive: true }),
   ]);
   dirsEnsured = true;
 }
@@ -787,6 +789,75 @@ export async function listStories(): Promise<StoredStory[]> {
 }
 
 export const cachedListStories: typeof listStories = reactCache(listStories);
+
+// --- Instagram Posts ---
+
+export type PostType = "carousel" | "image";
+export type PostStatus = "draft" | "scheduled" | "published";
+
+export interface PostSlide {
+  number: number;
+  text: string;
+  visual_concept: string;
+}
+
+export interface StoredPost {
+  id: string;
+  title: string;
+  post_type: PostType;
+  status: PostStatus;
+  topic: string;
+  keyword: string;
+  caption: string;
+  avatar_target: string;
+  lead_magnet: string;
+  slides: PostSlide[];
+  design_notes: string;
+  publish_day: string;
+  metrics?: {
+    likes?: number;
+    comments?: number;
+    saves?: number;
+    reach?: number;
+  };
+  notes: string;
+  createdAt: string;
+  batch_id?: string;
+}
+
+export async function savePost(post: StoredPost): Promise<void> {
+  await ensureDirs();
+  const filePath = path.join(POSTS_DIR, `${post.id}.json`);
+  await fs.writeFile(filePath, JSON.stringify(post, null, 2));
+  invalidateCache("posts");
+}
+
+export async function getPost(id: string): Promise<StoredPost | null> {
+  await ensureDirs();
+  try {
+    const data = await fs.readFile(path.join(POSTS_DIR, `${id}.json`), "utf-8");
+    return JSON.parse(data);
+  } catch {
+    return null;
+  }
+}
+
+export async function deletePost(id: string): Promise<boolean> {
+  await ensureDirs();
+  try {
+    await fs.unlink(path.join(POSTS_DIR, `${id}.json`));
+    invalidateCache("posts");
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function listPosts(): Promise<StoredPost[]> {
+  return listItemsFromDir<StoredPost>(POSTS_DIR, "posts:list");
+}
+
+export const cachedListPosts: typeof listPosts = reactCache(listPosts);
 
 // --- React.cache() wrappers for server component deduplication ---
 // These deduplicate calls within the same server render pass.

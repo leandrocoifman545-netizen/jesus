@@ -1,0 +1,173 @@
+{
+  "id": "64988d0b-351f-4fbe-9a92-e7b38dd63018",
+  "briefId": "a5e117a8-5b12-48c4-aee0-583da72adab5",
+  "title": "Suena lindo pero no es para gente como yo",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.3_micro_historia",
+    "body_type": "pregunta_respuesta",
+    "segment": "C",
+    "funnel_stage": "RETARGET",
+    "niche": "mito: identidad",
+    "model_sale_type": "prueba_personal",
+    "visual_format": "split_screen",
+    "avatar": "laura",
+    "awareness_level": 2,
+    "emotional_arc": "futuro_sensorial",
+    "tension": "T1",
+    "transition_text": "PERSONA A: ¿Cómo empiezo?",
+    "total_duration_seconds": 51,
+    "word_count": 285,
+    "belief_change": {
+      "old_belief": "Esto es para gente con ventajas",
+      "mechanism": "Gente común lo hace — $2 y 1 hora",
+      "new_belief": "$50/día es alcanzable para mí"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, suena lindo. Pero no es para gente como yo.\nJESÚS: ¿Gente como vos cómo?\nPERSONA A: Normal. Sin plata. Sin contactos.\nJESÚS: Justamente para gente como vos es esto.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "script_text": "\"Respirar. Sentirme a salvo. Soy yo y yo.\" Eso me escribió una alumna. No quería ser rica. Quería una salida.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "La gente que más me compra no quiere ser millonaria. Quiere $50 extra por día. Levantarse tranquila. Eso es todo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "script_text": "Te levantás, revisás el celular, tenés 3 ventas. Los chicos desayunan. No hay presión. Eso no es un sueño. Es un martes.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "provocacion",
+        "script_text": "Todos hablan de libertad financiera, de $10,000 por mes. Vos no necesitás eso. Necesitás respirar. Y eso es más fácil de lo que pensás.\nPERSONA A: Yo veo tus videos y pienso \"qué lindo, pero es para gente que tiene tiempo, plata, contactos.\" Yo trabajo todo el día y a fin de mes no me sobra nada.\nJESÚS: ¿Qué querés lograr?\nPERSONA A: No sé... respirar. Sentirme más tranquila.\nJESÚS: La gente que mejor le va con esto es exactamente como vos.\nPERSONA A: ¿Pero qué puedo vender si no tengo ninguna ventaja?\nJESÚS: ¿Sabés de algo? Crianza, cocina, organización, lo que sea.\nPERSONA A: Sí, ponele.\nJESÚS: Eso se vende. No necesitás ser influencer. La IA hace todo lo demás.\nPERSONA A: ¿Cuánto se puede ganar?\nJESÚS: No te prometo $10,000. Pero $50, $60 por día extra con 3, 4 ventas de $15. Eso es realista.\nPERSONA A: $50 por día me cambiaría la vida.\nPERSONA A: ¿Y cuándo lo hago? Con los chicos no tengo un minuto.\nJESÚS: Una hora. Después de que duerman. Lo creás una vez. Vende solo. Contestás cuando podés.\nPERSONA A: ¿Vende solo?\nJESÚS: La publicidad trabaja las 24 horas. Vos contestás WhatsApp cuando te da la vida.\nPERSONA A: O sea que puedo hacerlo con una hora, no necesito nada especial y $50 por día es alcanzable.\nJESÚS: Sí.\nPERSONA A: Suena posible.\nJESÚS: Es posible. Hay mamás, jubilados, empleadas que lo hacen. Gente que dijo \"no es para mí\" exactamente como vos. La diferencia es una sola.\nPERSONA A: ¿Cuál?\nJESÚS: Que lo intentaron. Y \"intentar\" cuesta $2 y una hora.\nPERSONA A: ¿Y si no funciona?\nJESÚS: Perdiste $2 y una hora. Pero si funciona, respirás. Y eso es todo lo que necesitás.\nPERSONA A: ¿Cómo empiezo?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "futuro_sensorial",
+      "sections": [
+        {
+          "section_name": "Necesito tener ventajas",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Yo veo tus videos y pienso \"qué lindo, pero es para gente que tiene tiempo, plata, contactos.\" Yo trabajo todo el día y a fin de mes no me sobra nada.\nJESÚS: ¿Qué querés lograr?\nPERSONA A: No sé... respirar. Sentirme más tranquila.\nJESÚS: La gente que mejor le va con esto es exactamente como vos.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "No puedo ganar plata con lo que sé",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Pero qué puedo vender si no tengo ninguna ventaja?\nJESÚS: ¿Sabés de algo? Crianza, cocina, organización, lo que sea.\nPERSONA A: Sí, ponele.\nJESÚS: Eso se vende. No necesitás ser influencer. La IA hace todo lo demás.\nPERSONA A: ¿Cuánto se puede ganar?\nJESÚS: No te prometo $10,000. Pero $50, $60 por día extra con 3, 4 ventas de $15. Eso es realista.\nPERSONA A: $50 por día me cambiaría la vida.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "No tengo tiempo",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y cuándo lo hago? Con los chicos no tengo un minuto.\nJESÚS: Una hora. Después de que duerman. Lo creás una vez. Vende solo. Contestás cuando podés.\nPERSONA A: ¿Vende solo?\nJESÚS: La publicidad trabaja las 24 horas. Vos contestás WhatsApp cuando te da la vida.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: O sea que puedo hacerlo con una hora, no necesito nada especial y $50 por día es alcanzable.\nJESÚS: Sí.\nPERSONA A: Suena posible.\nJESÚS: Es posible. Hay mamás, jubilados, empleadas que lo hacen. Gente que dijo \"no es para mí\" exactamente como vos. La diferencia es una sola.\nPERSONA A: ¿Cuál?\nJESÚS: Que lo intentaron. Y \"intentar\" cuesta $2 y una hora.\nPERSONA A: ¿Y si no funciona?\nJESÚS: Perdiste $2 y una hora. Pero si funciona, respirás. Y eso es todo lo que necesitás.\nPERSONA A: ¿Cómo empiezo?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y si no funciona?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Persona Improbable"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T00:00:20.691Z",
+  "status": "draft",
+  "batch": {
+    "id": "6fb560e2-77a3-49bc-93d9-fb4356645ae4",
+    "name": "Dolor-centrista — 562 compradores"
+  }
+}

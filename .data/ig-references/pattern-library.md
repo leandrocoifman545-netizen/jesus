@@ -13,10 +13,11 @@ Qué tipo de hook genera más CLR y más views.
 |--------|-----:|--------:|-------------:|-----------:|----------:|---------|
 | **exclusividad** | 15 | 186.62% | 194.74% | 177.04% | 48,506 | herasmedia, ramiro.cubria |
 | **imperativo** | 11 | 99.48% | 172.24% | 82.26% | 93,436 | herasmedia, ramiro.cubria |
+| **promesa_directa** | 7 | 127.42% | 129.78% | 108.78% | 121,176 | herasmedia, ramiro.cubria, tino.mossu |
 | **provocacion** | 90 | 86.27% | 89.77% | 68.41% | 328,465 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
 | **pregunta** | 120 | 66.28% | 57.53% | 53.52% | 137,023 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **dato_numero** | 178 | 79.47% | 56.65% | 66.82% | 81,245 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **credencial** | 36 | 64.12% | 40.77% | 46.06% | 71,638 | herasmedia, hormozi, ramiro.cubria |
+| **dato_numero** | 178 | 79.47% | 56.66% | 66.82% | 81,245 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **credencial** | 36 | 64.12% | 40.79% | 46.06% | 71,638 | herasmedia, hormozi, ramiro.cubria |
 | **historia** | 28 | 57.33% | 40.14% | 41.25% | 123,828 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
 | **neutro** | 136 | 49.27% | 39.81% | 20.95% | 297,636 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
 | **negacion_en_serie** | 7 | 51.78% | 36.65% | 70.55% | 145,405 | herasmedia, hormozi, ramiro.cubria |
@@ -47,7 +48,7 @@ Qué tipo de hook genera más CLR y más views.
 
 5. **@ramiro.cubria** (CLR 314.21%, 247,504 views)
    > No soy Alex Hormozy, pero esta cuenta de Instagram hace 10 mil dólares por día. Y en este video te voy a mostrar en 5 segundos cómo optimizar tu perfil de Instagram para vender más.
-   Patrones: dato_numero | 8.68s
+   Patrones: dato_numero, promesa_directa | 8.68s
 
 6. **@ramiro.cubria** (CLR 293.37%, 6,528 views)
    > Te voy a regalar mi sistema de contenido de 3.000 dólares completamente gratis. Esta plantilla de Notion no solamente me consiguió millones de visitas,
@@ -115,7 +116,7 @@ Qué tipo de hook genera más CLR y más views.
 
 22. **@herasmedia** (CLR 175.36%, 147,504 views)
    > Hace solo 5 días tenía 10.000 seguidores. Y esta mañana se despertó con 150.000 seguidores y en este video te voy a explicar las 3 cosas que hicimos para crecer su cuenta.
-   Patrones: dato_numero, lista_framework | 8.4s
+   Patrones: dato_numero, lista_framework, promesa_directa | 8.4s
 
 23. **@herasmedia** (CLR 156.98%, 137,921 views)
    > Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en el video. Sube las visitas.
@@ -253,6 +254,50 @@ Cómo llegan al CTA y qué buildup funciona mejor.
    Buildup (directo, 0s): ""
    CTA: "simplemente comentando la palabra 5 en este vídeo en el que te voy a enviar la clase privada de cómo"
 
+
+---
+
+## Patrones de CAPTION × Performance
+
+Qué tipo de descripción correlaciona con mejor engagement.
+
+| Patrón | Usos | Avg CLR | Avg Views | Perfiles |
+|--------|-----:|--------:|----------:|---------|
+| **dm_cta** | 163 | 118.26% | 99,094 | herasmedia, hormozi, niksetting, ramiro.cubria |
+| **cta_keyword** | 241 | 106.73% | 73,997 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **media** | 322 | 82.02% | 230,804 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **sin_hashtags** | 356 | 73.78% | 239,214 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **segundo_hook** | 5 | 72.18% | 231,059 | herasmedia |
+| **resumen** | 17 | 63.05% | 50,102 | herasmedia, ramiro.cubria |
+| **urgencia** | 22 | 61.79% | 35,001 | herasmedia |
+| **corta** | 98 | 58.91% | 138,554 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **cta_generico** | 146 | 53.82% | 102,543 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **hashtag_light** | 158 | 52.91% | 129,445 | faridieck, herasmedia, hormozi, tino.mossu |
+| **pregunta** | 9 | 35.5% | 32,778 | herasmedia, ramiro.cubria |
+| **larga** | 84 | 27.45% | 126,726 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **promesa_gratis** | 31 | 17.59% | 133,667 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **muy_larga** | 12 | 11.48% | 619,271 | faridieck, herasmedia, hormozi, niksetting |
+
+---
+
+## Secuencias de BEATS (Q1→Q2→Q3→Q4) × Performance
+
+Cómo se estructura el cuerpo del video en 4 cuartos temporales.
+
+| Secuencia | Usos | Avg CLR | Avg Views |
+|-----------|-----:|--------:|----------:|
+| demo_proceso→narrativa_general→demo_proceso→demo_proceso | 4 | 145.17% | 59,807 |
+| demo_proceso→demo_proceso→narrativa_general→narrativa_general | 5 | 140.35% | 76,852 |
+| narrativa_general→narrativa_general→autoridad→narrativa_general | 7 | 108.52% | 54,224 |
+| demo_proceso→narrativa_general→narrativa_general→narrativa_general | 13 | 94.55% | 73,762 |
+| autoridad→narrativa_general→narrativa_general→narrativa_general | 6 | 81.91% | 22,591 |
+| narrativa_general→narrativa_general→narrativa_general→narrativa_general | 73 | 77.41% | 176,480 |
+| narrativa_general→demo_proceso→demo_proceso→demo_proceso | 3 | 72.42% | 28,305 |
+| agitacion_leve→narrativa_general→demo_proceso→narrativa_general | 4 | 61.83% | 183,178 |
+| autoridad→demo_proceso→narrativa_general→narrativa_general | 3 | 57.67% | 24,125 |
+| narrativa_general→narrativa_general→narrativa_general→demo_proceso | 7 | 53.67% | 61,803 |
+| narrativa_general→demo_proceso→narrativa_general→narrativa_general | 10 | 52.81% | 125,653 |
+| agitacion_leve→narrativa_general→narrativa_general→narrativa_general | 5 | 21.37% | 106,964 |
 ---
 
 ## Cómo usar esta library

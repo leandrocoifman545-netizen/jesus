@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T10:51:50.101Z",
+  "generated_at": "2026-03-25T11:17:26.975Z",
   "total_videos": 517,
   "total_profiles": 6,
   "profiles": [
@@ -156,6 +156,62 @@
       ]
     },
     {
+      "pattern": "promesa_directa",
+      "count": 7,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 127.42,
+      "weighted_clr": 129.78,
+      "median_clr": 108.78,
+      "avg_views": 121176,
+      "examples": [
+        {
+          "text": "No soy Alex Hormozy, pero esta cuenta de Instagram hace 10 mil dólares por día. Y en este video te voy a mostrar en 5 se",
+          "clr": 314.21,
+          "views": 247504,
+          "shortCode": "DM06hWfOwrv",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Hace solo 5 días tenía 10.000 seguidores. Y esta mañana se despertó con 150.000 seguidores y en este video te voy a expl",
+          "clr": 175.36,
+          "views": 147504,
+          "shortCode": "DH33thfx8H4",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Vender con un BSL Funnel es una mierda. Quedate mirando que te explico por qué.",
+          "clr": 115.12,
+          "views": 361081,
+          "shortCode": "DMOI7gmux1f",
+          "profile": "ramiro.cubria"
+        }
+      ]
+    },
+    {
+      "pattern": "situacion_narrativa",
+      "count": 1,
+      "profiles": [
+        "herasmedia"
+      ],
+      "avg_clr": 97.64,
+      "weighted_clr": 97.64,
+      "median_clr": 97.64,
+      "avg_views": 85465,
+      "examples": [
+        {
+          "text": "Hace dos días tenía 30.000 seguidores. Y hoy se despertó con 200.000 seguidores únicamente publicando dos vídeos. Y así ",
+          "clr": 97.64,
+          "views": 85465,
+          "shortCode": "DLIoCAUxAV7",
+          "profile": "herasmedia"
+        }
+      ]
+    },
+    {
       "pattern": "provocacion",
       "count": 90,
       "profiles": [
@@ -243,7 +299,7 @@
         "tino.mossu"
       ],
       "avg_clr": 79.47,
-      "weighted_clr": 56.65,
+      "weighted_clr": 56.66,
       "median_clr": 66.82,
       "avg_views": 81245,
       "examples": [
@@ -279,7 +335,7 @@
         "ramiro.cubria"
       ],
       "avg_clr": 64.12,
-      "weighted_clr": 40.77,
+      "weighted_clr": 40.79,
       "median_clr": 46.06,
       "avg_views": 71638,
       "examples": [
@@ -735,7 +791,7 @@
         "tino.mossu"
       ],
       "avg_clr": 72.84,
-      "weighted_clr": 55.54,
+      "weighted_clr": 55.55,
       "median_clr": 56.03,
       "avg_views": 117844,
       "examples": []
@@ -801,7 +857,7 @@
         "ramiro.cubria"
       ],
       "avg_clr": 54.98,
-      "weighted_clr": 46.56,
+      "weighted_clr": 46.58,
       "median_clr": 48.12,
       "avg_views": 197354,
       "examples": []
@@ -835,7 +891,7 @@
         "tino.mossu"
       ],
       "avg_clr": 63.45,
-      "weighted_clr": 39.4,
+      "weighted_clr": 39.41,
       "median_clr": 49.01,
       "avg_views": 119346,
       "examples": []
@@ -935,7 +991,7 @@
         "tino.mossu"
       ],
       "avg_clr": 101.42,
-      "weighted_clr": 105.76,
+      "weighted_clr": 105.77,
       "median_clr": 80.05,
       "avg_views": 57359,
       "examples": [
@@ -969,7 +1025,7 @@
         "tino.mossu"
       ],
       "avg_clr": 100.52,
-      "weighted_clr": 104.89,
+      "weighted_clr": 104.9,
       "median_clr": 80.05,
       "avg_views": 57961,
       "examples": [
@@ -1139,7 +1195,7 @@
         "tino.mossu"
       ],
       "avg_clr": 88.64,
-      "weighted_clr": 83.23,
+      "weighted_clr": 83.25,
       "median_clr": 66.83,
       "avg_views": 78699,
       "examples": [
@@ -1175,7 +1231,7 @@
         "tino.mossu"
       ],
       "avg_clr": 81.26,
-      "weighted_clr": 60.16,
+      "weighted_clr": 60.17,
       "median_clr": 52.29,
       "avg_views": 87006,
       "examples": [
@@ -1346,7 +1402,8 @@
       "opening_text": "No soy Alex Hormozy, pero esta cuenta de Instagram hace 10 mil dólares por día. Y en este video te voy a mostrar en 5 segundos cómo optimizar tu perfil de Instagram para vender más.",
       "opening_duration": 8.68,
       "opening_patterns": [
-        "dato_numero"
+        "dato_numero",
+        "promesa_directa"
       ],
       "clr": 314.21,
       "views": 247504,
@@ -1558,7 +1615,8 @@
       "opening_duration": 8.4,
       "opening_patterns": [
         "dato_numero",
-        "lista_framework"
+        "lista_framework",
+        "promesa_directa"
       ],
       "clr": 175.36,
       "views": 147504,
@@ -1762,7 +1820,8 @@
       "opening_duration": 7.6,
       "opening_patterns": [
         "dato_numero",
-        "acumulacion"
+        "acumulacion",
+        "situacion_narrativa"
       ],
       "clr": 97.64,
       "views": 85465,
@@ -1815,7 +1874,8 @@
       "opening_duration": 8.68,
       "opening_patterns": [
         "dato_numero",
-        "lista_framework"
+        "lista_framework",
+        "promesa_directa"
       ],
       "clr": 92.03,
       "views": 5168,
@@ -1851,7 +1911,8 @@
       "opening_text": "¿Qué es ser un closer de ventas y por qué es el mejor camino para hacer plata hoy por internet? Te voy a explicar bien qué es un closer de ventas. Bien, imagínate que esta es una empresa.",
       "opening_duration": 10.22,
       "opening_patterns": [
-        "pregunta"
+        "pregunta",
+        "promesa_directa"
       ],
       "clr": 51.26,
       "views": 23150,
@@ -2219,6 +2280,285 @@
       "clr": 107.32,
       "views": 12540,
       "profile": "herasmedia"
+    }
+  ],
+  "caption_patterns": [
+    {
+      "pattern": "dm_cta",
+      "count": 163,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 118.26,
+      "avg_views": 99094
+    },
+    {
+      "pattern": "cta_keyword",
+      "count": 241,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 106.73,
+      "avg_views": 73997
+    },
+    {
+      "pattern": "media",
+      "count": 322,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 82.02,
+      "avg_views": 230804
+    },
+    {
+      "pattern": "sin_hashtags",
+      "count": 356,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 73.78,
+      "avg_views": 239214
+    },
+    {
+      "pattern": "segundo_hook",
+      "count": 5,
+      "profiles": [
+        "herasmedia"
+      ],
+      "avg_clr": 72.18,
+      "avg_views": 231059
+    },
+    {
+      "pattern": "resumen",
+      "count": 17,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 63.05,
+      "avg_views": 50102
+    },
+    {
+      "pattern": "urgencia",
+      "count": 22,
+      "profiles": [
+        "herasmedia"
+      ],
+      "avg_clr": 61.79,
+      "avg_views": 35001
+    },
+    {
+      "pattern": "corta",
+      "count": 98,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 58.91,
+      "avg_views": 138554
+    },
+    {
+      "pattern": "cta_generico",
+      "count": 146,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 53.82,
+      "avg_views": 102543
+    },
+    {
+      "pattern": "hashtag_light",
+      "count": 158,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "tino.mossu"
+      ],
+      "avg_clr": 52.91,
+      "avg_views": 129445
+    },
+    {
+      "pattern": "pregunta",
+      "count": 9,
+      "profiles": [
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 35.5,
+      "avg_views": 32778
+    },
+    {
+      "pattern": "prueba_social",
+      "count": 3,
+      "profiles": [
+        "herasmedia"
+      ],
+      "avg_clr": 33.54,
+      "avg_views": 70066
+    },
+    {
+      "pattern": "larga",
+      "count": 84,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 27.45,
+      "avg_views": 126726
+    },
+    {
+      "pattern": "storytelling",
+      "count": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "avg_clr": 24.04,
+      "avg_views": 87050
+    },
+    {
+      "pattern": "promesa_gratis",
+      "count": 31,
+      "profiles": [
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 17.59,
+      "avg_views": 133667
+    },
+    {
+      "pattern": "muy_larga",
+      "count": 12,
+      "profiles": [
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting"
+      ],
+      "avg_clr": 11.48,
+      "avg_views": 619271
+    },
+    {
+      "pattern": "hashtag_heavy",
+      "count": 2,
+      "profiles": [
+        "tino.mossu"
+      ],
+      "avg_clr": 0.33,
+      "avg_views": 180500
+    },
+    {
+      "pattern": "vacia",
+      "count": 1,
+      "profiles": [
+        "tino.mossu"
+      ],
+      "avg_clr": 0.21,
+      "avg_views": 202801
+    }
+  ],
+  "beat_sequences": [
+    {
+      "sequence": "demo_proceso→narrativa_general→demo_proceso→demo_proceso",
+      "count": 4,
+      "avg_clr": 145.17,
+      "avg_views": 59807
+    },
+    {
+      "sequence": "demo_proceso→demo_proceso→narrativa_general→narrativa_general",
+      "count": 5,
+      "avg_clr": 140.35,
+      "avg_views": 76852
+    },
+    {
+      "sequence": "narrativa_general→narrativa_general→autoridad→narrativa_general",
+      "count": 7,
+      "avg_clr": 108.52,
+      "avg_views": 54224
+    },
+    {
+      "sequence": "demo_proceso→narrativa_general→narrativa_general→narrativa_general",
+      "count": 13,
+      "avg_clr": 94.55,
+      "avg_views": 73762
+    },
+    {
+      "sequence": "autoridad→narrativa_general→narrativa_general→narrativa_general",
+      "count": 6,
+      "avg_clr": 81.91,
+      "avg_views": 22591
+    },
+    {
+      "sequence": "narrativa_general→narrativa_general→narrativa_general→narrativa_general",
+      "count": 73,
+      "avg_clr": 77.41,
+      "avg_views": 176480
+    },
+    {
+      "sequence": "narrativa_general→demo_proceso→demo_proceso→demo_proceso",
+      "count": 3,
+      "avg_clr": 72.42,
+      "avg_views": 28305
+    },
+    {
+      "sequence": "agitacion_leve→narrativa_general→demo_proceso→narrativa_general",
+      "count": 4,
+      "avg_clr": 61.83,
+      "avg_views": 183178
+    },
+    {
+      "sequence": "autoridad→demo_proceso→narrativa_general→narrativa_general",
+      "count": 3,
+      "avg_clr": 57.67,
+      "avg_views": 24125
+    },
+    {
+      "sequence": "narrativa_general→narrativa_general→narrativa_general→demo_proceso",
+      "count": 7,
+      "avg_clr": 53.67,
+      "avg_views": 61803
+    },
+    {
+      "sequence": "narrativa_general→demo_proceso→narrativa_general→narrativa_general",
+      "count": 10,
+      "avg_clr": 52.81,
+      "avg_views": 125653
+    },
+    {
+      "sequence": "agitacion_leve→narrativa_general→narrativa_general→narrativa_general",
+      "count": 5,
+      "avg_clr": 21.37,
+      "avg_views": 106964
     }
   ]
 }

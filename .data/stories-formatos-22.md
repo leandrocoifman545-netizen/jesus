@@ -1,6 +1,7 @@
-# 22 Formatos Visuales para Stories
+# 28 Formatos Visuales para Stories (22 originales + 6 premium)
 
 > Cada story dentro de una secuencia debe usar un formato distinto al anterior. NUNCA 2 videos del mismo tipo seguidos.
+> Los 6 formatos Premium (P1-P6) son de alta producción visual, identificados del análisis de 140 stories estéticas (8 creadores, 2026-03-29). Ver specs de reproducción en `reference_estetica_stories_140.md`.
 
 ---
 
@@ -54,6 +55,19 @@
 | E2 | **IA generada (Sora, Gemini)** | Contenido visual raro = más views | Algo que no podrías hacer con foto/video real |
 | E3 | **Stickers de LetoFonts** | Flechas, highlights, estética | Agregar a cualquier otro formato |
 
+## Formatos Estéticos Premium (6 — de análisis 140 stories, 2026-03-29)
+
+> Formatos de alta producción visual para secuencias de CTA Directo, Origin Story, o Lanzamiento. Requieren más edición pero generan percepción de valor superior. Referencia completa con specs en `reference_estetica_stories_140.md` (memoria).
+
+| # | Formato | Cuándo usar | Reglas | Referencia |
+|---|---------|-------------|--------|------------|
+| P1 | **Progressive reveal (misma foto + layers)** | Explicar razones, apilar casos, revelar producto | 1 foto base que NO cambia. Cada slide agrega 1 elemento (badge, flecha, card). Máx 4 slides. El cerebro busca qué cambió = retención forzada | Nicolas Clay: Porsche+Alpes 4 slides, W Verbier acumulación |
+| P2 | **Film grain nocturno** | Lanzamientos premium, club exclusivo, comunidad | Grano 25-40, exposición -0.5 a -1.0 EV, saturación -15 a -25%. Accent naranja/dorado (#FF8C00). Espacio negativo mín 40%. 1 keyword con subrayado ondulado por slide | Only Earned: toda la secuencia "Earned Concierge" |
+| P3 | **Fondo blur/bokeh + texto centrado** | Frases de impacto, momentos de reflexión, transiciones | Foto lifestyle con gaussian blur (radius 15-25px). Overlay rgba(0,0,0,0.1-0.2). Texto blanco centrado nítido. El foco está 100% en las palabras | Ivory Coast: "It took me two weeks..." |
+| P4 | **Foto antigua con bordes redondeados flotante** | Origin stories, transformación, vulnerabilidad | Foto real del pasado. Border-radius 16-20px. Shadow (y:4, blur:16). Sobre fondo blur o negro. Máx 2 fotos por slide. Rotación 0-3° opcional | Ivory Coast: fotos infancia Ivory Coast, hermanos |
+| P5 | **Arte/pintura clásica + texto moderno** | Reflexiones filosóficas, posicionamiento intelectual | Imagen de arte (Sócrates, Renacimiento, escultura). Texto moderno superpuesto. Eleva el nivel percibido. NO abusar: máx 1 por secuencia | MCE: La muerte de Sócrates + "La vida termina cuando dejas de soñar" |
+| P6 | **Roadmap serpentina con badges color** | Explicar proceso/método en 1 slide, pasos numerados | Path SVG curvo blanco. Badges: Paso 1 (verde #22C55E), Paso 2 (amarillo #EAB308), Paso 3 (rojo #EF4444). Texto explicativo por paso. Objeto real (laptop) como intermedio | Content Project: "¿Cómo lo hago?" 3 pasos |
+
 ---
 
 ## Reglas de Alternación
@@ -83,6 +97,13 @@
 | A1 Actuado personajes | — | — | — | — | — | — | — | ✓✓ | — | — |
 | A2 Pizarra/diagrama | — | — | — | — | — | — | ✓ | ✓ | ✓✓ | ✓ |
 | A3 Screen recording | — | — | — | — | — | — | ✓✓ | — | — | ✓✓ |
+
+| P1 Progressive reveal | — | — | — | ✓✓ | — | — | ✓✓ | — | ✓ | — |
+| P2 Film grain nocturno | — | — | — | ✓✓ | — | ✓ | — | — | — | — |
+| P3 Blur/bokeh + texto | ✓✓ | — | — | ✓ | ✓ | ✓✓ | — | — | — | — |
+| P4 Foto antigua rounded | ✓✓ | — | — | — | — | ✓✓ | — | — | — | — |
+| P5 Arte clásico | ✓ | — | — | — | — | ✓ | ✓ | — | — | — |
+| P6 Roadmap serpentina | — | — | — | — | — | — | ✓✓ | — | ✓✓ | — |
 
 ✓✓ = ideal para este tipo | ✓ = funciona | — = no combina bien
 

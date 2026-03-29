@@ -1,0 +1,205 @@
+{
+  "id": "d6a73d64-b931-4f2e-acfd-482dbbcfc4fd",
+  "name": "Dolor-centrista — 562 compradores (Víctor Elas)",
+  "weekOf": "2026-03-25",
+  "slots": [
+    {
+      "index": 0,
+      "angle": "F1-1.2 Oficinista",
+      "segment": "A",
+      "funnel": "TOFU",
+      "bodyType": "contraste_emocional",
+      "visualFormat": "talking_head",
+      "nicheIdea": "Dolor puro: Trabajo mucho y gano poco (46% compradores)",
+      "leadTypes": [
+        "confesion_vulnerabilidad",
+        "dato_concreto",
+        "situacion_especifica",
+        "provocacion",
+        "contraintuitivo"
+      ],
+      "justification": "Dolor #1 verificado por 46% de compradores. Patricia (48), T13, tiempo_vs_dinero. Arco #2 dolor→esperanza.",
+      "status": "pending"
+    },
+    {
+      "index": 1,
+      "angle": "F3-3.6 Anti-gurú",
+      "segment": "D",
+      "funnel": "TOFU",
+      "bodyType": "demolicion_alternativas",
+      "visualFormat": "talking_head",
+      "nicheIdea": "Miedo #1: Que sea estafa (30% compradores)",
+      "leadTypes": [
+        "provocacion",
+        "pregunta_incomoda",
+        "negacion_directa",
+        "dato_concreto",
+        "contraintuitivo"
+      ],
+      "justification": "Miedo #1 de compradores (30%). Diego (44), T8, transparencia_total. Arco #3 confrontación.",
+      "status": "pending"
+    },
+    {
+      "index": 2,
+      "angle": "F4-4.5 La matemática",
+      "segment": "B",
+      "funnel": "TOFU",
+      "bodyType": "demo_proceso",
+      "visualFormat": "talking_head",
+      "nicheIdea": "fitness — $850→$3000 (ingreso deseado ×3.5)",
+      "leadTypes": [
+        "dato_concreto",
+        "pregunta_incomoda",
+        "situacion_especifica",
+        "contraintuitivo",
+        "provocacion"
+      ],
+      "justification": "Ingreso mediano $850 → deseo $3000. Valentina (32), T6, matematica_simple. Arco #1 revelación.",
+      "status": "pending"
+    },
+    {
+      "index": 3,
+      "angle": "F2-2.4 Economía conocimiento",
+      "segment": "C",
+      "funnel": "TOFU",
+      "bodyType": "un_dia_en_la_vida",
+      "visualFormat": "talking_head",
+      "nicheIdea": "Dolor transversal: Cobrar por hora = techo",
+      "leadTypes": [
+        "situacion_especifica",
+        "contraintuitivo",
+        "confesion_vulnerabilidad",
+        "dato_concreto",
+        "provocacion"
+      ],
+      "justification": "Dolor transversal validado. Laura (45), T7, contraste_negocio_fisico. Arco #7 futuro sensorial.",
+      "status": "pending"
+    },
+    {
+      "index": 4,
+      "angle": "F5-5.5 Diálogo/Actuación",
+      "segment": "A",
+      "funnel": "TOFU",
+      "bodyType": "pregunta_respuesta",
+      "visualFormat": "split_screen",
+      "nicheIdea": "Ráfaga de mitos destruidos (formato Víctor Elas)",
+      "leadTypes": [
+        "provocacion",
+        "pregunta_incomoda",
+        "dato_concreto",
+        "negacion_directa",
+        "contraintuitivo"
+      ],
+      "justification": "Formato Víctor Elas: conversación ráfaga de mitos sobre productos digitales. Patricia, T5, eliminacion_barreras. Arco #5.",
+      "status": "pending"
+    },
+    {
+      "index": 5,
+      "angle": "F3-3.5 Costo invisible",
+      "segment": "B",
+      "funnel": "MOFU",
+      "bodyType": "demolicion_mito",
+      "visualFormat": "talking_head",
+      "nicheIdea": "Trigger #1 invertido: Costo de no actuar",
+      "leadTypes": [
+        "dato_concreto",
+        "provocacion",
+        "contraintuitivo",
+        "pregunta_incomoda",
+        "situacion_especifica"
+      ],
+      "justification": "Costo de inacción cuantificado. Soledad (55), T9, lean_anti_riesgo. Arco #8 provocación+evidencia.",
+      "status": "pending"
+    },
+    {
+      "index": 6,
+      "angle": "F4-4.3 Antes vs Después IA",
+      "segment": "D",
+      "funnel": "TOFU",
+      "bodyType": "analogia_extendida",
+      "visualFormat": "talking_head",
+      "nicheIdea": "psicología — No sé de tecnología (miedo #2, 25%)",
+      "leadTypes": [
+        "contraintuitivo",
+        "situacion_especifica",
+        "dato_concreto",
+        "provocacion",
+        "confesion_vulnerabilidad"
+      ],
+      "justification": "Miedo #2 de compradores (25%). Roberto (62), T12, democratizacion_ia. Arco #6 analogía.",
+      "status": "pending"
+    },
+    {
+      "index": 7,
+      "angle": "F1-1.5 Joven frustrado",
+      "segment": "A",
+      "funnel": "MOFU",
+      "bodyType": "historia_con_giro",
+      "visualFormat": "talking_head",
+      "nicheIdea": "Dolor #3: Estancado sin perspectivas (22%)",
+      "leadTypes": [
+        "confesion_vulnerabilidad",
+        "situacion_especifica",
+        "provocacion",
+        "dato_concreto",
+        "contraintuitivo"
+      ],
+      "justification": "Dolor #3 verificado (22%). Martín (26), T4, prueba_diversidad. Arco #4 historia.",
+      "status": "pending"
+    },
+    {
+      "index": 8,
+      "angle": "F2-2.5 Caso real trending",
+      "segment": "D",
+      "funnel": "MOFU",
+      "bodyType": "comparacion_caminos",
+      "visualFormat": "talking_head",
+      "nicheIdea": "fotografía — Quiero algo propio (trigger #5 de compra)",
+      "leadTypes": [
+        "situacion_especifica",
+        "dato_concreto",
+        "provocacion",
+        "confesion_vulnerabilidad",
+        "contraintuitivo"
+      ],
+      "justification": "Trigger #5 de compra. Roberto (62), T10, ventana_oportunidad. Arco #2 dolor→esperanza.",
+      "status": "pending"
+    },
+    {
+      "index": 9,
+      "angle": "F5-5.3 Micro-historia",
+      "segment": "C",
+      "funnel": "RETARGET",
+      "bodyType": "qa_conversacional",
+      "visualFormat": "talking_head",
+      "nicheIdea": "Data como historia: No buscan millones, buscan respirar",
+      "leadTypes": [
+        "dato_concreto",
+        "confesion_vulnerabilidad",
+        "contraintuitivo",
+        "situacion_especifica",
+        "provocacion"
+      ],
+      "justification": "Anti-hype radical con data real. Laura (45), T1, prueba_personal. Arco #7 futuro sensorial. RETARGET.",
+      "status": "pending"
+    }
+  ],
+  "visualFormats": [
+    "talking_head",
+    "split_screen"
+  ],
+  "recordingOrder": [
+    1,
+    5,
+    4,
+    2,
+    8,
+    0,
+    7,
+    3,
+    6,
+    9
+  ],
+  "notes": "Primer plan 100% dolor-centrista. Cada guion nace de un verbatim real de 562 compradores. Formato Víctor Elas en #5 (ráfaga de mitos). 10 vehículos y 10 ventas TODAS distintas. CTAs: Variante B clase + Variante C taller + Variante E IG (primera vez).",
+  "createdAt": "2026-03-25T22:36:48.487Z"
+}

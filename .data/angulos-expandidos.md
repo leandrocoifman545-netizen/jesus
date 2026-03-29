@@ -175,17 +175,24 @@ Atacan desde la narrativa. El viewer se engancha con la historia, no con la lóg
 | 3 | 3 | 1 | 1-1-1 |
 
 ### Ángulos saturados (usar con moderación):
-- 1.1 (Mamá/tiempo) — ya tiene 5+ guiones
-- 3.1 (IA desperdiciada) — ya tiene 8+ guiones
+- ? — ya tiene 13+ guiones (QUEMADO)
 - "Estás sentado en una pira de dinero" como frase — quemada
 
 ### Ángulos frescos (priorizar):
-- 2.2 (Tendencia de mercado con data real)
-- 2.4 (Economía del conocimiento)
-- 3.2 (Consumidor vs. creador)
-- 3.4 (Comparación tóxica/social)
-- 4.5 (La matemática)
-- 4.6 (Producto específico revelado)
+- 1.3 (0 guiones — sin explorar)
+- 1.6 (0 guiones — sin explorar)
+- 1.7 (0 guiones — sin explorar)
+- 2.2 (0 guiones — sin explorar)
+- 2.3 (0 guiones — sin explorar)
+- 2.6 (0 guiones — sin explorar)
+- 3.1 (0 guiones — sin explorar)
+- 3.3 (0 guiones — sin explorar)
+- F4-4.2 Demo (1 guion — poco explorado)
+- F2-2.5 Caso trending (1 guion — poco explorado)
+- F2-2.3 Nicho invisible (1 guion — poco explorado)
+- F1-1.4 Jubilado (1 guion — poco explorado)
+- F4-4.4 Behind scenes (1 guion — poco explorado)
+- F3-3.5 Costo invisible (1 guion — poco explorado)
 
 ---
 

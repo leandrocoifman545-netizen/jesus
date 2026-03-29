@@ -1,0 +1,173 @@
+{
+  "id": "e91195d8-66b5-4410-a393-a586c8d6017a",
+  "briefId": "0f1f34a7-e79e-451e-bde2-1dfe229e0e5d",
+  "title": "Ya probé cosas online y no funcionan",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.5_costo_invisible",
+    "body_type": "victor_elas_conversation",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "mito: fracaso previo",
+    "model_sale_type": "lean_anti_riesgo",
+    "visual_format": "split_screen",
+    "avatar": "diego",
+    "awareness_level": 4,
+    "emotional_arc": "pregunta_x_pregunta",
+    "tension": "T8",
+    "transition_text": "PERSONA A: ¿Cómo entro?\nJESÚS: Tocá el botón de acá abajo.",
+    "total_duration_seconds": 57,
+    "word_count": 359,
+    "belief_change": {
+      "old_belief": "Ya probé y nada funciona",
+      "mechanism": "El problema fue el modelo, no vos — acá sos dueño",
+      "new_belief": "Esta vez el producto es mío y el riesgo es una pizza"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, probé dropshipping, afiliados, un curso de trescientos dólares. Nada me funcionó.\nJESÚS: ¿Querés que te diga por qué no funcionó?\nPERSONA A: Dale.\nJESÚS: Porque en los 3 casos, vos ponés el laburo y otro se queda con la ganancia.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Ya no puedo seguir haciendo lo mismo. Probé 3 cosas y perdí plata en las 3.\nJESÚS: ¿Qué probaste?\nPERSONA A: Dropshipping, afiliados y un curso que no sirvió.\nJESÚS: Ninguna de esas es lo que yo hago. Escuchame 40 segundos.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Cada vez que alguien me dice \"este método funciona\" yo pienso \"sí, claro, como los otros 3.\"\nJESÚS: Y tenés razón. Los otros 3 son basura. ¿Querés saber por qué?",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Gastá plata en dropshipping: el proveedor me cagó. Gasté en afiliados: comisión del 10%. Gasté en un curso: me dejaron solo. ¿Qué me queda?\nJESÚS: Te queda lo único que funciona. Lo que los otros no te enseñaron porque les convenía venderte otra cosa.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Honestamente, estoy quemado. Esta es la última vez que le doy bola a algo online.\nJESÚS: Perfecto. Porque si esta es tu última chance, escuchá bien por qué las anteriores fallaron y esta no.\nPERSONA A: Probé dropshipping. El proveedor me dejó colgado con un pedido. Perdí guita y clientes.\nJESÚS: Claro. Porque dependés de un chino que ni te conoce. ¿Qué más probaste?\nPERSONA A: Afiliados. Comisión del 10%.\nJESÚS: Vendés el producto de otro y te quedás con las migajas. ¿Y el curso?\nPERSONA A: Trescientos dólares. Videos grabados. Cero soporte.\nJESÚS: En los 3 casos el patrón es el mismo: vos ponés el laburo y otro se lleva tu plata.\nPERSONA A: Bueno, pero algo estoy haciendo mal yo.\nJESÚS: No. Elegiste modelos diseñados para que vos fracases y ellos ganen. Dropshipping necesita logística. Afiliados te dan migajas. Los cursos te venden más cursos. No es que no servís.\nPERSONA A: ¿Y esto en qué es distinto?\nJESÚS: VOS creás tu producto. VOS le ponés el precio. VOS te quedás con el 100%. No hay intermediario, no hay proveedor, no hay comisión.\nPERSONA A: Ya gasté como quinientos dólares en cosas que no sirvieron. No voy a meter más.\nJESÚS: Dos dólares por día. El producto lo armás gratis con la IA. Si en una semana no vendés, perdiste catorce dólares. Una pizza.\nPERSONA A: ¿Catorce dólares contra quinientos?\nJESÚS: Contra quinientos. Y el producto sigue siendo TUYO para siempre. No lo perdés como una comisión de afiliado.\nPERSONA A: Entonces el producto es mío, me quedo con todo y el riesgo es una pizza.\nJESÚS: Sí.\nPERSONA A: Suena distinto. Pero \"distinto\" lo escuché 50 veces.\nJESÚS: Exacto. Por eso no te pido que me creas. Te pido que lo veas. Son 3 días conmigo en vivo. Si es humo, te diste cuenta el día 1. Y perdiste menos que las veces anteriores.\nPERSONA A: Dale, una más. Última vez que pruebo algo.\nJESÚS: Tocá el botón de acá abajo.\nJESÚS: Básicamente validás ANTES de crear. Si nadie lo quiere, no perdiste ni tiempo ni plata. Lo opuesto de todo lo que hiciste antes.\nPERSONA A: ¿Cómo entro?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "pregunta_x_pregunta",
+      "sections": [
+        {
+          "section_name": "Nada online funciona",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Probé dropshipping. El proveedor me dejó colgado con un pedido. Perdí guita y clientes.\nJESÚS: Claro. Porque dependés de un chino que ni te conoce. ¿Qué más probaste?\nPERSONA A: Afiliados. Comisión del 10%.\nJESÚS: Vendés el producto de otro y te quedás con las migajas. ¿Y el curso?\nPERSONA A: Trescientos dólares. Videos grabados. Cero soporte.\nJESÚS: En los 3 casos el patrón es el mismo: vos ponés el laburo y otro se lleva tu plata.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Yo no sirvo para esto",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Bueno, pero algo estoy haciendo mal yo.\nJESÚS: No. Elegiste modelos diseñados para que vos fracases y ellos ganen. Dropshipping necesita logística. Afiliados te dan migajas. Los cursos te venden más cursos. No es que no servís.\nPERSONA A: ¿Y esto en qué es distinto?\nJESÚS: VOS creás tu producto. VOS le ponés el precio. VOS te quedás con el 100%. No hay intermediario, no hay proveedor, no hay comisión.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Necesito mucha plata para reintentar",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Ya gasté como quinientos dólares en cosas que no sirvieron. No voy a meter más.\nJESÚS: Dos dólares por día. El producto lo armás gratis con la IA. Si en una semana no vendés, perdiste catorce dólares. Una pizza.\nPERSONA A: ¿Catorce dólares contra quinientos?\nJESÚS: Contra quinientos. Y el producto sigue siendo TUYO para siempre. No lo perdés como una comisión de afiliado.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Entonces el producto es mío, me quedo con todo y el riesgo es una pizza.\nJESÚS: Sí.\nPERSONA A: Suena distinto. Pero \"distinto\" lo escuché 50 veces.\nJESÚS: Exacto. Por eso no te pido que me creas. Te pido que lo veas. Son 3 días conmigo en vivo. Si es humo, te diste cuenta el día 1. Y perdiste menos que las veces anteriores.\nPERSONA A: Dale, una más. Última vez que pruebo algo.\nJESÚS: Tocá el botón de acá abajo.\nJESÚS: Básicamente validás ANTES de crear. Si nadie lo quiere, no perdiste ni tiempo ni plata. Lo opuesto de todo lo que hiciste antes.\nPERSONA A: ¿Cómo entro?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "JESÚS: Básicamente validás ANTES de crear. Si nadie lo quiere, no perdiste ni tiempo ni plata. Lo opuesto de todo lo que hiciste antes.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "Contraintuitivo"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 43,
+        "ingredient_name": "Verdad Incómoda"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 94,
+        "ingredient_name": "Credibilidad"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T00:37:24.541Z",
+  "status": "draft",
+  "batch": {
+    "id": "cf67a1fc-1f33-4369-b723-0cc0973e60fc",
+    "name": "Víctor Elas × 562 compradores — V5"
+  }
+}

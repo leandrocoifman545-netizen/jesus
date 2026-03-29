@@ -1,4 +1,4 @@
-# Avatares Formales ADP — 7 Personas Reales
+# Avatares Formales ADP — 8 Personas Reales
 
 > Cristalizados de 8,074+ leads y 22,819+ conversaciones del bot WhatsApp ADP.
 > Última actualización: semana 10-16 marzo 2026 (~6,000 leads, ~1,000 mensajes analizados).

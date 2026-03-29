@@ -563,5 +563,65 @@
     "hookType": "contraintuitivo",
     "fromGenerationId": "e58e5f93-74c4-4a8c-84bc-73460c201c49",
     "burnedAt": "2026-03-21T13:38:43.869Z"
+  },
+  {
+    "text": "PERSONA A: (hablando normal) Sí si, estoy viendo empezar a emprender...\n\nVOZ DE FONDO (novia): ¡¿Otra vez con eso?!\n\nPERSONA A: (baja la voz, al teléfono) ...esperá, esperá. (bajito) Dale, contame rápido.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "aa1beee2-a1f4-48d2-91eb-80605f8add44",
+    "burnedAt": "2026-03-26T08:39:01.613Z"
+  },
+  {
+    "text": "JESÚS: Este pibe me llamó un martes a las 5am hablando bajito. Le pregunté por qué susurraba. ¿Sabés qué me dijo?\n\n(corte a la llamada)\n\nPERSONA A: (bajito) Porque mi novia está al lado y si se entera que estoy viendo esto me mata.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "aa1beee2-a1f4-48d2-91eb-80605f8add44",
+    "burnedAt": "2026-03-26T08:39:01.613Z"
+  },
+  {
+    "text": "PERSONA A: (bajito) Che, una pregunta rápida. ¿Cuánta plata necesito para arrancar?\n\nJESÚS: 5 dólares.\n\nPERSONA A: ¿5 dólares?\n\nJESÚS: ¿Por qué hablás tan bajo?\n\nPERSONA A: ...no importa. Seguí.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "aa1beee2-a1f4-48d2-91eb-80605f8add44",
+    "burnedAt": "2026-03-26T08:39:01.613Z"
+  },
+  {
+    "text": "PERSONA A: (bajito, rápido) ¿Es verdad que se puede ganar plata sin que nadie sepa que lo estás haciendo? Sin mostrar la cara, sin nada.\n\nJESÚS: Sí. ¿Estás bien? ¿Por qué hablás así?\n\nPERSONA A: Sí sí, estoy bien. Contame cómo funciona.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "aa1beee2-a1f4-48d2-91eb-80605f8add44",
+    "burnedAt": "2026-03-26T08:39:01.613Z"
+  },
+  {
+    "text": "PERSONA A: Necesito que me expliques cómo funciona esto pero tengo poco tiem—\n\nVOZ DE FONDO (novia): ¿Con quién hablás?\n\nPERSONA A: ¡Con nadie, amor! (bajito, al teléfono) Dale, arrancá.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "aa1beee2-a1f4-48d2-91eb-80605f8add44",
+    "burnedAt": "2026-03-26T08:39:01.613Z"
+  },
+  {
+    "text": "PERSONA A: Hoy cobré. ¿Querés saber cuánto me quedó después de alquiler y cuentas?\n\nJESÚS: ¿Cuánto?\n\nPERSONA A: Para todo el mes. Adivina.\n\nJESÚS: ¿Cuánto?\n\nPERSONA A: 50 dólares. ademas de eso",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
+    "burnedAt": "2026-03-26T09:26:40.113Z"
+  },
+  {
+    "text": "PERSONA A: (se lo escucha agitado, como caminando rápido) Renuncié.\n\nJESÚS: ¿¡Qué!?\n\nPERSONA A: No, mentira. Pero estuve a punto. ¿Hay algo que pueda hacer antes de mandar todo a la mierda?",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
+    "burnedAt": "2026-03-26T09:26:40.113Z"
+  },
+  {
+    "text": "PERSONA A: Hoy me crucé al dueño de la empresa en el ascensor. Me dijo \"buen trabajo.\" ¿Sabés cuándo fue la última vez que me aumentaron?\n\nJESÚS: ¿Cuándo?\n\nPERSONA A: Nunca.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
+    "burnedAt": "2026-03-26T09:26:40.113Z"
+  },
+  {
+    "text": "PERSONA A: Hoy mi jefe me hizo repetir un informe 3 veces. Delante de todos. ¿Sabés qué gano por bancarme eso?\n\nJESÚS: ¿Cuánto?\n\nPERSONA A: 800 dólares al mes. Para que me traten así.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
+    "burnedAt": "2026-03-26T09:26:40.113Z"
+  },
+  {
+    "text": "PERSONA A: Hoy un cliente me felicitó por el laburo que hice. Mi jefe estaba al lado. ¿Sabés qué hizo?\n\nJESÚS: ¿Qué?\n\nPERSONA A: Se llevó el crédito. Adelante mío. Sin pestañear y eso no fue lo peor",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
+    "burnedAt": "2026-03-26T09:26:40.113Z"
   }
 ]

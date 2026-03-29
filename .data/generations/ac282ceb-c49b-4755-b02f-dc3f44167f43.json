@@ -1,0 +1,191 @@
+{
+  "id": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
+  "briefId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "planId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "title": "Mi jefe gana 3 lucas y yo 800 por hacer lo mismo",
+  "contentType": "shortform",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "F3-3.2 Ciclo roto",
+    "body_type": "conversacion_experto_novato",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "Bronca salarial — revancha sin renunciar",
+    "model_sale_type": "matematica_simple",
+    "visual_format": "split_screen_dialogo",
+    "avatar": "martin",
+    "awareness_level": 3,
+    "emotional_arc": "bronca_plan",
+    "tension": "T1",
+    "transition_text": "",
+    "total_duration_seconds": 55,
+    "word_count": 240,
+    "belief_change": {
+      "old_belief": "La única forma de ganar más es conseguir un laburo mejor o pedir aumento",
+      "mechanism": "La matemática del sueldo vs producto digital demuestra que una hora vale más afuera que adentro",
+      "new_belief": "Puedo ganar más que mi jefe al costado sin renunciar"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi hora vale menos de lo que pensaba",
+        "installed_via": "Cuenta: $800 / 180 horas = $4.4 la hora",
+        "persuasion_function": "identificacion",
+        "section_name": "La cuenta que no querés hacer"
+      },
+      {
+        "belief": "Existe algo que paga más por hora sin jefe",
+        "installed_via": "Producto digital: $2 → $45, equivale a $45/hora",
+        "persuasion_function": "quiebre",
+        "section_name": "La otra cuenta"
+      },
+      {
+        "belief": "No tengo que renunciar para hacerlo",
+        "installed_via": "Se hace después del laburo, una hora, desde el celular",
+        "persuasion_function": "mecanismo",
+        "section_name": "Sin renunciar"
+      },
+      {
+        "belief": "El riesgo es ridículo comparado con lo que pierdo quedándome",
+        "installed_via": "$14 de riesgo vs seguir ganando $4.4/hora para siempre",
+        "persuasion_function": "demolicion",
+        "section_name": "Lo que realmente estás perdiendo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Hoy cobré. ¿Querés saber cuánto me quedó después de alquiler y cuentas?\n\nJESÚS: ¿Cuánto?\n\nPERSONA A: Para todo el mes. Adivina.\n\nJESÚS: ¿Cuánto?\n\nPERSONA A: 50 dólares. ademas de eso",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: (se lo escucha agitado, como caminando rápido) Renuncié.\n\nJESÚS: ¿¡Qué!?\n\nPERSONA A: No, mentira. Pero estuve a punto. ¿Hay algo que pueda hacer antes de mandar todo a la mierda?",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Hoy me crucé al dueño de la empresa en el ascensor. Me dijo \"buen trabajo.\" ¿Sabés cuándo fue la última vez que me aumentaron?\n\nJESÚS: ¿Cuándo?\n\nPERSONA A: Nunca.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Hoy mi jefe me hizo repetir un informe 3 veces. Delante de todos. ¿Sabés qué gano por bancarme eso?\n\nJESÚS: ¿Cuánto?\n\nPERSONA A: 800 dólares al mes. Para que me traten así.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Hoy un cliente me felicitó por el laburo que hice. Mi jefe estaba al lado. ¿Sabés qué hizo?\n\nJESÚS: ¿Qué?\n\nPERSONA A: Se llevó el crédito. Adelante mío. Sin pestañear y eso no fue lo peor",
+        "timing_seconds": 6
+      }
+    ],
+    "development": {
+      "framework_used": "conversacion_victor_eraso",
+      "emotional_arc": "bronca_plan",
+      "sections": [
+        {
+          "section_name": "Lo que pasó hoy",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Estoy atrapado y no veo salida",
+          "script_text": "PERSONA A: Hoy mi jefe se tomó la tarde libre. Me dejó todo a mí. ¿Sabés a qué hora me fui?\n\nJESÚS: ¿A qué hora?\n\nPERSONA A: A las 7 y media. Él se fue a las 2.\n\nJESÚS: ¿Y cuánto ganás?\n\nPERSONA A: 800 dólares. Él gana 3 mil. ¿Es normal querer romper todo?\n\nJESÚS: Es normal. ¿Sabés cuánto vale tu hora?\n\nPERSONA A: Ni idea.\n\nJESÚS: Dividí tu sueldo por las horas que laburás.\n\nPERSONA A: ...4 dólares y monedas. La puta madre.",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "OVERLAY: \" ÷ 180 horas = .40/hora\""
+          ]
+        },
+        {
+          "section_name": "La hora que le regalás",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi tiempo vale más de lo que me pagan",
+          "script_text": "JESÚS: Esa hora extra que te quedaste hoy, ¿te la pagaron?\n\nPERSONA A: No. Nunca me la pagan.\n\nJESÚS: O sea que le regalaste una hora a un tipo que gana 4 veces más que vos.\n\nPERSONA A: ...cuando lo decís así suena horrible.\n\nJESÚS: Porque ES horrible. ¿Y si esa hora que le regalás a tu jefe la usaras para vos?\n\nPERSONA A: ¿Para hacer qué?\n\nJESÚS: Para algo que no tenga techo. Que no dependa de un jefe. Que labure incluso cuando vos no estás.",
+          "timing_seconds": 13,
+          "ipad_directions": []
+        },
+        {
+          "section_name": "Algo que labura sin vos",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe otra forma de usar mi tiempo",
+          "script_text": "PERSONA A: ¿Algo que labure sin mí? ¿Qué, un robot?\n\nJESÚS: Casi. Un producto digital. Lo creás una vez con la IA y se puede vender todos los días. Sin que vos estés ahí.\n\nPERSONA A: ¿Sin que yo esté? ¿Cómo es eso?\n\nJESÚS: Ponés un anuncio. La gente lo ve, le interesa, compra. Todo automático. A vos te llega la plata.\n\nPERSONA A: ¿No tengo que hablar con nadie?\n\nJESÚS: Si querés, sí. Pero el sistema funciona solo. Mientras estás en el laburo, mientras dormís o mientras tu jefe se toma la tarde libre.\n\nPERSONA A: No me descanses con eso Jajajaja",
+          "timing_seconds": 14,
+          "ipad_directions": [
+            "OVERLAY: \"Tu jefe se va a las 2. Tu producto sigue vendiendo a las 2.\""
+          ]
+        },
+        {
+          "section_name": "Lo que realmente perdés",
+          "persuasion_function": "demolicion",
+          "micro_belief": "El riesgo de quedarse es peor que el riesgo de probar",
+          "script_text": "PERSONA A: ¿Y si no funciona?\n\nJESÚS: ¿Cuánto gastás en boludeces por semana? Un café, una gaseosa, algo.\n\nPERSONA A: No sé, 15 dólares ponele.\n\nJESÚS: Con menos de eso probás si funciona o no. Y si no funciona, perdiste lo mismo que gastás en un viernes.\n\nPERSONA A: ¿Y si funciona?\n\nJESÚS: Si funciona, dejás de depender de un tipo que se va a las 2 mientras vos te quedás hasta las 7.\n\nPERSONA A: ...no me digas más. ¿Dónde arranco?",
+          "timing_seconds": 10,
+          "ipad_directions": []
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 35,
+        "ingredient_name": "Dolor Económico Concreto"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Antes/Después"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado Específico"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "actuado",
+        "timing_seconds": 18,
+        "text": "PERSONA A: ¿Dónde aprendo a hacer todo esto?\n\nJESÚS: Hay una clase gratuita. 2 horas. Te muestro cómo encontrar productos que ya se están vendiendo, cómo crearlos con la IA y cómo empezar a venderlos.\n\nPERSONA A: ¿Gratis? ¿Y cuál es el truco?\n\nJESÚS: No hay truco. Es en vivo, conmigo. Si te sirve, seguís. Si no, no perdiste nada.\n\nPERSONA A: Dale. ¿Dónde me anoto?\n\nJESÚS: Tocá el botón de acá abajo.\n\nPERSONA A: Ya lo hago. Total peor que mi laburo no me puede ir."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller ",
+        "variant": "actuado",
+        "timing_seconds": 18,
+        "text": "PERSONA A: ¿Cuánto sale aprender todo esto?\n\nJESÚS: 5 dólares.\n\nPERSONA A: ¿5 dólares? ¿Eso es todo?\n\nJESÚS: 3 días conmigo. En vivo. Día 1 encontrás qué vender. Día 2 lo armás con la IA. Día 3 ponés el anuncio y empezás a vender.\n\nPERSONA A: Eso es menos de lo que gano en una hora. Bueno, en 2 horas en mi caso.\n\nJESÚS: Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Eso es lo único que necesitás para aprender un modelo de negocio nuevo.\n\nPERSONA A: Ya lo hago. No quiero ver mas a mi jefe."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "actuado",
+        "timing_seconds": 18,
+        "text": "PERSONA A: ¿Cómo arranco?\n\nJESÚS: Comentá CLASE acá abajo. Te llega todo por DM.\n\nPERSONA A: ¿Eso solo?\n\nJESÚS: Es una clase gratis de 2 horas. En vivo, conmigo. Ya pasaron más de 17 mil personas.\n\nPERSONA A: 17 mil. Y yo acá cobrando 4 dólares la hora.\n\nJESÚS: Comentá CLASE y registrate.\n\nPERSONA A: CLASE. Listo. ¿Ya me llega?\n\nJESÚS: Ya te llega.\n\nPERSONA A: Me anoto. Hoy por primera vez me voy a ir del laburo en horario."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T07:03:05.085Z",
+  "status": "confirmed",
+  "batch": {
+    "id": "3a744f23-03e4-4cb0-b83c-f80c35ef559a",
+    "name": "victor-eraso-v2"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved"
+  }
+}

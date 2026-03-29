@@ -1,0 +1,173 @@
+{
+  "id": "9814449c-33b5-4f22-bb66-5d61c6615eff",
+  "briefId": "4000deac-e398-49a3-b369-cee17f98f992",
+  "title": "No sé qué producto vender",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.2_proceso_3_pasos",
+    "body_type": "pregunta_respuesta",
+    "segment": "D",
+    "funnel_stage": "MOFU",
+    "niche": "mito: idea",
+    "model_sale_type": "ventana_oportunidad",
+    "visual_format": "split_screen",
+    "avatar": "roberto",
+    "awareness_level": 3,
+    "emotional_arc": "revelacion",
+    "tension": "T10",
+    "transition_text": "PERSONA A: ¿Me lo enseñás?",
+    "total_duration_seconds": 51,
+    "word_count": 249,
+    "belief_change": {
+      "old_belief": "No sé qué vender",
+      "mechanism": "Primero demanda, después producto",
+      "new_belief": "No necesito la idea perfecta — necesito un proceso"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, me gusta la idea pero no tengo idea de qué vender.\nJESÚS: Eso es lo mejor que me podés decir.\nPERSONA A: ¿Cómo?\nJESÚS: Porque la mayoría se inventa un producto de la nada. Vos no cometiste ese error todavía.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "El peor error es inventar un producto. El mejor acierto es vender algo que la gente YA busca.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "script_text": "\"No sé qué vender\" no es un problema. Es una ventaja. Los que \"saben\" crean algo que nadie quiere.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "script_text": "Ahora mismo hay miles de personas buscando en Google cómo resolver algo que vos sabés.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas ideas tuviste que nunca concretaste? El problema no fue la idea. Fue el proceso.\nPERSONA A: Tengo la mente en blanco. No se me ocurre de qué.\nJESÚS: ¿De qué laburaste toda tu vida?\nPERSONA A: Contador.\nJESÚS: ¿La gente te pregunta cómo organizar sus finanzas?\nPERSONA A: Todo el tiempo.\nJESÚS: Ahí tenés. Pero no arranques por ahí.\nPERSONA A: ¿Cómo que no?\nJESÚS: Porque el error número uno es crear algo que a VOS te parece bueno. Primero investigás qué busca la gente. Con datos. Si hay demanda, creás.\nPERSONA A: ¿Cómo investigo?\nJESÚS: Mirás qué se vende en Hotmart, qué buscan en Google. En una hora tenés 10 ideas validadas. No inventás. Investigás.\nPERSONA A: ¿Y si ya hay 20 guías de finanzas personales?\nJESÚS: Mejor. Eso significa que la gente las compra. No le tengas miedo a la competencia. Tenele miedo a un mercado donde nadie compra.\nPERSONA A: ¿Y si elijo mal?\nJESÚS: Tardaste 3 días y $2 en descubrirlo. Elegís otro. Es un laboratorio barato.\nPERSONA A: Entonces no necesito la idea perfecta, la competencia es buena señal y equivocarme cuesta una pizza.\nJESÚS: Ahí está.\nPERSONA A: Creo que ya puedo arrancar.\nJESÚS: Podés. Pero para encontrar la idea correcta rápido hay un proceso de 3 pasos que te ahorra semanas. Eso es exactamente lo que te enseño.\nPERSONA A: ¿3 pasos?\nJESÚS: Investigar qué se vende, crear el producto con IA, ponerlo a la venta. Un fin de semana.\nPERSONA A: ¿Me lo enseñás?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "revelacion",
+      "sections": [
+        {
+          "section_name": "Necesito la idea perfecta",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Tengo la mente en blanco. No se me ocurre de qué.\nJESÚS: ¿De qué laburaste toda tu vida?\nPERSONA A: Contador.\nJESÚS: ¿La gente te pregunta cómo organizar sus finanzas?\nPERSONA A: Todo el tiempo.\nJESÚS: Ahí tenés. Pero no arranques por ahí.\nPERSONA A: ¿Cómo que no?",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Creo algo que me gusta a mí",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "JESÚS: Porque el error número uno es crear algo que a VOS te parece bueno. Primero investigás qué busca la gente. Con datos. Si hay demanda, creás.\nPERSONA A: ¿Cómo investigo?\nJESÚS: Mirás qué se vende en Hotmart, qué buscan en Google. En una hora tenés 10 ideas validadas. No inventás. Investigás.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Ya hay mucha competencia",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y si ya hay 20 guías de finanzas personales?\nJESÚS: Mejor. Eso significa que la gente las compra. No le tengas miedo a la competencia. Tenele miedo a un mercado donde nadie compra.\nPERSONA A: ¿Y si elijo mal?\nJESÚS: Tardaste 3 días y $2 en descubrirlo. Elegís otro. Es un laboratorio barato.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Entonces no necesito la idea perfecta, la competencia es buena señal y equivocarme cuesta una pizza.\nJESÚS: Ahí está.\nPERSONA A: Creo que ya puedo arrancar.\nJESÚS: Podés. Pero para encontrar la idea correcta rápido hay un proceso de 3 pasos que te ahorra semanas. Eso es exactamente lo que te enseño.\nPERSONA A: ¿3 pasos?\nJESÚS: Investigar qué se vende, crear el producto con IA, ponerlo a la venta. Un fin de semana.\nPERSONA A: ¿Me lo enseñás?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿3 pasos?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso N Pasos"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-25T23:59:20.691Z",
+  "status": "draft",
+  "batch": {
+    "id": "6fb560e2-77a3-49bc-93d9-fb4356645ae4",
+    "name": "Dolor-centrista — 562 compradores"
+  }
+}

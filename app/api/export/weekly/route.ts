@@ -5,38 +5,76 @@ import JSZip from "jszip";
 function buildTeleprompterDoc(slots: { slot: { index: number }; gen: StoredGeneration }[]): string {
   let doc = "";
 
-  // --- PART 1: All CTAs first (record once, reuse all week) ---
+  // --- PART 1: All CTA blocks first (record once, reuse all week) ---
   doc += `========================================\n`;
   doc += `  CTAs — GRABAR PRIMERO\n`;
   doc += `  (se usan para todos los guiones)\n`;
   doc += `========================================\n\n`;
-  for (let i = 0; i < slots.length; i++) {
-    const { gen } = slots[i];
-    doc += `CTA ${i + 1}:\n`;
-    doc += `${gen.script.cta?.verbal_cta || "[CTA pendiente]"}\n\n`;
+
+  // Collect unique CTA blocks across all generations
+  const seenBlocks = new Set<string>();
+  for (const { gen } of slots) {
+    const blocks = (gen.script as unknown as Record<string, unknown>).cta_blocks as Array<{ channel: string; channel_label?: string; variant?: string; layers?: Record<string, string>; text?: string }> | undefined;
+    if (blocks && blocks.length > 0) {
+      for (const block of blocks) {
+        const blockKey = `${block.channel}_${block.variant}`;
+        if (seenBlocks.has(blockKey)) continue;
+        seenBlocks.add(blockKey);
+
+        const label = block.channel_label || block.channel || "CTA";
+        doc += `--- ${label.toUpperCase()} (Variante ${block.variant || "?"}) ---\n\n`;
+
+        if (block.layers) {
+          const LAYER_LABELS: Record<string, string> = {
+            oferta: "OFERTA", prueba: "PRUEBA", riesgo_cero: "RIESGO CERO",
+            urgencia: "URGENCIA", orden_nlp: "ORDEN + NLP",
+            orden_1: "ORDEN 1", orden_2: "CIERRE", cierre: "CIERRE",
+          };
+          for (const [key, val] of Object.entries(block.layers)) {
+            if (!val) continue;
+            doc += `[${LAYER_LABELS[key] || key.toUpperCase()}]\n`;
+            doc += `${val}\n\n`;
+          }
+        } else if (block.text) {
+          doc += `${block.text}\n\n`;
+        }
+
+        doc += `--- CORTE ---\n\n\n`;
+      }
+    } else if (gen.script.cta?.verbal_cta) {
+      // Fallback for legacy scripts without cta_blocks
+      const ctaKey = gen.script.cta.verbal_cta;
+      if (!seenBlocks.has(ctaKey)) {
+        seenBlocks.add(ctaKey);
+        doc += `CTA:\n`;
+        doc += `${gen.script.cta.verbal_cta}\n\n`;
+        doc += `--- CORTE ---\n\n\n`;
+      }
+    }
   }
 
   // --- PART 2: Each script = hooks + body (read straight through) ---
   doc += `\n========================================\n`;
   doc += `  GUIONES — LEER DE CORRIDO\n`;
-  doc += `  (hooks + cuerpo por guion)\n`;
+  doc += `  (leads + cuerpo por guion)\n`;
   doc += `========================================\n\n`;
   for (let i = 0; i < slots.length; i++) {
     const { gen } = slots[i];
     const vf = gen.script.visual_format;
 
-    doc += `----------------------------------------\n`;
+    doc += `\n----------------------------------------\n`;
     doc += `  GUION ${i + 1}: ${gen.title || "Sin título"}\n`;
-    if (vf) doc += `  Formato: ${vf.format_name}\n`;
+    if (vf) doc += `  Formato: ${typeof vf === 'string' ? vf : vf.format_name}\n`;
     doc += `----------------------------------------\n\n`;
 
     // Hooks/leads for this script
     for (const hook of gen.script.hooks) {
       doc += `[Lead ${hook.variant_number}]\n`;
-      doc += `${hook.script_text}\n\n`;
+      doc += `${hook.script_text}\n`;
+      doc += `\n--- CORTE ---\n\n`;
     }
 
-    // Body for this script
+    // Body for this script - each section separated
     doc += `[CUERPO]\n`;
     for (const section of gen.script.development.sections) {
       doc += `${section.script_text}\n\n`;
@@ -55,6 +93,8 @@ function buildTeleprompterDoc(slots: { slot: { index: number }; gen: StoredGener
       doc += `[TRANSICION]\n`;
       doc += `${transText}\n\n`;
     }
+
+    doc += `--- CORTE ---\n\n`;
   }
 
   return doc;

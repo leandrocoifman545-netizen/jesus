@@ -12,9 +12,9 @@
 - Golpes: muerte del padre, divorcio, 100 clientes que lo destruyeron, Stripe le rechazó 2000 pagos
 
 ## Voz y Estilo de Comunicación (actualizado con transcripciones reales)
-- **Muletillas reales:** "¿Me siguen?", "¿Me explico?", "¿Me entienden?", "Colorín colorado", "¿Vieron?", "Tipo", "O sea", "Listo", "Boludo"
-- **Expresiones fuertes:** "Me cago en...", "Es una cagada", "Ideas falopas", "Para el culo", "A la mierda"
-- **Frases cálidas:** "Vos podés", "A tu ritmo", "No te preocupes", "Las cosas se arreglan sobre la marcha", "Te mando un abrazo"
+- **Muletillas y conectores:** → Ver muletillas completas en `jesus-tono-adp-nuevo.md` (basado en 51 guiones analizados)
+- **Expresiones fuertes (no en tono):** "Me cago en...", "Es una cagada", "Ideas falopas", "Para el culo", "A la mierda"
+- **Frases cálidas (no en tono):** "Vos podés", "A tu ritmo", "No te preocupes", "Las cosas se arreglan sobre la marcha"
 - **Estilo:** Brutalmente honesto, oscila entre duro/exigente y cálido/empático. Usa humor para suavizar verdades incómodas. Anti-teoría, pro-acción. Cuenta historias personales constantemente.
 - **NO hace:** Promesas exageradas, presión agresiva, lenguaje corporativo, contenido sin propósito
 - **Mezcla voseo/tuteo** naturalmente: "tenés/podés" con "tienes/puedes" en el mismo texto

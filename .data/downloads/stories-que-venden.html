@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stories que Venden — Manual Completo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --gold: #B8860B;
+    --gold-light: #D4A84B;
+    --gold-bg: #FBF7F0;
+    --dark: #1a1a1a;
+    --gray: #555;
+    --gray-light: #888;
+    --border: #e5e5e5;
+    --callout-bg: #f9f6f1;
+    --callout-warn: #fff8e1;
+    --callout-green: #f0f9f0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--dark);
+    line-height: 1.7;
+    font-size: 14px;
+    background: #fff;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    page-break-after: always;
+  }
+
+  /* === COVER === */
+  .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    text-align: center;
+  }
+  .cover-icon { font-size: 48px; margin-bottom: 10px; }
+  .cover h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .cover .subtitle {
+    font-size: 20px;
+    color: var(--gray);
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  .cover .stats {
+    color: var(--gold);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 48px;
+  }
+  .cover .meta {
+    font-size: 13px;
+    color: var(--gray-light);
+    line-height: 1.8;
+  }
+  .cover .meta strong { color: var(--dark); }
+
+  /* === INDEX === */
+  .index h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+  }
+  .index-icon { margin-right: 8px; }
+  .index ol {
+    list-style: none;
+    counter-reset: idx;
+  }
+  .index ol li {
+    counter-increment: idx;
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+  }
+  .index ol li::before {
+    content: counter(idx) ".";
+    color: var(--gold);
+    font-weight: 700;
+    margin-right: 10px;
+    min-width: 28px;
+    display: inline-block;
+  }
+
+  /* === HEADINGS === */
+  h2.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--gold);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+    margin-top: 48px;
+    line-height: 1.3;
+  }
+  h2.section-title:first-child { margin-top: 0; }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  h3.gold {
+    color: var(--gold);
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  /* === CALLOUTS === */
+  .callout {
+    background: var(--callout-bg);
+    border-left: 4px solid var(--gold);
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout-warn {
+    background: var(--callout-warn);
+    border-left: 4px solid #f0ad4e;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout-green {
+    background: var(--callout-green);
+    border-left: 4px solid #5cb85c;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p, .callout-warn p, .callout-green p {
+    margin: 4px 0;
+  }
+
+  /* === BLOCKQUOTE === */
+  blockquote {
+    border-left: 3px solid var(--gold-light);
+    padding: 8px 16px;
+    margin: 16px 0;
+    font-style: italic;
+    color: var(--gray);
+  }
+
+  /* === TABLES === */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13px;
+  }
+  thead th {
+    background: var(--gold);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 12px;
+  }
+  tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tbody tr:nth-child(even) { background: #fafafa; }
+  td strong { font-weight: 600; }
+
+  /* === LISTS === */
+  ul, ol { margin: 8px 0 8px 20px; }
+  li { margin: 4px 0; }
+
+  p { margin: 8px 0; }
+
+  .separator {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+
+  /* === CHECKLIST === */
+  .checklist {
+    background: var(--callout-bg);
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 16px 0;
+  }
+  .checklist p {
+    margin: 6px 0;
+    padding-left: 4px;
+  }
+
+  /* === PAGE NUMBER === */
+  .page-num {
+    text-align: center;
+    font-size: 12px;
+    color: var(--gray-light);
+    margin-top: 40px;
+    padding-top: 16px;
+  }
+
+  /* === BADGE === */
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge-gold { background: var(--gold-bg); color: var(--gold); border: 1px solid var(--gold-light); }
+  .badge-green { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+
+  /* === VS BOX === */
+  .vs-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .vs-bad {
+    background: #fff5f5;
+    border: 1px solid #ffcdd2;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .vs-good {
+    background: #f1f8e9;
+    border: 1px solid #c5e1a5;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .vs-bad h4 { color: #c62828; margin-top: 0; }
+  .vs-good h4 { color: #2e7d32; margin-top: 0; }
+
+  /* === FLOW === */
+  .flow {
+    text-align: center;
+    padding: 20px;
+    background: var(--callout-bg);
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  .flow .arrow { color: var(--gold); font-weight: 700; }
+
+  /* === PRINT === */
+  @media print {
+    .page { padding: 40px; page-break-after: always; }
+    body { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="page cover">
+  <div class="cover-icon">&#x1F4F1;</div>
+  <h1>STORIES QUE VENDEN</h1>
+  <div class="subtitle">Manual Completo de Instagram Stories<br>para Vender sin Vender</div>
+  <div class="stats">
+    10 Tipos de Secuencia &middot; 25 Formatos Visuales &middot; 18 Triggers Mentales<br>
+    47 Reglas No Negociables &middot; Motor de Persuasi&oacute;n Invisible
+  </div>
+  <div class="meta">
+    Basado en: <strong>Curso StoryMakers</strong> (Naf&eacute; Aquel, 38 videos)<br>
+    + 21 sesiones de coaching con clientes reales<br>
+    + An&aacute;lisis de referentes (David Turu, Joaco Coronel, Agus Nievas)<br><br>
+    Por: <strong>Leandro Coifman</strong><br>
+    Marzo 2026 &middot; v1.0
+  </div>
+</div>
+
+<!-- ==================== INDEX ==================== -->
+<div class="page index">
+  <h2><span class="index-icon">&#x1F4D1;</span>&Iacute;ndice</h2>
+  <ol>
+    <li>La Tesis Central: Por Qu&eacute; las Stories Venden M&aacute;s que Todo</li>
+    <li>La Estrategia de 4 Capas de Calentamiento</li>
+    <li>Los 10 Tipos de Secuencia (con estructura completa)</li>
+    <li>Los 25 Formatos Visuales + Reglas de Alternaci&oacute;n</li>
+    <li>Los 18 Triggers Mentales &mdash; La Clase M&aacute;s Importante</li>
+    <li>Motor de Persuasi&oacute;n Invisible &mdash; &ldquo;Si se nota, fallaste&rdquo;</li>
+    <li>21 Formas de Subir Views (+ 11 que los Bajan)</li>
+    <li>C&oacute;mo Hacer un Lanzamiento por Stories (8 Etapas)</li>
+    <li>Calentamiento Eterno &mdash; Cuando No Est&aacute;s Lanzando</li>
+    <li>Storytelling: El Framework de 6 Etapas (Michael Hauge)</li>
+    <li>Estructura de CTAs para Stories</li>
+    <li>Las 47 Reglas No Negociables</li>
+    <li>Reglas del Algoritmo + M&eacute;tricas</li>
+    <li>Edici&oacute;n y Apps Necesarias</li>
+    <li>Planificaci&oacute;n Semanal &mdash; El Sistema Completo</li>
+  </ol>
+</div>
+
+<!-- ==================== 1. TESIS CENTRAL ==================== -->
+<div class="page">
+  <h2 class="section-title">1. La Tesis Central: Por Qu&eacute; las Stories Venden M&aacute;s que Todo</h2>
+
+  <div class="callout">
+    <p><strong>&#9888;&#65039; La realidad que nadie dice:</strong> Las Stories de Instagram representan el <strong>80-90% de las ventas</strong> en cuentas de infoproductos y servicios. El Feed y los Reels atraen gente nueva. Las Stories <strong>venden</strong>.</p>
+  </div>
+
+  <p>La venta NO ocurre en un story que dice &ldquo;compr&aacute; ac&aacute;&rdquo;. Ocurre a trav&eacute;s de un <strong>calentamiento sistem&aacute;tico</strong> que construye confianza, autoridad y deseo ANTES de hacer cualquier CTA.</p>
+
+  <blockquote>&ldquo;El 50% de una venta es confianza. La otra mitad es urgencia, prueba social y oferta.&rdquo;</blockquote>
+
+  <h3>Por qu&eacute; la venta directa no funciona</h3>
+  <p>La gente ya sabe que alguien maneja las historias de los influencers para venderles. <strong>Huelen la venta.</strong> Cuando sub&iacute;s una story que parece un ad, se activa el &ldquo;radar anti-venta&rdquo; del cerebro y la persona pasa de largo.</p>
+  <p>La soluci&oacute;n no es vender menos &mdash; es vender <strong>de forma invisible</strong>. Que la persona sienta que le est&aacute;s contando una historia, no que le quer&eacute;s sacar plata.</p>
+
+  <h3>El modelo mental correcto</h3>
+
+  <div class="flow">
+    <strong>ATRAER</strong> (Feed / Reels)<br>
+    <span class="arrow">&darr;</span><br>
+    <strong>CALENTAR</strong> (Stories &mdash; confianza, autoridad, deseo)<br>
+    <span class="arrow">&darr;</span><br>
+    <strong>CONVERTIR</strong> (CTA en Stories &mdash; keyword, DM, link)<br>
+    <span class="arrow">&darr;</span><br>
+    <strong>CERRAR</strong> (DM / Setter / P&aacute;gina de venta)
+  </div>
+
+  <p>Las Stories son el <strong>motor de conversi&oacute;n</strong>. Sin ellas, ten&eacute;s seguidores que miran tus reels pero nunca compran nada.</p>
+</div>
+
+<!-- ==================== 2. LAS 4 CAPAS ==================== -->
+<div class="page">
+  <h2 class="section-title">2. La Estrategia de 4 Capas de Calentamiento</h2>
+
+  <p>Todo calentamiento &mdash; sea para un lanzamiento o para venta evergreen &mdash; tiene 4 capas que se construyen una sobre otra. Si salt&aacute;s una, la venta se debilita.</p>
+
+  <h3 class="gold">Capa 1: Personalidad &mdash; &ldquo;Este tipo me cae bien&rdquo;</h3>
+  <p><span class="badge badge-gold">50% de la venta</span></p>
+  <p>Mostrar qui&eacute;n sos como persona. Generar confianza.</p>
+  <ul>
+    <li>D&iacute;a a d&iacute;a real (no curado)</li>
+    <li>Historia de vida (pasado dif&iacute;cil &rarr; presente)</li>
+    <li>Obst&aacute;culos que superaste</li>
+    <li>Valores y filosof&iacute;a</li>
+    <li>Humor, vulnerabilidad</li>
+    <li>Relaci&oacute;n con familia y amigos</li>
+    <li>Top 3 cosas raras sobre vos</li>
+    <li>Momentos emocionales</li>
+  </ul>
+  <div class="callout-green">
+    <p><strong>Resultado buscado:</strong> &ldquo;Este pibe me cae bien, es de fiar, es como yo.&rdquo;</p>
+  </div>
+
+  <h3 class="gold">Capa 2: Nicho &mdash; &ldquo;Yo tambi&eacute;n quiero vivir as&iacute;&rdquo;</h3>
+  <p>Mostrar 3 cosas sobre tu trabajo:</p>
+  <ol>
+    <li><strong>Es divertido y paga bien</strong> &rarr; lifestyle habilitado por el nicho (viajes, horarios libres, regalos)</li>
+    <li><strong>Es posible / no es dif&iacute;cil</strong> &rarr; cualquiera puede, historias de gente com&uacute;n que lo logr&oacute;</li>
+    <li><strong>Es el trabajo so&ntilde;ado</strong> &rarr; libertad, sin jefe, trabaj&aacute;s desde donde quieras</li>
+  </ol>
+  <div class="callout">
+    <p><strong>&#x1F4A1; Clave:</strong> Mostrar esto de forma NATIVA. No en una secuencia vendedora. Es el d&iacute;a a d&iacute;a que habla por s&iacute; solo. Un martes a las 10am desde la cama &rarr; eso vende el nicho sin decir nada.</p>
+  </div>
+  <div class="callout-green">
+    <p><strong>Resultado buscado:</strong> &ldquo;Yo tambi&eacute;n quiero vivir as&iacute;.&rdquo;</p>
+  </div>
+
+  <h3 class="gold">Capa 3: Producto &mdash; &ldquo;Este tipo sabe lo que hace&rdquo;</h3>
+  <p>Demostrar autoridad y experiencia:</p>
+  <ul>
+    <li>Testimonios de clientes/alumnos</li>
+    <li>Resultados concretos (n&uacute;meros, capturas)</li>
+    <li>An&aacute;lisis de competidores/otros en el nicho</li>
+    <li>Preguntas y respuestas mostrando expertise</li>
+    <li>Mejores trabajos/casos de &eacute;xito</li>
+  </ul>
+  <div class="callout-green">
+    <p><strong>Resultado buscado:</strong> &ldquo;Este tipo sabe lo que hace. Es el mejor.&rdquo;</p>
+  </div>
+
+  <h3 class="gold">Capa 4: Venta &mdash; &ldquo;Necesito entrar&rdquo;</h3>
+  <ul>
+    <li>Detalles del producto/curso/servicio</li>
+    <li>Garant&iacute;as</li>
+    <li>Plazas limitadas</li>
+    <li>Planes de pago</li>
+    <li>Transformaci&oacute;n prometida</li>
+  </ul>
+  <div class="callout-green">
+    <p><strong>Resultado buscado:</strong> &ldquo;Esta oferta es irresistible, necesito entrar.&rdquo;</p>
+  </div>
+
+  <div class="callout-warn">
+    <p><strong>&#9888;&#65039; Importante:</strong> Las 4 capas NO son secuenciales r&iacute;gidas. Despu&eacute;s del primer lanzamiento, se convierten en un <strong>calentamiento eterno</strong>: una lista de significados que transmit&iacute;s en cualquier orden, de forma nativa, todos los d&iacute;as.</p>
+  </div>
+</div>
+
+<!-- ==================== 3. LOS 10 TIPOS DE SECUENCIA ==================== -->
+<div class="page">
+  <h2 class="section-title">3. Los 10 Tipos de Secuencia (con estructura completa)</h2>
+
+  <p>Cada secuencia es un <strong>arco narrativo de 7-15 stories conectadas</strong>. El tipo define el PROP&Oacute;SITO. No son posts sueltos &mdash; son mini-pel&iacute;culas.</p>
+
+  <table>
+    <thead>
+      <tr><th>#</th><th>Tipo</th><th>Frecuencia</th><th>Stories</th><th>CTA</th><th>Capa</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Personalidad</strong></td><td>1/sem</td><td>7-10</td><td>No</td><td>Personalidad</td></tr>
+      <tr><td>2</td><td><strong>CTA Lead Magnet</strong></td><td>1-2/sem</td><td>4-6</td><td>Keyword</td><td>Nicho/Producto</td></tr>
+      <tr><td>3</td><td><strong>CTA Volumen</strong></td><td>1/sem</td><td>2-4</td><td>Juego</td><td>Nicho</td></tr>
+      <tr><td>4</td><td><strong>CTA Directo</strong></td><td>1 c/2 sem</td><td>7-10</td><td>Keyword</td><td>Venta</td></tr>
+      <tr><td>5</td><td><strong>Objeci&oacute;n</strong></td><td>1/sem</td><td>7-10</td><td>Soft</td><td>Producto</td></tr>
+      <tr><td>6</td><td><strong>Nicho / Vida So&ntilde;ada</strong></td><td>1/sem</td><td>7-10</td><td>No</td><td>Nicho</td></tr>
+      <tr><td>7</td><td><strong>Expertise</strong></td><td>1 c/2 sem</td><td>5-8</td><td>Soft</td><td>Producto</td></tr>
+      <tr><td>8</td><td><strong>Actuada / Tri&aacute;ngulo</strong></td><td>1 c/2 sem</td><td>7-10</td><td>Keyword</td><td>Nicho/Producto</td></tr>
+      <tr><td>9</td><td><strong>Explicativa de Servicio</strong></td><td>1 vez (highlight)</td><td>7-10</td><td>Keyword</td><td>Producto</td></tr>
+      <tr><td>10</td><td><strong>Behind the Scenes</strong></td><td>1 c/2 sem</td><td>7-12</td><td>Soft</td><td>Expertise</td></tr>
+    </tbody>
+  </table>
+
+  <hr class="separator">
+
+  <!-- TIPO 1 -->
+  <h3 class="gold">Tipo 1: Personalidad &mdash; &ldquo;Este pibe me cae bien&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Construir confianza. Mostrar qui&eacute;n sos como persona.<br>
+  <strong>CTA:</strong> Ninguno (o outbound pasivo &mdash; contactar a quien reacciona).</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Hook emocional (algo que te pas&oacute;, pensaste, sentiste)</td><td>Foto selfie</td></tr>
+      <tr><td>2</td><td>Contexto (cu&aacute;ndo, d&oacute;nde, por qu&eacute;)</td><td>Video con m&uacute;sica o foto antigua</td></tr>
+      <tr><td>3</td><td>Desarrollo emocional (la parte dif&iacute;cil)</td><td>Foto/video contextual</td></tr>
+      <tr><td>4</td><td>Profundizaci&oacute;n (el punto m&aacute;s emocional)</td><td>Fondo oscurecido + texto</td></tr>
+      <tr><td>5</td><td>Reflexi&oacute;n (qu&eacute; aprendiste)</td><td>Video selfie hablando</td></tr>
+      <tr><td>6</td><td>Interacci&oacute;n</td><td>Encuesta o caja de preguntas</td></tr>
+      <tr><td>7</td><td>Cierre (conexi&oacute;n con el presente)</td><td>Foto selfie actual</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>Ideas:</strong> Contar tu historia de vida, presentar a tu pareja, problemas cotidianos resueltos, valores y filosof&iacute;a, vincular tu trabajo a tu valor fundamental.</p>
+  </div>
+
+  <hr class="separator">
+
+  <!-- TIPO 2 -->
+  <h3 class="gold">Tipo 2: CTA Lead Magnet &mdash; &ldquo;Coment&aacute; YO y te lo mando&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Capturar leads con un recurso gratuito de alto valor percibido.<br>
+  <strong>CTA:</strong> Inbound (keyword grande, color diferente).</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Hook de visitas (lo m&aacute;s visual/entretenido)</td><td>Foto lifestyle o video entretenido</td></tr>
+      <tr><td>2</td><td>Hook de resultado (&ldquo;Laura vendi&oacute; $60 en un d&iacute;a&rdquo;)</td><td>Captura de resultado o foto</td></tr>
+      <tr><td>3</td><td>Vender el veh&iacute;culo (&ldquo;Lo hizo con este m&eacute;todo&rdquo;)</td><td>Foto del documento por fuera</td></tr>
+      <tr><td>4</td><td>CTA (&ldquo;Coment&aacute; CLASE y te lo mando&rdquo;)</td><td>Foto selfie + keyword GRANDE</td></tr>
+      <tr><td>5</td><td>Prueba social (capturas de gente respondiendo)</td><td>Capturas de DMs</td></tr>
+      <tr><td>6</td><td>Segundo CTA (repetir)</td><td>Foto del documento por dentro</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout-warn">
+    <p><strong>&#9888;&#65039; Reglas clave:</strong></p>
+    <p>&bull; El lead magnet tiene que ser F&Aacute;CIL de consumir: copi&aacute; y peg&aacute;, checklist, plantilla. NUNCA clase de 1 hora.</p>
+    <p>&bull; SIEMPRE mostrar el documento por dentro (no solo la tapa).</p>
+    <p>&bull; Esperar 30-60 minutos entre la story 1 y el resto (maximizar views para el CTA).</p>
+  </div>
+</div>
+
+<div class="page">
+  <!-- TIPO 3 -->
+  <h3 class="gold">Tipo 3: CTA Volumen &mdash; &ldquo;Sac&aacute; captura si lo logr&aacute;s&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Generar MASA de respuestas con juegos y challenges.<br>
+  <strong>CTA:</strong> Interacci&oacute;n + keyword.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Challenge/juego (algo que la gente tenga que hacer)</td><td>Video o imagen con instrucci&oacute;n</td></tr>
+      <tr><td>2</td><td>Recompensa (&ldquo;Si lo logr&aacute;s, respond&eacute; YO&rdquo;)</td><td>Foto del recurso</td></tr>
+      <tr><td>3</td><td>(Opcional) Testimonios de quienes ya lo hicieron</td><td>Capturas de DMs</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>Por qu&eacute; funcionan:</strong> La gente entra a Instagram para entretenerse. Un juego es puro entretenimiento. Si sacan captura &rarr; m&aacute;s engagement &rarr; Instagram lo muestra a m&aacute;s gente. Si no lo logran &rarr; repiten &rarr; m&aacute;s views.</p>
+  </div>
+
+  <p><strong>Ejemplos probados:</strong></p>
+  <ul>
+    <li>&ldquo;&iquest;Sab&eacute;s qu&eacute; iPhone es? Adivina &rarr; respond&eacute; YO y te cuento&rdquo; (19 agendas con 2 stories)</li>
+    <li>&ldquo;Sac&aacute; captura justo cuando aparece el n&uacute;mero &rarr; te mando mi plantilla&rdquo;</li>
+    <li>Before/after de look (raparse) &rarr; swipe-back masivo &rarr; m&aacute;s reach</li>
+  </ul>
+
+  <hr class="separator">
+
+  <!-- TIPO 4 -->
+  <h3 class="gold">Tipo 4: CTA Directo &mdash; &ldquo;Respond&eacute; YO y te explico&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Venta directa al programa/servicio. Generar agendas.<br>
+  <strong>Frecuencia:</strong> M&aacute;ximo 1 cada 2 semanas. <strong>CTA:</strong> Keyword &rarr; cualificaci&oacute;n &rarr; agenda.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Hook disruptivo</td><td>Foto selfie expresiva</td></tr>
+      <tr><td>2</td><td>Setup (problema real)</td><td>Video viral/gracioso</td></tr>
+      <tr><td>3</td><td>Posicionamiento (&ldquo;No vendo cursillos&rdquo;)</td><td>Foto en llamada/trabajo</td></tr>
+      <tr><td>4</td><td>El sue&ntilde;o h&uacute;medo del avatar (lo que le llev&aacute;s)</td><td>Texto + foto profesional</td></tr>
+      <tr><td>5</td><td>Resultados de clientes</td><td>Capturas de pago/resultados</td></tr>
+      <tr><td>6</td><td>Resumen en una frase</td><td>Fondo oscurecido + texto</td></tr>
+      <tr><td>7</td><td>CTA (&ldquo;Respond&eacute; YO&rdquo;)</td><td>Foto selfie + keyword</td></tr>
+      <tr><td>8</td><td>Prueba social (gente respondiendo)</td><td>Capturas de DMs</td></tr>
+    </tbody>
+  </table>
+
+  <hr class="separator">
+
+  <!-- TIPO 5 -->
+  <h3 class="gold">Tipo 5: Objeci&oacute;n &mdash; &ldquo;La edad no es excusa&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Destruir una objeci&oacute;n espec&iacute;fica con caso real.<br>
+  <strong>CTA:</strong> Soft (encuesta, bot&oacute;n reacci&oacute;n, keyword suave).</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Setup (&ldquo;Me escribi&oacute; alguien ayer&rdquo;)</td><td>Foto selfie</td></tr>
+      <tr><td>2</td><td>La objeci&oacute;n textual</td><td>Captura de DM</td></tr>
+      <tr><td>3</td><td>Tu respuesta</td><td>Video selfie hablando</td></tr>
+      <tr><td>4</td><td>Caso real (alguien como ese avatar que lo logr&oacute;)</td><td>Foto/video del alumno</td></tr>
+      <tr><td>5</td><td>Resultado concreto</td><td>Captura de pantalla</td></tr>
+      <tr><td>6</td><td>Cierre (&ldquo;La edad no es una excusa&rdquo;)</td><td>Fondo color + texto</td></tr>
+      <tr><td>7</td><td>CTA suave</td><td>Foto selfie + keyword</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>Objeciones universales:</strong> &ldquo;No s&eacute; de tecnolog&iacute;a&rdquo;, &ldquo;No tengo tiempo&rdquo;, &ldquo;No tengo plata para invertir&rdquo;, &ldquo;Esto no funciona en mi pa&iacute;s&rdquo;, &ldquo;Ya prob&eacute; y no funcion&oacute;&rdquo;, &ldquo;No tengo seguidores&rdquo;.</p>
+  </div>
+</div>
+
+<div class="page">
+  <!-- TIPO 6 -->
+  <h3 class="gold">Tipo 6: Nicho / Vida So&ntilde;ada &mdash; &ldquo;Yo tambi&eacute;n quiero vivir as&iacute;&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Vender el lifestyle del nicho SIN vender. Metacomunicaci&oacute;n pura.<br>
+  <strong>CTA:</strong> Ninguno (outbound &mdash; contactar a quien reacciona).</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Contexto de lifestyle (d&oacute;nde est&aacute;s, qu&eacute; hac&eacute;s)</td><td>Foto selfie casual</td></tr>
+      <tr><td>2</td><td>Lo que generaste mientras dorm&iacute;as/viajabas</td><td>Captura de ventas/resultados</td></tr>
+      <tr><td>3</td><td>El contraste (antes vs ahora)</td><td>Collage o foto antigua</td></tr>
+      <tr><td>4</td><td>Lo simple que es</td><td>Video hablando (relajado)</td></tr>
+      <tr><td>5</td><td>Otra prueba tangible</td><td>Captura de pantalla</td></tr>
+      <tr><td>6</td><td>Interacci&oacute;n (&ldquo;&iquest;Vos en qu&eacute; sos bueno?&rdquo;)</td><td>Encuesta con 2 opciones positivas</td></tr>
+      <tr><td>7</td><td>Cierre natural</td><td>Foto lifestyle</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>&#x1F4A1; La regla de oro:</strong> No DECIRLO, MOSTRARLO. Un martes a las 10am desde la cama vende m&aacute;s que 10 stories diciendo &ldquo;mi trabajo es incre&iacute;ble&rdquo;.</p>
+  </div>
+
+  <hr class="separator">
+
+  <!-- TIPO 7 -->
+  <h3 class="gold">Tipo 7: Expertise &mdash; &ldquo;Este tipo sabe lo que hace&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Demostrar autoridad, conocimiento profundo.<br>
+  <strong>CTA:</strong> Soft (Q&amp;A, link, encuesta).</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Setup (&ldquo;Me preguntaron algo interesante&rdquo;)</td><td>Foto selfie</td></tr>
+      <tr><td>2</td><td>La pregunta/tema</td><td>Captura de DM o fondo + texto</td></tr>
+      <tr><td>3-5</td><td>Respuesta detallada (el an&aacute;lisis)</td><td>Video hablando + capturas</td></tr>
+      <tr><td>6</td><td>Dato sorprendente o insight</td><td>Fondo oscurecido + texto</td></tr>
+      <tr><td>7</td><td>CTA suave (&ldquo;&iquest;Quer&eacute;s que haga m&aacute;s de estos?&rdquo;)</td><td>Encuesta/reacci&oacute;n</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>Ideas:</strong> Analizar productos/trabajos de otros en vivo, mostrar c&oacute;mo se hace algo paso a paso, Q&amp;A sobre tu nicho, mostrar premios/resultados.</p>
+
+  <hr class="separator">
+
+  <!-- TIPO 8 -->
+  <h3 class="gold">Tipo 8: Actuada / Tri&aacute;ngulo de Personajes</h3>
+  <p><strong>Prop&oacute;sito:</strong> Explicar tu modelo de negocio de forma tangible y emocional usando personajes actuados.<br>
+  <strong>CTA:</strong> Inbound (keyword al final). <span class="badge badge-gold">Alto impacto</span></p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Personaje A</strong> &mdash; el experto atrapado (&ldquo;Esta es Sole, terapeuta 12 a&ntilde;os, solo vende presencial&rdquo;)</td><td>Video actuado: Personaje A en su contexto</td></tr>
+      <tr><td>2</td><td><strong>Personaje B</strong> &mdash; el cliente con deseo (&ldquo;Y esta es Mar&iacute;a, busca ayuda online&rdquo;)</td><td>Video actuado: Personaje B</td></tr>
+      <tr><td>3</td><td><strong>Personaje C</strong> &mdash; el puente (vos) (&ldquo;Yo le ense&ntilde;&eacute; a empaquetar sus m&eacute;todos&rdquo;)</td><td>Video actuado: mostrando algo en pantalla</td></tr>
+      <tr><td>4</td><td><strong>Mecanismo</strong> &mdash; c&oacute;mo funciona</td><td>Video actuado: flujo visible</td></tr>
+      <tr><td>5</td><td><strong>Resultado del cliente</strong></td><td>Video actuado: Personaje B satisfecho</td></tr>
+      <tr><td>6</td><td><strong>Los n&uacute;meros</strong></td><td>Calculadora en pantalla</td></tr>
+      <tr><td>7</td><td><strong>Vos directo a c&aacute;mara</strong> &mdash; nombrar segmentos de tu audiencia</td><td>Video selfie, tono amigo</td></tr>
+      <tr><td>8</td><td><strong>CTA</strong></td><td>Foto selfie + keyword GRANDE</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout-warn">
+    <p><strong>&#9888;&#65039; Reglas de secuencias actuadas:</strong></p>
+    <p>&bull; Ejemplo TANGIBLE y universal (cocina, terapia, fitness). NUNCA abstracto.</p>
+    <p>&bull; Mostrar resultado del CLIENTE FINAL, no solo la plata.</p>
+    <p>&bull; Tono accesible &mdash; ropa simple, locaciones normales, sin lujo.</p>
+    <p>&bull; Calculadora visible en pantalla. N&uacute;meros realistas.</p>
+    <p>&bull; Cada personaje ACT&Uacute;A en su escena &mdash; no fotos con texto.</p>
+    <p>&bull; M&aacute;ximo 3 personajes (2 es ideal).</p>
+  </div>
+</div>
+
+<div class="page">
+  <!-- TIPO 9 -->
+  <h3 class="gold">Tipo 9: Explicativa de Servicio &mdash; &ldquo;&iquest;C&oacute;mo funciona lo que hago?&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Explicar tu modelo completo para nuevos seguidores. Va a HIGHLIGHTS como secuencia fija.<br>
+  <strong>Frecuencia:</strong> 1 vez (se actualiza cada 2-3 meses).</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Hook</strong> &mdash; promesa directa</td><td>Video a c&aacute;mara, ambiente casual</td></tr>
+      <tr><td>2</td><td><strong>Avatar</strong> &mdash; a qui&eacute;n ayud&aacute;s</td><td>Video a c&aacute;mara, listar ejemplos</td></tr>
+      <tr><td>3</td><td><strong>Mecanismo visual</strong> &mdash; pizarra o diagrama</td><td>Pizarra dibujada a mano</td></tr>
+      <tr><td>4</td><td><strong>C&oacute;mo lo hac&eacute;s</strong> &mdash; 3 pasos</td><td>Video a c&aacute;mara con n&uacute;meros grandes</td></tr>
+      <tr><td>5</td><td><strong>3 Enemigos</strong> &mdash; alternativas incorrectas</td><td>Video a c&aacute;mara con 3 columnas</td></tr>
+      <tr><td>6</td><td><strong>Prueba social</strong></td><td>Capturas o foto grupal</td></tr>
+      <tr><td>7</td><td><strong>CTA + Lead Magnet</strong></td><td>Selfie + keyword GRANDE</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>T&eacute;cnicas clave:</strong></p>
+    <p>&bull; <strong>PIZARRA:</strong> Dibuj&aacute; el modelo a mano &mdash; flechas, monigotes, n&uacute;meros. Hace tangible lo intangible.</p>
+    <p>&bull; <strong>3 ENEMIGOS:</strong> Atac&aacute; las alternativas incorrectas con nombres espec&iacute;ficos.</p>
+    <p>&bull; <strong>HIGHLIGHT FIJO:</strong> Nombre: &ldquo;&iquest;C&Oacute;MO FUNCIONA?&rdquo; o &ldquo;EMPEZ&Aacute; AC&Aacute;&rdquo;.</p>
+  </div>
+
+  <hr class="separator">
+
+  <!-- TIPO 10 -->
+  <h3 class="gold">Tipo 10: Behind the Scenes &mdash; &ldquo;As&iacute; se hace&rdquo;</h3>
+  <p><strong>Prop&oacute;sito:</strong> Mostrar el proceso detr&aacute;s de los resultados. Posicionar como experto.<br>
+  <strong>CTA:</strong> Soft o ninguno.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Funci&oacute;n</th><th>Formato recomendado</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Contexto (&ldquo;Hoy quiero mostrarte c&oacute;mo armamos X&rdquo;)</td><td>Foto selfie</td></tr>
+      <tr><td>2-4</td><td>El proceso paso a paso</td><td>Screen recordings + capturas</td></tr>
+      <tr><td>5-6</td><td>El resultado</td><td>Captura de resultados</td></tr>
+      <tr><td>7</td><td>El dato/insight (&ldquo;Esto tardaba 6 meses. Hoy, 30 minutos&rdquo;)</td><td>Fondo oscurecido + texto</td></tr>
+      <tr><td>8</td><td>Reacci&oacute;n real</td><td>Video selfie reaccionando</td></tr>
+      <tr><td>9</td><td>Interacci&oacute;n (&ldquo;&iquest;Quer&eacute;s que te muestre c&oacute;mo?&rdquo;)</td><td>Encuesta / caja de preguntas</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout-warn">
+    <p><strong>&#9888;&#65039; Regla BTS:</strong> Crudo, no editado. Que se vea REAL. Sin filtros, sin m&uacute;sica &eacute;pica. El proceso tal cual es. Cada slide = escenario distinto (NO todo sentado hablando).</p>
+  </div>
+</div>
+
+<!-- ==================== 4. LOS 25 FORMATOS ==================== -->
+<div class="page">
+  <h2 class="section-title">4. Los 25 Formatos Visuales + Reglas de Alternaci&oacute;n</h2>
+
+  <p>Cada story dentro de una secuencia debe usar un formato distinto al anterior. <strong>NUNCA 2 videos del mismo tipo seguidos.</strong></p>
+
+  <h3>Formatos de Video (7)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Formato</th><th>Cu&aacute;ndo usar</th></tr></thead>
+    <tbody>
+      <tr><td>V1</td><td><strong>Video selfie</strong></td><td>Explicaciones, reflexiones, CTAs. Siempre con texto resumen abajo</td></tr>
+      <tr><td>V2</td><td><strong>Video tercera persona</strong></td><td>D&iacute;a a d&iacute;a, trabajando, caminando. Alguien te filma</td></tr>
+      <tr><td>V3</td><td><strong>Video primera persona (acci&oacute;n)</strong></td><td>POV &mdash; mostrando lo que est&aacute;s haciendo</td></tr>
+      <tr><td>V4</td><td><strong>Timelapse</strong></td><td>Procesos, viajes, trabajo</td></tr>
+      <tr><td>V5</td><td><strong>Video 0.5x gran angular</strong></td><td>Paisajes, lifestyle, locaciones</td></tr>
+      <tr><td>V6</td><td><strong>C&aacute;mara lenta</strong></td><td>Momentos est&eacute;ticos, impactantes</td></tr>
+      <tr><td>V7</td><td><strong>Video con m&uacute;sica</strong></td><td>Emociones, lifestyle, transiciones</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Formatos de Foto (9)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Formato</th><th>Cu&aacute;ndo usar</th></tr></thead>
+    <tbody>
+      <tr><td>F1</td><td><strong>Foto selfie</strong></td><td>PRIMERA STORY SIEMPRE (regla de oro)</td></tr>
+      <tr><td>F2</td><td><strong>Foto tercera persona</strong></td><td>Contexto, situaci&oacute;n. Alguien te sac&oacute; la foto</td></tr>
+      <tr><td>F3</td><td><strong>Foto/video espejo</strong></td><td>Variedad de &aacute;ngulo sin necesitar a alguien</td></tr>
+      <tr><td>F4</td><td><strong>Foto paisaje/entorno</strong></td><td>Contextualizar ubicaci&oacute;n, viajes</td></tr>
+      <tr><td>F5</td><td><strong>Foto con filtro art&iacute;stico</strong></td><td>Est&eacute;tica, lifestyle. Filtro &ldquo;35mm CM&rdquo;</td></tr>
+      <tr><td>F6</td><td><strong>Fotos antiguas</strong></td><td>Transformaci&oacute;n, historia de vida, before</td></tr>
+      <tr><td>F7</td><td><strong>Fotos profesionales</strong></td><td>Autoridad, eventos, conferencias</td></tr>
+      <tr><td>F8</td><td><strong>Foto con producto/objeto</strong></td><td>Resultados tangibles, unboxing</td></tr>
+      <tr><td>F9</td><td><strong>Foto del documento/recurso</strong></td><td>CTAs de lead magnet (POR FUERA y POR DENTRO)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Formatos Compuestos (3)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Formato</th><th>Cu&aacute;ndo usar</th></tr></thead>
+    <tbody>
+      <tr><td>C1</td><td><strong>Collage (InShot)</strong></td><td>Contraste before/after, 2 ideas en 1</td></tr>
+      <tr><td>C2</td><td><strong>Story anterior oscurecida</strong></td><td>Continuidad narrativa, misterio</td></tr>
+      <tr><td>C3</td><td><strong>Capturas de DMs/comentarios</strong></td><td>Efecto reba&ntilde;o, prueba social</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Formatos Actuados/Narrativos (3)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Formato</th><th>Cu&aacute;ndo usar</th></tr></thead>
+    <tbody>
+      <tr><td>A1</td><td><strong>Video actuado con personajes</strong></td><td>Secuencias tipo 8 (tri&aacute;ngulo). Mini-pel&iacute;cula</td></tr>
+      <tr><td>A2</td><td><strong>Pizarra / diagrama a mano</strong></td><td>Secuencias tipo 9 (explicativa). Modelos, flujos</td></tr>
+      <tr><td>A3</td><td><strong>Screen recording narrado</strong></td><td>Secuencias tipo 10 (BTS). Herramientas, procesos</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Formatos Especiales (3)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Formato</th><th>Cu&aacute;ndo usar</th></tr></thead>
+    <tbody>
+      <tr><td>E1</td><td><strong>Fondo de color con texto</strong></td><td>Mensajes directos, reflexiones. Solo texto, sin imagen</td></tr>
+      <tr><td>E2</td><td><strong>IA generada (Sora, Gemini)</strong></td><td>Contenido visual raro = m&aacute;s views</td></tr>
+      <tr><td>E3</td><td><strong>Stickers de LetoFonts</strong></td><td>Flechas, highlights, est&eacute;tica</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Reglas de Alternaci&oacute;n</h3>
+  <div class="callout">
+    <p>1. <strong>Story 1 = SIEMPRE F1 (foto selfie)</strong> &mdash; regla de oro, sin excepciones.</p>
+    <p>2. <strong>Nunca 2 videos del mismo tipo seguidos</strong> &mdash; V1&rarr;V1 prohibido, V1&rarr;V2 OK.</p>
+    <p>3. <strong>Nunca 2 fotos est&aacute;ticas seguidas sin interacci&oacute;n</strong> &mdash; si son 2 fotos, la segunda tiene encuesta/sticker.</p>
+    <p>4. <strong>M&aacute;ximo 3 stories de texto hablado seguidas</strong> &mdash; intercalar con fotos/capturas.</p>
+    <p>5. <strong>C3 (capturas de DMs) va SIEMPRE despu&eacute;s de interacci&oacute;n.</strong></p>
+    <p>6. <strong>70% imagen, 30% texto</strong> en cada story individual.</p>
+    <p>7. <strong>Cambiar &aacute;ngulo de c&aacute;mara cada 3-5 segundos</strong> en videos.</p>
+  </div>
+</div>
+
+<!-- ==================== 5. LOS 18 TRIGGERS ==================== -->
+<div class="page">
+  <h2 class="section-title">5. Los 18 Triggers Mentales &mdash; La Clase M&aacute;s Importante</h2>
+
+  <blockquote>&ldquo;Si tengo que elegir una clase de todo el curso, ser&iacute;a esta.&rdquo; &mdash; Naf&eacute; Aquel</blockquote>
+
+  <p>Cada story de cada secuencia deber&iacute;a activar al menos 1 trigger de forma intencional. No al azar.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Trigger</th><th>Qu&eacute; es</th><th>C&oacute;mo aplicar en stories</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Prueba social</strong></td><td>La gente imita lo que hacen otros</td><td>Testimonios, DMs, tama&ntilde;o del grupo</td></tr>
+      <tr><td>2</td><td><strong>Coherencia</strong></td><td>La gente quiere ser consistente</td><td>Que participen (encuestas, reacciones) &rarr; coherente al comprar</td></tr>
+      <tr><td>3</td><td><strong>Escasez</strong></td><td>Lo escaso se percibe como valioso</td><td>Plazas limitadas, &ldquo;no acepto a todos&rdquo;</td></tr>
+      <tr><td>4</td><td><strong>Simpat&iacute;a</strong></td><td>Compramos a gente que nos cae bien</td><td>Valores, humor, problemas, regalos</td></tr>
+      <tr><td>5</td><td><strong>Autoridad</strong></td><td>Opini&oacute;n de autoridad &rarr; el cerebro deja de dudar</td><td>Logos, premios, &ldquo;trabaj&eacute; con X&rdquo;, medios</td></tr>
+      <tr><td>6</td><td><strong>Reciprocidad</strong></td><td>Quien recibe, siente necesidad de devolver</td><td>Dar valor gratis (PDFs, clases, tips)</td></tr>
+      <tr><td>7</td><td><strong>Realismo</strong></td><td>La gente desconf&iacute;a de lo perfecto</td><td>&ldquo;Es un 8 de 9, no 10 de 10&rdquo;</td></tr>
+      <tr><td>8</td><td><strong>Facilidad</strong></td><td>Resultados f&aacute;ciles y r&aacute;pidos</td><td>Mostrar que es simple, r&aacute;pido, cualquiera puede</td></tr>
+      <tr><td>9</td><td><strong>Claridad</strong></td><td>La gente cree m&aacute;s en lo que entiende</td><td>Explicar como para un nene de 5 a&ntilde;os</td></tr>
+      <tr><td>10</td><td><strong>Relevancia</strong></td><td>Usar el avatar espec&iacute;fico</td><td>&ldquo;Sim&oacute;n, 20 a&ntilde;os, empez&oacute; de cero, en 2 semanas hizo $230&rdquo;</td></tr>
+      <tr><td>11</td><td><strong>Vida so&ntilde;ada</strong></td><td>Nadie aprende por aprender</td><td>Viajes, sin jefe, comprando, ayudando a familia</td></tr>
+      <tr><td>12</td><td><strong>Experiencia</strong></td><td>Conocimiento demostrado (&ne; autoridad)</td><td>Analizar otros, Q&amp;A, mostrar proceso</td></tr>
+      <tr><td>13</td><td><strong>Garant&iacute;a</strong></td><td>&ldquo;No pierdo nada&rdquo;</td><td>Money-back o anti-garant&iacute;a (explicar por qu&eacute; NO das garant&iacute;a &rarr; m&aacute;s confianza)</td></tr>
+      <tr><td>14</td><td><strong>Transformaci&oacute;n personal</strong></td><td>El nicho cambia qui&eacute;n sos</td><td>De t&iacute;mido a sociable, de inseguro a confiado</td></tr>
+      <tr><td>15</td><td><strong>Acontecimientos</strong></td><td>La gente ama los eventos grandes</td><td>Anunciar webinar de forma &eacute;pica</td></tr>
+      <tr><td>16</td><td><strong>Participaci&oacute;n</strong></td><td>Quien ayuda a crear, consume m&aacute;s</td><td>Que voten dise&ntilde;os, features, canciones</td></tr>
+      <tr><td>17</td><td><strong>Comunidad</strong></td><td>La gente quiere pertenecer a un grupo</td><td>Eventos, reuniones, encuentros grupales</td></tr>
+      <tr><td>18</td><td><strong>Enemigo com&uacute;n</strong></td><td>Unir contra algo</td><td>Criticar p&uacute;blicamente algo con lo que no est&aacute;s de acuerdo</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>&#x1F4A1; Regla de uso:</strong> Eleg&iacute; 1-3 triggers por story. Document&aacute; cu&aacute;les us&aacute;s. No lo dejes al azar. Esto es lo que separa a alguien que &ldquo;sube stories&rdquo; de alguien que <strong>vende</strong> con stories.</p>
+  </div>
+</div>
+
+<!-- ==================== 6. PERSUASION INVISIBLE ==================== -->
+<div class="page">
+  <h2 class="section-title">6. Motor de Persuasi&oacute;n Invisible &mdash; &ldquo;Si se nota, fallaste&rdquo;</h2>
+
+  <blockquote>&ldquo;La persuasi&oacute;n m&aacute;s efectiva es la que no se nota.&rdquo;</blockquote>
+
+  <h3>Principio Central: No Rebatir, MOSTRAR</h3>
+
+  <div class="vs-box">
+    <div class="vs-bad">
+      <h4>&#10060; MAL (bloque de objeci&oacute;n)</h4>
+      <p>&ldquo;Si pens&aacute;s que necesit&aacute;s muchos seguidores, mir&aacute;: Valeria vendi&oacute; sin seguidores.&rdquo;</p>
+    </div>
+    <div class="vs-good">
+      <h4>&#9989; BIEN (objeci&oacute;n disuelta)</h4>
+      <p>Story 3: &ldquo;Valeria tiene 87 seguidores. Ni foto de perfil tiene.&rdquo;</p>
+      <p>Story 5: &ldquo;El martes le entraron 3 ventas por WhatsApp. $45.000.&rdquo;</p>
+    </div>
+  </div>
+
+  <div class="callout-warn">
+    <p><strong>La regla:</strong> Si el viewer se da cuenta de que le est&aacute;n rebatiendo una objeci&oacute;n, fallaste. La objeci&oacute;n &ldquo;necesito seguidores&rdquo; muri&oacute; sin nombrarla.</p>
+  </div>
+
+  <hr class="separator">
+
+  <h3>Las 10 T&eacute;cnicas de Disoluci&oacute;n de Objeciones</h3>
+
+  <table>
+    <thead><tr><th>Objeci&oacute;n</th><th>C&oacute;mo disolverla en escena (sin nombrarla)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>&ldquo;No s&eacute; de tecnolog&iacute;a&rdquo;</strong></td><td>Mostrar a alguien mayor usando el celular normalmente. Un jubilado dicta un audio de WhatsApp &mdash; eso mismo es lo que hace para trabajar.</td></tr>
+      <tr><td><strong>&ldquo;No tengo seguidores&rdquo;</strong></td><td>Mencionar el n&uacute;mero real bajo: &ldquo;Tiene 43 seguidores. Ni bio tiene.&rdquo; &rarr; 3 stories despu&eacute;s &rarr; &ldquo;Vendi&oacute; $134.750.&rdquo;</td></tr>
+      <tr><td><strong>&ldquo;No tengo tiempo&rdquo;</strong></td><td>Mostrar el MOMENTO exacto: &ldquo;Son las 10pm. Los chicos se durmieron. Agarra el celular.&rdquo;</td></tr>
+      <tr><td><strong>&ldquo;Ya prob&eacute; y no funcion&oacute;&rdquo;</strong></td><td>Nombrar lo que prob&oacute; como parte de su historia: &ldquo;Compr&oacute; 3 cursos. No vendi&oacute; nada. Hasta que...&rdquo;</td></tr>
+      <tr><td><strong>&ldquo;Es una estafa&rdquo;</strong></td><td>Calculadora en pantalla con n&uacute;meros reales, no promesas.</td></tr>
+      <tr><td><strong>&ldquo;No s&eacute; qu&eacute; vender&rdquo;</strong></td><td>Revelar el producto como algo que ya sab&iacute;a hacer: &ldquo;H&eacute;ctor hac&iacute;a asados. Nunca pens&oacute; que eso era un producto.&rdquo;</td></tr>
+      <tr><td><strong>&ldquo;Eso no funciona ac&aacute;&rdquo;</strong></td><td>Mencionar ciudades de pasada: &ldquo;Vive en Salta. Roberto en Mendoza. Diego en Buenos Aires.&rdquo;</td></tr>
+      <tr><td><strong>&ldquo;Suena muy f&aacute;cil&rdquo;</strong></td><td>Screen recording de 30s del proceso real. Se ve que hay trabajo, pero se ve que es posible.</td></tr>
+      <tr><td><strong>&ldquo;No tengo plata&rdquo;</strong></td><td>El n&uacute;mero aparece naturalmente: &ldquo;Le cost&oacute; lo mismo que un caf&eacute;. $5.&rdquo;</td></tr>
+      <tr><td><strong>&ldquo;Ya vi videos y no hice nada&rdquo;</strong></td><td>Contrastar: &ldquo;No le mostr&eacute; un video. Le dije: abr&iacute; el celular, dict&aacute; esto.&rdquo;</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>Regla de densidad:</strong> M&aacute;ximo 2-3 objeciones disueltas por secuencia. M&aacute;s = se nota.</p>
+  </div>
+</div>
+
+<div class="page">
+  <h3>Cadena de Micro-Yes Visuales</h3>
+  <p>En stories, los micro-yes son <strong>VISUALES</strong>, no solo textuales. La persona no dice &ldquo;s&iacute;&rdquo; en voz alta &mdash; lo siente mientras mira.</p>
+
+  <table>
+    <thead><tr><th>Paso</th><th>Lo que piensa el viewer</th><th>Qu&eacute; story lo activa</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>&ldquo;Eso me pasa&rdquo;</strong></td><td>Story 1-2: escena del dolor (identificaci&oacute;n)</td></tr>
+      <tr><td>2</td><td><strong>&ldquo;Ah, &iquest;eso existe?&rdquo;</strong></td><td>Story 3: revelaci&oacute;n del mecanismo</td></tr>
+      <tr><td>3</td><td><strong>&ldquo;Es simple&rdquo;</strong></td><td>Story 4: proceso visible</td></tr>
+      <tr><td>4</td><td><strong>&ldquo;Funciona&rdquo;</strong></td><td>Story 5: resultado concreto</td></tr>
+      <tr><td>5</td><td><strong>&ldquo;Es para gente como yo&rdquo;</strong></td><td>Story 6: personaje similar al viewer</td></tr>
+      <tr><td>6</td><td><strong>&ldquo;Quiero saber m&aacute;s&rdquo;</strong></td><td>Story 7-8: CTA</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout-warn">
+    <p><strong>&#9888;&#65039; Si el CTA llega antes de que el viewer quiera saber m&aacute;s, no funciona.</strong> La secuencia se dise&ntilde;a hacia atr&aacute;s: primero defin&iacute;s el CTA, despu&eacute;s constru&iacute;s las stories que llevan a que la persona QUIERA hacer clic.</p>
+  </div>
+
+  <hr class="separator">
+
+  <h3>Vocabulario por Segmento</h3>
+  <p>Cada personaje HABLA como su segmento. En stories, el texto en pantalla es ultracorto &mdash; EXACTAMENTE como habla esa persona.</p>
+
+  <table>
+    <thead><tr><th>Si le habl&aacute;s a...</th><th>USA estas palabras</th><th>NUNCA uses</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Joven emprendedor</strong></td><td>&ldquo;proyecto&rdquo;, &ldquo;avanzar&rdquo;, &ldquo;estancado&rdquo;</td><td>&ldquo;jubilarse&rdquo;, &ldquo;ahorros&rdquo;</td></tr>
+      <tr><td><strong>Intent&oacute; y fall&oacute;</strong></td><td>&ldquo;otra vez no&rdquo;, &ldquo;cursos&rdquo;, &ldquo;esta vez&rdquo;</td><td>Promesas grandiosas</td></tr>
+      <tr><td><strong>Mam&aacute;/pap&aacute;</strong></td><td>&ldquo;hijos&rdquo;, &ldquo;sin salir de casa&rdquo;, &ldquo;mis tiempos&rdquo;</td><td>&ldquo;dej&aacute; todo&rdquo;, &ldquo;metele 4 horas&rdquo;</td></tr>
+      <tr><td><strong>+50 esc&eacute;ptico</strong></td><td>&ldquo;aprender&rdquo;, &ldquo;paso a paso&rdquo;, &ldquo;sin compromiso&rdquo;</td><td>&ldquo;f&aacute;cil&rdquo;, &ldquo;te vas a hacer rico&rdquo;</td></tr>
+    </tbody>
+  </table>
+
+  <hr class="separator">
+
+  <h3>Checklist de Persuasi&oacute;n Invisible</h3>
+  <div class="checklist">
+    <p>&#9744; &iquest;Hay al menos 2 objeciones DISUELTAS (no nombradas) en la secuencia?</p>
+    <p>&#9744; &iquest;La tensi&oacute;n emocional se MUESTRA en una escena, no se dice?</p>
+    <p>&#9744; &iquest;El personaje habla con el vocabulario de su segmento?</p>
+    <p>&#9744; &iquest;Hay m&iacute;nimo 3 micro-yes visuales en la secuencia?</p>
+    <p>&#9744; &iquest;El CTA llega despu&eacute;s de que el viewer YA quiere saber m&aacute;s?</p>
+    <p>&#9744; &iquest;Los personajes est&aacute;n basados en arquetipos reales (no inventados)?</p>
+    <p>&#9744; &iquest;Si alguien ve la secuencia, siente que es una HISTORIA, no una venta?</p>
+  </div>
+
+  <div class="callout-green">
+    <p><strong>Test final:</strong> Le&eacute; la secuencia completa. &iquest;En alg&uacute;n momento suena a &ldquo;marketer&rdquo;? Si s&iacute; &rarr; reescribir esa parte.</p>
+  </div>
+</div>
+
+<!-- ==================== 7. 21 FORMAS DE SUBIR VIEWS ==================== -->
+<div class="page">
+  <h2 class="section-title">7. 21 Formas de Subir Views (+ 11 que los Bajan)</h2>
+
+  <h3>Lo que BAJA views (11 errores)</h3>
+  <div class="callout-warn">
+    <p>1. Mucho video cara-a-c&aacute;mara del mismo &aacute;ngulo sin texto</p>
+    <p>2. Demasiado texto (la gente entra &ldquo;con medio cerebro&rdquo;)</p>
+    <p>3. Contenido complejo/intelectual</p>
+    <p>4. Mismo &aacute;ngulo de c&aacute;mara siempre</p>
+    <p>5. Narrar con voz en off en vez de mostrar</p>
+    <p>6. Exceso de stories de d&iacute;a a d&iacute;a sin contenido</p>
+    <p>7. Stories sin valor</p>
+    <p>8. Falta de emociones</p>
+    <p>9. Contenido repetitivo</p>
+    <p>10. Venta directa constante</p>
+    <p>11. Exceso de reposts (baja el reach)</p>
+  </div>
+
+  <h3>Lo que SUBE views (21 t&aacute;cticas)</h3>
+  <table>
+    <thead><tr><th>#</th><th>T&aacute;ctica</th><th>Por qu&eacute; funciona</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Temas resonantes/controversiales</strong></td><td>Plata, relaciones, eventos actuales</td></tr>
+      <tr><td>2</td><td><strong>Intriga</strong></td><td>Hacen que la gente vuelva cada hora</td></tr>
+      <tr><td>3</td><td><strong>Mostrar problemas</strong></td><td>Fracasos te humanizan</td></tr>
+      <tr><td>4</td><td><strong>Algo impactante</strong></td><td>Comprarte un auto, mudarte, cambio grande</td></tr>
+      <tr><td>5</td><td><strong>Objetivo global</strong></td><td>Mostrar un proceso (sac&aacute;ndote la licencia, armando un negocio)</td></tr>
+      <tr><td>6</td><td><strong>Historia impactante sola</strong></td><td>No siempre arrancar con hook &mdash; construir al cl&iacute;max</td></tr>
+      <tr><td>7</td><td><strong>Conversaci&oacute;n sincera</strong></td><td>Compartir tu estado emocional real</td></tr>
+      <tr><td>8</td><td><strong>Cambio de look</strong></td><td>Nuevo corte, before/after</td></tr>
+      <tr><td>9</td><td><strong>Cambio de locaci&oacute;n</strong></td><td>Viajar genera &ldquo;&iquest;qu&eacute; hace ah&iacute;?&rdquo;</td></tr>
+      <tr><td>10</td><td><strong>Swipe-backs</strong></td><td>Juegos que hacen volver atr&aacute;s (Instagram lo premia)</td></tr>
+      <tr><td>11</td><td><strong>Desaparecer a veces</strong></td><td>Crear el &ldquo;efecto wow&rdquo; cuando volv&eacute;s</td></tr>
+      <tr><td>12</td><td><strong>An&aacute;lisis de hate</strong></td><td>Mostrar c&oacute;mo manej&aacute;s haters genera debate</td></tr>
+      <tr><td>13</td><td><strong>Hype/anticipaci&oacute;n</strong></td><td>Teasear algo que viene > soltar sorpresa</td></tr>
+      <tr><td>14</td><td><strong>Test de datos curiosos</strong></td><td>&ldquo;3 cosas que no sab&iacute;as de m&iacute;&rdquo;</td></tr>
+      <tr><td>15</td><td><strong>Flood de DMs</strong></td><td>Mostrar muchos DMs genera efecto reba&ntilde;o</td></tr>
+      <tr><td>16</td><td><strong>Acci&oacute;n inusual</strong></td><td>Algo que normalmente no mostrar&iacute;as</td></tr>
+      <tr><td>17</td><td><strong>Humor</strong></td><td>Sin pasarse, que no te tomen poco en serio</td></tr>
+      <tr><td>18</td><td><strong>Contenido visualmente raro</strong></td><td>Videos de IA, efectos especiales</td></tr>
+      <tr><td>19</td><td><strong>Final interesante</strong></td><td>Frase motivacional o cita inspiradora</td></tr>
+      <tr><td>20</td><td><strong>Est&eacute;tica bella</strong></td><td>Fotos visualmente agradables</td></tr>
+      <tr><td>21</td><td><strong>Interacci&oacute;n con otros</strong></td><td>&ldquo;Necesit&aacute;s m&aacute;s de un personaje en la pel&iacute;cula&rdquo;</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout-green">
+    <p><strong>&#x1F4A1; T&eacute;cnica bonus:</strong> Empez&aacute; con un story de humor/comedia ANTES de la secuencia real. Esper&aacute; 30 minutos y sub&iacute; el resto. Maximiza viewership para el CTA.</p>
+  </div>
+</div>
+
+<!-- ==================== 8. LANZAMIENTO ==================== -->
+<div class="page">
+  <h2 class="section-title">8. C&oacute;mo Hacer un Lanzamiento por Stories (8 Etapas)</h2>
+
+  <p>Para un lanzamiento completo (~1 mes), el calentamiento sigue estas 8 etapas en orden:</p>
+
+  <table>
+    <thead><tr><th>Etapa</th><th>Nombre</th><th>Idea a transmitir</th><th>Duraci&oacute;n</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Crear contexto</strong></td><td>&ldquo;Pedro hace p&aacute;ginas web&rdquo;</td><td>2-3 d&iacute;as</td></tr>
+      <tr><td>2</td><td><strong>Personalidad</strong></td><td>&ldquo;Pedro es de fiar, es mi amigo&rdquo;</td><td>5-7 d&iacute;as</td></tr>
+      <tr><td>3</td><td><strong>Nicho</strong></td><td>&ldquo;Su trabajo es genial, divertido, paga bien&rdquo;</td><td>5-7 d&iacute;as</td></tr>
+      <tr><td>4</td><td><strong>Expertise</strong></td><td>&ldquo;Pedro es experto en esto&rdquo;</td><td>3-5 d&iacute;as</td></tr>
+      <tr><td>5</td><td><strong>Cierre de objeciones</strong></td><td>Reto con 3 seguidores &rarr; resultados reales</td><td>5-7 d&iacute;as</td></tr>
+      <tr><td>6</td><td><strong>Calentamiento al reto/webinar</strong></td><td>&ldquo;Pedro puede ense&ntilde;ar&rdquo; + anuncio &eacute;pico</td><td>2-3 d&iacute;as</td></tr>
+      <tr><td>7</td><td><strong>Calentamiento del curso</strong></td><td>&ldquo;El curso de Pedro es la mejor opci&oacute;n&rdquo;</td><td>2-3 d&iacute;as</td></tr>
+      <tr><td>8</td><td><strong>Ventas</strong></td><td>&ldquo;Esta oferta es irresistible, necesito entrar&rdquo;</td><td>3-5 d&iacute;as</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Ejemplo Real: Calendario de Lanzamiento (2 semanas)</h3>
+
+  <table>
+    <thead><tr><th>D&iacute;a</th><th>Secuencia</th><th>Detalle</th></tr></thead>
+    <tbody>
+      <tr><td><strong>S&aacute;b</strong></td><td>Anuncio del reto</td><td>&ldquo;Te voy a regalar dinero&rdquo; &rarr; no, te voy a ense&ntilde;ar a hacerlo. Video hype + link al grupo</td></tr>
+      <tr><td><strong>Dom</strong></td><td>Recordar + testimonios</td><td>&ldquo;Empezamos ma&ntilde;ana&rdquo;, collage antes/ahora, casos de &eacute;xito, link con urgencia</td></tr>
+      <tr><td><strong>Lun</strong></td><td>D&iacute;a 1 del reto</td><td>Explicar qu&eacute; van a ver, qui&eacute;n los acompa&ntilde;a, autoridad, misi&oacute;n</td></tr>
+      <tr><td><strong>Mar</strong></td><td>Prueba social del grupo</td><td>&ldquo;El valor es incre&iacute;ble, mir&aacute; las reacciones&rdquo;. CTA para los que no entraron</td></tr>
+      <tr><td><strong>Mi&eacute;</strong></td><td>&#128164; Descanso</td><td>3 secuencias seguidas = descanso obligatorio</td></tr>
+      <tr><td><strong>Jue</strong></td><td>Q&amp;A (resolver objeciones)</td><td>Preguntas con respuestas + CTA suave</td></tr>
+      <tr><td><strong>Vie</strong></td><td>&#128164; Descanso</td><td>Siempre</td></tr>
+      <tr><td><strong>S&aacute;b</strong></td><td>CTA directo</td><td>Para los que no est&aacute;n en el grupo</td></tr>
+      <tr><td><strong>Dom</strong></td><td>&#128164; Descanso</td><td>&mdash;</td></tr>
+      <tr><td><strong>Lun</strong></td><td>Anuncio del webinar</td><td>&ldquo;Este jueves directo resumiendo todo&rdquo;. Para los que se perdieron el reto</td></tr>
+      <tr><td><strong>Mar-Mi&eacute;</strong></td><td>Recordar webinar</td><td>&ldquo;Lo que hicimos fue una locura&rdquo;, testimonios del reto</td></tr>
+      <tr><td><strong>Dom</strong></td><td>Webinar</td><td>Evento de venta</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>&#x1F4A1; Clave del lanzamiento:</strong> Cada etapa se construye sobre la anterior. Si salt&aacute;s de &ldquo;contexto&rdquo; a &ldquo;ventas&rdquo;, la gente no compr&oacute; porque no confi&aacute; en vos todav&iacute;a. El calentamiento NO se puede acelerar &mdash; es el precio que pag&aacute;s con tiempo.</p>
+  </div>
+</div>
+
+<!-- ==================== 9. CALENTAMIENTO ETERNO ==================== -->
+<div class="page">
+  <h2 class="section-title">9. Calentamiento Eterno &mdash; Cuando No Est&aacute;s Lanzando</h2>
+
+  <p>Despu&eacute;s del primer lanzamiento, las 8 etapas se convierten en un <strong>calentamiento eterno</strong>: una lista de significados/ideas que transmit&iacute;s en cualquier orden, de forma nativa, todos los d&iacute;as.</p>
+
+  <div class="callout">
+    <p><strong>La diferencia:</strong> En un lanzamiento, las etapas van en orden estricto. En evergreen, son como una playlist en shuffle &mdash; transmit&iacute;s todas las ideas pero sin un orden fijo.</p>
+  </div>
+
+  <h3>Las 7 Ideas a Transmitir Constantemente</h3>
+  <table>
+    <thead><tr><th>#</th><th>Idea</th><th>Qu&eacute; mostrar</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Personalidad</strong></td><td>Historia real, vulnerabilidad, humor, valores</td></tr>
+      <tr><td>2</td><td><strong>Nicho</strong></td><td>Tu trabajo = libertad, sin jefe, desde donde quieras</td></tr>
+      <tr><td>3</td><td><strong>Expertise</strong></td><td>An&aacute;lisis, proceso, responder preguntas</td></tr>
+      <tr><td>4</td><td><strong>Prueba social</strong></td><td>Alumnos/clientes que lograron resultados, capturas</td></tr>
+      <tr><td>5</td><td><strong>Vida so&ntilde;ada</strong></td><td>Viajes, horarios libres, ayudar a familia</td></tr>
+      <tr><td>6</td><td><strong>Objeciones</strong></td><td>Disueltas en escenas, nunca nombradas</td></tr>
+      <tr><td>7</td><td><strong>CTA</strong></td><td>Lead magnet o producto (rotando, con keyword)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Cadencia Semanal Base</h3>
+  <table>
+    <thead><tr><th>D&iacute;a</th><th>Tipo sugerido</th><th>Notas</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Lunes</strong></td><td>Personalidad o descanso</td><td>Arrancar la semana suave</td></tr>
+      <tr><td><strong>Martes</strong></td><td>CTA Lead Magnet #1</td><td>El d&iacute;a m&aacute;s activo para CTAs</td></tr>
+      <tr><td><strong>Mi&eacute;rcoles</strong></td><td>Descanso</td><td>Recuperar algoritmo</td></tr>
+      <tr><td><strong>Jueves</strong></td><td>CTA Lead Magnet #2 / Nicho / BTS</td><td>Otro &aacute;ngulo distinto al martes</td></tr>
+      <tr><td><strong>Viernes</strong></td><td>&#128164; SIEMPRE descanso</td><td>Patr&oacute;n universal de 21 sesiones de coaching</td></tr>
+      <tr><td><strong>S&aacute;bado</strong></td><td>Valores / reflexi&oacute;n / presentar pareja</td><td>Contenido personal</td></tr>
+      <tr><td><strong>Domingo</strong></td><td>Hype o CTA Volumen (juego)</td><td>D&iacute;a de entretenimiento</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout-green">
+    <p><strong>&#x1F4A1; Regla de oro:</strong> Escribir TODOS los guiones de la semana en UN solo d&iacute;a (lunes o domingo). Despu&eacute;s solo grab&aacute;s y sub&iacute;s.</p>
+  </div>
+</div>
+
+<!-- ==================== 10. STORYTELLING ==================== -->
+<div class="page">
+  <h2 class="section-title">10. Storytelling: El Framework de 6 Etapas (Michael Hauge)</h2>
+
+  <p>Para la <strong>historia de vida</strong> &mdash; la secuencia m&aacute;s poderosa que pod&eacute;s hacer. Genera m&aacute;s confianza, conexi&oacute;n y ventas que cualquier otra cosa.</p>
+
+  <table>
+    <thead><tr><th>Etapa</th><th>Nombre</th><th>Funci&oacute;n</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Setup</strong></td><td>Presentar al protagonista, contexto, situaci&oacute;n actual. Hook intrigante</td></tr>
+      <tr><td>2</td><td><strong>Crisis</strong></td><td>El problema que inicia todo, lo que te movi&oacute; a actuar</td></tr>
+      <tr><td>3</td><td><strong>B&uacute;squeda</strong></td><td>Buscar soluci&oacute;n, vivir aventuras, intentar cosas</td></tr>
+      <tr><td>4</td><td><strong>Conflicto</strong></td><td>Las cosas se complican. Obst&aacute;culos que aparecen</td></tr>
+      <tr><td>5</td><td><strong>Cl&iacute;max</strong></td><td>Momento m&aacute;s emocional. Vender el VEH&Iacute;CULO (tu nicho) como lo que te llev&oacute; del punto m&aacute;s bajo al m&aacute;s alto</td></tr>
+      <tr><td>6</td><td><strong>Desenlace</strong></td><td>Mostrar tu situaci&oacute;n ideal actual, atacando los deseos del avatar</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Tips para contar tu historia de vida</h3>
+  <ul>
+    <li><strong>Dividir en 2 partes si es muy larga</strong> &mdash; en el conflicto ped&iacute; 2000 reacciones para la parte 2</li>
+    <li><strong>Mostrar fotos reales</strong> de antes/despu&eacute;s (la gente conecta con lo visual, no con las palabras)</li>
+    <li><strong>Fijar en highlights</strong> &mdash; esta secuencia se queda para siempre</li>
+    <li><strong>Terminar con comentarios</strong> de la audiencia (prueba social + engagement)</li>
+    <li><strong>No la repitas todo el tiempo</strong> &mdash; cont&aacute;la una vez, despu&eacute;s referenci&aacute; momentos espec&iacute;ficos</li>
+  </ul>
+
+  <div class="callout">
+    <p><strong>&#x1F4A1; La historia de vida bien contada vale m&aacute;s que 100 stories de tips.</strong> Una persona que vio tu historia completa est&aacute; 10x m&aacute;s cerca de comprarte que alguien que vio 20 stories de contenido &uacute;til.</p>
+  </div>
+</div>
+
+<!-- ==================== 11. CTAs ==================== -->
+<div class="page">
+  <h2 class="section-title">11. Estructura de CTAs para Stories</h2>
+
+  <h3>La Regla del Doble CTA</h3>
+  <div class="flow">
+    <strong>CTA #1</strong> (keyword + foto selfie)<br>
+    <span class="arrow">&darr;</span><br>
+    <strong>PRUEBA SOCIAL</strong> (capturas de gente respondiendo)<br>
+    <span class="arrow">&darr;</span><br>
+    <strong>CTA #2</strong> (repetir keyword + mostrar recurso por dentro)
+  </div>
+
+  <p>SIEMPRE 2 CTAs con prueba social en el medio. Nunca uno solo.</p>
+
+  <h3>Reglas de CTA</h3>
+  <table>
+    <thead><tr><th>Regla</th><th>Detalle</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Keyword GRANDE y en color diferente</strong></td><td>Que se vea de lejos. No en chiquito mezclado con texto</td></tr>
+      <tr><td><strong>Esperar 30-60 min entre story 1 y el resto</strong></td><td>La story 1 (hook de views) maximiza el reach para el CTA</td></tr>
+      <tr><td><strong>Mostrar documento por fuera Y por dentro</strong></td><td>Tangibilizar. Cuando lo ven abierto, responden m&aacute;s</td></tr>
+      <tr><td><strong>Nunca enviar recurso directo</strong></td><td>Primero cualificar: &ldquo;&iquest;A qu&eacute; te dedic&aacute;s?&rdquo;</td></tr>
+      <tr><td><strong>Lead magnet f&aacute;cil de consumir</strong></td><td>Copi&aacute; y peg&aacute; > Checklist > PDF corto. NUNCA clase de 1 hora</td></tr>
+      <tr><td><strong>CTA Lead Magnet: 1-2/semana</strong></td><td>Cada uno con &aacute;ngulo distinto</td></tr>
+      <tr><td><strong>CTA Directo: m&aacute;x cada 2 semanas</strong></td><td>Vender de m&aacute;s = quem&aacute;s la audiencia</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Benchmarks de Referencia</h3>
+  <div class="callout-green">
+    <p><strong>Mar&iacute;a Dur&aacute;n:</strong> 8,000 conversaciones de 30,000 views (27% de conversi&oacute;n)</p>
+    <p><strong>Pedro Huervaun:</strong> 4,000 respuestas de 20,000 views (20% de conversi&oacute;n)</p>
+    <p>Si est&aacute;s por encima del 15% de conversi&oacute;n en CTAs de stories, vas bien.</p>
+  </div>
+
+  <h3>Ideas para Lead Magnets que Funcionan</h3>
+  <ul>
+    <li><strong>Plantilla de copi&aacute; y peg&aacute;</strong> &mdash; 5 prompts listos, 10 hooks, templates</li>
+    <li><strong>Checklist de 1 p&aacute;gina</strong> &mdash; los 12 pasos para X</li>
+    <li><strong>Lista de nichos/recursos</strong> &mdash; 10 nichos que venden, 20 herramientas gratis</li>
+    <li><strong>Estructura/template</strong> &mdash; estructura de p&aacute;gina de venta, template de email</li>
+    <li><strong>Clase gratuita corta</strong> &mdash; m&aacute;ximo 20-30 minutos, con acci&oacute;n concreta</li>
+  </ul>
+</div>
+
+<!-- ==================== 12. LAS 47 REGLAS ==================== -->
+<div class="page">
+  <h2 class="section-title">12. Las 47 Reglas No Negociables</h2>
+
+  <p>Si se rompe una, la secuencia no sale. Estas reglas vienen de 38 videos del curso + 21 sesiones de coaching + an&aacute;lisis de referentes.</p>
+
+  <h3>Reglas de Secuencia (R1-R8)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th><th>Por qu&eacute;</th></tr></thead>
+    <tbody>
+      <tr><td>R1</td><td><strong>Primera story SIEMPRE muestra la cara (foto selfie)</strong></td><td>La gente necesita ver a qui&eacute;n sigue</td></tr>
+      <tr><td>R2</td><td><strong>M&iacute;nimo 7 stories por secuencia, m&aacute;ximo 15</strong></td><td>&lt;7 no alcanza para un arco. &gt;15 la gente se va</td></tr>
+      <tr><td>R3</td><td><strong>Nunca 2 videos del mismo formato seguidos</strong></td><td>Monoton&iacute;a visual = skip</td></tr>
+      <tr><td>R4</td><td><strong>70% imagen, 30% texto en cada story</strong></td><td>Instagram no es para leer</td></tr>
+      <tr><td>R5</td><td><strong>Subt&iacute;tulos en TODOS los videos hablados</strong></td><td>Mucha gente mira sin sonido</td></tr>
+      <tr><td>R6</td><td><strong>Cada story conecta con la siguiente</strong></td><td>Nunca romper la l&iacute;nea narrativa</td></tr>
+      <tr><td>R7</td><td><strong>Al menos 1 elemento de interacci&oacute;n por secuencia</strong></td><td>Encuesta, caja de preguntas, bot&oacute;n reacci&oacute;n</td></tr>
+      <tr><td>R8</td><td><strong>M&aacute;ximo 3 secuencias seguidas, despu&eacute;s descanso</strong></td><td>El algoritmo necesita recuperarse</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Reglas de Frecuencia (R9-R13)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th></tr></thead>
+    <tbody>
+      <tr><td>R9</td><td><strong>4 secuencias por semana con descansos</strong> &mdash; No publicar todos los d&iacute;as</td></tr>
+      <tr><td>R10</td><td><strong>Viernes SIEMPRE descanso</strong> &mdash; Patr&oacute;n universal</td></tr>
+      <tr><td>R11</td><td><strong>CTA Lead Magnet: 1-2 por semana</strong> &mdash; Cada uno con &aacute;ngulo distinto</td></tr>
+      <tr><td>R12</td><td><strong>CTA Directo: m&aacute;ximo 1 cada 2 semanas</strong></td></tr>
+      <tr><td>R13</td><td><strong>CTA Volumen: m&aacute;ximo 1 por semana</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Reglas de CTA (R14-R18)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th></tr></thead>
+    <tbody>
+      <tr><td>R14</td><td><strong>Doble CTA:</strong> CTA &rarr; prueba social &rarr; CTA</td></tr>
+      <tr><td>R15</td><td><strong>Keyword GRANDE y en color diferente</strong></td></tr>
+      <tr><td>R16</td><td><strong>Esperar 30-60 min entre story 1 y el resto</strong></td></tr>
+      <tr><td>R17</td><td><strong>Nunca enviar recurso directo</strong> &mdash; Primero cualificar</td></tr>
+      <tr><td>R18</td><td><strong>Mostrar documento por fuera Y por dentro</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Reglas de Contenido (R19-R24)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th></tr></thead>
+    <tbody>
+      <tr><td>R19</td><td><strong>NUNCA borrar stories</strong> &mdash; El algoritmo lo castiga</td></tr>
+      <tr><td>R20</td><td><strong>Poco texto, frases simples</strong> &mdash; Menos es m&aacute;s</td></tr>
+      <tr><td>R21</td><td><strong>Tono natural, no de marketer</strong> &mdash; &iquest;Lo dir&iacute;as habl&aacute;ndole a un amigo?</td></tr>
+      <tr><td>R22</td><td><strong>Cambiar &aacute;ngulo de c&aacute;mara cada 3-5 seg</strong> en videos</td></tr>
+      <tr><td>R23</td><td><strong>2 tipograf&iacute;as m&aacute;ximo</strong> (Classic + Deco o Literatura)</td></tr>
+      <tr><td>R24</td><td><strong>2 colores m&aacute;ximo</strong> + blanco/negro</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="page">
+  <h3>Reglas de Algoritmo (R25-R27)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th></tr></thead>
+    <tbody>
+      <tr><td>R25</td><td><strong>Dise&ntilde;ar para activar al menos 3 se&ntilde;ales:</strong> reacciones, DMs, ver hasta el final, reposts, swipe-backs, capturas, pausas</td></tr>
+      <tr><td>R26</td><td><strong>M&eacute;trica clave: views/followers &times; 100.</strong> &gt;25% = bien. &lt;1% = algo est&aacute; mal</td></tr>
+      <tr><td>R27</td><td><strong>No sacar conclusiones de ca&iacute;das de 1 d&iacute;a</strong> &mdash; Feriados, algoritmo, hay variabilidad</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Mix de Contenido (R28-R30)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th><th>%</th></tr></thead>
+    <tbody>
+      <tr><td>R28</td><td><strong>Entretenimiento / lifestyle / personalidad</strong></td><td>50-60%</td></tr>
+      <tr><td>R29</td><td><strong>Contenido &uacute;til / nicho</strong></td><td>30-40%</td></tr>
+      <tr><td>R30</td><td><strong>Venta / CTAs</strong></td><td>10-20%</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Reglas de Secuencias Actuadas (R31-R37)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th></tr></thead>
+    <tbody>
+      <tr><td>R31</td><td><strong>Ejemplo TANGIBLE y universal</strong> (cocina, terapia, fitness). Nunca abstracto</td></tr>
+      <tr><td>R32</td><td><strong>Mostrar resultado del CLIENTE FINAL</strong> &mdash; no solo la plata</td></tr>
+      <tr><td>R33</td><td><strong>N&uacute;meros realistas</strong> &mdash; $400, no &euro;10.000</td></tr>
+      <tr><td>R34</td><td><strong>Calculadora visible en pantalla</strong> &mdash; prueba visual > texto</td></tr>
+      <tr><td>R35</td><td><strong>Cada personaje ACT&Uacute;A en su escena</strong> &mdash; no fotos con texto</td></tr>
+      <tr><td>R36</td><td><strong>Tono accesible, sin lujo</strong> &mdash; ropa simple, locaciones normales</td></tr>
+      <tr><td>R37</td><td><strong>M&aacute;ximo 3 personajes</strong> &mdash; 2 es ideal</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Reglas de Explicativas y BTS (R38-R42)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th></tr></thead>
+    <tbody>
+      <tr><td>R38</td><td><strong>Pizarra DIBUJADA A MANO</strong> &mdash; No Canva, no PowerPoint</td></tr>
+      <tr><td>R39</td><td><strong>3 enemigos con nombres espec&iacute;ficos</strong> &mdash; No gen&eacute;ricos</td></tr>
+      <tr><td>R40</td><td><strong>Highlight fijo para nuevos seguidores</strong></td></tr>
+      <tr><td>R41</td><td><strong>Behind the scenes = crudo, no editado</strong></td></tr>
+      <tr><td>R42</td><td><strong>Variedad visual por slide</strong> &mdash; cada slide un escenario distinto</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Principios Transversales del Curso (R43-R47)</h3>
+  <table>
+    <thead><tr><th>#</th><th>Regla</th></tr></thead>
+    <tbody>
+      <tr><td>R43</td><td><strong>Idea creativa ANTES de estructura</strong> &mdash; Pensar 5-10 min c&oacute;mo comunicar la idea emocionalmente</td></tr>
+      <tr><td>R44</td><td><strong>Triggers intencionales por slide</strong> &mdash; Elegir 1-3 de los 18 triggers para cada slide</td></tr>
+      <tr><td>R45</td><td><strong>Naturalidad > todo</strong> &mdash; &iquest;Le contar&iacute;as esto as&iacute; a un amigo? Si no &rarr; reescribir</td></tr>
+      <tr><td>R46</td><td><strong>Documento del avatar al lado</strong> &mdash; Usar frases TEXTUALES del avatar</td></tr>
+      <tr><td>R47</td><td><strong>No sobreescribir</strong> &mdash; El video ya comunica. El texto overlay es m&iacute;nimo</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== 13. ALGORITMO ==================== -->
+<div class="page">
+  <h2 class="section-title">13. Reglas del Algoritmo + M&eacute;tricas</h2>
+
+  <h3>Lo que el Algoritmo PREMIA</h3>
+  <div class="callout-green">
+    <p>&#9989; Reacciones (fueguitos, corazones)</p>
+    <p>&#9989; Respuestas por DM</p>
+    <p>&#9989; Ver stories hasta el final (retenci&oacute;n)</p>
+    <p>&#9989; Reposts</p>
+    <p>&#9989; Swipe-backs (volver atr&aacute;s)</p>
+    <p>&#9989; Capturas de pantalla</p>
+    <p>&#9989; Pausas (la gente se detiene a leer)</p>
+  </div>
+
+  <h3>Lo que el Algoritmo CASTIGA</h3>
+  <div class="callout-warn">
+    <p>&#10060; No reacciones</p>
+    <p>&#10060; Stories no vistas completas</p>
+    <p>&#10060; No reposts</p>
+    <p>&#10060; No DMs</p>
+    <p>&#10060; Borrar stories (NUNCA borrar)</p>
+  </div>
+
+  <h3>La M&eacute;trica Clave</h3>
+  <div class="callout">
+    <p style="font-size: 18px; text-align: center;"><strong>Views &divide; Followers &times; 100 = % de Alcance</strong></p>
+    <p style="text-align: center;">&gt;25% = &#9989; Bien &nbsp;&nbsp; | &nbsp;&nbsp; &lt;1% = &#9888;&#65039; Algo est&aacute; mal</p>
+  </div>
+
+  <p><strong>No sacar conclusiones de ca&iacute;das de 1 d&iacute;a.</strong> Feriados, cambios de algoritmo, hora del d&iacute;a &mdash; hay variabilidad normal. Mir&aacute; tendencias de 7 d&iacute;as m&iacute;nimo.</p>
+
+  <h3>C&oacute;mo Dise&ntilde;ar para el Algoritmo</h3>
+  <p>Cada secuencia deber&iacute;a activar <strong>al menos 3 de las 7 se&ntilde;ales</strong>:</p>
+  <table>
+    <thead><tr><th>Se&ntilde;al</th><th>C&oacute;mo activarla</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Reacciones</strong></td><td>Pedir expl&iacute;citamente (&ldquo;mandame un &#128293; si te pas&oacute;&rdquo;)</td></tr>
+      <tr><td><strong>DMs</strong></td><td>CTA con keyword (&ldquo;respond&eacute; YO&rdquo;)</td></tr>
+      <tr><td><strong>Retenci&oacute;n</strong></td><td>Arco narrativo que genera intriga &rarr; ven todas las stories</td></tr>
+      <tr><td><strong>Reposts</strong></td><td>Frase de impacto compartible en fondo de color</td></tr>
+      <tr><td><strong>Swipe-backs</strong></td><td>Juegos, capturas, contenido que hay que releer</td></tr>
+      <tr><td><strong>Capturas</strong></td><td>Checklist, datos, frases que la gente quiera guardar</td></tr>
+      <tr><td><strong>Pausas</strong></td><td>Texto que requiere detenerse a leer (dato sorprendente)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>&#x1F4A1; Excepci&oacute;n al &ldquo;no borrar&rdquo;:</strong> Pod&eacute;s borrar las stories del d&iacute;a anterior 1-2 horas ANTES de subir una secuencia de venta. As&iacute; la secuencia de venta arranca limpia y no compite con stories viejas.</p>
+  </div>
+</div>
+
+<!-- ==================== 14. EDICION ==================== -->
+<div class="page">
+  <h2 class="section-title">14. Edici&oacute;n y Apps Necesarias</h2>
+
+  <h3>Reglas de Edici&oacute;n</h3>
+  <div class="callout">
+    <p><strong>Menos es m&aacute;s.</strong> No hagas stories que parezcan template de Canva. La edici&oacute;n tiene que ser invisible &mdash; que se vea natural, no producido.</p>
+  </div>
+
+  <table>
+    <thead><tr><th>Regla</th><th>Detalle</th></tr></thead>
+    <tbody>
+      <tr><td><strong>2 tipograf&iacute;as m&aacute;ximo</strong></td><td>Classic + Deco (o Literatura). Alternar entre las dos</td></tr>
+      <tr><td><strong>2 colores m&aacute;ximo</strong></td><td>+ blanco y negro para contraste</td></tr>
+      <tr><td><strong>Efecto oscurecido</strong></td><td>Subrayador oscuro &rarr; mantener pulsado &rarr; capa oscura. Poner texto encima</td></tr>
+      <tr><td><strong>Para lifestyle</strong></td><td>Solo agregar m&uacute;sica en CapCut, nada m&aacute;s</td></tr>
+      <tr><td><strong>Subt&iacute;tulos</strong></td><td>CapCut (AutoCAP gratis) en TODOS los videos hablados</td></tr>
+      <tr><td><strong>Filtro cinem&aacute;tico</strong></td><td>&ldquo;35mm CM&rdquo; en Instagram &rarr; exportar &rarr; captura del video</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Apps Necesarias</h3>
+  <table>
+    <thead><tr><th>App</th><th>Para qu&eacute;</th><th>Costo</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Instagram</strong></td><td>Edici&oacute;n nativa + filtros</td><td>Gratis</td></tr>
+      <tr><td><strong>CapCut</strong></td><td>Subt&iacute;tulos (AutoCAP) + edici&oacute;n de video</td><td>Gratis</td></tr>
+      <tr><td><strong>LetoFonts</strong></td><td>Stickers, flechas, highlights, recursos visuales</td><td>Gratis</td></tr>
+      <tr><td><strong>InShot</strong></td><td>Collages, tipograf&iacute;a cinem&aacute;tica</td><td>Gratis (con ads)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout-green">
+    <p><strong>&#x1F4A1; Con estas 4 apps ten&eacute;s todo.</strong> No necesit&aacute;s Canva, Photoshop, ni nada pago. La est&eacute;tica &ldquo;nativa&rdquo; de Instagram funciona mejor que la est&eacute;tica &ldquo;producida&rdquo; &mdash; genera m&aacute;s confianza.</p>
+  </div>
+</div>
+
+<!-- ==================== 15. PLANIFICACION ==================== -->
+<div class="page">
+  <h2 class="section-title">15. Planificaci&oacute;n Semanal &mdash; El Sistema Completo</h2>
+
+  <h3>Los 3 Niveles de Planificaci&oacute;n</h3>
+  <table>
+    <thead><tr><th>Nivel</th><th>Qu&eacute; definir</th><th>Cu&aacute;ndo</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Mes</strong></td><td>Etapas del calentamiento, eventos, objetivos de venta</td><td>Primer d&iacute;a del mes</td></tr>
+      <tr><td><strong>Semana</strong></td><td>Qu&eacute; tipo de secuencia cada d&iacute;a, ideas principales, qu&eacute; deseo/miedo/objeci&oacute;n atacar</td><td>Domingo o lunes</td></tr>
+      <tr><td><strong>D&iacute;a</strong></td><td>Gui&oacute;n con 5 columnas, formato visual de cada story</td><td>Con la planificaci&oacute;n semanal</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Formato de Gui&oacute;n: 5 Columnas</h3>
+  <p>Cada story se planifica con estas 5 columnas:</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Texto en pantalla</th><th>Texto hablado</th><th>Otros (encuestas, botones)</th><th>C&oacute;mo (formato visual)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>&ldquo;Hoy me pas&oacute; algo&rdquo;</td><td>&mdash;</td><td>&mdash;</td><td>F1 (foto selfie)</td></tr>
+      <tr><td>2</td><td>&mdash;</td><td>&ldquo;Estaba en la oficina y...&rdquo;</td><td>&mdash;</td><td>V1 (video selfie) + subt&iacute;tulos</td></tr>
+      <tr><td>3</td><td>&ldquo;&iquest;Les pas&oacute;?&rdquo;</td><td>&mdash;</td><td>Encuesta: S&iacute; / No</td><td>F4 (paisaje/entorno)</td></tr>
+      <tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Mix Ideal de Contenido Semanal</h3>
+  <div class="flow">
+    <strong>50-60%</strong> Entretenimiento / lifestyle / personalidad<br><br>
+    <strong>30-40%</strong> Contenido &uacute;til / nicho<br><br>
+    <strong>10-20%</strong> Venta / CTAs
+  </div>
+
+  <h3>Reglas de Planificaci&oacute;n</h3>
+  <ul>
+    <li><strong>Escribir TODOS los guiones en UN d&iacute;a</strong> &mdash; despu&eacute;s solo grab&aacute;s y sub&iacute;s</li>
+    <li><strong>4 secuencias por semana</strong> con d&iacute;as de descanso</li>
+    <li><strong>M&aacute;ximo 3 secuencias seguidas</strong>, despu&eacute;s descanso obligatorio</li>
+    <li><strong>No repetir el mismo tipo 2 semanas seguidas</strong> (excepto CTA Lead Magnet que va 1-2x/sem)</li>
+    <li><strong>Rotar avatares</strong> &mdash; no hablarle siempre al mismo segmento</li>
+    <li><strong>Rotar lead magnets</strong> &mdash; nunca el mismo 2 semanas seguidas</li>
+  </ul>
+
+  <div class="callout">
+    <p><strong>&#x1F4A1; Template de semana tipo:</strong></p>
+    <p><strong>Lun:</strong> Personalidad (7-10 stories) &rarr; <strong>Mar:</strong> CTA Lead Magnet (4-6) &rarr; <strong>Mi&eacute;:</strong> Descanso &rarr; <strong>Jue:</strong> Nicho/BTS (7-10) &rarr; <strong>Vie:</strong> Descanso &rarr; <strong>S&aacute;b:</strong> Reflexi&oacute;n/valores &rarr; <strong>Dom:</strong> CTA Volumen o hype</p>
+  </div>
+</div>
+
+<!-- ==================== CIERRE ==================== -->
+<div class="page">
+  <h2 class="section-title">Resumen Final</h2>
+
+  <div class="callout" style="background: var(--gold-bg); border-left-color: var(--gold); padding: 24px;">
+    <p style="font-size: 16px; line-height: 1.8;">
+      <strong>Las stories no son &ldquo;contenido m&aacute;s&rdquo;.</strong> Son el canal principal de ventas para cualquier negocio en Instagram.
+    </p>
+    <p style="font-size: 16px; line-height: 1.8;">
+      Este manual tiene todo lo que necesit&aacute;s para pasar de &ldquo;subo stories cuando me acuerdo&rdquo; a un <strong>sistema de venta predecible</strong>:
+    </p>
+    <ul style="font-size: 15px; line-height: 2;">
+      <li><strong>10 tipos de secuencia</strong> con estructura story-by-story</li>
+      <li><strong>25 formatos visuales</strong> para que nunca se vea repetitivo</li>
+      <li><strong>18 triggers mentales</strong> para activar en cada slide</li>
+      <li><strong>Motor de persuasi&oacute;n invisible</strong> para vender sin que se note</li>
+      <li><strong>47 reglas</strong> probadas en coaching real</li>
+      <li><strong>Sistema de lanzamiento</strong> y calentamiento eterno</li>
+      <li><strong>Framework de storytelling</strong> para la secuencia m&aacute;s poderosa</li>
+    </ul>
+  </div>
+
+  <hr class="separator">
+
+  <blockquote style="font-size: 16px;">
+    &ldquo;Toda la data que tenemos existe para UNA cosa: que cada story se sienta como una historia que te cont&oacute; un amigo, no como un ad que te quiere vender algo.<br><br>
+    Si us&aacute;s la data bien, el viewer no sabe que lo est&aacute;n persuadiendo.<br>
+    Si us&aacute;s la data mal, suena a vendedor.<br>
+    Si no us&aacute;s la data, suena gen&eacute;rico.&rdquo;
+  </blockquote>
+
+  <hr class="separator">
+
+  <p style="text-align: center; color: var(--gray-light); font-size: 13px; margin-top: 32px;">
+    <strong>Stories que Venden</strong> &mdash; v1.0 &mdash; Marzo 2026<br>
+    Basado en StoryMakers (Naf&eacute; Aquel) + 21 sesiones de coaching + an&aacute;lisis de referentes<br>
+    Por Leandro Coifman
+  </p>
+</div>
+
+</body>
+</html>

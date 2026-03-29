@@ -350,6 +350,23 @@ Después de un video denso/largo, agregar transición tipo: "Sé que es mucha in
 
 ---
 
+## Detalle oferta Taller (ex puente-oferta)
+
+> Migrado de `puente-oferta.md` (DEPRECADO). Info que no estaba en los bloques CTA.
+
+### Desglose Día 1/2/3 (del VSL, Acto 5)
+- **Día 1:** Crear tu producto (software detector + IA, terminás con producto listo)
+- **Día 2:** Atraer clientes (imágenes, textos, anuncios, WhatsApp, todo con IA)
+- **Día 3:** Vender (convertir desconocidos en compradores, mensajes exactos)
+- **Bonos:** software detector, mensajes de cierre, biblioteca de prompts, certificado
+
+### Cuánto detalle de oferta según duración del ad
+- **30-60s:** comprimir a 1-2 oraciones (solo 3 promesas)
+- **60-90s:** 2-3 oraciones
+- **90s+:** desarrollo completo (Día 1/2/3, bonos, transparencia de precio)
+
+---
+
 ## Reglas de rotación
 
 1. **Cada estrategia semanal elige 3 bloques CTA** (uno por canal) distintos a la semana anterior

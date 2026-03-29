@@ -1,0 +1,173 @@
+{
+  "id": "139f52df-f589-4b6a-a75a-6c90022edb1a",
+  "briefId": "c30383c0-105c-4dd5-82e3-7686c9405b03",
+  "title": "Soy muy grande para esto",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.4_jubilado_50plus",
+    "body_type": "victor_elas_conversation",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "mito: edad/tecnología",
+    "model_sale_type": "democratizacion_ia",
+    "visual_format": "split_screen",
+    "avatar": "roberto",
+    "awareness_level": 3,
+    "emotional_arc": "analogia_completa",
+    "tension": "T4",
+    "transition_text": "PERSONA A: ¿Dónde aprendo?\nJESÚS: Tocá el botón de acá abajo.",
+    "total_duration_seconds": 57,
+    "word_count": 369,
+    "belief_change": {
+      "old_belief": "Soy muy grande para la tecnología",
+      "mechanism": "Si usás WhatsApp ya sabés todo — tu edad es ventaja",
+      "new_belief": "30 años de experiencia + IA = negocio"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, tengo 58 años. Yo de computación no entiendo nada, eh.\nJESÚS: ¿Usás WhatsApp?\nPERSONA A: Todos los días.\nJESÚS: Entonces ya sabés todo lo que necesitás. Te explico.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Mirá, a mi edad aprender algo nuevo es como empezar de cero. No me da la cabeza.\nJESÚS: ¿Le mandás audios a tus hijos por WhatsApp?\nPERSONA A: Sí, obvio.\nJESÚS: Usar la IA es lo mismo. Le hablás y te responde. Nada más.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Yo escucho \"inteligencia artificial\" y pienso que es para pibes de 20. No para mí.\nJESÚS: Un señor de 63 que no sabía prender la computadora hoy vende productos digitales desde el celular. Cero computadora. Te cuento cómo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Che, tengo 30 años de experiencia en lo mío. Pero en tecnología soy un desastre.\nJESÚS: Esos 30 años de experiencia son exactamente lo que se vende. La tecnología es lo de menos. Te muestro.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Pensé que era una estafa, pero no quiero seguir haciendo lo mismo. ¿Puedo probar a mi edad?\nJESÚS: Justamente a tu edad es cuando más funciona. Escuchame.\nPERSONA A: Yo escucho \"inteligencia artificial\" y me agarra pánico. No sé ni qué es.\nJESÚS: ¿Le mandás un audio a tu hijo diciendo \"comprá pan y leche\"?\nPERSONA A: Sí.\nJESÚS: Le diste una instrucción. Con la IA es exactamente lo mismo. Le decís qué querés y te lo hace. Es un WhatsApp pero más inteligente.\nPERSONA A: ¿Nada más?\nJESÚS: Nada más. Si sabés pedir un café en un bar, sabés usar la IA.\nPERSONA A: ¿Pero no necesito computadora?\nJESÚS: Todo desde el celular. El producto, el anuncio, las ventas. Todo por WhatsApp.\nPERSONA A: ¿No es joda?\nJESÚS: Hay gente que me escribe \"vendí mi primer producto\" y me manda un screenshot del celular. Nunca tocaron una computadora.\nPERSONA A: Pero a los 58... ¿no es muy tarde?\nJESÚS: Al revés. Tu edad es tu mejor herramienta. Tenés 30 años de experiencia en algo. Contabilidad, cocina, mecánica, lo que sea.\nPERSONA A: ¿Y eso se vende?\nJESÚS: Un pibe de 20 no tiene eso. Vos tenés 30 años de saber algo que la gente necesita. La IA te lo empaqueta en un producto. Vos ponés el conocimiento, ella pone el diseño.\nPERSONA A: Nunca lo pensé así.\nJESÚS: Porque nadie te lo dijo. Te dijeron que sos viejo para la tecnología cuando en realidad sos joven para vender lo que sabés.\nPERSONA A: Bueno, si esa gente pudo...\nJESÚS: No solo pudo. Uno me contó que ahora le enseña a SU hijo. Se invirtió todo. El de 60 le enseña al de 30.\nPERSONA A: ¿Qué vende?\nJESÚS: Una guía de mantenimiento de autos. 30 años de mecánico metidos en un PDF. La IA se lo armó en una tarde. Lo demás te lo enseño yo.\nPERSONA A: ¿Me lo explicás como si fuera mi primer celular?\nJESÚS: Tocá el botón de acá abajo. Así empezamos.\nJESÚS: Antes necesitabas diseñador, programador, community manager. Ahora la IA hace todo eso. Solo necesitás saber pedirle. Y eso se aprende en un día.\nPERSONA A: ¿Dónde aprendo?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "analogia_completa",
+      "sections": [
+        {
+          "section_name": "No entiendo la tecnología",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Yo escucho \"inteligencia artificial\" y me agarra pánico. No sé ni qué es.\nJESÚS: ¿Le mandás un audio a tu hijo diciendo \"comprá pan y leche\"?\nPERSONA A: Sí.\nJESÚS: Le diste una instrucción. Con la IA es exactamente lo mismo. Le decís qué querés y te lo hace. Es un WhatsApp pero más inteligente.\nPERSONA A: ¿Nada más?\nJESÚS: Nada más. Si sabés pedir un café en un bar, sabés usar la IA.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Necesito computadora",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Pero no necesito computadora?\nJESÚS: Todo desde el celular. El producto, el anuncio, las ventas. Todo por WhatsApp.\nPERSONA A: ¿No es joda?\nJESÚS: Hay gente que me escribe \"vendí mi primer producto\" y me manda un screenshot del celular. Nunca tocaron una computadora.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "A mi edad ya es tarde",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pero a los 58... ¿no es muy tarde?\nJESÚS: Al revés. Tu edad es tu mejor herramienta. Tenés 30 años de experiencia en algo. Contabilidad, cocina, mecánica, lo que sea.\nPERSONA A: ¿Y eso se vende?\nJESÚS: Un pibe de 20 no tiene eso. Vos tenés 30 años de saber algo que la gente necesita. La IA te lo empaqueta en un producto. Vos ponés el conocimiento, ella pone el diseño.\nPERSONA A: Nunca lo pensé así.\nJESÚS: Porque nadie te lo dijo. Te dijeron que sos viejo para la tecnología cuando en realidad sos joven para vender lo que sabés.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Bueno, si esa gente pudo...\nJESÚS: No solo pudo. Uno me contó que ahora le enseña a SU hijo. Se invirtió todo. El de 60 le enseña al de 30.\nPERSONA A: ¿Qué vende?\nJESÚS: Una guía de mantenimiento de autos. 30 años de mecánico metidos en un PDF. La IA se lo armó en una tarde. Lo demás te lo enseño yo.\nPERSONA A: ¿Me lo explicás como si fuera mi primer celular?\nJESÚS: Tocá el botón de acá abajo. Así empezamos.\nJESÚS: Antes necesitabas diseñador, programador, community manager. Ahora la IA hace todo eso. Solo necesitás saber pedirle. Y eso se aprende en un día.\nPERSONA A: ¿Dónde aprendo?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "JESÚS: Antes necesitabas diseñador, programador, community manager. Ahora la IA hace todo eso. Solo necesitás saber pedirle. Y eso se aprende en un día.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Persona Improbable"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T00:38:24.541Z",
+  "status": "draft",
+  "batch": {
+    "id": "cf67a1fc-1f33-4369-b723-0cc0973e60fc",
+    "name": "Víctor Elas × 562 compradores — V5"
+  }
+}

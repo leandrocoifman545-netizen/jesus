@@ -13,7 +13,7 @@ Recibís un video, link de redes sociales, archivo de audio o texto. Tu trabajo 
 Si es un archivo de video/audio o URL de redes sociales, transcribir con:
 ```bash
 export PATH="/Users/lean/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
-/Users/lean/Documents/script-generator/scripts/transcribir.sh "$ARGUMENTS"
+node /Users/lean/Documents/script-generator/scripts/transcribe-youtube.mjs "$ARGUMENTS"
 ```
 
 Si es texto plano, usarlo directamente.
@@ -29,7 +29,7 @@ Leé las reglas para saber contra qué filtrar:
 Evaluar la transcripción en estas dimensiones:
 
 ### Análisis básico
-1. **Hook/Lead** — ¿Cómo arranca? ¿Qué tipo de hook usa? (mapear a nuestros 15 tipos)
+1. **Hook/Lead** — ¿Cómo arranca? ¿Qué tipo de hook usa? (mapear a nuestros 20 tipos)
 2. **Estructura** — ¿Qué framework sigue? (PAS, AIDA, BAB, Hook-Story-Offer, micro_vsl, otro)
 3. **Tono** — ¿Cómo habla? ¿Qué registro usa? ¿UGC? ¿Humor?
 4. **CTA** — ¿Qué pide y cómo? ¿Tiene urgencia? ¿Es dual?
@@ -37,7 +37,7 @@ Evaluar la transcripción en estas dimensiones:
 
 ### Mapeo ADP (NUEVO — obligatorio)
 6. **Familia de ángulo** — ¿identidad, oportunidad, confrontacion, mecanismo o historia?
-7. **Vehículo narrativo** — ¿Cuál de los 8 tipos de cuerpo usa?
+7. **Vehículo narrativo** — ¿Cuál de los 13 tipos de cuerpo usa?
 8. **Funciones persuasivas** — ¿Qué beats tiene? (identificacion, quiebre, mecanismo, demolicion, prueba)
 9. **Cambio de creencia** — ¿Creencia vieja → mecanismo → creencia nueva?
 10. **Ingredientes** — ¿Qué ingredientes de la enciclopedia ADP (A-K) se detectan?

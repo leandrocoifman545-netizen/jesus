@@ -1,0 +1,180 @@
+{
+  "id": "555788d0-3ba2-4e81-879e-331b02681642",
+  "briefId": "2b9651f1-cae0-468a-bb4b-aaa0fd58b69e",
+  "title": "Necesitás saber de marketing",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.3_antes_vs_despues_ia",
+    "body_type": "pregunta_respuesta",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "mito: marketing",
+    "model_sale_type": "democratizacion_ia",
+    "visual_format": "split_screen",
+    "avatar": "valentina",
+    "awareness_level": 3,
+    "emotional_arc": "analogia",
+    "tension": "T6",
+    "transition_text": "PERSONA A: ¿Dónde aprendo?",
+    "total_duration_seconds": 59,
+    "word_count": 308,
+    "belief_change": {
+      "old_belief": "Necesitás saber marketing",
+      "mechanism": "La IA hace todo — solo necesitás saber pedir",
+      "new_belief": "Si sé mandar un audio, sé usar IA"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, yo no sé NADA de marketing. ¿Puedo hacer esto?\nJESÚS: ¿Sabés mandar un audio de WhatsApp?\nPERSONA A: Sí.\nJESÚS: Entonces ya sabés todo. Te explico.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Mandar un audio de WhatsApp y usar inteligencia artificial es lo mismo. Le decís lo que querés y te responde.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que menos saben de marketing son las que mejor les va. Suena raro. Tiene explicación.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Te convencieron de que necesitás marketing, diseño, tecnología. Mentira. Necesitás saber pedir. Como pedirle un café al mozo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas veces no arrancaste porque pensaste \"no sé de marketing\"? Esa frase ya no tiene sentido.\nPERSONA A: Yo quiero generar plata extra pero no sé de marketing, publicidad, redes. Nada.\nJESÚS: ¿Quién te dijo que necesitás saber?\nPERSONA A: Digo, alguien tiene que escribir el anuncio, ¿no?\nJESÚS: La IA. Le decís \"vendé mi guía de recetas a mamás que quieren cocinar rápido\" y te escribe el anuncio completo.\nPERSONA A: ¿En cuánto?\nJESÚS: 10 minutos. Lo que una agencia te cobra $500 y tarda 2 semanas.\nPERSONA A: Bueno, ¿y el producto quién lo hace?\nJESÚS: La IA. Le contás lo que sabés y te lo arma en una guía profesional.\nPERSONA A: ¿Queda bien?\nJESÚS: Queda como si lo hubiera hecho un diseñador. Portada, formato, todo.\nPERSONA A: O sea que yo solo pongo lo que sé y la IA hace el resto.\nJESÚS: Exacto.\nPERSONA A: ¿Y la página web?\nJESÚS: No necesitás.\nPERSONA A: ¿Cómo que no?\nJESÚS: Vendés por WhatsApp. La gente ve tu anuncio, te escribe, le mandás el link de pago. Listo.\nPERSONA A: ¿WhatsApp?\nJESÚS: WhatsApp. Lo que ya usás todos los días.\nPERSONA A: Pero yo no sé ni cómo se abre la IA.\nJESÚS: ¿Sabés buscar algo en Google?\nPERSONA A: Sí.\nJESÚS: Es lo mismo. Le escribís y te responde. Una alumna me dijo \"soy total analfabeta de computación.\" Hoy vende desde el celular.\nPERSONA A: O sea que no necesito marketing, no necesito página web, no necesito saber de tecnología.\nJESÚS: No.\nPERSONA A: Entonces ya puedo arrancar.\nJESÚS: Te falta una cosa.\nPERSONA A: ¿Qué?\nJESÚS: Saber PEDIR bien. Porque la IA hace todo, pero hay que saber pedirle. Y eso te lo enseño en una tarde.\nPERSONA A: ¿Una tarde?\nJESÚS: Una tarde. Sin marketing, sin diseño, sin nada. Solo vos y la IA.\nPERSONA A: ¿Dónde aprendo?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "analogia",
+      "sections": [
+        {
+          "section_name": "Necesito saber marketing",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Yo quiero generar plata extra pero no sé de marketing, publicidad, redes. Nada.\nJESÚS: ¿Quién te dijo que necesitás saber?\nPERSONA A: Digo, alguien tiene que escribir el anuncio, ¿no?\nJESÚS: La IA. Le decís \"vendé mi guía de recetas a mamás que quieren cocinar rápido\" y te escribe el anuncio completo.\nPERSONA A: ¿En cuánto?\nJESÚS: 10 minutos. Lo que una agencia te cobra $500 y tarda 2 semanas.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "No sé crear un producto",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Bueno, ¿y el producto quién lo hace?\nJESÚS: La IA. Le contás lo que sabés y te lo arma en una guía profesional.\nPERSONA A: ¿Queda bien?\nJESÚS: Queda como si lo hubiera hecho un diseñador. Portada, formato, todo.\nPERSONA A: O sea que yo solo pongo lo que sé y la IA hace el resto.\nJESÚS: Exacto.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Necesito una página web",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y la página web?\nJESÚS: No necesitás.\nPERSONA A: ¿Cómo que no?\nJESÚS: Vendés por WhatsApp. La gente ve tu anuncio, te escribe, le mandás el link de pago. Listo.\nPERSONA A: ¿WhatsApp?\nJESÚS: WhatsApp. Lo que ya usás todos los días.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Pero yo no sé de tecnología",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pero yo no sé ni cómo se abre la IA.\nJESÚS: ¿Sabés buscar algo en Google?\nPERSONA A: Sí.\nJESÚS: Es lo mismo. Le escribís y te responde. Una alumna me dijo \"soy total analfabeta de computación.\" Hoy vende desde el celular.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: O sea que no necesito marketing, no necesito página web, no necesito saber de tecnología.\nJESÚS: No.\nPERSONA A: Entonces ya puedo arrancar.\nJESÚS: Te falta una cosa.\nPERSONA A: ¿Qué?\nJESÚS: Saber PEDIR bien. Porque la IA hace todo, pero hay que saber pedirle. Y eso te lo enseño en una tarde.\nPERSONA A: ¿Una tarde?\nJESÚS: Una tarde. Sin marketing, sin diseño, sin nada. Solo vos y la IA.\nPERSONA A: ¿Dónde aprendo?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Una tarde?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación Complejidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-25T23:53:20.691Z",
+  "status": "draft",
+  "batch": {
+    "id": "6fb560e2-77a3-49bc-93d9-fb4356645ae4",
+    "name": "Dolor-centrista — 562 compradores"
+  }
+}

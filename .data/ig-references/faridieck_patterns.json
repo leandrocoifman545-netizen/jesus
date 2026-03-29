@@ -1,6 +1,6 @@
 {
   "username": "faridieck",
-  "analyzed_at": "2026-03-25T10:51:49.973Z",
+  "analyzed_at": "2026-03-25T11:17:26.824Z",
   "total_analyzed": 20,
   "opening_patterns": [
     {
@@ -313,6 +313,172 @@
       "avg_views": 2849500
     }
   ],
+  "caption_patterns": [
+    {
+      "pattern": "hashtag_light",
+      "count": 5,
+      "avg_clr": 0.45,
+      "avg_views": 1467862
+    },
+    {
+      "pattern": "corta",
+      "count": 2,
+      "avg_clr": 0.39,
+      "avg_views": 1931575
+    },
+    {
+      "pattern": "media",
+      "count": 14,
+      "avg_clr": 0.29,
+      "avg_views": 2791905
+    },
+    {
+      "pattern": "muy_larga",
+      "count": 3,
+      "avg_clr": 0.29,
+      "avg_views": 1967438
+    },
+    {
+      "pattern": "sin_hashtags",
+      "count": 15,
+      "avg_clr": 0.24,
+      "avg_views": 2850441
+    },
+    {
+      "pattern": "larga",
+      "count": 1,
+      "avg_clr": 0.14,
+      "avg_views": 1243791
+    }
+  ],
+  "beat_sequences": [
+    {
+      "sequence": "narrativa_general→narrativa_general→narrativa_general→narrativa_general",
+      "count": 2,
+      "avg_clr": 0.23,
+      "avg_views": 1544245
+    }
+  ],
+  "beat_position_stats": {
+    "Q1_setup": [
+      {
+        "pattern": "agitacion_fuerte",
+        "count": 1,
+        "avg_clr": 0.56
+      },
+      {
+        "pattern": "narrativa_general",
+        "count": 7,
+        "avg_clr": 0.38
+      },
+      {
+        "pattern": "agitacion_leve",
+        "count": 2,
+        "avg_clr": 0.34
+      },
+      {
+        "pattern": "demo_proceso",
+        "count": 2,
+        "avg_clr": 0.27
+      },
+      {
+        "pattern": "demolicion_objecion",
+        "count": 1,
+        "avg_clr": 0.23
+      },
+      {
+        "pattern": "comparacion",
+        "count": 1,
+        "avg_clr": 0.14
+      }
+    ],
+    "Q2_develop": [
+      {
+        "pattern": "future_pacing",
+        "count": 1,
+        "avg_clr": 0.56
+      },
+      {
+        "pattern": "autoridad",
+        "count": 1,
+        "avg_clr": 0.56
+      },
+      {
+        "pattern": "comparacion",
+        "count": 1,
+        "avg_clr": 0.55
+      },
+      {
+        "pattern": "narrativa_general",
+        "count": 7,
+        "avg_clr": 0.35
+      },
+      {
+        "pattern": "agitacion_leve",
+        "count": 3,
+        "avg_clr": 0.24
+      },
+      {
+        "pattern": "agitacion_fuerte",
+        "count": 1,
+        "avg_clr": 0.24
+      }
+    ],
+    "Q3_escalate": [
+      {
+        "pattern": "tension",
+        "count": 1,
+        "avg_clr": 0.55
+      },
+      {
+        "pattern": "demo_proceso",
+        "count": 2,
+        "avg_clr": 0.53
+      },
+      {
+        "pattern": "agitacion_leve",
+        "count": 3,
+        "avg_clr": 0.36
+      },
+      {
+        "pattern": "narrativa_general",
+        "count": 7,
+        "avg_clr": 0.31
+      },
+      {
+        "pattern": "qa_rapido",
+        "count": 1,
+        "avg_clr": 0.23
+      }
+    ],
+    "Q4_resolve": [
+      {
+        "pattern": "demo_proceso",
+        "count": 1,
+        "avg_clr": 0.58
+      },
+      {
+        "pattern": "comparacion",
+        "count": 1,
+        "avg_clr": 0.55
+      },
+      {
+        "pattern": "tension",
+        "count": 1,
+        "avg_clr": 0.55
+      },
+      {
+        "pattern": "agitacion_fuerte",
+        "count": 2,
+        "avg_clr": 0.4
+      },
+      {
+        "pattern": "narrativa_general",
+        "count": 9,
+        "avg_clr": 0.28
+      }
+    ]
+  },
   "top_hooks": [
     {
       "shortCode": "DOKT4IdjPL3",
@@ -579,7 +745,41 @@
           "demo_proceso",
           "qa_rapido"
         ],
-        "word_count": 282
+        "word_count": 282,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Es una tontería altamente ignorante y egoísta que nada más daña su relación. Yo creo que se vale que una mujer sepa lo que quiere. Sí, y eso que quieren no existe. Sí existe. Sí, sí ha de ser algo que exista. Ah, bueno, claro, sí existe. Que existe el príncipe Disney Slim Zuckerberg Musk. Sí, claro, pero son pocos y digo, no es por gacho, pero... ¿Pero qué?",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 69
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Pero si eso buscas, pues, más vale que seas guapa y obediente ¿Qué te pasa? Pero no pasa nada, para la inmensa mayoría de las mujeres no aplica Hazte la pregunta, en serio ¿De verdad estoy tan irresistiblemente guapa que Príncipe Disney me va a ir a buscar? Si la respuesta es no, es hora de bajar ese tono de voz, no pasa nada Astro Lo chistoso es que luego ves las expectativas de gente como tú y es un show de comedia",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 83
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "¿A que no? Ustedes quieren a la princesa intocable, perfecta, que ni siquiera tiene contacto visual con otro ser masculino Y que jurara su lealtad y dedicación hacia ti No, no creo que Astro pida algo tan ridículo, ¿verdad? Bueno, a ver, es diferente La mujer pide un millonario, lobo poderoso, guapo y talentoso",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 54
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "El hombre nada más pide que sea fiel y esté guapa Ajá Y que no sea tan fiestera Y que sea medio introvertida Ajá Y que tenga instinto maternal Y que tampoco me ande molestando Ajá Y que tenga su propio proyecto Y que tenga su propio camino, pero también quiera atender el hogar De hecho, eso es muy común ¿En serio? Por supuesto que no Creo que los dos tienen expectativas altas No es cierto",
+            "patterns": [
+              "demo_proceso"
+            ],
+            "word_count": 76
+          }
+        ]
       },
       "closing": {
         "text": "Creo que los dos sienten que merecen lo mejor de lo mejor y no pasa nada. Pero háganse esta pregunta. ¿Ustedes también son lo mejor de lo mejor? Supongo que no. Yo sé.",
@@ -590,7 +790,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "AXEL - EXPECTATIVAS ALTAS #cinema #arte por @oscartoon.sn y voz de @reginag.rdz"
+      "caption_preview": "AXEL - EXPECTATIVAS ALTAS #cinema #arte por @oscartoon.sn y voz de @reginag.rdz",
+      "caption_patterns": [
+        "media",
+        "hashtag_light"
+      ]
     },
     {
       "shortCode": "DRLXb2TEUhN",
@@ -621,7 +825,43 @@
           "future_pacing",
           "autoridad"
         ],
-        "word_count": 755
+        "word_count": 755,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Evidentemente, el clip generó mucha indignación. La gente se enojó, comenzó a comentar, a compartir y el video se volvió viral en cuestión de horas. Y resultó que el clip había sido editado para sacarlo totalmente de contexto. Le habían quitado frases clave para que pareciera que estaban negando la crisis climática. Lo que realmente dijo fue que los votantes no se tomarán en serio la crisis si creen que no existe. Pero claro, la verdad no fue tan viral. Todos hemos sido víctimas de contenido diseñado para provocar enojo o indignación con el único objetivo de generar interacción y capturar nuestra atención. Así que lo que voy a explicarte en este video te interesa porque muy probablemente ya has sido víctima de esto más de una vez sin darte cuenta. Las redes sociales no son gratis. Su modelo de negocio se basa en nuestra atención. Las plataformas ganan dinero por cuánto tiempo logran mantenernos mirando una pantalla. Y para eso sus algoritmos est dise para premiar lo que m capta nuestra atenci Y el contenido que mejor lo hace no es el m veraz ni el m sino el que m nos hace sentir Y de todas las emociones hay una que destaca el enojo",
+            "patterns": [
+              "agitacion_fuerte"
+            ],
+            "word_count": 206
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Durante mucho tiempo se decía que el sexo vende, pero como bien dice la escritora Irene Vallejo, hoy las redes sociales han demostrado que el odio es mucho más adictivo, es más intenso, más contagioso e inmediato. Los algoritmos lo saben y por eso lo promueven. Los creadores de contenido también lo saben. Y muchos, no todos, recurren a clips sacados de contexto, a noticias distorsionadas, a polémicas inventadas o exageradas. Todo con el objetivo de provocar una emoción fuerte, sobre todo el enfado. Porque el enfado hace que reacciones, que comentes, que compartas y al final eso se traduce en dinero para ellos. Imagina que ves un fragmento de una entrevista donde una actriz parece burlarse de otra. Los fans en redes explotan, dicen que es soberbia y que no respeta a sus colegas. Los portales de chisme suben el video una y otra vez, cada una con su propia narrativa y así poco a poco se crea una verdad entre comillas. Pero si ves la entrevista completa te das cuenta de que era una broma entre amigas con un contexto completamente distinto Pero para entonces el clip ya hab recorrido medio internet generando millones de visitas y comentarios llenos de odio Ese peque fragmento no era toda la verdad",
+            "patterns": [
+              "future_pacing",
+              "autoridad"
+            ],
+            "word_count": 211
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "pero hizo su trabajo provocarte una emoción fuerte. Y esa indignación hizo que lo compartieras, que comentaras y que le dieras más visibilidad. Y mientras tú te enojabas, alguien se beneficiaba con tu atención. Así, sin darnos cuenta, terminamos siendo parte de un sistema donde nuestra indignación se convierte en negocio. Nuestra rabia literalmente genera dinero. Como dice Irene Vallejo, los algoritmos aman nuestras fobias, alimentan nuestros rencores, refuerzan nuestros victimismos y moldean nuestra visión del mundo para mantenernos crispados, enganchados y sobre todo divididos. El filósofo Byung-Chul Han también lo advirtió. Las redes sociales pueden ser un medio para el amor y la amistad, pero lo que predomina en ellas es el odio, la desinformación y la agresividad. No nos están uniendo, sino polarizando. Nos están robando la empatía y convirtiéndonos en espectadores furiosos. Por eso, es tan importante aprender a detenernos un momento antes de reaccionar.",
+            "patterns": [
+              "agitacion_leve",
+              "demo_proceso"
+            ],
+            "word_count": 148
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Preguntarnos es cierto d viene qu me hace sentir as Ir a la fuente original contrastar con otras versiones y no dejarnos arrastrar por el impulso de compartir solo porque algo nos enoja o nos parece injusto La información sin contexto es un arma y el enojo sin reflexión es combustible para un sistema que se enriquece con nuestra frustración. Si queremos recuperar el control sobre lo que sentimos y creemos, tenemos que aprender a mirar con calma, a desconfiar un poco de lo que nos provoca demasiado y a no confundir la emoción con la verdad. Cuando la emoción da dinero, la verdad deja de ser prioridad. Y en ese punto el algoritmo deja de servirnos a nosotros y nosotros empezamos a servirle a él. Este video forma parte de una serie que estaré publicando con el hashtag fuera de contexto sobre temas en los que sin darte cuenta puedes ser víctima. La idea es entender cómo funcionan estos mecanismos para que podamos recuperar el control, dejar de ser manipulados y actuar con más conciencia en una época donde cada vez es más difícil distinguir lo que es verdad.",
+            "patterns": [
+              "agitacion_fuerte"
+            ],
+            "word_count": 190
+          }
+        ]
       },
       "closing": {
         "text": "Ojalá que estos videos sirvan para abrir paso a conversaciones más informadas, más responsables y sobre todo, más humanas.",
@@ -632,7 +872,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "RAGEBAIT – Cuando convierten tu indignación en negocio #FueraDeContexto Clip 1/6."
+      "caption_preview": "RAGEBAIT – Cuando convierten tu indignación en negocio #FueraDeContexto Clip 1/6.",
+      "caption_patterns": [
+        "media",
+        "hashtag_light"
+      ]
     },
     {
       "shortCode": "DRuTL7Fjc73",
@@ -661,7 +905,42 @@
           "comparacion",
           "tension"
         ],
-        "word_count": 421
+        "word_count": 421,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "para que sigas frente a la pantalla el mayor tiempo posible. Y para adivinar eso, analizan qué clics das, qué compartes, qué te gusta, qué te enoja, qué buscas, cuánto dura tu atención en un video, qué comentas y hasta qué ignoras. Y con el tiempo, aprenden tanto de ti que empiezan a ocultar lo que creen que no te interesa. No lo notas, pero tu mundo digital empieza a achicarse. Imagínate que Juan se interesa por ciencia y salud pública. El algoritmo le mostrará artículos, videos y publicaciones con estudios, entrevistas, divulgación científica, todo lo que confirme ese interés. Pero si otra persona tiene un historial de desconfianza hacia las farmacéuticas,",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 112
+          },
+          {
+            "label": "Q2_develop",
+            "text": "recibirá algo completamente diferente. Videos conspirativos, blogs críticos, investigaciones alternativas o hilos alarmistas. Dos versiones del mundo completamente diferentes, cada una diseñada a la medida de quien la recibe. Y sin darte cuenta, te vas encerrando en un cuarto donde solo escuchas tu propio eco. Empiezas a sentir que todo mundo piensa como tú, que la mayoría comparte tu opinión y que quienes piensan diferente son muy pocos o están desinformados. Pero ese todo mundo no es el mundo.",
+            "patterns": [
+              "comparacion"
+            ],
+            "word_count": 79
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Son solo las personas y los contenidos que el algoritmo decide ponerte enfrente Ese es el filtro burbuja Un espacio donde tus ideas se refuerzan una y otra vez y donde las ideas distintas solo dejan de aparecer Lo más peligroso es que no tienes idea de qué estás dentro. Crees que estás viendo la realidad completa, cuando en realidad estás viendo solo la versión que el sistema eligió para ti. Y esa versión moldea tus opiniones, tus emociones y tus decisiones. El filtro burbuja hace que las diferencias entre personas se vuelvan más profundas, porque cada quien vive dentro de su propio universo digital, donde sus ideas siempre parecen correctas y las del otro siempre parecen absurdas.",
+            "patterns": [
+              "tension"
+            ],
+            "word_count": 118
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Por eso es tan importante aprender a cuestionar el mundo digital, ejercitar el pensamiento crítico, buscar fuentes distintas, salir de la burbuja o al menos estar conscientes de que no estamos viendo toda la realidad y escuchar opiniones que no coinciden con las nuestras. Si no lo hacemos, corremos el riesgo de vivir en una realidad artificial y de tomar decisiones basadas en ella en vez de en la realidad. Este video forma parte de una serie que he estado publicando con el hashtag fuera de contexto sobre temas en los que sin darte cuenta puedes ser víctima. La idea es entender cómo funcionan estos mecanismos para que podamos recuperar el control,",
+            "patterns": [
+              "comparacion",
+              "tension"
+            ],
+            "word_count": 112
+          }
+        ]
       },
       "closing": {
         "text": "dejar de ser manipulados y actuar con más conciencia en una época donde cada vez es más difícil distinguir lo que es verdad. Ojalá que estos videos sirvan para abrir paso a conversaciones más informadas, más responsables y sobre todo más humanos.",
@@ -672,7 +951,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Fenómeno del filtro burbuja #FueraDeContexto Clip 6/6"
+      "caption_preview": "Fenómeno del filtro burbuja #FueraDeContexto Clip 6/6",
+      "caption_patterns": [
+        "corta",
+        "hashtag_light"
+      ]
     },
     {
       "shortCode": "DPACR8lD1BU",
@@ -700,7 +983,41 @@
         "patterns": [
           "demo_proceso"
         ],
-        "word_count": 72
+        "word_count": 72,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Esas tardes que saben a desilusión, pues después de una semana completa esperando a que algo pasara, nada pasó.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 19
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Lo escuchas para sentir compañía o solo para sentir algo antes de que la tarde agonizante termine de morir.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 19
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "O si también ves los videos mientras haces cualquier otra cosa,",
+            "patterns": [
+              "demo_proceso"
+            ],
+            "word_count": 11
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "te tengo la noticia de que en colaboración con Amazon Music estaremos de vuelta con más episodios exclusivos en el formato de audio.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 23
+          }
+        ]
       },
       "closing": {
         "text": "Te invito a que te des una vuelta por Amazon Music, solo tienes que descargar la app, la cual es gratis, y le des un vistazo a todo el contenido que ya está disponible y a todo lo que está por venir. Gracias por ver este video y tú y yo nos estaremos escuchando en Amazon Music.",
@@ -711,7 +1028,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Escucha relatos y reflexiones en formato de audio de manera exclusiva en Amazon Music @amazonmusicmx"
+      "caption_preview": "Escucha relatos y reflexiones en formato de audio de manera exclusiva en Amazon Music @amazonmusicmx",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DUHPPx9jyXL",
@@ -739,7 +1060,41 @@
         "patterns": [
           "agitacion_leve"
         ],
-        "word_count": 73
+        "word_count": 73,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "O tal vez por todo lo que no lloraste en su debido momento. Por esas veces en que te tragaste el dolor para no preocupar a nadie.",
+            "patterns": [
+              "agitacion_leve"
+            ],
+            "word_count": 27
+          },
+          {
+            "label": "Q2_develop",
+            "text": "En que tuviste que seguir funcionando aunque por dentro te derrumbabas.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 11
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Por las palabras que no dijiste. Por los estoy bien que dijiste cuando no lo estabas.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 16
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Por los duelos que tuviste que vivir sin testigos. Así que no te disculpes. No te apures en calmarte.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 19
+          }
+        ]
       },
       "closing": {
         "text": "Déjalo salir. Aunque no sepas de dónde viene Tal vez estés llorando por todas tus versiones Que aguantaron demasiado Y si es así, está bien Cada lágrima que cae hoy pertenece también A lo que alguna vez te dolió Y no supiste cómo decir",
@@ -750,7 +1105,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "No sé exactamente por qué estás llorando hoy. Tal vez ni tú lo sepas. Quizás sea por algo que acaba "
+      "caption_preview": "No sé exactamente por qué estás llorando hoy. Tal vez ni tú lo sepas. Quizás sea por algo que acaba ",
+      "caption_patterns": [
+        "muy_larga",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DOSA0scDPmz",
@@ -779,7 +1138,41 @@
           "agitacion_leve",
           "qa_rapido"
         ],
-        "word_count": 237
+        "word_count": 237,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "paga 1,800 pesos para verlo en vivo y aún así decide verlo por el celular? Muy buena idea documentar esto, no se nos vaya a olvidar. Y el video que terminan consiguiendo es el equivalente audiovisual del olor a una c*** de baño de estadio. No puedes ni ver porque la cámara no deja de temblar, las luces queman la imagen y ni hablar del audio.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 66
+          },
+          {
+            "label": "Q2_develop",
+            "text": "A Fellini aquí se le olvidó que el micrófono de su celular está más cerca de su boca que la de Taylor Swift, entonces ni siquiera escucho la canción ni la gente. Por escuchar tu voz cansada, ronca y desentonada Que no entraría ni al coro del kinder Cállate, quiero escuchar Wow, gran ángulo ¿Acaso eres cinefotógrafo?",
+            "patterns": [
+              "agitacion_leve"
+            ],
+            "word_count": 57
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Cállate, clanker Creo que el peor crimen de todos es que comparten esta basura Poniéndola en 200 historias Olvídate de una violencia, esto es una masacre Yo creo que es normal querer compartir un momento alegre De hecho, creo que es lo que más me gusta de los humanos ¿Qué cosa? Cuando prueban una comida que les gusta Su primer instinto es compartir para que los demás sientan la misma alegría",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 71
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Creo que eso es hermoso Ignorando a Axel, no me insulten con su vómito audiovisual Ya hay suficiente violencia en este mundo La moraleja aquí, baja el celular, imbécil Baila o muévete o hey Además observa, consume el arte directamente En vivo, presente",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 43
+          }
+        ]
       },
       "closing": {
         "text": "Y deja que haga lo suyo Hay personas que quieren entrar Diles que estamos bien ¿Seguro? Se ven buena onda Seguro",
@@ -790,7 +1183,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "AXEL - GRABAR EN CONCIERTO #cinema #arte por @ileidyosc y voz de @diegoarcq"
+      "caption_preview": "AXEL - GRABAR EN CONCIERTO #cinema #arte por @ileidyosc y voz de @diegoarcq",
+      "caption_patterns": [
+        "media",
+        "hashtag_light"
+      ]
     },
     {
       "shortCode": "DPCYF7RiWUN",
@@ -818,7 +1215,8 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 1
+        "word_count": 1,
+        "beat_map": null
       },
       "closing": {
         "text": "En cada paso que des, en cada recuerdo que honres, en cada gesto de amor que compartas, esa persona sigue ahí. No como antes, pero de una forma que nada ni nadie podrá arrebatarte. El amor no muere, cambia de lugar, se transforma y se queda para siempre.",
@@ -829,7 +1227,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Cuando decimos adiós a un ser querido, no estamos borrando su presencia, sino transformando nuestra "
+      "caption_preview": "Cuando decimos adiós a un ser querido, no estamos borrando su presencia, sino transformando nuestra ",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DSk31YmlCNW",
@@ -858,7 +1260,42 @@
           "agitacion_fuerte",
           "demo_proceso"
         ],
-        "word_count": 261
+        "word_count": 261,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Seguir existiendo a pesar del tiempo y a pesar de lo que duele. Me parece una frase terriblemente bella para describir el viaje de la criatura. La criatura nació deseando amor, y lo primero que encontró fue rechazo y abandono. Ahí se le rompió el corazón. Y aún así siguió. Luego encontró amor en Elizabeth. Por primera vez alguien lo vio sin miedo. Pero Elizabeth murió y su corazón volvió a romperse.",
+            "patterns": [
+              "agitacion_leve",
+              "demo_proceso"
+            ],
+            "word_count": 72
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Y aún así siguió. También encontró en el anciano a alguien que lo escuchó y lo trató como persona. Y también lo perdió. Y otra vez el corazón se rompió. Después de todo ese dolor, la criatura no desistió. Su corazón se rompió una y otra vez. Pero siguió latiendo. Y al final, frente a la luz del sol, esa misma luz que Víctor le mostró por primera vez diciéndole,",
+            "patterns": [
+              "agitacion_leve"
+            ],
+            "word_count": 70
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "esto es vida, la criatura siguió ahí. Rota, pero viva. Más allá de todo lo que hemos hablado, esta historia también nos habla de seguir viviendo, incluso cuando el corazón se rompe, algo que todos conocemos. De cómo el dolor nos marca, a veces sentimos que ya no podemos, pero encontramos una",
+            "patterns": [
+              "agitacion_leve"
+            ],
+            "word_count": 52
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "forma de que no nos destruya del todo. Incluso cuando el amor se pierde, cuando el mundo decepciona y la herida parece demasiado grande, el corazón aún roto puede seguir adelante. Y en ese acto de seguir y no rendirse, de permanecer abierto a la vida a pesar del tiempo y de lo que duele, la criatura se volvió quizás lo más humano de toda la historia.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 67
+          }
+        ]
       },
       "closing": {
         "text": "",
@@ -869,7 +1306,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Al final de la película aparece la siguiente frase de Lord Byron: Y así, el corazón se rompe, pero a"
+      "caption_preview": "Al final de la película aparece la siguiente frase de Lord Byron: Y así, el corazón se rompe, pero a",
+      "caption_patterns": [
+        "muy_larga",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DO3sdrVDWKg",
@@ -897,7 +1338,41 @@
         "patterns": [
           "demo_proceso"
         ],
-        "word_count": 50
+        "word_count": 50,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "El amor trasciende el tiempo y el espacio, y mientras me recuerdes, sigo existiendo.",
+            "patterns": [
+              "demo_proceso"
+            ],
+            "word_count": 14
+          },
+          {
+            "label": "Q2_develop",
+            "text": "En tu mente, en tu corazón, o en esa voz que puedes volver a escuchar cuando cierras los ojos.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 19
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Si me recuerdas, no estoy perdido.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 6
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Incluso cuando me sienta como un fantasma, tu memoria me sostiene.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 11
+          }
+        ]
       },
       "closing": {
         "text": "Cuando me recuerdas en tus momentos de tristeza, soy consuelo. Cuando lo haces en tus momentos de alegría, soy parte de esa alegría. Si un día me olvidaras, una parte de mí se borraría contigo. Pero mientras sigas recordándome, viviré en ti.",
@@ -908,7 +1383,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Cuando me recuerdas, llevas conmigo una parte de lo que fui. Sígueme aquí @faridieck para más relato"
+      "caption_preview": "Cuando me recuerdas, llevas conmigo una parte de lo que fui. Sígueme aquí @faridieck para más relato",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DQSeaZaj0u3",
@@ -936,7 +1415,41 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 214
+        "word_count": 214,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "En realidad hablo de los que todos conocemos. Bodas, bautizos, funerales e incluso las fiestas patrias. Todos comparten ciertos rasgos. Tienen una estructura repetitiva, tienen un significado que va más allá de lo que vemos, se viven en comunidad y nos conectan con algo más grande. Y aunque muchos no lo vean así,",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 53
+          },
+          {
+            "label": "Q2_develop",
+            "text": "el concepto de la carne asada en Nuevo León también es un ritual. El avisar por el grupo sobre la reunión, ir a comprar las cosas, marinar la carne, poner el partido, prender el carbón, comer y seguir conversando y conversando, incluso cuando",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 43
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "la comida o el juego ya se acabó. Es un ritual porque el motivo de hacerlo va mucho más allá de saciar el hambre y listo. En el fondo es conectar con esa necesidad profunda que tenemos los seres humanos de comunidad. La carne asada es el pretexto, pero lo importante es el encuentro,",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 54
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Las risas, las pláticas interminables, las brasas que nos reúnen y la certeza de que ahí, en ese momento, formamos parte de algo más grande que nosotros mismos. Y, en definitiva, un símbolo de la hospitalidad, identidad y calidez del Nuevo León. Así que, como embajador del Mundial en Nuevo León, quiero invitarlos a vivir esa misma calidez en el Mundial de Fútbol 2026.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 64
+          }
+        ]
       },
       "closing": {
         "text": "Porque aunque no seas de aquí, créeme que cuando veas los juegos, recorras el estado y sus ciudades y veas todo lo que tiene para ofrecer, te sentirás como en casa.",
@@ -947,7 +1460,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Como embajador del mundial en Nuevo León, les presento el ritual de la carne Asada 🤠 @nuevoleonmx"
+      "caption_preview": "Como embajador del mundial en Nuevo León, les presento el ritual de la carne Asada 🤠 @nuevoleonmx",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DOyi70gkU-O",
@@ -975,7 +1492,41 @@
         "patterns": [
           "agitacion_fuerte"
         ],
-        "word_count": 112
+        "word_count": 112,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Quizás sientas ese nudo en la garganta o ese latido rápido que asusta y está bien. No significa que estés roto ni que no puedas con esto.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 27
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Solo significa que estás sintiendo mucho. Y eso no te hace débil, te hace humano. Recuerda que no eres tu ansiedad. No eres ese miedo ni esos pensamientos que giran sin parar.",
+            "patterns": [
+              "agitacion_fuerte"
+            ],
+            "word_count": 32
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Eres mucho más que este momento difícil. Eres alguien que incluso con miedo sigue aquí. intentando un día más? Y eso merece ser reconocido.",
+            "patterns": [
+              "agitacion_leve"
+            ],
+            "word_count": 24
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Sí, a veces parece que no puedes más y que todo es demasiado. Por favor, no te juzgues por sentirte así. No estás fallando por sentir miedo o cansancio.",
+            "patterns": [
+              "agitacion_fuerte"
+            ],
+            "word_count": 29
+          }
+        ]
       },
       "closing": {
         "text": "Estás haciendo lo mejor que puedes con lo que tienes ahora. Esto que sientes ahora no durará para siempre, aunque parezca eterno mientras lo estás viviendo. Lo sé porque pasa. Siempre pasa, aunque sea poco a poco. Y cuando pase, tú seguirás aquí, respirando.",
@@ -986,7 +1537,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Cuando sientas que tu mente corre y no puedes dejar de pensar en todo lo que podría salir mal, respi"
+      "caption_preview": "Cuando sientas que tu mente corre y no puedes dejar de pensar en todo lo que podría salir mal, respi",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DOuXv5hjBcf",
@@ -1015,7 +1570,41 @@
           "demolicion_objecion",
           "qa_rapido"
         ],
-        "word_count": 94
+        "word_count": 94,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Mentir. No toda mentira es mala. Además, sí le va a cortar, nada más no hoy. ¿Entonces cuándo? No sé, cuando se recupere. Nadie se recupera de una pérdida así.",
+            "patterns": [
+              "demolicion_objecion"
+            ],
+            "word_count": 30
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Pero sí avanzan. ¿Cuándo? Cada quien es diferente. ¿Entonces Diego tendrá que mentirle a su novia por un tiempo indefinido? Sí, al menos unos 10 días.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 26
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "¿10 días? ¿10 días? 10 días. ¿Qué te cuesta estar con ella en tiempos difíciles? No, no es eso Es el hecho que ya no la amo",
+            "patterns": [
+              "qa_rapido"
+            ],
+            "word_count": 27
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "Entonces, ¿qué te cuesta amarla un poco más? Dale 10 días",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 11
+          }
+        ]
       },
       "closing": {
         "text": "¿Es en serio? ¿Se esperó 10 días para cortarte? ¿Qué tipo de psicópata se esperaría 10 días para cortarte? O sea, ¿ahí andaba el güey pretendiendo que te quería? ¡Qué miedo!",
@@ -1026,7 +1615,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "AXEL - ABUELA #cinema #arte por @oscartoon.sn"
+      "caption_preview": "AXEL - ABUELA #cinema #arte por @oscartoon.sn",
+      "caption_patterns": [
+        "corta",
+        "hashtag_light"
+      ]
     },
     {
       "shortCode": "DOlrCGCiI0k",
@@ -1054,7 +1647,8 @@
         "patterns": [
           "agitacion_leve"
         ],
-        "word_count": 36
+        "word_count": 36,
+        "beat_map": null
       },
       "closing": {
         "text": "Solo sentir que nuestros pensamientos no rebotan siempre contra las paredes de nuestra cabeza. Cuando alguien escucha de verdad, con paciencia y sin juicio, la carga se vuelve más ligera. y por un momento sientes que por fin ya no estás solo dentro de ti.",
@@ -1065,7 +1659,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "\"Quiero hablar de todo con al menos una persona, como hablo conmigo mismo\" Sígueme aquí @faridieck p"
+      "caption_preview": "\"Quiero hablar de todo con al menos una persona, como hablo conmigo mismo\" Sígueme aquí @faridieck p",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DTdtS3QD0yT",
@@ -1093,7 +1691,41 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 96
+        "word_count": 96,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Uno es responsable de lo que ha domesticado. A simple vista, su flor podría parecer como cualquier otra.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 18
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Pero si mira más allá, puede ver que es única por el tiempo, el cariño y la atención que le ha entregado. Lo esencial es invisible a los ojos.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 29
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Cuando realmente tomamos el tiempo para conocer a alguien, cuando nos preocupamos por su bienestar y nos comprometemos a cuidarlo, esa persona deja de ser una más y se vuelve especial.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 31
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "El reto está en que en una época que exige inmediatez, paciencia y compromiso se vuelven gestos raros.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 18
+          }
+        ]
       },
       "closing": {
         "text": "Creamos vínculos profundos, pero los buscamos con prisa. El zorro le enseña al principito y a nosotros que las relaciones significativas se cultivan. No son algo dado ni estático, sino algo vivo que necesita ser atendido, nutrido y acompañado con paciencia.",
@@ -1104,7 +1736,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "“Se ve bien solo con el corazón, porque lo esencial es invisible a los ojos.” El zorro le explicó al"
+      "caption_preview": "“Se ve bien solo con el corazón, porque lo esencial es invisible a los ojos.” El zorro le explicó al",
+      "caption_patterns": [
+        "muy_larga",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DOq0kjNjgdj",
@@ -1132,7 +1768,8 @@
         "patterns": [
           "agitacion_leve"
         ],
-        "word_count": 10
+        "word_count": 10,
+        "beat_map": null
       },
       "closing": {
         "text": "Y no pasa nada si aún duele. El progreso no siempre se mide en sonrisas. Lo importante ahora es que sigues, que estás de pie. Eso, aunque no siempre lo sientas, ya es un triunfo enorme. Y recuerda algo, ninguna situación es eterna.",
@@ -1143,7 +1780,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Perdiste algo que creías irremplazable... Sígueme aquí @faridieck para más relatos y reflexiones."
+      "caption_preview": "Perdiste algo que creías irremplazable... Sígueme aquí @faridieck para más relatos y reflexiones.",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DP_0W7wDw42",
@@ -1171,7 +1812,8 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 9
+        "word_count": 9,
+        "beat_map": null
       },
       "closing": {
         "text": "Ese rendirse es rendirse a uno mismo, a la verdad de lo que se siente. Dejarse caer a veces es la única manera de volver a levantarse distinto.",
@@ -1182,7 +1824,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "El alma también se cansa… Sígueme aquí @faridieck para más relatos y reflexiones."
+      "caption_preview": "El alma también se cansa… Sígueme aquí @faridieck para más relatos y reflexiones.",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DOY1aAwDc0p",
@@ -1210,7 +1856,8 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 1
+        "word_count": 1,
+        "beat_map": null
       },
       "closing": {
         "text": "si la otra persona no reconoce que hay algo que atender, el cambio simplemente no llegará.",
@@ -1228,7 +1875,11 @@
           "cta_segments": 1
         }
       },
-      "caption_preview": "Hace años lo dije, pero nunca está de más recordarlo. Sígueme aquí @faridieck para más relatos y ref"
+      "caption_preview": "Hace años lo dije, pero nunca está de más recordarlo. Sígueme aquí @faridieck para más relatos y ref",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DOoPri_iACP",
@@ -1256,7 +1907,8 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 1
+        "word_count": 1,
+        "beat_map": null
       },
       "closing": {
         "text": "y que el futuro no se vive de golpe, sino paso a paso. Y tú, tú puedes con este.",
@@ -1267,7 +1919,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Sé que a veces tu mente no se calla, que te pinta escenarios terribles que todavía no han pasado... "
+      "caption_preview": "Sé que a veces tu mente no se calla, que te pinta escenarios terribles que todavía no han pasado... ",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DOTtT79iovA",
@@ -1295,7 +1951,8 @@
         "patterns": [
           "narrativa_general"
         ],
-        "word_count": 25
+        "word_count": 25,
+        "beat_map": null
       },
       "closing": {
         "text": "Solo empieza a desocupar tu conciencia, poquito a poco. Como cuando apagas una luz y tus ojos se van adaptando a la oscuridad. Se vuelve un recuerdo, no una presencia. Y eso, aunque duela, es parte de sanar. No olvidar, sino dejar de atender.",
@@ -1306,7 +1963,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "A alguien que fue importante no se le olvida, como si nunca hubiera existido… simplemente, se deja d"
+      "caption_preview": "A alguien que fue importante no se le olvida, como si nunca hubiera existido… simplemente, se deja d",
+      "caption_patterns": [
+        "media",
+        "sin_hashtags"
+      ]
     },
     {
       "shortCode": "DPWyX1ggqh3",
@@ -1335,7 +1996,41 @@
           "agitacion_leve",
           "comparacion"
         ],
-        "word_count": 105
+        "word_count": 105,
+        "beat_map": [
+          {
+            "label": "Q1_setup",
+            "text": "Un hueco imposible de tapar. No puede cerrarse del todo. ¿Y qué pasa si no intento llenarlo? ¿Y si en lugar de eso le doy espacio?",
+            "patterns": [
+              "comparacion"
+            ],
+            "word_count": 26
+          },
+          {
+            "label": "Q2_develop",
+            "text": "Quizás hay dolores que no se alivian, pérdidas que no se sustituyen. Y sin embargo, cuando acojo ese vacío, descubro que también guarda un impulso.",
+            "patterns": [
+              "agitacion_leve"
+            ],
+            "word_count": 25
+          },
+          {
+            "label": "Q3_escalate",
+            "text": "Lo que no tengo despierta deseo y el deseo me empuja hacia adelante. Qué paradoja. Lo que más me duele también puede ser lo que más me mueve.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 28
+          },
+          {
+            "label": "Q4_resolve",
+            "text": "La falta es un hambre espiritual. Duele y pesa, pero al mismo tiempo contiene potencia. potencia de crear, de buscar y de abrirme a algo nuevo.",
+            "patterns": [
+              "narrativa_general"
+            ],
+            "word_count": 26
+          }
+        ]
       },
       "closing": {
         "text": "Quizás no se trate de sanar la falta, sino de aprender a vivir con ella, dejar que en su hueco nazca un nuevo movimiento de vida.",
@@ -1346,7 +2041,11 @@
         ],
         "cta_buildup": null
       },
-      "caption_preview": "Siempre falta algo. Falta lo que no tuvimos, falta lo que deseamos, falta alguien… alguien que ya no"
+      "caption_preview": "Siempre falta algo. Falta lo que no tuvimos, falta lo que deseamos, falta alguien… alguien que ya no",
+      "caption_patterns": [
+        "larga",
+        "sin_hashtags"
+      ]
     }
   ]
 }

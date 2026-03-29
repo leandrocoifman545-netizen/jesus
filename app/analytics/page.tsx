@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 
 const MatrixView = dynamic(() => import("@/components/matrix-view"), { ssr: false });
 const MinerView = dynamic(() => import("@/components/miner-view"), { ssr: false });
+const CompetitorsView = dynamic(() => import("@/components/competitors-view"), { ssr: false });
 
 interface AnalyticsData {
   total: number;
@@ -250,7 +251,7 @@ function TrendsSection() {
 export default function AnalyticsPage() {
   const [data, setData] = useState<AnalyticsData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [tab, setTab] = useState<"overview" | "diversity" | "performance" | "gaps" | "trends" | "matriz" | "miner">("overview");
+  const [tab, setTab] = useState<"overview" | "diversity" | "performance" | "gaps" | "trends" | "matriz" | "miner" | "competencia">("overview");
 
   useEffect(() => {
     fetch("/api/analytics")
@@ -278,7 +279,7 @@ export default function AnalyticsPage() {
 
       {/* Tabs */}
       <div className="flex gap-1 mb-8 p-1 bg-zinc-900/50 rounded-xl w-fit overflow-x-auto">
-        {(["overview", "diversity", "performance", "gaps", "trends", "matriz", "miner"] as const).map(t => (
+        {(["overview", "diversity", "performance", "gaps", "trends", "matriz", "miner", "competencia"] as const).map(t => (
           <button
             key={t}
             onClick={() => setTab(t)}
@@ -286,7 +287,7 @@ export default function AnalyticsPage() {
               tab === t ? "bg-white/10 text-white" : "text-zinc-500 hover:text-zinc-300"
             }`}
           >
-            {t === "overview" ? "General" : t === "diversity" ? "Diversidad" : t === "performance" ? "Performance" : t === "gaps" ? "Gaps" : t === "trends" ? "Trends" : t === "matriz" ? "Matriz 3D" : "Miner"}
+            {t === "overview" ? "General" : t === "diversity" ? "Diversidad" : t === "performance" ? "Performance" : t === "gaps" ? "Gaps" : t === "trends" ? "Trends" : t === "matriz" ? "Matriz 3D" : t === "miner" ? "Miner" : "Competencia"}
           </button>
         ))}
       </div>
@@ -502,6 +503,10 @@ export default function AnalyticsPage() {
 
       {tab === "miner" && (
         <MinerView />
+      )}
+
+      {tab === "competencia" && (
+        <CompetitorsView />
       )}
     </div>
   );

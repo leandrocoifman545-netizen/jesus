@@ -1,0 +1,173 @@
+{
+  "id": "5030f155-5ac6-4097-8910-825734b60bfa",
+  "briefId": "d34d3cce-0762-413f-9362-a14270152111",
+  "title": "No funciona en la vida real",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.3_micro_historia_resultado",
+    "body_type": "victor_elas_conversation",
+    "segment": "A",
+    "funnel_stage": "MOFU",
+    "niche": "prueba: primera venta real",
+    "model_sale_type": "prueba_diversidad",
+    "visual_format": "split_screen",
+    "avatar": "martin",
+    "awareness_level": 2,
+    "emotional_arc": "historia",
+    "tension": "T2",
+    "transition_text": "PERSONA A: ¿El link es el de abajo?\nJESÚS: Tocá el botón de acá abajo.",
+    "total_duration_seconds": 55,
+    "word_count": 348,
+    "belief_change": {
+      "old_belief": "Esto no funciona en la vida real",
+      "mechanism": "Primera venta en 4 días, escalable",
+      "new_belief": "Si hice una venta puedo hacer diez"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: ¡Loco! ¡Vendí! ¡Quince dólares pero VENDÍ!\nJESÚS: ¿Cuándo?\nPERSONA A: ¡Recién! ¡Me llegó la notificación mientras lavaba los platos!\nJESÚS: Ahí está. ¿Cuánto tardaste?\nPERSONA A: 4 días. ¡CUATRO DÍAS!",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Che, necesito contarte algo.\nJESÚS: ¿Qué pasó?\nPERSONA A: Vendí mi primer producto digital. Me estoy temblando.\nJESÚS: ¿Cuánto?\nPERSONA A: Quince dólares. Sé que es poco pero...\nJESÚS: No es poco. Es la prueba de que funciona. Ahora escuchá lo que sigue.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, te tengo que contar algo. Yo era de los que decía \"esto no funciona.\"\nJESÚS: ¿Y?\nPERSONA A: Me equivoqué. Vendí. Y ahora necesito entender qué hice bien.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: ¡Me llegó un pago! ¡De alguien que no conozco! ¡De otra provincia!\nJESÚS: ¿Ves? No necesitás seguidores. No necesitás conocer a nadie.\nPERSONA A: ¿Cómo me encontró?\nJESÚS: Dos dólares de publicidad. Te cuento la historia.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Loco, mi vieja no me cree. Le muestro la notificación y me dice \"seguro es falso.\"\nJESÚS: Mostráselo cuando sean $50 por día. Ahí se calla.\nPERSONA A: ¿$50? ¿En serio?\nJESÚS: Si hiciste una venta, podés hacer diez. Te explico la matemática.\nPERSONA A: No puedo creerlo. Vendí. Quince dólares. Pero capaz fue suerte.\nJESÚS: ¿Suerte? ¿Investigaste qué se vendía?\nPERSONA A: Sí.\nJESÚS: ¿Creaste el producto con la IA?\nPERSONA A: Sí.\nJESÚS: ¿Pusiste dos dólares de publicidad?\nPERSONA A: Sí.\nJESÚS: Eso no es suerte. Es un proceso. La suerte no tiene pasos.\nPERSONA A: Pero son quince dólares. No es para tanto.\nJESÚS: ¿Sabés cuánto me dieron por MI primer producto? Siete dólares. Y con eso hoy facturo más de cien mil al año.\nPERSONA A: ¿Siete dólares?\nJESÚS: Siete dólares. La primera venta no es plata. Es la prueba de que funciona. Después escalás. El producto ya está creado. Solo subís la publicidad.\nPERSONA A: O sea que si pongo $4 en vez de $2...\nJESÚS: Te llegan el doble de mensajes. Hacé la cuenta.\nPERSONA A: Capaz a mí me salió porque tuve suerte con el nicho.\nJESÚS: Hay un contador que vende guías de finanzas. Una profe de yoga que vende rutinas. Un mecánico que hizo una guía de mantenimiento de autos. Todos arrancaron igual que vos.\nPERSONA A: ¿Un mecánico?\nJESÚS: Un mecánico. Le enseña a la gente a no dejarse estafar en el taller. Vende todos los días.\nPERSONA A: Entonces no fue suerte, puedo escalar y hay de todos los rubros.\nJESÚS: Sí.\nPERSONA A: Bueno, voy a seguir como estoy.\nJESÚS: No. Ahora es cuando la mayoría la pifia. Porque hacen una venta y se relajan. El paso que sigue es el que marca la diferencia entre $15 y $50 por día.\nPERSONA A: ¿Cuál?\nJESÚS: El que te enseño adentro. Tocá el botón de acá abajo.\nPERSONA A: Che, le voy a pasar el link a mi viejo.\nJESÚS: Pasáselo. Si un tipo que no sabía nada pudo vender en 4 días, tu viejo también.\nPERSONA A: ¿El link es el de abajo?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "historia",
+      "sections": [
+        {
+          "section_name": "Fue suerte",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: No puedo creerlo. Vendí. Quince dólares. Pero capaz fue suerte.\nJESÚS: ¿Suerte? ¿Investigaste qué se vendía?\nPERSONA A: Sí.\nJESÚS: ¿Creaste el producto con la IA?\nPERSONA A: Sí.\nJESÚS: ¿Pusiste dos dólares de publicidad?\nPERSONA A: Sí.\nJESÚS: Eso no es suerte. Es un proceso. La suerte no tiene pasos.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "$15 no es nada",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pero son quince dólares. No es para tanto.\nJESÚS: ¿Sabés cuánto me dieron por MI primer producto? Siete dólares. Y con eso hoy facturo más de cien mil al año.\nPERSONA A: ¿Siete dólares?\nJESÚS: Siete dólares. La primera venta no es plata. Es la prueba de que funciona. Después escalás. El producto ya está creado. Solo subís la publicidad.\nPERSONA A: O sea que si pongo $4 en vez de $2...\nJESÚS: Te llegan el doble de mensajes. Hacé la cuenta.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Yo soy un caso aislado",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Capaz a mí me salió porque tuve suerte con el nicho.\nJESÚS: Hay un contador que vende guías de finanzas. Una profe de yoga que vende rutinas. Un mecánico que hizo una guía de mantenimiento de autos. Todos arrancaron igual que vos.\nPERSONA A: ¿Un mecánico?\nJESÚS: Un mecánico. Le enseña a la gente a no dejarse estafar en el taller. Vende todos los días.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Entonces no fue suerte, puedo escalar y hay de todos los rubros.\nJESÚS: Sí.\nPERSONA A: Bueno, voy a seguir como estoy.\nJESÚS: No. Ahora es cuando la mayoría la pifia. Porque hacen una venta y se relajan. El paso que sigue es el que marca la diferencia entre $15 y $50 por día.\nPERSONA A: ¿Cuál?\nJESÚS: El que te enseño adentro. Tocá el botón de acá abajo.\nPERSONA A: Che, le voy a pasar el link a mi viejo.\nJESÚS: Pasáselo. Si un tipo que no sabía nada pudo vender en 4 días, tu viejo también.\nPERSONA A: ¿El link es el de abajo?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Che, le voy a pasar el link a mi viejo.\nJESÚS: Pasáselo. Si un tipo que no sabía nada pudo vender en 4 días, tu viejo también.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado Específico"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 85,
+        "ingredient_name": "Testimonio Diverso"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si un tipo que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T00:36:24.541Z",
+  "status": "draft",
+  "batch": {
+    "id": "cf67a1fc-1f33-4369-b723-0cc0973e60fc",
+    "name": "Víctor Elas × 562 compradores — V5"
+  }
+}

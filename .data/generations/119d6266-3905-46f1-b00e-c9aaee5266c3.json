@@ -1,0 +1,162 @@
+{
+  "id": "119d6266-3905-46f1-b00e-c9aaee5266c3",
+  "briefId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "planId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "title": "No llego a fin de mes y no tengo tiempo",
+  "contentType": "shortform",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.2_oficinista",
+    "body_type": "conversacion_experto_novato",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "Empleado joven sin tiempo — ingresos extra",
+    "model_sale_type": "tiempo_vs_dinero",
+    "visual_format": "split_screen_dialogo",
+    "avatar": "martin",
+    "awareness_level": 3,
+    "emotional_arc": "dolor_alivio",
+    "tension": "T1",
+    "transition_text": "Link acá abajo. Nos vemos adentro.",
+    "total_duration_seconds": 55,
+    "word_count": 250,
+    "belief_change": {
+      "old_belief": "No tengo tiempo ni energía para hacer nada más",
+      "mechanism": "El producto se crea una vez y vende solo — la hora de Instagram es tu hora de negocio",
+      "new_belief": "Puedo crear algo al costado sin dejar mi laburo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "No tengo ni una hora",
+        "installed_via": "Jesús pregunta cuánto scrollea Instagram",
+        "persuasion_function": "identificacion",
+        "section_name": "Tu hora de Instagram"
+      },
+      {
+        "belief": "Armar un negocio lleva meses",
+        "installed_via": "IA arma producto en un fin de semana",
+        "persuasion_function": "quiebre",
+        "section_name": "Un fin de semana"
+      },
+      {
+        "belief": "Tengo que estar disponible",
+        "installed_via": "El producto vende mientras dormís",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mientras dormís"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "PERSONA A: Loco, laburo 9 horas, llego destruido a mi casa. ¿Cuándo se supone que haga algo?\n\nJESÚS: ¿Cuánto scrolleás Instagram por día?\n\nPERSONA A: ...ponele una hora.\n\nJESÚS: Ahí tenés tu hora.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "PERSONA A: Me levanto a las 6, vuelvo a las 8. ¿A qué hora hago un negocio?\n\nJESÚS: ¿A qué hora mirás TikTok?\n\nPERSONA A: ...de noche.\n\nJESÚS: Esa hora puede valer $50.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "PERSONA A: Gano $800 por mes. Laburo 180 horas. Eso es $4 la hora. ¿Hay algo mejor?\n\nJESÚS: Sí. Y lo hacés después de tu laburo. Una hora.\n\nPERSONA A: ¿Una hora y ya?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "script_text": "PERSONA A: Quiero hacer algo propio pero no puedo renunciar.\n\nJESÚS: No renuncies. Esto lo hacés al costado. Desde el celular. Después de cenar.\n\nPERSONA A: ¿Desde el celular?",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "script_text": "PERSONA A: Estoy podrido de que mi sueldo no me alcance. ¿Hay algo real que pueda hacer sin dejar el laburo?\n\nJESÚS: Sí. Y cuesta $2 por día. Te cuento.",
+        "timing_seconds": 6
+      }
+    ],
+    "development": {
+      "framework_used": "conversacion_victor_eraso",
+      "emotional_arc": "dolor_alivio",
+      "sections": [
+        {
+          "section_name": "Tu hora de Instagram",
+          "persuasion_function": "identificacion",
+          "micro_belief": "No tengo ni una hora",
+          "script_text": "PERSONA A: Laburo 9 horas. Viajo 2 más. Llego a mi casa y lo único que quiero es tirarme. No tengo tiempo para empezar un negocio.\n\nJESÚS: ¿Cuánto scrolleás Instagram por día?\n\nPERSONA A: Ponele una hora.\n\nJESÚS: Esa hora. Esa es tu ventana. En una hora por día podés armar algo que te genere más que tu sueldo.\n\nPERSONA A: ¿Una hora? ¿Y con eso alcanza?\n\nJESÚS: Para armar tu primer producto, sí. Después el producto trabaja por vos.",
+          "timing_seconds": 14,
+          "ipad_directions": [
+            "OVERLAY: \"1 hora de scroll = 0\" vs \"1 hora de producto = $50/día\""
+          ]
+        },
+        {
+          "section_name": "Un fin de semana",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Armar un negocio lleva meses",
+          "script_text": "PERSONA A: ¿Pero cuánto tardo en armar el producto? Porque no tengo meses.\n\nJESÚS: Un fin de semana.\n\nPERSONA A: ¿¡Un fin de semana!?\n\nJESÚS: Le decís a la IA de qué sabés, ella te arma la guía. Sábado la armás, domingo la publicás.\n\nPERSONA A: ¿De qué sé yo? Laburo en un call center.\n\nJESÚS: ¿De qué sabés aparte del call center?\n\nPERSONA A: Excel. Sé bastante de Excel.\n\nJESÚS: Hay gente vendiendo guías de Excel todos los días. A $15.",
+          "timing_seconds": 13,
+          "ipad_directions": [
+            "OVERLAY: Mockup — \"Guía de Excel para Oficinas — $15\" + \"Creado con IA en 1 fin de semana\""
+          ]
+        },
+        {
+          "section_name": "Mientras dormís",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Tengo que estar disponible",
+          "script_text": "PERSONA A: OK, tengo el producto. ¿Y ahora qué? ¿Tengo que estar contestando todo el día?\n\nJESÚS: No. Ponés $2 de publicidad. La gente te escribe por WhatsApp. Vos contestás cuando podés.\n\nPERSONA A: ¿Cuando puedo? ¿A la noche después del laburo?\n\nJESÚS: A la noche, en el almuerzo, cuando quieras. El anuncio trabaja las 24 horas. Vos no.\n\nPERSONA A: O sea que puedo recibir mensajes mientras laburo...\n\nJESÚS: Y contestar cuando salís. El producto no tiene horario.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "OVERLAY: Diagrama — \"8AM: anuncio corre → 12PM: 5 mensajes → 8PM: contestás → ventas\""
+          ]
+        },
+        {
+          "section_name": "CTA",
+          "persuasion_function": "prueba",
+          "micro_belief": "Puedo empezar gratis",
+          "script_text": "PERSONA A: ¿Dónde aprendo todo esto?\n\nJESÚS: Clase gratuita. Link acá abajo. Una hora.\n\nPERSONA A: ¿Gratuita?\n\nJESÚS: Gratuita. La ves después del laburo.\n\nPERSONA A: Dale. Ya me anoto.",
+          "timing_seconds": 6,
+          "ipad_directions": []
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 35,
+        "ingredient_name": "Dolor Económico Concreto"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Antes/Después"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación Complejidad"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T07:03:05.085Z",
+  "status": "draft",
+  "batch": {
+    "id": "3a744f23-03e4-4cb0-b83c-f80c35ef559a",
+    "name": "victor-eraso-v2"
+  },
+  "hookApprovals": {}
+}

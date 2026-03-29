@@ -313,19 +313,41 @@ function generatePackText(selected: GenerationSummary[], ctas: ActiveCTA[]): str
   text += `  ${selected.length} guiones seleccionados\n`;
   text += "=".repeat(60) + "\n\n";
 
+  // Collect CTA blocks: prefer per-generation cta_blocks, fallback to system active CTAs
+  const genBlocksTxt: Array<{ channel: string; channel_label?: string; variant?: string; layers?: Record<string, string>; text?: string }> = [];
+  const seenChTxt = new Set<string>();
+  for (const g of selected) {
+    const blocks = (g.script as any).cta_blocks as typeof genBlocksTxt | undefined;
+    if (blocks && blocks.length > 0) {
+      for (const b of blocks) {
+        const key = `${b.channel}_${b.variant}`;
+        if (!seenChTxt.has(key)) { seenChTxt.add(key); genBlocksTxt.push(b); }
+      }
+    }
+  }
+  const LAYER_LBL: Record<string, string> = {
+    oferta: "OFERTA", prueba: "PRUEBA", riesgo_cero: "RIESGO CERO",
+    urgencia: "URGENCIA", orden_nlp: "ORDEN + NLP",
+    orden_1: "ORDEN 1", orden_2: "CIERRE", cierre: "CIERRE",
+  };
+  const ctaSourceTxt = genBlocksTxt.length > 0 ? genBlocksTxt : ctas.map(c => ({
+    channel: c.channel, channel_label: c.channel, variant: c.variant, layers: c.layers as Record<string, string> | undefined, text: c.text,
+  }));
+
   text += "-".repeat(60) + "\n";
-  text += `  ${ctas.length} CTAs (grabar una vez, se pegan a cualquier cuerpo)\n`;
+  text += `  ${ctaSourceTxt.length} CTAs (grabar una vez, se pegan a cualquier cuerpo)\n`;
   text += "-".repeat(60) + "\n\n";
 
-  for (const cta of ctas) {
-    text += `> ${cta.channel} (Variante ${cta.variant})\n`;
+  for (const cta of ctaSourceTxt) {
+    const label = (cta as any).channel_label || cta.channel || "CTA";
+    text += `> ${label} (Variante ${cta.variant || "?"})\n`;
     if (cta.layers) {
-      text += `  [OFERTA]      "${cta.layers.oferta}"\n`;
-      text += `  [PRUEBA]      "${cta.layers.prueba}"\n`;
-      text += `  [RIESGO CERO] "${cta.layers.riesgo_cero}"\n`;
-      text += `  [URGENCIA]    "${cta.layers.urgencia}"\n`;
-      text += `  [ORDEN + NLP] "${cta.layers.orden_nlp}"\n\n`;
-    } else {
+      for (const [key, val] of Object.entries(cta.layers)) {
+        if (!val) continue;
+        text += `  [${LAYER_LBL[key] || key.toUpperCase()}] "${val}"\n`;
+      }
+      text += "\n";
+    } else if (cta.text) {
       text += `  "${cta.text}"\n\n`;
     }
   }
@@ -424,20 +446,45 @@ function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): str
   const LAYER_LABELS: Record<string, string> = {
     oferta: "OFERTA", prueba: "PRUEBA", riesgo_cero: "RIESGO CERO",
     urgencia: "URGENCIA", orden_nlp: "ORDEN + NLP",
+    orden_1: "ORDEN_1", orden_2: "CIERRE", cierre: "CIERRE",
   };
-  const ctasHTML = ctas.map(c => {
+  // Collect CTA blocks: prefer per-generation cta_blocks, fallback to system active CTAs
+  const genBlocks: Array<{ channel: string; channel_label?: string; variant?: string; layers?: Record<string, string>; text?: string }> = [];
+  const seenChannels = new Set<string>();
+  for (const g of selected) {
+    const blocks = (g.script as any).cta_blocks as typeof genBlocks | undefined;
+    if (blocks && blocks.length > 0) {
+      for (const b of blocks) {
+        const key = `${b.channel}_${b.variant}`;
+        if (!seenChannels.has(key)) { seenChannels.add(key); genBlocks.push(b); }
+      }
+    }
+  }
+  // If no generation-level blocks found, use system active CTAs
+  const ctaSource = genBlocks.length > 0 ? genBlocks.map(b => ({
+    channel: (b.channel_label || b.channel || "CTA").toUpperCase(),
+    variant: b.variant || "?",
+    layers: b.layers,
+    text: b.text || "",
+    ingredients: [] as string[],
+  })) : ctas;
+
+  const ctasHTML = ctaSource.map(c => {
     const layersHTML = c.layers
-      ? Object.entries(c.layers).map(([key, val]) => `
+      ? Object.entries(c.layers).filter(([, v]) => v).map(([key, val]) => `
         <div class="cta-layer">
-          <span class="cta-layer-label">${esc(LAYER_LABELS[key] || key)}</span>
+          <span class="cta-layer-label">${esc(LAYER_LABELS[key] || key.toUpperCase())}</span>
           <span class="cta-layer-text">&ldquo;${esc(val)}&rdquo;</span>
         </div>`).join("")
       : `<div class="cta-text">&ldquo;${esc(c.text)}&rdquo;</div>`;
+    const ingredientLine = c.ingredients && c.ingredients.length > 0
+      ? `<div style="margin-top:6px;font-size:8pt;color:var(--gray-500);">Ingredientes: ${esc(c.ingredients.join(" + "))}</div>`
+      : "";
     return `
     <div class="cta-item">
       <div class="cta-name">${esc(c.channel)} — Variante ${esc(c.variant)}</div>
       ${layersHTML}
-      <div style="margin-top:6px;font-size:8pt;color:var(--gray-500);">Ingredientes: ${esc(c.ingredients.join(" + "))}</div>
+      ${ingredientLine}
     </div>`;
   }).join("");
 
@@ -639,17 +686,50 @@ ${scriptsHTML}
 function generateTeleprompterText(selected: GenerationSummary[]): string {
   let text = "";
 
+  const LAYER_LABELS: Record<string, string> = {
+    oferta: "OFERTA", prueba: "PRUEBA", riesgo_cero: "RIESGO CERO",
+    urgencia: "URGENCIA", orden_nlp: "ORDEN + NLP",
+    orden_1: "ORDEN 1", orden_2: "CIERRE", cierre: "CIERRE",
+  };
+
   // --- CTAs first (record once, reuse for all scripts) ---
   text += `========================================\n`;
   text += `  CTAs — GRABAR PRIMERO\n`;
   text += `  (se usan para todos los guiones)\n`;
   text += `========================================\n\n`;
-  for (let i = 0; i < selected.length; i++) {
-    const gen = selected[i];
-    const cta = gen.script.cta?.verbal_cta;
-    if (cta) {
-      text += `CTA Guion ${i + 1}:\n${cta}\n\n`;
-      text += `--- CORTE ---\n\n`;
+
+  // Collect unique CTA blocks from generations
+  const seenBlocks = new Set<string>();
+  for (const gen of selected) {
+    const blocks = (gen.script as any).cta_blocks as Array<{ channel: string; channel_label?: string; variant?: string; layers?: Record<string, string>; text?: string }> | undefined;
+    if (blocks && blocks.length > 0) {
+      for (const block of blocks) {
+        const blockKey = `${block.channel}_${block.variant}`;
+        if (seenBlocks.has(blockKey)) continue;
+        seenBlocks.add(blockKey);
+
+        const label = block.channel_label || block.channel || "CTA";
+        text += `--- ${label.toUpperCase()} (Variante ${block.variant || "?"}) ---\n\n`;
+
+        if (block.layers) {
+          for (const [key, val] of Object.entries(block.layers)) {
+            if (!val) continue;
+            text += `[${LAYER_LABELS[key] || key.toUpperCase()}]\n`;
+            text += `${val}\n\n`;
+          }
+        } else if (block.text) {
+          text += `${block.text}\n\n`;
+        }
+
+        text += `--- CORTE ---\n\n\n`;
+      }
+    } else if (gen.script.cta?.verbal_cta) {
+      const ctaKey = gen.script.cta.verbal_cta;
+      if (!seenBlocks.has(ctaKey)) {
+        seenBlocks.add(ctaKey);
+        text += `CTA:\n${gen.script.cta.verbal_cta}\n\n`;
+        text += `--- CORTE ---\n\n`;
+      }
     }
   }
 
@@ -663,7 +743,7 @@ function generateTeleprompterText(selected: GenerationSummary[]): string {
     text += `\n\n`;
     text += `----------------------------------------\n`;
     text += `  GUION ${i + 1}: ${gen.title || gen.script.development.framework_used}\n`;
-    if (gen.script.visual_format) text += `  Formato: ${gen.script.visual_format.format_name}\n`;
+    if (gen.script.visual_format) text += `  Formato: ${typeof gen.script.visual_format === 'string' ? gen.script.visual_format : gen.script.visual_format.format_name}\n`;
     text += `----------------------------------------\n\n`;
 
     // All hooks/leads for this script

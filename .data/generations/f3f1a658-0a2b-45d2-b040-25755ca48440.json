@@ -1,0 +1,173 @@
+{
+  "id": "f3f1a658-0a2b-45d2-b040-25755ca48440",
+  "briefId": "9f8a30ac-f0cc-4378-b91d-3c3ddc260539",
+  "title": "Necesitás seguidores y mostrar la cara",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.4_economia_conocimiento",
+    "body_type": "pregunta_respuesta",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "mito: seguidores",
+    "model_sale_type": "eliminacion_barreras",
+    "visual_format": "split_screen",
+    "avatar": "patricia",
+    "awareness_level": 3,
+    "emotional_arc": "revelacion",
+    "tension": "T5",
+    "transition_text": "PERSONA A: ¿Cómo aprendo?",
+    "total_duration_seconds": 51,
+    "word_count": 270,
+    "belief_change": {
+      "old_belief": "Necesitás seguidores y mostrar la cara",
+      "mechanism": "Se vende por WhatsApp con $2, sin redes ni cara",
+      "new_belief": "El producto vende, no los seguidores"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, ¿cuántos seguidores necesito para vender?\nJESÚS: ¿Cuántos pensás?\nPERSONA A: ¿Diez mil?\nJESÚS: Cero.\nPERSONA A: ¿Cero?",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "script_text": "Hay gente vendiendo todos los días sin un solo seguidor. Sin redes. Sin cara. Con WhatsApp y $2.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que más venden no tienen seguidores, no hacen contenido y nunca mostraron su cara.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Te pasaste meses haciendo reels para ganar seguidores que nunca te compraron nada. Los seguidores no venden.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuánto tiempo perdiste creando contenido para ganar likes que no te generaron un peso?\nPERSONA A: Yo quiero vender pero no tengo seguidores.\nJESÚS: Los seguidores no compran.\nPERSONA A: ¿Cómo que no?\nJESÚS: Los que compran son desconocidos que ven tu anuncio y te escriben por WhatsApp. Ponés $2 de publicidad y listo.\nPERSONA A: ¿$2?\nJESÚS: Funciona mejor que 10,000 seguidores que te dan likes y no te compran nada.\nPERSONA A: Pero para el anuncio tengo que grabarme.\nJESÚS: No. Hacés anuncios con imágenes, con texto, con voz sin cara.\nPERSONA A: ¿La gente confía en eso?\nJESÚS: ¿Le ves la cara al que hizo la plantilla de Excel que usás? ¿O al que armó la guía de recetas que tenés en el celular?\nPERSONA A: No...\nJESÚS: El producto habla por vos.\nPERSONA A: ¿No necesito marca personal?\nJESÚS: Para arrancar, no. Primero vendé. La plata no espera a que tengas un logo bonito.\nPERSONA A: Es al revés de lo que me dijeron.\nJESÚS: Es al revés de lo que les conviene decirte a los que venden cursos de marca personal.\nPERSONA A: O sea que no necesito seguidores, no necesito mostrar la cara y no necesito marca personal.\nJESÚS: No necesitás nada de eso.\nPERSONA A: Entonces ya puedo empezar.\nJESÚS: Podés. Pero te falta saber QUÉ vender y CÓMO ponerlo delante de la gente correcta. Eso es lo que te enseño.\nPERSONA A: ¿Y es difícil?\nJESÚS: Una alumna que no tiene Instagram y nunca mostró su cara vende 3, 4 guías por día. Desde el celular. Cero seguidores. Me explico?\nPERSONA A: ¿Cómo aprendo?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "revelacion",
+      "sections": [
+        {
+          "section_name": "Sin seguidores no vendés",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Yo quiero vender pero no tengo seguidores.\nJESÚS: Los seguidores no compran.\nPERSONA A: ¿Cómo que no?\nJESÚS: Los que compran son desconocidos que ven tu anuncio y te escriben por WhatsApp. Ponés $2 de publicidad y listo.\nPERSONA A: ¿$2?\nJESÚS: Funciona mejor que 10,000 seguidores que te dan likes y no te compran nada.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Tengo que mostrar la cara",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pero para el anuncio tengo que grabarme.\nJESÚS: No. Hacés anuncios con imágenes, con texto, con voz sin cara.\nPERSONA A: ¿La gente confía en eso?\nJESÚS: ¿Le ves la cara al que hizo la plantilla de Excel que usás? ¿O al que armó la guía de recetas que tenés en el celular?\nPERSONA A: No...\nJESÚS: El producto habla por vos.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Necesito marca personal",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿No necesito marca personal?\nJESÚS: Para arrancar, no. Primero vendé. La plata no espera a que tengas un logo bonito.\nPERSONA A: Es al revés de lo que me dijeron.\nJESÚS: Es al revés de lo que les conviene decirte a los que venden cursos de marca personal.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: O sea que no necesito seguidores, no necesito mostrar la cara y no necesito marca personal.\nJESÚS: No necesitás nada de eso.\nPERSONA A: Entonces ya puedo empezar.\nJESÚS: Podés. Pero te falta saber QUÉ vender y CÓMO ponerlo delante de la gente correcta. Eso es lo que te enseño.\nPERSONA A: ¿Y es difícil?\nJESÚS: Una alumna que no tiene Instagram y nunca mostró su cara vende 3, 4 guías por día. Desde el celular. Cero seguidores. Me explico?\nPERSONA A: ¿Cómo aprendo?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y es difícil?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Persona Improbable"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-25T23:55:20.691Z",
+  "status": "draft",
+  "batch": {
+    "id": "6fb560e2-77a3-49bc-93d9-fb4356645ae4",
+    "name": "Dolor-centrista — 562 compradores"
+  }
+}

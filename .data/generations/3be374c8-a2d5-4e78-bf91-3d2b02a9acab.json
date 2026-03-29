@@ -1,0 +1,183 @@
+{
+  "id": "3be374c8-a2d5-4e78-bf91-3d2b02a9acab",
+  "briefId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "planId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "title": "Nadie gana plata con IA en serio",
+  "contentType": "shortform",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.6_anti_guru",
+    "body_type": "conversacion_experto_novato",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "Mito IA — prueba por demostración en vivo",
+    "model_sale_type": "transparencia_total",
+    "visual_format": "split_screen_dialogo",
+    "avatar": "martin",
+    "awareness_level": 3,
+    "emotional_arc": "confrontacion_rendicion",
+    "tension": "T8",
+    "transition_text": "Link acá abajo. Nos vemos adentro.",
+    "total_duration_seconds": 60,
+    "word_count": 250,
+    "belief_change": {
+      "old_belief": "Nadie gana plata con IA, es todo humo",
+      "mechanism": "Demostración en vivo del proceso: IA crea producto + $2 publicidad + WhatsApp",
+      "new_belief": "El proceso es real, simple y verificable"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Todos los de IA son humo",
+        "installed_via": "PERSONA A confronta, Jesús no promete — muestra proceso",
+        "persuasion_function": "identificacion",
+        "section_name": "Mostrá pruebas"
+      },
+      {
+        "belief": "El proceso es trucho",
+        "installed_via": "Jesús abre ChatGPT y crea producto en pantalla",
+        "persuasion_function": "quiebre",
+        "section_name": "Demo en vivo"
+      },
+      {
+        "belief": "Pero la venta es lo difícil",
+        "installed_via": "Matemática simple: $2 → 10 msgs → 3 ventas",
+        "persuasion_function": "mecanismo",
+        "section_name": "La matemática"
+      },
+      {
+        "belief": "Hay trampa en el precio",
+        "installed_via": "Transparencia total: gano cuando te va bien",
+        "persuasion_function": "demolicion",
+        "section_name": "La trampa"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "script_text": "PERSONA A: Loco, todos dicen que ganan plata con IA. Mostrámelo. Ahora. Sin chamuyo.\n\nJESÚS: ¿Querés que lo haga en vivo?\n\nPERSONA A: Dale. Hacelo.\n\nJESÚS: Abrí el celular y mirá.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "PERSONA A: Si la IA es tan buena, ¿por qué no me lo mostrás en vez de hablar?\n\nJESÚS: Te lo estoy por mostrar. ¿Tenés 40 segundos?\n\nPERSONA A: Dale. Convenceme.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "script_text": "PERSONA A: Ya me vendieron 3 cosas con IA. Las 3 eran humo. ¿Vos sos distinto?\n\nJESÚS: No te voy a decir nada. Te lo voy a MOSTRAR. Mirá la pantalla.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "script_text": "PERSONA A: ¿Me querés vender algo con IA? Pasaron 17 mil personas por tu taller. ¿Cuántas ganan plata?\n\nJESÚS: No te voy a dar un número. Te voy a mostrar el proceso. Vos decidís.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "provocacion",
+        "script_text": "PERSONA A: Todos prometen plata fácil. Ninguno muestra cómo funciona realmente.\n\nJESÚS: Tenés razón. Por eso te lo muestro ahora. En vivo. Mirá.",
+        "timing_seconds": 6
+      }
+    ],
+    "development": {
+      "framework_used": "conversacion_victor_eraso",
+      "emotional_arc": "confrontacion_rendicion",
+      "sections": [
+        {
+          "section_name": "Demo en vivo",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Todos los de IA son humo",
+          "script_text": "PERSONA A: Dale. Mostrámelo. Sin verso.\n\nJESÚS: Mirá la pantalla. Abro ChatGPT. Le digo: \"Armame una guía de 10 ejercicios para dolor de espalda en oficina.\"\n\nPERSONA A: ...¿eso es todo lo que le decís?\n\nJESÚS: Eso. Mirá lo que devuelve.\n\nPERSONA A: Pará... ¿ya está la guía?\n\nJESÚS: En 30 segundos. Título, contenido, estructura. Todo.",
+          "timing_seconds": 14,
+          "ipad_directions": [
+            "OVERLAY: Screen recording de ChatGPT generando la guía en tiempo real"
+          ]
+        },
+        {
+          "section_name": "La matemática",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Pero la venta es lo difícil",
+          "script_text": "PERSONA A: OK, la guía existe. ¿Y cómo la vendo si no tengo seguidores ni nada?\n\nJESÚS: Ponés $2 de publicidad. Mirá.\n\nPERSONA A: ¿$2?\n\nJESÚS: $2. Te llegan 10 mensajes de gente interesada por WhatsApp. De esos 10, 3 compran. A $15.\n\nPERSONA A: $45 con $2...\n\nJESÚS: $43 de ganancia. Repetí eso todos los días.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "OVERLAY: Calculadora en pantalla — \"$2 → 10 msgs → 3 ventas × $15 = $45 − $2 = $43\""
+          ]
+        },
+        {
+          "section_name": "El proceso completo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Suena bien pero es complicado",
+          "script_text": "PERSONA A: Pará pará. O sea: la IA arma el producto, yo pongo $2, la gente me escribe por WhatsApp y yo les mando un link. ¿Eso es todo?\n\nJESÚS: Eso es todo. Lo más difícil es elegir de qué hacerlo. El resto lo hace la IA y la publicidad.\n\nPERSONA A: ¿Y eso se aprende?\n\nJESÚS: En 3 días. Conmigo. En vivo.\n\nPERSONA A: ¿3 días?\n\nJESÚS: 3 días. Salís con el producto creado y el anuncio puesto.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "OVERLAY: Diagrama — \"Día 1: Elegir producto → Día 2: Crearlo con IA → Día 3: Poner anuncio y vender\""
+          ]
+        },
+        {
+          "section_name": "La trampa",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Hay trampa en el precio",
+          "script_text": "PERSONA A: ¿Cuánto me sale?\n\nJESÚS: $5.\n\nPERSONA A: ¿$5? ¿Cuál es la trampa?\n\nJESÚS: No gano con los $5. Gano cuando te va bien y querés seguir.\n\nPERSONA A: Eso es lo más derecho que me dijeron.\n\nJESÚS: Porque no vendo humo. Vendo un proceso. Y te lo acabo de mostrar.",
+          "timing_seconds": 8,
+          "ipad_directions": [
+            "\"$5\" grande en pantalla"
+          ]
+        },
+        {
+          "section_name": "CTA",
+          "persuasion_function": "prueba",
+          "micro_belief": "Puedo probarlo sin riesgo",
+          "script_text": "PERSONA A: ¿Dónde me meto?\n\nJESÚS: Link acá abajo. 3 días. Si es humo, el día 1 te diste cuenta.\n\nPERSONA A: $5. Si me cagan pierdo un café. Ya entro.",
+          "timing_seconds": 5,
+          "ipad_directions": []
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "Declaración Contraintuitiva"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe de Creencia"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Radical"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado Específico"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T07:03:05.085Z",
+  "status": "draft",
+  "batch": {
+    "id": "3a744f23-03e4-4cb0-b83c-f80c35ef559a",
+    "name": "victor-eraso-v2"
+  },
+  "hookApprovals": {}
+}

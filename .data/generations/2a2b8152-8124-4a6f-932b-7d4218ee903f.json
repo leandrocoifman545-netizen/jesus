@@ -1,0 +1,173 @@
+{
+  "id": "2a2b8152-8124-4a6f-932b-7d4218ee903f",
+  "briefId": "f066d519-33fd-44b7-b268-a389977818f9",
+  "title": "Soy muy grande para esto",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.5_edad_ventaja",
+    "body_type": "pregunta_respuesta",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "mito: edad",
+    "model_sale_type": "prueba_diversidad",
+    "visual_format": "split_screen",
+    "avatar": "roberto",
+    "awareness_level": 3,
+    "emotional_arc": "analogia",
+    "tension": "T12",
+    "transition_text": "PERSONA A: ¿Cómo arranco?",
+    "total_duration_seconds": 51,
+    "word_count": 256,
+    "belief_change": {
+      "old_belief": "Soy muy grande para la tecnología",
+      "mechanism": "WhatsApp + experiencia = ventaja",
+      "new_belief": "Mi edad es mi mayor activo"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, tengo 62 años. Esto no es para mí.\nJESÚS: ¿Sabés mandar un audio de WhatsApp?\nPERSONA A: Sí.\nJESÚS: Entonces es para vos. Te explico.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "Los mayores de 50 son los que mejor les va. No a pesar de su edad. POR su edad.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "Le mandás un audio a tu hija: \"comprá pan y leche.\" Le diste una instrucción. Con la IA es lo mismo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Tenés 30 años de experiencia. Un pibe de 20 no tiene nada de eso. Pero él vende y vos no. La diferencia no es la edad.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "script_text": "\"Soy total analfabeta de computación.\" Eso me dijo una alumna. Hoy vende todos los días.\nPERSONA A: Jesús, yo escucho \"inteligencia artificial\" y pienso en robots. No entiendo nada.\nJESÚS: ¿Usás WhatsApp?\nPERSONA A: Todos los días.\nJESÚS: Si usás WhatsApp ya sabés todo lo que necesitás.\nPERSONA A: No me parece lo mismo.\nJESÚS: Le mandás un audio a tu hija y le decís \"comprá pan y leche.\" Le diste una instrucción. Con la IA es exactamente lo mismo.\nPERSONA A: Pero yo no sé ni prender la computadora.\nJESÚS: No la necesitás. Todo desde el celular.\nPERSONA A: ¿Todo?\nJESÚS: El producto, el anuncio, las ventas. Todo WhatsApp. Nada de computadora.\nPERSONA A: Pero a mi edad... ¿no es tarde?\nJESÚS: Al revés. Tu edad es tu mayor ventaja.\nPERSONA A: ¿Ventaja?\nJESÚS: 30 años de experiencia en algo. Contabilidad, cocina, crianza. Eso es EXACTAMENTE lo que se vende como producto digital. Un pibe de 20 no tiene eso.\nPERSONA A: Nunca lo pensé.\nJESÚS: Porque nadie te lo dijo.\nPERSONA A: O sea que no necesito computadora, no necesito saber de tecnología y mi edad es una ventaja.\nJESÚS: Exacto.\nPERSONA A: Suena bien.\nJESÚS: Pero falta que lo veas funcionando. Una señora me dijo textual \"soy total analfabeta de computación.\" Hoy vende desde el celular todos los días. La diferencia no fue la capacidad. Fueron las herramientas. Y esas herramientas te las enseño.\nPERSONA A: ¿Desde cero absoluto?\nJESÚS: Desde cero absoluto. Paso a paso. Como si nunca hubieras tocado nada.\nPERSONA A: ¿Cómo arranco?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "analogia",
+      "sections": [
+        {
+          "section_name": "No entiendo la tecnología",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Jesús, yo escucho \"inteligencia artificial\" y pienso en robots. No entiendo nada.\nJESÚS: ¿Usás WhatsApp?\nPERSONA A: Todos los días.\nJESÚS: Si usás WhatsApp ya sabés todo lo que necesitás.\nPERSONA A: No me parece lo mismo.\nJESÚS: Le mandás un audio a tu hija y le decís \"comprá pan y leche.\" Le diste una instrucción. Con la IA es exactamente lo mismo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Necesito computadora",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pero yo no sé ni prender la computadora.\nJESÚS: No la necesitás. Todo desde el celular.\nPERSONA A: ¿Todo?\nJESÚS: El producto, el anuncio, las ventas. Todo WhatsApp. Nada de computadora.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Mi edad es un problema",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pero a mi edad... ¿no es tarde?\nJESÚS: Al revés. Tu edad es tu mayor ventaja.\nPERSONA A: ¿Ventaja?\nJESÚS: 30 años de experiencia en algo. Contabilidad, cocina, crianza. Eso es EXACTAMENTE lo que se vende como producto digital. Un pibe de 20 no tiene eso.\nPERSONA A: Nunca lo pensé.\nJESÚS: Porque nadie te lo dijo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: O sea que no necesito computadora, no necesito saber de tecnología y mi edad es una ventaja.\nJESÚS: Exacto.\nPERSONA A: Suena bien.\nJESÚS: Pero falta que lo veas funcionando. Una señora me dijo textual \"soy total analfabeta de computación.\" Hoy vende desde el celular todos los días. La diferencia no fue la capacidad. Fueron las herramientas. Y esas herramientas te las enseño.\nPERSONA A: ¿Desde cero absoluto?\nJESÚS: Desde cero absoluto. Paso a paso. Como si nunca hubieras tocado nada.\nPERSONA A: ¿Cómo arranco?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Desde cero absoluto?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Persona Improbable"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-25T23:56:20.691Z",
+  "status": "draft",
+  "batch": {
+    "id": "6fb560e2-77a3-49bc-93d9-fb4356645ae4",
+    "name": "Dolor-centrista — 562 compradores"
+  }
+}

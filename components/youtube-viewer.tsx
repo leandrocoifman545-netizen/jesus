@@ -27,6 +27,14 @@ interface WinnerMetrics {
   recordedAt?: string;
 }
 
+interface CTABlock {
+  channel: string;
+  channel_label?: string;
+  variant?: string;
+  layers?: Record<string, string>;
+  text?: string;
+}
+
 interface Generation {
   id: string;
   title?: string;
@@ -45,8 +53,15 @@ interface Generation {
       emotional_arc: string;
       sections: Array<{ section_name: string; script_text: string; timing_seconds: number }>;
     };
+    cta_blocks?: CTABlock[];
   };
 }
+
+const CTA_LAYER_LABELS: Record<string, string> = {
+  oferta: "OFERTA", prueba: "PRUEBA", riesgo_cero: "RIESGO CERO",
+  urgencia: "URGENCIA", orden_nlp: "ORDEN + NLP",
+  orden_1: "ORDEN 1", orden_2: "CIERRE", cierre: "CIERRE",
+};
 
 interface Props {
   generation: Generation;
@@ -187,6 +202,13 @@ export default function YouTubeViewer({ generation }: Props) {
     if (data.longform) setLf(data.longform);
   }, [generationId]);
 
+  const handleSaveTransition = useCallback(async (fromChapter: number, value: string) => {
+    if (!lf) return;
+    const idx = lf.transitions.findIndex((t) => t.from_chapter === fromChapter);
+    if (idx === -1) return;
+    await handleEdit(`transitions.${idx}.transition_text`, value);
+  }, [lf, handleEdit]);
+
   // --- Title ---
   async function saveTitle() {
     if (titleDraft === title) { setEditingTitle(false); return; }
@@ -275,109 +297,437 @@ export default function YouTubeViewer({ generation }: Props) {
 
   // --- Download TXT ---
   function downloadTXT() {
-    if (!lf) return;
-    let text = `${lf.title}\n${"=".repeat(60)}\n\n`;
-    text += `Hook (${lf.hook.estimated_duration_seconds}s)\n${"-".repeat(40)}\n${lf.hook.script_text}\n\n`;
-    for (const ch of lf.chapters) {
-      text += `Cap ${ch.number}: ${ch.title} (${Math.round(ch.estimated_duration_seconds / 60)} min)\n${"-".repeat(40)}\n${ch.content}\n`;
-      if (ch.key_points.length > 0) {
-        text += `\nPuntos clave:\n${ch.key_points.map((p) => `  • ${p}`).join("\n")}\n`;
+    let text = "";
+    if (lf) {
+      text += `${lf.title}\n${"=".repeat(60)}\n\n`;
+      text += `Hook (${lf.hook.estimated_duration_seconds}s)\n${"-".repeat(40)}\n${lf.hook.script_text}\n\n`;
+      for (const ch of lf.chapters) {
+        text += `Cap ${ch.number}: ${ch.title} (${Math.round(ch.estimated_duration_seconds / 60)} min)\n${"-".repeat(40)}\n${ch.content}\n`;
+        if (ch.key_points.length > 0) {
+          text += `\nPuntos clave:\n${ch.key_points.map((p) => `  • ${p}`).join("\n")}\n`;
+        }
+        if (ch.visual_notes) text += `\n[Visual] ${ch.visual_notes}\n`;
+        const transition = lf.transitions.find((t) => t.from_chapter === ch.number);
+        if (transition) text += `\n→ ${transition.transition_text}\n`;
+        text += "\n";
       }
-      if (ch.visual_notes) text += `\n[Visual] ${ch.visual_notes}\n`;
-      const transition = lf.transitions.find((t) => t.from_chapter === ch.number);
-      if (transition) text += `\n→ ${transition.transition_text}\n`;
-      text += "\n";
+      text += `Conclusión (${Math.round(lf.conclusion.estimated_duration_seconds / 60)} min)\n${"-".repeat(40)}\n${lf.conclusion.content}\n\n`;
+      text += `CTA\n${"-".repeat(40)}\n${lf.cta.primary_text}\n`;
+      if (lf.cta.midroll_text) text += `Mid-roll: ${lf.cta.midroll_text}\n`;
+      if (lf.cta.end_screen_notes) text += `End screen: ${lf.cta.end_screen_notes}\n`;
+    } else {
+      // Shortform fallback
+      const s = generation.script;
+      text += `${generation.title || "Guión"}\n${"=".repeat(60)}\n\n`;
+      text += `LEADS\n${"-".repeat(40)}\n\n`;
+      for (const hook of s.hooks) {
+        text += `${hook.script_text}\n\n--- CORTE ---\n\n`;
+      }
+      text += `CUERPO\n${"-".repeat(40)}\n\n`;
+      for (const section of s.development.sections) {
+        text += `[${section.section_name}]\n${section.script_text}\n\n`;
+      }
     }
-    text += `Conclusión (${Math.round(lf.conclusion.estimated_duration_seconds / 60)} min)\n${"-".repeat(40)}\n${lf.conclusion.content}\n\n`;
-    text += `CTA\n${"-".repeat(40)}\n${lf.cta.primary_text}\n`;
-    if (lf.cta.midroll_text) text += `Mid-roll: ${lf.cta.midroll_text}\n`;
-    if (lf.cta.end_screen_notes) text += `End screen: ${lf.cta.end_screen_notes}\n`;
-    text += `\nSEO\n${"-".repeat(40)}\nTítulo: ${lf.seo.title}\nDescripción: ${lf.seo.description}\nTags: ${lf.seo.tags.join(", ")}\nThumbnail: ${lf.seo.thumbnail_idea}\n`;
-    if (lf.production_notes) text += `\nNotas de producción\n${"-".repeat(40)}\n${lf.production_notes}\n`;
+    // CTA Blocks (if present)
+    const blocks = generation.script.cta_blocks;
+    if (blocks && blocks.length > 0) {
+      text += `\n${"=".repeat(40)}\nBLOQUES CTA\n${"=".repeat(40)}\n\n`;
+      for (const block of blocks) {
+        const label = block.channel_label || block.channel || "CTA";
+        text += `--- ${label.toUpperCase()} (Variante ${block.variant || "?"}) ---\n\n`;
+        if (block.layers) {
+          for (const [key, val] of Object.entries(block.layers)) {
+            if (!val) continue;
+            text += `[${CTA_LAYER_LABELS[key] || key.toUpperCase()}]\n${val}\n\n`;
+          }
+        } else if (block.text) {
+          text += `${block.text}\n\n`;
+        }
+        text += `--- CORTE ---\n\n`;
+      }
+    }
+    if (lf) {
+      text += `\nSEO\n${"-".repeat(40)}\nTítulo: ${lf.seo.title}\nDescripción: ${lf.seo.description}\nTags: ${lf.seo.tags.join(", ")}\nThumbnail: ${lf.seo.thumbnail_idea}\n`;
+      if (lf.production_notes) text += `\nNotas de producción\n${"-".repeat(40)}\n${lf.production_notes}\n`;
+    }
 
+    const fileName = (lf?.title || generation.title || "guion").replace(/[^a-zA-Z0-9áéíóúñ ]/g, "").slice(0, 50);
     const blob = new Blob([text], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `${lf.title.replace(/[^a-zA-Z0-9áéíóúñ ]/g, "").slice(0, 50)}.txt`;
+    a.download = `${fileName}.txt`;
     a.click();
     URL.revokeObjectURL(url);
   }
 
   // --- Download PDF (HTML-based) ---
   function downloadPDF() {
-    if (!lf) return;
-    const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
-
-    let chaptersHTML = "";
-    for (const ch of lf.chapters) {
-      chaptersHTML += `
-        <div class="chapter">
-          <h2>Cap ${ch.number}: ${esc(ch.title)} <span class="meta">(${Math.round(ch.estimated_duration_seconds / 60)} min)</span></h2>
-          <p>${esc(ch.content)}</p>
-          ${ch.key_points.length > 0 ? `<div class="points"><strong>Puntos clave:</strong><ul>${ch.key_points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>` : ""}
-          ${ch.visual_notes ? `<p class="visual">[Visual] ${esc(ch.visual_notes)}</p>` : ""}
-        </div>`;
-      const transition = lf.transitions.find((t) => t.from_chapter === ch.number);
-      if (transition) {
-        chaptersHTML += `<p class="transition">→ ${esc(transition.transition_text)}</p>`;
-      }
-    }
-
-    const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>${esc(lf.title)}</title>
-<style>
-  body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:700px;margin:40px auto;padding:0 20px;color:#1a1a1a;line-height:1.6}
-  h1{font-size:24px;border-bottom:2px solid #e53e3e;padding-bottom:8px;margin-bottom:4px}
-  h2{font-size:16px;margin-top:24px;color:#333}
-  .meta{font-weight:normal;color:#888;font-size:13px}
-  .badge{display:inline-block;background:#fef2f2;color:#e53e3e;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600;margin-right:8px}
-  .stats{color:#888;font-size:13px;margin-bottom:24px}
-  .hook{background:#fef2f2;border-left:3px solid #e53e3e;padding:12px 16px;margin:16px 0;border-radius:0 8px 8px 0}
-  .hook h3{color:#e53e3e;font-size:13px;text-transform:uppercase;margin:0 0 8px}
-  .chapter{margin:16px 0;padding:12px 16px;background:#f9fafb;border-radius:8px}
-  .chapter h2{margin-top:0}
-  .points{margin-top:8px;font-size:13px;color:#555}
-  .points ul{margin:4px 0;padding-left:20px}
-  .visual{font-size:12px;color:#888;margin-top:8px;font-style:italic}
-  .transition{font-size:13px;color:#888;font-style:italic;padding:4px 16px;border-left:2px solid #ddd;margin:8px 0}
-  .conclusion{border-left:3px solid #666;padding:12px 16px;margin:16px 0}
-  .cta{background:#fef2f2;padding:12px 16px;border-radius:8px;margin:16px 0}
-  .cta h3{color:#e53e3e;font-size:13px;text-transform:uppercase;margin:0 0 8px}
-  .seo{background:#f0f9ff;padding:12px 16px;border-radius:8px;margin:16px 0}
-  .seo h3{color:#2563eb;font-size:13px;text-transform:uppercase;margin:0 0 8px}
-  .seo .field{margin-bottom:8px}
-  .seo .label{font-size:12px;color:#888;margin-bottom:2px}
-  .tag{display:inline-block;background:#e0e7ff;color:#3b54a4;padding:1px 8px;border-radius:4px;font-size:11px;margin:2px}
-  .print-btn{position:fixed;bottom:20px;right:20px;background:#e53e3e;color:white;border:none;padding:10px 20px;border-radius:12px;cursor:pointer;font-size:14px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.15)}
-  @media print{.print-btn{display:none}}
+    if (!lf) {
+      // Shortform: generate simple HTML PDF
+      const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+      const s = generation.script;
+      const titleText = generation.title || "Guión";
+      let html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>${esc(titleText)}</title>
+<style>body{font-family:system-ui,sans-serif;max-width:700px;margin:40px auto;padding:0 20px;color:#1a1a1a;line-height:1.7}
+h1{font-size:24pt;margin-bottom:8px}h2{font-size:14pt;color:#7c3aed;text-transform:uppercase;letter-spacing:0.1em;margin-top:32px}
+.section{background:#f9fafb;border-radius:12px;padding:20px;margin:12px 0;border:1px solid #e5e7eb}
+.section-name{font-size:9pt;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#71717a;margin-bottom:8px}
+.lead{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:20px;margin:12px 0}
+.cta-block{border-left:3px solid #a855f7;padding:12px 16px;margin:12px 0;background:#faf5ff;border-radius:8px}
+.cta-label{font-size:8pt;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#a855f7;margin-bottom:6px}
+.layer-label{font-size:8pt;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#6b7280;margin-bottom:2px;margin-top:10px}
 </style></head><body>
-  <h1>${esc(lf.title)}</h1>
-  <div class="stats">
-    <span class="badge">${lf.output_mode === "structure" ? "Estructura" : "Guión completo"}</span>
-    <span class="badge" style="background:#f0fdf4;color:#16a34a">${lf.framework}</span>
-    ${Math.round(lf.total_duration_seconds / 60)} min · ~${lf.word_count} palabras · ${lf.chapters.length} capítulos
-  </div>
-  <p style="font-style:italic;color:#666;font-size:14px">${esc(lf.emotional_arc)}</p>
-  <div class="hook"><h3>Hook — ${lf.hook.estimated_duration_seconds}s</h3><p>${esc(lf.hook.script_text)}</p>${lf.hook.visual_notes ? `<p class="visual">[Visual] ${esc(lf.hook.visual_notes)}</p>` : ""}</div>
-  ${chaptersHTML}
-  <div class="conclusion"><h2>Conclusión <span class="meta">(${Math.round(lf.conclusion.estimated_duration_seconds / 60)} min)</span></h2><p>${esc(lf.conclusion.content)}</p></div>
-  <div class="cta"><h3>CTA</h3><p><strong>${esc(lf.cta.primary_text)}</strong></p>${lf.cta.midroll_text ? `<p style="font-size:13px;color:#666">Mid-roll: ${esc(lf.cta.midroll_text)}</p>` : ""}${lf.cta.end_screen_notes ? `<p style="font-size:13px;color:#666">End screen: ${esc(lf.cta.end_screen_notes)}</p>` : ""}</div>
-  <div class="seo"><h3>SEO</h3>
-    <div class="field"><div class="label">Título (${lf.seo.title.length}/60)</div><strong>${esc(lf.seo.title)}</strong></div>
-    <div class="field"><div class="label">Descripción</div><p style="font-size:13px">${esc(lf.seo.description)}</p></div>
-    <div class="field"><div class="label">Tags</div><div>${lf.seo.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join(" ")}</div></div>
-    <div class="field"><div class="label">Thumbnail</div><p style="font-size:13px">${esc(lf.seo.thumbnail_idea)}</p></div>
-  </div>
-  ${lf.production_notes ? `<div style="margin-top:16px;padding:12px 16px;background:#f5f5f4;border-radius:8px"><h3 style="font-size:13px;text-transform:uppercase;color:#888;margin:0 0 8px">Notas de producción</h3><p style="font-size:13px;color:#555">${esc(lf.production_notes)}</p></div>` : ""}
-  <button class="print-btn" onclick="window.print()">Guardar como PDF</button>
-</body></html>`;
+<h1>${esc(titleText)}</h1>
+<p style="color:#71717a;font-size:10pt">${s.total_duration_seconds}s | ~${s.word_count} palabras | ${s.development.framework_used}</p>
+<h2>Leads</h2>`;
+      for (let i = 0; i < s.hooks.length; i++) {
+        html += `<div class="lead"><strong>Lead ${i + 1}</strong><br>${esc(s.hooks[i].script_text)}</div>`;
+      }
+      html += `<h2>Cuerpo</h2>`;
+      for (const sec of s.development.sections) {
+        html += `<div class="section"><div class="section-name">${esc(sec.section_name)}</div>${esc(sec.script_text)}</div>`;
+      }
+      const blocks = s.cta_blocks;
+      if (blocks && blocks.length > 0) {
+        html += `<h2>Bloques CTA</h2>`;
+        for (const b of blocks) {
+          const label = (b.channel_label || b.channel || "CTA").toUpperCase();
+          html += `<div class="cta-block"><div class="cta-label">${esc(label)} — Variante ${b.variant || "?"}</div>`;
+          if (b.layers) {
+            for (const [key, val] of Object.entries(b.layers)) {
+              if (!val) continue;
+              html += `<div class="layer-label">${CTA_LAYER_LABELS[key] || key.toUpperCase()}</div><div>${esc(val)}</div>`;
+            }
+          } else if (b.text) {
+            html += `<div>${esc(b.text)}</div>`;
+          }
+          html += `</div>`;
+        }
+      }
+      html += `<script>window.onload=function(){setTimeout(function(){window.print()},400)}<\/script></body></html>`;
+      const blob = new Blob([html], { type: "text/html;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      window.open(url, "_blank");
+      toast("PDF listo — guardalo como PDF");
+      return;
+    }
+    const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+    const totalMin = Math.round(lf.total_duration_seconds / 60);
+    const date = new Date().toLocaleDateString("es-AR", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
 
-    const win = window.open("", "_blank");
-    if (win) { win.document.write(html); win.document.close(); }
+    // --- Metadata badges ---
+    const metaItems: string[] = [];
+    if (lf.avatar) metaItems.push(`<span class="meta-item"><span class="meta-label">Avatar:</span> ${esc(lf.avatar)}</span>`);
+    if (lf.awareness_level) metaItems.push(`<span class="meta-item"><span class="meta-label">Schwartz:</span> Nivel ${lf.awareness_level}</span>`);
+    if (lf.angle_family) metaItems.push(`<span class="meta-item"><span class="meta-label">Ángulo:</span> ${esc(lf.angle_family)}</span>`);
+    if (lf.niche) metaItems.push(`<span class="meta-item"><span class="meta-label">Nicho:</span> ${esc(lf.niche)}</span>`);
+    if (lf.tension) metaItems.push(`<span class="meta-item"><span class="meta-label">Tensión:</span> ${esc(lf.tension)}</span>`);
+
+    // --- TOC ---
+    const tocHTML = lf.chapters.map((ch, i) => `
+      <div class="toc-item">
+        <span class="toc-num">${ch.number}</span>
+        <span class="toc-title">${esc(ch.title)}</span>
+        <span class="toc-duration">${Math.round(ch.estimated_duration_seconds / 60)} min</span>
+      </div>`).join("");
+
+    // --- Chapters ---
+    const chaptersHTML = lf.chapters.map((ch) => {
+      const transition = lf.transitions.find((t) => t.from_chapter === ch.number);
+      return `
+      <div class="chapter-page page-break">
+        <div class="chapter-header">
+          <div class="chapter-num">Capítulo ${ch.number} de ${lf.chapters.length}</div>
+          <div class="chapter-title">${esc(ch.title)}</div>
+          <div class="chapter-duration">${Math.round(ch.estimated_duration_seconds / 60)} min · ~${Math.round(ch.estimated_duration_seconds * 2.5)} palabras</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-text">${esc(ch.content)}</div>
+          ${ch.key_points.length > 0 ? `
+          <div class="key-points no-break">
+            <div class="key-points-label">Puntos clave</div>
+            <ul>${ch.key_points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
+          </div>` : ""}
+          ${ch.visual_notes ? `<div class="visual-note no-break"><span class="visual-icon">🎬</span> ${esc(ch.visual_notes)}</div>` : ""}
+        </div>
+        ${transition ? `
+        <div class="transition no-break">
+          <div class="transition-label">Transición → Cap ${transition.to_chapter}</div>
+          <div class="transition-text">&ldquo;${esc(transition.transition_text)}&rdquo;</div>
+        </div>` : ""}
+      </div>`;
+    }).join("");
+
+    const html = `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>${esc(lf.title)}</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  :root {
+    --red: #dc2626; --red-light: #fef2f2; --red-dark: #991b1b;
+    --blue: #2563eb; --blue-light: #eff6ff;
+    --purple: #7c3aed; --purple-light: #ede9fe;
+    --green: #059669; --green-light: #ecfdf5;
+    --amber: #d97706; --amber-light: #fffbeb;
+    --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb;
+    --gray-500: #6b7280; --gray-700: #374151; --gray-900: #111827;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--gray-900); background: white; line-height: 1.6; font-size: 11pt; }
+  @media print {
+    body { font-size: 10pt; }
+    .page-break { page-break-before: always; }
+    .no-break { page-break-inside: avoid; }
+    @page { margin: 1.5cm 2cm; size: A4; }
+    .cover { height: 100vh; }
+    .print-hint { display: none; }
+  }
+  @media screen {
+    body { max-width: 210mm; margin: 0 auto; background: #f3f4f6; }
+    .page { background: white; margin: 20px auto; padding: 40px 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .chapter-page { background: white; margin: 20px auto; padding: 40px 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .cover { min-height: 100vh; }
+  }
+  .print-hint {
+    position: fixed; top: 16px; right: 16px; background: var(--red); color: white;
+    padding: 12px 20px; border-radius: 12px; font-size: 10pt; font-weight: 600;
+    cursor: pointer; z-index: 100; box-shadow: 0 4px 12px rgba(220,38,38,0.4);
+  }
+  .print-hint:hover { background: var(--red-dark); }
+
+  /* Cover */
+  .cover { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px 40px; }
+  .cover-icon { width: 80px; height: 80px; background: var(--red); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 40px; font-size: 36px; color: white; }
+  .cover h1 { font-size: 28pt; font-weight: 800; color: var(--gray-900); letter-spacing: -0.02em; margin-bottom: 8px; max-width: 500px; }
+  .cover .subtitle { font-size: 14pt; color: var(--gray-500); font-weight: 400; margin-bottom: 48px; }
+  .cover-divider { width: 60px; height: 4px; background: var(--red); border-radius: 2px; margin: 40px 0; }
+  .cover-meta { display: flex; gap: 32px; color: var(--gray-500); font-size: 10pt; }
+  .cover-badge { display: inline-block; background: var(--red-light); color: var(--red); padding: 4px 16px; border-radius: 20px; font-size: 11pt; font-weight: 600; margin-bottom: 16px; }
+
+  /* TOC */
+  .toc h2 { font-size: 18pt; font-weight: 700; margin-bottom: 24px; }
+  .toc-item { display: flex; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--gray-100); }
+  .toc-num { font-weight: 700; color: var(--red); min-width: 28px; font-size: 12pt; }
+  .toc-title { font-weight: 500; flex: 1; }
+  .toc-duration { color: var(--gray-500); font-size: 9pt; }
+
+  /* Metadata */
+  .meta-section { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
+  .meta-section h3 { font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-500); margin-bottom: 12px; }
+  .meta-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+  .meta-item { display: flex; align-items: center; gap: 4px; font-size: 9.5pt; }
+  .meta-label { font-weight: 600; color: var(--gray-700); }
+  .emotional-arc { font-style: italic; color: var(--gray-500); font-size: 10pt; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--gray-200); }
+
+  /* Hook */
+  .hook-section { background: var(--red-light); border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid var(--red); }
+  .hook-label { font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--red); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .hook-duration { font-weight: 400; color: var(--red-dark); opacity: 0.7; }
+  .hook-text { font-size: 11pt; line-height: 1.7; color: var(--gray-900); }
+  .hook-visual { font-size: 9pt; color: var(--gray-500); font-style: italic; margin-top: 12px; }
+
+  /* Chapters */
+  .chapter-header { background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%); color: white; padding: 28px 32px; border-radius: 12px 12px 0 0; }
+  .chapter-num { font-size: 9pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-bottom: 6px; }
+  .chapter-title { font-size: 18pt; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 8px; }
+  .chapter-duration { font-size: 9pt; opacity: 0.85; }
+  .chapter-body { background: white; border: 1px solid var(--gray-200); border-top: none; padding: 24px 32px; border-radius: 0 0 12px 12px; margin-bottom: 16px; }
+  .chapter-text { font-size: 11pt; line-height: 1.8; color: var(--gray-900); }
+  .key-points { background: var(--gray-50); border-radius: 8px; padding: 16px 20px; margin-top: 20px; }
+  .key-points-label { font-size: 8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-500); margin-bottom: 8px; }
+  .key-points ul { margin: 0; padding-left: 20px; font-size: 9.5pt; color: var(--gray-700); }
+  .key-points li { margin-bottom: 4px; }
+  .visual-note { font-size: 9pt; color: var(--gray-500); font-style: italic; margin-top: 16px; padding: 10px 14px; background: var(--amber-light); border-radius: 6px; }
+  .visual-icon { font-style: normal; }
+
+  /* Transitions */
+  .transition { margin: 0 0 24px; padding: 14px 18px; background: var(--amber-light); border: 1px solid #fde68a; border-left: 3px solid var(--amber); border-radius: 8px; }
+  .transition-label { font-size: 8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--amber); margin-bottom: 4px; }
+  .transition-text { font-size: 10pt; line-height: 1.6; color: var(--gray-700); }
+
+  /* Conclusion */
+  .conclusion-section { border-left: 4px solid var(--gray-700); padding: 24px; margin: 24px 0; background: var(--gray-50); border-radius: 0 12px 12px 0; }
+  .conclusion-label { font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-700); margin-bottom: 12px; }
+  .conclusion-text { font-size: 11pt; line-height: 1.7; }
+
+  /* CTA */
+  .cta-section { background: var(--red-light); border-radius: 12px; padding: 24px; margin: 24px 0; border: 1px solid #fecaca; }
+  .cta-label { font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--red); margin-bottom: 12px; }
+  .cta-text { font-size: 11pt; line-height: 1.7; font-weight: 500; }
+  .cta-sub { font-size: 9.5pt; color: var(--gray-500); margin-top: 8px; }
+
+  /* SEO */
+  .seo-section { background: var(--blue-light); border-radius: 12px; padding: 24px; margin: 24px 0; border: 1px solid #bfdbfe; }
+  .seo-label { font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue); margin-bottom: 16px; }
+  .seo-field { margin-bottom: 14px; }
+  .seo-field:last-child { margin-bottom: 0; }
+  .seo-field-label { font-size: 8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--blue); opacity: 0.7; margin-bottom: 4px; }
+  .seo-field-value { font-size: 10pt; color: var(--gray-700); }
+  .seo-field-value strong { color: var(--gray-900); font-size: 11pt; }
+  .tag { display: inline-block; background: #dbeafe; color: #1e40af; padding: 2px 10px; border-radius: 6px; font-size: 9pt; margin: 2px; font-weight: 500; }
+
+  /* Production notes */
+  .notes-section { background: var(--purple-light); border-radius: 12px; padding: 24px; margin: 24px 0; border: 1px solid #c4b5fd; }
+  .notes-label { font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 12px; }
+  .notes-text { font-size: 9.5pt; line-height: 1.6; color: var(--gray-700); }
+
+  /* Footer */
+  .footer { text-align: center; padding: 40px; color: var(--gray-500); font-size: 9pt; }
+</style>
+</head>
+<body>
+
+<button class="print-hint" onclick="window.print()">Guardar como PDF</button>
+
+<!-- COVER -->
+<div class="page cover">
+  <div class="cover-icon">▶</div>
+  <div class="cover-badge">${esc(lf.framework)}</div>
+  <h1>${esc(lf.title)}</h1>
+  <p class="subtitle">${esc(date)}</p>
+  <div class="cover-divider"></div>
+  <div class="cover-meta">
+    <span><strong>${totalMin}</strong>&nbsp;min</span>
+    <span><strong>~${lf.word_count}</strong>&nbsp;palabras</span>
+    <span><strong>${lf.chapters.length}</strong>&nbsp;capítulos</span>
+  </div>
+</div>
+
+<!-- TOC + META -->
+<div class="page toc page-break">
+  <h2>Estructura del video</h2>
+  <div class="toc-item" style="border-bottom:2px solid var(--red-light);">
+    <span class="toc-num" style="color:var(--red);">▶</span>
+    <span class="toc-title" style="font-weight:600;">Hook</span>
+    <span class="toc-duration">${lf.hook.estimated_duration_seconds}s</span>
+  </div>
+  ${tocHTML}
+  <div class="toc-item" style="border-bottom:none;">
+    <span class="toc-num" style="color:var(--gray-500);">✦</span>
+    <span class="toc-title">Conclusión + CTA</span>
+    <span class="toc-duration">${lf.conclusion.estimated_duration_seconds}s</span>
+  </div>
+
+  ${metaItems.length > 0 ? `
+  <div class="meta-section">
+    <h3>Metadata de generación</h3>
+    <div class="meta-grid">${metaItems.join("")}</div>
+    <div class="emotional-arc"><strong>Arco emocional:</strong> ${esc(lf.emotional_arc)}</div>
+  </div>` : `
+  <div class="meta-section">
+    <div class="emotional-arc" style="border:none;padding:0;margin:0;"><strong>Arco emocional:</strong> ${esc(lf.emotional_arc)}</div>
+  </div>`}
+</div>
+
+<!-- HOOK -->
+<div class="page page-break">
+  <div class="hook-section">
+    <div class="hook-label">Hook <span class="hook-duration">— ${lf.hook.estimated_duration_seconds}s</span></div>
+    <div class="hook-text">${esc(lf.hook.script_text)}</div>
+    ${lf.hook.visual_notes ? `<div class="hook-visual">🎬 ${esc(lf.hook.visual_notes)}</div>` : ""}
+  </div>
+</div>
+
+<!-- CHAPTERS -->
+${chaptersHTML}
+
+<!-- CONCLUSION -->
+<div class="page page-break">
+  <div class="conclusion-section">
+    <div class="conclusion-label">Conclusión — ${lf.conclusion.estimated_duration_seconds}s</div>
+    <div class="conclusion-text">${esc(lf.conclusion.content)}</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="cta-label">Call to Action</div>
+    <div class="cta-text">${esc(lf.cta.primary_text)}</div>
+    ${lf.cta.midroll_text ? `<div class="cta-sub"><strong>Mid-roll:</strong> ${esc(lf.cta.midroll_text)}</div>` : ""}
+    ${lf.cta.end_screen_notes ? `<div class="cta-sub"><strong>End screen:</strong> ${esc(lf.cta.end_screen_notes)}</div>` : ""}
+  </div>
+
+  ${(() => {
+    const ctaBlocks = generation.script.cta_blocks;
+    if (!ctaBlocks || ctaBlocks.length === 0) return "";
+    const channelColors: Record<string, string> = {
+      clase_gratuita: "#10b981", taller_5: "#f59e0b", instagram: "#ec4899",
+    };
+    return `
+    <div style="margin-top:24px;">
+      <div style="font-size:11pt;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray-500);margin-bottom:16px;">Bloques CTA (grabar una vez)</div>
+      ${ctaBlocks.map(b => {
+        const label = (b.channel_label || b.channel || "CTA").toUpperCase();
+        const color = channelColors[b.channel] || "#71717a";
+        const layersHtml = b.layers
+          ? Object.entries(b.layers).filter(([,v]) => v).map(([key, val]) => `
+            <div style="margin-bottom:8px;">
+              <span style="font-size:8pt;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:${color};">${CTA_LAYER_LABELS[key] || key.toUpperCase()}</span>
+              <div style="font-size:10pt;line-height:1.6;margin-top:2px;">&ldquo;${esc(val)}&rdquo;</div>
+            </div>`).join("")
+          : b.text ? `<div style="font-size:10pt;line-height:1.6;">&ldquo;${esc(b.text)}&rdquo;</div>` : "";
+        return `
+        <div style="border-left:3px solid ${color};padding:12px 16px;margin-bottom:16px;background:#fafafa;border-radius:8px;">
+          <div style="font-size:9pt;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:${color};margin-bottom:10px;">${label} — Variante ${b.variant || "?"}</div>
+          ${layersHtml}
+        </div>`;
+      }).join("")}
+    </div>`;
+  })()}
+
+  <!-- SEO -->
+  <div class="seo-section">
+    <div class="seo-label">SEO & Metadata</div>
+    <div class="seo-field">
+      <div class="seo-field-label">Título (${lf.seo.title.length}/60)</div>
+      <div class="seo-field-value"><strong>${esc(lf.seo.title)}</strong></div>
+    </div>
+    <div class="seo-field">
+      <div class="seo-field-label">Descripción</div>
+      <div class="seo-field-value">${esc(lf.seo.description)}</div>
+    </div>
+    <div class="seo-field">
+      <div class="seo-field-label">Tags</div>
+      <div>${lf.seo.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join(" ")}</div>
+    </div>
+    <div class="seo-field">
+      <div class="seo-field-label">Idea de thumbnail</div>
+      <div class="seo-field-value">${esc(lf.seo.thumbnail_idea)}</div>
+    </div>
+  </div>
+
+  ${lf.production_notes ? `
+  <div class="notes-section">
+    <div class="notes-label">Notas de producción</div>
+    <div class="notes-text">${esc(lf.production_notes)}</div>
+  </div>` : ""}
+</div>
+
+<div class="footer">ADP — YouTube Longform</div>
+
+</body>
+</html>`;
+
+    const htmlWithPrint = html.replace("</body>", "<script>window.onload=function(){setTimeout(function(){window.print()},400)}<\/script></body>");
+    const blob = new Blob([htmlWithPrint], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const win = window.open(url, "_blank");
+    if (win) {
+      toast("PDF listo — guardalo como PDF");
+    } else {
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `youtube-${(lf?.title || generation.title || "guion").replace(/[^a-zA-Z0-9]/g, "-").slice(0, 40)}.html`;
+      link.click();
+      URL.revokeObjectURL(url);
+      toast("Pack descargado — abrilo y usá Cmd+P para guardar como PDF");
+    }
   }
 
-  const totalMin = Math.round(lf.total_duration_seconds / 60);
-  const mode = lf.output_mode === "both" ? "Guión + Estructura" : lf.output_mode === "structure" ? "Estructura" : "Guión completo";
+  const totalMin = lf ? Math.round(lf.total_duration_seconds / 60) : Math.round((generation.script.total_duration_seconds || 0) / 60);
+  const mode = lf ? (lf.output_mode === "both" ? "Guión + Estructura" : lf.output_mode === "structure" ? "Estructura" : "Guión completo") : "Shortform";
   const statusCfg = STATUS_CONFIG[status];
 
   // --- Teleprompter overlay ---
@@ -396,34 +746,146 @@ export default function YouTubeViewer({ generation }: Props) {
           >
             Esc — Salir
           </button>
-          <h1 className="text-4xl font-bold text-white mb-12 leading-tight">{lf.title}</h1>
-          <div className="mb-12">
-            <p className="text-xs text-red-400 uppercase tracking-wider mb-3 font-bold">Hook</p>
-            <p className="text-2xl text-white leading-relaxed">{lf.hook.script_text}</p>
-          </div>
-          {lf.chapters.map((ch) => {
-            const transition = lf.transitions.find((t) => t.from_chapter === ch.number);
-            return (
-              <div key={ch.number} className="mb-12">
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-3 font-bold">
-                  Cap {ch.number}: {ch.title}
-                </p>
-                <p className="text-2xl text-white leading-relaxed whitespace-pre-wrap">{ch.content}</p>
-                {transition && (
-                  <p className="text-lg text-zinc-500 italic mt-6">→ {transition.transition_text}</p>
-                )}
+          <h1 className="text-4xl font-bold text-white mb-12 leading-tight">{lf?.title || generation.title || "Guión"}</h1>
+          {lf ? (
+            <>
+              <div className="mb-12">
+                <p className="text-xs text-red-400 uppercase tracking-wider mb-3 font-bold">Hook</p>
+                <p className="text-2xl text-white leading-relaxed">{lf.hook.script_text}</p>
               </div>
-            );
-          })}
-          <div className="mb-12">
-            <p className="text-xs text-zinc-500 uppercase tracking-wider mb-3 font-bold">Conclusión</p>
-            <p className="text-2xl text-white leading-relaxed whitespace-pre-wrap">{lf.conclusion.content}</p>
-          </div>
-          <div className="mb-12">
-            <p className="text-xs text-red-400 uppercase tracking-wider mb-3 font-bold">CTA</p>
-            <p className="text-2xl text-white leading-relaxed font-medium">{lf.cta.primary_text}</p>
-          </div>
+              {lf.chapters.map((ch) => {
+                const transition = lf.transitions.find((t) => t.from_chapter === ch.number);
+                return (
+                  <div key={ch.number} className="mb-12">
+                    <p className="text-xs text-zinc-500 uppercase tracking-wider mb-3 font-bold">
+                      Cap {ch.number}: {ch.title}
+                    </p>
+                    <p className="text-2xl text-white leading-relaxed whitespace-pre-wrap">{ch.content}</p>
+                    {transition && (
+                      <p className="text-lg text-zinc-500 italic mt-6">→ {transition.transition_text}</p>
+                    )}
+                  </div>
+                );
+              })}
+              <div className="mb-12">
+                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-3 font-bold">Conclusión</p>
+                <p className="text-2xl text-white leading-relaxed whitespace-pre-wrap">{lf.conclusion.content}</p>
+              </div>
+              <div className="mb-12">
+                <p className="text-xs text-red-400 uppercase tracking-wider mb-3 font-bold">CTA</p>
+                <p className="text-2xl text-white leading-relaxed font-medium">{lf.cta.primary_text}</p>
+              </div>
+            </>
+          ) : (
+            <>
+              {generation.script.hooks.map((hook, hi) => (
+                <div key={hi} className="mb-12">
+                  <p className="text-xs text-emerald-400 uppercase tracking-wider mb-3 font-bold">Lead {hi + 1}</p>
+                  <p className="text-2xl text-white leading-relaxed whitespace-pre-wrap">{hook.script_text}</p>
+                </div>
+              ))}
+              {generation.script.development.sections.map((section, si) => (
+                <div key={si} className="mb-12">
+                  <p className="text-xs text-zinc-500 uppercase tracking-wider mb-3 font-bold">{section.section_name}</p>
+                  <p className="text-2xl text-white leading-relaxed whitespace-pre-wrap">{section.script_text}</p>
+                </div>
+              ))}
+            </>
+          )}
+          {generation.script.cta_blocks && generation.script.cta_blocks.length > 0 && (
+            <div className="mb-12">
+              <p className="text-xs text-purple-400 uppercase tracking-wider mb-6 font-bold">Bloques CTA — Grabar una vez</p>
+              {generation.script.cta_blocks.map((block, bi) => {
+                const label = (block.channel_label || block.channel || "CTA").toUpperCase();
+                return (
+                  <div key={bi} className="mb-10 border-l-2 border-purple-500/30 pl-6">
+                    <p className="text-xs text-purple-400 uppercase tracking-wider mb-4 font-bold">{label} — Variante {block.variant || "?"}</p>
+                    {block.layers ? Object.entries(block.layers).filter(([,v]) => v).map(([key, val]) => (
+                      <div key={key} className="mb-4">
+                        <p className="text-[10px] text-zinc-600 uppercase tracking-wider mb-1">{CTA_LAYER_LABELS[key] || key.toUpperCase()}</p>
+                        <p className="text-2xl text-white leading-relaxed">{val}</p>
+                      </div>
+                    )) : block.text ? (
+                      <p className="text-2xl text-white leading-relaxed">{block.text}</p>
+                    ) : null}
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
+      </div>
+    );
+  }
+
+  // --- Shortform fallback (no longform data) ---
+  if (!lf) {
+    const s = generation.script;
+    return (
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-8">
+          <button onClick={() => router.push("/youtube")} className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors mb-4 flex items-center gap-1">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+            Volver a YouTube
+          </button>
+          <h1 className="text-3xl font-extrabold tracking-tight">{generation.title || "Guión"}</h1>
+          <p className="text-zinc-500 text-sm mt-2">{s.total_duration_seconds}s | ~{s.word_count} palabras | {s.development.framework_used}</p>
+        </div>
+
+        {/* Action buttons */}
+        <div className="flex gap-3 mb-8">
+          <button onClick={openTeleprompter} className="px-4 py-2 text-xs rounded-xl border border-zinc-800 bg-zinc-900/50 text-zinc-300 hover:bg-zinc-800 transition-all">Teleprompter</button>
+          <button onClick={downloadTXT} className="px-4 py-2 text-xs rounded-xl border border-zinc-800 bg-zinc-900/50 text-zinc-300 hover:bg-zinc-800 transition-all">Descargar TXT</button>
+          <button onClick={downloadPDF} className="px-4 py-2 text-xs rounded-xl border border-zinc-800 bg-zinc-900/50 text-zinc-300 hover:bg-zinc-800 transition-all">Descargar PDF</button>
+        </div>
+
+        {/* Leads */}
+        <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">Leads</h2>
+        <div className="space-y-3 mb-8">
+          {s.hooks.map((hook, i) => (
+            <div key={i} className="border border-emerald-500/20 bg-emerald-500/5 rounded-2xl p-5">
+              <span className="text-[10px] text-emerald-400 uppercase tracking-wider font-semibold">Lead {i + 1}</span>
+              <p className="text-zinc-200 text-sm leading-relaxed mt-2 whitespace-pre-wrap">{hook.script_text}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Body sections */}
+        <h2 className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-4">Cuerpo</h2>
+        <div className="space-y-3 mb-8">
+          {s.development.sections.map((sec, i) => (
+            <div key={i} className="border border-zinc-800/40 bg-zinc-900/30 rounded-2xl p-5">
+              <span className="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold">{sec.section_name}</span>
+              <p className="text-zinc-200 text-sm leading-relaxed mt-2 whitespace-pre-wrap">{sec.script_text}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Blocks */}
+        {s.cta_blocks && s.cta_blocks.length > 0 && (
+          <div>
+            <h2 className="text-xs font-bold uppercase tracking-wider text-purple-400 mb-4">Bloques CTA</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {s.cta_blocks.map((block, i) => {
+                const channelColors: Record<string, string> = { clase_gratuita: "border-emerald-500/20 bg-emerald-500/5", taller_5: "border-amber-500/20 bg-amber-500/5", instagram: "border-pink-500/20 bg-pink-500/5" };
+                const labelColors: Record<string, string> = { clase_gratuita: "text-emerald-400", taller_5: "text-amber-400", instagram: "text-pink-400" };
+                return (
+                  <div key={i} className={`border rounded-2xl p-5 space-y-3 ${channelColors[block.channel] || "border-zinc-800/40 bg-zinc-900/30"}`}>
+                    <span className={`uppercase tracking-wider text-[11px] font-semibold ${labelColors[block.channel] || "text-zinc-400"}`}>
+                      {block.channel_label || block.channel}
+                    </span>
+                    {block.layers ? Object.entries(block.layers).filter(([,v]) => v).map(([key, val]) => (
+                      <div key={key}>
+                        <span className="text-[9px] text-zinc-600 uppercase tracking-wider font-medium">{CTA_LAYER_LABELS[key] || key.toUpperCase()}</span>
+                        <p className="text-zinc-300 text-xs leading-relaxed mt-0.5 whitespace-pre-wrap">{val}</p>
+                      </div>
+                    )) : block.text ? <p className="text-zinc-300 text-xs leading-relaxed whitespace-pre-wrap">{block.text}</p> : null}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -726,11 +1188,22 @@ export default function YouTubeViewer({ generation }: Props) {
                 )}
               </div>
 
-              {/* Transition */}
+              {/* Transition card */}
               {transition && (
-                <div className="flex items-center gap-3 py-2 px-5">
-                  <div className="h-6 w-px bg-zinc-800" />
-                  <p className="text-xs text-zinc-600 italic">{transition.transition_text}</p>
+                <div className="bg-zinc-900/50 rounded-2xl border border-zinc-800/50 overflow-hidden mt-3">
+                  <div className="flex items-center gap-3 p-5">
+                    <div className="w-8 h-8 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center flex-shrink-0">
+                      <span className="text-amber-500 text-sm">→</span>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <InlineEdit
+                        value={transition.transition_text}
+                        onSave={(val) => handleSaveTransition(ch.number, val)}
+                        className="text-sm text-zinc-400 italic"
+                      />
+                      <p className="text-xs text-zinc-600 mt-0.5">Transición → Cap {transition.to_chapter}</p>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

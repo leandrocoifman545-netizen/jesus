@@ -1,0 +1,173 @@
+{
+  "id": "1e3e9626-00d0-440f-afe8-a1d47fad5913",
+  "briefId": "874bdfa5-b219-4de1-bc96-af559d5f6011",
+  "title": "Tengo que renunciar a mi trabajo",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.2_oficinista",
+    "body_type": "pregunta_respuesta",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "mito: renuncia",
+    "model_sale_type": "tiempo_vs_dinero",
+    "visual_format": "split_screen",
+    "avatar": "laura",
+    "awareness_level": 3,
+    "emotional_arc": "dolor_esperanza",
+    "tension": "T7",
+    "transition_text": "PERSONA A: ¿Cómo empiezo?",
+    "total_duration_seconds": 53,
+    "word_count": 264,
+    "belief_change": {
+      "old_belief": "Para emprender tengo que dejar todo",
+      "mechanism": "1 hora/día desde el celular, sin renunciar",
+      "new_belief": "Puedo construir algo mientras cobro mi sueldo"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, me encantaría pero no puedo renunciar. Tengo hijos.\nJESÚS: ¿Quién te dijo que tenés que renunciar?\nPERSONA A: ¿Cómo?\nJESÚS: Nadie te pide eso.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que mejor les va no renunciaron. Empezaron mientras cobraban su sueldo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "situacion_especifica",
+        "script_text": "Llegás a tu casa a las 7. Los chicos cenaron. Tenés una hora. ¿Y si esa hora fuera un negocio?",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Te dijeron que emprender es tirarlo todo. Mentira. Esa mentira es la razón por la que no arrancaste.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "script_text": "Yo pensaba que emprender era para gente sin obligaciones. Me equivocaba.\nPERSONA A: Jesús, trabajo 10 horas, tengo 2 hijos, pago alquiler. No me da la vida para emprender.\nJESÚS: ¿Y quién te dijo que tenés que dejar algo?\nPERSONA A: Para emprender hay que poner plata, dejar el trabajo...\nJESÚS: Eso es emprender como se hacía antes. Esto es desde el celular, una hora por día.\nPERSONA A: ¿Una hora?\nJESÚS: Después de acostar a los chicos. Antes del laburo. En el almuerzo. Vos elegís.\nPERSONA A: Pero llego cansada a mi casa. No me da.\nJESÚS: En tu trabajo cambiás horas por plata. No vas, no cobrás. Un producto digital lo creás UNA vez y se vende solo.\nPERSONA A: ¿Solo?\nJESÚS: WhatsApp te avisa que vendiste mientras dormís.\nPERSONA A: ¿Mientras duermo?\nJESÚS: El esfuerzo es al principio. Después el producto labura por vos.\nPERSONA A: ¿Y si no funciona?\nJESÚS: Perdiste 3 semanas de una hora. Menos de lo que perdés scrolleando Instagram en un mes.\nPERSONA A: Eso es cierto.\nJESÚS: Pero si funciona, son $50, $60 extra por día. Sin dejar tu trabajo. Sin riesgo.\nPERSONA A: Entonces no tengo que renunciar, no necesito tiempo completo y el riesgo es mínimo.\nJESÚS: Exacto.\nPERSONA A: Suena bien.\nJESÚS: Suena bien pero no alcanza con que suene bien. Hay que saber CÓMO. Y eso es lo que te enseño paso a paso.\nPERSONA A: ¿Y cuánto tardo en armar todo?\nJESÚS: Un fin de semana. Sin dejar tu sueldo. Sin presión.\nPERSONA A: ¿Cómo empiezo?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "dolor_esperanza",
+      "sections": [
+        {
+          "section_name": "Tengo que dejar mi trabajo",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Jesús, trabajo 10 horas, tengo 2 hijos, pago alquiler. No me da la vida para emprender.\nJESÚS: ¿Y quién te dijo que tenés que dejar algo?\nPERSONA A: Para emprender hay que poner plata, dejar el trabajo...\nJESÚS: Eso es emprender como se hacía antes. Esto es desde el celular, una hora por día.\nPERSONA A: ¿Una hora?\nJESÚS: Después de acostar a los chicos. Antes del laburo. En el almuerzo. Vos elegís.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "No me da la energía",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Pero llego cansada a mi casa. No me da.\nJESÚS: En tu trabajo cambiás horas por plata. No vas, no cobrás. Un producto digital lo creás UNA vez y se vende solo.\nPERSONA A: ¿Solo?\nJESÚS: WhatsApp te avisa que vendiste mientras dormís.\nPERSONA A: ¿Mientras duermo?\nJESÚS: El esfuerzo es al principio. Después el producto labura por vos.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Es mucho riesgo",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y si no funciona?\nJESÚS: Perdiste 3 semanas de una hora. Menos de lo que perdés scrolleando Instagram en un mes.\nPERSONA A: Eso es cierto.\nJESÚS: Pero si funciona, son $50, $60 extra por día. Sin dejar tu trabajo. Sin riesgo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Entonces no tengo que renunciar, no necesito tiempo completo y el riesgo es mínimo.\nJESÚS: Exacto.\nPERSONA A: Suena bien.\nJESÚS: Suena bien pero no alcanza con que suene bien. Hay que saber CÓMO. Y eso es lo que te enseño paso a paso.\nPERSONA A: ¿Y cuánto tardo en armar todo?\nJESÚS: Un fin de semana. Sin dejar tu sueldo. Sin presión.\nPERSONA A: ¿Cómo empiezo?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y cuánto tardo en armar todo?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor Identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-25T23:54:20.691Z",
+  "status": "draft",
+  "batch": {
+    "id": "6fb560e2-77a3-49bc-93d9-fb4356645ae4",
+    "name": "Dolor-centrista — 562 compradores"
+  }
+}

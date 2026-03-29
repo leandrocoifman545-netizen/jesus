@@ -164,6 +164,64 @@ ANTES (IA):
 DESPUÉS (Jesús):
 > "¿Cuánto tiempo más vas a regalar lo que sabés?"
 
+### P-IA11: Data interna filtrada al copy (CRÍTICO)
+**El patrón:** Los datos de 562 compradores, 8074 leads, porcentajes de segmentación aparecen en el guion. Jesús lo dijo: "La gente no le importa eso. Eso es data interna nuestra, solo la usás vos para vos."
+**Detectar:**
+- Cualquier porcentaje estadístico de audiencia (46%, 14%, 56%)
+- Referencias a "562 compradores", "8074 leads", "encuesta", "muestra"
+- Frases como "según datos", "estudios muestran", "la data dice", "estadísticas indican"
+- Porcentajes de conversión o demografía presentados como argumento de venta
+**Fix:** La data informa QUÉ dolores atacar y en qué orden. NUNCA aparece en el copy. Reemplazar dato estadístico por anécdota concreta o detalle anti-ficción.
+
+ANTES (filtración):
+> "El 46% de las personas que compraron tenían más de 40 años."
+
+DESPUÉS (anti-ficción):
+> "María tiene 52 años. No sabía ni prender una notebook. Hoy vende guías de repostería."
+
+### P-IA12: Palabras que MATAN el CLR
+**El patrón:** Hay palabras específicas que están concentradas en los videos con PEOR rendimiento. Data de 191 videos analizados.
+**Detectar (flaggear SIEMPRE que aparezcan):**
+- "pero bueno" (rendición narrativa — 0 apariciones en top 25%)
+- "de todos modos" (desconexión emocional)
+- "en fin" (afterthought — 6.3x más en videos bottom)
+- "como sea" (descarta lo anterior)
+- "nos vemos amigos" / cualquier despedida como última frase hablada
+- "boludo" en contexto de ad (no como intensificador entre amigos)
+- "funnel" / "embudo" (hasta 18x más en videos bottom)
+- "curso" como nombre del producto (usar "clase", "sistema", "método")
+- "lanzamiento" / "leads" / "call-to-action" / "orgánico" (como estrategia)
+**Fix:** Reemplazar por equivalentes que SUBEN CLR:
+- "pero bueno" → eliminar, reformular con energía igual o mayor
+- "funnel/embudo" → "clientes", "gente que te compra"
+- "curso" → "sistema", "clase", "método"
+- "nos vemos" → terminar con INSTRUCCIÓN ("Lo único que tenés que hacer es...")
+- despedida → acción ("Comentá [KEYWORD]", "Tocá el link")
+
+**Palabras que SUBEN CLR (sugerir si no hay ninguna en el guion):**
+- "es una puta locura" / "una locura" (5.2x más en top)
+- "literalmente" (8.3x más en top)
+- "lo único que tenés que hacer es" (CLR 2.00 vs "si querés" 1.51)
+- "se acaba de filtrar" (novedad > escasez)
+- "en menos de un minuto" (speed promise — 2.4x en top vs 1.1 en bottom)
+- "nuevo/nueva" (8.7x más en top)
+- "prompt", "acceso", "gratis"
+
+### P-IA13: Jerga de marketing en el body
+**El patrón:** La IA usa vocabulario de marketero, no de persona normal. Dato: jerga de marketing concentrada hasta 18x más en videos de peor CLR.
+**Detectar estas palabras en el CUERPO del guion (no en metadata):**
+- "funnel", "embudo", "lanzamiento", "call-to-action", "CTA"
+- "leads", "orgánico" (como estrategia), "monetizar", "escalable"
+- "conversión", "retargeting", "awareness", "branding"
+- "copywriting", "hook", "engagement"
+**Fix:** El avatar NO habla así. Reemplazar:
+- "leads" → "clientes" / "gente que te compra"
+- "funnel" → eliminar concepto o decir "proceso de venta"
+- "monetizar" → "vender" / "cobrar"
+- "escalable" → "que crece solo"
+- "orgánico" → "sin pagar publicidad" / "gratis"
+**Excepción:** "anuncios" y "campañas" sí se pueden usar.
+
 ---
 
 ## PASO 2: Test de la voz de Jesús
@@ -198,6 +256,24 @@ Jesús no es 100% empático. Mezcla cariño con cachetazo. Si el guion es puro c
 - ❌ Todo empático: "Entiendo tu frustración. Es normal sentirse así."
 - ✅ Tough love: "Mirá, yo entiendo. Pero si seguís haciendo lo mismo, vas a seguir teniendo lo mismo. ¿O no?"
 
+### V7: ¿La transición mantiene la energía? (no se rinde)
+La transición al CTA NUNCA baja la energía. Dato: "pero bueno" tiene 0 apariciones en el top 25% de 191 videos. "En fin" aparece 6.3x más en videos bottom.
+- ❌ "Pero bueno, si te interesa..."
+- ❌ "De todos modos, te dejo el link..."
+- ❌ "En fin, si querés saber más..."
+- ✅ "Eso que te acabo de mostrar con [EJEMPLO] es solo el principio."
+- ✅ "Y esto es solo UNO de los productos que podés crear."
+**Regla:** La energía de la transición debe ser IGUAL o MAYOR que la del cuerpo.
+
+### V8: ¿La última frase hablada es INSTRUCCIÓN? (no despedida)
+Dato duro: cierre con acción = CLR 1.48-1.61 vs cierre con despedida = CLR 0.92 (-37%).
+- ❌ "Nos vemos amigos" / "Hasta la próxima" / "Éxitos" / "Abrazo"
+- ❌ "Espero que te haya servido"
+- ✅ "Lo único que tenés que hacer es comentar [KEYWORD]"
+- ✅ "Tocá el link en la bio"
+- ✅ "Escribime [KEYWORD] por DM"
+**Excepción:** Videos de awareness puro (sin CTA) pueden cerrar con despedida cálida.
+
 ---
 
 ## PASO 3: Reescribir y presentar
@@ -219,8 +295,12 @@ Jesús no es 100% empático. Mezcla cariño con cachetazo. Si el guion es puro c
 ### Output del paso de humanización (cuando se integra en /guion):
 ```
 ## Check de humanidad
-- P-IA detectados: [lista o "ninguno"]
-- Checks de voz: V1 ✅/❌ | V2 ✅/❌ | V3 ✅/❌ | V4 ✅/❌ | V5 ✅/❌ | V6 ✅/❌
+- P-IA detectados (1-10): [lista o "ninguno"]
+- P-IA11 (data interna): ✅/❌ [detalle si falla]
+- P-IA12 (palabras CLR killer): ✅/❌ [palabras encontradas]
+- P-IA12 (palabras CLR booster): [lista de boosters presentes o "⚠️ Ninguna — considerar agregar"]
+- P-IA13 (jerga marketing): ✅/❌ [palabras encontradas]
+- Checks de voz: V1 ✅/❌ | V2 ✅/❌ | V3 ✅/❌ | V4 ✅/❌ | V5 ✅/❌ | V6 ✅/❌ | V7 ✅/❌ | V8 ✅/❌
 - Ajustes hechos: [lista de cambios o "ninguno necesario"]
 ```
 

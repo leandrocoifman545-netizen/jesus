@@ -1,0 +1,52 @@
+{
+  "id": "9ee00845-3829-47d0-bcf1-3c6fab2c4aa5",
+  "briefId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "planId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "title": "Ya perdí plata en 3 cosas online",
+  "contentType": "shortform",
+  "script": {
+    "angle_family": "3",
+    "angle_specific": "F3-3.5 Costo invisible",
+    "body_type": "conversacion_experto_novato",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "Quemado por dropshipping/afiliados/cursos",
+    "model_sale_type": "lean_anti_riesgo",
+    "visual_format": "split_screen_dialogo",
+    "avatar": "martin",
+    "awareness_level": 3,
+    "emotional_arc": "resentimiento_apertura",
+    "tension": "T8",
+    "transition_text": "Link acá abajo. Nos vemos adentro.",
+    "total_duration_seconds": 60,
+    "word_count": 220,
+    "belief_change": {
+      "old_belief": "Nada online funciona, todo es estafa",
+      "mechanism": "Diálogo experto/novato — prueba por demo/math, sin screenshots de clientes",
+      "new_belief": "Esto es diferente porque el producto es mío y valido antes de crear"
+    },
+    "micro_beliefs": [],
+    "hooks": [],
+    "development": {
+      "framework_used": "conversacion_victor_eraso",
+      "emotional_arc": "resentimiento_apertura",
+      "sections": []
+    },
+    "ingredients_used": [],
+    "cta_blocks": [
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T07:03:05.085Z",
+  "status": "draft",
+  "batch": {
+    "id": "3a744f23-03e4-4cb0-b83c-f80c35ef559a",
+    "name": "victor-eraso-v2"
+  },
+  "hookApprovals": {}
+}

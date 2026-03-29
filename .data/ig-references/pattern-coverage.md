@@ -7,10 +7,10 @@
 
 | Métrica | Valor |
 |---------|------:|
-| Patrones totales | 52 |
-| 🆕 UNTAPPED (0 usos ADP) | 14 |
+| Patrones totales | 62 |
+| 🆕 UNTAPPED (0 usos ADP) | 15 |
 | 🔄 Underused (1-2 usos) | 3 |
-| ✅ Used (3-5 usos) | 6 |
+| ✅ Used (3-5 usos) | 7 |
 | ⚠️ Overused (6+ usos) | 22 |
 
 ## Top oportunidades sin explotar
@@ -42,24 +42,34 @@ Clasificación por regex (primeras 3 oraciones del hook) — misma lógica que i
 | **imperativo** | 11 | 99.48% | 0 | 🆕 UNTAPPED |
 | **credencial** | 36 | 64.12% | 0 | 🆕 UNTAPPED |
 | **lista_framework** | 20 | 51.81% | 0 | 🆕 UNTAPPED |
+| **neutro** | 136 | 49.27% | 0 | 🆕 UNTAPPED |
 | **incredulidad** | 2 | 202.8% | 2 | 🔄 Underused |
+| **situacion_narrativa** | 1 | 97.64% | 5 | ✅ Used |
 | **negacion_en_serie** | 7 | 51.78% | 5 | ✅ Used |
 | **hipotetico** | 23 | 49.84% | 5 | ✅ Used |
 | **paradoja** | 1 | 4.26% | 4 | ✅ Used |
 | **storytelling_personal** | 5 | 1.93% | 4 | ✅ Used |
 | **timeline_rapido** | 1 | 1.42% | 4 | ✅ Used |
-| **provocacion** | 90 | 86.27% | 26 | ⚠️ Overused |
+| **promesa_directa** | 7 | 127.42% | 12 | ⚠️ Overused |
+| **provocacion** | 90 | 86.27% | 27 | ⚠️ Overused |
 | **dato_numero** | 178 | 79.47% | 34 | ⚠️ Overused |
 | **oportunidad_tendencia** | 4 | 69.15% | 6 | ⚠️ Overused |
 | **pregunta** | 120 | 66.28% | 34 | ⚠️ Overused |
 | **historia** | 28 | 57.33% | 10 | ⚠️ Overused |
 | **acumulacion** | 62 | 51.22% | 58 | ⚠️ Overused |
-| **neutro** | 136 | 49.27% | 25 | ⚠️ Overused |
 | **identidad** | 9 | 36.43% | 7 | ⚠️ Overused |
+| **contraintuitivo_declarativo** | — | — | 5 | 🔵 ADP-only |
 | **herencia_emocional** | — | — | 6 | 🔵 ADP-only |
 | **revelacion_personal** | — | — | 5 | 🔵 ADP-only |
 | **escena_cinematografica** | — | — | 8 | 🔵 ADP-only |
+| **analogia_abierta** | — | — | 1 | 🔵 ADP-only |
+| **confesion_temporal** | — | — | 4 | 🔵 ADP-only |
+| **acusacion_directa** | — | — | 1 | 🔵 ADP-only |
 | **espejo_situacion** | — | — | 8 | 🔵 ADP-only |
+| **dialogo_actuacion** | — | — | 6 | 🔵 ADP-only |
+| **cita_avatar** | — | — | 5 | 🔵 ADP-only |
+| **observacion_directa** | — | — | 4 | 🔵 ADP-only |
+| **contraste_juxtaposicion** | — | — | 2 | 🔵 ADP-only |
 | **anti_guru** | — | — | 4 | 🔵 ADP-only |
 | **matematica_reveladora** | — | — | 2 | 🔵 ADP-only |
 | **injusticia** | — | — | 1 | 🔵 ADP-only |

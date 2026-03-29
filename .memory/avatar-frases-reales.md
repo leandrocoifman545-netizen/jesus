@@ -358,3 +358,30 @@ Del bot WhatsApp, los temas que más engagement generan:
 ---
 
 *Fuentes: @natlesmes (Instagram, 2025) + Bot WhatsApp ADP (8,074 leads, 22,819 conversaciones, marzo 2026)*
+
+---
+
+## Data de conversión (ex inteligencia-audiencia)
+
+> Estos 3 insights vienen del análisis de conversiones del bot WhatsApp y NO estaban en las secciones anteriores.
+
+### 1. Velocidad de conversión (12 mensajes)
+- Leads que **convierten**: ~12 mensajes promedio
+- Leads que **se pierden**: 22+ mensajes promedio
+- **Regla:** Si no convierte en 15 mensajes → cambiar estrategia (no insistir con la misma)
+
+### 2. Video educativo inmediato = 71% conversión
+- Cuando el bot envía un **video educativo de forma inmediata**, la conversión sube a **71%**
+- Implicación para guiones: el primer contacto tiene que DAR valor, no pedir atención
+
+### 3. "Micro-yes" desbloquea el 95% de las conversaciones
+- Pedir un "sí" pequeño (ej: "¿querés que te mande el video?") antes de enviar contenido desbloquea el **95%** de las conversaciones
+- Implicación para guiones: los CTAs deben pedir una acción mínima primero, no la compra directa
+
+### Datos duros adicionales (para usar en guiones)
+- 8,074 leads reales en la base
+- 971 citas textuales recopiladas
+- 535 señales de compra detectadas
+- Tema #1: Inteligencia Artificial (114 menciones)
+- Tema #2: Productos digitales (86 menciones)
+- Tema #3: Generar ingresos extra (42 menciones)

@@ -1,0 +1,164 @@
+{
+  "id": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "name": "Víctor Eraso V2 — Diálogo Experto/Novato",
+  "weekOf": "2026-03-25",
+  "slots": [
+    {
+      "index": 0,
+      "angle": "3.6_anti_guru",
+      "segment": "D",
+      "funnel": "TOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Mito: IA no genera ingresos reales",
+      "leadTypes": [
+        "provocacion",
+        "dato_concreto",
+        "contraintuitivo",
+        "pregunta_incomoda"
+      ],
+      "justification": "Nadie gana plata con IA en serio",
+      "generationId": "3be374c8-a2d5-4e78-bf91-3d2b02a9acab",
+      "status": "generated"
+    },
+    {
+      "index": 1,
+      "angle": "1.2_mama_tiempo",
+      "segment": "C",
+      "funnel": "TOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Mamá sin tiempo — recetas fáciles",
+      "leadTypes": [
+        "situacion_especifica",
+        "dato_concreto",
+        "contraintuitivo",
+        "provocacion"
+      ],
+      "justification": "No tengo tiempo ni para bañarme",
+      "generationId": "119d6266-3905-46f1-b00e-c9aaee5266c3",
+      "status": "generated"
+    },
+    {
+      "index": 2,
+      "angle": "F4-4.2 Demo",
+      "segment": "A",
+      "funnel": "TOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Curiosidad básica — Excel/videojuegos",
+      "leadTypes": [],
+      "justification": "¿Pero qué es un producto digital?",
+      "generationId": "43c25f41-3ac9-48b2-a14c-2b8f17649b9c",
+      "status": "generated"
+    },
+    {
+      "index": 3,
+      "angle": "F3-3.5 Costo invisible",
+      "segment": "B",
+      "funnel": "MOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Quemados por dropshipping/afiliados",
+      "leadTypes": [],
+      "justification": "Ya perdí $500 en 3 cosas online",
+      "generationId": "9ee00845-3829-47d0-bcf1-3c6fab2c4aa5",
+      "status": "generated"
+    },
+    {
+      "index": 4,
+      "angle": "F2-2.3 Nicho invisible",
+      "segment": "C",
+      "funnel": "TOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Repostería/cocina como producto",
+      "leadTypes": [],
+      "justification": "Yo hago tortas, no tecnología",
+      "generationId": "59efc2ae-49e6-452f-a00b-39bb46ca741f",
+      "status": "generated"
+    },
+    {
+      "index": 5,
+      "angle": "F1-1.4 Jubilado",
+      "segment": "D",
+      "funnel": "TOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Jubilación + dignidad + experiencia",
+      "leadTypes": [],
+      "justification": "Tengo 62 y me niego a depender",
+      "generationId": "7c31cbc2-627c-4b80-aacf-b1276862b352",
+      "status": "generated"
+    },
+    {
+      "index": 6,
+      "angle": "F3-3.2 Ciclo roto",
+      "segment": "A",
+      "funnel": "TOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Bronca salarial — revancha",
+      "leadTypes": [],
+      "justification": "Mi jefe gana $3000 y yo $800",
+      "generationId": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
+      "status": "generated"
+    },
+    {
+      "index": 7,
+      "angle": "F2-2.5 Caso trending",
+      "segment": "A",
+      "funnel": "TOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Inmigrante sin documentación",
+      "leadTypes": [],
+      "justification": "No tengo papeles, ¿puedo laburar?",
+      "generationId": "44d9f1d1-a3d5-463a-85ce-18439b0bce23",
+      "status": "generated"
+    },
+    {
+      "index": 8,
+      "angle": "F4-4.4 Behind scenes",
+      "segment": "B",
+      "funnel": "MOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Freelancer estancado en servicios",
+      "leadTypes": [],
+      "justification": "Hice de todo pero no logro escalar",
+      "generationId": "95e84b14-ac3a-4526-bf21-71494fea1cc8",
+      "status": "generated"
+    },
+    {
+      "index": 9,
+      "angle": "F5-5.4 Diálogo",
+      "segment": "C",
+      "funnel": "MOFU",
+      "bodyType": "conversacion_experto_novato",
+      "visualFormat": "split_screen_dialogo",
+      "nicheIdea": "Presión social familiar",
+      "leadTypes": [],
+      "justification": "Mi marido dice que es estafa",
+      "generationId": "aa1beee2-a1f4-48d2-91eb-80605f8add44",
+      "status": "generated"
+    }
+  ],
+  "visualFormats": [
+    "split_screen_dialogo"
+  ],
+  "recordingOrder": [
+    0,
+    3,
+    6,
+    8,
+    2,
+    4,
+    1,
+    5,
+    7,
+    9
+  ],
+  "notes": "Formato Víctor Eraso: 2 personajes (PERSONA A = novato, JESÚS = experto). 2 setups visuales. Subtítulos amarillo/blanco. Overlays de prueba.",
+  "createdAt": "2026-03-26T07:03:05.085Z"
+}

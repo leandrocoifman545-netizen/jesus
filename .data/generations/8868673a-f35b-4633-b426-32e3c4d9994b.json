@@ -1,0 +1,173 @@
+{
+  "id": "8868673a-f35b-4633-b426-32e3c4d9994b",
+  "briefId": "eaca4072-7978-45d0-8fe4-ca5ed20856fa",
+  "title": "Necesitás mucha plata para arrancar",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.5_la_matematica",
+    "body_type": "pregunta_respuesta",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "mito: inversión alta",
+    "model_sale_type": "matematica_simple",
+    "visual_format": "split_screen",
+    "avatar": "patricia",
+    "awareness_level": 3,
+    "emotional_arc": "pregunta_x_pregunta",
+    "tension": "T13",
+    "transition_text": "PERSONA A: ¿Cómo entro?",
+    "total_duration_seconds": 57,
+    "word_count": 277,
+    "belief_change": {
+      "old_belief": "Necesitás miles de dólares para arrancar",
+      "mechanism": "$2/día + IA gratis",
+      "new_belief": "Arrancar cuesta menos que un café"
+    },
+    "micro_beliefs": [],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Jesús, yo quiero arrancar con algo online pero no tengo plata.\nJESÚS: ¿Cuánto pensás que necesitás?\nPERSONA A: No sé, ¿cinco mil dólares? ¿Diez?\nJESÚS: Te digo el número real y te vas a querer matar.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "script_text": "Todos tienen un número en la cabeza de lo que cuesta arrancar un negocio. Ese número está mal. Te hago la cuenta real.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "dato_concreto",
+        "script_text": "$2. Eso cuesta arrancar un negocio online hoy. Menos que un café con leche. Te muestro.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuánto pensás que cuesta arrancar un negocio online? Estás mal por un 99%.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "script_text": "Arrancar un negocio online cuesta menos que una pizza. No es chiste. Mirá la cuenta.\nPERSONA A: Jesús, mis ingresos no me dan. Trabajo todo el día y no me sobra un peso. Para esto necesitás miles de dólares.\nJESÚS: ¿De dónde sacaste ese número?\nPERSONA A: Es lo que se escucha. Página web, publicidad, diseñador...\nJESÚS: Eso era hace 10 años. Hoy la IA te hace todo eso. Gratis.\nPERSONA A: ¿Gratis?\nJESÚS: Gratis. Le decís qué querés y te lo arma. Como pedirle un licuado al mozo.\nPERSONA A: Bueno, pero la publicidad sí cuesta.\nJESÚS: $2 por día.\nPERSONA A: ¿Dos dólares?\nJESÚS: Menos que cargar nafta para ir al trabajo. Con eso te llegan 5, 10 mensajes de gente interesada.\nPERSONA A: O sea que invertís $2 y podés hacer $50.\nJESÚS: Ahí está. Esa es la matemática que nadie te muestra.\nPERSONA A: Dale, pero yo no sé de qué hacer un producto.\nJESÚS: ¿De qué laburás?\nPERSONA A: Administrativa. Contabilidad.\nJESÚS: ¿Sabés organizar las finanzas de una familia?\nPERSONA A: Sí, obvio.\nJESÚS: Hay miles de personas que pagarían por una guía que les explique eso. Ya sabés lo suficiente.\nPERSONA A: O sea que no necesito plata, no necesito saber de tecnología y ya tengo algo para vender.\nJESÚS: Exacto.\nPERSONA A: Bueno, creo que entendí todo.\nJESÚS: No. Te falta lo más importante.\nPERSONA A: ¿Qué?\nJESÚS: El paso a paso. Porque saber que se puede no es lo mismo que saber CÓMO. Y eso es exactamente lo que te enseño.\nPERSONA A: ¿Y cuánto cuesta aprender?\nJESÚS: Menos que una pizza. Sin letra chica. Me explico?\nPERSONA A: ¿Cómo entro?\nJESÚS: Tocá el botón de acá abajo.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "victor_elas_conversation",
+      "emotional_arc": "pregunta_x_pregunta",
+      "sections": [
+        {
+          "section_name": "Necesito miles para empezar",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Jesús, mis ingresos no me dan. Trabajo todo el día y no me sobra un peso. Para esto necesitás miles de dólares.\nJESÚS: ¿De dónde sacaste ese número?\nPERSONA A: Es lo que se escucha. Página web, publicidad, diseñador...\nJESÚS: Eso era hace 10 años. Hoy la IA te hace todo eso. Gratis.\nPERSONA A: ¿Gratis?\nJESÚS: Gratis. Le decís qué querés y te lo arma. Como pedirle un licuado al mozo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "La publicidad cuesta mucho",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Bueno, pero la publicidad sí cuesta.\nJESÚS: $2 por día.\nPERSONA A: ¿Dos dólares?\nJESÚS: Menos que cargar nafta para ir al trabajo. Con eso te llegan 5, 10 mensajes de gente interesada.\nPERSONA A: O sea que invertís $2 y podés hacer $50.\nJESÚS: Ahí está. Esa es la matemática que nadie te muestra.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "No sé de qué hacer un producto",
+          "persuasion_function": "destruccion_mito",
+          "micro_belief": "",
+          "script_text": "PERSONA A: Dale, pero yo no sé de qué hacer un producto.\nJESÚS: ¿De qué laburás?\nPERSONA A: Administrativa. Contabilidad.\nJESÚS: ¿Sabés organizar las finanzas de una familia?\nPERSONA A: Sí, obvio.\nJESÚS: Hay miles de personas que pagarían por una guía que les explique eso. Ya sabés lo suficiente.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "+ giro",
+          "persuasion_function": "giro",
+          "micro_belief": "",
+          "script_text": "PERSONA A: O sea que no necesito plata, no necesito saber de tecnología y ya tengo algo para vender.\nJESÚS: Exacto.\nPERSONA A: Bueno, creo que entendí todo.\nJESÚS: No. Te falta lo más importante.\nPERSONA A: ¿Qué?\nJESÚS: El paso a paso. Porque saber que se puede no es lo mismo que saber CÓMO. Y eso es exactamente lo que te enseño.\nPERSONA A: ¿Y cuánto cuesta aprender?\nJESÚS: Menos que una pizza. Sin letra chica. Me explico?\nPERSONA A: ¿Cómo entro?\nJESÚS: Tocá el botón de acá abajo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "",
+          "script_text": "PERSONA A: ¿Y cuánto cuesta aprender?",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo.",
+          "prueba": "Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés.",
+          "riesgo_cero": "No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo.",
+          "urgencia": "Cada semana que pasa sin actuar es otra semana en el mismo lugar.",
+          "orden_nlp": "La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+        },
+        "text": "En la clase gratuita te enseño paso a paso cómo encontrar productos digitales con demanda, cómo crearlos con IA y cómo venderlos por WhatsApp. Son 2 horas en vivo. Si una señora que no sabía prender la computadora pudo hacerlo, vos también podés. No te cuesta un peso. No tenés que decidir nada después. Solo mirá y juzgá por vos mismo. Cada semana que pasa sin actuar es otra semana en el mismo lugar. La pregunta no es si esto funciona. La pregunta es si vos vas a hacer algo. Tocá el botón de acá abajo."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó.",
+          "riesgo_cero": "Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "orden_nlp": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Y les funcionó. Te voy a ser honesto. El taller vale 5 dólares. Yo no gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "urgencia": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares.",
+          "orden_nlp": "Comentá '[KEYWORD]' acá abajo y te lo mando por DM."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá '[KEYWORD]' acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-03-25T23:51:20.691Z",
+  "status": "draft",
+  "batch": {
+    "id": "6fb560e2-77a3-49bc-93d9-fb4356645ae4",
+    "name": "Dolor-centrista — 562 compradores"
+  }
+}

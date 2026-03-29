@@ -23,6 +23,34 @@ import {
   AWARENESS_CHANNEL_MAP,
 } from "../constants/hook-types";
 import { pickAngleForFamily, type AngleCandidate } from "./angle-discovery";
+import { readFile } from "fs/promises";
+import { join } from "path";
+
+/**
+ * Pattern intelligence from IG analysis (pattern-coverage.json).
+ * Suggests high-CLR opening patterns that ADP hasn't used yet.
+ */
+interface PatternSuggestion {
+  pattern: string;
+  zone: string;
+  ig_avg_clr: number;
+  ig_count: number;
+  ig_profiles: string[];
+}
+
+async function loadUntappedPatterns(): Promise<PatternSuggestion[]> {
+  try {
+    const coveragePath = join(process.cwd(), ".data/ig-references/pattern-coverage.json");
+    const raw = await readFile(coveragePath, "utf8");
+    const data = JSON.parse(raw);
+    // top_untapped is already sorted by CLR desc
+    return (data.top_untapped || []).filter(
+      (p: PatternSuggestion) => p.zone === "opening" && p.ig_avg_clr > 80
+    );
+  } catch {
+    return [];
+  }
+}
 
 /**
  * Compatibility matrix: which body_types work well with each angle_family.
@@ -71,12 +99,13 @@ export interface AutoBriefResult {
   avatar: string;
   awareness_level: number;
   discovered_angle: AngleCandidate | null; // enrichment from research data
+  suggested_hook_pattern: PatternSuggestion | null; // from IG pattern intelligence
   constraints_text: string; // pre-formatted text to inject into the prompt
 }
 
 /**
  * Pick avatar using buyer weights × inverse coverage.
- * High-weight avatars (Patricia 30%, Roberto 26%) get selected more,
+ * High-weight avatars (Roberto 30%, Patricia 26%) get selected more,
  * but underrepresented avatars get a boost to maintain diversity.
  * Martín (2% weight) is capped at ~1 of 10 scripts.
  */
@@ -189,6 +218,24 @@ export async function buildAutoBrief(overrides?: {
     // Non-critical — if angle discovery fails, we still have coverage-based selection
   }
 
+  // Load IG pattern intelligence — suggest untapped opening patterns
+  let hookPattern: PatternSuggestion | null = null;
+  try {
+    const untapped = await loadUntappedPatterns();
+    if (untapped.length > 0) {
+      // Weighted random: higher CLR = more likely to be picked, but still rotate
+      const totalClr = untapped.reduce((s, p) => s + p.ig_avg_clr, 0);
+      let rand = Math.random() * totalClr;
+      for (const p of untapped) {
+        rand -= p.ig_avg_clr;
+        if (rand <= 0) { hookPattern = p; break; }
+      }
+      if (!hookPattern) hookPattern = untapped[0];
+    }
+  } catch {
+    // Non-critical
+  }
+
   // Format as hard constraints for the prompt
   const constraints = formatConstraints(coverage, {
     angle,
@@ -200,6 +247,7 @@ export async function buildAutoBrief(overrides?: {
     avatar,
     awarenessLevel,
     discoveredAngle,
+    hookPattern,
   });
 
   return {
@@ -212,6 +260,7 @@ export async function buildAutoBrief(overrides?: {
     avatar,
     awareness_level: awarenessLevel,
     discovered_angle: discoveredAngle,
+    suggested_hook_pattern: hookPattern,
     constraints_text: constraints,
   };
 }
@@ -228,6 +277,7 @@ function formatConstraints(
     avatar: string;
     awarenessLevel: number;
     discoveredAngle: AngleCandidate | null;
+    hookPattern: PatternSuggestion | null;
   },
 ): string {
   const totalGen = coverage.totalGenerations;
@@ -265,6 +315,18 @@ USALO como base para el nicho del guion. Podés adaptarlo (hacerlo más específ
 ### SIN DATOS DE RESEARCH
 No hay research reciente disponible. Elegí un nicho ESPECÍFICO (2+ palabras) siguiendo la regla anti-nicho genérico.
 Para alimentar el discovery: correr \`node scripts/research-angles.mjs\` y \`node scripts/trends-scan.mjs\`.`;
+  }
+
+  // Inject IG pattern intelligence — suggest opening pattern from untapped high-CLR patterns
+  if (picks.hookPattern) {
+    const hp = picks.hookPattern;
+    text += `
+
+### PATRÓN DE APERTURA SUGERIDO (inteligencia IG — ${hp.ig_count} videos, CLR ${hp.ig_avg_clr.toFixed(1)}%):
+- **Patrón:** \`${hp.pattern}\` — ADP nunca lo usó, pero en IG genera CLR ${hp.ig_avg_clr.toFixed(1)}%
+- **Perfiles que lo usan:** ${hp.ig_profiles.join(", ")}
+- **Acción:** Al menos 1 de los 5 leads DEBE usar este patrón de apertura. No es el único — pero asegurate de que esté representado.
+- **Referencia:** Ver pattern-library.md para ejemplos concretos de este patrón en acción.`;
   }
 
   text += `
