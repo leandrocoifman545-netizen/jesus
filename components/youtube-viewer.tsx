@@ -642,15 +642,16 @@ ${chaptersHTML}
   </div>
 
   <!-- CTA -->
+  ${lf.cta?.primary_text || lf.cta?.midroll_text || lf.cta?.end_screen_notes ? `
   <div class="cta-section">
     <div class="cta-label">Call to Action</div>
-    <div class="cta-text">${esc(lf.cta.primary_text)}</div>
+    ${lf.cta.primary_text ? `<div class="cta-text">${esc(lf.cta.primary_text)}</div>` : ""}
     ${lf.cta.midroll_text ? `<div class="cta-sub"><strong>Mid-roll:</strong> ${esc(lf.cta.midroll_text)}</div>` : ""}
     ${lf.cta.end_screen_notes ? `<div class="cta-sub"><strong>End screen:</strong> ${esc(lf.cta.end_screen_notes)}</div>` : ""}
-  </div>
+  </div>` : ""}
 
   ${(() => {
-    const ctaBlocks = generation.script.cta_blocks;
+    const ctaBlocks = generation.script?.cta_blocks;
     if (!ctaBlocks || ctaBlocks.length === 0) return "";
     const channelColors: Record<string, string> = {
       clase_gratuita: "#10b981", taller_5: "#f59e0b", instagram: "#ec4899",

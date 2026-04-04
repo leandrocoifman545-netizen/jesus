@@ -1,12 +1,26 @@
 # Sistema Stories Completo — Documento Único
 
-> **Fuentes consolidadas:** Curso StoryMakers (38 clases, 8 módulos) + 27 destacadas analizadas (10 creadores) + 140 stories de estética (7 creadores) + 472 piezas de 3 creadores (Xavi, NicoFast, CreatorFound) + Motor de audiencia ADP + Avatares ADP + Inteligencia de 562 compradores reales.
-> **Última actualización:** 2026-03-29
+> **Fuentes consolidadas:** Curso StoryMakers (38 clases, 8 módulos) + 27 destacadas analizadas (10 creadores) + 140 stories de estética (7 creadores) + 472 piezas de 3 creadores (Xavi, NicoFast, CreatorFound) + 88 guiones de Naffe (90 PDFs) + Motor de audiencia ADP + Avatares ADP + Inteligencia de 562 compradores reales.
+> **Última actualización:** 2026-03-31
 > **Uso:** Leer SIEMPRE antes de generar stories, destacadas o secuencias de Instagram para cualquier cliente.
 
 ---
 
 ## 1. REGLAS DURAS (nunca romper)
+
+### LOS 7 AXIOMAS (primeros principios — leer antes de todo)
+
+1. **"La gente confía en lo que puede VERIFICAR."** → Mostrar en vivo, screenshots reales, documentos abiertos, números no redondos.
+2. **"La gente actúa cuando siente que ELIGIÓ, no que la empujaron."** → Agencia, sin urgencia, preguntas no órdenes, auto-selección.
+3. **"La gente se queda cuando lo SIGUIENTE es más interesante que IRSE."** → Open loops, cambio visual, montaña rusa, incompletitud estratégica.
+4. **"La gente le compra a gente con la que sería AMIGA."** → Tono casual, humor, vulnerabilidad, locaciones normales, mate no Lambo.
+5. **"La gente recuerda SENTIMIENTOS, no información."** → Residuo emocional, símbolos, música, estética.
+6. **"El mejor contenido cambia cómo el viewer SE VE A SÍ MISMO."** → Identidad tribal, keywords como identidad, transformación A→B.
+7. **"Cada segundo de atención es una TRANSACCIÓN."** → Siempre en balance positivo para el viewer. El CTA llega después de HABER DADO.
+
+Cada decisión al generar stories debe poder justificarse con al menos 1 axioma. Si no puede → repensar.
+
+---
 
 ### Regla #0 — Stories ≠ Ads
 - **Las stories son una conversación con tu mejor amigo.** NO son un pitch de ventas.
@@ -15,7 +29,47 @@
 - **Si suena a copy, está mal.** Si suena a un pibe contándote algo, está bien.
 - **El 80% de las ventas en IG vienen de stories**, pero a través de CONFIANZA, no de venta directa. La confianza se construye siendo genuino, no optimizando copy.
 
-### Regla #0.5 — Proceso creativo OBLIGATORIO antes de escribir
+### Regla #0.5 — Los 5 modelos mentales del storymaker (extraídos de análisis profundo de Joaco Coronel, Turu, Agus Nievas)
+
+**MM1: "Estoy dando una clase, no vendiendo."** Toda decisión fluye de esta mentalidad. La pizarra, el valor gratis, el PDF, la ausencia de urgencia — todo es consistente con un PROFESOR. Cuando pensás "estoy enseñando": dás valor primero, usás ayudas visuales, estructurás claramente, no presionás. El CTA es "¿querés los apuntes?" no "comprá mi curso."
+
+**MM2: "¿Qué necesita ESCUCHAR el viewer ahora?" (no "¿qué necesito DECIR yo?")** Cada story responde la pregunta que la anterior generó. Es diseño empático, no contenido egocéntrico.
+
+**MM3: "Demostrar haciendo, no diciendo."** Nunca DECIR "soy experto" — DIBUJAR un framework de memoria. Nunca DECIR "no soy vendedor" — simplemente NO vender. La ausencia ES la prueba.
+
+**MM4: "Definir lo que NO soy antes que lo que soy."** Los 3 enemigos son las alternativas que la COMPETENCIA ofrece. Al definir qué no funciona, definís qué sí funciona por ELIMINACIÓN. El viewer llega a tu solución por LÓGICA, no por persuasión.
+
+**MM5: "El siguiente paso es una continuación natural, no una transacción."** El CTA es una EXTENSIÓN de la enseñanza, no un CAMBIO a venta. "¿Te paso los apuntes?" no "comprá mi producto."
+
+### Regla #0.6 — Jerarquía de confianza (orden fijo, no saltearse)
+
+Cada destacada/secuencia explicativa debe construir confianza en ESTE orden. Cada paso es prerrequisito del siguiente:
+
+```
+1. RELEVANCIA — "¿Esto es para mí?" → deseo específico del avatar como filtro
+2. ESPECIFICIDAD — "¿Entiende MI situación?" → definición precisa del avatar
+3. COMPETENCIA — "¿Sabe de lo que habla?" → enseñar algo real (pizarra, framework)
+4. DIAGNÓSTICO — "¿Entiende lo que YO intenté?" → los intentos fallidos del avatar
+5. CREDIBILIDAD — "¿Alguien más confía en él?" → prueba por asociación o credenciales
+6. SEGURIDAD — "¿Es seguro responder?" → gratis, sin presión, sin precio
+```
+
+Si salteás un paso, la cadena se rompe. Si los ponés en otro orden, no funciona. El viewer necesita cada SÍ para dar el siguiente.
+
+### Regla #0.7 — Gramática visual funcional
+
+Cada formato refuerza el mensaje — no es decoración:
+- **Cara hablando a cámara** = intimidad, contacto directo → para preguntas personales y CTAs
+- **Pizarra/dibujo en vivo** = aula, enseñanza → para dar valor real (competencia)
+- **Columnas de texto** = comparación instantánea → para diagnóstico/enemigos
+- **Fondo oscuro + screenshots** = evidencia, seriedad → para prueba/credibilidad
+- **Documento abierto + flecha dibujada** = tangibilidad → para CTA
+
+### Regla #0.8 — Lo que NO hay es tan importante como lo que hay
+
+La AUSENCIA deliberada de urgencia, plazas limitadas, precio, "respondé AHORA", promesas de resultados y testimonios agresivos ES lo que genera confianza. El viewer piensa: "si no me presiona y me da gratis, debe ser confiable."
+
+### Regla #0.9 — Proceso creativo OBLIGATORIO antes de escribir
 - **NUNCA saltar directo a escribir texto.** Primero pensar 5-10 minutos la IDEA CREATIVA.
 - **Pregunta obligatoria:** "¿Cuál es la forma más creativa, más simple, más de niño de 5 años de transmitir esta idea?" (Módulo 2: "Si hacés este paso bien, vas a dominar el juego de las stories")
 - **Usar vehículos creativos:** Analogías, metáforas visuales, contradicciones, historias. NUNCA ser literal ("enseño X"). Siempre buscar el ángulo inesperado.
@@ -27,7 +81,7 @@
 
 ### Formato y diseño
 - **70% imagen, 30% texto.** Nunca al revés. "La gente no está en Instagram para tomarse un tostón."
-- **Primera story = cara visible.** SIEMPRE selfie o foto donde se vea la cara. La gente pasa si no sabe quién es.
+- **Primera story = cara visible.** SIEMPRE que se vea la cara (selfie, foto, video). Para secuencias con narrativa, la apertura con collage/foto emocional funciona mejor que selfie pura (ver arsenal B2). Para stories casuales/diarias, selfie está bien.
 - **Alternar formatos: foto → video → foto → video.** Si todo es video seguido, el alcance baja hasta la mitad.
 - **Subtítulos SIEMPRE en videos hablando.** Mucha gente ve IG sin sonido. Herramienta: CapCut.
 - **Texto resumen debajo de cada video.** Muchos no ven el video entero pero sí leen el texto.
@@ -35,12 +89,33 @@
 - **Máximo 2 tipografías** y **máximo 2 colores** (blanco/negro + color de marca).
 - **Cambiar de plano cada 3-5 segundos** en video (regla de televisión).
 
+### Overlay vs hablado — capas complementarias (regla Naffe)
+- En stories con video hablado: el overlay es un **TÍTULO** (5-10 palabras max) que genera curiosidad. El hablado es la **HISTORIA** (30-60 palabras) que da la emoción.
+- **Nunca repetir** — son capas complementarias, no redundantes. El viewer sin sonido se lleva la idea, el viewer con sonido se lleva la emoción.
+- Esto CORRIGE la regla anterior de "texto resumen debajo de cada video" — el overlay NO resume, TITULA. El resumen mata la curiosidad; el título la amplifica.
+- **(Fuente: Naffe/StoryMakers, 88 guiones analizados — 100% de los videos con texto+hablado usan capas distintas)**
+
+### Distribución temporal (PATRÓN — fuente: NAFE/StoryMakers)
+- **Publicar en 3 bloques separados por 4-5 horas**, no todo junto:
+  - **Bloque 1 (mañana):** Hook + intriga (2-3 stories)
+  - **— PAUSA 4-5 horas —**
+  - **Bloque 2 (tarde):** Desarrollo + prueba (3-4 stories)
+  - **— PAUSA 3-4 horas —**
+  - **Bloque 3 (noche):** Cierre + CTA (2 stories)
+- **Por qué:** El algoritmo prioriza engagement sostenido. Cada bloque reactiva la burbuja de stories en el feed. Jesús aparece 3 veces en lugar de 1 sin crear más contenido.
+- **Excepción:** Stories casuales sin secuencia narrativa se publican cuando surgen.
+
 ### Estructura y cantidad
 - **5-10 stories por secuencia.** Ideal 7. Máximo 15 solo para historia de vida. Más de 20 = tostón.
 - **UNA sola idea por día.** No mezclar temas en una secuencia.
 - **Cada story tiene que tener sentido con la siguiente.** No romper la línea de contenido.
 - **DOBLE CTA en cada secuencia** — primer CTA → story de prueba social → segundo CTA. El segundo suele tener más interacción.
 - **CTA siempre en video hablando**, no en foto con texto.
+
+### Posición del CTA (regla Naffe)
+- **El CTA hablado va SIEMPRE en la penúltima story, nunca la última.** La última story es refuerzo visual: keyword en texto grande + foto oscurecida o fondo negro. El viewer que no pasa se queda con el keyword como reminder persistente; si el CTA hablado queda último, se pierde cuando pasan.
+- Esto NO reemplaza la regla de DOBLE CTA — complementa. El segundo CTA hablado va en la penúltima; la última es el ancla visual.
+- **(Fuente: Naffe/StoryMakers, 88 guiones analizados — 100% consistente)**
 
 ### Naturalidad
 - **Las stories tienen que parecer una conversación con un amigo.** No un pitch de venta.
@@ -55,11 +130,14 @@
 - **CTA directo de venta: 1 vez cada 2 semanas** (quema mucho).
 - **Vender máximo 1-2 veces a la semana.** "Si quieren que les vendan constantemente, se van a una tienda."
 - **NUNCA eliminar stories.** Perjudica al algoritmo. "Mejor hecho que perfecto."
+- **En secuencias de venta, mantener al menos 65% de buildup narrativo antes de cualquier CTA.** Si la secuencia tiene 10 stories, el CTA no aparece antes de la story 7. Si tiene 7 stories, no antes de la 5. (Fuente: Naffe/StoryMakers, 88 guiones analizados — promedio real 72% buildup / 28% CTA)
+- **Para lanzamientos grandes:** 3-4 semanas de branding puro (0% CTA) antes de la secuencia de venta activa (7-10 días max). Ratio total del lanzamiento: 70% branding + 30% venta. (Fuente: lanzamiento ICO de Naffe, 30 días reconstruidos)
 
 ### Credibilidad
 - **Testimonios SIEMPRE en video hablado.** Texto o audio = menor credibilidad. Video = 100% real.
 - **Si usás comentarios inventados, esperar 15-20 minutos** antes de subir esa story. Si no, se nota.
 - **NUNCA mostrar que todo es perfecto.** "La gente es escéptica con el cuadro perfecto." Mostrar errores, dificultades.
+- **Pausa intencional de 15-20 min entre stories de una secuencia de hype/anticipación.** Las reacciones a la primera story se acumulan VISIBLEMENTE antes de que la audiencia vea la segunda. Las reacciones visibles actúan como prueba social orgánica — "mucha gente ya reaccionó, debe ser bueno." Esto es distinto de la regla de credibilidad para comentarios inventados: acá la pausa es una HERRAMIENTA DE PRODUCCIÓN para amplificar social proof real. (Fuente: Naffe/StoryMakers, 88 guiones analizados)
 
 ---
 
@@ -84,6 +162,21 @@
 4. CLÍMAX — la lección, el insight, el resultado
 5. CTA — keyword, encuesta, o cierre emocional
 ```
+
+### Bloques modulares (sistema Naffe)
+
+Pre-producir 2 bloques reutilizables que se insertan entre narrativa y CTA en cualquier secuencia de venta:
+
+- **BLOQUE PRUEBA SOCIAL** (2-3 stories): capturas de DMs, mensajes de alumnos, números de grupo de WhatsApp. Se planifican como slides del guión (no son capturas espontáneas — son assets de producción preparados ANTES de publicar).
+- **BLOQUE PUSH** (1-2 stories): deadline real, plazas reales, consecuencia de no actuar. Solo urgencia VERDADERA.
+
+**Estructura de inserción:** Narrativa (70%) → [BLOQUE PRUEBA SOCIAL] → [BLOQUE PUSH] → CTA (penúltima) → Ancla visual (última).
+
+**Actualizar cada 2 semanas** con material fresco (nuevas capturas, nuevos números).
+
+**Para Jesús:** Pre-grabar capturas de alumnos del Taller anterior + deadline real de inscripción. Tenerlos listos como archivos en el teléfono para insertar en cualquier secuencia de la semana.
+
+**(Fuente: Naffe/StoryMakers, 88 guiones analizados — bloques marcados con flechas en tabla de producción)**
 
 ### Michael Hauge (para "Mi Historia")
 
@@ -239,6 +332,16 @@
 | 2 | Prueba social del apoyo + más hype |
 | 3 | Lifestyle + antes/después + DOBLE CTA con keyword |
 | 4-5 | Seguimiento, testimonios, urgencia |
+
+### Post-cierre (anti-CTA) — (Fuente: Naffe/StoryMakers, 88 guiones analizados)
+
+Después de cerrar una ventana de venta:
+1. Publicar 1-2 stories mostrando la **demanda NO atendida**: mensajes, comentarios, DMs de gente pidiendo que reabras.
+2. **No ofrecer reapertura** — dejar que la audiencia procese que lo perdieron.
+3. El NO vender genera MÁS demanda que vender. "Podría ganar más abriéndolas. No las voy a abrir" + capturas de DMs = FOMO real.
+4. Esto calienta para el próximo lanzamiento: la audiencia sabe que si no actúa rápido, se queda afuera.
+
+**Para Jesús:** Después de cerrar inscripciones al Taller, mostrar los DMs de gente que quería entrar y no llegó. No reabrir. Dejar que la demanda se acumule para la próxima edición.
 
 ### Framework "Why Not Me" (fin de mes)
 
@@ -526,3 +629,199 @@ Siempre a fin de mes: anunciar subida de precios, incentivo especial con fecha l
 - Qué hago
 - Mi historia
 - Lifestyle/Así vivo
+
+---
+
+## 12. MÉTRICAS A TRACKEAR
+
+> Fuente: 21 sesiones reales de planificación (Nafé + clientes)
+
+| Métrica | Qué mide | Target |
+|---------|----------|--------|
+| Views / Followers % | Salud general del canal | >25% |
+| Retención por story | Cuántos llegan al final | >70% de la primera |
+| Respuestas por CTA | Efectividad del CTA | >15% de views |
+| Swipe-backs | Engagement real | Subiendo mes a mes |
+| DMs generados | Leads calientes | >100/semana |
+
+---
+
+## 13. ERRORES COMUNES A EVITAR
+
+1. **Vender en cada secuencia** — Máximo 1 CTA de venta cada 2 semanas. Lead magnets 1-2x/semana
+2. **Misma cara-a-cámara siempre** — Alternar formatos agresivamente
+3. **Stories sin emoción** — Cada secuencia debe ser una montaña rusa emocional
+4. **Borrar stories** — NUNCA. El algoritmo lo castiga
+5. **Contenido "de marketer"** — Tiene que sonar como Jesús hablando con un amigo, no como un curso
+6. **No mostrar la cara en la primera story** — Regla de oro: siempre arrancar con selfie
+7. **Secuencias de +15 stories** — La gente se va. 7-10 es el sweet spot
+8. **No descansar** — 3 secuencias seguidas, después parar. El algoritmo necesita recuperarse
+9. **No subtitular videos** — Mucha gente mira sin sonido
+10. **No mostrar comentarios/DMs** — El efecto rebaño es uno de los triggers más potentes
+
+---
+
+## 14. TIPOS DE CTA EN STORIES (De sesiones reales)
+
+### CTA Inbound vs Outbound
+
+| Tipo | Qué es | Ejemplo |
+|------|--------|---------|
+| **Inbound** | El seguidor nos escribe a nosotros | "Respondé YO y te lo mando" |
+| **Outbound** | Nosotros les escribimos a ellos | Reaccionan con fueguito → setter les abre conversación |
+
+### 4 tipos de CTA por objetivo
+
+**1. CTA Lead Magnet (1-2x/semana)**
+- Dar algo gratis y fácil de consumir/aplicar
+- Regla: el lead magnet NO puede ser una clase de 1 hora. Tiene que ser algo que copien y peguen
+- Ejemplos buenos: "Los 5 prompts que uso", "Mi plantilla de anuncios ganadores", "Manual de objeciones PDF"
+- SIEMPRE mostrar el documento por dentro (no solo la tapa) → más gente responde
+- Si se puede imprimir y mostrar la foto sujetándolo, tangibiliza aún más
+
+**2. CTA Directo (máx cada 2 semanas)**
+- Venta directa al programa/servicio
+- Estructura: historia personal → qué hacemos → entregables del programa → "respondé YO"
+- Truco: arrancar con "Hoy me desperté asustado, tuve una pesadilla: ser un vendehumos" → engancha
+- Mostrar el "sueño húmedo" del avatar: todo lo que les llevamos nosotros para que no piensen
+
+**3. CTA Volumen (gamificación)**
+- Genera MASAS de respuestas con juegos
+- Ejemplo probado: "Ponete reto: sacá captura en el momento correcto. Si lo lográs, respondé YO y te envío [recurso]"
+- Ejemplo probado: "El que adivine qué iPhone es, le doy un regalo"
+- Ejemplo probado: Before/after de look → swipe-back → engagement → Instagram lo premia
+- Funcionan porque la gente entra a Instagram para entretenerse, no para comprar
+- Un cliente generó **19 agendas con solo 2 stories** usando CTA volumen
+
+**4. CTA Outbound (pasivo)**
+- El seguidor reacciona con un botón (fueguito, encuesta) → setter lo contacta
+- Secuencia de hype: "Se viene algo top" + caja de votaciones "¿Lo querés?" → a los que dicen SÍ, el setter les escribe
+- No requiere que el seguidor escriba primero
+
+### Reglas de CTAs
+- **Siempre doble CTA:** Un CTA → story con comentarios de gente respondiendo → otro CTA
+- **Esperar 30-60 minutos** entre la primera story (hook de views) y el resto de la secuencia → maximiza viewership
+- **La keyword tiene que ser GRANDE y en color diferente**
+- **El setter NUNCA envía el recurso directo** — primero abre conversación, cualifica, después envía
+- **Lead magnets tienen que ser ESPECÍFICOS al avatar:** no genéricos. "Plantilla de anuncios ganadores para coaches" > "Plantilla de anuncios"
+
+---
+
+## 15. PATRONES DE PLANIFICACIÓN SEMANAL (De 21 sesiones reales)
+
+### Estructura tipo de una semana
+
+| Día | Tipo | Notas |
+|-----|------|-------|
+| Lunes | Secuencia de personalidad/valores O descanso | Si el domingo hubo secuencia, descanso |
+| Martes | CTA Lead Magnet #1 | El día más activo para CTAs |
+| Miércoles | Descanso | Siempre descanso a mitad de semana |
+| Jueves | CTA Lead Magnet #2 (otro ángulo) O contenido de nicho | Alternar ángulos de comunicación |
+| Viernes | Descanso | "Suelo estar más desconectado los viernes" |
+| Sábado | Valores / reflexión / presentar pareja | Contenido emocional para el finde |
+| Domingo | Historia de vida / podcast / hype | Contenido que se queda destacado |
+
+### Reglas observadas en las 21 sesiones
+
+1. **Nunca más de 3 secuencias seguidas sin descanso** — patrón universal
+2. **2 CTAs lead magnet por semana, cada uno con ángulo distinto** — ej: Martes = "prompts de IA", Jueves = "manual de objeciones"
+3. **1 secuencia de valores/personalidad por semana** — presentar pareja, contar historia, reflexión
+4. **Los viernes SIEMPRE descanso** — constante en las 21 sesiones
+5. **Contenido de stock es crítico** — fotos en tercera persona, selfies variados, fotos trabajando, fotos con familia
+6. **Reutilizar formatos probados** — si el CTA del iPhone funcionó, hacer lo mismo con el Mercedes
+7. **Testimonios se quedan en destacados** — cada testimonio: edad, origen, situación anterior, logros
+8. **Preguntas y respuestas van a destacados** — resuelven objeciones evergreen, se puede agregar link de agenda
+
+### Narrativa de lanzamiento (patrón con Endika)
+
+1. **Semana pre-lanzamiento:** Historia de vida + valores + nicho (sin vender)
+2. **Anuncio del reto:** "Te voy a regalar dinero — no directamente, prefiero enseñarte a hacerlo"
+3. **Durante el reto:** Mostrar reacciones y valor aportado → "accedé para no perderte más"
+4. **Post-reto:** Anunciar webinar con resultados → si no pudiste, repetimos el domingo
+5. **Cierre de plazas:** Mostrar DMs pidiendo entrar + "cumplo mi palabra, cerrado"
+6. **Post-cierre:** Generar arrepentimiento → "no habrá segunda oportunidad hasta el próximo lanzamiento"
+
+### Contenido que genera swipe-backs (engagement premium)
+
+- **Before/after de look** (raparse, cambio de peinado) → la gente va y viene comparando
+- **Juegos de adivinanza** (¿qué iPhone es?) → vuelven atrás para verificar
+- **Collages con difuminado** → el documento se ve parcialmente → curiosidad → swipe-back
+- **Secuencias con misterio** ("¿querés saber por qué?") → la gente vuelve a leer el contexto
+
+---
+
+## 16. BANCO DE CONTENIDO NECESARIO
+
+Nafé pide a todos sus clientes una **carpeta de Drive** con contenido organizado. Sin banco de contenido, no se pueden crear secuencias de calidad.
+
+| Categoría | Ejemplos | Para qué se usa |
+|-----------|----------|-----------------|
+| **Fotos selfie** | Variedad de expresiones, locaciones, ropa | Primera story SIEMPRE |
+| **Fotos en tercera persona** | Alguien te saca trabajando, caminando, pensando | Contextualizar, profesionalidad |
+| **Fotos con familia/pareja** | Momentos reales, no posados | Secuencias de personalidad |
+| **Fotos de lifestyle** | Viajes, restaurantes, auto, casa | Vender el nicho sin decirlo |
+| **Videos hablando (selfie)** | Explicaciones, reflexiones, 15-30 segundos | Desarrollo de ideas |
+| **Videos en tercera persona** | Trabajando, reuniones, día a día | Contexto profesional |
+| **Capturas de pantalla** | Ventas, plataformas, testimonios, DMs | Prueba social, resultados |
+| **Fotos antiguas** | Infancia, antes del éxito | Historia de vida, transformación |
+| **Fotos profesionales** | Eventos, conferencias, premios | Autoridad |
+
+> "Las fotos las saco de capturas de video porque no tengo fotos en tercera persona" — Esto baja la calidad. Hay que tener fotos REALES.
+
+---
+
+## 17. INTEGRACIÓN CON SETTERS
+
+### Cuándo los setters actúan
+
+| Momento | Qué hace el setter |
+|---------|-------------------|
+| **CTA Inbound** (respondé YO) | Abre conversación, cualifica, NO envía recurso directo |
+| **CTA Outbound** (reacción/encuesta) | Contacta a quien reaccionó: "Vi que te interesó, te cuento..." |
+| **Nuevo seguidor** | Bienvenida: "Hola, gracias por seguirnos. ¿En qué te podemos ayudar?" |
+| **Post-secuencia de hype** | A los que votaron "SÍ quiero" en encuestas → abre chat |
+
+### Reglas para setters desde stories
+- **NUNCA enviar el recurso directo sin conversación previa**
+- Primero cualificar: "¿A qué te dedicás? ¿Qué estás buscando?"
+- Si el lead está caliente (votó SÍ, respondió rápido), ser más directo
+- Registrar qué CTA generó la conversación (para medir cuál funciona)
+
+---
+
+## 18. DESTACADOS (Highlights) — ESTRATEGIA EVERGREEN
+
+### Destacados que todo perfil debe tener
+
+| Destacado | Contenido | Función |
+|-----------|-----------|---------|
+| **Mi historia** | Secuencia de historia de vida (Hauge 6 etapas) | Confianza, personalidad, identificación |
+| **¿CÓMO FUNCIONA?** | Secuencia explicativa tipo 9 — Joaco Coronel style | Nuevos seguidores entienden el modelo en 7 slides |
+| **Testimonios** | 3-5 testimonios con antes/después + datos | Prueba social permanente |
+| **FAQ / Preguntas** | Objeciones respondidas + link de agenda | Venta evergreen automática |
+| **Resultados** | Capturas de ventas, métricas, logros | Autoridad |
+| **Día a día** | Mejor contenido de lifestyle | Vender el nicho |
+
+### Reglas de destacados
+- Los testimonios y FAQ se quedan SIEMPRE destacados
+- Se actualizan cuando hay nuevos testimonios o nuevas objeciones
+- El link de agenda en FAQ genera agendas en automático, sin hacer nada
+- **"¿CÓMO FUNCIONA?"** se actualiza cada 2-3 meses o cuando cambia el modelo
+
+---
+
+## 19. BENCHMARKS DE STORIES — Referencias analizadas
+
+Referencias de creadores que usan formatos replicables para ADP. Archivos en `.data/referencias/`.
+
+| Referencia | Creador | Formato | Score ADP | Qué copiar |
+|---|---|---|---|---|
+| `ref-david-turu-que-hago-cocina.json` | David Turu | Triángulo 3 personajes (cocina) | 9/10 | Ejemplo tangible, tono accesible, resultado del cliente, calculadora visible |
+| `ref-xavi-esqueriguela-que-hago-agencia.json` | Xavi Esqueriguela | Triángulo 3 personajes (agencia) | 6/10 | Framework de personajes, CTA "Responde YO" — NO copiar tono lifestyle/lujo |
+| `ref-agus-nievas-que-hago-estructura-stories.json` | Agus Nievas | Behind the scenes + secuencia real (12 slides) | 9/10 | Estructura completa revelada, variedad visual, dato externo real, efecto rebaño con DMs |
+| `ref-joaco-coronel-como-trabajo-posicionamiento.json` | Joaco Coronel | Highlight explicativo de servicio (7 slides) | 7/10 | Pizarra para explicar modelo, 3 enemigos, lead magnet como CTA, highlight fijo |
+
+### Cómo usar las referencias
+- **Al generar tipo 8 (Actuada):** leer David Turu (qué copiar) + Xavi (qué NO copiar)
+- **Al generar tipo 9 (Explicativa):** leer Joaco Coronel (pizarra + enemigos) + Agus Nievas (estructura revelada)
+- **Al generar tipo 10 (BTS):** leer Agus Nievas (behind the scenes, variedad visual)

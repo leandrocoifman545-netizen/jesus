@@ -1,16 +1,16 @@
 # Matriz de Cobertura — Auto-generado
-> Fecha: 2026-03-27
-> Base: 53 generaciones
+> Fecha: 2026-04-04
+> Base: 55 generaciones
 > Este archivo se regenera con: `node scripts/update-coverage.mjs`
 
 ## Resumen general
 
 | Dimensión | Valores usados | Total generaciones |
 |-----------|---------------|-------------------|
-| Familias de ángulo | 12 / 5 | 53 |
-| Body types | 13 / 13 | 53 |
-| Segmentos | 6 / 4 | 53 |
-| Funnel stages | 4 / 3 | 53 |
+| Familias de ángulo | 12 / 5 | 55 |
+| Body types | 13 / 13 | 55 |
+| Segmentos | 6 / 4 | 55 |
+| Funnel stages | 4 / 3 | 55 |
 | Lead types distintos | 25 | — |
 | Avatares distintos | 10 | — |
 | Ventas del modelo distintas | 16 | — |
@@ -29,12 +29,12 @@
 | ❓ 3 | 1 | 2% |
 | ❓ 4 | 2 | 4% |
 | ❓ 5 | 1 | 2% |
+| ❓ desconocido | 12 | 22% |
 | ❓ identidad | 8 | 15% |
-| ❓ confrontacion | 9 | 17% |
+| ❓ confrontacion | 9 | 16% |
 | ❓ historia_personal | 2 | 4% |
-| ❓ historia | 4 | 8% |
+| ❓ historia | 4 | 7% |
 | ❓ mecanismo | 6 | 11% |
-| ❓ desconocido | 10 | 19% |
 
 ## Cobertura por body type
 
@@ -45,7 +45,7 @@
 | 3. Demo/Proceso | 0 | 0% |
 | 4. Comparación caminos | 1 | 2% |
 | 5. Un día en la vida | 1 | 2% |
-| 6. Pregunta y respuesta | 10 | 19% |
+| 6. Pregunta y respuesta | 10 | 18% |
 | 7. Analogía extendida | 1 | 2% |
 | 8. Contraste emocional | 2 | 4% |
 | 9. Demolición alternativas ⭐ | 1 | 2% |
@@ -53,17 +53,17 @@
 | 11. Tier-list/Rating | 0 | 0% |
 | 12. Trailer de recurso | 0 | 0% |
 | 13. Quiz de comparación | 0 | 0% |
-| ❓ conversacion_experto_novato | 10 | 19% |
+| ❓ desconocido | 12 | 22% |
+| ❓ conversacion_experto_novato | 10 | 18% |
 | ❓ storytelling_hollywood | 2 | 4% |
-| ❓ victor_elas_conversation | 10 | 19% |
-| ❓ listicle | 3 | 6% |
-| ❓ desconocido | 10 | 19% |
+| ❓ victor_elas_conversation | 10 | 18% |
+| ❓ listicle | 3 | 5% |
 
 ## Cobertura por segmento
 
 | Segmento | Count | % |
 |----------|-------|---|
-| A | 17 | 32% |
+| A | 17 | 31% |
 | B | 7 | 13% |
 | C | 7 | 13% |
 | D | 8 | 15% |
@@ -72,20 +72,20 @@
 
 | Stage | Count | % |
 |-------|-------|---|
-| TOFU | 24 | 45% |
-| MOFU | 10 | 19% |
+| TOFU | 24 | 44% |
+| MOFU | 10 | 18% |
 | RETARGET | 6 | 11% |
 
 ## Cobertura por avatar
 
 | Avatar | Count | % |
 |--------|-------|---|
-| martin | 16 | 30% |
-| ? | 12 | 23% |
-| patricia | 9 | 17% |
-| roberto | 4 | 8% |
-| diego | 3 | 6% |
-| laura | 3 | 6% |
+| martin | 16 | 29% |
+| ? | 14 | 25% |
+| patricia | 9 | 16% |
+| roberto | 4 | 7% |
+| diego | 3 | 5% |
+| laura | 3 | 5% |
 | valentina | 2 | 4% |
 | soledad | 2 | 4% |
 | camila | 1 | 2% |
@@ -95,18 +95,18 @@
 
 | Tipo de venta | Count | % |
 |---------------|-------|---|
-| ? | 10 | 19% |
+| ? | 12 | 22% |
 | tiempo_vs_dinero | 5 | 9% |
 | ventana_oportunidad | 5 | 9% |
-| transparencia_total | 4 | 8% |
-| democratizacion_ia | 3 | 6% |
-| eliminacion_barreras | 3 | 6% |
-| prueba_diversidad | 3 | 6% |
-| cementerio_modelos | 3 | 6% |
-| lean_anti_riesgo | 3 | 6% |
-| contraste_negocio_fisico | 3 | 6% |
-| matematica_simple | 3 | 6% |
-| custom | 3 | 6% |
+| transparencia_total | 4 | 7% |
+| democratizacion_ia | 3 | 5% |
+| eliminacion_barreras | 3 | 5% |
+| prueba_diversidad | 3 | 5% |
+| cementerio_modelos | 3 | 5% |
+| lean_anti_riesgo | 3 | 5% |
+| contraste_negocio_fisico | 3 | 5% |
+| matematica_simple | 3 | 5% |
+| custom | 3 | 5% |
 | historia_origen | 2 | 4% |
 | prueba_personal | 1 | 2% |
 | cementerio_de_modelos | 1 | 2% |
@@ -144,30 +144,30 @@
 
 ## Matriz cruzada: Familia × Body Type
 
-| Familia \ Body | Demolición de m | Historia con gi | Demo/Proceso | Comparación cam | Un día en la vi | Pregunta y resp | Analogía extend | Contraste emoci | Demolición alte | Q&A conversacio | Tier-list/Ratin | Trailer de recu | Quiz de compara | conversacion_ex | storytelling_ho | victor_elas_con | listicle | desconocido | **Total** |
+| Familia \ Body | Demolición de m | Historia con gi | Demo/Proceso | Comparación cam | Un día en la vi | Pregunta y resp | Analogía extend | Contraste emoci | Demolición alte | Q&A conversacio | Tier-list/Ratin | Trailer de recu | Quiz de compara | desconocido | conversacion_ex | storytelling_ho | victor_elas_con | listicle | **Total** |
 |----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------|
 | Identidad y Si | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | **0** |
-| Oportunidad y  | 1 | — | — | 1 | — | 2 | — | — | — | — | — | — | — | — | — | — | 3 | — | **7** |
+| Oportunidad y  | 1 | — | — | 1 | — | 2 | — | — | — | — | — | — | — | — | — | — | — | 3 | **7** |
 | Contraste y Co | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | **0** |
 | Mecanismo y Pr | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | **0** |
 | Historia y Emo | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | **0** |
-| 1 | — | — | — | — | — | — | — | — | — | — | — | — | — | 1 | — | — | — | — | **1** |
-| 2 | — | — | — | — | — | — | — | — | — | — | — | — | — | 2 | — | — | — | — | **2** |
-| 3 | — | — | — | — | — | — | — | — | — | — | — | — | — | 1 | — | — | — | — | **1** |
-| 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | 2 | — | — | — | — | **2** |
-| 5 | — | — | — | — | — | — | — | — | — | — | — | — | — | 1 | — | — | — | — | **1** |
-| identidad | — | — | — | — | 1 | 2 | — | 2 | — | — | — | — | — | 1 | — | 2 | — | — | **8** |
-| confrontacion | — | — | — | — | — | 2 | 1 | — | 1 | — | — | — | — | 2 | — | 3 | — | — | **9** |
-| historia_perso | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 2 | — | — | — | **2** |
-| historia | — | 1 | — | — | — | 1 | — | — | — | — | — | — | — | — | — | 2 | — | — | **4** |
-| mecanismo | — | — | — | — | — | 3 | — | — | — | — | — | — | — | — | — | 3 | — | — | **6** |
-| desconocido | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 10 | **10** |
+| 1 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 1 | — | — | — | **1** |
+| 2 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 2 | — | — | — | **2** |
+| 3 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 1 | — | — | — | **1** |
+| 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 2 | — | — | — | **2** |
+| 5 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 1 | — | — | — | **1** |
+| desconocido | — | — | — | — | — | — | — | — | — | — | — | — | — | 12 | — | — | — | — | **12** |
+| identidad | — | — | — | — | 1 | 2 | — | 2 | — | — | — | — | — | — | 1 | — | 2 | — | **8** |
+| confrontacion | — | — | — | — | — | 2 | 1 | — | 1 | — | — | — | — | — | 2 | — | 3 | — | **9** |
+| historia_perso | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 2 | — | — | **2** |
+| historia | — | 1 | — | — | — | 1 | — | — | — | — | — | — | — | — | — | — | 2 | — | **4** |
+| mecanismo | — | — | — | — | — | 3 | — | — | — | — | — | — | — | — | — | — | 3 | — | **6** |
 
 ## Ángulos específicos (saturación)
 
 | Ángulo | Count | Estado |
 |--------|-------|--------|
-| ? | 13 | 🔴 Quemado |
+| ? | 15 | 🔴 Quemado |
 | 3.6_anti_guru | 3 | ✅ OK |
 | 1.2_oficinista_atrapado | 3 | ✅ OK |
 | 1.2_oficinista | 2 | ✅ OK |

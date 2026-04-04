@@ -18,7 +18,7 @@
 - Viajó 6 meses por Europa en casa rodante. Desescolarizó a sus hijos.
 
 ## Golpes clave
-- **Muerte del padre:** "Me vine abajo, todo. Se me vino todo abajo."
+- **Separación de los padres:** "Se me vino todo abajo."
 - **Divorcio:** relación tóxica, hija de ~1 año.
 - **100 clientes:** "Tuve 100 clientes y fue mi peor momento." Aprendió que más no es mejor.
 - **Stripe rechaza 2,000 pagos:** "Me bañaron. Me fundo." Aprendió a diversificar.

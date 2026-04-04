@@ -1,0 +1,1064 @@
+{
+  "username": "jaimehigueraes",
+  "generated_at": "2026-04-01T05:21:56.864Z",
+  "months_analyzed": 12,
+  "total_posts": 303,
+  "videos": 298,
+  "sidecars": 5,
+  "content_split": {
+    "organic": {
+      "count": 258,
+      "pct": 85.15
+    },
+    "sale": {
+      "count": 45,
+      "pct": 14.85
+    },
+    "ratio": "5.73:1"
+  },
+  "distribution": {
+    "mean": 12.03,
+    "median": 1.93,
+    "stddev": 27.13,
+    "p25": 1.42,
+    "p50": 1.93,
+    "p75": 3.42,
+    "p90": 50.82,
+    "min": 0.27,
+    "max": 157.9
+  },
+  "bimodal": {
+    "bimodal": true,
+    "reason": "18 posts con CLR >66.28% vs 285 posts debajo",
+    "high_cluster": {
+      "count": 18,
+      "avg": 102.51,
+      "min": 72.22
+    },
+    "low_cluster": {
+      "count": 285,
+      "avg": 6.32,
+      "max": 64.05
+    },
+    "threshold": 66.28
+  },
+  "clusters": [
+    {
+      "name": "vida",
+      "keywords": [
+        "vida",
+        "gente",
+        "negocio",
+        "personas",
+        "años",
+        "cómo",
+        "empezar",
+        "euros",
+        "millones",
+        "generar",
+        "cuenta",
+        "mundo",
+        "empresas",
+        "online",
+        "alta",
+        "proceso",
+        "growth",
+        "consejos",
+        "partner",
+        "digital",
+        "riqueza",
+        "personalmente",
+        "clientes",
+        "habilidad",
+        "jaimehigueraes",
+        "modelo",
+        "crecer",
+        "toda",
+        "ingresos",
+        "éxito",
+        "propósito",
+        "puedo",
+        "seguir",
+        "todavía",
+        "nombre",
+        "jaime",
+        "partners",
+        "últimos",
+        "generado",
+        "estrategias",
+        "importantes",
+        "españa",
+        "demanda",
+        "experiencia",
+        "cualquier",
+        "mayor",
+        "extra",
+        "gracias",
+        "marketing",
+        "ganado"
+      ],
+      "post_count": 185,
+      "avg_clr": 17.68,
+      "avg_views": 66443,
+      "cta_pct": 23.24,
+      "top_post": "DUS7iV9DLcc"
+    },
+    {
+      "name": "otros",
+      "keywords": [],
+      "post_count": 118,
+      "avg_clr": 3.17,
+      "avg_views": 86954,
+      "cta_pct": 1.69,
+      "top_post": "DTNYStejM1O"
+    }
+  ],
+  "ab_tests": [
+    {
+      "posts": [
+        {
+          "shortCode": "DWR1hyIjBQt",
+          "caption_preview": "Por esto las personas con alta vibración tienen problemas en sus relaciones  Si ",
+          "views": 28228,
+          "likes": 4897,
+          "comments": 170,
+          "clr": 3.47,
+          "duration": 49.1,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVbq21ADCKS",
+          "caption_preview": "Por esto las personas con alta vibración tienen problemas en sus relaciones  Si ",
+          "views": 254158,
+          "likes": 48084,
+          "comments": 940,
+          "clr": 1.95,
+          "duration": 49.1,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DQ65CoFDH0D",
+          "caption_preview": "Por qué las personas con alta vibración tienen problemas en sus relaciones",
+          "views": 244627,
+          "likes": 42052,
+          "comments": 813,
+          "clr": 1.93,
+          "duration": 54.2,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DQFFjxrDFBi",
+          "caption_preview": "Porque las personas con alta vibración tienen problemas en sus relaciones",
+          "views": 713663,
+          "likes": 115133,
+          "comments": 2162,
+          "clr": 1.88,
+          "duration": 54.2,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "25.28x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWjtvzWDC0d",
+          "caption_preview": "Esta es la cualidad más valiosa en una pareja  Si todavía no me conoces, mi nomb",
+          "views": 11162,
+          "likes": 1542,
+          "comments": 42,
+          "clr": 2.72,
+          "duration": 88.4,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVtt7NKCG1F",
+          "caption_preview": "Esta es la cualidad más valiosa en una pareja  Si todavía no me conoces, mi nomb",
+          "views": 249996,
+          "likes": 23178,
+          "comments": 360,
+          "clr": 1.55,
+          "duration": 88.4,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "22.4x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWXJoQNDLGt",
+          "caption_preview": "Habla tu verdad  Si todavía no me conoces, mi nombre es Jaime Higuera y soy el f",
+          "views": 10505,
+          "likes": 1642,
+          "comments": 61,
+          "clr": 3.71,
+          "duration": 100.833,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DWWTZ9rDK7j",
+          "caption_preview": "Siempre hay ese amigo…  Si todavía no me conoces, mi nombre es Jaime Higuera y s",
+          "views": 31449,
+          "likes": 4206,
+          "comments": 91,
+          "clr": 2.16,
+          "duration": 60.866,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DWJwVORDByA",
+          "caption_preview": "Confía en tus alas   Si todavía no me conoces, mi nombre es Jaime Higuera y soy ",
+          "views": 99285,
+          "likes": 16821,
+          "comments": 347,
+          "clr": 2.06,
+          "duration": 117.266,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DV9ZsR9jBLv",
+          "caption_preview": "Enfócate en los inputs  Si todavía no me conoces, mi nombre es Jaime Higuera y s",
+          "views": 33051,
+          "likes": 3030,
+          "comments": 23,
+          "clr": 0.76,
+          "duration": 41.7,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVougiHDJdo",
+          "caption_preview": "Enfócate en ti  Si todavía no me conoces, mi nombre es Jaime Higuera y soy el fu",
+          "views": 115982,
+          "likes": 22084,
+          "comments": 268,
+          "clr": 1.21,
+          "duration": 55.1,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVFFiCAD2Kf",
+          "caption_preview": "❤️‍🩹  Si todavía no me conoces, mi nombre es Jaime Higuera y soy el fundador de",
+          "views": 56167,
+          "likes": 3516,
+          "comments": 109,
+          "clr": 3.1,
+          "duration": 9.766,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVCDTVQjPkS",
+          "caption_preview": "Siempre hay ese amigo…  Si todavía no me conoces, mi nombre es Jaime Higuera y s",
+          "views": 63678,
+          "likes": 7695,
+          "comments": 147,
+          "clr": 1.91,
+          "duration": 64.833,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.96,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "11.04x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWFBfvzDOZA",
+          "caption_preview": "Después de hacerme millonario descubrí que es todo una mentira…  Si todavía no m",
+          "views": 72301,
+          "likes": 6493,
+          "comments": 344,
+          "clr": 5.3,
+          "duration": 28.607,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DTu2MzVDEDs",
+          "caption_preview": "Después de hacerme millonario, descubrí que es todo una mentira…",
+          "views": 40145,
+          "likes": 3006,
+          "comments": 130,
+          "clr": 4.32,
+          "duration": 28.607,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DRc85f3DPgv",
+          "caption_preview": "Después se hacerme millonario, descubrí que todo es una mentira",
+          "views": 10906,
+          "likes": 1293,
+          "comments": 46,
+          "clr": 3.56,
+          "duration": 41.266,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.07,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "6.63x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVO3WuZj2eK",
+          "caption_preview": "Estoy sin dinero, ¿qué negocio debería empezar?  Está es una pregunta que recibo",
+          "views": 48601,
+          "likes": 4305,
+          "comments": 5725,
+          "clr": 132.98,
+          "duration": 87.733,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DVjdOhbDLpB",
+          "caption_preview": "Necesito dinero, ¿qué negocio debería empezar?  Está es una pregunta que recibo ",
+          "views": 18767,
+          "likes": 1588,
+          "comments": 1356,
+          "clr": 85.39,
+          "duration": 92.833,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DUS7iV9DLcc",
+          "caption_preview": "Estoy sin dinero, ¿qué negocio debería empezar?  Está es una pregunta que recibo",
+          "views": 113009,
+          "likes": 9018,
+          "comments": 14239,
+          "clr": 157.9,
+          "duration": 87.733,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DUfz0E4DGZh",
+          "caption_preview": "Estoy empezando desde 0, ¿qué negocio debería montar?  Está es una pregunta que ",
+          "views": 17340,
+          "likes": 1035,
+          "comments": 859,
+          "clr": 83,
+          "duration": 87.033,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.94,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "6.52x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DSVvmF0jHHk",
+          "caption_preview": "Este es uno de los mayores indicios de alta inteligencia emocional",
+          "views": 48575,
+          "likes": 7188,
+          "comments": 224,
+          "clr": 3.12,
+          "duration": 73.7,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DQUgXXrDGYn",
+          "caption_preview": "Uno de los indicios de alta inteligencia emocional es este",
+          "views": 316269,
+          "likes": 49426,
+          "comments": 1089,
+          "clr": 2.2,
+          "duration": 73.7,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.9,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "6.51x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVoXyF8DMPQ",
+          "caption_preview": "Cosas que nunca haría después de entender la neurociencia detrás del amor propio",
+          "views": 384307,
+          "likes": 61768,
+          "comments": 588,
+          "clr": 0.95,
+          "duration": 59.24,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DUIlEASDMH8",
+          "caption_preview": "Cosas que nunca haría después de aprender la neurociencia detrás del amor propio",
+          "views": 93619,
+          "likes": 16829,
+          "comments": 370,
+          "clr": 2.2,
+          "duration": 63.1,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DR-Sh_ADPrB",
+          "caption_preview": "Nunca volvería hacer esta 4 cosas después de entender la neurociencia detrás del",
+          "views": 67247,
+          "likes": 12314,
+          "comments": 163,
+          "clr": 1.32,
+          "duration": 56.433,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.08,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "5.71x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DTbOZ3vDAdk",
+          "caption_preview": "La traición nunca es un accidente, es siempre una elección",
+          "views": 39028,
+          "likes": 5192,
+          "comments": 101,
+          "clr": 1.95,
+          "duration": 45.833,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DR7rF5kjPmT",
+          "caption_preview": "La traición nunca es un accidente, es una elección. Tu error no es que traicione",
+          "views": 157367,
+          "likes": 23451,
+          "comments": 403,
+          "clr": 1.72,
+          "duration": 45.833,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.36,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "4.03x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DTgP93HjHYa",
+          "caption_preview": "Si te sientes un poco perdido, este ejercicio me cambió la vida",
+          "views": 18620,
+          "likes": 1238,
+          "comments": 16,
+          "clr": 1.29,
+          "duration": 58.533,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DTLpNKmDC7b",
+          "caption_preview": "Si te sientes un poco perdido, este ejercicio me cambió la vida  👉 @jaimehiguer",
+          "views": 55270,
+          "likes": 4136,
+          "comments": 68,
+          "clr": 1.64,
+          "duration": 58.533,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.8,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.97x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DSQTYnnjESJ",
+          "caption_preview": "La mejor cosa que hice fue dejar de contar a todo el mundo lo que pasa en mi vid",
+          "views": 150076,
+          "likes": 18263,
+          "comments": 256,
+          "clr": 1.4,
+          "duration": 34.366,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DPy1H6FjO6O",
+          "caption_preview": "La mejor cosa que hice fue dejar de contar a todo el mundo lo que pasa en mi vid",
+          "views": 105970,
+          "likes": 15677,
+          "comments": 297,
+          "clr": 1.89,
+          "duration": 34.6,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DPGldN4jPZ5",
+          "caption_preview": "La mejor cosa que hice fue dejar de contar a todo el mundo lo que pasa en mi vid",
+          "views": 298903,
+          "likes": 35852,
+          "comments": 461,
+          "clr": 1.29,
+          "duration": 34.366,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.75,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.82x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DRxGkb-DOYq",
+          "caption_preview": "Este ejercicio de visualización me cambió la vida",
+          "views": 21338,
+          "likes": 3093,
+          "comments": 77,
+          "clr": 2.49,
+          "duration": 82.633,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DPQ6DSQDN2p",
+          "caption_preview": "Este ejercicio de 4 preguntas me cambió la vida",
+          "views": 59378,
+          "likes": 6801,
+          "comments": 65,
+          "clr": 0.96,
+          "duration": 61.866,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.7,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.78x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DSLEkJCjCyh",
+          "caption_preview": "Comenta ‘Diciembre’ si quieres ser considerado 👇  - Es mi misión este Diciembre",
+          "views": 17100,
+          "likes": 1140,
+          "comments": 635,
+          "clr": 55.7,
+          "duration": 50.566,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DSImmZHDEse",
+          "caption_preview": "Comenta ‘Diciembre’ si quieres ser considerado 👇  - Es mi misión este Diciembre",
+          "views": 47289,
+          "likes": 6715,
+          "comments": 3939,
+          "clr": 58.66,
+          "duration": 67.2,
+          "has_cta": true
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.77x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DTGPiY_DKtn",
+          "caption_preview": "La mayoría de tus ‘amigos’ no son tus amigos. Solo hay tres tipos de amigos.",
+          "views": 76781,
+          "likes": 8206,
+          "comments": 131,
+          "clr": 1.6,
+          "duration": 44.233,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DQoohaCDGcE",
+          "caption_preview": "La mayoría de tus amigos no son tus amigos. Solo existen tres tipos de amigos",
+          "views": 32510,
+          "likes": 4568,
+          "comments": 63,
+          "clr": 1.38,
+          "duration": 48.033,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.83,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.36x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWZZZArDAjA",
+          "caption_preview": "Si eres ambicioso pero vago, este vídeo es para ti  Tienes unos objetivos muy gr",
+          "views": 17891,
+          "likes": 1542,
+          "comments": 1229,
+          "clr": 79.7,
+          "duration": 72.609,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DV8r3HXjCNm",
+          "caption_preview": "Si no estás motivado, este vídeo es para ti  Tienes unos objetivos muy grandes, ",
+          "views": 37220,
+          "likes": 3325,
+          "comments": 3374,
+          "clr": 101.47,
+          "duration": 103.538,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DVY40XHDDep",
+          "caption_preview": "Si eres ambicioso pero vago, este vídeo es para ti  Tienes unos objetivos muy gr",
+          "views": 24432,
+          "likes": 2611,
+          "comments": 1660,
+          "clr": 63.58,
+          "duration": 72.609,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.94,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.08x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWKN_JRjIrq",
+          "caption_preview": "Por esto el amor real es raro   Si todavía no me conoces, mi nombre es Jaime Hig",
+          "views": 49025,
+          "likes": 7469,
+          "comments": 159,
+          "clr": 2.13,
+          "duration": 68.733,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DUy1K1rjObR",
+          "caption_preview": "No creo en el amor eterno  Si todavía no me conoces, mi nombre es Jaime Higuera ",
+          "views": 97170,
+          "likes": 17319,
+          "comments": 473,
+          "clr": 2.73,
+          "duration": 56.9,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.97,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.98x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWb9-TGDBej",
+          "caption_preview": "Mantenlo en privado hasta que sea definitivo   Si todavía no me conoces, mi nomb",
+          "views": 70091,
+          "likes": 8811,
+          "comments": 108,
+          "clr": 1.23,
+          "duration": 36.2,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DWCZz4WDFLd",
+          "caption_preview": "Mantenlo en privado hasta que sea definitivo  Si todavía no me conoces, mi nombr",
+          "views": 37728,
+          "likes": 4600,
+          "comments": 37,
+          "clr": 0.8,
+          "duration": 36.366,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.86x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DSS4_vEjB7J",
+          "caption_preview": "La mayoría de gente viven los mismos 12 meses de sus vidas 80 veces. Hacen prome",
+          "views": 18125,
+          "likes": 2135,
+          "comments": 29,
+          "clr": 1.36,
+          "duration": 40.866,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DRsR6UnjPkS",
+          "caption_preview": "La mayoría de gente no cambia. Viven los mismos 12 meses, 80 veces",
+          "views": 25861,
+          "likes": 2840,
+          "comments": 46,
+          "clr": 1.62,
+          "duration": 32.2,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.44,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.43x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVs6z7MjMxP",
+          "caption_preview": "Si puedes alejarte de ello, es tuyo para siempre  Si todavía no me conoces, mi n",
+          "views": 46124,
+          "likes": 6092,
+          "comments": 95,
+          "clr": 1.56,
+          "duration": 95.733,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DUBX6-RjLIO",
+          "caption_preview": "Si puedes alejarte de ello, es tuyo para siempre",
+          "views": 62457,
+          "likes": 9059,
+          "comments": 147,
+          "clr": 1.62,
+          "duration": 85.1,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.06,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.35x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DSx1aDMDIdp",
+          "caption_preview": "Comenta ‘Negocio’ si quieres que te envíe el documento de 12 páginas con el paso",
+          "views": 17239,
+          "likes": 1510,
+          "comments": 841,
+          "clr": 55.7,
+          "duration": 173.3,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DQ36oZbjB9G",
+          "caption_preview": "Comenta ‘NEGOCIO’ si quieres que te envíe un documento de 12 páginas con un víde",
+          "views": 20393,
+          "likes": 2040,
+          "comments": 1770,
+          "clr": 86.76,
+          "duration": 67.7,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DQzpV_LDKwQ",
+          "caption_preview": "Comenta ‘negocio’ si quiere que te envíe el vídeo privado con un documento de 12",
+          "views": 0,
+          "likes": 1037,
+          "comments": 317,
+          "clr": 30.57,
+          "duration": 0,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.32,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.18x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWPOB-IjJQ-",
+          "caption_preview": "La teoría de las tortugas   Si todavía no me conoces, mi nombre es Jaime Higuera",
+          "views": 31495,
+          "likes": 4913,
+          "comments": 128,
+          "clr": 2.61,
+          "duration": 90.6,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DU80EHVDG8U",
+          "caption_preview": "La teoría de los tres encuentros.  Si todavía no me conoces, mi nombre es Jaime ",
+          "views": 29803,
+          "likes": 3103,
+          "comments": 55,
+          "clr": 1.77,
+          "duration": 62.166,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.98,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.06x"
+    }
+  ],
+  "outliers": [
+    {
+      "shortCode": "DUS7iV9DLcc",
+      "clr": 157.9,
+      "views": 113009,
+      "z_score": 5.38,
+      "caption_preview": "Estoy sin dinero, ¿qué negocio debería empezar?  Está es una",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DTgDXRZjLMX",
+      "clr": 152.05,
+      "views": 0,
+      "z_score": 5.16,
+      "caption_preview": "Hace 5 años, cree un documento. Lo llamé Plan de Ataque.  Po",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUn4I-FDElz",
+      "clr": 142.49,
+      "views": 70185,
+      "z_score": 4.81,
+      "caption_preview": "Hay 5 crudas realidades de las que nadie suele hablar a la h",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DVO3WuZj2eK",
+      "clr": 132.98,
+      "views": 48601,
+      "z_score": 4.46,
+      "caption_preview": "Estoy sin dinero, ¿qué negocio debería empezar?  Está es una",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUV2CHhDDhj",
+      "clr": 119.74,
+      "views": 18538,
+      "z_score": 3.97,
+      "caption_preview": "Esto es una auténtica locura.  Hace unos meses, Adan me escr",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DVD5ws8DE4A",
+      "clr": 105.73,
+      "views": 31997,
+      "z_score": 3.45,
+      "caption_preview": "Este mes, voy a dar 35.000€ a 7 personas ambiciosas…  Voy a ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DV8r3HXjCNm",
+      "clr": 101.47,
+      "views": 37220,
+      "z_score": 3.3,
+      "caption_preview": "Si no estás motivado, este vídeo es para ti  Tienes unos obj",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DS70ywNjLOm",
+      "clr": 97.76,
+      "views": 23748,
+      "z_score": 3.16,
+      "caption_preview": "Así es como puedes cambiar tu vida en 90 días   Comenta ‘NEG",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DQpaakkDO31",
+      "clr": 94.4,
+      "views": 56454,
+      "z_score": 3.04,
+      "caption_preview": "Comenta ‘Negocio’ si quieres que te de acceso gratuito a un ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUN1GJqjIdM",
+      "clr": 93.59,
+      "views": 35659,
+      "z_score": 3.01,
+      "caption_preview": "Durante los últimos 5 años he seguido un plan ridículamente ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUlR8qhCNmz",
+      "clr": 90.94,
+      "views": 20026,
+      "z_score": 2.91,
+      "caption_preview": "Siempre me parece curioso que cuando gente que gana dinero h",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DQ36oZbjB9G",
+      "clr": 86.76,
+      "views": 20393,
+      "z_score": 2.75,
+      "caption_preview": "Comenta ‘NEGOCIO’ si quieres que te envíe un documento de 12",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DVjdOhbDLpB",
+      "clr": 85.39,
+      "views": 18767,
+      "z_score": 2.7,
+      "caption_preview": "Necesito dinero, ¿qué negocio debería empezar?  Está es una ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUfz0E4DGZh",
+      "clr": 83,
+      "views": 17340,
+      "z_score": 2.62,
+      "caption_preview": "Estoy empezando desde 0, ¿qué negocio debería montar?  Está ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DWZZZArDAjA",
+      "clr": 79.7,
+      "views": 17891,
+      "z_score": 2.49,
+      "caption_preview": "Si eres ambicioso pero vago, este vídeo es para ti  Tienes u",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUQZygsjH0m",
+      "clr": 74.62,
+      "views": 96841,
+      "z_score": 2.31,
+      "caption_preview": "A veces me tengo que pellizcar para creer hasta donde he lle",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DWOhNXOAoUh",
+      "clr": 74.46,
+      "views": 13531,
+      "z_score": 2.3,
+      "caption_preview": "comenta ‘JOSE’ y te envío el documento paso a paso con las 3",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DTNYStejM1O",
+      "clr": 72.22,
+      "views": 15962,
+      "z_score": 2.22,
+      "caption_preview": "El activo más valioso que puedes poseer en 2026",
+      "has_cta": false
+    }
+  ],
+  "recommendation": {
+    "strategy": "bimodal_separado",
+    "reason": "Top 15 orgánicos por views. Top 12 de venta (CLR ≥86.76%, p75). +6 fracasos para Lente A (comparar éxitos vs fracasos)",
+    "recommended_ids": [
+      "DQ9z5GqjNGf",
+      "DQFFjxrDFBi",
+      "DQheSQEgvHR",
+      "DTDSZ7SDH1W",
+      "DRcMof6DDCH",
+      "DPG7cRLDLZK",
+      "DSfx6jBDIwl",
+      "DTYOVoNDCJA",
+      "DVoXyF8DMPQ",
+      "DQUgXXrDGYn",
+      "DQUT7dDDJxF",
+      "DPGldN4jPZ5",
+      "DTI3-QyDMOU",
+      "DRKysmIDMY3",
+      "DTBIbOljGyS",
+      "DUS7iV9DLcc",
+      "DTgDXRZjLMX",
+      "DUn4I-FDElz",
+      "DVO3WuZj2eK",
+      "DUV2CHhDDhj",
+      "DVD5ws8DE4A",
+      "DV8r3HXjCNm",
+      "DS70ywNjLOm",
+      "DQpaakkDO31",
+      "DUN1GJqjIdM",
+      "DUlR8qhCNmz",
+      "DQ36oZbjB9G",
+      "DUglzxDjDid",
+      "DQPPYdWDJ_P",
+      "DQXEyQcDHsq",
+      "DPJ_GpbjOD0",
+      "DSaswdwjFb2",
+      "DV9ZsR9jBLv"
+    ],
+    "recommended_count": 33,
+    "pct_of_total": "10.89%",
+    "ab_tests_added": 40,
+    "cluster_reps_added": 0,
+    "final_count": 73,
+    "final_pct": "24.09%",
+    "final_ids": [
+      "DQ9z5GqjNGf",
+      "DQFFjxrDFBi",
+      "DQheSQEgvHR",
+      "DTDSZ7SDH1W",
+      "DRcMof6DDCH",
+      "DPG7cRLDLZK",
+      "DSfx6jBDIwl",
+      "DTYOVoNDCJA",
+      "DVoXyF8DMPQ",
+      "DQUgXXrDGYn",
+      "DQUT7dDDJxF",
+      "DPGldN4jPZ5",
+      "DTI3-QyDMOU",
+      "DRKysmIDMY3",
+      "DTBIbOljGyS",
+      "DUS7iV9DLcc",
+      "DTgDXRZjLMX",
+      "DUn4I-FDElz",
+      "DVO3WuZj2eK",
+      "DUV2CHhDDhj",
+      "DVD5ws8DE4A",
+      "DV8r3HXjCNm",
+      "DS70ywNjLOm",
+      "DQpaakkDO31",
+      "DUN1GJqjIdM",
+      "DUlR8qhCNmz",
+      "DQ36oZbjB9G",
+      "DUglzxDjDid",
+      "DQPPYdWDJ_P",
+      "DQXEyQcDHsq",
+      "DPJ_GpbjOD0",
+      "DSaswdwjFb2",
+      "DV9ZsR9jBLv",
+      "DWR1hyIjBQt",
+      "DVbq21ADCKS",
+      "DQ65CoFDH0D",
+      "DWjtvzWDC0d",
+      "DVtt7NKCG1F",
+      "DWXJoQNDLGt",
+      "DWWTZ9rDK7j",
+      "DWJwVORDByA",
+      "DVougiHDJdo",
+      "DVFFiCAD2Kf",
+      "DVCDTVQjPkS",
+      "DWFBfvzDOZA",
+      "DTu2MzVDEDs",
+      "DRc85f3DPgv",
+      "DVjdOhbDLpB",
+      "DUfz0E4DGZh",
+      "DSVvmF0jHHk",
+      "DUIlEASDMH8",
+      "DR-Sh_ADPrB",
+      "DTbOZ3vDAdk",
+      "DR7rF5kjPmT",
+      "DTgP93HjHYa",
+      "DTLpNKmDC7b",
+      "DSQTYnnjESJ",
+      "DPy1H6FjO6O",
+      "DRxGkb-DOYq",
+      "DPQ6DSQDN2p",
+      "DSLEkJCjCyh",
+      "DSImmZHDEse",
+      "DTGPiY_DKtn",
+      "DQoohaCDGcE",
+      "DWZZZArDAjA",
+      "DVY40XHDDep",
+      "DWKN_JRjIrq",
+      "DUy1K1rjObR",
+      "DWb9-TGDBej",
+      "DWCZz4WDFLd",
+      "DSS4_vEjB7J",
+      "DRsR6UnjPkS",
+      "DVs6z7MjMxP"
+    ]
+  }
+}

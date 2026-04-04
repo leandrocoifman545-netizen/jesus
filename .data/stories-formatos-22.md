@@ -3,6 +3,8 @@
 > Cada story dentro de una secuencia debe usar un formato distinto al anterior. NUNCA 2 videos del mismo tipo seguidos.
 > Los 6 formatos Premium (P1-P6) son de alta producción visual, identificados del análisis de 140 stories estéticas (8 creadores, 2026-03-29). Ver specs de reproducción en `reference_estetica_stories_140.md`.
 
+**Los 6 formatos que más se usan en la realidad (de 472 piezas analizadas):** F1 (selfie), V1 (video selfie), C3 (capturas DMs), E1 (fondo+texto), F6 (fotos antiguas), A2 (pizarra). Los demás son válidos pero menos frecuentes en creadores exitosos.
+
 ---
 
 ## Formatos de Video (7)

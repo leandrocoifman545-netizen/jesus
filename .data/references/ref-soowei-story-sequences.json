@@ -1,0 +1,143 @@
+{
+  "id": "ref-soowei-story-sequences",
+  "title": "SooWei - Story Sequences Full Breakdown (coaching 1-a-1)",
+  "transcript": "[Transcripción completa en 2 partes — ver .data/analisis-soowei-story-sequences.md]",
+  "analysis": {
+    "hook": {
+      "text": "Behind the scenes coaching: how to create story sequences that generate leads",
+      "type": "educational_coaching",
+      "word_count": 0,
+      "estimated_seconds": 2013
+    },
+    "structure": {
+      "framework": "coaching_breakdown",
+      "sections": [
+        {
+          "name": "Philosophy",
+          "summary": "Give in public, take in private. Stories = backstage",
+          "estimated_seconds": 300
+        },
+        {
+          "name": "Examples",
+          "summary": "6 real sequences with results (14K-17K views, 70K revenue)",
+          "estimated_seconds": 800
+        },
+        {
+          "name": "Live build",
+          "summary": "Creates 3-slide sequence with Ash in real time",
+          "estimated_seconds": 600
+        },
+        {
+          "name": "Tips",
+          "summary": "45min/week planning, drafts, publish at once",
+          "estimated_seconds": 300
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "educational_casual",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "light",
+      "key_phrases": [
+        "your story should never feel like a business",
+        "I give in public and take in private",
+        "nobody wants to hear you talk",
+        "be extremely intentional"
+      ]
+    },
+    "cta": {
+      "text": "DM keyword for free resource",
+      "type": "conversacional",
+      "has_urgency": true,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 2013,
+    "total_word_count": 5500,
+    "emotional_arc": "Educational -> Tactical -> Practical (live build) -> Motivational",
+    "strengths": [
+      "Most articulate explanation of daily story principles",
+      "Live build shows exact process",
+      "Real results backing claims"
+    ],
+    "patterns_to_replicate": [
+      "3-slide daily sequence format",
+      "Perceived value through context framing",
+      "45min weekly batch production",
+      "Broad first story for reach"
+    ],
+    "advertiser": {
+      "name": "SooWei (@sooweigoh)",
+      "platform": "youtube",
+      "ranking_position": "unknown",
+      "language": "en",
+      "country": "UK"
+    },
+    "generation_mapping": {
+      "angle_family": "mecanismo",
+      "body_type": "demo_proceso",
+      "persuasion_functions": [
+        {
+          "section_name": "Philosophy",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Examples",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Live build",
+          "function": "demolicion"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Stories are just casual daily updates",
+        "mechanism": "Intentional 3-slide sequences with CTA generate consistent leads",
+        "new_belief": "Stories are the highest leverage lead gen tool for founders"
+      },
+      "ingredients_detected": [
+        {
+          "category": "E",
+          "ingredient_number": 55,
+          "ingredient_name": "Prueba social acumulada"
+        },
+        {
+          "category": "G",
+          "ingredient_number": 90,
+          "ingredient_name": "Escasez artificial"
+        }
+      ],
+      "model_sale_type": "none",
+      "awareness_level": 4,
+      "segment_equivalent": "A",
+      "big_idea": "Las stories diarias son un sistema de lead gen con reglas opuestas a las destacadas"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "H37: Daily stories rules are opposite to highlighted stories in 4 dimensions",
+        "3-slide format: desired result + reality/identification + CTA with scarcity",
+        "Perceived value by context: anchor on previous price/volume, give free",
+        "45min weekly batch: prepare all sequences Monday, publish 1/day",
+        "Broad first story for reach, niche second story for filter"
+      ],
+      "what_not_to_copy": [
+        "High ticket amounts ($54K, $105K) — alienate Patricia",
+        "Bro culture tone — 57% women audience",
+        "Zero vulnerability — ADP needs emotional connection",
+        "ManyChat automation — WhatsApp setter is better for Patricia",
+        "Lifestyle symbols (Lambo, luxury) — cotidianidad is ADP advantage"
+      ],
+      "craft_notes": [
+        "Most producible format seen across 18+ creators (10 min, 3 photos, 3 texts)",
+        "MM3 (market determines structure) is genuinely new — first creator to articulate this",
+        "Confirms Estrategia B at scale (70K from one sequence)",
+        "H8 needs bifurcation: H8a (highlighted no CTA) + H8b (daily always CTA)"
+      ]
+    }
+  },
+  "createdAt": "2026-03-31T02:37:27.633Z"
+}

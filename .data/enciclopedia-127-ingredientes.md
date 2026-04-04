@@ -196,6 +196,13 @@ Formato mini-escena con 2 personajes. Rompe el patron de monólogo a camara. Fun
 > *"Persona #1: 1.000 repeticiones. / Persona #2: ¿Que estas haciendo? / Persona #1: Entrenar, quiero un cuerpo definido antes de verano."*
 > *"Persona #1: ¿Por que mis abdominales no se marcan? / Persona #2: Es porque tu dieta es mala."*
 
+### #32 — Pregunta-Espejo del Avatar
+Hook en PRIMERA PERSONA que reproduce el pensamiento interno del avatar. A diferencia de #2 (Pregunta Retorica, segunda persona: "¿Alguna vez sentiste...?"), la Pregunta-Espejo ADOPTA LA VOZ del avatar. El creador desaparece; el viewer escucha su propia voz interna. Funciona porque el cerebro procesa la primera persona como pensamiento propio antes de registrar que lo dijo otra persona.
+> *"Estoy sin dinero, ¿que negocio deberia empezar?"* (Jaime Higuera, 157% CLR — el CLR mas alto de 306 posts)
+> *"Tengo 48 anos, laburo todo el dia y no llego a fin de mes. ¿Hay algo que pueda hacer?"* (adaptacion ADP)
+> *"Ya probe de todo para bajar de peso y nada funciona. ¿Que me queda?"* (adaptacion fitness)
+**Fuente:** Analisis @jaimehigueraes, 2026-03-31. El hook de mayor CLR del dataset completo (7 perfiles, 1475+ posts).
+
 ---
 
 ## Categoria B — Problema / Dolor

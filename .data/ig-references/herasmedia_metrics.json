@@ -1,23 +1,23 @@
 {
   "username": "herasmedia",
-  "analyzed_at": "2026-03-25T06:55:43.893Z",
+  "analyzed_at": "2026-04-01T13:40:02.731Z",
   "months_analyzed": 12,
   "global": {
-    "total_posts": 90,
-    "videos": 89,
+    "total_posts": 88,
+    "videos": 87,
     "sidecars": 1,
     "images": 0,
-    "filtered_out": 78,
+    "filtered_out": 80,
     "months_analyzed": 12,
-    "avg_likes": 6914,
-    "avg_comments": 2876,
-    "avg_views": 61672,
+    "avg_likes": 6942,
+    "avg_comments": 2733,
+    "avg_views": 61175,
     "median_likes": 2841,
     "median_comments": 1384,
     "median_views": 25785,
-    "clr_global": 41.59,
-    "lvr_global": 11.27,
-    "posting_frequency_days": 4.04
+    "clr_global": 39.36,
+    "lvr_global": 11.4,
+    "posting_frequency_days": 4.03
   },
   "duration_engagement": {
     "75-100s": {
@@ -39,42 +39,42 @@
       "avg_duration": 53.87
     },
     "60-75s": {
-      "count": 26,
-      "avg_views": 45197,
-      "avg_likes": 4781,
-      "avg_comments": 3427,
-      "avg_clr": 66.19,
-      "median_clr": 50.86,
-      "avg_duration": 66.15
+      "count": 25,
+      "avg_views": 41105,
+      "avg_likes": 4576,
+      "avg_comments": 2870,
+      "avg_clr": 61.82,
+      "median_clr": 48.57,
+      "avg_duration": 66.28
     },
     "20-45s": {
-      "count": 8,
-      "avg_views": 317739,
-      "avg_likes": 32898,
-      "avg_comments": 4009,
-      "avg_clr": 64.64,
-      "median_clr": 64.4,
-      "avg_duration": 36.17
+      "count": 7,
+      "avg_views": 360410,
+      "avg_likes": 37387,
+      "avg_comments": 4442,
+      "avg_clr": 64.32,
+      "median_clr": 61.98,
+      "avg_duration": 35.5
     }
   },
   "cta_analysis": {
     "with_cta": {
-      "count": 83,
-      "pct": "92.2%",
-      "avg_clr": 60.51,
-      "median_clr": 56.23,
-      "avg_views": 37316,
-      "avg_comments": 2920
+      "count": 81,
+      "pct": "92.0%",
+      "avg_clr": 59.01,
+      "median_clr": 56.19,
+      "avg_views": 36167,
+      "avg_comments": 2766
     },
     "without_cta": {
       "count": 7,
-      "pct": "7.8%",
+      "pct": "8.0%",
       "avg_clr": 39.51,
       "median_clr": 33.65,
       "avg_views": 346982,
       "avg_comments": 2349
     },
-    "cta_multiplier": 1.53,
+    "cta_multiplier": 1.49,
     "keywords": [
       {
         "keyword": "LISTA",
@@ -247,16 +247,16 @@
       "avg_comments": 2135
     },
     "11-20": {
-      "count": 31,
-      "avg_clr": 61.32,
-      "avg_views": 106603,
-      "avg_comments": 3273
+      "count": 30,
+      "avg_clr": 61.14,
+      "avg_views": 109521,
+      "avg_comments": 3350
     },
     "21-35": {
-      "count": 32,
-      "avg_clr": 53.73,
-      "avg_views": 48748,
-      "avg_comments": 2881
+      "count": 31,
+      "avg_clr": 49.81,
+      "avg_views": 45562,
+      "avg_comments": 2415
     },
     "36-60": {
       "count": 5,
@@ -547,24 +547,6 @@
       ],
       "caption_words": 10,
       "timestamp": "2025-05-22T19:44:43.000Z"
-    },
-    {
-      "shortCode": "DH33thfx8H4",
-      "url": "https://www.instagram.com/p/DH33thfx8H4/",
-      "type": "Video",
-      "likes": 9893,
-      "comments": 17348,
-      "views": 147504,
-      "duration": 62.7,
-      "clr": 175.36,
-      "cvr": 11.76,
-      "lvr": 6.71,
-      "caption_preview": "Así llegamos a 170.000 seguidores en 5 días con @christian_v",
-      "caption_full": "Así llegamos a 170.000 seguidores en 5 días con @christian_villar \n\nComenta “Viral” y te envío la clase donde te mostramos cómo lo hicimos",
-      "has_comment_cta": true,
-      "keywords": [],
-      "caption_words": 23,
-      "timestamp": "2025-03-31T18:00:05.000Z"
     },
     {
       "shortCode": "DNvc-qX4uUe",
@@ -1059,24 +1041,6 @@
       "timestamp": "2025-04-30T19:12:19.000Z"
     },
     {
-      "shortCode": "DHtoRvWxZbv",
-      "url": "https://www.instagram.com/p/DHtoRvWxZbv/",
-      "type": "Video",
-      "likes": 1471,
-      "comments": 983,
-      "views": 19041,
-      "duration": 40.8,
-      "clr": 66.83,
-      "cvr": 5.16,
-      "lvr": 7.73,
-      "caption_preview": "Comenta “Clase” y te la envío antes de que la borre   #heras",
-      "caption_full": "Comenta “Clase” y te la envío antes de que la borre \n\n#herasmedia",
-      "has_comment_cta": true,
-      "keywords": [],
-      "caption_words": 11,
-      "timestamp": "2025-03-27T18:33:03.000Z"
-    },
-    {
       "shortCode": "DKNXtxmRNsN",
       "url": "https://www.instagram.com/p/DKNXtxmRNsN/",
       "type": "Video",
@@ -1115,6 +1079,44 @@
       ],
       "caption_words": 26,
       "timestamp": "2025-09-28T16:50:39.000Z"
+    },
+    {
+      "shortCode": "DLSergUR3Fz",
+      "url": "https://www.instagram.com/p/DLSergUR3Fz/",
+      "type": "Video",
+      "likes": 901,
+      "comments": 580,
+      "views": 4757,
+      "duration": 56.7,
+      "clr": 64.37,
+      "cvr": 12.19,
+      "lvr": 18.94,
+      "caption_preview": "Comenta “277” y te enseño cómo hacerlo  #herasmedia",
+      "caption_full": "Comenta “277” y te enseño cómo hacerlo\n\n#herasmedia",
+      "has_comment_cta": true,
+      "keywords": [],
+      "caption_words": 7,
+      "timestamp": "2025-06-24T15:39:42.000Z"
+    },
+    {
+      "shortCode": "DOwEJzYEdtf",
+      "url": "https://www.instagram.com/p/DOwEJzYEdtf/",
+      "type": "Video",
+      "likes": 1511,
+      "comments": 953,
+      "views": 18671,
+      "duration": 76.68,
+      "clr": 63.07,
+      "cvr": 5.1,
+      "lvr": 8.09,
+      "caption_preview": "Si quieres aplicar esta metodología en tu cuenta, comenta \"A",
+      "caption_full": "Si quieres aplicar esta metodología en tu cuenta, comenta \"ALFREDO\" en este video👇🏼\n\nY te envío la clase privada en la que explico cómo usarla.\n\n#herasmedia #crecereninstagram #redessociales #instagram #victorheras",
+      "has_comment_cta": true,
+      "keywords": [
+        "ALFREDO"
+      ],
+      "caption_words": 25,
+      "timestamp": "2025-09-18T17:01:52.000Z"
     }
   ],
   "top30_views": [
@@ -1173,24 +1175,6 @@
       ],
       "caption_words": 36,
       "timestamp": "2026-01-15T20:09:45.000Z"
-    },
-    {
-      "shortCode": "DH33thfx8H4",
-      "url": "https://www.instagram.com/p/DH33thfx8H4/",
-      "type": "Video",
-      "likes": 9893,
-      "comments": 17348,
-      "views": 147504,
-      "duration": 62.7,
-      "clr": 175.36,
-      "cvr": 11.76,
-      "lvr": 6.71,
-      "caption_preview": "Así llegamos a 170.000 seguidores en 5 días con @christian_v",
-      "caption_full": "Así llegamos a 170.000 seguidores en 5 días con @christian_villar \n\nComenta “Viral” y te envío la clase donde te mostramos cómo lo hicimos",
-      "has_comment_cta": true,
-      "keywords": [],
-      "caption_words": 23,
-      "timestamp": "2025-03-31T18:00:05.000Z"
     },
     {
       "shortCode": "DNECCpjRAik",
@@ -1695,6 +1679,26 @@
       ],
       "caption_words": 32,
       "timestamp": "2026-02-18T18:43:02.000Z"
+    },
+    {
+      "shortCode": "DMnkJV-x-n6",
+      "url": "https://www.instagram.com/p/DMnkJV-x-n6/",
+      "type": "Video",
+      "likes": 2507,
+      "comments": 1385,
+      "views": 35234,
+      "duration": 88.75,
+      "clr": 55.25,
+      "cvr": 3.93,
+      "lvr": 7.12,
+      "caption_preview": "Comenta “CLASE” y te la envío   #herasmedia",
+      "caption_full": "Comenta “CLASE” y te la envío \n\n#herasmedia",
+      "has_comment_cta": true,
+      "keywords": [
+        "CLASE"
+      ],
+      "caption_words": 6,
+      "timestamp": "2025-07-27T16:39:06.000Z"
     }
   ],
   "all_posts_clr": [
@@ -1717,24 +1721,6 @@
       ],
       "caption_words": 10,
       "timestamp": "2025-05-22T19:44:43.000Z"
-    },
-    {
-      "shortCode": "DH33thfx8H4",
-      "url": "https://www.instagram.com/p/DH33thfx8H4/",
-      "type": "Video",
-      "likes": 9893,
-      "comments": 17348,
-      "views": 147504,
-      "duration": 62.7,
-      "clr": 175.36,
-      "cvr": 11.76,
-      "lvr": 6.71,
-      "caption_preview": "Así llegamos a 170.000 seguidores en 5 días con @christian_v",
-      "caption_full": "Así llegamos a 170.000 seguidores en 5 días con @christian_villar \n\nComenta “Viral” y te envío la clase donde te mostramos cómo lo hicimos",
-      "has_comment_cta": true,
-      "keywords": [],
-      "caption_words": 23,
-      "timestamp": "2025-03-31T18:00:05.000Z"
     },
     {
       "shortCode": "DNvc-qX4uUe",
@@ -2227,24 +2213,6 @@
       ],
       "caption_words": 11,
       "timestamp": "2025-04-30T19:12:19.000Z"
-    },
-    {
-      "shortCode": "DHtoRvWxZbv",
-      "url": "https://www.instagram.com/p/DHtoRvWxZbv/",
-      "type": "Video",
-      "likes": 1471,
-      "comments": 983,
-      "views": 19041,
-      "duration": 40.8,
-      "clr": 66.83,
-      "cvr": 5.16,
-      "lvr": 7.73,
-      "caption_preview": "Comenta “Clase” y te la envío antes de que la borre   #heras",
-      "caption_full": "Comenta “Clase” y te la envío antes de que la borre \n\n#herasmedia",
-      "has_comment_cta": true,
-      "keywords": [],
-      "caption_words": 11,
-      "timestamp": "2025-03-27T18:33:03.000Z"
     },
     {
       "shortCode": "DKNXtxmRNsN",

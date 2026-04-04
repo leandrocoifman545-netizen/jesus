@@ -56,7 +56,7 @@ async function listItemsFromDir<T extends { createdAt: string }>(
   await ensureDirs();
   try {
     const files = await fs.readdir(dir);
-    const jsonFiles = files.filter((f) => f.endsWith(".json"));
+    const jsonFiles = files.filter((f) => f.endsWith(".json") && !f.includes(".backup"));
     const items = await Promise.all(
       jsonFiles.map(async (file) => {
         const data = await fs.readFile(path.join(dir, file), "utf-8");
@@ -509,6 +509,7 @@ export async function saveBrief(brief: StoredBrief): Promise<void> {
 
 // Normalize old generations: ctas[] → cta, old platform → format label
 function normalizeGeneration(gen: StoredGeneration): StoredGeneration {
+  if (!gen.script) return gen; // longform generations have no script
   const script = gen.script as unknown as Record<string, unknown>;
 
   // Fix old ctas[] array → cta object

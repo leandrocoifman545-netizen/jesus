@@ -1,0 +1,21 @@
+{
+  "id": "17d9cd12",
+  "title": "#43[BN]",
+  "source": "/Users/lean/Documents/#43[BN].mp4",
+  "duration_seconds": 91,
+  "total_frames": 18,
+  "frame_interval_seconds": 5,
+  "analyzed_at": "2026-04-01T19:04:04.762Z",
+  "visual_analysis": [
+    {
+      "startTime": 0,
+      "endTime": 75,
+      "analysis": "Aquí tienes el análisis visual de los frames:\n\n**1. Segmento: Presentación inicial (Frame 1)**\n*   **Formato visual**: Talking head.\n*   **Encuadre**: Primer plano medio del torso hacia arriba.\n*   **Textos en pantalla**: \"a crear productos y venderlos\".\n*   **Elementos visuales**: Hombre joven con gorra y camiseta, fondo de un interior moderno con grandes ventanales. Un ícono de una caja de producto en 3D como overlay. La imagen tiene un filtro monocromático (blanco y negro).\n*   **Transiciones**: N/A (inicio del segmento).\n*   **Movimiento de cámara**: Estática.\n*   **Iluminación**: Natural, filtrada a monocromático.\n\n**2. Segmento: Transición estilizada (Frame 2)**\n*   **Formato visual**: Texto sobre fondo estilizado (silueta).\n*   **Encuadre**: N/A (imagen conceptual).\n*   **Textos en pantalla**: \"hoy en día\".\n*   **Elementos visuales**: Silueta de una persona mirando por una ventana, enmarcada dentro de un cuadrado con un borde brillante. El fondo es un patrón de líneas punteadas naranjas formando una red o cuadrícula.\n*   **Transiciones**: Corte seco.\n*   **Movimiento de cámara**: N/A.\n*   **Iluminación**: Estilizada"
+    },
+    {
+      "startTime": 75,
+      "endTime": 90,
+      "analysis": "Aquí está el análisis visual de los frames:\n\n**Segmento: 75s - 90s (Frames 1, 2, 3)**\n\n1.  **Formato visual**: Talking head. El presentador habla directamente a la cámara.\n2.  **Encuadre**: Primer plano medio (o plano de busto). Se ve al presentador desde el pecho hacia arriba, con énfasis en su rostro y parte superior del cuerpo.\n3.  **Textos en pantalla**:\n    *   Frame 1: \"vas a aprender\" (texto naranja con sombra)\n    *   Frame 2: \"como un extra\" y \"a tu trabajo\" (textos naranjas con sombra)\n    *   Frame 3: \"es tocar\", \"el botón\" (más grande y resaltado), y \"de aquí debajo\" (textos naranjas con sombra)\n4.  **Elementos visuales**:\n    *   **Presentador:** Hombre joven, con una gorra de béisbol oscura (con texto invertido, posiblemente \"FLORIDA\"), una camiseta verde oliva con un pequeño logo de cocodrilo (Lacoste) y una cadena plateada con un colgante oscuro. En el Frame 3, el presentador levanta ligeramente su mano izquierda (derecha del espectador) y apunta hacia abajo.\n    *   **Fondo:** Interior moderno con grandes ventanales que muestran un paisaje urbano al atardecer (luz dorada). Se distingue una cama con ropa de cama blanca a la izquierda, una lámpara de diseño moderno y, a la derecha, una planta y una guitarra.\n    *   **Colores dominantes:** Tonos cálidos ("
+    }
+  ]
+}

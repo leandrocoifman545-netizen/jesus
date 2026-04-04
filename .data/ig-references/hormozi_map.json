@@ -1,0 +1,1108 @@
+{
+  "username": "hormozi",
+  "generated_at": "2026-04-01T05:42:04.695Z",
+  "months_analyzed": 12,
+  "total_posts": 200,
+  "videos": 181,
+  "sidecars": 19,
+  "content_split": {
+    "organic": {
+      "count": 146,
+      "pct": 73
+    },
+    "sale": {
+      "count": 54,
+      "pct": 27
+    },
+    "ratio": "2.7:1"
+  },
+  "distribution": {
+    "mean": 3.31,
+    "median": 1.42,
+    "stddev": 5.37,
+    "p25": 1.03,
+    "p50": 1.42,
+    "p75": 2.24,
+    "p90": 7.74,
+    "min": 0.45,
+    "max": 31.66
+  },
+  "bimodal": {
+    "bimodal": true,
+    "reason": "10 posts con CLR >14.06% vs 190 posts debajo",
+    "high_cluster": {
+      "count": 10,
+      "avg": 23.48,
+      "min": 14.39
+    },
+    "low_cluster": {
+      "count": 190,
+      "avg": 2.24,
+      "max": 13.99
+    },
+    "threshold": 14.06
+  },
+  "clusters": [
+    {
+      "name": "business",
+      "keywords": [
+        "business",
+        "roadmap",
+        "scaling",
+        "seconds",
+        "follow",
+        "personalized",
+        "100m",
+        "start",
+        "making",
+        "under",
+        "never",
+        "scale",
+        "content",
+        "better",
+        "businesses",
+        "education"
+      ],
+      "post_count": 103,
+      "avg_clr": 4.59,
+      "avg_views": 154256,
+      "cta_pct": 39.81,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "comment",
+      "keywords": [
+        "comment",
+        "free",
+        "send",
+        "course",
+        "next",
+        "focus"
+      ],
+      "post_count": 60,
+      "avg_clr": 7.9,
+      "avg_views": 184190,
+      "cta_pct": 86.67,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "want",
+      "keywords": [
+        "want",
+        "learn"
+      ],
+      "post_count": 53,
+      "avg_clr": 5.91,
+      "avg_views": 130030,
+      "cta_pct": 49.06,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "more",
+      "keywords": [
+        "more"
+      ],
+      "post_count": 42,
+      "avg_clr": 3.4,
+      "avg_views": 172527,
+      "cta_pct": 21.43,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "dont",
+      "keywords": [
+        "dont",
+        "stop"
+      ],
+      "post_count": 35,
+      "avg_clr": 2.21,
+      "avg_views": 146601,
+      "cta_pct": 25.71,
+      "top_post": "DV1h948AWwJ"
+    },
+    {
+      "name": "youre",
+      "keywords": [
+        "youre"
+      ],
+      "post_count": 25,
+      "avg_clr": 2.57,
+      "avg_views": 106897,
+      "cta_pct": 24,
+      "top_post": "DV_mCcQDkHZ"
+    },
+    {
+      "name": "because",
+      "keywords": [
+        "because"
+      ],
+      "post_count": 25,
+      "avg_clr": 1.78,
+      "avg_views": 108949,
+      "cta_pct": 16,
+      "top_post": "DUBJf5zjrrB"
+    },
+    {
+      "name": "otros",
+      "keywords": [],
+      "post_count": 16,
+      "avg_clr": 1.46,
+      "avg_views": 249794,
+      "cta_pct": 6.25,
+      "top_post": "DVzW25LAV6e"
+    },
+    {
+      "name": "money",
+      "keywords": [
+        "money"
+      ],
+      "post_count": 14,
+      "avg_clr": 5.84,
+      "avg_views": 121272,
+      "cta_pct": 35.71,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "hard",
+      "keywords": [
+        "hard"
+      ],
+      "post_count": 13,
+      "avg_clr": 2.67,
+      "avg_views": 164338,
+      "cta_pct": 30.77,
+      "top_post": "DV1h948AWwJ"
+    },
+    {
+      "name": "thing",
+      "keywords": [
+        "thing"
+      ],
+      "post_count": 13,
+      "avg_clr": 1.68,
+      "avg_views": 131919,
+      "cta_pct": 15.38,
+      "top_post": "DT3GRrCjsLX"
+    },
+    {
+      "name": "sales",
+      "keywords": [
+        "sales"
+      ],
+      "post_count": 13,
+      "avg_clr": 2.85,
+      "avg_views": 100884,
+      "cta_pct": 38.46,
+      "top_post": "DV1h948AWwJ"
+    },
+    {
+      "name": "only",
+      "keywords": [
+        "only"
+      ],
+      "post_count": 12,
+      "avg_clr": 2.23,
+      "avg_views": 106255,
+      "cta_pct": 16.67,
+      "top_post": "DVywHcoDk80"
+    },
+    {
+      "name": "life",
+      "keywords": [
+        "life"
+      ],
+      "post_count": 12,
+      "avg_clr": 2.08,
+      "avg_views": 137535,
+      "cta_pct": 16.67,
+      "top_post": "DV405gRjkxS"
+    },
+    {
+      "name": "much",
+      "keywords": [
+        "much"
+      ],
+      "post_count": 12,
+      "avg_clr": 2.37,
+      "avg_views": 153672,
+      "cta_pct": 25,
+      "top_post": "DV405gRjkxS"
+    },
+    {
+      "name": "first",
+      "keywords": [
+        "first"
+      ],
+      "post_count": 11,
+      "avg_clr": 6.01,
+      "avg_views": 126044,
+      "cta_pct": 54.55,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "always",
+      "keywords": [
+        "always"
+      ],
+      "post_count": 11,
+      "avg_clr": 1.53,
+      "avg_views": 74970,
+      "cta_pct": 27.27,
+      "top_post": "DUEV43eDvQE"
+    },
+    {
+      "name": "someone",
+      "keywords": [
+        "someone"
+      ],
+      "post_count": 10,
+      "avg_clr": 2.27,
+      "avg_views": 102148,
+      "cta_pct": 30,
+      "top_post": "DWRtMJKDiYe"
+    },
+    {
+      "name": "cant",
+      "keywords": [
+        "cant"
+      ],
+      "post_count": 10,
+      "avg_clr": 2.2,
+      "avg_views": 108598,
+      "cta_pct": 40,
+      "top_post": "DT0hx-sEzSw"
+    },
+    {
+      "name": "something",
+      "keywords": [
+        "something"
+      ],
+      "post_count": 10,
+      "avg_clr": 3.02,
+      "avg_views": 119149,
+      "cta_pct": 40,
+      "top_post": "DV1h948AWwJ"
+    },
+    {
+      "name": "need",
+      "keywords": [
+        "need"
+      ],
+      "post_count": 10,
+      "avg_clr": 2.13,
+      "avg_views": 116843,
+      "cta_pct": 60,
+      "top_post": "DV3nx5ADrfi"
+    },
+    {
+      "name": "everyone",
+      "keywords": [
+        "everyone"
+      ],
+      "post_count": 10,
+      "avg_clr": 5.06,
+      "avg_views": 100480,
+      "cta_pct": 40,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "easy",
+      "keywords": [
+        "easy"
+      ],
+      "post_count": 10,
+      "avg_clr": 1.99,
+      "avg_views": 143891,
+      "cta_pct": 30,
+      "top_post": "DTy4vKSk5FI"
+    },
+    {
+      "name": "build",
+      "keywords": [
+        "build"
+      ],
+      "post_count": 10,
+      "avg_clr": 4.41,
+      "avg_views": 118332,
+      "cta_pct": 20,
+      "top_post": "DUG5LHyElnK"
+    },
+    {
+      "name": "sell",
+      "keywords": [
+        "sell"
+      ],
+      "post_count": 10,
+      "avg_clr": 2.98,
+      "avg_views": 63353,
+      "cta_pct": 40,
+      "top_post": "DV1h948AWwJ"
+    },
+    {
+      "name": "youll",
+      "keywords": [
+        "youll"
+      ],
+      "post_count": 9,
+      "avg_clr": 2.52,
+      "avg_views": 99234,
+      "cta_pct": 11.11,
+      "top_post": "DV405gRjkxS"
+    },
+    {
+      "name": "become",
+      "keywords": [
+        "become"
+      ],
+      "post_count": 9,
+      "avg_clr": 1.23,
+      "avg_views": 218413,
+      "cta_pct": 11.11,
+      "top_post": "DV4NvAlEkMa"
+    },
+    {
+      "name": "most",
+      "keywords": [
+        "most"
+      ],
+      "post_count": 9,
+      "avg_clr": 2.95,
+      "avg_views": 123839,
+      "cta_pct": 33.33,
+      "top_post": "DV1h948AWwJ"
+    },
+    {
+      "name": "world",
+      "keywords": [
+        "world"
+      ],
+      "post_count": 9,
+      "avg_clr": 4.95,
+      "avg_views": 112316,
+      "cta_pct": 22.22,
+      "top_post": "DUG5LHyElnK"
+    }
+  ],
+  "ab_tests": [
+    {
+      "posts": [
+        {
+          "shortCode": "DUG5LHyElnK",
+          "caption_preview": "Comment “100” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 164024,
+          "likes": 18469,
+          "comments": 5848,
+          "clr": 31.66,
+          "duration": 150.9,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DVL1k1UjhlX",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 88102,
+          "likes": 8670,
+          "comments": 1248,
+          "clr": 14.39,
+          "duration": 77,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DVOpZ7QDobD",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 68154,
+          "likes": 6731,
+          "comments": 521,
+          "clr": 7.74,
+          "duration": 68.312,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DU_PmRCDrdM",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 93845,
+          "likes": 8371,
+          "comments": 1954,
+          "clr": 23.34,
+          "duration": 65.179,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DUieMXUEty_",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 264092,
+          "likes": 29750,
+          "comments": 5885,
+          "clr": 19.78,
+          "duration": 91.811,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DUle-S3kun3",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 498533,
+          "likes": 64447,
+          "comments": 17051,
+          "clr": 26.46,
+          "duration": 134.466,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DUPYKArCPpN",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M Scaling roadmap for your bus",
+          "views": 233640,
+          "likes": 24206,
+          "comments": 4640,
+          "clr": 19.17,
+          "duration": 85.82,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DT_cRiGErbe",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 152054,
+          "likes": 9989,
+          "comments": 2037,
+          "clr": 20.39,
+          "duration": 58.236,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DUoA5vmjhEe",
+          "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling roadmap for your bus",
+          "views": 97150,
+          "likes": 11094,
+          "comments": 1552,
+          "clr": 13.99,
+          "duration": 84.846,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.08,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "7.31x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVg86tGEuVa",
+          "caption_preview": "comment “map” for me to send you my free scaling roadmap to in 28 seconds  In sa",
+          "views": 33074,
+          "likes": 2236,
+          "comments": 139,
+          "clr": 6.22,
+          "duration": 74.041,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DVeTI7lkh2S",
+          "caption_preview": "comment “map” for me to send you my free scaling roadmap in 28 seconds  To impro",
+          "views": 220882,
+          "likes": 11805,
+          "comments": 238,
+          "clr": 2.02,
+          "duration": 47.137,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.29,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "6.68x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVjMA1LjrP8",
+          "caption_preview": "Distraction kill more businesses than competition ever does.",
+          "views": 31108,
+          "likes": 4204,
+          "comments": 45,
+          "clr": 1.07,
+          "duration": 31.626,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVKRz8OAVIM",
+          "caption_preview": "Distraction kill more businesses than competition ever does.",
+          "views": 134182,
+          "likes": 4915,
+          "comments": 83,
+          "clr": 1.69,
+          "duration": 86.878,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "4.31x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DV9b9ykEq_k",
+          "caption_preview": "There’s never been a better time to start an AI-first business to disrupt an exi",
+          "views": 33475,
+          "likes": 2246,
+          "comments": 29,
+          "clr": 1.29,
+          "duration": 44.461,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DWKLLqtEraQ",
+          "caption_preview": "There's never been a better time to start an AI-first business to disrupt an exi",
+          "views": 50917,
+          "likes": 4642,
+          "comments": 29,
+          "clr": 0.62,
+          "duration": 63.48,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVj0TVKksrp",
+          "caption_preview": "There’s never been a better time to start an AI-first business to disrupt an exi",
+          "views": 34784,
+          "likes": 2132,
+          "comments": 16,
+          "clr": 0.75,
+          "duration": 23.106,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVSPP1iDhyt",
+          "caption_preview": "There’s never been a better time to start an AI-first business to disrupt an exi",
+          "views": 115104,
+          "likes": 8429,
+          "comments": 57,
+          "clr": 0.68,
+          "duration": 14.977,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "3.44x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DU3lwzjjx2_",
+          "caption_preview": "In an age where all skills will be done by Al, what’s left will be the ability t",
+          "views": 79520,
+          "likes": 5381,
+          "comments": 94,
+          "clr": 1.75,
+          "duration": 73.698,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DUOoUAXEt1T",
+          "caption_preview": "In an age where all skills will be done by AI, what’s left will be the ability t",
+          "views": 223879,
+          "likes": 26086,
+          "comments": 388,
+          "clr": 1.49,
+          "duration": 4.04,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.95,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.82x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DUdVvAkExYD",
+          "caption_preview": "$100M+ Founder Rates Productivity Hacks From 1-10  Follow If you want more tacti",
+          "views": 160038,
+          "likes": 19758,
+          "comments": 153,
+          "clr": 0.77,
+          "duration": 112.71,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DUV9oqsFIhJ",
+          "caption_preview": "$100M+ Founder Rates Business Growth Factors from 1-10  Follow if you want more ",
+          "views": 58313,
+          "likes": 4941,
+          "comments": 64,
+          "clr": 1.3,
+          "duration": 94.04,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.83,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.74x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVuQFH-j2Jk",
+          "caption_preview": "The fastest way to change your life is to make the easy choice impossible and th",
+          "views": 27443,
+          "likes": 1401,
+          "comments": 25,
+          "clr": 1.78,
+          "duration": 58.958,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVjZ06hj4Po",
+          "caption_preview": "The fastest way to change your life is to make the easy choice impossible and th",
+          "views": 74836,
+          "likes": 4323,
+          "comments": 66,
+          "clr": 1.53,
+          "duration": 79.598,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.73x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVPZRzyATU-",
+          "caption_preview": "Entrepreneurship is one of the greatest vehicles of personal development because",
+          "views": 50889,
+          "likes": 4488,
+          "comments": 45,
+          "clr": 1,
+          "duration": 40.54,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DUmEZmKkkfL",
+          "caption_preview": "Entrepreneurship is one of the greatest vehicles of personal development because",
+          "views": 133323,
+          "likes": 6981,
+          "comments": 100,
+          "clr": 1.43,
+          "duration": 122.041,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.62x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVbtphKkuXM",
+          "caption_preview": "Comment “lifestyle” to receive our free scaling roadmap in 29 seconds  A big rea",
+          "views": 228453,
+          "likes": 21691,
+          "comments": 525,
+          "clr": 2.42,
+          "duration": 92.55,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DVWJJL5DltJ",
+          "caption_preview": "comment “vibe” to receive our free scaling roadmap in 29 seconds  In a world of ",
+          "views": 138952,
+          "likes": 8326,
+          "comments": 265,
+          "clr": 3.18,
+          "duration": 61.417,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.22,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.64x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWP3D7_DmLX",
+          "caption_preview": "Want to know what metrics you should focus on to grow your business, comment “MA",
+          "views": 69111,
+          "likes": 2252,
+          "comments": 54,
+          "clr": 2.4,
+          "duration": 48.048,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DWFlO2ZDl7O",
+          "caption_preview": "Want to know what metrics you should focus on to grow your size of business, com",
+          "views": 55117,
+          "likes": 3479,
+          "comments": 74,
+          "clr": 2.13,
+          "duration": 82.75,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DV818dqDsMi",
+          "caption_preview": "Want to know what metrics you should focus on to grow your size of business, com",
+          "views": 78783,
+          "likes": 8532,
+          "comments": 893,
+          "clr": 10.47,
+          "duration": 61.138,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.45,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.43x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DV33lrgjjWz",
+          "caption_preview": "What to do when you’re not sure what to do:  Build capacity.",
+          "views": 92882,
+          "likes": 13779,
+          "comments": 214,
+          "clr": 1.55,
+          "duration": 86.309,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DVMI0UPjqkR",
+          "caption_preview": "What to do when you’re not sure what to do: Build capacity.  Ex: - Go to bed on ",
+          "views": 131926,
+          "likes": 22785,
+          "comments": 186,
+          "clr": 0.82,
+          "duration": 26.317,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.13,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.42x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DV__kYBElX3",
+          "caption_preview": "You don’t have to be the smartest to win.  You just have to be the last man stan",
+          "views": 93576,
+          "likes": 10638,
+          "comments": 112,
+          "clr": 1.05,
+          "duration": 4,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DWFOYkyEqjM",
+          "caption_preview": "You don’t have to be the smartest to win.  You just have to be the last man stan",
+          "views": 126005,
+          "likes": 13038,
+          "comments": 164,
+          "clr": 1.26,
+          "duration": 45.138,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.35x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DU8iFFHjlmZ",
+          "caption_preview": "Comment “SKOOL” for a free trial of skool.com, plus a more in-depth breakdown on",
+          "views": 76406,
+          "likes": 8830,
+          "comments": 799,
+          "clr": 9.05,
+          "duration": 95.271,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DU12E9FDuhV",
+          "caption_preview": "Comment “SKOOL” for a free trial to skool.com, plus a more in-depth breakdown on",
+          "views": 100577,
+          "likes": 10809,
+          "comments": 814,
+          "clr": 7.53,
+          "duration": 92.276,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.95,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.32x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVU55FYjhv8",
+          "caption_preview": "Sales is a lot like poker. You don’t play your hand, you play the man in front o",
+          "views": 55625,
+          "likes": 3828,
+          "comments": 41,
+          "clr": 1.07,
+          "duration": 63.083,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DT-dF3eDpt2",
+          "caption_preview": "Sales is a lot like poker  You don’t play your hand, you play the man in front o",
+          "views": 58511,
+          "likes": 3704,
+          "comments": 221,
+          "clr": 5.97,
+          "duration": 24.195,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.65,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.05x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVXYEkeFC4R",
+          "caption_preview": "The world will reward you in proportion to your courage, not your intellect",
+          "views": 0,
+          "likes": 33152,
+          "comments": 251,
+          "clr": 0.76,
+          "duration": 0,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DUVxPnGlIE3",
+          "caption_preview": "The world will reward you in proportion to your courage, not your intellect.",
+          "views": 0,
+          "likes": 19143,
+          "comments": 189,
+          "clr": 0.99,
+          "duration": 0,
+          "has_cta": false
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": null
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DVBu3ClFKy4",
+          "caption_preview": "You must first become misunderstood before you can become great.",
+          "views": 0,
+          "likes": 15193,
+          "comments": 198,
+          "clr": 1.3,
+          "duration": 0,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DTlHCKflHmm",
+          "caption_preview": "You must first become consistent before you can become exceptional.",
+          "views": 0,
+          "likes": 36066,
+          "comments": 441,
+          "clr": 1.22,
+          "duration": 0,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.6,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": null
+    }
+  ],
+  "outliers": [
+    {
+      "shortCode": "DUG5LHyElnK",
+      "clr": 31.66,
+      "views": 164024,
+      "z_score": 5.28,
+      "caption_preview": "Comment “100” if you want a free personalized $100M scaling ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DULo3uHDtHs",
+      "clr": 31.18,
+      "views": 152298,
+      "z_score": 5.19,
+      "caption_preview": "Comment “100” and I’ll send $100M scaling roadmap course to ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUle-S3kun3",
+      "clr": 26.46,
+      "views": 498533,
+      "z_score": 4.31,
+      "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DU5_RFTji5j",
+      "clr": 26.44,
+      "views": 140453,
+      "z_score": 4.3,
+      "caption_preview": "Comment “ADS” for a more in depth breakdown on how to get le",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DU_PmRCDrdM",
+      "clr": 23.34,
+      "views": 93845,
+      "z_score": 3.73,
+      "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUtYZmPAX12",
+      "clr": 21.98,
+      "views": 95152,
+      "z_score": 3.47,
+      "caption_preview": "Comment “MAP” for our free scaling roadmap. So you can learn",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DT_cRiGErbe",
+      "clr": 20.39,
+      "views": 152054,
+      "z_score": 3.18,
+      "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUieMXUEty_",
+      "clr": 19.78,
+      "views": 264092,
+      "z_score": 3.07,
+      "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DUPYKArCPpN",
+      "clr": 19.17,
+      "views": 233640,
+      "z_score": 2.95,
+      "caption_preview": "Comment “MAP” if you want a free personalized $100M Scaling ",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DVL1k1UjhlX",
+      "clr": 14.39,
+      "views": 88102,
+      "z_score": 2.06,
+      "caption_preview": "Comment “MAP” if you want a free personalized $100M scaling ",
+      "has_cta": true
+    }
+  ],
+  "recommendation": {
+    "strategy": "bimodal_separado",
+    "reason": "Top 15 orgánicos por views. Top 9 de venta (CLR ≥19.17%, p85). +2 top views no incluidos en filtro CLR. +6 fracasos para Lente A (comparar éxitos vs fracasos)",
+    "recommended_ids": [
+      "DUwIH3BEitP",
+      "DVylvUXDvsr",
+      "DUTbK2jCOZq",
+      "DVGq8NnDk7L",
+      "DVRJ9fEjsJ8",
+      "DTnxgkwjh7Q",
+      "DUoetNmEh4m",
+      "DUlStZQjlUy",
+      "DVJXyEIDpyq",
+      "DT8Qg7mjvVx",
+      "DT6bxmdk8Dh",
+      "DVq6GZsDoRX",
+      "DTqGbdoDhL0",
+      "DVUu3KJjmsR",
+      "DV4NvAlEkMa",
+      "DUG5LHyElnK",
+      "DULo3uHDtHs",
+      "DUle-S3kun3",
+      "DU5_RFTji5j",
+      "DU_PmRCDrdM",
+      "DUtYZmPAX12",
+      "DT_cRiGErbe",
+      "DUieMXUEty_",
+      "DUPYKArCPpN",
+      "DT5tRboDjef",
+      "DTy4vKSk5FI",
+      "DVRspDnko5U",
+      "DWKLLqtEraQ",
+      "DVJkPwUDnB8",
+      "DVSPP1iDhyt",
+      "DWKeZopEjJ5",
+      "DURV0WekkLd"
+    ],
+    "recommended_count": 32,
+    "pct_of_total": "16%",
+    "ab_tests_added": 18,
+    "cluster_reps_added": 10,
+    "final_count": 60,
+    "final_pct": "30%",
+    "final_ids": [
+      "DUwIH3BEitP",
+      "DVylvUXDvsr",
+      "DUTbK2jCOZq",
+      "DVGq8NnDk7L",
+      "DVRJ9fEjsJ8",
+      "DTnxgkwjh7Q",
+      "DUoetNmEh4m",
+      "DUlStZQjlUy",
+      "DVJXyEIDpyq",
+      "DT8Qg7mjvVx",
+      "DT6bxmdk8Dh",
+      "DVq6GZsDoRX",
+      "DTqGbdoDhL0",
+      "DVUu3KJjmsR",
+      "DV4NvAlEkMa",
+      "DUG5LHyElnK",
+      "DULo3uHDtHs",
+      "DUle-S3kun3",
+      "DU5_RFTji5j",
+      "DU_PmRCDrdM",
+      "DUtYZmPAX12",
+      "DT_cRiGErbe",
+      "DUieMXUEty_",
+      "DUPYKArCPpN",
+      "DT5tRboDjef",
+      "DTy4vKSk5FI",
+      "DVRspDnko5U",
+      "DWKLLqtEraQ",
+      "DVJkPwUDnB8",
+      "DVSPP1iDhyt",
+      "DWKeZopEjJ5",
+      "DURV0WekkLd",
+      "DVL1k1UjhlX",
+      "DVOpZ7QDobD",
+      "DUoA5vmjhEe",
+      "DVg86tGEuVa",
+      "DVeTI7lkh2S",
+      "DVjMA1LjrP8",
+      "DVKRz8OAVIM",
+      "DV9b9ykEq_k",
+      "DVj0TVKksrp",
+      "DU3lwzjjx2_",
+      "DUOoUAXEt1T",
+      "DUdVvAkExYD",
+      "DUV9oqsFIhJ",
+      "DVuQFH-j2Jk",
+      "DVjZ06hj4Po",
+      "DVPZRzyATU-",
+      "DUmEZmKkkfL",
+      "DVbtphKkuXM",
+      "DV1h948AWwJ",
+      "DV_mCcQDkHZ",
+      "DUBJf5zjrrB",
+      "DT3GRrCjsLX",
+      "DVywHcoDk80",
+      "DV405gRjkxS",
+      "DUEV43eDvQE",
+      "DWRtMJKDiYe",
+      "DT0hx-sEzSw",
+      "DV3nx5ADrfi"
+    ]
+  }
+}

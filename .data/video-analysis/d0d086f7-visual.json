@@ -1,0 +1,21 @@
+{
+  "id": "d0d086f7",
+  "title": "3",
+  "source": "/Users/lean/Desktop/Nico x Nafe Evergreen/Nico x Nafe evergreen 2/15-10-25/3.mov",
+  "duration_seconds": 30,
+  "total_frames": 30,
+  "frame_interval_seconds": 1,
+  "analyzed_at": "2026-03-31T23:55:55.970Z",
+  "visual_analysis": [
+    {
+      "startTime": 0,
+      "endTime": 15,
+      "analysis": "**Segmento 1 (0s - 15s):**\n\n1.  **Formato visual**: B-roll / interacción grabada. Muestra a personas interactuando en un entorno comercial.\n2.  **Encuadre**: Plano medio, centrado en dos personas (un hombre y una mujer) de pie, con una tercera persona parcialmente visible a la izquierda sentada en una mesa.\n3.  **Textos en pantalla**: \"Entonces la llevé al centro comercial\" (en un recuadro blanco con texto negro en la parte inferior de la pantalla).\n4.  **Elementos visuales**:\n    *   **Sujetos**: Un hombre joven (suéter oscuro, pantalones claros, zapatillas blancas) y una mujer (chaqueta azul oscuro, camiseta azul, jeans claros, bolso cruzado verde oliva). La mujer ríe y se cubre la boca en varios momentos. El hombre sonríe. Una tercera persona (parcialmente visible a la izquierda) está sentada en una mesa redonda y parece estar usando una tablet.\n    *   **Fondo**: Un entorno de tienda de electrónica o departamento. A la izquierda, una pared negra con una señal de salida verde y un panel de información azul. A la derecha, una pared azul claro con estantes que exhiben accesorios electrónicos (relojes inteligentes, fundas de teléfono, auriculares) en empaques transparentes, algunos con etiquetas de precio. Hay un detalle de listones de madera en la parte superior de la pared.\n    *   **Colores dominantes**: Negro, azul claro, blanco, azul oscuro y verde oliva.\n5.  **Transiciones**: No hay transiciones; es una toma continua.\n6.  **Movimiento de cámara**: La cámara está mayormente estática, con movimientos muy sutiles para mantener a los sujetos en el encuadre mientras reaccionan y se mueven ligeramente.\n7.  **Iluminación**: Artificial, brillante y uniforme, típica de un establecimiento comercial."
+    },
+    {
+      "startTime": 15,
+      "endTime": 30,
+      "analysis": "**Segmento 1 (0s - 14s)**\n\n1.  **Formato visual**: B-roll (escena grabada de personas interactuando en un entorno).\n2.  **Encuadre**: Medio, mostrando a dos personas (un hombre y una mujer) de la cintura para arriba.\n3.  **Textos en pantalla**: \"Entonces la llevé al centro comercial\" (en un recuadro blanco con bordes redondeados en la parte inferior izquierda).\n4.  **Elementos visuales**:\n    *   Dos personas: un hombre joven a la izquierda y una mujer de mediana edad a la derecha. Ambos sonríen y la mujer ríe en varios momentos, llevándose la mano al pecho.\n    *   El hombre viste un suéter de punto oscuro y pantalones oscuros.\n    *   La mujer viste una chaqueta azul marino, una camiseta estampada (azul con detalles dorados/beige), jeans claros y un bolso cruzado color verde oliva. Lleva gafas de sol en la cabeza.\n    *   Fondo: Interior de una tienda de electrónica o telefonía, con estantes iluminados que exhiben diversos dispositivos (teléfonos, smartwatches, accesorios) en vitrinas. Se aprecian algunas etiquetas de precios.\n    *   Hay un cartel verde con una flecha blanca a la izquierda y otro cartel azul con texto y un código QR.\n    *   Colores dominantes: Azules, negros, blancos y tonos metálicos/grises del mobiliario de la tienda.\n5.  **Transiciones**: No hay transiciones dentro de este segmento, es un clip continuo.\n6.  **Movimiento de cámara**: Estática.\n7.  **Iluminación**: Artificial, brillante y uniforme, característica de un espacio comercial interior."
+    }
+  ]
+}

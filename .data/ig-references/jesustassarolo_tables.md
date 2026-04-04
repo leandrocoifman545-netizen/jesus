@@ -1,6 +1,6 @@
 # Tablas pre-calculadas: @jesustassarolo
 
-> Generado: 2026-03-25 | Últimos 12 meses | 0 posts
+> Generado: 2026-04-01 | Últimos 12 meses | 0 posts
 
 ## 1. Métricas globales
 

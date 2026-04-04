@@ -8,7 +8,49 @@ argument-hint: @username
 
 Recibís un @username de Instagram. Tu trabajo es correr el pipeline completo de scraping + transcripción + análisis y generar un documento consolidado con todos los patrones encontrados.
 
-## Paso 0: Pre-screening (ANTES de gastar créditos)
+## Paso 0a: Leer metodología de análisis profundo
+
+**OBLIGATORIO:** Leer `.data/metodologia-analisis-profundo.md` ANTES de analizar.
+Contiene: 7 axiomas + 8 pasadas de profundidad + 5 lentes + 7 dimensiones + transferencia sistemática + predicción + autocrítica de 24 preguntas.
+Aplicar la metodología COMPLETA al analizar el contenido del perfil. No hacer análisis superficial.
+
+## Paso 0b-preflight: Correr preflight (OBLIGATORIO)
+
+```bash
+node scripts/preflight-analisis-ig.mjs @USERNAME
+```
+
+El preflight:
+- Verifica que la data necesaria exista
+- Lista archivos que DEBEN leerse antes de escribir análisis (auto-patterns, análisis previo, cruzado, oportunidades)
+- Establece el SCOPE MÍNIMO: cuántos videos deben tener transcripción completa en secciones 6 y 7
+- Detecta gaps (mapa no generado, frames no extraídos, etc.)
+
+**LEER TODOS los archivos listados en "LEER OBLIGATORIO" ANTES de escribir una sola línea del análisis.** No leerlos es el error más común y produce análisis que repiten lo que ya se sabe.
+
+## Paso 0c: Crear process-log.json (OBLIGATORIO)
+
+Crear `.data/ig-references/{username}_process-log.json` al EMPEZAR:
+
+```json
+{
+  "username": "@USERNAME",
+  "started_at": "ISO-DATE",
+  "preflight_scope": { /* copiar del preflight */ },
+  "steps_completed": {
+    "paso_0a_metodologia_read": false,
+    "paso_1_data_verified": false,
+    "must_read_files_read": false,
+    "frames_extracted": false,
+    "cross_profile_validation": false,
+    "lente_a_done": false
+  }
+}
+```
+
+Actualizar cada campo a `true` cuando se complete el paso. **El hook de validación BLOQUEARÁ el save del análisis final si el process-log no existe o tiene pasos incompletos.**
+
+## Paso 0b: Pre-screening (ANTES de gastar créditos)
 
 **El usuario debe dar un @username.** Si no lo da, pedirlo.
 
@@ -24,44 +66,83 @@ Recibís un @username de Instagram. Tu trabajo es correr el pipeline completo de
 
 **Si el perfil es Tipo B, preguntar:** "Este perfil no vende productos — el análisis va a ser más de storytelling/engagement que de mecánicas de venta. ¿Seguimos o preferís uno que venda?"
 
-## Paso 1: Pipeline automatizado
-
-**Usar el orquestador en vez de correr scripts sueltos:**
+## Paso 1: Scrape de métricas (SIN descargar videos)
 
 ```bash
-node scripts/ig-pipeline.mjs @USERNAME --months 12
+node scripts/ig-pipeline.mjs @USERNAME --skip-download --months 12
 ```
 
-Esto corre automáticamente (7 fases):
-1. **Scrape** (Apify) → `{username}.json`
-2. **Download + Transcribe** (Groq Whisper, con retry automático) → `{username}_videos/` + `{username}_transcripts.json`
-3. **Análisis de métricas** → `{username}_metrics.json` + `{username}_tables.md`
-4. **Análisis de patrones** → `{username}_patterns.json` (apertura×cuerpo×cierre por video)
-5. **Cross patterns × ADP** → `pattern-coverage.json` + `pattern-coverage.md` (oportunidades no explotadas)
-6. **Update INDEX** → `INDEX.md` regenerado
-
-**Después del pipeline**, correr micro-patrones cuantitativos:
-```bash
-node scripts/ig-micro-patterns.mjs {username}
-```
-Esto genera `{username}_auto-patterns.md` + `{username}_auto-patterns.json` con:
-- Frases top 25% vs bottom 25% CLR (diferenciadoras + killer)
-- Ritmo (duración×CLR, WPS, oraciones/video, preguntas/video)
-- CTA formulas × CLR, repetición keyword × CLR
-- Captions: longitud × CLR, features × CLR, keywords ranking
-- Carruseles vs videos engagement
-- Revenue claims × CLR, scarcity/urgencia patterns
-
-**Opciones útiles:**
-- `--limit 50` → máximo 50 posts (perfiles muy grandes)
-- `--top-performers` → solo descarga top CLR + views (ahorra créditos Groq)
-- `--skip-download` → solo scrape + analyze (si ya tenés los videos)
-- `--months 6` → filtrar solo últimos 6 meses
-- `--lang en` → forzar idioma de transcripción (default: auto-detect). Usar para perfiles en inglés como @hormozi
+Esto scrapea + genera métricas + patrones SIN gastar en transcripción. Output: `{username}.json`, `{username}_metrics.json`, `{username}_tables.md`.
 
 **Si el pipeline falla**, informar al usuario (probablemente falta APIFY_TOKEN o GROQ_API_KEY en .env.local).
 
+## Paso 1b: Generar MAPA ESTRATÉGICO (ANTES de bajar videos)
+
+```bash
+node scripts/ig-map.mjs @USERNAME --months 12
+```
+
+El mapa analiza la distribución de calidad del perfil y recomienda qué videos bajar. Output: `{username}_map.md` + `{username}_map.json`.
+
+**Qué genera:**
+- Separación orgánico vs venta (por CTA en caption)
+- Distribución de calidad: unimodal o bimodal
+- Clusters temáticos (por keywords en captions)
+- A/B tests probables (captions similares)
+- Outliers estadísticos (z-score ≥ |2|)
+- **Recomendación de descarga con umbral dinámico** — adaptativo al perfil (no número fijo ni porcentaje fijo)
+
+**PRESENTAR el mapa al usuario** y preguntar si la selección es correcta antes de descargar. El usuario puede ajustar: "bajá también los de este cluster" o "esos A/B tests no me interesan".
+
+## Paso 1c: Buscar A/B tests naturales
+
+**Los A/B tests naturales valen 10x más que videos individuales.** El mapa los detecta por caption, pero la confirmación viene con transcripciones (mismo audio = confirmado).
+
+Priorizar SIEMPRE para Tier 1 los A/B tests confirmados.
+
+> Fuente: 4 versiones de "Ignora a quien te ignora" de @jaimehigueraes (mismo guion, 4 producciones, 575K→122K) generaron los hallazgos más medibles de 9 análisis Tier 1.
+
+## Paso 2: Download selectivo + transcripción
+
+**Usar los IDs recomendados por el mapa:**
+
+```bash
+node scripts/ig-download-videos.mjs @USERNAME --only-ids-file .data/ig-references/{username}_map.json
+```
+
+Esto baja SOLO los videos que el mapa recomienda (no todos). Después corre transcripción con Groq automáticamente.
+
+**Opciones útiles:**
+- `--only-ids "ID1,ID2,..."` → IDs manuales (si ajustaste la selección)
+- `--only-ids-file path/to/map.json` → IDs desde el mapa
+- `--skip-transcribe` → solo descarga sin transcribir
+- `--lang en` → forzar idioma (default: auto-detect)
+- `--top-performers` → selección automática por CLR+views (alternativa al mapa)
+
+**Después del download**, correr análisis de patrones + micro-patrones:
+```bash
+node scripts/ig-patterns.mjs @USERNAME
+node scripts/ig-micro-patterns.mjs {username}
+```
+
 **El pipeline genera `{username}_tables.md` con tablas pre-calculadas** — NO calcular métricas manualmente. Leer ese archivo como base del análisis.
+
+## Paso 1b: Buscar A/B tests naturales (ANTES de elegir qué analizar en profundidad)
+
+**Los A/B tests naturales valen 10x más que videos individuales.** Antes de elegir qué videos analizar con la metodología profunda, buscar en la data scrapeada:
+
+1. **Videos con MISMO GUION y diferente producción/caption.** Creadores que republican el mismo contenido con variaciones. Se detectan comparando transcripciones con alta similitud textual.
+2. **Videos con MISMO OBJETIVO/PRODUCTO y diferente estructura.** Ej: dos videos que venden lo mismo pero uno da toda la info y otro la retiene.
+3. **Videos REPETIDOS temáticamente** con resultados muy diferentes.
+
+**Cómo detectarlos rápido:**
+- En `{username}_tables.md`, buscar captions similares o idénticas
+- En las transcripciones, buscar frases textuales repetidas entre videos diferentes
+- Comparar los top CLR con los bottom CLR del mismo tema
+
+**Si hay A/B tests naturales → priorizarlos para Tier 1 SIEMPRE.** La capacidad de aislar variables (misma audio, diferente caption = medimos impacto de caption) es más valiosa que cualquier análisis de video individual.
+
+> Fuente: 4 versiones de "Ignora a quien te ignora" de @jaimehigueraes (mismo guion, 4 producciones, 575K→122K) generaron los hallazgos más medibles de 9 análisis Tier 1.
 
 ## Paso 2: Análisis visual con Gemini Flash (si hay GEMINI_API_KEY)
 
@@ -224,6 +305,12 @@ Escribir el análisis en `.data/ig-references/{username}_analisis.md`:
 ### Actualizar INDEX.md
 Agregar el perfil a la tabla comparativa en `.data/ig-references/INDEX.md`.
 
+### Actualizar mapa de competencia
+Agregar/actualizar el perfil en `.data/mapa-competencia.md`:
+- Clasificar en Anillo 1, 2 o 3
+- Agregar hallazgos a la tabla de "Hallazgos cross-competencia"
+- Actualizar la pregunta estratégica activa si corresponde
+
 ### Actualizar metrics-summary.json
 ```bash
 node scripts/ig-analyze.mjs --all
@@ -274,7 +361,11 @@ Si falla alguno, corregir ANTES de presentar.
 
 | Script | Qué hace | Cuándo usarlo |
 |--------|----------|---------------|
-| `ig-pipeline.mjs @user` | Pipeline completo (scrape→download→transcribe→analyze) | Siempre al empezar |
+| `ig-pipeline.mjs @user --skip-download` | Scrape + métricas sin descargar | Siempre al empezar (fase 1) |
+| `ig-map.mjs @user` | Mapa estratégico: clusters, A/B tests, umbral dinámico, recomendación de descarga | Después del scrape, ANTES de bajar (fase 1b) |
+| `ig-pipeline.mjs @user` | Pipeline completo (scrape→download→transcribe→analyze) | Si no necesitás el mapa |
+| `ig-pipeline.mjs @user --only-ids-file .data/ig-references/user_map.json` | Pipeline con descarga selectiva desde mapa | Después de revisar el mapa |
+| `ig-pipeline.mjs @user --since-last-scrape` | Solo posts nuevos, merge con existentes | Monitoreo periódico |
 | `ig-analyze.mjs @user` | Solo métricas (sin scrape/download) | Re-analizar con otros params |
 | `ig-analyze.mjs --all` | Métricas de TODOS los perfiles + comparativa | Después de agregar perfil nuevo |
 | `ig-search.mjs "término"` | Busca en transcripciones + captions cross-profile | Para encontrar patrones temáticos |

@@ -1,13 +1,15 @@
 {
-  "generated_at": "2026-03-25T11:17:26.975Z",
-  "total_videos": 517,
-  "total_profiles": 6,
+  "generated_at": "2026-03-31T21:15:07.540Z",
+  "total_videos": 577,
+  "total_profiles": 8,
   "profiles": [
+    "jaimehigueraes",
     "faridieck",
     "herasmedia",
     "hormozi",
     "niksetting",
     "ramiro.cubria",
+    "sooweigoh",
     "tino.mossu"
   ],
   "opening_patterns": [
@@ -32,33 +34,6 @@
       ]
     },
     {
-      "pattern": "segunda_persona",
-      "count": 2,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "avg_clr": 174.28,
-      "weighted_clr": 215.42,
-      "median_clr": 174.28,
-      "avg_views": 28376,
-      "examples": [
-        {
-          "text": "Te voy a regalar mi sistema de contenido de 3.000 dólares completamente gratis. Esta plantilla de Notion no solamente me",
-          "clr": 293.37,
-          "views": 6528,
-          "shortCode": "DRF7PQyEvWQ",
-          "profile": "ramiro.cubria"
-        },
-        {
-          "text": "A vos te gustan grandes y venosas, ¿no? Querido, correcto, a mí me gustan grandes y bien ramificadas. Las automatizacion",
-          "clr": 55.19,
-          "views": 50224,
-          "shortCode": "DNdlV5utMPL",
-          "profile": "ramiro.cubria"
-        }
-      ]
-    },
-    {
       "pattern": "exclusividad",
       "count": 15,
       "profiles": [
@@ -66,7 +41,7 @@
         "ramiro.cubria"
       ],
       "avg_clr": 186.62,
-      "weighted_clr": 194.74,
+      "weighted_clr": 194.54,
       "median_clr": 177.04,
       "avg_views": 48506,
       "examples": [
@@ -101,7 +76,7 @@
         "ramiro.cubria"
       ],
       "avg_clr": 99.48,
-      "weighted_clr": 172.24,
+      "weighted_clr": 171.85,
       "median_clr": 82.26,
       "avg_views": 93436,
       "examples": [
@@ -129,33 +104,6 @@
       ]
     },
     {
-      "pattern": "incredulidad",
-      "count": 2,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "avg_clr": 202.8,
-      "weighted_clr": 164.88,
-      "median_clr": 202.8,
-      "avg_views": 12092,
-      "examples": [
-        {
-          "text": "No entiendo cómo todavía no tenés acceso a este documento. 4 prompts de chat GPT para hacer 30 mil dólares por mes. Es u",
-          "clr": 314.37,
-          "views": 14304,
-          "shortCode": "DQuFQTHDiCB",
-          "profile": "ramiro.cubria"
-        },
-        {
-          "text": "Yo no entiendo por qué mierda vas a gastarte toda tu propia guita en anuncios si podés aprovecharte de la billetera gord",
-          "clr": 91.22,
-          "views": 9880,
-          "shortCode": "DUZoMI0DP3Q",
-          "profile": "ramiro.cubria"
-        }
-      ]
-    },
-    {
       "pattern": "promesa_directa",
       "count": 7,
       "profiles": [
@@ -164,7 +112,7 @@
         "tino.mossu"
       ],
       "avg_clr": 127.42,
-      "weighted_clr": 129.78,
+      "weighted_clr": 131.1,
       "median_clr": 108.78,
       "avg_views": 121176,
       "examples": [
@@ -192,6 +140,76 @@
       ]
     },
     {
+      "pattern": "incredulidad",
+      "count": 3,
+      "profiles": [
+        "jaimehigueraes",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 155.48,
+      "weighted_clr": 130.45,
+      "median_clr": 91.22,
+      "avg_views": 47256,
+      "examples": [
+        {
+          "text": "No entiendo cómo todavía no tenés acceso a este documento. 4 prompts de chat GPT para hacer 30 mil dólares por mes. Es u",
+          "clr": 314.37,
+          "views": 14304,
+          "shortCode": "DQuFQTHDiCB",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Yo no entiendo por qué mierda vas a gastarte toda tu propia guita en anuncios si podés aprovecharte de la billetera gord",
+          "clr": 91.22,
+          "views": 9880,
+          "shortCode": "DUZoMI0DP3Q",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "No he visto a nadie hablar sobre esta oportunidad de negocio todavía para 2026. No es sexy, no es millonario de la noche",
+          "clr": 60.85,
+          "views": 117585,
+          "shortCode": "DS5sGUoDMuI",
+          "profile": "jaimehigueraes"
+        }
+      ]
+    },
+    {
+      "pattern": "segunda_persona",
+      "count": 3,
+      "profiles": [
+        "jaimehigueraes",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 116.63,
+      "weighted_clr": 108.93,
+      "median_clr": 55.19,
+      "avg_views": 84899,
+      "examples": [
+        {
+          "text": "Te voy a regalar mi sistema de contenido de 3.000 dólares completamente gratis. Esta plantilla de Notion no solamente me",
+          "clr": 293.37,
+          "views": 6528,
+          "shortCode": "DRF7PQyEvWQ",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "A vos te gustan grandes y venosas, ¿no? Querido, correcto, a mí me gustan grandes y bien ramificadas. Las automatizacion",
+          "clr": 55.19,
+          "views": 50224,
+          "shortCode": "DNdlV5utMPL",
+          "profile": "ramiro.cubria"
+        },
+        {
+          "text": "Te voy a decir las top 5 herramientas de inteligencia artificial que todo el mundo debería estar utilizando en 2026. Est",
+          "clr": 1.32,
+          "views": 197944,
+          "shortCode": "DTF-9XUjIRF",
+          "profile": "jaimehigueraes"
+        }
+      ]
+    },
+    {
       "pattern": "situacion_narrativa",
       "count": 1,
       "profiles": [
@@ -213,8 +231,9 @@
     },
     {
       "pattern": "provocacion",
-      "count": 90,
+      "count": 103,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -222,86 +241,49 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 86.27,
-      "weighted_clr": 89.77,
-      "median_clr": 68.41,
-      "avg_views": 328465,
+      "avg_clr": 76.17,
+      "weighted_clr": 73.91,
+      "median_clr": 59.95,
+      "avg_views": 310288,
       "examples": [
         {
-          "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
-          "clr": 191.13,
-          "views": 1533,
-          "shortCode": "DJ984GKRjwI",
-          "profile": "herasmedia"
+          "text": "No he visto a nadie hablar sobre esta oportunidad de negocio todavía para 2026. No es sexy, no es millonario de la noche",
+          "clr": 60.85,
+          "views": 117585,
+          "shortCode": "DS5sGUoDMuI",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "2020, 2021, 2022, 2023, 2024, 5 años han pasado y sigues sin crecer en Instagram. Pero hay una solución que nunca antes ",
-          "clr": 121.55,
-          "views": 17116,
-          "shortCode": "DFVOFvQuj1M",
-          "profile": "herasmedia"
+          "text": "Tener novia es de las peores decisiones que puedes tomar en tu vida No lo digo por resentimiento, lo digo porque es una ",
+          "clr": 4.97,
+          "views": 230774,
+          "shortCode": "DTn-gK0jKMK",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "Las mujeres tienen expectativas de los hombres imposibles de cumplir. ¿A qué te refieres? Esperan que a los 20, 25 años ",
-          "clr": 0.58,
-          "views": 998101,
-          "shortCode": "DOKT4IdjPL3",
-          "profile": "faridieck"
-        }
-      ]
-    },
-    {
-      "pattern": "pregunta",
-      "count": 120,
-      "profiles": [
-        "herasmedia",
-        "hormozi",
-        "niksetting",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 66.28,
-      "weighted_clr": 57.53,
-      "median_clr": 53.52,
-      "avg_views": 137023,
-      "examples": [
-        {
-          "text": "No sé qué coño publicar, ¿me ayudas? Ok, ¿cuánto tiempo tienes para hacer contenido? No sé, no mucho. Ok, entonces vas a",
-          "clr": 136.86,
-          "views": 25785,
-          "shortCode": "DVylb4_DdNi",
-          "profile": "herasmedia"
-        },
-        {
-          "text": "Este es un gancho interrupción de patrón ¿Esta casa es rentada o es tuya? Este es un gancho pregunta polémica Millonario",
-          "clr": 110.15,
-          "views": 33609,
-          "shortCode": "DUWHpuskZkF",
-          "profile": "herasmedia"
-        },
-        {
-          "text": "¿Se puede ganar 100.000 seguidores en 30 días? ¿Qué? Ah, es imposible. Sí, los viejos debes estar locos. ¡Callaos, coño!",
-          "clr": 102.15,
-          "views": 2602,
-          "shortCode": "DLAxyB-RfrW",
-          "profile": "herasmedia"
+          "text": "Mi mayor virtud es que nadie sabe lo que realmente está pasando en mi vida. Dónde estoy, con quién estoy o mi siguiente ",
+          "clr": 1.89,
+          "views": 105970,
+          "shortCode": "DPy1H6FjO6O",
+          "profile": "jaimehigueraes"
         }
       ]
     },
     {
       "pattern": "dato_numero",
-      "count": 178,
+      "count": 180,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "niksetting",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 79.47,
-      "weighted_clr": 56.66,
+      "avg_clr": 79.59,
+      "weighted_clr": 57.23,
       "median_clr": 66.82,
-      "avg_views": 81245,
+      "avg_views": 84538,
       "examples": [
         {
           "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
@@ -318,26 +300,66 @@
           "profile": "herasmedia"
         },
         {
-          "text": "2020, 2021, 2022, 2023, 2024, 5 años han pasado y sigues sin crecer en Instagram. Pero hay una solución que nunca antes ",
-          "clr": 121.55,
-          "views": 17116,
-          "shortCode": "DFVOFvQuj1M",
+          "text": "¿Soy sin dinero? ¿Qué negocio debería empezar? Esta es una pregunta que me hace muy a menudo gente que está con poco din",
+          "clr": 157.9,
+          "views": 113009,
+          "shortCode": "DUS7iV9DLcc",
+          "profile": "jaimehigueraes"
+        }
+      ]
+    },
+    {
+      "pattern": "pregunta",
+      "count": 126,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 64.43,
+      "weighted_clr": 56.14,
+      "median_clr": 53.16,
+      "avg_views": 144589,
+      "examples": [
+        {
+          "text": "¿Soy sin dinero? ¿Qué negocio debería empezar? Esta es una pregunta que me hace muy a menudo gente que está con poco din",
+          "clr": 157.9,
+          "views": 113009,
+          "shortCode": "DUS7iV9DLcc",
+          "profile": "jaimehigueraes"
+        },
+        {
+          "text": "No sé qué coño publicar, ¿me ayudas? Ok, ¿cuánto tiempo tienes para hacer contenido? No sé, no mucho. Ok, entonces vas a",
+          "clr": 136.86,
+          "views": 25785,
+          "shortCode": "DVylb4_DdNi",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Este es un gancho interrupción de patrón ¿Esta casa es rentada o es tuya? Este es un gancho pregunta polémica Millonario",
+          "clr": 110.15,
+          "views": 33609,
+          "shortCode": "DUWHpuskZkF",
           "profile": "herasmedia"
         }
       ]
     },
     {
       "pattern": "credencial",
-      "count": 36,
+      "count": 37,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "ramiro.cubria"
       ],
-      "avg_clr": 64.12,
-      "weighted_clr": 40.79,
-      "median_clr": 46.06,
-      "avg_views": 71638,
+      "avg_clr": 63.79,
+      "weighted_clr": 41.29,
+      "median_clr": 48.66,
+      "avg_views": 72590,
       "examples": [
         {
           "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
@@ -364,18 +386,19 @@
     },
     {
       "pattern": "historia",
-      "count": 28,
+      "count": 30,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "niksetting",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 57.33,
-      "weighted_clr": 40.14,
-      "median_clr": 41.25,
-      "avg_views": 123828,
+      "avg_clr": 53.62,
+      "weighted_clr": 37.07,
+      "median_clr": 38.15,
+      "avg_views": 134493,
       "examples": [
         {
           "text": "Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en e",
@@ -402,8 +425,9 @@
     },
     {
       "pattern": "neutro",
-      "count": 136,
+      "count": 162,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -411,81 +435,46 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 49.27,
-      "weighted_clr": 39.81,
-      "median_clr": 20.95,
-      "avg_views": 297636,
+      "avg_clr": 41.8,
+      "weighted_clr": 32.62,
+      "median_clr": 9.59,
+      "avg_views": 312990,
       "examples": [
         {
-          "text": "Yo tampoco sabía que era el RI de Instagram y cuando lo descubrí, mis vídeos pasaron de esto a esto sin hacer absolutame",
-          "clr": 128.63,
-          "views": 22874,
-          "shortCode": "DG_caYLRPQ6",
-          "profile": "herasmedia"
+          "text": "Cuando ganes un poco de dinero, aunque sea muy poco, lo primero que tienes que hacer es esto. Tienes que entender la dif",
+          "clr": 31.14,
+          "views": 113869,
+          "shortCode": "DRFjparjGS4",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "La mejor hora para publicar en Instagram está muy cerca de la peor hora para publicar en Instagram. Y cuidado porque com",
-          "clr": 112.03,
-          "views": 119551,
-          "shortCode": "C7zV8ceOAtJ",
-          "profile": "herasmedia"
+          "text": "Este cheque sin abrir es el cheque que me mandó mi segundo cliente como Growth Partner y en este vídeo voy a abrirlo con",
+          "clr": 2.91,
+          "views": 340617,
+          "shortCode": "C1C9HHYIOFN",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "Esta es Greta Thunberg, la activista medioambiental que ha sido arrestada por manifestarse. Bueno, hace un tiempo salió ",
-          "clr": 0.56,
-          "views": 1568783,
-          "shortCode": "DRLXb2TEUhN",
-          "profile": "faridieck"
-        }
-      ]
-    },
-    {
-      "pattern": "negacion_en_serie",
-      "count": 7,
-      "profiles": [
-        "herasmedia",
-        "hormozi",
-        "ramiro.cubria"
-      ],
-      "avg_clr": 51.78,
-      "weighted_clr": 36.65,
-      "median_clr": 70.55,
-      "avg_views": 145405,
-      "examples": [
-        {
-          "text": "Este pibe dice que hace 200 mil dólares por mes. Ja, ja, ja, ja, ja. Fantasma. A ver, estoy de acuerdo acá con nuestro a",
-          "clr": 89.13,
-          "views": 148,
-          "shortCode": "DLVvGpluMW9",
-          "profile": "ramiro.cubria"
-        },
-        {
-          "text": "Si en Instagram no creces una mierda, no es por los hashtags, no es por cómo editas, no es porque el algoritmo te odie, ",
-          "clr": 76.63,
-          "views": 14132,
-          "shortCode": "C9AhJKuucQW",
-          "profile": "herasmedia"
-        },
-        {
-          "text": "¿Cómo coño hace la gente para hacer guiones virales? Así, entendiendo que hacer guiones virales no es arte, no es suerte",
-          "clr": 74.73,
-          "views": 110460,
-          "shortCode": "DJUhEpARdHG",
-          "profile": "herasmedia"
+          "text": "Uno de los mayores indicios de alta inteligencia emocional, según la ciencia, es ser incapaz de odiar o detestar a algui",
+          "clr": 2.2,
+          "views": 316269,
+          "shortCode": "DQUgXXrDGYn",
+          "profile": "jaimehigueraes"
         }
       ]
     },
     {
       "pattern": "lista_framework",
-      "count": 20,
+      "count": 21,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi"
       ],
-      "avg_clr": 51.81,
-      "weighted_clr": 31.55,
-      "median_clr": 47.57,
-      "avg_views": 75510,
+      "avg_clr": 49.45,
+      "weighted_clr": 27.94,
+      "median_clr": 45.25,
+      "avg_views": 77996,
       "examples": [
         {
           "text": "Hace solo 5 días tenía 10.000 seguidores. Y esta mañana se despertó con 150.000 seguidores y en este video te voy a expl",
@@ -511,17 +500,55 @@
       ]
     },
     {
-      "pattern": "hipotetico",
-      "count": 23,
+      "pattern": "negacion_en_serie",
+      "count": 10,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "ramiro.cubria"
       ],
-      "avg_clr": 49.84,
-      "weighted_clr": 29.45,
-      "median_clr": 49.8,
-      "avg_views": 89031,
+      "avg_clr": 42.66,
+      "weighted_clr": 24.33,
+      "median_clr": 51.07,
+      "avg_views": 150699,
+      "examples": [
+        {
+          "text": "Si en Instagram no creces una mierda, no es por los hashtags, no es por cómo editas, no es porque el algoritmo te odie, ",
+          "clr": 76.63,
+          "views": 14132,
+          "shortCode": "C9AhJKuucQW",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "¿Cómo coño hace la gente para hacer guiones virales? Así, entendiendo que hacer guiones virales no es arte, no es suerte",
+          "clr": 74.73,
+          "views": 110460,
+          "shortCode": "DJUhEpARdHG",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "No he visto a nadie hablar sobre esta oportunidad de negocio todavía para 2026. No es sexy, no es millonario de la noche",
+          "clr": 60.85,
+          "views": 117585,
+          "shortCode": "DS5sGUoDMuI",
+          "profile": "jaimehigueraes"
+        }
+      ]
+    },
+    {
+      "pattern": "hipotetico",
+      "count": 29,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 39.69,
+      "weighted_clr": 23.33,
+      "median_clr": 37.88,
+      "avg_views": 119017,
       "examples": [
         {
           "text": "Si mañana me despertara con cero seguidores, esto es exactamente lo que haría para crecer 100.000 seguidores antes del f",
@@ -538,49 +565,11 @@
           "profile": "herasmedia"
         },
         {
-          "text": "Si quieres que tu cuenta de Instagram nunca crezca, tienes que hacer estas tres cosas. Uno, publica todos los días. Obvi",
-          "clr": 86.96,
-          "views": 14818,
-          "shortCode": "DIEvmvWRsJz",
-          "profile": "herasmedia"
-        }
-      ]
-    },
-    {
-      "pattern": "acumulacion",
-      "count": 62,
-      "profiles": [
-        "faridieck",
-        "herasmedia",
-        "hormozi",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 51.22,
-      "weighted_clr": 23.7,
-      "median_clr": 42.43,
-      "avg_views": 207682,
-      "examples": [
-        {
-          "text": "Voy a hacer que este desconocido gane 100.000 seguidores y 100.000 euros en 30 días haciendo OnlyFans para hombres. Perd",
-          "clr": 191.13,
-          "views": 1533,
-          "shortCode": "DJ984GKRjwI",
-          "profile": "herasmedia"
-        },
-        {
-          "text": "Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en e",
-          "clr": 156.98,
-          "views": 137921,
-          "shortCode": "DNvc-qX4uUe",
-          "profile": "herasmedia"
-        },
-        {
-          "text": "¿Se puede ganar 100.000 seguidores en 30 días? ¿Qué? Ah, es imposible. Sí, los viejos debes estar locos. ¡Callaos, coño!",
-          "clr": 102.15,
-          "views": 2602,
-          "shortCode": "DLAxyB-RfrW",
-          "profile": "herasmedia"
+          "text": "Si ahora mismo estás soltero o soltera, este vídeo es para ti. Estar soltero es probablemente el momento más importante ",
+          "clr": 1.18,
+          "views": 122628,
+          "shortCode": "DR4-jTkDH7T",
+          "profile": "jaimehigueraes"
         }
       ]
     },
@@ -592,7 +581,7 @@
         "hormozi"
       ],
       "avg_clr": 69.15,
-      "weighted_clr": 22.5,
+      "weighted_clr": 22.35,
       "median_clr": 87.75,
       "avg_views": 87937,
       "examples": [
@@ -620,18 +609,58 @@
       ]
     },
     {
-      "pattern": "identidad",
-      "count": 9,
+      "pattern": "acumulacion",
+      "count": 67,
       "profiles": [
+        "jaimehigueraes",
+        "faridieck",
         "herasmedia",
         "hormozi",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 36.43,
-      "weighted_clr": 19.74,
-      "median_clr": 37.88,
-      "avg_views": 168402,
+      "avg_clr": 47.48,
+      "weighted_clr": 21.72,
+      "median_clr": 35.59,
+      "avg_views": 213335,
+      "examples": [
+        {
+          "text": "Un huevo roto no se puede volver a romper. Déjame explicar. Lo que pasó, pasó. Y no podría haber pasado de otra manera p",
+          "clr": 1.5,
+          "views": 139076,
+          "shortCode": "DUL-9SzDInM",
+          "profile": "jaimehigueraes"
+        },
+        {
+          "text": "Ignora a quien te ignora. Ya todos somos adultos. La gente sabe exactamente lo que hace. Y el silencio a veces habla a g",
+          "clr": 1.28,
+          "views": 122312,
+          "shortCode": "DSAhbNiDNPv",
+          "profile": "jaimehigueraes"
+        },
+        {
+          "text": "Ignora a quien te ignora. Ya todos somos adultos. La gente sabe exactamente lo que hace. Y el silencio a veces habla a g",
+          "clr": 1.12,
+          "views": 280851,
+          "shortCode": "DRKysmIDMY3",
+          "profile": "jaimehigueraes"
+        }
+      ]
+    },
+    {
+      "pattern": "identidad",
+      "count": 12,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 27.52,
+      "weighted_clr": 12.64,
+      "median_clr": 4.63,
+      "avg_views": 172946,
       "examples": [
         {
           "text": "Perdón, ¿Eres Víctor, la que hace todos los vídeos viral? Sí, soy yo. Me puedes ayudar con mi página de ropa como que no",
@@ -648,31 +677,11 @@
           "profile": "herasmedia"
         },
         {
-          "text": "Si tienes $1,000, aquí es cómo invertir en tus 20s para construir un robot. Paso 1. Identifica tu valor de mercado de ba",
-          "clr": 7.53,
-          "views": 100577,
-          "shortCode": "DU12E9FDuhV",
-          "profile": "hormozi"
-        }
-      ]
-    },
-    {
-      "pattern": "paradoja",
-      "count": 1,
-      "profiles": [
-        "herasmedia"
-      ],
-      "avg_clr": 4.26,
-      "weighted_clr": 4.26,
-      "median_clr": 4.26,
-      "avg_views": 9900,
-      "examples": [
-        {
-          "text": "¿No te parece absurdo pagar por ir a conciertos a escuchar canciones que ya has escuchado antes? Y me dirás, Víctor, per",
-          "clr": 4.26,
-          "views": 9900,
-          "shortCode": "C8FVt_ZuC6B",
-          "profile": "herasmedia"
+          "text": "Tener una pareja emocionalmente inteligente no es para todo el mundo. Y sobre todo no es para aquellos que no están prep",
+          "clr": 1.72,
+          "views": 121577,
+          "shortCode": "DWCDEVADOU-",
+          "profile": "jaimehigueraes"
         }
       ]
     },
@@ -711,6 +720,34 @@
       ]
     },
     {
+      "pattern": "paradoja",
+      "count": 2,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia"
+      ],
+      "avg_clr": 2.89,
+      "weighted_clr": 1.58,
+      "median_clr": 2.89,
+      "avg_views": 210288,
+      "examples": [
+        {
+          "text": "¿No te parece absurdo pagar por ir a conciertos a escuchar canciones que ya has escuchado antes? Y me dirás, Víctor, per",
+          "clr": 4.26,
+          "views": 9900,
+          "shortCode": "C8FVt_ZuC6B",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Cuanto más tiempo te quedas en casa, menos ganas tienes de salir. Y cuanto más tiempo te quedas en casa, más pesado te p",
+          "clr": 1.52,
+          "views": 410675,
+          "shortCode": "DSfx6jBDIwl",
+          "profile": "jaimehigueraes"
+        }
+      ]
+    },
+    {
       "pattern": "timeline_rapido",
       "count": 1,
       "profiles": [
@@ -734,8 +771,9 @@
   "body_patterns": [
     {
       "pattern": "autoridad",
-      "count": 144,
+      "count": 147,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -743,96 +781,49 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 83.42,
-      "weighted_clr": 78.8,
-      "median_clr": 68.01,
-      "avg_views": 78733,
+      "avg_clr": 83.41,
+      "weighted_clr": 79.51,
+      "median_clr": 67.45,
+      "avg_views": 79469,
       "examples": []
     },
     {
       "pattern": "caso_real",
-      "count": 24,
+      "count": 25,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 91.97,
-      "weighted_clr": 77.64,
-      "median_clr": 68.78,
-      "avg_views": 122676,
+      "avg_clr": 88.41,
+      "weighted_clr": 68.16,
+      "median_clr": 67.84,
+      "avg_views": 131393,
       "examples": []
     },
     {
       "pattern": "matematica",
-      "count": 130,
+      "count": 135,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 83.56,
-      "weighted_clr": 70.88,
-      "median_clr": 67.14,
-      "avg_views": 81607,
-      "examples": []
-    },
-    {
-      "pattern": "demo_proceso",
-      "count": 244,
-      "profiles": [
-        "faridieck",
-        "herasmedia",
-        "hormozi",
-        "niksetting",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 72.84,
-      "weighted_clr": 55.55,
-      "median_clr": 56.03,
-      "avg_views": 117844,
-      "examples": []
-    },
-    {
-      "pattern": "agitacion_leve",
-      "count": 92,
-      "profiles": [
-        "faridieck",
-        "herasmedia",
-        "hormozi",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 69.77,
-      "weighted_clr": 54.06,
-      "median_clr": 58.3,
-      "avg_views": 209643,
-      "examples": []
-    },
-    {
-      "pattern": "narrativa_general",
-      "count": 95,
-      "profiles": [
-        "faridieck",
-        "herasmedia",
-        "hormozi",
-        "niksetting",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 61.09,
-      "weighted_clr": 52.08,
-      "median_clr": 9.17,
-      "avg_views": 447458,
+      "avg_clr": 81.36,
+      "weighted_clr": 67.4,
+      "median_clr": 63.07,
+      "avg_views": 88526,
       "examples": []
     },
     {
       "pattern": "agitacion_fuerte",
-      "count": 65,
+      "count": 68,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -840,32 +831,70 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 64.02,
-      "weighted_clr": 51.47,
-      "median_clr": 57.74,
-      "avg_views": 169195,
+      "avg_clr": 62.02,
+      "weighted_clr": 50.04,
+      "median_clr": 55.79,
+      "avg_views": 173993,
       "examples": []
     },
     {
-      "pattern": "comparacion",
-      "count": 31,
+      "pattern": "demo_proceso",
+      "count": 264,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
         "niksetting",
-        "ramiro.cubria"
+        "ramiro.cubria",
+        "tino.mossu"
       ],
-      "avg_clr": 54.98,
-      "weighted_clr": 46.58,
-      "median_clr": 48.12,
-      "avg_views": 197354,
+      "avg_clr": 67.67,
+      "weighted_clr": 49.89,
+      "median_clr": 50.78,
+      "avg_views": 129241,
+      "examples": []
+    },
+    {
+      "pattern": "agitacion_leve",
+      "count": 101,
+      "profiles": [
+        "jaimehigueraes",
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 63.67,
+      "weighted_clr": 46.83,
+      "median_clr": 51.26,
+      "avg_views": 208034,
+      "examples": []
+    },
+    {
+      "pattern": "narrativa_general",
+      "count": 121,
+      "profiles": [
+        "jaimehigueraes",
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 48.26,
+      "weighted_clr": 41.37,
+      "median_clr": 1.95,
+      "avg_views": 431666,
       "examples": []
     },
     {
       "pattern": "tension",
-      "count": 39,
+      "count": 43,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -873,27 +902,10 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 58.54,
-      "weighted_clr": 44.87,
-      "median_clr": 49.74,
-      "avg_views": 141200,
-      "examples": []
-    },
-    {
-      "pattern": "future_pacing",
-      "count": 63,
-      "profiles": [
-        "faridieck",
-        "herasmedia",
-        "hormozi",
-        "niksetting",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 63.45,
-      "weighted_clr": 39.41,
-      "median_clr": 49.01,
-      "avg_views": 119346,
+      "avg_clr": 53.94,
+      "weighted_clr": 41.13,
+      "median_clr": 37.29,
+      "avg_views": 145629,
       "examples": []
     },
     {
@@ -908,30 +920,33 @@
         "tino.mossu"
       ],
       "avg_clr": 47.27,
-      "weighted_clr": 37.86,
+      "weighted_clr": 37.92,
       "median_clr": 25.4,
       "avg_views": 136569,
       "examples": []
     },
     {
-      "pattern": "analogia",
-      "count": 68,
+      "pattern": "comparacion",
+      "count": 38,
       "profiles": [
+        "jaimehigueraes",
+        "faridieck",
         "herasmedia",
         "hormozi",
-        "ramiro.cubria",
-        "tino.mossu"
+        "niksetting",
+        "ramiro.cubria"
       ],
-      "avg_clr": 51.4,
-      "weighted_clr": 33.38,
-      "median_clr": 51.33,
-      "avg_views": 89873,
+      "avg_clr": 46.63,
+      "weighted_clr": 37.46,
+      "median_clr": 38.44,
+      "avg_views": 197619,
       "examples": []
     },
     {
-      "pattern": "qa_rapido",
-      "count": 106,
+      "pattern": "future_pacing",
+      "count": 73,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -939,10 +954,44 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 39.24,
-      "weighted_clr": 25.27,
-      "median_clr": 27.83,
-      "avg_views": 133728,
+      "avg_clr": 55.26,
+      "weighted_clr": 31.88,
+      "median_clr": 41.84,
+      "avg_views": 138887,
+      "examples": []
+    },
+    {
+      "pattern": "analogia",
+      "count": 74,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia",
+        "hormozi",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 47.38,
+      "weighted_clr": 29.63,
+      "median_clr": 40.78,
+      "avg_views": 101643,
+      "examples": []
+    },
+    {
+      "pattern": "qa_rapido",
+      "count": 109,
+      "profiles": [
+        "jaimehigueraes",
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 38.18,
+      "weighted_clr": 24.51,
+      "median_clr": 27.03,
+      "avg_views": 135713,
       "examples": []
     }
   ],
@@ -957,7 +1006,7 @@
         "ramiro.cubria"
       ],
       "avg_clr": 127.29,
-      "weighted_clr": 122.23,
+      "weighted_clr": 122.29,
       "median_clr": 115.51,
       "avg_views": 81995,
       "examples": [
@@ -983,17 +1032,18 @@
     },
     {
       "pattern": "cta_doble",
-      "count": 270,
+      "count": 272,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 101.42,
-      "weighted_clr": 105.77,
-      "median_clr": 80.05,
-      "avg_views": 57359,
+      "avg_clr": 100.98,
+      "weighted_clr": 105.25,
+      "median_clr": 78.74,
+      "avg_views": 57749,
       "examples": [
         {
           "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
@@ -1017,17 +1067,18 @@
     },
     {
       "pattern": "cta_video",
-      "count": 276,
+      "count": 280,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 100.52,
-      "weighted_clr": 104.9,
-      "median_clr": 80.05,
-      "avg_views": 57961,
+      "avg_clr": 99.46,
+      "weighted_clr": 103.06,
+      "median_clr": 77.16,
+      "avg_views": 61283,
       "examples": [
         {
           "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
@@ -1042,24 +1093,25 @@
           "profile": "herasmedia"
         },
         {
-          "text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti? Tranquilo, si comentas guión en este vídeo te envío ",
-          "clr": 136.86,
-          "shortCode": "DVylb4_DdNi",
-          "profile": "herasmedia"
+          "text": "Si quieres que te envíe un vídeo privado de menos de dos minutos con el sistema que realmente me ayudó a cambiar mi vida",
+          "clr": 51.87,
+          "shortCode": "DSkhhUPjO6j",
+          "profile": "jaimehigueraes"
         }
       ]
     },
     {
       "pattern": "desafio",
-      "count": 4,
+      "count": 5,
       "profiles": [
+        "jaimehigueraes",
         "hormozi",
         "ramiro.cubria"
       ],
-      "avg_clr": 106.14,
-      "weighted_clr": 98.82,
-      "median_clr": 125.48,
-      "avg_views": 93723,
+      "avg_clr": 85.21,
+      "weighted_clr": 87.67,
+      "median_clr": 97.49,
+      "avg_views": 107961,
       "examples": [
         {
           "text": "Entonces, si no configuraste la apertura a nuevos seguidores, hacelo ahora, no seas pelotudo. Y si lo configuraste, come",
@@ -1083,18 +1135,19 @@
     },
     {
       "pattern": "link_bio",
-      "count": 21,
+      "count": 22,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 75.41,
-      "weighted_clr": 88.67,
-      "median_clr": 55.87,
-      "avg_views": 953276,
+      "avg_clr": 71.99,
+      "weighted_clr": 83.9,
+      "median_clr": 52.44,
+      "avg_views": 921560,
       "examples": [
         {
           "text": "Con este método con el que yo he hecho más de mil millones de visitas voy a darte las ideas para que las copies y las pe",
@@ -1117,17 +1170,54 @@
       ]
     },
     {
-      "pattern": "open_loop",
-      "count": 9,
+      "pattern": "cta_caption",
+      "count": 377,
       "profiles": [
+        "jaimehigueraes",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 88.5,
+      "weighted_clr": 83.37,
+      "median_clr": 66.8,
+      "avg_views": 79061,
+      "examples": [
+        {
+          "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
+          "clr": 191.13,
+          "shortCode": "DJ984GKRjwI",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "Vamos a hacer una cosa. Para toda la gente que comente viral en este vídeo, voy a enviarles una clase privada en la que ",
+          "clr": 175.36,
+          "shortCode": "DH33thfx8H4",
+          "profile": "herasmedia"
+        },
+        {
+          "text": "",
+          "clr": 157.9,
+          "shortCode": "DUS7iV9DLcc",
+          "profile": "jaimehigueraes"
+        }
+      ]
+    },
+    {
+      "pattern": "open_loop",
+      "count": 10,
+      "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 97.5,
-      "weighted_clr": 87.41,
-      "median_clr": 104.06,
-      "avg_views": 52033,
+      "avg_clr": 87.9,
+      "weighted_clr": 80.35,
+      "median_clr": 78.93,
+      "avg_views": 63321,
       "examples": [
         {
           "text": "y abrir conversaciones calificadas todo el día. No tiene sentido lo bueno que es. Si querés saber cómo activar la config",
@@ -1151,18 +1241,19 @@
     },
     {
       "pattern": "future_pacing",
-      "count": 51,
+      "count": 58,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 83.91,
-      "weighted_clr": 83.64,
-      "median_clr": 58.53,
-      "avg_views": 220866,
+      "avg_clr": 73.94,
+      "weighted_clr": 72.7,
+      "median_clr": 41.54,
+      "avg_views": 216614,
       "examples": [
         {
           "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
@@ -1171,58 +1262,24 @@
           "profile": "herasmedia"
         },
         {
-          "text": "¿Y esa estructura me la vas a enseñar o te la vas a quedar para ti? Tranquilo, si comentas guión en este vídeo te envío ",
-          "clr": 136.86,
-          "shortCode": "DVylb4_DdNi",
-          "profile": "herasmedia"
+          "text": "Y cuando entregas tu poder a aquello que literalmente te creó y te trajo aquí, confías y sabes que todo va a salir bien.",
+          "clr": 1.77,
+          "shortCode": "DUJc4v0jGgR",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "Por eso yo aplico la metodología con la que he hecho viral a todos mis clientes para llevarlo a 100.000 seguidores y 100",
-          "clr": 102.15,
-          "shortCode": "DLAxyB-RfrW",
-          "profile": "herasmedia"
-        }
-      ]
-    },
-    {
-      "pattern": "cta_caption",
-      "count": 373,
-      "profiles": [
-        "herasmedia",
-        "hormozi",
-        "niksetting",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 88.64,
-      "weighted_clr": 83.25,
-      "median_clr": 66.83,
-      "avg_views": 78699,
-      "examples": [
-        {
-          "text": "Si quieres ver el método completo para aplicarlo para tu cuenta de Instagram y seguir el proceso de Diego a 100.000 segu",
-          "clr": 191.13,
-          "shortCode": "DJ984GKRjwI",
-          "profile": "herasmedia"
-        },
-        {
-          "text": "Vamos a hacer una cosa. Para toda la gente que comente viral en este vídeo, voy a enviarles una clase privada en la que ",
-          "clr": 175.36,
-          "shortCode": "DH33thfx8H4",
-          "profile": "herasmedia"
-        },
-        {
-          "text": "sube mucho las visitas ¿usar ganchos? es lo que más sube las visitas pero hay una lista más de 21 cosas que te bajan las",
-          "clr": 156.98,
-          "shortCode": "DNvc-qX4uUe",
-          "profile": "herasmedia"
+          "text": "No mañana, hazlo ahora. ¿Quieres sentirte como un éxito? Siéntelo ahora. Vístete como tal. Habla como tal. Muévete como ",
+          "clr": 1.48,
+          "shortCode": "DQB89GLDFb_",
+          "profile": "jaimehigueraes"
         }
       ]
     },
     {
       "pattern": "cierre_resumen",
-      "count": 86,
+      "count": 101,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -1230,10 +1287,10 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 81.26,
-      "weighted_clr": 60.17,
-      "median_clr": 52.29,
-      "avg_views": 87006,
+      "avg_clr": 69.73,
+      "weighted_clr": 50.92,
+      "median_clr": 32.86,
+      "avg_views": 105261,
       "examples": [
         {
           "text": "Comenta la palabra viral en comentarios y te la mando. Que por cierto pensaba borrarla en unos días, así que si la quier",
@@ -1242,39 +1299,34 @@
           "profile": "herasmedia"
         },
         {
-          "text": "Si no, no. ¿Y en cuánto tiempo puedo ganar 100.000 seguidores? En menos de 30 días Entonces estoy haciendo un reto en el",
-          "clr": 61.98,
-          "shortCode": "DKaOK66x2re",
-          "profile": "herasmedia"
+          "text": "Así que si quieres acceso al documento Paso a paso y a un vídeo privado Donde te desgloso todo esto Comenta la palabra r",
+          "clr": 31.14,
+          "shortCode": "DRFjparjGS4",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "Pero Víctor, ¿qué estructura tengo que seguir? Justamente para eso he creado esta clase en la que explico paso a paso có",
-          "clr": 58.92,
-          "shortCode": "DMf5MBfxZTT",
-          "profile": "herasmedia"
+          "text": "Así que primero conviértete en alguien imposible de reemplazar y ya después si quieres, ama. Pero nunca bajo ningún conc",
+          "clr": 4.97,
+          "shortCode": "DTn-gK0jKMK",
+          "profile": "jaimehigueraes"
         }
       ]
     },
     {
       "pattern": "corte_seco",
-      "count": 11,
+      "count": 14,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "hormozi",
         "niksetting",
         "ramiro.cubria"
       ],
-      "avg_clr": 3.66,
-      "weighted_clr": 4.43,
-      "median_clr": 1.49,
-      "avg_views": 296687,
+      "avg_clr": 3.13,
+      "weighted_clr": 3.72,
+      "median_clr": 1.35,
+      "avg_views": 552610,
       "examples": [
-        {
-          "text": "",
-          "clr": 23.92,
-          "shortCode": "C4tUqCNikgt",
-          "profile": "niksetting"
-        },
         {
           "text": "¡Suscríbete al canal!",
           "clr": 1.78,
@@ -1283,16 +1335,23 @@
         },
         {
           "text": "",
-          "clr": 1.66,
-          "shortCode": "DV9KeeLD3Fo",
-          "profile": "hormozi"
+          "clr": 1.36,
+          "shortCode": "DSSsgkZjJrr",
+          "profile": "jaimehigueraes"
+        },
+        {
+          "text": "",
+          "clr": 1.34,
+          "shortCode": "DU1DymZjEx9",
+          "profile": "jaimehigueraes"
         }
       ]
     },
     {
       "pattern": "sin_cta",
-      "count": 89,
+      "count": 119,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -1300,42 +1359,49 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 9.69,
-      "weighted_clr": 4.02,
-      "median_clr": 1.12,
-      "avg_views": 466109,
+      "avg_clr": 7.62,
+      "weighted_clr": 3.4,
+      "median_clr": 1.21,
+      "avg_views": 419170,
       "examples": [
         {
-          "text": "escribiendo en comentarios la palabra viral y te voy a enviar un vídeo de 4 minutos en el que te explico cómo crear un v",
-          "clr": 112.03,
-          "shortCode": "C7zV8ceOAtJ",
-          "profile": "herasmedia"
+          "text": "Este cheque para mí guarda un sitio especial en mi corazón. Este cheque, este cliente fue un punto de inflexión en mi ca",
+          "clr": 2.91,
+          "shortCode": "C1C9HHYIOFN",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "Y con esta misma chéguese he generado vídeos como este, como este, como este o como este para mis alumnos y clientes. Y ",
-          "clr": 87.35,
-          "shortCode": "C7hTsI-JDDp",
-          "profile": "herasmedia"
+          "text": "Y seguir protegiendo tu paz y tu energía Porque ser emocionalmente inteligente no significa estar emocionalmente disponi",
+          "clr": 2.2,
+          "shortCode": "DQUgXXrDGYn",
+          "profile": "jaimehigueraes"
         },
         {
-          "text": "Creo que los dos sienten que merecen lo mejor de lo mejor y no pasa nada. Pero háganse esta pregunta. ¿Ustedes también s",
-          "clr": 0.58,
-          "shortCode": "DOKT4IdjPL3",
-          "profile": "faridieck"
+          "text": "sino porque sabes lo que está pasando lo ves todo y simplemente no puedes formar parte de ello la conciencia te aísla pe",
+          "clr": 2.18,
+          "shortCode": "DRcMof6DDCH",
+          "profile": "jaimehigueraes"
         }
       ]
     },
     {
       "pattern": "reframe",
-      "count": 1,
+      "count": 2,
       "profiles": [
+        "jaimehigueraes",
         "hormozi"
       ],
-      "avg_clr": 0.77,
-      "weighted_clr": 0.77,
-      "median_clr": 0.77,
-      "avg_views": 160038,
+      "avg_clr": 0.85,
+      "weighted_clr": 0.84,
+      "median_clr": 0.85,
+      "avg_views": 137815,
       "examples": [
+        {
+          "text": "Porque la realidad es que no todo necesita una audiencia. Porque la envidia es real. Protege lo que importa. Deja que ve",
+          "clr": 0.92,
+          "shortCode": "DUBqvGojHAd",
+          "profile": "jaimehigueraes"
+        },
         {
           "text": "Creo que lo que importa es tener tiempo para ti mismo y no interrumpirlo. Buena fitness física. 7, 8, 9, 10. 7 en tus 20",
           "clr": 0.77,
@@ -1624,6 +1690,19 @@
       "profile": "herasmedia"
     },
     {
+      "shortCode": "DUS7iV9DLcc",
+      "opening_text": "¿Soy sin dinero? ¿Qué negocio debería empezar? Esta es una pregunta que me hace muy a menudo gente que está con poco dinero o que está sin dinero y quiere empezar a generar 5.000, incluso más de 10.000 euros al mes en el mundo online.",
+      "opening_duration": 10.26,
+      "opening_patterns": [
+        "pregunta",
+        "dato_numero"
+      ],
+      "clr": 157.9,
+      "views": 113009,
+      "comments": 14239,
+      "profile": "jaimehigueraes"
+    },
+    {
       "shortCode": "DNvc-qX4uUe",
       "opening_text": "Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en el video. Sube las visitas.",
       "opening_duration": 8.42,
@@ -1907,6 +1986,32 @@
       "profile": "tino.mossu"
     },
     {
+      "shortCode": "DS5sGUoDMuI",
+      "opening_text": "No he visto a nadie hablar sobre esta oportunidad de negocio todavía para 2026. No es sexy, no es millonario de la noche a la mañana, es aburrido pero funciona y es una oportunidad, una mina de oro que casi nadie está explotando",
+      "opening_duration": 10.84,
+      "opening_patterns": [
+        "provocacion",
+        "incredulidad",
+        "negacion_en_serie"
+      ],
+      "clr": 60.85,
+      "views": 117585,
+      "comments": 7101,
+      "profile": "jaimehigueraes"
+    },
+    {
+      "shortCode": "DSkhhUPjO6j",
+      "opening_text": "Te vas a chat GPT y dile, actúa como un máster de negocios de Harvard y créame un plan de negocios en la industria en la que tú estés, la que tú quieras. Para lograr X resultado o cifra en 6 meses.",
+      "opening_duration": 9.4,
+      "opening_patterns": [
+        "credencial"
+      ],
+      "clr": 51.87,
+      "views": 106870,
+      "comments": 3902,
+      "profile": "jaimehigueraes"
+    },
+    {
       "shortCode": "DICnGBWBOd2",
       "opening_text": "¿Qué es ser un closer de ventas y por qué es el mejor camino para hacer plata hoy por internet? Te voy a explicar bien qué es un closer de ventas. Bien, imagínate que esta es una empresa.",
       "opening_duration": 10.22,
@@ -1942,42 +2047,6 @@
       "views": 17571,
       "comments": 463,
       "profile": "tino.mossu"
-    },
-    {
-      "shortCode": "DSGOUTflFId",
-      "opening_text": "Estamos acá con el asador, mi viejo. Pa, ¿qué estás haciendo? Un asadito rico para comer hoy, que es un día hermoso. Bueno, Pa, explícale bien a la gente vos que entendés de closer de venta.",
-      "opening_duration": 10.66,
-      "opening_patterns": [
-        "neutro"
-      ],
-      "clr": 38.63,
-      "views": 13065,
-      "comments": 338,
-      "profile": "tino.mossu"
-    },
-    {
-      "shortCode": "DV7BzO-iUr3",
-      "opening_text": "Esta chica que ves acá se llama Lady. A Lady la conocí después de haber ido más de 100 veces al mismo restaurante. Nos llevamos súper bien porque era la chica que me atendía siempre.",
-      "opening_duration": 9.5,
-      "opening_patterns": [
-        "historia"
-      ],
-      "clr": 32.33,
-      "views": 25430,
-      "comments": 546,
-      "profile": "tino.mossu"
-    },
-    {
-      "shortCode": "DUG5LHyElnK",
-      "opening_text": "El año pasado, mis compañías hicieron más de $250 millones en ingresos agrícolas. Mi nombre es Alex Ramozy, soy el fundador y partner de Acquisition.com. Es un oficio familiar, que es una forma formal de decir que investimos nuestro dinero en compañías.",
-      "opening_duration": 11.2,
-      "opening_patterns": [
-        "dato_numero"
-      ],
-      "clr": 31.66,
-      "views": 164024,
-      "comments": 5848,
-      "profile": "hormozi"
     }
   ],
   "top_cta_buildups_global": [
@@ -2309,8 +2378,9 @@
     },
     {
       "pattern": "media",
-      "count": 322,
+      "count": 350,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -2318,55 +2388,25 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 82.02,
-      "avg_views": 230804
-    },
-    {
-      "pattern": "sin_hashtags",
-      "count": 356,
-      "profiles": [
-        "faridieck",
-        "herasmedia",
-        "hormozi",
-        "niksetting",
-        "ramiro.cubria",
-        "tino.mossu"
-      ],
-      "avg_clr": 73.78,
-      "avg_views": 239214
-    },
-    {
-      "pattern": "segundo_hook",
-      "count": 5,
-      "profiles": [
-        "herasmedia"
-      ],
-      "avg_clr": 72.18,
-      "avg_views": 231059
+      "avg_clr": 75.94,
+      "avg_views": 231469
     },
     {
       "pattern": "resumen",
-      "count": 17,
+      "count": 18,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "ramiro.cubria"
       ],
-      "avg_clr": 63.05,
-      "avg_views": 50102
+      "avg_clr": 68.32,
+      "avg_views": 53597
     },
     {
-      "pattern": "urgencia",
-      "count": 22,
+      "pattern": "sin_hashtags",
+      "count": 413,
       "profiles": [
-        "herasmedia"
-      ],
-      "avg_clr": 61.79,
-      "avg_views": 35001
-    },
-    {
-      "pattern": "corta",
-      "count": 98,
-      "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -2374,57 +2414,51 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 58.91,
-      "avg_views": 138554
+      "avg_clr": 64.51,
+      "avg_views": 238460
+    },
+    {
+      "pattern": "segundo_hook",
+      "count": 6,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia"
+      ],
+      "avg_clr": 60.41,
+      "avg_views": 234216
     },
     {
       "pattern": "cta_generico",
-      "count": 146,
+      "count": 150,
       "profiles": [
+        "jaimehigueraes",
         "herasmedia",
         "hormozi",
         "niksetting",
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 53.82,
-      "avg_views": 102543
+      "avg_clr": 54.4,
+      "avg_views": 102818
     },
     {
       "pattern": "hashtag_light",
-      "count": 158,
+      "count": 161,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
         "tino.mossu"
       ],
-      "avg_clr": 52.91,
-      "avg_views": 129445
+      "avg_clr": 52.09,
+      "avg_views": 158671
     },
     {
-      "pattern": "pregunta",
-      "count": 9,
+      "pattern": "corta",
+      "count": 116,
       "profiles": [
-        "herasmedia",
-        "ramiro.cubria"
-      ],
-      "avg_clr": 35.5,
-      "avg_views": 32778
-    },
-    {
-      "pattern": "prueba_social",
-      "count": 3,
-      "profiles": [
-        "herasmedia"
-      ],
-      "avg_clr": 33.54,
-      "avg_views": 70066
-    },
-    {
-      "pattern": "larga",
-      "count": 84,
-      "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
@@ -2432,8 +2466,44 @@
         "ramiro.cubria",
         "tino.mossu"
       ],
-      "avg_clr": 27.45,
-      "avg_views": 126726
+      "avg_clr": 50.02,
+      "avg_views": 162200
+    },
+    {
+      "pattern": "pregunta",
+      "count": 10,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia",
+        "ramiro.cubria"
+      ],
+      "avg_clr": 47.74,
+      "avg_views": 40801
+    },
+    {
+      "pattern": "urgencia",
+      "count": 31,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia"
+      ],
+      "avg_clr": 44.27,
+      "avg_views": 79801
+    },
+    {
+      "pattern": "larga",
+      "count": 88,
+      "profiles": [
+        "jaimehigueraes",
+        "faridieck",
+        "herasmedia",
+        "hormozi",
+        "niksetting",
+        "ramiro.cubria",
+        "tino.mossu"
+      ],
+      "avg_clr": 26.62,
+      "avg_views": 174015
     },
     {
       "pattern": "storytelling",
@@ -2458,15 +2528,26 @@
     },
     {
       "pattern": "muy_larga",
-      "count": 12,
+      "count": 22,
       "profiles": [
+        "jaimehigueraes",
         "faridieck",
         "herasmedia",
         "hormozi",
         "niksetting"
       ],
-      "avg_clr": 11.48,
-      "avg_views": 619271
+      "avg_clr": 14.02,
+      "avg_views": 420367
+    },
+    {
+      "pattern": "prueba_social",
+      "count": 13,
+      "profiles": [
+        "jaimehigueraes",
+        "herasmedia"
+      ],
+      "avg_clr": 8.95,
+      "avg_views": 173433
     },
     {
       "pattern": "hashtag_heavy",
@@ -2519,16 +2600,16 @@
       "avg_views": 22591
     },
     {
-      "sequence": "narrativa_general→narrativa_general→narrativa_general→narrativa_general",
-      "count": 73,
-      "avg_clr": 77.41,
-      "avg_views": 176480
-    },
-    {
       "sequence": "narrativa_general→demo_proceso→demo_proceso→demo_proceso",
       "count": 3,
       "avg_clr": 72.42,
       "avg_views": 28305
+    },
+    {
+      "sequence": "narrativa_general→narrativa_general→narrativa_general→narrativa_general",
+      "count": 85,
+      "avg_clr": 66.72,
+      "avg_views": 183384
     },
     {
       "sequence": "agitacion_leve→narrativa_general→demo_proceso→narrativa_general",
@@ -2544,21 +2625,33 @@
     },
     {
       "sequence": "narrativa_general→narrativa_general→narrativa_general→demo_proceso",
-      "count": 7,
-      "avg_clr": 53.67,
-      "avg_views": 61803
+      "count": 9,
+      "avg_clr": 41.97,
+      "avg_views": 109334
     },
     {
       "sequence": "narrativa_general→demo_proceso→narrativa_general→narrativa_general",
-      "count": 10,
-      "avg_clr": 52.81,
-      "avg_views": 125653
+      "count": 13,
+      "avg_clr": 41.16,
+      "avg_views": 148627
     },
     {
       "sequence": "agitacion_leve→narrativa_general→narrativa_general→narrativa_general",
       "count": 5,
       "avg_clr": 21.37,
       "avg_views": 106964
+    },
+    {
+      "sequence": "narrativa_general→demo_proceso→narrativa_general→future_pacing",
+      "count": 3,
+      "avg_clr": 1.31,
+      "avg_views": 113392
+    },
+    {
+      "sequence": "narrativa_general→agitacion_leve→narrativa_general→narrativa_general",
+      "count": 3,
+      "avg_clr": 0.71,
+      "avg_views": 205834
     }
   ]
 }

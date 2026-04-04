@@ -1,6 +1,6 @@
 # Tablas pre-calculadas: @faridieck
 
-> Generado: 2026-03-25 | Últimos 12 meses | 100 posts
+> Generado: 2026-04-01 | Últimos 12 meses | 100 posts
 
 ## 1. Métricas globales
 

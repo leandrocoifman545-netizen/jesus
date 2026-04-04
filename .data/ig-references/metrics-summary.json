@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T06:55:43.932Z",
+  "generated_at": "2026-04-01T13:40:02.877Z",
   "profiles": [
     {
       "username": "faridieck",
@@ -17,22 +17,82 @@
       "top_keyword": null
     },
     {
+      "username": "faridieck_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
       "username": "herasmedia",
-      "posts": 90,
-      "videos": 89,
-      "avg_views": 61672,
-      "avg_likes": 6914,
-      "avg_comments": 2876,
-      "clr_global": 41.59,
-      "lvr_global": 11.27,
-      "posting_frequency": 4.04,
-      "cta_multiplier": 1.53,
+      "posts": 88,
+      "videos": 87,
+      "avg_views": 61175,
+      "avg_likes": 6942,
+      "avg_comments": 2733,
+      "clr_global": 39.36,
+      "lvr_global": 11.4,
+      "posting_frequency": 4.03,
+      "cta_multiplier": 1.49,
       "transcripts": 167,
       "hooks_extracted": 166,
       "top_keyword": {
         "keyword": "LISTA",
         "clr": 133.57
       }
+    },
+    {
+      "username": "herasmedia_auto-patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "herasmedia_map",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "herasmedia_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
     },
     {
       "username": "hormozi",
@@ -53,7 +113,130 @@
       }
     },
     {
+      "username": "hormozi_auto-patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "hormozi_map",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "hormozi_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "jaimehigueraes",
+      "posts": 303,
+      "videos": 298,
+      "avg_views": 74565,
+      "avg_likes": 9336,
+      "avg_comments": 470,
+      "clr_global": 5.03,
+      "lvr_global": 12.67,
+      "posting_frequency": 0.61,
+      "cta_multiplier": 28.8,
+      "transcripts": 60,
+      "hooks_extracted": 60,
+      "top_keyword": {
+        "keyword": "PLAN",
+        "clr": 152.05
+      }
+    },
+    {
+      "username": "jaimehigueraes_auto-patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "jaimehigueraes_map",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "jaimehigueraes_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
       "username": "jesustassarolo",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "jesustassarolo_auto-patterns",
       "posts": 0,
       "videos": 0,
       "avg_views": 0,
@@ -86,22 +269,142 @@
       }
     },
     {
+      "username": "niksetting_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "pattern-coverage",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "pattern-library",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
       "username": "ramiro.cubria",
-      "posts": 1017,
-      "videos": 831,
-      "avg_views": 22966,
-      "avg_likes": 743,
-      "avg_comments": 454,
-      "clr_global": 61.07,
-      "lvr_global": 3.13,
+      "posts": 1001,
+      "videos": 815,
+      "avg_views": 22457,
+      "avg_likes": 730,
+      "avg_comments": 458,
+      "clr_global": 62.7,
+      "lvr_global": 3.12,
       "posting_frequency": 0.36,
-      "cta_multiplier": 17.98,
+      "cta_multiplier": 18.25,
       "transcripts": 191,
       "hooks_extracted": 191,
       "top_keyword": {
         "keyword": "GUIONES",
         "clr": 240.93
       }
+    },
+    {
+      "username": "ramiro.cubria_auto-patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "ramiro.cubria_map",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "ramiro.cubria_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "sooweigoh",
+      "posts": 200,
+      "videos": 200,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 1.66,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
+    },
+    {
+      "username": "sooweigoh_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
     },
     {
       "username": "tino.mossu",
@@ -120,11 +423,26 @@
         "keyword": "CLASE",
         "clr": 40.18
       }
+    },
+    {
+      "username": "tino.mossu_patterns",
+      "posts": 0,
+      "videos": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "clr_global": 0,
+      "lvr_global": 0,
+      "posting_frequency": 0,
+      "cta_multiplier": "N/A",
+      "transcripts": 0,
+      "hooks_extracted": 0,
+      "top_keyword": null
     }
   ],
-  "total_posts_analyzed": 1475,
-  "total_transcripts": 526,
-  "total_hooks": 517,
+  "total_posts_analyzed": 1960,
+  "total_transcripts": 586,
+  "total_hooks": 577,
   "best_clr": "ramiro.cubria",
   "best_views": "faridieck",
   "all_keywords": [
@@ -382,6 +700,17 @@
       "avg_clr": 144.19
     },
     {
+      "keyword": "ABURRIDO",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        142.49
+      ],
+      "avg_clr": 142.49
+    },
+    {
       "keyword": "CLAUDE",
       "total_uses": 2,
       "profiles": [
@@ -503,6 +832,21 @@
       "avg_clr": 114.17
     },
     {
+      "keyword": "PLAN",
+      "total_uses": 3,
+      "profiles": [
+        "herasmedia",
+        "jaimehigueraes",
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        27.19,
+        152.05,
+        155.38
+      ],
+      "avg_clr": 111.54
+    },
+    {
       "keyword": "CARRUSEL",
       "total_uses": 2,
       "profiles": [
@@ -514,6 +858,17 @@
       "avg_clr": 107.66
     },
     {
+      "keyword": "MOTIVADO",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        101.47
+      ],
+      "avg_clr": 101.47
+    },
+    {
       "keyword": "LLAMADAS",
       "total_uses": 1,
       "profiles": [
@@ -523,6 +878,17 @@
         100
       ],
       "avg_clr": 100
+    },
+    {
+      "keyword": "MILLONARIO",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        93.59
+      ],
+      "avg_clr": 93.59
     },
     {
       "keyword": "MANY",
@@ -547,17 +913,37 @@
       "avg_clr": 92.03
     },
     {
-      "keyword": "PLAN",
-      "total_uses": 2,
+      "keyword": "CREADORES",
+      "total_uses": 1,
       "profiles": [
-        "herasmedia",
-        "ramiro.cubria"
+        "jaimehigueraes"
       ],
       "clrs": [
-        27.19,
-        155.38
+        90.94
       ],
-      "avg_clr": 91.29
+      "avg_clr": 90.94
+    },
+    {
+      "keyword": "AMPLIFICADORES",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        90.94
+      ],
+      "avg_clr": 90.94
+    },
+    {
+      "keyword": "RÁPIDO",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        90.94
+      ],
+      "avg_clr": 90.94
     },
     {
       "keyword": "SETTER",
@@ -628,6 +1014,17 @@
       "avg_clr": 85.87
     },
     {
+      "keyword": "NEGOCIO",
+      "total_uses": 7,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        84.96
+      ],
+      "avg_clr": 84.96
+    },
+    {
       "keyword": "BIBLIA",
       "total_uses": 1,
       "profiles": [
@@ -672,6 +1069,39 @@
       "avg_clr": 75.91
     },
     {
+      "keyword": "GRATUITA",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        74.62
+      ],
+      "avg_clr": 74.62
+    },
+    {
+      "keyword": "GRATUITO",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        74.46
+      ],
+      "avg_clr": 74.46
+    },
+    {
+      "keyword": "JOS",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        74.46
+      ],
+      "avg_clr": 74.46
+    },
+    {
       "keyword": "PDF",
       "total_uses": 21,
       "profiles": [
@@ -692,6 +1122,17 @@
         74.01
       ],
       "avg_clr": 74.01
+    },
+    {
+      "keyword": "AMBICIOSO",
+      "total_uses": 2,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        71.64
+      ],
+      "avg_clr": 71.64
     },
     {
       "keyword": "RETO",
@@ -771,6 +1212,17 @@
       "avg_clr": 64.53
     },
     {
+      "keyword": "PRIVADO",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        64.05
+      ],
+      "avg_clr": 64.05
+    },
+    {
       "keyword": "DIEGO",
       "total_uses": 2,
       "profiles": [
@@ -826,6 +1278,17 @@
       "avg_clr": 56.23
     },
     {
+      "keyword": "ACCESO",
+      "total_uses": 2,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        55.92
+      ],
+      "avg_clr": 55.92
+    },
+    {
       "keyword": "ICP",
       "total_uses": 1,
       "profiles": [
@@ -835,6 +1298,19 @@
         55.72
       ],
       "avg_clr": 55.72
+    },
+    {
+      "keyword": "DOCUMENTO",
+      "total_uses": 2,
+      "profiles": [
+        "jaimehigueraes",
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        85.39,
+        24.34
+      ],
+      "avg_clr": 54.87
     },
     {
       "keyword": "BASE",
@@ -857,6 +1333,17 @@
         53.59
       ],
       "avg_clr": 53.59
+    },
+    {
+      "keyword": "MANUAL",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        53.4
+      ],
+      "avg_clr": 53.4
     },
     {
       "keyword": "RODRI",
@@ -882,7 +1369,7 @@
     },
     {
       "keyword": "CLASE",
-      "total_uses": 60,
+      "total_uses": 59,
       "profiles": [
         "herasmedia",
         "ramiro.cubria",
@@ -890,10 +1377,10 @@
       ],
       "clrs": [
         70.57,
-        42.92,
+        43.24,
         40.18
       ],
-      "avg_clr": 51.22
+      "avg_clr": 51.33
     },
     {
       "keyword": "GUÍAS",
@@ -905,6 +1392,17 @@
         50.94
       ],
       "avg_clr": 50.94
+    },
+    {
+      "keyword": "CRM",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        50.78
+      ],
+      "avg_clr": 50.78
     },
     {
       "keyword": "FÍA",
@@ -929,6 +1427,19 @@
       "avg_clr": 49.8
     },
     {
+      "keyword": "JOSE",
+      "total_uses": 4,
+      "profiles": [
+        "jaimehigueraes",
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        74.46,
+        21.33
+      ],
+      "avg_clr": 47.9
+    },
+    {
       "keyword": "BASURA",
       "total_uses": 1,
       "profiles": [
@@ -938,17 +1449,6 @@
         47.68
       ],
       "avg_clr": 47.68
-    },
-    {
-      "keyword": "CRM",
-      "total_uses": 4,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        47.61
-      ],
-      "avg_clr": 47.61
     },
     {
       "keyword": "JUANMA",
@@ -995,15 +1495,17 @@
       "avg_clr": 45.12
     },
     {
-      "keyword": "ESTRUCTURA",
-      "total_uses": 4,
+      "keyword": "FRANCO",
+      "total_uses": 2,
       "profiles": [
+        "jaimehigueraes",
         "ramiro.cubria"
       ],
       "clrs": [
-        44.69
+        83,
+        6.25
       ],
-      "avg_clr": 44.69
+      "avg_clr": 44.63
     },
     {
       "keyword": "DISCLAIMER",
@@ -1028,6 +1530,17 @@
         61.2
       ],
       "avg_clr": 43.82
+    },
+    {
+      "keyword": "VSL",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        43.66
+      ],
+      "avg_clr": 43.66
     },
     {
       "keyword": "CALIDAD",
@@ -1072,28 +1585,6 @@
         42.8
       ],
       "avg_clr": 42.8
-    },
-    {
-      "keyword": "MANUAL",
-      "total_uses": 4,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        42.27
-      ],
-      "avg_clr": 42.27
-    },
-    {
-      "keyword": "VSL",
-      "total_uses": 2,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        42.09
-      ],
-      "avg_clr": 42.09
     },
     {
       "keyword": "IDEAS",
@@ -1151,6 +1642,17 @@
       "avg_clr": 39.86
     },
     {
+      "keyword": "ESTRUCTURA",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        39.69
+      ],
+      "avg_clr": 39.69
+    },
+    {
       "keyword": "NADIE",
       "total_uses": 1,
       "profiles": [
@@ -1171,6 +1673,28 @@
         39
       ],
       "avg_clr": 39
+    },
+    {
+      "keyword": "DOC",
+      "total_uses": 3,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        37.91
+      ],
+      "avg_clr": 37.91
+    },
+    {
+      "keyword": "DESAPARECE",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        37.37
+      ],
+      "avg_clr": 37.37
     },
     {
       "keyword": "EVERGREEN",
@@ -1207,14 +1731,14 @@
     },
     {
       "keyword": "LOOM",
-      "total_uses": 8,
+      "total_uses": 7,
       "profiles": [
         "ramiro.cubria"
       ],
       "clrs": [
-        35.4
+        34.66
       ],
-      "avg_clr": 35.4
+      "avg_clr": 34.66
     },
     {
       "keyword": "GUION",
@@ -1237,6 +1761,17 @@
         33.4
       ],
       "avg_clr": 33.4
+    },
+    {
+      "keyword": "CONSEJOS",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        32.64
+      ],
+      "avg_clr": 32.64
     },
     {
       "keyword": "OFERTA",
@@ -1272,15 +1807,17 @@
       "avg_clr": 31.66
     },
     {
-      "keyword": "DOC",
-      "total_uses": 4,
+      "keyword": "ESTRATEGIA",
+      "total_uses": 3,
       "profiles": [
+        "jaimehigueraes",
         "ramiro.cubria"
       ],
       "clrs": [
-        31.59
+        31.17,
+        31.58
       ],
-      "avg_clr": 31.59
+      "avg_clr": 31.38
     },
     {
       "keyword": "LOBO",
@@ -1292,6 +1829,17 @@
         31.21
       ],
       "avg_clr": 31.21
+    },
+    {
+      "keyword": "RAPIDO",
+      "total_uses": 1,
+      "profiles": [
+        "jaimehigueraes"
+      ],
+      "clrs": [
+        31.14
+      ],
+      "avg_clr": 31.14
     },
     {
       "keyword": "COMUNICACIÓN",
@@ -1349,15 +1897,15 @@
       "avg_clr": 29.36
     },
     {
-      "keyword": "HORA",
-      "total_uses": 1,
+      "keyword": "BLACK",
+      "total_uses": 3,
       "profiles": [
-        "ramiro.cubria"
+        "jaimehigueraes"
       ],
       "clrs": [
-        29.28
+        29.13
       ],
-      "avg_clr": 29.28
+      "avg_clr": 29.13
     },
     {
       "keyword": "EMI",
@@ -1369,17 +1917,6 @@
         28.81
       ],
       "avg_clr": 28.81
-    },
-    {
-      "keyword": "ESTRATEGIA",
-      "total_uses": 3,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        28.67
-      ],
-      "avg_clr": 28.67
     },
     {
       "keyword": "NGULOS",
@@ -1494,17 +2031,6 @@
       "avg_clr": 25.63
     },
     {
-      "keyword": "DOCUMENTO",
-      "total_uses": 1,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        24.34
-      ],
-      "avg_clr": 24.34
-    },
-    {
       "keyword": "MICRO",
       "total_uses": 1,
       "profiles": [
@@ -1604,17 +2130,6 @@
       "avg_clr": 21.64
     },
     {
-      "keyword": "JOSE",
-      "total_uses": 3,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        21.33
-      ],
-      "avg_clr": 21.33
-    },
-    {
       "keyword": "STORY",
       "total_uses": 1,
       "profiles": [
@@ -1668,17 +2183,6 @@
         19.61
       ],
       "avg_clr": 19.61
-    },
-    {
-      "keyword": "EMBUDO",
-      "total_uses": 2,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        18.67
-      ],
-      "avg_clr": 18.67
     },
     {
       "keyword": "ABOGADOS",
@@ -1769,17 +2273,6 @@
       "avg_clr": 13.89
     },
     {
-      "keyword": "CALENDARIO",
-      "total_uses": 2,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        13.88
-      ],
-      "avg_clr": 13.88
-    },
-    {
       "keyword": "MAP",
       "total_uses": 15,
       "profiles": [
@@ -1789,6 +2282,17 @@
         13.72
       ],
       "avg_clr": 13.72
+    },
+    {
+      "keyword": "EMBUDO",
+      "total_uses": 1,
+      "profiles": [
+        "ramiro.cubria"
+      ],
+      "clrs": [
+        13.24
+      ],
+      "avg_clr": 13.24
     },
     {
       "keyword": "ANGULOS",
@@ -1879,50 +2383,6 @@
       "avg_clr": 9.83
     },
     {
-      "keyword": "MESES",
-      "total_uses": 1,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        9.73
-      ],
-      "avg_clr": 9.73
-    },
-    {
-      "keyword": "CARA",
-      "total_uses": 1,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        9.73
-      ],
-      "avg_clr": 9.73
-    },
-    {
-      "keyword": "GAUSS",
-      "total_uses": 1,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        9.73
-      ],
-      "avg_clr": 9.73
-    },
-    {
-      "keyword": "DATA",
-      "total_uses": 1,
-      "profiles": [
-        "ramiro.cubria"
-      ],
-      "clrs": [
-        9.69
-      ],
-      "avg_clr": 9.69
-    },
-    {
       "keyword": "GONZALO",
       "total_uses": 1,
       "profiles": [
@@ -1967,15 +2427,15 @@
       "avg_clr": 6.85
     },
     {
-      "keyword": "FRANCO",
+      "keyword": "CALENDARIO",
       "total_uses": 1,
       "profiles": [
         "ramiro.cubria"
       ],
       "clrs": [
-        6.25
+        4.91
       ],
-      "avg_clr": 6.25
+      "avg_clr": 4.91
     },
     {
       "keyword": "ALEX",

@@ -8,17 +8,19 @@ import PipelineBar from "@/components/pipeline-bar";
 import GlowCard from "@/components/glow-card";
 
 export default async function DashboardPage() {
-  const [generations, burnedLeads, activeCTAs] = await Promise.all([
+  const [allGenerations, burnedLeads, activeCTAs] = await Promise.all([
     listGenerations(),
     getBurnedLeads(),
     getActiveCTAs(),
   ]);
+  // Filter out longform (YouTube) generations — they have their own page at /youtube
+  const generations = allGenerations.filter((g) => g.contentType !== "longform");
 
   const draftCount = generations.filter((g) => !g.status || g.status === "draft").length;
   const confirmedCount = generations.filter((g) => g.status === "confirmed").length;
   const recordedCount = generations.filter((g) => g.status === "recorded").length;
   const winnerCount = generations.filter((g) => g.status === "winner").length;
-  const totalLeads = generations.reduce((sum, g) => sum + g.script.hooks.length, 0);
+  const totalLeads = generations.reduce((sum, g) => sum + (g.script?.hooks?.length ?? 0), 0);
   const winRate = generations.length > 0 ? Math.round((winnerCount / generations.length) * 100) : 0;
 
   // Build weekly sparkline data (last 8 weeks)

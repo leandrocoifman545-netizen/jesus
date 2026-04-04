@@ -1,0 +1,41 @@
+{
+  "id": "ec1b32ff",
+  "title": "ScreenRecording_03-28-2026 21-44-17_1",
+  "source": "/Users/lean/Downloads/falta analizar/ScreenRecording_03-28-2026 21-44-17_1.MP4",
+  "duration_seconds": 80,
+  "total_frames": 80,
+  "frame_interval_seconds": 1,
+  "analyzed_at": "2026-03-30T15:07:54.303Z",
+  "visual_analysis": [
+    {
+      "startTime": 0,
+      "endTime": 15,
+      "analysis": "Aquí tienes el análisis visual de los frames:\n\n**Segmento 1 (Frame 1: 0s)**\n1.  **Formato visual**: B-roll (escritorio de trabajo)\n2.  **Encuadre**: General\n3.  **Textos en pantalla**:\n    *   \"Mira Esto 🙈\" (nombre de perfil)\n"
+    },
+    {
+      "startTime": 15,
+      "endTime": 30,
+      "analysis": "Aquí está el análisis visual de los frames proporcionados:\n\n**Segmento 1 (Frames 1-15, aproximadamente 0s - 14s):**\n\n1.  **Formato visual**: Grabación de pantalla de un chat de WhatsApp, presentada como contenido para redes sociales (probablemente Instagram Stories o TikTok) con elementos de interfaz de usuario de la plataforma (nombre de usuario, fecha, iconos de interacción).\n2.  **Encuadre**: Encuadre general de la pantalla de un dispositivo móvil, mostrando la interfaz completa de un chat de WhatsApp con elementos superpuestos de la plataforma de redes sociales.\n3.  **Textos en pantalla**:\n    *   **Superior (overlay)**: \"cuando le dije a mi mamá que quería invertir todos mis ahorros en un curso de dropshipping jajaja:\" (Texto blanco con borde negro sobre una barra negra translúcida).\n    *   **Dentro del chat de WhatsApp**:\n        *   Nombre del contacto: \"mamá\"\n        *   Mensajes de texto: \"no recuperas, obtendrás el 100%\". \"Con que excepciones no hay reembolso\". \"Con la excepción de que no apliques el contenido. Si haces la mentoría completa y simplemente decides no aplicar el conocimiento, por supuesto que no lograrás el resultado\".\n        *   Etiqueta de mensaje: \"Forwarded\" (en dos mensajes de audio).\n    *   **Inferior (overlay)**: \"igual lo hice\" seguido de tres emojis de cara derretida (🫠🫠🫠).\n    *   **Interfaz de la red social**: Nombre de usuario \"Mira Esto\", fecha \"November 18, 2025\", hora \"21:44\" (la hora se mantiene constante en los frames), iconos de señal y batería del teléfono.\n4.  **Elementos visuales**:\n    *   **Fondo del chat**: Patrón oscuro con motivos geométricos sutiles.\n    *   **Burbujas de chat**: Verdes para mensajes enviados, grises para mensajes recibidos.\n    *   **Mensajes de audio**: Representados con una forma de onda y una barra de progreso que avanza continuamente a lo largo de los frames (de 0:00 a 0:29 en el último audio visible).\n    *   **Stickers/Emojis**: Un corazón rosa en la parte inferior izquierda del chat, tres emojis de cara derretida (🫠) en el texto inferior.\n    *   **Overlays de la plataforma**: Dos iconos de \"refresh\" o \"loading\" girando en el centro superior, iconos de interacción (corazón, comentario, compartir) en la parte inferior.\n    *   **Icono de volumen**: Un icono de altavoz aparece y desaparece brevemente en la parte izquierda del chat, indicando la interacción con el audio.\n5.  **Transiciones**: No hay transiciones entre los frames, es una secuencia continua de una pantalla grabada.\n6.  **Movimiento de cámara**: La \"cámara\" (grabación de pantalla) es estática. Los únicos movimientos son internos a la interfaz (barra de progreso del audio, icono de volumen).\n7.  **Iluminación**: N/A,"
+    },
+    {
+      "startTime": 30,
+      "endTime": 45,
+      "analysis": "Aquí está el análisis visual de los frames:\n\n**Segmento 1: Frames 1-11 (Aproximadamente 0s - 10s)**\n\n1.  **Formato visual**: Pantalla grabada de una conversación de WhatsApp, superpuesta con texto en la parte superior e inferior, y elementos de la interfaz de Instagram/TikTok.\n2.  **Encuadre**: Plano general de la pantalla de un dispositivo móvil, mostrando la interfaz de chat de WhatsApp.\n3.  **Textos en pantalla**:\n    *   Superior (overlay): \"cuando le dije a mi mamá que quería invertir todos mis ahorros en un curso de dropshipping jajaja:\"\n    *   Dentro del chat: Varios mensajes de texto en español, incluyendo frases como \"no recuperas, obtendrás el 100%\", \"Con que excepciones, no hay reembolso\", y un mensaje más"
+    },
+    {
+      "startTime": 45,
+      "endTime": 60,
+      "analysis": "Aquí tienes el análisis visual de los frames proporcionados:\n\n**Segmento 1: Frames 1-4 (Aprox. 0s - 3s)**\n1.  **Formato visual**: Pantalla grabada (screen recording) de una historia de Instagram/TikTok, mostrando una conversación de WhatsApp.\n2.  **Encuadre**: Primer plano de la"
+    },
+    {
+      "startTime": 60,
+      "endTime": 75,
+      "analysis": "Aquí tienes el análisis visual de los frames:\n\n**Segmento 1 (Frames 1-10): Conversación de WhatsApp con la madre**\n*   **Formato visual**: Grabación de pantalla de una conversación de WhatsApp.\n*   **Encuadre**: Plano medio de la pantalla de un teléfono móvil, mostrando la interfaz de chat.\n*   **Textos en pantalla"
+    },
+    {
+      "startTime": 75,
+      "endTime": 80,
+      "analysis": "Aquí tienes el análisis visual de los 5 frames:\n\n**Segmento 1 (Frame 1, ~0s):**\n1.  **Formato visual**: Selfie/POV con B-roll de fondo.\n2.  **Encuadre**: Medio de las personas, general del paisaje urbano.\n3.  **Textos en pantalla**:\n    *"
+    }
+  ]
+}

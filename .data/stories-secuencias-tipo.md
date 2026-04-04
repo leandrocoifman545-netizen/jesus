@@ -1,6 +1,6 @@
-# 7 Tipos de Secuencia de Stories
+# 11 Tipos de Secuencia de Stories
 
-> Cada secuencia es un arco narrativo de 7-15 stories conectadas. El tipo define el PROPÓSITO.
+> Cada secuencia es un arco narrativo de 7-25 stories conectadas. El tipo define el PROPÓSITO.
 
 ---
 
@@ -368,3 +368,86 @@ Cuando Lean actúa como avatar, la estructura se simplifica:
 - F4 (Mecanismo) — "Así se hace"
 - F5 (Historia) — el proceso como narrativa
 - Tensiones: T4 (curiosidad insatisfecha), T11 (orgullo latente)
+
+---
+
+## 11. ORIGIN STORY — "De dónde vengo" (NUEVO — 2026-03-29)
+
+**Propósito:** Construir conexión PROFUNDA mostrando la transformación completa del creador. La secuencia más poderosa según análisis de 140 stories estéticas (Ivory Coast 14 slides, MCE 40 slides — las 2 más impactantes del lote).
+**Frecuencia:** Se graba 1 vez (va a Highlights como "MI HISTORIA"). Se puede hacer versión corta (7-10) para stories diarias 1 vez cada 2-3 meses.
+**Stories:** 15-25 (versión highlight) / 7-10 (versión semanal resumida)
+**CTA:** Soft al final (keyword o ninguno — la secuencia VENDE por sí misma)
+**Capa de calentamiento:** Personalidad + Producto (la historia ES la venta)
+
+> **Diferencia con Tipo 1 (Personalidad):** Personalidad = "quién soy HOY" (7-10 stories, un aspecto). Origin Story = "de dónde vengo y cómo llegué acá" (15-25 stories, arco completo de transformación). Tipo 1 se hace 1/semana. Tipo 11 se graba 1 vez y vive en highlights.
+
+### Por qué es la secuencia más poderosa
+
+De las 140 stories estéticas analizadas (8 creadores, 2026-03-29):
+- Las 2 secuencias con mayor impacto emocional son origin stories (Ivory Coast: 14 slides con fotos de infancia reales; MCE/Consciencia: 40 slides con timeline + arte clásico)
+- El constructor A11 la marca como "LA SECUENCIA MÁS PODEROSA"
+- Hauge (6 actos) está en el Paso 5f de la skill pero solo para Tipo 1 — con Tipo 11 se aplica completo
+- Jesus tiene una historia MÁS potente que ambos creadores de referencia (Sarandí → 47kg → $100/mes → padre fallece → México solo → TikTok viral → Two Comma Club → Europa con familia)
+
+### Estructura tipo (versión highlight, 15-20 stories)
+
+| # | Función | Formato | Emoción | Contenido Jesús |
+|---|---------|---------|---------|-----------------|
+| 1 | **Hook íntimo** — "Sentís que me conocés, pero no sabés de dónde vengo" | P3 (blur + texto) | Curiosidad íntima | Foto blur actual + texto centrado |
+| 2 | **Infancia** — fotos reales, contexto familiar | P4 (foto antigua rounded) | Ternura | Fotos de Sarandí, del kiosco del padre, de chico |
+| 3 | **Sueños de joven** — qué quería ser | P4 (otra foto antigua) | Identificación | "A los 19 pesaba 47 kilos y vivía con $100" |
+| 4 | **El detonante** — por qué empezó | V1 (video selfie) | Conflicto | "Mi viejo tenía un kiosco que quebró" |
+| 5 | **Los primeros pasos** — inicio humilde | F2 + screenshots de pagos chicos | Empatía | Screenshots de primeras ventas, fotos de la época |
+| 6 | **El momento más oscuro** — lo peor que pasó | P3 (blur + texto emocional) | Tristeza/gravedad | "Mi viejo falleció. Me vine abajo, todo" |
+| 7 | **El punto de quiebre** — decisión de cambio | V1 (video selfie close-up) | Determinación | "Decidí irme solo a México con 20 años" |
+| 8 | **El proceso** — lo que hizo distinto | Fotos de México, screens de TikTok creciendo | Esperanza | "15K seguidores en TikTok, empecé a vender" |
+| 9 | **Los obstáculos** — lo que salió mal | P3 (blur) o E1 (fondo color) | Frustración | "9 meses para el primer cliente. Stripe me rechazó 2000 pagos" |
+| 10 | **El descubrimiento** — qué cambió todo | V1 (video selfie) | Revelación | "Descubrí los productos digitales + IA" |
+| 11 | **Los resultados** — progresión numérica | Screenshots embebidos con bordes redondeados | Envidia positiva | Two Comma Club, $100K+/año, +2000 alumnos |
+| 12 | **Timeline** — asset visual del recorrido | Timeline horizontal (como MCE IMG_9527) | Admiración | 2019 (kiosco) → 2020 (México) → 2021 (TikTok) → 2023 (ADP) → 2026 (Europa+familia) |
+| 13 | **El presente** — vida actual | Foto lifestyle (viajando, con familia, martes en la cama) | Calma/aspiración | Contraste visual: fotos antiguas eran oscuras, esta es luminosa |
+| 14 | **El por qué** — por qué ayuda a otros | V1 (video selfie, tono íntimo) | Conexión | "Porque sé lo que es no tener un peso y trabajar 16 horas" |
+| 15 | **CTA soft** | F1 (selfie) + keyword si aplica | Acción | "Si querés saber cómo lo hago, respondé HISTORIA" o simplemente cerrar |
+
+### Técnicas visuales obligatorias
+
+- **P4 (fotos antiguas con bordes redondeados)** para stories 2-3 y cualquier foto del pasado — NUNCA fullbleed para fotos antiguas
+- **P3 (blur + texto centrado)** para momentos de máxima emoción (hook, momento oscuro, obstáculo)
+- **Timeline horizontal** para la story de recorrido — asset visual que resume toda la historia en 1 slide
+- **Progresión visual deliberada:** las stories del pasado son oscuras/humildes, las del presente son luminosas/aspiracionales
+- Referencia: Ivory Coast origin (IMG_9453-9468), MCE timeline (IMG_9527)
+
+### Arco emocional (del análisis de 140 stories)
+```
+Curiosidad íntima → Ternura → Identificación → Conflicto → Empatía → Tristeza → Determinación → Esperanza → Frustración → Revelación → Envidia → Admiración → Calma → Conexión → Acción
+```
+
+### Framework de Hauge aplicado
+
+| Acto Hauge | Stories | Contenido Jesús |
+|------------|---------|-----------------|
+| 1. Setup | 1-3 | Sarandí, kiosco, infancia, 47kg |
+| 2. Crisis | 4-6 | Padre fallece, todo se cae |
+| 3. Búsqueda | 7-8 | México solo, TikTok, primeras ventas |
+| 4. Conflicto | 9 | 9 meses sin cliente, Stripe rechaza pagos |
+| 5. Clímax | 10-11 | Productos digitales + IA, Two Comma Club |
+| 6. Desenlace | 12-15 | Timeline, presente, por qué ayuda, CTA |
+
+### Adaptación por avatar
+
+La origin story se cuenta UNA vez, pero el CIERRE (stories 14-15) cambia según a quién le hablamos más:
+- **Patricia (48, empleada):** "Yo también trabajé 16 horas por día por un sueldo miserable"
+- **Roberto (62, jubilado):** "Mi viejo nunca tuvo la herramienta que hoy existe"
+- **Martín (26, freelancer):** "A los 19 yo estaba igual que vos"
+
+### Reglas específicas
+- **R46 aplicado:** usar frases TEXTUALES de `jesus-historia.md`. NO inventar momentos.
+- **NUNCA exagerar números** — usar exactamente lo que está documentado
+- **Fotos reales obligatorias** — si no hay fotos de una etapa, NO inventar. Usar P3 (blur + texto) en su lugar
+- **Se graba UNA VEZ y va a highlight "MI HISTORIA"** — como Tipo 9 va a "¿CÓMO FUNCIONA?"
+- **Dividir en 2 partes con cliffhanger (R6 adaptada):** Parte 1 = stories 1-9 (hasta conflicto). Parte 2 = stories 10-15 (resolución). Open loop: "Mañana te cuento qué pasó después"
+
+### Qué ángulos del sistema de ads usar
+- F1 (Identidad) — "Esta es mi historia"
+- F5 (Historia) — el arco completo
+- Tensiones: T1 (desgaste silencioso), T6 (vulnerabilidad económica), T13 (hartazgo acumulado)

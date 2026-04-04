@@ -6,6 +6,8 @@
  *   node scripts/ig-download-videos.mjs @username
  *   node scripts/ig-download-videos.mjs @username --top 5    (solo top 5 por vistas)
  *   node scripts/ig-download-videos.mjs @username --top-performers  (top CLR + views proporcional)
+ *   node scripts/ig-download-videos.mjs @username --only-ids "ID1,ID2,..."  (solo estos shortCodes)
+ *   node scripts/ig-download-videos.mjs @username --only-ids-file path/to/map.json  (IDs desde ig-map.mjs)
  *   node scripts/ig-download-videos.mjs @username --skip-transcribe  (solo descarga)
  *   node scripts/ig-download-videos.mjs @username --lang es   (forzar idioma, default: auto-detect)
  *
@@ -40,6 +42,7 @@ let topN = 0; // 0 = todos los videos
 let skipTranscribe = false;
 let topPerformers = false;
 let forceLang = null; // null = auto-detect, "es"/"en"/etc = forzar
+let onlyIds = null; // Set of shortCodes to download (from --only-ids or --only-ids-file)
 const usernames = [];
 
 for (let i = 0; i < args.length; i++) {
@@ -48,6 +51,22 @@ for (let i = 0; i < args.length; i++) {
     i++;
   } else if (args[i] === "--top-performers") {
     topPerformers = true;
+  } else if (args[i] === "--only-ids" && args[i + 1]) {
+    onlyIds = new Set(args[i + 1].split(",").map(id => id.trim()).filter(Boolean));
+    console.log(`🎯 Modo selectivo: ${onlyIds.size} IDs especificados`);
+    i++;
+  } else if (args[i] === "--only-ids-file" && args[i + 1]) {
+    // Read IDs from a map JSON file (ig-map.mjs output)
+    try {
+      const mapData = JSON.parse(fs.readFileSync(args[i + 1], "utf8"));
+      const ids = mapData.recommendation?.final_ids || [];
+      onlyIds = new Set(ids);
+      console.log(`🎯 Modo selectivo desde mapa: ${onlyIds.size} IDs de ${args[i + 1]}`);
+    } catch (err) {
+      console.error(`Error leyendo ${args[i + 1]}: ${err.message}`);
+      process.exit(1);
+    }
+    i++;
   } else if (args[i] === "--skip-transcribe") {
     skipTranscribe = true;
   } else if (args[i] === "--lang" && args[i + 1]) {
@@ -203,7 +222,17 @@ async function processProfile(username) {
     .sort((a, b) => (b.views || 0) - (a.views || 0));
 
   let videos;
-  if (topPerformers) {
+  if (onlyIds && onlyIds.size > 0) {
+    videos = allVideos.filter(v => onlyIds.has(v.shortCode));
+    console.log(`🎯 Filtro por IDs: ${videos.length} de ${allVideos.length} videos matchean`);
+    if (videos.length === 0) {
+      // Try matching against all posts (not just videos) — sidecars/images may have been included
+      const allPosts = (data._raw_posts || []).filter(p => onlyIds.has(p.shortCode));
+      const videoOnly = allPosts.filter(p => (p.type || "").toLowerCase() === "video");
+      console.log(`   (${allPosts.length} posts matchean, ${videoOnly.length} son videos)`);
+      videos = videoOnly;
+    }
+  } else if (topPerformers) {
     videos = selectTopPerformers(allVideos);
   } else if (topN > 0) {
     videos = allVideos.slice(0, topN);

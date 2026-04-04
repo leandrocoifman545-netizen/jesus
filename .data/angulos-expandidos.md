@@ -175,7 +175,7 @@ Atacan desde la narrativa. El viewer se engancha con la historia, no con la lóg
 | 3 | 3 | 1 | 1-1-1 |
 
 ### Ángulos saturados (usar con moderación):
-- ? — ya tiene 13+ guiones (QUEMADO)
+- ? — ya tiene 15+ guiones (QUEMADO)
 - "Estás sentado en una pira de dinero" como frase — quemada
 
 ### Ángulos frescos (priorizar):

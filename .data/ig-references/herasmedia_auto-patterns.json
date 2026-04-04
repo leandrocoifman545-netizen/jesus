@@ -1,0 +1,1125 @@
+{
+  "profile": "herasmedia",
+  "analyzed_at": "2026-04-01T13:31:33.778Z",
+  "total_posts": 168,
+  "total_videos": 167,
+  "total_sidecars": 1,
+  "total_transcripts": 166,
+  "top_pct": 25,
+  "top_count": 41,
+  "top_clr_threshold": 0.75,
+  "bottom_clr_threshold": 0.39,
+  "linguistic": {
+    "top_only_phrases": [
+      {
+        "phrase": "crear un vídeo con",
+        "top_videos": 7,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "un vídeo con un",
+        "top_videos": 7,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "y por lo tanto",
+        "top_videos": 7,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "clase privada en la",
+        "top_videos": 6,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "privada en la que",
+        "top_videos": 6,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "vídeo con un millón",
+        "top_videos": 6,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "con un millón de",
+        "top_videos": 6,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "y te lo mando",
+        "top_videos": 5,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "paso a paso cómo",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "para tu cuenta de",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "ri o ratio de",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "o ratio de interés",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "vídeo en el que",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "para que tú puedas",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "el que te explico",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "esta clase privada en",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "si mañana me despertara",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "mañana me despertara con",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "me despertara con cero",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "después de haber hecho",
+        "top_videos": 4,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "el 99% de la",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "99% de la gente",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "con millones de visitas",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "millones de visitas que",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "tú puedas copiarlo para",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "puedas copiarlo para tu",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "esto es lo que",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "el umbral mínimo de",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "umbral mínimo de viralidad",
+        "top_videos": 3,
+        "bottom_videos": 0
+      },
+      {
+        "phrase": "te la envío antes",
+        "top_videos": 3,
+        "bottom_videos": 0
+      }
+    ],
+    "killer_phrases": [
+      {
+        "phrase": "tu nicho en comentarios",
+        "top_videos": 0,
+        "bottom_videos": 6
+      },
+      {
+        "phrase": "comenta tu nicho en",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "ha generado más de",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "lo más importante para",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "más de mil millones",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "de mil millones de",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "20000 euros al mes",
+        "top_videos": 0,
+        "bottom_videos": 4
+      },
+      {
+        "phrase": "hacerte viral según tu",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "viral según tu nicho",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "es lo más importante",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "lo más curioso es",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "más curioso es cuánto",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "en todos los formatos",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "todos los formatos que",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "los formatos que existen",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "de euros solamente usando",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "euros solamente usando contenido",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "en redes sociales como",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "comenta clase en este",
+        "top_videos": 0,
+        "bottom_videos": 3
+      },
+      {
+        "phrase": "nadie te va a",
+        "top_videos": 0,
+        "bottom_videos": 3
+      }
+    ],
+    "transition_analysis": [
+      {
+        "phrase": "te lo mando",
+        "top_per_video": 0.12,
+        "bottom_per_video": 0,
+        "top_total": 5,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "literalmente",
+        "top_per_video": 0.07,
+        "bottom_per_video": 0,
+        "top_total": 3,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "solamente",
+        "top_per_video": 0.61,
+        "bottom_per_video": 0.24,
+        "top_total": 25,
+        "bottom_total": 10,
+        "ratio": "2.54x más en TOP"
+      },
+      {
+        "phrase": "la verdad",
+        "top_per_video": 0.12,
+        "bottom_per_video": 0.05,
+        "top_total": 5,
+        "bottom_total": 2,
+        "ratio": "2.4x más en TOP"
+      },
+      {
+        "phrase": "pero bueno",
+        "top_per_video": 0.02,
+        "bottom_per_video": 0,
+        "top_total": 1,
+        "bottom_total": 0,
+        "ratio": "Solo en TOP"
+      },
+      {
+        "phrase": "si quieres",
+        "top_per_video": 0.39,
+        "bottom_per_video": 0.32,
+        "top_total": 16,
+        "bottom_total": 13,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "comenta",
+        "top_per_video": 1.51,
+        "bottom_per_video": 1.56,
+        "top_total": 62,
+        "bottom_total": 64,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "entonces",
+        "top_per_video": 0.1,
+        "bottom_per_video": 0.12,
+        "top_total": 4,
+        "bottom_total": 5,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "simplemente",
+        "top_per_video": 0.2,
+        "bottom_per_video": 0.37,
+        "top_total": 8,
+        "bottom_total": 15,
+        "ratio": "Similar"
+      },
+      {
+        "phrase": "así que",
+        "top_per_video": 0.07,
+        "bottom_per_video": 0.32,
+        "top_total": 3,
+        "bottom_total": 13,
+        "ratio": "4.57x más en BOTTOM"
+      },
+      {
+        "phrase": "en menos de un minuto",
+        "top_per_video": 0,
+        "bottom_per_video": 0.02,
+        "top_total": 0,
+        "bottom_total": 1,
+        "ratio": "Solo en BOTTOM"
+      },
+      {
+        "phrase": "en realidad",
+        "top_per_video": 0,
+        "bottom_per_video": 0.05,
+        "top_total": 0,
+        "bottom_total": 2,
+        "ratio": "Solo en BOTTOM"
+      },
+      {
+        "phrase": "es increíble",
+        "top_per_video": 0,
+        "bottom_per_video": 0.02,
+        "top_total": 0,
+        "bottom_total": 1,
+        "ratio": "Solo en BOTTOM"
+      }
+    ],
+    "opening_types": [
+      {
+        "type": "Negation",
+        "count": 2,
+        "avg_clr": 0.93,
+        "max_clr": 1.37
+      },
+      {
+        "type": "Number-lead",
+        "count": 4,
+        "avg_clr": 0.84,
+        "max_clr": 1.22
+      },
+      {
+        "type": "Conditional",
+        "count": 13,
+        "avg_clr": 0.67,
+        "max_clr": 0.99
+      },
+      {
+        "type": "Otro",
+        "count": 87,
+        "avg_clr": 0.61,
+        "max_clr": 1.91
+      },
+      {
+        "type": "Demonstrative",
+        "count": 13,
+        "avg_clr": 0.61,
+        "max_clr": 1.17
+      },
+      {
+        "type": "Question",
+        "count": 40,
+        "avg_clr": 0.52,
+        "max_clr": 1.02
+      },
+      {
+        "type": "Universal",
+        "count": 3,
+        "avg_clr": 0.52,
+        "max_clr": 0.63
+      },
+      {
+        "type": "Nobody",
+        "count": 1,
+        "avg_clr": 0.52,
+        "max_clr": 0.52
+      },
+      {
+        "type": "Possessive",
+        "count": 2,
+        "avg_clr": 0.37,
+        "max_clr": 0.6
+      },
+      {
+        "type": "Existence",
+        "count": 1,
+        "avg_clr": 0.11,
+        "max_clr": 0.11
+      }
+    ],
+    "closing_types": [
+      {
+        "type": "Otro",
+        "count": 150,
+        "avg_clr": 0.61
+      },
+      {
+        "type": "\"...por mensaje privado\"",
+        "count": 7,
+        "avg_clr": 0.58
+      },
+      {
+        "type": "Termina con \"comenta [keyword]\"",
+        "count": 9,
+        "avg_clr": 0.43
+      }
+    ],
+    "word_frequency_diff": {
+      "topDiff": [
+        {
+          "word": "basa",
+          "top": 6,
+          "bottom": 0,
+          "ratio": "Solo top (6)"
+        },
+        {
+          "word": "lista",
+          "top": 6,
+          "bottom": 0,
+          "ratio": "Solo top (6)"
+        },
+        {
+          "word": "capa",
+          "top": 6,
+          "bottom": 0,
+          "ratio": "Solo top (6)"
+        },
+        {
+          "word": "abajo",
+          "top": 5,
+          "bottom": 0,
+          "ratio": "Solo top (5)"
+        },
+        {
+          "word": "vea",
+          "top": 5,
+          "bottom": 0,
+          "ratio": "Solo top (5)"
+        },
+        {
+          "word": "ven",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "llevaba",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "hablo",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "graba",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "objeto",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "despertara",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "publiques",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "plátano",
+          "top": 4,
+          "bottom": 0,
+          "ratio": "Solo top (4)"
+        },
+        {
+          "word": "2000",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "desconocido",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "pensaba",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "99%",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "creé",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "pcn",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "editar",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "enviar",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "copiarlo",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "general",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "umbral",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        },
+        {
+          "word": "plantilla",
+          "top": 3,
+          "bottom": 0,
+          "ratio": "Solo top (3)"
+        }
+      ],
+      "bottomDiff": [
+        {
+          "word": "consultoría",
+          "top": 0,
+          "bottom": 7,
+          "ratio": "Solo bottom (7)"
+        },
+        {
+          "word": "funcionado",
+          "top": 0,
+          "bottom": 6,
+          "ratio": "Solo bottom (6)"
+        },
+        {
+          "word": "bloque",
+          "top": 0,
+          "bottom": 6,
+          "ratio": "Solo bottom (6)"
+        },
+        {
+          "word": "pizza",
+          "top": 0,
+          "bottom": 6,
+          "ratio": "Solo bottom (6)"
+        },
+        {
+          "word": "hielo",
+          "top": 0,
+          "bottom": 5,
+          "ratio": "Solo bottom (5)"
+        },
+        {
+          "word": "grados",
+          "top": 0,
+          "bottom": 5,
+          "ratio": "Solo bottom (5)"
+        },
+        {
+          "word": "publico",
+          "top": 0,
+          "bottom": 5,
+          "ratio": "Solo bottom (5)"
+        },
+        {
+          "word": "hiciste",
+          "top": 0,
+          "bottom": 5,
+          "ratio": "Solo bottom (5)"
+        },
+        {
+          "word": "tarde",
+          "top": 0,
+          "bottom": 5,
+          "ratio": "Solo bottom (5)"
+        },
+        {
+          "word": "2026",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "800000",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "libros",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "cambiado",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "decirte",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "hablamos",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "pensar",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "esté",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "apuntar",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "crezcas",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "oficial",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "alguien",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "barco",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "gratuita",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "gratuito",
+          "top": 0,
+          "bottom": 4,
+          "ratio": "Solo bottom (4)"
+        },
+        {
+          "word": "hayan",
+          "top": 0,
+          "bottom": 3,
+          "ratio": "Solo bottom (3)"
+        }
+      ]
+    },
+    "enthusiasm_markers": [
+      {
+        "phrase": "es increíble",
+        "top": 0,
+        "bottom": 1
+      }
+    ]
+  },
+  "structural": {
+    "duration_vs_clr": [
+      {
+        "bucket": "15-30s",
+        "count": 5,
+        "avg_clr": 0.41,
+        "start": 15
+      },
+      {
+        "bucket": "30-45s",
+        "count": 9,
+        "avg_clr": 0.71,
+        "start": 30
+      },
+      {
+        "bucket": "45-60s",
+        "count": 30,
+        "avg_clr": 0.62,
+        "start": 45
+      },
+      {
+        "bucket": "60-75s",
+        "count": 50,
+        "avg_clr": 0.68,
+        "start": 60
+      },
+      {
+        "bucket": "75-90s",
+        "count": 49,
+        "avg_clr": 0.51,
+        "start": 75
+      },
+      {
+        "bucket": "90-105s",
+        "count": 19,
+        "avg_clr": 0.53,
+        "start": 90
+      },
+      {
+        "bucket": "105-120s",
+        "count": 5,
+        "avg_clr": 0.54,
+        "start": 105
+      }
+    ],
+    "rhythm_top_vs_bottom": {
+      "top": {
+        "avg_duration": 67.09,
+        "avg_words": 239.54,
+        "avg_wps": 3.56,
+        "avg_sentences": 19.02,
+        "avg_questions": 2.66,
+        "avg_revenue_claims": 1.63,
+        "avg_speed_promises": 0.2,
+        "avg_comenta_count": 1.51,
+        "avg_alternation": "56.9%"
+      },
+      "bottom": {
+        "avg_duration": 70.62,
+        "avg_words": 235.95,
+        "avg_wps": 3.21,
+        "avg_sentences": 20.83,
+        "avg_questions": 3.05,
+        "avg_revenue_claims": 1.32,
+        "avg_speed_promises": 0.1,
+        "avg_comenta_count": 1.56,
+        "avg_alternation": "54.15%"
+      }
+    },
+    "cta_formulas": [
+      {
+        "formula": "\"comenta\" SIN \"en menos de\"",
+        "count": 128,
+        "avg_clr": 0.6
+      }
+    ],
+    "comenta_repetition": [
+      {
+        "repetitions": "0 veces",
+        "count": 16,
+        "avg_clr": 0.39
+      },
+      {
+        "repetitions": "1 vez",
+        "count": 65,
+        "avg_clr": 0.66
+      },
+      {
+        "repetitions": "2 veces",
+        "count": 67,
+        "avg_clr": 0.61
+      },
+      {
+        "repetitions": "3+ veces",
+        "count": 18,
+        "avg_clr": 0.52
+      }
+    ],
+    "revenue_vs_clr": [
+      {
+        "clr_range": "0-0.5",
+        "videos": 67,
+        "avg_revenue_claims": 1.43,
+        "order": 1
+      },
+      {
+        "clr_range": "0.5-1.0",
+        "videos": 86,
+        "avg_revenue_claims": 1.57,
+        "order": 2
+      },
+      {
+        "clr_range": "1.0-1.5",
+        "videos": 10,
+        "avg_revenue_claims": 1.2,
+        "order": 3
+      },
+      {
+        "clr_range": "1.5-2.0",
+        "videos": 3,
+        "avg_revenue_claims": 1.67,
+        "order": 4
+      }
+    ],
+    "scarcity_patterns": [
+      {
+        "phrase": "acaba de",
+        "top_videos": 1,
+        "top_pct": "2.44%",
+        "bottom_videos": 3,
+        "bottom_pct": "7.32%"
+      },
+      {
+        "phrase": "nuevo",
+        "top_videos": 4,
+        "top_pct": "9.76%",
+        "bottom_videos": 2,
+        "bottom_pct": "4.88%"
+      },
+      {
+        "phrase": "nueva",
+        "top_videos": 2,
+        "top_pct": "4.88%",
+        "bottom_videos": 4,
+        "bottom_pct": "9.76%"
+      },
+      {
+        "phrase": "24 horas",
+        "top_videos": 0,
+        "top_pct": "0%",
+        "bottom_videos": 1,
+        "bottom_pct": "2.44%"
+      },
+      {
+        "phrase": "últimos",
+        "top_videos": 4,
+        "top_pct": "9.76%",
+        "bottom_videos": 2,
+        "bottom_pct": "4.88%"
+      }
+    ],
+    "objection_patterns": [
+      {
+        "phrase": "100% gratis",
+        "top": 0,
+        "bottom": 1
+      },
+      {
+        "phrase": "sin pagar",
+        "top": 0,
+        "bottom": 1
+      }
+    ]
+  },
+  "caption": {
+    "length_vs_clr": [
+      {
+        "bucket": "1-10",
+        "count": 44,
+        "avg_clr": 0.61,
+        "order": 1
+      },
+      {
+        "bucket": "11-20",
+        "count": 58,
+        "avg_clr": 0.63,
+        "order": 2
+      },
+      {
+        "bucket": "21-35",
+        "count": 43,
+        "avg_clr": 0.53,
+        "order": 3
+      },
+      {
+        "bucket": "36-60",
+        "count": 17,
+        "avg_clr": 0.59,
+        "order": 4
+      },
+      {
+        "bucket": "60+",
+        "count": 6,
+        "avg_clr": 0.57,
+        "order": 5
+      }
+    ],
+    "features_top_vs_bottom": [
+      {
+        "feature": "Tiene \"comenta/comentá\"",
+        "top_pct": "83.33%",
+        "bottom_pct": "83.33%"
+      },
+      {
+        "feature": "Tiene emoji",
+        "top_pct": "42.86%",
+        "bottom_pct": "66.67%"
+      },
+      {
+        "feature": "Tiene hashtag",
+        "top_pct": "76.19%",
+        "bottom_pct": "95.24%"
+      },
+      {
+        "feature": "Tiene pregunta",
+        "top_pct": "0%",
+        "bottom_pct": "14.29%"
+      },
+      {
+        "feature": "Tiene exclamación",
+        "top_pct": "0%",
+        "bottom_pct": "0%"
+      },
+      {
+        "feature": "Menciona DM/mensaje",
+        "top_pct": "0%",
+        "bottom_pct": "9.52%"
+      },
+      {
+        "feature": "Largo <= 15 palabras",
+        "top_pct": "50%",
+        "bottom_pct": "26.19%"
+      }
+    ],
+    "avg_word_count_top": 20.74,
+    "avg_word_count_bottom": 26.12,
+    "cta_keywords": [
+      {
+        "keyword": "GUI",
+        "uses": 2,
+        "avg_clr": 1.27
+      },
+      {
+        "keyword": "LISTA",
+        "uses": 1,
+        "avg_clr": 1.1
+      },
+      {
+        "keyword": "CLASE",
+        "uses": 2,
+        "avg_clr": 0.67
+      },
+      {
+        "keyword": "ALFREDO",
+        "uses": 1,
+        "avg_clr": 0.63
+      },
+      {
+        "keyword": "SISTEMA",
+        "uses": 1,
+        "avg_clr": 0.58
+      },
+      {
+        "keyword": "BIO",
+        "uses": 1,
+        "avg_clr": 0.56
+      },
+      {
+        "keyword": "IDEA",
+        "uses": 1,
+        "avg_clr": 0.54
+      },
+      {
+        "keyword": "LA",
+        "uses": 26,
+        "avg_clr": 0.51
+      },
+      {
+        "keyword": "2026",
+        "uses": 1,
+        "avg_clr": 0.48
+      },
+      {
+        "keyword": "CALIDAD",
+        "uses": 1,
+        "avg_clr": 0.44
+      },
+      {
+        "keyword": "TU",
+        "uses": 6,
+        "avg_clr": 0.42
+      },
+      {
+        "keyword": "SOLUCI",
+        "uses": 1,
+        "avg_clr": 0.41
+      },
+      {
+        "keyword": "CU",
+        "uses": 2,
+        "avg_clr": 0.34
+      },
+      {
+        "keyword": "YO",
+        "uses": 2,
+        "avg_clr": 0.31
+      },
+      {
+        "keyword": "PLAN",
+        "uses": 1,
+        "avg_clr": 0.27
+      },
+      {
+        "keyword": "VIRAL",
+        "uses": 3,
+        "avg_clr": 0.23
+      },
+      {
+        "keyword": "CONSULTA",
+        "uses": 1,
+        "avg_clr": 0.22
+      },
+      {
+        "keyword": "AQU",
+        "uses": 1,
+        "avg_clr": 0.18
+      },
+      {
+        "keyword": "CITA",
+        "uses": 1,
+        "avg_clr": 0.11
+      }
+    ]
+  },
+  "post_type": {
+    "video": {
+      "count": 167,
+      "avg_likes": 7608,
+      "avg_comments": 3434,
+      "avg_views": 70045,
+      "avg_clr": 0.59
+    },
+    "sidecar": {
+      "count": 1,
+      "avg_likes": 3903,
+      "avg_comments": 1218,
+      "avg_clr": 0.31
+    }
+  }
+}

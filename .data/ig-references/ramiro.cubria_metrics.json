@@ -1,42 +1,42 @@
 {
   "username": "ramiro.cubria",
-  "analyzed_at": "2026-03-25T06:55:43.924Z",
+  "analyzed_at": "2026-04-01T13:40:02.839Z",
   "months_analyzed": 12,
   "global": {
-    "total_posts": 1017,
-    "videos": 831,
+    "total_posts": 1001,
+    "videos": 815,
     "sidecars": 186,
     "images": 0,
-    "filtered_out": 61,
+    "filtered_out": 77,
     "months_analyzed": 12,
-    "avg_likes": 743,
-    "avg_comments": 454,
-    "avg_views": 22966,
-    "median_likes": 418,
+    "avg_likes": 730,
+    "avg_comments": 458,
+    "avg_views": 22457,
+    "median_likes": 415,
     "median_comments": 170,
-    "median_views": 8420,
-    "clr_global": 61.07,
-    "lvr_global": 3.13,
+    "median_views": 8224,
+    "clr_global": 62.7,
+    "lvr_global": 3.12,
     "posting_frequency_days": 0.36
   },
   "duration_engagement": {
     "75-100s": {
-      "count": 402,
-      "avg_views": 20826,
-      "avg_likes": 667,
+      "count": 393,
+      "avg_views": 20312,
+      "avg_likes": 645,
       "avg_comments": 230,
-      "avg_clr": 43.35,
-      "median_clr": 35.54,
-      "avg_duration": 84.58
+      "avg_clr": 43.86,
+      "median_clr": 35.82,
+      "avg_duration": 84.62
     },
     "45-60s": {
-      "count": 92,
-      "avg_views": 26165,
-      "avg_likes": 558,
-      "avg_comments": 411,
-      "avg_clr": 78.14,
-      "median_clr": 46.38,
-      "avg_duration": 54.46
+      "count": 91,
+      "avg_views": 26324,
+      "avg_likes": 560,
+      "avg_comments": 414,
+      "avg_clr": 78.74,
+      "median_clr": 47.68,
+      "avg_duration": 54.52
     },
     "100s+": {
       "count": 62,
@@ -48,13 +48,13 @@
       "avg_duration": 112.33
     },
     "60-75s": {
-      "count": 246,
-      "avg_views": 24260,
-      "avg_likes": 650,
-      "avg_comments": 361,
-      "avg_clr": 58.91,
-      "median_clr": 39.18,
-      "avg_duration": 67.86
+      "count": 240,
+      "avg_views": 23278,
+      "avg_likes": 625,
+      "avg_comments": 364,
+      "avg_clr": 59.85,
+      "median_clr": 39.32,
+      "avg_duration": 67.81
     },
     "0-20s": {
       "count": 2,
@@ -77,22 +77,22 @@
   },
   "cta_analysis": {
     "with_cta": {
-      "count": 884,
-      "pct": "86.9%",
-      "avg_clr": 72.13,
-      "median_clr": 46.28,
-      "avg_views": 24546,
-      "avg_comments": 517
+      "count": 872,
+      "pct": "87.1%",
+      "avg_clr": 72.75,
+      "median_clr": 46.54,
+      "avg_views": 24131,
+      "avg_comments": 521
     },
     "without_cta": {
-      "count": 133,
-      "pct": "13.1%",
-      "avg_clr": 4.01,
-      "median_clr": 3.16,
-      "avg_views": 14673,
-      "avg_comments": 32
+      "count": 129,
+      "pct": "12.9%",
+      "avg_clr": 3.99,
+      "median_clr": 3.05,
+      "avg_views": 13553,
+      "avg_comments": 28
     },
-    "cta_multiplier": 17.98,
+    "cta_multiplier": 18.25,
     "keywords": [
       {
         "keyword": "GUIONES",
@@ -487,6 +487,13 @@
         "avg_comments": 4779
       },
       {
+        "keyword": "MANUAL",
+        "uses": 3,
+        "avg_clr": 53.4,
+        "avg_views": 5679,
+        "avg_comments": 338
+      },
+      {
         "keyword": "RODRI",
         "uses": 1,
         "avg_clr": 53.02,
@@ -508,6 +515,13 @@
         "avg_comments": 271
       },
       {
+        "keyword": "CRM",
+        "uses": 3,
+        "avg_clr": 50.78,
+        "avg_views": 16012,
+        "avg_comments": 290
+      },
+      {
         "keyword": "FÍA",
         "uses": 1,
         "avg_clr": 50.14,
@@ -520,13 +534,6 @@
         "avg_clr": 47.68,
         "avg_views": 7363,
         "avg_comments": 175
-      },
-      {
-        "keyword": "CRM",
-        "uses": 4,
-        "avg_clr": 47.61,
-        "avg_views": 14010,
-        "avg_comments": 248
       },
       {
         "keyword": "JUANMA",
@@ -550,13 +557,6 @@
         "avg_comments": 440
       },
       {
-        "keyword": "ESTRUCTURA",
-        "uses": 4,
-        "avg_clr": 44.69,
-        "avg_views": 12898,
-        "avg_comments": 254
-      },
-      {
         "keyword": "DISCLAIMER",
         "uses": 1,
         "avg_clr": 44.27,
@@ -564,11 +564,18 @@
         "avg_comments": 174
       },
       {
+        "keyword": "VSL",
+        "uses": 1,
+        "avg_clr": 43.66,
+        "avg_views": 34,
+        "avg_comments": 210
+      },
+      {
         "keyword": "CLASE",
-        "uses": 43,
-        "avg_clr": 42.92,
-        "avg_views": 28539,
-        "avg_comments": 179
+        "uses": 42,
+        "avg_clr": 43.24,
+        "avg_views": 28818,
+        "avg_comments": 178
       },
       {
         "keyword": "ATENTO",
@@ -592,20 +599,6 @@
         "avg_comments": 199
       },
       {
-        "keyword": "MANUAL",
-        "uses": 4,
-        "avg_clr": 42.27,
-        "avg_views": 34931,
-        "avg_comments": 347
-      },
-      {
-        "keyword": "VSL",
-        "uses": 2,
-        "avg_clr": 42.09,
-        "avg_views": 4476,
-        "avg_comments": 192
-      },
-      {
         "keyword": "IDEAS",
         "uses": 1,
         "avg_clr": 41.88,
@@ -620,11 +613,25 @@
         "avg_comments": 328
       },
       {
+        "keyword": "ESTRUCTURA",
+        "uses": 3,
+        "avg_clr": 39.69,
+        "avg_views": 7324,
+        "avg_comments": 205
+      },
+      {
         "keyword": "NADIE",
         "uses": 1,
         "avg_clr": 39.53,
         "avg_views": 8423,
         "avg_comments": 221
+      },
+      {
+        "keyword": "DOC",
+        "uses": 3,
+        "avg_clr": 37.91,
+        "avg_views": 7936,
+        "avg_comments": 199
       },
       {
         "keyword": "EVERGREEN",
@@ -642,10 +649,10 @@
       },
       {
         "keyword": "LOOM",
-        "uses": 8,
-        "avg_clr": 35.4,
-        "avg_views": 8044,
-        "avg_comments": 133
+        "uses": 7,
+        "avg_clr": 34.66,
+        "avg_views": 7898,
+        "avg_comments": 127
       },
       {
         "keyword": "GUION",
@@ -669,11 +676,11 @@
         "avg_comments": 460
       },
       {
-        "keyword": "DOC",
-        "uses": 4,
-        "avg_clr": 31.59,
-        "avg_views": 8640,
-        "avg_comments": 159
+        "keyword": "ESTRATEGIA",
+        "uses": 2,
+        "avg_clr": 31.58,
+        "avg_views": 52681,
+        "avg_comments": 334
       },
       {
         "keyword": "COMUNICACIÓN",
@@ -711,25 +718,11 @@
         "avg_comments": 64
       },
       {
-        "keyword": "HORA",
-        "uses": 1,
-        "avg_clr": 29.28,
-        "avg_views": 17387,
-        "avg_comments": 219
-      },
-      {
         "keyword": "EMI",
         "uses": 1,
         "avg_clr": 28.81,
         "avg_views": 8966,
         "avg_comments": 119
-      },
-      {
-        "keyword": "ESTRATEGIA",
-        "uses": 3,
-        "avg_clr": 28.67,
-        "avg_views": 73668,
-        "avg_comments": 375
       },
       {
         "keyword": "NGULOS",
@@ -900,13 +893,6 @@
         "avg_comments": 10
       },
       {
-        "keyword": "EMBUDO",
-        "uses": 2,
-        "avg_clr": 18.67,
-        "avg_views": 13586,
-        "avg_comments": 96
-      },
-      {
         "keyword": "ABOGADOS",
         "uses": 1,
         "avg_clr": 18.64,
@@ -963,11 +949,11 @@
         "avg_comments": 15
       },
       {
-        "keyword": "CALENDARIO",
-        "uses": 2,
-        "avg_clr": 13.88,
-        "avg_views": 61916,
-        "avg_comments": 234
+        "keyword": "EMBUDO",
+        "uses": 1,
+        "avg_clr": 13.24,
+        "avg_views": 15457,
+        "avg_comments": 92
       },
       {
         "keyword": "ANGULOS",
@@ -1026,34 +1012,6 @@
         "avg_comments": 50
       },
       {
-        "keyword": "MESES",
-        "uses": 1,
-        "avg_clr": 9.73,
-        "avg_views": 11100,
-        "avg_comments": 62
-      },
-      {
-        "keyword": "CARA",
-        "uses": 1,
-        "avg_clr": 9.73,
-        "avg_views": 11100,
-        "avg_comments": 62
-      },
-      {
-        "keyword": "GAUSS",
-        "uses": 1,
-        "avg_clr": 9.73,
-        "avg_views": 11100,
-        "avg_comments": 62
-      },
-      {
-        "keyword": "DATA",
-        "uses": 1,
-        "avg_clr": 9.69,
-        "avg_views": 194253,
-        "avg_comments": 449
-      },
-      {
         "keyword": "GONZALO",
         "uses": 1,
         "avg_clr": 9.52,
@@ -1082,6 +1040,13 @@
         "avg_comments": 3
       },
       {
+        "keyword": "CALENDARIO",
+        "uses": 1,
+        "avg_clr": 4.91,
+        "avg_views": 8189,
+        "avg_comments": 8
+      },
+      {
         "keyword": "NICO",
         "uses": 1,
         "avg_clr": 4.46,
@@ -1106,28 +1071,28 @@
   },
   "caption_analysis": {
     "1-10": {
-      "count": 381,
-      "avg_clr": 39.25,
-      "avg_views": 16454,
+      "count": 378,
+      "avg_clr": 39.52,
+      "avg_views": 15961,
       "avg_comments": 268
     },
     "11-20": {
-      "count": 569,
-      "avg_clr": 82.85,
-      "avg_views": 26828,
-      "avg_comments": 598
+      "count": 565,
+      "avg_clr": 83.21,
+      "avg_views": 26910,
+      "avg_comments": 601
     },
     "21-35": {
-      "count": 41,
-      "avg_clr": 34.38,
-      "avg_views": 20766,
-      "avg_comments": 327
+      "count": 37,
+      "avg_clr": 35.87,
+      "avg_views": 16040,
+      "avg_comments": 339
     },
     "36-60": {
-      "count": 26,
-      "avg_clr": 30.42,
-      "avg_views": 34000,
-      "avg_comments": 218
+      "count": 21,
+      "avg_clr": 32.37,
+      "avg_views": 28714,
+      "avg_comments": 208
     },
     "60+": {
       "count": 0,
@@ -2283,26 +2248,6 @@
       "timestamp": "2025-08-14T19:49:05.000Z"
     },
     {
-      "shortCode": "DHzRz5tOZsZ",
-      "url": "https://www.instagram.com/p/DHzRz5tOZsZ/",
-      "type": "Video",
-      "likes": 4633,
-      "comments": 449,
-      "views": 194253,
-      "duration": 64.233,
-      "clr": 9.69,
-      "cvr": 0.23,
-      "lvr": 2.39,
-      "caption_preview": "Vender caro y que no regales tu trabajo es posible.  Comenta",
-      "caption_full": "Vender caro y que no regales tu trabajo es posible.\n\nComenta DATA si quieres la guía para aprender a vender de verdad.\n\nNos vemos amigos.",
-      "has_comment_cta": true,
-      "keywords": [
-        "DATA"
-      ],
-      "caption_words": 25,
-      "timestamp": "2025-03-29T23:15:37.000Z"
-    },
-    {
       "shortCode": "DVHpu94jeSO",
       "url": "https://www.instagram.com/p/DVHpu94jeSO/",
       "type": "Video",
@@ -2527,6 +2472,24 @@
       ],
       "caption_words": 12,
       "timestamp": "2025-09-15T19:31:03.000Z"
+    },
+    {
+      "shortCode": "DMtbT_aMG5S",
+      "url": "https://www.instagram.com/p/DMtbT_aMG5S/",
+      "type": "Video",
+      "likes": 378,
+      "comments": 334,
+      "views": 143330,
+      "duration": 68.366,
+      "clr": 88.36,
+      "cvr": 0.23,
+      "lvr": 0.26,
+      "caption_preview": "Comenta IA y te mando el recurso por DM💬  Nos vemos amigos!",
+      "caption_full": "Comenta IA y te mando el recurso por DM💬\n\nNos vemos amigos!",
+      "has_comment_cta": true,
+      "keywords": [],
+      "caption_words": 12,
+      "timestamp": "2025-07-29T23:16:33.000Z"
     }
   ],
   "all_posts_clr": [
@@ -8824,26 +8787,6 @@
       "timestamp": "2025-08-29T21:48:25.000Z"
     },
     {
-      "shortCode": "DHuouDQMXxC",
-      "url": "https://www.instagram.com/p/DHuouDQMXxC/",
-      "type": "Video",
-      "likes": 667,
-      "comments": 398,
-      "views": 29622,
-      "duration": 72.966,
-      "clr": 59.67,
-      "cvr": 1.34,
-      "lvr": 2.25,
-      "caption_preview": "Escucha teton   Por este motivo que te traigo hoy es que nad",
-      "caption_full": "Escucha teton \n\nPor este motivo que te traigo hoy es que nadie te compra.\n\nComenta ESTRUCTURA y te paso la que uso yo para que la puedas aplicar💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "ESTRUCTURA"
-      ],
-      "caption_words": 31,
-      "timestamp": "2025-03-28T03:57:04.000Z"
-    },
-    {
       "shortCode": "DPiEp4YDBKa",
       "url": "https://www.instagram.com/p/DPiEp4YDBKa/",
       "type": "Video",
@@ -9506,24 +9449,6 @@
       ],
       "caption_words": 12,
       "timestamp": "2025-08-05T22:46:11.000Z"
-    },
-    {
-      "shortCode": "DHta6l4O5D3",
-      "url": "https://www.instagram.com/p/DHta6l4O5D3/",
-      "type": "Video",
-      "likes": 659,
-      "comments": 364,
-      "views": 34597,
-      "duration": 91.733,
-      "clr": 55.24,
-      "cvr": 1.05,
-      "lvr": 1.9,
-      "caption_preview": "Ahora que ya sabes esto, comenta YO y te paso la estructura ",
-      "caption_full": "Ahora que ya sabes esto, comenta YO y te paso la estructura de prospección 💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [],
-      "caption_words": 18,
-      "timestamp": "2025-03-27T17:08:13.000Z"
     },
     {
       "shortCode": "DTY1Ow4iTGr",
@@ -12078,27 +12003,6 @@
       "timestamp": "2025-05-04T00:51:15.000Z"
     },
     {
-      "shortCode": "DHruXwjMDu3",
-      "url": "https://www.instagram.com/p/DHruXwjMDu3/",
-      "type": "Video",
-      "likes": 427,
-      "comments": 173,
-      "views": 8918,
-      "duration": 84.466,
-      "clr": 40.52,
-      "cvr": 1.94,
-      "lvr": 4.79,
-      "caption_preview": "Actualización a 24 días de subir ese video:  El link no para",
-      "caption_full": "Actualización a 24 días de subir ese video:\n\nEl link no para de hacernos ganar.\n\nComenta LOOM y te envío la clase que preparé donde enseño en profundidad como es que estructure mi landing & VSL💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "LOOM",
-        "VSL"
-      ],
-      "caption_words": 39,
-      "timestamp": "2025-03-27T00:47:51.000Z"
-    },
-    {
       "shortCode": "DJZLu5sssgE",
       "url": "https://www.instagram.com/p/DJZLu5sssgE/",
       "type": "Video",
@@ -12648,26 +12552,6 @@
       "keywords": [],
       "caption_words": 12,
       "timestamp": "2025-05-19T16:40:16.000Z"
-    },
-    {
-      "shortCode": "DHpSJUbsvzG",
-      "url": "https://www.instagram.com/p/DHpSJUbsvzG/",
-      "type": "Video",
-      "likes": 323,
-      "comments": 123,
-      "views": 8004,
-      "duration": 72.866,
-      "clr": 38.08,
-      "cvr": 1.54,
-      "lvr": 4.04,
-      "caption_preview": "Comenta CRM y te paso el ecosistema de métricas🤫  Nos vemos",
-      "caption_full": "Comenta CRM y te paso el ecosistema de métricas🤫\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "CRM"
-      ],
-      "caption_words": 12,
-      "timestamp": "2025-03-26T02:05:36.000Z"
     },
     {
       "shortCode": "DUl9UDlkubx",
@@ -14640,27 +14524,6 @@
       "timestamp": "2025-11-24T13:00:00.000Z"
     },
     {
-      "shortCode": "DHrbm1xOmm5",
-      "url": "https://www.instagram.com/p/DHrbm1xOmm5/",
-      "type": "Video",
-      "likes": 748,
-      "comments": 219,
-      "views": 17387,
-      "duration": 82.8,
-      "clr": 29.28,
-      "cvr": 1.26,
-      "lvr": 4.3,
-      "caption_preview": "Nada es imposible de conseguir si tenes los metodos y sistem",
-      "caption_full": "Nada es imposible de conseguir si tenes los metodos y sistemas ideales.\n\nLa gente vive en una realidad paralela no se por qué.\n\nComenta CLASE y te mando una que preparé de MÁS DE UNA HORA explicando a detalle como fue que lo logre💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "CLASE",
-        "HORA"
-      ],
-      "caption_words": 47,
-      "timestamp": "2025-03-26T22:03:55.000Z"
-    },
-    {
       "shortCode": "DUFAhTeDBaw",
       "url": "https://www.instagram.com/p/DUFAhTeDBaw/",
       "type": "Video",
@@ -16137,26 +16000,6 @@
       "timestamp": "2026-01-17T15:35:00.000Z"
     },
     {
-      "shortCode": "DHwqCnNuY-h",
-      "url": "https://www.instagram.com/p/DHwqCnNuY-h/",
-      "type": "Video",
-      "likes": 415,
-      "comments": 100,
-      "views": 11715,
-      "duration": 48.766,
-      "clr": 24.1,
-      "cvr": 0.85,
-      "lvr": 3.54,
-      "caption_preview": "Comenta EMBUDO y te dejo un curso completo donde explico mi ",
-      "caption_full": "Comenta EMBUDO y te dejo un curso completo donde explico mi embudo a detalle💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "EMBUDO"
-      ],
-      "caption_words": 17,
-      "timestamp": "2025-03-28T22:46:33.000Z"
-    },
-    {
       "shortCode": "DRsH4FICVV_",
       "url": "https://www.instagram.com/p/DRsH4FICVV_/",
       "type": "Video",
@@ -16619,27 +16462,6 @@
       ],
       "caption_words": 41,
       "timestamp": "2025-04-03T13:00:00.000Z"
-    },
-    {
-      "shortCode": "DHyxaVfu1A3",
-      "url": "https://www.instagram.com/p/DHyxaVfu1A3/",
-      "type": "Video",
-      "likes": 2009,
-      "comments": 459,
-      "views": 115642,
-      "duration": 87.3,
-      "clr": 22.85,
-      "cvr": 0.4,
-      "lvr": 1.74,
-      "caption_preview": "Muchos piensan que en los nichos tradicionales es imposible ",
-      "caption_full": "Muchos piensan que en los nichos tradicionales es imposible vender.\n\nHoy te traigo el caso de Joseph, nutricionista y cliente mío, mira como le fue🫵🏻\n\nComenta CALENDARIO y te dejo el calendario y sino comenta ESTRATEGIA y te mando el entrenamiento que preparé donde habló en profundidad de todo esto💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "CALENDARIO",
-        "ESTRATEGIA"
-      ],
-      "caption_words": 53,
-      "timestamp": "2025-03-29T18:31:26.000Z"
     },
     {
       "shortCode": "DTtKLAYEs0G",
@@ -18316,26 +18138,6 @@
       "timestamp": "2026-02-15T03:13:30.000Z"
     },
     {
-      "shortCode": "DH4mkE7MaYy",
-      "url": "https://www.instagram.com/p/DH4mkE7MaYy/",
-      "type": "Video",
-      "likes": 293,
-      "comments": 37,
-      "views": 10047,
-      "duration": 79.766,
-      "clr": 12.63,
-      "cvr": 0.37,
-      "lvr": 2.92,
-      "caption_preview": "Factos sobre el mundo de las agencias.  Es parte del proceso",
-      "caption_full": "Factos sobre el mundo de las agencias.\n\nEs parte del proceso tener una pero el quilombo operativo no te lo saca nadie.\n\nComenta DOC si queres la guía que te prometí 💬\n\n Nos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "DOC"
-      ],
-      "caption_words": 35,
-      "timestamp": "2025-04-01T00:49:48.000Z"
-    },
-    {
       "shortCode": "DWQCqtMjJ60",
       "url": "https://www.instagram.com/p/DWQCqtMjJ60/",
       "type": "Video",
@@ -18484,24 +18286,6 @@
       "keywords": [],
       "caption_words": 9,
       "timestamp": "2026-01-22T03:09:30.000Z"
-    },
-    {
-      "shortCode": "DH1Z3dvOV40",
-      "url": "https://www.instagram.com/p/DH1Z3dvOV40/",
-      "type": "Video",
-      "likes": 691,
-      "comments": 81,
-      "views": 15313,
-      "duration": 66.56,
-      "clr": 11.72,
-      "cvr": 0.53,
-      "lvr": 4.51,
-      "caption_preview": "Es hora de que transiciones.  Comenta 2025 y te mando la est",
-      "caption_full": "Es hora de que transiciones.\n\nComenta 2025 y te mando la estrategia que use para mi contenido💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [],
-      "caption_words": 20,
-      "timestamp": "2025-03-30T19:00:00.000Z"
     },
     {
       "shortCode": "DVZoKcsj9aC",
@@ -18850,48 +18634,6 @@
       "timestamp": "2026-02-17T02:46:20.000Z"
     },
     {
-      "shortCode": "DHooCMZybGz",
-      "url": "https://www.instagram.com/p/DHooCMZybGz/",
-      "type": "Video",
-      "likes": 637,
-      "comments": 62,
-      "views": 11100,
-      "duration": 79.933,
-      "clr": 9.73,
-      "cvr": 0.56,
-      "lvr": 5.74,
-      "caption_preview": "Presta atención que hoy aprendes a cazar ballenas pibe🫵🏻  ",
-      "caption_full": "Presta atención que hoy aprendes a cazar ballenas pibe🫵🏻\n\nLa teoria de rami es una que estuve testeando durante MESES para atraer a mi cliente ideal y que compren mi oferta MÁS CARA.\n\nComenta GAUSS y te mando una clase tremenda que prepare, explicando esto a detalle💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "MESES",
-        "CARA",
-        "GAUSS"
-      ],
-      "caption_words": 50,
-      "timestamp": "2025-03-25T19:55:03.000Z"
-    },
-    {
-      "shortCode": "DHzRz5tOZsZ",
-      "url": "https://www.instagram.com/p/DHzRz5tOZsZ/",
-      "type": "Video",
-      "likes": 4633,
-      "comments": 449,
-      "views": 194253,
-      "duration": 64.233,
-      "clr": 9.69,
-      "cvr": 0.23,
-      "lvr": 2.39,
-      "caption_preview": "Vender caro y que no regales tu trabajo es posible.  Comenta",
-      "caption_full": "Vender caro y que no regales tu trabajo es posible.\n\nComenta DATA si quieres la guía para aprender a vender de verdad.\n\nNos vemos amigos.",
-      "has_comment_cta": true,
-      "keywords": [
-        "DATA"
-      ],
-      "caption_words": 25,
-      "timestamp": "2025-03-29T23:15:37.000Z"
-    },
-    {
       "shortCode": "DIuOhTzuj3k",
       "url": "https://www.instagram.com/p/DIuOhTzuj3k/",
       "type": "Video",
@@ -18988,26 +18730,6 @@
       "keywords": [],
       "caption_words": 27,
       "timestamp": "2025-04-12T15:00:00.000Z"
-    },
-    {
-      "shortCode": "DH0wvQGsoH1",
-      "url": "https://www.instagram.com/p/DH0wvQGsoH1/",
-      "type": "Video",
-      "likes": 4185,
-      "comments": 372,
-      "views": 122687,
-      "duration": 86.633,
-      "clr": 8.89,
-      "cvr": 0.3,
-      "lvr": 3.41,
-      "caption_preview": "El 99,9% te ghostea.  Pero si sabes resolver las objeciones ",
-      "caption_full": "El 99,9% te ghostea.\n\nPero si sabes resolver las objeciones de la forma correcta, te podes olvidar de eso.\n\nComenta MANUAL y te llega el documento que arme con mi equipo para que puedas resolver este tipo de objeciones💬\n\nNos vemos amigos!",
-      "has_comment_cta": true,
-      "keywords": [
-        "MANUAL"
-      ],
-      "caption_words": 42,
-      "timestamp": "2025-03-30T13:00:00.000Z"
     },
     {
       "shortCode": "DTgJ1SjCaLp",
@@ -19218,24 +18940,6 @@
       "timestamp": "2026-03-11T21:01:53.000Z"
     },
     {
-      "shortCode": "DH4Fc4PRTba",
-      "url": "https://www.instagram.com/p/DH4Fc4PRTba/",
-      "type": "Video",
-      "likes": 3299,
-      "comments": 247,
-      "views": 129099,
-      "duration": 74.366,
-      "clr": 7.49,
-      "cvr": 0.19,
-      "lvr": 2.56,
-      "caption_preview": "Te tenés que reinventar.",
-      "caption_full": "Te tenés que reinventar.",
-      "has_comment_cta": false,
-      "keywords": [],
-      "caption_words": 4,
-      "timestamp": "2025-03-31T20:03:29.000Z"
-    },
-    {
       "shortCode": "DWEiOWqDrEe",
       "url": "https://www.instagram.com/p/DWEiOWqDrEe/",
       "type": "Video",
@@ -19252,24 +18956,6 @@
       "keywords": [],
       "caption_words": 2,
       "timestamp": "2026-03-19T15:24:53.000Z"
-    },
-    {
-      "shortCode": "DHq_pdnOxop",
-      "url": "https://www.instagram.com/p/DHq_pdnOxop/",
-      "type": "Video",
-      "likes": 4713,
-      "comments": 339,
-      "views": 53265,
-      "duration": 76.433,
-      "clr": 7.19,
-      "cvr": 0.64,
-      "lvr": 8.85,
-      "caption_preview": "Midamos todo con la misma vara no?",
-      "caption_full": "Midamos todo con la misma vara no?",
-      "has_comment_cta": false,
-      "keywords": [],
-      "caption_words": 7,
-      "timestamp": "2025-03-26T17:59:35.000Z"
     },
     {
       "shortCode": "DPwnrbCiSrd",
@@ -20121,24 +19807,6 @@
       "keywords": [],
       "caption_words": 2,
       "timestamp": "2025-06-23T02:22:32.000Z"
-    },
-    {
-      "shortCode": "DHv6tc3OkxO",
-      "url": "https://www.instagram.com/p/DHv6tc3OkxO/",
-      "type": "Video",
-      "likes": 1116,
-      "comments": 44,
-      "views": 15782,
-      "duration": 77.9,
-      "clr": 3.94,
-      "cvr": 0.28,
-      "lvr": 7.07,
-      "caption_preview": "Hoy todos están detrás del objetivo las pelotudo.",
-      "caption_full": "Hoy todos están detrás del objetivo las pelotudo.",
-      "has_comment_cta": false,
-      "keywords": [],
-      "caption_words": 8,
-      "timestamp": "2025-03-28T15:52:35.000Z"
     },
     {
       "shortCode": "DSA-eSNkmug",
@@ -21595,24 +21263,6 @@
       "keywords": [],
       "caption_words": 8,
       "timestamp": "2025-05-30T18:55:51.000Z"
-    },
-    {
-      "shortCode": "DHoBfCcuz05",
-      "url": "https://www.instagram.com/p/DHoBfCcuz05/",
-      "type": "Video",
-      "likes": 405,
-      "comments": 2,
-      "views": 5119,
-      "duration": 68.3,
-      "clr": 0.49,
-      "cvr": 0.04,
-      "lvr": 7.91,
-      "caption_preview": "Es cuestión de entender esto, para que te empiece a ir bien.",
-      "caption_full": "Es cuestión de entender esto, para que te empiece a ir bien.\n\nSi no sos feliz ahora mucho menos lo vas a ser con plata.",
-      "has_comment_cta": false,
-      "keywords": [],
-      "caption_words": 25,
-      "timestamp": "2025-03-25T14:17:50.000Z"
     },
     {
       "shortCode": "DVHpu94jeSO",

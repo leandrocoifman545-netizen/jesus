@@ -1,146 +1,99 @@
-# Winner Patterns — Actualizado 2026-03-20 (Manual, desde análisis de 5 winners reales)
+# Winner Patterns — Actualizado 2026-04-04
 
-**Total validados:** 5 winners reales analizados (ads #16, #33, #34, #48, #51)
+**Total validados:** 18 (0 winners + 18 recorded)
 
-## Patrones duros (aparecen en 4+ de 5 winners)
+## Familias de ángulo que funcionan
+- **unknown**: 10 veces
+- **identidad**: 3 veces
+- **oportunidad**: 2 veces
+- **confrontacion**: 2 veces
+- **historia**: 1 veces
 
-1. **Anti-hype obligatorio** (4/5): "no te vas a hacer millonario", "no necesitás ser experto", números creíbles ($50-60/día, no $10K/mes)
-2. **Números concretos y creíbles** (4/5): "$100 dólares", "60 dólares por día", "en menos de 60 días". Nunca redondos perfectos.
-3. **Tono consejero** (5/5): Jesús habla como amigo que ya pasó por esto. Cero presión. Cero urgencia artificial.
-4. **Demolición de alternativas** (3/5): Presenta 2-3 opciones reales con nombre (Fiverr, Digistore, marketing de afiliados), las destruye una por una con un "pero", deja el producto propio como única opción lógica.
-5. **Modularidad hooks/body** (3/5): #33 y #34 comparten el mismo cuerpo con hooks distintos. #48 tiene cuerpo condensado del mismo template. Jesús testea hooks contra el mismo body.
+## Tipos de cuerpo que funcionan
+- **unknown**: 10 veces
+- **contraste_emocional**: 2 veces
+- **comparacion_caminos**: 1 veces
+- **demolicion_mito**: 1 veces
+- **un_dia_en_la_vida**: 1 veces
+- **historia_con_giro**: 1 veces
+- **demolicion_alternativas**: 1 veces
+- **analogia_extendida**: 1 veces
 
-## Frases textuales de Jesús (usar como referencia de tono)
-- "Hay 3 modelos de negocio online que podés arrancar"
-- "No necesitás plata para empezar"
-- "No te vas a hacer millonario de la noche a la mañana"
-- "¿Sabías que hay gente ganando 60 dólares por día vendiendo cosas que ni siquiera son suyas?"
-- "Yo facturo más de 100 mil dólares al año con productos digitales"
-- "¿Qué estás haciendo scrolleando como un zombie?"
+## Tipos de lead que funcionan
+- **situacion_especifica**: 13 veces
+- **provocacion**: 9 veces
+- **confesion**: 8 veces
+- **contraintuitivo**: 7 veces
+- **pregunta_incomoda**: 6 veces
+- **historia_mini**: 6 veces
+- **observacion_tendencia**: 5 veces
+- **dato_concreto**: 5 veces
+- **analogia_cotidiana**: 4 veces
+- **timeline_provocacion**: 4 veces
+- **negacion_directa**: 3 veces
+- **contrato_compromiso**: 2 veces
+- **pain_point**: 2 veces
+- **question**: 2 veces
+- **reveal_teaser**: 2 veces
+- **curiosity_gap**: 2 veces
+- **actuacion_dialogo**: 2 veces
+- **eliminacion_barreras**: 2 veces
+- **futuro_sensorial**: 1 veces
+- **sensorial**: 1 veces
+- **dato_impacto**: 1 veces
+- **generacional**: 1 veces
+- **contrarian**: 1 veces
+- **curiosidad**: 1 veces
 
-## Tipos de lead que funcionaron en winners
-- **dato_concreto**: #34 ("60 dólares por día") — hook rate alto
-- **provocacion**: #51 ("scrolleando como zombie") — espejo brutal
-- **negacion_directa**: #33 ("no te prometo hacerte millonario") — anti-hype abre
-- **pregunta_incomoda**: #48 ("¿sabías que hay gente ganando...?")
-- **qa_conversacional**: #16 (responde objeción de vender internacionalmente)
+## Venta del modelo que funciona
+- **unknown**: 10 veces
+- **ventana_oportunidad**: 2 veces
+- **tiempo_vs_dinero**: 2 veces
+- **cementerio_de_modelos**: 1 veces
+- **autoridad_por_origen**: 1 veces
+- **cementerio_modelos**: 1 veces
+- **transparencia_total**: 1 veces
 
-## Body types validados
-- **demolicion_alternativas** ⭐ (3/5): El más exitoso. Presenta alternativas reales, las demolea, deja ADP como lógica.
-- **qa_conversacional** ⭐ (1/5): #16 BN. Formato Jesús solo respondiendo una pregunta real.
-- **contraste_emocional** (1/5): #51 BN. Espejo brutal del "zombie" vs vida con propósito.
+## Segmentos validados
+- **unknown**: 10 veces
+- **A**: 5 veces
+- **B**: 1 veces
+- **C**: 1 veces
+- **Todos**: 1 veces
 
-## Venta del modelo que funcionó
-- **comparacion_modelos** (3/5): Fiverr vs Digistore vs Infoproductos → el ganador claro
-- **inversion_minima** (2/5): "no necesitás plata para empezar"
-- **prueba_personal** (2/5): "yo facturo más de 100 mil dólares"
+## Nichos que funcionaron
+- **unknown**: 10 veces
+- **comidas típicas / recetas de tu país**: 1 veces
+- **Coaching/consultoría (sesiones 1:1)**: 1 veces
+- **identidad como padre/madre (genérico)**: 1 veces
+- **rutina de oficina / escape laboral (genérico)**: 1 veces
+- **ninguno / emoción universal**: 1 veces
+- **historia personal / branding**: 1 veces
+- **modelos de negocio online**: 1 veces
+- **Conocimiento general (cualquier habilidad)**: 1 veces
 
-## Fuente de inspiración: TikTok viral
-- @katalinaherrera89: "Fiverr, Digistore, Infoproductos" (6M views, 38s) → template de #33/#34/#48
-- Patrón TikTok: ritmo rápido, 3 opciones, demolición progresiva, cierre anti-hype
-- Creators a monitorear: @katalinaherrera89, @soyelmarketing, @camilopresiga, @santiagoperezoficial, @danicoconsultor
-
-## Patrones de TikTok virales (40 videos analizados)
-1. **Primer segundo = pattern interrupt**: pregunta directa o afirmación contraintuitiva
-2. **Estructura 3-opciones**: presenta alternativas del mercado, las compara, una gana
-3. **Números específicos siempre**: "$50/día", "en 3 meses", nunca vago
-4. **Anti-hype como credibilidad**: "no es fácil pero funciona" > "hacete rico ya"
-5. **Duración 30-45s en TikTok** → Jesús lo expande a 60-90s para ads (más contexto)
-
----
-
-## Patrones de @ramiro.cubria (191 videos, top 30 CLR analizados — 2026-03-25)
-
-**Fuente:** Análisis profundo de 191 transcripciones de top performers. CLR top 30 = 2.61 promedio. Perfil Tipo C (competidor directo ADP — vende mentorías de marketing digital con IG).
-
-### Patrones estructurales (top CLR vs bottom CLR)
-1. **Apilamiento de 3-7 value props con resultado individual** (top: 3+ props de 10s c/u, bottom: 1 idea expandida durante 70s). Cada prop tiene su propio resultado en 1 oración.
-2. **Credencial tejida, NUNCA bloqueada** — 1 oración entre props, no bloque de 15s. Formato: pregunta retórica + dato + continuar. Ej: "¿Y quién soy yo para decirte que funciona? Hago 10K/día con esta cuenta. Así que..."
-3. **Recurso NOMBRABLE en el CTA** — PDF, prompt, sistema, repositorio. NUNCA concepto difuso ("te explico"). El recurso es un OBJETO que se puede enviar.
-4. **Promesas de velocidad** — 2.4/video en top CLR vs 1.1 en bottom. "En menos de un minuto por mensaje privado" es la frase exacta.
-5. **Transición al CTA = reformulación del valor** — "Si querés los 3 prompts, ¿qué tenés que hacer?" NUNCA rendición ("pero bueno, si te interesa...").
-6. **Duración 55-65s para máx CLR** — 20s más corto que su promedio (76s). Los bottom CLR son 81s promedio.
-7. **El video muestra pero NO entrega** — genera hambre por el recurso, no satisfacción. Si el video da todo el contenido, no hay razón para comentar.
-
-### Hooks noveles (no existen en nuestro sistema)
-- **Ancla precio invertida:** "$10K te debería cobrar. Pero hoy te lo doy gratis." (CLR 3.45)
-- **Incredulidad posesiva:** "No entiendo cómo todavía no tenés [recurso]." (CLR 3.14)
-- **Condición invertida de identidad:** "No soy [referente], pero [resultado comparable]." (CLR 3.14 + 247K views) — anti-hype natural, alineado con winner pattern #1.
-- **Ataque a la herramienta:** "No vuelvas a usar [herramienta popular] porque [es horrible]." (CLR 2.55) — ataca la HERRAMIENTA, no la persona.
-- **Reframe de costo:** "¿Para qué vas a gastar plata en X si podés aprovechar Y?" (CLR 2.38)
-
-### Dato clave para orgánico
-Los videos de HERRAMIENTA/RECURSO tienen 2.5× más CLR que los de CASO DE CLIENTE en Ramiro. Para orgánico con CTA de acción, la herramienta tangible genera más comments que el testimonio. Los testimonios funcionan para retargeting, no para pipeline nuevo.
-
-### Micro-patrones cuantitativos (191 transcripciones, word-by-word — 2026-03-25)
-
-**Datos duros top 25% CLR (≥1.77) vs bottom 25% (≤0.55):**
-
-| Métrica | TOP 25% | BOTTOM 25% |
-|---------|---------|------------|
-| Duración | 61s | 81s |
-| Palabras/segundo | 3.76 | 3.21 |
-| Revenue claims/video | 1.6 | 2.5 |
-| Speed promises/video | 2.0 | 0.6 |
-| "Comenta"/video | 1.69 | 0.69 |
-| Value props/video | 1.5 | 0.9 |
-| Preguntas/video | 1.1 | 2.2 |
-
-**5 frases que MATAN el CLR** (cero en top 25%): "pero bueno", "de todos modos", "entonces", "en realidad", "nos vemos amigos" como cierre.
-
-**5 frases que DISPARAN el CLR** (solo top): "es una puta locura" (10 top, 0 bottom), "literalmente" (8.3x más en top), "lo único que tenés que hacer" (9.5x más en top), "se acaba de filtrar" (solo top), "en menos de un minuto" (2x más en top).
-
-**Palabras killer** (concentradas en bottom): "boludo" (31x más), "funnel/embudo" (solo bottom), "curso" (16x más), "plata" (7.5x más). Jerga de marketing + auto-referencia temporal = CLR bajo.
-
-**Palabras diferenciadoras** (concentradas en top): "prompt" (22.5x más), "acceso" (14x), "locura" (7.3x), "gratis" (5x), "nuevo" (8.7x). Herramientas + exclusividad + amplificadores = CLR alto.
-
-**CTA fórmula ganadora:** "Lo único que tenés que hacer es" (CLR 2.00) > "Si querés" (CLR 1.51). Asumir el deseo supera preguntar. Decir "comenta" 3+ veces = CLR 1.69 vs 0 veces = CLR 0.75 (+125%).
-
-**Novedad > Escasez:** "Se acaba de filtrar" = solo top. "Limitado" = solo bottom. La novedad genera más acción que la urgencia artificial.
-
-**Revenue claims óptimo: 1-2 por video.** Los de CLR 0.5-1.0 tienen 4.7 claims (el máximo) pero CLR mediocre. Más alardeo = menos acción.
-
-**Detalle completo:** `.data/ig-references/ramiro.cubria_micro-patrones.md`
-
-### Creators a monitorear (agregar)
-- @ramiro.cubria — volumen + ManyChat + keyword inbound. Referencia para orgánico con CTA.
+## Ingredientes más usados en winners
+- **B#23 Descripción Situacional**: 3 veces
+- **H#101 Future Pacing Sensorial**: 3 veces
+- **G#88 Resultado con Números**: 2 veces
+- **F#79 Simplificación Extrema**: 2 veces
+- **E#69 Especificidad Numérica**: 2 veces
+- **F#80 Contraste Extremo**: 2 veces
+- **C#47 Contraste Emocional**: 2 veces
+- **D#49 Redefinición del Juego**: 2 veces
+- **B#35 Dolor Económico Concreto**: 1 veces
+- **C#41 El Reloj Corre**: 1 veces
+- **D#48 Declaración Contraintuitiva**: 1 veces
+- **F#72 New Opportunity**: 1 veces
+- **G#93 Diversidad Geográfica**: 1 veces
+- **J#121 Ventana de Oportunidad**: 1 veces
+- **B#37 Techo de Modelo**: 1 veces
 
 ---
 
 ## Cómo usar estos patterns
 
-- **Sesgar hacia lo validado:** demolición de alternativas + anti-hype + números creíbles = combo ganador
-- **Modularidad:** planificar bodies que sirvan con múltiples hooks (como hizo Jesús con #33/#34)
-- **Tono:** consejero > vendedor. Siempre.
+- **Sesgar hacia lo validado:** si un tipo de lead tiene más winners, priorizarlo (pero no repetir — diversidad sigue mandando).
+- **Ingredientes probados:** los que aparecen en winners son seguros. Combinar con frescos para no repetir.
+- **Notas de Jesús:** feedback directo sobre qué fluye y qué no. Más valioso que la teoría.
 - **NUNCA copiar:** estos patterns son para SESGAR decisiones, no para copiar guiones.
-- **Winner patterns INFORMAN, no MANDAN** — diversidad sigue siendo la regla #1
-
----
-
-## Session Insights (fusionado)
-
-> Contenido único migrado desde `session-insights.md` (2026-03-20). Lo duplicado ya estaba arriba.
-
-### Diferencias: Guiones generados vs Jesús solo (BN)
-
-| Aspecto | Generados (#33, #34, #48) | Jesús solo (#16, #51) |
-|---------|--------------------------|----------------------|
-| Estructura | 5 beats claros, organizado | Flow libre, conversacional |
-| Tono | Más "vendedor suave" | Más "amigo que te cuenta" |
-| Datos | Números integrados en estructura | Números casuales, como anécdota |
-| CTA | Bloque formal | A veces no hay CTA explícito |
-| Duración | 60-100s controlado | Variable, puede extenderse |
-
-**Conclusión:** Los BN de Jesús marcan el norte del tono — si un guion generado suena más "vendedor" que #16, ajustar.
-
-### 5 ajustes para futuras generaciones
-
-1. **Más anti-hype**: Abrir con lo que NO es antes de lo que sí es
-2. **Nombres reales de competencia**: Mencionar Fiverr, Hotmart, Digistore por nombre — da credibilidad
-3. **Números de a uno**: Un número por beat, no acumular. "60 dólares por día" pega más que "$60/día + $1800/mes + $21K/año"
-4. **Tono consejero por default**: El tono "te lo cuento porque ya pasé por esto" > el tono "descubrí el secreto"
-5. **Permitir guiones sin CTA formal**: Para awareness 3+ y orgánico, el consejo ES el cierre
-
-### Oportunidad no explotada
-
-- **Carruseles educativos con CTA keyword** son una oportunidad no explotada por ADP para orgánico IG

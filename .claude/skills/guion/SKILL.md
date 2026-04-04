@@ -12,14 +12,14 @@ argument-hint: [nicho] [ángulo] [segmento] [funnel] [formato]
 
 ### 0a. Extraer winner patterns + session insights + feedback loop:
 ```bash
-node scripts/extract-winner-patterns.mjs
-node scripts/extract-session-insights.mjs
-node scripts/update-winners.mjs
+node scripts/post-gen.mjs
 ```
-Esto actualiza:
+Este script unificado ejecuta en cadena: extract-winner-patterns → extract-session-insights → update-winners → update-coverage.
+Actualiza:
 - `.data/winner-patterns.md` — patterns de los 5 winners originales
 - `.data/session-insights.md` — feedback de Jesús en sesiones
 - `.data/winner-patterns-auto.md` — **FEEDBACK LOOP**: analiza TODAS las generaciones marcadas como winner/recorded y calcula win rates por body type, arco, familia, segmento, ingredientes. Sesgar decisiones hacia lo que tiene mayor win rate.
+- `.data/matriz-cobertura.md` — cobertura actualizada
 
 ### 0b. Correr pre-flight (con nicho si ya se sabe):
 ```bash
@@ -685,6 +685,21 @@ echo '{ JSON }' | node scripts/save-generation.mjs
 **Si falla la validación:** corregir y volver a intentar. NUNCA usar `--force` para saltear errores.
 
 Dar URL: `http://localhost:3002/scripts/{generationId}`
+
+### Paso 11b: Post-generación automática (OBLIGATORIO después de guardar)
+
+```bash
+node scripts/post-gen.mjs
+```
+
+Esto actualiza automáticamente: winner patterns, session insights, win rates y cobertura.
+**NO preguntar al usuario si quiere correrlo — SIEMPRE correrlo después de guardar.**
+
+### Paso 11c: Formatear para teleprompter (AUTOMÁTICO)
+
+Formatear el guion aprobado con las reglas del teleprompter (6-8 palabras/línea, blank lines = pausas).
+Guardar en `.data/teleprompter-v2.0/{title-slug}.txt`.
+**NO preguntar — SIEMPRE formatear después de guardar.**
 
 ### Paso 12: Ofrecer Ad Copy
 

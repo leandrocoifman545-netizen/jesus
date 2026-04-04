@@ -1,0 +1,180 @@
+{
+  "id": "ref-jesus-winner-decenas-formas",
+  "title": "AD GANADOR Jesús — Existen decenas de formas de ganar dinero por internet (100s)",
+  "transcript": "Existen decenas de maneras de ganar dinero por internet. Y ahora, cuál es la mejor? Y depende de cada persona porque te puede ir bien siendo diseñador, siendo setter, siendo closer, editando videos, haciendo dropshipping, haciendo network marketing o incluso vendiendo tus propios productos. Pero la manera que yo seguí y la que sé enseñar es ser un publicista digital. Y lo bueno que tiene la publicidad digital es que no es necesario que salgas en cámara o tengas habilidades súper avanzadas de ventas para poder vender. Con solamente aprender a hacer anuncios en MetaAds y en Google Ads, ya estás capacitado para ofrecer este servicio. Y lo mejor de todo es que esto no es una carrera de años, no es que tenés que estudiar 6 años para poder ejercerlo, sino que en tan solo 4 meses o incluso 3 meses de práctica, porque no es de estudios, de práctica, ya podés empezar a ofrecer tus primeros servicios y empezar a tener tus primeros clientes en Internet. Ya sea en el extranjero, en tu propio país, en tu ciudad, en otras ciudades, podés brindar este servicio donde sea porque lo vas a dar por Internet. Ahora, seguramente te estarás preguntando, Jesús, dónde puedo aprender esto? Dónde puedo aprender a hacer publicidad digital? Cómo me convierto en un profesional de la publicidad digital para hacer las cosas bien y tener clientes, te tengo buenas noticias. Esta próxima semana vamos a hacer un entrenamiento gratuito de 4 clases, en donde como regalo también te preparamos un curso gratuito de 15 clases totalmente gratis, en donde te vamos a capacitar para que te vuelvas un publicista digital. Te voy a enseñar el camino que yo seguí, te voy a enseñar los servicios que puedes ofrecer, te voy a enseñar cuánto puedes cobrar, cómo conseguir tus primeros clientes, te voy a enseñar todo lo que necesites para que partas de cero absoluto y consigas tus primeros clientes. Así que esta próxima semana para poder registrarte este entrenamiento de 4 clases en vivo conmigo más las 15 clases de preparación que te preparamos para que llegues con toda la energía al evento simplemente tenés que tocar el botón de aquí debajo en donde vas a poder reservar tu cupo para esta próxima semana. Te mando un abrazo, chau chau. Y no te olvides de tocar acá abajo.",
+  "analysis": {
+    "hook": {
+      "text": "Existen decenas de maneras de ganar dinero por internet. Y ahora, cuál es la mejor? Depende de cada persona.",
+      "type": "premisa_honesta",
+      "word_count": 20,
+      "estimated_seconds": 8
+    },
+    "structure": {
+      "framework": "comparacion_caminos",
+      "sections": [
+        {
+          "name": "Premisa + honestidad",
+          "summary": "Hay muchas formas, depende de cada persona",
+          "estimated_seconds": 12
+        },
+        {
+          "name": "Lista opciones",
+          "summary": "7 alternativas nombradas con B-roll stock",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Posicionamiento personal",
+          "summary": "La que YO seguí y SÉ enseñar",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Demolición barreras",
+          "summary": "No cámara, no ventas, solo MetaAds+Google Ads. Efecto cara pixelada",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Tiempo + alcance",
+          "summary": "3-4 meses de práctica, donde sea",
+          "estimated_seconds": 13
+        },
+        {
+          "name": "Transición",
+          "summary": "Seguramente te preguntás... signos de interrogación flotantes",
+          "estimated_seconds": 7
+        },
+        {
+          "name": "Value stack",
+          "summary": "4 clases + 15 clases gratis + capacitación completa",
+          "estimated_seconds": 25
+        },
+        {
+          "name": "CTA + cierre",
+          "summary": "Tocá el botón + abrazo + chau chau",
+          "estimated_seconds": 10
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "honesto_generoso",
+      "formality_level": "casual",
+      "uses_first_person": true,
+      "ugc_style": false,
+      "humor_level": "none",
+      "key_phrases": [
+        "depende de cada persona",
+        "la manera que yo seguí y la que sé enseñar",
+        "de práctica porque no es de estudios",
+        "chau chau"
+      ]
+    },
+    "cta": {
+      "text": "Tocá el botón de aquí debajo. Te mando un abrazo, chau chau.",
+      "type": "directo",
+      "has_urgency": false,
+      "has_reason_why": false,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 100,
+    "total_word_count": 310,
+    "emotional_arc": "respeto → contexto → honestidad → alivio (objeciones destruidas) → curiosidad → generosidad → calidez",
+    "strengths": [
+      "Anti-guru radical con depende de cada persona",
+      "Cara pixelada = show dont tell",
+      "4 objeciones destruidas en 25 segundos",
+      "Value stack absurdo (4+15 clases gratis)",
+      "Cierre chau chau = amigo",
+      "Reconoce competencia sin atacar"
+    ],
+    "patterns_to_replicate": [
+      "Honestidad radical como diferenciador",
+      "Cara pixelada para demostrar destrucción de objeción",
+      "Texto keyword grande (PUBLICISTA)",
+      "Signos interrogación como separador visual",
+      "Value stack que hace irracional negarse",
+      "Autocorrección mid-sentence"
+    ],
+    "advertiser": {
+      "name": "Jesús Tassarolo — Academia de Publicistas",
+      "platform": "youtube",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "AR"
+    },
+    "generation_mapping": {
+      "angle_family": "oportunidad",
+      "body_type": "comparacion_caminos",
+      "persuasion_functions": [
+        {
+          "section_name": "Premisa + lista",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Posicionamiento",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Demolición barreras",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Tiempo + alcance",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "Value stack",
+          "function": "prueba"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Ganar dinero online requiere habilidades avanzadas, mostrar la cara, o estudiar años",
+        "mechanism": "La publicidad digital no requiere cámara ni ventas, se aprende en 3-4 meses de práctica",
+        "new_belief": "Puedo ser publicista digital en pocos meses sin habilidades previas"
+      },
+      "ingredients_detected": [
+        {
+          "category": "F",
+          "ingredient_number": 79,
+          "ingredient_name": "Simplificación Extrema"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 69,
+          "ingredient_name": "Especificidad Numérica"
+        },
+        {
+          "category": "I",
+          "ingredient_number": 107,
+          "ingredient_name": "Eliminación de Barreras"
+        }
+      ],
+      "model_sale_type": "ventana_oportunidad",
+      "awareness_level": 3,
+      "segment_equivalent": "A",
+      "big_idea": "De todas las formas de ganar online, la publicidad digital es la que se aprende más rápido y no requiere mostrarse ni vender"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Depende de cada persona como anti-guru",
+        "Lista de alternativas sin atacarlas",
+        "Cara pixelada como show dont tell visual",
+        "Texto keyword gigante (PUBLICISTA)",
+        "Signos de interrogación como separador visual",
+        "Autocorrección mid-sentence para sonar genuino",
+        "Value stack absurdo que hace irracional no registrarse",
+        "Cierre chau chau = audio de WhatsApp"
+      ],
+      "what_not_to_copy": [
+        "Producto diferente (publicidad digital vs productos digitales con IA)",
+        "Stock footage genérico — para ADP usar material real o screen recordings"
+      ],
+      "craft_notes": [
+        "6 cambios visuales en 100 segundos = 1 cada 17s",
+        "El conteo con dedos ancla números visualmente",
+        "Manos juntas cuando dice te preparamos = generosidad corporal"
+      ]
+    }
+  },
+  "createdAt": "2026-03-30T18:51:15.171Z"
+}

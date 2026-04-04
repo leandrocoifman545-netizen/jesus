@@ -1,0 +1,21 @@
+{
+  "id": "fbd3127a",
+  "title": "#39[BN]",
+  "source": "/Users/lean/Documents/#39[BN].mp4",
+  "duration_seconds": 85,
+  "total_frames": 17,
+  "frame_interval_seconds": 5,
+  "analyzed_at": "2026-04-01T19:04:02.591Z",
+  "visual_analysis": [
+    {
+      "startTime": 0,
+      "endTime": 75,
+      "analysis": "Aquí tienes el análisis visual de los 15 frames:\n\n**Segmento 1 (Frames 1)**\n*   **Timestamp aproximado:** 0s\n*   **Formato visual:** Talking head.\n*   **Encuadre:** Medio.\n*   **Textos en pantalla:** \"con la\" (texto blanco).\n*   **Elementos visual"
+    },
+    {
+      "startTime": 75,
+      "endTime": 85,
+      "analysis": "Aquí está el análisis visual de los frames:\n\n**Segmento: 75s a 85s (Frames 1 y 2)**\n\n1.  **Formato visual**: Talking head.\n2.  **Encuadre**: Plano medio.\n3.  **Textos en pantalla**:\n    *   Frame 1: \"taller\"\n    *   Frame 2: \"preguntarle\"\n4.  **Elementos visuales**:\n    *   **Props**: Hombre joven sentado en una cama, vistiendo una gorra gris con el texto \"MIAMI EST. 1986 FLORIDA\", una camiseta verde oliva y shorts oscuros. Sostiene un mate y un termo en sus manos. Un smartphone negro está sobre la cama a su izquierda.\n    *   **Fondos**: Cama con sábanas blancas y una manta gris a rayas. Cabecero claro. A la izquierda, una mesita de noche con una lámpara de estilo industrial (bombilla expuesta) y algunos objetos pequeños. Pared clara.\n    *   **Colores dominantes**: Tonos cálidos y dorados (por la luz), verde oliva, gris, blanco, negro.\n    *   **Overlays/Stickers/Emojis**: No hay, solo el texto superpuesto.\n5.  **Transiciones**: No aplica (son frames individuales de un segmento).\n6.  **Movimiento de cámara**: Estática.\n7.  **Iluminación**: Natural, fuerte y direccional (simulando \"golden hour\" o atardecer) desde la izquierda, creando sombras marcadas y un ambiente dramático y cálido."
+    }
+  ]
+}

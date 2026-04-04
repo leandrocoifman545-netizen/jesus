@@ -1,0 +1,41 @@
+{
+  "username": "sooweigoh",
+  "analyzed_at": "2026-03-31T21:15:07.528Z",
+  "total_analyzed": 0,
+  "opening_patterns": [],
+  "body_patterns": [],
+  "closing_patterns": [],
+  "cta_buildup_patterns": [],
+  "winning_combos": [],
+  "density_performance": [
+    {
+      "bucket": "lento(<2wps)",
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0
+    },
+    {
+      "bucket": "normal(2-3wps)",
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0
+    },
+    {
+      "bucket": "rapido(>3wps)",
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0
+    }
+  ],
+  "caption_patterns": [],
+  "beat_sequences": [],
+  "beat_position_stats": {
+    "Q1_setup": [],
+    "Q2_develop": [],
+    "Q3_escalate": [],
+    "Q4_resolve": []
+  },
+  "top_hooks": [],
+  "top_cta_buildups": [],
+  "all_videos": []
+}

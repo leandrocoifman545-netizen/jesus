@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/lean/Documents/script-generator/.claude/hooks/validate-analysis.sh",
+            "timeout": 90000,
+            "statusMessage": "Validando análisis (estructura + calidad)..."
+          }
+        ]
+      }
+    ]
+  }
+}

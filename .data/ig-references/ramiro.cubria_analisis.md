@@ -413,13 +413,95 @@ Vender con un BSL Funnel es una mierda. Quedate mirando que te explico por qué.
 
 ## 8. FORMATOS VISUALES
 
-**Sin datos de Gemini.** No se corrió el análisis visual con `analyze-video-visual.mjs` (falta GEMINI_API_KEY o se omitió deliberadamente). No es posible categorizar formatos visuales sin inventar data.
+> Actualizado 2026-04-01: frames extraídos manualmente de top 3 CLR + bottom 2. Sin Gemini.
 
-**Observaciones desde las transcripciones:**
-- Menciona "pantalla grabada" en múltiples videos (demos de ChatGPT, ManyChat, Notion)
-- Menciona "cambio de cámara" en al menos 1 video (caso Fia)
-- Los videos de clonación IA son por definición talking head generado
-- Los videos de prompts muestran la pantalla del prompt en el video
+### 8.1 Tres estéticas de producción detectadas
+
+Ramiro NO tiene una sola estética. Tiene 3 niveles de producción que correlacionan con el tipo de video:
+
+**Nivel A — Producción alta (motion graphics + B-roll):**
+- Set: balcón de penthouse con vista al mar (gran angular)
+- Elementos: corona 3D, alas de ángel, teclas mecánicas 3D, calendarios animados
+- Props hook visual: objetos absurdos que detienen el scroll
+- Subtítulos: nativos blancos + texto de producción animado
+- Ejemplo: DNXEA4GMDDT (345% CLR). 3+ tipos de toma por video
+- **Correlación: CLR más alto, views medios**
+
+**Nivel B — Producción media (objetos reales):**
+- Set: cocina de lujo con iluminación LED turquesa
+- Props: bolso Louis Vuitton, libro físico de Hormozi, playbooks en abanico, billetes, reloj
+- Subtítulos: nativos
+- CTA: frame final con CAMBIO DE ESTÉTICA total (fondo amarillo pop, texto rojo gigante "COMENTA X")
+- Ejemplo: DOKgssZDOGR (271% CLR). Props verificables = Axioma 1 visual
+- **Correlación: CLR alto, views altos**
+
+**Nivel C — Producción baja (casual/improvisado):**
+- Set: living con sofá de cuero, fondo oscuro. Parece respuesta genuina, no planeada
+- Props: gorra al revés, overlay de comentario de IG como pretexto
+- Elementos: pizarra/nota overlay con estrategia escrita, screenshots de plataforma real
+- Ejemplo: DOPC9H7Eruf (112% CLR, 426K views). Parece charla con amigo
+- **Correlación: CLR más bajo de los 3, pero VIEWS más altos** (casualidad = alcance)
+
+### 8.2 Patrón visual TOP vs BOTTOM (Lente A)
+
+| Dimensión | TOP 3 CLR | BOTTOM 2 CLR |
+|-----------|-----------|-------------|
+| Cambios visuales por video | 3+ tipos de toma | 1 toma estática |
+| Props | Penthouse, LV, libro, dólares, playbooks | Nada (lentes, remera) |
+| Texto overlay | Subtítulos + texto de producción + B-roll | Solo texto genérico o POV |
+| Set | Penthouse/cocina de lujo/living premium | Cocina normal, cama |
+| CTA visual | Cambio de estética para CTA (colores pop) | Sin CTA visual o genérico |
+| Tema visual | Herramientas, objetos, recursos tangibles | Memes, clips de terceros |
+
+**Hallazgo principal:** Los fracasos de Ramiro parecen videos de OTRA PERSONA. No tienen su set, sus props, su producción. Son genéricos visualmente. Los éxitos tienen inversión visual en cada segundo — siempre hay algo nuevo para mirar.
+
+### 8.3 Descubrimiento: cambio de estética para CTA
+
+En el video LV+Hormozi (271% CLR), el CTA tiene un frame con fondo amarillo + texto rojo "COMENTA HORMOZI" que es un SHOCK visual vs la estética premium del resto del video. Este cambio brusco de estética funciona como SEÑAL de acción: "esto es diferente, hacé algo ahora". Es como un botón pop-up en una landing page elegante.
+
+### 8.4 Producibilidad para ADP (Lente C)
+
+- Nivel A (motion graphics 3D): NO producible con celular. Requiere post-producción/editor. Pero el PRINCIPIO (alternar talking head con B-roll que ilustre) sí es producible con screen recordings, fotos, overlays simples
+- Nivel B (objetos reales): PRODUCIBLE. Jesús puede mostrar su laptop con la IA, screenshots del taller, printouts de resultados de alumnos
+- Nivel C (casual): MUY PRODUCIBLE. Sofá, comentario overlay, pizarra. Ya lo puede hacer Jesús
+- Cambio de estética para CTA: PRODUCIBLE con editor básico (Capcut). Frame final con colores contrastantes + keyword grande
+
+---
+
+## 8b. LENTE A — TOP vs BOTTOM (por qué fracasan los fracasos)
+
+> Agregado 2026-04-01. Frames + transcripciones de top 3 CLR vs bottom 5 CLR.
+
+### Las 3 causas de fracaso de Ramiro
+
+**Causa 1 — Contenido OFF-TOPIC:**
+Los bottom con más views pero peor CLR (0.4-2.7%) son sobre relaciones, cultura pop, memes musicales. Tienen alcance orgánico pero CERO conversión porque no conectan con su expertise ni tienen CTA. Son el equivalente de los orgánicos de Jaime — pero Jaime los diseña deliberadamente como top-of-funnel. Ramiro parece hacerlos por variedad sin estrategia.
+
+**Causa 2 — Vocabulario técnico:**
+Los bottom que SÍ hablan de marketing pero no convierten usan palabras como "setters", "ManyChat", "BCL Funnel", "call to action", "embudo", "trazabilidad". Los auto-patterns confirman: "call" (22x solo en bottom), "micro" (20x), "embudo" (15x), "lanzamiento" (15x). Su audiencia son EMPRENDEDORES, no marketers técnicos. Lo técnico los pierde.
+
+**Causa 3 — Sin inversión visual:**
+Los bottom son 1 toma estática en cocina normal con remera Nike. CERO props, CERO B-roll, CERO cambio de estética. Contrastar con los top que tienen penthouse, motion graphics, bolso LV, playbooks físicos, corona 3D.
+
+### Las 3 reglas de éxito (inversas de las causas)
+
+1. **ON-TOPIC + CTA keyword:** IA, prompts, herramientas, resultados. Siempre con "comentá X"
+2. **Vocabulario simple + entusiasta:** "es una puta locura", "en 5 minutos", "gratis", "pelotudez". No "embudo", "setters", "trazabilidad"
+3. **Inversión visual por segundo:** Props, B-roll, overlays, cambios de estética. Nunca 1 toma estática
+
+### Frases killer confirmadas (datos cruzados con auto-patterns)
+
+| Frase | Solo en BOTTOM | ¿Por qué mata? |
+|-------|---------------|-----------------|
+| "en fin" | 6.5x más en bottom | Señala cierre sin convicción — el creador no cree en lo que dice |
+| "de todos modos" | Solo en bottom | Igual que "en fin" — transición derrotista al CTA |
+| "pero bueno" | Solo en bottom | Descarte emocional — "no importa, acá va el CTA" |
+| "entonces" | Solo en bottom | Conector lógico frío — rompe la emoción |
+| "simplemente" | 2x más en bottom | Minimiza el valor — "solo hacé esto" suena débil |
+
+### Implicación para ADP
+
+Las frases killer de Ramiro coinciden con frases que Jesús podría usar naturalmente. "Pero bueno" y "en fin" son muletillas argentinas comunes. Agregarlas a `patrones-prohibidos-leads.md` como frases a evitar en CIERRE (no en apertura).
 
 ---
 
@@ -612,17 +694,50 @@ LLAMADA DE VENTA
 
 4. **Escasez falsa ("borro en 24h").** Ramiro dice "borro el video en 24 horas" pero no lo borra. Jesús tiene más credibilidad que perder con trucos de este tipo.
 
-### Priorización por impacto
+### Hallazgos nuevos de cross-profile validation (2026-04-01)
 
-| # | Acción | Impacto estimado | Esfuerzo |
-|---|--------|-----------------|----------|
-| 1 | Implementar ManyChat keyword inbound en Reels orgánicos | ALTO — genera pipeline nuevo sin ads | Medio |
-| 2 | Caption como botón (11-20 palabras, solo CTA) | ALTO — duplica CLR en orgánico | Bajo |
-| 3 | Keywords contextuales por video | MEDIO — sube conversión de comments | Bajo |
-| 4 | Credencial repetida como mantra | MEDIO — ancla de autoridad constante | Bajo |
-| 5 | Subir frecuencia orgánico a 1/día | ALTO — más alcance + más pipeline | Alto |
-| 6 | Lead magnets específicos por DM | ALTO — genera pipeline calificado | Medio |
-| 7 | Reels orgánicos más cortos (55-70s) | MEDIO — optimizar para CLR en feed | Bajo |
+| Patrón | Estado | CLR avg | Transferible? |
+|--------|--------|---------|---------------|
+| "Se acaba de filtrar" | EXCLUSIVO Ramiro (4 usos, 272%) | 272% | Sí → "acabo de descubrir" |
+| Inversión como credencial ("pagué $X") | CASI EXCLUSIVO (20/21 Ramiro) | 150% | **MUY transferible** a Jesús |
+| Hormozi como referente | EXCLUSIVO Ramiro (18 usos) | 184% | Parcial — Jesús puede referenciar expertos |
+| Provocación vulgar ("mierda") | CROSS-PROFILE (6/8 perfiles) | 92% | No para Jesús |
+| Caso de éxito externo | CROSS-PROFILE (3/8) | 80% | Sí — Jesús tiene alumnos |
+| Ancla de precio ("dólares") | DIFERENCIADOR Ramiro (89% de usos) | 133% | Con cuidado — adaptar tono |
+
+### Hallazgos de Lente A (visual + narrativo, 2026-04-01)
+
+- **"En fin", "de todos modos", "pero bueno" = frases que MATAN CLR.** Solo en bottom. Agregar a prohibidos
+- **Vocabulario técnico mata engagement.** "Embudo", "setters", "BCL" = bottom. "IA", "clon", "prompts" = top. La audiencia de Ramiro son emprendedores, no marketers
+- **Producción alta = más CLR, producción baja = más views.** El casual genera alcance. El producido genera conversión. ADP puede usar ambos estratégicamente
+- **MÁS credenciales ≠ mejor.** Los top tienen 1.77 revenue claims/video vs 2.53 en bottom. Sobre-credencializar aburre
+
+### Tabla Jaime vs Ramiro (descubrimiento central)
+
+| Dimensión | Jaime | Ramiro | Implicación ADP |
+|-----------|-------|--------|-----------------|
+| Ratio orgánico:venta | 85:15 | 13:87 | ADP puede estar en 50:50 |
+| Tipo de confianza | Emocional | Transaccional | Mezclar ambas |
+| Hook dominante | Pregunta del avatar | Ancla de precio | Usar ambas según Schwartz |
+| Tono | Sereno, reflexivo | Provocador, vulgar | Accesible, cercano |
+| Incompletitud | Retiene INFORMACIÓN | Retiene HERRAMIENTA | Elegir según video |
+| Credencial | Propia (experiencia) | Prestada ($) + gastada ($) | Referenciar expertos |
+| Schwartz target | 1-2 (unaware/problem) | 3-5 (solution/product) | Cubrir ambos con funnel |
+
+### Priorización por impacto (actualizada 2026-04-01)
+
+| # | Acción | Impacto | Esfuerzo | Nuevo? |
+|---|--------|---------|----------|--------|
+| 1 | Implementar ManyChat keyword inbound en Reels orgánicos | ALTO | Medio | No |
+| 2 | Lead magnets nombrables por DM (PDF, prompt, checklist) | ALTO | Medio | No |
+| 3 | "Acabo de descubrir" como hook (adaptación de "se acaba de filtrar") | ALTO | Bajo | **SÍ** |
+| 4 | Inversión como credencial ("invertí $X en esto para vos") | ALTO | Bajo | **SÍ** |
+| 5 | Caption como botón (11-20 palabras, solo CTA) | ALTO | Bajo | No |
+| 6 | Prohibir "en fin", "de todos modos", "pero bueno" en cierres | MEDIO | Bajo | **SÍ** |
+| 7 | Producción diferenciada: casual=alcance, producido=conversión | MEDIO | Medio | **SÍ** |
+| 8 | Reels orgánicos más cortos (55-70s) | MEDIO | Bajo | No |
+| 9 | Cambio de estética visual para frame de CTA | MEDIO | Bajo | **SÍ** |
+| 10 | Evitar vocabulario técnico (embudo, funnel, setters) | MEDIO | Bajo | **SÍ** |
 
 ---
 

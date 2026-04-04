@@ -1,0 +1,82 @@
+{
+  "username": "tino.mossu_patterns",
+  "analyzed_at": "2026-04-01T13:40:02.877Z",
+  "months_analyzed": 12,
+  "global": {
+    "total_posts": 0,
+    "videos": 0,
+    "sidecars": 0,
+    "images": 0,
+    "filtered_out": 0,
+    "months_analyzed": 12,
+    "avg_likes": 0,
+    "avg_comments": 0,
+    "avg_views": 0,
+    "median_likes": 0,
+    "median_comments": 0,
+    "median_views": 0,
+    "clr_global": 0,
+    "lvr_global": 0,
+    "posting_frequency_days": 0
+  },
+  "duration_engagement": {},
+  "cta_analysis": {
+    "with_cta": {
+      "count": 0,
+      "pct": "0%",
+      "avg_clr": 0,
+      "median_clr": 0,
+      "avg_views": 0,
+      "avg_comments": 0
+    },
+    "without_cta": {
+      "count": 0,
+      "pct": "0%",
+      "avg_clr": 0,
+      "median_clr": 0,
+      "avg_views": 0,
+      "avg_comments": 0
+    },
+    "cta_multiplier": "N/A",
+    "keywords": []
+  },
+  "caption_analysis": {
+    "1-10": {
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0,
+      "avg_comments": 0
+    },
+    "11-20": {
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0,
+      "avg_comments": 0
+    },
+    "21-35": {
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0,
+      "avg_comments": 0
+    },
+    "36-60": {
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0,
+      "avg_comments": 0
+    },
+    "60+": {
+      "count": 0,
+      "avg_clr": 0,
+      "avg_views": 0,
+      "avg_comments": 0
+    }
+  },
+  "hooks_count": 0,
+  "transcripts_count": 0,
+  "top_hooks": [],
+  "top_closings": [],
+  "top30_clr": [],
+  "top30_views": [],
+  "all_posts_clr": []
+}

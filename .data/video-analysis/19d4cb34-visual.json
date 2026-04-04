@@ -1,0 +1,21 @@
+{
+  "id": "19d4cb34",
+  "title": "ScreenRecording_03-28-2026 21-53-55_1",
+  "source": "/Users/lean/Downloads/falta analizar/ScreenRecording_03-28-2026 21-53-55_1.MP4",
+  "duration_seconds": 21,
+  "total_frames": 21,
+  "frame_interval_seconds": 1,
+  "analyzed_at": "2026-03-30T15:06:17.861Z",
+  "visual_analysis": [
+    {
+      "startTime": 0,
+      "endTime": 15,
+      "analysis": "Aquí tienes el análisis visual de los frames:\n\n**Segmento 1 (Frames 1-2, ~0s-1s):**\n1.  **Formato visual**: B-roll (mujer en locación escénica) con overlay de pantalla grabada (dashboard de ingresos).\n2.  **Encuadre**: General de la mujer y el paisaje; medio"
+    },
+    {
+      "startTime": 15,
+      "endTime": 21,
+      "analysis": "**Segmento: Frames 1-6 (Timestamps: 15s - 21s)**\n\n1.  **Formato visual**: B-roll (metraje de video de un lugar y una persona, no una interacción directa con la cámara).\n2.  **Encuadre**: Comienza con un plano general del icónico edificio Burj Al Arab en Dubái, con una persona en la base. A medida que avanza el clip, el encuadre se abre lentamente a un plano más general que revela más de la figura de la persona y el entorno del resort de lujo. La cámara está en contrapicado, mirando hacia arriba al edificio.\n3.  **Textos en pantalla**:\n    *   En la parte superior central: \"¿Te gustaría aprender a hacerlo?\" (Texto blanco sobre una barra semitransparente oscura).\n    *   En la parte inferior: \"Quiero ayudarte a tener una vida en libertad como yo lo tengo ahora, reacciona a esta historia si quieres aprender a hacerlo\" (Texto blanco sobre una barra semitransparente oscura).\n    *   Elementos de interfaz de usuario (UI) de Instagram/TikTok en la parte superior: Foto de perfil, nombre de usuario \"¡Mi proceso!\", fecha \"December 16, 2025\". El texto de la música \"Beyoncé - Diva\" aparece en los frames 1-3 y 6. El texto \"See location\" aparece en los frames 4-5. La ubicación \"Dubai, UAE\" también es visible.\n4.  **Elementos visuales**:\n    *   **Fondo**: El hotel Burj Al Arab, de color blanco/gris claro, dominando la parte superior de la imagen, con un cielo azul claro. En la parte inferior, se aprecian elementos de un resort de lujo: piscinas, palmeras y vegetación exuberante.\n    *   **Persona**: Una mujer de espaldas a la cámara, con cabello oscuro y un vestido o falda larga con un patrón oscuro, parada en lo que parece ser un puente o pasarela.\n    *   **Overlays**: Dos cajas de texto superpuestas con fondo negro semitransparente.\n    *   **Stickers/Emojis**: Un emoji de \"ojos de corazón\" (😍) dentro de un círculo blanco, ubicado a la derecha de la caja de texto inferior.\n    *   **Colores dominantes**: Azul (cielo), blanco/gris (edificio), verde (vegetación), tonos tierra y azules"
+    }
+  ]
+}

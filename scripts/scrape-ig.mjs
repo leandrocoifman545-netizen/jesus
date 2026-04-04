@@ -37,12 +37,15 @@ const OUT_DIR = path.join(process.cwd(), ".data", "ig-references");
 // Parse args
 const args = process.argv.slice(2);
 let limit = 0; // 0 = todos los posts
+let sinceLastScrape = false;
 const usernames = [];
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === "--limit" && args[i + 1]) {
     limit = parseInt(args[i + 1], 10);
     i++;
+  } else if (args[i] === "--since-last-scrape") {
+    sinceLastScrape = true;
   } else {
     usernames.push(args[i].replace(/^@/, ""));
   }
@@ -80,7 +83,7 @@ async function scrapeProfile(username) {
   // Poll until finished
   let status = "RUNNING";
   let attempts = 0;
-  while ((status === "RUNNING" || status === "READY") && attempts < 120) {
+  while ((status === "RUNNING" || status === "READY") && attempts < 300) {
     await new Promise((r) => setTimeout(r, 3000));
     const statusRes = await fetch(`${BASE_URL}/actor-runs/${runId}?token=${APIFY_TOKEN}`);
     const statusData = await statusRes.json();
@@ -238,6 +241,25 @@ async function scrapeProfile(username) {
   };
 
   const outFile = path.join(OUT_DIR, `${username}.json`);
+
+  // --since-last-scrape: merge new posts with existing data
+  if (sinceLastScrape && fs.existsSync(outFile)) {
+    const existing = JSON.parse(fs.readFileSync(outFile, "utf8"));
+    const existingPosts = existing._raw_posts || [];
+    const existingCodes = new Set(existingPosts.map(p => p.shortCode));
+
+    const newPosts = posts.filter(p => p.shortCode && !existingCodes.has(p.shortCode));
+    if (newPosts.length === 0) {
+      console.log(`\n  No hay posts nuevos desde el último scrape.`);
+    } else {
+      console.log(`\n  📥 ${newPosts.length} posts nuevos encontrados. Mergeando con ${existingPosts.length} existentes.`);
+      // Merge: new posts first (most recent), then existing
+      output._raw_posts = [...newPosts, ...existingPosts];
+      // Recalculate stats with merged data
+      output.stats.total_posts = output._raw_posts.length;
+    }
+  }
+
   fs.writeFileSync(outFile, JSON.stringify(output, null, 2));
 
   // Print summary

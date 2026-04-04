@@ -23,9 +23,16 @@ El script `scripts/stories-validate.mjs` valida automáticamente el JSON de una 
 
 **Si hay errores → CORREGIR antes de guardar. Warnings → presentar al usuario.**
 
-### 0a. Leer reglas duras
+### 0a. Leer reglas duras + arsenal + axiomas
 Leer `.data/stories-reglas.md` — las 47 reglas no negociables (R1-R30 base + R31-R37 actuadas + R38-R42 explicativas/BTS + R43-R47 StoryMakers).
-Si alguna no se puede cumplir por el brief del usuario, avisar ANTES de generar.
+Leer `.data/arsenal-tecnicas-stories.md` — técnicas robadas de 88+ referencias. Secciones B (stories diarias) y C (CTAs) son obligatorias. Sección A si se diseña una destacada.
+Leer `.data/sistema-stories-completo.md` — **secciones 1 (7 axiomas), 0.5 (5 modelos mentales), 0.6 (jerarquía de confianza)**. Son el filtro de calidad: cada decisión debe justificarse con al menos 1 axioma. Si no puede → repensar.
+Si alguna regla no se puede cumplir por el brief del usuario, avisar ANTES de generar.
+
+### 0a-bis. Switch H37: ¿Es story diaria o destacada?
+**H37 (confirmado):** Las stories diarias tienen reglas OPUESTAS a las destacadas.
+- Si el usuario pide una **destacada**, **highlight**, **"mi historia"**, **embudo evergreen** → **redirigir a skill `/destacada`**. Este skill es solo para stories diarias/temporales.
+- Si es story diaria → continuar con este flujo.
 
 ### 0b. Verificar historial
 Revisar `.data/stories/` → qué se publicó las últimas 2 semanas:
@@ -99,9 +106,72 @@ Revisar `.data/stories/` → extraer los hooks (story 1 de cada secuencia) de la
 
 ---
 
+## Paso 1b: EXTRACCIÓN FORZADA — Sacar ingredientes reales ANTES de crear (OBLIGATORIO)
+
+> **Por qué este paso:** Sin él, se lee toda la data y después se genera desde cero — como tener una biblioteca y escribir de memoria. Este paso OBLIGA a extraer elementos concretos de los archivos que después son OBLIGATORIOS en el output. No se puede pasar al Paso 2 sin completar esta tabla.
+
+**Después de leer los archivos del Paso 1, EXTRAER estos 7 ingredientes concretos:**
+
+| # | Qué extraer | De dónde | Criterio de selección | Cómo se usa en el output |
+|---|-------------|----------|----------------------|--------------------------|
+| **E1** | **3 frases TEXTUALES de compradores reales** | `inteligencia-compradores.md` → sección "Dolores dominantes" (verbatims) + `stories-data-audiencia.md` → sección "Hooks" | Filtrar por avatar elegido: si Patricia → buscar mujeres 35-55 empleadas. Si Roberto → buscar +55 jubilados. Copiar EXACTAS, no parafrasear | Mínimo 1 frase textual aparece LITERAL como texto en pantalla en la secuencia. Las otras 2 informan el tono del copy hablado |
+| **E2** | **2 DMs reales para prueba social** | `stories-data-audiencia.md` → sección "DMs reales" | Filtrar por categoría: si secuencia de confianza → DMs de "confianza en Jesús". Si objeción → DMs de "objeciones superadas". Elegir los más emocionales/específicos | Se usan como screenshots embebidos (formato C3) o como texto citado en story de prueba social |
+| **E3** | **1 anécdota específica de Jesús** | `jesus-historia.md` → las 11 quotes | Matchear con el dolor del avatar: si el dolor es "trabajo mucho" → usar la anécdota de "16 horas por día, ganaba $100-150/mes". Si es "miedo a empezar" → usar "9 meses para conseguir el primer cliente" | Se integra en el copy hablado. Jesús lo cuenta como recuerdo personal, no como dato |
+| **E4** | **2 técnicas visuales concretas** | `reference_estetica_stories_140.md` → sección "Lo más novedoso / robable" + tabla de frecuencia | Matchear con tipo de secuencia: Objeción → P1 (progressive reveal). Personalidad/Origin → P4 (fotos antiguas rounded) + P3 (blur). CTA Directo → P1 + screenshots embebidos. Nicho → P2 (film grain) o P3 (blur). Ver tabla de compatibilidad en `stories-formatos-22.md` | Se asignan a slides específicos en el esqueleto. La columna "Cómo" del script dice la técnica exacta con referencia al creador (ej: "P1 como Nicolas Clay IMG_9432") |
+| **E5** | **1 arco emocional de referencia** | `reference_estetica_stories_140.md` → sección "Arcos emocionales comparados" | Elegir el arco que mejor matchea con el tipo: CTA Directo → "Curiosidad → Prueba apilada → Urgencia" (Clay). Personalidad → "Vulnerabilidad → Proceso → Resultado → Motivación" (Ivory Coast). Lanzamiento → "Problema → Ejemplos → Solución → CTA" (Only Earned) | Se usa como guía para diseñar la montaña rusa emocional del Paso 5a. Cada story se mapea a una emoción del arco |
+| **E6** | **1 winner pattern aplicable** | `winner-patterns.md` → los 5 patrones duros | Verificar cuál aplica al tipo: casi SIEMPRE aplican "tono advisor" (5/5) y "números creíbles" (4/5). Si hay demolición de alternativas → incluir. Si hay caso de estudio → anti-hype obligatorio | Se verifica al final: ¿el output cumple el pattern? Si no → reescribir |
+| **E7** | **1 técnica de creador analizado** | `stories-patrones-reales-3-creadores.md` → 10 técnicas nuevas | Elegir la que más aplique: Bait & Switch (Xavi) para hooks. Poll pre-CTA (NicoFast) para CTAs. Keyword contextual para CTA LM. Visual contrast sin texto para origin stories. Temporalidad como urgencia real para CTA Directo | Se integra en el esqueleto como mecánica específica en 1-2 slides |
+| **E8** | **1 axioma universal aplicado como restricción** | `patrones-universales-stories.md` → solo AXIOMAS (4+ confirmaciones, NO hipótesis) | Elegir el más relevante al tipo de secuencia: P1 (CTA keyword) para cualquier CTA. P4 (momento vulnerable) para personalidad. P9 (viewer pide, creador cede) para CTA directo. P10 (keyword-identidad) para CTA LM | Se usa como RESTRICCIÓN: verificar al final que el output cumple este axioma. Si no → reescribir la parte que lo viola |
+| **E9** | **1 template de Naffe adaptado** | `naffe-guiones-stories-completo.md` → 88 templates por tipo | Matchear por tipo de secuencia: si CTA LM → buscar templates "Recordar_" o "Anunciamos". Si CTA Directo → buscar "Anunciar__VSL". Si personalidad → buscar templates con arco narrativo. Usar como ESQUELETO, no copiar literal | La estructura del template (cantidad de slides, distribución texto/hablado, posición del CTA) guía el diseño del esqueleto en Paso 5. Adaptar contenido a Jesús/ADP |
+
+**Formato de presentación (incluir en la Declaración Obligatoria del Paso 3c):**
+
+```
+## Ingredientes extraídos
+
+**E1 — Frases reales:**
+1. "[frase textual exacta]" — fuente: inteligencia-compradores.md, dolor #X
+2. "[frase textual exacta]" — fuente: stories-data-audiencia.md, hook #X
+3. "[frase textual exacta]" — fuente: [archivo], [sección]
+→ La frase #1 se usa en Story [N] como texto en pantalla
+
+**E2 — DMs reales:**
+1. "[DM textual]" — categoría: [confianza/objeción/gratitud]
+2. "[DM textual]" — categoría: [confianza/objeción/gratitud]
+→ Se usan en Story [N] como C3 (capturas)
+
+**E3 — Anécdota de Jesús:**
+"[quote exacta de jesus-historia.md]" — contexto: [momento de la vida]
+→ Se integra en Story [N], Jesús lo cuenta en video selfie
+
+**E4 — Técnicas visuales:**
+1. [P#] [nombre] — referencia: [creador, IMG si aplica]
+2. [P#] [nombre] — referencia: [creador, IMG si aplica]
+→ P# se usa en Stories [N, N+1, ...]. P# se usa en Story [N]
+
+**E5 — Arco emocional:** [emoción1 → emoción2 → ... → emociónN]
+Referencia: [creador] — adaptado para [tipo de secuencia]
+
+**E6 — Winner pattern:** [nombre del patrón]
+Verificación: [cómo se cumple en esta secuencia]
+
+**E7 — Técnica de creador:** [nombre] (de [creador])
+Se aplica en Story [N]: [cómo]
+```
+
+**Reglas del paso de extracción:**
+1. **PROHIBIDO generar sin completar los 7 ingredientes.** Si un ingrediente no aplica (ej: E3 no aplica para secuencia 100% actuada), marcar "N/A — [razón]"
+2. **Las frases E1 son LITERALES** — no se parafrasean, no se "mejoran", no se adaptan. Se copian tal cual del archivo fuente
+3. **Los DMs E2 son REALES** — no se inventan DMs que "podrían existir". Si no hay DMs relevantes para el tipo → usar DMs de categoría "confianza en Jesús" (siempre aplica)
+4. **La técnica E4 se especifica con referencia** — no "usar progressive reveal" sino "P1 progressive reveal como Nicolas Clay (Pre-Suasion Funnel, slides 7-10: misma foto, agregar badge numerado por slide)"
+5. **E5 es GUÍA, no camisa de fuerza** — el arco se adapta, pero la estructura base viene de una referencia real, no se inventa
+6. **Si la frase E1 no encaja naturalmente en el output → elegir otra frase, no forzarla.** El objetivo es autenticidad, no checkbox
+
+---
+
 ## Paso 2: Definir TIPO DE SECUENCIA
 
-### Los 10 tipos (de `stories-secuencias-tipo.md`)
+### Los 11 tipos (de `stories-secuencias-tipo.md`)
 
 | Tipo | Frecuencia | Stories | CTA | Capa calentamiento |
 |------|-----------|---------|-----|--------------------|
@@ -115,6 +185,28 @@ Revisar `.data/stories/` → extraer los hooks (story 1 de cada secuencia) de la
 | 8. Actuada / Triángulo | 1 cada 2 sem | 7-10 | Inbound (keyword) | Nicho/Producto |
 | 9. Explicativa de Servicio | 1 vez (highlight) | 7-10 | Inbound (LM/clase) | Producto |
 | 10. Behind the Scenes | 1 cada 2 sem | 7-12 | Soft | Nicho/Producto |
+| **11. Origin Story** | **1 vez (highlight)** | **15-25** | **Soft/ninguno** | **Personalidad+Producto** |
+
+### Mapeo: Trigger de compra → Tipo de secuencia (NUEVO — 2026-03-29)
+
+> Los 5 triggers de compra de 562 compradores reales (`inteligencia-compradores.md`) NO se activan al azar. Cada trigger tiene tipos de secuencia donde funciona mejor. Sin este mapeo, todo cae en Trigger #1 (hartazgo) porque es el único con data dura (46%). **Los otros 4 triggers representan el 54% restante de los motivos de compra y hay que trabajarlos deliberadamente.**
+
+| # | Trigger (de 562 compradores) | % | Tipos de secuencia ideales | Cómo se activa | Rotación |
+|---|------------------------------|---|---------------------------|----------------|----------|
+| **TR1** | **"Ya no puedo seguir así" (hartazgo)** | 46% | 5 (Objeción), 8 (Actuada), 4 (CTA Directo) | Mostrar el dolor en escena (Patricia agotada, Roberto contando monedas). La audiencia dice "soy yo". Después mostrar la salida | 2x/mes máx — si se usa más, se vuelve angustioso |
+| **TR2** | **"Jesús me inspiró confianza"** | ~20% | 1 (Personalidad), 6 (Nicho/Vida Soñada), **11 (Origin Story)** | Mostrar a Jesús como persona REAL: con familia, errores, vulnerabilidad. No como guru. La confianza se construye mostrando imperfecciones + resultados | 1-2x/semana — es el trigger de MANTENIMIENTO (siempre activo en segundo plano) |
+| **TR3** | **"La IA es la oportunidad"** | ~15% | 7 (Expertise), 10 (BTS), 2 (CTA LM) | Mostrar IA haciendo algo SORPRENDENTE en tiempo real (screen recording de ChatGPT creando un producto). El "wow" tecnológico activa el deseo | 1x/semana — pero rotar el ÁNGULO de IA (crear producto, escribir copy, diseñar, investigar) |
+| **TR4** | **"El taller de 3 días fue la prueba"** | ~12% | 9 (Explicativa), 2 (CTA LM), 3 (CTA Volumen) | Dar un PEDAZO del taller gratis en stories: "mirá esto que enseño en el taller" + resultado de alguien que lo hizo. La prueba gratuita baja la barrera | 1x/2 semanas — siempre vinculado a un lead magnet |
+| **TR5** | **"Quiero algo propio / libertad"** | ~8% | 6 (Nicho/Vida Soñada), **11 (Origin Story)**, 1 (Personalidad) | NO vender libertad como concepto — MOSTRARLA. Jesús un martes a las 10am en la cama. Jesús viajando con los hijos. La vida IS el argumento | 1x/semana — pero NUNCA como promesa ("vas a ser libre"), siempre como metacomunicación |
+
+**Regla de rotación semanal:**
+En una semana de 4 secuencias, cubrir MÍNIMO 2 triggers distintos. Ejemplo:
+- Lunes: Personalidad (TR2 — confianza)
+- Martes: CTA LM (TR3 — IA como oportunidad)
+- Jueves: Objeción (TR1 — hartazgo)
+- Domingo: CTA Volumen (TR4 — taller como prueba)
+
+**Anti-patrón:** 4 secuencias seguidas todas con TR1 (hartazgo) = audiencia deprimida que no compra. El hartazgo ABRE la puerta pero la confianza (TR2) y la oportunidad (TR3) la CIERRAN.
 
 ### Cómo elegir:
 1. Si el usuario pidió un tipo específico → usar ese
@@ -146,6 +238,7 @@ Revisar `.data/stories/` → extraer los hooks (story 1 de cada secuencia) de la
 | Actuada/Triángulo | T1, T6, T13 |
 | Explicativa de Servicio | T3, T4 (curiosidad insatisfecha) |
 | Behind the Scenes | T4, T11 (orgullo latente) |
+| **Origin Story** | **T1, T6, T13 (arco completo — la historia RECORRE las tensiones)** |
 
 ### 3b. Vocabulario del segmento
 Las palabras EXACTAS del avatar, copiadas de `motor-audiencia.md`. Stories son AÚN MÁS INFORMALES que ads:
@@ -257,6 +350,24 @@ Leer el esqueleto completo. ¿En algún momento suena a "venta"? Si sí → redi
 | Idea del Constructor | [nombre de la idea] — Trigger: [nombre] — [ROTABLE]/one-shot | De las 85+ ideas, filtrado por `Secuencias:` |
 | Arco emocional | [emoción1 → emoción2 → ... → emociónN] | Mínimo 3 cambios |
 | Big idea | [1 frase específica, no genérica] | De qué familia de ángulo viene |
+
+### Tabla 1b: Ingredientes Extraídos (del Paso 1b — OBLIGATORIO)
+
+| # | Ingrediente | Contenido exacto | Fuente (archivo + sección) | Se usa en Story # |
+|---|-------------|-------------------|---------------------------|-------------------|
+| E1 | Frase real #1 | "[textual]" | inteligencia-compradores.md, dolor #X | Story N (texto pantalla) |
+| E1 | Frase real #2 | "[textual]" | stories-data-audiencia.md, hook #X | Story N (tono hablado) |
+| E1 | Frase real #3 | "[textual]" | [archivo], [sección] | Story N (texto/tono) |
+| E2 | DM real #1 | "[textual]" | stories-data-audiencia.md, cat: X | Story N (screenshot C3) |
+| E2 | DM real #2 | "[textual]" | stories-data-audiencia.md, cat: X | Story N (screenshot C3) |
+| E3 | Anécdota Jesús | "[quote]" — contexto: [momento] | jesus-historia.md | Story N (video selfie) |
+| E4 | Técnica visual #1 | P# [nombre] | ref: [creador, IMG] | Stories N, N+1 |
+| E4 | Técnica visual #2 | P# [nombre] | ref: [creador, IMG] | Story N |
+| E5 | Arco emocional | [emo1→emo2→...→emoN] | ref: [creador] | Guía de Paso 5a |
+| E6 | Winner pattern | [nombre] | winner-patterns.md | Verificación final |
+| E7 | Técnica creador | [nombre] de [creador] | patrones-reales-3-creadores.md | Story N: [cómo] |
+
+**Si alguna celda está vacía o dice "genérico" → PARAR y buscar el ingrediente correcto.**
 
 ### Tabla 2: Cadena de Micro-YES Visuales (mínimo 3)
 
@@ -370,19 +481,99 @@ Antes de definir el esqueleto, diseñar el **arco emocional** de la secuencia:
 - ¿Hay al menos 3 cambios de emoción?
 - ¿Hay algún pico emocional (momento de máxima tensión)?
 
-**Ejemplo de arco emocional (secuencia de personalidad):**
-```
-Curiosidad → Nostalgia → Tristeza → Esperanza → Humor → Reflexión → Conexión
-```
+**Arcos emocionales PROBADOS por tipo (de análisis 140 stories estéticas + 472 piezas de 3 creadores):**
+
+| Tipo | Arco emocional | Referencia real |
+|------|---------------|----------------|
+| 1. Personalidad / Origin Story | Curiosidad íntima → Ternura → Identificación → Conflicto → Oscuridad → Inspiración → Calma → Determinación | Ivory Coast origin (14 slides): "don't really know who I am" → fotos infancia → sacrificio → "$30K months" → "you haven't gone all in" |
+| 2. CTA Lead Magnet | Curiosidad → Revelación → Prueba → Acción | Content Project (3 slides): "¿Qué hago?" → roadmap 3 pasos → CTA keyword |
+| 3. CTA Volumen | Intriga → Participación → Recompensa | Xavi Easter Egg: emoji escondido → buscá → premio |
+| 4. CTA Directo | Curiosidad → Culpa leve → Envidia → Prueba apilada → Exclusividad → Convicción → Urgencia → Acción | Nicolas Clay Pre-Suasion (20 slides): reel viral → "did nothing" → caso Richard → caso Nico → sistema → "5 spots only" |
+| 5. Objeción | Identificación → Dolor compartido → Giro inesperado → Mecanismo → Prueba → Esperanza | Analogía: "Sé cómo se siente — pero mirá lo que pasó cuando..." |
+| 6. Nicho / Vida Soñada | Provocación → Separación (99% vs 1%) → Visión → Proceso → Resultado integral → Mandato | MCE (40 slides): "si ganás dinero y te ves mal" → consciencia → timeline → "$2M" |
+| 7. Expertise | Claridad → Comprensión progresiva → Admiración → Acción soft | Content Project: "¿Cómo lo hago?" → pasos visuales → CTA doc |
+| 8. Actuada | Empatía con personaje → Frustración → Descubrimiento → Transformación → Deseo | Turu style: Patricia en la cocina → no sabe qué vender → audio a IA → primer venta |
+| 9. Explicativa | Problema → Enemigos nombrados → Sistema simple → Prueba → CTA | Joaco Coronel: pizarra → 3 enemigos → proceso → DMs → CTA |
+| 10. BTS | Curiosidad ("qué hace realmente") → Proceso visible → "Es más simple de lo que pensé" → Soft CTA | Agus Nievas: screen recording → narración → resultado |
+
+**Estos arcos son puntos de partida — se adaptan al avatar/tensión elegidos. Pero la ESTRUCTURA emocional viene de secuencias reales que funcionaron, no se inventa.**
 
 ### 5b. Definir el esqueleto
 Para cada story, definir:
 - **Número** (1 a N)
 - **Función:** hook / desarrollo / interacción / resolución / CTA / prueba social
-- **Formato visual:** de los 22+3 formatos, respetando reglas de alternación
+- **Formato visual:** de los 28 formatos (V1-V7, F1-F9, C1-C3, A1-A3, E1-E3, P1-P6), respetando reglas de alternación
 - **Tipo de contenido:** texto en pantalla / texto hablado / ambos / solo visual
-- **Emoción:** qué emoción genera esta story
+- **Emoción:** qué emoción genera esta story (del arco E5 extraído en Paso 1b)
 - **Trigger mental** (de los 18): cuál se activa en esta story
+- **Ingrediente inyectado:** cuál de los E1-E7 del Paso 1b se usa en esta story (si aplica)
+
+### 5b-bis. Combinaciones CONCRETAS: Técnica premium (P1-P6) × Tipo de secuencia
+
+> No adivinar cómo combinar — usar estas recetas probadas. Cada una tiene referencia al creador que la usa.
+
+**Tipo 1 (Personalidad / Origin Story) + P4 (foto antigua rounded) + P3 (blur):**
+- Stories 2-5: fotos reales de Jesús en cada etapa (Sarandí, México, primer producto) con bordes redondeados sobre fondo blur
+- Story 6: timeline horizontal 2019→2026 (como MCE, IMG_9527)
+- Story final: foto actual lifestyle (viajando con familia) — contraste con las fotos antiguas
+- Referencia: Ivory Coast origin (IMG_9454-9466), MCE timeline (IMG_9527)
+
+**Tipo 4 (CTA Directo) + P1 (progressive reveal):**
+- Stories 3-6: MISMA foto de Jesús (buena locación, buena luz), cada slide agrega un caso de éxito con badge numerado
+  - Slide 3: solo pregunta "¿Por qué funciona?"
+  - Slide 4: + badge "1" con caso alumno #1
+  - Slide 5: + badge "2" con caso alumno #2
+  - Slide 6: + "Different people. Different niches. Same system." (frase puente)
+- Stories 7-8: revelación del sistema + CTA keyword
+- Referencia: Nicolas Clay Pre-Suasion (IMG_9432-9440)
+
+**Tipo 5 (Objeción) + P1 (progressive reveal) + screenshots embebidos:**
+- Story 1: foto selfie Jesús + "Me dicen mucho esto..."
+- Stories 2-5: MISMA foto, cada slide agrega una objeción DESTRUIDA con badge y screenshot de alumno que la superó
+  - Slide 2: + "No tengo seguidores" → screenshot alumno con 43 seguidores que vendió
+  - Slide 3: + "No sé de tecnología" → screenshot de alumno +60 usando IA
+  - Slide 4: + "No tengo tiempo" → screenshot de mamá que lo hace de noche
+- Story 6: "¿Cuál es TU excusa?" + CTA soft
+- Referencia: Nicolas Clay progressive (IMG_9432-9435) + técnica de disolución invisible del persuasion engine
+
+**Tipo 6 (Nicho / Vida Soñada) + P3 (blur) + P2 (film grain):**
+- Stories 1-3: fotos lifestyle de Jesús (martes en la cama, viajando, con los hijos) con tratamiento film grain o blur
+- Texto en pantalla = frases cortas tipo manifiesto (1 línea por slide, como Selective Exposure)
+- Stories 4-6: casos de alumnos viviendo SU versión de vida soñada
+- Sin CTA directo — solo inspiración + nombre en pantalla
+- Referencia: Only Earned film grain (IMG_9548-9561), Selective Exposure texto manifiesto (IMG_9563-9568)
+
+**Tipo 2 (CTA Lead Magnet) + P6 (roadmap serpentina):**
+- Story 1: selfie + dolor del avatar (frase E1 textual)
+- Story 2: video selfie Jesús respondiendo
+- Story 3: P6 — roadmap serpentina con 3 pasos del proceso (verde/amarillo/rojo)
+- Story 4: screenshot o foto del lead magnet (F9)
+- Story 5: CTA keyword
+- Referencia: Content Project roadmap (IMG_9450)
+
+**Tipo 8 (Actuada) + P4 (fotos antiguas) + screenshots:**
+- Las escenas actuadas siguen las reglas A1
+- Entre escenas: insertar P4 (foto real del avatar que inspira el personaje) o screenshot de DM real como transición
+- Referencia: MCE collage de fotos reales entre escenas conceptuales (IMG_9520, IMG_9531-9532)
+
+**Tipo 9 (Explicativa) + P6 (roadmap) + A2 (pizarra):**
+- Combinar pizarra dibujada a mano (A2) con roadmap serpentina (P6) para los pasos del sistema
+- La pizarra es para los 3 enemigos. La roadmap es para la solución
+- Referencia: Joaco Coronel pizarra + Content Project roadmap
+
+### 5b-ter. 7 técnicas nuevas disponibles (de `stories-patrones-reales-3-creadores.md`)
+
+Técnicas opcionales extraídas de 472 piezas de 3 creadores. No son obligatorias, pero SI el tipo de secuencia matchea → presentar como opción en la declaración del Paso 3c.
+
+| # | Técnica | Cuándo usar | Cómo funciona |
+|---|---------|-------------|---------------|
+| T1 | **Bait and Switch** | Hooks de cualquier tipo | Abrir con frase emocional ambigua ("Hoy lloré") → reveal que es sobre un caso/resultado de alumno |
+| T2 | **Gamificación con Easter Egg** | CTA Volumen, Personalidad | Esconder emoji en 5 stories → "quien lo encuentre me manda captura y le doy acceso antes que a nadie" → genera retrocesos + screenshots + DMs |
+| T3 | **Keyword Contextual Rotativo** | CTA Lead Magnet | Cambiar la keyword según el tema de la secuencia (FITNESS, MAMÁ, PROMPT, PUEDO). Keyword-identidad > keyword-información (P10 axioma) |
+| T4 | **Encuesta como Pre-CTA** | CTA Directo, CTA LM | Encuesta binaria ANTES del CTA real. Quien responde "Sí" ya está en mindset de compra → el CTA convierte más |
+| T5 | **Contraste Visual sin Texto** | Personalidad, Nicho | Foto vieja con fecha → foto actual con fecha. Sin escribir "antes/después" — el cerebro conecta solo. Más potente que decirlo |
+| T6 | **CTA como Regalo** | CTA LM, CTA Directo | "Hoy quiero regalarle algo a alguien" → nunca "mi curso" sino "te tengo algo". Reframing de venta como generosidad |
+| T7 | **Countdown sobre Fondo Rojo** | CTA Directo, Lanzamiento | Fondo rojo puro (#FF0000) + sticker countdown. CERO texto. Urgencia visual máxima |
 
 ### 5c. Alternación visual (la regla del cine)
 
@@ -741,6 +932,35 @@ Revisar TODO el texto generado (en pantalla + hablado) contra estos patrones. **
 - Checks de voz: V1 ✅/❌ | V2 ✅/❌ | V3 ✅/❌ | V4 ✅/❌ | V5 ✅/❌ | V6 ✅/❌
 - Ajustes hechos: [lista o "ninguno"]
 ```
+
+---
+
+## Paso 9b: Validación de INGREDIENTES REALES (NUEVO — 2026-03-29)
+
+> Este paso cierra el loop del Paso 1b (Extracción Forzada). Verifica que los ingredientes extraídos de la data real se USARON en el output. Sin esto, el paso 1b es un checkbox vacío.
+
+### Checklist de ingredientes (recorrer el output y marcar):
+
+| # | Pregunta | ✅/❌ | Si ❌, qué hacer |
+|---|----------|-------|-----------------|
+| E1 | ¿Al menos 1 frase textual de comprador aparece LITERAL en texto en pantalla? | | Buscar en `inteligencia-compradores.md` la frase exacta y ponerla en la story indicada |
+| E1b | ¿Las frases E1 son TEXTUALES (copiadas) o fueron parafraseadas/mejoradas? | | Si se "mejoró" → revertir al original. La frase real es más poderosa que la versión pulida |
+| E2 | ¿Los DMs reales aparecen en al menos 1 story como screenshot (C3) o texto citado? | | Agregar story de prueba social con DMs extraídos |
+| E3 | ¿La anécdota de Jesús se integra naturalmente en el copy hablado? | | Si se siente forzada → mover a otra story o elegir otra anécdota de `jesus-historia.md` |
+| E4 | ¿Las técnicas visuales P# se especifican en la columna "Cómo" con referencia al creador? | | Si dice "foto con texto" en vez de "P1 progressive reveal como Clay" → especificar |
+| E5 | ¿El arco emocional del output sigue la estructura de referencia (con adaptaciones)? | | Comparar emoción por story vs arco de referencia. Si no matchea → reordenar |
+| E6 | ¿El output cumple el winner pattern seleccionado? | | Verificar: si pattern = "tono advisor" → ¿suena a amigo o a vendedor? Si pattern = "números creíbles" → ¿los números son realistas para LATAM? |
+| E7 | ¿La técnica del creador analizado se implementó en al menos 1 story? | | Si se eligió "poll pre-CTA" → ¿hay una encuesta antes del CTA? Si "keyword contextual" → ¿la keyword es específica al tema? |
+
+### Scoring rápido:
+- **7/7 ✅** = secuencia con ADN real. Publicar.
+- **5-6 ✅** = falta data real. Corregir los ❌ antes de presentar.
+- **<5 ✅** = secuencia genérica disfrazada. REHACER el Paso 1b y reescribir.
+
+### Test final de genericidad:
+Leer el output completo y preguntarse: **¿Esta secuencia podría ser de CUALQUIER coach de productos digitales, o es INEQUÍVOCAMENTE de Jesús Tassarolo hablándole a Patricia/Roberto?**
+
+Si la respuesta es "podría ser de cualquiera" → la secuencia es genérica, no importa cuántos ✅ tenga. Volver al Paso 1b y extraer ingredientes más específicos.
 
 ---
 

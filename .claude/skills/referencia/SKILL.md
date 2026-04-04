@@ -18,6 +18,12 @@ node /Users/lean/Documents/script-generator/scripts/transcribe-youtube.mjs "$ARG
 
 Si es texto plano, usarlo directamente.
 
+## Paso 1b: Leer metodología de análisis profundo
+
+**OBLIGATORIO:** Leer `.data/metodologia-analisis-profundo.md` ANTES de analizar.
+Contiene: 7 axiomas + 8 pasadas de profundidad + 5 lentes + 7 dimensiones + transferencia sistemática + predicción + autocrítica de 24 preguntas.
+Aplicar la metodología COMPLETA a cada referencia. No hacer análisis superficial.
+
 ## Paso 2: Leer reglas de ADP
 
 Leé las reglas para saber contra qué filtrar:

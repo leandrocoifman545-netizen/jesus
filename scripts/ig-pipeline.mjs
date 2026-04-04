@@ -35,6 +35,9 @@ let skipTranscribe = false;
 let topPerformers = false;
 let months = 12;
 let lang = null; // null = auto-detect, "es"/"en" = force
+let onlyIds = null; // comma-separated shortCodes
+let onlyIdsFile = null; // path to map JSON
+let sinceLastScrape = false;
 
 const passthrough = []; // args to pass to sub-scripts
 
@@ -48,6 +51,14 @@ for (let i = 0; i < args.length; i++) {
     skipTranscribe = true;
   } else if (args[i] === "--top-performers") {
     topPerformers = true;
+  } else if (args[i] === "--since-last-scrape") {
+    sinceLastScrape = true;
+  } else if (args[i] === "--only-ids" && args[i + 1]) {
+    onlyIds = args[i + 1];
+    i++;
+  } else if (args[i] === "--only-ids-file" && args[i + 1]) {
+    onlyIdsFile = args[i + 1];
+    i++;
   } else if (args[i] === "--months" && args[i + 1]) {
     months = parseInt(args[i + 1], 10);
     i++;
@@ -115,11 +126,16 @@ console.log(`   Skip download: ${skipDownload} | Skip transcribe: ${skipTranscri
 const scrapeFile = `${username}.json`;
 const scrapeAge = fileAge(scrapeFile);
 
-if (scrapeAge < 24) {
+if (!sinceLastScrape && scrapeAge < 24) {
   console.log(`\n⏭️  Scrape reciente (${Math.round(scrapeAge)}h ago). Saltando.\n`);
 } else {
   const scrapeArgs = [`@${username}`];
   if (limit > 0) scrapeArgs.push("--limit", String(limit));
+  // For since-last-scrape: limit to ~50 recent posts to minimize Apify usage, then merge
+  if (sinceLastScrape) {
+    scrapeArgs.push("--since-last-scrape");
+    if (limit === 0) scrapeArgs.push("--limit", "50");
+  }
 
   runScript("scrape-ig.mjs", scrapeArgs, {
     label: "1/4 — SCRAPE (Apify)",
@@ -138,7 +154,9 @@ if (skipDownload) {
   console.log(`\n⏭️  Download saltado (--skip-download)\n`);
 } else {
   const dlArgs = [`@${username}`];
-  if (topPerformers) dlArgs.push("--top-performers");
+  if (onlyIds) dlArgs.push("--only-ids", onlyIds);
+  else if (onlyIdsFile) dlArgs.push("--only-ids-file", onlyIdsFile);
+  else if (topPerformers) dlArgs.push("--top-performers");
   if (skipTranscribe) dlArgs.push("--skip-transcribe");
   if (lang) dlArgs.push("--lang", lang);
 

@@ -1,7 +1,7 @@
-# Pattern Library — 517 videos de 6 perfiles
+# Pattern Library — 577 videos de 8 perfiles
 
-> Generado: 2026-03-25
-> Perfiles: @faridieck, @herasmedia, @hormozi, @niksetting, @ramiro.cubria, @tino.mossu
+> Generado: 2026-03-31
+> Perfiles: @jaimehigueraes, @faridieck, @herasmedia, @hormozi, @niksetting, @ramiro.cubria, @sooweigoh, @tino.mossu
 
 ---
 
@@ -11,21 +11,23 @@ Qué tipo de hook genera más CLR y más views.
 
 | Patrón | Usos | Avg CLR | Weighted CLR | Median CLR | Avg Views | Perfiles |
 |--------|-----:|--------:|-------------:|-----------:|----------:|---------|
-| **exclusividad** | 15 | 186.62% | 194.74% | 177.04% | 48,506 | herasmedia, ramiro.cubria |
-| **imperativo** | 11 | 99.48% | 172.24% | 82.26% | 93,436 | herasmedia, ramiro.cubria |
-| **promesa_directa** | 7 | 127.42% | 129.78% | 108.78% | 121,176 | herasmedia, ramiro.cubria, tino.mossu |
-| **provocacion** | 90 | 86.27% | 89.77% | 68.41% | 328,465 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **pregunta** | 120 | 66.28% | 57.53% | 53.52% | 137,023 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **dato_numero** | 178 | 79.47% | 56.66% | 66.82% | 81,245 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **credencial** | 36 | 64.12% | 40.79% | 46.06% | 71,638 | herasmedia, hormozi, ramiro.cubria |
-| **historia** | 28 | 57.33% | 40.14% | 41.25% | 123,828 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **neutro** | 136 | 49.27% | 39.81% | 20.95% | 297,636 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **negacion_en_serie** | 7 | 51.78% | 36.65% | 70.55% | 145,405 | herasmedia, hormozi, ramiro.cubria |
-| **lista_framework** | 20 | 51.81% | 31.55% | 47.57% | 75,510 | herasmedia, hormozi |
-| **hipotetico** | 23 | 49.84% | 29.45% | 49.8% | 89,031 | herasmedia, hormozi, ramiro.cubria |
-| **acumulacion** | 62 | 51.22% | 23.7% | 42.43% | 207,682 | faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **oportunidad_tendencia** | 4 | 69.15% | 22.5% | 87.75% | 87,937 | herasmedia, hormozi |
-| **identidad** | 9 | 36.43% | 19.74% | 37.88% | 168,402 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **exclusividad** | 15 | 186.62% | 194.54% | 177.04% | 48,506 | herasmedia, ramiro.cubria |
+| **imperativo** | 11 | 99.48% | 171.85% | 82.26% | 93,436 | herasmedia, ramiro.cubria |
+| **promesa_directa** | 7 | 127.42% | 131.1% | 108.78% | 121,176 | herasmedia, ramiro.cubria, tino.mossu |
+| **incredulidad** | 3 | 155.48% | 130.45% | 91.22% | 47,256 | jaimehigueraes, ramiro.cubria |
+| **segunda_persona** | 3 | 116.63% | 108.93% | 55.19% | 84,899 | jaimehigueraes, ramiro.cubria |
+| **provocacion** | 103 | 76.17% | 73.91% | 59.95% | 310,288 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **dato_numero** | 180 | 79.59% | 57.23% | 66.82% | 84,538 | jaimehigueraes, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **pregunta** | 126 | 64.43% | 56.14% | 53.16% | 144,589 | jaimehigueraes, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **credencial** | 37 | 63.79% | 41.29% | 48.66% | 72,590 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria |
+| **historia** | 30 | 53.62% | 37.07% | 38.15% | 134,493 | jaimehigueraes, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **neutro** | 162 | 41.8% | 32.62% | 9.59% | 312,990 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **lista_framework** | 21 | 49.45% | 27.94% | 45.25% | 77,996 | jaimehigueraes, herasmedia, hormozi |
+| **negacion_en_serie** | 10 | 42.66% | 24.33% | 51.07% | 150,699 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria |
+| **hipotetico** | 29 | 39.69% | 23.33% | 37.88% | 119,017 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria |
+| **oportunidad_tendencia** | 4 | 69.15% | 22.35% | 87.75% | 87,937 | herasmedia, hormozi |
+| **acumulacion** | 67 | 47.48% | 21.72% | 35.59% | 213,335 | jaimehigueraes, faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **identidad** | 12 | 27.52% | 12.64% | 4.63% | 172,946 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria, tino.mossu |
 | **storytelling_personal** | 5 | 1.93% | 2% | 1.75% | 145,069 | hormozi |
 
 ### Top 30 hooks reales (por CLR)
@@ -118,37 +120,37 @@ Qué tipo de hook genera más CLR y más views.
    > Hace solo 5 días tenía 10.000 seguidores. Y esta mañana se despertó con 150.000 seguidores y en este video te voy a explicar las 3 cosas que hicimos para crecer su cuenta.
    Patrones: dato_numero, lista_framework, promesa_directa | 8.4s
 
-23. **@herasmedia** (CLR 156.98%, 137,921 views)
+23. **@jaimehigueraes** (CLR 157.9%, 113,009 views)
+   > ¿Soy sin dinero? ¿Qué negocio debería empezar? Esta es una pregunta que me hace muy a menudo gente que está con poco dinero o que está sin dinero y quiere empezar a generar 5.000, incluso más de 10.000 euros al mes en el mundo online.
+   Patrones: pregunta, dato_numero | 10.26s
+
+24. **@herasmedia** (CLR 156.98%, 137,921 views)
    > Repostear tus Reels en historias. Baja las visitas. Hacer contenido de valor. Baja las visitas. Generar comentarios en el video. Sube las visitas.
    Patrones: historia, acumulacion | 8.42s
 
-24. **@herasmedia** (CLR 136.86%, 25,785 views)
+25. **@herasmedia** (CLR 136.86%, 25,785 views)
    > No sé qué coño publicar, ¿me ayudas? Ok, ¿cuánto tiempo tienes para hacer contenido? No sé, no mucho. Ok, entonces vas a publicar tres veces por semana.
    Patrones: pregunta | 7.96s
 
-25. **@herasmedia** (CLR 128.63%, 22,874 views)
+26. **@herasmedia** (CLR 128.63%, 22,874 views)
    > Yo tampoco sabía que era el RI de Instagram y cuando lo descubrí, mis vídeos pasaron de esto a esto sin hacer absolutamente nada. Y si tú sabes usarlo, no hace falta que tengas una buena cámara, ni siquiera que sepas editar.
    Patrones: neutro | 10.96s
 
-26. **@herasmedia** (CLR 121.55%, 17,116 views)
+27. **@herasmedia** (CLR 121.55%, 17,116 views)
    > 2020, 2021, 2022, 2023, 2024, 5 años han pasado y sigues sin crecer en Instagram. Pero hay una solución que nunca antes habías pensado.
    Patrones: dato_numero, provocacion | 10.34s
 
-27. **@herasmedia** (CLR 121.05%, 46,782 views)
+28. **@herasmedia** (CLR 121.05%, 46,782 views)
    > Para crecer en Instagram me importa una mierda lo que dices siempre y cuando consigas lo que acabo de hacer contigo en este vídeo que me ha generado 30 millones de visualizaciones este último mes. He hecho viral a miles de personas en Instagram y esto es lo único que importa para crecer en esta plataforma.
    Patrones: dato_numero, imperativo, provocacion | 13.26s
 
-28. **@herasmedia** (CLR 116.71%, 29,073 views)
+29. **@herasmedia** (CLR 116.71%, 29,073 views)
    > Esta fue la plantilla de guiones exacta que utilicé para hacer este contenido viral para este cliente. Y por ejemplo, esta que está aquí abajo es la que usé para hacer este vídeo viral con más de 2 millones de views en el sector del Real Estate.
    Patrones: dato_numero | 13.54s
 
-29. **@herasmedia** (CLR 112.03%, 119,551 views)
+30. **@herasmedia** (CLR 112.03%, 119,551 views)
    > La mejor hora para publicar en Instagram está muy cerca de la peor hora para publicar en Instagram. Y cuidado porque como te equivoques un poco, tus vídeos no van a funcionar.
    Patrones: neutro | 8.16s
-
-30. **@herasmedia** (CLR 110.15%, 33,609 views)
-   > Este es un gancho interrupción de patrón ¿Esta casa es rentada o es tuya? Este es un gancho pregunta polémica Millonario, y por supuesto, no tengo un Ferrari para impresionar a otro
-   Patrones: pregunta | 11.02s
 
 ---
 
@@ -158,19 +160,19 @@ Qué estructura narrativa correlaciona con engagement.
 
 | Patrón | Usos | Avg CLR | Median CLR | Avg Views | Perfiles |
 |--------|-----:|--------:|-----------:|----------:|---------|
-| **autoridad** | 144 | 83.42% | 68.01% | 78,733 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **caso_real** | 24 | 91.97% | 68.78% | 122,676 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **matematica** | 130 | 83.56% | 67.14% | 81,607 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **demo_proceso** | 244 | 72.84% | 56.03% | 117,844 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **agitacion_leve** | 92 | 69.77% | 58.3% | 209,643 | faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **narrativa_general** | 95 | 61.09% | 9.17% | 447,458 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **agitacion_fuerte** | 65 | 64.02% | 57.74% | 169,195 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **comparacion** | 31 | 54.98% | 48.12% | 197,354 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria |
-| **tension** | 39 | 58.54% | 49.74% | 141,200 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **future_pacing** | 63 | 63.45% | 49.01% | 119,346 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **autoridad** | 147 | 83.41% | 67.45% | 79,469 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **caso_real** | 25 | 88.41% | 67.84% | 131,393 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **matematica** | 135 | 81.36% | 63.07% | 88,526 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **agitacion_fuerte** | 68 | 62.02% | 55.79% | 173,993 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **demo_proceso** | 264 | 67.67% | 50.78% | 129,241 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **agitacion_leve** | 101 | 63.67% | 51.26% | 208,034 | jaimehigueraes, faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **narrativa_general** | 121 | 48.26% | 1.95% | 431,666 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **tension** | 43 | 53.94% | 37.29% | 145,629 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
 | **demolicion_objecion** | 34 | 47.27% | 25.4% | 136,569 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **analogia** | 68 | 51.4% | 51.33% | 89,873 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **qa_rapido** | 106 | 39.24% | 27.83% | 133,728 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **comparacion** | 38 | 46.63% | 38.44% | 197,619 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria |
+| **future_pacing** | 73 | 55.26% | 41.84% | 138,887 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **analogia** | 74 | 47.38% | 40.78% | 101,643 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **qa_rapido** | 109 | 38.18% | 27.03% | 135,713 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
 
 ---
 
@@ -181,16 +183,16 @@ Cómo llegan al CTA y qué buildup funciona mejor.
 | Patrón | Usos | Avg CLR | Median CLR | Avg Views | Perfiles |
 |--------|-----:|--------:|-----------:|----------:|---------|
 | **dm** | 169 | 127.29% | 115.51% | 81,995 | herasmedia, hormozi, niksetting, ramiro.cubria |
-| **cta_doble** | 270 | 101.42% | 80.05% | 57,359 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **cta_video** | 276 | 100.52% | 80.05% | 57,961 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **desafio** | 4 | 106.14% | 125.48% | 93,723 | hormozi, ramiro.cubria |
-| **link_bio** | 21 | 75.41% | 55.87% | 953,276 | faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **open_loop** | 9 | 97.5% | 104.06% | 52,033 | herasmedia, ramiro.cubria, tino.mossu |
-| **future_pacing** | 51 | 83.91% | 58.53% | 220,866 | faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **cta_caption** | 373 | 88.64% | 66.83% | 78,699 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **cierre_resumen** | 86 | 81.26% | 52.29% | 87,006 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **corte_seco** | 11 | 3.66% | 1.49% | 296,687 | faridieck, hormozi, niksetting, ramiro.cubria |
-| **sin_cta** | 89 | 9.69% | 1.12% | 466,109 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **cta_doble** | 272 | 100.98% | 78.74% | 57,749 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **cta_video** | 280 | 99.46% | 77.16% | 61,283 | jaimehigueraes, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **desafio** | 5 | 85.21% | 97.49% | 107,961 | jaimehigueraes, hormozi, ramiro.cubria |
+| **link_bio** | 22 | 71.99% | 52.44% | 921,560 | jaimehigueraes, faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **cta_caption** | 377 | 88.5% | 66.8% | 79,061 | jaimehigueraes, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **open_loop** | 10 | 87.9% | 78.93% | 63,321 | jaimehigueraes, herasmedia, ramiro.cubria, tino.mossu |
+| **future_pacing** | 58 | 73.94% | 41.54% | 216,614 | jaimehigueraes, faridieck, herasmedia, hormozi, ramiro.cubria, tino.mossu |
+| **cierre_resumen** | 101 | 69.73% | 32.86% | 105,261 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **corte_seco** | 14 | 3.13% | 1.35% | 552,610 | jaimehigueraes, faridieck, hormozi, niksetting, ramiro.cubria |
+| **sin_cta** | 119 | 7.62% | 1.21% | 419,170 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
 
 ### Top 15 buildups al CTA (por CLR)
 
@@ -265,18 +267,19 @@ Qué tipo de descripción correlaciona con mejor engagement.
 |--------|-----:|--------:|----------:|---------|
 | **dm_cta** | 163 | 118.26% | 99,094 | herasmedia, hormozi, niksetting, ramiro.cubria |
 | **cta_keyword** | 241 | 106.73% | 73,997 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **media** | 322 | 82.02% | 230,804 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **sin_hashtags** | 356 | 73.78% | 239,214 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **segundo_hook** | 5 | 72.18% | 231,059 | herasmedia |
-| **resumen** | 17 | 63.05% | 50,102 | herasmedia, ramiro.cubria |
-| **urgencia** | 22 | 61.79% | 35,001 | herasmedia |
-| **corta** | 98 | 58.91% | 138,554 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **cta_generico** | 146 | 53.82% | 102,543 | herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
-| **hashtag_light** | 158 | 52.91% | 129,445 | faridieck, herasmedia, hormozi, tino.mossu |
-| **pregunta** | 9 | 35.5% | 32,778 | herasmedia, ramiro.cubria |
-| **larga** | 84 | 27.45% | 126,726 | faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **media** | 350 | 75.94% | 231,469 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **resumen** | 18 | 68.32% | 53,597 | jaimehigueraes, herasmedia, ramiro.cubria |
+| **sin_hashtags** | 413 | 64.51% | 238,460 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **segundo_hook** | 6 | 60.41% | 234,216 | jaimehigueraes, herasmedia |
+| **cta_generico** | 150 | 54.4% | 102,818 | jaimehigueraes, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **hashtag_light** | 161 | 52.09% | 158,671 | jaimehigueraes, faridieck, herasmedia, hormozi, tino.mossu |
+| **corta** | 116 | 50.02% | 162,200 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
+| **pregunta** | 10 | 47.74% | 40,801 | jaimehigueraes, herasmedia, ramiro.cubria |
+| **urgencia** | 31 | 44.27% | 79,801 | jaimehigueraes, herasmedia |
+| **larga** | 88 | 26.62% | 174,015 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting, ramiro.cubria, tino.mossu |
 | **promesa_gratis** | 31 | 17.59% | 133,667 | herasmedia, hormozi, ramiro.cubria, tino.mossu |
-| **muy_larga** | 12 | 11.48% | 619,271 | faridieck, herasmedia, hormozi, niksetting |
+| **muy_larga** | 22 | 14.02% | 420,367 | jaimehigueraes, faridieck, herasmedia, hormozi, niksetting |
+| **prueba_social** | 13 | 8.95% | 173,433 | jaimehigueraes, herasmedia |
 
 ---
 
@@ -291,13 +294,15 @@ Cómo se estructura el cuerpo del video en 4 cuartos temporales.
 | narrativa_general→narrativa_general→autoridad→narrativa_general | 7 | 108.52% | 54,224 |
 | demo_proceso→narrativa_general→narrativa_general→narrativa_general | 13 | 94.55% | 73,762 |
 | autoridad→narrativa_general→narrativa_general→narrativa_general | 6 | 81.91% | 22,591 |
-| narrativa_general→narrativa_general→narrativa_general→narrativa_general | 73 | 77.41% | 176,480 |
 | narrativa_general→demo_proceso→demo_proceso→demo_proceso | 3 | 72.42% | 28,305 |
+| narrativa_general→narrativa_general→narrativa_general→narrativa_general | 85 | 66.72% | 183,384 |
 | agitacion_leve→narrativa_general→demo_proceso→narrativa_general | 4 | 61.83% | 183,178 |
 | autoridad→demo_proceso→narrativa_general→narrativa_general | 3 | 57.67% | 24,125 |
-| narrativa_general→narrativa_general→narrativa_general→demo_proceso | 7 | 53.67% | 61,803 |
-| narrativa_general→demo_proceso→narrativa_general→narrativa_general | 10 | 52.81% | 125,653 |
+| narrativa_general→narrativa_general→narrativa_general→demo_proceso | 9 | 41.97% | 109,334 |
+| narrativa_general→demo_proceso→narrativa_general→narrativa_general | 13 | 41.16% | 148,627 |
 | agitacion_leve→narrativa_general→narrativa_general→narrativa_general | 5 | 21.37% | 106,964 |
+| narrativa_general→demo_proceso→narrativa_general→future_pacing | 3 | 1.31% | 113,392 |
+| narrativa_general→agitacion_leve→narrativa_general→narrativa_general | 3 | 0.71% | 205,834 |
 ---
 
 ## Cómo usar esta library

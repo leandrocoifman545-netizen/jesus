@@ -9,7 +9,7 @@
 - Cerró empresa anterior 5 ene 2026, lanzó ADP, metió $10K para probar y vendió a la primera
 - Error de $15,000 en prensa: tele/radio/revistas = 1 solo cliente. "A la mierda la televisión"
 - Perdió $150K en publicidad que no funcionó ("se fue una casa")
-- Golpes: muerte del padre, divorcio, 100 clientes que lo destruyeron, Stripe le rechazó 2000 pagos
+- Golpes: separación de los padres, divorcio, 100 clientes que lo destruyeron, Stripe le rechazó 2000 pagos
 
 ## Voz y Estilo de Comunicación (actualizado con transcripciones reales)
 - **Muletillas y conectores:** → Ver muletillas completas en `jesus-tono-adp-nuevo.md` (basado en 51 guiones analizados)

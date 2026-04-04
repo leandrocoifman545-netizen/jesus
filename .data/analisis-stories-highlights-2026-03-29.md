@@ -347,61 +347,11 @@ El barbudo usa "MIGUEL", "FACU", "DIRECTOR" como keywords. NO usa keywords gené
 
 ---
 
-## 10. SECUENCIAS COMPLETAS STORY-BY-STORY (vistas frame por frame)
-
-### 10a. Bastian Xu "Mi Historia" — 13 stories
-
-| # | Función | Visual | Texto clave | Técnica de persuasión |
-|---|---------|--------|------------|----------------------|
-| 1 | Hook contraste temporal | Foto bebé 1 año | "Este es Bastian de 1 año. Va a generar cientos de miles de USD" | Promesa futura desde la inocencia |
-| 2 | Orígenes: dolor | Foto B&N laptop sillón | "MIS INICIOS: familia donde el dinero nunca sobraba, nos mudábamos, ira y frustración" | Lista con emojis, fondo oscuro |
-| 3 | Bifurcación | Foto universidad saco | "A los 20 termino Negocios Internacionales. Solo 2 opciones: 1. CV a 500 empresas 😅 2. Emprender 😬" | Humor + decisión |
-| 4 | Primer intento | Foto filmando eventos | "Empecé grabando fiestas infantiles. PERO..." | Cliffhanger |
-| 5 | Problema | Selfie barbijo enojado | "NADIE ME QUERÍA CONTRATAR" | Frustración en la CARA |
-| 6 | Lo que no funcionó | Selfie ascensor mochila | "❌ Gastar en anuncios ❌ Mensajes a desconocidos ❌ Dar descuentos. Nada funcionaba." | Lista de ❌ = demolición alternativas |
-| 7 | **PUNTO DE QUIEBRE** | Selfie con cámara pro | "¿Por qué vendo creación de contenido si YO no creo contenido?" | Pregunta retórica = insight |
-| 8 | La acción | Setup cuarto oscuro | "90 videos en 90 días seguidos. No tenía ni idea de lo que se venía 💀" | Reto personal |
-| 9-10 | Resultados | Laptop en montaña + screenshots | "Empiezo a ganar en orgánico: Miles de Seguidores + Videos Virales + Clientes Caros + PayPal" | Triple prueba visual |
-| 11 | Escala | Collage 3 fotos grupales | "Más de 400 Dueños de Negocio en todo el mundo" | Prueba por VOLUMEN de fotos |
-| 12 | Recompensas | Collage: billetes + Eiffel + casa + Rolex | "+$600K USD, viajé por el mundo, mudé a mi mamá a la casa de sus sueños" | Tangibilizar: la mamá > el Rolex |
-| 13 | Misión (NO venta) | Foto arquitectura, lentes sol | "MI MISIÓN: Ayudarte a escalar tu negocio a través de tu marca personal 🏆" | Cierre con propósito |
-
-**Música:** evoluciona de melancólica (diedlonely, Jay Karin) a triunfal. Acompaña el arco emocional.
-**Estructura Hauge:** Setup(1-2) → Crisis(3-6) → Búsqueda(7) → Conflicto/Acción(8) → Clímax(9-10) → Aftermath(11-13)
-
-### 10b. Creadora Closer "Mi Historia" — ~15 stories
-
-| # | Función | Visual | Texto/Copy | Técnica |
-|---|---------|--------|-----------|---------|
-| 1 | Hook | Selfie terraza casual | "hello 🖤 hoy os voy a contar mi historia (cómo una chica normal consiguió la libertad)" | "Chica normal" = identificación |
-| 2 | Orígenes | Collage 4 fotos infancia | "Nací en Valencia, familia humilde, desde pequeñita siempre sentí que quería más" | Fotos REALES de bebé y niña |
-| 3-4 | Primer destello | Talking head auriculares | "A los 16 empecé a generar mis primeros ingresos con YouTube" + "100€ a la cuenta" | 16 años, número específico |
-| 5-7 | **PUNTO DE QUIEBRE** | Talking head con diálogo | "Hago la llamada. Sin estructura, sin guión. La chica me dice: 'el de 7500'. ¿En serio?" | **REPRODUCCIÓN DE DIÁLOGO** — la técnica más poderosa |
-| 8 | Prueba tangible | Selfie + foto con billetes | "Mi primera comisión de 700€ en 1h. Esta soy yo yendo a sacar el dinero porque no me lo creía :)" | Incredulidad genuina + dinero físico |
-| 9 | Quiebre de paradigma | Foto en universidad | "El segundo año me di cuenta de que me estaban entrenando para ser empleada" | T1 activada: desgaste silencioso |
-| 10-11 | Resultado + lifestyle | Atardecer playa + gym púrpura | "Llegué a ganar 10K€+/mes. Viajo, soy libre, amo mi vida" | Lifestyle ALCANZABLE (no jets) |
-| 12 | Cierre: misión | Foto cama + laptop | "Este año voy a crear mi propia academia. Ayudar a más mujeres a encontrar su libertad 🤍" | Misión (no CTA). Mismo patrón que Bastian |
-
-**Música:** Dj Vini - Aluna (Afro House) en las últimas stories. Tono cálido, no épico.
-**Relevancia ADP:** avatar Patricia materializado. Mujer, humilde, sin experiencia, primera venta emocionante, ahora ayuda a otros.
-
-### 10c. Marcos Razzetti "Nuevo Aquí?" — ~10 stories (funnel de onboarding)
-
-| # | Función | Visual | Texto/Copy | Técnica |
-|---|---------|--------|-----------|---------|
-| 1 | Puerta de entrada | Talking head, saco gris | "Si sos NUEVO o no sabés exactamente cómo te puedo AYUDAR → mira las siguientes historias →" | Le dice al nuevo EXACTAMENTE qué hacer |
-| 2-3 | Bombardeo de autoridad | Talking head | (transcripción): "303 coaches, 52 nichos, 35 países, $313M, 10M, 500K/mes, 5M invertidos..." | 10+ números verificables en cascada |
-| 4-5 | Autoridad tangible | PAPEL MANUSCRITO con marcador rojo/azul | "¿A QUIÉN AYUDAMOS? Coaches e infoproductores" + números escritos A MANO en papel | Papel > diseño digital para confianza |
-| 6-7 | Diferenciación | Talking head | "No somos agencia, no somos consultoría, no somos curso — somos un HÍBRIDO... Ecosistema Híbrido" | Exclusión + concepto nombrado |
-| 8-9 | Transparencia radical | Laptop mostrando DOCUMENTO REAL scrolleando | "DFY FAST TRACK (*Aceleración NO Agencia) — qué te damos y hacemos POR VOS" + checklist de 8 entregables | Muestra el doc ORIGINAL, no resumen |
-| 10 | CTA | Talking head, dibujando curva en papel | "¿CUÁL ES NUESTRO 'MÉTODO'? Respondé 'INFO' y te envío toda la información" | CTA "INFO" en naranja |
-
-**Estructura funnel:** TOFU(1) → MOFU(2-7) → BOFU(8-9) → Conversión(10)
-**Props:** papel manuscrito + laptop con documento real = transparencia que gráficos de Canva no logran.
+> **Nota:** Las secuencias story-by-story de Bastian, Paula (Closer) y Marcos fueron removidas por calidad insuficiente (análisis superficial sin metodología completa). Para análisis profundos de destacadas "Mi Historia", ver: `analisis-adria-sola-mi-historia.md` y `analisis-augus-nievas-historia-vida.md`.
 
 ---
 
-## 11. ANÁLISIS DE PERFILES COMO SISTEMAS DE CONVERSIÓN
+## 10. ANÁLISIS DE PERFILES COMO SISTEMAS DE CONVERSIÓN
 
 | Elemento | bastian.xu | araaprudente | marcosrazzetti | beaacamposr |
 |----------|-----------|-------------|---------------|-------------|

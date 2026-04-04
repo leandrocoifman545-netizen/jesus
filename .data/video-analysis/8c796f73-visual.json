@@ -1,0 +1,31 @@
+{
+  "id": "8c796f73",
+  "title": "ScreenRecording_04-01-2026 01-01-18_1",
+  "source": "/Users/lean/Downloads/ScreenRecording_04-01-2026 01-01-18_1.MP4",
+  "duration_seconds": 52,
+  "total_frames": 52,
+  "frame_interval_seconds": 1,
+  "analyzed_at": "2026-04-04T15:32:57.087Z",
+  "visual_analysis": [
+    {
+      "startTime": 0,
+      "endTime": 15,
+      "analysis": "Aquí tienes el análisis visual de los frames:\n\n**Segmento 1: Frame 1 (0s)**\n1.  **Formato visual**: Captura de pantalla de un perfil de Instagram.\n2.  **Encuadre**: General (muestra la pantalla completa del perfil).\n3.  **Textos en pantalla**: \"annstrategycoach\", \"Ann Sahak"
+    },
+    {
+      "startTime": 15,
+      "endTime": 30,
+      "analysis": "Aquí tienes el análisis visual de los frames:\n\n**Segmento 1: Frame 1 (Timestamp ~15s)**\n1.  **Formato visual**: Texto sobre fondo de B-roll de ciudad. Interfaz de Instagram Stories superpuesta.\n2.  **Encuadre**: General de la calle y edificios altos.\n3.  **Textos en pantalla**:"
+    },
+    {
+      "startTime": 30,
+      "endTime": 45,
+      "analysis": "Aquí tienes el análisis visual de los 15 frames:\n\n**Segmento 1: Frames 1-5 (0:00 - 0:04)**\n1.  **Formato visual**: Pantalla grabada (interfaz de Instagram DM/chat).\n2.  **Encuadre**: General (mostrando la pantalla completa de un teléfono móvil)."
+    },
+    {
+      "startTime": 45,
+      "endTime": 52,
+      "analysis": "Aquí tienes el análisis visual de los 7 frames:\n\n---\n\n**Segmento 1: Frame 1 (0:45s)**\n\n1.  **Formato visual**: Texto sobre fondo (persona).\n2.  **Encuadre**: Medio (mujer desde la cintura hacia arriba).\n3.  **Textos en pantalla**:\n    *   \"Esto es lo que el 90% viene haciendo y yo me incluyo (hace 17 meses atrás hacía eso también)\"\n    *   \"Hoy el objetivo principal es:\"\n    *   \"Tener X15 ROAS\"\n    *   \"PIF (pagos completos) en DM o llamadas de 30 min\"\n    *   \"Trabajar solo con clientes sofisticados que entienden el juego\"\n4.  **Elementos visuales**: Mujer joven con gafas de sol redondas, camisa de lino amarilla clara anudada y shorts blancos. Fondo exterior con césped artificial verde y una pared blanca con franjas verticales verdes. Los textos están superpuestos en recuadros negros semitransparentes.\n5.  **Transiciones**: Corte seco.\n6.  **Movimiento de cámara**: Estática.\n7.  **Iluminación**: Natural, brillante, de día.\n\n---\n\n**Segmento 2: Frames 2-6 (0:46s - 0:50s)**\n\n1.  **Formato visual**: Pantalla grabada (diagrama/mapa mental digital).\n2.  **Encuadre**: General (muestra una mesa con una laptop abierta).\n3.  **Textos en pantalla**:\n    *   \"Ecosistema Espejo\" (título central)\n    *   \"Funnel\"\n    *   \"Contenido GPS\"\n    *   \"DM Llamada\"\n    *   \"Ads hiper personalizados a perfil\"\n    *   \"Conversion\"\n    *   \"200-300 Leads Calificados al dia\"\n    *   \"Resultado\"\n    *   \"Listos en invertir y ya educados\"\n    *   \"Clientes que pagan entre $3k-$10kusd\"\n    *   \"Equipo fino y productivo\"\n    *   \"Trabajo proactivo en el negocio\"\n    *   \"Metricas claras\"\n    *   (También se ven textos más pequeños dentro de las capturas de pantalla en la laptop, como nombres de usuario, \"9+ Requests\", \"Weekly"
+    }
+  ]
+}

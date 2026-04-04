@@ -1,0 +1,16 @@
+{
+  "id": "34a161b6",
+  "title": "9",
+  "source": "/Users/lean/Desktop/Nico x Nafe Evergreen/Nico x Nafe evergreen 2/16-12-25/9.mov",
+  "duration_seconds": 13,
+  "total_frames": 13,
+  "frame_interval_seconds": 1,
+  "analyzed_at": "2026-03-31T23:22:29.327Z",
+  "visual_analysis": [
+    {
+      "startTime": 0,
+      "endTime": 13,
+      "analysis": "Aquí está el análisis visual de los frames:\n\n**Segmento: Frames 1-13 (0s - 12s)**\n\n1.  **Formato visual**: Talking head con overlays de texto.\n2.  **Encuadre**: Plano medio del sujeto principal, mostrando del torso hacia arriba.\n3.  **Textos en pantalla**:\n    *   **Superior (estático):** \"4 MESES PARA SUBIR DE NIVEL\" (con \"PARA\" y \"DE\" en tamaño más pequeño) y una miniatura de video con la imagen de un hombre. Debajo: \"ESE ES EL VÍDEO 👍\".\n    *   **Inferior (cambiante, subtítulos/script):** Varía en cada frame, mostrando frases como \"yo sé que\", \"entiende\", \"qué es lo que hacemos\", \"cómo lo hacemos y cuál\", \"es la metodología\", \"exacta\", \"con la que conseguimos\", \"que nuestros clientes\", \"consigan\", \"este tipo de resultados\", \"grabé un\", \"explicando exactamente cómo\".\n    *   **Inferior (estático, CTA):** \"DE MIS ULTIMOS 13 ALUMNOS / 15 YA TIENEN RESULTADOS\" y \"RESPONDE \"YO\" Y TE LO ENVÍO DE INMEDIATO 🤙\".\n4.  **Elementos visuales**:\n    *   **Sujeto:** Un hombre joven, de tez morena y cabello rizado, lleva auriculares grandes de diadema negros y una camiseta blanca de manga larga. Gesticula activamente con ambas manos.\n    *   **Fondo:** Interior de un tren en movimiento. A la izquierda, una ventana muestra un paisaje exterior con árboles, montañas y cielo azul. A la derecha, parte del interior del tren con asientos azules y una señal de advertencia roja en la pared.\n    *   **Overlays:** Dos grandes recuadros negros con texto blanco en la parte superior e inferior de"
+    }
+  ]
+}

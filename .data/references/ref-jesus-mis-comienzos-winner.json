@@ -1,0 +1,203 @@
+{
+  "id": "ref-jesus-mis-comienzos-winner",
+  "title": "Jesús - Mis Comienzos (Winner Ad - Historia de Origen)",
+  "transcript": "Esta foto que ves aquí fueron mis comienzos. Se me caía la pintura en la pared de mi casa por la humedad. Me acuerdo que eso fue un emprendimiento que tuvimos con unos amigos, que nos invitaron a la radio. Pero yo también en paralelo iba a una escuela técnica, estudiaba herrería, carpintería, mecánica, tenía un taller de moto, pintaba casas, cortaba el pasto, vendía rifas. Pasé por el trabajo duro y el de esforzarse por intentar ganar y hacer changas. Soy argentino, conozco ese camino. Pero después de pasar por todo eso, pasó algo muy importante en mi vida, que fue un cambio radical. Me fui del país a los 20 años, Empezaron a entrevistar, empecé a salir en televisión, empecé a salir en revistas. Acá estoy en la revista Fortuna. Me entrevistaron de Infobae. Y empecé a salir en un montón de medios por el hito que había conseguido. Fue fundar mi propia empresa a los 19 años y empezar a tener clientes en el extranjero y empezar a ofrecer mis servicios. Que eso fue lo que realmente me cambió la vida. Yo no hice un modelo de negocio extraño, yo no hice trading, yo me puse a apostar, no hice apuestas deportivas, no me metí en multinivel. Esas cosas, lógicamente, si te pones a pensar no tienen sentido. Lo que tiene sentido y lo que nunca va a dejar de funcionar, nunca, nunca en el mundo, es aprender a hacer algo y ofrecerlo como un servicio. Y hoy en día la ventaja que tenemos, si sos latino, si hablás español, es que si aprendes cualquier cosa, la podés ofrecer en cualquier país. No es algo muy difícil. Ese fue mi negocio. Mi negocio fue vender mi servicio desde Argentina, cobrar barato y después me recomendaban porque era muy bueno. Eso mismo podés hacer vos. Y para poder ayudarte a que puedas empezar con el pie derecho que no caigas en estafas que no caigas en modelos de negocios turbios cosas extra que la realidad es que te van a hacer solamente perder tu dinero y se van a aprovechar de vos, voy a hacer un evento de cinco clases la próxima semana en donde te voy a explicar absolutamente todo mi camino para que empieces con el pie derecho. ¿Cuánto podés cobrar? ¿Cómo hice para empezar? ¿Cómo conseguí mis primeros clientes? ¿Si cobrar porcentaje? ¿Si trabajar por sueldo? ¿Si cobrar un fijo? ¿Los tipos de servicios que podés ofrecer? cómo usar la publicidad como un complemento a lo que haces actualmente, si es que haces algo, o cómo empezar el camino con el pie derecho a empezar a ofrecer servicios para otras empresas, para clientes, para lo que sea. O si ya ofreces servicios, que incluyas la publicidad como un complemento a lo que ya haces. Por ejemplo, si sos un fotógrafo, podés hacer anuncios y usar la publicidad como complemento a tus servicios y cobrar más caro. Este evento cubre varias áreas. Desde que empieces, desde que aprendas a hacer anuncios para poder, desde que veas la oportunidad que hay en hacer anuncios para conocer clientes a lo que ya te dedicás, O incluso agregar esto como un complemento. Yo pasé por todas. No te digo desde la arrogancia. Ahora para mí estar en un departamento es un sueño. Me mudé hace poquito, hace poco llegué a Estados Unidos. Se puede. Y si empezás con el pie derecho, lo vas a conseguir. No te quiero explicar nada en este año. No te voy a explicar nada del otro mundo. Te voy a decir cosas que probablemente sean obvias para ti, pero te voy a mostrar lo que puedes conseguir si seguís el camino que te voy a trazar. Te mando un abrazo. Así que clic en el botón de acá abajo y nos vemos en el próximo evento. Te vamos a ver la próxima semana. Chau, chau.",
+  "analysis": {
+    "hook": {
+      "text": "Esta foto que ves aquí fueron mis comienzos. Se me caía la pintura en la pared de mi casa por la humedad.",
+      "type": "historia_mini",
+      "word_count": 22,
+      "estimated_seconds": 7
+    },
+    "structure": {
+      "framework": "historia_origen_a_cta",
+      "sections": [
+        {
+          "name": "Fotos de origen (cuarto humilde + emprendimiento)",
+          "summary": "3 fotos reales: cuarto adolescente con frazada de tigre, piso con mercadería, oficina precaria con monitor viejo",
+          "estimated_seconds": 7
+        },
+        {
+          "name": "Enumeración de changas con texto cinético",
+          "summary": "Herrería, carpintería, mecánica, taller de moto, pintar casas, pasto, rifas. Text overlays: HERRERÍA, CARPINTERÍA",
+          "estimated_seconds": 8
+        },
+        {
+          "name": "Declaración de identidad",
+          "summary": "Soy argentino, conozco ese camino. Text overlay: CAMBIO",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "Bombardeo de pruebas institucionales (6 en 15s)",
+          "summary": "Foto avión real + podcast CREAR + Mañanísima TV abierta con chyron + Revista Fortuna física + screenshot Infobae",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Hito fundacional",
+          "summary": "Fundar empresa a los 19, clientes en el extranjero",
+          "estimated_seconds": 5
+        },
+        {
+          "name": "Demolición de alternativas",
+          "summary": "Trading, apuestas deportivas, multinivel descartados con 'no tienen sentido'",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Principio eterno",
+          "summary": "Aprender a hacer algo y ofrecerlo como servicio. Triple 'nunca' para reforzar permanencia",
+          "estimated_seconds": 15
+        },
+        {
+          "name": "Puente personal",
+          "summary": "Mi negocio fue cobrar barato y me recomendaban",
+          "estimated_seconds": 10
+        },
+        {
+          "name": "CTA protector + detalle evento",
+          "summary": "Para que no caigas en estafas. Evento 5 clases. B-roll lifestyle (pileta/hotel)",
+          "estimated_seconds": 35
+        },
+        {
+          "name": "Cierre emocional",
+          "summary": "No te digo desde la arrogancia. Se puede. Te mando un abrazo",
+          "estimated_seconds": 41
+        }
+      ],
+      "has_rehook": false,
+      "rehook_text": null
+    },
+    "tone": {
+      "primary_tone": "vulnerable_y_firme",
+      "formality_level": "very_casual",
+      "uses_first_person": true,
+      "ugc_style": true,
+      "humor_level": "none",
+      "key_phrases": [
+        "soy argentino, conozco ese camino",
+        "nunca va a dejar de funcionar, nunca, nunca",
+        "no te digo desde la arrogancia",
+        "se puede",
+        "te mando un abrazo"
+      ]
+    },
+    "cta": {
+      "text": "Clic en el botón de acá abajo y nos vemos en el próximo evento",
+      "type": "directo",
+      "has_urgency": false,
+      "has_reason_why": true,
+      "is_dual": false
+    },
+    "estimated_total_duration_seconds": 161,
+    "total_word_count": 450,
+    "emotional_arc": "humildad → esfuerzo → giro vital → validación institucional → firmeza → principio simple → protección → esperanza calibrada",
+    "strengths": [
+      "Bombardeo de 6 pruebas institucionales en 15 segundos (avión, podcast, TV abierta, revista física, Infobae)",
+      "Chyron de Mañanísima dice lo que él nunca dice: ARRANCÓ SIN NADA, FUNDÓ SU EMPRESA",
+      "Principio-ancla de 8 palabras: aprender algo y ofrecerlo como servicio",
+      "CTA enmarcado como protección, no como venta",
+      "Cero música — anti-dramatismo deliberado que refuerza autenticidad",
+      "Texto cinético selectivo (solo HERRERÍA, CARPINTERÍA, CAMBIO)",
+      "Contraste visual de 3 niveles: fotos viejas baja calidad → medios profesionales → selfie casual"
+    ],
+    "patterns_to_replicate": [
+      "Arrancar con foto real de origen como hook visual",
+      "Enumeración-espejo: lista larga de experiencias donde cada ítem captura un segmento distinto",
+      "Bombardeo de credibilidad comprimido (6+ pruebas en 15s sin explicar ninguna)",
+      "Que hablen OTROS por mí: dejar que medios/chyrons digan lo que no podés decir sin sonar arrogante",
+      "Destruir alternativas por indignidad lógica en vez de argumentar",
+      "Anti-música: sin soundtrack en video con montaje complejo = conversación, no trailer",
+      "Principio-ancla: una idea de 8 palabras como tesis del video entero",
+      "CTA como protección: para que no caigas en estafas"
+    ],
+    "advertiser": {
+      "name": "Jesús Tassarolo (ADP)",
+      "platform": "meta",
+      "ranking_position": "unknown",
+      "language": "es",
+      "country": "AR"
+    },
+    "generation_mapping": {
+      "angle_family": "historia",
+      "body_type": "historia_con_giro",
+      "persuasion_functions": [
+        {
+          "section_name": "Fotos origen + changas",
+          "function": "identificacion"
+        },
+        {
+          "section_name": "Bombardeo pruebas + hito",
+          "function": "prueba"
+        },
+        {
+          "section_name": "Demolición alternativas",
+          "function": "demolicion"
+        },
+        {
+          "section_name": "Principio eterno",
+          "function": "mecanismo"
+        },
+        {
+          "section_name": "CTA protector",
+          "function": "venta_modelo"
+        }
+      ],
+      "belief_change": {
+        "old_belief": "Para ganar plata online hay que hacer trading, apuestas o multinivel",
+        "mechanism": "Historia personal de origen humilde con pruebas verificables de éxito legítimo",
+        "new_belief": "Lo que funciona es aprender algo y ofrecerlo como servicio — simple, eterno, replicable"
+      },
+      "ingredients_detected": [
+        {
+          "category": "A",
+          "ingredient_number": 1,
+          "ingredient_name": "Historia personal de origen"
+        },
+        {
+          "category": "A",
+          "ingredient_number": 5,
+          "ingredient_name": "Prueba social institucional (medios)"
+        },
+        {
+          "category": "D",
+          "ingredient_number": 50,
+          "ingredient_name": "Demolición de alternativas"
+        },
+        {
+          "category": "E",
+          "ingredient_number": 62,
+          "ingredient_name": "Principio eterno / verdad universal"
+        },
+        {
+          "category": "F",
+          "ingredient_number": 70,
+          "ingredient_name": "CTA como protección"
+        }
+      ],
+      "model_sale_type": "camino_legitimo",
+      "awareness_level": 1,
+      "segment_equivalent": "A",
+      "big_idea": "Lo que nunca va a dejar de funcionar es aprender a hacer algo y ofrecerlo como servicio"
+    },
+    "actionable": {
+      "what_to_steal": [
+        "Foto real de origen como hook (no hablar de pobreza — MOSTRARLA)",
+        "6 pruebas institucionales comprimidas en 15 segundos sin explicar ninguna",
+        "Dejar que el chyron/titular diga lo que no podés decir vos",
+        "Texto cinético selectivo solo en enumeraciones y giros",
+        "Triple repetición de la palabra clave (nunca, nunca, nunca)",
+        "CTA enmarcado como protección contra estafas",
+        "Se puede. (cierre de 2 palabras)"
+      ],
+      "what_not_to_copy": [
+        "La estructura es irrepetible para otros ads de Jesús — solo hay UNA historia de origen",
+        "El B-roll de lifestyle (pileta/hotel) es el punto más débil del video — rompe ligeramente la autenticidad"
+      ],
+      "craft_notes": [
+        "La fuerza del video está en el MONTAJE, no en el copy. Las fotos + clips hacen el 70% del trabajo persuasivo",
+        "Sin la foto del cuarto con frazada de tigre, este video pierde la mitad de su potencia",
+        "El titular de Infobae (De chico le faltaba amor) es más poderoso que cualquier cosa que Jesús diga en el video"
+      ]
+    }
+  },
+  "createdAt": "2026-03-30T18:25:55.365Z"
+}

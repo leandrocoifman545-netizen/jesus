@@ -1,0 +1,796 @@
+{
+  "username": "herasmedia",
+  "generated_at": "2026-04-01T13:31:33.307Z",
+  "months_analyzed": 12,
+  "total_posts": 88,
+  "videos": 87,
+  "sidecars": 1,
+  "content_split": {
+    "organic": {
+      "count": 7,
+      "pct": 7.95
+    },
+    "sale": {
+      "count": 81,
+      "pct": 92.05
+    },
+    "ratio": "0.09:1"
+  },
+  "distribution": {
+    "mean": 57.46,
+    "median": 54.53,
+    "stddev": 31.84,
+    "p25": 35.59,
+    "p50": 53.8,
+    "p75": 70.21,
+    "p90": 97.64,
+    "min": 1.79,
+    "max": 191.13
+  },
+  "bimodal": {
+    "bimodal": false,
+    "reason": "distribución unimodal"
+  },
+  "clusters": [
+    {
+      "name": "cómo",
+      "keywords": [
+        "cómo",
+        "nicho",
+        "viral",
+        "saber",
+        "explico",
+        "hacerlo",
+        "contenido",
+        "hacerte",
+        "aprender",
+        "digo",
+        "hice",
+        "palabra",
+        "video",
+        "según",
+        "20000mes",
+        "comentarios",
+        "virales",
+        "conseguir",
+        "privada",
+        "enseño",
+        "videos",
+        "alfredo",
+        "diga",
+        "personalmente",
+        "crear",
+        "metodología",
+        "100k"
+      ],
+      "post_count": 59,
+      "avg_clr": 49.68,
+      "avg_views": 76341,
+      "cta_pct": 88.14,
+      "top_post": "DVylb4_DdNi"
+    },
+    {
+      "name": "envío",
+      "keywords": [
+        "envío",
+        "clase",
+        "borre",
+        "vídeo",
+        "idea"
+      ],
+      "post_count": 41,
+      "avg_clr": 65.86,
+      "avg_views": 36206,
+      "cta_pct": 97.56,
+      "top_post": "DNvc-qX4uUe"
+    },
+    {
+      "name": "seguidores",
+      "keywords": [
+        "seguidores",
+        "llegar",
+        "paso",
+        "plan",
+        "mensaje",
+        "directo",
+        "tener"
+      ],
+      "post_count": 22,
+      "avg_clr": 45.15,
+      "avg_views": 141891,
+      "cta_pct": 81.82,
+      "top_post": "DVteuVKEWGL"
+    },
+    {
+      "name": "cuenta",
+      "keywords": [
+        "cuenta",
+        "instagram"
+      ],
+      "post_count": 13,
+      "avg_clr": 37.56,
+      "avg_views": 25533,
+      "cta_pct": 92.31,
+      "top_post": "DOwEJzYEdtf"
+    },
+    {
+      "name": "mando",
+      "keywords": [
+        "mando",
+        "guión"
+      ],
+      "post_count": 12,
+      "avg_clr": 70.02,
+      "avg_views": 48620,
+      "cta_pct": 100,
+      "top_post": "DVylb4_DdNi"
+    },
+    {
+      "name": "reto",
+      "keywords": [
+        "reto",
+        "llene"
+      ],
+      "post_count": 10,
+      "avg_clr": 69.76,
+      "avg_views": 7055,
+      "cta_pct": 100,
+      "top_post": "DJ984GKRjwI"
+    },
+    {
+      "name": "ganar",
+      "keywords": [
+        "ganar"
+      ],
+      "post_count": 6,
+      "avg_clr": 53.09,
+      "avg_views": 24198,
+      "cta_pct": 83.33,
+      "top_post": "DVteuVKEWGL"
+    },
+    {
+      "name": "concreto",
+      "keywords": [
+        "concreto"
+      ],
+      "post_count": 4,
+      "avg_clr": 59.47,
+      "avg_views": 578931,
+      "cta_pct": 75,
+      "top_post": "DVylb4_DdNi"
+    },
+    {
+      "name": "hablamos",
+      "keywords": [
+        "hablamos"
+      ],
+      "post_count": 4,
+      "avg_clr": 26.82,
+      "avg_views": 632150,
+      "cta_pct": 50,
+      "top_post": "DQZxmb7ESyw"
+    },
+    {
+      "name": "cuál",
+      "keywords": [
+        "cuál"
+      ],
+      "post_count": 4,
+      "avg_clr": 38.85,
+      "avg_views": 76133,
+      "cta_pct": 100,
+      "top_post": "DTi0u7IkS6U"
+    },
+    {
+      "name": "escribe",
+      "keywords": [
+        "escribe"
+      ],
+      "post_count": 4,
+      "avg_clr": 38.9,
+      "avg_views": 43507,
+      "cta_pct": 100,
+      "top_post": "DRz3h6ZEfvn"
+    }
+  ],
+  "ab_tests": [
+    {
+      "posts": [
+        {
+          "shortCode": "DLIoCAUxAV7",
+          "caption_preview": "Comenta “VIRAL” y te explico cómo lo hice   #herasmedia",
+          "views": 85465,
+          "likes": 6347,
+          "comments": 6197,
+          "clr": 97.64,
+          "duration": 74.7,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DLN0ojuxX3H",
+          "caption_preview": "Comenta “DIEGO” y te explico como lo hice  #herasmedia",
+          "views": 3133,
+          "likes": 1227,
+          "comments": 938,
+          "clr": 76.45,
+          "duration": 85.833,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.6,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "27.28x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DMf5MBfxZTT",
+          "caption_preview": "Comenta “CLASE” y te la envío antes de que la borre!",
+          "views": 47273,
+          "likes": 5114,
+          "comments": 3013,
+          "clr": 58.92,
+          "duration": 87.75,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DM567LgRgZ0",
+          "caption_preview": "Comenta “CLASE” y te la envío   #herasmedia",
+          "views": 18448,
+          "likes": 1293,
+          "comments": 1284,
+          "clr": 99.3,
+          "duration": 50.1,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DNECCpjRAik",
+          "caption_preview": "Comenta “IDEA” y te la envío antes de que la borre",
+          "views": 139421,
+          "likes": 13573,
+          "comments": 10215,
+          "clr": 75.26,
+          "duration": 62.595,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DMvTFqkxMyc",
+          "caption_preview": "Comenta “CLASE” y te la envío #  #herasmedia",
+          "views": 49612,
+          "likes": 5517,
+          "comments": 5305,
+          "clr": 96.16,
+          "duration": 72.958,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DMnkJV-x-n6",
+          "caption_preview": "Comenta “CLASE” y te la envío   #herasmedia",
+          "views": 35234,
+          "likes": 2507,
+          "comments": 1385,
+          "clr": 55.25,
+          "duration": 88.75,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DMD0lXixDYL",
+          "caption_preview": "Escribe “CLASE” y te la envió antes de que la borre",
+          "views": 64222,
+          "likes": 7282,
+          "comments": 3201,
+          "clr": 43.96,
+          "duration": 52.25,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DMVxiQXx04S",
+          "caption_preview": "Comenta “CUENTA” y te lo envío antes de que lo borre",
+          "views": 28976,
+          "likes": 3315,
+          "comments": 2037,
+          "clr": 61.45,
+          "duration": 82.133,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DLxsVHSxZuR",
+          "caption_preview": "Comenta “MÉTODO” y te la envío antes de que la borre  #herasmedia",
+          "views": 5168,
+          "likes": 1505,
+          "comments": 1385,
+          "clr": 92.03,
+          "duration": 58.291,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DMK_r20x6hc",
+          "caption_preview": "Comenta “CLASE” y te la envío antes de que la borre   #herasmedia",
+          "views": 7057,
+          "likes": 1397,
+          "comments": 1122,
+          "clr": 80.31,
+          "duration": 63.066,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DI6zL_3xwzr",
+          "caption_preview": "Comenta “CLASE” y te la envío antes de que la borre  #herasmedia",
+          "views": 14478,
+          "likes": 1138,
+          "comments": 815,
+          "clr": 71.62,
+          "duration": 80.663,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DJFPvzdxpOj",
+          "caption_preview": "Comenta “CLASE” y te la envío antes de que la borre   #herasmedia",
+          "views": 25486,
+          "likes": 3422,
+          "comments": 2302,
+          "clr": 67.27,
+          "duration": 80.371,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DJUhEpARdHG",
+          "caption_preview": "Comenta “Guión” y te la envío antes de que la borre   #herasmedia",
+          "views": 110460,
+          "likes": 43687,
+          "comments": 32648,
+          "clr": 74.73,
+          "duration": 91.508,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DIRqSATxNWQ",
+          "caption_preview": "Comenta “5” y te envío la clase filtrada, antes de que la borre   #herasmedia",
+          "views": 30469,
+          "likes": 4290,
+          "comments": 3012,
+          "clr": 70.21,
+          "duration": 90.006,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DIb7WtOR9do",
+          "caption_preview": "Comenta “CLASE” y te la envío antes de que la borre",
+          "views": 12540,
+          "likes": 1216,
+          "comments": 1305,
+          "clr": 107.32,
+          "duration": 38.413,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DImUG3AReXq",
+          "caption_preview": "Comenta “Idea” y te la envío antes de que la borre   #herasmedia",
+          "views": 36915,
+          "likes": 5804,
+          "comments": 3261,
+          "clr": 56.19,
+          "duration": 90.006,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DIzGjawxm7k",
+          "caption_preview": "Comenta “CLASE” y te la envío   (Antes de que la borre)   #herasmedia",
+          "views": 39030,
+          "likes": 7857,
+          "comments": 6846,
+          "clr": 87.13,
+          "duration": 65.899,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.6,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "26.98x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DK-MT67vdFZ",
+          "caption_preview": "Comenta “RETO” antes de que se llene   #herasmedia",
+          "views": 3493,
+          "likes": 2389,
+          "comments": 1272,
+          "clr": 53.24,
+          "duration": 89.756,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DKplc9xRUq-",
+          "caption_preview": "Comenta “RETO” antes de que se llene   #herasmedia",
+          "views": 24129,
+          "likes": 11117,
+          "comments": 3956,
+          "clr": 35.59,
+          "duration": 56.233,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DK7rasgxp2L",
+          "caption_preview": "Comenta “RETO” antes de que se llene el grupo",
+          "views": 1908,
+          "likes": 989,
+          "comments": 383,
+          "clr": 38.73,
+          "duration": 61.828,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DKxWYFtRY1P",
+          "caption_preview": "Comenta “RETO” antes de que se llene   #herasmedia",
+          "views": 6228,
+          "likes": 2251,
+          "comments": 670,
+          "clr": 29.76,
+          "duration": 55.638,
+          "has_cta": true
+        }
+      ],
+      "similarity": 1,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "12.65x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DV_iaVjkbkg",
+          "caption_preview": "Si quieres saber cómo hacer buenas ideas para hacer contenido viral, comenta \"ID",
+          "views": 12260,
+          "likes": 1487,
+          "comments": 800,
+          "clr": 53.8,
+          "duration": 81.479,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DRsQ5ICkXPW",
+          "caption_preview": "Si quieres saber cómo hacer contenido viral para tu nicho, coméntame tu nicho 👇",
+          "views": 69808,
+          "likes": 6132,
+          "comments": 2664,
+          "clr": 43.44,
+          "duration": 54.654,
+          "has_cta": false
+        },
+        {
+          "shortCode": "DTLY9I1EVwB",
+          "caption_preview": "Si quieres saber cómo hacer contenido viral para tu nicho, comenta cuál es nicho",
+          "views": 45356,
+          "likes": 3144,
+          "comments": 1383,
+          "clr": 43.99,
+          "duration": 63.669,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DQr5qfJEfqS",
+          "caption_preview": "Si quieres saber cómo hacer un contenido viral para cualquier nicho, comenta \"VÍ",
+          "views": 23372,
+          "likes": 1888,
+          "comments": 664,
+          "clr": 35.17,
+          "duration": 91.466,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DRaJ7wKkV28",
+          "caption_preview": "Si quieres saber cómo hacer contenido viral para cualquier nicho, comenta \"VIRAL",
+          "views": 43368,
+          "likes": 3302,
+          "comments": 1085,
+          "clr": 32.86,
+          "duration": 60.233,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.38,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "5.69x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DKC4O1gRmiV",
+          "caption_preview": "Comenta “RETO” y te envío el acceso al grupo   #herasmedia",
+          "views": 1391,
+          "likes": 1400,
+          "comments": 839,
+          "clr": 59.93,
+          "duration": 84.636,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DKesS4HRkX-",
+          "caption_preview": "Comenta “RETO” y te envío el acceso  #herasmedia",
+          "views": 2554,
+          "likes": 2034,
+          "comments": 1200,
+          "clr": 59,
+          "duration": 58.767,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DKNXtxmRNsN",
+          "caption_preview": "Comenta “RETO” y te envío el acceso   #herasmedia",
+          "views": 3767,
+          "likes": 2459,
+          "comments": 1624,
+          "clr": 66.04,
+          "duration": 88.421,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.78,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.71x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DUycEmIEYEw",
+          "caption_preview": "Si quieres saber cómo desintoxicar tu cuenta de Instagram y generar mínimo 20.00",
+          "views": 24778,
+          "likes": 2259,
+          "comments": 251,
+          "clr": 11.11,
+          "duration": 78.135,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DQ2FW-skb7Y",
+          "caption_preview": "Si quieres saber cómo hacer mínimo 10.000€ con tu cuenta de Instagram, comenta \"",
+          "views": 55289,
+          "likes": 3737,
+          "comments": 1395,
+          "clr": 37.33,
+          "duration": 52.652,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.39,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2.23x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DWMWXBbxxTV",
+          "caption_preview": "Si quieres aprender a vender y a cómo hacerte viral según tu nicho, comenta \"PLA",
+          "views": 14678,
+          "likes": 1659,
+          "comments": 451,
+          "clr": 27.19,
+          "duration": 89.629,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DT8ZAtKEUeJ",
+          "caption_preview": "Si quieres que te diga cómo hacerte viral según tu nicho comenta tu nicho 👇  Y ",
+          "views": 29311,
+          "likes": 3013,
+          "comments": 1257,
+          "clr": 41.72,
+          "duration": 68.987,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.48,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "2x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DLSergUR3Fz",
+          "caption_preview": "Comenta “277” y te enseño cómo hacerlo  #herasmedia",
+          "views": 4757,
+          "likes": 901,
+          "comments": 580,
+          "clr": 64.37,
+          "duration": 56.7,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DLF1iZTxWK8",
+          "caption_preview": "Comenta “CLASE” y te explico cómo hacerlo   #herasmedia",
+          "views": 9434,
+          "likes": 9385,
+          "comments": 3237,
+          "clr": 34.49,
+          "duration": 67.25,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.56,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.98x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DTqXujXkbgy",
+          "caption_preview": "Si quieres que te diga cómo hacerte viral en tu nicho, comenta tu nicho👇  y te ",
+          "views": 29151,
+          "likes": 2095,
+          "comments": 566,
+          "clr": 27.02,
+          "duration": 52.018,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DSslIvfkZ6Y",
+          "caption_preview": "Si quieres saber cómo hacerte viral en tu nicho, simplemente comenta tu nicho👇 ",
+          "views": 34681,
+          "likes": 3272,
+          "comments": 1202,
+          "clr": 36.74,
+          "duration": 81,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DQkJbQjke0a",
+          "caption_preview": "Si quieres que te diga cómo hacerte viral y llegar a 100.000 seguidores para tu ",
+          "views": 50231,
+          "likes": 4942,
+          "comments": 1663,
+          "clr": 33.65,
+          "duration": 65.899,
+          "has_cta": false
+        }
+      ],
+      "similarity": 0.71,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.72x"
+    },
+    {
+      "posts": [
+        {
+          "shortCode": "DO31AggEQkd",
+          "caption_preview": "Si tú también quieres ganar $35.000 comenta la palabra \"YO\" en este video👇  Y t",
+          "views": 17791,
+          "likes": 1074,
+          "comments": 656,
+          "clr": 61.08,
+          "duration": 89.3,
+          "has_cta": true
+        },
+        {
+          "shortCode": "DOl1CXUEVOZ",
+          "caption_preview": "Si tú también quieres ganar $86.000 comenta la palabra \"CLASE\" en este video 👇 ",
+          "views": 25456,
+          "likes": 1462,
+          "comments": 777,
+          "clr": 53.15,
+          "duration": 61.033,
+          "has_cta": true
+        }
+      ],
+      "similarity": 0.77,
+      "variable_detected": "caption (confirmación con transcripción pendiente)",
+      "views_delta": "1.43x"
+    }
+  ],
+  "outliers": [
+    {
+      "shortCode": "DJ984GKRjwI",
+      "clr": 191.13,
+      "views": 1533,
+      "z_score": 4.2,
+      "caption_preview": "Comenta “RETO” para unirte al grupo donde lo documentaré tod",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DNvc-qX4uUe",
+      "clr": 156.98,
+      "views": 137921,
+      "z_score": 3.13,
+      "caption_preview": "Hay varias cosas que afectan directamente a tus views, el sa",
+      "has_cta": true
+    },
+    {
+      "shortCode": "DVylb4_DdNi",
+      "clr": 136.86,
+      "views": 25785,
+      "z_score": 2.49,
+      "caption_preview": "Si quieres saber cual es la estructura exacta para tu nicho ",
+      "has_cta": true
+    }
+  ],
+  "recommendation": {
+    "strategy": "umbral_dinamico",
+    "reason": "23 posts con CLR ≥70.21% (p75). +4 top views no incluidos en filtro CLR. +6 fracasos para Lente A (comparar éxitos vs fracasos)",
+    "recommended_ids": [
+      "DVylb4_DdNi",
+      "DVteuVKEWGL",
+      "DUWHpuskZkF",
+      "DPRxECdEV01",
+      "DLIoCAUxAV7",
+      "DM567LgRgZ0",
+      "DNECCpjRAik",
+      "DMvTFqkxMyc",
+      "DNTepP6Rkfn",
+      "DQKNh_AkVz0",
+      "DLxsVHSxZuR",
+      "DLp6Zibx3-M",
+      "DLN0ojuxX3H",
+      "DMK_r20x6hc",
+      "DI6zL_3xwzr",
+      "DJ984GKRjwI",
+      "DNvc-qX4uUe",
+      "DLAxyB-RfrW",
+      "DJUhEpARdHG",
+      "DIRqSATxNWQ",
+      "DIb7WtOR9do",
+      "DIzGjawxm7k",
+      "DIEvmvWRsJz",
+      "DQ97koEEQWs",
+      "DQZxmb7ESyw",
+      "DTi0u7IkS6U",
+      "DR-Ygv0kQGO",
+      "DLLHZ_Uxkxo",
+      "DUORTmEkRLP",
+      "DUycEmIEYEw",
+      "DVMXBDLEbdw",
+      "DT014SLEWdm",
+      "DTYYua7ETDR"
+    ],
+    "recommended_count": 33,
+    "pct_of_total": "37.5%",
+    "ab_tests_added": 10,
+    "cluster_reps_added": 2,
+    "final_count": 45,
+    "final_pct": "51.14%",
+    "final_ids": [
+      "DVylb4_DdNi",
+      "DVteuVKEWGL",
+      "DUWHpuskZkF",
+      "DPRxECdEV01",
+      "DLIoCAUxAV7",
+      "DM567LgRgZ0",
+      "DNECCpjRAik",
+      "DMvTFqkxMyc",
+      "DNTepP6Rkfn",
+      "DQKNh_AkVz0",
+      "DLxsVHSxZuR",
+      "DLp6Zibx3-M",
+      "DLN0ojuxX3H",
+      "DMK_r20x6hc",
+      "DI6zL_3xwzr",
+      "DJ984GKRjwI",
+      "DNvc-qX4uUe",
+      "DLAxyB-RfrW",
+      "DJUhEpARdHG",
+      "DIRqSATxNWQ",
+      "DIb7WtOR9do",
+      "DIzGjawxm7k",
+      "DIEvmvWRsJz",
+      "DQ97koEEQWs",
+      "DQZxmb7ESyw",
+      "DTi0u7IkS6U",
+      "DR-Ygv0kQGO",
+      "DLLHZ_Uxkxo",
+      "DUORTmEkRLP",
+      "DUycEmIEYEw",
+      "DVMXBDLEbdw",
+      "DT014SLEWdm",
+      "DTYYua7ETDR",
+      "DMf5MBfxZTT",
+      "DMnkJV-x-n6",
+      "DMD0lXixDYL",
+      "DMVxiQXx04S",
+      "DJFPvzdxpOj",
+      "DImUG3AReXq",
+      "DK-MT67vdFZ",
+      "DKplc9xRUq-",
+      "DK7rasgxp2L",
+      "DKxWYFtRY1P",
+      "DOwEJzYEdtf",
+      "DRz3h6ZEfvn"
+    ]
+  }
+}
