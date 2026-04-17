@@ -1,0 +1,245 @@
+{
+  "id": "158243ff-622d-4e7e-b7c7-7f3225920637",
+  "briefId": "86371c0b-c51f-48fe-b02b-ec936b6e000b",
+  "title": "El mapa que me hubiera gustado tener — la mentora financiera que salió del nudo",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.4_fracaso_leccion",
+    "body_type": "historia_con_giro",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "mentora financiera para mujeres",
+    "model_sale_type": "lean_anti_riesgo",
+    "transition_text": "Lo único que tenés que hacer es escribir las 12 cosas que aprendiste saliendo del nudo. Esta semana en una clase gratis te muestro cómo armarlo en serio.",
+    "total_duration_seconds": 88,
+    "word_count": 219,
+    "punto_entrada_emocional": "alivio temprano de saber que tu propia salida vale como autoridad",
+    "belief_change": {
+      "old_belief": "Para vender ayuda financiera a otras mujeres necesito un titulo de asesora certificada",
+      "mechanism": "Tu salida del nudo + IA = un mapa concreto vendible a mujeres que estan donde vos estabas hace dos años. Se valida vendiendolo antes de armarlo (lean)",
+      "new_belief": "Mi salida del nudo es la mejor credencial y se empaqueta como el mapa que me hubiera gustado tener cuando empece"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Sali del nudo y eso es la transformacion, no la historia de mi dolor",
+        "installed_via": "puente desde la transformacion YA conseguida",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Mi salida vale mas que un titulo certificado",
+        "installed_via": "reframe de autoridad por experiencia vivida",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "Mi camino se empaqueta como el mapa que me hubiera gustado tener",
+        "installed_via": "mecanismo con nombre - El mapa que me hubiera gustado tener",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "La autoridad la da haber estado, no el titulo",
+        "installed_via": "demolicion de la barrera del titulo",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay otra mujer real que ya recibio el mapa y le funciono",
+        "installed_via": "prueba con la otra mujer recibiendo, no la protagonista reviviendo",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "confesion",
+        "hypothesis": "el avatar responde a una confesion sobre esconder deudas",
+        "emotional_lever": "vulnerabilidad validante",
+        "script_text": "Yo guardé los resúmenes de tarjeta en un cajón durante dos años. Mi marido no sabía cuánto debía. Cuando salí del nudo entendí que esa salida valía más que cualquier curso.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "historia_mini",
+        "hypothesis": "el avatar responde al testimonio de otra mujer recibiendo",
+        "emotional_lever": "prueba social emocional",
+        "script_text": "Una mujer me escribió a las 11 de la noche: 'Leí tu mapa y por primera vez en 4 años entendí que no era yo, era el método.' Esa frase me cambió el negocio entero.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a la insight de cuando googlean realmente",
+        "emotional_lever": "naming del momento real",
+        "script_text": "Las mujeres que más necesitan ayuda con la plata son las que JAMÁS van a googlear 'finanzas personales'. Lo googlean a las 2 de la mañana cuando ya no aguantan. Y nadie les habla a esa hora.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a la escena exacta de revisar el banco escondida",
+        "emotional_lever": "reconocimiento intimo",
+        "script_text": "A las 2 de la mañana revisás el banco con la pantalla en el mínimo brillo para que tu marido no se despierte. Te suena cómo arrancaste o cómo seguís ahora.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a una pregunta directa sobre la pareja",
+        "emotional_lever": "verguenza activadora",
+        "script_text": "¿Tu pareja sabe cuánto debés realmente? Si esa pregunta te puso incómoda, los próximos 80 segundos son para vos.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "historia_personal",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Sali del nudo, eso es lo que importa",
+          "viewer_emotion_after": "reconocimiento desde la salida",
+          "is_turning_point": false,
+          "script_text": "Si dormís tranquila por primera vez en años porque saliste de las deudas que escondías, escuchá.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi salida vale mas que un titulo",
+          "viewer_emotion_after": "validacion de autoridad",
+          "is_turning_point": false,
+          "script_text": "Saliste del nudo. Dormís sin abrir el banco a las 2 de la mañana. Eso que viviste vale más que un título financiero para las 100 mujeres en tu barrio que están donde estabas vos hace dos años.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi camino se empaqueta como mapa",
+          "viewer_emotion_after": "permiso: la voz que tengo sirve",
+          "is_turning_point": false,
+          "script_text": "Tu camino lo dictás a una IA un sábado y queda como una guía concreta con tu verdad sin filtro: 'El mapa que me hubiera gustado tener'. 12 capítulos cortos para mujeres que todavía no hablan del tema en voz alta.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "La autoridad la da haber estado, no el titulo",
+          "viewer_emotion_after": "permiso: no necesito otra credencial",
+          "is_turning_point": true,
+          "script_text": "Acá hay un detalle clave. La autoridad para ayudar a otra mujer no la da un título. La da haber estado en su lugar. Y vos estuviste tres años.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay otra mujer real que ya recibio el mapa",
+          "viewer_emotion_after": "esperanza concreta proyectada",
+          "is_turning_point": false,
+          "script_text": "Vas a recibir el primer mensaje en tu WhatsApp: 'Leí tu mapa anoche y por primera vez en 4 años entendí que no era yo, era el método.' Esa es la prueba que importa.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo - Lean Anti-riesgo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Lo arranco sin riesgo, sin compromiso",
+          "viewer_emotion_after": "validacion de seguridad",
+          "is_turning_point": false,
+          "script_text": "Te voy a ser honesta: el modelo es lean. Vendés el mapa antes de armarlo. Si compran, lo armás esa semana con la IA. Si no compran, no perdiste un fin de semana. Cero riesgo, cero compromiso.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "salí del nudo"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "saliste de las deudas que escondías"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Saliste del nudo. Dormís sin abrir el banco a las 2 de la mañana"
+      },
+      {
+        "location": "beat_2",
+        "technique": "future_pacing",
+        "phrase": "El mapa que me hubiera gustado tener"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Y vos estuviste tres años"
+      },
+      {
+        "location": "beat_4",
+        "technique": "future_pacing",
+        "phrase": "Vas a recibir el primer mensaje en tu WhatsApp"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "Cero riesgo, cero compromiso"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 36,
+        "ingredient_name": "Dolor por Verguenza Oculta"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estrategica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Mecanismo con Nombre"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 94,
+        "ingredient_name": "Meta Proof"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "Future 7 Dias"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:41:54.336Z"
+}

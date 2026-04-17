@@ -1,0 +1,276 @@
+{
+  "id": "e2db7dbb-0f69-466b-a69d-802af082b5fd",
+  "briefId": "6f4f0e89-0ecd-4287-9c8b-5dad6cacb833",
+  "title": "Las plantas del balcón que nadie supo escribir — el método invisible de la huerta casera",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_hobby_invisible_demanda",
+    "body_type": "demolicion_alternativas",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "jardinería de balcón / huerta urbana casera",
+    "model_sale_type": "ventana_oportunidad_ia",
+    "emotional_arc": "provocacion_evidencia",
+    "transition_text": "Te muestro el paso a paso en una clase gratis.",
+    "total_duration_seconds": 82,
+    "word_count": 290,
+    "belief_change": {
+      "old_belief": "Lo que hago con las plantas en el balcón es un hobby chiquito que no le interesa a nadie",
+      "mechanism": "Lo que una persona aprendió a fuerza de prueba y error durante años es exactamente lo que miles buscan en Google sin encontrar",
+      "new_belief": "Mi método cotidiano es un manual completo que ya existe en mi cabeza y solo necesita ser escrito"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "No importa la edad ni la experiencia previa — solo importa si sé hacer crecer algo",
+        "installed_via": "doble anáfora 'no importa si' que elimina auto-descarte",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Lo único que necesito ya lo tengo: cabeza, celular y media hora",
+        "installed_via": "calificación minimalista de los 3 elementos",
+        "persuasion_function": "quiebre",
+        "section_name": "Calificación"
+      },
+      {
+        "belief": "La feria tradicional no es escalable — depende del clima, del cuerpo y del tiempo",
+        "installed_via": "demolición de la alternativa física",
+        "persuasion_function": "mecanismo",
+        "section_name": "Demolición 1"
+      },
+      {
+        "belief": "Vender a vecinos tampoco resuelve — la matemática de los costos no da",
+        "installed_via": "demolición con números concretos",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición 2"
+      },
+      {
+        "belief": "Es plata real y modesta, no millonaria — exactamente lo que necesito",
+        "installed_via": "construcción honesta con anti-hype",
+        "persuasion_function": "prueba",
+        "section_name": "Construcción honesta"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "negacion_directa",
+        "hypothesis": "la doble anáfora desmonta el auto-descarte antes que aparezca",
+        "emotional_lever": "alivio",
+        "script_text": "No importa si tenés 30 años o ya pasaste los 65. No importa si lo único que sembraste en tu vida fueron dos tomates cherry en un macetero del balcón. Si sabés hacer crecer algo en tierra, sabés algo que mucha gente paga para aprender.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "observacion_tendencia",
+        "hypothesis": "la memoria colectiva de la pandemia activa reconocimiento específico",
+        "emotional_lever": "reconocimiento",
+        "script_text": "En la pandemia medio barrio se puso a armar huertas en el balcón. A los seis meses, la mayoría tenía macetas secas. A unos pocos no — les creció. Y ese puñado de personas sabe algo que vale plata y ni se acuerda.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "cuantificar los consejos regalados activa una leve injusticia",
+        "emotional_lever": "indignacion",
+        "script_text": "¿A cuántas amigas les mandaste audios por WhatsApp explicándoles por qué se les morían las plantas? Cada respuesta que regalaste es una página entera de un libro que todavía nadie se sentó a escribir.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "revelar la paradoja experto-invisible abre curiosidad",
+        "emotional_lever": "curiosidad",
+        "script_text": "Los que más saben de huerta orgánica en tu barrio son los que jamás pensaron en venderlo. Y los que sí lo venden en internet, la mayoría nunca cosechó una lechuga en su vida.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la escena sensorial del balcón al amanecer genera pertenencia",
+        "emotional_lever": "pertenencia",
+        "script_text": "Son las 8 de la mañana. Bajás al balcón con el café en la mano. Chequéas las lechugas, el perejil, la rúcula. Sacás unas hojas secas, movés una maceta al sol. Eso que hacés sin pensar, lo que te enseñó tu abuela o aprendiste sola, es un método completo. Solo que nunca lo escribiste.",
+        "timing_seconds": 13
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "provocacion_evidencia",
+      "turning_point_beat": "Calificación",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "No importa la edad ni la experiencia — lo que hago con las plantas vale",
+          "viewer_emotion_after": "alivio + apertura",
+          "is_turning_point": false,
+          "script_text": "Te voy a decir algo. Lo que hacés con esas plantas cuando bajás al balcón con el café en la mano — eso vale plata. Y nadie te avisó.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Calificación",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo único que necesito ya lo tengo",
+          "viewer_emotion_after": "calma + capacidad",
+          "is_turning_point": true,
+          "script_text": "No precisás invernadero. No precisás chacra. Solo precisás tres cosas: un celular, lo que ya sabés de memoria, y media hora de tiempo con una inteligencia artificial. Yo te muestro cómo se usa la última.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Demolición 1",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La feria tradicional es un negocio atado al cuerpo",
+          "viewer_emotion_after": "comprensión del techo físico",
+          "is_turning_point": false,
+          "script_text": "Podés poner un puesto en la feria de los sábados. Pagás 15 lucas de alquiler. Si llueve, no vendés. Si no vas, no cobrás. Y la lechuga que cosechaste el miércoles ya está mustia para el domingo.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Demolición 2",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Vender a vecinos no cierra por matemática",
+          "viewer_emotion_after": "descarte racional",
+          "is_turning_point": false,
+          "script_text": "Podés venderle plantines a los vecinos por WhatsApp. Los vecinos son ocho, quizás diez. Cuando comprás la cuarta bolsa de tierra y las macetas, la matemática te da 35 pesos de ganancia por cada plantín. No cierra.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Construcción honesta",
+          "persuasion_function": "prueba",
+          "micro_belief": "Es plata real, modesta y sin moverte del sillón",
+          "viewer_emotion_after": "confianza anti-hype",
+          "is_turning_point": false,
+          "script_text": "Ahora escuchame esto. Una guía en PDF de cómo armar una huerta en dos metros cuadrados de balcón se vende 30 o 40 veces por mes a 9 dólares. Son 270, 360 dólares de ingresos entrando mientras vos estás regando, sin descuidar a los hijos. No te vas a hacer millonaria con esto. Pero es plata real, medible, sin moverte del sillón del living.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Mi método cotidiano sigue trabajando mientras yo vivo",
+          "viewer_emotion_after": "tranquilidad + deseo",
+          "is_turning_point": false,
+          "script_text": "Y ahora sabe que lo que aprendió a los golpes con la tierra le entra como plata todos los meses, sin pedirle nada a las rodillas ni a la feria del sábado.",
+          "timing_seconds": 9
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "no importa si tenés 30 años o ya pasaste los 65"
+      },
+      {
+        "location": "hook_5",
+        "technique": "sensorial",
+        "phrase": "bajás al balcón con el café en la mano"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "no precisás invernadero"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmacion",
+        "phrase": "si no vas, no cobrás"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmacion",
+        "phrase": "la matemática te da 35 pesos de ganancia por cada plantín"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "mientras vos estás regando, sin descuidar a los hijos"
+      },
+      {
+        "location": "beat_5",
+        "technique": "anti_hype",
+        "phrase": "no te vas a hacer millonaria con esto"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Numérica"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:17:56.024Z",
+  "status": "confirmed"
+}

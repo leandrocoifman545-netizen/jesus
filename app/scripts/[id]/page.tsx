@@ -5,9 +5,9 @@ import ScriptViewer from "@/components/script-viewer";
 import { Kbd } from "@/components/keyboard-nav";
 import ScriptNav from "./script-nav";
 
-export default async function ScriptPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ batch?: string }> }) {
+export default async function ScriptPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ batch?: string; project?: string }> }) {
   const { id } = await params;
-  const { batch: batchParam } = await searchParams;
+  const { batch: batchParam, project: projectParam } = await searchParams;
   const generation = await getGeneration(id);
 
   if (!generation) {
@@ -16,7 +16,8 @@ export default async function ScriptPage({ params, searchParams }: { params: Pro
 
   // Use batch from URL param, or from the generation itself
   const batchId = batchParam || generation.batch?.id;
-  const neighbors = await getGenerationNeighbors(id, batchId);
+  const projectId = projectParam || generation.projectId;
+  const neighbors = await getGenerationNeighbors(id, batchId, projectId);
 
   return (
     <div className="animate-fade-in">
@@ -42,7 +43,7 @@ export default async function ScriptPage({ params, searchParams }: { params: Pro
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <ScriptNav prev={neighbors.prev} next={neighbors.next} batchId={batchId} />
+          <ScriptNav prev={neighbors.prev} next={neighbors.next} batchId={batchId} projectId={!batchId ? projectId : undefined} />
           <Link
             href="/briefs/new"
             className="group bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 hover:shadow-lg hover:shadow-purple-500/25 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 active:scale-[0.98]"
@@ -71,7 +72,7 @@ export default async function ScriptPage({ params, searchParams }: { params: Pro
       {/* Bottom navigation */}
       {(neighbors.prev || neighbors.next) && (
         <div className="mt-10 pt-6 border-t border-zinc-800/50 flex items-center justify-end">
-          <ScriptNav prev={neighbors.prev} next={neighbors.next} batchId={batchId} />
+          <ScriptNav prev={neighbors.prev} next={neighbors.next} batchId={batchId} projectId={!batchId ? projectId : undefined} />
         </div>
       )}
     </div>

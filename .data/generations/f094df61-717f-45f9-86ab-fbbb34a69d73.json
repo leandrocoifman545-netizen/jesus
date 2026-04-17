@@ -1,0 +1,251 @@
+{
+  "id": "f094df61-717f-45f9-86ab-fbbb34a69d73",
+  "briefId": "6ef4ecc2-8bea-4367-acca-c10112b3583e",
+  "title": "Hay mamás vendiendo lo que vos hacés gratis — producto con audios de WhatsApp",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.6_producto_especifico_revelado",
+    "body_type": "tier_list_rating",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "habilidades domésticas / mamá (amplio)",
+    "model_sale_type": "democratizacion_ia",
+    "emotional_arc": "revelacion_oportunidad",
+    "transition_text": "Cómo encontrar qué es lo tuyo y cómo armarlo, te lo muestro en 2 horas. Mirá.",
+    "total_duration_seconds": 75,
+    "word_count": 185,
+    "punto_entrada_emocional": "Curiosidad incrédula: posta que se puede hacer algo así de simple?",
+    "belief_change": {
+      "old_belief": "Para vender online necesitás saber de tecnología",
+      "mechanism": "Le dictás a la IA lo que sabés como un audio de WhatsApp y te arma un producto vendible",
+      "new_belief": "Solo necesitás hablar y saber de algo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Lo que se vende son guías cortas, no cursos complejos",
+        "installed_via": "Lista de productos reales con precios",
+        "persuasion_function": "quiebre",
+        "section_name": "Revelación de qué se vende"
+      },
+      {
+        "belief": "Puedo crear un producto hablando",
+        "installed_via": "Audio de WhatsApp a la IA → guía de 19 páginas",
+        "persuasion_function": "mecanismo",
+        "section_name": "El proceso"
+      },
+      {
+        "belief": "No necesito nada técnico",
+        "installed_via": "Hablaste por WhatsApp. Nada más.",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición barrera técnica"
+      },
+      {
+        "belief": "Hay demanda verificable",
+        "installed_via": "Buscá en Hotmart, verificalo vos",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba verificable"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "negacion_directa",
+        "hypothesis": "Las negaciones la hacen adivinar, se queda para saber QUÉ es",
+        "emotional_lever": "curiosidad_por_eliminacion",
+        "formula": "F8",
+        "script_text": "Hay un producto que se vende todos los días por WhatsApp, se arma en una tarde y no necesitás saber de tecnología, de diseño ni de marketing. Y las que mejor lo hacen son mamás.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Si conecto sus audios diarios con algo inesperado, genera intriga",
+        "emotional_lever": "reconocimiento_giro",
+        "formula": "F1",
+        "script_text": "Si sos mamá y mandás más de 10 audios por día explicándole cosas a la gente, ya tenés la herramienta para armar un negocio online. Solo te falta saber qué hacer con eso.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "Las negaciones crean un vacío que solo el video llena",
+        "emotional_lever": "intriga_por_eliminacion",
+        "formula": "F7",
+        "script_text": "El producto digital más fácil de crear se hace con algo que ya usás todos los días. No es una computadora. No es una cámara. Es algo más simple.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "observacion_tendencia",
+        "hypothesis": "La idea de solo con la voz es tan contraintuitiva que genera incredulidad productiva",
+        "emotional_lever": "incredulidad_productiva",
+        "formula": "F16",
+        "script_text": "Hay mamás que arman un producto digital en una tarde usando solo la voz. Sin escribir. Sin diseñar. Sin saber nada técnico. Le hablan a la IA y listo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "provocacion",
+        "hypothesis": "Conectar algo ultra-familiar con plata genera un cortocircuito",
+        "emotional_lever": "reframe_cotidiano",
+        "formula": "F15",
+        "script_text": "¿Sabés esos audios largos que mandás por WhatsApp explicando cómo hacer algo? Hay gente que cobra por eso. En serio.",
+        "timing_seconds": 6
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "revelacion_oportunidad",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Esto es real, no teoría",
+          "viewer_emotion_after": "Atención",
+          "is_turning_point": false,
+          "script_text": "Escuchame 60 segundos porque esto es más simple de lo que suena.",
+          "timing_seconds": 4
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que se vende son cosas que yo ya sé",
+          "viewer_emotion_after": "Sorpresa",
+          "is_turning_point": true,
+          "script_text": "Lo que se vende hoy no son cursos de 40 horas ni ebooks de 200 páginas. Son guías cortas. Prácticas. Cosas que la gente busca en Google todos los días: cómo organizar la semana de comidas, cómo armar rutinas para los chicos, cómo manejar la casa sin volverse loca. Cosas que vos ya sabés hacer de memoria.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo crear un producto hablando",
+          "viewer_emotion_after": "Curiosidad esperanzada",
+          "is_turning_point": false,
+          "script_text": "Agarrás el celular. Le mandás un audio a la IA como si fuera una amiga. Le contás cómo organizás las comidas de la semana, qué trucos usás, cómo te las arreglás con poco tiempo. Y la IA te arma una guía de 19 páginas con menús, lista de compras y recetas de 15 minutos. Lista para vender.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito nada técnico",
+          "viewer_emotion_after": "Permiso",
+          "is_turning_point": false,
+          "script_text": "No escribiste nada. No diseñaste nada. Hablaste por WhatsApp. Como hacés todos los días.",
+          "timing_seconds": 5
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay demanda real y verificable",
+          "viewer_emotion_after": "Convicción",
+          "is_turning_point": false,
+          "script_text": "Buscá \"menú semanal\" en Hotmart. Mirá los precios. 7 dólares. 9 dólares. Los crearon mamás como vos. Con un celular.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Puedo ganar sin cambiar mi rutina",
+          "viewer_emotion_after": "Deseo",
+          "is_turning_point": false,
+          "script_text": "Lo subís una vez. Se vende por WhatsApp mientras hacés lo que ya hacés. Sin horario. Sin jefe.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Transición",
+          "persuasion_function": "transicion",
+          "micro_belief": "Me va a mostrar cómo",
+          "viewer_emotion_after": "Disposición a actuar",
+          "is_turning_point": false,
+          "script_text": "Cómo encontrar qué es lo tuyo y cómo armarlo, te lo muestro en 2 horas. Mirá.",
+          "timing_seconds": 4
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "atencion",
+        "phrase": "esto es más simple de lo que suena"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reconocimiento",
+        "phrase": "Cosas que vos ya sabés hacer de memoria"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplificacion",
+        "phrase": "como si fuera una amiga"
+      },
+      {
+        "location": "demolicion",
+        "technique": "permiso",
+        "phrase": "Hablaste por WhatsApp. Como hacés todos los días."
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion",
+        "phrase": "Buscá \"menú semanal\" en Hotmart"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "deseo",
+        "phrase": "Se vende por WhatsApp mientras hacés lo que ya hacés"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-15T16:01:44.108Z",
+  "status": "confirmed"
+}

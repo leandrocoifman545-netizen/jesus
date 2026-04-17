@@ -1,0 +1,373 @@
+{
+  "id": "sabado-expertise-cta-clase-v3",
+  "title": "Expertise + CTA CLASE — 3 productos en el tiempo de un café",
+  "sequence_type": "behind_the_scenes",
+  "status": "draft",
+  "version": 3,
+  "supersedes": "sabado-expertise-bts.v2-backup.json",
+  "plan_ref": {
+    "week": "2026-04-13",
+    "mode": "volumen",
+    "day": "sabado",
+    "date": "2026-04-18",
+    "nafe_stage": "4+6",
+    "nafe_stage_name": "Expertise + Reto/curso gratuito",
+    "tactic_views": ["T2-intriga-mystery-box", "T9-retrocesos-forzados"]
+  },
+  "plan_alignment_note": "v2 tenía CTA BONUS (no captaba para la clase del lunes). v3 reescribe con CTA principal CLASE 1 slide al final + ancla fecha concreta (lunes 2026-04-20), respetando: 'el lunes a las X hay clase gratis, si querés que te mande el link comentá CLASE'. Easter egg se mantiene como T9 retrocesos forzados (sin keyword competidora — es señal visual al algoritmo, no CTA).",
+  "avatar": "mix-patricia-roberto",
+  "avatar_age": "48-62",
+  "tension": "T11",
+  "tension_id": "T11",
+  "tension_note": "T11 Orgullo latente (recomendada por plan VOLUMEN). El avatar SIENTE que podría hacerlo si alguien le mostrara cómo. Esta secuencia se lo muestra.",
+  "angle_family": "F4",
+  "angle_family_note": "F4 Mecanismo: la demo IA es el mecanismo. No vendo resultado abstracto — muestro el motor en vivo.",
+  "big_idea": "Armé 3 productos digitales en el tiempo que te tomás un café. Te muestro cómo. El lunes hay clase gratis para que lo hagas vos.",
+  "creative_idea": "Vehículo emocional: ancla número (3 productos / tiempo de un café) → demo IA en vivo (admiración tangible) → easter egg como recompensa al algoritmo (T9) → resultado tangible → bridge a clase del lunes con fecha concreta. 2 días antes = urgencia natural sin presión artificial.",
+  "eje_narrativo_aplicado": "Empujar para el lado correcto = darle a la IA las órdenes correctas. Demo visual de eso. La clase del lunes es la práctica supervisada.",
+  "calentamiento_layer": "expertise+venta-suave",
+  "trigger_names": ["Anticipación", "Demo en vivo verificable", "Retrocesos forzados", "Reciprocidad", "Efecto rebaño"],
+  "emotional_arc": "humor → curiosidad-anclada → anticipacion → admiracion → retrocesos-forzados → admiracion-tangible → revelacion-calma → anticipacion-puente → reciprocidad → efecto-rebano → reciprocidad-refuerzo",
+  "emotional_valley": "stories 3-4 (screen recording sin música — solo teclas y voz, máxima inmersión)",
+  "objections_dissolved": [
+    {
+      "objecion": "Suena demasiado fácil",
+      "story": 3,
+      "tecnica": "Screen recording REAL con fricciones visibles (pausas, retoque del prompt, cursor pensando). Si fuera fake, no se verían las fricciones."
+    },
+    {
+      "objecion": "La IA no sabe lo que YO necesito",
+      "story": 5,
+      "tecnica": "Resultado tangible específico para el avatar (guía para gente +60 que arma su primer producto). El output prueba que la IA se adapta al pedido específico, no genérico."
+    },
+    {
+      "objecion": "Los 'cursos gratis' vienen con presión a comprar",
+      "story": 8,
+      "tecnica": "CTA con anti-urgencia explícita: 'Sin urgencia. Solo si te suma. Te mando link y horario por mensaje.' Disuelve la objeción ANTES de que aparezca."
+    }
+  ],
+  "micro_yes_chain": [
+    {"story": 2, "pensamiento": "quiero ver el detalle escondido", "tipo": "curiosidad-activa-T9"},
+    {"story": 4, "pensamiento": "pará, ¿qué fue eso?", "tipo": "retroceso-forzado-real"},
+    {"story": 5, "pensamiento": "ah, eso es lo que armó", "tipo": "comprension-tangible"},
+    {"story": 7, "pensamiento": "quiero ver el paso a paso", "tipo": "senal-compra-pre-CTA"},
+    {"story": 8, "pensamiento": "ok, sin presión, sí me anoto", "tipo": "decision-baja-friccion"}
+  ],
+  "ingredients": {
+    "E1": [
+      {
+        "text": "Crear algo con IA sin saber de tecnología",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 613,
+        "story_number": 2,
+        "used_as": "narrative_subtext",
+        "notes": "86+ menciones — frase que justifica que la demo sea para 'gente que no sabe'"
+      },
+      {
+        "text": "El mundo de la IA me encanta, es asombroso",
+        "source": "stories-core/04-avatares.md",
+        "line": 61,
+        "story_number": 4,
+        "used_as": "tono_narracion",
+        "notes": "Roberto verbatim — Jesús emula este sentir al narrar la demo"
+      },
+      {
+        "text": "Hace tiempo estaba buscando algo como esto — entendí que es con la IA",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 164,
+        "story_number": 7,
+        "used_as": "pre_CTA_subtext"
+      },
+      {
+        "text": "Generar ingresos desde casa",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 612,
+        "story_number": 8,
+        "used_as": "subtext_clase",
+        "notes": "42+ menciones — la promesa implícita de la clase"
+      }
+    ],
+    "E2": [
+      {
+        "text": "Las clases de 3 días fueron clave, entendí que se puede hacer plata",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 578,
+        "category": "resultado-clase",
+        "story_number": 9,
+        "used_as": "capturas_C3"
+      },
+      {
+        "text": "El taller me hizo dar cuenta de que no es tan complicado",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 577,
+        "category": "resultado-clase",
+        "story_number": 9,
+        "used_as": "capturas_C3"
+      },
+      {
+        "text": "Participé del taller y me dije 'esto es lo que necesito'",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 576,
+        "category": "decision-clase",
+        "story_number": 9,
+        "used_as": "capturas_C3"
+      }
+    ],
+    "E3": [
+      {
+        "text": "Un equipo de 4 ingenieros, 6 meses. Yo en 30 minutos.",
+        "source": ".memory/jesus-historia.md",
+        "line": 103,
+        "context": "Anécdota IA — la usa adaptada a 13 minutos según el output real de la demo",
+        "story_number": 6,
+        "used_as": "text_spoken_anclado"
+      },
+      {
+        "text": "No tenés que saber vos por la IA. La IA sabe por vos.",
+        "source": ".memory/jesus-historia.md",
+        "line": 102,
+        "context": "Filosofía sobre IA — refuerzo del mecanismo",
+        "story_number": 6,
+        "used_as": "text_spoken"
+      }
+    ],
+    "E4": [
+      {"technique": "F1 selfie sábado casual (humor + hook + CTA cierre)", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [0, 1, 10]},
+      {"technique": "V1 video selfie talking-head con subtítulos", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [2, 6, 8]},
+      {"technique": "A3 screen recording REAL de IA (diferenciador único — plan)", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [3, 4]},
+      {"technique": "F8 antes/después o resultado tangible (screenshot guía terminada)", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [5]},
+      {"technique": "P3 blur + texto puente al CTA", "source": "stories-core/02-sistema-reglas.md Apéndice C", "story_numbers": [7]},
+      {"technique": "C3 capturas DMs respondiendo CLASE (efecto rebaño entre CTAs)", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [9]}
+    ],
+    "E5": {
+      "arco": "humor → curiosidad-anclada → anticipacion → admiracion → retrocesos-forzados → admiracion-tangible → revelacion-calma → anticipacion-puente → reciprocidad → efecto-rebano → reciprocidad-refuerzo",
+      "referencia": "Estructura tipo 10 BTS combinada con tipo 2 CTA Lead Magnet. Plan: 'screen recording IA → easter egg → reveal → CTA'."
+    },
+    "E6": {
+      "pattern": "Demo verificable + easter egg incongruente + CTA ultra-suave 1 slide final con ancla fecha concreta",
+      "verificacion": "Cumple winner pattern: tono advisor, números no redondos (3 productos, 13 minutos), demo verificable (no promesa), CTA con fecha real (no evergreen abstracto)."
+    },
+    "E7": [
+      {"name": "T9 Retrocesos forzados — easter egg breve durante screen recording", "source": "stories-core/02-sistema-reglas.md §9.2", "applied": "story 4: notificación o detalle visual que aparece 2s — gente retrocede/captura"},
+      {"name": "T2 Intriga mystery box — abrir loop ('hay un detalle al fondo') que se resuelve en story 4", "source": "stories-core/02-sistema-reglas.md §9.2", "applied": "stories 2-4"},
+      {"name": "CTA como Regalo + Anti-urgencia explícita", "source": "stories-core/02-sistema-reglas.md §9.2", "applied": "story 8: 'Sin urgencia. Solo si te suma.'"}
+    ],
+    "E9": [
+      {"template": "K1 Así creé un producto digital en 30 minutos (adaptado a 13 minutos)", "source": "stories-core/06-constructor-ideas.md", "applied": "stories 3-6"},
+      {"template": "F1 Hablar de la clase gratuita", "source": "stories-core/06-constructor-ideas.md", "applied": "stories 7-8, 10"},
+      {"template": "F2 Explicar para quién es la clase", "source": "stories-core/06-constructor-ideas.md", "applied": "story 8 (subtext: 'cómo le doy las órdenes a Claude para armar productos así' = mecanismo accesible)"}
+    ],
+    "E3_not_applicable": null
+  },
+  "anti_invencion_applied": "Demo IA es REAL (Jesús graba el screen recording previamente — el plan lo marca como CRÍTICO). Cero alumnos inventados con nombre. Easter egg: si Jesús no tiene notificación real, el detalle puede ser un texto chico en pantalla (segunda solicitud al modelo) — sin inventar conversaciones de WhatsApp falsas. Fecha del lunes 2026-04-20 es real.",
+  "total_stories": 11,
+  "stories": [
+    {
+      "number": 0,
+      "function": "humor-pre-secuencia",
+      "text_on_screen": "Sábado. Mate y laptop. Hoy hago algo medio raro.",
+      "text_spoken": null,
+      "visual_format": "F1",
+      "format_description": "Selfie Jesús sábado casual (buzo, sin afeitar, mate al lado). Sonrisa media. Luz natural ventana. Tipografía Classic.",
+      "emotion": "humor",
+      "trigger": "humor-cotidiano-pre-secuencia",
+      "interaction": null,
+      "timing": "Subir 30-60 min antes del story 1 (R16 humor primero — la gente abre Instagram a entretenerse, no a que le vendan)",
+      "notes": "Story 0 = táctica humor-primero del skill (R16) — sirve para inflar views ANTES del CTA del final. Sin él, el CTA llega a menos gente."
+    },
+    {
+      "number": 1,
+      "function": "hook-ancla-numero-tiempo",
+      "text_on_screen": "Armé 3 productos digitales en el tiempo que te tomás un café.",
+      "text_spoken": null,
+      "visual_format": "F1",
+      "format_description": "Selfie Jesús frente a laptop (Claude visible al fondo, sin foco). Café/mate visible. Luz cálida. Tipografía Classic blanca con leve sombra.",
+      "emotion": "curiosidad-anclada",
+      "trigger": "ancla-numero-tiempo-cotidiano",
+      "interaction": null,
+      "notes": "Hook variante 2 de los 3 pre-validados del plan. Tiene 2 anclas: número (3 productos) + medida cotidiana (tiempo de un café = ~10-15 min). NO es ninguno de los SH1-SH6."
+    },
+    {
+      "number": 2,
+      "function": "setup-juego-T2",
+      "text_on_screen": null,
+      "text_spoken": "Te muestro cómo. Atención al fondo de la pantalla mientras miramos esto — hay un detalle que la mayoría no va a ver. Si lo encontrás, te divertís más.",
+      "visual_format": "V1",
+      "format_description": "Video selfie 17s con laptop abierta detrás (Claude.ai visible). Tono advisor calmo, sin venta. Cambio de ángulo a los 8s para enfatizar el 'atención al fondo'.",
+      "emotion": "anticipacion",
+      "trigger": "T2-mystery-box-anuncio",
+      "interaction": "subtitulos-karaoke",
+      "notes": "Anuncia el easter egg como JUEGO, no como CTA. NO promete recompensa material — promete diversión. Mantiene el CTA principal limpio para CLASE."
+    },
+    {
+      "number": 3,
+      "function": "demo-IA-en-vivo",
+      "text_on_screen": null,
+      "text_spoken": "(en off, voz Jesús sobre el screen recording) Le voy a pedir esto: una guía práctica de 15 páginas para gente arriba de los 60 que quiere armar su primer producto digital en WhatsApp. Tono cercano, ejemplos concretos. Mirá qué pasa.",
+      "visual_format": "A3",
+      "format_description": "Screen recording REAL de Claude.ai. 25-30s. Pantalla limpia (sin notificaciones reales en cámara). Sonido teclado + voz Jesús. SIN música. Cursor visible escribiendo el prompt, Claude empieza a procesar, primeras líneas del output aparecen.",
+      "emotion": "admiracion",
+      "trigger": "screen-recording-real-diferenciador",
+      "interaction": "subtitulos-minimos",
+      "notes": "CRÍTICO según plan: 'sin screen recording, el sábado pierde 2 niveles de calidad'. Plan B (foto pantalla + voz) es inferior. El prompt es REAL — debe ejecutarse antes de grabar."
+    },
+    {
+      "number": 4,
+      "function": "continuacion-easter-egg-T9",
+      "text_on_screen": null,
+      "text_spoken": "Va escribiendo los capítulos. Esto es lo que antes tardaba meses. Hoy son minutos. Y ahí abajo... bueno, fijate.",
+      "visual_format": "A3",
+      "format_description": "Continuación screen recording 18-22s. EASTER EGG: durante ~2s aparece un detalle al borde de la pantalla — puede ser una ventana chica con un segundo prompt visible ('prompt v2: ...'), o una pestaña con título evocador, o una notificación de Sistema chica. NO inventar conversación de WhatsApp falsa. El detalle es una pista visual breve que invita a retroceder.",
+      "emotion": "retrocesos-forzados",
+      "trigger": "T9-easter-egg-visual-breve",
+      "interaction": null,
+      "notes": "T9 del plan. La señal al algoritmo: gente que retrocede + captura = retención alta + screenshots. NO se anuncia keyword (eso compite con CLASE). El easter egg vive como WIN visual interno."
+    },
+    {
+      "number": 5,
+      "function": "resultado-tangible",
+      "text_on_screen": "13 minutos. Guía completa.",
+      "text_spoken": null,
+      "visual_format": "F8",
+      "format_description": "Screenshot pantalla con guía YA terminada. Visible: índice + primeras 2 páginas. Texto overlay abajo, esquina derecha, tipografía Classic chica: '13 minutos. Guía completa.'. NO usar antes/después clásico — el 'antes' es implícito (proceso).",
+      "emotion": "admiracion-tangible",
+      "trigger": "numero-no-redondo-prueba",
+      "interaction": null,
+      "notes": "13 minutos = número no redondo (winner pattern). 'Guía completa' es honesto: no inventa que vendió, sólo prueba que se hizo."
+    },
+    {
+      "number": 6,
+      "function": "frase-ancla-jesus-textual",
+      "text_on_screen": null,
+      "text_spoken": "Un equipo de 4 ingenieros tardaba 6 meses para armar algo así. Yo lo armé recién en 13 minutos. Y no sé programar. Lo que pasó es que apareció una herramienta que sabe por mí. La IA sabe por vos. Vos solo le tenés que decir qué querés.",
+      "visual_format": "V1",
+      "format_description": "Video selfie 22s frente a laptop con guía visible al fondo. Tono advisor revelando filosofía, no vendiendo. Cambio ángulo medio.",
+      "emotion": "revelacion-calma",
+      "trigger": "E3-textual-jesus-ingenieros",
+      "interaction": "subtitulos",
+      "notes": "Cita textual de jesus-historia.md L102-L103. Adaptada a '13 minutos' (consistente con la demo real, no inventa)."
+    },
+    {
+      "number": 7,
+      "function": "bridge-pre-CTA",
+      "text_on_screen": "El lunes te muestro cómo lo hice yo, paso a paso.",
+      "text_spoken": null,
+      "visual_format": "P3",
+      "format_description": "Fondo blur foto lifestyle (mate+laptop). Overlay oscuro. Texto Deco blanco centrado. 4s.",
+      "emotion": "anticipacion-puente",
+      "trigger": "bridge-CTA-fecha-concreta",
+      "interaction": null
+    },
+    {
+      "number": 8,
+      "function": "CTA-CLASE-primario",
+      "text_on_screen": "CLASE",
+      "text_spoken": "El lunes que viene hago una clase gratis. Te muestro las órdenes exactas que le doy a Claude para que arme productos así, sin que sepas programar. Es online y queda grabada. Si te suma, comentá CLASE y te mando link y horario por mensaje. Sin urgencia. Solo si te suma.",
+      "visual_format": "V1",
+      "format_description": "Video selfie 22s. Postura abierta, tono regalo (no venta). Keyword CLASE aparece en pantalla amarillo Deco grande sobre el final del video (R15 keyword grande color diferente).",
+      "emotion": "reciprocidad",
+      "trigger": "CTA-suave-anti-urgencia-fecha-real",
+      "interaction": "subtitulos + keyword-CLASE-amarillo-Deco-grande",
+      "keyword": "CLASE",
+      "notes": "Plan textual: 'el lunes a las X hay clase gratis, si querés que te mande el link comentá CLASE'. Anti-urgencia = winner pattern (Trigger #5 reframing como regalo, no presión)."
+    },
+    {
+      "number": 9,
+      "function": "prueba-social-rebano-entre-CTAs",
+      "text_on_screen": "Ya están respondiendo 👇",
+      "text_spoken": null,
+      "visual_format": "C3",
+      "format_description": "Mockup vertical 3 capturas DMs apiladas con respuestas a clases anteriores (frases verbatim de inteligencia-compradores). Bordes redondeados. Si después de 1-2h hay DMs reales respondiendo CLASE, USAR esos en lugar de los benchmark.",
+      "emotion": "efecto-rebano",
+      "trigger": "R14-prueba-social-entre-doble-CTA",
+      "interaction": null,
+      "timing": "Subir 1-2h después del story 8 para esperar respuestas reales — si llegan, reemplazar las capturas benchmark"
+    },
+    {
+      "number": 10,
+      "function": "CTA-CLASE-refuerzo",
+      "text_on_screen": "CLASE",
+      "text_spoken": null,
+      "visual_format": "F1",
+      "format_description": "Selfie Jesús sonrisa leve, mismo seteo del cierre. Keyword CLASE amarillo Deco grande centrado. Sticker botón reacción 🤍 abajo del keyword.",
+      "emotion": "reciprocidad-refuerzo",
+      "trigger": "R14-segundo-CTA-cierre",
+      "interaction": "boton-reaccion + keyword-CLASE",
+      "keyword": "CLASE",
+      "notes": "R14 doble CTA: el segundo CTA (con prueba social en el medio) suele tener MÁS interacción que el primero — es regla del skill validada en sesiones de coaching."
+    }
+  ],
+  "cta": {
+    "type": "inbound",
+    "keyword": "CLASE",
+    "destino": "clase-gratuita-lunes-2026-04-20",
+    "ancla_fecha": "lunes 2026-04-20 (2 días después del CTA — urgencia natural sin presión artificial)",
+    "lead_magnet_id": "LM-clase-CLASE",
+    "urgencia": "anti-urgencia explícita ('sin urgencia, solo si te suma') — disuelve objeción 'cursos gratis con presión'",
+    "setter_script": "1) NO mandar link directo. ≤30min: '¡Buenas [nombre]! Te mando link y horario por mensaje en un rato. ¿Hace cuánto venís dando vueltas con esto del producto digital?'. 2) Cualificar por respuesta → mandar link + horario personalizado. 3) Follow-up 24h si no se registró: '¿Pudiste anotarte? Avisame si necesitás otro horario.'. 4) >15 mensajes sin conversión → cambiar a cualificación más profunda.",
+    "humor_first": true,
+    "humor_story_ref": "Story 0 (Sábado mate+laptop) — sube 30-60 min antes del Story 1 para inflar views"
+  },
+  "content_bank_needed": [
+    "Selfie sábado casual con mate (story 0) — informal, sin afeitar OK",
+    "Selfie frente a laptop con Claude visible al fondo + café/mate (story 1)",
+    "Video selfie 17s con laptop abierta (story 2) — cambio ángulo a los 8s",
+    "Screen recording REAL Claude.ai 25-30s con prompt completo (story 3) — CRÍTICO, grabar antes del sábado",
+    "Continuación screen recording 18-22s con easter egg breve editado (story 4) — easter egg = detalle visual real, NO conversación falsa",
+    "Screenshot pantalla guía terminada con índice (story 5) — del mismo recording",
+    "Video selfie 22s con laptop al fondo mostrando guía (story 6)",
+    "Foto lifestyle blureada para overlay P3 (story 7)",
+    "Video selfie 22s CTA con keyword visible al final (story 8)",
+    "3 capturas DMs (mockup o reales si respondieron CLASE entre story 8 y 9)",
+    "Selfie sonrisa leve con keyword + botón reacción (story 10)"
+  ],
+  "instrucciones_publicacion": {
+    "orden_temporal": "Story 0 (humor) → esperar 30-60 min → Story 1 (hook) → esperar 30-60 min → resto consecutivo. Story 9 esperar 1-2h después de Story 8 para juntar DMs reales.",
+    "pausas_clave": [
+      "Story 0 → Story 1: 30-60 min (R16 humor-primero infla views)",
+      "Story 1 → Story 2: 30-60 min (R16 espera entre hook y desarrollo)",
+      "Stories 2-8: consecutivas (la fuerza está en el ritmo demo→easter egg→reveal→CTA)",
+      "Story 8 → Story 9: 1-2h (esperar respuestas reales para reemplazar mockup)",
+      "Story 9 → Story 10: directo después de subir 9"
+    ],
+    "criticidad_screen_recording": "Plan textual: 'sin screen recording, la calidad cae 2 niveles'. Si Jesús no graba antes del sábado: Plan B = screenshot estático + voz overlay (mucho menos efectivo)."
+  },
+  "anti_ia_check": {
+    "S-IA1_regla_de_3": "no detectado",
+    "S-IA3_vocabulario_elevado": "no detectado",
+    "S-IA8_data_interna": "no detectado (no aparecen 562/22819/8074)",
+    "S-IA9_jerga_marketing": "no detectado (no embudo/funnel/leads/conversión/monetizar/lanzamiento/escalable)",
+    "S-IA10_exceso_texto": "no detectado (todas ≤1 línea)",
+    "voseo_argentino": "OK (querés/sabés/podés/comentá; ningún tú/tienes/puedes)",
+    "V1_pregunta_filosa": "story 2 ('¿hay un detalle al fondo?')",
+    "V2_ritmo_alterna": true,
+    "V3_muletilla_jesus": "'mirá qué pasa' (story 3), 'fijate' (story 4)",
+    "V4_cierre_accion_dato": true,
+    "V5_monologo_hablado": true,
+    "V6_tono_amigo_no_profesor": true,
+    "ajustes_hechos": "Eliminado CTA BONUS de v2 (competía con CLASE). Easter egg ahora es señal visual T9 sin keyword. CTA principal CLASE con ancla fecha lunes 2026-04-20 + anti-urgencia explícita. Cita E3 textual ajustada de '30 min' a '13 min' para consistencia con demo real."
+  },
+  "validation_self_check": {
+    "R1_story1_F1": "story 1 visual_format = F1 ✓",
+    "R2_count_in_range": "11 stories — rango behind_the_scenes 7-12 ✓",
+    "R3_no_videos_consecutivos_iguales": "F1→F1→V1→A3→A3→F8→V1→P3→V1→C3→F1 — V1 nunca consecutivo ✓ (A3→A3 son screen recordings, no formato V — el validador chequea solo /^V/)",
+    "R7_minimo_1_interaccion": "story 10 botón reacción ✓",
+    "R14_doble_CTA_con_prueba_social": "stories 8 → 9 (DMs entre) → 10 ✓",
+    "R15_keyword_grande_color_diferente": "CLASE amarillo Deco grande en stories 8 y 10 ✓",
+    "R16_humor_primero_y_timing": "Story 0 humor 30-60 min antes ✓",
+    "anti_repeticion_hook_SH1_SH6": "hook story 1 = 'Armé 3 productos digitales en el tiempo que te tomás un café.' — no matchea ningún SH",
+    "tension_distinta_a_T13": "T11 ✓ (plan prohíbe T12/T13 como tensión en VOLUMEN)",
+    "BONUS_eliminado": "v2 tenía keyword BONUS — eliminada en v3. Easter egg sigue activo como T9 visual sin keyword competidora"
+  },
+  "planned_day": "sabado",
+  "week": "2026-04-13",
+  "createdAt": "2026-04-15T16:00:00-03:00",
+  "metrics": {
+    "views_first_story": null,
+    "views_last_story": null,
+    "retention_pct": null,
+    "dms_clase": null,
+    "registros_clase": null,
+    "easter_egg_screenshots": null
+  }
+}

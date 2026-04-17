@@ -1,0 +1,209 @@
+{
+  "id": "fe82536c-1097-457b-bb46-38430077f586",
+  "briefId": "061a65ca-f41c-48f0-9208-a278befe8333",
+  "title": "Tu cuerpo ya te avisó — veterinario que no da más",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.6_profesion_ia_especifica",
+    "body_type": "demolicion_alternativas",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "veterinaria / salud animal",
+    "model_sale_type": "cementerio_modelos",
+    "emotional_arc": "confrontacion_directa",
+    "transition_text": "Tu cuerpo ya te avisó. Tu conocimiento no tiene por qué depender de él. Te muestro otra forma.",
+    "total_duration_seconds": 80,
+    "word_count": 190,
+    "belief_change": {
+      "old_belief": "La única forma de ganar más es atender más pacientes",
+      "mechanism": "Presentar 3 alternativas donde las primeras 2 destruyen el cuerpo y la tercera usa IA para empaquetar conocimiento",
+      "new_belief": "Puedo vender lo que sé sin mover el cuerpo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Sé más de nutrición animal que los ebooks que se venden",
+        "installed_via": "dato concreto de 90% de ebooks",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Más consultas = más desgaste, no más plata",
+        "installed_via": "demolición de alternativa 1 (más consultas)",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe una tercera vía que no requiere mi cuerpo",
+        "installed_via": "presentación del modelo digital con IA",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito nada especial para arrancar",
+        "installed_via": "eliminación de barreras paso a paso",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Otros profesionales de salud ya lo hacen",
+        "installed_via": "lista de profesionales vendiendo guías",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el espejo de la rutina del veterinario genera identificación visceral",
+        "emotional_lever": "hartazgo",
+        "script_text": "Te levantás a las 6. Arrancás con una cirugía. Después consultas hasta las 7. Llegás a tu casa con olor a clínica y lo primero que hacés es sentarte a hacer facturas.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "la frase textual de 41 años genera impacto emocional directo",
+        "emotional_lever": "indignación",
+        "script_text": "41 años trabajando 10 horas diarias. Poca valoración. Y el que te vacuna al perro cobra lo mismo que un plomero. ¿Hasta cuándo?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "confesion",
+        "hypothesis": "la historia de Jesús con 100 clientes genera conexión por vulnerabilidad",
+        "emotional_lever": "conexión",
+        "script_text": "Tuve 100 clientes. Ganaba bien. Y fue el peor momento de mi vida. Porque no dormía, no paraba, y mi cuerpo me lo cobró. Te cuento qué cambié.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Sé más de nutrición animal que los ebooks que se venden",
+          "timing_seconds": 15,
+          "script_text": "Sabés más de nutrición animal que el 90 por ciento de los ebooks que se venden por internet. Pero cada día cambiás ese conocimiento por consultas de 20 minutos que no te alcanzan para nada."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Más consultas = más desgaste, no más plata",
+          "timing_seconds": 15,
+          "script_text": "Hay 3 formas de ganar un ingreso extra como profesional. La primera es dar más consultas. Pero a los 46 años tu cuerpo ya te avisó que no da para más. La segunda es dar cursos presenciales en Rosario o Buenos Aires. Pero eso es otro laburo encima.",
+          "is_turning_point": true
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe una tercera vía que no requiere mi cuerpo",
+          "timing_seconds": 15,
+          "script_text": "La tercera es distinta. Agarrás lo que ya sabés, le pedís a la IA que lo organice en una guía paso a paso, y lo vendés por WhatsApp. Sin consultorio. Sin horario. Sin que tu espalda opine."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito nada especial para arrancar",
+          "timing_seconds": 12,
+          "script_text": "No necesitás saber de marketing. No necesitás seguidores. Un celular y WhatsApp. Necesitás saber algo que otro quiera aprender. Y eso ya lo tenés de sobra."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otros profesionales de salud ya lo hacen",
+          "timing_seconds": 10,
+          "script_text": "Buscá 'guía de nutrición para mascotas' en Hotmart. Vas a encontrar productos de veterinarios. Gente que se cansó de que el consultorio sea su único ingreso. Con menos experiencia que vos. ¿Y vos seguís haciendo facturas a las 10 de la noche?"
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Los modelos lineales tienen techo, el digital no",
+          "timing_seconds": 13,
+          "script_text": "Freelance, consultoría, agencia... Todos esos modelos tienen lo mismo. Si no laburás, no cobrás. Acá creás algo una vez y sigue vendiendo."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Llegás a tu casa con olor a clínica"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "consultas de 20 minutos que no te alcanzan para nada"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "tu cuerpo ya te avisó que no da para más"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Sin consultorio. Sin horario"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "eso ya lo tenés de sobra"
+      },
+      {
+        "location": "beat_6",
+        "technique": "afirmación",
+        "phrase": "Si no laburás, no cobrás"
+      }
+    ],
+    "ingredients_used": [
+      "B#23",
+      "C#42",
+      "D#51",
+      "F#72",
+      "G#88"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:21.323Z"
+}

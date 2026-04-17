@@ -1,0 +1,266 @@
+{
+  "id": "07be1630-8e50-42e3-af87-bd6098e52ea7",
+  "briefId": "7c6848c1-c5a7-47d3-a311-ff5a8901a7d1",
+  "title": "7 horas de Uber para que te queden $15 — Saúl encontró otra forma",
+  "batch": {
+    "id": "40841ea8-40ac-4f43-a156-2c14fd3427df",
+    "name": "Top 10 Definitivo"
+  },
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.3_microhistoria_resultado",
+    "body_type": "contraste_emocional",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "trabajadores que hacen Uber/delivery como ingreso extra",
+    "model_sale_type": "contraste_fisico",
+    "emotional_arc": "dolor_puro_esperanza",
+    "transition_text": "Lo que sabés de tu trabajo vale más que 7 horas de Uber. Te muestro cómo empaquetarlo.",
+    "total_duration_seconds": 65,
+    "word_count": 168,
+    "belief_change": {
+      "old_belief": "Necesito el Uber para llegar a fin de mes — no tengo otra opción",
+      "mechanism": "Tu conocimiento de tu trabajo REAL vale más empaquetado que 7 horas manejando — la IA te permite convertirlo en producto",
+      "new_belief": "No soy chofer. Soy un profesional que no está vendiendo lo que sabe. El Uber es síntoma, no solución"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Estoy destruyendo mi cuerpo por $15 la noche",
+        "installed_via": "escena sensorial de la noche de Uber + frase real de Saúl",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "No soy chofer — soy un profesional que no está vendiendo lo que sabe",
+        "installed_via": "pivote de identidad: de chofer de Uber a cocinero con 15 años",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Mi conocimiento de cocina se puede empaquetar y vender mientras duermo",
+        "installed_via": "demo concreta: 23 recetas, $8, primera venta a las 3am",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito saber de tecnología — Saúl tampoco sabía",
+        "installed_via": "Saúl le habló a la IA mientras esperaba un viaje",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Puedo dejar de necesitar el Uber",
+        "installed_via": "espejo inverso: cada 'sin' cancela un dolor de la identificación + anti-hype",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "auto-selección por actividad: el que hace Uber se ve inmediatamente",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si manejás Uber para llegar a fin de mes, esto te va a doler. Porque ya lo sabés: 7 horas manejando, reventado, y lo que te queda no te alcanza ni para el seguro del auto.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "hypothesis": "la frase textual de Saúl genera conexión + la pregunta abre curiosidad sin spoilear",
+        "emotional_lever": "empatía",
+        "script_text": "\"Haciendo Uber me lleva entre 7 y 8 horas. Pero muy cansado. Es la única que me saca de apuro.\" Eso me escribió Saúl, 39 años. Le hice una pregunta que le cambió todo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "la paradoja de saber mucho y cobrar poco genera curiosidad en profesionales",
+        "emotional_lever": "curiosidad",
+        "script_text": "La gente que hace Uber como extra es la que MÁS sabe y MENOS cobra por lo que sabe. Tienen años de experiencia en su profesión y de noche manejan por $15. Te cuento por qué.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "hypothesis": "la comparación con gente que gana más sabiendo menos genera bronca productiva",
+        "emotional_lever": "confrontación",
+        "script_text": "Tenés un trabajo. Te formaste. Sabés hacer cosas que no se aprenden en YouTube. Y de noche manejás Uber para cubrir lo que falta. Mientras tanto, gente que sabe la mitad que vos vende guías por internet desde el sillón.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el dato de búsquedas sobre lo que Saúl ya sabe genera sensación de oportunidad perdida",
+        "emotional_lever": "oportunidad",
+        "script_text": "Saúl es cocinero de día y chofer de Uber de noche. Gana $400 por mes con Uber destruyéndose el cuerpo. Cuando le mostré que 'recetas de comidas rápidas' tiene 28.000 búsquedas por mes en Google, no lo podía creer.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Estoy destruyendo mi cuerpo por $15 la noche",
+          "viewer_emotion_after": "reconocimiento visceral + agotamiento",
+          "is_turning_point": false,
+          "timing_seconds": 14,
+          "script_text": "Son las 10 de la noche. Terminaste tu trabajo. Estás reventado. Pero abrís la app, prendés el auto y salís a manejar. 7 horas. Dolor de espalda. Los ojos que se cierran. Y cuando llegás a tu casa, tu familia ya está durmiendo. Todo eso para que te queden $15 por noche. Saúl me lo dijo así: \"Es la única que me saca de apuro.\""
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No soy chofer — soy un profesional que no está vendiendo lo que sabe",
+          "viewer_emotion_after": "sorpresa + cambio de identidad",
+          "is_turning_point": true,
+          "timing_seconds": 13,
+          "script_text": "Pero Saúl no es chofer. Saúl es cocinero. 15 años de experiencia en cocina. Sabe de recetas, de menús, de costos por porción. Eso que sabe de su trabajo REAL vale mucho más que 7 horas de Uber. El tema es que nadie le mostró cómo venderlo sin cocinar."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi conocimiento se puede empaquetar y vender mientras duermo",
+          "viewer_emotion_after": "alivio + curiosidad concreta",
+          "is_turning_point": false,
+          "timing_seconds": 16,
+          "script_text": "Saúl agarró sus 23 recetas de comidas rápidas para laburar — las que hacía en 20 minutos para el almuerzo del equipo. Con la IA las organizó en un recetario digital con costos por porción y tips de cocina express. Lo puso a 8 dólares. \"Recetas rápidas para gente que trabaja\" lo buscan 28.000 personas por mes. La primera venta le llegó un jueves a las 3 de la mañana. Él estaba durmiendo. No manejando."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito saber de tecnología — Saúl tampoco sabía",
+          "viewer_emotion_after": "resistencia desarmada",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "\"Pero yo no sé de tecnología.\" Saúl tampoco. Le habló a la IA como si le hablara a un amigo: \"Che, tengo estas recetas, organizámelas.\" Y la IA se las organizó. Una tarde. Desde el celular. Mientras esperaba un viaje de Uber."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Puedo dejar de necesitar el Uber",
+          "viewer_emotion_after": "esperanza concreta + dignidad",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Sin manejar de noche. Sin dolor de espalda. Sin llegar cuando tu familia ya duerme. Tu conocimiento trabajando por vos mientras descansás. No te vas a hacer millonario. Pero podés dejar de necesitar el Uber. ¿Me explico?"
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Son las 10 de la noche. Terminaste tu trabajo. Estás reventado."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Dolor de espalda. Los ojos que se cierran."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "tu familia ya está durmiendo"
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "Todo eso para que te queden $15 por noche."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Es la única que me saca de apuro."
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "Saúl no es chofer. Saúl es cocinero."
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "vale mucho más que 7 horas de Uber"
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "23 recetas de comidas rápidas para laburar"
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "28.000 personas por mes"
+      },
+      {
+        "location": "beat_3",
+        "technique": "future_pacing",
+        "phrase": "Él estaba durmiendo. No manejando."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Mientras esperaba un viaje de Uber."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Sin manejar de noche. Sin dolor de espalda. Sin llegar cuando tu familia ya duerme."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "No te vas a hacer millonario. Pero podés dejar de necesitar el Uber."
+      }
+    ],
+    "ingredients_used": [
+      "B#23",
+      "C#47",
+      "D#49",
+      "E#67",
+      "H#101"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:21.939Z",
+  "status": "confirmed"
+}

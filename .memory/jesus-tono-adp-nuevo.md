@@ -9,7 +9,7 @@
 - "Abrazo" / "Te mando un abrazo" / "Cuidate" (cierre cálido)
 
 ## Registro y tono
-- Voseo argentino permanente, NUNCA "tú"
+- Predomina voseo argentino (~70%: "tenés", "podés", "mirá") pero mezcla con tuteo naturalmente (~30%: "puedes", "tienes"). Verificado en guiones winners. No forzar 100% voseo.
 - Ultra informal, conversacional, como hablando con un amigo
 - Mezcla de motivación y regaño (tough love)
 - Preguntas retóricas constantes: "O no?", "Me explico?"

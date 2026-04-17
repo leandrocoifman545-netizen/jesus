@@ -1,0 +1,441 @@
+{
+  "id": "bbbec157-8080-4b0b-b470-14500a23cfea",
+  "briefId": "486d930d-0579-459d-ae44-f95f47de45d1",
+  "title": "Historia de Jesús — De esa cama a esta cama",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.1_historia_jesus",
+    "body_type": "historia_con_giro",
+    "segment": "Todos",
+    "funnel_stage": "RETARGET",
+    "niche": "historia personal / branding",
+    "model_sale_type": "autoridad_por_origen",
+    "visual_format": "split_screen_cama_ipad",
+    "avatar": "todos",
+    "awareness_level": 1,
+    "emotional_arc": "vulnerabilidad_conexion",
+    "tension": "T3",
+    "transition_text": "Y yo te quiero mostrar cómo.",
+    "total_duration_seconds": 85,
+    "word_count": 210,
+    "belief_change": {
+      "old_belief": "Este tipo no me entiende, viene de otro mundo",
+      "mechanism": "Su historia demuestra que arrancó desde más abajo que vos",
+      "new_belief": "Si él pudo sin nada, tal vez yo también pueda"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Este tipo viene del mismo lugar que yo",
+        "installed_via": "Contraste cama de ahora vs cama de Sarandí",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Apostó todo cuando nadie creía en él",
+        "installed_via": "Kiosco del padre quebró, se fue con nada",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "El camino fue real, no mágico",
+        "installed_via": "9 meses gratis, México pandemia, volvió sin un peso",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "El precio fue alto pero valió la pena",
+        "installed_via": "100 clientes casi quebró, perdió salud, se divorció",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Si él pudo sin nada, la diferencia no es talento",
+        "installed_via": "17.000 alumnos + premios, pero arrancó en Sarandí",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "confesion",
+        "script_text": "Lo que te voy a contar no lo cuento mucho. No porque me dé vergüenza. Sino porque cada vez que lo cuento se me hace un nudo en la garganta",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "historia_mini",
+        "script_text": "Hay cosas que no se cuentan en un video. Cosas que te guardás. Hoy me voy a dejar de guardar una y te voy a contar mi historia.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "situacion_especifica",
+        "script_text": "Vos me ves acá en la cama y pensás que siempre fue así. Que nací en cuna de plata. Que tuve contactos. Te equivocás en las tres.\"",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "script_text": "Estoy en la cama. Cómodo. Y eso es raro para mí. Porque durante mucho tiempo la cama no era un lugar cómodo.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "timeline_provocacion",
+        "script_text": "Yo no debería estar acá. Estadísticamente, alguien de donde vengo no llega a esto. Y menos a generar un millón de dólares con un solo producto. Pero acá estoy.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "vulnerabilidad_conexion",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este tipo viene del mismo lugar que yo",
+          "script_text": "Antes dormía con un cuchillo debajo de la almohada. Por miedo a que nos entraran a robar de noche. Esta cama no existía. Esta vida no existía. A los 15 se me caía la pintura del techo en la cara mientras dormía. Yo crecí en Sarandí, Gualeguaychú. Un lugar donde la plata no alcanzaba para nada.",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "foto de barrio humilde / casa con pintura cayéndose de las paredes",
+            "mapa mostrando Sarandí, Gualeguaychú, Entre Ríos"
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Apostó todo cuando nadie creía en él",
+          "script_text": "A los 14 ya vendía juegos de mesa, cortaba pasto, laburaba en un taller de motos. Fui con la misma ropa todo el secundario. Había otras prioridades en casa más importantes que mi ropa. Con el tiempo mi viejo pudo abrir un kiosco.Pero quebró. La mercadería se le venció antes de poder venderla. Verlo trabajar tan duro para que nunca alcanzara me marcó para siempre. Yo no quería terminar así.",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "foto vieja de kiosco de barrio / negocio familiar cerrado",
+            "foto de Jesús adolescente o de la época del secundario (si existe)"
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El camino fue real, no mágico",
+          "script_text": "A los 19 me fui a vivir solo. Del estrés que tenía pesaba 47 kilos. Vivía con 100 dólares al mes. Dormía en el piso. Me gasté todo lo que tenía — 2.000 dólares — en un curso de marketing digital. Mi familia pensó que estaba loco. Tardé 9 meses en conseguir mi primer cliente y le terminé regalando el trabajo. Después me fui a México. Solo. En plena pandemia. Volví sin un peso.",
+          "timing_seconds": 18,
+          "ipad_directions": [
+            "mapa animado: Gualeguaychú → Concepción del Uruguay → México → vuelta a Argentina",
+            "foto de la época — Jesús flaco, solo, en otro país"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "El precio fue alto pero valió la pena",
+          "script_text": "Tuve 100 clientes a la vez y casi me fundo. Perdí la salud. Se terminó una relación. 10 años de caerme y levantarme. Pero cada vez que me caía, volvía a la misma certeza: es imposible que esto no funcione",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "timeline visual: 10 años comprimidos — hitos y caídas marcados"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Si él pudo sin nada, la diferencia no es talento",
+          "script_text": "Y hoy estoy acá. En esta cama. 17.000 alumnos formados. Una agencia que operó en 4 países. Este premio me lo dio Hotmart por vender más de 200.000 dólares en su plataforma. Y este me lo dio Russell Brunson por vender más de 1 millón de dólares con un solo producto. Pero si yo pude arrancando de donde arranqué, sin un peso, sin contactos, sin ninguna ventaja... la diferencia no soy yo. Yo tardé 10 años en entender lo que hoy se puede hacer en días.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "premio Hotmart Black — más de 200.000 dólares vendidos en la plataforma",
+            "premio Two Comma Club — más de 1 millón de dólares con un solo producto",
+            "dashboard mostrando 17.000+ alumnos formados"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Hoy existe algo que antes no existía",
+          "script_text": "Hoy existe algo que antes no existía. Inteligencia artificial. Lo que a mí me tomó 10 años, hoy se puede comprimir. ",
+          "timing_seconds": 8,
+          "ipad_directions": [
+            "ChatGPT abierto — creando un producto digital en tiempo real"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Autoridad por Origen"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 65,
+        "ingredient_name": "Vulnerabilidad Estratégica"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 89,
+        "ingredient_name": "Transformación Personal"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 100,
+        "ingredient_name": "Future Pacing"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. [...] Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "orden_nlp": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. [...] Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      }
+    ]
+  },
+  "createdAt": "2026-03-18T17:53:02.779Z",
+  "status": "recorded",
+  "batch": {
+    "id": "b36369e3-48f1-4299-94b8-04bf0960e43e",
+    "name": "Version 2.0"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "ad_copies_matrix": {
+    "generation_id": "bbbec157-8080-4b0b-b470-14500a23cfea",
+    "angle": "historia — 5.1_historia_jesus",
+    "niche": "historia personal / branding",
+    "total_versions": 15,
+    "versions": [
+      {
+        "hook_index": 0,
+        "hook_type": "confesion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H1-ClaseGratuita",
+        "headline": "Del piso de tierra a 1M de dólares",
+        "description": "Clase gratuita en vivo: cómo crear y vender productos digitales con IA. Sin experiencia previa.",
+        "primary_text": "La primera vez que dormí en una cama de verdad tenía 19 años.\n\nAntes de eso, el techo de mi cuarto en Sarandí se descascaraba de noche. Me caía la pintura en la cara mientras dormía. Y debajo de la almohada, un cuchillo. No por valentía. Por miedo.\n\nA los 14 ya vendía lo que podía. Juegos de mesa, corte de pasto, changas en un taller de motos. Fui con la misma ropa todo el secundario. No era descuido. Era que había prioridades más urgentes en casa.\n\nCuando me fui a vivir solo pesaba 47 kilos. Del estrés. Dormía en el piso. Tenía 100 dólares al mes para todo. Y me gasté los únicos 2.000 dólares que había juntado en un curso de marketing digital. Mi familia pensó que me había vuelto loco.\n\nTardé 9 meses en conseguir mi primer cliente. Y le regalé el trabajo.\n\nDespués vino México. Solo. En plena pandemia. Volví sin un peso. Tuve 100 clientes a la vez y casi me fundo. Perdí la salud. Se terminó una relación. 10 años de caerme y levantarme.\n\nHoy tengo 17.000 alumnos formados. Un premio de Hotmart por superar los 200.000 dólares vendidos. Y otro de Russell Brunson por vender más de 1 millón con un solo producto.\n\nSi yo pude arrancando de ahí, sin contactos ni ventajas, la diferencia no soy yo.\n\nLo que a mí me llevó 10 años, hoy se puede comprimir. La IA cambió las reglas.\n\nTe cuento cómo en una clase gratuita de 2 horas. 👇",
+        "word_count": 236,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "confesion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H1-InstagramOrgánico",
+        "headline": "No lo cuento mucho, pero hoy lo cuento.",
+        "description": "Instagram orgánico",
+        "primary_text": "No lo cuento mucho, pero hoy lo cuento.\n\nDormía con un cuchillo debajo de la almohada. No de película. De verdad. Por miedo a que nos entraran a robar de noche.\n\nCrecí en Sarandí, Gualeguaychú. A los 15 se me caía la pintura del techo en la cara mientras dormía. Fui con la misma ropa todo el secundario. Había prioridades más importantes en casa.\n\nA los 19 me fui solo. Pesaba 47 kilos del estrés. Vivía con 100 dólares al mes. Me gasté todo lo que tenía — 2.000 dólares — en un curso de marketing. Mi familia pensó que estaba loco.\n\nTardé 9 meses en conseguir mi primer cliente. Y le regalé el trabajo.\n\nDespués vinieron 10 años de caerme y levantarme. Perdí la salud. Se terminó una relación. Volví de México sin un peso.\n\nPero cada vez que me caía volvía a lo mismo: es imposible que esto no funcione.\n\nY acá estoy. La verdad es que no lo cuento mucho porque se me hace un nudo. Pero hoy quería contarlo.",
+        "word_count": 172,
+        "structure_used": "confesion → historia cronológica → cierre emocional"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "confesion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H1-Taller$5",
+        "headline": "10 años en 3 días por $5",
+        "description": "Taller en vivo 3 días: producto, anuncio y sistema listos. $5 USD. Para quien arranca de cero.",
+        "primary_text": "Hay una noche que no se me va de la cabeza.\n\nTenía 15 años. El techo de mi cuarto en Sarandí goteaba. La pintura caía en pedazos mientras yo intentaba dormir. Debajo de la almohada había un cuchillo. No por valentía. Por miedo.\n\nEso era lo normal para mí.\n\nA los 19 me fui solo. Pesaba 47 kilos del estrés. Dormía en el piso de un departamento vacío. Junté 2.000 dólares — todo lo que tenía — y los metí en un curso de marketing digital. Mi familia pensó que había perdido la cabeza.\n\nTardé 9 meses en conseguir mi primer cliente. Y le regalé el trabajo.\n\nDespués México. Solo. En pandemia. Volví sin un peso.\n\nTuve 100 clientes a la vez y casi me fundo. Perdí la salud. Se terminó una relación. 10 años de caerme y levantarme.\n\nHoy tengo 17.000 alumnos formados. Una agencia que operó en 4 países. Y un premio de Russell Brunson por vender más de 1 millón de dólares con un solo producto.\n\nPero lo que más me importa no es eso.\n\nEs que lo que a mí me tomó 10 años, hoy — con IA — se puede comprimir en días.\n\nPor eso armé un taller de 3 días en vivo, a 5 dólares.\n\nDía 1: encontrás tu producto ganador. Día 2: lo creás completo. Día 3: lo vendés.\n\nSalís con algo concreto hecho. No con apuntes. Con tu producto, tu anuncio y tu sistema.\n\nEl link está abajo 👇",
+        "word_count": 231,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "historia_mini",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H2-ClaseGratuita",
+        "headline": "\"No lo podía creer. Venía de nada\"",
+        "description": "Clase en vivo y gratuita. Encontrá, creá y vendé tu producto digital con IA. Anotate sin cargo.",
+        "primary_text": "Cuando Jesús subió ese video, Romina lo vio tres veces seguidas.\n\nElla llevaba 4 años intentando vender algo online. Había probado dropshipping, afiliados, dos cursos que no terminó. Nada funcionó.\n\nDespués de ver el video le mandó un mensaje a una amiga. Lo copiamos tal cual:\n\n\"Este tipo creció en Sarandí, se fue solo a México en pandemia, volvió sin un peso y encima casi se funde con 100 clientes al mismo tiempo. Y llegó igual. No entiendo cómo no lo conocía antes.\"\n\nLo que le llamó la atención no fue el millón de dólares. Fue otra cosa.\n\nFue que Jesús tardó 10 años en entender algo que hoy, con inteligencia artificial, se puede aprender en días. Y que él mismo lo dice sin filtro: la diferencia no es él. Es el momento.\n\nRomina se anotó en la clase gratuita esa misma noche. Dos horas. En vivo. Sin costo.\n\nAhí Jesús muestra cómo encontrar un producto que ya tiene demanda, cómo crearlo usando IA aunque no tengas experiencia, y cómo venderlo con publicidad sin quemar plata a ciegas.\n\nNada de teoría vacía. Nada de \"cambiá tu mentalidad\". El método que él usó para pasar de dormir en el piso a generar más de 1 millón de dólares con un solo producto.\n\nSi algo de esto te resuena, la clase es gratuita y no te compromete a nada.\n\nEl link para anotarte está abajo. 👇",
+        "word_count": 227,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "historia_mini",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H2-InstagramOrgánico",
+        "headline": "Hay cosas que me guardé mucho tiempo.",
+        "description": "Instagram orgánico",
+        "primary_text": "Hay cosas que me guardé mucho tiempo.\n\nMi viejo abrió un kiosco después de años de laburar duro. Quebró. La mercadería se le venció antes de poder venderla.\n\nVerlo así me marcó para siempre. Yo no quería terminar igual — no por él, sino porque entendí que el esfuerzo solo no alcanza.\n\nA los 14 ya vendía juegos de mesa, cortaba pasto, laburaba en un taller de motos. No porque me gustara. Porque había que hacerlo.\n\nDespués a los 19 me fui solo a Buenos Aires. Dormía en el piso. Con 100 dólares al mes. Hasta que aposté todo a algo que no sabía si iba a funcionar.\n\nFue un camino largo. Feo en partes. Pero lo que aprendí en ese camino es lo que hoy puedo pasarle a otra gente.\n\nNo cuento esto para impresionar a nadie. Lo cuento porque me parece importante que se sepa de dónde arrancás no determina hasta dónde llegás.\n\nO al menos eso me demostró mi propia historia. 🙏",
+        "word_count": 170,
+        "structure_used": "historia mini → lección → cierre reflexivo"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "historia_mini",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H2-Taller$5",
+        "headline": "\"Salí con mi producto el día 3\"",
+        "description": "Taller 3 días en vivo. Producto + anuncio + sistema. $5 USD. Mirá lo que dice quien ya lo hizo.",
+        "primary_text": "Le mandé un audio a Jesús el domingo a la noche. Eran las 11:47 PM.\n\nLe dije algo así:\n\n\"Mira, yo entré al taller sin creer del todo. Venía de ver mil cosas online que prometían mucho y no daban nada. Pero entré igual porque eran cinco dólares, qué iba a perder.\n\nEl primer día me quedé hasta la una de la mañana revisando lo que había armado. No porque me lo pidieran. Porque no podía parar.\n\nEl segundo día construí el producto. Completo. Con la estructura, la propuesta, todo. Yo solo, siguiendo el proceso.\n\nEl tercer día lo puse a la venta. Con un anuncio que hice ahí mismo.\n\nNo te voy a mentir y decirte que me llovió la plata. Pero sí te digo que salí del taller con algo real. Algo que no tenía el viernes.\n\nY eso para mí valió más que muchos cursos de mil dólares que hice antes.\"\n\nEso me lo mandó Martín, 34 años, de Rosario. Empleado en relación de dependencia. Sin experiencia previa en ventas digitales.\n\nLo que describe no es magia. Es un proceso de 3 días en vivo que diseñé para que salgas con tu producto terminado, tu anuncio listo y tu sistema funcionando.\n\nTodo eso por 5 dólares.\n\nSi querés ver de qué se trata, el link está abajo.",
+        "word_count": 224,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H3-ClaseGratuita",
+        "headline": "Lo que tardé 10 años, hoy son días",
+        "description": "Clase gratuita 2hs en vivo: el método real para crear y vender productos digitales con IA.",
+        "primary_text": "Hay una cosa que nadie te dice cuando empezás a construir algo desde cero.\n\nNo es que falta talento. No es que falta esfuerzo. Es que el camino estaba mal diseñado desde el principio.\n\nYo lo descubrí tarde. Muy tarde.\n\nEstaba en un departamento en México, solo, sin clientes, en plena pandemia. Había vuelto de Argentina con la idea de que si cambiaba de país, algo iba a cambiar. No cambió nada. Volví sin un peso.\n\nY ahí, revisando todo lo que había hecho mal en 10 años, encontré el patrón.\n\nNo era el nicho. No era el producto. Era que cada decisión la tomaba sin datos, a puro instinto, y pagaba el costo de cada error con meses de trabajo perdido.\n\nLo que faltaba era un sistema que redujera esa fricción. Que comprimiera el aprendizaje.\n\nCuando apareció la inteligencia artificial, entendí que ese sistema por fin existía.\n\nHoy, lo que a mí me tomó 9 meses encontrar mi primer cliente, se puede resolver en días. No porque seas más inteligente. Sino porque las herramientas cambiaron radicalmente.\n\nTengo 17.000 alumnos que lo comprobaron. Y un premio de Russell Brunson por vender más de 1 millón de dólares con un solo producto.\n\nPor eso armé una clase gratuita de 2 horas donde muestro exactamente ese sistema: cómo encontrar el producto, crearlo con IA y venderlo con publicidad.\n\nSin rodeos. Sin costo. Solo aprendizaje aplicable desde el día uno.\n\nEl acceso está abajo.",
+        "word_count": 241,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H3-InstagramOrgánico",
+        "headline": "Vos me ves acá y pensás que siempre fue así.",
+        "description": "Instagram orgánico",
+        "primary_text": "Vos me ves acá y pensás que siempre fue así.\n\nTe equivocás.\n\nA los 15 dormía en una cama con la pintura del techo cayéndome encima. Crecí en un lugar donde la plata no alcanzaba para nada. Fui con la misma ropa todo el secundario.\n\nA los 19 me fui solo. Del estrés pesaba 47 kilos. Dormía en el piso. Me gasté los únicos 2.000 dólares que tenía en un curso. Tardé 9 meses en conseguir mi primer cliente y le terminé regalando el trabajo.\n\nFui a México solo, en pandemia. Volví sin un peso.\n\nTuve 100 clientes a la vez y casi me fundo. Perdí la salud.\n\nLo que ves hoy tardó 10 años. Y no fue una línea recta para nada.\n\nTe lo digo así porque me cansa cuando la gente asume que el punto de partida de otro fue el mismo que el suyo. No siempre es así.\n\nSi te identificás con algo de lo que conté, escribime. Me interesa saber.",
+        "word_count": 165,
+        "structure_used": "desmontaje de percepción → cronología rápida → CTA directo"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H3-Taller$5",
+        "headline": "La cuenta que pocos se animan a hacer",
+        "description": "3 días en vivo. Salís con producto, anuncio y sistema. $5 USD. Hacé la cuenta vos mismo.",
+        "primary_text": "Un tipo que creció en Sarandí, Gualeguaychú, sin plata, sin contactos, sin red de contención, hoy tiene un premio de Russell Brunson por vender más de 1 millón de dólares con un solo producto digital.\n\nHacé la cuenta vos.\n\n1 millón de dólares. Un producto. Sin inversión inicial millonaria. Sin haber nacido en familia con guita.\n\nAhora la cuenta que importa:\n\nÉl tardó 10 años. Arrancó a los 19 con 2.000 dólares en el bolsillo — todo lo que tenía — y los metió en un curso. Durmió en el piso. Pesaba 47 kilos del estrés. Tardó 9 meses en conseguir su primer cliente.\n\nHoy eso no hace falta.\n\nLa IA comprimió la curva. Lo que antes tomaba años de prueba y error, hoy tiene un proceso de 3 días.\n\nDía 1: identificás tu producto ganador. Tiempo estimado: una tarde.\nDía 2: lo construís completo. Tiempo estimado: una jornada de trabajo.\nDía 3: armás tu anuncio y tu sistema de venta. Tiempo estimado: medio día.\n\nCosto del taller en vivo donde pasa todo eso: 5 dólares.\n\nCosto de no hacerlo: seguir mirando desde afuera cómo otros venden productos digitales que vos también podrías estar vendiendo.\n\nNo es un curso grabado. Es en vivo. Salís con algo concreto hecho.\n\nEl link para anotarte está abajo.",
+        "word_count": 218,
+        "structure_used": "Math-based / calculadora"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H4-ClaseGratuita",
+        "headline": "Dos caminos. Uno cuesta 10 años.",
+        "description": "Clase gratuita en vivo: creá tu producto digital con IA y vendelo con publicidad. Sin experiencia.",
+        "primary_text": "Hay dos formas de aprender a vender productos digitales.\n\nLa primera es la que yo usé. Y no te la recomiendo.\n\nA los 19 me fui a vivir solo. Dormía en el piso. Pesaba 47 kilos del estrés. Me gasté los únicos 2.000 dólares que tenía en un curso. Tardé 9 meses en conseguir mi primer cliente y le regalé el trabajo. Me fui a México en pandemia. Volví sin un peso. Tuve 100 clientes a la vez y casi me fundo. Perdí la salud. Se terminó una relación.\n\n10 años. Así llegué a los 17.000 alumnos formados y al millón de dólares vendido con un solo producto.\n\nLa segunda forma es la que existe ahora.\n\nCon inteligencia artificial, el proceso que a mí me tomó una década se comprime. No porque sea magia. Sino porque hoy hay herramientas que hacen en horas lo que antes llevaba meses: encontrar qué vender, crear el producto, y estructurar la publicidad para que funcione.\n\nYo crecí en Sarandí, Gualeguaychú. Sin contactos. Sin ventajas. Sin red de contención. Si llegué igual, no fue por ser especial. Fue por no parar. Pero vos no tenés que repetir mis errores para llegar al mismo resultado.\n\nArmé una clase gratuita de 2 horas, en vivo, donde muestro exactamente cómo funciona ese segundo camino.\n\nSin compromiso. Sin costo. Solo el método, sin los 10 años de golpes.\n\nAnotate abajo.",
+        "word_count": 228,
+        "structure_used": "Comparación directa"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H4-InstagramOrgánico",
+        "headline": "Estoy en la cama. Y eso es raro para mí.",
+        "description": "Instagram orgánico",
+        "primary_text": "Estoy en la cama. Cómodo. Y eso es raro para mí.\n\nDurante mucho tiempo la cama era lo opuesto a comodidad. Era el lugar donde dormía con un cuchillo abajo de la almohada. Donde se me caía la pintura del techo encima. Donde me despertaba con estrés a los 19 pesando 47 kilos.\n\nHoy es distinto. Y me cuesta naturalizarlo.\n\nNo lo cuento para que me aplaudan. Lo cuento porque fijate esto: el punto de partida no es el destino.\n\nYo arranqué sin un peso, sin contactos, sin ninguna ventaja. Me caí mil veces. Perdí salud, plata, una relación. Pero cada vez que me caía volvía a la misma certeza: es imposible que esto no funcione.\n\nHoy tengo 17.000 alumnos formados y premios que no me imaginaba ni en sueños cuando dormía en ese cuarto de Sarandí.\n\nLa cama cambió. El hambre de seguir, no.",
+        "word_count": 148,
+        "structure_used": "imagen concreta → contraste temporal → lección implícita"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H4-Taller$5",
+        "headline": "Cómodo no es lo que te vendieron",
+        "description": "Taller 3 días en vivo. Producto + anuncio + sistema terminados. $5 USD. Para quien quiere resultados reales.",
+        "primary_text": "Te vendieron una mentira sobre el éxito.\n\nQue requiere sufrimiento eterno. Que si no la estás peleando cada día es porque no querés lo suficiente. Que la comodidad es para los mediocres.\n\nYo dormí con un cuchillo debajo de la almohada. Pesé 47 kilos del estrés a los 19. Me fui a México solo en plena pandemia y volví sin un peso. Tuve 100 clientes a la vez y casi me fundo.\n\nNadie me puede decir que no sufrí lo suficiente.\n\nY sin embargo hoy estoy en esta cama. Cómodo. Con 17.000 alumnos formados, una agencia que operó en 4 países y un premio por vender más de 1 millón de dólares con un solo producto.\n\nLa comodidad no fue el premio al sufrimiento. Fue el resultado de encontrar el proceso correcto.\n\nEso es lo que te vendieron mal: que el camino tiene que ser largo y doloroso para que valga.\n\nNo tiene que serlo.\n\nLo que a mí me tomó 10 años de caídas, hoy con IA se puede comprimir.\n\nArmé un taller de 3 días en vivo, a 5 dólares, para demostrártelo con hechos.\n\nDía 1 salís con tu producto ganador identificado. Día 2 lo creás completo. Día 3 tenés tu anuncio y tu sistema de venta.\n\nNo apuntes. No teoría. Tu producto terminado.\n\nSi eso te resuena, el link está abajo.",
+        "word_count": 222,
+        "structure_used": "Contrarian manifesto"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "timeline_provocacion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H5-ClaseGratuita",
+        "headline": "47 kilos de estrés. Hoy, 1M vendido.",
+        "description": "Clase gratuita 2hs: cómo encontrar, crear y vender tu producto digital con IA. Anotate gratis.",
+        "primary_text": "Había noches en que el techo de su cuarto le tiraba pintura encima mientras dormía.\n\nEl kiosco de su viejo quebró porque la mercadería se venció antes de poder venderla. Jesús lo vio trabajar duro durante años para que nunca alcanzara. Y decidió que él no iba a terminar igual.\n\nA los 19 se fue a vivir solo. Pesaba 47 kilos. Dormía en el piso de un departamento vacío. Tenía 100 dólares al mes para comer, pagar el alquiler y seguir intentando.\n\nSe gastó sus últimos 2.000 dólares en un curso de marketing digital. Su familia pensó que había perdido la cabeza.\n\nNueve meses después consiguió su primer cliente. Y le regaló el trabajo porque todavía no se animaba a cobrar.\n\nVino México. La pandemia. El regreso sin un peso. Cien clientes simultáneos que casi lo fundan. La salud rota. Una relación que no resistió el peso de todo eso.\n\nHoy ese mismo hombre tiene 17.000 alumnos formados. Hotmart le dio un reconocimiento por superar los 200.000 dólares vendidos. Russell Brunson le dio otro por vender más de 1 millón con un solo producto.\n\nLa distancia entre esos dos momentos no fue suerte ni talento especial. Fue método. Y hoy ese método existe en una versión que la inteligencia artificial aceleró por completo.\n\nLo que a él le tomó 10 años, hoy se puede aprender en una clase gratuita de 2 horas.\n\nEl acceso está abajo. Sin costo, sin compromiso.",
+        "word_count": 233,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "timeline_provocacion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H5-InstagramOrgánico",
+        "headline": "Yo no debería estar acá. Pero acá estoy.",
+        "description": "Instagram orgánico",
+        "primary_text": "Yo no debería estar acá.\n\nEstadísticamente, alguien que creció como yo no llega a esto.\n\nSarandí, Gualeguaychú. Techo que se caía. Cuchillo debajo de la almohada. Misma ropa todo el secundario. Viejo que laburó toda la vida y quebró igual.\n\nA los 19: solo, 47 kilos, durmiendo en el piso, con 100 dólares al mes.\n\nA los 20: me gasté todo en un curso. Nueve meses sin un cliente. Le regalé el primer trabajo.\n\nDespués: México en pandemia, volví sin nada. Cien clientes a la vez y casi me fundo. Perdí la salud.\n\nDiez años así.\n\nY hoy: 17.000 alumnos. Una agencia en 4 países. Más de un millón de dólares con un solo producto.\n\nNo te cuento esto para que pienses que soy un genio. Te lo cuento porque la verdad es que si yo pude arrancando de donde arranqué, el límite no era el origen.\n\nEra otra cosa. Y tardé 10 años en entender cuál.\n\nSi querés saber qué fue, mirá el link en bio.",
+        "word_count": 175,
+        "structure_used": "provocación estadística → timeline comprimido → revelación + CTA suave"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "timeline_provocacion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H5-Taller$5",
+        "headline": "No debería estar acá. Pero aprendí algo.",
+        "description": "Taller 3 días en vivo por $5. Salís con tu producto, anuncio y sistema listos. Sin experiencia previa.",
+        "primary_text": "Me acuerdo del día que abrí mi cuenta bancaria por primera vez.\n\nTenía 21 años. Acababa de volver de México con los bolsillos vacíos. Me había ido solo, en pandemia, con la idea de construir algo. Volví con nada.\n\nMe senté en un banco de plaza — literalmente, un banco de madera en una plaza — y pensé: estadísticamente, alguien de donde vengo no llega a nada de esto. Crecí en Sarandí, Gualeguaychú. Mi viejo abrió un kiosco y quebró. La mercadería se le venció antes de poder venderla.\n\nYo no tendría que haber llegado a ningún lado.\n\nPero algo descubrí en ese momento sentado en esa plaza: que el problema nunca fue la falta de recursos. Fue la falta de un proceso claro.\n\nTardé 10 años más en entenderlo del todo. 9 meses para conseguir mi primer cliente. Una relación que se terminó. La salud que perdí cuando tuve 100 clientes a la vez.\n\nHoy tengo 17.000 alumnos y un premio por superar el millón de dólares vendidos con un solo producto digital.\n\nY lo que aprendí en esos 10 años lo metí en un taller de 3 días.\n\nCuesta 5 dólares. Es en vivo. Día 1 encontrás tu producto. Día 2 lo construís. Día 3 lo vendés con tu anuncio y tu sistema.\n\nSalís con algo real hecho, no con más información guardada en una carpeta.\n\nEl link está abajo.",
+        "word_count": 237,
+        "structure_used": "Descubrimiento accidental"
+      }
+    ],
+    "diversity_warnings": [],
+    "createdAt": "2026-03-23T20:25:57.100Z"
+  }
+}

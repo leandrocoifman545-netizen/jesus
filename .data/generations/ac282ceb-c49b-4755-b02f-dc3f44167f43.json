@@ -7,7 +7,7 @@
   "script": {
     "angle_family": "confrontacion",
     "angle_specific": "F3-3.2 Ciclo roto",
-    "body_type": "conversacion_experto_novato",
+    "body_type": "qa_conversacional",
     "segment": "A",
     "funnel_stage": "TOFU",
     "niche": "Bronca salarial — revancha sin renunciar",

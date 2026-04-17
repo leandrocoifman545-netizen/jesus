@@ -9,7 +9,7 @@
     "segment": "A",
     "funnel_stage": "RETARGET",
     "niche": "rutina de oficina / escape laboral (genérico)",
-    "model_sale_type": "ventana_oportunidad",
+    "model_sale_type": "ventana_oportunidad_ia",
     "visual_format": "pizarron",
     "avatar": "martin",
     "awareness_level": 2,

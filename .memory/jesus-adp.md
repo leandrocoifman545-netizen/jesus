@@ -1,15 +1,18 @@
 # Jesús Tassarolo — ADP: Contexto Completo para Guiones
 
 ## Quién es Jesús
-- Creció en Gualeguaychú, Entre Ríos. Se le caía la pintura del techo mientras dormía a los 15 años.
-- Antes de los 18: cortó pasto, vendió autos usados, rifas, pintó casas, carpintería, herrería, instalaciones eléctricas, reparó motos
-- Primera venta online: tienda de juegos de mesa que programó de cero. "Saltaba de felicidad"
+- Creció en Sarandí (zona rural, sobre la ruta), Entre Ríos. Se mudó a Gualeguaychú a los 6. [CORREGIDO 2026-04-05: NO es Gran Buenos Aires]
+- Se le caía la pintura del techo mientras dormía a los 15 años.
+- De los 12 a los 17: vendía rifas, muebles a domicilio, fábrica de juegos de mesa, herrería, arreglaba motos, compraba libros vendiendo rifas, complejo turístico, vendía autos, pintaba casas, instalaciones eléctricas, tortas fritas en cancha, proveeduría en container. [EXPANDIDO con entrevista 2026-04-05]
+- Primera venta online: tienda de juegos de mesa con WordPress (no "de cero") y un amigo. E-commerce "Deprevia" (juegos de mesa para previas). Invirtió $1/día en campaña, primera venta → "Saltaba de felicidad, caminaba por los techos." [CORREGIDO con entrevista]
 - 6 años de callejones sin salida: afiliación (márgenes mínimos), freelance ($1/hora), agencia (100 clientes, 12h/día), ecommerce (se fundió)
 - Ganador del Two Comma Club (+$1M vendido online). Invierte $1M+/año en publicidad
 - Cerró empresa anterior 5 ene 2026, lanzó ADP, metió $10K para probar y vendió a la primera
 - Error de $15,000 en prensa: tele/radio/revistas = 1 solo cliente. "A la mierda la televisión"
 - Perdió $150K en publicidad que no funcionó ("se fue una casa")
-- Golpes: separación de los padres, divorcio, 100 clientes que lo destruyeron, Stripe le rechazó 2000 pagos
+- Golpes: separación de los padres, ~~divorcio~~ [NO CONFIRMADO - verificar], 100 clientes que lo destruyeron, Stripe le rechazó 2000 pagos
+- **País favorito:** España, Málaga. "Me hace bien." [ENTREVISTA]
+- **Viajó a ~15 países:** México, Colombia, Uruguay, España, Portugal, Suiza, Inglaterra, Francia, Italia, EEUU, etc. [ENTREVISTA]
 
 ## Voz y Estilo de Comunicación (actualizado con transcripciones reales)
 - **Muletillas y conectores:** → Ver muletillas completas en `jesus-tono-adp-nuevo.md` (basado en 51 guiones analizados)
@@ -57,20 +60,20 @@ Sistema en 4 pasos:
 - Primera venta online → "saltaba de felicidad"
 - 6 modelos que fracasaron → por qué productos digitales es diferente
 - Lucía la ama de llaves → cobrar por trabajo no por hora
-- Kiosco del papá → 90% de negocios físicos cierran
+- ~~Kiosco del papá~~ → NO USAR (es algo actual del padre, no parte del origin story)
 - $15K en prensa = 1 cliente → la publicidad digital es mejor
 
 ## La Audiencia
 **Core:** Hombres y mujeres LATAM, 32-55 años (pico 38-47)
 **Países:** Argentina, Venezuela, Colombia, México, Perú
 **Conexión:** 20-23hs desde celular. WhatsApp 4h/día pero dicen "no sé de tecnología"
-**Quieren:** ~$2.000 USD/mes extra sin dejar trabajo ni descuidar familia
+**Quieren:** ~$2.000 USD/mes — algunos como ingreso extra sin dejar trabajo, otros como ingreso principal para salir de su empleo (50/50 según data del bot)
 
-### 4 Segmentos
-- **A) Emprendedor frustrado** — quiere independencia, ya intentó y falló
-- **B) Principiante tecnológico 40-60** — miedo a quedarse afuera
-- **C) Mamá/papá sobrecargado** — poco tiempo, mucha culpa
-- **D) Escéptico con estafa previa** — solo entra si es gratis primero
+### 4 Segmentos (alineados con `avatares-adp.md`)
+- **A) Joven ambicioso** — Martín, 26. Quiere independencia, ya intentó y falló. Digital native pero sin método.
+- **B) Emprendedora en crisis** — Valentina, 32. Tiene negocio chico que no despega. Busca escalar con digital.
+- **C) Mamá/papá sobrecargado** — Patricia, 48. Poco tiempo, mucha culpa. Quiere ingreso sin salir de casa.
+- **D) Jubilado/escéptico** — Roberto, 62. Miedo a la tecnología pero quiere aprender. Desconfía por estafas previas.
 
 ### Pain Points Reales (textual de audiencia)
 - "No sé qué podría vender"
@@ -97,7 +100,7 @@ Sistema en 4 pasos:
 3. **ref-jesus-cosas-raras** — Contrarian suave ("cosas raras"), desmitifica, reframe a "aprender un servicio". Framework: BAB. ~2min.
 
 ### Patrones recurrentes en sus guiones reales:
-- Siempre ofrece "4 clases en vivo gratuitas + 15 clases de preparación como regalo"
+- Oferta actual: Clase gratuita (2hs, entrada al funnel) + Taller de 3 días en vivo ($5 USD). ~~"4 clases + 15 preparación" es oferta vieja, no usar.~~
 - Usa "tocá el botón de aquí debajo" como CTA
 - Mezcla voseo (tenés, podés) con tuteo (tienes, puedes) naturalmente
 - Lista alternativas (dropshipping, network, etc.) para descartarlas
@@ -105,6 +108,5 @@ Sistema en 4 pasos:
 - Cierra con "Te mando un abrazo" o "chao chao"
 - No usa presión agresiva, es invitacional
 
-## Tracking de Guiones Generados
-
-> **NOTA:** Esta tabla está deprecada. El tracking real está en los JSON de `.data/generations/` y se visualiza en la web (`http://localhost:3002/`). Para ver cobertura, consultar `.memory/matriz-cobertura.md`.
+## Tracking de Guiones
+Tracking en `.data/generations/` (JSON) y web `http://localhost:3002/`. Cobertura en `.data/matriz-cobertura.md`.

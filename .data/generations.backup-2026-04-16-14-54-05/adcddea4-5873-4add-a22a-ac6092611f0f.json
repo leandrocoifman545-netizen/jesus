@@ -1,0 +1,300 @@
+{
+  "id": "adcddea4-5873-4add-a22a-ac6092611f0f",
+  "briefId": "48f37b14-9358-4934-8bda-865d493bdae7",
+  "title": "Reinventarse a los 62 — viuda artesana que necesita empezar de cero",
+  "batch": "batch3-rewrite",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.8_identidad_empaquetada",
+    "body_type": "demolicion_mito",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "artesania_crochet",
+    "model_sale_type": "contraste_fisico",
+    "transition_text": "18 patrones. Décadas de oficio. Una tarde con la IA. Te muestro cómo funciona.",
+    "total_duration_seconds": 82,
+    "word_count": 215,
+    "punto_entrada_emocional": "Bronca silenciosa de saber que lo que hacés con las manos vale más de lo que te pagan o de lo que te regalás",
+    "belief_change": {
+      "old_belief": "A los 62 tengo que reinventarme — aprender algo nuevo desde cero",
+      "mechanism": "Empaquetar conocimiento existente de crochet con IA en un producto digital vendible",
+      "new_belief": "Mi conocimiento de décadas YA es valioso — solo necesito empaquetarlo y venderlo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Lo que sé hacer con las manos vale más de lo que me pagan",
+        "installed_via": "afirmación + pregunta retórica",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "No necesito reinventarme — necesito empaquetar lo que ya sé",
+        "installed_via": "pivote de identidad directo",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "La IA puede convertir mi conocimiento en un producto vendible en una tarde",
+        "installed_via": "demo concreta con números no redondos",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito saber de tecnología — solo de crochet",
+        "installed_via": "analogía cotidiana (audio WhatsApp)",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      },
+      {
+        "belief": "Ya hay gente vendiendo esto todos los días — es real y verificable",
+        "installed_via": "prueba verificable (Etsy)",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "hypothesis": "el avatar responde a escuchar la historia real de alguien en su misma situación",
+        "emotional_lever": "reconocimiento",
+        "script_text": "\"Soy recientemente viuda. Durante 25 años me pidieron que no trabaje. Debo reinventarme en forma urgente.\" Eso me escribió María Marta. Tiene 62 años.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a ver su situación exacta de venta subvalorada",
+        "emotional_lever": "hartazgo",
+        "script_text": "Tejés desde que tenés memoria. Mantas, bufandas, amigurumis. Y los vendés en la feria a precio de lástima. O peor: los regalás.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a que le pongan números a la desproporción entre su esfuerzo y su pago",
+        "emotional_lever": "confrontacion",
+        "script_text": "Te llevó tres días hacer esa manta. Te la pagaron como si fuera una compra cualquiera. Esos tres días valen más de lo que te pagaron.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "hypothesis": "el avatar responde a oír reflejada la conversación real con su entorno familiar",
+        "emotional_lever": "validacion_externa",
+        "script_text": "Tus amigas te dicen \"deberías vender esos tejidos\". Tu hija te dice \"mamá, eso vale plata\". Y vos les decís \"pero quién me va a comprar\". Alguien ya está buscando.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a una pregunta que cuestiona décadas de regalar su trabajo",
+        "emotional_lever": "curiosidad",
+        "script_text": "¿Cuántas cosas hermosas hiciste con las manos que terminaron regaladas o vendidas por monedas? ¿Y si cada una de esas valiera más de lo que te pagaron?",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "vulnerabilidad_conexion",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Lo que sé hacer con las manos vale más de lo que me pagan",
+          "viewer_emotion_after": "reconocimiento del dolor compartido",
+          "is_turning_point": false,
+          "script_text": "La realidad es que hay miles de mujeres con agujas en la mesa que saben crear cosas hermosas. Pero la verdad es que nunca cobraron lo que eso vale. ¿O no?",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No necesito reinventarme — necesito empaquetar lo que ya sé",
+          "viewer_emotion_after": "alivio + pivote de identidad — me veo distinta",
+          "is_turning_point": true,
+          "script_text": "Escuchame algo. Vos no necesitás reinventarte. Necesitás empaquetar lo que ya sabés. Décadas de puntadas. Años de oficio guardados en cajas con ovillos. Todo eso que tenés en la cabeza tiene gente que quiere aprenderlo.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA puede convertir mi conocimiento en un producto vendible en una tarde",
+          "viewer_emotion_after": "curiosidad concreta — entiendo cómo se hace",
+          "is_turning_point": false,
+          "script_text": "¿Cómo funciona? Le contás a la IA lo que sabés de crochet. Como quien le cuenta a una amiga. La IA te arma un pack de 18 patrones con fotos del proceso, dificultad por nivel, y los trucos que solo la experiencia te da. Lo subís a 9 dólares.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito saber de tecnología — solo de crochet",
+          "viewer_emotion_after": "resistencia desarmada — mi excusa principal cae",
+          "is_turning_point": false,
+          "script_text": "\"Pero yo no sé de tecnología.\" Si sabés mandar un audio por WhatsApp, ya sabés lo suficiente. La IA no te pide que sepas programar. Lo único que tenés que hacer es saber de crochet. Y eso lo sabés de sobra. ¿Me explico?",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay gente vendiendo esto todos los días — es real y verificable",
+          "viewer_emotion_after": "esperanza concreta — esto existe y se puede comprobar",
+          "is_turning_point": false,
+          "script_text": "Te lo voy a demostrar. Buscá \"patrones de crochet\" en Etsy. Hay miles. Gente vendiendo eso todos los días. Sin depender de una feria. Sin cargar cajas. Sin esperar que no llueva.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Esto no es lujo — es dignidad",
+          "viewer_emotion_after": "decisión emocional — quiero esto",
+          "is_turning_point": false,
+          "script_text": "Creás el producto una sola vez y se vende solo. Mientras tomás mate. Eso no es un sueño de lujo. Es un sueño de dignidad.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "pregunta_retorica",
+        "phrase": "¿O no?"
+      },
+      {
+        "location": "quiebre",
+        "technique": "afirmacion",
+        "phrase": "Vos no necesitás reinventarte."
+      },
+      {
+        "location": "quiebre",
+        "technique": "afirmacion",
+        "phrase": "Todo eso que tenés en la cabeza tiene gente que quiere aprenderlo."
+      },
+      {
+        "location": "mecanismo",
+        "technique": "anclaje_familiar",
+        "phrase": "Como quien le cuenta a una amiga."
+      },
+      {
+        "location": "demolicion",
+        "technique": "afirmacion_anclada",
+        "phrase": "Si sabés mandar un audio por WhatsApp, ya sabés lo suficiente."
+      },
+      {
+        "location": "demolicion",
+        "technique": "pregunta_retorica",
+        "phrase": "¿Me explico?"
+      },
+      {
+        "location": "prueba",
+        "technique": "dato_verificable",
+        "phrase": "Buscá \"patrones de crochet\" en Etsy. Hay miles."
+      },
+      {
+        "location": "prueba",
+        "technique": "espejo_inverso",
+        "phrase": "Sin depender de una feria."
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "future_pacing",
+        "phrase": "Mientras tomás mate."
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "reframe_emocional",
+        "phrase": "Es un sueño de dignidad."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Numérica"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case Study Mini"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T06:48:46.112Z"
+}

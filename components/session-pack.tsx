@@ -272,7 +272,7 @@ function RenameBatchModal({ batchName, onClose, onSubmit }: {
   onClose: () => void;
   onSubmit: (name: string) => void;
 }) {
-  const [name, setName] = useState(batchName);
+  const [name, setName] = useState(batchName || "");
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => { inputRef.current?.focus(); inputRef.current?.select(); }, []);
@@ -987,7 +987,9 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
         const hookMatch = g.script.hooks.some((h) => h.script_text.toLowerCase().includes(q) || h.hook_type.toLowerCase().includes(q));
         const frameworkMatch = g.script.development.framework_used.toLowerCase().includes(q);
         const bodyMatch = g.script.development.sections.some((s) => s.script_text.toLowerCase().includes(q));
-        const platformMatch = resolveFormatLabel(g.script.platform_adaptation.platform).toLowerCase().includes(q);
+        const platformMatch = g.script.platform_adaptation?.platform
+          ? resolveFormatLabel(g.script.platform_adaptation.platform).toLowerCase().includes(q)
+          : false;
         const formatMatch = g.script.visual_format?.format_name.toLowerCase().includes(q);
         const batchMatch = g.batch?.name.toLowerCase().includes(q);
         if (!titleMatch && !hookMatch && !frameworkMatch && !bodyMatch && !platformMatch && !formatMatch && !batchMatch) return false;

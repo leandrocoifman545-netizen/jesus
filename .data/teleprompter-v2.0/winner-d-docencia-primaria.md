@@ -1,0 +1,55 @@
+# Guion D — Docencia primaria (modela winner #121)
+
+Target: Maestra 40-55 (docentes 15.8% compradores) · Segmento B · TOFU · ~82s · TH
+
+---
+
+LEAD 1 — Situación específica (hipernicho)
+
+Si sos maestra de primaria, seguro ya te pasó. Domingo a la noche, mesa del living, armás los materiales de la semana con cartulinas, tapitas de gaseosa, un rollo de papel higiénico y la impresora del trabajo del marido. Lunes a la mañana los chicos aprenden fracciones. Y la actividad queda guardada en tu cabeza.
+
+---
+
+LEAD 2 — Provocación
+
+Cualquier maestra con 10 años frente al grado sabe más de cómo enseñar matemática a un chico de 8 años que todos los manuales que venden en las ferias pedagógicas. Lo único es que nadie le enseñó a empaquetar lo que hace cada semana.
+
+---
+
+LEAD 3 — Pregunta incómoda
+
+¿Hace cuántos años estás arrugando hojas a mano los viernes para la clase del lunes? ¿A cuántas colegas les pasaste gratis tus actividades por WhatsApp? Ese archivo vale plata. Solo que nadie te enseñó a ponerle precio.
+
+---
+
+LEAD 4 — Historia mini
+
+Una maestra de tercer grado, 47 años, tenía una caja de zapatos llena de actividades manuscritas. Una tarde se sentó con la computadora, dictó cada actividad en voz alta, y armó un PDF de 25 actividades imprimibles. Lo subió a Hotmart. En 3 semanas lo compraron 54 colegas.
+
+---
+
+LEAD 5 — Confesión
+
+Yo pensaba que para vender algo en internet había que tener Instagram con 10 mil seguidores y saber de marketing. Después conocí a una maestra rural de Entre Ríos que vendía guías de actividades para escuelas sin recursos. No tenía ni perfil de Instagram.
+
+---
+
+CUERPO
+
+Son 10 años inventando cosas todas las semanas para que los chicos que les cuesta más entiendan. Eso no se borra cuando suena el timbre. Te queda adentro. Y vale plata.
+
+Todos los lunes volvés a empezar. La directora pide proyecto nuevo. Preparás la actividad en la cocina el domingo a la noche. Los chicos aprenden, la familia aplaude, el lunes que viene volvés a arrancar de cero. Como si el trabajo de los últimos 10 años no contara.
+
+Tu conocimiento vale muchísimo más que el lunes a la mañana. Básicamente, lo que fuiste descubriendo después de 10 años de grado — cómo explicar las fracciones con tapitas de gaseosa, cómo mantener la atención de un nene de 7 años 40 minutos seguidos, qué juego te salva una clase de lengua cuando los chicos están cansados — eso es un producto digital. No la clase, el método.
+
+Y vos ya pensaste cómo sacarle plata a eso. Tomar otro cargo: te deja sin sábados. Irte a una privada: pagan un poco más para que des el doble de horas con padres encima. Dar particulares en tu living: es cambiar el aula por tu casa, cobrando por hora otra vez. Las tres son lo mismo, más horas tuyas por la misma plata.
+
+Esto es distinto. Abrís una herramienta de inteligencia artificial. Le mandás un audio, como si le estuvieras explicando a una colega nueva: "Armame un PDF de 25 actividades imprimibles para enseñar matemática a chicos de segundo grado, con materiales que hay en cualquier casa". En 45 minutos lo tenés listo. Le subís la portada. Lo cobrás a 9 dólares en Hotmart.
+
+Sin arrugar más hojas a mano los viernes. Sin sacarte de tu sueldo la plata de las fotocopias. Sin seguir regalando tu método a colegas que nunca te devolvieron el favor. Tu experiencia de grado enseñando en aulas que nunca vas a ver, mientras vos tomás el café del domingo a la tarde.
+
+Y hoy sigue dando su grado igual que siempre. Pero ya no depende solo del sueldo que nunca le alcanzó. Su método enseña a chicos que no va a conocer nunca, y eso le entra todos los meses.
+
+TRANSICIÓN
+
+Te cuento el paso a paso en una clase gratis.

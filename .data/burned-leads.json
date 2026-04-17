@@ -623,5 +623,125 @@
     "hookType": "actuacion_dialogo",
     "fromGenerationId": "ac282ceb-c49b-4755-b02f-dc3f44167f43",
     "burnedAt": "2026-03-26T09:26:40.113Z"
+  },
+  {
+    "text": "Le mandás el mensaje al alumno. \"Hola, te recuerdo que la clase del martes todavía no la pagaste\". Esperás. Nada. Le mandás otro. \"Disculpá que insista\". ¿Desde cuándo tenés que pedir disculpas por cobrar lo que te corresponde?",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "d30808df-7d99-49a5-b8c3-e4ba4b0220ec",
+    "burnedAt": "2026-04-09T04:16:07.276Z"
+  },
+  {
+    "text": "Tenés un método para enseñar idiomas que funciona. Tus alumnos aprenden. Pero vos cobrás por hora, cancelan clases, te deben plata. Y mientras tanto hay gente vendiendo cursos de idiomas por internet sin tener ni la mitad de tu experiencia.",
+    "hookType": "provocacion",
+    "fromGenerationId": "d30808df-7d99-49a5-b8c3-e4ba4b0220ec",
+    "burnedAt": "2026-04-09T04:16:07.276Z"
+  },
+  {
+    "text": "Hay algo de dar clases particulares que nadie dice. La parte donde tenés que perseguir al alumno para que te pague. Donde te sentís incómoda mandando un mensaje que dice \"te recuerdo que me debés 2 clases\". Eso se termina hoy.",
+    "hookType": "confesion",
+    "fromGenerationId": "d30808df-7d99-49a5-b8c3-e4ba4b0220ec",
+    "burnedAt": "2026-04-09T04:16:07.276Z"
+  },
+  {
+    "text": "¿Y si en vez de perseguir alumnos para que te paguen, los alumnos te buscaran a vos para comprarte algo? No una clase. Un producto. Algo que creás una vez y se vende solo. Eso existe. Y funciona mejor de lo que pensás.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "d30808df-7d99-49a5-b8c3-e4ba4b0220ec",
+    "burnedAt": "2026-04-09T04:16:07.276Z"
+  },
+  {
+    "text": "Cómo aprender inglés rápido. Cómo conjugar verbos en francés. Frases básicas en italiano. Miles de búsquedas por día. La gente está buscando lo que vos enseñás. Y la mayoría encuentra contenido genérico. Vos tenés algo mejor: un método real.",
+    "hookType": "dato_concreto",
+    "fromGenerationId": "d30808df-7d99-49a5-b8c3-e4ba4b0220ec",
+    "burnedAt": "2026-04-09T04:16:07.276Z"
+  },
+  {
+    "text": "Tus amigas te piden la carta natal. Tu prima quiere saber qué dice Mercurio retrógrado. Tu vecina quiere un tirada de tarot. Les hacés todo gratis. Y nunca se te ocurrió que eso que hacés por amor se vende todos los días en internet.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "bf303684-378f-4180-ba83-b18a1030aa54",
+    "burnedAt": "2026-04-09T05:52:16.800Z"
+  },
+  {
+    "text": "La gente que menos sabe de tecnología es la que mejor le va con esto. ¿Por qué? Porque no se complica. Agarra lo que sabe, se lo dicta a la IA y listo. Si sabés mandar un audio de WhatsApp, ya sabés lo suficiente.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "bf303684-378f-4180-ba83-b18a1030aa54",
+    "burnedAt": "2026-04-09T05:52:16.800Z"
+  },
+  {
+    "text": "Hay gente vendiendo guías de astrología por 10 dólares que las armó con ChatGPT sin saber nada del tema. Copian y pegan. Y vos que leés cartas hace años no estás vendiendo ni una guía. ¿Te parece justo?",
+    "hookType": "provocacion",
+    "fromGenerationId": "bf303684-378f-4180-ba83-b18a1030aa54",
+    "burnedAt": "2026-04-09T05:52:16.800Z"
+  },
+  {
+    "text": "Yo pensaba que para vender algo online necesitabas saber programar, diseñar, hacer anuncios. Me daba miedo. Hasta que entendí que la IA hace todo eso. Lo único que yo tengo que poner es lo que ya sé. Y eso cambia todo.",
+    "hookType": "confesion",
+    "fromGenerationId": "bf303684-378f-4180-ba83-b18a1030aa54",
+    "burnedAt": "2026-04-09T05:52:16.800Z"
+  },
+  {
+    "text": "Carta natal compatibilidad tiene miles de búsquedas por mes en Google. Significado de los signos también. La gente está buscando exactamente lo que vos sabés. Y la mayoría encuentra respuestas genéricas. Vos podés dar algo mejor.",
+    "hookType": "dato_concreto",
+    "fromGenerationId": "bf303684-378f-4180-ba83-b18a1030aa54",
+    "burnedAt": "2026-04-09T05:52:16.800Z"
+  },
+  {
+    "text": "Hay un producto que se vende todos los días por WhatsApp, se arma en una tarde y no necesitás saber de tecnología, de diseño ni de marketing. Y las que mejor lo hacen son mamás.",
+    "hookType": "negacion_directa",
+    "fromGenerationId": "f094df61-717f-45f9-86ab-fbbb34a69d73",
+    "burnedAt": "2026-04-16T20:49:07.515Z"
+  },
+  {
+    "text": "Si sos mamá y mandás más de 10 audios por día explicándole cosas a la gente, ya tenés la herramienta para armar un negocio online. Solo te falta saber qué hacer con eso.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "f094df61-717f-45f9-86ab-fbbb34a69d73",
+    "burnedAt": "2026-04-16T20:49:07.515Z"
+  },
+  {
+    "text": "El producto digital más fácil de crear se hace con algo que ya usás todos los días. No es una computadora. No es una cámara. Es algo más simple.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "f094df61-717f-45f9-86ab-fbbb34a69d73",
+    "burnedAt": "2026-04-16T20:49:07.515Z"
+  },
+  {
+    "text": "Hay mamás que arman un producto digital en una tarde usando solo la voz. Sin escribir. Sin diseñar. Sin saber nada técnico. Le hablan a la IA y listo.",
+    "hookType": "observacion_tendencia",
+    "fromGenerationId": "f094df61-717f-45f9-86ab-fbbb34a69d73",
+    "burnedAt": "2026-04-16T20:49:07.515Z"
+  },
+  {
+    "text": "¿Sabés esos audios largos que mandás por WhatsApp explicando cómo hacer algo? Hay gente que cobra por eso. En serio.",
+    "hookType": "provocacion",
+    "fromGenerationId": "f094df61-717f-45f9-86ab-fbbb34a69d73",
+    "burnedAt": "2026-04-16T20:49:07.515Z"
+  },
+  {
+    "text": "Son las 7 de la mañana. Te duele la espalda. Salís a laburar. Y mientras viajás, un pibe de 25 está en Google buscando \"cómo arreglar una canilla\". Lo que vos hacés en 5 minutos, él lleva 2 horas. Hay un negocio que no estás viendo. Y no es ir a arreglarlo vos.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "6c8d92bd-59ef-4e4a-87d0-ac39c2ab3662",
+    "burnedAt": "2026-04-16T20:49:09.100Z"
+  },
+  {
+    "text": "Lo que te voy a mostrar no es un negocio mágico. No vas a hacerte millonario. Es bastante aburrido, la verdad. Pero hay gente de más de 50 que genera un ingreso extra todos los meses sin romper el cuerpo.",
+    "hookType": "contraintuitivo",
+    "fromGenerationId": "6c8d92bd-59ef-4e4a-87d0-ac39c2ab3662",
+    "burnedAt": "2026-04-16T20:49:09.100Z"
+  },
+  {
+    "text": "¿Sabés arreglar cosas en una casa? Seguro que sí. ¿Y alguna vez te pagaron por EXPLICAR cómo se hace? Eso es lo que te quiero contar.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "6c8d92bd-59ef-4e4a-87d0-ac39c2ab3662",
+    "burnedAt": "2026-04-16T20:49:09.100Z"
+  },
+  {
+    "text": "Si sabés arreglar cosas en una casa, seguro ya te pasó. Te llama tu hijo, tu vecino, tu cuñado — porque algo se rompió. Vos lo resolvés por teléfono en 5 minutos. Esa llamada tiene más valor del que pensás.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "6c8d92bd-59ef-4e4a-87d0-ac39c2ab3662",
+    "burnedAt": "2026-04-16T20:49:09.100Z"
+  },
+  {
+    "text": "Llegás a tu casa reventado. Te duele todo. Y mientras vos pusiste el cuerpo todo el día, un pibe que no sabe ni cambiar una lamparita acaba de vender algo por internet que armó en una tarde. Algo que tiene que ver con lo que vos sabés.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "6c8d92bd-59ef-4e4a-87d0-ac39c2ab3662",
+    "burnedAt": "2026-04-16T20:49:09.100Z"
   }
 ]

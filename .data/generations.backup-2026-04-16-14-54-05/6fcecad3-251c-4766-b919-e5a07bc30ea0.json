@@ -1,0 +1,90 @@
+{
+  "id": "6fcecad3-251c-4766-b919-e5a07bc30ea0",
+  "briefId": "ca4c16cd-4ae9-4329-87dd-9dd1d5c88765",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "LATAM/Colombia: manualidades con IA",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 35,
+      "content_style": "Green Screen + Noticia: Jesús sobre fondo de Google Trends mostrando búsquedas de 'cómo hacer velas artesanales' en Colombia. Tono conversacional, como hablándole a alguien que ya lo conoce.",
+      "key_considerations": "Formato nivel 1. RETARGET: el tono es más cercano porque la persona ya vio un video anterior. Menos 'venta', más 'ejemplo concreto'. Fondo: búsquedas reales de manualidades en Colombia. CTA apunta a clase en vivo."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pain_point",
+        "script_text": "Si hacés manualidades, seguro ya te pasó: un mes vendés bien en la feria, al siguiente llovió y no vendiste nada. Tu ingreso depende de que vos estés ahí y que clima este perfecto. Eso tiene solución.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "question",
+        "script_text": "¿Sabés hacer manualidades? ¿Alguna vez te dijeron 'deberías vender eso'? Bueno, hay una forma de venderlo sin depender de ferias ni de envíos. Y chatgpt te ayuda a armarlo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "reveal_teaser",
+        "script_text": "En LATAM hay miles de personas que saben hacer velas, bisutería, jabones. Pero venden a los vecinos y no escalan. El problema no es lo que hacen. Es CÓMO lo venden. Te muestro otra forma.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "script_text": "En LATAM hay miles de personas que saben hacer cosas increíbles con las manos. Velas, jabones, bisutería. Pero la mayoría gana poco porque vende uno por uno. Y lo que saben hacer vale mucho más que eso.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "curiosity_gap",
+        "script_text": "Si sabés hacer velas, jabones o bisutería, probablemente pensás que eso no se puede vender por internet. Que es algo demasiado artesanal. Pero resulta que la gente no quiere comprar la vela. Quiere aprender a hacerla.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "3_Acts",
+      "emotional_arc": "Reconexión (ya me viste, seguí escuchando) → idea concreta (manualidades como producto digital) → proceso simple (IA + Hotmart) → cambio de creencia (no necesitás ferias, necesitás una guía)",
+      "sections": [
+        {
+          "section_name": "Acto 1 — El problema de vender en ferias",
+          "is_rehook": false,
+          "script_text": "El problema de vender manualidades en ferias es que dependés del clima, del lugar, y de tu tiempo. Si no vas, no vendés. Pero el conocimiento de CÓMO hacerlas vale más que las manualidades en sí. Y eso se puede vender todos los días sin salir de tu casa.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Y acá es donde entra la IA.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Acto 2 — Confrontación: la IA lo arma",
+          "is_rehook": false,
+          "script_text": "Le pedís a la IA: 'Armame una guía de 15 páginas de cómo hacer velas artesanales con materiales caseros.' Te la arma con lista de materiales, pasos, fotos de referencia, todo. En una hora tenés un producto digital terminado.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Acto 3 — Resolución: sin ferias, sin envíos",
+          "is_rehook": false,
+          "script_text": "Lo subís a Hotmart y cada persona que busca 'cómo hacer velas' puede comprarte. Sin envíos, sin stock, sin depender de una feria. Tu conocimiento trabajando por vos las 24 horas. Y en la clase te muestro cómo hacerlo paso a paso.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Entrá a la clase en vivo esta semana",
+      "reason_why": "Te muestro paso a paso cómo armar tu primer producto digital con IA. Si ya te registraste, no te la pierdas.",
+      "timing_seconds": 5,
+      "cta_type": "learn_more"
+    },
+    "total_duration_seconds": 35,
+    "word_count": 90
+  },
+  "createdAt": "2026-03-11T05:34:38.022Z",
+  "status": "recorded"
+}

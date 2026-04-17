@@ -1,0 +1,271 @@
+{
+  "id": "7d8199a0-989d-4025-ad3e-aaaeb81ee36c",
+  "briefId": "8c0852b4-46d2-438a-87a7-6b6b6d76b7dd",
+  "title": "La rutina que regalás por WhatsApp — el pibe del garage que empaquetó 2 años de prueba y error",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.6_autodidacta_amateur",
+    "body_type": "historia_con_giro",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "fitness amateur / entrenamiento casero / preparación física autodidacta",
+    "model_sale_type": "matematica_simple",
+    "emotional_arc": "confrontacion_directa",
+    "transition_text": "Te muestro el paso a paso en una clase gratis.",
+    "total_duration_seconds": 80,
+    "word_count": 285,
+    "belief_change": {
+      "old_belief": "No puedo vender nada de fitness sin ser entrenador certificado ni tener 50 mil seguidores en Instagram",
+      "mechanism": "La gente no compra títulos, compra resultados verificables en alguien parecido a ellos — y 2 años de prueba y error en tu propio cuerpo son una prueba más fuerte que cualquier diploma",
+      "new_belief": "Mi método autodidacta es exactamente lo que busca alguien que está empezando hoy donde yo estaba hace 2 años"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi rutina autodidacta es valiosa para alguien que empieza donde yo estaba",
+        "installed_via": "escena del amigo pidiendo la rutina por WhatsApp",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Estoy estancado regalando mi método en vez de cobrarlo",
+        "installed_via": "confrontación directa con el bucle del gratuito",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Mi método ajustado en mi cuerpo vale más que las rutinas genéricas del mercado",
+        "installed_via": "pivote — prueba propia vs genérico comercial",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Puedo armar un PDF profesional en 40 minutos con herramientas que ya uso",
+        "installed_via": "demo concreta con audio a la IA",
+        "persuasion_function": "demolicion",
+        "section_name": "Demo concreta"
+      },
+      {
+        "belief": "Mi proyecto de fitness puede avanzar mientras yo sigo entrenando",
+        "installed_via": "espejo inverso — sin clases presenciales, sin regalar más",
+        "persuasion_function": "prueba",
+        "section_name": "Espejo inverso"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la escena del amigo pidiendo rutina por WhatsApp es universal para autodidactas",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si sos de los que diseñan sus propias rutinas, seguro ya te pasó. Tu amigo del gimnasio te pide la rutina de pecho. Se la mandás por WhatsApp. Dos semanas después, te pide la de piernas. Al mes, tres amigos distintos tienen tu plan. Y vos seguís entrenando gratis.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "comparar el método casero con el genérico comercial activa orgullo",
+        "emotional_lever": "confrontacion",
+        "script_text": "Tu método de entrenamiento que armaste mirando 40 videos de YouTube, ajustando en tu propio cuerpo cada semana durante 2 años, le gana a cualquiera de esas rutinas genéricas que venden en Instagram por 30 dólares.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_mini",
+        "hypothesis": "el caso del pibe de Córdoba con garage y mancuernas genera identificación",
+        "emotional_lever": "esperanza",
+        "script_text": "Un pibe de 24 años, de Córdoba, entrenaba solo en el garage de la casa con dos mancuernas de 5 kilos. Su primo le pidió la rutina. Después el primo del primo. Una tarde organizó sus rutinas, armó un PDF de 28 páginas y lo puso a 12 dólares. En 3 meses vendió 180 copias.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "hypothesis": "desarmar la objeción del certificado abre permiso",
+        "emotional_lever": "vulnerabilidad",
+        "script_text": "Yo pensaba que para vender algo de fitness en internet había que ser entrenador certificado o tener 50 mil seguidores en Instagram. Después entendí que la gente no compra títulos. Compra resultados verificables en alguien parecido a ellos.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "nombrar los grupos de WhatsApp donde sos el referente activa identidad",
+        "emotional_lever": "reconocimiento",
+        "script_text": "¿Cuántos amigos te pidieron la rutina que armaste para vos? ¿En cuántos grupos de WhatsApp sos 'el que sabe' de entrenamiento? Cada asesoría gratis que diste es una página entera de un PDF que todavía no te sentaste a escribir.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "confrontacion_directa",
+      "turning_point_beat": "Mecanismo",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi rutina autodidacta es un producto terminado",
+          "viewer_emotion_after": "reconocimiento + orgullo",
+          "is_turning_point": false,
+          "script_text": "Tus 24 meses de prueba y error en el garage, con YouTube de fondo y tu propio cuerpo como laboratorio, valen muchísimo más de lo que vos creés.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Estoy estancado regalando",
+          "viewer_emotion_after": "confrontacion productiva",
+          "is_turning_point": false,
+          "script_text": "Estás estancado. Entrenás todos los días desde hace 2 años pero la cuenta bancaria no se mueve. Pagás 40 dólares al mes de gimnasio, ayudás a tus amigos gratis por WhatsApp, y adentro hay una idea de negocio que no podés avanzar: cómo salir de ahí sin dejar de entrenar.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi método vale más que las rutinas genéricas",
+          "viewer_emotion_after": "orgullo + claridad",
+          "is_turning_point": true,
+          "script_text": "Lo que vos sabés vale más que cualquier clase presencial que podrías dar. Básicamente, tu método — qué ejercicios sirven cuando no tenés equipo, qué orden seguir para ganar fuerza en 12 semanas, cómo ajustar una rutina cuando te estancás a las 8 semanas — eso es un producto digital.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Demo concreta",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo armar un PDF profesional en 40 minutos",
+          "viewer_emotion_after": "posibilidad concreta",
+          "is_turning_point": false,
+          "script_text": "Abrís una herramienta de inteligencia artificial. Le dictás por audio, como si le estuvieras explicando a un amigo nuevo: 'Necesito un PDF de 28 páginas con una rutina de 12 semanas para alguien que entrena en casa con dos mancuernas, incluí progresiones y tablas'. Lo tenés listo en 40 minutos. Lo subís. Lo cobrás a 15 dólares.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Espejo inverso",
+          "persuasion_function": "prueba",
+          "micro_belief": "Mi proyecto avanza mientras yo entreno",
+          "viewer_emotion_after": "alivio anticipado",
+          "is_turning_point": false,
+          "script_text": "Sin dejar de entrenar. Sin ponerte a dar clases presenciales a 25 dólares la hora. Sin regalar más rutinas a amigos que nunca te devolvieron el favor. Tu proyecto de fitness avanzando mientras vos vas al gimnasio a hacer tu propia serie.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Mi método trabaja para pibes que no conozco",
+          "viewer_emotion_after": "independencia concreta",
+          "is_turning_point": false,
+          "script_text": "Y hoy entrena igual que siempre. Pero su rutina la siguen 180 pibes que nunca va a conocer. No es un gran negocio — pero le paga la cuota del gimnasio y le sobra plata para la creatina.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "si sos de los que diseñan sus propias rutinas, seguro ya te pasó"
+      },
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "vos seguís entrenando gratis"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "estás estancado"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "ayudás a tus amigos gratis por whatsapp"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmacion",
+        "phrase": "lo tenés listo en 40 minutos"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "tu proyecto de fitness avanzando mientras vos vas al gimnasio"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 80,
+        "ingredient_name": "Contraste Extremo"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Numérica"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 56,
+        "ingredient_name": "El Atajo Temporal"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T09:01:33.398Z",
+  "status": "confirmed"
+}

@@ -1,46 +1,38 @@
 {
-  "generated_at": "2026-03-15T17:59:21.254Z",
-  "total_candidates": 505,
+  "generated_at": "2026-04-08T19:59:42.811Z",
+  "total_candidates": 504,
   "top_20": [
-    {
-      "niche": "auto-seleccionar",
-      "angle_family": "confrontacion",
-      "angle_specific": "3.x_gap",
-      "big_idea": "Familia \"confrontacion\" tiene solo 2/41 guiones — necesita más cobertura",
-      "source": "coverage_gap",
-      "score": 10900
-    },
-    {
-      "niche": "auto-seleccionar",
-      "angle_family": "identidad",
-      "angle_specific": "1.x_gap",
-      "big_idea": "Familia \"identidad\" tiene solo 3/41 guiones — necesita más cobertura",
-      "source": "coverage_gap",
-      "score": 10800
-    },
-    {
-      "niche": "auto-seleccionar",
-      "angle_family": "oportunidad",
-      "angle_specific": "2.x_gap",
-      "big_idea": "Familia \"oportunidad\" tiene solo 3/41 guiones — necesita más cobertura",
-      "source": "coverage_gap",
-      "score": 10800
-    },
     {
       "niche": "auto-seleccionar",
       "angle_family": "mecanismo",
       "angle_specific": "4.x_gap",
-      "big_idea": "Familia \"mecanismo\" tiene solo 3/41 guiones — necesita más cobertura",
+      "big_idea": "Familia \"mecanismo\" tiene solo 10/87 guiones — necesita más cobertura",
       "source": "coverage_gap",
-      "score": 10800
+      "score": 14700
     },
     {
       "niche": "auto-seleccionar",
       "angle_family": "historia",
       "angle_specific": "5.x_gap",
-      "big_idea": "Familia \"historia\" tiene solo 3/41 guiones — necesita más cobertura",
+      "big_idea": "Familia \"historia\" tiene solo 10/87 guiones — necesita más cobertura",
       "source": "coverage_gap",
-      "score": 10800
+      "score": 14700
+    },
+    {
+      "niche": "auto-seleccionar",
+      "angle_family": "identidad",
+      "angle_specific": "1.x_gap",
+      "big_idea": "Familia \"identidad\" tiene solo 11/87 guiones — necesita más cobertura",
+      "source": "coverage_gap",
+      "score": 14600
+    },
+    {
+      "niche": "auto-seleccionar",
+      "angle_family": "oportunidad",
+      "angle_specific": "2.x_gap",
+      "big_idea": "Familia \"oportunidad\" tiene solo 12/87 guiones — necesita más cobertura",
+      "source": "coverage_gap",
+      "score": 14500
     },
     {
       "niche": "trabajar desde casa haciendo manualidades",
@@ -150,6 +142,16 @@
       "source": "research",
       "score": 8250,
       "keyword": "cómo hacer dinero con inteligencia artificial",
+      "keyword_score": 6250
+    },
+    {
+      "niche": "como hacer dinero con la inteligencia artificial",
+      "angle_family": "identidad",
+      "angle_specific": "2.2_tendencia_mercado",
+      "big_idea": "Hay personas que saben de como hacer dinero pero no saben que eso vale plata",
+      "source": "research",
+      "score": 8250,
+      "keyword": "como hacer dinero con la inteligencia artificial",
       "keyword_score": 6250
     },
     {

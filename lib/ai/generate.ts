@@ -21,6 +21,11 @@ import { getObjectionsContext } from "../knowledge/objections";
 import { getKnowledgeContext, getKnowledgeContextLongform } from "../knowledge/data-files";
 import { buildAutoBrief } from "./auto-brief";
 import { isResearchStale, triggerResearchRefresh } from "./angle-discovery";
+import { ALL_HOOK_TYPES } from "../constants/hook-types";
+
+// Single source of truth for the hook_type enum string used in JSON schemas.
+// Derived from ALL_HOOK_TYPES so adding a new type only requires editing hook-types.ts.
+const HOOK_TYPE_ENUM = ALL_HOOK_TYPES.map(t => `"${t}"`).join(" | ");
 
 export type ContentType = "shortform" | "longform";
 
@@ -96,7 +101,7 @@ const SCRIPT_SCHEMA_DESC = `Responde con un JSON con esta estructura exacta:
   },
   "hooks": [{
     "variant_number": number,
-    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
+    "hook_type": ${HOOK_TYPE_ENUM},
     "script_text": string,
     "timing_seconds": number
   }],
@@ -161,7 +166,7 @@ const HOOKS_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 {
   "hooks": [{
     "variant_number": number,
-    "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
+    "hook_type": ${HOOK_TYPE_ENUM},
     "script_text": string,
     "timing_seconds": number
   }]
@@ -170,7 +175,7 @@ const HOOKS_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 const SINGLE_HOOK_SCHEMA_DESC = `Responde con un JSON con esta estructura (un solo hook, NO un array):
 {
   "variant_number": number,
-  "hook_type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
+  "hook_type": ${HOOK_TYPE_ENUM},
   "script_text": string,
   "timing_seconds": number
 }`;
@@ -195,7 +200,7 @@ const REFERENCE_SCHEMA_DESC = `Responde con un JSON con esta estructura:
 {
   "hook": {
     "text": string,
-    "type": "situacion_especifica" | "dato_concreto" | "pregunta_incomoda" | "confesion" | "contraintuitivo" | "provocacion" | "historia_mini" | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion" | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error" | "nadie_explica" | "hipotetico_personal" | "identidad_dolor" | "pregunta_limitacion" | "asimetria_temporal",
+    "type": ${HOOK_TYPE_ENUM},
     "word_count": number,
     "estimated_seconds": number
   },

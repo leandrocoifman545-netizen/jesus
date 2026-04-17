@@ -1,0 +1,445 @@
+{
+  "id": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+  "briefId": "5012eb9f-1e40-43de-b7bf-5de993609505",
+  "title": "Mañana a las 7:05 suena tu alarma — Pizarrón (Martín)",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.2_oficinista_atrapado",
+    "body_type": "contraste_emocional",
+    "segment": "A",
+    "funnel_stage": "RETARGET",
+    "niche": "rutina de oficina / escape laboral (genérico)",
+    "model_sale_type": "ventana_oportunidad",
+    "visual_format": "pizarron",
+    "avatar": "martin",
+    "awareness_level": 2,
+    "emotional_arc": "futuro_sensorial",
+    "tension": "T1",
+    "transition_text": "Te puedo mostrar cómo empezar",
+    "total_duration_seconds": 83,
+    "word_count": 205,
+    "belief_change": {
+      "old_belief": "Esto es lo que hay — tengo que aguantar hasta que junte plata para emprender",
+      "mechanism": "Future pacing invertido: dos lunes, mismo cuerpo, distinto modelo. Uno te destruye, otro te libera.",
+      "new_belief": "No tengo que esperar para salir — puedo construir la salida MIENTRAS trabajo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Este es exactamente mi lunes",
+        "installed_via": "Descripción sensorial del lunes: alarma, techo, colectivo, escritorio, reloj",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "El problema no es el trabajo — es no tener alternativa",
+        "installed_via": "Redefine: no odiás trabajar, odiás depender. Si tuvieras otra fuente de ingreso, el lunes no dolería.",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo construir algo mientras sigo trabajando",
+        "installed_via": "Contraste: mismo lunes pero con un producto digital que vendió mientras dormías",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito renunciar ni arriesgar nada",
+        "installed_via": "Sin renunciar, sin inversión, sin horarios extra — fragmentos de 30 min",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Gente con mi mismo trabajo ya tiene su salida armada",
+        "installed_via": "Personas que empezaron desde la oficina y hoy tienen ingreso propio funcionando",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "futuro_sensorial",
+        "script_text": "Mañana a las 7:05 vas a abrir los ojos y lo primero que vas a sentir no es sueño. Es peso. El peso de saber que las próximas 9 horas no son tuyas. Te dibujo dos versiones de ese lunes.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "script_text": "2.340 horas. Eso es lo que le regalás por año a un trabajo que no te deja nada propio. ¿Y no sos capaz de usar 30 minutos por día para construir algo tuyo? ",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "script_text": "Tu jefe duerme tranquilo porque sabe que mañana vas a estar ahí. Vos no dormís tranquilo porque sabés que mañana vas a estar ahí. ",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "script_text": "Yo odiaba los lunes. No por el trabajo — por saber que las mejores horas de mi vida se las daba a alguien más. Hasta que encontré la forma de quedarme con esas horas. Sin renunciar.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que mejor les va con productos digitales no renunciaron a su trabajo. Empezaron mientras seguían cobrando su sueldo. Y esa es la ventaja que vos tenés ahora y no estás viendo.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "futuro_sensorial",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este es exactamente mi lunes",
+          "script_text": "Mirá el pizarrón. Te dibujo tu lunes. 7:05, suena la alarma. Abrís los ojos y ya sabés cómo va a ser el día. Te subís al colectivo, llegás a la oficina. Las mismas caras. Las mismas 9 horas. A las 6 de la tarde salís y lo único que querés es que no sea martes todavía. Y repetís. Martes, miércoles, jueves, viernes. Es domingo a la tarde y ya estás pensando en el lunes.",
+          "timing_seconds": 16,
+          "pizarron_directions": [
+            "LÁMINA A — Señalar cada paso del timeline mientras lo dice",
+            "Timeline: ⏰ 7:05 → 🚌 → 🏢 → 9HS → 🚶‍♂️ 6PM",
+            "Abajo: L  M  M  J  V  🔁",
+            "Última línea: DOM = 😩 ya pensás en el LUN"
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El problema no es el trabajo — es no tener alternativa",
+          "script_text": "Pero escuchame algo. Vos no odiás trabajar. Si fuera tu proyecto, laburarías el doble. Lo que te destruye es saber que no tenés alternativa. Que si mañana te rajaran, no tenés nada propio. Que todo tu ingreso depende de que alguien te deje estar ahí. Ese es el problema real.",
+          "timing_seconds": 14,
+          "pizarron_directions": [
+            "LÁMINA A — Señalar el 🔁 de la repetición",
+            "Jesús mira a cámara para 'ese es el problema real'"
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo construir algo mientras sigo trabajando",
+          "script_text": "Ahora te dibujo otro lunes. Mismo horario. Misma alarma. Pero antes de salir de la cama, agarrás el celular y ves: 'Nueva venta. $12'. Otra: '$8' y todo esto mientras dormías. Todo porque esta semana empezaste a usar la IA para armar una guía con algo que ya sabías. La subiste, publicistaste con un dólar por día y las ventas te empezaron a llegar al WhatsApp. Y hoy se vende sola. Vas a la oficina igual. Pero algo cambió: ya no NECESITÁS ir.",
+          "timing_seconds": 18,
+          "pizarron_directions": [
+            "DA VUELTA → LÁMINA B",
+            "Timeline: ⏰ 7:05 → 📱 +$12  +$8 (mientras dormías)",
+            "🏢 Vas igual... PERO YA NO NECESITÁS IR",
+            "Abajo: IA + lo que ya sabés = producto tuyo"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito renunciar ni arriesgar nada",
+          "script_text": "No te estoy diciendo que renuncies mañana. Te estoy diciendo que armes tu salida MIENTRAS seguís cobrando. Sin inversión arriesgada. Los 30 minutos que hoy usás scrolleando el celular, los usás para esto. Le contás a la IA lo que sabés, ella te arma el producto. Y si no sabés qué vender, la misma IA te muestra qué está buscando la gente y qué se puede vender.",
+          "timing_seconds": 12,
+          "pizarron_directions": [
+            "LÁMINA B — Señalar la parte inferior mientras habla",
+            "Jesús va señalando: ❌ inversión ❌ horarios extra ❌ riesgo"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente con mi mismo trabajo ya tiene su salida armada",
+          "script_text": "Hay pibes que arrancaron exactamente como vos. Laburando 9 horas en una oficina por un sueldo con el que no se sentian conformes. Armaron una guía con ChatGPT en un fin de semana. La empezaron a vender por WhatsApp. Y hoy tienen un ingreso propio que crece todos los meses. No dejaron el trabajo de un día para el otro. Construyeron la salida primero.",
+          "timing_seconds": 12,
+          "pizarron_directions": [
+            "LÁMINA B — Señalar 'YA NO NECESITÁS IR' como prueba",
+            "Jesús mira a cámara, habla directo"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Esta ventana no va a estar abierta siempre",
+          "script_text": "Hoy la IA te permite armar en un fin de semana lo que antes tomaba meses. Pero esta ventana no va a estar abierta para siempre. Cada día que pasa, más gente se aviva. El que entra primero, gana el juego.",
+          "timing_seconds": 7,
+          "pizarron_directions": [
+            "LÁMINA B — Señalar 'IA + producto = tuyo' y mirar a cámara para el cierre"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 28,
+        "ingredient_name": "Resentimiento Silencioso"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 41,
+        "ingredient_name": "La Trampa del Conformismo"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 56,
+        "ingredient_name": "El Atajo Temporal"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Numérica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 80,
+        "ingredient_name": "Contraste Extremo"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. [...] Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "orden_nlp": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. [...] Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      }
+    ]
+  },
+  "createdAt": "2026-03-19T14:45:00.000Z",
+  "status": "recorded",
+  "batch": {
+    "id": "b36369e3-48f1-4299-94b8-04bf0960e43e",
+    "name": "Version 2.0"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "ad_copies_matrix": {
+    "generation_id": "7e790f42-c68f-4d90-9941-a8b38918d1ee",
+    "angle": "identidad — 1.2_oficinista_atrapado",
+    "niche": "rutina de oficina / escape laboral (genérico)",
+    "total_versions": 15,
+    "versions": [
+      {
+        "hook_index": 0,
+        "hook_type": "futuro_sensorial",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H1-ClaseGratuita",
+        "headline": "Dos lunes. Una sola diferencia.",
+        "description": "Clase gratis en vivo: encontrá, creá y vendé tu primer producto digital con IA. Sin inversión.",
+        "primary_text": "Mañana a las 7:05 suena la alarma y ya sabés cómo termina el día antes de empezarlo.\n\nTe levantás, tomás el colectivo, llegás a la oficina. Nueve horas. Volvés. Dormís. Repetís.\n\nEse es el Lunes A.\n\nEl Lunes B tiene el mismo horario. La misma alarma. Pero antes de levantarte, abrís el celular y ves una notificación: \"Nueva venta, $9\". Otra: \"Nueva venta, $14\". Todo mientras dormías.\n\nLa diferencia entre los dos lunes no es el trabajo. No es el sueldo. No es suerte.\n\nEs que en el Lunes B, alguien dedicó 3 fines de semana a armar una guía con lo que ya sabía, la subió, la publicó con un peso por día y hoy se vende sola.\n\nSigue yendo a la oficina. Pero ya no necesita ir.\n\nEsa es la única diferencia real: uno depende de que alguien le deje estar ahí. El otro construyó algo propio mientras seguía cobrando.\n\nNo es un camino de años. Hoy la IA hace en horas lo que antes llevaba meses. Le contás lo que sabés, ella te arma el producto. Si no sabés qué vender, te muestra qué está buscando la gente.\n\nEn esta clase gratuita de 2 horas te muestro exactamente cómo funciona ese proceso: cómo encontrar qué vender, cómo crearlo con IA y cómo empezar a venderlo.\n\nSin renunciar. Sin inversión arriesgada. Desde donde estás ahora.\n\nEl link para anotarte está acá 👇",
+        "word_count": 218,
+        "structure_used": "Comparación directa"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "futuro_sensorial",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H1-InstagramOrgánico",
+        "headline": "Mañana a las 7:05 ya sabés cómo va.",
+        "description": "Instagram orgánico",
+        "primary_text": "Mañana a las 7:05 vas a abrir los ojos y ya sabés todo lo que viene.\n\nEl colectivo. Las mismas caras. Las 9 horas. La cuenta regresiva hasta las 6 de la tarde.\n\nY el domingo a la noche con ese peso raro en el pecho que no es cansancio — es saber que mañana se repite.\n\nLa verdad es que no odiás trabajar. Si fuera tu proyecto, laburarías el doble. Lo que te destruye es saber que no tenés nada propio. Que si mañana te rajaran, quedás en cero.\n\nHay otra versión de ese mismo lunes. Mismo horario, misma alarma. Pero antes de levantarte ves una notificación: 'Nueva venta'. Y otra. Todo mientras dormías.\n\nNo te digo que renuncies. Te digo que construyas la salida mientras seguís cobrando.\n\nLos 30 minutos que hoy usás scrolleando, pueden ser eso.\n\nSi te resuena, escribime y te cuento cómo.",
+        "word_count": 152,
+        "structure_used": "Escena cotidiana → diagnóstico emocional → reencuadre → CTA suave"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "futuro_sensorial",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H1-Taller$5",
+        "headline": "3 señales de que ya estás listo",
+        "description": "Taller de 3 días por $5 USD. Salís con tu producto digital hecho, tu anuncio y tu sistema de ventas.",
+        "primary_text": "7:05 de la mañana. La alarma suena y antes de abrir los ojos ya calculaste cuántas horas faltan para las 6 de la tarde.\n\nSi eso te resulta familiar, hay 3 señales que probablemente ya están ahí y no las estás leyendo.\n\n**Señal 1: Laburás bien, pero para otro.**\nTu jefe no tiene dudas de que mañana vas a estar. Vos tampoco. Y en algún punto eso dejó de parecerte normal.\n\n**Señal 2: Ya sabés algo que otros querrían aprender.**\nNo tiene que ser extraordinario. Excel, redacción, diseño, atención al cliente, cocina saludable. Hay algo que hacés bien y que alguien pagaría por aprender en un PDF o un audio de 40 minutos.\n\n**Señal 3: No te falta capital — te falta el primer paso.**\nNo estás esperando plata. Estás esperando saber exactamente qué hacer primero, segundo y tercero.\n\nEso es lo que resuelve el Taller en 3 días.\n\nDía 1: encontrás tu producto ganador.\nDía 2: lo creás completo con IA.\nDía 3: armás el anuncio y el sistema para que se venda.\n\nSalís con algo concreto hecho, no con otro PDF que nunca vas a abrir.\n\nCuesta $5 USD. Menos que dos cafés en Palermo.\n\nSi las 3 señales te cayeron cerca, el link está abajo 👇",
+        "word_count": 213,
+        "structure_used": "Listicle de señales"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_concreto",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H2-ClaseGratuita",
+        "headline": "3 señales de que ya es el momento.",
+        "description": "Clase en vivo y gratuita para oficinistas que quieren un ingreso propio. Anotate sin compromiso.",
+        "primary_text": "Son las 6 de la tarde. El ascensor del edificio de oficinas tarda una eternidad. Nadie habla. Todos miran el teléfono.\n\nSi reconocés estas 3 señales, esta clase es para vos.\n\n1. Llegás a casa y lo primero que pensás es cuántos días faltan para el fin de semana.\nNo odiás trabajar. Odiás trabajar para algo que no te pertenece. Hay una diferencia enorme entre las dos cosas.\n\n2. Tenés una idea de \"algo que podrías vender\" pero la postergás porque «falta tiempo» o «falta plata para arrancar».\nEso no es falta de recursos. Es falta de método. Hoy existe una forma de armar un producto digital en un fin de semana sin inversión inicial.\n\n3. Cuando pensás en renunciar, lo primero que aparece es el miedo, no la emoción.\nEse miedo tiene nombre: dependencia. Todo tu ingreso depende de que alguien te deje estar ahí mañana. Eso se puede cambiar sin dejar el trabajo de golpe.\n\nHay personas que trabajaban 9 horas en oficina con un sueldo fijo. Armaron una guía con ChatGPT en 11 días. La empezaron a vender por WhatsApp. Hoy tienen un ingreso que crece solo, sin tocarla cada semana.\n\nEn esta clase gratuita de 2 horas en vivo te explico el proceso completo: cómo encontrar qué vender, cómo crearlo con IA y cómo conseguir las primeras ventas.\n\nSin costo. Sin compromiso. Solo aprendés.",
+        "word_count": 224,
+        "structure_used": "Listicle de señales"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_concreto",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H2-InstagramOrgánico",
+        "headline": "2.340 horas por año. Fijate esto.",
+        "description": "Instagram orgánico",
+        "primary_text": "2.340 horas. Eso es lo que le das por año a un trabajo que no te deja nada propio.\n\nNo lo digo para que te sientas mal. Lo digo porque me lo pregunté yo primero y me pegó fuerte.\n\nCon 30 minutos por día — los mismos que uso scrolleando sin querer — armé una guía con lo que ya sabía. La subí. La empecé a vender por WhatsApp. No fue magia ni método milagroso. Fue hacer algo concreto con el tiempo que ya tenía.\n\nLo que aprendí es que no necesitás renunciar para empezar. Necesitás empezar para, eventualmente, poder renunciar si querés.\n\nLa diferencia entre los que lo logran y los que no casi siempre es una sola cosa: los que lo logran no esperaron el momento perfecto.\n\nNada más que eso.",
+        "word_count": 138,
+        "structure_used": "Dato impactante → reflexión personal → experiencia propia → aprendizaje → cierre sin CTA explícito"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "dato_concreto",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H2-Taller$5",
+        "headline": "2.340 horas y un fin de semana",
+        "description": "Taller de 3 días en vivo por $5 USD. Producto, anuncio y sistema. Salís con todo armado.",
+        "primary_text": "Estaba en el subte, un martes a las 8 de la mañana, mirando el techo como si ahí hubiera algo interesante.\n\nTenía puesto los auriculares pero no escuchaba nada. Solo estaba calculando: 9 horas por día, 5 días por semana, 52 semanas. Me dio 2.340 horas al año. Regaladas.\n\nEsa semana me topé con algo que no estaba buscando: un hilo en Twitter de un tipo que había armado una guía sobre productividad con ChatGPT en un sábado lluvioso. La subió a Gumroad. En 11 días había vendido 47 copias a $9 cada una.\n\nNo era un gurú. Era un contador de 31 años que laburaba en una empresa de logística.\n\nMe quedé leyendo durante 3 paradas de más y bajé en la estación equivocada.\n\nLo que entendí ese día: el problema no era el trabajo. Era que yo creía que necesitaba meses para armar algo propio. Y no era verdad.\n\nHoy uso 25 minutos antes de entrar a la oficina. Tengo un producto digital que se vende solo mientras estoy en reuniones.\n\nNo renuncié. Construí la salida primero.\n\nHay un Taller de 3 días en vivo que enseña exactamente eso: producto, anuncio y sistema, todo armado.\n\nCuesta $5 USD. Si estás en el subte calculando horas, el link está abajo 👇",
+        "word_count": 222,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H3-ClaseGratuita",
+        "headline": "Lo que me mandaron a las 6:47 AM.",
+        "description": "Clase gratuita en vivo: creá y vendé productos digitales con IA mientras seguís en tu trabajo.",
+        "primary_text": "Te voy a ser directo porque creo que te lo merecés.\n\nHace unos meses me llegó este audio por WhatsApp. Lo transcribo tal cual:\n\n\"Jesús, son las 6:47 de la mañana y estoy en el baño de la oficina escuchándote porque afuera están mis compañeros y no quiero que me vean. Arranqué tu método hace 19 días. Ayer me entraron 3 ventas mientras estaba en una reunión de trabajo. No fue mucho, pero fue mío. Por primera vez en 4 años sentí que algo de lo que hago me pertenece. Gracias.\"\n\nEse mensaje me lo mandó alguien que hace 3 semanas pensaba exactamente lo que pensás vos: que primero hay que juntar plata, que no hay tiempo, que eso es para otros.\n\nLo que cambió no fue su situación. Fue entender que no tiene que esperar a salir para empezar a construir la salida.\n\nHoy la IA te permite crear un producto digital en un fin de semana. Le contás lo que sabés, ella te arma la estructura. Si no sabés qué vender, la misma IA te dice qué está buscando la gente y qué se puede monetizar.\n\nLos 30 minutos que usás scrolleando antes de dormir alcanzan para esto.\n\nDoy una clase gratuita de 2 horas donde te muestro el proceso completo, paso a paso.\n\nCómo encontrar el producto, cómo crearlo, cómo venderlo.\n\nSin costo. Anotate en el link de abajo.",
+        "word_count": 226,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H3-InstagramOrgánico",
+        "headline": "Tu jefe duerme tranquilo. Vos no.",
+        "description": "Instagram orgánico",
+        "primary_text": "Tu jefe duerme tranquilo porque sabe que mañana vas a estar ahí.\n\nVos no dormís tranquilo porque sabés que mañana vas a estar ahí.\n\nEsa asimetría me parece la cosa más rara del mundo y durante años no la vi.\n\nEl problema no es el trabajo. El problema es depender de que alguien te deje estar. Que todo tu ingreso esté en manos de una decisión que no es tuya.\n\nNo es joda eso.\n\nY la salida no es renunciar de un día para el otro — eso es un salto al vacío y no se lo recomiendo a nadie. La salida es construir algo propio mientras seguís cobrando. Ir de a poco. Sin drama.\n\nHoy eso es más fácil que antes. No porque sea simple — porque las herramientas que existen ahora te acortan el camino de una manera que hace tres años era imposible.\n\nSi querés saber cómo, mirá el link en bio.",
+        "word_count": 155,
+        "structure_used": "Provocación → diagnóstico real → toma de posición → solución gradual → CTA"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H3-Taller$5",
+        "headline": "Él duerme tranquilo. Vos, no.",
+        "description": "Taller 3 días en vivo, $5 USD. Salís con producto hecho, anuncio listo y sistema que vende.",
+        "primary_text": "Antes: Rodrigo salía de la oficina los viernes a las 6 con una sola idea en la cabeza — que no fuera lunes todavía.\n\nNo era vago. Era bueno en su trabajo. Pero cada domingo a las 5 de la tarde le caía el mismo peso en el pecho. El lunes llegaba igual.\n\nLo que más le jodía no era el horario. Era saber que si mañana lo echaban, no tenía nada propio. Cero. Todo su ingreso dependía de que alguien le renovara el contrato.\n\nDespués: Un sábado de lluvia se quedó en casa con el mate y ChatGPT. Armó una guía sobre gestión de turnos para pequeños comercios — algo que había aprendido en 4 años de laburo. 38 páginas. La subió a una plataforma.\n\nEn 9 días vendió 23 copias a $12 cada una.\n\nNo renunció. No hizo un curso de 6 meses. No invirtió plata que no tenía.\n\nHoy sigue yendo a la oficina. Pero cuando suena la alarma a las 7:05, lo primero que hace es abrir el celular y ver las ventas de la noche.\n\nAlgo cambió: ya no necesita ir. Elige ir.\n\nEso es lo que construye el Taller en 3 días en vivo. Producto, anuncio y sistema.\n\n$5 USD. El link está abajo 👇",
+        "word_count": 218,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "confesion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H4-ClaseGratuita",
+        "headline": "Odié los lunes 1.460 días seguidos.",
+        "description": "Clase gratuita en vivo: cómo construir tu salida sin renunciar ni arriesgar lo que tenés.",
+        "primary_text": "Cuatro años. 1.460 lunes.\n\nMe acuerdo del último que odié de verdad. Era martes en realidad, pero lo cuento igual porque da lo mismo. Eran las 11 de la noche, estaba en el escritorio de mi cuarto con la notebook abierta, mirando el resumen del mes. Sueldo. Gastos. Cero resto. Y pensé: si mañana me echan, no tengo nada.\n\nNo nada de plata. Nada propio. Ningún ingreso que no dependiera de que alguien me dejara estar ahí.\n\nEse pensamiento me paralizó 4 años. Siempre esperando el momento ideal para arrancar. Juntando plata que nunca alcanzaba. Postergando.\n\nHasta que entendí algo que cambió todo: no tenía que esperar a salir para construir la salida.\n\nEmpecé un sábado a la tarde. Le conté a ChatGPT lo que sabía de una herramienta que usaba en el trabajo. Me armó el esqueleto de una guía en 47 minutos. La terminé el domingo. La subí. La empecé a publicitar con $1 por día.\n\nSiete días después llegó la primera venta mientras estaba en el colectivo yendo a la oficina.\n\nNo renuncié al otro día. Seguí cobrando mi sueldo. Y fui construyendo desde ahí.\n\nEn esta clase gratuita de 2 horas en vivo te muestro exactamente ese proceso: cómo encontrar qué vender, cómo crearlo con IA y cómo conseguir las primeras ventas reales.\n\nEs gratis. Sin compromiso. El link está abajo.",
+        "word_count": 229,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "confesion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H4-InstagramOrgánico",
+        "headline": "Yo odiaba los lunes. Te lo digo así.",
+        "description": "Instagram orgánico",
+        "primary_text": "Yo odiaba los lunes.\n\nNot el trabajo en sí — eso lo manejaba. Lo que no manejaba era la sensación de que las mejores horas del día se las estaba dando a algo que no era mío.\n\nMe acuerdo cuando me cayó la ficha: si mañana me rajaban, no tenía nada. Ningún ingreso propio. Ninguna red. Nada.\n\nAhí arranqué a construir algo en paralelo. Sin dejar el trabajo. Sin inversión grande. Con lo que sabía y con herramientas que ya existían.\n\nFue lento al principio. Pero llegó un punto donde dejé de ir a la oficina por obligación. Seguía yendo — pero ya no necesitaba ir. Y esa diferencia, te lo juro, cambia todo.\n\nNo sé si esto te pasa a vos también. Si sí, escribime. No tengo ningún guión preparado — simplemente me pasó algo que vale la pena contar. 🙌",
+        "word_count": 148,
+        "structure_used": "Confesión personal → momento de quiebre → acción tomada → resultado emocional → CTA conversacional"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "confesion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H4-Taller$5",
+        "headline": "Esperar plata para emprender es trampa",
+        "description": "Taller de 3 días en vivo por $5 USD. Día 1 producto, Día 2 creación, Día 3 sistema de ventas.",
+        "primary_text": "Te voy a decir algo que probablemente nadie en tu entorno te está diciendo.\n\nEso de \"juntá plata primero y después emprendés\" es el consejo más caro que te pueden dar. Porque mientras esperás tener capital, le seguís regalando tus mejores horas a un sueldo que no crece al ritmo que necesitás.\n\nYo lo creía también. Pensaba que para vender algo propio necesitaba un producto perfecto, meses de preparación y plata para invertir. Me equivocaba en las 3.\n\nLa realidad que nadie te cuenta: los que hoy tienen ingresos digitales no esperaron estar listos. Arrancaron con lo que sabían, con las herramientas que ya existían, mientras seguían cobrando su sueldo.\n\nHoy la IA te permite hacer en un fin de semana lo que antes requería un equipo y 3 meses. Una guía, un taller grabado, un recurso de 40 minutos sobre algo que vos ya sabés. Eso es un producto digital. Y se puede vender mientras dormís.\n\nNo te estoy pidiendo que renuncies mañana. Te estoy diciendo que construyas la salida MIENTRAS seguís adentro. Sin riesgo. Sin inversión grande. Con 25 minutos por día.\n\nEl Taller dura 3 días en vivo. Día 1 encontrás el producto. Día 2 lo creás. Día 3 armás el sistema de ventas.\n\nSalís con algo real hecho, no con una idea flotando.\n\nCuesta $5 USD. El link está abajo 👇",
+        "word_count": 228,
+        "structure_used": "Contrarian manifesto"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H5-ClaseGratuita",
+        "headline": "El sueldo fijo es tu mejor ventaja.",
+        "description": "Clase gratis en vivo: por qué empezar desde la oficina es mejor que esperar para renunciar.",
+        "primary_text": "Todo el mundo te dice que para emprender necesitás tiempo libre, capital o las dos cosas.\n\nEso es exactamente lo que te tiene paralizado.\n\nLa realidad que nadie muestra: las personas que mejor les va con productos digitales no renunciaron para arrancar. Empezaron mientras seguían cobrando. Y esa no es una limitación. Es la ventaja más grande que existe.\n\nCuando tenés sueldo, podés invertir $1 por día en publicidad sin que te tiemble la mano. Podés equivocarte sin que sea una catástrofe. Podés construir sin la presión de que algo tiene que funcionar ya.\n\nEl que renuncia primero y emprende después opera con miedo. El que construye primero y renuncia después opera con evidencia.\n\nHoy la IA eliminó la barrera técnica que antes hacía imposible esto desde una oficina. Le contás lo que sabés, te arma el producto. Si no sabés qué vender, te dice qué está buscando la gente. Lo que antes tardaba 3 meses, hoy lleva un fin de semana.\n\nHay gente que arrancó exactamente así. Empleados de 9 horas. Armaron su primera guía digital un sábado con ChatGPT. La subieron. La publicitaron con un peso por día. Las ventas llegaron al WhatsApp mientras estaban en reuniones de trabajo.\n\nNo renunciaron de golpe. Construyeron la salida primero.\n\nEn esta clase gratuita de 2 horas te explico el proceso completo, desde cero.\n\nAnotate. Es gratis. Sin presión.",
+        "word_count": 222,
+        "structure_used": "Contrarian manifesto"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H5-InstagramOrgánico",
+        "headline": "No renunciaron. Empezaron así.",
+        "description": "Instagram orgánico",
+        "primary_text": "Algo que me sorprendió cuando empecé a ver cómo le iba bien a la gente con productos digitales:\n\nCasi ninguno renunció primero.\n\nTodos empezaron mientras seguían cobrando su sueldo. Construyeron algo propio en los márgenes — los fines de semana, los ratitos muertos, los 30 minutos antes de dormir.\n\nY eso, que parece una limitación, en realidad es una ventaja enorme. Porque no tenés presión. No necesitás que funcione ya. Podés probar sin que tu alquiler dependa de eso.\n\nLo que aprendí es que el momento ideal para arrancar no existe. Existe el momento en que decidís que no querés seguir igual.\n\nHoy con IA podés armar un producto digital en un fin de semana con lo que ya sabés. Antes eso llevaba meses.\n\nFijate qué estás esperando. En serio.",
+        "word_count": 133,
+        "structure_used": "Observación contraintuitiva → dato de comportamiento real → reencuadre de la limitación → aprendizaje → urgencia suave sin venta"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H5-Taller$5",
+        "headline": "Dos lunes. Mismo horario. Distinta libertad.",
+        "description": "Taller 3 días en vivo, $5 USD. Salís con producto digital, anuncio y sistema de ventas armados.",
+        "primary_text": "Mirá los dos caminos. Porque los conozco bien — yo estuve en los dos.\n\n**Camino A — el que yo seguí durante 3 años:**\nDespertarme pensando en cuántos días faltan para el viernes. Llegar a casa agotado con ganas de no pensar en nada. Los fines de semana recuperándome del lunes anterior. Y el domingo a la noche, otra vez ese nudo.\n\nNo me faltaba nada grave. Pero tampoco construía nada propio. Si me echaban, tenía 0 ingresos al día siguiente.\n\n**Camino B — el que encontré después:**\nMismo trabajo. Mismo sueldo. Pero 25 minutos por día armando algo mío. Un producto digital sobre algo que ya sabía. Con IA para hacer el 70% del trabajo pesado.\n\nEn el primer mes vendí $137 USD. No me cambió la vida. Pero cambió algo más importante: supe que podía.\n\nA los 4 meses el producto se vendía solo. Seguía yendo a la oficina, pero ya no por necesidad.\n\nLa diferencia entre los dos caminos no fue talento ni capital. Fue saber exactamente qué hacer y en qué orden.\n\nEso es lo que enseña el Taller en 3 días en vivo: producto, anuncio y sistema. Salís con todo armado, no con una lista de tareas pendientes.\n\n$5 USD. Si estás en el Camino A y ya te cansaste, el link está abajo 👇",
+        "word_count": 229,
+        "structure_used": "Comparación directa"
+      }
+    ],
+    "diversity_warnings": [],
+    "createdAt": "2026-03-23T20:45:49.839Z"
+  }
+}

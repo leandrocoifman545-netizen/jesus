@@ -1,0 +1,73 @@
+{
+  "id": "lunes-personalidad-patricia-v2",
+  "title": "Personalidad — Esta mañana pensé en no publicar nada",
+  "sequence_type": "personalidad",
+  "status": "draft",
+  "plan_ref": {
+    "week": "2026-04-13",
+    "mode": "volumen",
+    "day": "lunes",
+    "date": "2026-04-13",
+    "nafe_stage": 2,
+    "tactic_views": "T3-problema-compartido"
+  },
+  "avatar": "patricia",
+  "avatar_age": 48,
+  "tension": "T1-T2",
+  "tension_id": "T2",
+  "tension_note": "T2 Esfuerzo sin dirección (eje narrativo del plan) cruzada con T1 Sacrificio vs vivir",
+  "angle_family": "F5",
+  "big_idea": "Esta mañana casi no publico nada. Te cuento lo que pasó.",
+  "creative_idea": "Problema cotidiano pequeño como entrada → filosofía trabajo en huecos como resolución → eje narrativo textual en story 7",
+  "eje_narrativo_aplicado": "Me estaba rompiendo para el lado equivocado (story 7)",
+  "calentamiento_layer": "personalidad",
+  "trigger_names": ["Problema compartido", "Conversación sincera", "Realismo"],
+  "emotional_arc": "frustración → cansancio → reflexión → filosofía → calma → conexión",
+  "emotional_valley": "stories 1-2 (problema cotidiano antes de filosofar)",
+  "objections_dissolved": [
+    {"objecion": "Para tener ingresos hay que sacrificar todo", "story": 6, "tecnica": "Mostrar prioridades reales (gym/comer/amigos) como PRIMERO, trabajo después"},
+    {"objecion": "Esto es solo para gente muy joven", "story": 7, "tecnica": "Tono de 'dos años viviendo distinto' = reflexión adulta, no bravado joven"}
+  ],
+  "micro_yes_chain": [
+    {"story": 1, "pensamiento": "a mí también me pasó hoy", "tipo": "identificacion"},
+    {"story": 3, "pensamiento": "cuanto más me fuerzo, peor", "tipo": "validacion"},
+    {"story": 6, "pensamiento": "¿podría vivir así?", "tipo": "curiosidad"},
+    {"story": 7, "pensamiento": "eso SÍ es lo que necesito", "tipo": "permiso"}
+  ],
+  "ingredients": {
+    "E1": [
+      "Me fuerzo y las cosas no pasan (@natlesmes — avatar-frases-reales.md)",
+      "Sacrificarme ahora o aprovechar mis mejores años (@natlesmes)",
+      "Ya no puedo seguir así (hartazgo 46%)"
+    ],
+    "E3": "Yo trabajo en mi tiempo libre. Mi tiempo ocupado es ir al gym, comer, estar con mis amigos (jesus-historia.md:86)",
+    "E7": "Conversación sincera #7 NAFE + Problemas sin planearlos #3 NAFE",
+    "E8": "Imperfección genera más confianza que perfección (Paula MM2, sintesis)"
+  },
+  "total_stories": 8,
+  "stories": [
+    {"number": 1, "function": "hook-problema", "text_on_screen": "Esta mañana pensé en no publicar nada.", "text_spoken": null, "visual_format": "F1", "format_description": "Selfie cara cansada, pelo despeinado, sin sonrisa. Luz natural ventana.", "emotion": "frustracion", "trigger": "problema-compartido", "interaction": null},
+    {"number": 2, "function": "desarrollo-vulnerable", "text_on_screen": null, "text_spoken": "Me levanté tarde, sin ganas. Entrené mal. No me salieron las cosas como quería. Y ahí me senté a pensar algo.", "visual_format": "V1", "format_description": "Video selfie 20s con mate, íntimo. Cambio ángulo a los 7s.", "emotion": "cansancio", "trigger": "conversacion-sincera", "interaction": "subtitulos-karaoke"},
+    {"number": 3, "function": "reflexion", "text_on_screen": "Cuando me forzaba más, las cosas salían peor.", "text_spoken": null, "visual_format": "E1", "format_description": "Fondo gris claro, texto Deco negro centrado. 4s.", "emotion": "revelacion", "trigger": "reflexion", "interaction": null},
+    {"number": 4, "function": "open-loop", "text_on_screen": "Empecé a vivir distinto hace dos años.", "text_spoken": null, "visual_format": "E1", "format_description": "Fondo blanco hueso, 2 líneas Classic. 3s pausa.", "emotion": "curiosidad", "trigger": "open-loop", "interaction": null},
+    {"number": 5, "function": "setup-revelacion", "text_on_screen": "Prioridades:", "text_spoken": null, "visual_format": "E1", "format_description": "Fondo blanco, texto Deco negro grande centrado. 3s.", "emotion": "anticipacion", "trigger": "claridad", "interaction": null},
+    {"number": 6, "function": "revelacion", "text_on_screen": "Gym. Comer. Amigos. En los huecos trabajo.", "text_spoken": null, "visual_format": "C1", "format_description": "Collage 4 fotos reales: gym / comida con alguien / amigos caminando / laptop abierta en un rincón. Una palabra por foto.", "emotion": "vida-sonada-realismo", "trigger": "vida-sonada-nativa", "interaction": null},
+    {"number": 7, "function": "eje-narrativo", "text_on_screen": null, "text_spoken": "Produzco más ahora que cuando me mataba 16 horas. El problema no era esfuerzo. Era dirección. Me estaba rompiendo para el lado equivocado.", "visual_format": "V2", "format_description": "Video tercera persona 15s: Jesús caminando a laptop con mate. Alguien filma desde atrás.", "emotion": "conexion", "trigger": "eje-narrativo-del-plan", "interaction": "subtitulos"},
+    {"number": 8, "function": "interaccion", "text_on_screen": "¿Y vos? ¿Para qué lado estás empujando?", "text_spoken": null, "visual_format": "F1", "format_description": "Selfie calmo, mirada directa, sin sonrisa forzada.", "emotion": "participacion", "trigger": "participacion", "interaction": "encuesta: Tu esfuerzo está dando frutos? → Sí avanzo / Siento que empujo al vacío"}
+  ],
+  "cta": {"type": "none"},
+  "content_bank_needed": [
+    "Selfie cara cansada sin sonrisa (NO pro)",
+    "Video selfie 20s conversacional con mate",
+    "Collage 4 fotos reales: gym / comida con alguien / amigos / laptop",
+    "Video tercera persona 15s caminando a laptop (requiere alguien que filme)",
+    "Selfie calmo cierre"
+  ],
+  "anti_ia_check": {
+    "patrones_detectados": "ninguno",
+    "V1": true, "V2": true, "V3": true, "V4": true, "V5": true, "V6": true
+  },
+  "planned_day": "lunes",
+  "week": "2026-04-13",
+  "createdAt": "2026-04-15T11:45:00-03:00"
+}

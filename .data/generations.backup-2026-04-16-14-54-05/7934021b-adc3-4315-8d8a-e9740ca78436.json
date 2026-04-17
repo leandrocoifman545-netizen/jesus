@@ -1,0 +1,93 @@
+{
+  "id": "7934021b-adc3-4315-8d8a-e9740ca78436",
+  "briefId": "75adb506-f9b8-41dc-b83d-3b9f82c9e015",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Guías de viaje: Booking gana y vos no",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 65,
+      "content_style": "Screenshot de comentario → Jesús responde a cámara",
+      "key_considerations": "Screenshot de alguien preguntando 'cómo ganar plata viajando'. Jesús responde con el giro: no viajando, vendiendo guías."
+    },
+    "visual_format": {
+      "format_name": "Screenshot → Respuesta en Video",
+      "difficulty_level": 1,
+      "setup_instructions": "Captura de pantalla de comentario tipo 'Quiero ganar plata viajando pero no soy influencer'. Jesús aparece respondiendo. Fondo limpio.",
+      "recording_notes": "Screenshot 3s → Jesús responde con entusiasmo. Tono: 'No necesitás viajar, necesitás saber algo de viajes'. Energía de descubrimiento."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "dato_concreto",
+        "script_text": "Antes de cada viaje, todo el mundo hace lo mismo: abre Google y busca \"qué hacer en Rio de Janeiro\", \"dónde comer barato en Bogotá\", \"Plan de 5 días en Europa\". Y lo que encuentra son blogs llenos de publicidad que no sirven. Ahí hay un negocio que casi nadie ve.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "¿Alguna vez volviste de un viaje y un amigo te dijo?\"pasame todo lo que hiciste\" Dónde comiste, cómo te moviste, qué evitar. Esa información que vos regalás, hay gente que la paga. Y ni siquiera necesitás haber viajado para armarla.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Cuando viajé 6 meses por Europa me pasé horas planeando cada destino. Hotel, comida, transporte, qué evitar en cada ciudad. Después pensé: si yo pagué esas horas con mi tiempo, ¿cuánta gente pagaría 10 dólares por tenerlo resuelto?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "script_text": "Hay gente ganando 2 mil dólares al mes vendiendo guías de viaje a destinos que ni siquiera visitó. No son influencers. No tienen seguidores. Solo tienen Chatgpt y un poco de sentido común.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "historia_mini",
+        "script_text": "Un pibe se fue de vacaciones a Bariloche y no encontró ninguna guía buena del lugar. Cuando volvió, le pidió a la IA que le arme una con todo lo que vivió. La subió a Hotmart por 7 dólares y al mes vendió 50 copias. ",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "Analogia_Giro_Mecanismo",
+      "emotional_arc": "Sorpresa (40K búsquedas) → Oportunidad (nadie lo hace bien) → Deseo (la IA me lo arma) → Acción (quiero aprender)",
+      "sections": [
+        {
+          "section_name": "Dimensionar la oportunidad",
+          "script_text": "La gente paga entre 5 y 15 dólares por una guía de viaje bien hecha. Una que le diga exactamente dónde ir, dónde comer barato, cómo moverse y qué evitar. Sin buscar horas en Google. Sin ver 20 videos. Todo resuelto en un PDF. Y hay destinos que tienen miles de viajeros por mes y ninguna guía decente.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Re-hook — el giro",
+          "is_rehook": true,
+          "script_text": "Y lo mejor es cómo se hace.",
+          "timing_seconds": 3
+        },
+        {
+          "section_name": "Mecanismo — cómo se arma con IA",
+          "script_text": "Vos elegís un destino. Ponele, Brasil. Abrís la IA y le contás todo: dónde comer barato, cómo moverse sin que te estafen, qué playas van y cuáles no, qué evitar. Si fuiste, le volcás tu experiencia. Si no fuiste, la IA cruza cientos de reseñas y te arma algo mejor que cualquier blog. En una hora tenés una guía completa que parece hecha por una agencia de viajes. Y la vendés a la gente que está por viajar y quiere tener todo resuelto.",
+          "timing_seconds": 24
+        },
+        {
+          "section_name": "Expansión — puente al CTA",
+          "script_text": "Cada destino es un producto nuevo. Podés tener 10 guías vendiendo al mismo tiempo sin tocar nada. En la clase gratuita te muestro cómo armar la primera de cero.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro paso a paso cómo crear tu primer producto digital con IA",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 65,
+    "word_count": 158
+  },
+  "createdAt": "2026-03-11T18:20:32.912Z",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "status": "recorded"
+}

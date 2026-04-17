@@ -1,0 +1,226 @@
+{
+  "id": "7c44d989-f222-48ae-a51e-4a3aba9a43fe",
+  "briefId": "514c968e-c626-4369-96d9-5ba63b77e209",
+  "title": "Reinventarse a los 62 — viuda artesana que necesita empezar de cero",
+  "batch": {
+    "id": "40841ea8-40ac-4f43-a156-2c14fd3427df",
+    "name": "Top 10 Definitivo"
+  },
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.5_caso_real_trending",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "D",
+    "funnel_stage": "TOFU",
+    "niche": "artesanía / manualidades / crochet",
+    "model_sale_type": "eliminacion_barreras",
+    "emotional_arc": "futuro_sensorial",
+    "transition_text": "Ahora tu conocimiento puede trabajar por vos mientras descansás.",
+    "total_duration_seconds": 80,
+    "word_count": 234,
+    "belief_change": {
+      "old_belief": "Con 62 años, viuda, sin experiencia laboral, no puedo reinventarme",
+      "mechanism": "Dato del 29% mayores de 55 + future pacing sensorial de un día vendiendo desde el celular",
+      "new_belief": "Mis manos ya saben crear; solo me falta un camino para vender lo que hago"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Hay miles de mujeres como yo en esta situación",
+        "installed_via": "frase textual de María Marta que genera identificación",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Tengo un talento real pero sin camino claro",
+        "installed_via": "reconocimiento del talento manual sin canal de venta",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Mi día puede verse completamente distinto",
+        "installed_via": "future pacing sensorial de ventas por celular",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito nada que no tenga ya",
+        "installed_via": "eliminación de barreras una por una",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Esto es dignidad, no promesa de lujo",
+        "installed_via": "cierre con la posibilidad de elegir",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "hypothesis": "el dato del 29% de mayores de 55 genera permiso inmediato",
+        "emotional_lever": "permiso",
+        "script_text": "\"Soy recientemente viuda. Durante 25 años me pidieron que no trabaje. Debo reinventarme en forma urgente.\" Eso me escribió María Marta. Tiene 62 años.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situación_específica",
+        "hypothesis": "la historia real de María Marta genera empatía instantánea",
+        "emotional_lever": "empatía",
+        "script_text": "Tejés desde que tenés memoria. Mantas, bufandas, amigurumis. Y los vendés en la feria a precio de lástima. O peor: los regalás.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocación",
+        "hypothesis": "la honestidad sobre la dificultad genera confianza",
+        "emotional_lever": "confianza",
+        "script_text": "Llevas décadas tejiendo. Y el mundo cambió pero vos seguís vendiendo como hace 20 años. Una feria a la vez. Un regalo a la vez.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "",
+        "emotional_lever": "",
+        "script_text": "Una mujer de 62 años que nunca tocó una computadora vende lo que sabe de crochet todos los días desde su celular. Y le alcanza.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incómoda",
+        "hypothesis": "",
+        "emotional_lever": "",
+        "script_text": "¿Cuántas cosas hermosas hiciste con las manos que terminaron regaladas o vendidas por monedas? ¿Y si cada una de esas valiera más de lo que te pagaron?",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Hay miles de mujeres como yo en esta situación",
+          "timing_seconds": 15,
+          "script_text": "\"Soy recientemente viuda. Durante 25 años me pidieron que no trabaje. Debo reinventarme en forma urgente.\" Eso me escribió María Marta. Tiene 62 años. Esas palabras me partieron. Porque hay miles de mujeres con las mismas manos. Manos que saben tejer, que saben crear, que llevan décadas haciendo cosas hermosas."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Tengo un talento real pero sin camino claro",
+          "timing_seconds": 12,
+          "script_text": "Entonces escuchame esto. María Marta no necesita reinventarse. Necesita empaquetar lo que ya sabe. Cuarenta años de patrones, puntadas, combinaciones. Todo eso está en su cabeza.",
+          "is_turning_point": true
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi día puede verse completamente distinto",
+          "timing_seconds": 18,
+          "script_text": "Y hay gente buscando exactamente eso para aprender desde cero. Le contó a la IA todo lo que sabe de crochet como quien le cuenta a una amiga. La IA le armó un pack de 18 patrones con fotos del proceso, dificultad por nivel, y los trucos que solo la experiencia te da. Lo subió a 9 dólares. \"Pero yo no sé de tecnología.\""
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito nada que no tenga ya",
+          "timing_seconds": 12,
+          "script_text": "María Marta tampoco. Lo único que usó fue el celular. Le habló a la IA como si mandara un audio. Si sabés mandar un mensaje a tu hija, ya sabés lo suficiente. Ahora imaginá tu día así."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto es dignidad, no promesa de lujo",
+          "timing_seconds": 13,
+          "script_text": "Te levantás sin alarma. Desayunás tranquila. Abrís el celular y tenés 3 mensajes de gente que compró tu guía. Eso no es un sueño de lujo. Es un sueño de dignidad. Tus manos saben crear."
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Las barreras no existen",
+          "timing_seconds": 10,
+          "script_text": ""
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "pensás que ya es tarde"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "esas palabras me partieron"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "sin un camino claro para cobrar por eso"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "No saliste de tu casa. No cargaste nada"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "lo que ya sabés hacer con las manos"
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "la posibilidad de elegir"
+      }
+    ],
+    "ingredients_used": [
+      "B#31",
+      "D#53",
+      "F#79",
+      "H#101",
+      "G#92"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:22.284Z",
+  "status": "confirmed"
+}

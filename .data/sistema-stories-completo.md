@@ -163,6 +163,37 @@ La AUSENCIA deliberada de urgencia, plazas limitadas, precio, "respondé AHORA",
 5. CTA — keyword, encuesta, o cierre emocional
 ```
 
+### Estructura Open Loop (fuente: Fran Castro 1,000+ CTAs testeados + Jesús Tassarolo 85% ventas orgánicas por stories)
+
+Variante de secuencia que genera pico de curiosidad en el CTA. Usar en secuencias con CTA (lead magnet o directo).
+
+**Dos tipos de hook:**
+
+| Tipo | Qué es | Ejemplo | Cuándo usar |
+|------|--------|---------|-------------|
+| **Claim** | Afirmación con dato llamativo | "Agendé 150 llamadas en 1 semana" | Cuando tenés un número fuerte y verificable |
+| **Sin Contexto** | Curiosidad pura sin revelar tema | "El club de los genios podría expulsarme por esto" | Cuando querés máxima retención hasta el final |
+
+**Fórmula del hook sin contexto:** `[grupo/persona específica] + [consecuencia negativa para MÍ] + "por esto"`
+- "Los gurús de marketing me van a odiar por esto"
+- "Nacho me va a matar por esto" (socio real de Jesús)
+- "Varios programadores se van a enojar conmigo"
+- "Pido disculpas públicamente"
+
+**Mecánica (3 pasos):**
+
+```
+1. HOOK SIN CONTEXTO — abre el loop (story 1)
+2. DELAY — mini-historia o contenido SIN cerrar el loop (stories 2-4)
+   └── Mínimo 2 stories de delay antes de cerrar
+   └── Puede incluir screenshots con función narrativa (no solo evidencia)
+3. CIERRE — resolver el loop EN el CTA o justo antes (stories 5-6)
+```
+
+**Anti-patrón: PAYOFF PREMATURO.** Si cerrás el loop en la story 2, la curiosidad cae y las stories siguientes pierden views → el CTA tiene poca audiencia. Ejemplo malo: "Pido disculpas públicamente" → story 2: "porque solo abrí 10 cupos" → MUERTO. La respuesta tiene que llegar al FINAL, no a los 10 segundos.
+
+**Versión avanzada (redirect de doble hilo):** Abrir un segundo loop con screenshots narrativos en el delay, y cerrar AMBOS hilos en el CTA. Documentado en memoria (`reference_fran_castro_ctas_loops.md`). Usar cuando el loop simple ya esté dominado.
+
 ### Bloques modulares (sistema Naffe)
 
 Pre-producir 2 bloques reutilizables que se insertan entre narrativa y CTA en cualquier secuencia de venta:
@@ -636,6 +667,8 @@ Siempre a fin de mes: anunciar subida de precios, incentivo especial con fecha l
 
 > Fuente: 21 sesiones reales de planificación (Nafé + clientes)
 
+### Métricas de engagement (por story/secuencia)
+
 | Métrica | Qué mide | Target |
 |---------|----------|--------|
 | Views / Followers % | Salud general del canal | >25% |
@@ -643,6 +676,19 @@ Siempre a fin de mes: anunciar subida de precios, incentivo especial con fecha l
 | Respuestas por CTA | Efectividad del CTA | >15% de views |
 | Swipe-backs | Engagement real | Subiendo mes a mes |
 | DMs generados | Leads calientes | >100/semana |
+
+### Métricas de negocio (por secuencia diaria — fuente: Jesús Tassarolo, sistema Arcadia)
+
+Cada secuencia con CTA debe trackearse como mini-funnel. La keyword del CTA permite atribuir:
+
+| Métrica | Qué mide | Cómo trackear |
+|---------|----------|---------------|
+| Conversaciones abiertas | Cuánta gente respondió la keyword y el setter abrió chat | Contar por keyword en DMs |
+| Agendas generadas | Cuántas de esas conversaciones terminaron en llamada agendada | Registro del setter |
+| Ventas cerradas | Cuántas agendas convirtieron | CRM / Hotmart |
+| Cash collected | Cuánto entró de esa secuencia | Stripe / Hotmart |
+
+**Por qué importa:** Podés tener 25% de alcance y 0 ventas. Las métricas de engagement dicen si la gente mira; las de negocio dicen si la gente compra. Necesitás las dos.
 
 ---
 
@@ -703,7 +749,7 @@ Siempre a fin de mes: anunciar subida de precios, incentivo especial con fecha l
 - **Esperar 30-60 minutos** entre la primera story (hook de views) y el resto de la secuencia → maximiza viewership
 - **La keyword tiene que ser GRANDE y en color diferente**
 - **El setter NUNCA envía el recurso directo** — primero abre conversación, cualifica, después envía
-- **Lead magnets tienen que ser ESPECÍFICOS al avatar:** no genéricos. "Plantilla de anuncios ganadores para coaches" > "Plantilla de anuncios"
+- **Lead magnets tienen que ser ESPECÍFICOS al avatar y VARIADOS:** no genéricos, y no siempre el mismo. Rotar 4-5 recursos distintos, cada uno resuelve UN micro-problema tangible (no "guía completa para X"). Ejemplo: "Cómo preparar todas las comidas de la semana en 1 hora" > "Guía para bajar de peso". Cada lead magnet es 1 de los 100 escalones necesarios, pero lo resuelve completo. (Fuente: Jes��s Tassarolo)
 
 ---
 

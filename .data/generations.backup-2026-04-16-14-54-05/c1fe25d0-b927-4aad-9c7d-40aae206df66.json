@@ -1,0 +1,274 @@
+{
+  "id": "c1fe25d0-b927-4aad-9c7d-40aae206df66",
+  "briefId": "e10f376a-2834-4979-b1fd-330cd211d772",
+  "title": "Ma, ¿por qué siempre estás tejiendo? — Porque me pagan por eso",
+  "batch": {
+    "id": "76463f63-d717-4f05-aa24-002f4a6abe1c",
+    "name": "Version 4.0"
+  },
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.5_dialogo_actuacion",
+    "body_type": "demolicion_mito",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "Tejido / crochet",
+    "model_sale_type": "ventana_oportunidad",
+    "emotional_arc": "curiosidad_revelacion",
+    "tension": "T7_familia_vs_ambicion",
+    "format_visual": "10_walking_talking",
+    "transition_text": "Lo que hizo ella con el crochet, eso mismo podés hacer con lo que vos sabés. Te enseño cómo. Sin descuidar a nadie.",
+    "total_duration_seconds": 80,
+    "word_count": 190,
+    "belief_change": {
+      "old_belief": "Tejer es un hobby — no se puede vivir de eso",
+      "mechanism": "La IA empaqueta patrones de tejido en guías digitales que se venden por WhatsApp",
+      "new_belief": "Mi hobby tiene demanda real y puedo ganar plata sin salir de casa"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Soy esa mamá que teje todo el tiempo",
+        "installed_via": "A#31 Sketch / Diálogo de 2 Voces",
+        "persuasion_function": "identificacion",
+        "section_name": "El diálogo"
+      },
+      {
+        "belief": "Te mintieron — tejer no es solo un hobby",
+        "installed_via": "D#51 Derrumbe del Mito",
+        "persuasion_function": "quiebre",
+        "section_name": "El mito"
+      },
+      {
+        "belief": "Patrones digitales con IA se crean en horas",
+        "installed_via": "F#84 Stack de Herramientas Simples",
+        "persuasion_function": "mecanismo",
+        "section_name": "Cómo funciona"
+      },
+      {
+        "belief": "La ventana de la IA es ahora — en 2 años se satura",
+        "installed_via": "J#121 Ventana de Oportunidad",
+        "persuasion_function": "demolicion",
+        "section_name": "La ventana"
+      },
+      {
+        "belief": "Señoras en ciudades chicas ya lo hacen",
+        "installed_via": "G#88 Resultado Específico con Números",
+        "persuasion_function": "prueba",
+        "section_name": "La prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "hypothesis": "el avatar se identifica con el diálogo madre-hijo",
+        "emotional_lever": "reconocimiento",
+        "script_text": "—Ma, ¿por qué siempre estás tejiendo? —Porque me pagan por eso, hijo. —¿Quién te paga? —Gente que quiere aprender a tejer. Les vendo guías por WhatsApp. —¿Con el celular? —Con el celular.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el avatar responde al dato de demanda de crochet",
+        "emotional_lever": "sorpresa",
+        "script_text": "22.000 personas por mes buscan en Google cómo hacer amigurumis. 18.000 buscan patrones de crochet. ¿Sabés cuántas guías buenas hay? Casi ninguna. Y vos sabés tejer.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a que regala lo que vale",
+        "emotional_lever": "confrontacion",
+        "script_text": "Cada vez que le enseñás a una amiga cómo hacer un amigurumi, le estás regalando algo que vale 9 dólares. No lo sabías. Pero ahora sí.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde a que tejer puede ser negocio",
+        "emotional_lever": "curiosidad",
+        "script_text": "Tejer no es solo un hobby. Es un negocio digital que podés armar desde tu sillón con la IA. Sin vender en ferias. Sin salir de tu casa. Te muestro cómo.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la mamá tejedora se identifica con la escena",
+        "emotional_lever": "identificacion",
+        "script_text": "Son las 9 de la noche. Los chicos se durmieron. Agarrás la lana. Pero esta vez no tejés gratis. Tejés para tu negocio. Uno que armaste con IA en una tarde.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "curiosidad_revelacion",
+      "turning_point_beat": "quiebre",
+      "sections": [
+        {
+          "section_name": "El diálogo",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Soy esa mamá que teje todo el tiempo",
+          "viewer_emotion_after": "sonrisa + reconocimiento",
+          "is_turning_point": false,
+          "script_text": "—Ma, ¿por qué siempre estás tejiendo? Esa pregunta se la hizo un hijo a su mamá en Tucumán. La respuesta la cambió todo: —Porque me pagan por eso. —¿Cómo? —Vendo guías de crochet por WhatsApp. Las hice con IA.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "El mito",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Tejer no es solo un hobby",
+          "viewer_emotion_after": "sorpresa + redefinición",
+          "is_turning_point": true,
+          "script_text": "Toda la vida te dijeron que tejer es un pasatiempo. Que es para entretenerte. Que no se gana plata con eso. Mentira. 22.000 personas por mes buscan patrones de crochet en Google. Y casi nadie les vende una guía decente.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Cómo funciona",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Con IA se arma en horas",
+          "viewer_emotion_after": "factibilidad + deseo",
+          "is_turning_point": false,
+          "script_text": "Le decís a la IA qué sabés tejer. Ella te hace las preguntas. Y en una tarde tenés un pack de 15 patrones con instrucciones, fotos y niveles de dificultad. Lo vendés a 9 dólares por WhatsApp. Literalmente desde tu sillón.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "La ventana",
+          "persuasion_function": "demolicion",
+          "micro_belief": "La ventana es ahora",
+          "viewer_emotion_after": "urgencia sin presión",
+          "is_turning_point": false,
+          "script_text": "Hoy la IA hace esto gratis. En 2 años va a estar saturado. La que arranca ahora tiene ventaja. Sin salir de casa. Sin descuidar a los hijos. A sus tiempos.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "La prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Señoras en ciudades chicas lo hacen",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Lo hizo una señora en Tucumán vendiendo packs de crochet a 9 dólares. 120 copias en 3 meses. Otra en Salta con patrones de costura. Todas con IA. Ninguna sabía de tecnología.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta",
+          "micro_belief": "La oportunidad es temporal",
+          "viewer_emotion_after": "decisión",
+          "is_turning_point": false,
+          "script_text": "Hace 2 años esto no existía. En 2 años va a haber 10 guías de crochet por cada búsqueda. La ventana es ahora. Y lo que necesitás para aprovecharla ya lo tenés.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Ma, ¿por qué siempre estás tejiendo?"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Vendo guías de crochet por WhatsApp. Las hice con IA."
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "22.000 personas por mes buscan patrones de crochet en Google"
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "Lo vendés a 9 dólares por WhatsApp. Literalmente desde tu sillón."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Sin salir de casa. Sin descuidar a los hijos. A sus tiempos."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Ninguna sabía de tecnología."
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "lo que necesitás para aprovecharla ya lo tenés"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 31,
+        "ingredient_name": "Sketch / Diálogo de 2 Voces"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del Mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 84,
+        "ingredient_name": "Stack de Herramientas Simples"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado Específico con Números"
+      },
+      {
+        "category": "J",
+        "ingredient_number": 121,
+        "ingredient_name": "Ventana de Oportunidad"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "D",
+        "variant_name": "Exclusión",
+        "layers": {
+          "oferta": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas.",
+          "prueba": "17 mil personas en toda Latinoamérica y España ya lo hicieron.",
+          "riesgo_cero": "Gratis. Sin compromiso.",
+          "urgencia": "Los cupos se llenan y no se repite hasta la semana que viene.",
+          "cierre": "Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+        },
+        "text": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas. 17 mil personas en toda Latinoamérica y España ya lo hicieron. Gratis. Sin compromiso. Los cupos se llenan y no se repite hasta la semana que viene. Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "variant_name": "Emocional + Honestidad",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "cierre": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "variant_name": "Doble Intención",
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "orden_1": "Comentá \"NICHO\" acá abajo y te lo mando por DM.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "cierre": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá \"NICHO\" acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-04-07T15:31:22.270Z",
+  "status": "confirmed"
+}

@@ -1,0 +1,245 @@
+{
+  "id": "b5ebae11-db6a-401b-bf9c-3b44beb2afd6",
+  "briefId": "a2390583-7e24-49df-8965-c1ad4aecc2d8",
+  "title": "La asistente que sostiene la oficina entera — propiedad intelectual de operaciones",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.3_antes_vs_despues_ia",
+    "body_type": "demo_proceso",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "asistente administrativa",
+    "model_sale_type": "ventana_oportunidad",
+    "transition_text": "Lo único que tenés que hacer es escribir las 20 cosas que ya hacés sin pensar. Esta semana en una clase gratis te muestro cómo armarlo.",
+    "total_duration_seconds": 88,
+    "word_count": 220,
+    "punto_entrada_emocional": "frustracion silenciosa de sostener una oficina que ni siquiera te mira",
+    "belief_change": {
+      "old_belief": "Sos 'la asistente' que hace favores invisibles a un jefe que no los nota",
+      "mechanism": "El sistema completo de gestión de oficina que tenés en la cabeza se dicta a una IA en 2 horas y queda como pack vendible para otras asistentes",
+      "new_belief": "Lo que hacés es propiedad intelectual de operaciones. Tiene valor afuera de tu oficina y se cobra distinto"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esa escena de las 5 de la tarde es la mia exacta",
+        "installed_via": "puente situacional",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Soy experta en operaciones, no 'la asistente'",
+        "installed_via": "reframe de identidad con nombre tecnico",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "Mi sistema completo lo arma una IA en una tarde",
+        "installed_via": "demo paso a paso con mecanismo nombrado",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "No es todo o nada con mi trabajo actual",
+        "installed_via": "demolicion de la falsa dicotomia",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay asistentes reales facturando con guias",
+        "installed_via": "prueba con numeros y anclaje a no-pisar-otra-oficina",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a la escena tarde-pedido-multiple",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Tu jefe te pide 4 cosas a las 5 de la tarde. Tres son para hoy. Vos las hacés sin reclamar y nadie se entera de cómo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el avatar responde a contar mentalmente cuanto sostiene",
+        "emotional_lever": "ahuminacion por evidencia propia",
+        "script_text": "Si vos faltás una semana de tu oficina, ¿cuántas cosas dejan de funcionar? Hacé la lista mental. Esa lista vale plata, no es un favor.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a la pregunta sobre el conocimiento del jefe",
+        "emotional_lever": "confrontacion suave",
+        "script_text": "¿Tu jefe sabe que sos la que sostiene la oficina, o sigue creyendo que es él? Las dos respuestas duelen distinto.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "negacion_directa",
+        "hypothesis": "el avatar responde a que le den un nombre tecnico a lo que hace",
+        "emotional_lever": "naming",
+        "script_text": "Hay una palabra técnica para lo que vos hacés todos los días: propiedad intelectual de operaciones. Y se cobra distinto a como te están pagando.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a que le señalen su propia auto-percepcion",
+        "emotional_lever": "responsabilizacion suave",
+        "script_text": "Si querés saber por qué te pagan como empleada, mirá cómo vos misma te ves. Lo cambiás vos primero, no tu jefe.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "analogia_principio_fin",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Esa escena es la mia exacta",
+          "viewer_emotion_after": "reconocimiento",
+          "is_turning_point": false,
+          "script_text": "Si tu jefe te pide 4 cosas a las 5 de la tarde y vos las hacés sin reclamar, escuchá.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Soy experta en operaciones, no 'la asistente'",
+          "viewer_emotion_after": "validacion de identidad",
+          "is_turning_point": false,
+          "script_text": "Pensás que sos 'la asistente'. La realidad es otra. Sos la persona sin la cual la oficina deja de funcionar después de 1 semana. Eso tiene nombre: experta en operaciones.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi sistema completo lo arma una IA en una tarde",
+          "viewer_emotion_after": "permiso: el material ya esta en mi cabeza",
+          "is_turning_point": true,
+          "script_text": "Tu sistema de gestión lo dictás a una IA en 2 horas un sábado. Calendario del CEO, plantillas de viaje, protocolo de reuniones, modelo de facturación. Eso queda como un pack: 'Las 25 plantillas que sostienen una oficina' a 12 dólares para otras asistentes que recién arrancan.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No es todo o nada con mi trabajo actual",
+          "viewer_emotion_after": "permiso: puedo arrancar sin renunciar",
+          "is_turning_point": false,
+          "script_text": "Acá hay un matiz: no tenés que dejar tu trabajo mañana. Le mostrás a tu jefe que tu sistema vale plata afuera y vas a ver cómo cambia el respeto en la próxima reunión del lunes.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay asistentes reales facturando con guias",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Hay asistentes administrativas que armaron una guía '20 plantillas para sobrevivir a un CEO desorganizado' y vendieron 80 copias el mes pasado a 12 dólares. 960 dólares sin pisar otra oficina.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo - Ventana de oportunidad",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La IA hizo posible esto y todavia hay tiempo",
+          "viewer_emotion_after": "validacion del momento",
+          "is_turning_point": false,
+          "script_text": "Hoy cualquier asistente con un celular arma su pack en una tarde con la IA. Esto no existía hace 2 años. Y dejá que tu cabeza valga afuera sin descuidar a tus hijos en casa.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "vale plata, no es un favor"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "te pide 4 cosas a las 5 de la tarde"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Eso tiene nombre: experta en operaciones"
+      },
+      {
+        "location": "beat_2",
+        "technique": "future_pacing",
+        "phrase": "Lo dictás a una IA en 2 horas un sábado"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "tu sistema vale plata afuera"
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "960 dólares sin pisar otra oficina"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "future_pacing",
+        "phrase": "sin descuidar a tus hijos en casa"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 32,
+        "ingredient_name": "Dolor por Invisibilidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N Pasos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Mecanismo con Nombre"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Numeros"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:36:04.562Z"
+}

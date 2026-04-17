@@ -1,0 +1,93 @@
+{
+  "id": "d44e3b46-cc26-48be-82d8-1db898061283",
+  "briefId": "49b67fba-d4ca-4d9b-aca9-ede58400fc7b",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Tu casa está llena de plata",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 70,
+      "content_style": "Chat WhatsApp simulado → corte a persona hablando a cámara",
+      "key_considerations": "Chat muestra alguien pidiendo la guía de organización → notificación de venta. Genera conexión inmediata con mamás."
+    },
+    "visual_format": {
+      "format_name": "Chat WhatsApp Simulado",
+      "difficulty_level": 2,
+      "setup_instructions": "Chat simulado en CapCut: mensaje entrante '¿Tenés la guía de organización del hogar?' → respuesta → notificación Hotmart 'Nueva venta $7'. Corte a Jesús.",
+      "recording_notes": "Los mensajes del chat deben parecer reales (foto de perfil, hora, ticks azules). Jesús aparece después explicando. Tono: empático, cálido."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Son las 10 de la noche. Los chicos ya durmieron. Tenés una hora libre y la usás para limpiar lo que ya esta limpio. ¿Y si esa hora la usaras para armar algo que te genere plata mientras dormís?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas veces te dijeron \"qué ordenada tu casa\" o \"¿cómo hacés para tener todo tan limpio\"? Eso que para vos es normal, para miles de personas es un problema que pagarían por resolver.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "confesion",
+        "script_text": "Yo no sabía nada de organización del hogar. Pero cuando vi que hay 60 mil búsquedas por mes de \"cómo organizar mi casa\", entendí que cualquier mamá que sepa de eso está sentada arriba de un negocio.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia_cotidiana",
+        "script_text": "¿Viste esas cuentas de Instagram que suben rutinas de limpieza y tienen millones de seguidores? Ellas dan el contenido gratis. Vos podés empaquetar lo mismo en una guía con IA y cobrar por eso. Sin mostrar tu cara y sin tener seguidores.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Tu vecina te pide tu rutina de limpieza. Tu cuñada te manda mensaje preguntando qué productos usás. Tu amiga te dice \"vos tendrías que cobrar por esto\". Bueno, tienen razón. Y hay una forma de hacerlo sin convertirte en influencer.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Cambio de creencia",
+      "emotional_arc": "Identificación (eso me pasa) → Revelación (mi conocimiento vale) → Posibilidad (la IA me ayuda) → Decisión (quiero hacerlo)",
+      "sections": [
+        {
+          "section_name": "Creencia vieja — el tiempo no alcanza",
+          "script_text": "La mayoría de las mamás que me escriben dicen lo mismo: \"Jesús, yo quiero generar ingresos pero no tengo tiempo\". Y tienen razón. No tienen 4 horas por día para hacer un curso. Pero no necesitás 4 horas. Con una hora alcanza. Porque ya tenés el conocimiento para armar un producto digital. Solo que nadie te lo dijo.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Y te lo voy a demostrar con un ejemplo.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Mecanismo que refuta — la IA como atajo",
+          "script_text": "Ponele que tu rutina de limpieza tiene 5 zonas: cocina, baños, habitaciones, living, balcón. Cada zona con sus pasos, sus productos, su frecuencia. Eso que vos hacés automáticamente, para otra persona es oro. Abrís la IA, le contás tu rutina como si le hablaras a una amiga, y ella te la transforma en una guía con listas paso a paso, bien organizada y con diseño. En 20 minutos tenés algo que parece diseñado por una profesional. Y miles de personas buscan exactamente eso todos los meses. ¿Me explico?",
+          "timing_seconds": 25
+        },
+        {
+          "section_name": "Creencia nueva — puente al CTA",
+          "script_text": "No necesitás más tiempo. Necesitás saber cómo hacerlo. La IA agarra lo que ya sabés y te lo convierte en algo que se puede vender. Y en la clase gratuita te muestro cómo, paso a paso.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro en vivo cómo crear tu primer producto digital con IA en menos de 2 horas",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 70,
+    "word_count": 170
+  },
+  "createdAt": "2026-03-11T18:19:30.376Z",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "status": "recorded"
+}

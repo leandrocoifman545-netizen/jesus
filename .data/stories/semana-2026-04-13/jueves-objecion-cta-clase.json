@@ -1,0 +1,342 @@
+{
+  "id": "jueves-objecion-pura-v3",
+  "title": "Objeción PURA — ¿Y si ya tengo 55 años?",
+  "sequence_type": "objecion",
+  "status": "draft",
+  "version": 3,
+  "supersedes": "jueves-objecion-cta-clase.v2-backup.json",
+  "plan_ref": {
+    "week": "2026-04-13",
+    "mode": "volumen",
+    "day": "jueves",
+    "date": "2026-04-16",
+    "nafe_stage": 5,
+    "nafe_stage_name": "Cierre de objeciones",
+    "tactic_views": "T13-pregunta-abierta"
+  },
+  "plan_alignment_note": "v2 tenía CTA CLASE en jueves (en conflicto con plan que pide objeción PURA sin CTA). v3 reescribe respetando plan: cero keyword, T13 pregunta abierta como táctica, teaser hacia sábado donde sí va el CTA CLASE.",
+  "avatar": "patricia",
+  "avatar_age": 48,
+  "tension": "T6",
+  "tension_id": "T6",
+  "tension_note": "T6 Vulnerabilidad de Jesús (recomendada por plan VOLUMEN). Jesús se nivela con el avatar diciendo 'yo tampoco sé programar' — quita autoridad jerárquica.",
+  "angle_family": "F3",
+  "angle_family_note": "F3 Confrontación: nombrar las 3 creencias limitantes y demolerlas con caso real, no con teoría.",
+  "big_idea": "Las 3 excusas que más me dicen no son la verdad. La verdad es otra. Te la cuento sin venderte nada.",
+  "creative_idea": "Vehículo emocional: cita textual de objeción → demolición con caso real / anécdota Jesús / analogía cotidiana. NO vender nada hoy. Caja de preguntas final destraba la próxima semana de contenido + dispara DMs (señal algoritmo).",
+  "eje_narrativo_aplicado": "Empujar para el lado equivocado = creer que el problema es la edad, la tecnología o el tiempo. El problema es la dirección, no esos tres.",
+  "calentamiento_layer": "producto",
+  "trigger_names": ["Frase textual anclada", "Reproducción de diálogo", "Demolición de alternativas", "Vulnerabilidad de Jesús", "Pregunta abierta"],
+  "emotional_arc": "identificacion-dolor → autoridad-suave → identificacion → sorpresa-simple → validacion → revelacion → identificacion-dolor → calma-permiso → participacion → anticipacion",
+  "emotional_valley": "stories 1-3 (citas textuales del dolor del avatar antes de cualquier alivio)",
+  "objections_dissolved": [
+    {
+      "objecion": "A mi edad ya no puedo aprender esto",
+      "story": 4,
+      "tecnica": "Caso concreto Roberto 62 + analogía audio WhatsApp. Jesús reduce la barrera tecnológica a un gesto que el avatar YA hace todos los días."
+    },
+    {
+      "objecion": "No sé de tecnología",
+      "story": 6,
+      "tecnica": "Jesús se nivela: 'yo tampoco sé programar' (T6 Vulnerabilidad). Anécdota textual: 'equipo de 4 ingenieros, 6 meses. Yo en 30 minutos.'"
+    },
+    {
+      "objecion": "No tengo tiempo después del trabajo",
+      "story": 8,
+      "tecnica": "Frase textual de Jesús (jesus-historia.md L86): 'trabajo en mi tiempo libre... en los huecos que quedan'. Reframe: no necesitás 4 horas, necesitás los huecos."
+    }
+  ],
+  "micro_yes_chain": [
+    {"story": 1, "pensamiento": "esa pregunta me la hago yo", "tipo": "identificacion-textual"},
+    {"story": 4, "pensamiento": "si Roberto pudo, yo también", "tipo": "permiso-por-similitud"},
+    {"story": 6, "pensamiento": "él tampoco sabe, qué alivio", "tipo": "nivelacion"},
+    {"story": 8, "pensamiento": "es como mi vida también", "tipo": "resonancia-filosofica"},
+    {"story": 9, "pensamiento": "quiero contarle la mía", "tipo": "ganas-participar"}
+  ],
+  "ingredients": {
+    "E1": [
+      {
+        "text": "¿Y si ya tengo 55 años?",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 604,
+        "story_number": 1,
+        "used_as": "text_on_screen"
+      },
+      {
+        "text": "A mi edad, ¿puedo aprender esto?",
+        "source": "stories-core/04-avatares.md",
+        "line": 149,
+        "story_number": 3,
+        "used_as": "text_on_screen"
+      },
+      {
+        "text": "No sé nada de computación, para mí va a ser un reto gigante",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 624,
+        "story_number": 5,
+        "used_as": "text_on_screen_DM"
+      },
+      {
+        "text": "No tengo tiempo",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 585,
+        "story_number": 7,
+        "used_as": "text_on_screen",
+        "notes": "Versión corta de DM real (L585) — alineada con menú del plan. El contexto 'después del trabajo' queda en el format_description (foto blur de cocina/sillón en penumbra)."
+      },
+      {
+        "text": "Ya vi muchos videos de esto y nunca hice nada",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 605,
+        "story_number": 9,
+        "used_as": "context_caja_preguntas"
+      }
+    ],
+    "E2": [
+      {
+        "text": "No sé de tecnología",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 586,
+        "category": "objecion",
+        "story_number": 5,
+        "used_as": "capturas_C3"
+      },
+      {
+        "text": "No tengo tiempo",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 585,
+        "category": "objecion",
+        "story_number": 5,
+        "used_as": "capturas_C3"
+      },
+      {
+        "text": "Me han estafado antes",
+        "source": "stories-core/03-inteligencia-compradores.md",
+        "line": 584,
+        "category": "objecion",
+        "story_number": 5,
+        "used_as": "capturas_C3_complementario"
+      }
+    ],
+    "E3": [
+      {
+        "text": "Un equipo de 4 ingenieros, 6 meses. Yo en 30 minutos.",
+        "source": ".memory/jesus-historia.md",
+        "line": 103,
+        "context": "Sobre el poder de la IA — anécdota IA",
+        "story_number": 6,
+        "used_as": "text_spoken"
+      },
+      {
+        "text": "No tenés que saber vos por la IA. La IA sabe por vos.",
+        "source": ".memory/jesus-historia.md",
+        "line": 102,
+        "context": "Filosofía sobre IA — quita la barrera técnica",
+        "story_number": 6,
+        "used_as": "text_spoken"
+      },
+      {
+        "text": "Yo trabajo en mi tiempo libre. Porque mi tiempo ocupado es ir al gym, comer, estar con mis amigos.",
+        "source": ".memory/jesus-historia.md",
+        "line": 86,
+        "context": "Filosofía de vida (entrevista 54:35) — desarma objeción de tiempo",
+        "story_number": 8,
+        "used_as": "text_spoken"
+      }
+    ],
+    "E4": [
+      {"technique": "F1 selfie talking-head + voseo (story 1, 9)", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [1, 9]},
+      {"technique": "P3 blur + texto centrado con comillas (cita textual de objeción) — stories 3, 7", "source": "stories-core/02-sistema-reglas.md Apéndice C", "story_numbers": [3, 7]},
+      {"technique": "C3 captura DMs reales (efecto rebaño)", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [5]},
+      {"technique": "V1 video selfie talking-head con subtítulos karaoke (15-22s)", "source": "stories-core/02-sistema-reglas.md", "story_numbers": [2, 4, 6, 8]}
+    ],
+    "E5": {
+      "arco": "identificacion-dolor → autoridad-suave → identificacion → sorpresa-simple → validacion → revelacion → identificacion-dolor → calma-permiso → participacion → anticipacion",
+      "referencia": "Estructura tipo 5 Objeción del skill: Identificación → Dolor compartido → Giro inesperado → Mecanismo → Prueba → Esperanza"
+    },
+    "E6": {
+      "pattern": "Demolición de alternativas + reproducción de diálogo (del plan SÁB E6 — aplicado a JUE)",
+      "verificacion": "Cada cita textual se ACTÚA como diálogo (entonación, comillas), no se narra como dato. Cumple winner pattern de tono advisor + número no redondo (62 años, 90% de la gente, 4 ingenieros 6 meses)."
+    },
+    "E9": [
+      {"template": "B4 Cerrar objeciones con caso real", "source": "stories-core/06-constructor-ideas.md", "applied": "stories 4, 6, 8 (cada demolición usa caso o anécdota concreta)"},
+      {"template": "L1 Humor pre-CTA (peor excusa que escuché)", "source": "stories-core/06-constructor-ideas.md", "applied": "NO usado en v3 — esta secuencia NO tiene CTA. L1 quedaría descontextualizado."}
+    ],
+    "E3_not_applicable": null
+  },
+  "anti_invencion_applied": "Cero alumnos inventados. Roberto se menciona como AVATAR (no alumno con nombre propio). Citas E1/E2/E3 todas con archivo:línea verificable.",
+  "total_stories": 10,
+  "stories": [
+    {
+      "number": 1,
+      "function": "hook-cita-anclada",
+      "text_on_screen": "¿Y si ya tengo 55 años?",
+      "text_spoken": null,
+      "visual_format": "F1",
+      "format_description": "Selfie Jesús cara seria-amable, mirada directa. Luz natural. Sin sonrisa. Texto en pantalla con tipografía Classic blanca sobre fondo apenas oscurecido.",
+      "emotion": "identificacion-dolor",
+      "trigger": "frase-textual-anclada",
+      "interaction": null,
+      "notes": "Hook extraído verbatim de inteligencia-compradores.md L604 (13% de compradores). NO es SH1-SH6: tiene ancla concreta (edad numérica) y reproduce LITERAL una pregunta que el avatar se hace."
+    },
+    {
+      "number": 2,
+      "function": "setup-narrador",
+      "text_on_screen": null,
+      "text_spoken": "Esto es una de las 3 cosas que más me preguntan. Y no las voy a responder con un discurso. Las voy a responder una por una. Te las muestro y te muestro lo que pienso.",
+      "visual_format": "V1",
+      "format_description": "Video selfie 18s. Sin música. Tono advisor — como cuando un amigo te pone al día con algo que viene pensando. Cambio de ángulo discreto a los 9s.",
+      "emotion": "autoridad-suave",
+      "trigger": "autoridad-narrador-vulnerable",
+      "interaction": "subtitulos-karaoke"
+    },
+    {
+      "number": 3,
+      "function": "objecion-1-edad",
+      "text_on_screen": "\"A mi edad, ¿puedo aprender esto?\"",
+      "text_spoken": null,
+      "visual_format": "P3",
+      "format_description": "Fondo blur de foto lifestyle (laptop+mate). Overlay oscuro ligero. Texto blanco centrado con comillas tipográficas. Tipografía Deco. 4s.",
+      "emotion": "identificacion",
+      "trigger": "reproduccion-dialogo-edad",
+      "interaction": null,
+      "notes": "Cita verbatim de Patricia (avatar 8 — 04-avatares.md L149). Comillas señalan que es la voz del avatar, NO la de Jesús."
+    },
+    {
+      "number": 4,
+      "function": "demolicion-1-edad",
+      "text_on_screen": null,
+      "text_spoken": "Hace poco hablé con alguien de 62 años que me dijo: 'es la primera vez que hago algo con IA'. Le pregunté: ¿sabés mandar un audio por WhatsApp? Sí. Bueno — ya sabés más que el 90% de la gente que me sigue. La barrera no es la edad. Es creer que la barrera es la edad.",
+      "visual_format": "V1",
+      "format_description": "Video selfie 22s. Postura relajada, mate al lado. Cambio de ángulo a los 11s para subrayar el giro. Subtítulos largos dosificados.",
+      "emotion": "sorpresa-simple",
+      "trigger": "demolicion-edad-con-analogia-cotidiana",
+      "interaction": "subtitulos"
+    },
+    {
+      "number": 5,
+      "function": "objecion-2-tecnologia-rebano",
+      "text_on_screen": null,
+      "text_spoken": null,
+      "visual_format": "C3",
+      "format_description": "Mockup vertical fondo negro. 3 capturas de mensajes WhatsApp/Instagram apiladas, bordes redondeados. Mensaje 1: 'No sé de tecnología'. Mensaje 2: 'No tengo tiempo'. Mensaje 3: 'Me han estafado antes'. Sin texto overlay — los DMs hablan solos. 5s.",
+      "emotion": "validacion",
+      "trigger": "efecto-rebano-DM-real",
+      "interaction": null,
+      "notes": "Las 3 frases son extraídas verbatim de inteligencia-compradores.md L584-L586. Si Jesús no tiene capturas reales, RECREAR con tipografía WhatsApp/Instagram (no inventar contenido — usar exacto)."
+    },
+    {
+      "number": 6,
+      "function": "demolicion-2-tecnologia-vulnerabilidad",
+      "text_on_screen": null,
+      "text_spoken": "Yo tampoco sé programar. Igual que vos. Lo que pasó es que apareció una herramienta que sabe por mí. Lo que antes le tomaba a un equipo de 4 ingenieros, 6 meses, hoy lo armás vos en una tarde. La IA sabe por vos. Vos sólo le tenés que decir qué querés.",
+      "visual_format": "V1",
+      "format_description": "Video selfie 22s frente a laptop abierta (Claude visible al fondo, sin foco). Tono confesional — está revelando algo que no se dice mucho. Cambio ángulo medio.",
+      "emotion": "revelacion",
+      "trigger": "vulnerabilidad-jesus-T6",
+      "interaction": "subtitulos"
+    },
+    {
+      "number": 7,
+      "function": "objecion-3-tiempo",
+      "text_on_screen": "\"No tengo tiempo.\"",
+      "text_spoken": null,
+      "visual_format": "P3",
+      "format_description": "Fondo blur de foto cocina o sillón en penumbra (sugerir 'volver del trabajo' sin escribirlo). Overlay oscuro. Texto blanco Deco con comillas. 4s.",
+      "emotion": "identificacion-dolor",
+      "trigger": "reproduccion-dialogo-tiempo",
+      "interaction": null,
+      "notes": "Cita verbatim de DM real (03-inteligencia-compradores.md L585) — alineada con menú del plan. Misma técnica que story 3 — escala el reconocimiento. El contexto 'después del trabajo' queda implícito en la imagen blur (penumbra hogar)."
+    },
+    {
+      "number": 8,
+      "function": "demolicion-3-tiempo-filosofia",
+      "text_on_screen": null,
+      "text_spoken": "Yo no laburo en mi tiempo ocupado. Mi tiempo ocupado es ir al gym, comer, estar con mis amigos. Eso está primero. Y en los huecos que me quedan, trabajo. No necesitás 4 horas. Necesitás los huecos. Y si los huecos los usás para Instagram en vez de para vos, ese es el tema — no la falta de tiempo.",
+      "visual_format": "V1",
+      "format_description": "Video selfie 22s. Locación distinta (mesa, ventana, luz tarde). Tono calmado, casi reflexivo. Subtítulos largos dosificados.",
+      "emotion": "calma-permiso",
+      "trigger": "filosofia-jesus-textual-E3",
+      "interaction": "subtitulos"
+    },
+    {
+      "number": 9,
+      "function": "T13-pregunta-abierta",
+      "text_on_screen": "¿Cuál es tu verdadera excusa?",
+      "text_spoken": null,
+      "visual_format": "F1",
+      "format_description": "Selfie Jesús relajado, sin laptop. Mirada directa. Sticker caja de preguntas pegado debajo del texto: '¿Cuál es la tuya?'. Tipografía Classic.",
+      "emotion": "participacion",
+      "trigger": "T13-pregunta-abierta-del-plan",
+      "interaction": "caja-preguntas: \"¿Cuál es la tuya?\""
+    },
+    {
+      "number": 10,
+      "function": "teaser-puente-sabado",
+      "text_on_screen": "Mañana descanso. Sábado te muestro algo.",
+      "text_spoken": null,
+      "visual_format": "E1",
+      "format_description": "Fondo color sólido (verde oliva o azul noche). Texto Deco blanco grande centrado. 3s. Sin animación.",
+      "emotion": "anticipacion",
+      "trigger": "teaser-cierre-puente-CTA-sabado",
+      "interaction": null,
+      "notes": "El plan dice textual: 'Cerrar con mañana descanso, sábado te muestro algo'. Abre loop hacia el CTA CLASE del sábado SIN keyword propio. La curiosidad acumulada es el verdadero CTA."
+    }
+  ],
+  "cta": {
+    "type": "none",
+    "rationale": "Plan VOLUMEN, día JUE, columna CTA = '—' (sin CTA). La pregunta abierta (T13) es el mecanismo de interacción. El teaser de story 10 abre puente al CTA CLASE del sábado."
+  },
+  "content_bank_needed": [
+    "Selfie cara seria-amable luz natural (story 1)",
+    "Video selfie 18s advisor (story 2)",
+    "Foto lifestyle blureada laptop+mate para overlay P3 (story 3)",
+    "Video selfie 22s con mate, ángulo medio cambia (story 4)",
+    "3 capturas DMs reales con frases textuales — o mockups con tipografía WhatsApp/Instagram (story 5)",
+    "Video selfie 22s frente a laptop con Claude al fondo (story 6)",
+    "Foto cocina o sillón penumbra para overlay P3 (story 7)",
+    "Video selfie 22s en mesa con ventana luz tarde (story 8)",
+    "Selfie sin laptop para caja preguntas (story 9)",
+    "(no requiere foto) — fondo color sólido para texto (story 10)"
+  ],
+  "instrucciones_publicacion": {
+    "orden_temporal": "Publicar consecutivas en una sola sesión (NO requiere humor pre — secuencia sin CTA). Ideal media tarde JUE 04-16.",
+    "pausas": "stories 3-4 (objeción → demolición) se publican juntas. Idem 5-6 y 7-8. NO esperar entre ellas — la fuerza está en el ritmo demolición.",
+    "caja_preguntas": "Story 9 = abrir caja DURANTE 24h. Las respuestas son input directo para el contenido de la próxima semana."
+  },
+  "anti_ia_check": {
+    "S-IA1_regla_de_3": "no detectado",
+    "S-IA3_vocabulario_elevado": "no detectado (verificado: nada de impactante/revolucionario/transformador)",
+    "S-IA8_data_interna": "no detectado (no aparecen 562 compradores ni 22,819 conversaciones)",
+    "S-IA9_jerga_marketing": "no detectado (no embudo/funnel/leads/conversión/monetizar/lanzamiento)",
+    "S-IA10_exceso_texto": "no detectado (todas las stories ≤1 línea de texto en pantalla)",
+    "voseo_argentino": "OK (querés/sabés/podés/comentá; ningún tú/tienes/puedes/quieres/necesitas/debes)",
+    "V1_pregunta_filosa": true,
+    "V2_ritmo_alterna": true,
+    "V3_muletilla_jesus": true,
+    "V4_cierre_accion_dato": true,
+    "V5_monologo_hablado": true,
+    "V6_tono_amigo_no_profesor": true,
+    "ajustes_hechos": "Eliminado el CTA CLASE de la v2 (movido a sábado donde corresponde según plan). Removida la keyword. Cerrado con teaser puente."
+  },
+  "validation_self_check": {
+    "R1_story1_F1": true,
+    "R2_count_in_range": "10 stories — rango default objecion 7-15 ✓",
+    "R3_no_videos_consecutivos_iguales": "F1→V1→P3→V1→C3→V1→P3→V1→F1→E1 — V1 nunca consecutivo ✓",
+    "R7_minimo_1_interaccion": "story 9 caja-preguntas ✓",
+    "R14_doble_CTA": "N/A (no hay CTA)",
+    "R15_keyword_grande_color": "N/A (no hay keyword)",
+    "anti_repeticion_hook_SH1_SH6": "hook story 1 = '¿Y si ya tengo 55 años?' — no matchea ningún SH",
+    "tension_distinta_a_T13": "T6 ✓ (plan prohíbe T12/T13 como tensión en VOLUMEN — T13 acá es TÁCTICA de views, no tensión)"
+  },
+  "planned_day": "jueves",
+  "week": "2026-04-13",
+  "createdAt": "2026-04-15T16:00:00-03:00",
+  "metrics": {
+    "views_first_story": null,
+    "views_last_story": null,
+    "retention_pct": null,
+    "dms_caja_preguntas": null,
+    "respuestas_cualitativas": null
+  }
+}

@@ -3,373 +3,539 @@
 > **Fuente:** Encuesta de onboarding de 562 compradores de la Academia de Productos Digitales.
 > **Esto es ORO PURO:** son personas que YA PAGARON. No leads fríos — compradores reales.
 > **Uso principal:** frases reales para leads, dolores verificados para beats, triggers de compra para CTAs.
+> **Última actualización:** 2026-04-07 — V2 con análisis cruzado, clusters de buyer persona, y correcciones de datos.
 
 ---
 
 ## 1. DEMOGRAFÍA DEL COMPRADOR REAL
 
 ### Género
-- **Mujer: 318 (57%)** | Hombre: 244 (43%)
-- → Las mujeres son MAYORÍA. Los guiones deben reflejar esto.
+- **Mujer: 318 (56.6%)** | Hombre: 244 (43.4%)
+- → Las mujeres son MAYORÍA. Dato cruzado: las mujeres son más grandes (promedio 47.7 años vs 43.9 hombres) y ganan menos ($931/mes vs $1,095).
 
 ### Edad
 | Rango | Cantidad | % |
 |-------|----------|---|
-| 18-24 | 27 | 5% |
-| 25-34 | 96 | 17% |
-| **35-44** | **129** | **23%** |
-| **45-54** | **144** | **26%** |
-| **55+** | **166** | **30%** |
-- → **El 79% tiene 35+.** El comprador típico NO es un pibe de 20. Es alguien de 35-55.
-- → Edad promedio estimada: ~45 años (excluyendo outliers)
+| 18-24 | 26 | 4.7% |
+| 25-34 | 96 | 17.2% |
+| **35-44** | **129** | **23.1%** |
+| **45-54** | **144** | **25.8%** |
+| **55-64** | **123** | **22.0%** |
+| 65+ | 40 | 7.2% |
+- **Promedio exacto: 46.0 años. Mediana: 47.**
+- → **El 78% tiene 35+.** El comprador típico NO es un pibe de 20.
+- → **Dato clave cruzado:** En 45-54 años, las mujeres son el **69%** del grupo. La proporción se invierte en 18-34 donde los hombres son **58%**.
 
 ### País
 | País | Cantidad | % |
 |------|----------|---|
-| **Argentina** | **490** | **87%** |
-| México | 21 | 4% |
-| Otro | 20 | 4% |
-| Uruguay | 17 | 3% |
-| Perú | 8 | 1% |
-| Chile | 4 | 1% |
-| Paraguay | 1 | <1% |
-| España | 1 | <1% |
+| **Argentina** | **490** | **87.2%** |
+| México | 21 | 3.7% |
+| Otro | 20 | 3.6% |
+| Uruguay | 17 | 3.0% |
+| Perú | 8 | 1.4% |
+| Chile | 4 | 0.7% |
 
 ### Ingreso actual (USD/mes)
 | Rango | Cantidad | % |
 |-------|----------|---|
-| $0 | 30 | 5% |
-| $1-300 | 67 | 12% |
-| **$301-500** | **100** | **18%** |
-| **$501-1000** | **163** | **29%** |
-| **$1001-2000** | **163** | **29%** |
-| $2001-5000 | 24 | 4% |
-| $5000+ | 15 | 3% |
-- → **Mediana: $850/mes.** El 64% gana entre $300 y $2000.
-- → Ingreso deseado mediana: **$3000/mes** (3.5x lo que ganan hoy)
+| $0 | 30 | 5.5% |
+| $1-300 | 67 | 12.2% |
+| **$301-500** | **100** | **18.2%** |
+| **$501-1000** | **163** | **29.6%** |
+| **$1001-2000** | **163** | **29.6%** |
+| $2001-5000 | 24 | 4.4% |
+| $5000+ | 3 | 0.5% |
+- **Promedio: $1,002/mes. Mediana: $800/mes.**
+- → El 65% gana entre $300 y $2000.
+- **Ingreso deseado (6 meses): mediana $3,000/mes** — multiplicador mediana de 4x.
+- → No sueñan con millones. Quieren 4x lo que ganan. Los guiones deben ser realistas.
 
 ### Fuente de descubrimiento
 | Fuente | Cantidad | % |
 |--------|----------|---|
-| **Instagram** | 301 | 54% |
-| Anuncio (sin especificar) | 78 | 14% |
-| YouTube | 49 | 9% |
-| Otro | 48 | 9% |
-| Facebook | 36 | 6% |
-| Redes sociales (general) | 24 | 4% |
-| YouTube + Instagram | 18 | 3% |
-| TikTok | 4 | 1% |
-| Boca en boca | 4 | 1% |
-- → **Instagram = canal #1 de adquisición** (57% si sumamos IG + IG&YT)
+| **Instagram** | **326** | **58.0%** |
+| Publicidad/Anuncio | 259 | 46.1% |
+| YouTube | 68 | 12.1% |
+| Redes sociales (general) | 53 | 9.4% |
+| Facebook | 46 | 8.2% |
+| Google/Buscador | 19 | 3.4% |
+| Recomendación/Referido | 18 | 3.2% |
+| TikTok | 5 | 0.9% |
+
+**Cruces por edad:**
+- Jóvenes (18-34): IG 52%, YT 11%
+- Maduros (45-54): IG 47%, FB 12% (Facebook crece con la edad)
+- Seniors (55+): IG 45%, YT 17% (YouTube se duplica vs jóvenes)
 
 ### Profesiones más comunes
 | Categoría | % |
 |-----------|---|
-| Empleado/a (oficina, administrativo) | 16% |
-| Comercio/Ventas | 13% |
-| Docente/Educador | 11% |
-| Emprendedor/a | 7% |
-| Independiente/Freelance | 6% |
-| Salud (médico, psicólogo, terapeuta) | 6% |
-| Tech/Diseño | 4% |
-| Estudiante | 3% |
-| Ama de casa / Madre | 3% |
-| Coach/Consultor | 2% |
-| Jubilado/a | 1% |
-| Gastronomía | 1% |
-| Otro (variado) | 27% |
+| Comercio/Ventas/Emprendedor | 32.9% |
+| Docente/Profesor/Educación | 15.8% |
+| Empleado/Relación dependencia | 14.8% |
+| Salud/Terapia | 12.8% |
+| Administración/Oficina | 12.1% |
+| Diseño/Arte/Creativos | 9.4% |
+| IT/Programación/Tech | 8.5% |
+| Coaching/Consultoría | 8.0% |
+| Marketing/Comunicación | 7.5% |
+| Independiente/Freelance | 6.0% |
+| Ama de casa | 4.1% |
+| Jubilado/Retirado | 3.4% |
 
 ### Talentos que quieren monetizar (nichos potenciales)
 | Categoría | % |
 |-----------|---|
-| Ventas/Marketing | 14% |
-| Educación/Enseñanza | 14% |
-| Diseño/Arte/Foto | 11% |
-| Salud/Fitness | 9% |
-| Cocina/Gastronomía | 6% |
-| Coaching/Terapia | 4% |
-| Finanzas/Admin | 3% |
-| Tecnología | 1% |
-| Escritura/Comunicación | 1% |
-| Manualidades/Artesanía | 1% |
+| Enseñar/Educación/Capacitación | 20.1% |
+| Salud/Nutrición/Fitness | 15.8% |
+| Marketing/Ventas/Comercio | 14.1% |
+| Diseño/Arte/Creatividad | 12.5% |
+| Organización/Administración | 12.3% |
+| Terapia/Psicología/Bienestar | 9.4% |
+| Cocina/Gastronomía/Repostería | 7.3% |
+| Comunicación/Escribir | 6.4% |
+| Coaching/Mentoría/Motivación | 5.9% |
+| Programación/Tech/IT | 5.2% |
+| Contabilidad/Finanzas | 5.2% |
+
+### A quién quieren ayudar (target de su producto)
+| Segmento | % |
+|----------|---|
+| Personas en general | 49.8% |
+| Emprendedores/pequeños negocios | 30.1% |
+| Mujeres/madres/amas de casa | 17.8% |
+| Personas sin conocimiento digital | 13.9% |
+| Personas con problemas de salud | 10.1% |
+| Adultos mayores | 5.5% |
+| Profesionales/freelancers | 4.8% |
+| Jóvenes/estudiantes | 3.9% |
 
 ---
 
 ## 2. LOS 5 DOLORES DOMINANTES (verificados con 562 compradores)
 
-### Dolor #1: "Trabajo mucho y gano poco" (≈46%)
+### Dolor #1: "Trabajo mucho" — 55.7%
 > **Frases reales:**
 > - "Trabajo mucho y gano poco"
 > - "Me exigen mucho y pagan poco"
 > - "41 años trabajando 10 horas diarias. Poca valoración"
 > - "Trabajo 12h/dia y no hay tiempo para compartir en familia"
 > - "Mucho trabajo poca plata... poco tiempo de descanso"
-> - "Hago muchas cosas a la vez y concludo pocas"
 > - "Trabajo para personas q ni conozco"
-> - "Mis ingresos no son suficientes para todas mis necesidades"
 
-### Dolor #2: "No tengo tiempo para mí" (≈37%)
-> **Frases reales:**
+### Dolor #2: "Gano poco / no alcanza" — 53.7%
+> - "Mis ingresos no son suficientes para todas mis necesidades"
+> - "No logro aún un ingreso estable lo suficientemente alto"
+> - "estoy en un sub empleo, sin oportunidades de crecimiento"
+> - "Falta de desarrollo profesional, remuneración baja"
+
+### Dolor #3: "No tengo tiempo para mí" — 44.1%
 > - "NO TENGO TIEMPO PARA MI"
 > - "No hay tiempo para compartir en familia"
 > - "Estoy atada a horarios, no gano lo que me gustaría"
-> - "Necesito más libertad de movimiento y libertad económica"
 > - "Más de 20 años en la misma empresa, la rutina, la estructura de tiempos fijos"
-> - "Cansada de priorizar las necesidades de los demás"
 > - "no tengo tiempo para mi, se gana poco para la cantidad de horas"
 
-### Dolor #3: "Estancamiento / Sin perspectivas" (≈22%)
-> **Frases reales:**
-> - "Estoy estancado y cansado sin perspectivas de crecimiento"
-> - "No me identifico con mi profesión"
-> - "Sentir estancamiento, desmotivación"
-> - "en primer lugar tiempo, luego los ingresos, y me siento estancada ya que no veo posibilidad de ascenso"
-> - "estoy en un sub empleo, sin oportunidades de crecimiento"
-> - "La frustración de quedar estancado"
-> - "trabajo en un emprendimiento que no es escalable, y no refleja el estilo de vida que quiero"
+### Dolor #4: "No sé del mundo digital / No sé vender" — 13.5% + 10.9%
+> - "No saber cómo monetizar lo que sé hacer"
+> - "No saber vender por internet"
+> - "El no tener conocimiento para seguir avanzando con seguridad"
 
-### Dolor #4: "Dependencia / No tengo nada propio" (≈15%)
-> **Frases reales:**
-> - "Aguantar jefes con poco cerebro. Depender de decisiones de otros."
-> - "Trabajo para personas q ni conozco... QUIERO CONSTRUIR MIS 3 LIBERTADES: TIEMPO, GEOGRÁFICA, ECONÓMICA"
-> - "si mañana te enfermás, tu negocio se frena. Porque tu negocio sos vos"
-> - "me quedé sin empleo hace 4 meses y soy emprendedora pero me cansó el estar buscando clientes"
-> - "Ya no quiero depender del sistema de las ratas"
-> - "Trabajo en relación de dependencia y el crecimiento es muy limitado"
+### Dolor #5: "Siento que ya es tarde / mi edad" — 13.2%
+> - "A mi edad ya nadie me va a contratar"
+> - "Siempre trabajos tradicionales, muchas horas, magros sueldos y ahora una jubilación misérrima"
 
-### Dolor #5: "Deudas / Supervivencia" (≈11%)
-> **Frases reales:**
-> - "Estoy cansado de trabajar solo para pagar deudas. No puedo ahorrar ni un solo peso."
-> - "Mis ingresos, mucho esfuerzo durante años y no hay resultados, en vez de crecer hoy me endeudé"
-> - "no puedo solventar los gastos básicos de mi familia"
-> - "Respirar, sentirme a salvo. No tengo nadie que me ayude. Soy yo y yo."
-> - "Soy abogada y es difícil mantener un ingreso estable mensualmente"
+**Bigrams más frecuentes en frustraciones:**
+- "trabajo mucho": 82 menciones
+- "gano poco": 67
+- "mucho gano": 50
+- "tengo tiempo": 48
+- "mis ingresos": 29
+- "muchas horas": 22
+- "nadie valora": 12
 
 ---
 
 ## 3. TRIGGERS DE COMPRA — QUÉ LOS HIZO DECIR "NECESITO ESTO"
 
-### Trigger #1: "Ya no puedo seguir así" (hartazgo)
-> - "Una sensación de que ya no puedo seguir así"
-> - "La sensación de 'ya no puedo seguir así'"
-> - "Ya no puedo seguir así... si otros pueden yo también"
-> - "Desmotivacion extrema hasta que senti que ya no queria estar asi"
-> - "Llegué a mi punto de cansancio máximo, a estar cansado de estar cansado"
-> - "Si sigo haciendo lo mismo de siempre es poco probable que mi situación cambie"
-
-### Trigger #2: "Jesús me inspiró confianza" (conexión con Jesús)
-> - "La intuición que con Jesús podía tener un cambio... inspiró una confianza que no había sentido con otros"
-> - "La energía que tiene Jesús fue suficiente para entrar"
-> - "Verlo a Jesús trabajar de la casa"
-> - "Vi los videos de Jesús varias veces y decía... si con él voy a lograr cambiar mi vida"
-> - "Jesús me hace acordar mucho a un sobrino que tengo"
-> - "Soy De Misiones y empaticé con Jesús por ser de Entre Ríos"
-> - "Fue un anuncio de Jesús y dije yo también quiero eso"
-
-### Trigger #3: "La IA es la oportunidad" (ventana)
+### Trigger #1: "La IA es la oportunidad" — **49.9%** ← DOMINANTE
 > - "Hace tiempo estaba buscando algo como esto — entendí que es con la IA"
 > - "la IA es la puerta de entrada"
-> - "Me interesa estar preparada para lo que se viene"
-> - "Veo que los productos digitales están en un momento en el que el mercado está listo para comprar"
 > - "el mundo está cambiando rápidamente, la IA es el futuro"
 > - "La revolución de este siglo"
+> - "Mr.gusta aprender de tecnología.. no quiero quedarme atrás"
+> - "Entendí que hay que capacitarte constantemente y aún más con lo que es las herramientas de IA"
 
-### Trigger #4: "El taller de 3 días fue la prueba" (taller como conversión)
-> - "El taller de 3 días de Jesús. Muy claro, práctico."
+**Cruce:** La IA como trigger es TRANSVERSAL — funciona igual en precarios ($0-300: 49%), bajos ($301-1000: 45%), medios ($1001-2000: **60%**), y altos ($2001+: 48%). El grupo de ingreso medio es el que MÁS se activa con IA.
+
+### Trigger #2: "Jesús me inspiró confianza" — 22.3%
+> - "La intuición que con Jesús podía tener un cambio"
+> - "La energía que tiene Jesús fue suficiente para entrar"
+> - "Fue un anuncio de Jesús y dije yo también quiero eso"
+> - "Hace tiempo que buscaba capacitarme pero nadie me convencía hasta que di con Jesús"
+
+### Trigger #3: "Ya no puedo seguir así" (urgencia económica) — 12.3%
+> - "Una sensación que ya no puedo seguir así"
+> - "Llegué a mi punto de cansancio máximo"
+> - "Si sigo haciendo lo mismo de siempre es poco probable que mi situación cambie"
+
+### Trigger #4: "El webinar/taller fue la prueba" — 11.8%
 > - "Participé del taller y me dije 'esto es lo que necesito'"
-> - "El taller me hizo dar cuenta de que no es tan complicado"
-> - "Cuando participé del taller de 3 días me decidí por entrar"
-> - "Las clases de 3 días fueron clave, entendí que se puede hacer plata"
+> - "Las clases de 3 días fueron clave"
+> - "Siempre veía sus publicidades, y ya había intentado con otros cursos, pero sentí que esto era lo que buscaba"
 
-### Trigger #5: "Quiero algo propio / libertad" (deseo)
-> - "La posibilidad de crear un activo digital que trabaje por mí"
-> - "Poder emprender un negocio en el que pueda manejar mi tiempo"
-> - "No depender de un trabajo para generar ingresos"
-> - "Quiero trabajar desde casa"
-> - "Ya no quiero trabajar más en fábrica"
+### Trigger #5: "Quiero monetizar lo que sé" — 8.2%
+> - "Tengo habilidades que puedo transformar en un producto"
+> - "Quiero vivir de lo que sé hacer, no de un empleo"
+
+**Palabras clave más usadas en triggers (top 15):**
+tiempo (109), quiero (101), jesús (93), hacer (92), aprender (80), vida (60), poder (59), dinero (49), necesito (48), digital (48), productos (44), generar (44), cambio (34), vender (33), nuevo (31).
 
 ---
 
 ## 4. MIEDOS Y OBJECIONES PRE-COMPRA
 
-### Miedo #1: "Que sea una estafa / humo" (≈30%)
-> - "Pensé que era estafa pero bueno no quiero seguir haciendo lo mismo"
-> - "Temor a que solo sea humo"
-> - "El supongo que el miedo a todo curso, inscribirte y que sea un curso más sin un fin concreto"
-> - "Que sea un discurso falso que me saque dinero"
-
-### Miedo #2: "No sé de tecnología / No voy a poder" (≈25%)
-> - "El gran temor es mi ignorancia respecto a la tecnología"
-> - "soy total analfabeta de computación"
-> - "De no entender"
-> - "Miedo a no poder"
-> - "No sé nada de computación, para mí va a ser un reto gigante"
-
-### Miedo #3: "¿Y si no funciona? / Perder la plata" (≈20%)
+### Miedo #1: "La inversión / la plata" — 22.8%
 > - "Si esta inversión valdrá"
 > - "Mi capacidad de pago fue una duda"
-> - "El dinero me restringe, pero sino hago algo distinto va seguir todo igual"
-> - "No estoy pasando por un buen momento económico y eso presiona para una decisión así"
+> - "Tenia miedo de hacer la inversión, uno piensa y se detiene y lo ve como un gasto"
+> - "Por primera vez en mi vida, tengo mis tarjetas con problemas"
 
-### Miedo #4: "Mi edad" (≈10%)
-> - "Creo que si fuera más joven podría haberme decidido mucho antes"
-> - "A mi edad..."
-> - "41 años trabajando... ahora que me voy a jubilar"
-
-### Miedo #5: "No tener tiempo para dedicarle" (≈10%)
-> - "El no saber el cronograma porque no sé si me puedo organizar"
-> - "Poder sostener en el tiempo mi motivación"
+### Miedo #2: "No tengo tiempo" — 13.0%
 > - "¿Podré mantener la constancia?"
+> - "El no saber el cronograma porque no sé si me puedo organizar"
+
+### Miedo #3: "No tuve miedo" — **11.0%**
+> - "No tuve tanto miedo, cuando vi las clases me convencí"
+> - "No tuve miedo. La urgencia en lograr mi objetivo"
+> - "Me cansé de quedarme siempre en la puerta. El miedo está pero hay que pensar en positivo"
+
+### Miedo #4: "Que sea estafa / fraude" — 8.0%
+> - "Pensé que era estafa pero bueno no quiero seguir haciendo lo mismo"
+> - "Temor a que solo sea humo"
+> - "Que sea un discurso falso que me saque dinero"
+
+**⚠️ CORRECCIÓN vs análisis anterior:** El miedo a estafa NO es el 30% como estimaba el análisis previo. Es el **8%** medido textualmente. El miedo #1 real es la INVERSIÓN/DINERO (22.8%). Esto cambia la estrategia: la objeción principal no es "¿será estafa?" sino "¿puedo pagarlo y va a valer la pena?"
+
+### Miedo #5: "No sé de tecnología" — 6.9%
+> - "siempre un poco de temor a no poder aprender a manejar este tipo de herramientas"
+> - "soy total analfabeta de computación"
+
+**⚠️ CORRECCIÓN vs anterior:** "No sé de tecnología" como MIEDO real = 6.9%, no 25%. La mayoría está ENTUSIASMADA con la tech (72.8% menciona IA positivamente), no asustada. Solo 0.7% tiene miedo genuino a la tecnología.
 
 ### QUÉ LOS HIZO SUPERAR LOS MIEDOS:
-> - **Precio accesible:** "veia siempre cursos digitales inalcanzables en pago, me generó confianza poder pagarlo en cuotas"
-> - **Taller de $5 como bajo riesgo:** "Cuando vi la oferta de los talleres a $5 eso ni lo dudé"
-> - **Jesús como persona real:** "Jesús me parece una persona confiable y auténtica a diferencia de otros vendedores de cursos"
-> - **Decisión de cambio:** "si no lo hago hoy, ¿entonces cuándo?"
-> - **Nada que perder:** "Pensé que era estafa pero bueno no quiero seguir haciendo lo mismo"
+> - **Decisión visceral:** "Cerré los ojos y pagué" / "Miedo a no estar a la altura. Lo que me hizo decir 'igual me animo' es que deudas ya tengo jajaj"
+> - **Jesús como persona:** "Jesús me parece confiable y auténtico a diferencia de otros vendedores de cursos"
+> - **Urgencia:** "decidí porque vi la oportunidad y no me podía quedar en el tiempo"
+> - **Accesibilidad:** "El precio me pareció accesible comparado con otros"
 
 ---
 
 ## 5. QUÉ GENERÓ CONFIANZA (por qué ESTE programa y no otro)
 
-### Factor #1: Jesús como persona (≈60%)
-> - "La simpleza y sinceridad de Jesús es terrible. Te hace sentir muy bien y confiado."
-> - "Lo que me hizo confiar es la claridad con la que muestran todo y no se guardan nada"
-> - "Jesús me parece una persona confiable y auténtica a diferencia de otros vendedores de cursos que son vende humo"
-> - "Me gustó la forma que explica Jesús, muy claro y pausado como un docente que sabe lo que transmite"
-> - "Su experiencia, convicción, sencillez y gran don de gentes"
-> - "La calidez humana con que se expresan tanto el fundador como cada miembro del equipo"
+### Factor #1: Jesús como persona / carisma — 51.4%
+> - "Lo expeditivo que es Jesús... es por acá o no es por acá. Directo, al grano, sin vueltas."
+> - "Me pareció Jesús más autentico en tema mentalidad, algo así como: 'dejen de llorar, laburen...'"
+> - "La simpleza y sinceridad de Jesús es terrible"
+> - "Jesús me hace acordar mucho a un sobrino que tengo"
+> - "Me complace la calidez humana con que se expresan tanto el fundador como cada miembro del equipo"
 
-### Factor #2: Precio accesible / No parece estafa (≈20%)
-> - "Todos cuentan casi lo mismo, pero te quieren vender de una un curso de 700 usd, este está más al alcance"
-> - "La accesibilidad del curso por eso me animé a invertir"
-> - "El profesionalismo con el que trabajan, como este form por ejemplo!"
+### Factor #2: Claridad en la propuesta — 24.4%
+> - "Lo que me hizo confiar es la claridad con la que muestran todo"
+> - "Me gustó la forma que explica, muy claro y pausado como un docente que sabe"
+> - "No te vende humo. Te dice las cosas como son."
 
-### Factor #3: El taller como demostración (≈15%)
-> - "Las clases de 3 días fueron clave, entendí que se puede"
-> - "Compré dos programas de Jesús y lo seguiré haciendo porque lo que dice lo hace"
-> - "El material expuesto y la claridad y honestidad de Jesús y el precio"
+### Factor #3: Transparencia / honestidad — 20.5%
+> - "Transparencia, algo que hoy en día es difícil de encontrar"
+> - "Sentí honestidad y transparencia"
+> - "Se nota que tiene resultados y sabe lo que hace"
+
+### Factor #4: Testimonios / casos reales — 6.4%
+
+### Factor #5: Profesionalismo — 5.5%
 
 ---
 
 ## 6. QUÉ YA NO QUIEREN SEGUIR HACIENDO
 
 > **Estas frases son DINAMITA para beats de Identificación y Quiebre:**
-> - "Cobrar poco por algo que lleva mucho tiempo"
-> - "Trabajar muchas horas por poco dinero"
-> - "Muchas horas en una oficina sin generar nada para mí"
-> - "Trabajar por horas para cobrarlas y no cobrar por el trabajo realizado"
+> - "Cobrar poco por algo que lleva mucho tiempo" ← la más específica
+> - "Trabajar muchas horas por poco dinero" ← la más universal
 > - "Andar atrás de mis alumnos por los pagos y siento que les doy un montón y no se valora"
-> - "Depender del boca en boca, y cobrar poco por algo que me lleva mucho tiempo"
+> - "Depender del boca en boca, y cobrar poco"
 > - "Seguir buscando y buscando cosas, seguir 'formándome' y no aplicar lo aprendido"
 > - "La venta física presencial en comercios cayó abruptamente"
-> - "Cansada de priorizar las necesidades de los demás. Ya no quiero seguir así."
+> - "Cansada de priorizar las necesidades de los demás"
 > - "Subir contenido a redes sociales pero no vender en concreto"
-> - "Grabar contenido para mis clientes. Siento que eso me ha detenido."
-> - "Exceso de burocracia y poca actualización tecnológica"
 > - "Trabajo en una distribuidora, manejo mi propio vehículo, cobro migajas"
+> - "Siempre trabajos tradicionales, muchas horas, magros sueldos y ahora una jubilación misérrima"
+
+**Temas cuantificados:**
+| Tema | % |
+|------|---|
+| Trabajo actual genérico | 46.8% |
+| Ganar poco | 24.9% |
+| Trabajar muchas horas | 24.7% |
+| No usar tecnología/IA | 13.3% |
+| Trabajar por sueldo fijo | 11.6% |
+| Vender presencialmente/local | 5.3% |
 
 ---
 
 ## 7. EL SUEÑO — LOGRO DESEADO Y DÍA IDEAL
 
 ### Lo que quieren lograr:
+| Logro | % |
+|-------|---|
+| Libertad financiera/independencia | 48.2% |
+| Vivir de lo digital/ingresos pasivos | 46.1% |
+| Viajar | 26.5% |
+| Familia/tiempo con familia | 21.4% |
+| Ayudar a otros/impactar | 16.5% |
+| Mejorar calidad de vida | 9.6% |
+| Dejar el empleo actual | 6.9% |
+| Ganar en dólares | 3.7% |
+
 > - "Respirar, sentirme a salvo"
-> - "Total independencia, ayudarles con la educación de mis hijos, lograr mi casa ya que vivo alquilada"
-> - "Mi propia casa, más independencia. Más ingreso. REALMENTE ESPERO CON ANSIAS ESTE FUTURO MEJOR."
-> - "Vivir de eso"
-> - "Más ingresos que me permitan no vender mi tiempo"
-> - "Construir un proyecto propio, sostenible y alineado con quien soy"
-> - "Independencia, más ingresos, más tiempo, más disfrute, tranquilidad"
-> - "Poder mudarme... primero vivienda y después mi auto!"
-> - "Una vida plena, haciendo lo que amo"
-> - "Tener un ingreso que me permita manejar mi negocio desde donde esté"
+> - "Total independencia, ayudarles con la educación de mis hijos"
+> - "Pagar mis deudas y tener un mes sin estrés"
+> - "RECOBRAR MI DIGNIDAD POR MI SUSTENTO INDEPENDIENTE"
+> - "Comprarle a mis hijas botines y zapatillas"
+> - "Que mi jubilación no sea una miseria"
 
 ### El día ideal que describen:
+| Elemento | % |
+|----------|---|
+| Trabajar desde casa/remoto | 37.4% |
+| Café/mate/mañana tranquila | 31.5% |
+| Libertad de horarios | 27.4% |
+| Viajar | 23.0% |
+| Familia/hijos | 20.8% |
+| Tranquilidad/paz | 19.0% |
+| Ejercicio/deporte | 12.3% |
+| Naturaleza/playa/campo | 10.3% |
+| Ayudar a otros | 8.2% |
+
 > - "Levantarme sin la presión de salir corriendo a cumplir un horario"
-> - "Tener unas 20 ventas por día y la entrega automatizada"
-> - "Despertar a las 6:20. Desayunar. Llevar a mi hija a la escuela. Ir al gym. Escritorio para trabajar."
+> - "Ver las ventas al despertar sentirme tranquilo y sin stress"
 > - "Trabajar desde mi casa por la tarde. Lo suficiente para reinvertir y progresar."
 > - "Mi rutina sería igual y si genero por día 50 U$S ya me suma"
-> - "No estar mucho tiempo conectada, solo lo necesario"
 > - "Poder organizar con total libertad los horarios"
-> - "En Como, Italia como base, viajando por el mundo... ingresos mensuales mínimos de USD 25.000"
-> - "Trabajaría bien temprano y algunos días de noche"
+
+**→ Son sueños de DIGNIDAD, no de lujo.** No dicen Lamborghini, dicen "cerrar el mes sin angustia".
 
 ---
 
 ## 8. CONTENIDO QUE CONSUMEN (referentes)
 
-| Referente/Tipo | Menciones |
-|----------------|-----------|
-| YouTube (general) | 79 |
-| Desarrollo personal/Motivación | 68 |
-| Finanzas/Inversión | 58 |
-| Podcasts | 45 |
-| **Jesús Tassarolo** | **35** |
-| Marketing | 34 |
-| IA | 28 |
-| Kiyosaki | 11 |
+**⚠️ CORREGIDO en V3:** El V2 inflaba IA a 48.4% por keyword matching erróneo. Recategorización granular real:
+
+| Tipo de contenido | % |
+|-------------------|---|
+| **Desarrollo personal** | **19.2%** |
+| Marketing/Negocios | 18.5% |
+| Libros | 15.3% |
+| IA/Inteligencia Artificial | 14.9% |
+| YouTube (como plataforma) | 14.4% |
+| Salud/Nutrición | 14.6% |
+| **Espiritualidad/Meditación** | **13.5%** |
+| Finanzas/Inversiones | 11.0% |
+| Podcasts | 8.0% |
+| Arte/Diseño/Creatividad | 7.7% |
+| Psicología | 7.3% |
+| **Religión/Fe** | **5.0%** |
+| Cocina/Gastronomía | 5.2% |
+| Astrología/Tarot | 3.4% |
+
+**Top referentes por nombre:**
+Jesús (35), Brian Tracy (32), Lain García Calvo (19), Margarita Pasos (16), Joe Dispenza (11), Kiyosaki (11), Tony Robbins (10), Enric Corbera (8), Deepak Chopra (8), Alex Hormozi (7).
+
+**→ El contenido #1 es DESARROLLO PERSONAL (19.2%), no IA.** La audiencia vive en el mundo de Kiyosaki/Tracy/Dispenza, no en el de Hormozi. La IA es trigger de COMPRA (50% lo menciona como trigger) pero no es lo que CONSUMEN regularmente. Esto confirma que el puente correcto es: mundo del desarrollo personal → ADP.
 
 ---
 
-## 9. MAPA: CÓMO USAR ESTA DATA EN GUIONES
+## 9. QUÉ NECESITABAN VER PARA COMPRAR MÁS RÁPIDO
+
+| Factor | % |
+|--------|---|
+| Nada / todo perfecto | 14.2% |
+| Precio/plan de pago | 11.9% |
+| Más info del programa/contenido | 11.7% |
+| Haberlo conocido antes | 10.3% |
+| Testimonios/resultados reales | 9.4% |
+| Clase gratis/preview | 8.4% |
+
+**→ El 14.2% dice "nada" = el proceso de venta ya funciona bien para 1 de cada 7.**
+**→ El 10.3% dice "haberlo conocido antes" = no fue resistencia al producto, fue falta de exposición.**
+
+---
+
+## 10. ASESORES DE VENTA
+
+| Asesor | Ventas | % |
+|--------|--------|---|
+| Miguel Castillo | 110 | 19.6% |
+| Abad Moises | 106 | 18.9% |
+| Daniela de Lima | 104 | 18.5% |
+| Rosario Robles | 97 | 17.3% |
+| Alexandra Ortiz | 85 | 15.1% |
+| Candela Oliva | 48 | 8.5% |
+
+---
+
+## 11. BUYER PERSONAS — 5 CLUSTERS IDENTIFICADOS
+
+### 🔴 CLUSTER 1: "La Reinventada" — Mujer 45+
+- **Tamaño:** 197 personas (35.1% del total) ← EL SEGMENTO MÁS GRANDE
+- **Ingreso promedio:** $941/mes
+- **Profesiones:** Docente (49), Independiente (35), Empleada (18), Admin (14)
+- **Motivación:** Harta de trabajar mucho por poco, quiere reinventarse con lo digital
+- **Lenguaje:** "independencia", "tranquilidad", "mis hijos", "reinventarme"
+- **Miedo:** La inversión, no saber de tecnología
+- **Trigger:** IA como igualador + Jesús como guía confiable
+- **Para guiones:** Este es el avatar #1. Cuando decís "ella", pensá en una docente de 48 años de Buenos Aires que gana $900/mes y quiere crear un curso online sobre lo que sabe.
+
+### 🔵 CLUSTER 2: "El Escalador" — Hombre 25-40
+- **Tamaño:** 91 personas (16.2%)
+- **Ingreso promedio:** $1,052/mes
+- **Motivación:** Ya trabaja pero quiere escalar, tiene algo de tech-savviness
+- **Lenguaje:** "generar ingresos", "escalar", "productos digitales"
+- **Para guiones:** Menos emocional, más práctico. Quiere el HOW rápido.
+
+### 🟢 CLUSTER 3: "El Profesional Estancado" — Tiene habilidad, no la monetiza
+- **Tamaño:** 72 personas (12.8%)
+- **Edad promedio:** 49.6 años
+- **Ingreso promedio:** $1,041/mes
+- **Profesiones:** Psicólogos, nutricionistas, diseñadores, fotógrafos, coaches
+- **Motivación:** Saben mucho de su campo pero no saben vender online
+- **Dolor específico:** "Cobro poco por algo que vale mucho" / "Dependo del boca en boca"
+- **Para guiones:** El beat de "tu veterinario sabe más de nutrición canina que el 90% de los ebooks que se venden" le habla DIRECTO a este cluster.
+
+### 🟡 CLUSTER 4: "El Offline" — Emprendedor tradicional quiere digitalizarse
+- **Tamaño:** 164 personas (29.2%)
+- **Ingreso promedio:** $1,069/mes
+- **Motivación:** Tiene negocio físico que no escala, ve lo digital como salida
+- **Dolor específico:** "La venta presencial cayó" / "Mi negocio depende de que yo esté"
+- **Para guiones:** Mostrar que lo digital no reemplaza su negocio — lo complementa.
+
+### 🟣 CLUSTER 5: "El Último Tren" — 55+
+- **Tamaño:** 163 personas (29.0%)
+- **Ingreso promedio:** $959/mes
+- **Género:** Mujer 60% | Hombre 40%
+- **Motivación:** Jubilación insuficiente, última oportunidad de reinventarse
+- **Dolor específico:** "A mi edad" / "Jubilación misérrima"
+- **Para guiones:** La edad NO es barrera — la IA iguala la cancha. "Si este pibe joven pudo, yo con experiencia de vida también."
+
+---
+
+## 12. ANÁLISIS DE MOTIVACIÓN: DOLOR vs ASPIRACIÓN
+
+| Tipo de motivación | % |
+|-------------------|---|
+| Motivados por ASPIRACIÓN (sueño) | 34.7% |
+| AMBOS (dolor + aspiración) | 21.2% |
+| Motivados por DOLOR (urgencia) | 18.0% |
+| Neutro / no clasificable | 26.1% |
+
+**→ La mayoría NO compra desde el dolor puro.** Compra desde la aspiración. "Quiero algo mejor" > "Ya no aguanto más". Los guiones deben abrir con identificación (dolor) pero cerrar con aspiración (sueño), no al revés.
+
+### Relación con la tecnología
+- **Entusiasmados con IA/tech: 72.8%**
+- **Con miedo real a la tecnología: 0.7%**
+
+**→ Esta audiencia NO le tiene miedo a la tech.** Están entusiasmados. El 49.9% compró PORQUE hay IA. El miedo a "no saber de tecnología" es superficial — cuando profundizás, lo que les preocupa es la INVERSIÓN, no la tecnología.
+
+---
+
+## 13. MAPA: CÓMO USAR ESTA DATA EN GUIONES
 
 ### En LEADS (hooks):
-- Usar dolores textuales como apertura: "Trabajo mucho y gano poco" es el dolor #1 verificado
+- Usar dolores textuales como apertura: "Trabajo mucho y gano poco" es universal (55.7%)
+- El trigger #1 es IA (50%): los hooks sobre IA FUNCIONAN con esta audiencia
 - Los triggers de compra son hooks perfectos: "Ya no puedo seguir así"
-- Los miedos pre-compra son objeciones a demoler en el beat 4
 
 ### En BEATS de Identificación:
-- El comprador típico es MUJER, 40-50 años, argentina, gana $500-1000/mes
-- Profesiones comunes: empleada, docente, comerciante, emprendedora
+- El comprador típico es MUJER, 45-54 años, argentina, gana $500-1000/mes
+- Profesiones comunes: comerciante, docente, empleada, profesional de salud
 - Usar las frases de "qué ya no quieren hacer" textualmente
+- Día ideal: "levantarse tranquila, mate, trabajar desde casa unas horas, estar con la familia"
 
 ### En BEATS de Quiebre:
 - "Cobrar por hora tiene un techo" → verificado con compradores reales
-- "Seguir formándome y no aplicar" → dolor real mencionado
-- "Depender del boca en boca" → frustración específica
+- "Seguir formándose y no aplicar" → dolor real mencionado
+- "Depender del boca en boca" → frustración específica del Cluster 3
+- "La venta presencial cayó" → dolor específico del Cluster 4
 
 ### En BEATS de Demolición (objeciones):
-- "No sé de tecnología" → 25% lo menciona como miedo
-- "A mi edad" → 10%, y el 30% de compradores tiene 55+
-- "Que sea estafa" → 30%, pero compraron igual → ¿qué los convenció?
+- Objeción #1 real: "No sé si puedo pagar / si va a valer la pena" (22.8%) ← MÁS IMPORTANTE que "estafa"
+- "A mi edad" → 13%, y el 29% de compradores tiene 55+
+- "Que sea estafa" → solo 8%, pero aparece en los ads como si fuera 30%
+- "No sé de tecnología" → solo 6.9%, y el 73% está ENTUSIASMADO con tech
 
 ### En BEATS de Prueba:
-- "Jesús es auténtico, no vende humo" → factor de confianza #1
-- El taller de $5 como demostración baja-riesgo
-- "Ya compré dos programas y lo seguiré haciendo"
+- "Jesús es auténtico, directo, sin vueltas" → factor de confianza #1 (51.4%)
+- El taller de 3 días como demostración baja-riesgo
+- Claridad en la propuesta (24.4%) → "me mostró exactamente qué se puede hacer"
 
 ### En CTAs:
+- **CTAs de dignidad, no de lujo:**
+  - ❌ "Facturá $10K/mes"
+  - ✅ "Imaginate cerrar el mes sin angustia"
+  - ✅ "Imaginate poder decirle sí a tu hijo cuando te pide algo"
+  - ✅ "Imaginate levantarte sin la presión de salir corriendo"
 - Reforzar: precio accesible, acompañamiento, Jesús como persona real
-- El miedo a "perder la plata" se resuelve con riesgo cero concreto
 - "Si no lo hago hoy, ¿entonces cuándo?" = trigger real
 
 ### NICHOS para ejemplos en guiones:
-- Cocina/Gastronomía (6%), Educación (14%), Salud/Fitness (9%), Diseño/Arte (11%)
+- Educación/Enseñanza (20%), Salud/Fitness (16%), Marketing (14%), Diseño/Arte (12%)
+- Cocina/Gastronomía (7%), Terapia/Psicología (9%)
 - Estos son los nichos que los COMPRADORES MISMOS tienen como talento
 - Usarlos como ejemplo = el espectador se ve reflejado
 
 ---
 
-## 10. HALLAZGOS CLAVE QUE CAMBIAN LA ESTRATEGIA
+## 14. HALLAZGOS CLAVE — V2 (corregidos y ampliados)
 
-1. **El comprador NO es el avatar joven.** El 79% tiene 35+. Martín (26) es minoría. Laura (38), Roberto (58) y Valentina (32) son el core.
+1. **La IA es el trigger de compra #1 (50%) pero NO el contenido #1.** La mitad compró PORQUE hay IA, pero solo el 14.9% consume contenido de IA regularmente. La IA funciona como PERMISO ("ahora sí puedo") y como TRIGGER, pero la audiencia vive en el mundo del desarrollo personal (19.2%).
 
-2. **Las mujeres son mayoría (57%).** Los guiones deberían reflejar esto — más guiones dirigidos a mujeres, no solo a "pibes".
+2. **El miedo a estafa es 8%, no 30%.** V1 sobreestimaba este miedo. El miedo real #1 es la INVERSIÓN (22.8%) — "¿puedo pagarlo?", no "¿será estafa?". Esto cambia cómo se arman los beats de demolición.
 
-3. **Instagram es el canal dominante (57%).** El CTA de Instagram Orgánico es CRÍTICO — es donde están la mayoría de los compradores.
+3. **El 73% está entusiasmado con la tecnología, no asustado.** Solo 0.7% tiene miedo real a la tech. Los beats que dicen "no necesitás saber de tecnología" hablan a un grupo minúsculo. Mejor: "la IA ya hace el trabajo pesado por vos".
 
-4. **"Trabajo mucho y gano poco" es universal.** No es solo de empleados — freelancers, emprendedores, docentes, TODOS lo dicen.
+4. **El comprador NO es el avatar joven.** El 78% tiene 35+. Promedio exacto: 46 años. Martín (26) es minoría. El core es una mujer de 45-54 años.
 
-5. **El taller de $5 es la máquina de conversión.** Múltiples compradores dicen que el taller fue lo que los convenció de entrar a la academia.
+5. **Las mujeres son mayoría (57%) Y son diferentes demográficamente.** Más grandes (47.7 vs 43.9), ganan menos ($931 vs $1,095), dominan el grupo 45-54 (69% mujeres). Los guiones deberían reflejar esto.
 
-6. **La confianza viene de JESÚS como persona**, no del producto. Su autenticidad, claridad y cercanía son el factor #1 de conversión.
+6. **Instagram es el canal dominante (58%).** Facebook crece con la edad (12% en 45-54), YouTube se duplica en 55+ (17%).
 
-7. **"Ya no puedo seguir así" es el trigger universal.** No es ambición — es hartazgo. Los guiones deben arrancar desde el dolor, no desde la promesa.
+7. **"Trabajo mucho y gano poco" es universal** (55.7%). No es solo de empleados — comerciantes, freelancers, docentes, TODOS lo dicen.
 
-8. **El miedo #1 es "que sea estafa".** Esto valida que el riesgo cero en el CTA es ESENCIAL, no decorativo.
+8. **La confianza viene de JESÚS como persona** (51.4%), no del producto. Claridad (24.4%) y transparencia (20.5%) son #2 y #3.
 
-9. **$850/mes de ingreso actual → quieren $3000.** No sueñan con millones. Quieren 3x lo que ganan. Los guiones deben ser realistas con las promesas.
+9. **Los sueños son de dignidad, no de lujo.** $3,000/mes (4x lo actual), no $100K. "Cerrar el mes sin angustia" > "facturar millones". "Comprarle zapatillas a mis hijos" > "comprarme un Rolex".
 
-10. **"Cobrar por hora" es una frustración transversal.** Coaches, docentes, freelancers, profesionales de salud — todos odian el modelo de intercambiar tiempo por dinero. El guion #6 (100 clientes) le habla EXACTAMENTE a este dolor verificado.
+10. **La motivación es más aspiracional (35%) que de dolor (18%).** Los guiones deben abrir con identificación (dolor) pero cerrar con aspiración (sueño), porque la mayoría compra desde el "quiero algo mejor", no desde el "ya no aguanto".
+
+11. **5 clusters claros de buyer persona:** La Reinventada (35%), El Offline (29%), El Último Tren (29%), El Escalador (16%), El Profesional Estancado (13%). Cada uno necesita un ángulo diferente.
+
+12. **"Cobrar por hora tiene un techo" es la frustración más ESPECÍFICA y accionable.** Coaches, docentes, freelancers, profesionales de salud — todos odian el modelo de intercambiar tiempo por dinero. Es el puente perfecto a "productos digitales".
+
+---
+
+## 15. CHANGELOG V1 → V2
+
+| Dato | V1 (marzo 2026) | V2 (abril 2026) | Impacto |
+|------|-----------------|-----------------|---------|
+| Miedo #1 | "Estafa/humo" (≈30%) | Inversión/dinero (22.8%). Estafa = 8%. | Cambiar beats de demolición |
+| Miedo a tech | "25% no sabe de tech" | 6.9% miedo, 72.8% entusiasmado | Dejar de sobrecompensar con "es fácil" |
+| Trigger #1 | "Ya no puedo seguir así" | IA como oportunidad (49.9%) | Más contenido de IA en hooks |
+| Ingreso promedio | $850 estimado | $1,002 promedio, $800 mediana | Más preciso para pricing |
+| Contenido #1 | YouTube (general) | IA/Tecnología (48.4%) | Posicionar ADP en el mundo tech |
+| Buyer personas | No existían | 5 clusters con datos cruzados | Segmentar testimonios y ángulos |
+| Motivación | Asumido "dolor" | 35% aspiración vs 18% dolor | Más esperanza, menos sufrimiento en guiones |
+| Cross-tabs | No existían | Género × edad × ingreso × canal | Focalizar ads por segmento |
+
+---
+
+*V2 — Análisis cuantitativo preciso con Python sobre 562 registros. Cross-tabulations, clusters, y correcciones de estimaciones manuales de V1.*

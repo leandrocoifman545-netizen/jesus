@@ -1,0 +1,284 @@
+{
+  "id": "e881cdeb-c500-48de-b337-2b6f0749f2c8",
+  "briefId": "3e9f3b08-8852-4668-821d-98f5471189aa",
+  "title": "El eterno Bucle — abogada que no puede salir del loop",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.4_comparacion_toxica",
+    "body_type": "qa_conversacional",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "abogacía / asesoría legal / derecho",
+    "model_sale_type": "lean_anti_riesgo",
+    "emotional_arc": "pregunta_tras_pregunta",
+    "transition_text": "El bucle se corta con un paso. No tres cursos más. Un paso. Te muestro cuál.",
+    "total_duration_seconds": 68,
+    "word_count": 172,
+    "punto_entrada_emocional": "frustración por estar estancada acumulando conocimiento sin hacer nada con él",
+    "belief_change": {
+      "old_belief": "Necesito más información, otro curso, otra formación para poder arrancar algo propio",
+      "mechanism": "Formato Q&A que le devuelve sus propias preguntas como espejo — cada pregunta nueva revela que el obstáculo no es falta de info sino el bucle de acumular sin hacer",
+      "new_belief": "No me falta saber más — me sobra lo que sé y me falta un camino de 3 pasos para convertirlo en algo que se venda"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El bucle de acumular formaciones sin hacer nada con ellas tiene nombre y me está pasando a mí",
+        "installed_via": "puente que nombra el patrón 'bucle' con la frase real de los compradores",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "El problema no es lo que me falta — es que sigo acumulando en vez de hacer",
+        "installed_via": "inversión lógica simétrica: 'no necesitás saber todo para empezar, necesitás empezar para saber lo que necesitás'",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Ya sé suficiente — la gente busca exactamente lo que yo doy gratis en asados",
+        "installed_via": "pregunta guiada con datos de búsqueda reales de temas legales",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Puedo probar con 5 dólares antes de crear nada — si no funciona, no perdí",
+        "installed_via": "modelo lean explicado como anti-riesgo directo contra el patrón de 'invertir en otro curso'",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "No me voy a hacer millonaria pero puedo dejar de sentir que acumulo diplomas al pedo",
+        "installed_via": "anti-hype honesto + pregunta final que confronta el bucle",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "negacion_directa",
+        "hypothesis": "la cadena de noes sobre el bucle genera reconocimiento inmediato en acumuladoras de formaciones",
+        "emotional_lever": "reconocimiento",
+        "script_text": "No, otro curso no te va a salvar. No, otra formación tampoco. No, leer 3 libros más de marketing no es lo que te falta. Lo que te falta es usar lo que ya sabés. Y vos sabés de leyes.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la escena de anotarse en otro curso y no terminar genera reconocimiento visceral del bucle",
+        "emotional_lever": "hartazgo",
+        "script_text": "Abrís el mail. Otro curso de marketing digital, 70% off. Te anotás. Son 6 módulos. Terminás 2. El mes que viene aparece otro. También te anotás. ¿Cuántos terminaste enteros? Vos sabés la respuesta.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "hypothesis": "el diálogo interno de la acumuladora de cursos genera reconocimiento inmediato",
+        "emotional_lever": "reconocimiento",
+        "script_text": "\"Voy a hacer un curso de marketing.\" Lo hiciste. \"Ahora necesito uno de redes.\" También. \"Ahora de ventas.\" También. ¿Y el producto? Todavía no. Siempre falta uno más. ¿Te suena?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "la pregunta sobre el costo acumulado de cursos genera shock cuantificable",
+        "emotional_lever": "confrontación",
+        "script_text": "¿Cuánta plata gastaste en cursos que no terminaste? ¿200 dólares? ¿500? ¿Mil? Sumalo. Ahora preguntate: ¿cuánto generaste con todo eso? Si la respuesta es cero, el problema no sos vos. Es el método.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "invertir la lógica de 'necesito aprender más' genera sorpresa y apertura",
+        "emotional_lever": "curiosidad",
+        "script_text": "Las personas que más saben son las que más tardan en arrancar. No porque no puedan. Porque creen que les falta un curso más. Y ese curso de más es justamente lo que las frena.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "pregunta_tras_pregunta",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "El bucle de acumular sin hacer tiene nombre y me está pasando",
+          "viewer_emotion_after": "conexión — 'esto es lo que hago'",
+          "is_turning_point": false,
+          "timing_seconds": 7,
+          "script_text": "Hay un patrón que tiene nombre. Se llama el bucle. Acumulás información, acumulás formaciones, acumulás ideas. Pero no hacés nada con todo eso. Y cada curso nuevo se siente como avanzar. Pero no es avanzar."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No me falta saber más — me sobra lo que sé",
+          "viewer_emotion_after": "sorpresa + incomodidad — 'tiene razón'",
+          "is_turning_point": true,
+          "timing_seconds": 12,
+          "script_text": "No necesitás saber todo para empezar. Necesitás empezar para saber lo que necesitás. Es al revés. Vos ya tenés años de conocimiento en leyes. Herencias, contratos, monotributo. Eso que para vos es obvio, para 27.000 personas que lo buscan en Google todos los meses es un problema sin resolver."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Ya sé suficiente — la gente busca exactamente lo que yo doy gratis",
+          "viewer_emotion_after": "alivio + curiosidad concreta",
+          "is_turning_point": false,
+          "timing_seconds": 16,
+          "script_text": "Te hago una pregunta. ¿Sabés explicar cómo funciona una sucesión? Sí. ¿Sabés qué errores comete la gente con los contratos de alquiler? Sí. ¿Sabés qué tiene que hacer un monotributista para no pasarse de categoría? Sí. Entonces ya tenés el producto. La IA te ayuda a organizarlo. No en 6 meses. En una tarde. Una guía de 23 páginas que responde lo que 27.000 personas buscan todos los meses. A 9 dólares."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo probar con 5 dólares antes de crear nada",
+          "viewer_emotion_after": "resistencia desarmada — 'no tengo excusa'",
+          "is_turning_point": false,
+          "timing_seconds": 13,
+          "script_text": "\"¿Y si no se vende?\" Mirá, te voy a ser honesto. Con 5 dólares en un anuncio sabés si tu idea tiene mercado. Antes de escribir una sola página. Si nadie lo quiere, no perdiste ni tiempo ni plata. Comparalo con lo que gastaste en el último curso que no terminaste."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "No me voy a hacer millonaria pero puedo salir del bucle",
+          "viewer_emotion_after": "confrontación + esperanza",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "No te voy a prometer que te hagas millonaria. Te voy a prometer algo mejor. Que la próxima vez que te den ganas de anotarte en otro curso, te acuerdes de que ya sabés suficiente. Que el bucle se corta haciendo, no estudiando. ¿Me explico? La pregunta es: ¿cuántos cursos más necesitás para darte cuenta?"
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Bajo riesgo, resultado rápido",
+          "viewer_emotion_after": "claridad sobre el modelo",
+          "is_turning_point": false,
+          "timing_seconds": 8,
+          "script_text": "Son 3 cosas. Un producto, un anuncio, y WhatsApp. Lo creás una sola vez y lo vendés infinitas veces. Sin mostrar tu cara, sin dejar de ejercer, sin saber de tecnología."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "Acumulás información, acumulás formaciones, acumulás ideas."
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "cada curso nuevo se siente como avanzar"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "No necesitás saber todo para empezar."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Eso que para vos es obvio"
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "27.000 personas que lo buscan en Google todos los meses"
+      },
+      {
+        "location": "beat_2",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Sabés explicar cómo funciona una sucesión?"
+      },
+      {
+        "location": "beat_2",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Sabés qué errores comete la gente con los contratos de alquiler?"
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "23 páginas"
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "A 9 dólares."
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "te voy a ser honesto"
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "Con 5 dólares en un anuncio"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Comparalo con lo que gastaste en el último curso que no terminaste."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "No te voy a prometer que te hagas millonaria."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "ya sabés suficiente"
+      },
+      {
+        "location": "beat_4",
+        "technique": "pregunta_retórica",
+        "phrase": "¿cuántos cursos más necesitás para darte cuenta?"
+      }
+    ],
+    "ingredients_used": [
+      "B#30",
+      "C#44",
+      "D#53",
+      "F#79"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:22.116Z"
+}

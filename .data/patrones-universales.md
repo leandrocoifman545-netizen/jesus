@@ -207,6 +207,22 @@
 **Aplicación:** Incluir "paso a paso" en CTA o body cuando el video enseña un proceso. No abusar (desgaste).
 **Fuente:** Cross-profile validation @herasmedia, 2026-04-01.
 
+### H-26: Espejo Invertido — Juventud del Creador como Prueba de Piso
+**Descripción:** Cuando el creador es significativamente más JOVEN que la audiencia, en vez de crear distancia, genera el razonamiento "si este pibe sin experiencia de vida pudo, yo con 45 años de calle también puedo". La juventud funciona como prueba de que el MÉTODO es bueno (no la persona), porque elimina la variable de experiencia/contactos/ventajas.
+**Confirmaciones:** Encuesta ADPD 123 compradores: 10+ respuestas mencionan la juventud de Jesús como factor de CONFIANZA. "Me hizo pensar en mis hijos y confío en esta generación." "Si siendo tan joven pudo..." "Es joven pero habla con conocimiento real." Edad promedio del comprador: 43.9 años. Edad de Jesús: ~25.
+**Contradicciones:** Ninguna. Incluso compradores 50+ lo mencionan positivamente.
+**Axioma:** #1 (verificable — la juventud se ve) + #6 (identidad — "si él pudo, yo puedo" = cambio de auto-percepción).
+**Aplicación:** Jesús NO debería disimular su juventud ni sobrecompensar con "credenciales" corporativas. La juventud ES la credencial para esta audiencia. La brecha de edad es un ACTIVO, no un pasivo.
+**Fuente:** Análisis encuesta ADPD 123 compradores, 2026-04-07.
+
+### H-27: Sueños de Dignidad > Sueños de Lujo (audiencia LATAM $500-$1000/mes)
+**Descripción:** En audiencias con ingreso $500-$1000/mes, los sueños aspiracionales de lujo ("Lamborghini", "$10K/mes", "libertad financiera total") generan MENOS conexión que los sueños de dignidad básica ("cerrar el mes sin angustia", "poder decirle sí a mi hijo", "no mirar la cuenta con miedo"). La audiencia no aspira a ser rica — aspira a no sufrir.
+**Confirmaciones:** Encuesta ADPD 123 compradores: 0 menciones de lujo. 40%+ menciona "independencia". Los sueños concretos son: pagar deudas, casa propia, llevar al hijo al colegio, viajar (no lujoso). Frase textual: "RECOBRAR MI DIGNIDAD POR MI SUSTENTO INDEPENDIENTE."
+**Contradicciones:** Pendiente de validar si funciona igual en audiencias con ingreso >$3000/mes.
+**Axioma:** #5 (sentimientos > información — "tranquilidad" es sentimiento, "$10K" es información).
+**Aplicación:** CTAs y promesas deben usar lenguaje de dignidad/tranquilidad, no de riqueza. "Imaginate cerrar el mes tranquila" > "Facturá $10K/mes".
+**Fuente:** Análisis encuesta ADPD 123 compradores, 2026-04-07.
+
 ---
 
 ## INGREDIENTES NUEVOS PROPUESTOS (de Heras)
@@ -319,6 +335,22 @@
 > **Con H-32 (hipernicho del #121), la eliminación de barreras ya no es el hook más fuerte** — el hipernicho ($0.38) supera a la eliminación ($0.99) por 2.6x. Pero ambas son exclusivas del dataset, lo que las hace ventajas competitivas.
 
 ---
+
+### H-35: "Tu Dolor ES Tu Producto" — Espejo de Transformación Personal
+**Descripción:** Cuando la audiencia quiere crear productos para personas COMO ELLOS MISMOS, la transformación personal del comprador se convierte en la materia prima del producto. El dolor vivido es el ÚNICO recurso que no se puede falsear ni competir. "Lo que ya viviste es lo que otros necesitan aprender."
+**Confirmaciones:** Encuesta ADP 562 compradores: 50%+ quiere ayudar personas similares a ellos. Coaches → programas para coaches. Docentes → cursos para docentes. Emprendedoras con negocio offline → guías de digitalización. El target que imaginan para su producto es un ESPEJO de sí mismos.
+**Contradicciones:** Ninguna. Pendiente de validar si se replica en audiencias de otros programas similares.
+**Axioma:** #1 (verificable — viviste el dolor, eso no se inventa) + #6 (identidad — "si ella pasó por lo mismo y ahora vende, yo también puedo").
+**Aplicación ADP:** "Lo que ya viviste — tus 20 años de experiencia, tu frustración, tu reinvención — eso ES tu producto. No tenés que inventar nada. Tenés que EMPAQUETAR lo que ya sabés." Funciona especialmente para el Cluster 3 (profesional estancado) y Cluster 1 (reinventada).
+**Fuente:** Análisis profundo 562 compradores ADP, 2026-04-07.
+
+### H-36: "El Síndrome de la Acumuladora" — Naming para Parálisis por Sobre-Formación
+**Descripción:** Segmento específico (mayoritariamente mujeres 45+) que acumula 4-8 formaciones/certificaciones sin monetizar ninguna. El problema no es falta de habilidad — es falta de FOCO y CANAL. Al darle NOMBRE al patrón, se desculpabiliza ("no es que no puedas") y se rompe el ciclo ("el próximo paso no es otro curso, es ELEGIR UNA cosa y venderla").
+**Confirmaciones:** Encuesta ADP 562 compradores: múltiples perfiles con patrón de acumulación (Valeria: 6 formaciones, Paola: 6 oficios, Daniela: 5 títulos). Cross-referencia con "eterno estudiante" del análisis de 123 compradores.
+**Contradicciones:** Ninguna.
+**Axioma:** H-13 (nombrar lo innombrado) + H-14 (desculpabilizar antes de motivar).
+**Aplicación ADP:** "¿Sabés qué le pasa a muchas? Tienen 5 certificaciones, 3 cursos, 2 diplomas... y siguen ganando lo mismo. No es que no sepan suficiente — es que saben DEMASIADO sin vender NADA. Se llama el síndrome de la acumuladora." Este naming es EXCLUSIVO — ningún competidor lo usa.
+**Fuente:** Análisis profundo 562 compradores ADP, 2026-04-07.
 
 ---
 

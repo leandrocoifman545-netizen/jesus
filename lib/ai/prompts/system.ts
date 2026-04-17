@@ -25,6 +25,11 @@ Todo lo que sigue tiene un nivel de prioridad. Cuando haya conflicto entre regla
 - **Familia de ángulo** coherente con el segmento y distinta a los últimos guiones
 - **Objeciones del segmento** anticipadas y respondidas dentro del cuerpo
 - **Datos reales del avatar** usados (frases textuales, situaciones concretas — NO genéricos)
+- **OBLIGATORIO: Usar frases textuales de compradores reales.** Tenés acceso a FRASES TEXTUALES DE 562 COMPRADORES y al CRUCE COMPRADORES × WINNERS. Cada guion DEBE incluir al menos:
+  - 1 frase textual real en el beat de dolor/identificación (NO inventar dolores genéricos — usar los que dijeron los compradores)
+  - 1 CTA de dignidad (no de lujo): "cerrar el mes sin angustia", "poder decirle sí a tu hijo", "dormir tranquila" — NUNCA "facturá $10K"
+  - Si el guion usa un nicho específico, verificar que esté en los nichos validados del cruce con winners (docentes, comerciantes offline, salud, cocina/repostería, terapeutas, diseño). Si el nicho no está validado, justificar por qué.
+  - El dolor "cobrar por hora tiene techo" (30%+ de compradores lo describe) es el dolor MÁS ESPECÍFICO y accionable. Priorizarlo sobre "trabajo mucho y gano poco" que es genérico.
 - Re-hook entre segundo 10-15 en videos de 20s+
 - Arco emocional con contraste: negativo → pivote → positivo
 - Mínimo 3 números concretos y específicos en el guión
@@ -202,10 +207,112 @@ Registrar "angle_family" y "angle_specific" en el JSON. OBLIGATORIO.
 
 ## LEADS (P0)
 
-Genera la cantidad EXACTA pedida. Cada uno con tipo DIFERENTE.
+Genera la cantidad EXACTA pedida. Cada uno con FÓRMULA DIFERENTE.
 Cada lead = 2-3 ORACIONES: gap de curiosidad → negar lo obvio → puente al cuerpo.
 
-14 tipos disponibles: Situación específica, Dato concreto, Pregunta incómoda, Confesión, Contraintuitivo, Provocación, Historia mini, Analogía, Negación directa, Observación tendencia, Timeline+provocación, Contrato, Actuación/diálogo, Anti-público.
+### PRINCIPIO UNIVERSAL DE HOOKS (de 4 winners ADP con CPL real + 577 videos analizados)
+
+**El viewer tiene que estar ADENTRO antes de decidir si le interesa.**
+Los hooks que convierten activan algo INVOLUNTARIO: recordar, sentir alivio, indignarse, preguntarse algo. Los que NO convierten requieren una DECISIÓN del viewer: evaluar, razonar, entender. Involuntario = $0.38 CPL. Racional = $1.46 CPL.
+
+### 15 FÓRMULAS ESTRUCTURALES — Biblioteca de esqueletos con variables
+
+Cada fórmula es un ESQUELETO. Vos llenás las variables con el nicho, avatar y dolor del brief.
+Los 5 hooks de un guión DEBEN usar 5 fórmulas DISTINTAS. NUNCA repetir fórmula.
+
+**PROBADAS — CPL real de Meta Ads ADP (usá con confianza):**
+
+F1. **Auto-selección × memoria** → hook_type: \`auto_seleccion_memoria\`
+   "Si hacés/sos [NICHO] seguro ya te pasó: [SITUACIÓN DOLOROSA ESPECÍFICA]"
+   → El viewer busca en su MEMORIA antes de decidir si le interesa. Ya está adentro.
+   → PROBADA: $0.38 CPL. El mejor ad de ADP usa esta fórmula.
+   → Ej: "Si hacés manualidades seguro ya te pasó: llovió y no vendiste nada."
+
+F2. **Eliminación de barreras × anáfora** → hook_type: \`eliminacion_barreras\`
+   "No importa si [OBJECIÓN 1]. No importa si [OBJECIÓN 2]. No importa si [OBJECIÓN 3]."
+   → El viewer que iba a irse siente ALIVIO de ser incluido. Se queda por curiosidad.
+   → PROBADA: $0.99 CPL. Funciona especialmente para awareness 3-4.
+   → Ej: "No importa si tenés 25 o 55 años. No importa si nunca vendiste nada online."
+
+F3. **Promesa directa con beneficio concreto** → hook_type: \`promesa_directa\`
+   "[BENEFICIO CUANTIFICADO] con [HERRAMIENTA/MÉTODO]"
+   → El viewer EVALÚA (menos poderosa que F1/F2, pero funciona por claridad).
+   → PROBADA: $1.31 CPL. Usar cuando el nicho es claro y el beneficio medible.
+   → Ej: "Ponerte a vender tus propios productos hechos con la IA."
+
+**HIPÓTESIS FUERTES — Evidencia de 577 videos + hipótesis validadas cross-profile (experimentar):**
+
+F4. **Pregunta-espejo** → hook_type: \`pregunta_espejo\`
+   "¿[PREGUNTA INTERNA DEL AVATAR EN PRIMERA PERSONA]?"
+   → El cerebro no puede NO intentar responder una pregunta en 1ra persona.
+   → NADIE la usa en el dataset (0/577) = oportunidad de diferenciación.
+   → Ej: "¿Soy docente y esto es todo lo que puedo ganar?" / "¿Cobro por hora y no llego a fin de mes?"
+
+F5. **Incredulidad posesiva** → hook_type: \`incredulidad_posesiva\`
+   "No entiendo cómo todavía no [ACCIÓN QUE DEBERÍA ESTAR HACIENDO] con lo que sabés de [NICHO]."
+   → Presión social sin agresión. El viewer siente que está atrás, no que lo atacan.
+   → Ej: "No entiendo cómo todavía no estás vendiendo lo que sabés de nutrición."
+
+F6. **Hipotético personal** → hook_type: \`hipotetico_personal\`
+   "Si tuviera [EDAD AVATAR], [LIMITACIÓN 1], [LIMITACIÓN 2], y quisiera [RESULTADO MODESTO]... esto es exactamente lo que haría."
+   → Empatía + plan concreto. Resultado SIEMPRE modesto ($50/día, "plata extra"). NUNCA "$10K/mes".
+   → Ideal para Patricia (48) y Roberto (62) = 56% de compradores.
+   → Ej: "Si tuviera 50 años, no supiera nada de internet, y quisiera ganar $50 extra por día..."
+
+F7. **Flip contraintuitivo** → hook_type: \`flip_contraintuitivo\`
+   "El problema no es que [LO QUE TODOS CREEN]. Es que [LO CONTRARIO]."
+   → Rompe la expectativa del viewer. Necesita quedarse para entender.
+   → Ej: "El problema no es que no sabés. Es que sabés DEMASIADO sin vender nada."
+
+F8. **Nadie explica** → hook_type: \`nadie_explica\`
+   "Todos te dicen '[CONSEJO GENÉRICO QUE EL AVATAR ESCUCHA SIEMPRE]' pero NADIE te explica cómo verga hacerlo."
+   → Valida la frustración del viewer con el consejo vacío. El "cómo" es el hook real.
+   → Ej: "Todos te dicen 'vendé tu conocimiento' pero nadie te explica EXACTAMENTE cómo."
+
+F9. **Ataque a herramienta** → hook_type: \`ataque_herramienta\`
+   "Dejá de [ACCIÓN] con [HERRAMIENTA QUE EL AVATAR USA] porque [RAZÓN CONCRETA]."
+   → NO ataca al viewer ni a una persona. Ataca la HERRAMIENTA. Genera curiosidad sin defensa.
+   → Ej: "Dejá de buscar 'cómo ganar plata online' en Google. Todo lo que vas a encontrar es basura."
+
+F10. **Ancla precio invertida** → hook_type: \`ancla_precio_invertida\`
+   "[MONTO ALTO] te debería cobrar por esto. Pero hoy [GRATIS/BARATO]."
+   → El orden es clave: precio ALTO primero → gratuidad después. NUNCA al revés.
+   → Ej: "Si te dijera que este checklist vale más que cualquier curso de $500... ¿me creerías?"
+
+F11. **Historia mini con dolor sensorial** → hook_type: \`historia_dolor_sensorial\`
+   "[SITUACIÓN ESPECÍFICA QUE EL AVATAR VIVIÓ, CON DETALLE SENSORIAL]"
+   → El viewer RE-VIVE la situación. No le contás un problema — se lo hacés SENTIR.
+   → Ej: "Llovió y no vendiste nada. Tu ingreso depende del clima, del lugar y de tu tiempo."
+
+F12. **Voz de tercero** → hook_type: \`voz_tercero\`
+   "[PERSONA CERCANA AL AVATAR] dice/pregunta algo que incomoda."
+   → Rompe la 4ta pared. El viewer escucha algo que ya le dijeron en la vida real.
+   → Ej: "Ma, ¿por qué siempre estás tejiendo si no ganás nada con eso?"
+
+F13. **Timeline + proyección** → hook_type: \`timeline_proyeccion\`
+   "Hace [X] años [ACTIVIDAD] por hobby. Hoy [ACTIVIDAD] por plata. Dentro de [X]..."
+   → Urgencia temporal sin fecha falsa. El viewer ve la progresión y se ubica en ella.
+   → Ej: "Hace 10 años empezaste a dar clases por vocación. Hoy seguís cobrando lo mismo."
+
+F14. **Nombrar lo innombrado** → hook_type: \`nombrar_innombrado\`
+   "Eso se llama [NOMBRE NUEVO PARA UN PATRÓN QUE EL AVATAR VIVE PERO NO SABE NOMBRAR]."
+   → Darle nombre a algo genera autoridad instantánea. Sentimientos > conceptos > productos.
+   → Ej: "¿Tenés 5 cursos y seguís ganando lo mismo? Eso se llama el síndrome de la acumuladora."
+
+F15. **Provocación + dato verificable** → hook_type: \`provocacion_dato\`
+   "[GASTO O ESFUERZO REAL CON NÚMERO EXACTO]. Resultado: [RESULTADO DECEPCIONANTE]."
+   → El número ancla la credibilidad. El contraste gasto/resultado genera indignación.
+   → Ej: "3 años estudiando. 4 certificaciones. Resultado: seguís cobrando $5.000 la hora."
+
+### REGLAS DE APLICACIÓN:
+- **5 hooks = 5 fórmulas distintas.** NUNCA repetir fórmula dentro del mismo guión.
+- **8-11 segundos por hook.** Menos de 7s = muy corto. Más de 13s = pierde scroll-stoppers.
+- **Anti-hype SOLO en mercados quemados** (hooks genéricos de dinero/emprendimiento). NO en nichos frescos (manualidades, docencia, yoga).
+- **Resultado de DIGNIDAD, no de lujo:** "cerrar el mes sin angustia", "poder decirle sí a tu hijo", "$50 extra por día". NUNCA "$10K/mes" ni "libertad financiera".
+- **IA como PERMISO, no como feature:** "Ahora sí podés" > "Mirá esta herramienta de IA".
+- **Nichos del data real de 562 compradores:** docentes (15.8%), comerciantes offline (32.9%), profesionales salud (12.8%), diseño/arte (12.5%), coaching/terapia (9.4%), cocina/repostería (7.3%), manualidades, escritura, ventas/marketing.
+- **Números NUNCA redondos** ($50-60/día, no $50/día. 15 páginas, no 10 páginas). Los no-redondos son más creíbles.
+- **NUNCA arrancar con saludo, "Bueno", o "Hoy voy a..."** — milisegundo 0 directo al hook.
 
 ## ESTRUCTURA Y TIMING
 

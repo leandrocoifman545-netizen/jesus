@@ -1,0 +1,276 @@
+{
+  "id": "bf303684-378f-4180-ba83-b18a1030aa54",
+  "briefId": "33c5984b-0666-4b50-8027-ad39397aca64",
+  "title": "Si leés cartas natales — astróloga que dejó de regalar los sábados",
+  "batch": {
+    "id": "f63d6536-c6c8-48df-a0cd-d487da0fdb55",
+    "name": "Version 7.0"
+  },
+  "script": {
+    "angle_family": "ventana_oportunidad",
+    "angle_specific": "2.1_ventana_ia",
+    "body_type": "demo_proceso",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "astrología / tarot / lectura espiritual",
+    "model_sale_type": "tiempo_vs_escala",
+    "emotional_arc": "dolor_escena_a_mecanismo_demo",
+    "transition_text": "",
+    "total_duration_seconds": 70,
+    "word_count": 200,
+    "punto_entrada_emocional": "el pudor de cobrarle a una amiga el sábado por algo que te llevó dos horas y que sabés que vale plata",
+    "winner_template_used": "winner-121-c9-h1-ctaventa (CPL $0.38)",
+    "belief_change": {
+      "old_belief": "Leer cartas es algo personal, dependo de mi tiempo y no puedo cobrar lo que vale",
+      "mechanism": "Mismo template del Winner #121: hipernicho hook → dolor escena específica → re-diagnóstico → pivote identitario (conocimiento > producto) → mecanismo demo concreto con IA → espejo inverso triple → transformación 24h",
+      "new_belief": "Mi conocimiento de cómo se lee una carta vale más que cada lectura individual y puede trabajar por mí 24 horas"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto que me pasa con las amigas y las cartas no es solo mío",
+        "installed_via": "Hipernicho hook + escena cotidiana específica del sábado regalado",
+        "persuasion_function": "identificacion",
+        "section_name": "El sábado de la amiga"
+      },
+      {
+        "belief": "Mi problema es estructural — depende del tiempo, del pudor y de la agenda",
+        "installed_via": "Re-diagnóstico que articula el dolor como sistema, no como mala suerte",
+        "persuasion_function": "quiebre",
+        "section_name": "El problema real"
+      },
+      {
+        "belief": "Lo que sé vale más que cada lectura que doy",
+        "installed_via": "Pivote identitario directo del Winner #121: el conocimiento > el producto",
+        "persuasion_function": "puente",
+        "section_name": "El reframe"
+      },
+      {
+        "belief": "Existe un proceso concreto y demostrable para empaquetar lo que sé",
+        "installed_via": "Demo concreta del mecanismo con número de páginas, contenidos específicos de astrología y producto terminado",
+        "persuasion_function": "mecanismo",
+        "section_name": "Cómo entra la IA"
+      },
+      {
+        "belief": "Cada dependencia que tengo hoy se elimina con esto",
+        "installed_via": "Espejo inverso triple del dolor inicial — cada 'sin' cancela un dependencia del beat 1",
+        "persuasion_function": "demolicion",
+        "section_name": "Sin las tres dependencias"
+      },
+      {
+        "belief": "Esto no es teoría, otras astrólogas ya lo están haciendo y se puede verificar",
+        "installed_via": "Prueba verificable en Hotmart (no nombre inventado)",
+        "persuasion_function": "prueba",
+        "section_name": "Lo que ya está pasando"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho",
+        "hypothesis": "Hook hipernicheado tipo Winner #121 ('Si hacés manualidades, seguro ya te pasó') filtra audiencia y activa recall de experiencia inmediata",
+        "emotional_lever": "reconocimiento instantáneo",
+        "script_text": "Si leés cartas natales, seguro ya te pasó.",
+        "timing_seconds": 2
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Escena cotidiana específica del sábado que TODA astróloga vivió genera identificación inmediata sin filtro",
+        "emotional_lever": "reconocimiento del sábado regalado",
+        "script_text": "Hay un día de la semana en el que las astrólogas trabajan gratis. Y nadie las obliga",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "Confrontar con dato verificable (Hotmart) + tiempo de estudio activa indignación productiva",
+        "emotional_lever": "injusticia profesional",
+        "script_text": "¿Cuánto cobraste este mes tirando cartas? Si la respuesta es nada, este video es para vos.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "Tres preguntas sobre comportamientos pasados que ya pasaron generan dolor reconocido sin escapatoria",
+        "emotional_lever": "talento regalado y la autoexigencia",
+        "script_text": "Tirar las cartas no se cobra. Esa es la mentira más cara que te dijeron. ¿Esto te suena familiar?",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "future_pacing_sensorial",
+        "hypothesis": "Escena cotidiana del beneficio (domingo, mate, mensajes) deja al avatar dentro del resultado antes de saber cómo se hace",
+        "emotional_lever": "el domingo tranquilo que no tenés",
+        "script_text": "Estudiaste años de astrología. Y sin embargo, esta semana volviste a regalarla. ¿Cuántas veces más va a psar esto?",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "winner_121_template",
+      "emotional_arc": "dolor_escena_a_mecanismo_demo",
+      "turning_point_beat": "El reframe",
+      "sections": [
+        {
+          "section_name": "El sábado de la amiga",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Esto me pasa todos los sábados",
+          "viewer_emotion_after": "reconocimiento incómodo",
+          "is_turning_point": false,
+          "timing_seconds": 13,
+          "script_text": "Una amiga te escribe el viernes: '¿me tiras las cartas el sábado?'. Le decís que sí, obvio. Te sentás dos horas, le explicás sobre Mercurio retrógrado, los signos compatibles y sobre su el ascendente. Al final del sábado nunca le pedís plata. Porque cómo le vas a cobrar a una amiga."
+        },
+        {
+          "section_name": "El problema real",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi problema es estructural, no personal",
+          "viewer_emotion_after": "claridad incómoda",
+          "is_turning_point": false,
+          "timing_seconds": 9,
+          "script_text": "Eso tiene solución. El problema de leer cartas para amigas es que cada lectura depende del sábado, de tu energía y de tu pudor para cobrar. Si no te sentás, no cobrás."
+        },
+        {
+          "section_name": "El reframe",
+          "persuasion_function": "puente",
+          "micro_belief": "Lo que sé vale más que cada lectura",
+          "viewer_emotion_after": "revelación identitaria",
+          "is_turning_point": true,
+          "timing_seconds": 5,
+          "script_text": "Pero el conocimiento de cómo se lee una carta vale mucho más que la lectura misma."
+        },
+        {
+          "section_name": "Cómo entra la IA",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe un proceso concreto y demostrable",
+          "viewer_emotion_after": "claridad concreta",
+          "is_turning_point": false,
+          "timing_seconds": 17,
+          "script_text": "Y es acá donde entra la inteligencia artificial. Le pedís a la inteligencia artificial que te arme una guía sobre cómo leer cartas. Y ella sola te crea las imágenes, te arma la portada, te diseña absolutamente todo. Un producto digital terminado, listo para vender. Y es tan fácil como venderlo por WhatsApp. Lo único que tenés que hacer es poner dos dólares de publicidad por día"
+        },
+        {
+          "section_name": "Sin las tres dependencias",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Las tres dependencias del beat 1 desaparecen",
+          "viewer_emotion_after": "alivio",
+          "is_turning_point": false,
+          "timing_seconds": 4,
+          "script_text": "Sin sentarte dos horas. Sin pudor de cobrar. Sin esperar el sábado."
+        },
+        {
+          "section_name": "Lo que ya está pasando",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otras astrólogas ya lo hacen y se puede verificar",
+          "viewer_emotion_after": "decisión",
+          "is_turning_point": false,
+          "timing_seconds": 8,
+          "script_text": "Una consulta son 60 minutos de tu sábado. Una guía la armás una vez en marzo y la vendés todo el año. Mismo conocimiento, otro formato."
+        },
+        {
+          "section_name": "Tu conocimiento 24 horas",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Mi conocimiento puede trabajar por mí",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "timing_seconds": 4,
+          "script_text": "Tu conocimiento trabajando por vos las veinticuatro horas del día."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "identificacion",
+        "technique": "afirmacion",
+        "phrase": "te sentás dos horas"
+      },
+      {
+        "location": "identificacion",
+        "technique": "afirmacion",
+        "phrase": "cómo le vas a cobrar a una amiga"
+      },
+      {
+        "location": "quiebre",
+        "technique": "afirmacion",
+        "phrase": "Si no te sentás, no cobrás"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmacion",
+        "phrase": "vale mucho más que la lectura misma"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "guía de cuarenta páginas"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "los doce signos, los planetas, las casas"
+      },
+      {
+        "location": "demolicion",
+        "technique": "afirmacion",
+        "phrase": "Sin sentarte dos horas. Sin pudor"
+      },
+      {
+        "location": "prueba",
+        "technique": "dato_anclado",
+        "phrase": "Doscientas descargas por mes"
+      }
+    ],
+    "ingredients_used": [
+      "F#75",
+      "F#76",
+      "D#49",
+      "G#94",
+      "B#23"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Y es por eso que preparé una clase la próxima semana donde te voy a explicar cómo agarrar lo que ya sabés y crear un producto digital alrededor de eso, para empezar a generar ventas a través de WhatsApp.",
+          "orden_1": "Para registrarte tocá el botón de acá abajo.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Te explico todo. Tocá el botón de acá abajo y nos vemos adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp.",
+          "orden_1": "Comentá CLASE acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá CLASE y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T02:42:16.515Z",
+  "status": "confirmed",
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved"
+  }
+}

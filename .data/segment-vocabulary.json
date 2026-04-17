@@ -1,5 +1,5 @@
 {
-  "_description": "Vocabulario por segmento extraído de motor-audiencia.md. Usado por save-generation.mjs para validar que el guion usa las palabras del avatar correcto.",
+  "_description": "Vocabulario por segmento. Usado por save-generation.mjs para validar que el guion usa las palabras del avatar correcto. A-D = segmentos viejos (compat con generaciones pre-v2). C1-C5 = clusters v2 de audiencia-unificada.md §5.",
   "A": {
     "label": "Emprendedor frustrado (20-35 años)",
     "must_use": ["ideas", "proyecto", "negocio", "salir de ahí", "avanzar", "estancado", "independencia"],
@@ -23,5 +23,35 @@
     "must_use": ["estafa", "verdad", "enseñar de verdad", "gratis", "sin compromiso", "demostrar"],
     "must_avoid": ["te vas a hacer rico", "promesas grandes", "presión"],
     "phrases": ["me están estafando", "cuando empezará a enseñar de verdad", "el pago es por única vez"]
+  },
+  "C1": {
+    "label": "La Reinventada (mujer 45+, docente/independiente, 35.1% compradores)",
+    "must_use": ["hijos", "tiempo", "casa", "cuidado", "sin descuidar", "reinventarme", "independencia", "tranquilidad"],
+    "must_avoid": ["dejá todo", "metele 4 horas", "riesgo", "hasta un niño puede"],
+    "phrases": ["sin descuidar a mis hijos", "generar ingresos extra", "reinventarme", "tranquilidad", "a mi ritmo"]
+  },
+  "C2": {
+    "label": "El Escalador (hombre 25-40, tech-savvy, 16.2%)",
+    "must_use": ["ideas", "proyecto", "negocio", "salir de ahí", "avanzar", "escalar", "independencia"],
+    "must_avoid": ["jubilarse", "ahorros", "a tu edad"],
+    "phrases": ["quiero escalar", "salir del laburo", "productos digitales", "ingresos extra"]
+  },
+  "C3": {
+    "label": "El Profesional Estancado (49 años, psicólogos/coaches/diseñadores, 12.8%)",
+    "must_use": ["años de experiencia", "pacientes", "clientes", "cobro poco", "boca en boca", "no sé vender", "expertise"],
+    "must_avoid": ["empezar de cero", "fácil", "hasta un niño puede"],
+    "phrases": ["cobro poco por algo que vale mucho", "depender del boca en boca", "sé mucho pero no sé vender", "años de experiencia"]
+  },
+  "C4": {
+    "label": "El Offline (emprendedor tradicional, 29.2%)",
+    "must_use": ["local", "clientes presenciales", "boca en boca", "cayó la venta", "no depender", "negocio físico"],
+    "must_avoid": ["dejá tu negocio", "todo digital", "abandoná"],
+    "phrases": ["la venta presencial cayó", "mi negocio depende de que yo esté", "complementar lo físico", "clientes presenciales"]
+  },
+  "C5": {
+    "label": "El Último Tren (55+, 60% mujer, 29.0%)",
+    "must_use": ["a mi edad", "jubilación", "dignidad", "no me van a contratar", "experiencia de vida", "mi experiencia"],
+    "must_avoid": ["te vas a hacer rico", "promesas grandes", "presión", "hasta usted puede", "condescendencia"],
+    "phrases": ["a mi edad", "jubilación miserable", "recobrar mi dignidad", "experiencia de vida", "última oportunidad"]
   }
 }

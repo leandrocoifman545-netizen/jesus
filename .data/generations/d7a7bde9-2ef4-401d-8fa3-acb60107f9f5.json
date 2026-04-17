@@ -1,0 +1,271 @@
+{
+  "id": "d7a7bde9-2ef4-401d-8fa3-acb60107f9f5",
+  "briefId": "434e82da-430d-4877-9d06-19f887b7dd99",
+  "title": "80 recetas en el cuaderno — la mamá que aprendió sin TACC a fuerza de ensayo y error",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.5_mercado_obligado",
+    "body_type": "comparacion_caminos",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "cocina sin TACC / recetas sin gluten / cocina familiar adaptada a celiaquía",
+    "model_sale_type": "contraste_fisico",
+    "emotional_arc": "dolor_puro_esperanza",
+    "transition_text": "Te cuento el paso a paso en una clase gratis.",
+    "total_duration_seconds": 85,
+    "word_count": 300,
+    "belief_change": {
+      "old_belief": "Lo que aprendí cocinando para mi hijo celíaco es un problema mío personal, no un método que le sirva a otras familias",
+      "mechanism": "Cuando un diagnóstico te obliga a aprender a los golpes, el método que desarrollás es exactamente lo que otras mamás recién diagnosticadas buscan llorando frente a la heladera vacía",
+      "new_belief": "Mis 4 años de ensayo y error son el manual que a mí nadie me dio cuando más lo necesitaba — y eso tiene valor real para otras familias"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Aprendí a los golpes algo que el sistema no te enseña",
+        "installed_via": "escena sensorial de la heladera vacía el día del diagnóstico",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Las 4 hojas fotocopiadas no alcanzan cuando tenés que cocinar todos los días",
+        "installed_via": "dolor puro del diagnóstico y los primeros 6 meses de ensayo",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Las dos opciones físicas no escalan, pero la tercera sí",
+        "installed_via": "comparación directa de 3 caminos de monetización",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Puedo armar un PDF profesional sin aprender cocina de libro",
+        "installed_via": "demo concreta con audio a la IA",
+        "persuasion_function": "demolicion",
+        "section_name": "Demo concreta"
+      },
+      {
+        "belief": "Mi experiencia puede acompañar a otras familias mientras la mía sigue igual",
+        "installed_via": "espejo inverso de lo que ya no pasa",
+        "persuasion_function": "prueba",
+        "section_name": "Espejo inverso"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "negacion_directa",
+        "hypothesis": "la anáfora elimina el auto-descarte '¿quién soy yo para vender esto?'",
+        "emotional_lever": "alivio",
+        "script_text": "No importa si no sos celíaca. No importa si no sos chef ni nutricionista titulada. Si hace años cocinás todas las mañanas para un hijo que no puede comer gluten, tenés un método que miles de mamás recién diagnosticadas están buscando desesperadas.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "historia_mini",
+        "hypothesis": "el caso concreto de la mamá con la nena celíaca genera identificación directa",
+        "emotional_lever": "esperanza",
+        "script_text": "Conocí a una mamá de 44 años. Su nena tiene celiaquía desde los 6. Al principio lloraba en la cocina porque no había nada en el supermercado. 4 años después tenía un cuaderno de 80 recetas propias, probadas en su casa. Una tarde las organizó en un PDF. En 2 meses vendió 310 copias a 9 dólares.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "nombrar los mensajes de WhatsApp gratis activa la injusticia invisible",
+        "emotional_lever": "indignacion",
+        "script_text": "¿A cuántas mamás les respondiste por WhatsApp 'me acaban de diagnosticar al nene con celiaquía, ¿por dónde empiezo?'? Cada mensaje largo que escribiste es un capítulo entero del manual que nadie te pidió que escribieras.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la escena de las 6 y media de la mañana anclada a un gesto cotidiano genera pertenencia",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Son las 6 y media de la mañana. Tu hijo celíaco se levanta para el colegio. Vos ya estás en la cocina armándole la vianda con pan casero sin harina, galletitas de arroz, fruta cortada. Lo hacés todos los días, hace 4 años. En automático. No sabés que ese automatismo es un método entero.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "hypothesis": "desarmar la objeción 'no soy profesional' abre permiso",
+        "emotional_lever": "vulnerabilidad",
+        "script_text": "Yo pensaba que para vender algo en internet había que ser profesional, chef, nutricionista titulada. Después conocí a una mamá que había aprendido a cocinar sin gluten llorando frente a la heladera vacía. Y le enseñaba a otras mamás lo que aprendió a los golpes en su propia casa.",
+        "timing_seconds": 12
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "turning_point_beat": "Mecanismo",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi aprendizaje a los golpes tiene valor que el sistema no paga",
+          "viewer_emotion_after": "dignidad + reconocimiento",
+          "is_turning_point": false,
+          "script_text": "Lo que aprendiste a los golpes, después de tanto tiempo cocinando todas las mañanas para tu hijo celíaco, vale muchísimo más de lo que creés.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Las 4 hojas fotocopiadas no alcanzan",
+          "viewer_emotion_after": "dolor reconocido",
+          "is_turning_point": false,
+          "script_text": "El día que te dieron el diagnóstico, la nutricionista te mandó 4 hojas fotocopiadas con 'alimentos permitidos'. Volviste a tu casa con eso en la cartera. Abriste la heladera. Nada servía. Esa noche lloraste. Los primeros 6 meses fueron de ensayo, error y comida tirada a la basura del supermercado.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La tercera opción es la que no se enferma",
+          "viewer_emotion_after": "claridad + orientación",
+          "is_turning_point": true,
+          "script_text": "Ahora pensá. Tenés tres caminos para hacer plata con eso que aprendiste. Uno: abrir un local sin TACC. 3 millones de inversión, 4 empleados, te endeudás hasta el cuello. Dos: vender viandas a mamás del colegio. Son 5, son 10, y cuando tus hijos se enferman vos también dejás de cobrar. Y la tercera: armar un PDF con tus 80 recetas probadas, la lista de supermercado, y la guía de emergencia cuando el chico se contamina por accidente. Esa tercera no se enferma nunca.",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "Demo concreta",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo armar un PDF profesional en 45 minutos",
+          "viewer_emotion_after": "posibilidad concreta",
+          "is_turning_point": false,
+          "script_text": "Abrís una herramienta de inteligencia artificial. Le contás por voz, como a una amiga que recién arranca: 'Necesito un PDF de 30 páginas con 25 recetas sin TACC fáciles, una lista de supermercado segura, y qué hacer cuando el chico se contamina por accidente'. En 45 minutos lo tenés listo. Lo subís a Hotmart. Lo cobrás a 9 dólares.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Espejo inverso",
+          "persuasion_function": "prueba",
+          "micro_belief": "Mi experiencia ayuda a otras mamás mientras yo cuido a la mía",
+          "viewer_emotion_after": "alivio + propósito",
+          "is_turning_point": false,
+          "script_text": "Sin abrir un local. Sin levantarte a la madrugada a armar viandas para las vecinas. Sin descuidar la rutina del chico que tanto te costó armar. Tus 4 años de cocina trabajando por otras familias mientras vos estás con la tuya en la casa.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Mi oficio de mamá sigue generando ingresos todos los meses",
+          "viewer_emotion_after": "dignidad + tranquilidad",
+          "is_turning_point": false,
+          "script_text": "Y hoy sigue cocinando para el hijo igual que siempre. Pero lo que aprendió a los golpes le entra como ingresos todos los meses. Dejó de pedirle plata a la hermana cuando el mes se ponía difícil.",
+          "timing_seconds": 9
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "no importa si no sos celíaca"
+      },
+      {
+        "location": "hook_4",
+        "technique": "sensorial",
+        "phrase": "son las 6 y media de la mañana"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "abriste la heladera. nada servía. esa noche lloraste"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmacion",
+        "phrase": "esa tercera no se enferma nunca"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmacion",
+        "phrase": "en 45 minutos lo tenés listo"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "mientras vos estás con la tuya en la casa"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case Study Mini"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T09:03:17.217Z",
+  "status": "confirmed"
+}

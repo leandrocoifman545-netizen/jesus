@@ -1,0 +1,250 @@
+{
+  "id": "6c8d92bd-59ef-4e4a-87d0-ac39c2ab3662",
+  "briefId": "17e2441c-6a96-4741-bd97-63d2445faf6e",
+  "title": "Hay un negocio que no estás viendo — reparaciones del hogar para Roberto",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.3_analogia_cotidiana",
+    "body_type": "comparacion_caminos",
+    "segment": "D",
+    "funnel_stage": "MOFU",
+    "niche": "reparaciones del hogar / oficios (amplio)",
+    "model_sale_type": "autoridad_por_origen",
+    "emotional_arc": "dolor_puro_esperanza",
+    "transition_text": "Cómo hacerlo paso a paso te lo muestro en 2 horas. Gratis. Sin humo.",
+    "total_duration_seconds": 75,
+    "word_count": 192,
+    "punto_entrada_emocional": "Orgullo mezclado con frustración: sabe que lo que hizo toda su vida vale, pero siente que el mundo ya no lo necesita",
+    "belief_change": {
+      "old_belief": "Lo que sé es trabajo manual, no sirve para internet",
+      "mechanism": "Los pibes no saben arreglar nada y buscan en Google — la IA empaqueta tu experiencia en una guía vendible",
+      "new_belief": "30 años de oficio son 30 años de conocimiento que se puede vender sin romper el cuerpo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi conocimiento tiene demanda real",
+        "installed_via": "Búsquedas de Google que el viewer puede verificar",
+        "persuasion_function": "quiebre",
+        "section_name": "Camino A vs revelación de demanda"
+      },
+      {
+        "belief": "Puedo empaquetar lo que sé sin saber de tecnología",
+        "installed_via": "Analogía audio de WhatsApp → guía de 23 páginas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Camino B — el proceso"
+      },
+      {
+        "belief": "No necesito nada técnico",
+        "installed_via": "Hablaste. Nada más.",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición de barrera técnica"
+      },
+      {
+        "belief": "Hay gente comprando esto ya",
+        "installed_via": "Buscá en Google y verificalo",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba verificable"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Inmersión en su rutina matutina + revelación del negocio invisible",
+        "emotional_lever": "orgullo_de_oficio",
+        "formula": "F16",
+        "script_text": "Son las 7 de la mañana. Te duele la espalda. Salís a laburar. Y mientras viajás, un pibe de 25 está en Google buscando \"cómo arreglar una canilla\". Lo que vos hacés en 5 minutos, él lleva 2 horas. Hay un negocio que no estás viendo. Y no es ir a arreglarlo vos.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "Anti-hype baja defensas del escéptico y genera curiosidad por lo simple",
+        "emotional_lever": "alivio_defensas",
+        "formula": "F17",
+        "script_text": "Lo que te voy a mostrar no es un negocio mágico. No vas a hacerte millonario. Es bastante aburrido, la verdad. Pero hay gente de más de 50 que genera un ingreso extra todos los meses sin romper el cuerpo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "Disonancia entre saber arreglar y nunca cobrar por explicar",
+        "emotional_lever": "disonancia_cognitiva",
+        "formula": "F20",
+        "script_text": "¿Sabés arreglar cosas en una casa? Seguro que sí. ¿Y alguna vez te pagaron por EXPLICAR cómo se hace? Eso es lo que te quiero contar.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Activar memoria de las llamadas donde resuelve gratis",
+        "emotional_lever": "reconocimiento_valor",
+        "formula": "F1",
+        "script_text": "Si sabés arreglar cosas en una casa, seguro ya te pasó. Te llama tu hijo, tu vecino, tu cuñado — porque algo se rompió. Vos lo resolvés por teléfono en 5 minutos. Esa llamada tiene más valor del que pensás.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Dolor físico vs pibe vendiendo sin esfuerzo genera injusticia productiva",
+        "emotional_lever": "injusticia_productiva",
+        "formula": "F11",
+        "script_text": "Llegás a tu casa reventado. Te duele todo. Y mientras vos pusiste el cuerpo todo el día, un pibe que no sabe ni cambiar una lamparita acaba de vender algo por internet que armó en una tarde. Algo que tiene que ver con lo que vos sabés.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Va a ser honesto conmigo",
+          "viewer_emotion_after": "Atención respetuosa",
+          "is_turning_point": false,
+          "script_text": "Te voy a ser honesto. Hay dos caminos.",
+          "timing_seconds": 4
+        },
+        {
+          "section_name": "Quiebre — Camino A",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Seguir así no tiene futuro",
+          "viewer_emotion_after": "Reconocimiento incómodo",
+          "is_turning_point": false,
+          "script_text": "El primero: seguís como estás. Poniéndole el cuerpo todos los días, cobrando lo mismo que hace 10 años. Con todo lo que sabés adentro de la cabeza sin que nadie lo aproveche.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Mecanismo — Camino B",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo empaquetar lo que sé hablando",
+          "viewer_emotion_after": "Curiosidad esperanzada",
+          "is_turning_point": true,
+          "script_text": "El segundo: agarrás el celular. Le dictás a la IA lo que sabés, como un audio de WhatsApp. \"Mirá, para arreglar una canilla que pierde, lo primero es cortar el agua...\" Le contás los pasos, los errores que comete alguien que nunca lo hizo, los trucos que solo la experiencia te da. La IA agarra eso y te arma una guía de 23 páginas. Y la vendés a todos los pibes que buscan en Google cómo hacer lo que vos hacés dormido.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito nada técnico",
+          "viewer_emotion_after": "Permiso",
+          "is_turning_point": false,
+          "script_text": "No necesitás una computadora. No necesitás saber de internet. Hablaste. Nada más.",
+          "timing_seconds": 4
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "La demanda existe y es verificable",
+          "viewer_emotion_after": "Convicción",
+          "is_turning_point": false,
+          "script_text": "Buscá \"cómo arreglar\" lo que vos sabés en Google. Fijate cuánta gente pregunta. Y fijate quién les responde. Blogs que nunca tocaron una herramienta.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Puedo ganar sin destruir mi cuerpo",
+          "viewer_emotion_after": "Deseo",
+          "is_turning_point": false,
+          "script_text": "Lo armás una vez. Se vende solo. Tu cuerpo descansa mientras tu experiencia sigue trabajando.",
+          "timing_seconds": 5
+        },
+        {
+          "section_name": "Transición",
+          "persuasion_function": "transicion",
+          "micro_belief": "Me va a mostrar cómo sin mentirme",
+          "viewer_emotion_after": "Disposición a actuar",
+          "is_turning_point": false,
+          "script_text": "Cómo hacerlo paso a paso te lo muestro en 2 horas. Gratis. Sin humo.",
+          "timing_seconds": 4
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "identificacion",
+        "phrase": "Lo que vos hacés en 5 minutos, él lleva 2 horas"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion",
+        "phrase": "cobrando lo mismo que hace 10 años"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplificacion",
+        "phrase": "como un audio de WhatsApp"
+      },
+      {
+        "location": "demolicion",
+        "technique": "permiso",
+        "phrase": "Hablaste. Nada más."
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion",
+        "phrase": "Buscá \"cómo arreglar\" lo que vos sabés en Google"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "deseo",
+        "phrase": "Tu cuerpo descansa mientras tu experiencia sigue trabajando"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Autoridad por Origen"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-15T15:10:43.220Z"
+}

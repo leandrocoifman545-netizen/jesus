@@ -1,0 +1,273 @@
+{
+  "id": "7389bd24-0e4a-4d37-817f-cb53eaf09be4",
+  "briefId": "6f66201e-332a-4e1d-9b5e-726f837e5782",
+  "title": "Tu amigo viajó 2 veces y vos seguís igual",
+  "batch": {
+    "id": "76463f63-d717-4f05-aa24-002f4a6abe1c",
+    "name": "Version 4.0"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.4_comparacion_toxica",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "Emprendimiento digital general",
+    "model_sale_type": "matematica_simple",
+    "emotional_arc": "futuro_sensorial",
+    "tension": "T3_comparacion_con_otros",
+    "format_visual": "10_walking_talking",
+    "transition_text": "Ese negocio que tiene tu amigo, ese proyecto que te da independencia — te enseño a armarlo vos también. En 3 días.",
+    "total_duration_seconds": 82,
+    "word_count": 200,
+    "belief_change": {
+      "old_belief": "Mi amigo tiene algo que yo no — talento, suerte, contactos",
+      "mechanism": "La diferencia es UN sistema de 3 pasos, no talento ni suerte",
+      "new_belief": "Si él pudo con lo mismo que tengo yo, yo también puedo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi amigo avanza y yo sigo en el mismo lugar",
+        "installed_via": "C#40 Futuro Negativo Implícito",
+        "persuasion_function": "identificacion",
+        "section_name": "La comparación"
+      },
+      {
+        "belief": "No sabe más que yo — tiene un sistema",
+        "installed_via": "C#39 Contraste con Otros",
+        "persuasion_function": "quiebre",
+        "section_name": "El giro"
+      },
+      {
+        "belief": "Así se siente cuando el negocio funciona",
+        "installed_via": "H#101 Future Pacing Sensorial",
+        "persuasion_function": "mecanismo",
+        "section_name": "El futuro"
+      },
+      {
+        "belief": "$1 en publicidad = $40 por día en ganancia",
+        "installed_via": "E#69 Especificidad Numérica",
+        "persuasion_function": "demolicion",
+        "section_name": "La matemática"
+      },
+      {
+        "belief": "Pibes de 20, mamás de 45, jubilados de 60 lo hicieron",
+        "installed_via": "G#92 Case Study Mini",
+        "persuasion_function": "prueba",
+        "section_name": "La prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar se reconoce en la comparación con su círculo",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Tu amigo arrancó un proyecto online. Ya viajó dos veces. Vos seguís en el mismo lugar. ¿Qué sabe él que vos no? Te lo digo: exactamente lo mismo. Tiene un sistema.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a la confrontación directa con su estancamiento",
+        "emotional_lever": "confrontacion",
+        "script_text": "Mientras vos seguís pensando, otros están haciendo. No son más inteligentes. No tienen más plata. Tienen UN negocio sencillo que les da independencia. Y vos podrías tener el mismo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde a que la diferencia no es talento",
+        "emotional_lever": "curiosidad",
+        "script_text": "La diferencia entre vos y el que ya genera plata online no es talento. No es suerte. No son contactos. Es UN sistema de 3 pasos que se aprende en 3 días.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a la pregunta que evita hacerse",
+        "emotional_lever": "incomodidad",
+        "script_text": "¿Cuántas veces viste a alguien avanzar y pensaste debería estar haciendo algo yo también? Esa idea que tenés en la cabeza se puede convertir en un negocio. En serio.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "timeline_provocacion",
+        "hypothesis": "el avatar responde a la proyección de inacción",
+        "emotional_lever": "urgencia",
+        "script_text": "Dentro de 6 meses vas a seguir viendo cómo otros avanzan. O vas a ser vos el que avanza. La diferencia es una decisión. Y un proyecto que arrancás hoy.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "futuro_sensorial",
+      "turning_point_beat": "mecanismo",
+      "sections": [
+        {
+          "section_name": "La comparación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi amigo avanza y yo no",
+          "viewer_emotion_after": "incomodidad + envidia sana",
+          "is_turning_point": false,
+          "script_text": "Tu amigo arrancó un negocio online hace 6 meses. Ya viajó a Cancún. Se compró zapatillas nuevas. Vos seguís abriendo Instagram desde el mismo sillón. Pensando que deberías estar haciendo algo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "El giro",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No sabe más, tiene un sistema",
+          "viewer_emotion_after": "sorpresa + esperanza",
+          "is_turning_point": false,
+          "script_text": "Y mirá, tu amigo no es más inteligente que vos. No nació con plata. No tiene un título en negocios. Tiene UN sistema de 3 pasos. Investigar qué se vende, crearlo con IA, y venderlo por WhatsApp. Eso es todo.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "El futuro",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Así se siente cuando funciona",
+          "viewer_emotion_after": "deseo visceral",
+          "is_turning_point": true,
+          "script_text": "Imaginá esto. Te despertás. Agarrás el celular. 3 notificaciones de venta mientras dormías. 47 dólares. Sin haber hecho nada ese día. Porque tu producto se vende solo. Eso es un martes normal para el que ya lo hizo.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "La matemática",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Los números cierran",
+          "viewer_emotion_after": "lógica + convicción",
+          "is_turning_point": false,
+          "script_text": "Invertís 1 dólar en publicidad. Te llegan 10 mensajes. De 10, vendés a 2. Tu producto vale 20 dólares. Son 40 dólares por día. Hacé la cuenta. En un mes son 1.200.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "La prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente muy diferente lo logró",
+          "viewer_emotion_after": "normalización",
+          "is_turning_point": false,
+          "script_text": "Lo hizo un pibe de 24 en Quilmes. Armó un kit de ejercicios para runners con IA. Vende 3 por día a 12 dólares. Arrancó hace 4 meses con datos prepagos.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta",
+          "micro_belief": "Son números reales, no promesas",
+          "viewer_emotion_after": "decisión",
+          "is_turning_point": false,
+          "script_text": "No te hablo de hacerte millonario. Te hablo de 40, 50 dólares por día extra. Plata que no depende de cuántas horas trabajés. Esa es la diferencia.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Tu amigo arrancó un proyecto online. Ya viajó dos veces."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Pensando que deberías estar haciendo algo."
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "Investigar qué se vende, crearlo con IA, y venderlo por WhatsApp. Eso es todo."
+      },
+      {
+        "location": "beat_3",
+        "technique": "future_pacing",
+        "phrase": "3 notificaciones de venta mientras dormías. 47 dólares."
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "De 10, vendés a 2. Tu producto vale 20 dólares. Son 40 dólares por día."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Arrancó hace 4 meses con datos prepagos."
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "Plata que no depende de cuántas horas trabajés."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "C",
+        "ingredient_number": 40,
+        "ingredient_name": "Futuro Negativo Implícito"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 39,
+        "ingredient_name": "Contraste con Otros"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "Especificidad Numérica"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case Study Mini"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "D",
+        "variant_name": "Exclusión",
+        "layers": {
+          "oferta": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas.",
+          "prueba": "17 mil personas en toda Latinoamérica y España ya lo hicieron.",
+          "riesgo_cero": "Gratis. Sin compromiso.",
+          "urgencia": "Los cupos se llenan y no se repite hasta la semana que viene.",
+          "cierre": "Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+        },
+        "text": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas. 17 mil personas en toda Latinoamérica y España ya lo hicieron. Gratis. Sin compromiso. Los cupos se llenan y no se repite hasta la semana que viene. Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "variant_name": "Emocional + Honestidad",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "cierre": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "variant_name": "Doble Intención",
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "orden_1": "Comentá \"NICHO\" acá abajo y te lo mando por DM.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "cierre": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá \"NICHO\" acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-04-07T15:28:03.922Z"
+}

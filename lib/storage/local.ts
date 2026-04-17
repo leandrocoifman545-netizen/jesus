@@ -575,15 +575,19 @@ export async function getBrief(id: string): Promise<StoredBrief | null> {
 }
 
 export async function listGenerations(): Promise<StoredGeneration[]> {
-  return listItemsFromDir<StoredGeneration>(GENERATIONS_DIR, "generations:list", normalizeGeneration);
+  const all = await listItemsFromDir<StoredGeneration>(GENERATIONS_DIR, "generations:list", normalizeGeneration);
+  // Filter out malformed entries (e.g. longform content) that lack a script field
+  return all.filter((g) => g.script);
 }
 
 /** Returns prev/next generation IDs (sorted by createdAt desc, same as dashboard). */
-export async function getGenerationNeighbors(id: string, batchId?: string): Promise<{ prev: { id: string; title: string } | null; next: { id: string; title: string } | null }> {
+export async function getGenerationNeighbors(id: string, batchId?: string, projectId?: string): Promise<{ prev: { id: string; title: string } | null; next: { id: string; title: string } | null }> {
   let all = await listGenerations();
-  // Filter by batch if provided
+  // Filter by batch or project if provided
   if (batchId) {
     all = all.filter((g) => g.batch?.id === batchId);
+  } else if (projectId) {
+    all = all.filter((g) => g.projectId === projectId);
   }
   // Sort newest first (same order as dashboard)
   all.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());

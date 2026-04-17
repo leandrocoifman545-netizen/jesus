@@ -1,0 +1,270 @@
+{
+  "id": "69f0aeb4-84de-4972-99c0-f9686993d5fb",
+  "briefId": "d0f1d14f-c19e-4671-9dbb-2852a77e4148",
+  "title": "Tu ojo vale más como archivo que como sesión — fotógrafa invisible",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_nicho_invisible",
+    "body_type": "demolicion_mito",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "fotografía / edición / presets",
+    "model_sale_type": "transparencia_total",
+    "emotional_arc": "revelacion_oportunidad",
+    "transition_text": "Tu ojo vale más que una sesión a la vez. Te muestro cómo ponerlo en un archivo que se vende solo.",
+    "total_duration_seconds": 63,
+    "word_count": 162,
+    "belief_change": {
+      "old_belief": "Para vender necesito seguidores, marca personal y presencia online",
+      "mechanism": "Analogía del recetario: tu ojo de fotógrafa en un preset es como la receta de un chef en un libro — no cocinás para cada lector",
+      "new_belief": "No soy fotógrafa invisible — soy artista con un ojo que se puede descargar"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi talento es real pero estoy atrapada editando álbumes a las 2am",
+        "installed_via": "escena sensorial de la noche editando + dependencia del teléfono",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "No necesito seguidores — mi ojo vale más como archivo que como sesión",
+        "installed_via": "demolición del mito de los seguidores + pivote de identidad",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Mi preset es como un recetario — trabaja sin que yo esté",
+        "installed_via": "analogía chef→recetario aplicada a presets + producto concreto de 17 presets",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "La gente no me busca a mí — busca lo que mi ojo sabe hacer",
+        "installed_via": "dato de 9.000 búsquedas de presets de retrato",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Otros fotógrafos con menos talento ya lo están haciendo",
+        "installed_via": "verificable en Etsy + pregunta final '¿vos cuándo?'",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "hypothesis": "el anti-testimonio + la intriga sobre qué pasó genera curiosidad sin spoilear",
+        "emotional_lever": "curiosidad",
+        "script_text": "No te voy a mostrar a alguien que factura 50 mil dólares desde la playa. Te voy a contar qué le pasó a una fotógrafa de 44 años cuando dejó de esperar que la llamen.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "el contraste entre admiración y pago genera indignación productiva",
+        "emotional_lever": "confrontación",
+        "script_text": "Sacás fotos que la gente admira. Te dicen 'qué talento'. Y a las 2 de la mañana estás editando un álbum de bodas por $200. Tu ojo vale más que eso. Mucho más.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "anti_publico",
+        "hypothesis": "la exclusión inversa genera auto-selección en fotógrafas sin audiencia",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Este video NO es para fotógrafos con 50 mil seguidores y agenda llena. Es para la fotógrafa que sabe que es buena pero depende de que alguien la recomiende. Si sos esa, escuchame 60 segundos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "describir el momento exacto de frustración con clientes genera reconocimiento visceral",
+        "emotional_lever": "hartazgo",
+        "script_text": "Tu último cliente te pidió descuento. El anterior canceló el día de la sesión. El de la semana pasada todavía no te pagó. Si sos fotógrafa, esto es tu martes normal. Hay otra forma de usar lo que sabés.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "dato_concreto",
+        "hypothesis": "ver la demanda real de algo que ella ya sabe hacer genera sensación de oportunidad perdida",
+        "emotional_lever": "oportunidad",
+        "script_text": "'Presets de Lightroom' tiene 40.000 búsquedas por mes en Google. La mayoría de los que los venden no sacan fotos tan buenas como vos. Pero ellos empaquetaron lo que saben. Vos seguís editando álbumes a las 2 de la mañana.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "revelacion_oportunidad",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi talento es real pero estoy atrapada editando álbumes a las 2am",
+          "viewer_emotion_after": "reconocimiento visceral + frustración",
+          "is_turning_point": false,
+          "timing_seconds": 13,
+          "script_text": "Son las 2 de la mañana. Estás frente a la computadora editando un álbum de bodas. La pareja lo quiere para el viernes. Llevás 6 horas. Cobraste $200. Mañana tenés otra sesión a las 8. Y si te cancela, perdiste el día. Tu ojo es increíble. Tu negocio depende de que suene el teléfono."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No necesito seguidores — mi ojo vale más como archivo que como sesión",
+          "viewer_emotion_after": "sorpresa + cambio de identidad",
+          "is_turning_point": true,
+          "timing_seconds": 13,
+          "script_text": "Pensás que para ganar más necesitás más seguidores, más sesiones, más clientes. Eso es un mito. Tu ojo — esas correcciones de color que hacés durmiendo, esos tonos que solo vos lográs — vale más como archivo que como servicio. No sos una fotógrafa invisible. Sos una artista con un ojo que se puede descargar."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi preset es como un recetario — trabaja sin que yo esté",
+          "viewer_emotion_after": "alivio + curiosidad concreta",
+          "is_turning_point": false,
+          "timing_seconds": 15,
+          "script_text": "Es como un chef que escribe un recetario. No tiene que cocinar para cada persona que lo lee. Vos tenés presets — los que ajustaste en 8 años de editar fotos. Tus tonos, tus contrastes, tus colores. Con la IA los organizás en un pack de 17 presets con una guía de uso y ejemplos del antes y después. Los ponés a $12 en Etsy. Y cada fotógrafo que busca 'presets de retrato cálido' los puede comprar. Sin que edites una sola foto."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "La gente no me busca a mí — busca lo que mi ojo sabe hacer",
+          "viewer_emotion_after": "resistencia desarmada",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "\"Pero yo no tengo marca ni seguidores.\" No los necesitás. 'Presets de Lightroom para retrato' tiene 9.000 búsquedas por mes. La gente no te busca a VOS. Busca lo que tu ojo sabe hacer. Si tu producto aparece, te lo compran sin saber tu nombre."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otros fotógrafos con menos talento ya lo están haciendo",
+          "viewer_emotion_after": "urgencia + esperanza",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Entrá a Etsy y buscá 'Lightroom presets'. Vas a ver packs de fotógrafos como vos. Con reviews, con miles de descargas. La diferencia entre ellos y vos no es el talento. Es que ellos pusieron su ojo en un archivo. ¿Vos cuándo vas a poner el tuyo?"
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Son las 2 de la mañana. Estás frente a la computadora."
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "Cobraste $200."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Tu ojo es increíble. Tu negocio depende de que suene el teléfono."
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "esas correcciones de color que hacés durmiendo"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "esos tonos que solo vos lográs"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "Sos una artista con un ojo que se puede descargar."
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "No tiene que cocinar para cada persona que lo lee."
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "17 presets"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Sin que edites una sola foto."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "La gente no te busca a VOS."
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "9.000 búsquedas por mes"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "te lo compran sin saber tu nombre"
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "La diferencia entre ellos y vos no es el talento."
+      },
+      {
+        "location": "beat_5",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Vos cuándo vas a poner el tuyo?"
+      }
+    ],
+    "ingredients_used": [
+      "B#31",
+      "D#49",
+      "F#82",
+      "E#63",
+      "G#92"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:53.758Z"
+}

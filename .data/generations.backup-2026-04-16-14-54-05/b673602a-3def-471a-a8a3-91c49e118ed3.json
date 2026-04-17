@@ -1,0 +1,263 @@
+{
+  "id": "b673602a-3def-471a-a8a3-91c49e118ed3",
+  "briefId": "abaa6a16-2863-4ae4-8643-750d0b924e6f",
+  "title": "Experiencia jubilada 40 años",
+  "batch": "plan-3-2026-04-15",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.4_jubilado_experiencia_como_producto",
+    "body_type": "qa_conversacional",
+    "segment": "C5",
+    "funnel_stage": "TOFU",
+    "niche": "administrativa / contadora jubilada con 30-40 años de oficina",
+    "model_sale_type": "autoridad_por_origen",
+    "rhythm_template": "R3",
+    "transition_text": "Si querés, te muestro exactamente cómo lo armás. Literal, paso a paso, con tu experiencia.",
+    "total_duration_seconds": 82,
+    "word_count": 220,
+    "punto_entrada_emocional": "Me subestiman porque soy grande. Pero sé cosas que ellos tardan 20 años en aprender.",
+    "belief_change": {
+      "old_belief": "Ya me jubilé. Mi conocimiento no sirve más.",
+      "mechanism": "Tu experiencia de 30-40 años de oficina empaquetada con IA es un producto digital que una administrativa joven paga por tener.",
+      "new_belief": "Mi experiencia es el producto. Lo único que me faltaba era el canal."
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi bronca es validación, no envidia",
+        "installed_via": "puente reconoce tensión con detalle concreto",
+        "persuasion_function": "identificacion",
+        "section_name": "puente"
+      },
+      {
+        "belief": "La edad no decide, el conocimiento sí",
+        "installed_via": "reframe de identidad",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "Mi Excel de 30 años vale 27 dólares",
+        "installed_via": "analogía planilla a PDF",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Alguien muy específico me quiere comprar",
+        "installed_via": "pintar comprador real",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Cobrar por lo que ya sabés es el atajo",
+        "installed_via": "historia Jesús 100 clientes con ancla emocional",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "F4 — la avatar escucha su propia pregunta",
+        "emotional_lever": "auto_identificacion",
+        "script_text": "Tengo 60 años, 40 de oficina, y sé hacer cosas que los pibes de 25 tardan una década en aprender. ¿Por qué pensás que no puedo venderlas?",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "desculpabilizacion",
+        "hypothesis": "F18 — sacar culpa externalizando causa",
+        "emotional_lever": "alivio",
+        "script_text": "Si sentís que a esta altura ya no hay nada nuevo para vos, no es culpa tuya. Nadie te mostró esto pensando en alguien que pasó 30 años en una oficina.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "F1 — auto-selección + memoria Excel concreta",
+        "emotional_lever": "memoria_concreta",
+        "script_text": "Si sabés armar una planilla de Excel con fórmulas en 20 minutos, ya hiciste la parte difícil. Lo único que nunca te enseñaron es el canal.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "voz_tercero",
+        "hypothesis": "F12 — interlocutor real hijo",
+        "emotional_lever": "dinamica_familiar",
+        "script_text": "Tu hijo te dice: 'ma, ¿por qué no vendés algo por internet?'. Y vos lo mirás y pensás: a mi edad, ¿quién me va a comprar a mí?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "sensorial",
+        "hypothesis": "F16 — inmersión 2da persona escena cotidiana",
+        "emotional_lever": "simulacion_escena",
+        "script_text": "Son las 10 de la mañana. Prendés la pava, agarrás el celular, mirás Instagram. Ves a una pibita de 23 que vende un curso de Excel y pensás: yo eso lo hago con los ojos cerrados hace 40 años.",
+        "timing_seconds": 13
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "Validacion (tu bronca tiene razon) -> Reframe (no es la edad, es el canal) -> Mecanismo concreto (planilla a PDF) -> Demolicion objecion (quien me compra) -> Autoridad Jesus (100 clientes dormir en el piso)",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "mi bronca es validacion",
+          "viewer_emotion_after": "escuchado",
+          "is_turning_point": false,
+          "script_text": "Esa bronca que sentís cuando ves a la pibita de 23 vender un curso de 27 dólares no es envidia. Es que tenés razón. Vos sabés más. Lo único que no tenés es el cómo.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "la edad no decide, el conocimiento si",
+          "viewer_emotion_after": "reencuadrado",
+          "is_turning_point": true,
+          "script_text": "La plata no la hace la edad. La hace el conocimiento que alguien necesita y nadie le explica bien. Vos tenés 40 años de eso. Lo que te sobra es experiencia. Lo que te falta es un canal.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "mi Excel vale 27 dolares",
+          "viewer_emotion_after": "visualiza producto",
+          "is_turning_point": false,
+          "script_text": "Agarrás esas planillas que armaste en 30 años. Esa forma tuya de ordenar facturas que tus compañeras te copiaban. Se la contás a la IA hablando como ahora. Y en una tarde tenés un PDF de 47 páginas, con plantillas, que una administrativa de 24 años paga 27 dólares por tener armado.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "la pibita de 24 me compra",
+          "viewer_emotion_after": "comprador real visualizado",
+          "is_turning_point": false,
+          "script_text": "¿Quién te va a comprar? Justamente la pibita de 24 que recién empezó en su primer laburo. La que no tiene a quién preguntarle. La que paga 27 dólares con tal de no preguntarle al jefe.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "cobrar por lo que ya sabes es el atajo",
+          "viewer_emotion_after": "permiso para actuar",
+          "is_turning_point": false,
+          "script_text": "Yo empecé a los 18 con 100 clientes. 10 horas por día y dormía en el piso de una pieza al lado de un baño sin puerta. Después entendí algo: no es cuánto trabajás. Es qué cobrás por lo que ya sabés.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "empaquetar saber = producto digital",
+          "viewer_emotion_after": "modelo validado",
+          "is_turning_point": false,
+          "script_text": "Me fui con 100 clientes y volví con uno que me pagaba por 100. Porque aprendí a empaquetar lo que ya sabía. Eso es un producto digital.",
+          "timing_seconds": 9
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "validacion_emocion",
+        "phrase": "Es que tenés razón"
+      },
+      {
+        "location": "puente",
+        "technique": "reconocimiento_saber",
+        "phrase": "Vos sabés más"
+      },
+      {
+        "location": "puente",
+        "technique": "localizar_problema",
+        "phrase": "Lo único que no tenés es el cómo"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validar_experiencia",
+        "phrase": "Vos tenés 40 años de eso"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "reconocer_autoridad_interna",
+        "phrase": "Esa forma tuya de ordenar facturas que tus compañeras te copiaban"
+      },
+      {
+        "location": "demolicion",
+        "technique": "proyectar_comprador",
+        "phrase": "La que no tiene a quién preguntarle"
+      },
+      {
+        "location": "prueba",
+        "technique": "alivio_esfuerzo",
+        "phrase": "No es cuánto trabajás"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 32,
+        "ingredient_name": "Pregunta-Espejo del Avatar"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 55,
+        "ingredient_name": "Reframe de Identidad"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "New Opportunity"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metafora del Mecanismo"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 78,
+        "ingredient_name": "Velocidad como Prueba"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Autoridad por Origen"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-15T20:19:28.743Z"
+}

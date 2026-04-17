@@ -1,0 +1,199 @@
+{
+  "id": "aa1beee2-a1f4-48d2-91eb-80605f8add44",
+  "briefId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "planId": "c2f0cecf-2503-4fb0-91ef-c644d34325e6",
+  "title": "Mi novia dice que es una estafa",
+  "contentType": "shortform",
+  "script": {
+    "angle_family": "5",
+    "angle_specific": "F5-5.4 Diálogo",
+    "body_type": "conversacion_experto_novato",
+    "segment": "C",
+    "funnel_stage": "MOFU",
+    "niche": "Presión social — novia escéptica",
+    "model_sale_type": "contraste_negocio_fisico",
+    "visual_format": "split_screen_dialogo",
+    "avatar": "martin",
+    "awareness_level": 3,
+    "emotional_arc": "secreto_prueba_celebracion",
+    "tension": "T7",
+    "transition_text": "",
+    "total_duration_seconds": 65,
+    "word_count": 280,
+    "belief_change": {
+      "old_belief": "Mi novia tiene razón, esto es otra estafa más",
+      "mechanism": "Diálogo experto/novato — prueba por demo/math, sin screenshots de clientes",
+      "new_belief": "Puedo probarlo en secreto por $5 y cuando funcione, los números hablan"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi novia tiene razón porque ya perdimos plata",
+        "installed_via": "Contraste: emprendimiento de ropa online $8000 vs producto digital $5",
+        "persuasion_function": "identificacion",
+        "section_name": "El local vs el celular"
+      },
+      {
+        "belief": "No me animo a decirle",
+        "installed_via": "Muchos empezaron a escondidas — screenshot de tipo que vendió sin contar",
+        "persuasion_function": "quiebre",
+        "section_name": "A escondidas"
+      },
+      {
+        "belief": "Voy a tardar mucho en ver resultados",
+        "installed_via": "3-7 días para primera venta",
+        "persuasion_function": "mecanismo",
+        "section_name": "La primera venta"
+      },
+      {
+        "belief": "No quiero mostrar la cara ni que nadie sepa",
+        "installed_via": "Todo por WhatsApp, sin cara, sin que nadie sepa",
+        "persuasion_function": "demolicion",
+        "section_name": "Sin que nadie sepa"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: (hablando normal) Sí si, estoy viendo empezar a emprender...\n\nVOZ DE FONDO (novia): ¡¿Otra vez con eso?!\n\nPERSONA A: (baja la voz, al teléfono) ...esperá, esperá. (bajito) Dale, contame rápido.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "JESÚS: Este pibe me llamó un martes a las 5am hablando bajito. Le pregunté por qué susurraba. ¿Sabés qué me dijo?\n\n(corte a la llamada)\n\nPERSONA A: (bajito) Porque mi novia está al lado y si se entera que estoy viendo esto me mata.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: (bajito) Che, una pregunta rápida. ¿Cuánta plata necesito para arrancar?\n\nJESÚS: 5 dólares.\n\nPERSONA A: ¿5 dólares?\n\nJESÚS: ¿Por qué hablás tan bajo?\n\nPERSONA A: ...no importa. Seguí.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: (bajito, rápido) ¿Es verdad que se puede ganar plata sin que nadie sepa que lo estás haciendo? Sin mostrar la cara, sin nada.\n\nJESÚS: Sí. ¿Estás bien? ¿Por qué hablás así?\n\nPERSONA A: Sí sí, estoy bien. Contame cómo funciona.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: Necesito que me expliques cómo funciona esto pero tengo poco tiem—\n\nVOZ DE FONDO (novia): ¿Con quién hablás?\n\nPERSONA A: ¡Con nadie, amor! (bajito, al teléfono) Dale, arrancá.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 6,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "PERSONA A: (bajito pero emocionado, como conteniendo un grito) Loco. Funcionó. Me llegó un mensaje de alguien que quiere comprar.\n\nJESÚS: ¿Ves? ¿Le contaste a tu novia?\n\nPERSONA A: ¿Estás loco? Todavía no. Primero quiero que sea más.\n\nJESÚS: ¿Cómo arrancó todo esto? Contale a la gente.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "conversacion_victor_eraso",
+      "emotional_arc": "secreto_prueba_celebracion",
+      "sections": [
+        {
+          "section_name": "El local vs el celular",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi novia tiene razón porque ya perdimos plata",
+          "script_text": "PERSONA A: (bajito) Es que mi novia puso un emprendimiento de ropa online hace 3 años. Invirtió 8 mil dólares. Cerró en 8 meses.\n\nJESÚS: ¿$8000?\n\nPERSONA A: $8000 y perdió todo. Por eso no quiere que yo meta plata en nada.\n\nJESÚS: Escuchame. Esto cuesta $5. No $8000. Y no necesitás local, stock, empleados ni permisos.\n\nPERSONA A: $5 contra $8000...\n\nJESÚS: Si no funciona, perdiste un café. Si funciona, tu novia te pide perdón.\n\nPERSONA A: (se ríe bajito) Eso me gustaría...",
+          "timing_seconds": 15,
+          "ipad_directions": [
+            "OVERLAY: \"LOCAL DE ROPA: $8,000 inversión → cerró en 8 meses\" vs \"PRODUCTO DIGITAL: $5 inversión → sin techo\""
+          ]
+        },
+        {
+          "section_name": "A escondidas",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No me animo a decirle",
+          "script_text": "PERSONA A: Pero no me animo a decirle. ¿Y si lo hago solo a escondidas?\n\nJESÚS: Muchos empezaron así. A escondidas. De noche. Con la computadora.\n\nPERSONA A: ¿En serio?\n\nJESÚS: Te mando una captura.\n\nPERSONA A: ...¿\"mi novia me pidió que le enseñe\"?\n\nJESÚS: Cuando ven los números, cambian de opinión. Siempre.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "OVERLAY: Screenshot WhatsApp — \"Empecé sin decirle a nadie. Ayer vendí $30. Hoy se lo conté a mi novia. Me pidió que le enseñe.\" + emoji"
+          ]
+        },
+        {
+          "section_name": "La primera venta",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Voy a tardar mucho en ver resultados",
+          "script_text": "PERSONA A: ¿Y cuánto tardo en hacer la primera venta?\n\nJESÚS: Si seguís el proceso, entre 3 y 7 días.\n\nPERSONA A: ¿Una semana?\n\nJESÚS: Una semana. Y esa primera venta — aunque sea de $10 — te cambia la cabeza.\n\nPERSONA A: ¿Por qué?\n\nJESÚS: Porque es la prueba de que no estás loco. De que tenías razón. Y tu novia lo va a ver en los números.\n\nPERSONA A: (emocionado) ...eso es exactamente lo que quiero.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "OVERLAY: Texto — \"Tu primera venta = la prueba de que no estás loco\""
+          ]
+        },
+        {
+          "section_name": "Sin que nadie sepa",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No quiero mostrar la cara ni que nadie sepa",
+          "script_text": "JESÚS: Y lo mejor: no necesitás mostrar la cara. No necesitás que nadie sepa. Todo por WhatsApp. Tu novia se entera cuando VOS quieras.\n\nPERSONA A: ¿No muestro la cara?\n\nJESÚS: No. Mucha gente vende sin que nadie de su vida real sepa. Hasta que deciden contarlo.",
+          "timing_seconds": 8,
+          "ipad_directions": []
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 35,
+        "ingredient_name": "Dolor Económico Concreto"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Antes/Después"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe de Creencia"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estratégica"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Persona Improbable"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "actuado",
+        "timing_seconds": 20,
+        "text": "PERSONA A: Bueno... ¿y cómo arranco sin que se note en la tarjeta?\n\nJESÚS: Hay una clase gratis. 2 horas. Te muestro todo el proceso.\n\nPERSONA A: ¿Gratis? ¿Posta gratis?\n\nJESÚS: Posta. Cero pesos. Si no te sirve, no perdiste nada.\n\nPERSONA A: ¿Y ahí aprendo a armar el producto y todo?\n\nJESÚS: Todo. Desde encontrar qué vender hasta poner el anuncio. Pero es en vivo, conmigo, y los cupos son limitados.\n\nPERSONA A: Dale dale, ¿dónde me anoto?\n\nJESÚS: Tocá el botón de acá abajo. Registrate.\n\nPERSONA A: Ya lo hago. (bajito) Si mi novia pregunta, le digo que era un sorteo.\n\nJESÚS: (se ríe) Nos vemos adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "actuado",
+        "timing_seconds": 20,
+        "text": "PERSONA A: ¿Y cuánto me sale aprender todo esto?\n\nJESÚS: 5 dólares.\n\nPERSONA A: ¿Cinco dólares? ¿Qué hay adentro?\n\nJESÚS: 3 días conmigo. En vivo. Día 1 encontrás tu producto con la IA. Día 2 lo armás completo. Día 3 lo vendés por WhatsApp. Salís con todo funcionando.\n\nPERSONA A: ¿$5 los 3 días? ¿Cuál es la trampa?\n\nJESÚS: No gano con los $5. Gano cuando te va bien y querés seguir.\n\nPERSONA A: Eso es menos de lo que perdió mi novia en un almuerzo. Dale, ¿dónde entro?\n\nJESÚS: Tocá el botón de acá abajo. Son $5 y 3 tardes. Eso es lo único que necesitás para aprender un modelo de negocio nuevo.\n\nPERSONA A: Ya me uni. (bajito) Esto no aparece en el resumen de la tarjeta, ¿no?\n\nJESÚS: (se ríe) Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "actuado",
+        "timing_seconds": 18,
+        "text": "PERSONA A: Dale, ¿cómo hago? ¿Dónde me meto?\n\nJESÚS: Comentá CLASE acá abajo. Te llega todo por DM.\n\nPERSONA A: ¿CLASE? ¿Solo eso?\n\nJESÚS: Solo eso. Es una clase gratis de 2 horas donde te muestro cómo encontrar un producto, crearlo con IA y empezar a venderlo. Ya pasaron más de 17 mil personas.\n\nPERSONA A: ¿17 mil? ¿Y funciona?\n\nJESÚS: Funcionó para gente que arrancó exactamente donde estás vos ahora. Comentá CLASE y fijate vos mismo.\n\nPERSONA A: CLASE. Listo. ¿Ya me llega?\n\nJESÚS: Ya te llega.\n\nPERSONA A: (bajito) Ah mirá, ya me llegó. Voy al baño a verlo tranquilo.\n\nJESÚS: (se ríe) Nos vemos adentro."
+      }
+    ]
+  },
+  "createdAt": "2026-03-26T07:03:05.085Z",
+  "status": "confirmed",
+  "batch": {
+    "id": "3a744f23-03e4-4cb0-b83c-f80c35ef559a",
+    "name": "victor-eraso-v2"
+  },
+  "hookApprovals": {}
+}

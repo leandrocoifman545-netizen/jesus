@@ -1,0 +1,245 @@
+{
+  "id": "0dd1467a-f491-437d-bcdb-6b0a966687f7",
+  "briefId": "c3286f1f-d99e-45c1-9132-8c5bd7806ebe",
+  "title": "El skill más caro del mercado — copywriter cobrando como freelance",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.4_economia_conocimiento",
+    "body_type": "demolicion_alternativas",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "redactora copywriter freelance",
+    "model_sale_type": "eliminacion_barreras",
+    "transition_text": "Lo único que tenés que hacer es elegir tus mejores 12 textos. Te muestro cómo armarlos para que tu negocio empiece a avanzar de verdad. Esta semana en una clase gratis.",
+    "total_duration_seconds": 88,
+    "word_count": 217,
+    "punto_entrada_emocional": "bronca contenida de saber que tus textos generan plata para otros mientras seguís cobrando por hora",
+    "belief_change": {
+      "old_belief": "Para ganar más como copywriter freelance necesito mejores clientes o subir precios",
+      "mechanism": "Cada texto vendido por hora tiene un techo. Empaquetar tus mejores 12 textos en un pack lo rompe porque vos cobrás una vez y vendés muchas",
+      "new_belief": "El techo se rompe sin clientes — vendiendo plantillas de mis propios textos a copywriters que están donde estaba yo hace 2 años"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Yo también hice eso de regalar mis textos. Vos también",
+        "installed_via": "puente identificatorio",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Cobrar por hora es un techo, no un negocio",
+        "installed_via": "reframe del modelo cliente-por-cliente",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "Tus 12 textos ya escritos son un pack vendible",
+        "installed_via": "mecanismo con nombre propio - Las 12 copies que ya convirtieron",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "Las alternativas tradicionales son mas de lo mismo",
+        "installed_via": "cementerio de alternativas con Fiverr y agencia nombrados",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay copywriters reales facturando con plantillas, no con clientes",
+        "installed_via": "prueba con numeros anclados a no escribir mas",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el avatar responde al desbalance matemático entre lo que generó y lo que cobró",
+        "emotional_lever": "indignacion matematica",
+        "script_text": "Tus textos generaron 50 mil dólares para tu cliente este año. Vos cobraste 200 dólares por escribirlos. Y la cuenta es real.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a que le señalen el desfase entre el valor del skill y el cobro",
+        "emotional_lever": "confrontacion de identidad",
+        "script_text": "Sos la persona con el skill más caro del mercado: convertir palabras en ventas. Y cobrás como freelance. Hay algo que no cierra acá.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "negacion_directa",
+        "hypothesis": "el avatar responde a un reframe radical de la solucion habitual",
+        "emotional_lever": "reframe",
+        "script_text": "No necesitás mejores clientes. Lo que necesitás es algo que ningún copywriter te dice: dejar de tenerlos.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde a que le digan que mas clientes no es la solucion",
+        "emotional_lever": "curiosidad confrontativa",
+        "script_text": "Hay algo absurdo con los copywriters freelance. Cuanto más clientes sumás, peor te va. Y nadie lo dice así.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "historia_mini",
+        "hypothesis": "el avatar responde a una copywriter que ya hizo el camino que ella imagina",
+        "emotional_lever": "prueba social especifica",
+        "script_text": "Una copywriter mandó tres de sus clientes a una colega. La misma semana armó un pack de hooks para Instagram. En 30 días vendió 200 copias y salió de ahí sin pelearse con nadie.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "confrontacion_directa",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Yo también hice eso de regalar mis textos. Vos también",
+          "viewer_emotion_after": "reconocimiento del patron",
+          "is_turning_point": false,
+          "script_text": "Si tus textos generan ventas y vos seguís cobrando por palabra, escuchá.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Cobrar por hora es un techo, no un negocio",
+          "viewer_emotion_after": "sorpresa: lo que pensaba como solucion era el problema",
+          "is_turning_point": false,
+          "script_text": "Pensás que necesitás mejores clientes. La realidad es otra. Cobrás una vez por un texto que tu cliente va a poner en sus Facebook Ads y va a usar 18 meses seguidos. Cuantos más clientes sumás a ese modelo, más rápido tocás el techo del negocio.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Tus 12 textos ya escritos son un pack vendible",
+          "viewer_emotion_after": "permiso: ya tengo el material",
+          "is_turning_point": false,
+          "script_text": "Esos textos que escribiste para clientes este año tienen un patrón. Sacá los 12 que más vendieron, armá con IA un pack 'Las 12 copies que ya convirtieron' a 9 dólares. Lo armás un sábado. Lo cobrás todos los que vienen.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Las alternativas tradicionales son mas de lo mismo",
+          "viewer_emotion_after": "validacion: ya intente esos caminos y no funcionan",
+          "is_turning_point": true,
+          "script_text": "¿Probaste Fiverr? Cobrás 5 dólares la hora. ¿Subir precios? Te van los 3 clientes. ¿Asociarte en agencia? Sos empleada con sueldo y reuniones. Cada camino tradicional te devuelve al mismo techo.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay copywriters reales facturando con plantillas",
+          "viewer_emotion_after": "esperanza concreta con dato",
+          "is_turning_point": false,
+          "script_text": "Hay copywriters vendiendo packs de 30 hooks para Instagram a 9 dólares. 200 ventas el primer mes — 1.800 dólares cobrados sin escribir una sola palabra más para nadie.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo - Eliminacion de barreras",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Es el patrimonio que ya tenés, empaquetado",
+          "viewer_emotion_after": "validacion final: ya tengo todo",
+          "is_turning_point": false,
+          "script_text": "La IA arma el pack en una tarde con los textos que ya escribiste. No necesitás vender a frío ni armar lista nueva. Es el patrimonio que ya tenés, empaquetado.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "la cuenta es real"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "tus textos generan ventas"
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "tocás el techo del negocio"
+      },
+      {
+        "location": "beat_2",
+        "technique": "future_pacing",
+        "phrase": "Lo cobrás todos los que vienen"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Cada camino tradicional te devuelve al mismo techo"
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "1.800 dólares cobrados sin escribir una sola palabra más para nadie"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "Es el patrimonio que ya tenés, empaquetado"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Mecanismo con Nombre"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo Legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:23:05.062Z"
+}

@@ -4,7 +4,14 @@
 - **NUNCA usar "no te alcanza la plata" / "no llegás a fin de mes" como hook.** Filtra hacia abajo: atrae gente que no va a comprar. Entran con la objeción ya puesta.
 - **"Trabajos" → "Negocios".** La gente no quiere otro trabajo, quiere un negocio sencillo para salir de su trabajo actual.
 - **Nada de porcentajes en hooks.** "El 76% de las personas..." desconecta emocionalmente. No hay virales que usen porcentajes como gancho.
-- **3 bloques CTA de 6 capas** (ver `.data/ctas-biblioteca.md`): Clase Gratuita, Taller $5, Instagram. Cada bloque tiene: Oferta → Prueba → Riesgo Cero → Urgencia → Orden+NLP. Se graban UNA vez por sesión y se combinan con cualquier body en edición. NO meter precio ni riesgo cero en el cuerpo — eso va SOLO en los bloques CTA.
+- **3 CTAs fijos por sesión** (ver `estrategia-semanal.md` para textos exactos):
+  1. **Directo:** botón → registro gratis (para guiones cortos/TOFU)
+  2. **Con taller $5:** registro gratis + mención taller con ancla de precio (para guiones largos/MOFU)
+  3. **Instagram:** comentar "CLASE" + link en perfil (exclusivo IG)
+- **Los 3 CTAs son genéricos y van con TODOS los guiones.** Se graban 1 vez por sesión y se combinan con cualquier cuerpo en edición.
+- Los cuerpos NO deben hacer referencia específica al taller ni a Instagram — así cualquier CTA conecta.
+- Se rediseñan al armar la estrategia semanal si hace falta.
+- **No repetir muletillas en el mismo guión.** Si ya usaste "¿Me explico?", la siguiente vez usá "¿Me siguen?", "¿Vieron?", "¿O no?". Rotar.
 - **No exagerar cantidades.** "Millones" suena a humo en ads. Usar "miles" o "cientos" que son creíbles.
 
 ## Estructura de Guión (micro-VSL de 5 beats)
@@ -13,19 +20,31 @@
 - **El cuerpo tiene que funcionar solo, sin hooks.** Los hooks son frases para que el cuerpo "perfore mejor", pero el cuerpo es lo que importa.
 - **Primero se piensan los beats con sus funciones, después se agregan los leads.**
 - Cada beat = 1 función persuasiva = 1 micro-creencia. Nada se mezcla.
-- **Duración objetivo: 75-90 segundos** (mínimo 75s para los 5 beats).
-- **UN solo cuerpo + múltiples leads intercambiables.** Todos los leads deben conectar naturalmente con el mismo cuerpo.
+- **Duración objetivo: 65-85 segundos** (target ~70s, basado en data real de 15 guiones grabados: promedio 69s, mediana 70s). Bloqueo >110s. Los 5 beats + venta del modelo + transición deben caber en ese rango.
+- **UN solo cuerpo + múltiples leads intercambiables.** Todos los leads deben conectar naturalmente con el mismo cuerpo. No se hacen cuerpos separados por lead.
 - **Orden de presentación: Leads → Cuerpo (5 beats) → CTAs.** Siempre mostrar en ese orden visual.
 
 ## Leads (no hooks sueltos)
 - Los hooks de una sola frase NO alcanzan. Usar **leads**: entradas de 2-3 oraciones que trabajan juntas.
 - Estructura de un lead: **[Abrir un gap] + [Negar la respuesta obvia] + [Prometer/dirigir al cuerpo]**
-- Fórmulas que funcionan (de los análisis de Marco Osaid, Epifanía Emprendedora, ARA Prudente):
-  - **Contrarian:** Declaración común + negación + promesa → "Todo el mundo dice X. No es así. Te lo demuestro."
-  - **Categorización:** Dividir en dos tipos + revelar diferencia → "Hay dos tipos de... La diferencia es..."
-  - **Contraintuitivo:** Hecho que contradice + explicación del por qué → "Los que menos saben son los que más ganan. Y por eso les va bien."
-  - **Pregunta + validación:** Pregunta retórica + confirmar que es real → "¿Qué pasa si te digo X? No es chamuyo."
-  - **Provocación:** Contraste con acción + promesa de simpleza → "Mientras vos pensás, otros hacen. Hacen algo muy simple."
+- **PROHIBIDO el patrón "Todo el mundo dice X. No es así."** — Está requemado. No usarlo ni como base ni como variación.
+- **Cada lead debe usar una ESTRUCTURA distinta**, no solo cambiar las palabras de la misma fórmula.
+- Tipos de apertura (rotar, nunca repetir tipo en el mismo guión):
+  - **Situación específica:** Pintar un momento concreto del avatar → "Estás en tu laburo, son las 3 de la tarde, y pensás: tiene que haber otra forma."
+  - **Dato/hecho concreto:** Arrancar con algo verificable y sorprendente → "Hay 40.000 personas por mes buscando en Google cómo hacer guías de viaje."
+  - **Pregunta incómoda:** Una pregunta que el avatar no se animó a hacer → "¿Cuántas veces arrancaste algo online y lo dejaste a la semana?"
+  - **Confesión/vulnerabilidad:** Arrancar desde la honestidad → "Yo pensaba que vender online era para programadores o gente de marketing."
+  - **Contraintuitivo:** Hecho que contradice lo esperado → "Los que menos saben de tecnología son los que mejor les va con esto."
+  - **Provocación con especificidad:** No genérica, sino atada al nicho → "Tu veterinario sabe más de nutrición canina que el 90% de los ebooks que se venden. Y no está vendiendo nada."
+  - **Historia mini (2 oraciones):** Arrancar in media res → "La semana pasada un alumno me mandó un audio llorando. Había hecho su primera venta."
+  - **Analogía cotidiana:** Objeto o situación conocida como puerta → "¿Viste cuando armás una playlist de Spotify? Bueno, armar un producto digital es parecido."
+  - **Negación directa:** Empezar diciendo lo que NO es → "Esto no es dropshipping. No es trading. No es nada de lo que ya probaste."
+  - **Observación de tendencia:** Algo que está pasando ahora → "Cada vez más gente está vendiendo lo que sabe en internet. Pero casi todos lo hacen mal."
+  - **Simplificación + error en paso clave:** Reducir a X pasos, validar que el espectador hace bien uno, abrir loop del que falla → "Crear un producto digital son 3 pasos. El 90% hace bien los dos primeros pero la caga en el tercero."
+  - **Timeline + provocación:** Resultado provocador en X días con hitos progresivos → "En 30 días vas a tener tu primer producto digital vendiendo. Te muestro cómo."
+  - **Error + categorización:** Señalar error de no saber que hay caminos distintos → "Si querés ganar plata online, el mayor error es no saber que hay 3 formas. La mayoría elige la más difícil."
+  - **Actuación/diálogo:** Simular conversación real que el espectador "escucha" → "Jesús, explicame eso que hacés con la IA. —Mirá, es muy simple..."
+  - **Contrato/compromiso:** Poner al espectador en modo decisión desde el segundo 1 → "Este es el contrato que tenés que firmar con vos mismo si querés que 2026 sea diferente."
 - Las frases textuales del avatar ("soy de madera") son UN recurso más, un complemento, no la base de todo lead.
 - El último movimiento del lead debe servir como puente natural al cuerpo (ej: "te lo demuestro", "te explico", "hacen algo muy simple").
 - **Cada lead se quema después de usarse.** Una vez grabado, no se puede reutilizar. La meta es que TODOS sean nuevos y diferentes.

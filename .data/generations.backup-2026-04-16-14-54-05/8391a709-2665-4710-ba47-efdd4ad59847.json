@@ -1,0 +1,245 @@
+{
+  "id": "8391a709-2665-4710-ba47-efdd4ad59847",
+  "briefId": "1c58a134-3201-40b6-adf4-f9407471aa67",
+  "title": "10 horas que el banco te come — la empleada bancaria que recupero el commute",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.5_atrapado_en_seguridad",
+    "body_type": "analogia_extendida",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "empleada bancaria con hijos",
+    "model_sale_type": "tiempo_vs_dinero",
+    "transition_text": "Lo único que tenés que hacer es elegir 1 sábado y empezar. Esta semana en una clase gratis te muestro cómo dar ese primer paso para salir de ahí.",
+    "total_duration_seconds": 86,
+    "word_count": 213,
+    "punto_entrada_emocional": "frustracion calma de saber que estas cambiando 10 horas por un sueldo que no compra horas",
+    "belief_change": {
+      "old_belief": "Para mejorar mi situacion economica necesito mas plata o mejor sueldo en el banco",
+      "mechanism": "Un producto digital armado en una tarde sigue vendiendo todos los dias. Es como recibir 1 ano cada 12 meses",
+      "new_belief": "Mi objetivo no es mas plata, son las 10 horas que el banco me come. El producto digital es el unico modelo que devuelve horas"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "8 mas 2 son 10 horas que ya conozco",
+        "installed_via": "puente situacional",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Lo que necesito son horas, no plata",
+        "installed_via": "reframe del objetivo",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "Una tarde de armado equivale a un ano de horas devueltas",
+        "installed_via": "analogia matematica del 1 ano cada 12 meses",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "Puedo arrancar sin renunciar al banco",
+        "installed_via": "demolicion del todo o nada con plan de 6 meses",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay bancarias reales que recuperaron el commute",
+        "installed_via": "prueba especifica con dato modesto",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el avatar responde a ver explicito el numero de horas que el banco le come",
+        "emotional_lever": "evidencia matematica",
+        "script_text": "10 horas de tu día las pierde el banco. 8 adentro más 2 entre el subte y el colectivo. ¿Te diste cuenta de cuántas son al mes?",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a la escena exacta de su lunes a las 6:30",
+        "emotional_lever": "reconocimiento sensorial",
+        "script_text": "Lunes 6:30. Despertador. Dos hijos que todavía duermen. Vos preparando el café para tomarlo en el subte. Y a las 8:30 ya estás en la sucursal.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "analogia_cotidiana",
+        "hypothesis": "el avatar responde a una analogia que vuelve visible el robo silencioso",
+        "emotional_lever": "naming del robo",
+        "script_text": "Es como si te robaran 1 año cada 12 meses y no lo notaras. Hacé la cuenta una sola vez. Después no la podés des-ver.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "negacion_directa",
+        "hypothesis": "el avatar responde a que le clarifiquen que no se le promete plata",
+        "emotional_lever": "honestidad anti-hype",
+        "script_text": "Acá no te voy a vender que vas a ganar miles de dólares. Te voy a vender 8 horas. Y eso a tu vida le cambia todo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a imaginarse el dia sin el banco",
+        "emotional_lever": "future pacing leve",
+        "script_text": "¿Cuántas horas tendrías al día si no tuvieras que ir al banco? Hacé la cuenta. Ese número es lo que vale tu salida.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "futuro_sensorial",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "8 mas 2 son 10 horas conocidas",
+          "viewer_emotion_after": "reconocimiento por dato",
+          "is_turning_point": false,
+          "script_text": "Si trabajás 8 horas en el banco más 2 de commute, escuchá.",
+          "timing_seconds": 5
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que necesito son horas, no plata",
+          "viewer_emotion_after": "reframe del objetivo",
+          "is_turning_point": false,
+          "script_text": "Pensás que necesitás más plata. La realidad es otra. Necesitás las 10 horas que el banco te come: 8 adentro más 2 entre el subte y el colectivo. Y por eso te sentís estancada los lunes.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Una tarde de armado equivale a un ano devuelto",
+          "viewer_emotion_after": "alivio: la matematica cierra",
+          "is_turning_point": true,
+          "script_text": "Pensá esto: un producto digital es como si te devolvieran 1 año entero cada 12 meses. Lo armás una sola vez con la IA un sábado y queda vendiendo todos los días después, sin que vos vuelvas a sentarte en esa oficina.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo arrancar sin renunciar al banco",
+          "viewer_emotion_after": "permiso: sin riesgo de perder lo seguro",
+          "is_turning_point": false,
+          "script_text": "Acá hay un matiz importante: el plan de salida arranca los sábados, sin tocar tu sueldo, y dura 6 meses. Tu trabajo actual queda como red mientras el producto va creciendo en paralelo.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay bancarias reales que recuperaron el commute",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Hay empleadas bancarias que armaron su producto los sábados durante 6 meses. A los 6 meses pidieron remoto. Recuperaron 2 horas por día y armaron un negocio digital de 800 dólares al mes que entran solos.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo - Tiempo vs dinero",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "El digital es el unico modelo que devuelve horas",
+          "viewer_emotion_after": "validacion del modelo",
+          "is_turning_point": false,
+          "script_text": "La diferencia clave del modelo digital es matemática. UNA tarde de armado equivale a horas que entran todos los días después, sin que vos vuelvas a sentarte en esa silla.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Hacé la cuenta una sola vez"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "8 horas en el banco más 2 de commute"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "te sentís estancada los lunes"
+      },
+      {
+        "location": "beat_2",
+        "technique": "future_pacing",
+        "phrase": "como si te devolvieran 1 año entero cada 12 meses"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Tu trabajo actual queda como red"
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "Recuperaron 2 horas por día"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "future_pacing",
+        "phrase": "sin que vos vuelvas a sentarte en esa silla"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 33,
+        "ingredient_name": "Dolor por Tiempo Robado"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metafora"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo Legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Numeros"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:49:53.790Z"
+}

@@ -266,6 +266,29 @@
 
 ---
 
+## ACTUALIZACIONES desde análisis Shadia Chamie (@shadiachamie) "EMPIEZA AQUÍ" (colección curada, ~21 stories, 3 fechas)
+
+- **H22 +1 confirmación** (Shadia: "Jajaja solo de acordarme JAJA" + se pone lentes como reset emocional después de la sección más intensa de la confesión. Humor visual + verbal, post-tensión)
+- **P8 +1 confirmación parcial** (Ola 1 educativa con semáforo rojo/verde funciona sin sonido. Ola 2 talking head NO funciona sin sonido — subtítulos intermitentes)
+- **P4 +1 confirmación variante** (no cuenta su VIDA sino el PROCESO de crear el producto. Variante: "origin story del producto")
+- **P7 +1 confirmación** (iPad como pizarra digital en vivo)
+
+### H27: ChatGPT como autoridad prestada emocional (NUEVO — CONTROVERSIAL)
+- **Confirmaciones:** 1 (Shadia — lee en cámara respuesta de ChatGPT: "trabajo excepcional", "$37 ridículo, es un regalo")
+- **Mecanismo:** Doble efecto: vulnerabilidad (necesitó validación, A4) + anclaje de precio (A1 parcial)
+- **RIESGO ALTO:** IA no verificable (viola A1). Para audiencia escéptica destruye autenticidad. Para emprendedores que usan ChatGPT puede ser relatable
+- **Recomendación:** El FORMATO sí. La FUENTE debe ser humana y verificable: WA de alumno >> ChatGPT
+
+### H28: Semáforo rojo/verde como contraste visual instantáneo (NUEVO)
+- **Confirmaciones:** 1 (Shadia — 3 pares mal/buen copy con etiquetas rojo/verde. <0.5s para entender. Sin sonido ✅. 5 min producción ✅)
+- **Mecanismo:** El color comunica ANTES que el texto. Progressive contraste entre pares
+- **Aplicable a cualquier nicho:** "Así NO 🚫" / "Así SÍ ✅"
+
+### H29: Colección curada = embudo 3 actos en 1 destacada (NUEVO)
+- **Confirmaciones:** 1 (Shadia — Ola 1 [SÉ] + Ola 2 [SENTÍ] + Ola 3 [HACÉ] en 1 sola destacada)
+- **Mecanismo:** Los 3 actos del embudo dentro de 1 destacada curada. Funciona para onboarding
+- **Diferencia con H11:** H11 = 3 destacadas separadas. H29 = 1 destacada con 3 funciones
+
 ---
 
 ## ACTUALIZACIONES desde análisis Academia MAV (@academiamav) "Mi historia" (31 stories, 3 fechas: ago 2024 + sep 2025 + mar 2026)
@@ -470,6 +493,64 @@
 ### Hallazgo principal para ADP:
 
 El formato de triángulo actuado funciona con 2 o 3 personajes. Con 2P, necesitás prueba visual más fuerte (dashboard/capturas) para compensar la ausencia del tercer personaje. Con 3P (Turu), el resultado EMOCIONAL del tercer personaje cierra el loop sin depender de datos. **Para Jesús: usar 3P + prueba Allison (dashboard real) = lo mejor de ambos.**
+
+---
+
+---
+
+## ACTUALIZACIONES desde análisis "4 Tipos de Stories" — 12 secuencias, 5 creadores, stories diarias de venta con imágenes+texto (2026-04-05)
+
+### Confirmaciones de patrones existentes:
+
+- **P1 +2 confirmaciones** (Ellos 1 "Responde YO", Hype 3 "Responde YO"): keyword DM universal
+- **P2 +12 confirmaciones** (12/12 secuencias muestran cara del creador): cara visible universal
+- **P5 +1 confirmación** (Creador C: campera roja + lentes + locaciones viaje como identidad constante en 4 tipos)
+- **P11 +1 confirmación** (Ellos 3 slide 6: 5 slides campera roja → playa sin remera = cambio de formato en cierre)
+- **H8 +1 confirmación** (9na/10ma: Ellos 3 = 6 slides sin CTA, historia emocional completa): AXIOMA ultra-reforzado
+- **H10 +1 confirmación** (Ellos 2: DMs del alumno con errores ortográficos naturales "SOS un crack"): Imperfección como autenticidad
+
+### Hipótesis nuevas:
+
+### H50: Clickbait positivo — hook negativo que se resuelve en positivo (NUEVO — Tier 1)
+- **Confirmaciones:** 1 (Creador C Ellos 3 — "Una clienta me robó" → "me robó el sistema completo y lo aplica a diario")
+- **Mecanismo:** La palabra "robó" activa sistema de alerta (amenaza → atención involuntaria). El viewer espera drama/pérdida. La resolución positiva genera spike de placer cognitivo por distancia entre expectativa y realidad. El callback textual ("robó" en hook → "robó el sistema" en cierre) cierra el loop narrativo con satisfacción.
+- **Diferente de H14 (falso clímax):** H14 = dentro de la historia del creador, el éxito resulta falso. H50 = en el HOOK, la promesa de drama resulta metáfora positiva. Son complementarios.
+- **Diferente de H32b (bait and switch "yo no, mi alumno sí"):** H32b redirige el claim a otra persona. H50 redirige la EMOCIÓN de negativa a positiva sin cambiar de persona.
+- **Riesgo:** Si se usa mucho, el viewer aprende el patrón. Máximo 1 vez/mes.
+- **Para ADP:** "Un alumno me copió todo el programa" → historia de cómo replicó el método y le funcionó. O: "Alguien me devolvió el producto" → "me lo devolvió vacío porque ya usó TODO"
+
+### H51: Fusión de tipos — Mecanismo embebido en Ellos (NUEVO)
+- **Confirmaciones:** 2 (Ellos 3 slide 3: 6 diferenciaciones con terapia tradicional dentro de narración de caso de éxito. Mentor 1 slide 4: certificados de alumnos = Ellos dentro de Mentor)
+- **Mecanismo:** La taxonomía de 4 tipos (Ellos/Hype/Mecanismo/Mentor) no es 4 compartimentos — es 4 INGREDIENTES que se mezclan. El tipo DOMINANTE define la estructura. Los tipos secundarios aparecen en 1-2 slides como REFUERZO. Ellos 3 = 5 slides Ellos + 1 slide Mecanismo. La estructura es Ellos, el refuerzo es Mecanismo.
+- **Regla derivada:** Los novatos usan 1 tipo puro por secuencia. Los avanzados mezclan 2+ tipos manteniendo 1 dominante. Nunca mezclar 3+ tipos en una secuencia corta (4-6 slides) — diluye.
+- **Para ADP:** Dentro de "Resultados" (Ellos), meter 1 slide de "Cómo funciona" (Mecanismo). Dentro de "Mi Historia" (Mentor), meter 1 slide de testimonios (Ellos). La fusión aumenta la densidad de confianza por slide.
+
+### H52: Persona gramatical escala con temperatura de audiencia (NUEVO)
+- **Confirmaciones:** 1 (Creador C en 4 tipos: 3ra persona en Ellos [audiencia fría], transición 1ra→2da en Mentor [tibia], 2da persona en Mecanismo [caliente])
+- **Mecanismo:** 3ra persona = baja presión, baja identificación ("mirá lo que le pasó a otro"). 2da persona = alta presión, alta identificación ("esto te pasa A VOS"). La audiencia fría se resiste a la 2da persona ("¿quién sos para decirme qué me pasa?"). La audiencia caliente necesita 2da persona para sentirse vista.
+- **Implicación:** Ellos (3ra persona) funciona mejor como PRIMER contacto. Mecanismo/Mentor (2da persona) funcionan mejor con audiencia que ya consume el contenido del creador.
+- **Necesita validación cross-profile** — ¿otros creadores siguen el mismo patrón?
+
+### H53: Callback textual al hook en cierre amplifica residuo emocional (NUEVO)
+- **Confirmaciones:** 2 (Ellos 3: "me robó" [hook] → "me robó el sistema" [cierre]. Parcial: Jaime "Maldición de la conciencia" [título] = hook = concepto central que cierra implícitamente)
+- **Mecanismo:** El callback CIERRA el loop abierto en el hook. El cerebro siente COMPLETITUD narrativa — la historia tiene arco. Sin callback, la historia se siente "cortada." Con callback, se siente "cerrada." El residuo emocional es más fuerte porque la emoción del hook se RECICLA en el cierre con nuevo significado.
+- **Para ADP:** Si el hook de una story es una pregunta o promesa, el último slide debe RESPONDERLA o CUMPLIRLA con las mismas palabras del hook. "¿Querés vender algo que no existe?" → [historia] → "Ahora Patricia vende algo que no existía hace 20 minutos."
+
+### Cross-análisis Creador C: qué cambia entre los 4 tipos del MISMO producto (90 días acompañamiento psicológico)
+
+| Dimensión | ELLOS | MECANISMO | MENTOR |
+|-----------|-------|-----------|--------|
+| Persona gramatical | 3ra ("ella llegó") | 2da ("vos no disfrutás") | 1ra→2da transición |
+| Protagonista | La clienta | El cerebro del viewer | El creador → el viewer |
+| Enemigo | "Terapia tradicional" (implícito) | "Modo supervivencia" (biológico) | "Modelo clásico 1h/semana" (explícito) |
+| Tipo de autoridad (D2) | SOCIAL (caso exitoso) | DEMOSTRADA (neurociencia pop) | EXPERIENCIAL (15 años, +5600 personas) |
+| CTA | NINGUNO | NINGUNO (nombre método) | Implícito |
+| Números | 0 de escala (solo del caso individual) | "+100 profesionales" | "+5600 personas", "15 años" |
+| Lo constante | Campera roja, lentes, locaciones viaje, tono argentino, frase ancla "no es terapia de 1h" |
+
+**Hallazgo principal:** Los números de credibilidad ESCALAN de Ellos a Mentor. Ellos no necesita números porque tiene una HISTORIA. Mentor necesita números porque la historia personal sola no alcanza como prueba a nivel de escala.
+
+**Frase ancla:** "No es la terapia clásica de 1 hora por semana" aparece en 3/4 tipos con variaciones mínimas. Es la DIFERENCIACIÓN CENTRAL repetida en todos los frames. → Regla: un creador necesita 1 frase de diferenciación que se repita en todos sus formatos.
 
 ---
 

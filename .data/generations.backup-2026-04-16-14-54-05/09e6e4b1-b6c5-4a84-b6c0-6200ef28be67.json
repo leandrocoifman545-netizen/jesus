@@ -1,0 +1,245 @@
+{
+  "id": "09e6e4b1-b6c5-4a84-b6c0-6200ef28be67",
+  "briefId": "5c0b2a0e-13e5-4e8a-a9c9-01da063e32fa",
+  "title": "Las 7 señales que aprendiste el último mes — la coach ex-corporativa quemada",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.7_emprendedor_quemado",
+    "body_type": "demolicion_mito",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "coach de vida ex corporativa quemada",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Lo único que tenés que hacer es escribir las 7 señales que viste el último mes. Esta semana en una clase gratis te muestro cómo armarlas.",
+    "total_duration_seconds": 88,
+    "word_count": 218,
+    "punto_entrada_emocional": "validacion temprana de que tus 15 anos en corporativo no fueron tiempo perdido sino formacion oculta",
+    "belief_change": {
+      "old_belief": "Mis 15 anos en corporativo fueron tiempo perdido y necesito una certificacion de coach para tener autoridad",
+      "mechanism": "Las 7 senales que aprendiste a ver el ultimo mes valen mas que un MBA. Se dictan a una IA un sabado como El mapa que me hubiera gustado tener",
+      "new_belief": "Mi colapso es mi formacion. Mi experiencia se empaqueta como mapa para profesionales que estan donde estaba yo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Me fui del corporativo y todavia no entendi lo que me lleve",
+        "installed_via": "puente desde la transformacion ya conseguida",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Mis 15 anos no fueron tiempo perdido",
+        "installed_via": "demolicion del mito desde la creencia falsa",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "Las 7 senales se empaquetan como mapa",
+        "installed_via": "mecanismo con nombre - El mapa que me hubiera gustado tener",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "La autoridad la da haber visto las senales, no la certificacion",
+        "installed_via": "demolicion de la barrera credencial",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay otra mujer real que ya recibio las 7 senales",
+        "installed_via": "prueba con la otra mujer recibiendo",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a la escena exacta del viernes que renuncio",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Viernes a las 5 de la tarde. Mandaste el mail con la renuncia y bajaste del piso 12 caminando porque no querías esperar el ascensor con nadie. Ese viernes te llevaste algo que todavía no terminás de entender.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde al reframe de los 15 anos como activo no perdida",
+        "emotional_lever": "reframe identitario",
+        "script_text": "Tus 15 años en corporativo no fueron pérdida. Fueron el master que ningún coach jr de 28 años va a poder comprar nunca. Y ni te diste cuenta.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a la insight del MBA vs ultimo mes",
+        "emotional_lever": "validacion del valor real",
+        "script_text": "Pagaste 40 mil dólares por un MBA. Y lo que MÁS valor tiene en tu cabeza es lo que aprendiste el último mes antes de irte. La cuenta es injusta y es real.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "historia_mini",
+        "hypothesis": "el avatar responde al testimonio de otra mujer que recibio las 7 senales",
+        "emotional_lever": "prueba social emocional",
+        "script_text": "Una mujer me escribió a las 11 de la noche: 'Leí las 7 señales y entendí que estoy a 3 meses de quemarme igual'. Esa noche entendí que mi colapso valía como mapa.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a la comparacion entre coach jr y su experiencia vivida",
+        "emotional_lever": "validacion de autoridad",
+        "script_text": "¿Cuánto tarda un coach jr en aprender lo que vos aprendiste el último mes que estuviste en corporativo? Hacé el cálculo. Esa es tu credencial.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "revelacion_oportunidad",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Me fui y no entendi lo que me lleve",
+          "viewer_emotion_after": "curiosidad por la transformacion",
+          "is_turning_point": false,
+          "script_text": "Si te fuiste del corporativo después de 15 años y todavía no entendiste lo que te llevaste, escuchá.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mis 15 anos no fueron tiempo perdido",
+          "viewer_emotion_after": "validacion del pasado",
+          "is_turning_point": false,
+          "script_text": "Pensás que tus 15 años en corporativo fueron tiempo perdido. Mentira. Lo que aprendiste el último mes, antes de irte, vale más que cualquier maestría de coaching.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Las 7 senales se empaquetan",
+          "viewer_emotion_after": "permiso: tengo el material",
+          "is_turning_point": false,
+          "script_text": "Esas 7 señales que aprendiste a ver el último mes — el correo que te paraliza, la reunión que no podés bancar — las dictás a una IA un sábado. Queda como 'El mapa que me hubiera gustado tener'. Para mujeres profesionales que están donde estabas vos.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "La autoridad la da haber visto las senales",
+          "viewer_emotion_after": "permiso: no necesito otra credencial",
+          "is_turning_point": true,
+          "script_text": "Acá hay un detalle clave: la autoridad para guiar a otra mujer la da haber visto las 7 señales en carne propia. Y vos las viste durante meses sin entender qué eran.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay otra mujer que ya recibio el mapa",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Vas a recibir un mensaje a las 11 de la noche: 'Leí las 7 señales y entendí que estoy a 3 meses de quemarme igual. Gracias por escribirlo'. Esa es la prueba que importa.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo - Democratizacion por IA",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La barrera tecnica no existe",
+          "viewer_emotion_after": "validacion del modelo",
+          "is_turning_point": false,
+          "script_text": "Antes para empaquetar 15 años de experiencia necesitabas escribir un libro y conseguir editor. Hoy lo dictás a una IA paso a paso un sábado. Lo único que necesitás aprender es a pedirle bien.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Esa es tu credencial"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "te fuiste del corporativo después de 15 años"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Lo que aprendiste el último mes, antes de irte, vale más que cualquier maestría"
+      },
+      {
+        "location": "beat_2",
+        "technique": "future_pacing",
+        "phrase": "El mapa que me hubiera gustado tener"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Y vos las viste durante meses sin entender qué eran"
+      },
+      {
+        "location": "beat_4",
+        "technique": "future_pacing",
+        "phrase": "Vas a recibir un mensaje a las 11 de la noche"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "Lo único que necesitás aprender es a pedirle bien"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estrategica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Mecanismo con Nombre"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 94,
+        "ingredient_name": "Meta Proof"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "Future 7 Dias"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:46:52.208Z"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "sabado-expertise-bts-v2",
+  "title": "Expertise/BTS — 13 minutos, IA, prompt escondido",
+  "sequence_type": "behind_the_scenes",
+  "status": "draft",
+  "plan_ref": {
+    "week": "2026-04-13",
+    "mode": "volumen",
+    "day": "sabado",
+    "date": "2026-04-18",
+    "nafe_stage": 4,
+    "tactic_views": "T9-retrocesos-forzados"
+  },
+  "avatar": "mix-patricia-roberto",
+  "tension": "T4",
+  "tension_id": "T4",
+  "tension_note": "T4 Curiosidad insatisfecha (modo volumen) - plan prohíbe T12/T13",
+  "angle_family": "F4",
+  "big_idea": "Mirá cómo le pido a la IA que me cree un producto completo. Dura 13 minutos. Hay un prompt mejor escondido - si lo pescás, te lo mando.",
+  "creative_idea": "Screen recording real de IA creando producto + easter egg (prompt V2 visible 2 segundos) como T9 retrocesos forzados. Bonus CONCRETO definido.",
+  "eje_narrativo_aplicado": "Empujar para el lado correcto es usar la IA correctamente. Demo visual de eso.",
+  "calentamiento_layer": "expertise+producto",
+  "trigger_names": ["Anticipación", "Demo en vivo", "Retrocesos forzados", "Reciprocidad"],
+  "emotional_arc": "anticipación → curiosidad → admiración → juego → sorpresa → reconocimiento",
+  "objections_dissolved": [
+    {"objecion": "Suena demasiado fácil", "story": 4, "tecnica": "Screen recording real con fricciones visibles (teclas, pausas)"},
+    {"objecion": "La IA no sabe lo que yo necesito", "story": 6, "tecnica": "Output real al final — guía de 15 páginas específica para jubilados"}
+  ],
+  "micro_yes_chain": [
+    {"story": 2, "pensamiento": "quiero ver cómo hace", "tipo": "curiosidad"},
+    {"story": 4, "pensamiento": "ah, es así", "tipo": "comprension"},
+    {"story": 5, "pensamiento": "pará, ¿qué decía ahí?", "tipo": "retroceso-forzado"},
+    {"story": 7, "pensamiento": "quiero probarlo", "tipo": "permiso"}
+  ],
+  "ingredients": {
+    "E1": [
+      "El mundo de la IA me encanta, es asombroso (Roberto)",
+      "Primera vez haciendo algo con IA (Roberto)",
+      "No sé cómo darle forma a mi idea de negocio con IA (Martín)",
+      "No conozco las herramientas especializadas de IA (bot WhatsApp)"
+    ],
+    "E3": "Un equipo de 4 ingenieros, 6 meses. Yo en 30 minutos (jesus-historia — adaptado a 13 min real en story 6)",
+    "E7": "T9 retrocesos forzados (plan) + #10 NAFE (retrocesos = Instagram recomienda) + #18 NAFE (visualmente raro = IA)",
+    "E8": "Variedad visual por slide (Agus Nievas, sintesis) — cada slide cambia escenario"
+  },
+  "total_stories": 7,
+  "stories_reduced_note": "Reducido de 9 a 7 (regla: secuencias cortas para expertise — 21 sesiones coaching)",
+  "stories": [
+    {"number": 1, "function": "anticipacion", "text_on_screen": "Sábado. Voy a hacer algo en vivo.", "text_spoken": null, "visual_format": "F1", "format_description": "Selfie Jesús casual fin de semana (buzo/musculosa), cara relajada. Luz natural día.", "emotion": "anticipacion", "trigger": "hype-NAFE13", "interaction": null},
+    {"number": 2, "function": "anuncio-juego", "text_on_screen": null, "text_spoken": "Le voy a pedir a Claude que me cree un producto digital completo. Va a durar 13 minutos. Mirá atento — hay un prompt mejor escondido adentro. Si lo encontrás, te lo regalo. Respondeme BONUS.", "visual_format": "V1", "format_description": "Video selfie 17s con laptop al fondo ya abierta en Claude.ai. Tono relajado.", "emotion": "curiosidad", "trigger": "juego-anunciado", "interaction": "subtitulos", "keyword_discreta": "BONUS"},
+    {"number": 3, "function": "prompt-visible", "text_on_screen": "Prompt: \"Creá una guía práctica de 15 páginas para jubilados que quieren armar su primer producto digital en WhatsApp. Tono cercano, ejemplos concretos, pasos accionables.\"", "text_spoken": null, "visual_format": "E1", "format_description": "Fondo negro, texto blanco Deco grande con el prompt real. 6s.", "emotion": "claridad", "trigger": "transparencia-operativa", "interaction": null},
+    {"number": 4, "function": "demo-en-vivo", "text_on_screen": null, "text_spoken": "Le pedí esto. Mirá qué pasa.", "visual_format": "A3", "format_description": "Screen recording REAL Claude procesando y escribiendo. 25-30s. Sin música. Sonido teclas + voz Jesús.", "emotion": "admiracion", "trigger": "prueba-unica-screen-recording", "interaction": "subtitulos-minimos"},
+    {"number": 5, "function": "continuacion-con-easter-egg", "text_on_screen": null, "text_spoken": "Ya está escribiendo los capítulos. Esto tardaba meses. Hoy son minutos.", "visual_format": "A3", "format_description": "Continuación screen recording 20s. EASTER EGG: durante ~2s aparece un segundo prompt en el chat tipo 'prompt V2: usar marco PASAS (Problema-Agitar-Solución-Acción-Solución)'. Aparece y desaparece breve. Trigger: algunos viewers van a retroceder/capturar.", "emotion": "retrocesos-forzados", "trigger": "T9-easter-egg-del-plan", "interaction": "easter-egg-visual-breve"},
+    {"number": 6, "function": "resultado-simple", "text_on_screen": "13 minutos. Guía completa.", "text_spoken": null, "visual_format": "F8", "format_description": "Screenshot pantalla con guía YA terminada (índice + primeras 2 páginas visibles). Texto abajo: 'Un equipo de 4 ingenieros, 6 meses. Yo en 13 minutos.'", "emotion": "admiracion-anti-hype", "trigger": "numero-no-redondo", "interaction": null},
+    {"number": 7, "function": "cta-bonus-participacion", "text_on_screen": "El que encontró el prompt escondido → respondeme BONUS y te lo mando.", "text_spoken": "¿Te animás a probar lo mismo desde tu casa?", "visual_format": "F1", "format_description": "Selfie sonrisa leve con laptop detrás mostrando guía final. Keyword BONUS amarillo Deco grande.", "emotion": "reciprocidad-participacion", "trigger": "reciprocidad-gamificada", "interaction": "encuesta: Tenés ganas de probar IA? → Dale / Me cuesta imaginarlo todavía", "keyword": "BONUS"}
+  ],
+  "cta": {
+    "type": "inbound-engagement",
+    "keyword": "BONUS",
+    "destino": "engagement-gamificado",
+    "no_compite_con": "CLASE (que es captación de jueves)",
+    "bonus_workflow": "Quien responda BONUS recibe: (a) el prompt V2 escondido en .txt copiable, (b) opcional mini video 60s mostrando uso. NO es un LM de captación, es reciprocidad."
+  },
+  "content_bank_needed": [
+    "Selfie sábado casual fin de semana (story 1)",
+    "Video selfie 17s con laptop abierta en Claude (story 2)",
+    "Fondo negro con prompt textual (story 3)",
+    "Screen recording real 25-30s IA procesando (story 4) - CRÍTICO, el diferenciador del plan",
+    "Screen recording continuación con easter egg editado (story 5) - requiere insertar prompt V2 brevemente",
+    "Screenshot guía terminada con índice (story 6)",
+    "Selfie con laptop detrás + keyword BONUS (story 7)"
+  ],
+  "critical_note": "Plan textual: 'Si Jesús puede grabar UN screen recording entre martes y viernes, la calidad de esa secuencia salta dos niveles. Es el diferenciador único.' Plan B sin pantalla: foto de pantalla + voz overlay (pierde magia).",
+  "anti_ia_check": {
+    "patrones_detectados": "ninguno",
+    "V1": true, "V2": true, "V3": true, "V4": true, "V5": true, "V6": true
+  },
+  "planned_day": "sabado",
+  "week": "2026-04-13",
+  "createdAt": "2026-04-15T11:45:00-03:00"
+}

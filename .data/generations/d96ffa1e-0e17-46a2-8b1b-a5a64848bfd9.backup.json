@@ -187,8 +187,8 @@
       "cta_type": "custom"
     },
     "ingredients_used": [],
-    "model_sale_type": "custom",
-    "body_type": "listicle",
+    "model_sale_type": "prueba_diversidad",
+    "body_type": "tier_list_rating",
     "angle_family": "oportunidad",
     "avatar": "patricia",
     "awareness_level": 3,

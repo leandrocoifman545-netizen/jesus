@@ -1,0 +1,289 @@
+{
+  "id": "9db05a71-8d11-4fe5-8db8-831024c87406",
+  "briefId": "148772cb-4b51-4b6e-bb87-937427ca54da",
+  "title": "Hacés 30 tortas y no te queda ni para los útiles",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.6_freelancer_profesional",
+    "body_type": "contraste_emocional",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "cocina / repostería / tortas por encargo",
+    "model_sale_type": "tiempo_vs_dinero",
+    "emotional_arc": "dolor_puro_esperanza",
+    "transition_text": "30 recetas. Una tarde. Un recetario que se vende solo. Te muestro cómo funciona.",
+    "total_duration_seconds": 80,
+    "word_count": 195,
+    "belief_change": {
+      "old_belief": "Para ganar más tengo que hacer más tortas y trabajar más horas",
+      "mechanism": "El conocimiento de repostería empaquetado con IA se vende infinitas veces sin harina, sin horno, sin entrega",
+      "new_belief": "Mi saber de repostería es un activo digital que trabaja por mí mientras estoy con mis hijos"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Este sacrificio es real y es mío",
+        "installed_via": "descripción situacional con detalles sensoriales de cocina",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Hacer más tortas no es la salida",
+        "installed_via": "redefinición del juego — formato equivocado",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Hay otra forma de usar lo que ya sé",
+        "installed_via": "metáfora recetario físico vs digital",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito saber de tecnología para esto",
+        "installed_via": "analogía WhatsApp audio",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Alguien como yo ya lo hizo",
+        "installed_via": "prueba social diversa geográfica",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a ver su rutina exacta de repostera",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Son las 6 de la mañana y ya estás batiendo crema para una torta que te encargaron para las 5 de la tarde. Vas a cobrar $3.000 pesos y vas a gastar $1.200 en ingredientes. Y mañana arrancás de nuevo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde a una afirmación que contradice su lógica de negocio",
+        "emotional_lever": "curiosidad",
+        "script_text": "La peor decisión que puede tomar una repostera es hacer más tortas. Suena raro. Pero cuando entiendas por qué, vas a ver tu negocio completamente diferente.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a que le señalen que regala valor sin darse cuenta",
+        "emotional_lever": "confrontación",
+        "script_text": "Cada vez que le pasás una receta a una amiga por WhatsApp, le estás regalando algo que 14.000 personas buscan en Google todos los meses. Y no te entra un peso por eso.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "historia_mini",
+        "hypothesis": "el avatar responde a ver que alguien como ella ya lo logró",
+        "emotional_lever": "prueba social",
+        "script_text": "Una pastelera de Mendoza vendía tortas por encargo. Ganaba bien pero no paraba nunca. Un día agarró sus 40 recetas, se las dio a la IA, y armó un recetario digital. Lo vende a 9 dólares. Ya vendió 200 copias. Eso son 1.800 dólares sin prender el horno.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "timeline_provocacion",
+        "hypothesis": "el avatar responde a una proyección temporal concreta que genera urgencia",
+        "emotional_lever": "esperanza concreta",
+        "script_text": "Dentro de un año vas a seguir levantándote a las 5 para hacer tortas. O vas a estar tomando mate mientras tu celular te avisa que alguien compró tu recetario. Las dos opciones son reales. Depende de lo que hagas esta semana.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este sacrificio es real y es mío",
+          "viewer_emotion_after": "reconocimiento + nudo en el pecho",
+          "is_turning_point": false,
+          "script_text": "Hacés tortas desde hace años. Empezaste porque te encanta. Pero hoy la realidad es otra. Comprás harina, huevos, crema. Pasás 4 horas en la cocina. Entregás. Cobrás. Y cuando hacés las cuentas, te quedó menos que el sueldo de un delivery. Y lo peor: si no hacés tortas, no entra plata. Cobrar poco por algo que te lleva mucho tiempo.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hacer más tortas no es la salida",
+          "viewer_emotion_after": "sorpresa + incomodidad",
+          "is_turning_point": true,
+          "script_text": "¿Y sabés cuál es el problema? Que vos pensás que la solución es vender MÁS tortas. Más encargos. Más horas. Más cansancio. Pero no. Más tortas es más harina, más tiempo y el mismo techo. Tu conocimiento de repostería vale mucho más que una torta de tres pisos. Lo que pasa es que lo estás vendiendo en el formato equivocado.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Hay otra forma de usar lo que ya sé",
+          "viewer_emotion_after": "alivio + curiosidad",
+          "is_turning_point": false,
+          "script_text": "Vos tenés 30 recetas en la cabeza. La chocotorta que te piden para cada cumpleaños, los cupcakes que siempre salen bien, la buttercream que te queda perfecta. Buscá 'recetas de repostería' en Google — 14.000 personas lo buscan cada mes. Con la IA organizás tus recetas en un recetario con los trucos que aprendiste equivocándote — los tiempos de horno, las marcas de harina que funcionan, las proporciones exactas. Eso se vende a 9 dólares. Sin harina. Sin horno. Sin entrega.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito saber de tecnología para esto",
+          "viewer_emotion_after": "resistencia desarmada",
+          "is_turning_point": false,
+          "script_text": "\"Pero yo no sé nada de tecnología.\" Mirá, si sabés mandar un audio de WhatsApp, ya sabés suficiente. La IA hace todo lo técnico. Vos le decís qué querés y ella lo arma. Una tarde. Desde tu cocina. Mientras los chicos hacen la tarea.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Alguien como yo ya lo hizo",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Buscá 'recetario de repostería' en Hotmart o Etsy. Vas a ver productos de reposteras como vos. Mamás que empaquetaron lo que saben. Y hoy ven ventas en el celular mientras desayunan con sus hijos. No se hicieron millonarias. Pero cerraron el mes sin angustia. Y pudieron pagar los útiles sin pensarlo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "El formato digital escala sin esfuerzo adicional",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "script_text": "La diferencia es que una torta la vendés una vez. El recetario lo vendés cien veces, mil veces. Es el mismo conocimiento. Pero en un formato que trabaja por vos mientras estás con tu familia.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Empezaste porque te encanta"
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "te quedó menos que el sueldo de un delivery"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "si no hacés tortas, no entra plata"
+      },
+      {
+        "location": "beat_2",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Y sabés cuál es el problema?"
+      },
+      {
+        "location": "beat_3",
+        "technique": "future_pacing",
+        "phrase": "Una persona lo compra hoy. Otra mañana. Otra la semana que viene."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "si sabés mandar un audio de WhatsApp, ya sabés suficiente"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "hoy ven ventas en el celular mientras desayunan con sus hijos"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 93,
+        "ingredient_name": "Diversidad geográfica"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 127,
+        "ingredient_name": "Embedded command"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T03:37:43.898Z"
+}

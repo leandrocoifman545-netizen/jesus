@@ -1,0 +1,94 @@
+{
+  "id": "43422594-2466-494c-a646-6aa8fc286266",
+  "briefId": "e57c9415-9d6b-4456-b645-dc5bfa564ec1",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Andrea: 55 años, 0 tecnología, y lo hizo",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 70,
+      "content_style": "Screenshot de comentario → Jesús responde a cámara",
+      "key_considerations": "Screenshot: 'Tengo 55 años y no sé de tecnología. ¿Esto es para mí?'. Jesús responde contando la historia real de Andrea."
+    },
+    "visual_format": {
+      "format_name": "Screenshot → Respuesta en Video",
+      "difficulty_level": 1,
+      "setup_instructions": "Captura de comentario tipo 'Tengo 55 años y nunca usé redes. ¿Puedo hacer esto?'. Jesús responde a cámara.",
+      "recording_notes": "Screenshot 3s → Jesús habla con energía tipo 'te voy a contar algo increíble'. Tono empático pero directo. Este guion cuenta la historia real de una alumna."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Tenés más de 50 y cada vez que ves algo de tecnología pensás 'esto no es para mí'. Te presento a alguien que pensó exactamente lo mismo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "historia_mini",
+        "script_text": "Andrea tiene 55 años. Compró cursos online que no le sirvieron. No tenía redes sociales. Y hoy tiene su propio producto digital vendiendo en internet. Te cuento qué hizo distinto.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántos cursos compraste que no terminaste? Andrea compró varios. Ninguno le sirvió. Hasta que encontró un proceso donde la IA hacía lo técnico por ella.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "negacion_directa",
+        "script_text": "Esto no es para programadores ni para gente de marketing. Esto es para gente como Andrea: 55 años, sin redes, con 15 años de experiencia que nadie le dijo que podía vender.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "script_text": "Las personas que menos saben de tecnología son las que mejor les va con esto. ¿Sabés por qué? Porque no intentan hacerlo todo solas. Dejan que la IA se encargue.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Hook-Story-Offer",
+      "emotional_arc": "Identificación (55 años, sin tech) → Frustración compartida (métodos que no sirven) → Esperanza (la IA hizo lo técnico) → Acción (si ella pudo, yo puedo)",
+      "sections": [
+        {
+          "section_name": "El problema de los métodos anteriores",
+          "script_text": "Los cursos que Andrea probó le pedían aprender diseño, programación, redes sociales. Todo desde cero. Para alguien de 55 años que nunca tuvo Instagram, eso es como pedirle que arme un cohete. No era que no pudiera. Es que le estaban enseñando todo al revés.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Con la IA el proceso es completamente distinto.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Story payoff — Qué hizo Andrea con IA",
+          "script_text": "En vez de aprender tecnología, Andrea le contó a la IA lo que ya sabía: cómo organizar un evento corporativo de principio a fin. Presupuesto, proveedores, cronograma, los errores que comete todo el mundo. La IA agarró 15 años de experiencia y los transformó en un producto digital profesional. Como si hubiera contratado un equipo de diseño y redacción. Pero en una tarde. Sola. Desde su casa.",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "Offer — Puente al CTA",
+          "script_text": "Si Andrea con 55 años y sin saber usar redes sociales pudo armar su primer producto digital, el tema no es la edad ni la tecnología. Es tener el proceso correcto. Y eso es exactamente lo que te muestro en la clase gratuita.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro el mismo proceso que usó Andrea para crear su primer producto digital con IA",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 68,
+    "word_count": 178
+  },
+  "createdAt": "2026-03-11T22:15:49.696Z",
+  "status": "recorded",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "sessionNotes": ""
+}

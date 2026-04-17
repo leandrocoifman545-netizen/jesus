@@ -1,0 +1,209 @@
+{
+  "id": "8b5c42be-48fa-49b8-ae6c-231fef56521a",
+  "briefId": "ec7e8e7c-abbc-47c9-aa70-a175722fb96f",
+  "title": "Regalás lo que más sabés — terapeuta que regala consejos gratis",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.6_freelancer_profesional",
+    "body_type": "contraste_emocional",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "psicología / salud mental / terapia",
+    "model_sale_type": "tiempo_vs_dinero",
+    "emotional_arc": "dolor_puro_esperanza",
+    "transition_text": "Tu conocimiento no puede seguir siendo gratis por DM. Te muestro cómo empaquetarlo.",
+    "total_duration_seconds": 75,
+    "word_count": 182,
+    "belief_change": {
+      "old_belief": "Mi conocimiento solo vale dentro del consultorio, por sesión",
+      "mechanism": "Mostrar que miles buscan guías de ansiedad/sueño y las compran a gente con menos formación",
+      "new_belief": "Lo que ya sé se puede empaquetar con IA y vender sin atender una sesión más"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Estudio mucho y cobro poco",
+        "installed_via": "contraste entre formación y cobro por sesión",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Otros con menos conocimiento me están ganando",
+        "installed_via": "dato de que miles buscan guías y las compran a otros",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo armar un producto en una tarde con IA",
+        "installed_via": "mecanismo simple de empaquetar conocimiento",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No me falta aprender, me falta un sistema",
+        "installed_via": "frase textual de César invertida",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Otros profesionales ya lo están haciendo",
+        "installed_via": "prueba social de profesionales empaquetando conocimiento",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "la terapeuta se identifica con regalar consejos gratis por DM",
+        "emotional_lever": "reconocimiento",
+        "script_text": "¿Cuántas veces te escribieron un DM pidiéndote un consejo gratis? ¿Y cuántas veces contestaste? Ese conocimiento que regalás vale mucho más de lo que te imaginás.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la rutina de atender + subir reels gratis genera identificación visceral",
+        "emotional_lever": "hartazgo",
+        "script_text": "Atendés 6 pacientes por día. Llegás a tu casa vacía. Y a las 10 de la noche subís un reel con tips de ansiedad. Gratis. Para desconocidos. Hay otra forma de usar eso.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "la paradoja de saber mucho y cobrar poco genera curiosidad",
+        "emotional_lever": "curiosidad",
+        "script_text": "Las personas que más saben de salud mental son las que peor cobran por lo que saben. No es falta de demanda. Es falta de un camino claro.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Estudio mucho y cobro poco",
+          "timing_seconds": 12,
+          "script_text": "Estudiaste 5 años de carrera. Posgrados en Buenos Aires. Supervisión, congresos. Y hoy cobrás por sesión lo mismo que una app cobra por mes. No te queda tiempo ni para tus hijos."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Otros con menos conocimiento me están ganando",
+          "timing_seconds": 15,
+          "script_text": "La realidad es que 12.000 personas por mes buscan en Google \"cómo manejar la ansiedad\". Y las guías que encuentran las escribió alguien que nunca atendió un paciente. Se las compran a gente que sabe la mitad que vos.",
+          "is_turning_point": true
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo armar un producto en una tarde con IA",
+          "timing_seconds": 15,
+          "script_text": "Pensá en lo que ya sabés. Ejercicios de regulación emocional. Técnicas para dormir mejor. Guías de autocuidado para madres agotadas. Eso que le explicás a tus pacientes todos los días. Con la IA lo organizás en una guía profesional con tu enfoque clínico. Lo vendés a 9 dólares por WhatsApp. Y se vende mientras vos seguís atendiendo."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No me falta aprender, me falta un sistema",
+          "timing_seconds": 12,
+          "script_text": "Ya sé lo que estás pensando. \"No me decido a comenzar, siempre me falta aprender algo más.\" Eso me lo dijo César, de 49 años. No te falta aprender. Te sobra conocimiento. Te falta un sistema para venderlo."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otros profesionales ya lo están haciendo",
+          "timing_seconds": 10,
+          "script_text": "Una psicóloga de Córdoba empaquetó sus ejercicios de regulación emocional en una guía de 15 páginas con IA. La vende a 9 dólares. Le llegan ventas mientras atiende en el consultorio."
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Cambiar horas por plata tiene techo; un producto digital no",
+          "timing_seconds": 11,
+          "script_text": "En tu trabajo cambiás horas por plata. No atendés, no cobrás. Con un producto digital lo creás una vez y se sigue vendiendo. Sin horario. Sin techo."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Cuántas veces te escribieron un DM pidiéndote un consejo gratis?"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "No te queda tiempo ni para tus hijos"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "Se las compran a gente que sabe la mitad que vos"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "tenerlo listo en una tarde"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Te sobra conocimiento"
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Le llegan ventas mientras atiende en el consultorio"
+      }
+    ],
+    "ingredients_used": [
+      "B#31",
+      "C#43",
+      "D#49",
+      "F#82",
+      "H#101"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:53.550Z"
+}

@@ -1,0 +1,249 @@
+{
+  "id": "39a5eb93-e545-4035-a64a-632707a17b0b",
+  "briefId": "58129bab-8f8b-4f2e-bf40-e1421fe94235",
+  "title": "Cableás la casa de otro — electricista que se cansó de trabajar para desconocidos",
+  "batch": {
+    "id": "semana-2026-04-08",
+    "name": "Semana 2026-04-08 — Emociones de compradores"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.2_oficinista_atrapado",
+    "body_type": "demolicion_alternativas",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "electricista / instalaciones eléctricas",
+    "model_sale_type": "cementerio_modelos",
+    "emotional_arc": "confrontacion_directa",
+    "transition_text": "Y esa guía de instalaciones es exactamente el tipo de producto que te enseño a crear.",
+    "total_duration_seconds": 83,
+    "word_count": 185,
+    "belief_change": {
+      "old_belief": "La única forma de ganar plata con mi oficio es ir a la casa de otro y trabajar con las manos",
+      "mechanism": "Demoler las alternativas tradicionales (más clientes, más horas, subir precios) y mostrar que empaquetar su conocimiento con IA es el camino que no probó",
+      "new_belief": "Mi conocimiento de electricidad vale más como archivo que como servicio presencial"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Trabajo duro pero para gente que ni me conoce",
+        "installed_via": "Escena del electricista cableando la casa de un desconocido mientras el dueño mira tele",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Las alternativas tradicionales todas tienen techo",
+        "installed_via": "Demoler 3 opciones: más clientes, subir precio, buscar empleado",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Hay una cuarta opción que nunca consideré",
+        "installed_via": "Proceso de empaquetar conocimiento en guía digital con IA",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito dejar el oficio",
+        "installed_via": "Aclarar que sigue haciendo instalaciones pero ahora tiene un segundo ingreso",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Otro electricista ya lo hizo",
+        "installed_via": "Caso de electricista que vende guía de instalación",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "La escena de trabajar en casa ajena genera alienación inmediata",
+        "emotional_lever": "alienación del oficio",
+        "script_text": "Estás debajo de un techo que no es tuyo, pasando cables para alguien que ni te conoce. Te paga, te vas, y mañana hacés lo mismo en otra casa. ¿Hasta cuándo vas a cablear la vida de otros sin cablear la tuya?",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "Confrontar con el desequilibrio esfuerzo/resultado genera indignación productiva",
+        "emotional_lever": "desequilibrio",
+        "script_text": "Vos sabés hacer algo que la mayoría no sabe. Instalás, arreglás, solucionás problemas eléctricos que nadie entiende. Y todo ese conocimiento se lo llevás a la casa de un extraño por unos pesos. Pará un segundo y escuchame.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "confesion",
+        "hypothesis": "El cansancio del cuerpo como señal genera conexión empática",
+        "emotional_lever": "cuerpo que avisa",
+        "script_text": "Te duelen las rodillas de agacharte. Las manos las tenés cortadas. Llegás a tu casa reventado y mañana hay otro presupuesto que pasar. Hay una forma de que tu conocimiento te dé plata sin romperte el cuerpo. Pero primero tenés que entender una cosa.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "Invertir lo que parece lógico genera curiosidad",
+        "emotional_lever": "más trabajo no es la respuesta",
+        "script_text": "Cuantos más clientes conseguís, peor te va. Suena raro. Pero si lo pensás: más clientes es más viajes, más materiales, más presupuestos. Y vos seguís cobrando lo mismo por hora. El problema no es la cantidad. Es el modelo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "dato_concreto",
+        "hypothesis": "Anclar el valor de su conocimiento a un número real genera revelación",
+        "emotional_lever": "valor oculto",
+        "script_text": "Hay gente vendiendo guías de instalación eléctrica domiciliaria a 15 dólares en internet. Guías armadas con IA por gente que nunca agarró un cable. Vos tenés años de oficio real. ¿Y no estás vendiendo ni una?",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "confrontacion_directa",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Hay algo que todavía no probaste",
+          "viewer_emotion_after": "curiosidad confrontativa",
+          "is_turning_point": false,
+          "timing_seconds": 4,
+          "script_text": "Hay 3 formas de ganar más plata con tu oficio. Las 3 fallan. Y hay una cuarta que no conocés."
+        },
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Trabajo duro para gente que ni me conoce",
+          "viewer_emotion_after": "alienación reconocida",
+          "is_turning_point": false,
+          "timing_seconds": 15,
+          "script_text": "Vos le cableás la casa a un tipo que está mirando la tele mientras vos pasás cables por la pared. Te paga, te vas. Mañana igual. Y cada mes arrancás de cero. Porque si no vas, no cobrás. Tu cuerpo es tu único negocio. Y cada año rinde un poco menos."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Las alternativas tradicionales tienen techo",
+          "viewer_emotion_after": "incomodidad productiva",
+          "is_turning_point": true,
+          "timing_seconds": 16,
+          "script_text": "¿Más clientes? Más viajes, más materiales, menos tiempo. ¿Subir el precio? Te quedás sin laburo porque el de la esquina cobra menos. ¿Meter un empleado? Ahora tenés que pagarle y controlarlo. Las 3 opciones terminan en el mismo lugar. Más esfuerzo, mismo resultado."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi conocimiento se puede empaquetar",
+          "viewer_emotion_after": "posibilidad nueva",
+          "is_turning_point": false,
+          "timing_seconds": 18,
+          "script_text": "Pero hay algo que nunca probaste. Agarrar todo lo que sabés de instalaciones — los circuitos, las normas, los errores que ves en cada casa — y meterlo en una guía digital con IA. \"Instalación eléctrica segura para tu casa — paso a paso\". La subís por 12 dólares. La gente la compra. Y vos seguís haciendo instalaciones, pero ahora tenés un segundo ingreso que no te rompe las rodillas."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No tengo que dejar el oficio",
+          "viewer_emotion_after": "alivio",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "No dejás el oficio. Seguís haciendo lo que hacés. Pero ahora una parte de tu plata viene de algo que creaste una sola vez. Sin clientes nuevos. Sin viajes. Sin presupuestos."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otro electricista lo hizo",
+          "viewer_emotion_after": "decisión",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Un electricista de Rosario con 18 años de oficio armó una guía de instalación domiciliaria con IA en un fin de semana. La vende a 10 dólares. Le entran 3 o 4 ventas por día. No tiene redes sociales. La comparte por WhatsApp. Y es plata que entra sin que levante un cable."
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Este modelo supera a las alternativas",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "timing_seconds": 8,
+          "script_text": "Probé freelance, agencia, afiliación. Todos tienen techo. El único modelo donde creás algo una vez y se sigue vendiendo sin stock, sin empleados, sin horarios fijos, es este. Producto digital con IA."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "si no vas, no cobrás"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "Más esfuerzo, mismo resultado"
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "La subís por 12 dólares"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Sin clientes nuevos. Sin viajes. Sin presupuestos."
+      },
+      {
+        "location": "beat_5",
+        "technique": "dato_anclado",
+        "phrase": "Le entran 3 o 4 ventas por día"
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "plata que entra sin que levante un cable"
+      }
+    ],
+    "ingredients_used": [
+      "D#51",
+      "F#72",
+      "F#80"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá CLASE acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá CLASE y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T02:40:12.614Z"
+}

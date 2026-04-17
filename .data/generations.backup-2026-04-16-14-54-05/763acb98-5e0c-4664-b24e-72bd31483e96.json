@@ -1,0 +1,259 @@
+{
+  "id": "763acb98-5e0c-4664-b24e-72bd31483e96",
+  "briefId": "79b0435f-abf7-4034-9361-49c86341075f",
+  "title": "Leíste Padre Rico y nunca creaste un activo",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.3_ciclo_roto",
+    "body_type": "comparacion_caminos",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "nutrición deportiva",
+    "model_sale_type": "cementerio_de_modelos",
+    "emotional_arc": "confrontacion_directa",
+    "transition_text": "Tu conocimiento de nutrición ya es un activo. Lo único que le falta es forma. Eso te lo muestro yo.",
+    "total_duration_seconds": 67,
+    "word_count": 168,
+    "punto_entrada_emocional": "frustración de saber que tu conocimiento de nutrición vale pero no poder convertirlo en ingresos sin estar vos presente",
+    "belief_change": {
+      "old_belief": "Para ganar con lo que sé de nutrición necesito un consultorio, más pacientes y más horas",
+      "mechanism": "Comparación de dos caminos: Camino A (consultorio, cobrar por hora, estar presente) vs Camino B (empaquetar lo que ya sabés en un producto digital que se vende solo)",
+      "new_belief": "Mi conocimiento de nutrición YA es un activo — solo necesita empaque digital, no más horas mías"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Hay dos formas de usar lo que sé — una me ata, la otra me libera",
+        "installed_via": "puente que plantea que hay dos caminos para el mismo conocimiento",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "El camino que conozco (consulta por hora) tiene un techo que no se rompe",
+        "installed_via": "verdad incómoda: la cuenta de horas × precio tiene un límite matemático",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe otro camino: empaquetar lo que sé en algo que se vende sin mí",
+        "installed_via": "comparación lado a lado: Camino A (8 pacientes × $15) vs Camino B (guía de 27 páginas × $9 × 12 ventas/día)",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Los otros modelos online (afiliación, redes, seguidores) también me atan",
+        "installed_via": "cementerio de modelos: cada alternativa explicada y descartada con un 'pero' concreto",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Jesús empezó haciendo todo para 100 clientes a $50 y casi se queda sin voz — él sabe lo que es estar atado",
+        "installed_via": "historia real verificada de Jesús + pregunta final",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la escena de cobrar poco por trabajo especializado genera bronca identificatoria",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si trabajás en nutrición seguro te pasó. Le armaste un plan de alimentación completo a un paciente. Te llevó una hora. Te pagaron lo mismo que un Uber de 15 cuadras.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el contraste entre saber mucho y cobrar poco genera vacío sin revelar la causa",
+        "emotional_lever": "curiosidad",
+        "script_text": "Las nutricionistas que más saben son las que peor cobran. Y no es por falta de talento.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el contraste con influencers que saben menos pero viven de eso genera indignación + vacío",
+        "emotional_lever": "confrontación",
+        "script_text": "Sabés más de nutrición que la mayoría de los influencers de fitness que ves en Instagram. Ellos viven de eso. Vos vivís atada al consultorio. Y no es porque sepan más.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la repetición diaria del mismo conocimiento a una persona a la vez genera agotamiento",
+        "emotional_lever": "hartazgo",
+        "script_text": "Lunes 7am. Primer paciente. Le explicás por tercera vez que la creatina no retiene líquido si la dosificás bien. A las 3pm vas a estar explicando lo mismo. A otra persona. Desde cero.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "eliminacion_barreras",
+        "hypothesis": "eliminar lo que pensás que te falta redirige al verdadero diferencial",
+        "emotional_lever": "esperanza",
+        "script_text": "No importa si atendés 3 pacientes por día o 30. No importa si tu consultorio es chiquito o si atendés desde tu casa. Si sabés armar un plan de alimentación que funcione, ya tenés lo único que hace falta.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "confrontacion_directa",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Hay dos formas de usar lo que sé",
+          "viewer_emotion_after": "atención — 'quiero saber cuáles'",
+          "is_turning_point": false,
+          "timing_seconds": 6,
+          "script_text": "Tu conocimiento de nutrición vale. La pregunta es cómo lo usás. Porque hay dos caminos. Uno te ata al consultorio. El otro te libera. Y la mayoría solo conoce el primero."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El camino que conozco tiene un techo matemático",
+          "viewer_emotion_after": "incomodidad + 'tiene razón'",
+          "is_turning_point": true,
+          "timing_seconds": 13,
+          "script_text": "El camino A es el que ya conocés. Consultorio, pacientes, cobrar por hora. 8 pacientes por día, $15 cada uno. Techo: $120 por día. Si te enfermás, cero. Si te vas de vacaciones, cero. Tu ingreso depende de que vos estés ahí. Eso no es un negocio. Es un empleo donde vos sos el jefe y el empleado."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El camino B usa MI conocimiento pero no necesita MI presencia",
+          "viewer_emotion_after": "alivio + curiosidad concreta",
+          "is_turning_point": false,
+          "timing_seconds": 16,
+          "script_text": "El camino B es agarrar lo que ya sabés — los planes de alimentación que hacés de memoria, las rutinas de suplementación, los errores que ves todos los días — y empaquetarlo en una guía con IA. 27 páginas. Portada profesional, índice, ejemplos reales. La ponés a 9 dólares. Y cada persona que busca 'plan de nutrición deportiva' la puede comprar. A las 3 de la mañana. Mientras vos dormís."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Los otros modelos online también me atan",
+          "viewer_emotion_after": "resistencia desarmada",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Consultas online, contenido en redes, afiliación. Suenan distinto pero son el mismo camino disfrazado. Cambiás el lugar pero no el modelo. Seguís intercambiando tu tiempo por plata. El producto digital es el único camino donde vos creás una vez y se vende sin que estés."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Jesús sabe lo que es estar atado a las horas — y encontró la salida",
+          "viewer_emotion_after": "confianza + urgencia",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Yo tuve 100 clientes. Les hacía todo. Trabajaba 10 horas por día. Me quedaba sin voz. Hasta que entendí que estaba vendiendo mi tiempo, no mi conocimiento. El día que separé las dos cosas, todo cambió. No te voy a decir que te vas a hacer millonaria. Te voy a decir que podés dejar de cobrar por hora. ¿No es eso lo que querés?"
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "El modelo es simple y no requiere nada que no tenga",
+          "viewer_emotion_after": "claridad",
+          "is_turning_point": false,
+          "timing_seconds": 8,
+          "script_text": "Un producto digital. Un anuncio. Y WhatsApp para vender. Lo creás una vez con IA y se vende todos los días. Sin consultorio, sin algoritmo, sin depender de tus horas."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "Tu conocimiento de nutrición vale."
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "la mayoría solo conoce el primero"
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "8 pacientes por día, $15 cada uno. Techo: $120 por día."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Si te enfermás, cero. Si te vas de vacaciones, cero."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "un empleo donde vos sos el jefe y el empleado"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "los planes de alimentación que hacés de memoria"
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "27 páginas"
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "9 dólares"
+      },
+      {
+        "location": "beat_2",
+        "technique": "future_pacing",
+        "phrase": "A las 3 de la mañana. Mientras vos dormís."
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "seguís atada a tus horas"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "la ganancia se la lleva otro"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Trabajaba 10 horas por día. Me quedaba sin voz."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "estaba vendiendo mi tiempo, no mi conocimiento"
+      },
+      {
+        "location": "beat_4",
+        "technique": "pregunta_retórica",
+        "phrase": "¿No es eso lo que querés?"
+      }
+    ],
+    "ingredients_used": [
+      "C#43",
+      "D#51",
+      "F#72",
+      "K#125"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "D"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "B"
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T01:55:23.023Z"
+}

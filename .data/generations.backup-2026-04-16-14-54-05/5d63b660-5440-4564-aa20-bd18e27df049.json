@@ -1,0 +1,233 @@
+{
+  "id": "5d63b660-5440-4564-aa20-bd18e27df049",
+  "briefId": "d464b9b4-d0f9-4549-b1e6-cbca1b34e5d7",
+  "title": "Cobrás $15 la hora y te dicen que sos cara",
+  "batch": {
+    "id": "40841ea8-40ac-4f43-a156-2c14fd3427df",
+    "name": "Top 10 Definitivo"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.7_emprendedor_quemado",
+    "body_type": "contraste_emocional",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "docencia / clases particulares",
+    "model_sale_type": "tiempo_vs_dinero",
+    "transition_text": "Tu método vale mucho más que una hora de clase.",
+    "total_duration_seconds": 78,
+    "word_count": 214,
+    "belief_change": {
+      "old_belief": "Cobrar por hora es la única forma de ganar con lo que sé — y $15 es lo que el mercado paga",
+      "mechanism": "Tu conocimiento pedagógico vale más empaquetado como producto digital que vendido hora a hora — la IA te ayuda a empaquetarlo",
+      "new_belief": "Cobrar por hora tiene techo. Mi conocimiento empaquetado se vende mientras duermo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Cobrar por hora me tiene atrapada en un techo físico y emocional",
+        "installed_via": "contraste sensorial entre esfuerzo y resultado",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Cobrar por hora tiene techo — no es culpa mía sino del modelo",
+        "installed_via": "naming propio del problema: el techo de la hora",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Mi material pedagógico puede ser un producto digital que se vende solo",
+        "installed_via": "ejemplo concreto de guía de matemáticas en Hotmart",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Nadie valora las horas pero sí valoran el producto terminado",
+        "installed_via": "contraste entre hora a $15 vs producto a $3.500",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Otras docentes ya empaquetaron y les cambió la vida",
+        "installed_via": "future pacing sensorial con dignidad",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situación_específica",
+        "hypothesis": "describir la escena exacta de preparar clases genera reconocimiento visceral",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Cobrás 15 dólares la hora. Te preparás, leés, estudiás, armás material. Y tus alumnos te dicen que sos cara. Quince dólares. Cara.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocación",
+        "hypothesis": "invertir la percepción de caro/barato genera curiosidad",
+        "emotional_lever": "curiosidad",
+        "script_text": "Tus alumnos aprenden con tu método. Después lo aplican toda la vida. Y vos cobraste por una hora. ¿Te parece justo?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incómoda",
+        "hypothesis": "confrontar la devaluación del conocimiento genera indignación productiva",
+        "emotional_lever": "confrontación",
+        "script_text": "¿Cuántas horas de clase necesitás dar por mes para llegar tranquila? ¿Y si pudieras ganar sin estar parada frente al pizarrón?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "preguntas sobre el cálculo real genera revelación",
+        "emotional_lever": "confrontación",
+        "script_text": "Una docente que cobra 15 dólares la hora puede ganar más sin dar una sola clase. Con lo mismo que ya sabe.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "historia_mini",
+        "hypothesis": "caso concreto de transformación genera prueba social inmediata",
+        "emotional_lever": "esperanza",
+        "script_text": "\"Me dicen cara. Quince dólares y me dicen cara.\" Eso me escribió una profesora que lleva 12 años dando clases. Y me partió.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Cobrar por hora me tiene atrapada en un techo físico y emocional",
+          "viewer_emotion_after": "reconocimiento + frustración contenida",
+          "is_turning_point": false,
+          "script_text": "Cobrás 15 dólares la hora. Te preparás. Leés. Estudiás. Armás material. Y tus alumnos te dicen que sos cara. Quince dólares. Cara.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Cobrar por hora tiene techo — no es culpa mía sino del modelo",
+          "viewer_emotion_after": "sorpresa + indignación",
+          "is_turning_point": true,
+          "script_text": "Justamente, ese es el problema. No es cuánto cobrás. Es que vendés tu hora en vez de tu conocimiento. Si vos parás de dar clases un día, ese día no cobrás.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi material pedagógico puede ser un producto digital que se vende solo",
+          "viewer_emotion_after": "alivio + curiosidad",
+          "is_turning_point": false,
+          "script_text": "Tu saber está atrapado en tu tiempo. ¿Y si en vez de vender una hora a un alumno vendieras tu método completo a cientos de personas? Le dictás a la IA todo lo que enseñás. Tus ejercicios. Tus explicaciones. Los errores más comunes que ves en tus alumnos y cómo corregirlos.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Nadie valora las horas pero sí valoran el producto terminado",
+          "viewer_emotion_after": "resistencia desarmada",
+          "is_turning_point": false,
+          "script_text": "La IA te arma una guía profesional con tu sistema de enseñanza. La subís a Hotmart. Y se vende mientras vos estás dando clase. O durmiendo. O en vacaciones. Lo armaste en una tarde. Con tu celular. Entre una clase y otra.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otras docentes ya empaquetaron y les cambió la vida",
+          "viewer_emotion_after": "esperanza + dignidad",
+          "is_turning_point": false,
+          "script_text": "Y ahora tu método genera plata sin que estés frente al pizarrón. Buscá en Hotmart guías de tu materia. Vas a ver que ya hay gente vendiéndolas. La diferencia es que vos tenés los años de aula que le dan credibilidad a cada página.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Hay algo que no cierra."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "No porque sepa más. Porque su modelo es otro."
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "El techo no es tu conocimiento. El techo es el reloj."
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Sin que vos des una sola clase."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "No es elegir uno o el otro."
+      },
+      {
+        "location": "pre_cta",
+        "technique": "future_pacing",
+        "phrase": "Pero ahora duermen tranquilas sabiendo que la guía se vende aunque ellas no estén."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 127,
+        "ingredient_name": "Embedded Command"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "D"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "B"
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T02:03:37.166Z"
+}

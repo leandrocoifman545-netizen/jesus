@@ -1,0 +1,93 @@
+{
+  "id": "77b19080-a4bc-4ab3-a70e-7629a5a16571",
+  "briefId": "a499670c-bff9-401c-81b3-1d22de9e55ae",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Crianza con IA: lo que ya sabés vale plata",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 68,
+      "content_style": "Screenshot de comentario → Jesús responde a cámara",
+      "key_considerations": "Screenshot de mamá/papá diciendo 'quiero generar ingresos pero no puedo descuidar a mis hijos'. Jesús responde con el nicho de crianza."
+    },
+    "visual_format": {
+      "format_name": "Screenshot → Respuesta en Video",
+      "difficulty_level": 1,
+      "setup_instructions": "Captura de DM: 'Soy mamá de 3, trabajo todo el día, ¿puedo hacer esto?'. Jesús responde a cámara.",
+      "recording_notes": "Screenshot 3s → Jesús responde con empatía, tipo 'escuchame porque esto es para vos'. Tono cálido, conectar con la culpa del tiempo."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Son las 10 de la noche. Los chicos durmieron. Tenés una hora antes de acostarte. ¿Y si esa hora pudiera ser el comienzo de tu primer ingreso online?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "script_text": "¿Cuántas veces una amiga te preguntó cómo hacés para organizar la rutina con los chicos? Lo que vos regalás como consejo, hay gente que pagaria por eso.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "script_text": "Sabés más de crianza que la mayoría de los libros que se venden en internet. Y no estás vendiendo nada. Tu experiencia como mamá vale mas de lo que pensas.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "historia_mini",
+        "script_text": "Una mamá de 3 hijos le pidió a la IA que organice todo lo que aprendió sobre rutinas de sueño para bebés. En una hora tenía una guía que parece escrita por una pediatra. Hoy la vende online.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "script_text": "Yo pensaba que para vender algo online necesitabas saber de tecnología o de marketing. Después descubrí que lo que más se vende son experiencias reales organizadas. Como por ejemplo criar hijos.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "AIDA",
+      "emotional_arc": "Validación (tu experiencia vale) → Oportunidad (hay demanda real) → Deseo (podés hacerlo en ratos libres) → Acción (registrate)",
+      "sections": [
+        {
+          "section_name": "Atención — La demanda que nadie ve",
+          "script_text": "Miles de mamás y papás buscan todos los días en Google cosas como 'cómo poner límites a mi hijo', 'actividades para chicos en casa', 'rutinas de sueño para bebés'. Y lo que encuentran son artículos genéricos escritos por gente que no tiene hijos. Necesitan algo real, hecho por alguien que lo vivió.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Y ahí entrás vos.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Deseo — El mecanismo adaptado a mamás/papás",
+          "script_text": "Le contás a la IA tu experiencia: qué te funcionó con los berrinches, cómo organizaste las rutinas, qué aprendiste a los golpes después de años de prueba y error. La IA toma todo eso y te arma una guía organizada y profesional. Un recurso práctico que resuelve un problema real. Y lo podés hacer en los ratos libres que tengas. Una hora acá, media hora allá. Sin descuidar a nadie.",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "Puente al CTA",
+          "script_text": "Lo que ya sabés de criar hijos puede ser el producto digital más valioso que armes. En la clase gratuita que cree te muestro cómo.",
+          "timing_seconds": 7
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro cómo convertir tu experiencia de mamá o papá en un producto digital que vende",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 68,
+    "word_count": 178
+  },
+  "createdAt": "2026-03-11T22:15:54.006Z",
+  "status": "recorded",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  }
+}

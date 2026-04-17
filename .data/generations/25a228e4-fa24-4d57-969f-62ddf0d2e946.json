@@ -1,0 +1,251 @@
+{
+  "id": "25a228e4-fa24-4d57-969f-62ddf0d2e946",
+  "briefId": "b9b76268-082b-4499-9d57-2ab521085045",
+  "title": "Si sabés hacer tortas — el audio de WhatsApp que vale plata",
+  "batch": {
+    "id": "f63d6536-c6c8-48df-a0cd-d487da0fdb55",
+    "name": "Version 7.0"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.1_reinvencion_saber",
+    "body_type": "analogia_extendida",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "cocina / gastronomía / repostería",
+    "model_sale_type": "eliminacion_barreras",
+    "rhythm_template": "R2",
+    "emotional_arc": "analogia_revelacion",
+    "transition_text": "Y para que veas cómo se hace, preparé algo para la próxima semana donde te lo muestro paso a paso.",
+    "total_duration_seconds": 81,
+    "word_count": 221,
+    "punto_entrada_emocional": "ese momento en que mandás un audio de 20 minutos explicando una receta y al final no cobrás un peso",
+    "winner_template_used": "winner-121-estructura-f1 (CPL $0.38)",
+    "belief_change": {
+      "old_belief": "Lo que sé de cocina es un hobby, no tiene valor económico — es un favor que le hago a mi familia",
+      "mechanism": "Analogía WhatsApp: el audio que ya mandás gratis ES un producto digital sin formato — la IA le da forma y se vende",
+      "new_belief": "Mi conocimiento de cocina vale plata — solo le faltaba el formato"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto me pasa — mando recetas gratis todo el tiempo",
+        "installed_via": "Escena WhatsApp específica con audio de receta, tupper vacío, cumpleaños",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Lo que hago es más que un favor — es contenido valioso",
+        "installed_via": "Reframe de identidad: favor → manual de cocina",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe un proceso concreto para darle formato a lo que ya sé",
+        "installed_via": "Mecanismo con IA: audio → guía de 43 páginas con portada, índice, fotos",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito ser profesional para que esto funcione",
+        "installed_via": "Demolición: las recetas de casa se venden más que las de restaurante",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Lo que yo hago ya tiene más valor que lo que se vende",
+        "installed_via": "Prueba interna: tu audio tiene más info que los ebooks que se venden a 9 dólares",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      },
+      {
+        "belief": "Esto puede trabajar por mí en cualquier país, cualquier día",
+        "installed_via": "Venta modelo positiva: lunes Buenos Aires, martes México, miércoles España",
+        "persuasion_function": "venta_modelo",
+        "section_name": "Venta modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho",
+        "hypothesis": "F1 estructura winner #121: filtro 'sabés hacer' + 'ya te pasó' + escena sensorial (3 horas, cumpleaños) + sting comparativo (tupper vacío como pago)",
+        "emotional_lever": "injusticia del trabajo regalado",
+        "script_text": "Si sabés hacer tortas, seguro ya te pasó. Tres horas cocinando para un cumpleaños. Te pagaron con un \"qué rico\" y un tupper vacío.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "F12 voz tercero completa: hermana + frase que incomoda + reacción interna que expone creencia limitante del avatar C1",
+        "emotional_lever": "la creencia limitante expuesta por alguien cercano",
+        "script_text": "\"¿Por qué no vendés esas empanadas que hacés? Todo el mundo te las pide.\" Te lo dice tu hermana. Y vos le contestás: \"¿Quién me va a comprar a mí?\"",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "F5 incredulidad posesiva: asombro genuino que honra expertise C1 + sting con 'qué rico' como única moneda de pago",
+        "emotional_lever": "indignación por talento desperdiciado",
+        "script_text": "No entiendo cómo todavía hay gente que cocina mejor que un restaurante. Y lo único que cobra es un \"qué rico\" en cada juntada.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia_cotidiana",
+        "hypothesis": "F21 evocación cultural con los 3 pasos: objeto compartido (cuaderno de la vieja) → obsolescencia → pivote a oportunidad sin revelar mecanismo",
+        "emotional_lever": "nostalgia + oportunidad",
+        "script_text": "¿Te acordás el cuaderno donde tu vieja anotaba las recetas? Ya nadie lo usa. Pero la gente sigue buscando las mismas recetas. Solo que ahora paga por encontrarlas.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "hypothesis": "F18 desculpabilización completa: nombrar sentimiento + externalizar culpa + causa real. Energía opuesta a los otros 4 hooks",
+        "emotional_lever": "alivio y permiso",
+        "script_text": "Si sentís que lo que sabés de cocina no alcanza para vender, no es tu culpa. Nadie te explicó cómo se convierte una receta en algo que la gente compra.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "analogia_revelacion",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Esto me pasa — mando recetas gratis",
+          "viewer_emotion_after": "reconocimiento",
+          "is_turning_point": false,
+          "timing_seconds": 5,
+          "script_text": "¿Cuántas veces mandaste un audio de WhatsApp explicando una receta? Bien. Ese audio tiene algo que no estás viendo."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que hago es más que un favor",
+          "viewer_emotion_after": "revelación",
+          "is_turning_point": true,
+          "timing_seconds": 12,
+          "script_text": "Porque tiene ingredientes, cantidades, trucos que aprendiste a los golpes. Vos creés que es un favor. Pero la realidad es que armaste un manual de cocina. Sin darte cuenta."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe un proceso concreto para darle formato",
+          "viewer_emotion_after": "claridad",
+          "is_turning_point": false,
+          "timing_seconds": 15,
+          "script_text": "Y acá es donde entra la inteligencia artificial. Le das ese audio y la IA te lo convierte literalmente en una guía de 43 páginas: portada, índice, fotos. Básicamente, tus recetas con formato profesional. Un producto digital terminado. Lo vendés por WhatsApp."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito ser profesional",
+          "viewer_emotion_after": "alivio",
+          "is_turning_point": false,
+          "timing_seconds": 14,
+          "script_text": "Y no, no necesitás ser chef profesional. Las recetas que más se venden no son las de restaurante. Son las de casa. Guías de empanadas tucumanas, de pan casero, de tortas con lo que tenés en la heladera un martes."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Lo que yo hago ya tiene más valor que lo que se vende",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "timing_seconds": 13,
+          "script_text": "Entonces pensalo: ese audio de veinte minutos tiene más información que la mayoría de los ebooks de recetas que se venden a 9 dólares. La diferencia es que ellos le pusieron formato. Vos todavía no."
+        },
+        {
+          "section_name": "Venta modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Puede trabajar por mí en cualquier país",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "timing_seconds": 14,
+          "script_text": "Por eso funciona: lo armás un domingo a la tarde en tu tiempo libre y el lunes a la mañana alguien en Buenos Aires lo compra. El martes alguien en México. El miércoles alguien en España. Todo con el celular y dos dólares de publicidad."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "pregunta_retorica",
+        "phrase": "¿Cuántas veces mandaste un audio de WhatsApp explicando una receta?"
+      },
+      {
+        "location": "quiebre",
+        "technique": "afirmacion",
+        "phrase": "trucos que aprendiste a los golpes"
+      },
+      {
+        "location": "quiebre",
+        "technique": "afirmacion",
+        "phrase": "Vos creés que es un favor"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "guía de 43 páginas"
+      },
+      {
+        "location": "demolicion",
+        "technique": "afirmacion",
+        "phrase": "Son las de casa"
+      },
+      {
+        "location": "prueba",
+        "technique": "dato_anclado",
+        "phrase": "se venden a 9 dólares"
+      }
+    ],
+    "ingredients_used": [
+      "B#23",
+      "D#55",
+      "F#76",
+      "G#91",
+      "L#128"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B",
+        "layers": {
+          "oferta": "Y por eso preparé una clase para la próxima semana donde te voy a explicar cómo agarrar lo que ya sabés — de cocina, de lo que sea — y crear un producto digital alrededor de eso. Para empezar a venderlo por WhatsApp sin necesidad de saber de marketing.",
+          "orden_1": "Para registrarte tocá el botón de acá abajo.",
+          "prueba": "Ya lo hicieron más de 17 mil personas. Mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20. Todos empezaron de cero.",
+          "riesgo_cero": "Es gratis. No te voy a vender nada en esa clase. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Tocá el botón de acá abajo y registrate. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Armé un taller de 3 días en vivo. Día 1: encontrás tu producto con IA. Día 2: lo armás. Día 3: lo vendés por WhatsApp. Salís con tu producto hecho, tu anuncio listo y tu sistema funcionando.",
+          "prueba": "Ya pasaron más de 17 mil personas. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "¿Cuánto cuesta? 5 dólares. Menos que una pizza. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien y querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, puede cambiar cómo cerrás el mes. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "A",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo agarrar lo que ya sabés, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp.",
+          "orden_1": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas. Gente que arrancó sin saber nada.",
+          "riesgo_cero": "Es gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo. Los cupos son limitados. Si se llenan, no te va a dejar entrar.",
+          "cierre": "Comentá CLASE y registrate en el link de mi perfil. Te espero adentro."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-17T12:09:05.219Z"
+}

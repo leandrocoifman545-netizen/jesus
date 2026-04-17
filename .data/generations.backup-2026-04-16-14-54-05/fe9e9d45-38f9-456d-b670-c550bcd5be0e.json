@@ -1,0 +1,289 @@
+{
+  "id": "fe9e9d45-38f9-456d-b670-c550bcd5be0e",
+  "briefId": "8416ffa9-ebd7-4d65-bed9-a99a5a1ca73b",
+  "title": "Ya probé 4 cursos y ninguno me funcionó — vendedor de feria",
+  "batch": {
+    "id": "40841ea8-40ac-4f43-a156-2c14fd3427df",
+    "name": "Top 10 Definitivo"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.6_anti_guru",
+    "body_type": "qa_conversacional",
+    "segment": "A",
+    "funnel_stage": "RETARGET",
+    "niche": "vendedor ambulante / feria / ingreso inestable",
+    "model_sale_type": "lean_anti_riesgo",
+    "emotional_arc": "pregunta_tras_pregunta",
+    "transition_text": "Y es exactamente lo que te muestro.",
+    "total_duration_seconds": 78,
+    "word_count": 224,
+    "belief_change": {
+      "old_belief": "Ya probé de todo y nada funciona para mí, los cursos son todos una estafa",
+      "mechanism": "Este método valida ANTES de crear — si no hay demanda, no perdés tiempo ni plata",
+      "new_belief": "No es que no funcione — es que los métodos anteriores estaban diseñados para que siga comprando cursos"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "No soy el problema, el método anterior era el problema",
+        "installed_via": "confrontación honesta con la industria de cursos",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Hay una diferencia real entre esto y lo que probé antes",
+        "installed_via": "distinción concreta entre cursos y taller de acción",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "El proceso es simple y se valida antes de invertir",
+        "installed_via": "demostración del modelo lean anti-riesgo",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "El riesgo es mínimo y transparente",
+        "installed_via": "transparencia sobre precio y qué pasa si no funciona",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Gente escéptica como yo ya lo hizo y le funcionó",
+        "installed_via": "prueba social de escépticos convertidos",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situación_específica",
+        "hypothesis": "la frase textual del emprendedor frustrado genera identificación directa",
+        "emotional_lever": "empatía",
+        "script_text": "Ya probaste. No una vez. 4 veces. Dropshipping. Afiliados. Marketing. Y no pasó nada. Te quedó la sensación de que esto no es para vos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "historia_mini",
+        "hypothesis": "confrontar la industria de cursos genera alineación con el escéptico",
+        "emotional_lever": "confrontación",
+        "script_text": "\"Dormir tranquila. Porque ya no lo hago desde hace un año.\" Eso me escribió alguien que probó 4 veces y no funcionó ninguna. Pero la quinta fue distinta.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "confesión",
+        "hypothesis": "el vendedor ambulante responde a ver descrita su inestabilidad",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Te voy a decir algo que ninguno de los 4 que te vendió algo antes te dijo. Hay un paso que se saltaron todos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocación",
+        "hypothesis": "la idea de que vender en feria es ventaja genera curiosidad",
+        "emotional_lever": "curiosidad",
+        "script_text": "Gastaste plata en dropshipping, afiliados, marketing. Y los 4 arrancaron pidiéndote lo mismo. ¿No te parece raro que ninguno funcionara y todos empezaran igual?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incómoda",
+        "hypothesis": "ver que otros con ingreso inestable ya lo lograron genera urgencia",
+        "emotional_lever": "oportunidad",
+        "script_text": "¿Y si el problema no fuera tu capacidad sino el orden en que te dijeron que hagas las cosas?",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "pregunta_tras_pregunta",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No soy el problema, el método anterior era el problema",
+          "viewer_emotion_after": "alivio + indignación",
+          "is_turning_point": false,
+          "script_text": "Ya probaste. No una vez. 4 veces. Dropshipping. Afiliados. Marketing. Y no pasó nada. Te quedó la sensación de que esto no es para vos. Dormir tranquila porque ya no lo hago desde hace un año.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay una diferencia real entre esto y lo que probé antes",
+          "viewer_emotion_after": "curiosidad + apertura",
+          "is_turning_point": true,
+          "script_text": "No fallaste vos. Falló el método. Pero no el concepto. Lo que probaste tenía un problema que nadie te dijo. ¿Sabés qué tenían en común esas 4 veces? Ninguna te pidió que valides si alguien quería lo que ibas a crear.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El proceso es simple y se valida antes de invertir",
+          "viewer_emotion_after": "esperanza + lógica",
+          "is_turning_point": false,
+          "script_text": "Te mandaron a armar, a estudiar, a invertir. Y recién después a ver si alguien compraba. Eso es al revés. Acá el orden cambia. Paso 1: investigás qué busca la gente con las herramientas que te doy.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "El riesgo es mínimo y transparente",
+          "viewer_emotion_after": "resistencia desarmada",
+          "is_turning_point": false,
+          "script_text": "Paso 2: si hay demanda real, recién ahí creás el producto con la IA. Si no hay demanda, no perdiste nada. ¿Y cuánto sale esto? La clase donde explico todo es gratis. 2 horas. Sin tarjeta.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente escéptica como yo ya lo hizo y le funcionó",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Si querés avanzar al taller práctico, son 5 dólares. Menos que lo que gastás en un día de feria. Un feriante de Córdoba probó este orden. Antes invertía y después rezaba. Ahora primero valida y después crea.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Validás antes de invertir",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "script_text": "Dice que por primera vez no perdió plata en algo que nadie quería. Ese orden es lo que te faltó las otras 4 veces.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Te quedó la sensación de que esto no es para vos"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "esos cursos estaban diseñados para que vuelvas a comprar"
+      },
+      {
+        "location": "beat_2",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Sabés cuál es la diferencia?"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "No inviertas hasta estar seguro"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Sin perder meses ni plata"
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "5 dólares. Menos que lo que gastás en un día de feria"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "Dormir sin angustia"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 43,
+        "ingredient_name": "La verdad incómoda"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso de N pasos"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Anti-autoridad"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case study"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T03:53:47.763Z"
+}

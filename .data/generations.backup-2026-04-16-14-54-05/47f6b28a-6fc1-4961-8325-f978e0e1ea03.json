@@ -1,0 +1,249 @@
+{
+  "id": "47f6b28a-6fc1-4961-8325-f978e0e1ea03",
+  "briefId": "ce6e6519-cf29-46a2-942c-b20e5ef06712",
+  "title": "¿Y vos cuándo? — maquillera a domicilio que se olvidó de ella",
+  "batch": {
+    "id": "semana-2026-04-08",
+    "name": "Semana 2026-04-08 — Emociones de compradores"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.1_mama_papa_sin_tiempo",
+    "body_type": "contraste_emocional",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "maquillaje / estética a domicilio",
+    "model_sale_type": "tiempo_vs_dinero",
+    "emotional_arc": "dolor_puro_esperanza",
+    "transition_text": "Y eso de la guía de maquillaje es solo UN ejemplo de lo que podés crear.",
+    "total_duration_seconds": 85,
+    "word_count": 182,
+    "belief_change": {
+      "old_belief": "Mi vida es para cuidar a todos, yo no cuento",
+      "mechanism": "Ver que su conocimiento de maquillaje/estética tiene valor comercial real y que puede empaquetarlo con IA sin dejar nada de lo que ya hace",
+      "new_belief": "Puedo generar ingresos con lo que ya sé, sin dejar de cuidar a mi familia"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi vida entera es para otros",
+        "installed_via": "Descripción detallada de su rutina diaria de sacrificio",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Lo que hago gratis vale plata para otros",
+        "installed_via": "Revelar que la info que regala a clientas se vende online",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe un camino simple para empaquetar lo que sé",
+        "installed_via": "Mostrar proceso concreto: conocimiento → guía digital → venta por WhatsApp",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito dejar nada para hacer esto",
+        "installed_via": "Demoler la objeción de tiempo con escena concreta (hora de la noche)",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Alguien como yo ya lo hizo",
+        "installed_via": "Caso de piba que hacía uñas en el living",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "La mujer se identifica cuando ve su día narrado con detalle sensorial",
+        "emotional_lever": "rutina del sacrificio",
+        "script_text": "Son las 6 de la mañana. No sonó la alarma — ya te despertaste sola. Porque tu cuerpo ya sabe que antes de que se levanten todos, tenés que dejar todo listo. La mochila. La vianda. La ropa. Y cuando se van, vos salís corriendo a la primera clienta. ¿Y vos? ¿Cuándo?",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "La confrontación directa genera reacción emocional inmediata",
+        "emotional_lever": "espejo incómodo",
+        "script_text": "Le maquillás la cara a todo el mundo. Le arreglás las uñas. Les dejás las cejas perfectas. ¿Y a vos quién te cuida? Tu talento se lo regalás a otros por monedas mientras la IA está creando negocios con menos conocimiento que el tuyo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "confesion",
+        "hypothesis": "Nombrar el pensamiento que no se anima a decir en voz alta genera conexión",
+        "emotional_lever": "pensamiento secreto",
+        "script_text": "Hay un pensamiento que no le decís a nadie. Ni a tu marido, ni a tu mamá. \"¿Y si esto es todo?\" Cuidar a todos, llegar raspando a fin de mes, y repetir. Si alguna vez pensaste eso mientras limpiabas los pinceles después de un turno, esto es para vos.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "Redefinir su conocimiento como activo comercial genera curiosidad",
+        "emotional_lever": "lo que ya sabe vale",
+        "script_text": "Tus clientas te pagan por un brushing y se van. Pero lo que realmente les importa es lo que les explicás mientras las peinás — cómo cuidar la piel, qué base usar, qué no mezclar. Ese conocimiento que regalás por costumbre tiene un valor que todavía no viste.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "observacion_tendencia",
+        "hypothesis": "Validar con datos del mercado real que su conocimiento tiene demanda activa",
+        "emotional_lever": "mercado real",
+        "script_text": "Hay miles de mujeres buscando cómo hacerse un alisado en casa, cómo aplicarse pestañas, cómo cuidar la piel después de los 35. Y lo que encuentran son videos genéricos. Vos tenés años de oficio atendiendo a domicilio. La diferencia entre vos y esos videos es que vos sabés lo que de verdad funciona.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi situación tiene nombre",
+          "viewer_emotion_after": "reconocimiento",
+          "is_turning_point": false,
+          "timing_seconds": 5,
+          "script_text": "Eso que sentís después de 12 horas cuidando a todos tiene nombre. Se llama postergarte."
+        },
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi vida entera es para otros",
+          "viewer_emotion_after": "identificación visceral",
+          "is_turning_point": false,
+          "timing_seconds": 15,
+          "script_text": "Te levantás antes que todos para dejar la casa lista. Preparás el desayuno, llevás a los chicos, volvés corriendo. Atendés clientas a domicilio — uñas, pestañas, brushing. Hacés todo perfecto para todos. Y cuando termina el día, ¿qué queda para vos? Nada. Cero."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que hago gratis vale plata para otros",
+          "viewer_emotion_after": "sorpresa, revelación",
+          "is_turning_point": true,
+          "timing_seconds": 15,
+          "script_text": "Pero escuchame algo. Cada vez que una clienta te pide que le enseñes cómo se hace un smokey eye, o cómo cuidar la piel después de los 40, ¿qué hacés? Le explicás todo. Gratis. Y esa misma información hay gente pagándola ahora mismo en internet."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe un camino simple para empaquetar lo que sé",
+          "viewer_emotion_after": "claridad, posibilidad",
+          "is_turning_point": false,
+          "timing_seconds": 18,
+          "script_text": "La realidad es que hoy con la IA vos agarrás todo lo que sabés de maquillaje — las técnicas, los tips, los trucos que aprendiste en años de oficio — y lo metés en una guía digital. \"15 looks para eventos paso a paso\" o \"Cuidado de piel después de los 40 — guía completa\". Le ponés un precio, la vendés por WhatsApp. Lo creás una sola vez y se vende sola."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito dejar nada para hacer esto",
+          "viewer_emotion_after": "alivio, permiso",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Y no tenés que dejar de atender clientas. No tenés que dejar de cuidar a tus hijos. Literalmente lo armás en una tarde, en esa hora después de las 10 de la noche cuando ya se durmieron todos. Una tarde. Un producto. Listo."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Alguien como yo ya lo hizo",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Ya lo hicieron mamás que nunca habían vendido nada por internet. Una piba que hacía uñas en el living de su casa armó una guía de nail art con IA y la vendió a 200 pesos. Desde el celular. Sin mostrar la cara."
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Este modelo es mejor que cambiar horas por plata",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "Porque la diferencia entre lo que hacés hoy y esto, es que hoy cambiás horas por plata. Si no trabajás, no cobrás. Acá creás algo una vez y sigue vendiendo. Mientras dormís, mientras cocinás, mientras estás con tus hijos."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Hacés todo perfecto para todos"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "¿qué queda para vos? Nada. Cero."
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "Le explicás todo. Gratis."
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "15 looks para eventos paso a paso"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Una tarde. Un producto. Listo."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Desde el celular. Sin mostrar la cara."
+      }
+    ],
+    "ingredients_used": [
+      "B#23",
+      "C#47",
+      "D#49"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá CLASE acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá CLASE y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T02:31:01.049Z"
+}

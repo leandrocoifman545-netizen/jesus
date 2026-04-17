@@ -7,11 +7,11 @@
   "script": {
     "angle_family": "5",
     "angle_specific": "F5-5.4 Diálogo",
-    "body_type": "conversacion_experto_novato",
+    "body_type": "qa_conversacional",
     "segment": "C",
     "funnel_stage": "MOFU",
     "niche": "Presión social — novia escéptica",
-    "model_sale_type": "contraste_negocio_fisico",
+    "model_sale_type": "contraste_fisico",
     "visual_format": "split_screen_dialogo",
     "avatar": "martin",
     "awareness_level": 3,

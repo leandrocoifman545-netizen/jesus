@@ -89,6 +89,40 @@ const ALL_EMOTIONS = [
   "desconfianza → convicción",
 ];
 
+/**
+ * Hook preferences by avatar × awareness level.
+ * Data-driven from pattern-library (577 videos) + patrones-universales hypotheses.
+ */
+function getHookPreferences(avatar: string, awareness: number): string {
+  // Awareness-based formula preferences
+  let awarenessHooks: string;
+  if (awareness <= 2) {
+    awarenessHooks = `- **Por awareness ${awareness} (Unaware/Problem):** Priorizar \`pregunta_espejo\` (F4), \`historia_dolor_sensorial\` (F11), \`auto_seleccion_memoria\` (F1). EVITAR \`ancla_precio_invertida\` (F10) — el viewer no está listo para ofertas.`;
+  } else if (awareness <= 4) {
+    awarenessHooks = `- **Por awareness ${awareness} (Solution/Product):** Priorizar \`eliminacion_barreras\` (F2), \`flip_contraintuitivo\` (F7), \`nadie_explica\` (F8). El viewer busca solución — mostrarle que las barreras no aplican.`;
+  } else {
+    awarenessHooks = `- **Por awareness ${awareness} (Most Aware):** Priorizar \`ancla_precio_invertida\` (F10), \`incredulidad_posesiva\` (F5), \`provocacion_dato\` (F15). Hook de urgencia — el viewer ya sabe todo, solo necesita el empujón.`;
+  }
+
+  // Avatar-based formula preferences
+  let avatarHooks: string;
+  if (avatar === "patricia" || avatar === "roberto") {
+    avatarHooks = `- **Por avatar ${avatar} (56% de compradores):** Priorizar \`hipotetico_personal\` (F6: "Si empezara de cero a los 50..."), \`auto_seleccion_memoria\` (F1: "Si hacés [NICHO]..."), \`historia_dolor_sensorial\` (F11). Resultado modesto ($50/día), NUNCA "$10K/mes". Lenguaje simple, cero jerga tech.`;
+  } else if (avatar === "camila" || avatar === "martin") {
+    avatarHooks = `- **Por avatar ${avatar} (jóvenes):** Priorizar \`provocacion_dato\` (F15), \`ataque_herramienta\` (F9), \`flip_contraintuitivo\` (F7). Tono directo, ritmo rápido. Pueden tolerar jerga digital.`;
+  } else if (avatar === "diego") {
+    avatarHooks = `- **Por avatar ${avatar} (escéptico, quemado por gurús):** Priorizar \`nadie_explica\` (F8: frustra el consejo genérico), \`pregunta_espejo\` (F4), \`ancla_precio_invertida\` (F10). NUNCA promesas grandes — activan su filtro de scam.`;
+  } else if (avatar === "valentina" || avatar === "soledad") {
+    avatarHooks = `- **Por avatar ${avatar} (profesional que sabe pero no monetiza):** Priorizar \`incredulidad_posesiva\` (F5: "No entiendo cómo no estás vendiendo esto"), \`promesa_directa\` (F3), \`nombrar_innombrado\` (F14: "Eso se llama el síndrome de la acumuladora"). Hablarle como par, no como gurú.`;
+  } else if (avatar === "laura") {
+    avatarHooks = `- **Por avatar ${avatar} (mamá, fragmentos de tiempo):** Priorizar \`hipotetico_personal\` (F6), \`historia_dolor_sensorial\` (F11: micro-resultados en poco tiempo), \`voz_tercero\` (F12). Ingreso invisible, sin exponer familia.`;
+  } else {
+    avatarHooks = `- Sin preferencia específica de avatar.`;
+  }
+
+  return `${awarenessHooks}\n${avatarHooks}\nEstas son SUGERENCIAS informadas por data — no constraints duros. Pero si te alejás de ellas, que sea por una razón creativa concreta.`;
+}
+
 export interface AutoBriefResult {
   angle_family: string;
   body_type: string;
@@ -344,6 +378,9 @@ ${picks.awarenessLevel === 1 ? `**UNAWARE:** El viewer NO sabe que tiene un prob
   picks.awarenessLevel === 3 ? `**SOLUTION AWARE:** El viewer sabe que hay soluciones pero no conoce la nuestra. El guion posiciona productos digitales con IA como LA solución. Tono: mecanismo + diferenciación. Nombrar el método, explicar por qué es diferente. CTA directo.` :
   picks.awarenessLevel === 4 ? `**PRODUCT AWARE:** El viewer ya conoce ADP / el taller. El guion refuerza beneficios, destruye objeciones restantes y empuja a la acción. Tono: prueba social + urgencia. Casos de éxito, garantía, escasez real.` :
   `**MOST AWARE:** El viewer ya casi compra. Solo necesita el empujón final. El guion es pura oferta: precio, garantía, bonus, deadline. Tono: directo, sin rodeos. "¿Qué estás esperando?" / "Hoy se cierra."`}
+
+### HOOKS PREFERIDOS PARA ESTE AVATAR × AWARENESS (basado en data de 577 videos):
+${getHookPreferences(picks.avatar, picks.awarenessLevel)}
 
 ### ESTO NO ES SUGERENCIA — ES OBLIGATORIO:
 - El campo "angle_family" del JSON DEBE ser "${picks.angle}"

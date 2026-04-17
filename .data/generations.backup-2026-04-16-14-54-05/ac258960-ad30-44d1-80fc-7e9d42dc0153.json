@@ -1,0 +1,209 @@
+{
+  "id": "ac258960-ad30-44d1-80fc-7e9d42dc0153",
+  "briefId": "8bcc2b57-0af3-434f-ad3a-f9652bb36cc6",
+  "title": "Vendiste tus ahorros para otro curso — emprendedor MLM quemado",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.7_emprendedor_quemado",
+    "body_type": "demolicion_alternativas",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "emprendedor MLM / Hotmart / Shopify frustrado",
+    "model_sale_type": "cementerio_modelos",
+    "emotional_arc": "confrontacion_directa",
+    "transition_text": "No era vos. Era el modelo. Te muestro uno que sí funciona.",
+    "total_duration_seconds": 85,
+    "word_count": 200,
+    "belief_change": {
+      "old_belief": "Ya probé todo y nada funciona, soy yo el problema",
+      "mechanism": "Demolición de alternativas (dropshipping/MLM/afiliación) + dato real del 11% + historia de Jesús perdiendo $150K",
+      "new_belief": "No era yo, era el modelo. Productos digitales tiene márgenes reales y riesgo mínimo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "No soy el único que se quemó con otros modelos",
+        "installed_via": "dato del 11% que venían de Hotmart/MLM/Shopify",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Hasta Jesús la pasó mal y perdió plata",
+        "installed_via": "historia real de perder $150K en publicidad",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Cada modelo alternativo tiene un problema estructural",
+        "installed_via": "demolición de dropshipping, MLM, afiliación",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Productos digitales es distinto porque el margen es mío",
+        "installed_via": "contraste de márgenes y stock",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "El riesgo es mínimo y se valida antes",
+        "installed_via": "modelo lean de 5 dólares",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "hypothesis": "el anti-testimonio con dato real genera credibilidad",
+        "emotional_lever": "curiosidad",
+        "script_text": "No te voy a mostrar capturas de facturación. No te voy a prometer que vas a ganar 10 mil dólares. Te voy a contar por qué el 11 por ciento de las personas que me compraron ya habían probado Hotmart, Shopify, MLM o Amazon FBA. Y por qué esta vez fue distinto.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "enumerar intentos fallidos genera identificación directa",
+        "emotional_lever": "reconocimiento",
+        "script_text": "¿Cuánta plata perdiste en negocios que prometían todo? ¿Dropshipping? ¿Network? ¿Esa página de afiliados que nunca te dio un peso? Yo también perdí. Te cuento qué aprendí.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "la frase 'vendí mis ahorros' genera empatía inmediata",
+        "emotional_lever": "empatía",
+        "script_text": "Vendiste tus ahorros para inscribirte en algo. Y no funcionó. Pero el problema no fuiste vos. Fue el modelo.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "No soy el único que se quemó con otros modelos",
+          "timing_seconds": 12,
+          "script_text": "11 de cada 100 personas que se sumaron a esto venían de intentar con Hotmart, Shopify, MLM o Amazon. Ya habían gastado plata. Ya habían perdido tiempo. Ya estaban quemados."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hasta Jesús la pasó mal y perdió plata",
+          "timing_seconds": 15,
+          "script_text": "Y te voy a ser honesto. Yo también la pasé mal. Perdí 150 mil dólares en publicidad que no funcionó. \"Se fue una casa\", básicamente. Así que cuando alguien me dice \"vendí mis ahorros para inscribirme\", lo entiendo. No de oído. De vivirlo.",
+          "is_turning_point": true
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Cada modelo alternativo tiene un problema estructural",
+          "timing_seconds": 15,
+          "script_text": "El problema con dropshipping es que competís con Amazon. Con MLM, el que gana es el que entró primero. Con afiliación, los márgenes son tan chicos que laburás gratis."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Productos digitales es distinto porque el margen es mío",
+          "timing_seconds": 15,
+          "script_text": "Productos digitales es distinto. Vos creás algo con lo que sabés. La IA te ayuda a armarlo paso a paso. No necesitás stock, ni envíos, ni proveedores. Lo vendés por WhatsApp. Y el margen es tuyo."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "El riesgo es mínimo y se valida antes",
+          "timing_seconds": 15,
+          "script_text": "\"Ya invertí tanto que una deuda más no cambia nada.\" Mirá, esto no te pide deuda. Son 5 dólares el taller. Y lo primero que vas a aprender es: se vende antes de crear. Así no arriesgás nada."
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Los otros modelos tienen techo, este no",
+          "timing_seconds": 13,
+          "script_text": ""
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "No te voy a mostrar capturas de facturación"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Ya habían gastado plata. Ya habían perdido tiempo"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "lo entiendo. No de oído. De vivirlo"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Con MLM, el que gana es el que entró primero"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Lo vendés por WhatsApp. Y el margen es tuyo"
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Son 5 dólares el taller"
+      }
+    ],
+    "ingredients_used": [
+      "B#30",
+      "C#44",
+      "D#51",
+      "F#72",
+      "E#70"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:22.441Z"
+}

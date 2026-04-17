@@ -1,0 +1,209 @@
+{
+  "id": "3f4d246f-5aff-4780-8d4e-b286b63863d1",
+  "briefId": "bcd08f44-327b-40e2-b47e-b228ec512d86",
+  "title": "Tu hijo usa IA y vos no — ingeniero freelance con tarjetas al límite",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.3_antes_vs_despues_ia",
+    "body_type": "comparacion_caminos",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "arquitectura / ingeniería independiente",
+    "model_sale_type": "matematica_simple",
+    "emotional_arc": "provocacion_evidencia",
+    "transition_text": "20 años de experiencia no pueden depender de una llamada. Te muestro cómo empaquetarlos en una clase gratis.",
+    "total_duration_seconds": 75,
+    "word_count": 178,
+    "belief_change": {
+      "old_belief": "Solo puedo facturar si me contratan para una obra o proyecto",
+      "mechanism": "Comparación de camino lineal (presupuesto→obra) vs digital (guía→anuncio→WhatsApp) con matemática simple",
+      "new_belief": "Mi conocimiento de 20 años puede trabajar para mí 24 horas sin esperar que me llamen"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Si no me llaman, no facturo",
+        "installed_via": "descripción del camino lineal del freelancer",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Hasta un profesional con 20 años puede tener las tarjetas al límite",
+        "installed_via": "frase textual de tarjetas con problemas",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo armar un producto con lo que ya sé",
+        "installed_via": "lista concreta de formatos posibles",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "La matemática cierra con números creíbles",
+        "installed_via": "cálculo simple de 1 dólar → 30 dólares/día",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "No tengo que dejar mi profesión, solo sumar un ingreso",
+        "installed_via": "aclaración de que es complementario",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "hypothesis": "la comparación generacional IA genera urgencia",
+        "emotional_lever": "urgencia",
+        "script_text": "Tu hijo usa IA para hacer en 10 minutos lo que a vos te lleva 3 horas. ¿Y si usaras esa misma IA para vender lo que ya sabés?",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el contraste entre experiencia y cero presencia digital",
+        "emotional_lever": "frustración",
+        "script_text": "Tenés 20 años de experiencia en arquitectura o ingeniería. Sabés cosas que no están en ningún manual. Y no estás vendiendo nada de eso. Hay gente que sí.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "la paradoja del más capacitado que menos gana online",
+        "emotional_lever": "curiosidad",
+        "script_text": "El profesional más capacitado suele ser el que menos gana online. No porque no sepa. Sino porque nadie le mostró que lo que sabe es exactamente lo que se vende.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Si no me llaman, no facturo",
+          "timing_seconds": 12,
+          "script_text": "Tenés 20 años de carrera. Sabés de cálculo estructural, de AutoCAD, de presupuestar una obra entera. Pero si no te llaman, no facturás. Y cada mes arrancás de cero. Esperando el próximo proyecto. Mientras tu hijo resuelve en ChatGPT en 10 minutos lo que a vos te lleva 3 horas."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hasta un profesional con 20 años puede tener las tarjetas al límite",
+          "timing_seconds": 15,
+          "script_text": "Alguien me dijo algo fuerte. \"Por primera vez en mi vida, tengo mis tarjetas con problemas.\" Un profesional con 20 años de carrera. Con problemas de tarjeta. ¿Sabés por qué? Porque su ingreso depende de que alguien lo llame.",
+          "is_turning_point": true
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo armar un producto con lo que ya sé",
+          "timing_seconds": 15,
+          "script_text": "El segundo camino es este. Agarrás lo que ya sabés, lo organizás en una guía de Excel, una planilla de cálculo, un curso corto de AutoCAD. La IA te ayuda a armarlo. Y lo vendés con un anuncio que cuesta menos que un café por día."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "La matemática cierra con números creíbles",
+          "timing_seconds": 12,
+          "script_text": "Invertís un dólar. Te llegan 10 mensajes. Vendés a 2. Tu producto vale 15 dólares. Hacé la cuenta. Ahora multiplicá por 30 días."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "No tengo que dejar mi profesión, solo sumar un ingreso",
+          "timing_seconds": 11,
+          "script_text": "Buscá 'plantilla de presupuesto de obra' en Google. Buscá 'curso de AutoCAD básico'. Hay profesionales vendiendo eso todos los días. Con menos experiencia que vos. No dejaron su profesión — sumaron un ingreso que no depende de que suene el teléfono."
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Los números cierran solos",
+          "timing_seconds": 10,
+          "script_text": ""
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Y si usaras esa misma IA para vender lo que ya sabés?"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Si no te llaman, no facturás"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "su ingreso depende de que alguien lo llame"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "cuesta menos que un café por día"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Hacé la cuenta"
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "tu conocimiento puede trabajar para vos las 24 horas"
+      }
+    ],
+    "ingredients_used": [
+      "B#29",
+      "C#39",
+      "D#48",
+      "F#71",
+      "G#88"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:21.783Z"
+}

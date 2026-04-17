@@ -1,0 +1,438 @@
+{
+  "id": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+  "briefId": "3bd214fe-22c6-4a8e-bd94-40c5efe086bb",
+  "title": "Consumir vs vender desde la cama (Martín)",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.2_consumidor_vs_creador",
+    "body_type": "analogia_extendida",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "Conocimiento general (cualquier habilidad)",
+    "model_sale_type": "transparencia_total",
+    "transition_text": "Y cómo hacerlo, te lo enseño paso a paso.",
+    "total_duration_seconds": 80,
+    "word_count": 215,
+    "belief_change": {
+      "old_belief": "Consumir tutoriales me va a ayudar a progresar",
+      "mechanism": "El conocimiento que ya tenés es un producto vendible — la IA lo empaqueta, vos lo vendés",
+      "new_belief": "Ya sé lo suficiente — ahora tengo que pasar de consumidor a creador"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Consumo contenido que ya sé hacer — estoy del lado equivocado",
+        "installed_via": "contraste visual: mismo celular, mismo lugar, distinto resultado",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Mi problema no es falta de info — es exceso sin acción",
+        "installed_via": "redefinición: te sobra información, no te falta",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo convertir lo que sé en producto digital con IA en una tarde",
+        "installed_via": "proceso concreto: lo que sabés + IA + WhatsApp",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito ser experto ni profesor — solo saber más que mi cliente",
+        "installed_via": "demolición: no necesitás ser profesor, solo saber más que el que busca",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Gente común como yo ya vendió productos digitales así",
+        "installed_via": "caso concreto: 40 copias por WhatsApp, sin cara, sin seguidores",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Hay alguien ganando plata con algo que vos hacés mejor que él. Y sí, es injusto. Pero no por lo que pensás.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "historia_mini",
+        "script_text": "\"Tenés un trabajo de oficina. Llegás a tu casa, abrís el celular y te ponés a mirar videos de cómo ganar plata. Todos los días. ¿Y sabés qué es lo más loco? Que ya tenés todo lo que necesitás para hacerlo. Te muestro la ÚNICA cosa que te falta.\"                                                                                                                                                                                                                       \n                   ",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "script_text": "Vos mismo lo dijiste: 'me fuerzo y las cosas no pasan'. ¿Sabés por qué no pasan? Porque estás usando lo que sabés para todo menos para lo único que te puede dar plata.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "script_text": "Yo ya estuve donde vos estás. Sabía un montón de cosas y no ganaba un peso con ninguna. Hasta que entendí que el problema no era lo que me faltaba. Era algo que estaba haciendo todos los días sin darme cuenta. Y vos probablemente lo estás haciendo ahora mismo",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "script_text": "Cuanto más aprendés, más lejos estás de ganar plata. Suena raro pero es exactamente lo que te está pasando. Te explico por qué y qué hacer en vez de seguir mirando videos.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "curiosidad_revelacion",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Estoy consumiendo contenido que ya sé hacer",
+          "script_text": "Mirá, yo estoy acostado. Y vos probablemente también. Los dos con el celular en la mano. La diferencia es que vos estás consumiendo contenido. Scrolleando. Y yo estoy vendiendo contenido. Desde el mismo lugar, con el mismo celular. ¿Cómo puede ser?",
+          "timing_seconds": 13,
+          "ipad_directions": [
+            "Pantalla de celular scrolleando Instagram/TikTok — feed de tutoriales y reels",
+            "Notificación de venta entrando por WhatsApp — captura real o simulada"
+          ]
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No me falta información — me sobra",
+          "script_text": "Vos ya sabés hacer algo. Cocinar, entrenar gente, armar planillas, lo que sea. Y seguís consumiendo tutoriales de eso mismo. El problema no es que te falta aprender más. Es que sabés de sobra y no estás haciendo nada con eso. Y mientras vos scrolleás, otro está vendiendo lo mismo que vos sabés.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "Lista de habilidades comunes: cocina, fitness, planillas, idiomas — cada una con un precio al lado ($7, $10, $5)",
+            "YouTube abierto con tutoriales del mismo tema — reforzar que consume lo que ya sabe"
+          ]
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo convertir lo que sé en producto digital con IA en una tarde",
+          "script_text": "Es facil agarrás lo que sabés y le pedís a la IA que te arme una guía. La IA te arma la estructura, el contenido, todo. Lo mandás por WhatsApp, ponés un anuncio de $1, y la gente que busca eso te encuentra y te compra. Hasta lo podés hacer desde la cama.",
+          "timing_seconds": 18,
+          "ipad_directions": [
+            "ChatGPT con prompt: \"Armame una guía de [tema] para principiantes\" — mostrando respuesta generándose",
+            "El producto terminado: PDF con diseño profesional (portada + índice)",
+            "WhatsApp Business: conversación con cliente comprando el producto",
+            "Meta Ads: anuncio corriendo con presupuesto de $1/día"
+          ]
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito ser profesor — solo saber más que el que busca",
+          "script_text": "\"Pero yo no soy profesor.\" No necesitás serlo. Necesitás saber más que la persona que busca resolver su problema. Y esa persona existe — está buscando en Google ahora mismo mientras vos estás acostado.",
+          "timing_seconds": 12,
+          "ipad_directions": [
+            "Google mostrando búsquedas reales: \"cómo hacer X\", \"guía de Y para principiantes\" — con volumen de búsquedas visible"
+          ]
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente común ya vendió productos digitales así",
+          "script_text": "Mirá, esto es una plataforma donde la gente vende productos digitales. Guías, manuales, PDFs. Todo esto lo crearon personas comunes con IA. Y uno de estos productos puede ser el tuyo.",
+          "timing_seconds": 10,
+          "ipad_directions": [
+            "Plataforma de productos digitales abierta — productos reales vendiéndose",
+            "Dashboard de ventas: gráfico subiendo, 40 copias, monto total visible",
+            "WhatsApp Business: conversaciones de compra reales"
+          ]
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "El modelo es simple y sin riesgo",
+          "script_text": "Creás el producto una vez y se sigue vendiendo. No necesitás stock, no necesitás horarios. Lo que hoy consumís acostado, mañana lo podés estar vendiendo acostado.",
+          "timing_seconds": 8,
+          "ipad_directions": [
+            "Timeline visual: \"Creás 1 vez\" → \"Se vende solo\" → notificaciones de venta entrando en loop"
+          ]
+        }
+      ]
+    },
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 27,
+        "ingredient_name": "Parálisis por Información"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Contraste Visual"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Anti-autoridad"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Tocá el botón de acá abajo y registrate. [...] Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "orden_nlp": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "timing_seconds": 25,
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "orden_nlp": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. [...] Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      }
+    ]
+  },
+  "createdAt": "2026-03-18T18:07:02.316Z",
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "status": "recorded",
+  "batch": {
+    "id": "b36369e3-48f1-4299-94b8-04bf0960e43e",
+    "name": "Version 2.0"
+  },
+  "ad_copies_matrix": {
+    "generation_id": "ffa3a3db-73e0-4e17-8e2b-e561fe6521fe",
+    "angle": "confrontacion — 3.2_consumidor_vs_creador",
+    "niche": "Conocimiento general (cualquier habilidad)",
+    "total_versions": 15,
+    "versions": [
+      {
+        "hook_index": 0,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H1-ClaseGratuita",
+        "headline": "Alguien vende lo que vos sabés hacer",
+        "description": "Clase gratuita 2hs en vivo: cómo pasar de consumir a vender con IA. Sin compromiso.",
+        "primary_text": "Martín trabaja en un gimnasio hace 7 años.\nTodos los días les explica a sus clientes cómo comer, cómo entrenar, cómo descansar.\n\nUna noche, acostado, se pone a buscar \"rutinas para principiantes\" en YouTube.\nEncuentra un canal con 43.000 suscriptores.\nEl tipo sabe claramente menos que él.\nTiene una guía en PDF que vende a $9 dólares.\n\n3.200 ventas.\n\nMartín se queda mirando la pantalla sin entender qué pasó.\nNo es que le faltaba aprender más.\nEra que llevaba 7 años siendo el experto de otra persona.\nNunca había sido el suyo.\n\nEso es lo que le pasa a la mayoría.\nNo hay un problema de conocimiento.\nHay un problema de dirección.\nSabés de sobra — pero todo ese saber va hacia consumir más, no hacia crear algo.\n\nLa diferencia entre Martín antes y después no fue un curso nuevo.\nFue entender que la IA podía tomar lo que él ya sabía y armar un producto en horas.\nUna guía. Un manual. Un PDF.\nCreado una vez. Vendido sin horarios, sin stock, sin jefe.\n\nHoy hay una clase gratuita de 2 horas donde Jesús muestra exactamente ese proceso:\ncómo encontrar qué vender, cómo armarlo con IA y cómo ponerle publicidad.\n\nNo es un webinar de ventas.\nEs el mapa que Martín hubiera necesitado 3 años antes.\n\nSi querés verlo, el link está abajo 👇",
+        "word_count": 218,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H1-InstagramOrgánico",
+        "headline": "Hay alguien ganando con lo que vos sabés.",
+        "description": "Instagram orgánico",
+        "primary_text": "Hay alguien ganando plata con algo que vos hacés mejor que él.\n\nNo te lo digo para que te frustres. Te lo digo porque me parece importante que lo veas.\n\nEsa persona no sabe más que vos. Probablemente sabe menos. La diferencia es que ella agarró lo que sabía y lo empaquetó. Una guía, un PDF, un manual. Algo simple.\n\nVos seguís consumiendo tutoriales de algo que ya dominás. Y mientras tanto, otro está cobrando por explicar exactamente eso.\n\nLa verdad es que no te falta conocimiento. Te sobra. Lo que falta es el paso de usar ese conocimiento para algo más que scrollear.\n\nSi querés saber cómo es ese paso, mirá el link en bio.",
+        "word_count": 112,
+        "structure_used": "Observación → Reencuadre → Contraste → Verdad → CTA suave"
+      },
+      {
+        "hook_index": 0,
+        "hook_type": "situacion_especifica",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H1-Taller$5",
+        "headline": "Camino A vs. Camino B",
+        "description": "Taller 3 días, $5 USD. Salís con tu producto digital hecho y tu primer anuncio activo.",
+        "primary_text": "Hay alguien ganando plata con algo que vos hacés mejor que él. Y sí, es injusto. Pero no por lo que pensás.\n\nTe cuento los dos caminos.\n\nCamino A: seguís mirando tutoriales, tomás otro curso gratuito, guardás el video para después, scrolleás 47 minutos más. Al final de la semana sabés lo mismo y ganaste lo mismo.\n\nCamino B: agarrás lo que ya sabés — cocinar, armar rutinas, hacer planillas, lo que sea — y lo convertís en un PDF o una guía. La IA te arma la estructura en 20 minutos. Lo subís a una plataforma de productos digitales. Ponés un anuncio de $1. La gente que busca exactamente eso te encuentra.\n\nLa diferencia entre los dos caminos no es talento. No es tiempo. No es conocimiento.\n\nEs que en el Camino B alguien tomó lo que ya sabía y lo convirtió en algo que se puede vender mientras duerme.\n\nEse alguien podés ser vos. Pero no mañana. Hoy, si arrancás ahora.\n\nEl Taller de 3 días existe para que salgas del Camino A de una vez. Día 1: elegís tu producto ganador. Día 2: lo creás completo con IA. Día 3: armás tu anuncio y tu sistema de venta.\n\nSon 3 días en vivo. Son $5 USD.\n\nSalís con tu producto terminado, tu anuncio activo y sin excusas.\n\n👇 Reservá tu lugar.",
+        "word_count": 218,
+        "structure_used": "Comparación directa"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "historia_mini",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H2-ClaseGratuita",
+        "headline": "\"Yo miraba tutoriales de lo mismo\"",
+        "description": "Clase gratuita 2hs: encontrá, creá y vendé tu primer producto digital. Anotate gratis.",
+        "primary_text": "El martes a las 11 de la noche, Romina mandó este mensaje al grupo:\n\n\"Chicos no puedo creer lo que acabo de hacer. Trabajo en contabilidad hace 9 años. Todos los días explico planillas, conciliaciones, el ABC del Excel. Y resulta que estaba mirando tutoriales de Excel en YouTube para 'seguir aprendiendo'. Tutoriales de cosas que yo hago dormida. Le pregunté a la IA qué podía armar con lo que sé. En 40 minutos tenía una guía de 23 páginas lista. La subí a una plataforma. Puse un anuncio de $1 por día. En 11 días vendí 37 copias. No es una fortuna pero es plata que no existía la semana pasada. Lo más loco es que la guía la armé un domingo a la tarde mientras tomaba mate.\"\n\nLo que Romina describe no es un caso raro.\nEs lo que pasa cuando alguien deja de usar lo que sabe para consumir y empieza a usarlo para crear.\n\nEl problema nunca fue el conocimiento.\nFue la dirección.\n\nHay una clase gratuita de 2 horas donde se muestra el proceso completo:\ncómo identificar qué sabés que otros buscan, cómo armarlo con IA y cómo venderlo con publicidad básica.\n\nEs en vivo, sin costo y sin compromiso.\nSi te interesa ver cómo funciona, el link está abajo.",
+        "word_count": 214,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "historia_mini",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H2-InstagramOrgánico",
+        "headline": "Llegás a casa y abrís el celular.",
+        "description": "Instagram orgánico",
+        "primary_text": "Me acuerdo cuando llegaba a casa después del trabajo y lo primero que hacía era agarrar el celular a mirar videos de \"cómo ganar plata online\".\n\nTodos los días. Durante meses.\n\nY lo loco es que yo ya sabía hacer cosas. Sabía armar planillas, organizar procesos, explicar sistemas. Pero seguía consumiendo como si me faltara algo.\n\nNo me faltaba nada. Estaba evitando el momento de hacer.\n\nEl día que paré de mirar videos y agarré lo que ya sabía para armarlo en algo concreto, todo cambió. No de golpe. Pero cambió.\n\nSi te suena conocido esto, escribime. En serio. Tengo algo que te puede servir.",
+        "word_count": 107,
+        "structure_used": "Anécdota personal → Tensión → Revelación → Conexión con el lector → CTA"
+      },
+      {
+        "hook_index": 1,
+        "hook_type": "historia_mini",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H2-Taller$5",
+        "headline": "Lo que cambia no es lo que sabés",
+        "description": "Taller 3 días en vivo, $5 USD. Producto, anuncio y sistema. Todo en 72 horas.",
+        "primary_text": "Tenés un trabajo de oficina. Llegás a tu casa, abrís el celular y te ponés a mirar videos de cómo ganar plata. Todos los días. ¿Y sabés qué es lo más loco? Que ya tenés todo lo que necesitás para hacerlo.\n\nEso me pasó a mí.\n\nEra martes, 23:14. Estaba en el subte de vuelta a casa con los auriculares puestos, mirando el tercer video del día sobre marketing digital. Sabía armar campañas, sabía de copy, sabía de embudos.\n\nY no ganaba un peso con nada de eso.\n\nEl jueves siguiente me topé con una plataforma donde personas comunes vendían guías en PDF sobre temas básicos — cómo organizarse, cómo cocinar sin gluten, cómo arrancar a correr. Ningún experto. Gente normal que sabía algo y lo escribió.\n\nEntendí algo que me cayó como un balde de agua fría: el problema nunca fue lo que me faltaba aprender. Fue que usaba todo lo que sabía para consumir más, en lugar de crear algo.\n\nEsa semana armé mi primera guía con IA. Tardé 3 horas. La subí. Puse un anuncio de $1 por día. En 9 días tenía mis primeras 7 ventas.\n\nNo porque sea especial. Sino porque paré de consumir y empecé a crear.\n\nHay un Taller de 3 días en vivo donde hacés exactamente eso. $5 USD. Salís con tu producto terminado y tu primer anuncio corriendo.\n\n👇 Entrá acá.",
+        "word_count": 231,
+        "structure_used": "Storytelling cinematográfico"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H3-ClaseGratuita",
+        "headline": "Lo que sabés vale plata. Hoy no.",
+        "description": "Clase gratuita 2hs en vivo: de consumidor a creador con IA. Gratis, sin presión.",
+        "primary_text": "Antes: abrís el celular en el colectivo y abrís YouTube.\nBuscás algo relacionado a lo que ya sabés hacer.\nVes el video. Te sentís productivo.\nCerrás la app. Llegás a casa. Abrís otra vez.\n\nEso no es aprender.\nEs consumir en loop.\n\nEl problema no es que te falte información.\nEl problema es que ya tenés demasiada — y no estás haciendo nada con ella.\n\nDespués: entendés que el conocimiento sin dirección no genera nada.\nQue la persona que vende tutoriales de lo que vos sabés no es más inteligente.\nSolo tomó lo que sabía y lo empaquetó.\n\nUna guía. Un PDF. Un manual de 17 páginas.\nLa IA arma la estructura. Vos ponés lo que ya sabés.\nLo subís. Ponés publicidad. La gente que busca exactamente eso te encuentra.\n\nNo hay stock. No hay horarios. No hay jefe.\nEl producto existe una vez y se sigue vendiendo.\n\nLa distancia entre el antes y el después no es talento.\nNo es capital. No es experiencia extra.\nEs entender en qué dirección apuntar lo que ya tenés.\n\nHay una clase gratuita de 2 horas donde muestro exactamente cómo hacer ese giro:\nqué vender, cómo crearlo con IA y cómo ponerle publicidad desde el día uno.\n\nEs gratis. Es en vivo. No te voy a vender nada en la primera hora.\nSi querés entrar, el link está abajo.",
+        "word_count": 222,
+        "structure_used": "Before/After emocional"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H3-InstagramOrgánico",
+        "headline": "Sabés de sobra. Ese es el problema.",
+        "description": "Instagram orgánico",
+        "primary_text": "Te lo digo así, sin anestesia:\n\nNo es que te falta aprender más. Es que sabés demasiado y no estás haciendo nada con eso.\n\nCocinar, entrenar gente, hablar inglés, armar presupuestos, lo que sea. Hay alguien buscando en Google ahora mismo cómo hacer exactamente eso que vos ya sabés.\n\nY vos estás mirando otro tutorial.\n\nEl conocimiento sin uso no vale nada. Lo que vale es empaquetarlo y ponerlo donde la gente que lo necesita pueda encontrarlo.\n\nNo es joda, es más simple de lo que parece. Mirá el link en bio si querés ver cómo.",
+        "word_count": 93,
+        "structure_used": "Provocación directa → Ejemplos concretos → Contraste → Verdad simple → CTA"
+      },
+      {
+        "hook_index": 2,
+        "hook_type": "provocacion",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H3-Taller$5",
+        "headline": "\"Creé algo en 3 horas y se vendió solo\"",
+        "description": "Taller 3 días, $5 USD. Para quien ya sabe algo y no está haciendo nada con eso todavía.",
+        "primary_text": "Vos mismo lo dijiste: \"me fuerzo y las cosas no pasan\". ¿Sabés por qué no pasan? Porque estás usando lo que sabés para todo menos para lo único que te puede dar plata.\n\nMariela llevaba 11 meses mirando videos de nutrición. Sabía de macros, de planes alimentarios, de suplementación. Era la persona a la que todos le preguntaban en el gimnasio.\n\nMandó este mensaje el miércoles a las 22:47:\n\n\"Jesús no puedo creer lo que pasó. Entré al taller sin saber qué iba a hacer. El día 1 elegí mi tema — planes de alimentación para mujeres que entrenan en casa. El día 2 armé la guía completa con IA, 34 páginas, en menos de 4 horas. El día 3 subí el anuncio. Para el viernes ya tenía 3 ventas. Tres. Con algo que sabía desde hace años y nunca pensé en vender. Lo que me frenaba no era el conocimiento. Era que nunca había creado nada con él.\"\n\nMariela no inventó nada nuevo. No estudió más. Agarró lo que ya tenía en la cabeza y lo convirtió en un producto digital que se sigue vendiendo mientras ella duerme.\n\nEl Taller dura 3 días en vivo. Son $5 USD. Salís con tu guía terminada, tu anuncio activo y tu sistema funcionando.\n\nSi Mariela pudo con lo que ya sabía, vos también podés.\n\n👇 Reservá tu lugar antes de que cierre.",
+        "word_count": 233,
+        "structure_used": "Testimonio con audio/WhatsApp"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "dato_concreto",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H4-ClaseGratuita",
+        "headline": "Scrolleaba recetas. Terminó vendiéndolas.",
+        "description": "Clase gratuita 2hs en vivo: cómo crear y vender conocimiento con IA. Anotate sin cargo.",
+        "primary_text": "Claudia cocinaba para su familia hace 12 años.\nTodos los domingos publicaba fotos en Instagram. Solo por hobby.\n\nUn martes, buscando ideas para la semana, se topó con una cuenta que vendía recetarios digitales.\nNada sofisticado. Un PDF con 31 recetas sin TACC.\nPrecio: $7 dólares.\n\nElla tenía 200 recetas sin TACC guardadas en una carpeta de Google Drive.\nLlevaba 3 años mirando contenido de cocina sin gluten para \"inspirarse\".\n\nEsa noche le preguntó a la IA cómo convertir sus recetas en un producto.\nLa IA le armó la estructura, el índice, el formato.\nElla completó el contenido con lo que ya sabía.\nTardó 4 horas.\n\nNo tenía experiencia vendiendo nada digital.\nNo sabía de publicidad.\nPuso un anuncio con $35 pesos el primer día.\n\nEn 3 semanas vendió 61 copias.\n\nLo que descubrió Claudia no fue un truco nuevo.\nFue que llevaba años siendo consumidora de algo en lo que era creadora.\nEl giro fue entender que el conocimiento acumulado no vale nada si no lo empaquetás.\n\nHay una clase gratuita de 2 horas donde se muestra ese proceso de principio a fin:\ncómo encontrar qué vender, cómo armarlo con IA y cómo conseguir los primeros compradores.\n\nSin cargo. Sin compromiso. En vivo.\nSi querés ver cómo funciona, el link está abajo.",
+        "word_count": 211,
+        "structure_used": "Descubrimiento accidental"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "dato_concreto",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H4-InstagramOrgánico",
+        "headline": "Yo estuve exactamente donde estás vos.",
+        "description": "Instagram orgánico",
+        "primary_text": "Yo ya estuve donde vos estás.\n\nSabía un montón de cosas. Leía, miraba videos, tomaba cursos. Y no ganaba un peso con nada de eso.\n\nPor mucho tiempo pensé que el problema era que me faltaba aprender algo más. Algún curso específico. Algún conocimiento que me faltaba.\n\nHasta que me di cuenta de algo: el problema no era lo que me faltaba. Era lo que estaba haciendo todos los días.\n\nEstaba consumiendo. Siempre consumiendo. Y nunca creando nada.\n\nCuando empecé a crear, aunque sea algo pequeño, algo cambió. La gente empezó a pagar por lo que yo sabía.\n\nLo que hoy consumís acostado, mañana lo podés estar vendiendo desde el mismo lugar. No es magia. Es un cambio de rol.\n\nSi querés entender cómo, mirá el link en bio.",
+        "word_count": 132,
+        "structure_used": "Vulnerabilidad → Falsa creencia → Revelación → Transformación → Reencuadre → CTA"
+      },
+      {
+        "hook_index": 3,
+        "hook_type": "dato_concreto",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H4-Taller$5",
+        "headline": "La cuenta que nadie hace",
+        "description": "Taller 3 días en vivo, $5 USD. Día 1 producto, día 2 lo creás, día 3 lo vendés.",
+        "primary_text": "Yo ya estuve donde vos estás. Sabía un montón de cosas y no ganaba un peso con ninguna. Hasta que entendí que el problema no era lo que me faltaba. Era algo que estaba haciendo todos los días sin darme cuenta.\n\nHacé la cuenta conmigo.\n\nUn producto digital de $17 USD. Sin stock. Sin horarios. Sin reuniones.\n\nSi lo ven 1.000 personas por mes y compra el 2%, son 20 ventas. Son $340 USD al mes. Con un producto que creaste una sola vez en 3 horas con IA.\n\nAhora calculá cuánto tiempo perdiste este mes mirando tutoriales de cómo hacer exactamente eso.\n\nEl problema no es la habilidad. Es que nadie te enseñó a convertirla en un activo que trabaje por vos.\n\nEn el Taller de 3 días en vivo hacemos esa conversión juntos, paso a paso:\n\nDía 1: identificás qué sabés que otros buscan y elegís tu producto ganador.\nDía 2: lo creás completo — la IA hace la estructura, vos ponés el conocimiento.\nDía 3: armás tu anuncio y dejás el sistema corriendo.\n\nAl final del tercer día tenés algo que no tenías antes: un producto digital terminado y un sistema que puede vender mientras hacés otra cosa.\n\nTodo eso por $5 USD. No es un error de tipeo.\n\n👇 Entrá al taller.",
+        "word_count": 224,
+        "structure_used": "Math-based / calculadora"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "clase_gratuita",
+        "cta_label": "Clase Gratuita",
+        "version_name": "H5-ClaseGratuita",
+        "headline": "Dos personas, mismo celular, distinto resultado",
+        "description": "Clase gratuita 2hs: aprendé a vender lo que ya sabés con IA. Gratis y en vivo.",
+        "primary_text": "Persona A y Persona B.\nLas dos tienen 34 años. Las dos trabajan en relación de dependencia.\nLas dos saben hacer algo bien: diseño, finanzas, idiomas, fitness, lo que sea.\nLas dos pasan 53 minutos por día mirando contenido relacionado a lo que saben.\n\nPersona A sigue consumiendo.\nCada video le da la sensación de estar avanzando.\nPero al final del mes, el saldo es el mismo.\nMás información. Mismo punto de partida.\n\nPersona B un día para.\nAgarra lo que sabe y le pregunta a la IA cómo convertirlo en algo vendible.\nLa IA arma la estructura. Ella completa con su experiencia.\nEn un fin de semana tiene un producto digital listo.\nLo sube. Pone publicidad básica.\nEmpiezan a entrar ventas mientras duerme.\n\nLa diferencia entre A y B no es talento.\nNo es capital inicial.\nNo es tiempo disponible.\n\nEs que B entendió algo que A todavía no:\ncuanto más consumís de lo que ya sabés, más lejos estás de monetizarlo.\nEl conocimiento sin dirección no genera nada.\n\nHay una clase gratuita de 2 horas donde se explica exactamente qué hace la Persona B:\ncómo identifica qué vender, cómo lo crea con IA y cómo le pone publicidad desde cero.\n\nEs en vivo, sin costo y sin compromiso de compra.\nSi querés ser la Persona B, el link está abajo.",
+        "word_count": 213,
+        "structure_used": "Comparación directa"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "instagram",
+        "cta_label": "Instagram Orgánico",
+        "version_name": "H5-InstagramOrgánico",
+        "headline": "Cuanto más aprendés, más lejos estás.",
+        "description": "Instagram orgánico",
+        "primary_text": "Fijate esto.\n\nCada tutorial que mirás te da la sensación de que estás avanzando. Pero en realidad te aleja del momento en que realmente avanzás.\n\nPorque aprender se siente productivo. Y crear se siente incómodo.\n\nEntonces elegimos aprender. Siempre hay algo más para aprender.\n\nLa verdad es que ya sabés suficiente. Suficiente para ayudar a alguien que sabe menos que vos. Y esa persona existe y está buscando exactamente eso.\n\nEl paso no es aprender más. Es parar de consumir y empezar a hacer algo con lo que ya tenés.\n\nComenta \"ya\" si esto te cayó como una cachetada. 😅",
+        "word_count": 102,
+        "structure_used": "Observación contraintuitiva → Mecanismo psicológico → Verdad → Acción concreta → CTA participativo"
+      },
+      {
+        "hook_index": 4,
+        "hook_type": "contraintuitivo",
+        "cta_channel": "taller_5",
+        "cta_label": "Taller $5",
+        "version_name": "H5-Taller$5",
+        "headline": "Más tutoriales, más lejos de ganar",
+        "description": "Taller 3 días, $5 USD. Para quien ya sabe y todavía no creó nada con eso.",
+        "primary_text": "Cuanto más aprendés, más lejos estás de ganar plata. Suena raro pero es exactamente lo que te está pasando. Te cuento cómo lo descubrí.\n\nEra un domingo a la tarde. Estaba en la cocina esperando que hirviera el agua y abrí Instagram sin pensar. Empecé a ver un video sobre cómo vender cursos online. Después otro sobre nichos rentables. Después uno sobre copywriting. Cuando me di cuenta, el agua llevaba 20 minutos hirviendo y yo seguía parado con el celular en la mano.\n\nEse momento me cayó la ficha: llevaba 3 años aprendiendo a ganar plata online y nunca había creado nada para vender. Cada tutorial nuevo me daba la sensación de estar avanzando. Pero no avanzaba. Consumía.\n\nUna semana después, casi sin querer, entré a una plataforma de productos digitales. Vi que alguien vendía una guía sobre cómo organizar la alacena. Básico. Sin producción. Sin curso universitario. Solo alguien que sabía algo y lo escribió.\n\nEntendí que el problema nunca fue lo que me faltaba aprender. Fue que nunca había parado de aprender para crear.\n\nEsa semana armé mi primer producto con IA. Lo subí. Puse un anuncio. En 13 días recuperé lo invertido y un poco más.\n\nHay un Taller de 3 días en vivo, $5 USD, donde hacés exactamente ese cambio — de consumidor a creador. Salís con tu producto terminado y tu sistema activo.\n\n👇 Entrá acá si estás listo para crear.",
+        "word_count": 247,
+        "structure_used": "Descubrimiento accidental"
+      }
+    ],
+    "diversity_warnings": [],
+    "createdAt": "2026-03-23T20:33:32.674Z"
+  }
+}

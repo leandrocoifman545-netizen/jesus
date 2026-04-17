@@ -1,0 +1,90 @@
+{
+  "id": "9f01fb01-ca5d-4c25-aa3e-0f47b93ba6f3",
+  "briefId": "89c7d76e-520a-4177-822d-39066ee240eb",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Consumidor IA: rutinas fitness con IA",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "script": {
+    "platform_adaptation": {
+      "platform": "TikTok",
+      "recommended_duration_seconds": 45,
+      "content_style": "Split Screen 2 Pantallas: Arriba — screencast de ChatGPT generando un plan de ejercicios. Abajo — Jesús hablando a cámara.",
+      "key_considerations": "Formato nivel 2. CapCut para split. Arriba mostrar prompt real en ChatGPT: 'Armame un plan de 30 días de ejercicio para gente de oficina'. Abajo Jesús explica mientras se ve el resultado arriba."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "question",
+        "script_text": "¿Cuántas horas por semana le dedicás a ChatGPT? Le pedís recetas, chistes, que te resuma un texto. Pero nunca le pediste que te arme un negocio. Y es literalmente lo más fácil que puede hacer.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pain_point",
+        "script_text": "Abrís ChatGPT, le pedís un chiste, una receta de milanesas, que te resuma un artículo. Lo usás todos los días y todavía no le pediste que te genere plata. Te cuento cómo se hace.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contrarian",
+        "script_text": "Esto no es otro video de 'usá ChatGPT para ser más productivo'. Esto es sobre cómo la misma IA que usás para pavadas puede armarte un producto digital que se venda mientras dormís.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "curiosity_gap",
+        "script_text": "¿Viste cuando tenés un auto y lo usás solo para ir al supermercado? Con la IA hacés exactamente lo mismo. La tenés ahí, la usás para boludeces, y no sabés que puede ser tu herramienta de laburo.",
+        "timing_seconds": 5
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "reveal_teaser",
+        "script_text": "Todo el mundo tiene ChatGPT en el celular. La usan para recetas, para tareas, para preguntarle cosas. Pero casi nadie se dio cuenta de que con esa misma app podés armar algo que se vende solo por internet.",
+        "timing_seconds": 5
+      }
+    ],
+    "development": {
+      "framework_used": "BAB",
+      "emotional_arc": "Identificación (yo también uso IA para boludeces) → frustración suave (estás desperdiciando la herramienta) → curiosidad (qué pasa si la uso diferente) → esperanza concreta (ejemplo fitness) → cambio de creencia (saber pedir = saber ganar)",
+      "sections": [
+        {
+          "section_name": "Before — IA como juguete",
+          "is_rehook": false,
+          "script_text": "Hoy usás la IA para cosas básicas. Le pedís que te haga un texto, que te resuma algo, que te responda preguntas. Está perfecto. Pero eso es como usar una Ferrari para ir a la esquina.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Mirá lo que podés hacer con la misma herramienta.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "After — IA como negocio (fitness)",
+          "is_rehook": false,
+          "script_text": "Abrís la IA, le decís: 'Armame un plan de 30 días de ejercicio para gente de oficina que quiere entrenar en casa.' En 10 minutos tenés un producto digital completo. Le ponés un diseño, lo subís a una plataforma, y lo vendés por 15 dólares. Básicamente, tu computadora se convierte en tu equipo de trabajo. ¿Me explico?",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Bridge — Cambio de creencia",
+          "is_rehook": false,
+          "script_text": "No necesitás aprender programación. No necesitás saber de diseño. Necesitás saber PEDIR. Vos ponés las ideas, la IA pone el laburo. Lo creás una sola vez y lo vendés infinitas veces.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón y registrate gratis",
+      "reason_why": "Te muestro en vivo cómo crear tu primer producto digital con IA",
+      "timing_seconds": 5,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 45,
+    "word_count": 110
+  },
+  "createdAt": "2026-03-11T05:34:33.212Z",
+  "status": "recorded"
+}

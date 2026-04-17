@@ -1,0 +1,273 @@
+{
+  "id": "9129c9c8-20a6-4911-aaac-52bca01cf80f",
+  "briefId": "37af9850-6bd7-495a-bf8b-58b4fdc7e4c7",
+  "title": "No soy un gurú de Silicon Valley",
+  "batch": {
+    "id": "76463f63-d717-4f05-aa24-002f4a6abe1c",
+    "name": "Version 4.0"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.6_anti_guru",
+    "body_type": "demolicion_mito",
+    "segment": "D",
+    "funnel_stage": "RETARGET",
+    "niche": "Posicionamiento anti-gurú",
+    "model_sale_type": "transparencia_total",
+    "emotional_arc": "vulnerabilidad_conexion",
+    "tension": "T8_desconfianza_vs_esperanza",
+    "format_visual": "10_walking_talking",
+    "transition_text": "Todo eso que te acabo de contar te lo demuestro gratis en una clase de 2 horas. Sin compromiso. Sin letra chica.",
+    "total_duration_seconds": 80,
+    "word_count": 195,
+    "belief_change": {
+      "old_belief": "Los que enseñan a ganar plata online son todos iguales",
+      "mechanism": "Jesús se diferencia mostrando origen humilde, fracasos y transparencia",
+      "new_belief": "Este tipo es diferente — viene de abajo y es honesto"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Este no es el típico gurú",
+        "installed_via": "E#63 Anti-Autoridad",
+        "persuasion_function": "identificacion",
+        "section_name": "No soy gurú"
+      },
+      {
+        "belief": "Viene de abajo de verdad",
+        "installed_via": "E#62 Origen Humilde",
+        "persuasion_function": "quiebre",
+        "section_name": "De dónde vengo"
+      },
+      {
+        "belief": "Probó todo lo que no funciona",
+        "installed_via": "E#67 Vulnerabilidad Estratégica",
+        "persuasion_function": "mecanismo",
+        "section_name": "Lo que aprendí"
+      },
+      {
+        "belief": "Cuesta $5 y lo dice sin drama",
+        "installed_via": "D#43 Verdad Incómoda",
+        "persuasion_function": "demolicion",
+        "section_name": "La verdad"
+      },
+      {
+        "belief": "17 mil personas pasaron por acá",
+        "installed_via": "G#89 Prueba por Volumen",
+        "persuasion_function": "prueba",
+        "section_name": "Los números"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "negacion_directa",
+        "hypothesis": "el escéptico responde al anti-gurú",
+        "emotional_lever": "reconocimiento",
+        "script_text": "No soy un gurú de Silicon Valley. No tengo un podcast en inglés. No salgo en Forbes. Pero tengo más de 17.000 alumnos en toda Latinoamérica que arrancaron de cero. Igual que yo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "hypothesis": "el escéptico responde a la vulnerabilidad",
+        "emotional_lever": "conexion",
+        "script_text": "A los 19 pesaba 47 kilos y vivía con 100 dólares al mes. Dormía en el piso. Gasté todo en un curso de marketing. No te cuento esto para darte lástima. Te lo cuento para que sepas de dónde vengo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el escéptico responde contra la industria",
+        "emotional_lever": "confrontacion",
+        "script_text": "La verdad es que la mayoría de los que te enseñan a ganar plata online nunca vendieron nada. Su negocio es venderte el curso. El mío es que a vos te vaya bien. Y te lo puedo demostrar.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el escéptico responde a transparencia con números",
+        "emotional_lever": "credibilidad",
+        "script_text": "17.000 alumnos. Más de 1 millón de dólares en publicidad invertida. Y empecé con 100 dólares al mes. Te digo la verdad: no soy especial. Encontré un sistema que funciona.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el escéptico responde a la honestidad radical",
+        "emotional_lever": "sorpresa",
+        "script_text": "Te voy a ser honesto. No te puedo garantizar que ganes plata. Nadie puede. Pero sí te puedo demostrar que el sistema funciona. Gratis. Sin compromiso. Sin tarjeta.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "vulnerabilidad_conexion",
+      "turning_point_beat": "mecanismo",
+      "sections": [
+        {
+          "section_name": "No soy gurú",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este no es el típico gurú",
+          "viewer_emotion_after": "intriga",
+          "is_turning_point": false,
+          "script_text": "No soy un gurú de Silicon Valley. No tengo un podcast en inglés. No salgo en Forbes. Crecí en Sarandí, Entre Ríos. Un pueblo sobre la ruta. A los 15 se me caía la pintura del techo en la cara mientras dormía.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "De dónde vengo",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Viene de abajo de verdad",
+          "viewer_emotion_after": "respeto + conexión",
+          "is_turning_point": false,
+          "script_text": "A los 19 pesaba 47 kilos. Vivía con 100 dólares al mes. Gasté 2.000 dólares — todo lo que tenía — en un curso de marketing. Dormía en el piso. Tardé 9 meses en conseguir mi primer cliente. Gratis.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Lo que aprendí",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Probó todo lo que no funciona",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": true,
+          "script_text": "A los 22 alguien pagó 7 dólares por algo que me costó una tarde hacer. Ahí entendí que el juego era otro. No es trabajar más horas. Es crear algo que se vende sin que estés. Hoy tengo más de 17.000 alumnos haciendo exactamente eso.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "La verdad",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Es transparente con el precio",
+          "viewer_emotion_after": "confianza",
+          "is_turning_point": false,
+          "script_text": "El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Sin compromiso.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Los números",
+          "persuasion_function": "prueba",
+          "micro_belief": "17 mil personas pasaron",
+          "viewer_emotion_after": "seguridad",
+          "is_turning_point": false,
+          "script_text": "17.000 personas en Argentina, Colombia, México, Venezuela y España ya pasaron por acá. No todos se hicieron ricos. Pero todos aprendieron algo que antes no sabían. Y muchos hoy viven de eso.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta",
+          "micro_belief": "El kiosco vs esto",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "script_text": "Mi viejo tuvo un kiosco toda la vida. Laburaba de 6 a 22. Yo no quiero eso para nadie. Esto es diferente — no hay stock, no hay alquiler, no hay horario. Lo arrancás con tu celular y 5 dólares.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "No soy un gurú de Silicon Valley."
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "A los 15 se me caía la pintura del techo en la cara mientras dormía."
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "Tardé 9 meses en conseguir mi primer cliente. Gratis."
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "No es trabajar más horas. Es crear algo que se vende sin que estés."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Sin letra chica. Sin compromiso."
+      },
+      {
+        "location": "beat_5",
+        "technique": "dato_anclado",
+        "phrase": "17.000 personas en Argentina, Colombia, México, Venezuela y España"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "dato_anclado",
+        "phrase": "no hay stock, no hay alquiler, no hay horario"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 43,
+        "ingredient_name": "Verdad Incómoda"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Origen Humilde"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Anti-Autoridad"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estratégica"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 89,
+        "ingredient_name": "Prueba por Volumen"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "D",
+        "variant_name": "Exclusión",
+        "layers": {
+          "oferta": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas.",
+          "prueba": "17 mil personas en toda Latinoamérica y España ya lo hicieron.",
+          "riesgo_cero": "Gratis. Sin compromiso.",
+          "urgencia": "Los cupos se llenan y no se repite hasta la semana que viene.",
+          "cierre": "Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+        },
+        "text": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas. 17 mil personas en toda Latinoamérica y España ya lo hicieron. Gratis. Sin compromiso. Los cupos se llenan y no se repite hasta la semana que viene. Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "variant_name": "Emocional + Honestidad",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "cierre": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "variant_name": "Doble Intención",
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "orden_1": "Comentá \"NICHO\" acá abajo y te lo mando por DM.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "cierre": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá \"NICHO\" acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-04-07T15:35:21.950Z"
+}

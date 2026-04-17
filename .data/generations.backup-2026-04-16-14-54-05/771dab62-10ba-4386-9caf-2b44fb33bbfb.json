@@ -1,0 +1,250 @@
+{
+  "id": "771dab62-10ba-4386-9caf-2b44fb33bbfb",
+  "briefId": "0acf6561-3e2d-4bd1-ac0e-705907feb546",
+  "title": "Invitaciones digitales — lo que regalás vale plata",
+  "batch": "semana-demo-3",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_nicho_invisible",
+    "body_type": "analogia_extendida",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "invitaciones digitales",
+    "model_sale_type": "matematica_simple",
+    "rhythm_template": "R7",
+    "emotional_arc": "analogia_principio_a_fin",
+    "tension": "T9",
+    "pattern_ig": "ancla_precio_invertida",
+    "punto_entrada_emocional": "Bronca silenciosa de ver que otros cobran por algo que vos regalás",
+    "belief_change": {
+      "old_belief": "Eso que hago es un hobby, no un negocio",
+      "mechanism": "Mostrar precios reales en internet + proceso concreto con IA",
+      "new_belief": "Lo que para mí es un favor vale plata, y la IA me permite escalar"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Lo que hago gratis tiene valor real en internet",
+        "installed_via": "Precios concretos: 9, 12, 17 dólares por pack",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Gente con mi mismo nivel ya lo hace",
+        "installed_via": "Gente que sabe lo mismo que vos. O menos.",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "El proceso es simple y concreto",
+        "installed_via": "Dictás, te da, metés tu toque, subís",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito ser experta para hacerlo",
+        "installed_via": "Si sabés arrastrar una imagen en Canva, ya sabés suficiente",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Puedo comprobarlo yo misma ahora",
+        "installed_via": "Buscá invitaciones digitales en Etsy",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "dato_concreto",
+        "hypothesis": "El avatar responde a ver el precio de lo que regala",
+        "emotional_lever": "curiosidad",
+        "script_text": "Un pack de 23 invitaciones de cumpleaños digitales se vende a 9 dólares en internet. Lo armó una persona con Canva y ChatGPT en una tarde. Y se sigue vendiendo todos los días.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "El avatar responde a ver que otros cobran lo que ella hace gratis",
+        "emotional_lever": "confrontacion",
+        "script_text": "¿Cuántas invitaciones de cumpleaños les hiciste a tus amigas gratis el año pasado? ¿5? ¿10? Cada una de esas invitaciones vale plata en internet. Y vos ni te enteraste.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "analogia_cotidiana",
+        "hypothesis": "El avatar responde a un favor cotidiano revalorizado",
+        "emotional_lever": "reconocimiento",
+        "script_text": "¿Viste cuando tu cuñada te pide que le diseñes la invitación del baby shower porque \"vos que tenés buen gusto\"? Hay gente que cobra 12 dólares por ese mismo favor. Con las mismas herramientas que usás vos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "hypothesis": "El avatar responde a la provocación de que pierde plata",
+        "emotional_lever": "indignacion",
+        "script_text": "Mientras vos le hacés invitaciones de cumpleaños gratis a medio grupo de WhatsApp, hay una chica en Colombia vendiéndolas a 9 dólares el pack. Mismo Canva. Mismos templates. La única diferencia es que ella las subió a una plataforma.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "El avatar responde a verse en la situación exacta",
+        "emotional_lever": "identificacion",
+        "script_text": "Tu cuñada te manda un audio: \"Ay, ¿me hacés la invitación del cumple de Sofi? Vos que sos re buena con eso.\" Lo hacés en 20 minutos. Sin cobrar. Como siempre. Y no te das cuenta de que acabás de regalar algo que se vende todos los días en internet.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "analogia_principio_a_fin",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No es culpa mía no haberlo sabido",
+          "viewer_emotion_after": "Alivio + curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y no es culpa tuya. La realidad es que nadie te enseñó que eso que hacés en Canva los domingos tiene precio.",
+          "timing_seconds": 5
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que hago gratis tiene precio real en internet",
+          "viewer_emotion_after": "Sorpresa + bronca",
+          "is_turning_point": true,
+          "script_text": "En internet, un pack de 23 invitaciones de cumpleaños se vende a 9 dólares. Eso es lo que sale un café con medialunas. Uno de baby shower a 12. Uno de casamiento a 17. Los armó gente con Canva. Gente que sabe lo mismo que vos. O menos.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo hacerlo con lo que ya tengo",
+          "viewer_emotion_after": "Claridad + ganas",
+          "is_turning_point": false,
+          "script_text": "Le dictás a la IA lo que necesitás: 23 invitaciones de cumpleaños infantiles. Dinosaurios, unicornios, superhéroes, circo. Te da los textos, los formatos, las combinaciones de colores. Vos literalmente le metés tu toque en Canva, lo empaquetás como pack descargable y lo subís a 9 dólares.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito ser experta",
+          "viewer_emotion_after": "Permiso",
+          "is_turning_point": false,
+          "script_text": "No necesitás ser diseñadora gráfica. Si sabés arrastrar una imagen en Canva, ya sabés suficiente. Lo complicado lo hace la IA.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto es real y verificable",
+          "viewer_emotion_after": "Convicción",
+          "is_turning_point": false,
+          "script_text": "Buscá \"invitaciones digitales\" en Etsy. Solo en la primera página hay más de 200 packs. Mirá los precios. Mirá las reseñas. Y después hacé la cuenta.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "transition_text": "Eso que acabás de calcular no es fantasía. Es matemática. Y hay un paso a paso concreto para hacerlo.",
+    "model_sale_text": "Ese pack lo creás una tarde. Lo subís una vez. Y cada vez que una mamá busca \"invitación de cumpleaños\" en Google, tu pack aparece. Vos no hacés nada más.",
+    "total_duration_seconds": 77,
+    "word_count": 225,
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "validacion",
+        "phrase": "Y no es culpa tuya."
+      },
+      {
+        "location": "quiebre",
+        "technique": "dato_sorpresa",
+        "phrase": "un pack de 23 invitaciones de cumpleaños se vende a 9 dólares"
+      },
+      {
+        "location": "quiebre",
+        "technique": "confrontacion",
+        "phrase": "Gente que sabe lo mismo que vos. O menos."
+      },
+      {
+        "location": "demolicion",
+        "technique": "permiso",
+        "phrase": "Si sabés arrastrar una imagen en Canva, ya sabés suficiente."
+      },
+      {
+        "location": "prueba",
+        "technique": "verificable",
+        "phrase": "Solo en la primera página hay más de 200 packs."
+      },
+      {
+        "location": "prueba",
+        "technique": "accion",
+        "phrase": "Y después hacé la cuenta."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 29,
+        "ingredient_name": "Dolor Comparativo Social"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Números"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-11T15:17:39.953Z"
+}

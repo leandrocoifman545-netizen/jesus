@@ -1,0 +1,273 @@
+{
+  "id": "4f3ab290-4659-4f1e-b68d-dcc3b8fe547a",
+  "briefId": "88eab8e6-5a82-4fb1-bdaa-2310909574e3",
+  "title": "Si tuviera 50 años y no supiera nada de internet",
+  "batch": {
+    "id": "76463f63-d717-4f05-aa24-002f4a6abe1c",
+    "name": "Version 4.0"
+  },
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.1_historia_jesus_hipotetico",
+    "body_type": "qa_conversacional",
+    "segment": "D",
+    "funnel_stage": "RETARGET",
+    "niche": "Universal — hipotético personal",
+    "model_sale_type": "transparencia_total",
+    "emotional_arc": "historia_personal",
+    "tension": "T8_desconfianza_vs_esperanza",
+    "format_visual": "13_texto_grande_persona",
+    "transition_text": "Todo eso que te acabo de explicar te lo enseño gratis en una clase de 2 horas.",
+    "total_duration_seconds": 82,
+    "word_count": 200,
+    "belief_change": {
+      "old_belief": "A mi edad y con lo que sé, no puedo empezar algo online",
+      "mechanism": "Hipotético paso a paso que demuestra que con celular + algo que sabés + IA alcanza",
+      "new_belief": "Si él haría esto en mi lugar, yo también puedo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Jesús se pone en mi lugar — entiende mi situación",
+        "installed_via": "A#17 Pop Quiz / Desafío",
+        "persuasion_function": "identificacion",
+        "section_name": "La pregunta"
+      },
+      {
+        "belief": "Lo primero no es aprender tech, es pensar qué sé hacer",
+        "installed_via": "D#54 Analogía Simple",
+        "persuasion_function": "quiebre",
+        "section_name": "Lo que haría primero"
+      },
+      {
+        "belief": "En 3 horas tengo un producto armado con IA",
+        "installed_via": "F#73 Demo Implícita",
+        "persuasion_function": "mecanismo",
+        "section_name": "Cómo lo armaría"
+      },
+      {
+        "belief": "Si no funciona pierdo lo que cuesta un café",
+        "installed_via": "D#58 Remoción del Riesgo Percibido",
+        "persuasion_function": "demolicion",
+        "section_name": "El riesgo real"
+      },
+      {
+        "belief": "Solo necesito celular, WhatsApp y algo que sepa hacer",
+        "installed_via": "F#81 Positive Hook (Benson)",
+        "persuasion_function": "prueba",
+        "section_name": "Lo que necesitás"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde al hipotético personal que describe su vida",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si tuviera 50 años, no supiera nada de internet, no tuviera seguidores, y quisiera ganar 50 dólares extra por día... esto es exactamente lo que haría.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a la diferencia entre decir qué hacer vs qué haría uno",
+        "emotional_lever": "confrontacion",
+        "script_text": "Todo el mundo te dice qué hacer. Pero nadie te dice qué haría ÉL si estuviera en tu lugar. Yo sí. Y te lo demuestro paso a paso.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde a que no necesita tech para vender online",
+        "emotional_lever": "curiosidad",
+        "script_text": "No necesitás saber de tecnología para vender por internet. Suena contradictorio. Pero la verdad es que si sabés mandar un audio de WhatsApp, ya sabés suficiente.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde al escenario hipotético de crisis",
+        "emotional_lever": "urgencia",
+        "script_text": "¿Qué harías si mañana te despertaras sin trabajo, sin ahorros, con un celular y una conexión a internet? Te digo qué haría yo. Paso a paso.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el avatar responde a la simplicidad de los requisitos",
+        "emotional_lever": "esperanza",
+        "script_text": "Un celular. WhatsApp. Y algo que sepas hacer. Con esas 3 cosas armás un negocio que te dé 50 dólares por día. Sin local. Sin empleados. Te muestro cómo.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "historia_personal",
+      "turning_point_beat": "mecanismo",
+      "sections": [
+        {
+          "section_name": "La pregunta",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Jesús se pone en mi lugar",
+          "viewer_emotion_after": "empatía + atención",
+          "is_turning_point": false,
+          "script_text": "Me preguntan mucho esto. Jesús, si tuvieras 50 años, no supieras nada de internet, y quisieras generar un ingreso extra... ¿qué harías? Te lo cuento.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Lo que haría primero",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo primero es pensar qué sé, no aprender tech",
+          "viewer_emotion_after": "sorpresa + alivio",
+          "is_turning_point": false,
+          "script_text": "Lo primero que haría es sentarme y pensar qué sé hacer. No qué estudié. Qué SÉ. Cocinar arroz con pollo, arreglar una canilla de Ferrum, cuidar orquídeas. Lo que sea. Todos sabemos algo.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Cómo lo armaría",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "En 3 horas tengo un producto",
+          "viewer_emotion_after": "deseo + factibilidad",
+          "is_turning_point": true,
+          "script_text": "Después le pido a la IA que me arme una guía con eso. Literalmente le hablo como a un amigo. En 3 horas tengo un producto digital armado. Sin saber programar. Sin saber diseñar.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "El riesgo real",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Si no funciona pierdo lo que cuesta un café",
+          "viewer_emotion_after": "permiso + decisión",
+          "is_turning_point": false,
+          "script_text": "Lo pongo a la venta por WhatsApp. Lo probás con lo que cuesta un café en publicidad y esperás los mensajes. Si nadie te escribe, no perdiste nada. Si te escriben, ya está. Ya tenés un negocio.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Lo que necesitás",
+          "persuasion_function": "prueba",
+          "micro_belief": "Solo necesito celular, WhatsApp y algo que sepa",
+          "viewer_emotion_after": "claridad + confianza",
+          "is_turning_point": false,
+          "script_text": "La verdad es que no necesitás nada raro. Un celular, WhatsApp, y algo que sepas hacer. Eso alcanza. Sin compromiso. Sin riesgo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta",
+          "micro_belief": "Los números son reales y alcanzables",
+          "viewer_emotion_after": "confianza",
+          "is_turning_point": false,
+          "script_text": "Si tu primer producto te da 50 dólares por día, son 1.500 al mes. Sin depender de nadie. A tus tiempos. Eso es lo que enseño en una clase gratuita de 2 horas.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Si tuviera 50 años, no supiera nada de internet"
+      },
+      {
+        "location": "beat_1",
+        "technique": "pregunta_retórica",
+        "phrase": "¿qué harías?"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "Todos sabemos algo."
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "En 3 horas tengo un producto digital armado."
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "Si nadie te escribe, no perdiste nada."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Un celular, WhatsApp, y algo que sepas hacer. Eso alcanza."
+      },
+      {
+        "location": "pre_cta",
+        "technique": "dato_anclado",
+        "phrase": "50 dólares por día, son 1.500 al mes."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 17,
+        "ingredient_name": "Pop Quiz / Desafío"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía Simple"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 58,
+        "ingredient_name": "Remoción del Riesgo Percibido"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 73,
+        "ingredient_name": "Demo Implícita"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 81,
+        "ingredient_name": "Positive Hook (Benson)"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "D",
+        "variant_name": "Exclusión",
+        "layers": {
+          "oferta": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas.",
+          "prueba": "17 mil personas en toda Latinoamérica y España ya lo hicieron.",
+          "riesgo_cero": "Gratis. Sin compromiso.",
+          "urgencia": "Los cupos se llenan y no se repite hasta la semana que viene.",
+          "cierre": "Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+        },
+        "text": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas. 17 mil personas en toda Latinoamérica y España ya lo hicieron. Gratis. Sin compromiso. Los cupos se llenan y no se repite hasta la semana que viene. Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "variant_name": "Emocional + Honestidad",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "cierre": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "variant_name": "Doble Intención",
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "orden_1": "Comentá \"NICHO\" acá abajo y te lo mando por DM.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "cierre": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá \"NICHO\" acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-04-07T15:23:45.180Z"
+}

@@ -8,9 +8,37 @@
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from "fs";
 import { join } from "path";
+import { PATTERN_PHRASES, matchedPatterns } from "./lib/text-patterns.mjs";
 
 const DATA_DIR = join(import.meta.dirname, "..", ".data");
 const GENERATIONS_DIR = join(DATA_DIR, "generations");
+
+// Mapea variantes cortas/numéricas/legacy a la key canónica de familia.
+function normalizeFamily(family) {
+  if (!family) return "desconocido";
+  const f = String(family).toLowerCase();
+  const map = {
+    "1": "identidad_situacion", "identidad": "identidad_situacion",
+    "2": "oportunidad", "ventana_oportunidad": "oportunidad",
+    "3": "contraste_confrontacion", "confrontacion": "contraste_confrontacion",
+    "4": "mecanismo_proceso", "mecanismo": "mecanismo_proceso",
+    "5": "historia_emocion", "historia": "historia_emocion", "historia_personal": "historia_emocion",
+  };
+  return map[f] || family;
+}
+
+// Acepta ingredients_used como string ("B#23") u objeto ({category, ingredient_number}).
+function normalizeIngredient(ing) {
+  if (!ing) return null;
+  if (typeof ing === "string") {
+    const trimmed = ing.trim();
+    return trimmed.includes("#") ? trimmed : null;
+  }
+  if (typeof ing === "object" && ing.category && ing.ingredient_number != null) {
+    return `${ing.category}#${ing.ingredient_number}`;
+  }
+  return null;
+}
 
 if (!existsSync(GENERATIONS_DIR)) {
   console.log("No hay directorio de generaciones.");
@@ -95,7 +123,7 @@ const saleCounts = {};
 
 for (const g of generations) {
   const s = g.script || {};
-  const family = s.angle_family || "desconocido";
+  const family = normalizeFamily(s.angle_family);
   const body = s.body_type || "desconocido";
   const segment = s.segment || "?";
   const funnel = s.funnel_stage || "?";
@@ -133,6 +161,27 @@ r.push("# Matriz de Cobertura — Auto-generado");
 r.push(`> Fecha: ${new Date().toISOString().slice(0, 10)}`);
 r.push(`> Base: ${generations.length} generaciones`);
 r.push(`> Este archivo se regenera con: \`node scripts/update-coverage.mjs\``);
+r.push("");
+
+// 3a-pre. Últimas generaciones (para copiar a otra terminal)
+const LAST_N = 10;
+const lastGens = generations.slice(0, LAST_N);
+r.push("## Últimas generaciones (no repetir)");
+r.push("");
+r.push("| ID | Nicho | Familia | Ángulo | Body Type | Fecha |");
+r.push("|-----|-------|---------|--------|-----------|-------|");
+for (const g of lastGens) {
+  const s = g.script || {};
+  const id = (g.id || "?").slice(0, 8);
+  const niche = s.niche || "?";
+  const fam = FAMILY_LABELS[s.angle_family] || s.angle_family || "?";
+  const shortFam = fam.replace(/^\d+\.\s*/, "").slice(0, 20);
+  const angle = s.angle_specific || "?";
+  const body = BODY_LABELS[s.body_type] || s.body_type || "?";
+  const shortBody = body.replace(/^\d+\.\s*/, "").slice(0, 22);
+  const date = (g.createdAt || "?").slice(0, 10);
+  r.push(`| ${id} | ${niche} | ${shortFam} | ${angle} | ${shortBody} | ${date} |`);
+}
 r.push("");
 
 // 3a. Resumen general
@@ -338,12 +387,161 @@ for (const [niche, count] of nicheSorted) {
 }
 r.push("");
 
+// 3m. Patrones textuales saturados (bigramas/trigramas recurrentes en títulos + belief_change)
+r.push("## Patrones textuales saturados");
+r.push("");
+r.push("> Frases/estructuras que aparecen en 3+ guiones. Evitarlas como eje de nuevos guiones.");
+r.push("> Fuente: títulos + belief_change.old_belief / mechanism / new_belief. Se alimenta auto.");
+r.push("");
+
+const TEXT_STOPWORDS = new Set([
+  "de","la","el","en","y","a","los","del","las","un","por","con","no","una","su",
+  "para","es","al","lo","como","más","o","pero","sus","le","ya","que","este","sí",
+  "porque","esta","entre","cuando","muy","sin","sobre","también","me","hasta","hay",
+  "donde","quien","desde","todo","nos","durante","todos","uno","les","ni","contra",
+  "otros","ese","eso","había","ante","ellos","e","esto","mí","antes","algunos",
+  "qué","unos","yo","otro","otras","otra","él","tanto","esa","estos","mucho","cosa",
+  "así","cada","bien","sólo","solo","gran","unos","unas","hace","hacer","hacés",
+  "sabes","sabés","tenés","tiene","tener","sos","son","voy","vas","va","decir",
+  "vos","vos.","vos,","mi","mis","mes","día","años","años.","años,","todo.","cuenta",
+]);
+
+function normText(t) {
+  return String(t || "")
+    .toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9ñ\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getTokens(t) {
+  return normText(t).split(" ").filter(w => w.length > 3 && !TEXT_STOPWORDS.has(w));
+}
+
+function ngramsOf(tokens, n) {
+  const out = [];
+  for (let i = 0; i <= tokens.length - n; i++) out.push(tokens.slice(i, i + n).join(" "));
+  return out;
+}
+
+const bigramsCount = new Map();
+const trigramsCount = new Map();
+const bigramGuions = new Map();
+const trigramGuions = new Map();
+
+for (const g of generations) {
+  const s = g.script || {};
+  const bc = s.belief_change || {};
+  const texts = [
+    g.title, s.big_idea, bc.old_belief, bc.mechanism, bc.new_belief,
+  ].filter(Boolean);
+
+  const seenBi = new Set();
+  const seenTri = new Set();
+  for (const t of texts) {
+    const tokens = getTokens(t);
+    for (const bg of ngramsOf(tokens, 2)) seenBi.add(bg);
+    for (const tg of ngramsOf(tokens, 3)) seenTri.add(tg);
+  }
+  for (const bg of seenBi) {
+    bigramsCount.set(bg, (bigramsCount.get(bg) || 0) + 1);
+    if (!bigramGuions.has(bg)) bigramGuions.set(bg, []);
+    bigramGuions.get(bg).push((g.id || "?").slice(0, 8));
+  }
+  for (const tg of seenTri) {
+    trigramsCount.set(tg, (trigramsCount.get(tg) || 0) + 1);
+    if (!trigramGuions.has(tg)) trigramGuions.set(tg, []);
+    trigramGuions.get(tg).push((g.id || "?").slice(0, 8));
+  }
+}
+
+const hotTrigrams = [...trigramsCount.entries()]
+  .filter(([, c]) => c >= 3)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 30);
+
+const hotBigrams = [...bigramsCount.entries()]
+  .filter(([, c]) => c >= 4)
+  .filter(([bg]) => !hotTrigrams.some(([tg]) => tg.includes(bg))) // no duplicar si ya está en un trigrama saturado
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 20);
+
+// Contar también los PATTERN_PHRASES (regex curados) contra todos los guiones
+const patternHits = new Map();
+const patternExamples = new Map();
+for (const g of generations) {
+  const s = g.script || {};
+  const bc = s.belief_change || {};
+  const combined = [g.title, s.big_idea, bc.old_belief, bc.mechanism, bc.new_belief].filter(Boolean).join(" ");
+  const hits = matchedPatterns(combined);
+  const seen = new Set();
+  for (const p of hits) {
+    if (seen.has(p.id)) continue;
+    seen.add(p.id);
+    patternHits.set(p.id, (patternHits.get(p.id) || 0) + 1);
+    if (!patternExamples.has(p.id)) patternExamples.set(p.id, []);
+    patternExamples.get(p.id).push(g.title || (g.id || "?").slice(0, 8));
+  }
+}
+const hotPatterns = [...patternHits.entries()]
+  .filter(([, c]) => c >= 2)
+  .sort((a, b) => b[1] - a[1]);
+
+r.push("### Patrones curados (regex — fuente: lib/text-patterns.mjs)");
+r.push("");
+if (hotPatterns.length === 0) {
+  r.push("_Ningún patrón curado aparece 2+ veces._");
+} else {
+  r.push("| Patrón | Count | Ejemplos de títulos |");
+  r.push("|--------|-------|---------------------|");
+  for (const [pid, c] of hotPatterns) {
+    const examples = (patternExamples.get(pid) || []).slice(0, 2).map(t => t.slice(0, 40)).join(" · ");
+    const flag = c >= 4 ? "🔴" : c >= 3 ? "⚠️" : "🟡";
+    r.push(`| ${flag} \`${pid}\` | ${c} | ${examples} |`);
+  }
+}
+r.push("");
+
+if (hotTrigrams.length === 0 && hotBigrams.length === 0) {
+  r.push("### Trigramas/bigramas crudos");
+  r.push("");
+  r.push("_Sin n-gramas textuales saturados detectados._");
+  r.push("");
+} else {
+  r.push("### Trigramas (3+ apariciones)");
+  r.push("");
+  if (hotTrigrams.length === 0) {
+    r.push("_Ninguno._");
+  } else {
+    r.push("| Trigrama | Count | Guiones (primeros IDs) |");
+    r.push("|----------|-------|------------------------|");
+    for (const [tg, c] of hotTrigrams) {
+      const ids = (trigramGuions.get(tg) || []).slice(0, 4).join(", ");
+      r.push(`| \`${tg}\` | ${c} | ${ids} |`);
+    }
+  }
+  r.push("");
+  r.push("### Bigramas (4+ apariciones, sin estar en trigramas saturados)");
+  r.push("");
+  if (hotBigrams.length === 0) {
+    r.push("_Ninguno._");
+  } else {
+    r.push("| Bigrama | Count |");
+    r.push("|---------|-------|");
+    for (const [bg, c] of hotBigrams) r.push(`| \`${bg}\` | ${c} |`);
+  }
+}
+r.push("");
+r.push("**Cómo usar:** Si tu big idea incluye 2+ de estos trigramas → cambiar el ángulo. No es rotación cosmética, es el mismo guion repetido.");
+r.push("");
+
 r.push("---");
 r.push(`*Auto-generado por update-coverage.mjs — NO editar manualmente.*`);
 
 const matrizOutput = r.join("\n");
 writeFileSync(join(DATA_DIR, "matriz-cobertura.md"), matrizOutput);
-console.log(`✅ Guardado: .data/matriz-cobertura.md`);
+console.log(`✅ Guardado: .data/matriz-cobertura.md (${hotTrigrams.length} trigramas, ${hotBigrams.length} bigramas saturados)`);
 
 // ── 4. Actualizar ángulos saturados en angulos-expandidos.md ──
 const angulosPath = join(DATA_DIR, "angulos-expandidos.md");
@@ -404,6 +602,152 @@ if (existsSync(angulosPath)) {
   }
 } else {
   console.log("⚠️ No existe angulos-expandidos.md");
+}
+
+// ── 4b. Actualizar §5 de .data/v2/diversidad-cobertura.md ──
+const V2_DIR = join(DATA_DIR, "v2");
+const diversidadV2Path = join(V2_DIR, "diversidad-cobertura.md");
+
+if (existsSync(diversidadV2Path)) {
+  // Últimas 30 generaciones para ventana de "sub-usados"
+  const last30 = generations.slice(0, 30);
+
+  // Contar hook fórmulas (F1-F20). El campo es hook.formula o hook.hook_type
+  const formulaCounts = {};
+  for (const g of last30) {
+    for (const h of (g.script?.hooks || [])) {
+      const f = h.formula || h.hook_formula || null;
+      if (f) formulaCounts[f] = (formulaCounts[f] || 0) + 1;
+    }
+  }
+  const ALL_FORMULAS = Array.from({ length: 20 }, (_, i) => `F${i + 1}`);
+  const hooksSubUsed = ALL_FORMULAS.filter(f => (formulaCounts[f] || 0) < 3);
+
+  // Vehículos sub-usados (últimos 30)
+  const vehCounts30 = {};
+  for (const g of last30) {
+    const bt = g.script?.body_type;
+    if (bt) vehCounts30[bt] = (vehCounts30[bt] || 0) + 1;
+  }
+  const vehiclesSubUsed = BODY_TYPES.filter(bt => (vehCounts30[bt] || 0) < 2);
+
+  // Ingredientes sub-usados (últimos 30)
+  const ingCounts30 = {};
+  for (const g of last30) {
+    for (const ing of (g.script?.ingredients_used || [])) {
+      const key = normalizeIngredient(ing);
+      if (!key) continue;
+      ingCounts30[key] = (ingCounts30[key] || 0) + 1;
+    }
+  }
+  const ingZero = Object.entries(ingCounts30).filter(([, c]) => c === 0).map(([k]) => k);
+  const ingTopUsed = Object.entries(ingCounts30).sort((a, b) => b[1] - a[1]).slice(0, 10);
+  const ingSubUsed = Object.entries(ingCounts30).filter(([, c]) => c === 1).map(([k]) => k);
+
+  // Ventas del modelo sub-usadas
+  const saleCounts30 = {};
+  for (const g of last30) {
+    const s = g.script?.model_sale_type;
+    if (s) saleCounts30[s] = (saleCounts30[s] || 0) + 1;
+  }
+  const VENTA_TIPOS = [
+    "cementerio_modelos", "transparencia_total", "ventana_oportunidad_ia",
+    "contraste_fisico", "eliminacion_barreras", "matematica_simple",
+    "lean_anti_riesgo", "tiempo_vs_dinero", "democratizacion_ia", "prueba_diversidad"
+  ];
+  const salesSubUsed = VENTA_TIPOS.filter(v => (saleCounts30[v] || 0) < 2);
+
+  // Ritmos sub-usados (R1-R7)
+  const rhythmCounts30 = {};
+  for (const g of last30) {
+    const r = g.script?.rhythm_template;
+    if (r) rhythmCounts30[r] = (rhythmCounts30[r] || 0) + 1;
+  }
+  const ALL_RHYTHMS = ["R1", "R2", "R3", "R4", "R5", "R6", "R7"];
+  const rhythmsSubUsed = ALL_RHYTHMS.filter(r => (rhythmCounts30[r] || 0) < 2);
+
+  // Construir sección §5
+  const s5 = [];
+  s5.push("## §5 COBERTURA ACTUAL");
+  s5.push("");
+  s5.push(`> Auto-generado por update-coverage.mjs — ${new Date().toISOString().slice(0, 10)}`);
+  s5.push(`> Ventana: últimas ${last30.length} generaciones`);
+  s5.push("");
+
+  s5.push("### Hooks sub-usados (fórmulas con <3 usos en últimos 30 guiones)");
+  if (hooksSubUsed.length === 0) {
+    s5.push("_Todas las fórmulas con 3+ usos. Cobertura plena._");
+  } else {
+    s5.push(hooksSubUsed.map(f => `- ${f} (${formulaCounts[f] || 0} usos)`).join("\n"));
+  }
+  s5.push("");
+
+  s5.push("### Vehículos sub-usados (<2 usos en últimos 30)");
+  if (vehiclesSubUsed.length === 0) {
+    s5.push("_Todos los vehículos con 2+ usos._");
+  } else {
+    s5.push(vehiclesSubUsed.map(v => {
+      const label = BODY_LABELS[v] || v;
+      return `- ${label} (${vehCounts30[v] || 0} usos)`;
+    }).join("\n"));
+  }
+  s5.push("");
+
+  s5.push("### Ingredientes nunca usados o sub-usados");
+  if (ingSubUsed.length === 0 && ingZero.length === 0) {
+    s5.push("_Sin data de ingredientes en generaciones recientes._");
+  } else {
+    if (ingZero.length > 0) s5.push(`**Sin uso:** ${ingZero.join(", ")}`);
+    if (ingSubUsed.length > 0) s5.push(`**1 uso:** ${ingSubUsed.slice(0, 30).join(", ")}`);
+    if (ingTopUsed.length > 0) s5.push(`**Top usados (rotar):** ${ingTopUsed.map(([k, c]) => `${k}×${c}`).join(", ")}`);
+  }
+  s5.push("");
+
+  s5.push("### Ventas del modelo sub-usadas");
+  if (salesSubUsed.length === 0) {
+    s5.push("_Todas las ventas con 2+ usos._");
+  } else {
+    s5.push(salesSubUsed.map(v => `- ${v} (${saleCounts30[v] || 0} usos)`).join("\n"));
+  }
+  s5.push("");
+
+  s5.push("### Ritmos sub-usados (R1-R7, <2 usos)");
+  if (rhythmsSubUsed.length === 0) {
+    s5.push("_Todos los ritmos con 2+ usos._");
+  } else {
+    s5.push(rhythmsSubUsed.map(r => `- ${r} (${rhythmCounts30[r] || 0} usos)`).join("\n"));
+  }
+  s5.push("");
+
+  s5.push("### Gaps detectados");
+  if (gaps.length === 0) {
+    s5.push("_Sin gaps mayores._");
+  } else {
+    s5.push(gaps.slice(0, 10).map(g => `- ${g}`).join("\n"));
+  }
+  s5.push("");
+
+  // Reemplazar §5 en el archivo v2
+  let v2Content = readFileSync(diversidadV2Path, "utf-8");
+  const s5Start = v2Content.indexOf("## §5 COBERTURA ACTUAL");
+  if (s5Start !== -1) {
+    // Buscar siguiente "## " o "---\n" después de §5
+    const afterS5 = v2Content.indexOf("\n---\n", s5Start);
+    const nextSection = v2Content.indexOf("\n## ", s5Start + 10);
+    const cutPoint = (afterS5 !== -1 && (nextSection === -1 || afterS5 < nextSection))
+      ? afterS5 + 1
+      : (nextSection !== -1 ? nextSection + 1 : v2Content.length);
+
+    const before = v2Content.slice(0, s5Start);
+    const after = v2Content.slice(cutPoint);
+    v2Content = before + s5.join("\n") + after;
+    writeFileSync(diversidadV2Path, v2Content);
+    console.log(`✅ Actualizado: .data/v2/diversidad-cobertura.md §5 (${last30.length} gens analizadas)`);
+  } else {
+    console.log("⚠️ No se encontró '## §5 COBERTURA ACTUAL' en diversidad-cobertura.md v2");
+  }
+} else {
+  console.log("⚠️ No existe .data/v2/diversidad-cobertura.md");
 }
 
 // ── 5. Resumen en consola ──

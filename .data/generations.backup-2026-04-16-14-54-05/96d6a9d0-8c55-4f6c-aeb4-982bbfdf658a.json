@@ -1,0 +1,245 @@
+{
+  "id": "96d6a9d0-8c55-4f6c-aeb4-982bbfdf658a",
+  "briefId": "440bcf07-5180-4dc5-bb05-2534a20d004c",
+  "title": "13 horas por día — la maestra jardinera que dejó de depender del aula",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.5_la_matematica",
+    "body_type": "comparacion_caminos",
+    "segment": "C",
+    "funnel_stage": "MOFU",
+    "niche": "maestra jardinera",
+    "model_sale_type": "matematica_simple",
+    "transition_text": "Lo único que tenés que hacer es elegir 30 cosas de las que ya hacés en sala. Esta semana en una clase gratis te muestro cómo armarlo.",
+    "total_duration_seconds": 88,
+    "word_count": 215,
+    "punto_entrada_emocional": "hartazgo culpable de haber elegido un trabajo que amás pero no te alcanza",
+    "belief_change": {
+      "old_belief": "Estoy cansada del aula porque la docencia es agotadora",
+      "mechanism": "El cansancio no es del aula sino del modelo de cambiar 13 horas por un sueldo fijo. Empaquetar tu conocimiento de sala en una guía digital rompe la dependencia",
+      "new_belief": "Mi hartazgo es información: el modelo no me sirve. Mi conocimiento empaquetado me da otra fuente sin abandonar lo que amo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esa imagen de las 6:30 es la mía exacta",
+        "installed_via": "puente identificatorio sensorial",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Cansada del modelo, no del aula",
+        "installed_via": "reframe del diagnostico",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "Mi conocimiento de sala vale como producto",
+        "installed_via": "mecanismo con nombre - 30 actividades para una tarde sin pantallas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "Puedo seguir enseñando sin depender del aula para comer",
+        "installed_via": "demolicion de la falsa dicotomia 'todo o nada'",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay maestras jardineras reales facturando con guias",
+        "installed_via": "prueba con numero modesto y anclaje al no-tomar-otro-turno",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a su escena exacta de la mañana en jardin",
+        "emotional_lever": "reconocimiento sensorial",
+        "script_text": "Tu alarma suena a las 6:30. La sala desordenada de anoche, el café que va a salir frío, y a las 7:30 ya estás en el jardín.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el avatar responde a la matematica real de su dia (13 horas)",
+        "emotional_lever": "reconocimiento por dato",
+        "script_text": "13 horas. Ese es tu día real: 7 en sala, 2 de commute, 4 preparando material en tu casa. Contás horas y entendés por qué llegás vacía.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a que le validen las dos emociones simultaneas",
+        "emotional_lever": "validacion del hartazgo culposo",
+        "script_text": "Sentís hartazgo del aula. Y sentís culpa por sentir hartazgo. Las dos cosas al mismo tiempo, todos los días.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "observacion_tendencia",
+        "hypothesis": "el avatar responde a saber que no es la unica que se va",
+        "emotional_lever": "permiso por consenso",
+        "script_text": "Cada vez más maestras jardineras dejan el aula este año. No por vagas. Por algo que nadie las preparó para resolver.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "hypothesis": "el avatar responde a que le aclaren que no le piden abandonar la vocacion",
+        "emotional_lever": "alivio anticipado",
+        "script_text": "Acá nadie te dice que dejes de enseñar. Lo que te decimos es que dejes de cambiar tu tiempo por una sola fuente de plata.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "dolor_puro_esperanza",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Esa imagen de las 6:30 es la mía exacta",
+          "viewer_emotion_after": "conexion sensorial con su madrugada",
+          "is_turning_point": false,
+          "script_text": "Si tu día como maestra empieza a las 6:30 con la sala desordenada, escuchá un segundo.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Cansada del modelo, no del aula",
+          "viewer_emotion_after": "alivio: el problema tiene otro nombre",
+          "is_turning_point": false,
+          "script_text": "Pensás que estás cansada del aula. La realidad es otra. Estás cansada del modelo entero: 13 horas por día cambiando tiempo por un sueldo que no llega a fin de mes.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi conocimiento de sala vale como producto",
+          "viewer_emotion_after": "permiso: ya tengo el material",
+          "is_turning_point": false,
+          "script_text": "Tu cabeza tiene 12 años de cosas que ninguna mamá sabe. Cómo enseñarle a un nene de 3 a agarrar un lápiz. Cómo hacer que coman fruta. Lo dictás a una IA un sábado y armás un pack '30 actividades para una tarde sin pantallas' a 9 dólares.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo seguir enseñando sin depender del aula",
+          "viewer_emotion_after": "permiso: no es todo o nada",
+          "is_turning_point": true,
+          "script_text": "Acá hay un matiz: nadie te pide abandonar la docencia. La libertad arranca cuando dejás de DEPENDER del aula para llegar a fin de mes. Y eso lo armás los sábados.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay maestras reales facturando con guias",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Hay maestras jardineras que armaron una guía 'rutinas para mamás que trabajan desde casa' y venden 60 copias por mes a 9 dólares. 540 dólares extra sin tomar otro turno en otro jardín.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo - Matematica simple",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La cuenta cierra con 2 ventas por dia",
+          "viewer_emotion_after": "validacion final del modelo",
+          "is_turning_point": false,
+          "script_text": "Hacé la cuenta: 60 copias por mes son 2 ventas por día. 2 mamás que descargan tu guía mientras vos preparás la merienda de tus hijos. 540 dólares al mes, sin tomar otro turno.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "13 horas"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "tu día como maestra empieza a las 6:30 con la sala desordenada"
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "13 horas por día cambiando tiempo por un sueldo que no llega a fin de mes"
+      },
+      {
+        "location": "beat_2",
+        "technique": "future_pacing",
+        "phrase": "Lo dictás a una IA un sábado"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Y eso lo armás los sábados"
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "540 dólares extra sin tomar otro turno en otro jardín"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "future_pacing",
+        "phrase": "mientras vos preparás la merienda de tus hijos"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 33,
+        "ingredient_name": "Dolor por Tiempo Robado"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Mecanismo con Nombre"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo Legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:33:14.140Z"
+}

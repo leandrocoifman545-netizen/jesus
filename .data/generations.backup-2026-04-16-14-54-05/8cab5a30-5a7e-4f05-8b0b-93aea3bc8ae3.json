@@ -1,0 +1,240 @@
+{
+  "id": "8cab5a30-5a7e-4f05-8b0b-93aea3bc8ae3",
+  "briefId": "7fea5248-dbc4-475d-8d04-bc3311af4159",
+  "title": "Mil ilustradoras en Instagram — la matemática del 1 a 100",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_nicho_invisible",
+    "body_type": "pregunta_respuesta",
+    "segment": "A",
+    "funnel_stage": "MOFU",
+    "niche": "ilustradora freelance",
+    "model_sale_type": "prueba_diversidad",
+    "transition_text": "Lo único que tenés que empaquetar es tu estilo. Esta semana en una clase gratis te muestro exactamente cómo.",
+    "total_duration_seconds": 86,
+    "word_count": 209,
+    "punto_entrada_emocional": "sentir que perdiste el lugar antes de empezar porque viste tantas ilustradoras nuevas",
+    "belief_change": {
+      "old_belief": "Si hay 1.000 ilustradoras vendiendo en Instagram, ya no hay lugar para mí en el mercado",
+      "mechanism": "Por cada ilustradora vendiendo hay 100 personas buscando ilustración. Necesitás 30 de esas 100, no las 100.000 — y tu estilo es lo que las pesca",
+      "new_belief": "La saturación visible es la mejor prueba de que el mercado existe, y mi estilo me da una tribu propia"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto que veo en mi feed me bloquea cada noche",
+        "installed_via": "puente identificatorio",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Lo que llamo competencia es data de mercado",
+        "installed_via": "reframe contraintuitivo con anti-ficcion",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "La cuenta cierra con 30 personas, no con 100.000",
+        "installed_via": "matematica anclada al monotributo",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "Mi estilo pesca a una persona distinta",
+        "installed_via": "preguntas rafaga + reframe de identidad",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay ilustradoras chicas reales que ya lo hicieron",
+        "installed_via": "prueba con numeros anclados a accion (sin atender a nadie)",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a que le señalen su escena nocturna exacta de bloqueo",
+        "emotional_lever": "confrontacion amable",
+        "script_text": "¿Cuántas veces abriste Instagram, viste 4 ilustradoras nuevas dibujando parecido a vos y cerraste la app? Che, le pasa a un montón.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde a que su feed le esté diciendo lo opuesto a lo que cree",
+        "emotional_lever": "curiosidad",
+        "script_text": "Tu feed lleno de ilustradoras nuevas no te dice lo que vos creés que te dice. Y no es nada motivacional.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a una mini-escena dialogica con su amiga que refleja su voz interna",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Tu amiga te dice 'dale, tenés que avanzar con algo'. Y vos pensás: '¿cómo voy a salir de ahí si veo mil ilustradoras nuevas cada mes?'",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a un dato contraintuitivo sobre quien vende mas",
+        "emotional_lever": "confrontacion logica",
+        "script_text": "Las ilustradoras que más venden packs digitales tienen MENOS seguidores que vos. Y no es coincidencia ni suerte. Es algo que ninguna escuela de arte enseña.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "analogia_cotidiana",
+        "hypothesis": "el avatar responde a una analogia cotidiana del barrio que prueba el punto sin explicarlo",
+        "emotional_lever": "prueba por familiaridad",
+        "script_text": "¿Hay una sola pizzería en tu barrio? Hay 5. Y aplica exactamente igual a las 1.000 ilustradoras que ves en Instagram.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "pregunta_tras_pregunta",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Esto que veo en mi feed me bloquea cada noche",
+          "viewer_emotion_after": "conexion emocional con el bloqueo del feed",
+          "is_turning_point": false,
+          "script_text": "Si ver tantas ilustradoras vendiendo en Instagram te paró esta semana, escuchá.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que llamo competencia es data de mercado",
+          "viewer_emotion_after": "sorpresa: estaba mirando mal lo que veia",
+          "is_turning_point": false,
+          "script_text": "¿Sabés qué estás mirando cuando ves a mil ilustradoras vendiendo en Hotmart? Lo que llamás 'competencia' tiene un nombre más útil: data de mercado gratis. Cada save abajo de un pack vendido es alguien pagando del otro lado.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La cuenta cierra con 30 personas, no con 100.000",
+          "viewer_emotion_after": "alivio: la matematica cierra con poco",
+          "is_turning_point": false,
+          "script_text": "Por cada ilustradora vendiendo hay 100 buscando: mamás con imprimibles, profes con PDFs, diseñadores con iconos, marcas chicas armando su feed. Sacá la cuenta. Con 30 personas pagando 7 dólares por un pack de tus 12 dibujos, ya tenés 210 dólares al mes — el monotributo cubierto.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Mi estilo pesca a alguien distinto",
+          "viewer_emotion_after": "permiso: no necesito ser la mejor",
+          "is_turning_point": true,
+          "script_text": "¿Tenés que ser mejor que las 1.000 que venden? No. Tenés que tener TU estilo. Tu estilo te pesca a alguien distinto al que pesca otra. Y eso ya lo tenés.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay ilustradoras chicas reales que ya lo hicieron",
+          "viewer_emotion_after": "esperanza concreta: si esa puede yo puedo",
+          "is_turning_point": false,
+          "script_text": "Hay ilustradoras con 800 seguidores que ya salieron de ahí. 60 packs de stickers a 9 dólares vendidos el mes pasado. 540 dólares sin atender a un solo cliente.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo - Prueba por diversidad",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Cada estilo se gana su propia tribu",
+          "viewer_emotion_after": "validacion final del modelo",
+          "is_turning_point": false,
+          "script_text": "Esto pasa más allá de la ilustración pop. Una dibuja escudos para clubes de barrio. Otra hace caricaturas de mascotas. Otra vende lettering para casamientos. Cada estilo, su tribu.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "le pasa a un montón"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmación",
+        "phrase": "te paró esta semana"
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "Cada save abajo de un pack vendido es alguien pagando del otro lado"
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "el monotributo cubierto"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Y eso ya lo tenés"
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "540 dólares sin atender a un solo cliente"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificacion Extrema"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con Numeros"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:03:39.719Z"
+}

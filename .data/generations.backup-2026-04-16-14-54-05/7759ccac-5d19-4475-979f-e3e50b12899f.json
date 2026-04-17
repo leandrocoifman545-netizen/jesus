@@ -1,0 +1,209 @@
+{
+  "id": "7759ccac-5d19-4475-979f-e3e50b12899f",
+  "briefId": "68040e7f-01ae-4be4-a81c-259528b4e295",
+  "title": "20 años enseñando y la cuenta no se enteró — profe de música",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.4_jubilado_reinventandose",
+    "body_type": "demolicion_mito",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "música / profesor de instrumento",
+    "model_sale_type": "democratizacion_ia",
+    "emotional_arc": "pregunta_tras_pregunta",
+    "transition_text": "20 años de enseñar no pueden valer una hora a la vez. Te muestro otra forma.",
+    "total_duration_seconds": 80,
+    "word_count": 195,
+    "belief_change": {
+      "old_belief": "Con 50 años y dando clases de guitarra no puedo hacer nada digital",
+      "mechanism": "Dato real de que el 29% de alumnos tiene más de 55 + la IA elimina la barrera técnica",
+      "new_belief": "Mi experiencia de 20 años es exactamente lo que se vende, y la IA hace el resto"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi realidad es levantarme temprano para ganar el mínimo",
+        "installed_via": "frase textual del avatar sobre la rutina",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Si sé enseñar, ya tengo el 90% resuelto",
+        "installed_via": "Jesús responde directamente que sí funciona para profes",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "La IA me permite armar un método sin saber de diseño",
+        "installed_via": "explicación simple de cómo la IA organiza el conocimiento",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No es tarde, la experiencia es mi ventaja",
+        "installed_via": "dato del 29% mayores de 55",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "La IA niveló la cancha para todos",
+        "installed_via": "contraste antes/después de IA",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "negacion_directa",
+        "hypothesis": "la cadena de noes destruye barreras y el cierre con música genera identificación",
+        "emotional_lever": "permiso",
+        "script_text": "No tenés que renunciar. No tenés que saber de tecnología. No tenés que tener seguidores. Lo único que necesitás es saber algo que otro quiera aprender. Y vos sabés tocar.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "la matemática simple del techo de horas genera incomodidad productiva",
+        "emotional_lever": "confrontación",
+        "script_text": "¿Cuánto cobrás la hora de clase? ¿Y cuántas horas tiene tu día? Hacé la cuenta. Ese es tu techo. A menos que cambies lo que estás vendiendo.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la rutina del profe que vuelve a arrancar de cero cada lunes",
+        "emotional_lever": "hartazgo",
+        "script_text": "Hace 20 años que enseñás. Tus alumnos te adoran. Pero tu cuenta bancaria no se enteró. Y cada lunes volvés a arrancar de cero.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mi realidad es levantarme temprano para ganar el mínimo",
+          "timing_seconds": 15,
+          "script_text": "Me preguntan mucho esto. \"Jesús, yo soy profe de música. ¿Esto sirve para mí?\" Mirá, te lo digo simple. Si sabés enseñar algo, ya tenés el 90 por ciento resuelto."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi conocimiento vale más que lo que me pagan",
+          "timing_seconds": 15,
+          "script_text": "Alguien me escribió hace poco. \"Levantarme a las 4 y media de la mañana, hacer un viaje de hora y media en colectivo para ganar el mínimo.\" Eso no es un trabajo. Eso es supervivencia. Y vos tenés un conocimiento que vale mucho más que eso.",
+          "is_turning_point": true
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA me permite armar un método sin saber de diseño",
+          "timing_seconds": 15,
+          "script_text": "Vos tenés un método para enseñar guitarra. Los acordes que usás primero, los ejercicios de dedos, las canciones que elegís para motivar. Eso que perfeccionaste en 20 años. Con la IA lo organizás en un curso descargable — con tablaturas, ejercicios y audios. Lo vendés a 10 dólares. Y cada pibe que busca 'cómo tocar guitarra' en Google lo puede comprar. Sin que vos des una sola clase."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No es tarde, la experiencia es mi ventaja",
+          "timing_seconds": 15,
+          "script_text": "\"Pero Jesús, tengo 50 años, ¿no es tarde para esto?\" Te doy un dato. El 29 por ciento de los que empezaron tienen más de 55. No es tarde. Es el mejor momento. Porque tenés algo que los pibes no tienen. Experiencia real."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "La IA niveló la cancha para todos",
+          "timing_seconds": 10,
+          "script_text": "Buscá 'curso de guitarra online' en Hotmart o en Udemy. Vas a encontrar productos de profes como vos. Gente que enseña lo mismo que vos pero empaquetado. No tienen más talento. Tienen un formato distinto. Y vos podés hacer uno mejor porque tenés 20 años de cancha real."
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La IA democratizó el acceso",
+          "timing_seconds": 10,
+          "script_text": ""
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "No tenés que renunciar"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Si sabés enseñar algo, ya tenés el 90 por ciento resuelto"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "Eso no es un trabajo. Eso es supervivencia"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Vos ponés el conocimiento. La IA pone el resto"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "No es tarde. Es el mejor momento"
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "eso se aprende en un día"
+      }
+    ],
+    "ingredients_used": [
+      "B#37",
+      "D#53",
+      "F#79",
+      "E#63",
+      "G#92"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café.",
+          "urgencia": "El taller arranca esta semana.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T12:06:21.618Z"
+}

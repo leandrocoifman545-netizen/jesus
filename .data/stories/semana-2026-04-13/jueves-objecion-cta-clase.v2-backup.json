@@ -1,0 +1,104 @@
+{
+  "id": "jueves-objecion-cta-clase-v2",
+  "title": "Objeción + CTA CLASE — Esta carpeta casi no la muestro",
+  "sequence_type": "objecion",
+  "status": "draft",
+  "plan_ref": {
+    "week": "2026-04-13",
+    "mode": "volumen",
+    "day": "jueves",
+    "date": "2026-04-16",
+    "nafe_stage": 6,
+    "tactic_views": "T2-intriga-mystery-box"
+  },
+  "avatar": "patricia",
+  "avatar_age": 48,
+  "tension": "T1",
+  "tension_id": "T1",
+  "tension_note": "T1 Sacrificio vs vivir cruzada con objeción 'no sé de tecnología'",
+  "angle_family": "F4",
+  "big_idea": "Esta carpeta de mi laptop casi no la muestro. Hoy la abro porque me escriben lo mismo todas las semanas.",
+  "creative_idea": "Mystery box con ANCLA CONCRETA (carpeta real en laptop). Mantiene concepto del plan sin caer en SH5 genérico.",
+  "eje_narrativo_aplicado": "El lado equivocado es creer que tenés que saber programar. La realidad es otra: dictás audios y la IA hace el resto.",
+  "plan_conflict_resolution": "Plan pedía hook 'Hoy te voy a mostrar algo que casi no comparto' → es SH5 prohibido. Resolución: respetar concepto mystery box + imagen parcialmente tapada, cambiar frase por una con ANCLA real (carpeta de laptop).",
+  "calentamiento_layer": "producto+venta-suave",
+  "trigger_names": ["Intriga con ancla", "Reproducción de diálogo", "Reciprocidad", "Efecto rebaño"],
+  "emotional_arc": "mystery → confesión → identificación → revelación → simplicidad → permiso → CTA calmo → rebaño",
+  "emotional_valley": "stories 3-5 (reproducir frases textuales del dolor del avatar)",
+  "objections_dissolved": [
+    {"objecion": "No sé de tecnología", "story": 8, "tecnica": "Mostrar que dictar audio = usar IA. Ya sabe usar WhatsApp. Jesús confiesa no saber programar tampoco."},
+    {"objecion": "Ya probé y no funcionó", "story": 8, "tecnica": "Implícito: 'antes necesitaba equipo de ingenieros 6 meses' — antes NO se podía. Ahora sí."},
+    {"objecion": "Suena demasiado bueno", "story": 10, "tecnica": "Anti-hype textual del plan: 'sin fecha, sin urgencia, cuando puedas'"}
+  ],
+  "micro_yes_chain": [
+    {"story": 1, "pensamiento": "qué carpeta?", "tipo": "curiosidad-anclada"},
+    {"story": 4, "pensamiento": "eso lo pensé yo", "tipo": "identificacion-textual"},
+    {"story": 7, "pensamiento": "ah, eran audios nomás", "tipo": "sorpresa-simple"},
+    {"story": 9, "pensamiento": "si eso hace él, yo también puedo", "tipo": "permiso"},
+    {"story": 10, "pensamiento": "me interesa la clase", "tipo": "senal-compra"}
+  ],
+  "ingredients": {
+    "E1": [
+      "Soy total analfabeta de computación (data-audiencia hooks miedo)",
+      "No sé nada de computación, para mí va a ser un reto gigante (Roberto)",
+      "Complejidad percibida de las herramientas digitales (avatar-frases-reales)"
+    ],
+    "E2_DMs": [
+      "La simpleza y sinceridad de Jesús es terrible. Te hace sentir muy bien y confiado",
+      "Me gustó la forma que explica Jesús, muy claro y pausado como un docente que sabe lo que transmite",
+      "Pensé que era estafa pero bueno no quiero seguir haciendo lo mismo"
+    ],
+    "E3": "Un equipo de 4 ingenieros, 6 meses. Yo en 30 minutos (jesus-historia → adaptado a 'ingenieros 6 meses' en story 8)",
+    "E7": "Reproducción de diálogo (sintesis MM central) — ACTUAR las frases, no contarlas",
+    "E8": "El CTA se diseña PRIMERO (sintesis 9c) — toda la secuencia construye hacia CLASE"
+  },
+  "total_stories": 12,
+  "stories": [
+    {"number": 0, "function": "humor-pre", "text_on_screen": "Hoy tengo que rehacer mi contraseña de Netflix otra vez.", "text_spoken": null, "visual_format": "F1", "format_description": "Selfie resignado-divertido con celular mostrando 'contraseña incorrecta'.", "emotion": "humor", "trigger": "humor-cotidiano-NAFE17", "interaction": null, "timing": "subir 30 min antes del story 1 (R16)"},
+    {"number": 1, "function": "hook-con-ancla", "text_on_screen": "Esta carpeta de mi laptop casi no la muestro.", "text_spoken": null, "visual_format": "F1", "format_description": "Selfie Jesús frente a laptop, al fondo pantalla con carpeta borrosa visible. Luz tenue.", "emotion": "mystery", "trigger": "intriga-anclada-no-SH5", "interaction": null, "timing": "esperar 30-60 min entre story 1 y story 2 (R16)"},
+    {"number": 2, "function": "mystery-sostenido", "text_on_screen": null, "text_spoken": null, "visual_format": "P3", "format_description": "Screenshot real del Finder con carpeta blureada (nombre oculto). Overlay oscuro ligero. 3s.", "emotion": "mystery", "trigger": "open-loop-visual", "interaction": null},
+    {"number": 3, "function": "transicion", "text_on_screen": "Me escriben esto casi todos los días:", "text_spoken": null, "visual_format": "E1", "format_description": "Fondo gris oscuro, texto Deco blanco centrado. 3s.", "emotion": "anticipacion", "trigger": "puente", "interaction": null},
+    {"number": 4, "function": "reproduccion-dialogo", "text_on_screen": null, "text_spoken": "'Soy total analfabeta de computación'. 'No sé nada de tecnología'. 'Para mí va a ser un reto gigante'. Me pasó que le respondí a la misma persona 3 veces la misma cosa.", "visual_format": "V1", "format_description": "Video selfie 18s leyendo desde celular, tono empático.", "emotion": "identificacion", "trigger": "reproduccion-dialogo-sintesis", "interaction": "subtitulos"},
+    {"number": 5, "function": "efecto-rebano-confesiones", "text_on_screen": null, "text_spoken": null, "visual_format": "C3", "format_description": "3 capturas DMs reales con frases 'analfabeta'/'no sé'/'reto gigante'. Fondo negro. Solo los mensajes.", "emotion": "validacion", "trigger": "efecto-rebano-dolor", "interaction": null},
+    {"number": 6, "function": "revelacion-inminente", "text_on_screen": "La carpeta tiene una sola cosa:", "text_spoken": null, "visual_format": "E1", "format_description": "Fondo blanco, texto Classic negro grande centrado. 3s.", "emotion": "anticipacion", "trigger": "setup-reveal", "interaction": null},
+    {"number": 7, "function": "revelacion", "text_on_screen": "Audios.", "text_spoken": null, "visual_format": "F8", "format_description": "Screenshot carpeta SIN blur mostrando 5-8 archivos .m4a con fechas reales.", "emotion": "sorpresa-simple", "trigger": "anti-hype", "interaction": null},
+    {"number": 8, "function": "mecanismo", "text_on_screen": null, "text_spoken": "Le dicto audios a Claude todos los días. Cosas que se me ocurren, ideas, problemas. Y él me devuelve una guía, un producto, una clase, un email. Yo no sé programar. No sé hacer páginas web. Y la IA me construye cosas que antes necesitaban un equipo de ingenieros 6 meses.", "visual_format": "V1", "format_description": "Video selfie 22s frente a laptop. Cita Jesús textual. Cambio ángulo medio.", "emotion": "revelacion-calma", "trigger": "mecanismo-anti-tecnologia", "interaction": "subtitulos-largos"},
+    {"number": 9, "function": "permiso-puente", "text_on_screen": "Si eso lo puedo hacer yo, lo puede hacer cualquiera.", "text_spoken": "¿Querés ver cómo?", "visual_format": "E1", "format_description": "Fondo amarillo suave, texto Classic negro.", "emotion": "permiso", "trigger": "puente-cta", "interaction": "subtitulos"},
+    {"number": 10, "function": "cta-primario", "text_on_screen": null, "text_spoken": "Armé una clase gratuita donde muestro exactamente cómo dicto los audios y qué le pido a la IA. Es online, queda grabada. Si te interesa, respondeme CLASE por mensaje y te paso el link. Sin fecha, sin urgencia. Cuando puedas.", "visual_format": "V1", "format_description": "Video selfie 20s. Tono amigo te ofrece algo. Keyword CLASE aparece en pantalla amarillo Deco grande (R15).", "emotion": "reciprocidad", "trigger": "cta-suave-del-plan", "interaction": "KEYWORD-CLASE-amarillo-Deco-grande", "keyword": "CLASE"},
+    {"number": 11, "function": "prueba-social-entre-ctas", "text_on_screen": "Gente respondiendo 👇", "text_spoken": null, "visual_format": "C3", "format_description": "2-3 DMs reales respondiendo CLASE. Si tras 2h no hay, complementar con DMs de confianza general.", "emotion": "efecto-rebano", "trigger": "R14-prueba-social-entre-doble-CTA", "interaction": null, "timing": "subir 1-2h después del story 10 para esperar respuestas reales"},
+    {"number": 12, "function": "cta-secundario", "text_on_screen": "Respondeme CLASE y te paso el link.", "text_spoken": null, "visual_format": "F1", "format_description": "Selfie sonrisa leve, keyword CLASE amarillo Deco grande.", "emotion": "reciprocidad-refuerzo", "trigger": "R14-segundo-CTA", "interaction": "boton-reaccion-like", "keyword": "CLASE"}
+  ],
+  "cta": {
+    "type": "inbound",
+    "keyword": "CLASE",
+    "destino": "clase-gratuita-evergreen",
+    "lead_magnet_id": "LM-5",
+    "urgencia": "ninguna (explícito en el plan)",
+    "setter_script": "1) NO link directo. ≤30min: '¡Buenas [nombre]! Te mando el link en un rato. ¿A qué te dedicás hoy?'. 2) Cualificar por respuesta → link personalizado. 3) Follow-up 24h: '¿Pudiste registrarte?' (micro-yes 95%). 4) >15 mensajes sin conversión = cambiar estrategia.",
+    "humor_first": true,
+    "humor_story": "Story 0: contraseña Netflix 30 min antes (NAFE #17)"
+  },
+  "content_bank_needed": [
+    "Selfie humor contraseña Netflix (story 0)",
+    "Selfie con laptop y carpeta de fondo borrosa (story 1)",
+    "Screenshot Finder con carpeta blureada (story 2) - CREAR carpeta real con nombre oculto",
+    "Video selfie 18s leyendo DMs (story 4)",
+    "3 capturas DMs reales con frases analfabeta/no sé tecnología (story 5) - buscar en base del bot",
+    "Screenshot carpeta abierta con 5-8 archivos .m4a con fechas (story 7) - CREAR audios reales antes",
+    "Video selfie 22s revelación con laptop (story 8)",
+    "Video selfie 20s CTA tranquilo con keyword (story 10)",
+    "2-3 capturas DMs respondiendo CLASE (story 11) - obtener post-CTA",
+    "Selfie sonrisa leve con keyword (story 12)"
+  ],
+  "anti_ia_check": {
+    "patrones_detectados": "ninguno",
+    "SH5_check": "hook tiene ancla concreta (carpeta real), NO es 'tengo algo que contarte' genérico",
+    "V1": true, "V2": true, "V3": true, "V4": true, "V5": true, "V6": true
+  },
+  "r14_doble_cta_con_prueba_social": true,
+  "r15_keyword_grande_color_diferente": true,
+  "r16_timing_30_60_min": true,
+  "planned_day": "jueves",
+  "week": "2026-04-13",
+  "createdAt": "2026-04-15T11:45:00-03:00"
+}

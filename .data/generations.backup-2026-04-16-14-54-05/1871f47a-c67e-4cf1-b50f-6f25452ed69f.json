@@ -1,0 +1,290 @@
+{
+  "id": "1871f47a-c67e-4cf1-b50f-6f25452ed69f",
+  "briefId": "f984b6d2-9641-468b-8c8f-b7fa4445eeb4",
+  "title": "¿Cuántas formaciones más necesitás antes de vender UNA cosa?",
+  "batch": {
+    "id": "26c722ad-ed33-49ad-b112-84899d1dabcc",
+    "name": "Version 5.0"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.3_ciclo_roto",
+    "body_type": "demolicion_alternativas",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "contabilidad / administración / contador",
+    "model_sale_type": "lean_anti_riesgo",
+    "emotional_arc": "confrontacion_directa",
+    "transition_text": "Si tenés plantillas, herramientas o un método que le ahorra tiempo a alguien, ya tenés un producto. Te muestro cómo armarlo paso a paso.",
+    "total_duration_seconds": 80,
+    "word_count": 195,
+    "belief_change": {
+      "old_belief": "Necesito otra formación más antes de poder vender algo",
+      "mechanism": "El conocimiento acumulado de administración y contabilidad ya es suficiente — la IA lo empaqueta en un producto vendible sin más estudio",
+      "new_belief": "Ya sé lo suficiente para crear un producto digital HOY con lo que tengo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Estoy atrapado en un ciclo de formación sin acción",
+        "installed_via": "identidad fragmentada — confrontar las múltiples formaciones sin resultado",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "El problema no es lo que me falta sino lo que no empaqué",
+        "installed_via": "confrontación directa con el ciclo roto de cursos",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo convertir mis plantillas en un producto esta semana",
+        "installed_via": "ejemplo concreto de plantillas de Excel con IA",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito otro curso para arrancar",
+        "installed_via": "demolición del modelo de seguir estudiando como excusa",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Contadores como yo ya lo hicieron sin ser expertos en tech",
+        "installed_via": "prueba social de profesionales administrativos",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "provocacion",
+        "hypothesis": "confrontar la identidad fragmentada genera incomodidad productiva en profesionales que acumulan formaciones",
+        "emotional_lever": "confrontación",
+        "script_text": "¿Ya probaste de todo? Contador, coaching financiero, Excel avanzado, un curso de marketing. ¿Cuántas formaciones más necesitás antes de vender UNA cosa? Si sigo haciendo lo mismo de siempre es poco probable que mi situación cambie.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el contador responde a una descripción de su rutina de aburrimiento profesional",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Tenés 42 años. Sos contador. Cobrás por hora. Y cada mes es exactamente igual que el anterior. No odiás tu trabajo — pero sabés que tiene un techo. Y ese techo no se mueve por más que te esfuerces.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "la idea de que saber demasiado frena genera curiosidad",
+        "emotional_lever": "curiosidad",
+        "script_text": "Cuanto más sabés, más lejos estás de ganar plata extra. Suena contradictorio. Pero si tenés 3 títulos y seguís cobrando lo mismo que hace 5 años, algo está fallando. Y no es tu conocimiento.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "historia_mini",
+        "hypothesis": "ver a un contador real que monetizó sus plantillas genera esperanza concreta",
+        "emotional_lever": "prueba social",
+        "script_text": "Un contador de Santa Fe con 15 años de experiencia agarró sus plantillas de Excel para emprendedores, se las dio a la IA, y armó un kit digital. Lo vende a 12 dólares por Hotmart. Lleva 110 kits vendidos. Eso son 1.320 dólares que no le da ningún cliente por hora.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "dato_concreto",
+        "hypothesis": "ver la demanda real de herramientas administrativas genera sensación de oportunidad",
+        "emotional_lever": "oportunidad",
+        "script_text": "\"Plantilla de flujo de caja\" tiene 18.000 búsquedas por mes en Google en español. \"Cómo hacer un presupuesto\" tiene 40.000 más. Vos hacés eso con los ojos cerrados. Y no estás vendiendo eso.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "confrontacion_directa",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Estoy atrapado en un ciclo de formación sin acción",
+          "viewer_emotion_after": "incomodidad + reconocimiento",
+          "is_turning_point": false,
+          "script_text": "Hiciste la carrera de contador. Después un posgrado. Después Excel avanzado. Después un curso de marketing digital. Y seguís cobrando por hora. Cada formación nueva te da la ilusión de que ahora sí vas a arrancar. Pero no arrancás. ¿Te suena? Mucha formación. Cero producto.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El problema no es lo que me falta sino lo que no empaqué",
+          "viewer_emotion_after": "sorpresa + incomodidad",
+          "is_turning_point": true,
+          "script_text": "El problema no es que te falte aprender. El problema es que nunca empaquetaste lo que ya sabés. Tus plantillas de flujo de caja, tus herramientas de presupuesto, tu forma de explicar las finanzas a un emprendedor. Todo eso ya lo tenés. Y hay 40.000 personas por mes buscando exactamente eso en Google.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo convertir mis plantillas en un producto esta semana",
+          "viewer_emotion_after": "alivio + curiosidad",
+          "is_turning_point": false,
+          "script_text": "Ejemplo concreto. Vos tenés una plantilla de flujo de caja que le armás a cada cliente nuevo. Le metés 15 años de ajustes encima. Esa plantilla la buscan 18.000 personas por mes en Google. La empaquetás con una guía de uso, un video explicativo y un template de presupuesto — todo eso te lo organiza la IA en una tarde. Y la vendés a 12 dólares a gente que hoy le paga a un contador $50 por hora para que le arme lo mismo.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito otro curso para arrancar",
+          "viewer_emotion_after": "resistencia desarmada",
+          "is_turning_point": false,
+          "script_text": "\"Pero primero necesito aprender marketing.\" No. Primero necesitás un producto. Y ya lo tenés en la cabeza. El marketing se aprende después, paso a paso, sencillo. Acá primero validás que alguien quiere lo que vos sabés. Si no quieren, no perdiste nada. Si quieren, arrancás.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Contadores como yo ya lo hicieron sin ser expertos en tech",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Buscá 'plantilla de flujo de caja' en Hotmart o en Gumroad. Vas a encontrar productos de contadores que venden eso todos los días. Con menos experiencia que vos. Con peores plantillas que las tuyas. La diferencia es que ellos dejaron de estudiar y empezaron a empaquetar. Nada más.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "El riesgo es cero porque validás antes de crear",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "script_text": "La primera regla que enseño es: prohibido crear un producto sin validar primero. Primero verificás que alguien lo quiere. Después lo armás. Así no perdés ni tiempo ni plata en algo que nadie va a comprar.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Te suena?"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Mucha formación. Cero producto."
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "El problema no es que te falte aprender"
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "40.000 personas por mes buscando exactamente eso en Google"
+      },
+      {
+        "location": "beat_3",
+        "technique": "future_pacing",
+        "phrase": "se vende mientras vos seguís atendiendo clientes"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "Primero necesitás un producto. Y ya lo tenés en la cabeza."
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "No que sea una preocupación ir al supermercado"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 43,
+        "ingredient_name": "La verdad incómoda"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "New opportunity"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con números"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 125,
+        "ingredient_name": "Reframe"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T03:49:14.590Z",
+  "status": "confirmed"
+}

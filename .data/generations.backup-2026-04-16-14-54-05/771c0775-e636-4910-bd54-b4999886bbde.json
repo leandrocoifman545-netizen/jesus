@@ -1,0 +1,250 @@
+{
+  "id": "771c0775-e636-4910-bd54-b4999886bbde",
+  "briefId": "aae583c5-78e6-4e96-ac0a-6654f6a20c9d",
+  "title": "100 clientes y no me alcanzaba — la historia de Jesús",
+  "batch": "semana-demo-3",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.1_historia_jesus_origen",
+    "body_type": "storytelling_hollywood",
+    "segment": "A",
+    "funnel_stage": "MOFU",
+    "niche": "historia personal — modelo de negocio",
+    "model_sale_type": "cementerio_modelos",
+    "rhythm_template": "R1",
+    "emotional_arc": "historia_personal",
+    "tension": "T2",
+    "pattern_ig": "imperativo",
+    "punto_entrada_emocional": "La angustia de laburar mucho y no avanzar — sentir que empujás para el lado equivocado",
+    "belief_change": {
+      "old_belief": "Necesito más esfuerzo, más clientes, más horas para que funcione",
+      "mechanism": "Historia real de pasar de 100 clientes sin ganar nada a 1 producto que vende solo",
+      "new_belief": "No necesito más esfuerzo — necesito cambiar el modelo de negocio"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El esfuerzo sin modelo no alcanza",
+        "installed_via": "100 clientes, 8 horas de reuniones, ganaba menos que un mozo",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe un modelo donde no dependés de estar ahí",
+        "installed_via": "Me fui con 100 clientes y volví con 1 que me pagaba por 100",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Si él pudo desde esa situación, yo puedo",
+        "installed_via": "Durmiendo en una pieza de Durlock sin puerta, pude cambiar el modelo",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Hoy es más rápido gracias a la IA",
+        "installed_via": "Lo que a mí me llevó 6 años hoy se hace en una tarde",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      },
+      {
+        "belief": "Los otros modelos tienen techo, este no",
+        "installed_via": "Los 4 tenían el mismo techo: si yo paraba, la plata paraba",
+        "persuasion_function": "prueba",
+        "section_name": "Venta del modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "sensorial",
+        "hypothesis": "El joven responde a detalles físicos que no pueden ser inventados",
+        "emotional_lever": "empatia",
+        "script_text": "Dormía en una pieza de Durlock al lado de la cocina. La puerta del baño no cerraba. Pesaba 47 kilos. Tenía 19 años y laburaba 16 horas por día. No te cuento esto para darte lástima. Te lo cuento porque lo que me sacó de ahí no fue esfuerzo.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "contrato_compromiso",
+        "hypothesis": "El joven responde al desafío de escuchar sin excusas",
+        "emotional_lever": "desafio",
+        "script_text": "Si creés que ya sabés cómo funciona ganar plata por internet, cerrá este video. Pero si alguna vez te dormiste pensando \"algo tiene que cambiar\", lo que viene te importa. Son 70 segundos. Sin humo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_mini",
+        "hypothesis": "El joven responde a una historia real que arranca en el medio",
+        "emotional_lever": "curiosidad",
+        "script_text": "Estaba llorando en mi cama en Concepción del Uruguay. Le dije a Dios: dame una señal. Al otro día me llamó un tipo desde México. Nunca había subido a un avión. Saqué el pasaje igual.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "hypothesis": "El joven responde a la honestidad sobre errores propios",
+        "emotional_lever": "vulnerabilidad",
+        "script_text": "A los 19 me gasté 2 mil dólares en un curso. Vivía con 100 al mes. Dormía en el piso. Mi familia pensaba que estaba loco. Y tenían razón. Pero esa locura es la razón por la que hoy puedo contarte esto.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "generacional",
+        "hypothesis": "El joven responde al quiebre con lo que le enseñaron",
+        "emotional_lever": "identificacion",
+        "script_text": "Me dijeron: estudiá, recibite, conseguí un buen trabajo. Estaba en ingeniería. La dejé a los 20. No porque no me gustara. Porque encontré algo que no me enseñaron en ninguna facultad.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "historia_personal",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Este tipo la vivió de verdad",
+          "viewer_emotion_after": "Empatía + atención",
+          "is_turning_point": false,
+          "script_text": "Yo cometí todos los errores. Y los cometí con 19 años, 47 kilos y cero respaldo. Te cuento los que casi me destruyen.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El esfuerzo sin modelo no alcanza",
+          "viewer_emotion_after": "Reconocimiento — yo también estoy así",
+          "is_turning_point": true,
+          "script_text": "A los 19 tenía 100 clientes. Suena bien, ¿no? Les cobraba 50 dólares por mes a cada uno y les hacía todo: los videos, las campañas, los correos, la estrategia. Tenía 8 horas de reuniones por día. Me quedaba sin voz. Ganaba menos que un mozo. El problema no era que laburaba poco. El problema era el modelo de negocio.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe un modelo donde no dependés de estar ahí",
+          "viewer_emotion_after": "Revelación — hay otro camino",
+          "is_turning_point": false,
+          "script_text": "Me fui a México. Conocí a un tipo que tenía un producto digital. Uno solo. Lo vendía por internet. No tenía 100 clientes. Tenía más de 2 mil personas que compraban lo mismo. Sin reuniones. Sin quedarse sin voz. Me fui con 100 clientes y volví con 1 que me pagaba por 100. Y laburaba 1 hora por semana.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Si él pudo desde esa situación, yo puedo",
+          "viewer_emotion_after": "Permiso",
+          "is_turning_point": false,
+          "script_text": "Si yo con 19 años, durmiendo en una pieza de Durlock sin puerta, pude cambiar el modelo, no me vengas con que no se puede. Lo único que me faltaba para avanzar era saber que existía otro camino.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hoy es más rápido gracias a la IA",
+          "viewer_emotion_after": "Urgencia + posibilidad",
+          "is_turning_point": false,
+          "script_text": "Hoy enseño ese camino. No el del esfuerzo. El del modelo correcto. Y con inteligencia artificial, lo que a mí me llevó 6 años hoy se hace en una tarde.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "transition_text": "Eso que me cambió la vida es lo que hoy enseño. Y ya no necesitás irte a México para aprenderlo.",
+    "model_sale_text": "Probé afiliación, freelance, agencia, e-commerce. Los 4 tenían el mismo techo: si yo paraba, la plata paraba. Productos digitales fue el único modelo de negocio donde creé algo una vez y sigue vendiendo sin mí.",
+    "total_duration_seconds": 78,
+    "word_count": 245,
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "empatia",
+        "phrase": "Yo cometí todos los errores."
+      },
+      {
+        "location": "quiebre",
+        "technique": "sorpresa",
+        "phrase": "Ganaba menos que un mozo."
+      },
+      {
+        "location": "quiebre",
+        "technique": "identificacion",
+        "phrase": "El problema no era que laburaba poco. El problema era el modelo de negocio."
+      },
+      {
+        "location": "mecanismo",
+        "technique": "revelacion",
+        "phrase": "Me fui con 100 clientes y volví con 1 que me pagaba por 100."
+      },
+      {
+        "location": "demolicion",
+        "technique": "permiso",
+        "phrase": "Lo único que me faltaba para avanzar era saber que existía otro camino."
+      },
+      {
+        "location": "prueba",
+        "technique": "urgencia",
+        "phrase": "lo que a mí me llevó 6 años hoy se hace en una tarde."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Autoridad por Origen"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estratégica"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "New Opportunity"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-11T17:06:39.194Z"
+}

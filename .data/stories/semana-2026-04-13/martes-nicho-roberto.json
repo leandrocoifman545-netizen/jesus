@@ -1,0 +1,74 @@
+{
+  "id": "martes-nicho-roberto-v2",
+  "title": "Nicho/Vida Soñada — Un martes a los 62",
+  "sequence_type": "nicho_vida_sonada",
+  "status": "draft",
+  "plan_ref": {
+    "week": "2026-04-13",
+    "mode": "volumen",
+    "day": "martes",
+    "date": "2026-04-14",
+    "nafe_stage": 3,
+    "tactic_views": "T4-linea-objetiva-global"
+  },
+  "avatar": "roberto",
+  "avatar_age": 62,
+  "tension": "T4-T11",
+  "tension_id": "T4",
+  "tension_note": "T4 Urgencia edad + T11 Orgullo latente. Plan: modo volumen prohíbe T12/T13",
+  "angle_family": "F2",
+  "big_idea": "Un martes posible a los 62. No hace falta ser joven. Hace falta tener las manos libres para WhatsApp.",
+  "creative_idea": "Narrativa hilada mañana→tarde→noche sin inventar alumno específico. Jesús narra hipotético, frases textuales del avatar real como ancla.",
+  "eje_narrativo_aplicado": "A esta edad, seguir 'empujando para el lado equivocado' es el laburo presencial. La IA es el lado correcto.",
+  "calentamiento_layer": "nicho",
+  "trigger_names": ["Vida soñada nativa", "Claridad", "Facilidad"],
+  "emotional_arc": "curiosidad → identificación → ternura → simplicidad → reconocimiento → calma",
+  "emotional_valley": "story 3 (frase real del lead) que es pura vulnerabilidad del avatar",
+  "objections_dissolved": [
+    {"objecion": "Mi edad me limita", "story": 2, "tecnica": "Jesús menciona edad concreta como posibilidad, no limitación"},
+    {"objecion": "No sé de tecnología", "story": 5, "tecnica": "Tareas = dictar audio WhatsApp (ya sabe)"}
+  ],
+  "micro_yes_chain": [
+    {"story": 3, "pensamiento": "eso lo pensé yo", "tipo": "identificacion-textual"},
+    {"story": 5, "pensamiento": "es como lo que hago con mis nietos", "tipo": "facilidad"},
+    {"story": 7, "pensamiento": "quizás sí es posible", "tipo": "permiso-inicial"}
+  ],
+  "ingredients": {
+    "E1": [
+      "Si pudiera aprender algo para generar ingresos desde mi casa... (avatares-adp.md Roberto verbatim)",
+      "A mis 62 años trato de capacitarme en la utilización de IA (Roberto)",
+      "No pretendo un auto, solo quiero poder estar bien económicamente",
+      "Jubilado con experiencia previa en computación (perfil real del bot)"
+    ],
+    "E7": "Línea objetiva global #5 NAFE (narrativa 5+ slides mañana→tarde→noche)",
+    "E8": "La prueba del mismo tipo que la promesa (sintesis 9b) — promesa simple, escenas simples, NO números grandes"
+  },
+  "anti_invencion_applied": "SIN mockup de venta. SIN notificación de WhatsApp inventada. Solo objetos reales y gestos reales.",
+  "total_stories": 7,
+  "stories": [
+    {"number": 1, "function": "hook-edad", "text_on_screen": "Un martes a los 62.", "text_spoken": null, "visual_format": "F1", "format_description": "Selfie Jesús tranquilo, ropa simple, luz tarde cálida.", "emotion": "curiosidad-especifica", "trigger": "intriga-con-ancla", "interaction": null},
+    {"number": 2, "function": "narrador-setup", "text_on_screen": null, "text_spoken": "Me escriben mucho: 'a mi edad ya no se puede'. Te voy a contar cómo se ve un martes posible para alguien con 62 años que sabe un oficio y tiene WhatsApp.", "visual_format": "V1", "format_description": "Video selfie 18s advisor. Tono charla.", "emotion": "autoridad-suave", "trigger": "autoridad-narrador", "interaction": "subtitulos"},
+    {"number": 3, "function": "identificacion-textual", "text_on_screen": "\"Si pudiera aprender algo para generar ingresos desde mi casa…\"", "text_spoken": null, "visual_format": "P3", "format_description": "Fondo blur (foto lifestyle tarde) + overlay oscuro ligero. Texto blanco centrado. Comillas indican que NO es Jesús, es un lead.", "emotion": "identificacion-ternura", "trigger": "frase-textual-avatar", "interaction": null},
+    {"number": 4, "function": "linea-manana", "text_on_screen": "Mañana.", "text_spoken": null, "visual_format": "F4", "format_description": "Foto mate + celular sobre mesa. SIN mockup de notificación. Solo objeto real.", "emotion": "calma-cotidiana", "trigger": "linea-objetiva-arranca", "interaction": null},
+    {"number": 5, "function": "accion-simple", "text_on_screen": null, "text_spoken": "Revisa los mensajes de WhatsApp. Dicta un audio nuevo para ChatGPT: 'quiero ampliar la guía con 3 recetas más'. Lo hizo ayer — hoy es otro capítulo.", "visual_format": "V3", "format_description": "Video POV 14s: mano sosteniendo celular, dedo en botón audio de WhatsApp. SIN mostrar notificación de venta.", "emotion": "facilidad", "trigger": "mecanismo-visible", "interaction": "subtitulos"},
+    {"number": 6, "function": "linea-tarde-noche", "text_on_screen": "Tarde. / Noche.", "text_spoken": "A la tarde, sigue con su día. Ve a los nietos, hace lo que hacía siempre. Y a la noche, cuando cierra el celular, el producto que hizo la semana pasada sigue vendiéndose solo. Eso es todo.", "visual_format": "V7", "format_description": "Video música suave 20s, filtro cinemático 35mm. Caminata o escena cotidiana. Cierra línea objetiva.", "emotion": "vida-sonada-calma", "trigger": "resultado-no-visible", "interaction": "subtitulos"},
+    {"number": 7, "function": "interaccion-sin-cta", "text_on_screen": "¿Te imaginás que sea posible?", "text_spoken": null, "visual_format": "F2", "format_description": "Foto tercera persona caminando tranquilo. Encuesta pegada. SIN CTA. SIN keyword.", "emotion": "participacion", "trigger": "participacion", "interaction": "encuesta: Te cuesta imaginarte arrancando a tu edad? → Un poco sí / Me dan ganas de probar"}
+  ],
+  "cta": {"type": "none", "note": "Plan prohíbe CTA martes. Modo VOLUMEN."},
+  "content_bank_needed": [
+    "Selfie luz tarde cálida (story 1)",
+    "Video selfie 18s advisor (story 2)",
+    "Foto lifestyle con blur para P3 (story 3)",
+    "Foto mate + celular sobre mesa (story 4) SIN mockup",
+    "Video POV 14s dictando audio WhatsApp (story 5)",
+    "Video 20s con música escena cotidiana (story 6)",
+    "Foto tercera persona caminando (story 7)"
+  ],
+  "anti_ia_check": {
+    "patrones_detectados": "ninguno",
+    "V1": true, "V2": true, "V3": true, "V4": true, "V5": true, "V6": true
+  },
+  "planned_day": "martes",
+  "week": "2026-04-13",
+  "createdAt": "2026-04-15T11:45:00-03:00"
+}

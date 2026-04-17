@@ -33,7 +33,7 @@ Posicionar el momento actual como una ventana que se va a cerrar. No existía ha
 ---
 
 ### 4. Contraste con negocio físico
-Comparar contra la realidad de un negocio tradicional. El papá de Jesús y el kiosco es el ejemplo perfecto.
+Comparar contra la realidad de un negocio tradicional genérico (NO usar el kiosco del papá de Jesús — es algo actual, no parte de su story).
 > "Un negocio físico arranca menos $10,000. Alquiler, mercadería, empleados. Y el 90% cierra en el primer año. Esto lo arrancás con $10, un celular y una hora al día. Si no funciona, perdiste menos que una salida a comer."
 
 **Cuándo usar:** Segmento C (mamás), D (jubilados), gente con miedo al riesgo. Ángulos comparación, bajo riesgo.

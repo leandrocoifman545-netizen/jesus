@@ -1,0 +1,276 @@
+{
+  "id": "9bcec53b-c9d0-40a6-ba67-bd4206702939",
+  "briefId": "10b8c40d-c6e2-46ab-8802-a6f522fadbc2",
+  "title": "Sábado a la noche por 15 lucas — el plomero que empaquetó 30 años de oficio",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.3_oficio_manual_heredado",
+    "body_type": "contraste_emocional",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "plomería / gasista / oficios de agua y gas",
+    "model_sale_type": "transparencia_total",
+    "emotional_arc": "futuro_sensorial",
+    "transition_text": "Te voy a mostrar paso a paso cómo se arma.",
+    "total_duration_seconds": 80,
+    "word_count": 285,
+    "belief_change": {
+      "old_belief": "Mi oficio vale solo cuando voy presencialmente y cobro la visita",
+      "mechanism": "La inteligencia artificial convierte 30 años de conocimiento de plomería en una guía digital que se vende sin que yo esté",
+      "new_belief": "Mi conocimiento, no el arreglo, es el producto — y eso trabaja por mí mientras descanso las rodillas"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mis rodillas tienen fecha de vencimiento pero mi conocimiento no",
+        "installed_via": "escena sensorial del plomero sábado a la noche",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Depender del cuerpo es depender del clima, la llamada y la suerte",
+        "installed_via": "triple repetición 'no cobrás'",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Lo que sé vale más que lo que arreglo",
+        "installed_via": "pivote de identidad — conocimiento vs servicio",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Empaquetar 30 años de oficio es tan fácil como mandarle un audio a un ayudante",
+        "installed_via": "demo concreta con inteligencia artificial y Hotmart",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Este oficio puede trabajar por mí en vez de contra mí",
+        "installed_via": "espejo inverso — cada 'sin' cancela un dolor del inicio",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el plomero se autoidentifica por la escena del sábado a la noche",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si sos plomero o gasista, seguro ya te pasó. Sábado a la noche, cena con la familia, suena el celular. Una pérdida de gas en la casa de un cliente. Agarrás la caja de herramientas y salís. Cobrás 15 lucas. El domingo, rotas.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "ver al oficio del barrio desvalorizado genera indignación productiva",
+        "emotional_lever": "confrontacion",
+        "script_text": "Tu plomero del barrio sabe más de cañerías viejas que cualquier manual de arreglos caseros que venden en Google. Y no está ganando un peso con eso.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_mini",
+        "hypothesis": "ver a alguien de 58 años que lo logró genera permiso para intentar",
+        "emotional_lever": "esperanza",
+        "script_text": "Un gasista matriculado de toda la vida, un tipo de 58 años, me dijo una tarde: 'Yo de computadora no entiendo nada, soy de otra época'. En dos semanas tenía un producto digital de 18 páginas vendido 38 veces en Hotmart.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion",
+        "hypothesis": "la confesión desarma la objeción técnica antes que aparezca",
+        "emotional_lever": "vulnerabilidad",
+        "script_text": "Yo pensaba que para vender algo en internet había que grabar videos, tener cámara, saber de marketing. Después conocí a un señor que arreglaba calderas y vendía un PDF que había armado sentado en la mesa del living.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "nombrar el favor gratis activa resentimiento productivo",
+        "emotional_lever": "injusticia",
+        "script_text": "¿Cuántas canillas le arreglaste gratis a un cuñado? ¿A cuántos vecinos les fuiste un domingo porque 'vos sabés'? Todo ese conocimiento que venís regalando hace 20 años vale plata. Solo que nadie te dijo cómo aprender a cobrarlo sin salir del sillón.",
+        "timing_seconds": 12
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "futuro_sensorial",
+      "turning_point_beat": "Mecanismo",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Mis rodillas tienen fecha de vencimiento pero mi conocimiento no",
+          "viewer_emotion_after": "reconocimiento + cansancio",
+          "is_turning_point": false,
+          "script_text": "Son 20 años destapando cañerías y arreglando pérdidas de gas. Todo eso que ya sabés de memoria vale plata. Y vos seguís atado a que suene el teléfono un sábado a la noche.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Depender del cuerpo es depender del clima, la llamada y la suerte",
+          "viewer_emotion_after": "bronca contenida",
+          "is_turning_point": false,
+          "script_text": "Si no vas, no cobrás. Si llueve, no cobrás. Si te agarra una contractura en la espalda, no cobrás. Tu ingreso entero depende de que las rodillas aguanten. Y a los 60, las rodillas ya no son las de los 30.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Lo que sé vale más que lo que arreglo",
+          "viewer_emotion_after": "sorpresa + dignidad",
+          "is_turning_point": true,
+          "script_text": "Tu conocimiento vale muchísimo más que la visita. Básicamente, lo que sabés después de 30 años de oficio — por qué gotea una canilla monocomando, cómo detectar una pérdida de gas antes que huela, qué hacer cuando revienta un caño un día de helada — eso es un producto digital. No el arreglo, el saber.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Empaquetar 30 años de oficio es tan fácil como mandarle un audio a un ayudante",
+          "viewer_emotion_after": "posibilidad concreta",
+          "is_turning_point": false,
+          "script_text": "Abrís una herramienta de inteligencia artificial. Le mandás un audio como si le estuvieras hablando a un ayudante nuevo: 'Armame una guía de 20 páginas, paso a paso, de cómo revisar las instalaciones de gas de una casa vieja, con dibujos y la lista de herramientas'. En media hora, la guía está lista. La subís a Hotmart. La cobrás a 9 dólares.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Este oficio puede trabajar por mí en vez de contra mí",
+          "viewer_emotion_after": "alivio anticipado",
+          "is_turning_point": false,
+          "script_text": "Sin romperte la espalda. Sin esperar el llamado del sábado a la noche. Sin cobrarle 15 lucas al vecino que hace 20 años te llama porque 'vos sabés'. Tu oficio trabajando por vos mientras tomás el café del desayuno.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "No es plata mágica, es un oficio que por fin trabaja para vos",
+          "viewer_emotion_after": "dignidad + confianza",
+          "is_turning_point": false,
+          "script_text": "Y hoy tiene 30 años de oficio trabajando por él mientras las rodillas descansan. No se hizo millonario. Pero dejó de pagarle la cuota a la ortopedia todos los meses.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "si sos plomero o gasista, seguro ya te pasó"
+      },
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "cobrás 15 lucas"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "si no vas, no cobrás"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "las rodillas ya no son las de los 30"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmacion",
+        "phrase": "no el arreglo, el saber"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmacion",
+        "phrase": "en media hora, la guía está lista"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "tu oficio trabajando por vos mientras tomás el café del desayuno"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 80,
+        "ingredient_name": "Contraste Extremo"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:16:04.139Z",
+  "status": "confirmed"
+}

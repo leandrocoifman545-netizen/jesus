@@ -1,24 +1,29 @@
+// Active hook types — 1:1 aligned with the 15 structural formulas in system.ts
 export type HookType =
-  | "situacion_especifica"
-  | "dato_concreto"
-  | "pregunta_incomoda"
-  | "confesion"
-  | "contraintuitivo"
-  | "provocacion"
-  | "historia_mini"
-  | "analogia"
-  | "negacion_directa"
-  | "observacion_tendencia"
-  | "timeline_provocacion"
-  | "contrato_compromiso"
-  | "actuacion_dialogo"
-  | "anti_publico"
-  | "simplificacion_error"
-  | "nadie_explica"
-  | "hipotetico_personal"
-  | "identidad_dolor"
-  | "pregunta_limitacion"
-  | "asimetria_temporal";
+  // Probadas (CPL real)
+  | "auto_seleccion_memoria"    // F1
+  | "eliminacion_barreras"      // F2
+  | "promesa_directa"           // F3
+  // Hipótesis fuertes
+  | "pregunta_espejo"           // F4
+  | "incredulidad_posesiva"     // F5
+  | "hipotetico_personal"       // F6
+  | "flip_contraintuitivo"      // F7
+  | "nadie_explica"             // F8
+  | "ataque_herramienta"        // F9
+  | "ancla_precio_invertida"    // F10
+  | "historia_dolor_sensorial"  // F11
+  | "voz_tercero"               // F12
+  | "timeline_proyeccion"       // F13
+  | "nombrar_innombrado"        // F14
+  | "provocacion_dato"          // F15
+  // Legacy types (old generations)
+  | "exclusividad_artificial" | "imperativo" | "anti_hype" | "provocacion"
+  | "dato_concreto" | "pregunta" | "credencial" | "historia_mini" | "identidad_dolor"
+  | "situacion_especifica" | "pregunta_incomoda" | "confesion" | "contraintuitivo"
+  | "analogia" | "negacion_directa" | "observacion_tendencia" | "timeline_provocacion"
+  | "contrato_compromiso" | "actuacion_dialogo" | "anti_publico" | "simplificacion_error"
+  | "pregunta_limitacion" | "asimetria_temporal";
 
 export type CTAType =
   | "directo"

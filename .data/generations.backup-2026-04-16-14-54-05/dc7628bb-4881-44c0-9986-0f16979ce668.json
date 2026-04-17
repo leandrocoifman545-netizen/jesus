@@ -1,0 +1,93 @@
+{
+  "id": "dc7628bb-4881-44c0-9986-0f16979ce668",
+  "briefId": "0063efe6-3987-4827-8f93-2fb2cc840fa9",
+  "projectId": "cc4a21a0-fe0f-464e-9a91-ea0091b31ff2",
+  "title": "Ejercicio en casa: vendés durmiendo",
+  "script": {
+    "platform_adaptation": {
+      "platform": "Vertical Ad (9:16)",
+      "recommended_duration_seconds": 65,
+      "content_style": "Chat WhatsApp simulado con notificaciones de venta → Jesús explica",
+      "key_considerations": "Las notificaciones de Hotmart entrando una tras otra son el pattern interrupt más fuerte. Genera curiosidad inmediata: '¿eso es real?'"
+    },
+    "visual_format": {
+      "format_name": "Chat WhatsApp Simulado",
+      "difficulty_level": 2,
+      "setup_instructions": "Pantalla de notificaciones de Hotmart: '¡Nueva venta! $7 USD — Guía de ejercicios en casa', una tras otra. 3-4 notificaciones. Corte a Jesús explicando.",
+      "recording_notes": "Las notificaciones deben verse reales (formato Hotmart, montos, horarios de madrugada para reforzar 'mientras dormía'). Jesús aparece casual, tipo 'eso pasó anoche'."
+    },
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "script_text": "Eran las 6 de la mañana. Agarré el celular para apagar la alarma y tenía 3 notificaciones de Hotmart. Tres ventas. De una guía de ejercicios que me costó 2 horas armar con IA. Te cuento cómo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "observacion_tendencia",
+        "script_text": "Cada vez más gente busca rutinas de ejercicio para hacer en casa sin ir al gimnasio. Es uno de los nichos que más crece en productos digitales. Y la mayoría de lo que encuentran es gratis y desordenado. Ahí hay un negocio.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "timeline_provocacion",
+        "script_text": "Día 1: le pedís a la IA que te arme una guía de ejercicios en casa. Día 2: la subís a Hotmart por 7 dólares. Día 7: empiezan a entrar ventas mientras dormís. No es ciencia ficción. Es un modelo que ya funciona.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "actuacion_dialogo",
+        "script_text": "—Jesús, ¿de verdad se puede ganar plata vendiendo guías de ejercicio? —No solo se puede. Hay gente que gana más con eso que un instructor de gimnasio. Y no saben ni hacer una sentadilla. La IA la hace por ellos.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "script_text": "No necesitás ser personal trainer. No necesitás un cuerpo fitness. No necesitás mostrar tu cara. Necesitás saber pedirle a la IA lo correcto. Y eso se aprende en una tarde.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "Cambio de creencia",
+      "emotional_arc": "Escepticismo (¿vendés durmiendo?) → Prueba visual (las notificaciones) → Comprensión (el mecanismo) → Deseo (yo puedo hacer eso)",
+      "sections": [
+        {
+          "section_name": "Creencia vieja — vender online es complicado",
+          "script_text": "La mayoría piensa que para vender algo online necesitás un sitio web, un equipo, invertir miles de dólares, y trabajar 12 horas por día. Eso era verdad hace 5 años. Hoy la IA cambió todo. Y te lo voy a mostrar con un ejemplo que me voló la cabeza.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Re-hook",
+          "is_rehook": true,
+          "script_text": "Mirá lo que hizo un alumno la semana pasada.",
+          "timing_seconds": 2
+        },
+        {
+          "section_name": "Mecanismo — el ejemplo concreto",
+          "script_text": "El tipo no sabía nada de fitness. Lo que hizo fue simple: agarró la IA y le dijo \"necesito un plan de 4 semanas de ejercicio en casa para alguien que nunca pisó un gimnasio\". La IA le armó 30 rutinas con descripciones, tiempos de descanso, y progresión. Después le pidió ilustraciones de cada ejercicio. Todo en una tarde. Lo convirtió en un PDF, lo puso a la venta, y la publicidad hizo el resto. Sin grabarse. Sin ser fitness. Sin invertir más que unas horas y unas monedas.",
+          "timing_seconds": 24
+        },
+        {
+          "section_name": "Creencia nueva — puente al CTA",
+          "script_text": "Eso es lo que cambió con la IA. El conocimiento está disponible, lo que falta es alguien que lo empaquete bien. Y en la clase gratuita te muestro cómo hacerlo vos.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "cta": {
+      "verbal_cta": "Tocá el botón de acá abajo y registrate a la clase gratuita",
+      "reason_why": "Te muestro en vivo cómo armar tu primer producto digital con IA y ponerlo a vender",
+      "timing_seconds": 7,
+      "cta_type": "sign_up"
+    },
+    "total_duration_seconds": 65,
+    "word_count": 158
+  },
+  "createdAt": "2026-03-11T18:22:04.879Z",
+  "batch": {
+    "id": "acfeaa82-9a61-49d9-bf68-b4cda62ae08c",
+    "name": "Version 1.0"
+  },
+  "status": "recorded"
+}

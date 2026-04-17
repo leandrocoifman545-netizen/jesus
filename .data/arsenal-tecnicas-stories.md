@@ -194,6 +194,64 @@
 **Qué:** Screenshot de WA donde un familiar dice "no inviertas" o "eso no funciona" = más poderoso que cualquier testimonio de resultado. Porque el viewer TIENE un familiar que le dijo lo mismo.
 **Para Jesús:** Pedir a alumnos el screenshot de cuando su familia les dijo "otra dieta más" o "vas a volver a engordar."
 
+### E6. Clickbait positivo — hook negativo que se resuelve en positivo (TÉCNICA — 1 confirmación)
+**Qué:** Hook con palabra de alarma (robó, devolvió, copió, enojada) que se resuelve como algo bueno. La distancia entre la expectativa negativa y la resolución positiva genera spike de placer.
+**Para Jesús:**
+- "Una alumna me copió todo el programa" → "lo aplicó tal cual y en 2 semanas vendió su primer producto"
+- "Me devolvieron el producto" → "me lo devolvió vacío porque ya usó TODO el contenido"
+- "Una alumna me escribió enojada" → "enojada porque le funcionó tan rápido que no se lo esperaba y no tenía nada preparado"
+**Regla:** Máximo 1 vez por mes. Si se repite, el viewer aprende el patrón y deja de funcionar.
+**Fuente:** Creador C (psicólogo) "Una clienta me robó" → "me robó el sistema y lo aplica a diario"
+
+### E7. Fusión de tipos en una secuencia (TÉCNICA — 2 confirmaciones)
+**Qué:** Los 4 tipos de story (Ellos/Hype/Mecanismo/Mentor) no son compartimentos — son ingredientes que se mezclan. Meter 1 slide de tipo secundario dentro de una secuencia de tipo dominante.
+**Para Jesús:**
+- Story de Resultados (Ellos) → meter 1 slide explicando CÓMO lo hizo el alumno (Mecanismo)
+- Story de Mi Historia (Mentor) → meter 1 slide de testimonio de alumno (Ellos)
+- Story de Mecanismo → meter 1 slide con caso real de alumno que lo aplicó (Ellos)
+**Regla:** 1 tipo dominante + máximo 1 tipo secundario en secuencias de 4-6 slides. Nunca 3+ tipos en una secuencia corta.
+**Fuente:** Creador C mete Mecanismo (6 diferenciaciones con terapia) dentro de Ellos (caso de éxito). Trader joven mete Ellos (certificados alumnos) dentro de Mentor (historia personal).
+
+### E8. Persona gramatical según temperatura (TÉCNICA — 1 confirmación)
+**Qué:** La persona gramatical define la presión sobre el viewer:
+- **3ra persona** para audiencia fría: "Mirá lo que le pasó a Laura" (baja presión, baja identificación)
+- **1ra→2da transición** para audiencia tibia: "Yo trabajo con gente que... ¿vos también?" (presión progresiva)
+- **2da persona directa** para audiencia caliente: "Vos estás haciendo esto. Y no funciona." (alta presión, alta identificación)
+**Para Jesús:**
+- Stories diarias para gente nueva → 3ra persona: casos de alumnos
+- Stories para seguidores regulares → transición: "yo sé lo que es... ¿te pasa?"
+- Stories para audiencia caliente (pre-lanzamiento) → 2da persona: "vos querés cambiar pero no arrancás"
+**Fuente:** Creador C usa 3ra en Ellos, transición en Mentor, 2da en Mecanismo — el mismo producto con 4 frames diferentes.
+
+### E9. Callback al hook en el cierre (TÉCNICA — 2 confirmaciones)
+**Qué:** Si el hook dice X, el último slide REUSA las mismas palabras con nuevo significado. Cierra el loop narrativo y amplifica el residuo emocional.
+**Para Jesús:**
+- Hook: "¿Se puede vender sin seguidores?" → Cierre: "Patricia vendió $4,500 con 43 seguidores. Sí, se puede vender sin seguidores."
+- Hook: "Nadie le creía" → Cierre: "Ahora los que no le creían le piden consejo."
+- Hook: "Un alumno me copió todo" → Cierre: "Y la verdad, me encanta que me copien."
+**Fuente:** Creador C "me robó" → "me robó el sistema y lo aplica a diario". Jaime "Maldición de la conciencia" como título=concepto que cierra implícitamente.
+
+### E10. Objeción del viewer dentro de la historia del alumno (TÉCNICA — 1 confirmación)
+**Qué:** Meter la duda que el viewer TIENE en boca del alumno/cliente, como algo que le pasó a él. "Al principio desconfió." "Su marido le dijo que no gaste." "No le creía ni a ella misma." Esto normaliza la duda sin invalidarla — y muestra que se superó.
+**Para Jesús:**
+- "Al principio pensó que era una estafa más de internet"
+- "Su marido le dijo que no gaste plata en eso"
+- "Tenía miedo de que la IA le haga todo mal"
+- "Pensaba que necesitaba miles de seguidores"
+**Formato:** Frase en color diferente (rojo funciona como señal de "obstáculo superado") dentro de la narración del caso.
+**Por qué funciona:** El viewer piensa "yo también dudo" → ve que el alumno también dudó → ve que le fue bien → la duda se disuelve sin confrontación directa.
+**Fuente:** Creador C slide 3: "al principio desconfió, venía de la terapia tradicional" en rojo dentro de la narración.
+
+### E11. Frase ancla de diferenciación — 1 frase repetida en todos los formatos (TÉCNICA — 1 confirmación fuerte)
+**Qué:** Encontrar UNA frase que resuma la diferenciación central del producto y repetirla en TODO: stories, reels, destacadas, ads. Siempre la misma idea, con variaciones mínimas.
+**Creador C usa:** "No es la terapia clásica de ir a hablar 1 hora por semana" → aparece en 3 de 4 tipos de story.
+**Para Jesús — opciones:**
+- "No necesitás seguidores. Necesitás un producto y un celular."
+- "No es otro curso que mirás y guardás en un cajón. Es un sistema que hacés en 7 días."
+- "La IA hace el trabajo pesado. Vos ponés lo que sabés."
+**Regla:** Elegir UNA. Repetirla mínimo 1 vez por semana. No cambiarla cada mes — la repetición ES la técnica.
+**Fuente:** Creador C repite "no es terapia de 1 hora" en Ellos, Mecanismo y Mentor.
+
 ---
 
 ## F. PRINCIPIOS DE DISEÑO — Guían todas las decisiones
@@ -296,4 +354,4 @@ Nivel 5: Agendar llamada / comprar       → Costo: dinero/tiempo
 
 ---
 
-*Compilado de: 88+ referencias, 15+ creadores, 6 destacadas completas (Joaco, Augus, Adrià, SEVER, Creador Verificado, Academia MAV), 472 piezas de 3 creadores, 140 stories estéticas de 8 creadores, 397 slides de NAFE/StoryMakers, 88 guiones de Naffe (90 PDFs).*
+*Compilado de: 88+ referencias, 15+ creadores, 6 destacadas completas (Joaco, Augus, Adrià, SEVER, Creador Verificado, Academia MAV), 472 piezas de 3 creadores, 140 stories estéticas de 8 creadores, 397 slides de NAFE/StoryMakers, 88 guiones de Naffe (90 PDFs), 12 secuencias "4 tipos de stories" (5 creadores, 2026-04-05).*

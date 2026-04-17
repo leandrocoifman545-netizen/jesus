@@ -9,9 +9,9 @@ interface Neighbor {
   title: string;
 }
 
-export default function ScriptNav({ prev, next, batchId }: { prev: Neighbor | null; next: Neighbor | null; batchId?: string }) {
+export default function ScriptNav({ prev, next, batchId, projectId }: { prev: Neighbor | null; next: Neighbor | null; batchId?: string; projectId?: string }) {
   const router = useRouter();
-  const batchQuery = batchId ? `?batch=${batchId}` : "";
+  const navQuery = batchId ? `?batch=${batchId}` : projectId ? `?project=${projectId}` : "";
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
@@ -21,22 +21,22 @@ export default function ScriptNav({ prev, next, batchId }: { prev: Neighbor | nu
 
       if (e.key === "ArrowLeft" && prev) {
         e.preventDefault();
-        router.push(`/scripts/${prev.id}${batchQuery}`);
+        router.push(`/scripts/${prev.id}${navQuery}`);
       }
       if (e.key === "ArrowRight" && next) {
         e.preventDefault();
-        router.push(`/scripts/${next.id}${batchQuery}`);
+        router.push(`/scripts/${next.id}${navQuery}`);
       }
     }
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [prev, next, router, batchQuery]);
+  }, [prev, next, router, navQuery]);
 
   return (
     <div className="flex items-center gap-1.5">
       {prev ? (
         <Link
-          href={`/scripts/${prev.id}${batchQuery}`}
+          href={`/scripts/${prev.id}${navQuery}`}
           title={prev.title}
           className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/60 transition-all group"
         >
@@ -56,7 +56,7 @@ export default function ScriptNav({ prev, next, batchId }: { prev: Neighbor | nu
 
       {next ? (
         <Link
-          href={`/scripts/${next.id}${batchQuery}`}
+          href={`/scripts/${next.id}${navQuery}`}
           title={next.title}
           className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/60 transition-all group"
         >

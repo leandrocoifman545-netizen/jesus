@@ -65,7 +65,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           {generations.map((gen) => (
             <Link
               key={gen.id}
-              href={`/scripts/${gen.id}`}
+              href={`/scripts/${gen.id}?project=${id}`}
               className="block border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition-colors"
             >
               <div className="flex items-start justify-between">

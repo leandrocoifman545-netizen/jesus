@@ -1,0 +1,273 @@
+{
+  "id": "661fe773-a7f2-4046-ab95-3aeacc55d255",
+  "briefId": "04a6bfda-a930-4af1-8536-68145672c596",
+  "title": "Tus moldes de costura valen más que un local de ropa",
+  "batch": {
+    "id": "76463f63-d717-4f05-aa24-002f4a6abe1c",
+    "name": "Version 4.0"
+  },
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.6_producto_revelado",
+    "body_type": "historia_con_giro",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "Costura / patronaje / moldes",
+    "model_sale_type": "contraste_fisico",
+    "emotional_arc": "provocacion_evidencia",
+    "tension": "T7_familia_vs_ambicion",
+    "format_visual": "10_walking_talking",
+    "transition_text": "Si ella hizo negocio con moldes de costura, imaginate con lo que vos sabés. Te muestro cómo arrancó.",
+    "total_duration_seconds": 82,
+    "word_count": 195,
+    "belief_change": {
+      "old_belief": "Lo que hago en mi casa es un hobby, no un negocio",
+      "mechanism": "La IA empaqueta tu conocimiento de costura en productos digitales que se venden por WhatsApp",
+      "new_belief": "Mi hobby tiene demanda real y puedo venderlo sin salir de casa"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto me pasa a mí — hago cosas en casa que otros me piden",
+        "installed_via": "B#29 Dolor Comparativo Social",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "Alguien como yo empaquetó lo que sabe y ahora vende",
+        "installed_via": "E#61 Resultado de Alumnos",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "La IA me arma el producto en una tarde",
+        "installed_via": "F#73 Demo Implícita",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Un local cuesta $10K, esto cuesta mi celular y $5",
+        "installed_via": "F#80 Contraste Extremo",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Hay ventas reales con números concretos",
+        "installed_via": "G#92 Case Study Mini",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar se reconoce como la persona que hace cosas en casa y las regala",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Cosés desde hace años. Te piden moldes. Te piden que les enseñes. Y lo hacés gratis. Porque nunca se te ocurrió que eso se puede vender. Se puede. Y la IA te ayuda.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_concreto",
+        "hypothesis": "el avatar responde a un resultado tangible con costura",
+        "emotional_lever": "sorpresa",
+        "script_text": "Un set de 12 moldes de costura infantil. Creado con IA en una tarde. Se vende a 9 dólares por WhatsApp. Ya vendió 180 copias. Desde un celular en Rosario.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "el avatar responde a que le muestren el absurdo de regalar lo que sabe",
+        "emotional_lever": "confrontacion",
+        "script_text": "Cada vez que le explicás a una amiga cómo cortar un molde, le estás regalando algo que vale plata. No te das cuenta porque nadie te lo dijo. Pero hoy te lo digo yo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el avatar responde a la comparación local vs digital",
+        "emotional_lever": "curiosidad",
+        "script_text": "Un local de ropa cuesta 10 mil dólares para abrir. Un negocio de moldes digitales cuesta tu celular y una tarde. Y puede darte más plata que el local. Sin alquiler. Sin empleados.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "analogia_cotidiana",
+        "hypothesis": "el avatar conecta con algo doméstico que ya hace",
+        "emotional_lever": "conexion_familiar",
+        "script_text": "¿Viste cuando una amiga te manda audio preguntándote cómo hacer el dobladillo invisible? Ese audio vale plata. Porque hay miles de personas buscando exactamente eso. Y nadie les vende una guía.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "provocacion_evidencia",
+      "turning_point_beat": "mecanismo",
+      "sections": [
+        {
+          "section_name": "Identificación",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Hago cosas en casa que otros me piden",
+          "viewer_emotion_after": "reconocimiento cálido",
+          "is_turning_point": false,
+          "script_text": "Cosés desde que tenés memoria. Tus amigas te piden moldes. Tu cuñada te pide que le enseñes. Y vos lo hacés con todo el cariño del mundo. Gratis. Porque es tu hobby, ¿no? Bueno, ese hobby tiene demanda real.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Alguien como yo empaquetó lo que sabe y vende",
+          "viewer_emotion_after": "sorpresa + deseo",
+          "is_turning_point": false,
+          "script_text": "Una señora en Rosario agarró sus moldes de costura infantil, los digitalizó con IA en una tarde, y los puso a la venta por WhatsApp a 9 dólares. Hoy los vende sin salir de su casa. Mientras cuida a sus nietos.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA me arma el producto en una tarde",
+          "viewer_emotion_after": "factibilidad",
+          "is_turning_point": true,
+          "script_text": "Le decís a la IA qué sabés hacer — costura, tejido, bordado — y te arma una guía profesional con fotos, explicaciones y moldes descargables. En horas. Literalmente. Vos le dictás, ella te lo arma.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Abrir un local cuesta $10K, esto $5",
+          "viewer_emotion_after": "permiso + alivio",
+          "is_turning_point": false,
+          "script_text": "Abrir un local de ropa cuesta 10 mil dólares mínimo. Alquiler, mercadería, empleados. Esto lo arrancás con tu celular, tus tiempos, y 5 dólares. Si no funciona, perdiste menos que un café.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente como yo lo hizo",
+          "viewer_emotion_after": "esperanza + decisión",
+          "is_turning_point": false,
+          "script_text": "Lo hicieron costureras, tejedoras, pasteleras. Señoras que nunca vendieron nada por internet. Con la IA no necesitás saber de diseño. Le dictás lo que sabés y ella te lo arma bonito.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta",
+          "micro_belief": "Un negocio físico cierra, esto se vende solo",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "script_text": "Un local necesita stock, alquiler y empleados. Esto lo manejás desde tu mesa de costura. En pantuflas. Lo creás una vez y se sigue vendiendo. Sin horario. A tus tiempos.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Cosés desde hace años. Te piden moldes."
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Tus amigas te piden moldes. Tu cuñada te pide que le enseñes."
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "los puso a la venta por WhatsApp a 9 dólares"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Vos le dictás, ella te lo arma."
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "5 dólares. Si no funciona, perdiste menos que un café."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Le dictás lo que sabés y ella te lo arma bonito."
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "A tus tiempos."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 29,
+        "ingredient_name": "Dolor Comparativo Social"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 61,
+        "ingredient_name": "Resultado de Alumnos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 73,
+        "ingredient_name": "Demo Implícita"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 80,
+        "ingredient_name": "Contraste Extremo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case Study Mini"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "D",
+        "variant_name": "Exclusión",
+        "layers": {
+          "oferta": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas.",
+          "prueba": "17 mil personas en toda Latinoamérica y España ya lo hicieron.",
+          "riesgo_cero": "Gratis. Sin compromiso.",
+          "urgencia": "Los cupos se llenan y no se repite hasta la semana que viene.",
+          "cierre": "Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+        },
+        "text": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas. 17 mil personas en toda Latinoamérica y España ya lo hicieron. Gratis. Sin compromiso. Los cupos se llenan y no se repite hasta la semana que viene. Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "variant_name": "Emocional + Honestidad",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "cierre": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "variant_name": "Doble Intención",
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "orden_1": "Comentá \"NICHO\" acá abajo y te lo mando por DM.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "cierre": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá \"NICHO\" acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-04-07T15:21:28.321Z"
+}

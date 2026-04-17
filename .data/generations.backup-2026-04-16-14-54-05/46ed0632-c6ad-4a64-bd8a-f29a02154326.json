@@ -1,0 +1,273 @@
+{
+  "id": "46ed0632-c6ad-4a64-bd8a-f29a02154326",
+  "briefId": "fc1ab119-dbac-4390-8398-ae7e15477856",
+  "title": "Cambiás horas por plata y cada mes arrancás de cero",
+  "batch": {
+    "id": "76463f63-d717-4f05-aa24-002f4a6abe1c",
+    "name": "Version 4.0"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.6_freelancer_independiente",
+    "body_type": "comparacion_caminos",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "Diseño gráfico freelance",
+    "model_sale_type": "tiempo_vs_dinero",
+    "emotional_arc": "pregunta_tras_pregunta",
+    "tension": "T5_autoexigencia_paralizante",
+    "format_visual": "10_walking_talking",
+    "transition_text": "Lo que hicieron la diseñadora y el fotógrafo no tiene nada de raro. Tienen un sistema. Y te lo puedo enseñar.",
+    "total_duration_seconds": 80,
+    "word_count": 195,
+    "belief_change": {
+      "old_belief": "La única forma de ganar más es conseguir más clientes y trabajar más horas",
+      "mechanism": "Producto digital se crea una vez y se vende sin estar presente",
+      "new_belief": "Puedo crear algo que venda sin que yo esté trabajando"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Cambio horas por plata y hay un techo",
+        "installed_via": "B#35 Dolor Económico Concreto",
+        "persuasion_function": "identificacion",
+        "section_name": "Camino A"
+      },
+      {
+        "belief": "Más clientes no es la solución",
+        "installed_via": "C#42 Ironía Dolorosa",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Un producto digital se vende sin que yo esté",
+        "installed_via": "F#78 El Secreto/Ingrediente Oculto",
+        "persuasion_function": "mecanismo",
+        "section_name": "Camino B"
+      },
+      {
+        "belief": "No necesito seguidores ni saber programar",
+        "installed_via": "F#74 Eliminación de Complejidad",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Diseñadores y fotógrafos ya lo hacen",
+        "installed_via": "G#90 Testimonio de Persona Improbable",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el freelancer se reconoce en el ciclo cobrar-entregar-repetir",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Facturás, entregás, cobrás. Y el mes que viene arrancás de cero. Así hace 3 años. ¿Y si hubiera una forma de que la plata entre sin que vos estés diseñando?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "el freelancer responde a que le señalen que tiene techo",
+        "emotional_lever": "confrontacion",
+        "script_text": "Sos diseñador freelance. Tenés 8 clientes. Trabajás 10 horas por día. Y ganás lo mismo que hace 2 años. El problema no sos vos. Es el modelo.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "el freelancer responde a que más clientes no es la solución",
+        "emotional_lever": "curiosidad",
+        "script_text": "¿Necesitás más clientes? No. ¿Más horas? Tampoco. ¿Entonces? Necesitás crear algo UNA vez que se venda sin que estés. Te explico.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia_cotidiana",
+        "hypothesis": "el freelancer conecta con la metáfora del taxímetro",
+        "emotional_lever": "conexion_familiar",
+        "script_text": "Tu negocio funciona como un taxímetro. Si no prendés el reloj, no cobrás. Hay otro modelo donde el reloj corre solo. Incluso cuando dormís. No es magia. Es un producto digital.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "timeline_provocacion",
+        "hypothesis": "el freelancer responde a la proyección de su futuro",
+        "emotional_lever": "urgencia",
+        "script_text": "Si seguís cambiando horas por plata, dentro de 5 años vas a estar en el mismo lugar. Con más experiencia. Pero con el mismo techo. A menos que cambies el modelo.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "pregunta_tras_pregunta",
+      "turning_point_beat": "mecanismo",
+      "sections": [
+        {
+          "section_name": "Camino A",
+          "persuasion_function": "identificacion",
+          "micro_belief": "El ciclo freelance tiene techo",
+          "viewer_emotion_after": "reconocimiento + frustración",
+          "is_turning_point": false,
+          "script_text": "Camino A. Facturás. Entregás. Cobrás. Arrancás de nuevo. Si no trabajás, no cobrás. Tu techo son las horas que tiene tu día. 8 clientes, 10 horas, y ganás lo mismo desde hace 2 años.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Más clientes no es la solución",
+          "viewer_emotion_after": "incomodidad + curiosidad",
+          "is_turning_point": false,
+          "script_text": "¿La solución es más clientes? No. Más clientes es más horas. Y ya no te dan las horas. Pedís 500 dólares por un logo y te regatean a 300. El problema no es cuánto cobrás. Es el modelo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Camino B",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Un producto digital se vende sin que yo esté",
+          "viewer_emotion_after": "posibilidad + deseo",
+          "is_turning_point": true,
+          "script_text": "Camino B. El secreto no es trabajar más. Es crear algo UNA vez — templates, kits, guías de identidad visual — y que se venda sin que estés. La IA te los arma. Se venden por WhatsApp. Sin reuniones. Sin entregas.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito nada extra para arrancar",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "¿Necesitás seguidores? No. ¿Saber programar? No. ¿Plata? 5 dólares y tu celular. Todo lo que necesitás aprender te lo enseñan paso a paso con herramientas sencillas.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otros freelancers ya lo hacen",
+          "viewer_emotion_after": "normalización + decisión",
+          "is_turning_point": false,
+          "script_text": "Lo hizo una diseñadora que solo sabía usar Canva. Creó un pack de 40 templates de identidad visual con IA. Lo vende a 15 dólares por WhatsApp. Sin reuniones. Sin clientes que le regateen.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta",
+          "micro_belief": "Modelo lineal vs escalable",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "script_text": "En el camino A, si no trabajás no cobrás. Así 10 años más. En el camino B, creás algo una vez y se sigue vendiendo. Mientras dormís, mientras hacés otra cosa.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Facturás, entregás, cobrás. Y el mes que viene arrancás de cero."
+      },
+      {
+        "location": "beat_1",
+        "technique": "dato_anclado",
+        "phrase": "8 clientes, 10 horas, y ganás lo mismo desde hace 2 años"
+      },
+      {
+        "location": "beat_2",
+        "technique": "dato_anclado",
+        "phrase": "Pedís 500 dólares por un logo y te regatean a 300"
+      },
+      {
+        "location": "beat_3",
+        "technique": "dato_anclado",
+        "phrase": "crear algo UNA vez — templates, kits, guías — y que se venda sin que estés"
+      },
+      {
+        "location": "beat_4",
+        "technique": "pregunta_retórica",
+        "phrase": "¿Necesitás seguidores? No. ¿Saber programar? No."
+      },
+      {
+        "location": "beat_5",
+        "technique": "afirmación",
+        "phrase": "Lo hizo una diseñadora que solo sabía usar Canva."
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "creás algo una vez y se sigue vendiendo"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 35,
+        "ingredient_name": "Dolor Económico Concreto"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 42,
+        "ingredient_name": "Ironía Dolorosa"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminación de Complejidad"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 78,
+        "ingredient_name": "El Secreto/Ingrediente Oculto"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 90,
+        "ingredient_name": "Testimonio de Persona Improbable"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "D",
+        "variant_name": "Exclusión",
+        "layers": {
+          "oferta": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas.",
+          "prueba": "17 mil personas en toda Latinoamérica y España ya lo hicieron.",
+          "riesgo_cero": "Gratis. Sin compromiso.",
+          "urgencia": "Los cupos se llenan y no se repite hasta la semana que viene.",
+          "cierre": "Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+        },
+        "text": "En la clase gratuita te muestro cómo encontrar, crear y vender productos digitales con IA. Todo el proceso. En vivo. 2 horas. 17 mil personas en toda Latinoamérica y España ya lo hicieron. Gratis. Sin compromiso. Los cupos se llenan y no se repite hasta la semana que viene. Esto es para gente que quiere actuar, no para gente que quiere pensar. Tocá el botón de acá abajo. Te veo adentro."
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "variant_name": "Emocional + Honestidad",
+        "layers": {
+          "oferta": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp.",
+          "prueba": "Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó.",
+          "riesgo_cero": "El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica.",
+          "urgencia": "Los cupos son reales porque es en vivo y necesito poder responder preguntas.",
+          "cierre": "Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+        },
+        "text": "Son 3 clases en vivo conmigo. No es un curso grabado. En 3 días tenés tu producto creado con IA, tu anuncio activo y tu primer cliente escribiéndote por WhatsApp. Lo hizo gente que no sabía ni qué era Hotmart. Gente que nunca vendió nada por internet. Y les funcionó. El taller vale 5 dólares. No gano con eso. Gano cuando a vos te va bien y querés seguir aprendiendo. Sin letra chica. Los cupos son reales porque es en vivo y necesito poder responder preguntas. Cuando toques el botón de acá abajo y entres al taller, vas a entender por qué miles de personas ya lo hicieron. Te espero."
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "E",
+        "variant_name": "Doble Intención",
+        "layers": {
+          "oferta": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso.",
+          "orden_1": "Comentá \"NICHO\" acá abajo y te lo mando por DM.",
+          "prueba": "Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos.",
+          "riesgo_cero": "Es gratis. Lo peor que puede pasar es que aprendas algo nuevo.",
+          "cierre": "Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+        },
+        "text": "Te grabé un video de 15 minutos donde te muestro cómo encontrar tu nicho, crearlo con IA y ponerlo a la venta. Todo el paso a paso. Comentá \"NICHO\" acá abajo y te lo mando por DM. Ya se lo mandé a más de 3.000 personas. Gente que arrancó exactamente como vos. Es gratis. Lo peor que puede pasar es que aprendas algo nuevo. Y si ya sabés que querés arrancar y no necesitás convencerte más, el link del Taller está en mi perfil. Son 5 dólares."
+      }
+    ]
+  },
+  "createdAt": "2026-04-07T15:25:29.232Z"
+}

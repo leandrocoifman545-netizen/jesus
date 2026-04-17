@@ -1,0 +1,276 @@
+{
+  "id": "f2b0b2bf-04bd-45c8-9388-5f19af1dafe7",
+  "briefId": "eb1240cd-ef1a-40bf-9fb3-ea352aaf8068",
+  "title": "Las 3 de la mañana con la abuela confundida — el turno que se convirtió en una guía",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.4_profesional_salud_sacrificio",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "enfermería geriátrica / cuidados domiciliarios",
+    "model_sale_type": "democratizacion_ia",
+    "emotional_arc": "revelacion_oportunidad",
+    "transition_text": "Te cuento el paso a paso en una clase gratis.",
+    "total_duration_seconds": 85,
+    "word_count": 295,
+    "belief_change": {
+      "old_belief": "Mi trabajo solo vale cuando estoy presente en el turno, dando atención directa",
+      "mechanism": "Lo que una enfermera explica en cada pasillo a cada familia es exactamente un manual que las familias buscan desesperadas",
+      "new_belief": "Lo que sé adentro del trabajo tiene valor fuera del trabajo, y puede trabajar mientras yo descanso"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Tengo conocimiento único que ninguna familia recibe cuando más lo necesita",
+        "installed_via": "anclar el valor en el conocimiento cotidiano",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Mi rutina actual es una máquina de agotamiento que no va a sostener mis hijos ni mi vida",
+        "installed_via": "descripción sensorial del lunes agotador",
+        "persuasion_function": "quiebre",
+        "section_name": "Un día en la vida"
+      },
+      {
+        "belief": "Lo que sé dentro del trabajo vale más que el trabajo mismo",
+        "installed_via": "pivote de identidad — conocimiento vs servicio",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Puedo armar un producto concreto en 40 minutos sin aprender ninguna tecnología nueva",
+        "installed_via": "demo visible paso a paso con tablas y baño",
+        "persuasion_function": "demolicion",
+        "section_name": "Demo concreta"
+      },
+      {
+        "belief": "Mi experiencia puede trabajar mientras yo juego con mis hijos",
+        "installed_via": "espejo inverso — sin turno noche, sin título perdido",
+        "persuasion_function": "prueba",
+        "section_name": "Espejo inverso"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la escena de las 3 de la mañana activa la memoria de turnos a enfermeras",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si cuidás adultos mayores, seguro ya te pasó. Tres de la mañana en el turno. La señora se despertó confundida, quiere bajarse de la cama. Estás sola, la levantás con la técnica justa para no lastimarle la cadera. A la mañana la familia llega y te dice 'gracias'. Cobrás lo mismo que anoche.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "hypothesis": "la confesión genérica sobre vender online desarma la objeción de 'no soy para esto'",
+        "emotional_lever": "vulnerabilidad",
+        "script_text": "Yo pensaba que vender algo en internet era para gente de marketing o para programadores. Después conocí a una auxiliar geriátrica que armó un PDF con todo lo que sabía sobre preparar una casa para un abuelo con Alzheimer. Lo subió un domingo. En un mes ya tenía 62 ventas.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "cuantificar las explicaciones no pagadas genera una injusticia sutil",
+        "emotional_lever": "injusticia",
+        "script_text": "¿Alguna vez una familia te acorraló en el pasillo del hospital para preguntarte qué hacemos si se cae, cómo la bañamos, qué comida le damos cuando no traga bien? Cada respuesta que diste gratis es una página entera de un manual de cuidado que todavía nadie escribió.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "provocacion",
+        "hypothesis": "nombrar la asimetría expertise vs mercado abre curiosidad",
+        "emotional_lever": "indignacion",
+        "script_text": "Cualquier enfermera con diez años en geriatría sabe más de acompañar a un adulto mayor en la casa que todos los blogs de salud que recomienda Google. Lo único que pasa es que nadie les enseñó a poner ese conocimiento adentro de un PDF.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "historia_mini",
+        "hypothesis": "ver el resultado concreto de otra auxiliar abre permiso real",
+        "emotional_lever": "esperanza",
+        "script_text": "Conocí a una chica de 41 años, acompañante terapéutica. Venía encadenando doble turno hacía cuatro años. Una tarde se sentó media hora con la computadora, dictó en voz alta todo lo que le explicaba a cada familia nueva, y armó su primer producto digital de 18 páginas. Hoy hace un solo turno.",
+        "timing_seconds": 13
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "revelacion_oportunidad",
+      "turning_point_beat": "Mecanismo",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Tengo conocimiento único que nadie más puede dar",
+          "viewer_emotion_after": "dignidad activada",
+          "is_turning_point": false,
+          "script_text": "Lo que vos sabés de cuidar a un abuelo, nadie lo sabe igual. Eso que aprendiste a los golpes en 12 años de turnos, las familias lo están buscando desesperadas antes de llevarse a la mamá a la casa.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Un día en la vida",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi rutina es una máquina de agotamiento",
+          "viewer_emotion_after": "cansancio reconocido",
+          "is_turning_point": false,
+          "script_text": "Pensá en tu lunes. Levantarte oscuro. Tres horas de colectivo. Turno largo. Cambio de pañales, control de presión, conversación con la familia que llora. Llegás a la casa a las ocho de la noche. Abrís la heladera. Los hijos ya comieron sin vos.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Lo que sé dentro del trabajo vale más que el trabajo mismo",
+          "viewer_emotion_after": "orgullo + apertura",
+          "is_turning_point": true,
+          "script_text": "Todo eso que vos hacés en automático — cómo acompañar a alguien con demencia, cómo levantar a una persona de 80 kilos sin dañarla, qué cocinar en la cocina de un paciente cuando hay problemas para tragar — es un curso entero. No tu trabajo. Lo que sabés adentro del trabajo. Eso tiene valor sin vos estar presente.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Demo concreta",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo armar un producto concreto en 40 minutos",
+          "viewer_emotion_after": "posibilidad concreta",
+          "is_turning_point": false,
+          "script_text": "Abrís una herramienta de inteligencia artificial. Le contás por voz, como si le estuvieras explicando a una hija que se va a llevar a su mamá a casa por primera vez: 'necesito una guía de 20 páginas con tablas de medicación, cómo armar el baño, qué comprar en la farmacia, signos de alarma'. En 40 minutos la guía está lista. La subís a Hotmart. La cobrás a 9 dólares.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Espejo inverso",
+          "persuasion_function": "prueba",
+          "micro_belief": "Mi experiencia puede trabajar mientras yo vivo",
+          "viewer_emotion_after": "alivio anticipado",
+          "is_turning_point": false,
+          "script_text": "Sin renunciar a tu título. Sin un segundo turno en geriátrico. Sin llegar a la casa con la espalda destruida a comer la comida del colectivo. Tus ingresos entrando mientras vos tenés tiempo de jugar con los hijos en el sillón del living.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Mi oficio sigue trabajando mientras yo desayuno",
+          "viewer_emotion_after": "paz concreta",
+          "is_turning_point": false,
+          "script_text": "Hoy lleva a los hijos al colegio sin el cansancio del turno noche. Sus doce años de geriatría siguen trabajando mientras ella desayuna tranquila.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "si cuidás adultos mayores, seguro ya te pasó"
+      },
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "cobrás lo mismo que anoche"
+      },
+      {
+        "location": "hook_3",
+        "technique": "afirmacion",
+        "phrase": "un manual de cuidado que todavía nadie escribió"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "los hijos ya comieron sin vos"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmacion",
+        "phrase": "no tu trabajo. lo que sabés adentro del trabajo"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmacion",
+        "phrase": "en 40 minutos la guía está lista"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "tenés tiempo de jugar con los hijos en el sillón del living"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case Study Mini"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 56,
+        "ingredient_name": "El Atajo Temporal"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:20:08.840Z",
+  "status": "confirmed"
+}

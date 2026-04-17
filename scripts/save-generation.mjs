@@ -205,11 +205,11 @@ if (allSections.length > 0) {
 if (duration > 0 && duration < 75) {
   warnings.push(`Duración ${duration}s está por debajo del mínimo recomendado de 75s para micro-VSL completo.`);
 }
-if (duration > 95 && script.funnel_stage !== "RETARGET") {
-  warnings.push(`📉 Duración ${duration}s supera los 95s. Dato: cada 15s después de 45s, CLR cae ~0.30 puntos. Target: 75-90s para ads, 55-65s para orgánico.`);
+if (duration > 85 && script.funnel_stage !== "RETARGET") {
+  warnings.push(`📉 Duración ${duration}s supera el target 70-85s. Dato: cada 15s después de 45s, CLR cae ~0.30 puntos. Target: 70-85s para ads, 55-65s para orgánico.`);
 }
-if (duration > 110) {
-  errors.push(`📉 Duración ${duration}s es excesiva (máx recomendado: 90s ads, 65s orgánico). CLR cae drásticamente después de 95s. Recortar.`);
+if (duration > 90) {
+  errors.push(`📉 Duración ${duration}s excede el máximo de 90s (reglas-duras §3). Máximo estructural: puente + 4 beats = 90s. Recortar.`);
 }
 
 // Ingredients
@@ -646,6 +646,30 @@ if (AI_PATTERNS.length >= 3) {
   warnings.push(`🤖 ${AI_PATTERNS.length} patrón(es) de escritura IA:\n    ${AI_PATTERNS.join("\n    ")}`);
 }
 
+// ── Demolición: anti-patrón "lista genérica de SIN/NO" (BLOQUEO DURO) ──
+// SKILL.md línea 329 lo prohíbe: funciona para cualquier oferta → no desarma objeción específica.
+// Ejemplos bloqueados: "Sin saber de tecnología. Sin invertir miles." / "No escribiste nada. No diseñaste nada." / "no necesitás X, de Y ni de Z"
+const demolicionBeats = allSections.filter(s => s.persuasion_function === "demolicion");
+for (const beat of demolicionBeats) {
+  const text = (beat.script_text || "").trim();
+  if (!text) continue;
+  const sents = text.split(/[.!?]+\s*/).map(s => s.trim()).filter(Boolean);
+  const sinStartCount = sents.filter(s => /^sin\s+[\wáéíóúüñ]+/iu.test(s)).length;
+  const noVerbCount = sents.filter(s => /^no\s+[\wáéíóúüñ]+(?:ste|aste|iste|amos|imos|aron|ieron|ó|ás|és)\b/iu.test(s)).length;
+  const niDeList = /\b(?:no\s+necesit[\wáéíóúüñ]*|sin\s+saber)\b[^.]{5,80}\bni\s+(?:de|saber|tener)\b/iu.test(text);
+  if (sinStartCount >= 2 || noVerbCount >= 2 || niDeList) {
+    const detected = [];
+    if (sinStartCount >= 2) detected.push(`${sinStartCount}x "Sin ..."`);
+    if (noVerbCount >= 2) detected.push(`${noVerbCount}x "No [verbo]"`);
+    if (niDeList) detected.push(`"no necesitás/sin saber ... ni de ..."`);
+    errors.push(
+      `🚫 Demolición con anti-patrón "lista genérica de SIN/NO" (${detected.join(", ")}). ` +
+      `SKILL.md línea 329 lo prohíbe: funciona para cualquier oferta, no desarma objeción específica. ` +
+      `Reescribir con analogía cotidiana del nicho (ej: "Si sabés mandar un audio por WhatsApp, ya sabés lo suficiente").\n    Texto: "${text.slice(0, 200)}${text.length > 200 ? "..." : ""}"`
+    );
+  }
+}
+
 // ── Angle duplicate check: block if angle_specific exists in confirmed/recorded generations ──
 if (script.angle_specific) {
   const blockedStatuses = new Set(["confirmed", "recorded", "winner"]);
@@ -700,6 +724,177 @@ if (batch) {
     if (script.model_sale_type && batchSales.includes(script.model_sale_type)) {
       warnings.push(`🔁 Venta del modelo "${script.model_sale_type}" ya usada en este batch. Hay 10 tipos — rotar.`);
     }
+  }
+}
+
+// ── Check: Causalidad entre beats (reglas-duras.md §2) ──
+// El inicio de cada beat debe tener un conector causal/adversativo explícito.
+// Secuencia aburre, causa engancha. Evidencia: ERR-02 en anti-patrones-sesiones.md.
+if (allSections.length >= 2) {
+  const CAUSAL_START = /^\s*(?:y\s+)?(?:pero|entonces|por eso|porque|y ahí es donde|lo que pasa es|y lo peor|acá está|y acá (?:es|está)|y eso es|y no es un?|por eso (?:no|la|sí|es)|y lo bueno|lo bueno es|y ?por ?eso|por ?lo ?tanto|así que|de hecho)\b/i;
+  const SEQUENCE_FORBIDDEN_START = /^\s*(?:además|también|por otro lado|en segundo lugar|otra cosa|y otra|otro punto|luego\b(?!\s+de))/i;
+
+  const beats = allSections.filter(s => {
+    const fn = s.persuasion_function;
+    return fn && fn !== "venta_modelo" && (s.script_text || "").trim().length > 10;
+  });
+
+  const bisagras = beats.length; // cada beat inicia una bisagra tras el anterior (puente/hook → beat1 → beat2...)
+  let causalCount = 0;
+  let sequenceForbiddenCount = 0;
+  const sequenceForbiddenDetails = [];
+
+  for (const beat of beats) {
+    const text = (beat.script_text || "").trim();
+    if (CAUSAL_START.test(text)) causalCount++;
+    if (SEQUENCE_FORBIDDEN_START.test(text)) {
+      sequenceForbiddenCount++;
+      const m = text.match(SEQUENCE_FORBIDDEN_START);
+      sequenceForbiddenDetails.push(`"${beat.section_name || beat.persuasion_function}": arranca con "${m?.[0]?.trim()}"`);
+    }
+  }
+
+  if (sequenceForbiddenCount > 0) {
+    errors.push(
+      `⚡ ${sequenceForbiddenCount} beat(s) arrancan con conector de SECUENCIA prohibido (reglas-duras.md §2). ` +
+      `Reemplazar por causal/adversativo (pero/entonces/por eso/porque/y acá es donde/lo que pasa es):\n    ${sequenceForbiddenDetails.join("\n    ")}`
+    );
+  }
+
+  // Venta modelo también necesita conector al beat previo
+  const ventaBeat = allSections.find(s => s.persuasion_function === "venta_modelo");
+  if (ventaBeat) {
+    const text = (ventaBeat.script_text || "").trim();
+    if (text.length > 10 && !CAUSAL_START.test(text)) {
+      warnings.push(`⚡ Venta del modelo no arranca con conector causal. Agregar "por eso / y eso es lo bueno / y acá está".`);
+    }
+  }
+
+  if (bisagras >= 3 && causalCount === 0) {
+    errors.push(
+      `⚡ 0/${bisagras} beats arrancan con conector causal/adversativo (reglas-duras.md §2 — obligatorio). ` +
+      `Agregar uno a cada bisagra: pero / entonces / por eso / porque / y acá es donde / lo que pasa es / acá está el tema.`
+    );
+  } else if (bisagras >= 3 && causalCount < Math.ceil(bisagras * 0.6)) {
+    warnings.push(
+      `⚡ Solo ${causalCount}/${bisagras} beats con conector causal explícito. Apuntar a ≥60% (${Math.ceil(bisagras * 0.6)} mínimo).`
+    );
+  }
+}
+
+// ── Check: Mecanismo nombrado con precisión ──
+// Los winners de Jesús SIEMPRE nombran el mecanismo ("publicista digital", "aprender algo y ofrecerlo").
+// Evidencia: ERR-05 en anti-patrones-sesiones.md.
+const mechBeat = allSections.find(s => s.persuasion_function === "mecanismo");
+if (mechBeat) {
+  const mechText = (mechBeat.script_text || "").toLowerCase();
+  const MECHANISM_NAMES = [
+    /\bproducto digital\b/,
+    /\bcurso\b/,
+    /\bgu[ií]a\b/,
+    /\bsistema\b/,
+    /\bebook\b/,
+    /\bplantilla\b/,
+    /\bmembres[ií]a\b/,
+    /\bservicio\b/,
+    /\bm[eé]todo\b/,
+    /\bclase(s)?\b/,
+    /\btaller(es)?\b/,
+    /\brutina\b/,
+    /\brec(et|eta)\b/,
+    /\bchecklist\b/,
+    /\bworkbook\b/,
+    /\bprompt\b/,
+  ];
+  const named = MECHANISM_NAMES.some(r => r.test(mechText));
+  if (!named && mechText.length > 20) {
+    warnings.push(
+      `🎯 Mecanismo sin nombrar con precisión. Los winners Jesús SIEMPRE nombran ("publicista digital", "servicio", "aprender algo y ofrecerlo"). ` +
+      `Agregar al beat de mecanismo: producto digital / sistema / curso / guía / servicio / ebook / plantilla.`
+    );
+  }
+}
+
+// ── Check: Detalles de Jesús verificables vs jesus-completo.md §2 ──
+// Si se atribuye a Jesús un dato numérico, debe estar en §2 (anti-invento).
+const JESUS_VERIFIED_NUMBERS = new Set([
+  "12", "15", "17", "18", "19", "20", "21", "22", "23", "25", "26", "27", "28", // edades plausibles (12-17 changas; 19-21 momentos clave)
+  "47", // kilos
+  "50", "100", "150", // dólares mensuales (vivía con $100-150)
+  "500", "1000", "2000", // rangos documentados
+  "1500", // Nacho pagó $1,500
+  "5000", "7000", "10000", "15000", // mastermind / retiro / stripe
+  "20000", "30000", // Stripe cuenta
+  "50000", "70000", "90000", // lanzamiento Stripe
+  "100000", "150000", // ganancias/pérdidas documentadas
+  "9441", // conversaciones WhatsApp analizadas
+  "2000", // +2,000 alumnos
+  "6", "9", "10", "14", // años, meses documentados
+  "15", "3", "4", "5", "8", // misc pequeños
+]);
+
+// Patrones: "a los X años" | "pesaba X" | "con X dólares/pesos" | "$X"
+const JESUS_FACT_PATTERNS = [
+  { pat: /\ba los (\d+)\s*(?:años?|kilos?|kilogramos?)/gi, type: "edad/kilos" },
+  { pat: /\bpesaba (\d+)\s*kilos?/gi, type: "kilos" },
+  { pat: /\bcon (\d+)\s*d[oó]lares?\b/gi, type: "dólares" },
+  { pat: /\bperd[ií]\s*\$?(\d+)(?:[.,]\d+)?\s*[kK]?\b/gi, type: "pérdida" },
+  { pat: /\binvert[ií]\s*\$?(\d+)(?:[.,]\d+)?\s*[kK]?\b/gi, type: "inversión" },
+  { pat: /\bgan[eé]\s*\$?(\d+)(?:[.,]\d+)?\s*[kK]?\b/gi, type: "ganancia" },
+];
+
+// Solo activar si el texto menciona a Jesús en primera persona reciente
+const JESUS_FIRST_PERSON = /\b(yo\s+me|yo\s+)(dorm[ií]|pesaba|ganaba|perd[ií]|ten[ií]a|fund[eé]|arranqu[eé]|invert[ií])/i;
+const hasJesusRef = JESUS_FIRST_PERSON.test(allScriptText);
+
+if (hasJesusRef) {
+  const unverifiedFacts = [];
+  for (const { pat, type } of JESUS_FACT_PATTERNS) {
+    let m;
+    const regex = new RegExp(pat.source, pat.flags);
+    while ((m = regex.exec(allScriptText)) !== null) {
+      const num = m[1].replace(/[.,]/g, "");
+      if (!JESUS_VERIFIED_NUMBERS.has(num)) {
+        unverifiedFacts.push(`"${m[0]}" (${type}) — no está en jesus-completo.md §2`);
+      }
+    }
+  }
+  if (unverifiedFacts.length > 0) {
+    warnings.push(
+      `📚 Datos de Jesús posiblemente no verificados:\n    ${unverifiedFacts.join("\n    ")}\n    ` +
+      `Confirmar contra jesus-completo.md §2 o agregar el número a la lista blanca.`
+    );
+  }
+}
+
+// ── Check: Supuestos universales (filtran mal) ──
+// Evidencia: ERR-03 y ERR-08 en anti-patrones-sesiones.md.
+const UNIVERSAL_ASSUMPTIONS = [
+  { regex: /\bcon\s+tus\s+hijos?\b/i, desc: 'asume viewer tiene hijos (solo 35% Cluster 1)' },
+  { regex: /\bmientras\s+(est[aá]s\s+)?con\s+tus?\s+hijos?\b/i, desc: 'asume hijos' },
+  { regex: /\bcuando\s+los?\s+chicos\s+duermen\b/i, desc: 'asume hijos chicos' },
+  { regex: /\btu\s+pareja\b/i, desc: 'asume viewer tiene pareja' },
+  { regex: /\btu\s+marido\b|\btu\s+esposa\b|\btu\s+novio\b|\btu\s+novia\b/i, desc: 'asume pareja específica' },
+  { regex: /\bahora\s+mismo\b/i, desc: 'asume presente específico (video se ve a cualquier hora)' },
+  { regex: /\besta\s+noche\b/i, desc: 'asume momento específico' },
+  { regex: /\ben\s+este\s+momento\b/i, desc: 'asume presente específico' },
+  { regex: /\b(son|es)\s+las?\s+(\d+|tres|cuatro|cinco|seis|dos|una|once|doce|diez|nueve|ocho|siete)\b/i, desc: 'asume hora específica (el video se ve a cualquier hora)' },
+  { regex: /\bestás\s+despiert[ao]\s+(ahora|leyendo|viendo)\b/i, desc: 'asume viewer AHORA despierto' },
+];
+
+if (allScriptText.trim()) {
+  const foundAssumptions = [];
+  for (const rule of UNIVERSAL_ASSUMPTIONS) {
+    const m = allScriptText.match(rule.regex);
+    if (m) {
+      foundAssumptions.push(`"${m[0]}" — ${rule.desc}`);
+    }
+  }
+  if (foundAssumptions.length > 0) {
+    warnings.push(
+      `🔮 Supuestos universales (filtran al subconjunto equivocado):\n    ${foundAssumptions.join("\n    ")}\n    ` +
+      `Reformular sin asumir hora/hijos/pareja/presente — activar memoria duradera en vez de momento.`
+    );
   }
 }
 

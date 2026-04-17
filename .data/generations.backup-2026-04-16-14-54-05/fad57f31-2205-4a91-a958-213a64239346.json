@@ -1,0 +1,250 @@
+{
+  "id": "fad57f31-2205-4a91-a958-213a64239346",
+  "briefId": "3f57d54a-b30a-4c1c-8f7d-c739a4ffc5de",
+  "title": "Solo organizo la casa — mamá que empaquetó su rutina",
+  "batch": "semana-demo-3",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.1_mama_sin_tiempo",
+    "body_type": "contraste_emocional",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "plantillas de organización del hogar",
+    "model_sale_type": "tiempo_vs_dinero",
+    "rhythm_template": "R6",
+    "emotional_arc": "futuro_sensorial",
+    "tension": "T13",
+    "pattern_ig": "exclusividad",
+    "punto_entrada_emocional": "La rabia callada de saber que tu día se lo comió la casa y no quedó nada para vos",
+    "belief_change": {
+      "old_belief": "Solo soy una mamá que organiza la casa, no sé nada vendible",
+      "mechanism": "Revalorizar su sistema de organización como conocimiento empaquetable",
+      "new_belief": "Mi rutina es un sistema que otras mamás pagarían por tener"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Lo que hago es un sistema valioso, no solo rutina",
+        "installed_via": "Vos no sos solo una mamá. Sos la persona que armó un sistema para que una casa funcione",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Es fácil y conversacional armarlo",
+        "installed_via": "Le contás a la IA como si fuera una amiga",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Lo puedo hacer con el tiempo que ya tengo",
+        "installed_via": "Lo armás un domingo a la siesta, 2 horas, mientras los chicos miran dibujitos",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Podría decirle que sí a mis hijos sin culpa",
+        "installed_via": "Imaginá que tu hija te dice ma comprás esto y le decís que sí",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      },
+      {
+        "belief": "La diferencia es empaquetar, no tener más tiempo",
+        "installed_via": "Es que una empaquetó lo que sabe y la otra todavía lo regala",
+        "persuasion_function": "prueba",
+        "section_name": "Venta del modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "La mamá responde a verse en su noche exacta",
+        "emotional_lever": "identificacion",
+        "script_text": "Son las 11. Los chicos se durmieron. Levantás los juguetes del piso, cargás el lavarropas, dejás la cocina más o menos. Te sentás. Agarrás el celular. Y pensás: otro día que se me fue entero en la casa.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "hypothesis": "La mamá responde a una verdad que no dice en voz alta",
+        "emotional_lever": "vulnerabilidad",
+        "script_text": "Hay algo que las mamás no dicen en voz alta. Que a veces, cuando los chicos se duermen, te quedás sentada mirando la pared. No cansada. Vacía. Pensando que tiene que haber otra forma.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion",
+        "hypothesis": "La mamá responde a ver que su rutina vale plata",
+        "emotional_lever": "confrontacion",
+        "script_text": "Vos tenés un sistema para que tu casa funcione con 3 hijos, poca plata y cero ayuda. Eso que para vos es lo normal, hay miles de mamás pagando por aprenderlo. Y vos lo regalás todos los días sin darte cuenta.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "La mamá responde a la pregunta que se hace a las 11pm",
+        "emotional_lever": "reflexion",
+        "script_text": "¿Cuándo fue la última vez que gastaste plata en vos sin culpa? No en los chicos. No en la casa. En vos. Si no te acordás, prestame 70 segundos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "La mamá responde a algo que contradice lo que le dijeron",
+        "emotional_lever": "curiosidad",
+        "script_text": "Las mamás que generan plata por internet no tienen más tiempo que vos. Tienen menos. Lo que tienen es una cosa que vos también tenés y ni sabés que vale plata.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "futuro_sensorial",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Yo también me siento así",
+          "viewer_emotion_after": "Identificación profunda",
+          "is_turning_point": false,
+          "script_text": "Pensás: yo no sé nada. Solo soy una mamá de 44 años que organiza la casa. Pero escuchame bien.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que hago es un sistema valioso",
+          "viewer_emotion_after": "Revalorización + sorpresa",
+          "is_turning_point": true,
+          "script_text": "Vos no sos \"solo una mamá.\" Sos la persona que armó un sistema para que una casa funcione con hijos, con quilombo, con poca plata y sin que nadie te ayude. El menú de la semana para 4. La lista del súper que no se pasa de 50 mil pesos. El calendario de turnos, actividades y cumpleaños. Eso tiene un nombre: conocimiento. Y hay gente pagando por eso.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo hacerlo hablando como a una amiga",
+          "viewer_emotion_after": "Claridad + ganas",
+          "is_turning_point": false,
+          "script_text": "Agarrás el celular y le contás a la IA como si fuera una amiga: \"Necesito un kit de 15 plantillas para organizar la casa. Menú semanal para familia de 4, lista de compras con presupuesto, rutina de mañana para que los chicos salgan sin gritos, calendario mensual de actividades.\" En una siesta te lo arma. Vos le metés tus colores en Canva y lo subís a 7 dólares.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Lo puedo hacer con el tiempo que ya tengo",
+          "viewer_emotion_after": "Permiso",
+          "is_turning_point": false,
+          "script_text": "\"Pero yo no tengo tiempo.\" Lo armás un domingo a la siesta, 2 horas, mientras los chicos miran dibujitos. Después no tocás más nada. El kit se descarga solo. Vos podés estar cocinando, bañando a los chicos o durmiendo.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Podría decirle que sí a mis hijos sin culpa",
+          "viewer_emotion_after": "Deseo + emoción",
+          "is_turning_point": false,
+          "script_text": "Imaginá la primera vez que tu hija te dice \"ma, ¿me comprás esto?\" y le decís que sí. Sin mirar la cuenta. Sin culpa. Plata que entró mientras vos estabas haciendo lo que hacés siempre. Porque tu rutina ahora trabaja por vos.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "transition_text": "Eso que acabás de escuchar es exactamente lo que enseño. Cómo agarrar lo que ya sabés y convertirlo en algo que se vende solo.",
+    "model_sale_text": "La diferencia entre la mamá que llega raspando a fin de mes y la que tiene un ingreso extra no es tiempo. Es que una empaquetó lo que sabe y la otra todavía lo regala.",
+    "total_duration_seconds": 78,
+    "word_count": 240,
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "identificacion",
+        "phrase": "Solo soy una mamá de 44 años que organiza la casa."
+      },
+      {
+        "location": "quiebre",
+        "technique": "revalorizacion",
+        "phrase": "Eso tiene un nombre: conocimiento."
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "le contás a la IA como si fuera una amiga"
+      },
+      {
+        "location": "demolicion",
+        "technique": "permiso",
+        "phrase": "Lo armás un domingo a la siesta, 2 horas, mientras los chicos miran dibujitos."
+      },
+      {
+        "location": "prueba",
+        "technique": "deseo",
+        "phrase": "y le decís que sí. Sin mirar la cuenta. Sin culpa."
+      },
+      {
+        "location": "demolicion",
+        "technique": "alivio",
+        "phrase": "El kit se descarga solo."
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El Permiso"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-11T16:55:32.327Z"
+}

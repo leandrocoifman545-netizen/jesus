@@ -1,0 +1,290 @@
+{
+  "id": "4155f615-5f12-4a1f-ab89-45cac5b728d3",
+  "briefId": "8ea67974-d076-4f15-919b-99cb6cafda88",
+  "title": "Cambio de época — o cambio o me cambian a la fuerza",
+  "batch": {
+    "id": "40841ea8-40ac-4f43-a156-2c14fd3427df",
+    "name": "Top 10 Definitivo"
+  },
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.1_ventana_ia",
+    "body_type": "qa_conversacional",
+    "segment": "D",
+    "funnel_stage": "RETARGET",
+    "niche": "jubilados / pre-jubilación / mayores de 55",
+    "model_sale_type": "transparencia_total",
+    "emotional_arc": "provocacion_evidencia",
+    "transition_text": "Solo necesita un formato nuevo.",
+    "total_duration_seconds": 78,
+    "word_count": 227,
+    "belief_change": {
+      "old_belief": "Ya se me pasó el tren, la tecnología no es para alguien de mi edad",
+      "mechanism": "La IA eliminó la barrera técnica y personas de 55+ ya están creando productos digitales con un celular",
+      "new_belief": "Mi experiencia de vida es exactamente lo que la IA necesita para crear algo que se venda"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El mundo cambió y mi jubilación no va a alcanzar",
+        "installed_via": "frase textual real de comprador sobre cambio de época",
+        "persuasion_function": "identificacion",
+        "section_name": "Identificación"
+      },
+      {
+        "belief": "La tecnología dejó de ser una barrera",
+        "installed_via": "evidencia de que la IA es tan simple como mandar un audio",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo crear algo vendible con mi experiencia de vida",
+        "installed_via": "ejemplo concreto de jubilado creando guía con IA",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Esto no es una estafa, es transparente",
+        "installed_via": "transparencia radical sobre precio y modelo de negocio",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Gente de mi edad ya lo hizo y duerme tranquila",
+        "installed_via": "prueba social de personas 55+ en distintas ciudades",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situación_específica",
+        "hypothesis": "la frase textual sobre retargeting genera conexión con quien ya vio ads",
+        "emotional_lever": "empatía",
+        "script_text": "Trabajaste 35 años. Te levantaste temprano toda tu vida. Y cuando sacás las cuentas de la jubilación, el número da vergüenza.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocación",
+        "hypothesis": "el jubilado responde a ver su angustia económica descrita con precisión",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Tenés 30 años de experiencia en tu oficio. Y un currículum que nadie quiere leer. El problema no sos vos. Es el formato.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incómoda",
+        "hypothesis": "la idea de que la edad es ventaja genera curiosidad en mayores",
+        "emotional_lever": "curiosidad",
+        "script_text": "¿Qué pasa cuando el cuerpo ya no responde igual y tu único ingreso depende de que vayas a laburar?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesión",
+        "hypothesis": "confrontar la resignación genera reacción emocional",
+        "emotional_lever": "confrontación",
+        "script_text": "Te voy a ser honesto. A tu edad la mayoría de los ads te trata como un boludo. Este no. Escuchame 60 segundos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraintuitivo",
+        "hypothesis": "ver a alguien de su edad que lo logró genera esperanza concreta",
+        "emotional_lever": "prueba social",
+        "script_text": "Lo que un mecánico de 58 años aprendió en el taller le está dando plata sin tocar una llave. Y no tiene idea de tecnología.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "provocacion_evidencia",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "El mundo cambió y mi jubilación no va a alcanzar",
+          "viewer_emotion_after": "reconocimiento + ansiedad",
+          "is_turning_point": false,
+          "script_text": "Trabajaste 35 años. Te levantaste temprano toda tu vida. Y cuando sacás las cuentas de la jubilación, el número da vergüenza. Cambio de época. O cambio o me cambian a la fuerza. Y a los 55 nadie te contrata.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "La tecnología dejó de ser una barrera",
+          "viewer_emotion_after": "sorpresa + apertura",
+          "is_turning_point": true,
+          "script_text": "El currículum ya caducó. Pero tu experiencia, no. Básicamente, lo que aprendiste en 30 años sigue teniendo valor. Solo que en otro formato.",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo crear algo vendible con mi experiencia de vida",
+          "viewer_emotion_after": "curiosidad + esperanza",
+          "is_turning_point": false,
+          "script_text": "Si sabés mandar un audio de WhatsApp, ya sabés lo suficiente. Le hablás a la IA como si le hablaras a un sobrino. Le contás lo que sabés de tu oficio. Y la IA te arma una guía profesional con todo tu conocimiento ordenado paso a paso.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Esto no es una estafa, es transparente",
+          "viewer_emotion_after": "confianza",
+          "is_turning_point": false,
+          "script_text": "La subís a 8 dólares. Se vende sin horarios. Desde tu casa. \"¿Y esto es de verdad o es otra estafa más?\" Te entiendo perfectamente. A esta altura de tu vida la desconfianza es sentido común.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente de mi edad ya lo hizo y duerme tranquila",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Te voy a mostrar un proceso concreto. Si no te sirve, perdiste 2 horas de una clase gratis. Sin compromiso. Sin tarjeta. Sin humo. Gente que se jubiló de mecánico. De contador. De maestra.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Es transparente y no hay trampa",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "script_text": "Y hoy tiene un ingreso extra que no le pide que se levante a las 6. No se hicieron millonarios. Pero duermen tranquilos. Tu experiencia no tiene fecha de vencimiento.",
+          "timing_seconds": 7
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "el número da vergüenza"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "a los 55, nadie te contrata"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "si sabés mandar un audio de WhatsApp, ya sabés lo suficiente"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "Le hablás a la IA como si le hablaras a un sobrino"
+      },
+      {
+        "location": "beat_3",
+        "technique": "future_pacing",
+        "phrase": "se vende sola. Sin que estés ahí. Sin horarios. Desde tu casa."
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmación",
+        "phrase": "perdiste 2 horas de una clase gratis. Sin compromiso. Sin tarjeta."
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "ahora duermen más tranquilos"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción situacional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del juego"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Anti-autoridad"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación extrema"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case study"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 126,
+        "ingredient_name": "Presuposición"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-08T03:48:12.210Z",
+  "status": "confirmed"
+}

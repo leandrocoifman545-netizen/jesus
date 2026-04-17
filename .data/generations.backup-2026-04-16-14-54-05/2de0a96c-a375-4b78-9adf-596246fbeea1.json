@@ -1,0 +1,282 @@
+{
+  "id": "2de0a96c-a375-4b78-9adf-596246fbeea1",
+  "briefId": "1fe4997a-84ae-4257-aff2-f668770b72ee",
+  "title": "Las tapitas de gaseosa del lunes — la maestra que empaquetó 10 años de grado",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.5_docente_creativa",
+    "body_type": "pregunta_y_respuesta",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "docencia primaria / material didáctico / maestra de grado",
+    "model_sale_type": "lean_anti_riesgo",
+    "emotional_arc": "historia_personal",
+    "transition_text": "",
+    "total_duration_seconds": 89,
+    "word_count": 320,
+    "belief_change": {
+      "old_belief": "Mis actividades son útiles solo para mi grado y se pierden cada lunes que vuelvo a empezar",
+      "mechanism": "Lo que una maestra fue descubriendo a fuerza de ensayo y error con chicos difíciles es exactamente el material que otras colegas buscan sin encontrar",
+      "new_belief": "Mi método no es la clase, es lo que sé hacer con los chicos — y eso puede trabajar en otras aulas mientras yo duermo el domingo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Tengo un archivo entero de actividades probadas que nadie más tiene ordenado",
+        "installed_via": "escena sensorial del domingo a la noche con cartulinas",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Cada lunes empiezo de cero y eso no va a cambiar con más trabajo",
+        "installed_via": "descripción del bucle dominical",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Mi método vale más que la clase del lunes a la mañana",
+        "installed_via": "pivote — el método es el producto, no la clase",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Las salidas que ya pensé (otro cargo, privada, particulares) son todas más horas tuyas por la misma plata. Esta es distinta.",
+        "installed_via": "demolición de las 3 alternativas que ya consideró + demo concreta del nuevo camino",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición + demo"
+      },
+      {
+        "belief": "Mi experiencia puede enseñar en aulas que nunca voy a ver",
+        "installed_via": "espejo inverso de las cosas que ya no pasan",
+        "persuasion_function": "prueba",
+        "section_name": "Espejo inverso"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "la escena del domingo a la noche activa memoria específica de maestra",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Lo más raro de la primaria es esto: la maestra que mejor enseña es casi siempre la que menos se da cuenta de cuánto sabe",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "provocacion",
+        "hypothesis": "nombrar la asimetría expertise-mercado genera indignación",
+        "emotional_lever": "injusticia",
+        "script_text": "Lo que ya sabés hacer en el aula no necesita más capacitación. Necesita salir del aula.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "cuantificar los favores a colegas activa resentimiento productivo",
+        "emotional_lever": "indignacion",
+        "script_text": "La maestra que mejor ganan con internet no es la veinteañera con TikTok. Es la que ya pasó los 40 ¿lo sabias?",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "historia_mini",
+        "hypothesis": "ver a una maestra concreta que lo logró da permiso",
+        "emotional_lever": "esperanza",
+        "script_text": "Mientras vos seguís dando clase como siempre, hay maestras\n   que están haciendo algo muy distinto con lo que          \n  aprendieron en el aula. Y casi nadie en el sistema escolar\n   lo sabe. ",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "confesion",
+        "hypothesis": "la confesión desarma la objeción 'no tengo audiencia'",
+        "emotional_lever": "vulnerabilidad",
+        "script_text": "Te llevó años de aula aprender a manejar 25 chicos al mismo tiempo sin levantar la voz. Hay alguien que necesita aprender eso ya, y estaría dispuesto a pagar para que se\nlo enseñes. ",
+        "timing_seconds": 11
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "historia_personal",
+      "turning_point_beat": "Mecanismo",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Tengo un archivo entero de actividades probadas",
+          "viewer_emotion_after": "dignidad activada",
+          "is_turning_point": false,
+          "script_text": "Son mas 10 años inventando cosas todas las semanas para que los chicos que les cuesta más entiendan. Eso no se borra cuando suena el timbre. Te queda en la cabeza. Y vale mas plata de lo que pensas.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Cada lunes empiezo de cero",
+          "viewer_emotion_after": "agotamiento reconocido",
+          "is_turning_point": false,
+          "script_text": "Todos los lunes volvés a empezar. La directora pide proyecto nuevo. Preparás la actividad en la cocina el domingo a la noche. Los chicos aprenden, la familia aplaude, el lunes que viene volvés a arrancar de cero. Como si el trabajo de los últimos 10 años no contara.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Mi método vale más que la clase",
+          "viewer_emotion_after": "orgullo + apertura",
+          "is_turning_point": true,
+          "script_text": "Tu conocimiento vale muchísimo más que un sueldo minimo. Básicamente, lo que fuiste descubriendo después de 10 años es oro puro, cómo hacer que un nene de 6 que no sabe leer termine el año leyendo de corrido, cómo mantener la atención de una nena de 7 años 40 minutos seguidos",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Demolición + demo",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Las salidas que ya pensé son la misma trampa. Esta no.",
+          "viewer_emotion_after": "alternativas descartadas + posibilidad concreta",
+          "is_turning_point": false,
+          "script_text": "Y vos ya pensaste cómo sacarle plata a eso. Otro cargo te deja sin sábados. Una privada paga apenas un poco más por el doble de horas. Particulares en tu living es cobrar por hora otra vez. Las tres son lo mismo. Esto es distinto: abrís ChatGPT, le mandás un audio — 'armame un PDF de 25 actividades imprimibles para segundo grado, con materiales que hay en cualquier casa'. En 45 minutos lo tenés. Lo cobrás 9 dólares en Hotmart.",
+          "timing_seconds": 25
+        },
+        {
+          "section_name": "Espejo inverso",
+          "persuasion_function": "prueba",
+          "micro_belief": "Mi experiencia puede enseñar en aulas que nunca voy a ver",
+          "viewer_emotion_after": "alivio anticipado",
+          "is_turning_point": false,
+          "script_text": "Y lo más loco es esto: lo armás una vez y se vende solo. Maestras que vos ni conocés lo compran, lo usan con sus pibes, y la plata te entra igual. Sin tener que poner más plata de tu sueldo en fotocopias. Sin tener que regalárselo a una colega que después ni te saluda en la sala de profes.\n",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Mi método sigue trabajando mientras yo descanso",
+          "viewer_emotion_after": "dignidad + paz",
+          "is_turning_point": false,
+          "script_text": "Podés seguir dando clases igual que siempre. Pero ya no depende solo del sueldo que nunca te alcanzó. Tu método enseña a chicos que no conocés, y ese ingreso te entra todos los meses.",
+          "timing_seconds": 9
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "si sos maestra de primaria, seguro ya te pasó"
+      },
+      {
+        "location": "hook_1",
+        "technique": "afirmacion",
+        "phrase": "la actividad queda guardada en tu cabeza"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmacion",
+        "phrase": "todos los lunes volvés a empezar"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmacion",
+        "phrase": "no la clase, el método"
+      },
+      {
+        "location": "beat_4",
+        "technique": "afirmacion",
+        "phrase": "en 45 minutos lo tenés listo"
+      },
+      {
+        "location": "beat_5",
+        "technique": "future_pacing",
+        "phrase": "mientras vos tomás el café del domingo a la tarde"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 41,
+        "ingredient_name": "La Trampa del Conformismo"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Autoridad por Origen"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "Future Pacing Sensorial"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        },
+        "ingredients": [
+          "#85 Testimonio Diverso",
+          "#106 Garantía Implícita",
+          "#117 Escasez"
+        ]
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:59:51.107Z",
+  "status": "confirmed",
+  "batch": {
+    "id": "f63d6536-c6c8-48df-a0cd-d487da0fdb55",
+    "name": "Version 7.0"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  }
+}

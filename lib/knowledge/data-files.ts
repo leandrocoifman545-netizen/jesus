@@ -54,6 +54,8 @@ export async function getKnowledgeContext(): Promise<string> {
     inteligenciaCompradores,
     jerarquiaDecisiones,
     objeciones,
+    frasesTextuales,
+    cruceWinners,
   ] = await Promise.all([
     loadFile("angulos-expandidos.md"),
     loadFile("tipos-cuerpo.md"),
@@ -68,6 +70,8 @@ export async function getKnowledgeContext(): Promise<string> {
     loadFile("inteligencia-compradores.md"),
     loadFile("jerarquia-decisiones.md"),
     loadFile("objeciones-adp.md"),
+    loadFile("frases-textuales-562-compradores.md"),
+    loadFile("cruce-562-vs-winners.md"),
   ]);
 
   const sections: string[] = [];
@@ -124,9 +128,17 @@ export async function getKnowledgeContext(): Promise<string> {
     sections.push(`## SESSION INSIGHTS (feedback de Jesús — evitar lo que no funcionó)\n${sessionInsights}`);
   }
 
+  if (frasesTextuales) {
+    sections.push(`## FRASES TEXTUALES DE 562 COMPRADORES (copy-paste directo para hooks, beats, CTAs)\n${frasesTextuales}`);
+  }
+
+  if (cruceWinners) {
+    sections.push(`## CRUCE COMPRADORES × WINNERS (nichos validados, mecanismos confirmados, oportunidades)\n${cruceWinners}`);
+  }
+
   // Warn about missing critical files so Claude knows its context is incomplete
-  const loadedFiles = [angulos, tiposCuerpo, ingredientes, reglasDiversidad, ventaModelo, ctasBiblioteca, motorAudiencia, winnerPatterns, sessionInsights, avatares, inteligenciaCompradores, jerarquiaDecisiones, objeciones];
-  const fileNames = ["angulos-expandidos.md", "tipos-cuerpo.md", "enciclopedia-127-ingredientes.md", "reglas-diversidad.md", "venta-modelo-negocio.md", "ctas-biblioteca.md", "motor-audiencia.md", "winner-patterns.md", "session-insights.md", "avatares-adp.md", "inteligencia-compradores.md", "jerarquia-decisiones.md", "objeciones-adp.md"];
+  const loadedFiles = [angulos, tiposCuerpo, ingredientes, reglasDiversidad, ventaModelo, ctasBiblioteca, motorAudiencia, winnerPatterns, sessionInsights, avatares, inteligenciaCompradores, jerarquiaDecisiones, objeciones, frasesTextuales, cruceWinners];
+  const fileNames = ["angulos-expandidos.md", "tipos-cuerpo.md", "enciclopedia-127-ingredientes.md", "reglas-diversidad.md", "venta-modelo-negocio.md", "ctas-biblioteca.md", "motor-audiencia.md", "winner-patterns.md", "session-insights.md", "avatares-adp.md", "inteligencia-compradores.md", "jerarquia-decisiones.md", "objeciones-adp.md", "frases-textuales-562-compradores.md", "cruce-562-vs-winners.md"];
   const missing = fileNames.filter((_, i) => !loadedFiles[i]);
 
   if (missing.length > 0) {
@@ -153,6 +165,7 @@ export async function getKnowledgeContextLongform(): Promise<string> {
     reglasDiversidad,
     ventaModelo,
     vslTaller,
+    frasesTextuales,
   ] = await Promise.all([
     loadFile("jerarquia-decisiones.md"),
     loadFile("avatares-adp.md"),
@@ -165,10 +178,12 @@ export async function getKnowledgeContextLongform(): Promise<string> {
     loadFile("reglas-diversidad.md"),
     loadFile("venta-modelo-negocio.md"),
     loadFile("vsl-taller-definitivo.md"),
+    loadFile("frases-textuales-562-compradores.md"),
     // NOT loaded (ad-specific, would confuse longform):
     // - winner-patterns.md (CLR metrics, 60-90s duración, TikTok patterns — irrelevante para 10-20min)
     // - session-insights.md (modularidad hooks/body, sweet spot 55-65s, CLR de Ramiro — ads only)
     // - ctas-biblioteca.md (bloques CTA de 6 capas para ads — YouTube usa CTAs nativos)
+    // - cruce-562-vs-winners.md (ad-specific niches and mechanisms)
   ]);
 
   const sections: string[] = [];
@@ -183,6 +198,10 @@ export async function getKnowledgeContextLongform(): Promise<string> {
 
   if (inteligenciaCompradores) {
     sections.push(`## INTELIGENCIA DE COMPRADORES (562 compradores reales — MÁS PESO que leads fríos)\n${inteligenciaCompradores}`);
+  }
+
+  if (frasesTextuales) {
+    sections.push(`## FRASES TEXTUALES DE 562 COMPRADORES (copy-paste directo para hooks, beats, CTAs — lenguaje REAL del comprador)\n${frasesTextuales}`);
   }
 
   if (motorAudiencia) {
@@ -217,8 +236,8 @@ export async function getKnowledgeContextLongform(): Promise<string> {
     sections.push(`## VSL TALLER DEFINITIVO (referencia de estructura y tono real de Jesús, 9 actos Benson)\n${vslTaller}`);
   }
 
-  const allFiles = [jerarquiaDecisiones, avatares, inteligenciaCompradores, motorAudiencia, objeciones, angulos, tiposCuerpo, ingredientes, reglasDiversidad, ventaModelo, vslTaller];
-  const allNames = ["jerarquia-decisiones.md", "avatares-adp.md", "inteligencia-compradores.md", "motor-audiencia.md", "objeciones-adp.md", "angulos-expandidos.md", "tipos-cuerpo.md", "enciclopedia-127-ingredientes.md", "reglas-diversidad.md", "venta-modelo-negocio.md", "vsl-taller-definitivo.md"];
+  const allFiles = [jerarquiaDecisiones, avatares, inteligenciaCompradores, motorAudiencia, objeciones, angulos, tiposCuerpo, ingredientes, reglasDiversidad, ventaModelo, vslTaller, frasesTextuales];
+  const allNames = ["jerarquia-decisiones.md", "avatares-adp.md", "inteligencia-compradores.md", "motor-audiencia.md", "objeciones-adp.md", "angulos-expandidos.md", "tipos-cuerpo.md", "enciclopedia-127-ingredientes.md", "reglas-diversidad.md", "venta-modelo-negocio.md", "vsl-taller-definitivo.md", "frases-textuales-562-compradores.md"];
   const missing = allNames.filter((_, i) => !allFiles[i]);
 
   if (missing.length > 0) {

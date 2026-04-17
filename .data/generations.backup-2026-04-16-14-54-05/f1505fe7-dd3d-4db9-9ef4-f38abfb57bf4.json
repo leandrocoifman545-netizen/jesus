@@ -1,0 +1,245 @@
+{
+  "id": "f1505fe7-dd3d-4db9-9ef4-f38abfb57bf4",
+  "briefId": "bceef046-e8cb-4c48-ad88-9a2f7da8470d",
+  "title": "Cómo le explico a mi hija — la profesora universitaria 50+ y el cuarto intento",
+  "batch": "semana-2026-04-15",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.6_anti_guru",
+    "body_type": "qa_conversacional",
+    "segment": "B",
+    "funnel_stage": "RETARGET",
+    "niche": "profesora universitaria 50 mas",
+    "model_sale_type": "transparencia_total",
+    "transition_text": "Lo único que tenés que hacer es entrar y dejar que la pantalla hable por vos. Esta semana empieza la clase gratis.",
+    "total_duration_seconds": 86,
+    "word_count": 216,
+    "punto_entrada_emocional": "verguenza protectora de tener que justificar otro intento ante una hija que ya te vio fracasar",
+    "belief_change": {
+      "old_belief": "Si mi familia me ve probando algo nuevo otra vez, voy a tener que justificarme con palabras",
+      "mechanism": "La diferencia esta vez es un sistema que te hace terminar con algo armado en 3 dias. No discutis con palabras: mostras una pantalla con un resultado real",
+      "new_belief": "No tengo que convencer a mi hija discutiendo. Le muestro un resultado concreto y la conversacion cambia sola"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esta es exactamente mi conversacion familiar",
+        "installed_via": "puente desde DM real",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Mi hija no es mi enemiga, es mi protectora",
+        "installed_via": "validacion de la oposicion familiar",
+        "persuasion_function": "quiebre",
+        "section_name": "Beat 1 - Quiebre"
+      },
+      {
+        "belief": "Esta vez no es otro material para guardar",
+        "installed_via": "naming del concepto sistema vs material",
+        "persuasion_function": "mecanismo",
+        "section_name": "Beat 2 - Mecanismo"
+      },
+      {
+        "belief": "Puedo cambiar la conversacion mostrando, no justificando",
+        "installed_via": "demolicion de la necesidad de justificarse",
+        "persuasion_function": "demolicion",
+        "section_name": "Beat 3 - Demolicion"
+      },
+      {
+        "belief": "Hay docentes 50+ reales que terminaron la discusion con una captura",
+        "installed_via": "prueba especifica al avatar de edad",
+        "persuasion_function": "prueba",
+        "section_name": "Beat 4 - Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_mini",
+        "hypothesis": "el avatar responde a un dialogo real con su hija",
+        "emotional_lever": "reconocimiento dialogico",
+        "script_text": "—Ma, ¿de nuevo? La última vez fueron tres cosas en un año y no terminaste ninguna. Eso me dijo mi hija. Te cuento qué le respondí.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion",
+        "hypothesis": "el avatar responde a la honestidad sobre los intentos anteriores",
+        "emotional_lever": "vulnerabilidad validante",
+        "script_text": "Mi hija tenía razón sobre los 3 intentos anteriores. Esta vez yo tengo razón sobre el cuarto. Y te puedo mostrar por qué.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "el avatar responde a la frase familiar exacta que ya escucho",
+        "emotional_lever": "reconocimiento del comentario familiar",
+        "script_text": "¿Cuántas veces tu familia te dijo 'mamá, otra vez con lo mismo'? Si pasaste por esa frase, escuchá esto sin defenderte.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "negacion_directa",
+        "hypothesis": "el avatar responde a que no se ataque a su hija",
+        "emotional_lever": "alianza con la hija",
+        "script_text": "Acá nadie te va a decir que tu hija está equivocada. Lo que te voy a decir es por qué esta vez ella misma va a cambiar de opinión. Sin que vos discutas.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "el avatar responde a la escena de no contarle a la familia por miedo",
+        "emotional_lever": "verguenza protectora",
+        "script_text": "Estás escribiendo el mail de inscripción y dudás si contarle a tu hija. Porque ya escuchaste esa frase tres veces. Esta vez podés saltearte la conversación.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "qa_conversacional_unica_objecion",
+      "emotional_arc": "vulnerabilidad_conexion",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Esta es exactamente mi conversacion familiar",
+          "viewer_emotion_after": "reconocimiento del DM",
+          "is_turning_point": false,
+          "script_text": "Tengo una pregunta acá: '¿Cómo le explico a mi hija de 28 que esta vez sí va a ser distinto?' Te respondo en serio.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "Beat 1 - Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi hija no es mi enemiga, es mi protectora",
+          "viewer_emotion_after": "alivio: no tengo que pelear con ella",
+          "is_turning_point": false,
+          "script_text": "Tu hija no está siendo mala. Está protegiéndote del patrón que ya vio 3 veces. Tiene razón. La única forma de que vea que esta vez es diferente es mostrarle un resultado concreto en una semana.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 2 - Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Esta vez no es otro material para guardar",
+          "viewer_emotion_after": "permiso: hay una diferencia real",
+          "is_turning_point": false,
+          "script_text": "Acá hay un matiz: la clave es la palabra 'sistema'. Cuando algo te hace hacerlo paso a paso, no te queda otra que terminar con algo armado en tu computadora con tu nombre arriba.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Beat 3 - Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Puedo cambiar la conversacion mostrando, no justificando",
+          "viewer_emotion_after": "permiso: no necesito justificarme",
+          "is_turning_point": true,
+          "script_text": "No necesitás convencerla con palabras. Le contás que en 3 días vas a tener algo HECHO en tu pantalla. Y le pedís que te ayude a probarlo. Eso cambia toda la conversación.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Beat 4 - Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay docentes 50+ que ya terminaron la discusion con una captura",
+          "viewer_emotion_after": "esperanza concreta",
+          "is_turning_point": false,
+          "script_text": "Hay docentes universitarias de 50+ que terminan el taller un viernes. La primera venta de su pack llega al WhatsApp el lunes. Esa captura para mostrarle a la hija termina la discusión.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Venta del modelo - Transparencia total",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "A esta edad lo que cambia el resultado es la presion sana en vivo",
+          "viewer_emotion_after": "validacion final",
+          "is_turning_point": false,
+          "script_text": "Te voy a ser sincera. A los 50+ lo que cambia el resultado es aprender con presión sana, 3 días en vivo. Tu hija va a notar la diferencia en cómo te ve frente a la computadora.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "technique": "afirmación",
+        "phrase": "Mi hija tenía razón"
+      },
+      {
+        "location": "puente",
+        "technique": "pregunta_retórica",
+        "phrase": "esta vez sí va a ser distinto"
+      },
+      {
+        "location": "beat_1",
+        "technique": "afirmación",
+        "phrase": "Está protegiéndote del patrón que ya vio 3 veces"
+      },
+      {
+        "location": "beat_2",
+        "technique": "afirmación",
+        "phrase": "la clave es la palabra 'sistema'"
+      },
+      {
+        "location": "beat_3",
+        "technique": "afirmación",
+        "phrase": "No necesitás convencerla con palabras"
+      },
+      {
+        "location": "beat_4",
+        "technique": "dato_anclado",
+        "phrase": "Esa captura para mostrarle a la hija termina la discusión"
+      },
+      {
+        "location": "pre_cta",
+        "technique": "afirmación",
+        "phrase": "aprender con presión sana, 3 días en vivo"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 35,
+        "ingredient_name": "Dolor por Justificacion Familiar"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del Juego"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad Estrategica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Mecanismo con Nombre"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 94,
+        "ingredient_name": "Meta Proof"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "Future 7 Dias"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C"
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-09T08:39:07.733Z"
+}
