@@ -1,0 +1,240 @@
+{
+  "id": "295574f0-7c61-4d0d-ac19-70f1dab810c4",
+  "briefId": "760e66f3-4012-42c5-84d7-70d8b0b9c9d6",
+  "title": "Lo que sabés de panadería vale más que otra sucursal",
+  "batch": {
+    "name": "plan-1 2026-04-17"
+  },
+  "script": {
+    "angle_family": "modelo_equivocado",
+    "angle_specific": "3.2_dependencia_local",
+    "body_type": "demolicion_mito",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "panadería / pastelería / oficio tradicional",
+    "model_sale_type": "cementerio_modelos",
+    "rhythm_template": "R1",
+    "emotional_arc": "demolicion_alternativas",
+    "transition_text": "Por eso preparé algo para que veas cómo se hace, paso a paso.",
+    "total_duration_seconds": 75,
+    "word_count": 245,
+    "punto_entrada_emocional": "el panadero que hace 15 años amasa a las 5 de la mañana y regala todo el conocimiento cada vez que un cliente pregunta",
+    "winner_template_used": "winner-46-demolicion + winner-121-hipernicheo",
+    "belief_change": {
+      "old_belief": "Para crecer en mi negocio físico tengo que abrir otra sucursal, tomar empleado o meter más horas",
+      "mechanism": "El conocimiento del oficio empaquetado (grabación 20 min → IA → guía 37 páginas) es un producto digital que se vende sin amasar",
+      "new_belief": "Lo que sé del oficio vale más que otra sucursal — solo le faltaba formato"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto me pasa todos los días — regalo mi saber gratis",
+        "installed_via": "Escena específica: clienta que pregunta la masa, cuñado que quiere aprender facturas",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Lo que tarda 14 horas en formarse se explica en 40 minutos y vale más que el pan de mañana",
+        "installed_via": "Reframe temporal + de valor",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe un proceso concreto: celular + 20 minutos + IA = guía de 37 páginas",
+        "installed_via": "Mecanismo con IA, tiempos y formato concretos",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Abrir sucursal / tomar empleado no saca del local — ata más",
+        "installed_via": "Demolición del consejo del contador/entorno",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Los modelos del oficio tienen techo — vender conocimiento no",
+        "installed_via": "Cementerio de modelos: local, empleado, turno. Todos con techo.",
+        "persuasion_function": "venta_modelo",
+        "section_name": "Venta modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "disonancia_nicho",
+        "hypothesis": "F19 anti-consejo + filtro de oficio + detalle sensorial (14h masa madre, 12° manteca) que muere si cambiás nicho",
+        "emotional_lever": "disonancia cognitiva — lo que sabés de memoria vale plata",
+        "script_text": "Hacés pan hace 15 años. Sabés que la masa madre tarda 14 horas, que la manteca va a 12 grados. Eso lo regalás gratis todos los días.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "anti_consejo_directo",
+        "hypothesis": "F19 destruye consejo de contador/entorno: 'abrí otra sucursal'",
+        "emotional_lever": "hartazgo acumulado + alivio",
+        "script_text": "Si tenés panadería, te dijeron que para crecer, abrí otra sucursal. Es mentira. Hay algo más barato que factura sin amasar.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "disonancia_maestro",
+        "hypothesis": "F19 reframe del oficio heredado — el que te enseñó te dio todo menos el formato digital",
+        "emotional_lever": "revelación + nostalgia",
+        "script_text": "El panadero que te enseñó el oficio te dio todo menos una cosa. Te dijo que el pan se vende. Nunca te dijo que la receta también.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "anti_consejo_contador",
+        "hypothesis": "F19 destruye consejo típico del contador: 'sumá productos'",
+        "emotional_lever": "disonancia profesional",
+        "script_text": "Si tenés local de panadería, el contador te dice que sumes productos. No. Lo que tenés que sumar es un producto que no se hornea.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "anti_consejo_sucesion",
+        "hypothesis": "F19 destruye el mito de la sucesión familiar",
+        "emotional_lever": "pérdida + oportunidad",
+        "script_text": "Te dijeron que para no cerrar la panadería, pases el oficio a tu hijo. Tu hijo no quiere amasar. Pero hay gente que sí quiere aprender — y paga.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "demolicion_mito_4_beats",
+      "emotional_arc": "demolicion_alternativas",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Esto me pasa — regalo mi saber gratis",
+          "viewer_emotion_after": "reconocimiento",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "Lo regalás a las 6 de la mañana cuando una clienta te pregunta cómo hacer la masa. Lo regalás cuando tu cuñado quiere aprender facturas de grasa. Y lo peor es que ninguno vuelve a comprarte pan esa semana. Y seguís estancado en el mostrador."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que tarda 14 horas se explica en 40 minutos y vale más que el pan de mañana",
+          "viewer_emotion_after": "revelación",
+          "is_turning_point": true,
+          "timing_seconds": 8,
+          "script_text": "Y ahí está lo loco. Eso que regalás tarda 14 horas en formarse pero se explica en 40 minutos. Y vale plata. Vale más que el pan que sale mañana."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Proceso concreto: celular + 20 min + IA = guía 37 páginas",
+          "viewer_emotion_after": "claridad",
+          "is_turning_point": false,
+          "timing_seconds": 14,
+          "script_text": "Entonces fijate. Agarrás el celular, grabás 20 minutos hablando de tu oficio. Le pasás eso a la inteligencia artificial. Te arma literalmente una guía de 37 páginas con índice, pasos y temperaturas exactas. En una tarde tenés un producto digital terminado."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Abrir sucursal / tomar empleado ata más, no libera",
+          "viewer_emotion_after": "alivio",
+          "is_turning_point": false,
+          "timing_seconds": 11,
+          "script_text": "Pero acá está el tema. Te dijeron que para crecer tenés que abrir otra sucursal o tomar un empleado que te sale 500 mil por mes. Lo que pasa es que eso te ata más al local. El conocimiento empaquetado se vende mientras dormís — y te saca de ahí."
+        },
+        {
+          "section_name": "Venta modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Los modelos del oficio tienen techo — el conocimiento no",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "timing_seconds": 13,
+          "script_text": "Y por eso te lo digo: yo probé todos los modelos de negocio del oficio. Puse local. Tomé empleado. Abrí un turno a la tarde. Todos tienen techo. El que no tiene techo es vender lo que ya sabés. Hoy lo están haciendo panaderos, carpinteros y peluqueras."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "filtro_nicho",
+        "phrase": "Hacés pan hace 15 años"
+      },
+      {
+        "location": "hook",
+        "technique": "dato_anclado",
+        "phrase": "la masa madre tarda 14 horas"
+      },
+      {
+        "location": "puente",
+        "technique": "escena_reconocible",
+        "phrase": "cuando una clienta te pregunta cómo hacer la masa"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmacion",
+        "phrase": "Y lo peor es que ninguno vuelve"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reframe_temporal",
+        "phrase": "tarda 14 horas en formarse pero se explica en 40 minutos"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "guía de 37 páginas con índice, pasos y temperaturas"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "autoridad_experiencial",
+        "phrase": "yo probé todos los modelos de negocio del oficio"
+      }
+    ],
+    "ingredients_used": [
+      "B#24",
+      "C#38",
+      "D#48",
+      "F#71",
+      "G#85",
+      "L#129",
+      "H#95"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "A",
+        "layers": {
+          "oferta": "Es una clase en vivo la próxima semana. Ahí te muestro cómo agarrar lo que sabés, armarlo con inteligencia artificial y empezar a venderlo por WhatsApp. Te llevás el proceso, los prompts y un sistema para salir del local.",
+          "prueba": "Ya pasaron más de 17 mil personas. Panaderos, peluqueras, carpinteros. Gente que arrancó sin saber nada de internet.",
+          "riesgo_cero": "Es gratis. Si no te sirve, no perdiste nada.",
+          "urgencia": "La clase es en vivo, los cupos son limitados.",
+          "cierre": "Lo único que tenés que hacer es tocar el botón de acá abajo."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "C",
+        "layers": {
+          "oferta": "Armé un taller de 3 días en vivo. Día 1: encontrás tu producto con IA. Día 2: lo armás. Día 3: lo vendés por WhatsApp. Salís con tu producto hecho y tu anuncio listo.",
+          "prueba": "Ya pasaron más de 17 mil personas. Gente que arrancó exactamente donde estás vos.",
+          "riesgo_cero": "¿Cuánto cuesta? 5 dólares. Menos que una pizza.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "A",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo agarrar lo que ya sabés, armarlo con IA y empezar a venderlo por WhatsApp.",
+          "orden_1": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas. Gente que arrancó sin saber nada.",
+          "riesgo_cero": "Es gratis. Si no te sirve, no perdiste nada.",
+          "cierre": "Comentá CLASE y registrate en el link de mi perfil. Te espero adentro."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-17T15:21:55.605Z"
+}

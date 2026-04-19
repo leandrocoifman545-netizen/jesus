@@ -1,0 +1,189 @@
+{
+  "id": "efdebe9e-b79c-41b8-810b-0dbf05d79582",
+  "briefId": "768aa908-ba89-4cd4-b0c1-3dbdfa512e74",
+  "title": "No te vas a hacer millonario. Pero 50 dólares por día extra sí",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.6_anti_guru_radical",
+    "body_type": "demolicion_objecion",
+    "segment": "D",
+    "funnel_stage": "RETARGET",
+    "niche": "escéptico general",
+    "model_sale_type": "transparencia_total",
+    "transition_text": "Por eso te lo digo sin vueltas. Eso que te acabo de explicar con la matemática real es lo que vas a aprender. Ni más ni menos.",
+    "total_duration_seconds": 85,
+    "word_count": 318,
+    "punto_entrada_emocional": "hartazgo del que ya compró cursos y quedó quemado",
+    "belief_change": {
+      "old_belief": "Todos los que venden cursos online son unos caraduras que prometen lo que no cumplen",
+      "mechanism": "La honestidad radical como demolición: decir lo que no vas a lograr para que creas lo que sí",
+      "new_belief": "Este tipo dice la verdad. La matemática cierra sin humo."
+    },
+    "micro_beliefs": [
+      {
+        "belief": "No te vas a hacer millonario — y está bien que te lo diga",
+        "installed_via": "anti-hype en hook",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "Los cursos largos están diseñados para que no termines",
+        "installed_via": "confrontación al modelo",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "La matemática de 50 por día es conservadora",
+        "installed_via": "números concretos",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "3 días, no 200 videos",
+        "installed_via": "comparación con alternativa",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Si no funciona perdés 5 dólares y una tarde",
+        "installed_via": "reducción al absurdo",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "anti_hype_declarativo",
+        "hypothesis": "Replica el anti-hype del Winner #46 — separó $0.99 CPL de $2.50+. La declaración en negativo baja defensas del escéptico",
+        "emotional_lever": "alivio + confianza",
+        "script_text": "Te voy a decir dos cosas que nadie te dice. Uno: no te vas a hacer millonario con esto. Dos: si alguien te prometió millones, te mintió. Lo que sí es verdad es que 50, 60 dólares por día extra existen. Y te voy a mostrar la matemática.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion_temporal",
+        "hypothesis": "Frase textual de compradora quemada 'ya probé 4 cursos' activa reconocimiento del escéptico",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si ya probaste 4 cursos online y ninguno te funcionó, esto probablemente lo vas a mirar con cara rara. Está bien. Yo también la tendría. Solo te pido 80 segundos. Y te voy a mostrar por qué esto es distinto sin prometerte nada raro.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "provocacion_suave",
+        "hypothesis": "Reframe honesto sobre los cursos largos baja la defensa y crea complicidad",
+        "emotional_lever": "validación",
+        "script_text": "Los cursos online largos están diseñados para que no los termines. 200 videos. 6 meses. 500 dólares. Y a la semana 3 ya no abriste más la plataforma. No es tu culpa. Es un modelo que vive de que la gente no aplique.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_directa",
+        "hypothesis": "Pregunta retorna al avatar sobre su miedo real, sin atacar su inteligencia",
+        "emotional_lever": "validación profunda",
+        "script_text": "¿Cuánta plata perdiste ya en cursos online que no funcionaron? ¿200 dólares? ¿500? ¿Más? Yo también perdí. Te voy a mostrar por qué este tiene otra lógica y por qué podés verificarlo antes de pagar un peso.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "transparencia_economica",
+        "hypothesis": "Revelar el modelo de negocio desarma la sospecha de estafa",
+        "emotional_lever": "confianza",
+        "script_text": "Te voy a ser honesto con cómo gano plata. Tengo una clase gratis. Si te sirve, te meto un taller de 5 dólares. Y si el taller te sirve, ahí recién te ofrezco algo más. Si en cualquier punto no te sirve, te bajás. No hay letra chica.",
+        "timing_seconds": 13
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_honestidad_5_beats",
+      "emotional_arc": "anti_hype → confrontacion_modelo_roto → matematica_real → comparacion_alternativa → riesgo_minimo",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Los cursos largos están diseñados para que no termines",
+          "viewer_emotion_after": "No es mi culpa que no haya funcionado antes",
+          "is_turning_point": false,
+          "script_text": "Porque el modelo del curso largo es una estafa ordenada. Te cobran 400 dólares, te dan 200 videos, y saben que la mayoría va a abandonar en la semana 3. Y cuando abandonás, ellos ya cobraron. No hay skin in the game. No les importa si vos aplicaste o no.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "La matemática de 50 por día es conservadora",
+          "viewer_emotion_after": "El número cierra sin adornos",
+          "is_turning_point": true,
+          "script_text": "Y acá está la matemática honesta. Una guía digital de 9 dólares. Si la compran 6 personas por día, eso es 54 dólares diarios. Al mes son 1.620. En un año son casi 20 mil. No son millones. Es un sueldo argentino. Es el auto. Es salir del bucle. Es una matemática chica pero que cierra sola.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "3 días, no 200 videos",
+          "viewer_emotion_after": "Esto es otra cosa",
+          "is_turning_point": false,
+          "script_text": "Por eso lo que yo hago es al revés. Un taller de 3 días en vivo. Día 1 encontrás tu producto. Día 2 lo armás con IA. Día 3 lo vendés por WhatsApp. Salís con algo hecho, no con apuntes guardados. Y cuesta 5 dólares. Menos que una pizza.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Si no funciona perdés 5 dólares y una tarde",
+          "viewer_emotion_after": "Literalmente no tengo nada que perder",
+          "is_turning_point": false,
+          "script_text": "Por eso la cuenta es simple. Son 5 dólares. Son 3 tardes. Si no te sirve, perdiste menos que una pizza. Si te sirve, estamos hablando de 50, 60 dólares por día extra. Hacé la cuenta vos mismo. No me creas a mí. Verificá la matemática.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "anti_hype",
+        "phrase": "no te vas a hacer millonario"
+      },
+      {
+        "location": "puente",
+        "technique": "naming_estafa_ordenada",
+        "phrase": "una estafa ordenada"
+      },
+      {
+        "location": "quiebre",
+        "technique": "matematica_honesta",
+        "phrase": "No son millones. Es un sueldo argentino"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "comparacion_pizza",
+        "phrase": "Menos que una pizza"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "invitacion_verificar",
+        "phrase": "No me creas a mí"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "declaracion_contraintuitiva"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 43,
+        "ingredient_name": "verdad_incomoda"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "resultado_con_numeros"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "vulnerabilidad_estrategica"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:30:52.376Z"
+}

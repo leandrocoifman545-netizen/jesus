@@ -1,0 +1,207 @@
+{
+  "id": "edadda28-0634-4292-bdad-1e564e2724de",
+  "briefId": "e906cdb1-9aad-4146-bb0b-94fc67b6e88e",
+  "title": "Crianza — lo que sabés de tus hijos otras mamás googlean",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_demanda_invisible_crianza",
+    "body_type": "tier_list_rating",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "crianza / maternidad primeriza / primeros años (lactancia, sueño, alimentación, límites)",
+    "model_sale_type": "eliminacion_barreras",
+    "transition_text": "Por eso, lo que te acabo de mostrar, que lo que aprendiste criando a tus hijos puede convertirse en un ingreso sin descuidar a tus hijos, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 78,
+    "word_count": 250,
+    "punto_entrada_emocional": "generosidad de madre que quiere ayudar a otras y descubre que también puede cobrar por eso",
+    "belief_change": {
+      "old_belief": "Lo que yo sé es de mamá común, cualquiera lo sabe",
+      "mechanism": "Empaquetar 3 temas específicos de crianza que resolviste en una guía digital con IA",
+      "new_belief": "Lo que aprendí criando a mis hijos es un activo digital para otras mamás primerizas"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Lo mío no es común, es valioso",
+        "installed_via": "Tier list de temas con demanda real",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Empaquetarlo es concreto y rápido",
+        "installed_via": "Demo con audios + IA + guía de 26 páginas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Las pediatras no son competencia, son el argumento",
+        "installed_via": "Reframe del mercado de mamás primerizas",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Si sos mamá de un hijo chico filtra al avatar exacto",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si ya criaste a un hijo chico y pasaste las noches sin dormir, los primeros dientes, los berrinches a los 2 años, pará un segundo. Esas 3 cosas que resolviste, hay 50 mil mamás primerizas googleando cada una ahora mismo.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Escena del celular a la madrugada de la mamá primeriza",
+        "emotional_lever": "reconocimiento_cotidiano",
+        "script_text": "3 de la mañana. Una mamá primeriza está con el bebé llorando hace 2 horas. Busca en Google cómo hacer dormir un bebé de 6 meses. Le aparecen 40 páginas con consejos contradictorios. Vos ya pasaste por eso. Y sabés qué funcionó de verdad.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "desculpabilizacion",
+        "hypothesis": "Darle permiso a la mamá para monetizar lo que sabe",
+        "emotional_lever": "permiso_interior",
+        "script_text": "No, no es egoísta cobrar por lo que aprendiste criando. Las pediatras cobran. Las puericultoras cobran. Tu experiencia de mamá real, aplicada, con lo que funcionó con tus hijos, vale tanto o más que la de ellas. Te lo muestro.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Forzar la cuenta mental de consejos regalados",
+        "emotional_lever": "auto_revelacion",
+        "script_text": "¿A cuántas amigas les mandaste un audio explicando cómo sacar el pañal, cómo hacer que coma verduras, cómo dormir al bebé? ¿10? ¿20? Cada uno de esos audios, hay una mamá pagando 14 dólares por tenerlo.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Poner palabras al saber invisible de la madre",
+        "emotional_lever": "validacion_saber",
+        "script_text": "Hay un conocimiento que las mamás tienen y nadie se los reconoce. Sabés leer el llanto, sabés cuándo es hambre y cuándo es cansancio, sabés qué comida le cae bien. Eso no lo enseña ningún libro. Y se puede cobrar.",
+        "timing_seconds": 11
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "reconocimiento → revelacion → posibilidad → permiso → validacion",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Hay un mercado invisible pero enorme",
+          "viewer_emotion_after": "curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y acá está lo que nadie te dice. Google tiene las búsquedas. Te ranqueo los 3 temas que más buscan las mamás primerizas todos los días. Y a cuántas de tus amigas ya les diste esa respuesta gratis.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi saber de mamá es valioso y específico",
+          "viewer_emotion_after": "revelacion",
+          "is_turning_point": true,
+          "script_text": "Puesto 3. Cómo hacer que un bebé de 9 meses duerma toda la noche. 40 mil búsquedas por mes en Argentina. Puesto 2. Qué darle de comer después del destete. 55 mil búsquedas. Puesto 1. Cómo manejar berrinches de 2 años sin pegar ni gritar. 80 mil búsquedas por mes. Tres temas que vos resolviste. Tres temas por los que las mamás pagan.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Empaquetarlo es sencillo y rápido",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Y te muestro cómo avanzar. Agarrás el celular en un momento que los chicos duermen. Grabás 3 audios de WhatsApp. Uno por cada tema. Contás lo que hiciste vos, qué probaste, qué funcionó, qué descartaste. Le pasás los audios a la IA. Te arma una guía de 26 páginas con fotos, rutinas y frases exactas. Esa guía se vende a 14 dólares a mamás primerizas. Ese es el sistema.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Las pediatras no son competencia",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque vas a decir que las pediatras saben más. Y acá está el punto. La pediatra da 15 minutos de consulta y plata por el medio. La mamá primeriza quiere el paso a paso a las 3 de la mañana cuando el bebé llora. La guía de otra mamá que ya pasó por ahí es lo que más valora. Por eso paga.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "reconocimiento_mercado",
+        "phrase": "Google tiene las búsquedas"
+      },
+      {
+        "location": "quiebre",
+        "technique": "dato_concreto",
+        "phrase": "80 mil búsquedas por mes"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion_saber",
+        "phrase": "Tres temas que vos resolviste"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "Grabás 3 audios de WhatsApp"
+      },
+      {
+        "location": "demolicion",
+        "technique": "diferenciacion",
+        "phrase": "a las 3 de la mañana cuando el bebé llora"
+      },
+      {
+        "location": "demolicion",
+        "technique": "confirmacion_valor",
+        "phrase": "La guía de otra mamá que ya pasó por ahí es lo que más valora"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 1,
+        "ingredient_name": "Dato impactante"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Metodologia nueva"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:41:32.364Z"
+}

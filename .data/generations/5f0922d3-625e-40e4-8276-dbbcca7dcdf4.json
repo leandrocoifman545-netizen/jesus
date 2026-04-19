@@ -1,0 +1,235 @@
+{
+  "id": "5f0922d3-625e-40e4-8276-dbbcca7dcdf4",
+  "briefId": "d6c96363-55ec-41d5-ba96-54d9c454555b",
+  "title": "Vendedores que regalan su biblioteca — manual de cierre",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.5_saber_que_ya_tenes",
+    "body_type": "comparacion_caminos",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "vendedores / cerradores / comerciantes B2B (amplio — telefónico, presencial, Mercado Libre)",
+    "model_sale_type": "transparencia_total",
+    "transition_text": "Por eso, eso que te acabo de mostrar, que tu técnica de cierre se puede convertir en un negocio propio que vende en piloto automático, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 82,
+    "word_count": 275,
+    "punto_entrada_emocional": "bronca tranquila de saber que la técnica que usás todos los días la estás regalando a la empresa",
+    "belief_change": {
+      "old_belief": "Tengo muchas ideas de vendedor pero estoy estancado en el mismo lugar",
+      "mechanism": "Empaquetar 5 objeciones + respuestas en una guía digital con IA y venderla a otros vendedores",
+      "new_belief": "Mi técnica de cierre es un negocio propio que me da independencia"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Lo que hago todos los días es un saber valioso",
+        "installed_via": "Pivote de identidad con objeciones concretas (Día del Padre, cuota, 3 pagos)",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe una forma concreta de empaquetarlo con IA",
+        "installed_via": "Demo con producto nombrado (guía de 32 páginas a 14 dólares)",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Mi rubro específico es una ventaja, no una limitación",
+        "installed_via": "Contraste con libros genéricos (seguros, inmuebles, autos 0km)",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      },
+      {
+        "belief": "Gente con menos técnica ya lo vende en Hotmart",
+        "installed_via": "Verificación concreta en Hotmart con rango de precio",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "El vendedor quemado responde a la paradoja 'mejor vendedor, peor empresario'",
+        "emotional_lever": "paradoja_identidad",
+        "script_text": "Los mejores vendedores son los peores empresarios. Cierran 8 ventas al día para su jefe. Y no saben cómo vender lo que saben cerrar.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Obligarlo a hacer la cuenta mental genera click",
+        "emotional_lever": "auto_revelacion",
+        "script_text": "¿Cuántas ventas cerraste este mes? ¿20? ¿50? Ahora pensá: si cada una de esas técnicas la hubieses escrito, tendrías un libro de ventas.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Poner palabras a algo que nadie se anima a decirle",
+        "emotional_lever": "bronca_silenciosa",
+        "script_text": "Hay una cosa que ningún jefe te va a decir. Las 5 frases que usás para cerrar una venta valen más que tu sueldo entero. Pero las estás regalando todos los días.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "hipotetico_personal",
+        "hypothesis": "Activación mental del escenario concreto",
+        "emotional_lever": "visualizacion_oportunidad",
+        "script_text": "Imaginate que alguien grabara todas las objeciones que rompés por teléfono. Y después te pagara por enseñarle a otro vendedor cómo hacerlo. Eso ya existe, y no lo estás cobrando.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_trampa_dual",
+        "hypothesis": "Dos preguntas que filtran al avatar exacto",
+        "emotional_lever": "filtro_autoseleccion",
+        "script_text": "¿Sos vendedor? ¿Cerrás más que el resto de tu equipo? Entonces lo que estoy por mostrarte te va a dar bronca.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "bronca_silenciosa → revelacion_identidad → posibilidad_concreta → permiso → verificacion",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Lo que sé cerrar se puede empaquetar",
+          "viewer_emotion_after": "curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y acá está el tema. Los que venden 3 televisores por día o 10 seguros por semana saben algo que el resto de los vendedores no sabe. Pero casi ninguno se dio cuenta de que ese saber se puede empaquetar y vender aparte.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No sos empleado, sos experto en persuasión con un negocio propio adentro",
+          "viewer_emotion_after": "revelacion_identidad",
+          "is_turning_point": true,
+          "script_text": "Pero vos no sos un empleado que cierra ventas. Sos un experto en persuasión que le está regalando su libreta a una empresa. Esa objeción del cliente que dice que lo va a hablar con la esposa, ya la tenés resuelta. La del precio en 3 pagos, también. La del Día del Padre que dejan para último momento, también. Un vendedor que recién arranca pagaría por esas respuestas.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Hay una forma concreta de empaquetarlo en un producto digital",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Y te muestro cómo avanzar. Abrís una nota del celular y escribís 10 minutos. Las 5 objeciones más comunes de tu rubro. Qué contestás. Qué frase cierra. Le pasás eso a la IA. Te devuelve una guía de 32 páginas con objeciones, guiones paso a paso y el tono exacto. Con ejemplos. Esa guía se vende a 14 dólares a otros vendedores. Ese es el producto.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Mi rubro específico es ventaja, no limitación",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque no me digas que ya hay libros de ventas. Los libros de Brian Tracy son teóricos. Lo tuyo es lo que funciona en tu rubro. El que vende seguros busca un manual de seguros. El que vende autos 0km busca uno de autos. El de Mercado Libre busca uno de Mercado Libre. Nadie compra algo genérico cuando puede comprar algo del rubro exacto.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay gente con menos técnica vendiéndolo",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Hotmart ahora y buscá cierre de ventas. Vas a ver guías de 15 a 40 dólares de gente que vende la mitad de lo que vos vendés. La diferencia es que ellos lo empaquetaron. Vos todavía estás estancado cobrando solo el sueldo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección honesta sin hype",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. No te vas a hacer millonario. Pero estamos hablando de $50, $60 dólares por día extra sin dejar tu laburo. Es tu negocio propio funcionando mientras cerrás ventas en la oficina.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "reconocimiento",
+        "phrase": "saben algo que el resto de los vendedores no sabe"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion_concreta",
+        "phrase": "Esa objeción del cliente que dice que lo va a hablar con la esposa, ya la tenés resuelta"
+      },
+      {
+        "location": "quiebre",
+        "technique": "afirmacion_valor",
+        "phrase": "Un vendedor que recién arranca pagaría por esas respuestas"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "Abrís una nota del celular y escribís 10 minutos"
+      },
+      {
+        "location": "demolicion",
+        "technique": "permiso_rubro",
+        "phrase": "El que vende seguros busca un manual de seguros"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion_directa",
+        "phrase": "Entrá a Hotmart ahora y buscá cierre de ventas"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 3,
+        "ingredient_name": "Contrariano anti-guru"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con numeros"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 125,
+        "ingredient_name": "Reframe NLP"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:31:52.783Z",
+  "status": "recorded"
+}

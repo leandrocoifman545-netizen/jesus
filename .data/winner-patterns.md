@@ -1,102 +1,120 @@
-# Winner Patterns — Actualizado 2026-04-17
+# Winner Patterns — 2026-04-19
 
-**Total validados:** 18 (0 winners + 18 recorded)
+> **DNA real accionable extraído de los análisis profundos en `.data/`.**
+> Fuente primaria: `analisis-winner-*.md` (análisis manuales con métricas reales).
+> Fuente secundaria: generations con status winner/recorded (counts estadísticos).
 
-## Familias de ángulo que funcionan
-- **unknown**: 9 veces
-- **identidad**: 4 veces
-- **confrontacion**: 2 veces
-- **historia**: 1 veces
-- **ventana_oportunidad**: 1 veces
-- **mecanismo**: 1 veces
+## Winners con análisis profundo (6)
 
-## Tipos de cuerpo que funcionan
-- **unknown**: 9 veces
-- **contraste_emocional**: 2 veces
-- **pregunta_respuesta**: 1 veces
-- **un_dia_en_la_vida**: 1 veces
-- **historia_con_giro**: 1 veces
-- **demo_proceso**: 1 veces
-- **qa_conversacional**: 1 veces
-- **demolicion_alternativas**: 1 veces
-- **analogia_extendida**: 1 veces
+| # | Ad | CPL | Leads | Nicho | Ángulo | Hook type | Segmento | Dur |
+|---|----|-----|-------|-------|--------|-----------|----------|-----|
+| 1 | Winner #121 [C9-H1-CTAventa] | $0.38 | 54 | Manualidades / artesanías (ferias) | — | — | — | 67.4s |
+| 2 | Winner #34 [C3-H4-CTAventa] | $0.73 | 302 | Decoración de interiores — guías de decoración con IA | Nostalgia (revistas de decoración de kiosco) → oportunidad digital | — | — | — |
+| 3 | Winner #122 [C9-H2-CTAventa] | $0.78 | 366 | — | — | — | — | — |
+| 4 | Winner #46 [Hook_16 Cuerpo_3 CTA_4] | $0.99 | 866 | — | confrontacion / modelo_equivocado | eliminacion_barreras | A (principiante total) | 64.6s |
+| 5 | Winner #39 [BN] T4 | $1.34 | 1270 | — | — | — | — | — |
+| 6 | Analisis Profundo — Winner #43 [BN T4] | $1.44 | 747 | — | — | — | — | — |
 
-## Tipos de lead que funcionan
-- **situacion_especifica**: 13 veces
-- **provocacion**: 10 veces
-- **confesion**: 8 veces
-- **pregunta_incomoda**: 7 veces
-- **historia_mini**: 7 veces
-- **contraintuitivo**: 7 veces
-- **dato_concreto**: 5 veces
-- **negacion_directa**: 3 veces
-- **observacion_tendencia**: 3 veces
-- **timeline_provocacion**: 3 veces
-- **contrato_compromiso**: 2 veces
-- **pain_point**: 2 veces
-- **question**: 2 veces
-- **reveal_teaser**: 2 veces
-- **curiosity_gap**: 2 veces
-- **analogia_cotidiana**: 2 veces
-- **actuacion_dialogo**: 2 veces
-- **eliminacion_barreras**: 2 veces
-- **futuro_sensorial**: 1 veces
-- **sensorial**: 1 veces
-- **dato_impacto**: 1 veces
-- **generacional**: 1 veces
-- **contrarian**: 1 veces
-- **hipernicho**: 1 veces
-- **future_pacing_sensorial**: 1 veces
-- **curiosidad**: 1 veces
+## DNA por winner (hallazgos accionables)
 
-## Venta del modelo que funciona
-- **unknown**: 9 veces
-- **tiempo_vs_dinero**: 3 veces
-- **transparencia_total**: 3 veces
-- **lean_anti_riesgo**: 1 veces
-- **ventana_oportunidad_ia**: 1 veces
-- **cementerio_modelos**: 1 veces
+### Winner #121 [C9-H1-CTAventa] — $0.38
 
-## Segmentos validados
-- **unknown**: 9 veces
-- **A**: 5 veces
-- **B**: 2 veces
-- **C**: 2 veces
+**Hallazgos que mueven la aguja:**
+1. **HIPERNICHO COMO HOOK** — Qué es: Abrir con "Si hacés [NICHO]" en vez de "No importa si tenés [EDAD]" baja el CPL 2.6x ($0.38 vs $0.99). Por qué es el más valioso: Es INMEDIATAMENTE replicable. La estructura del ad #121 es una PLANTILLA que se pu
+2. **DEMO CONCRETA DEL MECANISMO** — Qué es: Nombrar un PRODUCTO ESPECÍFICO ("guía de 15 páginas de velas artesanales") + mostrarlo con INSERT VISUAL es más persuasivo que describir el concepto ("productos digitales"). Por qué es valioso: Resuelve el proble
+3. **ESPEJO INVERSO DEL DOLOR** — Qué es: Cerrar con la INVERSIÓN EXACTA del dolor inicial. 3 dependencias al inicio → 3 liberaciones al final. El arco emocional se cierra y el viewer siente RESOLUCIÓN. Por qué es valioso: Es una técnica de ESTRUCTURA qu
 
-## Nichos que funcionaron
-- **unknown**: 9 veces
-- **docencia primaria / material didáctico / maestra de grado**: 1 veces
-- **identidad como padre/madre (genérico)**: 1 veces
-- **rutina de oficina / escape laboral (genérico)**: 1 veces
-- **ninguno / emoción universal**: 1 veces
-- **historia personal / branding**: 1 veces
-- **astrología / tarot / lectura espiritual**: 1 veces
-- **profesor de idiomas / enseñanza de lenguas**: 1 veces
-- **modelos de negocio online**: 1 veces
-- **Conocimiento general (cualquier habilidad)**: 1 veces
+*Análisis completo:* `.data/analisis-winner-121-c9-h1-ctaventa.md`
 
-## Ingredientes más usados en winners
-- **undefined#undefined undefined**: 8 veces
-- **H#101 Future Pacing Sensorial**: 4 veces
-- **B#23 Descripción Situacional**: 3 veces
-- **B#31 Dolor por Identidad**: 2 veces
-- **C#41 La Trampa del Conformismo**: 2 veces
-- **E#62 Autoridad por Origen**: 2 veces
-- **F#79 Simplificación Extrema**: 2 veces
-- **E#69 Especificidad Numérica**: 2 veces
-- **F#80 Contraste Extremo**: 2 veces
-- **C#47 Contraste Emocional**: 2 veces
-- **D#49 Redefinición del Juego**: 2 veces
-- **D#53 El Permiso**: 1 veces
-- **G#92 Case Study Mini**: 1 veces
-- **B#28 Resentimiento Silencioso**: 1 veces
-- **D#56 El Atajo Temporal**: 1 veces
+---
+
+### Winner #34 [C3-H4-CTAventa] — $0.73
+
+**Meta-patrón:** NOSTALGIA → OPORTUNIDAD → DEMO → ESCALABILIDAD
+
+**Principios transferibles:**
+- La nostalgia genera el CTR más alto porque no activa defensas anti-ad. Un recuerdo compartido es la puerta de entrada menos amena
+
+*Análisis completo:* `.data/analisis-winner-34-c3-h4-ctaventa.md`
+
+---
+
+### Winner #122 [C9-H2-CTAventa] — $0.78
+
+*Análisis completo:* `.data/analisis-winner-122-c9-h2-ctaventa.md`
+
+---
+
+### Winner #46 [Hook_16 Cuerpo_3 CTA_4] — $0.99
+
+**Meta-patrón:** INCLUÍ → CALIFICÁ → DESTRUÍ × 2 → CONSTRUÍ HONESTO → CONVERTÍ → ASEGURÁ
+
+**Hallazgos que mueven la aguja:**
+1. **La densidad de SÍes es la métrica oculta del CPL** — 13 SÍes en 65s (1 cada 5s) vs 11 SÍes en 193s (1 cada 17s) del ad viejo. La compresión de la cadena de confianza es lo que separa Meta Ads de YouTube. Cada guion nuevo debería medirse en SÍes/segundo.
+2. **El anti-hype es el ingrediente de conversión más poderoso en LATAM** — "No te vas a hacer millonario" es la frase que separa $0.99 de $2.50+ CPL. Ahora confirmado en 3 perfiles (Jaime + Heras + Jesús). Debería ser ingrediente OBLIGATORIO en todo ad TOFU.
+3. **La estructura "3 opciones, destruye 2" es infinitamente replicable** — Es el esqueleto del winner. Se puede variar: las 2 alternativas destruidas, los números, los nombres. Cada variante es un ad nuevo con la misma mecánica probada. Jesús debería grabar 5-10 variantes de esta estructura.
+
+**Principios transferibles:**
+- Dar 3 opciones con nombre propio, demoler 2 con datos concretos, dejar la tercera como ganadora por descarte lógico
+
+*Análisis completo:* `.data/analisis-winner-46-hook16-cuerpo3-cta4.md`
+
+---
+
+### Winner #39 [BN] T4 — $1.34
+
+**Principios transferibles:**
+- Un cambio visual drástico en los primeros 3 segundos compra atención en el feed
+
+*Análisis completo:* `.data/analisis-winner-39-bn-t4.md`
+
+---
+
+### Analisis Profundo — Winner #43 [BN T4] — $1.44
+
+**Principios transferibles:**
+- Usar algo que el viewer YA HACE con la herramienta para demostrar que PUEDE hacer algo nuevo
+- La transicion visual puede comunicar transformacion A->B sin una sola palabra
+- Apilar 5+ objeciones demolidas en rafaga rapida DESPUES del deseo genera sensacion de "no tengo excusa"
+
+*Análisis completo:* `.data/analisis-winner-43-bn-t4.md`
+
+---
+
+## Factores que explicaron la mejora T4 → T6 (CPL -49%)
+
+Del cruce con reporte de performance Meta Ads:
+
+- **Nicho específico vs genérico** — impacto estimado 30%
+- **B-roll de nicho + screen ChatGPT = verificación visual** — impacto estimado 20%
+- **Duración más corta = menos abandono** — impacto estimado 15%
+- **Hooks más sofisticados** — impacto estimado 15%
+- **Nomenclatura modular C×H×CTA** — impacto estimado 10%
+- **Producción profesional vs UGC casero** — impacto estimado 10%
+
+*Análisis completo:* `.data/cruce-winners-t4-t6-reporte-performance.md`
+
+---
+
+## Counts estadísticos (generations con status winner/recorded)
+
+**Total validados:** 23 (0 winners + 23 recorded)
+
+**Top ángulos:** unknown (9), identidad (5), confrontacion (3), historia (2), 1 (1)
+
+**Top bodies:** unknown (9), contraste_emocional (3), comparacion_caminos (2), pregunta_respuesta (1), un_dia_en_la_vida (1)
+
+**Top hooks:** situacion_especifica (16), provocacion (10), pregunta_incomoda (8), confesion (8), contraintuitivo (8)
+
+**Top segmentos:** unknown (9), A (6), B (4), C (2), D (1)
+
+**Top nichos:** unknown (9), comerciante que vende por Mercado Libre (cualquier rubro) (1), docencia primaria / material didáctico / maestra de grado (1), identidad como padre/madre (genérico) (1), amplio — productos digitales con IA (formato orgánico IG) (1)
 
 ---
 
 ## Cómo usar estos patterns
 
-- **Sesgar hacia lo validado:** si un tipo de lead tiene más winners, priorizarlo (pero no repetir — diversidad sigue mandando).
-- **Ingredientes probados:** los que aparecen en winners son seguros. Combinar con frescos para no repetir.
-- **Notas de Jesús:** feedback directo sobre qué fluye y qué no. Más valioso que la teoría.
-- **NUNCA copiar:** estos patterns son para SESGAR decisiones, no para copiar guiones.
+- **Sesgar hacia lo validado:** los winners con análisis profundo tienen métricas reales. Usar su estructura (ángulo, hook type, vehículo) como norte.
+- **NUNCA copiar:** son patrones para SESGAR decisiones, no templates para replicar.
+- **Diversidad sigue mandando:** si un tipo de lead tiene más winners, priorizarlo pero no repetirlo.
+- **Leer el análisis completo** si vas a basar un guion en un winner — los hallazgos aquí son destilado, el contexto completo está en `.data/analisis-winner-*.md`.

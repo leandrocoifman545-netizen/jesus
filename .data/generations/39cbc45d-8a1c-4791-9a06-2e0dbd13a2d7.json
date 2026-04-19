@@ -1,0 +1,246 @@
+{
+  "id": "39cbc45d-8a1c-4791-9a06-2e0dbd13a2d7",
+  "briefId": "2c0284e7-a168-43b8-8d89-09d79e01340c",
+  "title": "Si sabés de plantas — lo que regalás, otros lo cobran",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.8_saber_invisible_plantas",
+    "body_type": "demolicion_mito",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "plantas (huerta + ornamentales + jardinería casera)",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Por eso, esto que te acabo de explicar es el mismo sistema que uso yo todos los días. Y lo que sabés de plantas es solo UNA de las formas en que se puede usar.",
+    "total_duration_seconds": 77,
+    "word_count": 320,
+    "punto_entrada_emocional": "bronca tranquila de saber que regalás hace años un saber que vale plata",
+    "belief_change": {
+      "old_belief": "Lo que sé de plantas no vale plata, es algo que siempre regalé",
+      "mechanism": "La IA convierte tu conocimiento verbal en una guía digital que se vende sin stock ni envíos",
+      "new_belief": "Lo que para mí es obvio, para 4.700 personas por mes es un misterio que pagarían por resolver"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi saber es invisible porque lo naturalicé",
+        "installed_via": "hook + puente",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Hay gente buscando exactamente lo que yo sé",
+        "installed_via": "quiebre con búsqueda específica (potus amarillo)",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA convierte mi conocimiento en un producto digital concreto",
+        "installed_via": "mecanismo con guía de 42 páginas",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "No necesito tecnología, solo hablar como le hablaría a mis hijos",
+        "installed_via": "demolición con analogía del audio de WhatsApp",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Otros ya lo están cobrando, yo puedo verificarlo",
+        "installed_via": "prueba verificable en Hotmart",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "inmersion_segunda_persona",
+        "hypothesis": "La escena de la vecina en la vereda pidiendo consejo gratis es universal para quien sabe de plantas",
+        "emotional_lever": "reconocimiento + bronca tranquila",
+        "script_text": "Si sabés de plantas, seguro ya te pasó. Una vecina te toca el timbre, te pregunta por qué se le ponen amarillas las hojas. Le explicás 20 minutos parada en la vereda. Se va contenta. Vos volvés adentro sin un peso.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "Forzar el conteo mental de gajos/consejos regalados activa la toma de conciencia del valor regalado",
+        "emotional_lever": "toma de conciencia",
+        "script_text": "Si sabés de plantas, contá cuántos gajos regalaste este año. Cuántos consejos diste por WhatsApp. Cuántas veces tu hermana te preguntó qué hacer con el potus. Ahora contá cuánta plata entró por eso.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Romper la asunción obvia (vivero) abre espacio para el mecanismo real",
+        "emotional_lever": "curiosidad + desafío a la lógica obvia",
+        "script_text": "Si sabés de plantas, te van a decir que abras un vivero. Es mentira. Lo que vale más que tus plantas es lo que tenés en la cabeza.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Nombrar la identidad que otros le pusieron y el patrón naturalizado genera identificación",
+        "emotional_lever": "identificación + bronca reconocida",
+        "script_text": "Si sabés de plantas, ya sos la loca de las plantas del grupo familiar. Todos te consultan. Ninguno te paga. Y vos lo naturalizaste.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "anti_consejo",
+        "hypothesis": "Desarmar el consejo obvio (vender plantas) posicionándolo como más difícil que la alternativa real",
+        "emotional_lever": "curiosidad + alivio",
+        "script_text": "Si sabés de plantas, no te pongas a vender plantas. Vender plantas es laburo físico, riego, traslado, clima. Hay algo más fácil y nadie te lo dice.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "saber_invisible_naturalizado → demanda_real_verificable → mecanismo_concreto → barrera_tecnica_desarmada → prueba_verificable",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Lo que para mí es obvio, para otros es un misterio",
+          "viewer_emotion_after": "Esto tiene que ver conmigo",
+          "is_turning_point": false,
+          "script_text": "Y la cosa es así: a vos te parece normal saber lo que sabés. Porque te lo enseñó tu mamá, tu abuela, o aprendiste sola mirando en tu casa. Pero lo que para vos es obvio, para 4.700 personas por mes que lo buscan en Google es un misterio.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay gente buscando exactamente lo que yo sé",
+          "viewer_emotion_after": "Hay demanda real para esto que yo regalo",
+          "is_turning_point": true,
+          "script_text": "Lo que pasa es que hay una persona en Buenos Aires, en Barcelona, en Guadalajara, que agarró el celular, escribió por qué se me ponen amarillas las hojas del potus y lo buscó en Google. Vos tenés la respuesta. Esa persona está dispuesta a pagar por tenerla ordenada en un solo lugar.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA convierte mi conocimiento en un producto digital concreto",
+          "viewer_emotion_after": "Hay una forma concreta de hacerlo",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial. Le contás a la IA todo lo que sabés: las 12 plantas de interior más comunes, cómo sacar gajos de cada una, qué hacer cuando se amarillean, cómo saber si es exceso de agua o falta de luz. La IA te arma una guía de 42 páginas con fotos de referencia, lista de materiales caseros, y los trucos que solo aprendés regando plantas 20 años. La subís a una plataforma como Hotmart a 9 dólares. Y cada persona que busca cuidar plantas de interior te puede comprar.",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito tecnología, solo hablar como le hablaría a mis hijos",
+          "viewer_emotion_after": "Mi excusa principal no aplica",
+          "is_turning_point": false,
+          "script_text": "Y antes de que digas yo no sé usar la computadora, porque si sabés mandar un audio de WhatsApp contándole algo a tus hijos, ya sabés lo suficiente. Le dictás a la IA exactamente como le explicarías a tu vecina, sin descuidar nada. Todo lo complicado lo arma ella.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otros ya lo están cobrando, puedo verificarlo",
+          "viewer_emotion_after": "Si esa persona pudo, yo puedo",
+          "is_turning_point": false,
+          "script_text": "Por eso buscá en Hotmart guía plantas. Fijate los precios. Fijate las reseñas. Fijate cuántas ya vendieron. Te vas a dar cuenta de que lo que regalás hace 20 años, otros lo están cobrando hoy.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "La IA democratizó la creación de productos digitales",
+          "viewer_emotion_after": "Esto es replicable desde casa",
+          "is_turning_point": false,
+          "script_text": "Por eso la IA vino a democratizar esto. El que sabe algo, cualquier cosa, plantas, costura, cocina, lo que sea, hoy lo puede convertir en un producto digital en una tarde desde su casa. Sin stock, sin envíos, sin depender del clima ni de una feria, generando ingresos sin descuidar el cuidado de los hijos.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "escena_reconocible",
+        "phrase": "Una vecina te toca el timbre, te pregunta por qué se le ponen amarillas las hojas."
+      },
+      {
+        "location": "puente",
+        "technique": "naturalizacion_del_saber",
+        "phrase": "a vos te parece normal saber lo que sabés"
+      },
+      {
+        "location": "quiebre",
+        "technique": "busqueda_google_especifica",
+        "phrase": "por qué se me ponen amarillas las hojas del potus"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_nombrado_con_numero",
+        "phrase": "una guía de 42 páginas con fotos de referencia"
+      },
+      {
+        "location": "demolicion",
+        "technique": "analogia_audio_whatsapp",
+        "phrase": "si sabés mandar un audio de WhatsApp contándole algo a tus hijos, ya sabés lo suficiente"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion_hotmart",
+        "phrase": "buscá en Hotmart guía plantas"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 8,
+        "ingredient_name": "saber_invisible_naturalizado"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 12,
+        "ingredient_name": "busqueda_google_especifica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 47,
+        "ingredient_name": "producto_nombrado_con_numero_no_redondo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 23,
+        "ingredient_name": "analogia_audio_whatsapp"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 31,
+        "ingredient_name": "prueba_verificable_en_plataforma"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T06:37:31.068Z"
+}

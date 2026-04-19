@@ -1,0 +1,202 @@
+{
+  "id": "4ed68080-0720-422f-9d36-fa80b4993365",
+  "briefId": "566cf8ad-7571-4d30-a177-93fee7c757c3",
+  "title": "Administrativos — la cabeza ordenada que no ves",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.3_antes_despues_IA_admin",
+    "body_type": "historia_con_giro",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "administrativos / secretarias / asistentes virtuales / gestión / Excel / organización",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Por eso, lo que te acabo de contar, que esa cabeza ordenada que tenés puede convertirse en plantillas que se venden en piloto automático, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 79,
+    "word_count": 255,
+    "punto_entrada_emocional": "descubrimiento callado de que esa manía de ordenar todo es una habilidad valiosa, no una rareza",
+    "belief_change": {
+      "old_belief": "Mi manía de ordenar todo es solo una particularidad, no sirve para avanzar",
+      "mechanism": "Convertir las plantillas de Excel que ya uso en productos digitales con IA",
+      "new_belief": "Mi sistema de organización es un producto que otros pagan por tener"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi forma de ordenar es una habilidad, no una manía",
+        "installed_via": "Historia con giro: empleada que facturó su sistema",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Empaquetarlo es concreto y sencillo",
+        "installed_via": "Demo con Excel + IA + pack de plantillas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Mi nicho específico es la ventaja",
+        "installed_via": "Contraste plantilla genérica vs plantilla por rubro",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Si trabajás en administración filtra avatar",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si trabajás en administración o en un escritorio hace más de 5 años, tenés una planilla de Excel que nadie más entiende. Con fórmulas, tablas dinámicas, códigos de color. Esa planilla, empaquetada, se vende a 11 dólares. Y hay gente pagando por no armarla.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Invertir 'mi manía es rareza' a 'es activo'",
+        "emotional_lever": "reframe_identidad",
+        "script_text": "Esa manía tuya de ordenar todo, de armar tablas, de hacer seguimiento en Excel cuando nadie te pide, es un negocio. No una rareza. Te explico por qué.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "Historia concreta de alguien como el avatar",
+        "emotional_lever": "identificacion_cercana",
+        "script_text": "Conocí una asistente virtual de La Plata que facturaba 400 mil pesos por mes mandando plantillas de Excel a 9 dólares. No tenía curso, ni estudios de marketing. Solo sabía ordenar. Como vos.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Forzar memoria de plantillas armadas",
+        "emotional_lever": "auto_revelacion",
+        "script_text": "¿Cuántas planillas de Excel armaste este año desde cero? ¿Cuántas veces tus compañeros te las pidieron? ¿Cuántas veces las compartiste gratis? Te voy a mostrar por qué eso se puede cobrar.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Validar el saber invisible del admin",
+        "emotional_lever": "validacion_saber",
+        "script_text": "Hay una habilidad que en tu oficina nadie te paga extra pero que otros pagarían por tener. Saber armar un sistema de seguimiento que funciona. Esa cabeza ordenada tuya es un activo.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_3_beats",
+      "emotional_arc": "curiosidad → provocacion → evidencia → permiso",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "La organización tiene mercado",
+          "viewer_emotion_after": "curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y acá está el tema. Toda empresa chica, todo emprendedor arrancando, todo monotributista, necesita ordenar su negocio. Y no saben hacerlo. Pagarían por no armar las planillas desde cero.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi forma de ordenar es una habilidad con demanda",
+          "viewer_emotion_after": "revelacion",
+          "is_turning_point": true,
+          "script_text": "Pero vos no sos una secretaria cualquiera. Sos una persona que en 10 años aprendiste a armar un sistema de facturación, un cuadro de cobranzas, un seguimiento de clientes que la jefa copia y pega sin tocar nada. Esa planilla, con instrucciones claras, con un video corto explicando cada tab, es un pack de plantillas que se vende en Mercado Libre por 11 dólares. Y se compra mucho.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Empaquetarlo es simple con IA",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Y te muestro cómo avanzar. Abrís el Excel que ya tenés armado. Sí, ese. Le pasás la planilla a la IA junto con un audio de 3 minutos explicando paso a paso cómo se usa. Sencillo, no necesitás aprender programación. Te arma un pack de 8 plantillas con videos tutoriales cortos, guía PDF de 18 páginas y versión lista para descargar. Eso se vende por WhatsApp a 11 dólares. Ese es el producto.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Mi nicho específico es la ventaja",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque vas a decir que en internet está todo. Esa es la herramienta que ya sabés usar. Y sí, pero todo es genérico. Vos armaste una plantilla para gestionar un taller de chapa y pintura. O una para una peluquería. O una para un monotributista de diseño. Esos dueños no quieren el Excel de un gurú de Miami. Quieren el tuyo. Del rubro exacto.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "validacion_mercado",
+        "phrase": "necesita ordenar su negocio. Y no saben hacerlo"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reconocimiento_valor",
+        "phrase": "la jefa copia y pega sin tocar nada"
+      },
+      {
+        "location": "quiebre",
+        "technique": "prueba_mercado",
+        "phrase": "se vende en Mercado Libre por 11 dólares"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "Abrís el Excel que ya tenés armado"
+      },
+      {
+        "location": "demolicion",
+        "technique": "especificidad",
+        "phrase": "Quieren el tuyo. Del rubro exacto"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 4,
+        "ingredient_name": "Historia personal confesional"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "Declaracion contraintuitiva"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 74,
+        "ingredient_name": "Eliminacion complejidad"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:43:00.498Z"
+}

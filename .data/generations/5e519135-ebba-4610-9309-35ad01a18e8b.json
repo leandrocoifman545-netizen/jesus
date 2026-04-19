@@ -1,0 +1,202 @@
+{
+  "id": "5e519135-ebba-4610-9309-35ad01a18e8b",
+  "briefId": "c151199e-5109-48ff-8b64-aa6e50b32e0e",
+  "title": "Jubilados — 40 años de oficio en una guía que vende sola",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.4_analogia_jubilado_biblioteca",
+    "body_type": "analogia_extendida",
+    "segment": "D",
+    "funnel_stage": "MOFU",
+    "niche": "jubilados con oficio (ex-contadores, ex-docentes, ex-médicos, ex-oficios, ex-empleados de comercio)",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Por eso, lo que te acabo de contar, que 40 años de experiencia pueden convertirse en un producto digital que vende todos los días, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 82,
+    "word_count": 260,
+    "punto_entrada_emocional": "propósito renovado del jubilado que descubre que su experiencia no se pierde con la jubilación",
+    "belief_change": {
+      "old_belief": "Me jubilé y toda esa experiencia que tengo ya no sirve para generar nada",
+      "mechanism": "Dictarle a la IA 30 años de oficio en audios cortos y convertirlo en una guía digital",
+      "new_belief": "Mi experiencia no se jubila — se convierte en un producto que me da sentido y una entrada extra"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "La experiencia no se jubila",
+        "installed_via": "Analogía de toda la vida como biblioteca",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "La tecnología ahora hace el trabajo pesado",
+        "installed_via": "Demo sencilla tipo 'dictarle al nieto'",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito ser influencer ni saber de computación",
+        "installed_via": "Derrumbe del mito tecnológico",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Si te jubilaste filtra al avatar D exacto",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si ya te jubilaste después de 30 o 40 años de trabajar en lo mismo, tenés un tesoro que probablemente nadie te valora. Todo ese oficio que aprendiste con los años es un producto digital que se vende a 19 dólares a quien recién arranca. Sencillo de armar.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "nostalgia_winner34",
+        "hypothesis": "Estructura de Winner #34: nostalgia → oportunidad",
+        "emotional_lever": "nostalgia_orgullo",
+        "script_text": "¿Te acordás cuando un maestro, un contador o un plomero con 30 años de oficio era la referencia del barrio? La gente venía a preguntarle porque sabía la vuelta que los libros no enseñan. Esa sabiduría ahora se puede escribir. Y vender online.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "desculpabilizacion",
+        "hypothesis": "Permiso para el jubilado escéptico de la tecnología",
+        "emotional_lever": "alivio",
+        "script_text": "Si pensás que ya estás grande para aprender a usar internet para ganar plata, te equivocás. La IA hizo que la tecnología ahora sea más sencilla que mandar un audio de WhatsApp. Paso a paso, no te pierde.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "segunda_persona",
+        "hypothesis": "Colocar al jubilado en su cotidiano",
+        "emotional_lever": "inmersion",
+        "script_text": "Vos sabés lo que un libro de texto no dice. Cómo tratar al cliente que se enoja, cómo salvar un error, cómo hacer que una tarea de 3 horas se haga en 1. Eso no lo aprende un pibe de 25 ni en 4 años de facultad. Pero lo pagaría por tenerlo escrito.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "credencial",
+        "hypothesis": "Credencial del oficio como anchor de autoridad",
+        "emotional_lever": "autoridad_por_tiempo",
+        "script_text": "30 años de oficio. Eso es lo que te sobra y a los que recién arrancan les falta. Te muestro cómo se convierte en una guía digital que se vende todos los días, sin que salgas de tu casa.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_analogia",
+      "emotional_arc": "nostalgia → revelacion → posibilidad → permiso",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "La experiencia no se pierde, se traslada",
+          "viewer_emotion_after": "esperanza",
+          "is_turning_point": false,
+          "script_text": "Y acá está la ayuda que necesitabas. Tu experiencia de 30 o 40 años es como una biblioteca que armaste toda la vida. Y hasta hace 2 años, esa biblioteca se terminaba con vos cuando te jubilabas. Te lo explico sin compromiso y te lo puedo demostrar paso a paso. No es otra estafa más de internet.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi biblioteca mental se puede trasladar",
+          "viewer_emotion_after": "revelacion",
+          "is_turning_point": true,
+          "script_text": "Pero ahora cambió. Te lo voy a demostrar sin vender nada. Imaginate que le dictás a un nieto paciente todo lo que sabés de tu oficio. Durante 3 tardes. Lo vas explicando a tu ritmo, con las palabras que usás todos los días, con los ejemplos del rubro. Ese nieto, que es la IA, toma todo eso y lo transforma en una guía digital de 42 páginas con índice, ejemplos y paso a paso. Esa guía la vende tu hijo a 19 dólares a los que recién arrancan en el mismo oficio.",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El proceso es simple y sin pantallas",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Y te explico cómo hacerlo paso a paso. Grabás audios de WhatsApp de 4 minutos. Uno por cada tema que dominás. 'Cómo atender una urgencia', 'Cómo presupuestar', 'Cómo tratar al cliente difícil'. Son herramientas que ya usás mentalmente. Le pasás los audios a la IA. Te arma una guía con toda tu sabiduría escrita, ordenada, con fotos. Sencillo.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito saber de tecnología",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque me vas a decir que vos no sabés de computación. No te pido que aprendas. Solo tenés que saber mandar un audio por WhatsApp. Lo demás lo hace la IA y un hijo o un nieto que te ayuda 1 hora. La venta la hace una página automática. Te lo muestro gratis primero para que veas que es de verdad.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "validacion_historia",
+        "phrase": "Tu experiencia de 30 o 40 años"
+      },
+      {
+        "location": "quiebre",
+        "technique": "analogia_cotidiana",
+        "phrase": "le dictás a un nieto paciente todo lo que sabés"
+      },
+      {
+        "location": "quiebre",
+        "technique": "dato_producto",
+        "phrase": "guía digital de 42 páginas"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "Grabás audios de WhatsApp de 4 minutos"
+      },
+      {
+        "location": "demolicion",
+        "technique": "barrera_eliminada",
+        "phrase": "Solo tenés que saber mandar un audio por WhatsApp"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 3,
+        "ingredient_name": "Contrariano anti-guru"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogia simple"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 63,
+        "ingredient_name": "Credencial por tiempo"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Metodologia nueva"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificacion extrema"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:48:34.502Z"
+}

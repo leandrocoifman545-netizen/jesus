@@ -1,0 +1,174 @@
+{
+  "id": "ef119cb8-c308-49bb-a474-aca31cd40de4",
+  "briefId": "5868a43a-e635-4994-b7f3-9ee060511330",
+  "title": "Si das clases particulares, seguro ya te pasó esto",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.12_docente_hipernicho",
+    "body_type": "espejo_situacion",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "docencia / clases particulares",
+    "model_sale_type": "escalabilidad",
+    "transition_text": "Exactamente esa guía digital para el tema que vos enseñás. Eso es lo que vas a aprender a armar paso a paso.",
+    "total_duration_seconds": 70,
+    "word_count": 265,
+    "punto_entrada_emocional": "bronca cansada de la docente que da mucho y siente que se valora poco",
+    "belief_change": {
+      "old_belief": "Mi trabajo es dar clase. Si no doy clase, no cobro.",
+      "mechanism": "Lo que sabés explicar se empaqueta una vez y se vende sin vos presente",
+      "new_belief": "Mi conocimiento de cómo enseñar vale más que la hora de clase"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El dolor específico del docente es reconocible y doloroso",
+        "installed_via": "DNA Winner #121 — escena sensorial",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "Tu experiencia enseñando vale más que la hora",
+        "installed_via": "pivote identitario",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Se empaqueta una vez en formato digital con IA",
+        "installed_via": "mecanismo concreto",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Sin depender del alumno presente, sin horarios",
+        "installed_via": "espejo inverso",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_121",
+        "hypothesis": "Replica directa del DNA Winner #121 (CPL $0.38). 'Si [haces nicho] seguro ya te pasó' + dolor sensorial",
+        "emotional_lever": "reconocimiento + bronca cansada",
+        "script_text": "Si das clases particulares, seguro ya te pasó esto. Te avisa el alumno 10 minutos antes de la clase que no puede venir. Vos ya te preparaste. Ya despejaste la tarde. La clase no se da. Y la clase no se cobra.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "frase_textual_docente",
+        "hypothesis": "Frase textual de compradora docente real activa identificación inmediata",
+        "emotional_lever": "identificación",
+        "script_text": "Una profesora de Argentina me escribió esta frase: doy un montón de horas y siento que no se valora lo que doy. Si vos estás en esa sensación, mirá esto dos minutos. Te voy a explicar por qué ese cansancio tiene salida.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_especifica",
+        "hypothesis": "Forzar el cálculo de horas preparadas no cobradas activa lucidez",
+        "emotional_lever": "lucidez",
+        "script_text": "Contá cuántas clases se cancelaron este año a último momento. Cuántas horas de preparación perdidas. Cuánta energía tirada. Eso es el techo real de cobrar por clase: depende de que alguien aparezca. Y hay otra forma.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "verdad_incomoda",
+        "hypothesis": "Nombrar la asimetría (20 años de experiencia = $15 la hora) genera el SÍ filosófico",
+        "emotional_lever": "bronca justa",
+        "script_text": "Si das clases hace 15 o 20 años, tu primera hora de clase y tu última hora de clase cuestan exactamente lo mismo. 15 dólares. 20 dólares. No importa lo que aprendiste. No importa los alumnos que mejoraron por vos. Eso es raro. Y se puede cambiar.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contraste_temporal",
+        "hypothesis": "Comparar tu hora contra el libro de texto masivo hace visible la diferencia de modelo",
+        "emotional_lever": "comparación lúcida",
+        "script_text": "Pensá: el libro de texto que usan tus alumnos lo escribió una persona una sola vez. Y hoy lo compran miles de escuelas. Tu hora de clase la das una vez y la cobrás una vez. La diferencia entre esos dos modelos es lo que te voy a mostrar ahora.",
+        "timing_seconds": 14
+      }
+    ],
+    "development": {
+      "framework_used": "DNA_121_4_beats",
+      "emotional_arc": "dolor_sensorial_docente → pivote_conocimiento_vale_mas → mecanismo_empaquetado → espejo_inverso_liberación",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Tu experiencia enseñando vale más que la hora de clase",
+          "viewer_emotion_after": "Tengo algo que no estoy cobrando",
+          "is_turning_point": true,
+          "script_text": "Y acá está lo que casi nadie te dice. Tu conocimiento del tema no es lo único que vale. Lo que vale más es cómo aprendiste a explicar. Los 30 ejercicios que viste que funcionan. Las 10 maneras distintas de explicar una ecuación cuando el alumno no entiende. Eso no está en ningún libro. Está en tu cabeza.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Se empaqueta una vez con IA",
+          "viewer_emotion_after": "Hay una forma concreta y sencilla",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial como herramienta. Le contás a la IA tu método de enseñanza paso a paso. Los errores comunes de los alumnos, los ejercicios que siempre funcionan, el orden de dificultad. La IA te arma un curso digital de 25 páginas, con ejercicios, con respuestas, con explicación. Lo subís a Hotmart a 9 dólares. Cada alumno que busca aprender tu tema te lo puede comprar.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Sin depender del alumno presente, sin horarios",
+          "viewer_emotion_after": "Esto libera lo que me cansa",
+          "is_turning_point": false,
+          "script_text": "Por eso este modelo libera exactamente lo que te estaba agotando. Sin depender de que el alumno aparezca. Sin horarios fijos de tarde. Sin 15 lugares de preparación perdidos. El curso trabaja para vos mientras vos preparás la cena. Y tu experiencia por fin se cobra como debería: una vez escrita, muchas veces vendida.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "escena_sensorial_docente",
+        "phrase": "te avisa el alumno 10 minutos antes"
+      },
+      {
+        "location": "puente",
+        "technique": "autoridad_invisible",
+        "phrase": "cómo aprendiste a explicar"
+      },
+      {
+        "location": "puente",
+        "technique": "expertise_acumulado",
+        "phrase": "30 ejercicios que viste que funcionan"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_con_numero",
+        "phrase": "un curso digital de 25 páginas"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "espejo_inverso",
+        "phrase": "Sin depender de que el alumno aparezca"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "descripcion_situacional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "redefinicion_del_juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "proceso_n_pasos"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "resultado_con_numeros"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:35:33.356Z"
+}

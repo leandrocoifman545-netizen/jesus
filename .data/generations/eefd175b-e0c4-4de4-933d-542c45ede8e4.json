@@ -1,0 +1,198 @@
+{
+  "id": "eefd175b-e0c4-4de4-933d-542c45ede8e4",
+  "briefId": "f6f9bc0e-9ba0-4415-bab5-60e7224adfde",
+  "title": "Cobrar por hora tiene un techo — y el techo es tu cuerpo",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.8_cobrar_por_hora_techo",
+    "body_type": "matematica_reveladora",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "salud / terapia / kinesiología",
+    "model_sale_type": "escalabilidad",
+    "transition_text": "Exactamente eso que te acabo de mostrar con números. Eso es lo que vas a aprender a armar paso a paso.",
+    "total_duration_seconds": 82,
+    "word_count": 310,
+    "punto_entrada_emocional": "bronca lúcida del profesional que sabe que el tiempo es su único inventario y está agotando su cuerpo",
+    "belief_change": {
+      "old_belief": "Cobro por hora porque no hay otra forma de cobrar por lo que sé",
+      "mechanism": "Lo que cobrás por turno se puede empaquetar una vez y venderse 100 veces sin levantar un dedo",
+      "new_belief": "El techo no es mi rubro, es el modelo de cobro por hora"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Cobrar por hora tiene un techo fisico",
+        "installed_via": "pregunta de precio inicial",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "El techo es el cuerpo, no el rubro",
+        "installed_via": "naming del concepto",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Hay una forma de cobrar menos por vez pero 100 veces",
+        "installed_via": "cambio de ecuación",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA empaqueta tu método en un producto digital",
+        "installed_via": "mecanismo con producto",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Hacé la cuenta y sacá el número",
+        "installed_via": "invitación explícita a calcular",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "ancla_precio_invertida",
+        "hypothesis": "Pattern untapped de IG (345% CLR). Arrancar con pregunta de precio al viewer activa cálculo mental inmediato",
+        "emotional_lever": "cálculo + curiosidad",
+        "script_text": "¿Cuánto cobrás la consulta? ¿15 dólares? ¿20? Supongamos 18. Atendés 8 personas por día, 5 días por semana. Eso es 720 por semana. Máximo. Porque tu techo no es lo que cobrás, tu techo es tu cuerpo. Ahora te voy a mostrar otra cuenta.",
+        "timing_seconds": 15
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "cita_verbatim_avatar",
+        "hypothesis": "Usar la frase exacta del compradora real Pedro (50, médico): 'hace 21 años alquilo' activa el dolor sin decirlo",
+        "emotional_lever": "identificación profesional",
+        "script_text": "Un kinesiólogo de Córdoba me escribió esto: hace 15 años que atiendo 8 pacientes por día, y hace 15 años que alquilo. Si vos te ves reflejado ahí, escuchá bien. El problema no es lo que cobrás. Es la ecuación.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "declaracion_contraintuitiva",
+        "hypothesis": "Declarar el techo invisible activa la toma de conciencia del modelo roto",
+        "emotional_lever": "shock + claridad",
+        "script_text": "Cobrar por hora tiene un techo. Y no importa cuántos diplomas tengas. No importa cuánto sepas. Porque el techo no está en tu cabeza, está en tu cuerpo. Solo tenés 24 horas. Y no podés atender mientras dormís.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "matematica_reveladora",
+        "hypothesis": "Poner la matemática real de su rubro sin adornos es más persuasivo que cualquier promesa",
+        "emotional_lever": "lucidez + cálculo",
+        "script_text": "Si atendés 8 personas por día a 20 dólares, ganás 160 por día. Si atendés 10, ganás 200. Si atendés 12, te rompés la espalda. Esa es la matemática real de cobrar por hora. El techo lo pone tu cuerpo, no tu mercado.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_incomoda_comparativa",
+        "hypothesis": "Comparar con un producto físico conocido hace tangible la diferencia entre modelos",
+        "emotional_lever": "comparación lúcida",
+        "script_text": "Un libro en una librería se vende 1000 veces y el autor lo escribió una sola vez. Una consulta tuya la das una vez y la cobrás una vez. La diferencia entre un modelo y otro es que uno tiene techo físico y el otro no. Te explico cómo pasar de uno al otro.",
+        "timing_seconds": 14
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_matematica_5_beats",
+      "emotional_arc": "cuenta_personal_hecha → naming_del_techo → alternativa_escalable → mecanismo_IA → invitacion_calcular",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "El techo es el cuerpo, no el rubro",
+          "viewer_emotion_after": "Ah, el problema no era lo que pensaba",
+          "is_turning_point": false,
+          "script_text": "Porque la matemática de cobrar por hora siempre es la misma. Y no te lo dicen en la universidad. Cuanto mejor sos, más turnos te piden. Cuantos más turnos te piden, más te agotás. Y cuanto más agotada estás, peor atendés. Es una trampa ordenada.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay una forma de cobrar menos por vez pero 100 veces",
+          "viewer_emotion_after": "Hay una ecuación distinta",
+          "is_turning_point": true,
+          "script_text": "Y acá está la cuenta que te va a abrir los ojos. Una guía digital sobre cómo recuperarse de una lumbalgia se vende a 9 dólares. Si la compran 100 personas en el mes, son 900 dólares. Sin mover un músculo tuyo. 100 consultas, tu cuerpo no las aguanta. 100 ventas de una guía, tu cuerpo ni se entera.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA empaqueta tu método en un producto digital",
+          "viewer_emotion_after": "Hay una forma concreta de armarlo",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial como herramienta. Le contás a la IA todo lo que sabés sobre lumbalgia, sobre rehabilitación cervical, sobre lo que quieras, paso a paso, como si le estuvieras explicando a un paciente. La IA te arma una guía digital de 40 páginas, con ejercicios, con imágenes, con el orden correcto. La subís a Hotmart. Y a cada persona que busca eso en Google, le llega.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito dejar la consulta para armar esto",
+          "viewer_emotion_after": "Puedo hacer ambas cosas",
+          "is_turning_point": false,
+          "script_text": "Y antes de que digas yo no tengo tiempo para esto, escuchame. Armar la guía te puede llevar una tarde de sábado. Una sola tarde. Después trabaja sola. Mientras vos seguís atendiendo a tus pacientes de siempre. Nadie te está pidiendo que dejes tu consultorio. Solo que le pongas un segundo piso.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Hacé la cuenta",
+          "viewer_emotion_after": "El número me cierra",
+          "is_turning_point": false,
+          "script_text": "Por eso te digo: hacé la cuenta. Una guía a 9 dólares. 100 ventas al mes. 900 dólares entrando sin sumar una consulta más. En un año son 10.800 dólares. Es casi otro sueldo. Y tu cuerpo no perdió una sola hora por eso. Es solo otra forma de cobrar lo que ya sabés.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "calculo_dirigido",
+        "phrase": "¿Cuánto cobrás la consulta?"
+      },
+      {
+        "location": "puente",
+        "technique": "naming_trampa",
+        "phrase": "es una trampa ordenada"
+      },
+      {
+        "location": "quiebre",
+        "technique": "comparacion_exacta",
+        "phrase": "100 consultas, tu cuerpo no las aguanta"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_con_numero",
+        "phrase": "una guía digital de 40 páginas"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "invitacion_calcular",
+        "phrase": "hacé la cuenta"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "declaracion_contraintuitiva"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "resultado_con_numeros"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "especificidad_numerica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "proceso_n_pasos"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:29:57.718Z"
+}

@@ -1,0 +1,189 @@
+{
+  "id": "1b15c548-305e-4432-871c-da52103626ba",
+  "briefId": "567cd461-caea-41ac-91ea-7c1c2ea72e0c",
+  "title": "El cuaderno de recetas de la abuela — ya nadie lo escribe, todos lo buscan",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.3_nostalgia_recetas_abuela",
+    "body_type": "storytelling_hollywood",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "cocina / repostería casera",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Exactamente ese cuaderno de recetas que te conté. Eso es lo que vas a aprender a hacer, pero en versión digital y sin descuidar a tus hijos.",
+    "total_duration_seconds": 80,
+    "word_count": 290,
+    "punto_entrada_emocional": "ternura y nostalgia con el recuerdo de la abuela escribiendo recetas a mano",
+    "belief_change": {
+      "old_belief": "Vender recetas es algo chiquito, no es un negocio",
+      "mechanism": "Lo que tu abuela escribía a mano en un cuaderno, hoy se vende digital y llega a miles de casas",
+      "new_belief": "Mis recetas tienen un lugar en internet que nadie más ocupa"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El cuaderno de recetas es un objeto en extinción que todos recuerdan",
+        "installed_via": "nostalgia en hook",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "La gente sigue queriendo cocinar rico pero nadie les deja el manual",
+        "installed_via": "pivote consumidor-productor",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Vos tenés ese manual en tu cabeza",
+        "installed_via": "quiebre identitario",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA convierte las recetas en un ebook con fotos y pasos",
+        "installed_via": "mecanismo con producto concreto",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Se vende desde casa, entre la escuela y la cena",
+        "installed_via": "espejo compatibilidad maternidad",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "nostalgia_objeto_extincion",
+        "hypothesis": "Replicar el DNA del Winner #34 (nostalgia + pivote consumidor-productor) al nicho cocina, confirmado como replicable en cruce 562",
+        "emotional_lever": "ternura + reconocimiento",
+        "script_text": "¿Te acordás del cuaderno de recetas de tu abuela? Ese de tapas de nailon, con manchas de dulce de leche, con letras que se escribieron durante 40 años. Ya nadie los escribe. Pero la gente sigue queriendo cocinar rico. Y hoy te las pide en el celular.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_maternidad",
+        "hypothesis": "Avatar Laura, escena doméstica específica que ella vive todas las semanas",
+        "emotional_lever": "identificación maternidad",
+        "script_text": "Sos mamá. Tus hijos vuelven del colegio. Les hacés la misma receta que hacía tu mamá, que hacía tu abuela. Y en el grupo de madres del cole siempre hay alguien que te dice: pasame la receta. Ya pasaste 40 recetas gratis por WhatsApp este año. Calculá qué pasaría si cada una valiera 3 dólares.",
+        "timing_seconds": 15
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "Contar explícitamente WhatsApps de recetas activa toma de conciencia del valor regalado",
+        "emotional_lever": "toma de conciencia",
+        "script_text": "¿Cuántas veces este año te pidieron por WhatsApp la receta de la torta, del pan casero, de los ñoquis de tu mamá? ¿10 veces? ¿20? Las mandaste todas gratis. No está mal. Pero hoy te quiero contar qué pasa si esas mismas recetas están ordenadas en un solo lugar.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "observacion_tendencia",
+        "hypothesis": "Dato de búsqueda genera validación objetiva sin forzar el argumento",
+        "emotional_lever": "curiosidad + sorpresa",
+        "script_text": "Todos los meses, 27 mil personas escriben en Google recetas de mi abuela. Son mujeres entre 30 y 50 años que quieren cocinar como cocinaban sus mamás y no saben cómo. Ahí hay un lugar que nadie está llenando. Y lo podés llenar vos con el cuaderno que ya tenés.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "escena_intima",
+        "hypothesis": "Escena cotidiana específica genera identificación profunda sin vender nada",
+        "emotional_lever": "ternura",
+        "script_text": "Hay un momento en la cocina de cualquier mamá. Son las 6 de la tarde. La hija vuelve del jardín. Vos tenés las manos con harina. Y ella te mira amasar. Lo que estás haciendo en ese momento es más valioso de lo que pensás. Te cuento por qué.",
+        "timing_seconds": 13
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_nostalgia_5_beats",
+      "emotional_arc": "nostalgia_cuaderno → demanda_google_real → expertise_hogar → mecanismo_ebook_recetas → vida_compatible",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "La gente sigue queriendo cocinar rico pero nadie les deja el manual",
+          "viewer_emotion_after": "Hay un lugar vacío que puedo ocupar",
+          "is_turning_point": false,
+          "script_text": "Porque el cuaderno de la abuela se perdió en casi todas las casas. Pero el deseo de cocinar rico, de que la casa huela a bizcochuelo el domingo, no se perdió en ningún lado. Solo se mudó a Google y a Instagram. Y ahí está dando vueltas, sin que nadie le arme un manual claro.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Vos tenés ese manual en tu cabeza",
+          "viewer_emotion_after": "Yo ya lo tengo, solo falta armarlo",
+          "is_turning_point": true,
+          "script_text": "Y acá está el detalle. Vos ya tenés el manual. Lo tenés adentro de la cabeza. Las 15 recetas de tu mamá, los 8 trucos para que la masa no se rompa, los 3 secretos para que el flan salga firme. Eso es lo que 27 mil personas por mes están buscando. Y no está escrito en ningún lado.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA convierte las recetas en un ebook con fotos y pasos",
+          "viewer_emotion_after": "Hay un producto concreto que puedo imaginar",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial. Le dictás las 15 recetas de tu mamá. Pasos. Cantidades. Los errores que cometiste las primeras veces. La IA te arma un ebook de 50 páginas, con fotos generadas, con el índice bien ordenado, con los tiempos de cocción claros. Y eso lo subís a una plataforma como Hotmart a 9 dólares. Cada persona que busca recetas caseras te puede comprar.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Se vende desde casa, entre la escuela y la cena",
+          "viewer_emotion_after": "Esto es compatible con mi vida",
+          "is_turning_point": false,
+          "script_text": "Por eso este sistema es especial para una mamá. Sin mostrar la cara. Sin hacer stories todos los días. Sin salir de tu casa. El ebook se vende solo mientras vos llevás a los chicos al cole, hacés la cena, o te tomás un café tranquila. La misma cocina donde cocinás para tus hijos, ahora también trabaja para vos.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "nostalgia_objeto",
+        "phrase": "el cuaderno de recetas de tu abuela"
+      },
+      {
+        "location": "puente",
+        "technique": "demanda_tacita",
+        "phrase": "Solo se mudó a Google"
+      },
+      {
+        "location": "quiebre",
+        "technique": "autoridad_invisible",
+        "phrase": "Vos ya tenés el manual"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_con_numero",
+        "phrase": "un ebook de 50 páginas"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "compatibilidad_vida",
+        "phrase": "mientras vos llevás a los chicos al cole"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "metafora_objeto"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "descripcion_situacional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "redefinicion_del_juego"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "future_pacing_sensorial"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:28:57.265Z"
+}

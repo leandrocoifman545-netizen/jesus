@@ -1,0 +1,202 @@
+{
+  "id": "81eaac16-eb81-4480-95ba-ba03ccaf40bf",
+  "briefId": "6a81e44a-6d44-4018-a63a-792ab5a60003",
+  "title": "Músicos — la canción que enseñaste vale más que una clase",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.3_analogia_musica_amateur",
+    "body_type": "storytelling_hollywood",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "músicos amateur / guitarra / piano / ukelele / batería / canto (enseñar lo que tocás)",
+    "model_sale_type": "lean_anti_riesgo",
+    "transition_text": "Por eso, lo que te acabo de contar, que lo que tocás los fines de semana puede aprenderse paso a paso a través de la ayuda de la IA, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 82,
+    "word_count": 265,
+    "punto_entrada_emocional": "orgullo tranquilo del músico que nunca se animó a cobrar por lo que sabe porque no es profesional",
+    "belief_change": {
+      "old_belief": "Lo que toco es un hobby porque no soy músico profesional, no puedo cobrar",
+      "mechanism": "Grabar 3 videos enseñando una canción y convertirlos en un curso PDF con IA",
+      "new_belief": "Mi saber musical se paga porque le ahorra a otros lo que yo ya descubrí en 10 años"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi música es un saber pagable",
+        "installed_via": "Historia personal de alguien que lo hizo",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Empaquetar una canción es concreto",
+        "installed_via": "Demo con video + IA + curso PDF",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito ser profesional",
+        "installed_via": "Contraste con academias caras",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Si tocás un instrumento filtra al avatar",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si tocás la guitarra, el ukelele o el piano hace más de 10 años, aunque nunca hayas sido profesional, escuchame. Esa canción que le enseñaste a tu sobrino el domingo vale más que una clase particular de 40 dólares. Te explico por qué.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "Historia concreta activa reconocimiento",
+        "emotional_lever": "identificacion_cercana",
+        "script_text": "Conocí un electricista de 58 años que toca la guitarra criolla. Nunca dio una clase pagada. Armó un pequeño curso de 3 canciones de folklore y vende 80 copias por mes a 11 dólares. Sin saber nada de internet. Te cuento cómo lo hizo.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Poner palabras al saber del músico amateur",
+        "emotional_lever": "validacion_saber",
+        "script_text": "Hay una cosa que los músicos amateurs nunca se animaron a hacer. Cobrar por lo que saben. Porque piensan que no son profesionales. Pero hay una forma de empaquetar una canción que no requiere ser del Conservatorio.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "segunda_persona",
+        "hypothesis": "Colocar al músico adentro del momento",
+        "emotional_lever": "inmersion",
+        "script_text": "Vos tocás hace 15 años. Tenés canciones memorizadas, arreglos que descubriste solo, trucos para los acordes difíciles. Todo eso, escrito con paciencia, es un paso a paso que otros pagarían.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "desculpabilizacion",
+        "hypothesis": "Quitar culpa por no ser profesional",
+        "emotional_lever": "alivio",
+        "script_text": "No necesitás haber estudiado en el Conservatorio para enseñar música. De hecho, la gente que recién arranca prefiere aprender con alguien que tocó como ellos empezaron. Te explico cómo hacerlo.",
+        "timing_seconds": 11
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_historia",
+      "emotional_arc": "nostalgia → descubrimiento → posibilidad → permiso",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "La música enseñada se paga",
+          "viewer_emotion_after": "curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y acá está lo que a nadie le cuentan. Hay 4 mil personas por mes queriendo aprender a tocar una canción específica. No quieren un curso de 6 meses. Quieren esa canción. Y pagan por eso.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi forma de tocar es el ayuda que otros buscan",
+          "viewer_emotion_after": "revelacion",
+          "is_turning_point": true,
+          "script_text": "Pero vos no tenés que ser Yngwie Malmsteen ni Skay Beilinson. Sos el tío o la prima que toca la guitarra en los asados. Sabés enseñar sencillo, a las personas que recién agarran el instrumento. Eso no lo da un profesional del Conservatorio. Lo da alguien que pasó por donde ellos están arrancando. Y eso paga.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Empaquetar una canción es concreto",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Y te muestro cómo avanzar paso a paso. Agarrás el celular y grabás 3 videos. Uno mostrando los acordes de una canción. Otro mostrando el rasguido. Otro tocándola completa lento. Le pasás los videos a la IA. Te arma un curso PDF de 22 páginas con diagramas de acordes, letra, tablatura y ritmo escrito. Eso se vende a 11 dólares por WhatsApp a gente que quiere aprender esa canción específica.",
+          "timing_seconds": 21
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito academia",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque vas a decir que ya hay YouTube gratis con clases de guitarra. Y sí, pero el que recién arranca no quiere 200 videos. Quiere la canción que le gusta, bien explicada, con todo lo que necesita. Una academia le cobra 40 dólares la clase. Vos le das la canción completa por 11.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "validacion_mercado",
+        "phrase": "Quieren esa canción. Y pagan por eso"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reconocimiento",
+        "phrase": "Sos el tío o la prima que toca la guitarra en los asados"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion_ventaja",
+        "phrase": "Lo da alguien que pasó por donde ellos están arrancando"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "Agarrás el celular y grabás 3 videos"
+      },
+      {
+        "location": "demolicion",
+        "technique": "contraste_precio",
+        "phrase": "Una academia le cobra 40 dólares la clase"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 4,
+        "ingredient_name": "Historia personal confesional"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "Vulnerabilidad estrategica"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Origen humilde"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case study"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 126,
+        "ingredient_name": "Presuposicion"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:46:14.511Z"
+}

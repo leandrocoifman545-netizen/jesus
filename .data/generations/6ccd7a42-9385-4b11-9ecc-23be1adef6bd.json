@@ -1,0 +1,189 @@
+{
+  "id": "6ccd7a42-9385-4b11-9ecc-23be1adef6bd",
+  "briefId": "39a4d2da-9fcc-4c72-a7e8-71a59582cff2",
+  "title": "Son las 3 de la tarde. Y pensás: esto no puede ser todo",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.11_empleada_admin_monologo",
+    "body_type": "escena_cinematografica",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "empleada administrativa / oficina",
+    "model_sale_type": "lean_anti_riesgo",
+    "transition_text": "Exactamente esa salida chica que te conté. Eso es lo que te voy a mostrar paso a paso, con tus horarios tal como están.",
+    "total_duration_seconds": 78,
+    "word_count": 280,
+    "punto_entrada_emocional": "hartazgo silencioso del lunes de oficina, la sensación de que la vida está pasando lejos",
+    "belief_change": {
+      "old_belief": "Tengo que aguantar hasta la jubilación, no puedo empezar algo nuevo a mi edad",
+      "mechanism": "Una salida chica armada en los fragmentos de tiempo que ya tenés, sin renunciar",
+      "new_belief": "No necesito renunciar. Necesito armarme una salida mientras sigo cobrando"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Ese pensamiento de las 3 de la tarde es real y lo tenemos muchos",
+        "installed_via": "monólogo interno en hook",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "No estás rota, el modelo de tu vida es el que está apretado",
+        "installed_via": "reframe empático",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Tenés ideas pero no estructura, no al revés",
+        "installed_via": "quiebre identitario",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA arma la estructura a partir de lo que ya sabés",
+        "installed_via": "mecanismo concreto",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Se puede armar mientras seguís cobrando",
+        "installed_via": "espejo compatibilidad",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "monologo_interno_segunda_persona",
+        "hypothesis": "Plantilla R6 (monólogo interno) — narrar lo que el avatar piensa sin decirlo genera identificación profunda",
+        "emotional_lever": "reconocimiento íntimo",
+        "script_text": "Son las 3 de la tarde. Estás sentada en la silla de siempre. La pantalla está igual que ayer. Y pensás: esto no puede ser toda mi vida. Y después te decís: bueno, dale, aguantá. Y una parte tuya ya no está comprando esa respuesta.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "escena_domingo_tarde",
+        "hypothesis": "La angustia del domingo a la tarde es universal en el empleado estancado",
+        "emotional_lever": "angustia reconocida",
+        "script_text": "Hay un momento los domingos a la tarde. Son las 7. Empieza a caer la luz. Ya entraste al modo lunes aunque falten horas. Y sentís algo en el pecho que no te animás a nombrar. No es pereza. Es otra cosa. Y tiene nombre.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "cuenta_anios",
+        "hypothesis": "Forzar cálculo de años trabajados genera lucidez sin amargura",
+        "emotional_lever": "lucidez temporal",
+        "script_text": "¿Cuántos años hace que te sentás en la misma oficina? ¿10? ¿15? ¿20? Haciendo prácticamente lo mismo, rotando las mismas 5 tareas, cobrando más o menos lo mismo. Y en paralelo sentís que la vida se te está yendo. Esa sensación tiene una salida chica.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pensamiento_intrusivo",
+        "hypothesis": "Nombrar el pensamiento intrusivo que el avatar tiene y no se anima a decir en voz alta genera complicidad",
+        "emotional_lever": "complicidad profunda",
+        "script_text": "Hay un pensamiento que tenés a veces y no se lo contás a nadie. Es cuando pensás: ¿y si renuncio? Y enseguida te lo sacás de la cabeza. No te voy a decir que renuncies. Te voy a proponer algo mejor.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "contrato_consigo_misma",
+        "hypothesis": "Presentar el año como ventana de decisión crea sensación de agencia",
+        "emotional_lever": "agencia",
+        "script_text": "En 2026 van a pasar dos cosas. Una: la vida va a pasar igual. Dos: vos vas a tener la oportunidad de tomar una decisión chica que, desde adentro, cambia todo. Acá te cuento cuál.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_emocional_4_beats",
+      "emotional_arc": "monologo_interno → no_es_tu_culpa → ideas_sin_estructura → mecanismo_minimalista → compatible_con_vida_actual",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No estás rota, el modelo de tu vida es el que está apretado",
+          "viewer_emotion_after": "Puedo dejar de culparme",
+          "is_turning_point": false,
+          "script_text": "Y la cosa es así: no estás rota. No te volviste vaga. No perdiste el impulso. Lo que pasa es que tu día no tiene un solo espacio donde algo tuyo pueda crecer. 9 horas afuera. Transporte. Casa. Comer. Dormir. El modelo de tu vida está lleno, pero no de vos.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Tenés ideas pero no estructura, no al revés",
+          "viewer_emotion_after": "El problema tiene otro nombre",
+          "is_turning_point": true,
+          "script_text": "Y acá está la vuelta. No te falta una idea nueva. Tenés varias ideas guardadas hace años. Lo que te falta es un proyecto chico armado con estructura para salir de ahí, algo que te dé independencia adentro, sin que tengas que dejar lo que tenés. No estás estancada por falta de ganas — estás estancada porque nadie te armó el camino corto.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA arma la estructura a partir de lo que ya sabés",
+          "viewer_emotion_after": "Hay un camino chico y concreto",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial. Un sábado a la tarde, con un mate, le contás a la IA una cosa que sabés hacer bien. Puede ser cocinar, organizar, enseñar algo, lo que sea. La IA te arma una guía de 20 páginas ordenada. La subís a Hotmart a 7 dólares. Y empieza a venderse sola, sin que vos tengas que aparecer.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Se puede armar mientras seguís cobrando",
+          "viewer_emotion_after": "No tengo que arriesgar nada",
+          "is_turning_point": false,
+          "script_text": "Por eso lo lindo de este sistema es que no te pide renunciar. No te pide arriesgar. No te pide nada. Se arma los fines de semana y trabaja los días de semana. Tu laburo de la oficina sigue ahí, sigue pagando las cuentas, y al lado empieza a crecer una cosa chica que es solamente tuya.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "monologo_intimo",
+        "phrase": "esto no puede ser toda mi vida"
+      },
+      {
+        "location": "puente",
+        "technique": "absolucion",
+        "phrase": "no estás rota"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reframe_problema",
+        "phrase": "No te falta una idea nueva"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_con_numero",
+        "phrase": "una guía de 20 páginas"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "anti_renuncia",
+        "phrase": "no te pide renunciar"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "descripcion_situacional"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "vulnerabilidad_estrategica"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "contraste_emocional"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "atajo_legitimo"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:33:25.881Z"
+}

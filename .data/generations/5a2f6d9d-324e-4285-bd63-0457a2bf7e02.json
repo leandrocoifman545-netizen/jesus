@@ -1,0 +1,295 @@
+{
+  "id": "5a2f6d9d-324e-4285-bd63-0457a2bf7e02",
+  "briefId": "631357f8-eed5-4bed-b42c-90bfe4439ca2",
+  "title": "Dependés del sábado que no llueva",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.3_dependencia_presencial_clima",
+    "body_type": "demo_proceso",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "velas artesanales",
+    "model_sale_type": "tiempo_vs_dinero",
+    "rhythm_template": "directo_confidencial",
+    "emotional_arc": "dolor_escena_a_mecanismo_demo",
+    "transition_text": "Ahora te preguntas \"¿Jesus como armo mi primera guia?\"",
+    "total_duration_seconds": 76,
+    "word_count": 260,
+    "punto_entrada_emocional": "bronca de saber que el negocio depende del sábado despejado cuando el conocimiento vale lo mismo sin feria",
+    "winner_template_used": "winner-121 literal (velas artesanales / manualidades — hipernicho como hook + demo concreta del mecanismo)",
+    "belief_change": {
+      "old_belief": "Si no vendo velas es porque no hice reel, no tengo seguidores o no me dan los costos",
+      "mechanism": "Dictás 20 minutos a ChatGPT cómo hacés tus velas de cera de soja con lavanda + IA arma guía de 23 páginas con foto de cada paso, lista ML, y los 4 errores de mecha. En una tarde.",
+      "new_belief": "Tu conocimiento de cómo armar una vela vale más que la vela — y se vende sin feria"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El problema real no son reels ni costos — es depender del sábado despejado",
+        "installed_via": "Puente: descarta 3 excusas falsas y nombra el problema real",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Lo que se vende 24hs es la GUÍA del proceso, no la vela",
+        "installed_via": "Quiebre con contraste: 80% vende velas peleando envíos vs guía que no se rompe",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "En una tarde tengo una guía de 23 páginas con temperaturas exactas, links ML y errores de mecha",
+        "installed_via": "Demo concreta con números anclados (65°C, 40°C, 23 páginas, 4 errores)",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No hace falta portada, video ni escribir — solo un audio a ChatGPT",
+        "installed_via": "Ráfaga de 'no hace falta' + analogía cotidiana (audio a la comadre)",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "En Hotmart hay guías de velas paso a paso entre 9 y 18 dólares — verificable",
+        "installed_via": "Prueba verificable: buscar en Hotmart ahora",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      },
+      {
+        "belief": "El sábado me da plata si estoy ahí parada y ayuda el clima. La guía me da plata durmiendo y lloviendo.",
+        "installed_via": "Contraste directo tiempo-presencia vs ingresos 24/7",
+        "persuasion_function": "venta_modelo",
+        "section_name": "Venta modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "F1 hipernicho + memoria del sábado mojado (DNA del winner #121)",
+        "emotional_lever": "cotilla + memoria física",
+        "script_text": "Si sabés hacer velas, tenés el mejor negocio este 2026. Pero si las estás vendiendo de a una, la estás cagando.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "F4 pregunta-espejo que expone cajas bajo la cama como prueba física del problema",
+        "emotional_lever": "auto-acusación visible",
+        "script_text": "Este video lo van a entender solo las que saben velas o manualidades Si no es tu caso, scrolleá.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "F11 inmersión sensorial — memoria recurrente del sábado con llovizna",
+        "emotional_lever": "inmersión sensorial",
+        "script_text": "Ya te pasó más de una vez. Amanece lloviznando un sábado de feria, y vos ya cargaste el Fiat con 60 velas en cajas de cartón.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "desculpabilizacion",
+        "hypothesis": "F18 quitar la culpa — no sos vos, es el modelo",
+        "emotional_lever": "permiso + alivio",
+        "script_text": "No es que no sabés vender velas. Es que el modelo depende del clima, de la feria y de que vos estés ahí parada 10 horas.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "F7 flip — el producto no es la vela, es el paso a paso",
+        "emotional_lever": "disonancia cognitiva",
+        "script_text": "La vela que vendés a 8 dólares es una cosa. El paso a paso escrito bien vale el doble. Y no lo tenés en venta.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "dolor_escena_a_mecanismo_demo",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "El problema real no son reels ni costos — es depender del sábado despejado",
+          "viewer_emotion_after": "reconocimiento + incomodidad",
+          "is_turning_point": false,
+          "timing_seconds": 9,
+          "script_text": "Lo que pasa es que pensás que el problema es que no pudiste ir a la feria este finde, que no tenés 5.000 seguidores o las esencias te subieron el costo de cada vela. Y es lógico que pienses eso. Pero el problema real es otro."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que se vende 24hs es la guía del proceso, no la vela",
+          "viewer_emotion_after": "revelación",
+          "is_turning_point": true,
+          "timing_seconds": 14,
+          "script_text": "El 80% arranca vendiendo en ferias bajando el precio para zafar, o rompiéndose la cabeza  en Instagram para conseguir 2 clientes por mes. Lo que se vende solo, sin stock y sin envíos, es enseñar el proceso. Tu conocimiento de cómo armar una vela vale más que la vela. "
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Guía de 23 páginas en una tarde con temperaturas exactas, links ML y errores de mecha",
+          "viewer_emotion_after": "claridad + visualización",
+          "is_turning_point": false,
+          "timing_seconds": 18,
+          "script_text": "Le dictás 20 minutos a ChatGPT cómo hacés tus velas. Todo lo que sabés: la cera que usás, las esencias que mejor andan, los tiempos, los errores que cometiste al principio. La IA te arma una guía de 20 páginas con foto de cada paso, lista de materiales con links a Mercado Libre y los 4 errores mas comunes. En unas horas la tenés lista para vender."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Solo hace falta un audio a ChatGPT — como a la comadre",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "timing_seconds": 11,
+          "script_text": "Y no me vengas con que no sabés de computadoras. Si sabés mandar un audio de WhatsApp, sabés hacer esto. No hay que diseñar nada, no hay que editar videos, no hay que escribir. Le hablás a ChatGPT como le hablás a cualquiera amiga tuya."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "En Hotmart hay guías iguales entre 9 y 18 dólares — verificable",
+          "viewer_emotion_after": "validación",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "Pensá cuántas veces te preguntaron \"¿cómo hacés para que te queden así?\", \"¿qué cera usás?\", \"¿me enseñás?\". Cada una de esas preguntas es alguien que te hubiera pagado. Lo único que falta es empaquetas esas respuestas en un guia. "
+        },
+        {
+          "section_name": "Venta modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Feria = plata cuando estás + clima ayuda. Guía = plata durmiendo + lloviendo 3 meses.",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "Te la hago corta. La feria te paga el sábado que estás parada 8 horas y no llueve. La guía te paga sin fabricar nada, sin stock y sin depender del clima. Tu conocimiento trabajando por vos las 24 horas del día."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "hipernicho_memoria",
+        "phrase": "Si hacés velas seguro ya te pasó"
+      },
+      {
+        "location": "puente",
+        "technique": "negacion_falsa_causa",
+        "phrase": "pensás que el problema es que no hiciste reel"
+      },
+      {
+        "location": "quiebre",
+        "technique": "flip_valor",
+        "phrase": "Tu conocimiento de cómo armar una vela vale más que la vela"
+      },
+      {
+        "location": "quiebre",
+        "technique": "threat_de_proceso",
+        "phrase": "El 80% arranca vendiendo velas en MercadoLibre peleando envíos"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "65 grados para derretir, bajás a 40 para agregar el aceite esencial"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_nombrado",
+        "phrase": "guía de 23 páginas con foto de cada paso"
+      },
+      {
+        "location": "demolicion",
+        "technique": "analogia_cotidiana",
+        "phrase": "mandar un audio a ChatGPT como le mandás a tu comadre"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificable",
+        "phrase": "Entrá a Hotmart ahora y buscá velas artesanales paso a paso"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "contraste_tiempo",
+        "phrase": "La guía te da plata extra cuando estás durmiendo y llueve tres meses seguidos"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 1,
+        "ingredient_name": "hipernicho_hook"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 50,
+        "ingredient_name": "pregunta_reveladora"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "demo_concreta_numeros"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 86,
+        "ingredient_name": "prueba_verificable"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 96,
+        "ingredient_name": "contraste_tiempo_dinero"
+      },
+      {
+        "category": "L",
+        "ingredient_number": 130,
+        "ingredient_name": "threat_de_proceso"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "A",
+        "layers": {
+          "oferta": "En la clase gratuita de esta semana te muestro las 3 cosas que necesitás para arrancar: cómo encontrar productos que la gente ya está comprando, cómo crearlos con inteligencia artificial y cómo venderlos por WhatsApp. Son 2 horas. En vivo. Conmigo.",
+          "prueba": "Ya pasaron más de 17 mil personas por este programa. Desde amas de casa hasta ingenieros.",
+          "riesgo_cero": "Es gratis. No te pido plata, no te pido experiencia. Solo 2 horas de tu tiempo.",
+          "urgencia": "Los cupos son limitados porque es en vivo y no puedo atender a todo el mundo.",
+          "cierre": "Tocá el botón de acá abajo y registrate. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "A",
+        "layers": {
+          "oferta": "En la clase gratuita te muestro cómo encontrar productos que se venden, crearlos con IA y venderlos por WhatsApp. Paso a paso. Sin experiencia.",
+          "orden_1": "Comentá CLASE y andá al link de mi perfil para registrarte.",
+          "prueba": "Miles de personas ya lo hicieron.",
+          "riesgo_cero": "Es gratis. Son 2 horas. Sin compromiso.",
+          "urgencia": "Los cupos se están llenando.",
+          "cierre": "Cuando entres, vas a ver exactamente cómo funciona. Te espero."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-17T22:49:51.853Z",
+  "status": "confirmed",
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved"
+  }
+}

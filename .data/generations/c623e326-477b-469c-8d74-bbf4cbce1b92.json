@@ -1,0 +1,276 @@
+{
+  "id": "c623e326-477b-469c-8d74-bbf4cbce1b92",
+  "briefId": "e44facf4-86d2-437a-a83b-8992c9be0bfd",
+  "title": "Te sobra saber; te falta un camino para venderlo",
+  "batch": {
+    "name": "plan-1 2026-04-17 #2"
+  },
+  "script": {
+    "angle_family": "modelo_equivocado",
+    "angle_specific": "3.7_saber_sin_empaquetar",
+    "body_type": "historia_con_giro",
+    "segment": "C3",
+    "funnel_stage": "TOFU",
+    "niche": "diseño / arte / creatividad",
+    "model_sale_type": "lean_anti_riesgo",
+    "rhythm_template": "R6",
+    "emotional_arc": "confrontacion_directa",
+    "transition_text": "En la clase te muestro paso a paso cómo preguntarle al mercado antes de crear.",
+    "total_duration_seconds": 78,
+    "word_count": 246,
+    "punto_entrada_emocional": "la diseñadora con 15 años de experiencia que regala su criterio cada semana y cobra poco por cada logo mientras piensa que le falta otro curso",
+    "winner_template_used": "winner-46 (flip contraintuitivo) + winner-121 (demo específica del nicho)",
+    "belief_change": {
+      "old_belief": "Para despegar con mi diseño me falta aprender más — otro curso, otra formación, otra herramienta",
+      "mechanism": "Grabar 20 min explicando algo que ya repetís gratis + IA = guía de 23 páginas vendible. Antes de crear, preguntar al mercado con 10 dólares de publicidad",
+      "new_belief": "Te sobra lo que sabés; te falta UN camino para empaquetarlo y preguntarle al mercado antes de crear"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Este monólogo me pasa todos los días — notebook abierta, logo mal pago, cliente que regatea, pensar que otro curso es la salida",
+        "installed_via": "Monólogo interno en 'Pensás:' x3 con escena específica de diseñadora",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "No me falta aprender más — me sobra info; me falta un camino, y el 80% arranca al revés",
+        "installed_via": "Flip contraintuitivo + threat de proceso",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Lo que explico gratis se puede grabar, pasar a la IA y convertir en una guía de 23 páginas en una tarde",
+        "installed_via": "Demo concreta con números específicos y herramienta",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito más clientes ni más seguidores — con lo que ya sé y 10 dólares de publicidad le pregunto al mercado",
+        "installed_via": "Demolición de objeciones + contraste con otras diseñadoras",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Esto no es teoría — en Etsy hay PDFs de 23 páginas entre 15 y 30 dólares vendidos por diseñadoras independientes",
+        "installed_via": "Verificable — el viewer puede abrir Etsy y ver",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      },
+      {
+        "belief": "El modelo es lean: prohibido crear antes de vender — si no hay comprador, no perdí la tarde; si hay, tengo producto validado",
+        "installed_via": "Regla de oro del modelo + alternativa dolorosa (seguir cobrando poco por cada logo)",
+        "persuasion_function": "venta_modelo",
+        "section_name": "Venta modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "disonancia_dolor",
+        "hypothesis": "F7 flip contraintuitivo sobre creencia C3 'me falta aprender más' — filtro 15 años de experiencia",
+        "emotional_lever": "disonancia cognitiva — te sobra, no te falta",
+        "script_text": "Tenés 15 años de experiencia diseñando logos. Pensás que te falta aprender más. Te sobra lo que sabés. Te falta un camino para venderlo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "disonancia_aspiracion",
+        "hypothesis": "F7 flip sobre creencia 'necesito más clientes' — pivote a empaquetar lo que ya repetís",
+        "emotional_lever": "disonancia + alivio — no son más clientes, es empaquetar",
+        "script_text": "Querés independencia y sacarte clientes pesados de encima. Pensás que viene de sumar gente nueva. Viene de empaquetar lo que ya le repetís a cada uno.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "disonancia_tension_t9",
+        "hypothesis": "F7 flip sobre T9 'hice cursos y no apliqué' — reframe: no es disciplina, es falta de UN camino",
+        "emotional_lever": "disonancia + permiso — no sos vos, son los cursos sin camino",
+        "script_text": "Hiciste 4 formaciones de identidad visual este año. No aplicaste nada. No te falta disciplina. Te falta que alguien te marque UN camino, no te tire más info.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "disonancia_intento_fallido",
+        "hypothesis": "F7 flip sobre §7 Hotmart sin venta — reframe: no faltó vender, faltó preguntar antes",
+        "emotional_lever": "disonancia + lean anti-riesgo",
+        "script_text": "Subiste un manual de Canva a Hotmart. Nadie lo compró. Te faltó preguntarle al mercado qué está dispuesto a pagar ANTES de crearlo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "disonancia_cotilla_favor",
+        "hypothesis": "F7 flip sobre 'lo regalo gratis es favor' — reframe: es producto de $27",
+        "emotional_lever": "disonancia + revelación de valor",
+        "script_text": "Le explicás gratis cómo armar una paleta a cada emprendedora que te pregunta. Pensás que es favor. Esa misma explicación empaquetada se vende a 27 dólares online.",
+        "timing_seconds": 9
+      }
+    ],
+    "development": {
+      "framework_used": "historia_con_giro_6_beats",
+      "emotional_arc": "confrontacion_directa",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "Este monólogo es el mío — notebook abierta, logo mal pago, cliente que regatea",
+          "viewer_emotion_after": "reconocimiento íntimo",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Abrís la notebook para terminar otro logo. Pensás: otro cliente que te regatea. Pensás: cobro poco por algo que me lleva horas. Pensás: si hago un curso más, ahí sí despego."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No me falta aprender más — me sobra info, me falta UN camino. El 80% arranca al revés.",
+          "viewer_emotion_after": "revelación + permiso",
+          "is_turning_point": true,
+          "timing_seconds": 14,
+          "script_text": "Pero no va a despegar. Lo que te falta no es otro curso. Te sobra lo que sabés. Te falta empaquetarlo. El 80% arranca al revés: creando primero, sin preguntar si alguien lo quiere."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Grabo 20 min + IA + una tarde = guía de 23 páginas vendible",
+          "viewer_emotion_after": "claridad + visualización del producto",
+          "is_turning_point": false,
+          "timing_seconds": 18,
+          "script_text": "Y ahí es donde aparece la pregunta que nadie se hace: qué pagaría tu cliente por lo que vos ya explicás gratis cada semana. Mirá. Grabás con el celular 20 minutos mostrando cómo elegís una paleta para una marca. Se lo das a la inteligencia artificial y te arma una guía de 23 páginas con pasos y ejemplos. En una tarde tenés el producto digital."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito más clientes ni más seguidores — cobro poco porque dependo del boca en boca, mientras otras ya venden empaquetado",
+          "viewer_emotion_after": "urgencia + alivio",
+          "is_turning_point": false,
+          "timing_seconds": 16,
+          "script_text": "Pero acá está el tema. Pensás que necesitás más clientes y más seguidores. No. Con lo que sabés y 10 dólares de publicidad le preguntás al mercado si lo quiere. Cobrás poco y dependés del boca en boca. Y mientras dudás, diseñadoras con menos años de experiencia ya venden desde la cocina."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto no es teoría — en Etsy hay PDFs de 23 páginas entre 15 y 30 dólares, vendidos por diseñadoras independientes",
+          "viewer_emotion_after": "verificación",
+          "is_turning_point": false,
+          "timing_seconds": 9,
+          "script_text": "Y lo que pasa es que no es teoría. Entrá a Etsy y buscá 'paleta de colores emprendedoras'. Vas a ver PDFs de 23 páginas entre 15 y 30 dólares, vendidos por diseñadoras independientes."
+        },
+        {
+          "section_name": "Venta modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "El modelo es lean: pregunto al mercado con 10 dólares ANTES — la otra opción es un año más cobrando poco por cada logo",
+          "viewer_emotion_after": "convicción + miedo a inacción",
+          "is_turning_point": false,
+          "timing_seconds": 15,
+          "script_text": "Y por eso el modelo es este: prohibido crear antes de vender. Le preguntás al mercado con 10 dólares de publicidad ANTES. Si nadie lo compra, no perdiste la tarde. Si lo compran, ya tenés un producto validado. La otra opción: seguir un año más cobrando poco por cada logo."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "filtro_experiencia",
+        "phrase": "15 años de experiencia"
+      },
+      {
+        "location": "puente",
+        "technique": "escena_reconocible",
+        "phrase": "Abrís la notebook"
+      },
+      {
+        "location": "puente",
+        "technique": "monologo_espejo",
+        "phrase": "cobro poco por algo que me lleva horas"
+      },
+      {
+        "location": "quiebre",
+        "technique": "flip_creencia",
+        "phrase": "Te sobra lo que sabés"
+      },
+      {
+        "location": "quiebre",
+        "technique": "threat_proceso",
+        "phrase": "El 80% arranca al revés"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "pregunta_reveladora",
+        "phrase": "qué pagaría tu cliente por lo que vos ya explicás gratis"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "una guía de 23 páginas"
+      },
+      {
+        "location": "demolicion",
+        "technique": "contraste_otros",
+        "phrase": "mientras dudás, diseñadoras con menos años de experiencia ya venden"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificable",
+        "phrase": "Entrá a Etsy y buscá"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "regla_modelo",
+        "phrase": "prohibido crear antes de vender"
+      }
+    ],
+    "ingredients_used": [
+      "B#25",
+      "C#39",
+      "D#50",
+      "F#72",
+      "G#86",
+      "L#130",
+      "H#96"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
+          "bono": "Y te regalo un mini-manual de prompts para que la IA te arme el producto mientras mirás la clase.",
+          "orden_1": "Tocá el botón de acá abajo y registrate.",
+          "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados.",
+          "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp.",
+          "orden_1": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas. Todos empezaron de cero.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada.",
+          "cierre": "Comentá CLASE y registrate en el link de mi perfil."
+        }
+      }
+    ],
+    "offer_bridge": {
+      "product_type": "webinar_gratis",
+      "script_text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada."
+    }
+  },
+  "createdAt": "2026-04-17T21:00:03.297Z"
+}

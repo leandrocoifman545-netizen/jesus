@@ -1,0 +1,198 @@
+{
+  "id": "5f49d185-79e5-40bd-9a9e-448eeed7f2f9",
+  "briefId": "74f75c2a-6e50-471a-b153-0b2562ca55a3",
+  "title": "Lo hacemos juntos. Abrí la app de grabadora de tu celular y escuchá",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.7_demo_modeladora_2da_persona",
+    "body_type": "demo_proceso",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "profesional 50+ con oficio o experiencia",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Eso que acabamos de hacer juntos con el audio, es el primer paso. Paso a paso te enseño cómo hacerlo para cualquier tema que vos sepas.",
+    "total_duration_seconds": 85,
+    "word_count": 315,
+    "punto_entrada_emocional": "incomodidad del profesional de 50 o 60 que sabe mucho de su oficio pero siente que la tecnología lo dejó afuera",
+    "belief_change": {
+      "old_belief": "La IA es para jóvenes que saben de tecnología. Yo no sabría ni cómo empezar.",
+      "mechanism": "Si sabés mandar un audio de WhatsApp, ya sabés suficiente: le hablás a la IA como le hablarías a alguien",
+      "new_belief": "Yo también puedo. Literalmente es mandar un audio."
+    },
+    "micro_beliefs": [
+      {
+        "belief": "La primera tarea con IA es más simple de lo que pensás",
+        "installed_via": "hook 2da persona modelando",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "Hablar a la IA es como mandar un audio",
+        "installed_via": "analogía directa",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Tu oficio de 30 años es un manual que nadie escribió",
+        "installed_via": "quiebre identitario",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "El resultado es una guía tangible con número de páginas",
+        "installed_via": "mecanismo con producto concreto",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Gente de tu edad ya lo está haciendo",
+        "installed_via": "prueba con número de personas",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "segunda_persona_modelando",
+        "hypothesis": "Modelar la acción en segunda persona (hacé esto conmigo) es el patrón H-23 de Heras con CLR 174%, cero usos en ADP",
+        "emotional_lever": "complicidad + curiosidad",
+        "script_text": "Vamos a hacer una cosa juntos. Agarrá el celular. Abrí la aplicación de grabadora. Grabá un audio de 30 segundos contando algo que sabés hacer que otros te piden ayuda para hacer. Ya está. Ese audio vale más plata de la que pensás. Te explico por qué.",
+        "timing_seconds": 15
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "confesion_temporal",
+        "hypothesis": "Usar frase verbatim de Roberto ('el mundo de la IA me encanta, es asombroso') valida al avatar sin condescendencia",
+        "emotional_lever": "validación + entusiasmo",
+        "script_text": "Si tenés más de 50 años y decís: el mundo de la IA me encanta pero no sé ni cómo empezar — escuchá bien. No es un curso. No es teoría. Es una cosa que podés hacer hoy a la tarde, sola, con el celular en la mano.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "La pregunta 'qué sabés hacer que otros te piden' fuerza inventario mental del expertise acumulado",
+        "emotional_lever": "toma de conciencia",
+        "script_text": "Pensá una sola cosa. ¿Qué es eso que vos sabés hacer que tus hijos, tu sobrina, tu vecino te piden ayuda para hacer? Arreglar algo, cocinar algo, elegir algo, saber qué comprar. Eso que todos te preguntan. Hoy te cuento cómo eso se convierte en una guía que te hace plata todos los días.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "analogia_conocida",
+        "hypothesis": "Equiparar hablarle a la IA con mandar un audio destruye la barrera técnica percibida",
+        "emotional_lever": "alivio técnico",
+        "script_text": "¿Sabés mandar un audio de WhatsApp a tu hija contándole una receta? Listo. Ya sabés hablarle a la inteligencia artificial. No es más complicado que eso. Le dictás lo mismo que le dictarías a ella, y la IA te arma una guía digital con eso.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "invitacion_demo",
+        "hypothesis": "Invitar a hacer algo en 5 minutos elimina la barrera de compromiso",
+        "emotional_lever": "curiosidad + baja fricción",
+        "script_text": "Si sos de los que dice yo a la IA no me animo, te propongo algo. Cinco minutos. Dejame que te guíe. Al final de este video vas a tener hecha la primera parte de tu primer producto digital. Solo con el celular.",
+        "timing_seconds": 12
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats_modelando",
+      "emotional_arc": "invitacion_complice → analogia_audio → expertise_acumulado → mecanismo_tangible → prueba_por_edad",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Hablar a la IA es mandar un audio",
+          "viewer_emotion_after": "Ah, puedo hacerlo",
+          "is_turning_point": false,
+          "script_text": "Porque la inteligencia artificial no es una computadora que te hace una pregunta rara. Es una persona invisible que te escucha. Vos le hablás, ella entiende, y te ayuda. Igual que cuando le mandás un audio a tu sobrino para que te explique cómo abrir una app. Solo que esta vez, vos sos el que enseña.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Tu oficio de 30 años es un manual que nadie escribió",
+          "viewer_emotion_after": "Lo que sé vale más de lo que pensaba",
+          "is_turning_point": true,
+          "script_text": "Y acá está la parte que te va a sorprender. Todo lo que aprendiste en 30 años de tu oficio — sea albañilería, enfermería, costura, mecánica, lo que sea — no está escrito en ningún manual. Está en tu cabeza. Hay una persona en Colombia, en España, en México que hoy está buscando en Google exactamente lo que vos sabés. Y no encuentra una guía clara.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "El resultado es una guía tangible con número de páginas",
+          "viewer_emotion_after": "Hay un producto concreto al final",
+          "is_turning_point": false,
+          "script_text": "Entonces lo que hacés es esto. Le mandás a la IA 5 audios de 3 minutos cada uno, contándole tu oficio paso a paso. La IA te arma una guía de 35 páginas, con los pasos ordenados, con los errores comunes, con el listado de herramientas. Eso se sube a una plataforma como Hotmart a 8 dólares. Y cada persona en el mundo que busca aprender lo que vos sabés, te la puede comprar.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito más ayuda técnica de la que ya tengo",
+          "viewer_emotion_after": "Mi excusa no aplica",
+          "is_turning_point": false,
+          "script_text": "Y por eso te digo que si sabés usar WhatsApp, ya sabés lo suficiente. Lo único que tenés que hacer es grabar como si le estuvieras contando algo a un nieto en el fondo de la casa. La IA se encarga de ordenarlo, armarlo y ponerlo lindo. Vos solo tenés que saber lo que sabés.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente de mi edad ya lo está haciendo",
+          "viewer_emotion_after": "Si ellos pudieron yo también",
+          "is_turning_point": false,
+          "script_text": "Y te lo digo porque lo vi. Un señor de 67 años de Mendoza, jubilado bancario, armó una guía de cómo manejar las finanzas personales después de los 60. Una locura lo que vende. Empezó a fines del año pasado. Hoy le entra plata todos los días al celular.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "accion_fisica_ya",
+        "phrase": "Agarrá el celular"
+      },
+      {
+        "location": "puente",
+        "technique": "analogia_tranquilizadora",
+        "phrase": "Igual que cuando le mandás un audio a tu sobrino"
+      },
+      {
+        "location": "quiebre",
+        "technique": "autoridad_por_experiencia",
+        "phrase": "30 años de tu oficio"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_con_numero",
+        "phrase": "una guía de 35 páginas"
+      },
+      {
+        "location": "prueba",
+        "technique": "edad_especifica_rubro",
+        "phrase": "Un señor de 67 años de Mendoza"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "analogia_simple"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "accion_fisica_modelada"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 94,
+        "ingredient_name": "caso_real_especifico"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "redefinicion_del_juego"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:27:54.320Z"
+}

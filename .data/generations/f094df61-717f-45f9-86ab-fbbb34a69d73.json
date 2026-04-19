@@ -247,5 +247,9 @@
     ]
   },
   "createdAt": "2026-04-15T16:01:44.108Z",
-  "status": "confirmed"
+  "status": "confirmed",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  }
 }

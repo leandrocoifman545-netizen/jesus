@@ -743,5 +743,270 @@
     "hookType": "situacion_especifica",
     "fromGenerationId": "6c8d92bd-59ef-4e4a-87d0-ac39c2ab3662",
     "burnedAt": "2026-04-16T20:49:09.100Z"
+  },
+  {
+    "text": "Si hacés velas seguro ya te pasó. Armás toda la feria. Llueve el sábado. Volvés con las 40 velas en la caja y el fin de mes se te cae.",
+    "hookType": "auto_seleccion_memoria",
+    "fromGenerationId": "5a2f6d9d-324e-4285-bd63-0457a2bf7e02",
+    "burnedAt": "2026-04-18T02:11:45.063Z"
+  },
+  {
+    "text": "¿Cuántas velas tenés guardadas en cajas bajo la cama desde la última feria que se lavó?",
+    "hookType": "pregunta_espejo",
+    "fromGenerationId": "5a2f6d9d-324e-4285-bd63-0457a2bf7e02",
+    "burnedAt": "2026-04-18T02:11:45.063Z"
+  },
+  {
+    "text": "Ya te pasó más de una vez. Amanece lloviznando un sábado de feria, y vos ya cargaste el Fiat con 60 velas en cajas de cartón.",
+    "hookType": "historia_dolor_sensorial",
+    "fromGenerationId": "5a2f6d9d-324e-4285-bd63-0457a2bf7e02",
+    "burnedAt": "2026-04-18T02:11:45.063Z"
+  },
+  {
+    "text": "No es que no sabés vender velas. Es que el modelo depende del clima, de la feria y de que vos estés ahí parada 10 horas.",
+    "hookType": "desculpabilizacion",
+    "fromGenerationId": "5a2f6d9d-324e-4285-bd63-0457a2bf7e02",
+    "burnedAt": "2026-04-18T02:11:45.063Z"
+  },
+  {
+    "text": "La vela que vendés a 8 dólares es una cosa. El paso a paso escrito bien vale el doble. Y no lo tenés en venta.",
+    "hookType": "flip_contraintuitivo",
+    "fromGenerationId": "5a2f6d9d-324e-4285-bd63-0457a2bf7e02",
+    "burnedAt": "2026-04-18T02:11:45.063Z"
+  },
+  {
+    "text": "Si hacés manualidades, seguro ya te pasó. Alguien agarra una pieza tuya. Pregunta el precio. Se le pone cara de 'qué caro'. Se va.",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "265a48be-cebe-4431-b7bf-a0852ac5bc2b",
+    "burnedAt": "2026-04-18T02:18:14.092Z"
+  },
+  {
+    "text": "¿Cuántas veces bajaste el precio en la feria para no irte sin vender? Y después, a la noche, sacás las cuentas y no te da.",
+    "hookType": "pregunta_incomoda",
+    "fromGenerationId": "265a48be-cebe-4431-b7bf-a0852ac5bc2b",
+    "burnedAt": "2026-04-18T02:18:14.092Z"
+  },
+  {
+    "text": "Mirá, te voy a ser honesta. Vendiendo manualidades en la feria no vas a salir adelante. Pero lo que sabés hacer se puede vender sin que nadie te regatee.",
+    "hookType": "anti_hype",
+    "fromGenerationId": "265a48be-cebe-4431-b7bf-a0852ac5bc2b",
+    "burnedAt": "2026-04-18T02:18:14.092Z"
+  },
+  {
+    "text": "Imaginate que vendés tus manualidades y nadie te dice 'qué caro'. Nadie te dice 'eso lo hago yo'. Nadie te regatea. Existe ese lugar.",
+    "hookType": "future_pacing_sensorial",
+    "fromGenerationId": "265a48be-cebe-4431-b7bf-a0852ac5bc2b",
+    "burnedAt": "2026-04-18T02:18:14.092Z"
+  },
+  {
+    "text": "—Qué lindo, ¿cuánto sale? —Cuarenta lucas. —Uh, ¿no me hacés por treinta? —Y... bueno, dale. Eso que acabás de decir, 'bueno, dale', es el problema.",
+    "hookType": "actuacion_dialogo",
+    "fromGenerationId": "265a48be-cebe-4431-b7bf-a0852ac5bc2b",
+    "burnedAt": "2026-04-18T02:18:14.092Z"
+  },
+  {
+    "text": "Si vendés por Mercado Libre seguro ya te pasó. Cerraste una venta de 15 lucas, y cuando sumás comisión, envío y lo que te costó reponerlo, te quedaron 4.",
+    "hookType": "auto_seleccion_memoria",
+    "fromGenerationId": "1e64169b-741f-49f2-ad50-d616675bccf9",
+    "burnedAt": "2026-04-18T03:17:12.745Z"
+  },
+  {
+    "text": "¿Cuánto te quedó en la mano esta semana después de todo lo que vendiste por Mercado Libre? ¿Comparado con todo lo que tuviste que hacer para vender eso?",
+    "hookType": "pregunta_espejo",
+    "fromGenerationId": "1e64169b-741f-49f2-ad50-d616675bccf9",
+    "burnedAt": "2026-04-18T03:17:12.745Z"
+  },
+  {
+    "text": "Estás en la puerta del correo con 4 paquetes. Pagás el envío, seguís los códigos, volvés a contestar reclamos. Vendiste más que el mes pasado, y tenés menos plata.",
+    "hookType": "inmersion_segunda_persona",
+    "fromGenerationId": "1e64169b-741f-49f2-ad50-d616675bccf9",
+    "burnedAt": "2026-04-18T03:17:12.745Z"
+  },
+  {
+    "text": "Mercado Libre no es un mal negocio. Pero si después de un año seguís revolucionándote la semana para facturar lo mismo que un sueldo, hay una parte que no está cerrando.",
+    "hookType": "anti_hype",
+    "fromGenerationId": "1e64169b-741f-49f2-ad50-d616675bccf9",
+    "burnedAt": "2026-04-18T03:17:12.745Z"
+  },
+  {
+    "text": "Te pasás las noches con la mesa llena de cajas, bolsas plásticas y etiquetas impresas. Tenés que sacar 9 envíos antes del mediodía. Y todavía no contestaste la mitad de los mensajes.",
+    "hookType": "historia_dolor_sensorial",
+    "fromGenerationId": "1e64169b-741f-49f2-ad50-d616675bccf9",
+    "burnedAt": "2026-04-18T03:17:12.745Z"
+  },
+  {
+    "text": "Tutorial de cómo dejar tu trabajo, ser independiente y comprarte el auto que siempre quisiste.\n",
+    "fromGenerationId": "f79fc5db-e57f-4748-bb0f-9dcdf9a5dfd5",
+    "burnedAt": "2026-04-18T16:39:54.413Z"
+  },
+  {
+    "text": "Si tenés más de 35 años y estás harta de no ganar lo que mereces, esto es un tutorial. Te voy a mostrar paso a paso cómo dejar de depender de un solo ingreso.",
+    "fromGenerationId": "f79fc5db-e57f-4748-bb0f-9dcdf9a5dfd5",
+    "burnedAt": "2026-04-18T16:39:54.413Z"
+  },
+  {
+    "text": "Domingo a la noche. Estás preparando la ropa para el lunes y en el finde no descansaste nada. Si hace años que te pasa, quedate. Esto es un tutorial de cómo empezar a generar ingresos sin renunciar a tu trabajo actual.",
+    "fromGenerationId": "f79fc5db-e57f-4748-bb0f-9dcdf9a5dfd5",
+    "burnedAt": "2026-04-18T16:39:54.413Z"
+  },
+  {
+    "text": "Tutorial de cómo dejar de depender de un sueldo para empezar a tener tu propio negocio, ser independiente y vivir como se te dé la gana.",
+    "fromGenerationId": "f79fc5db-e57f-4748-bb0f-9dcdf9a5dfd5",
+    "burnedAt": "2026-04-18T16:39:54.413Z"
+  },
+  {
+    "text": "¿Trabajás 8 horas por día? Sí. ¿Eso te dio la vida que querías? Seguro que no. Este es el tutorial para cambiar esa respuesta.",
+    "fromGenerationId": "f79fc5db-e57f-4748-bb0f-9dcdf9a5dfd5",
+    "burnedAt": "2026-04-18T16:39:54.413Z"
+  },
+  {
+    "text": "Si hacés uñas ya te pasó. Te cancelaron dos turnos en la semana y el día te quedó cortado, mirando el teléfono con la mesa armada al pedo.",
+    "hookType": "auto_seleccion_memoria",
+    "fromGenerationId": "8dc31c1b-202e-47d6-8b0d-9945ee30fcae",
+    "burnedAt": "2026-04-18T17:42:21.786Z"
+  },
+  {
+    "text": "¿Cuántas horas te pasaste sentada con la lamparita esta semana? ¿Y cuánta plata te quedó en la mano después de pagar gel, tips y envíos?",
+    "hookType": "pregunta_espejo",
+    "fromGenerationId": "8dc31c1b-202e-47d6-8b0d-9945ee30fcae",
+    "burnedAt": "2026-04-18T17:42:21.786Z"
+  },
+  {
+    "text": "Tenés la mesita llena de gel, limas y tips. Tu clienta llega tarde, te apura para terminar, se va. Te quedan las manos dormidas y la casa hecha un desastre.",
+    "hookType": "inmersion_segunda_persona",
+    "fromGenerationId": "8dc31c1b-202e-47d6-8b0d-9945ee30fcae",
+    "burnedAt": "2026-04-18T17:42:21.786Z"
+  },
+  {
+    "text": "Hacer uñas no es un mal oficio. Pero si después de 3 años seguís cobrando por turno y el cuerpo ya te pide parar, hay una parte que no está cerrando.",
+    "hookType": "anti_hype",
+    "fromGenerationId": "8dc31c1b-202e-47d6-8b0d-9945ee30fcae",
+    "burnedAt": "2026-04-18T17:42:21.786Z"
+  },
+  {
+    "text": "Terminás el día con los ojos quemados de mirar la lamparita, los dedos acalambrados de sostener el pincel, y el banco con 4 turnos porque hoy hubo dos cancelaciones.",
+    "hookType": "historia_dolor_sensorial",
+    "fromGenerationId": "8dc31c1b-202e-47d6-8b0d-9945ee30fcae",
+    "burnedAt": "2026-04-18T17:42:21.786Z"
+  },
+  {
+    "text": "Hay una cosa que hacen las manicuristas que facturan en dólares y va en contra de todo lo que te enseñaron. Los números no mienten.",
+    "hookType": "auto_seleccion_memoria",
+    "fromGenerationId": "c8f5c7fd-9b54-4f00-a0a7-82979434d0dd",
+    "burnedAt": "2026-04-19T03:08:46.392Z"
+  },
+  {
+    "text": "Todas las manicuristas que hoy están ganando bien en Argentina empezaron a hacer una cosa. Y no es subir los precios.",
+    "hookType": "flip_contraintuitivo",
+    "fromGenerationId": "c8f5c7fd-9b54-4f00-a0a7-82979434d0dd",
+    "burnedAt": "2026-04-19T03:08:46.392Z"
+  },
+  {
+    "text": "Tener la agenda llena todo el mes es la trampa más grande en la que puede caer una manicurista. Y casi ninguna se da cuenta a tiempo.",
+    "hookType": "flip_contraintuitivo",
+    "fromGenerationId": "c8f5c7fd-9b54-4f00-a0a7-82979434d0dd",
+    "burnedAt": "2026-04-19T03:08:46.392Z"
+  },
+  {
+    "text": "La peor decisión que puede tomar hoy una manicurista es conseguir más clientas.",
+    "hookType": "flip_contraintuitivo",
+    "fromGenerationId": "c8f5c7fd-9b54-4f00-a0a7-82979434d0dd",
+    "burnedAt": "2026-04-19T03:08:46.392Z"
+  },
+  {
+    "text": "Ser manicurista hoy puede ser lo mejor que te pasó para ganar dinero. O lo peor. Depende de una decisión que tomes en las próximas 24 horas.",
+    "hookType": "tension_binaria_temporal",
+    "fromGenerationId": "c8f5c7fd-9b54-4f00-a0a7-82979434d0dd",
+    "burnedAt": "2026-04-19T03:08:46.392Z"
+  },
+  {
+    "text": "Voy a ser directo porque este video no es para todos. Pero si este 2026 uno de tus objetivos es dejar de depender de un sueldo, quedate. Esto te puede cambiar los próximos 6 meses.",
+    "hookType": "filtro_exclusividad",
+    "fromGenerationId": "6bddccbf-4968-4563-b466-f582ec7a56a9",
+    "burnedAt": "2026-04-19T05:25:31.790Z"
+  },
+  {
+    "text": "No te voy a prometer que te hagas millonario. Pero si este 2026 querés dejar de depender de tu trabajo, hay un modelo nuevo del que casi nadie está hablando.",
+    "hookType": "anti_hype",
+    "fromGenerationId": "6bddccbf-4968-4563-b466-f582ec7a56a9",
+    "burnedAt": "2026-04-19T05:25:31.790Z"
+  },
+  {
+    "text": "Hay una forma nueva que están usando docentes, empleadas y mujeres que ya no quieren volver a pedir un aumento que nunca les dan. Se hace desde casa, a tu ritmo, sin jefe y ni horario fijos.",
+    "hookType": "ancla_precio_invertida",
+    "fromGenerationId": "6bddccbf-4968-4563-b466-f582ec7a56a9",
+    "burnedAt": "2026-04-19T05:25:31.790Z"
+  },
+  {
+    "text": "Existe un motivo por el que algunas mujeres de 40 ya no trabajan en relación de dependencia. Y no es que tengan más suerte que vos.",
+    "hookType": "pregunta_trampa_dual",
+    "fromGenerationId": "6bddccbf-4968-4563-b466-f582ec7a56a9",
+    "burnedAt": "2026-04-19T05:25:31.790Z"
+  },
+  {
+    "text": "De cada 100 mujeres que trabajaron toda la vida, 87 se jubilan sin la tranquilidad que se ganaron. Y no es por trabajar poco. Es por una decisión que casi ninguna toma a tiempo",
+    "hookType": "flip_contraintuitivo",
+    "fromGenerationId": "6bddccbf-4968-4563-b466-f582ec7a56a9",
+    "burnedAt": "2026-04-19T05:25:31.790Z"
+  },
+  {
+    "text": "Los mejores vendedores son los peores empresarios. Cierran 8 ventas al día para su jefe. Y no saben cómo vender lo que saben cerrar.",
+    "hookType": "flip_contraintuitivo",
+    "fromGenerationId": "5f0922d3-625e-40e4-8276-dbbcca7dcdf4",
+    "burnedAt": "2026-04-19T08:00:15.596Z"
+  },
+  {
+    "text": "¿Cuántas ventas cerraste este mes? ¿20? ¿50? Ahora pensá: si cada una de esas técnicas la hubieses escrito, tendrías un libro de ventas.",
+    "hookType": "pregunta_espejo",
+    "fromGenerationId": "5f0922d3-625e-40e4-8276-dbbcca7dcdf4",
+    "burnedAt": "2026-04-19T08:00:15.596Z"
+  },
+  {
+    "text": "Hay una cosa que ningún jefe te va a decir. Las 5 frases que usás para cerrar una venta valen más que tu sueldo entero. Pero las estás regalando todos los días.",
+    "hookType": "nombrar_innombrado",
+    "fromGenerationId": "5f0922d3-625e-40e4-8276-dbbcca7dcdf4",
+    "burnedAt": "2026-04-19T08:00:15.596Z"
+  },
+  {
+    "text": "Imaginate que alguien grabara todas las objeciones que rompés por teléfono. Y después te pagara por enseñarle a otro vendedor cómo hacerlo. Eso ya existe, y no lo estás cobrando.",
+    "hookType": "hipotetico_personal",
+    "fromGenerationId": "5f0922d3-625e-40e4-8276-dbbcca7dcdf4",
+    "burnedAt": "2026-04-19T08:00:15.596Z"
+  },
+  {
+    "text": "¿Sos vendedor? ¿Cerrás más que el resto de tu equipo? Entonces lo que estoy por mostrarte te va a dar bronca.",
+    "hookType": "pregunta_trampa_dual",
+    "fromGenerationId": "5f0922d3-625e-40e4-8276-dbbcca7dcdf4",
+    "burnedAt": "2026-04-19T08:00:15.596Z"
+  },
+  {
+    "text": "Si sos peluquera y tenés hijos, esto te va a doler un poco. Cada color balayage que hacés, cada corte a tijera, cada retoque de raíz. La clienta se va y vos te quedás con la plata del servicio. Nada más. Y el tiempo con tus hijos no vuelve.",
+    "hookType": "hipernicho_winner121",
+    "fromGenerationId": "b30487a2-113b-43d1-8fd7-e2b42cd5ec91",
+    "burnedAt": "2026-04-19T08:36:22.292Z"
+  },
+  {
+    "text": "Si sos peluquera y mamá, pensá esto. Cada clienta que atendés es una hora menos con tus hijos. Y cuando la clienta se va, la hora también. La plata queda, el tiempo no vuelve más",
+    "hookType": "situacion_especifica",
+    "fromGenerationId": "b30487a2-113b-43d1-8fd7-e2b42cd5ec91",
+    "burnedAt": "2026-04-19T08:36:22.292Z"
+  },
+  {
+    "text": "Te dijeron que para ganar más tenés que cortar más. Mentira. Las peluqueras que están cobrando mejor cortan menos y no es porque cobran mas caro.",
+    "hookType": "desculpabilizacion",
+    "fromGenerationId": "b30487a2-113b-43d1-8fd7-e2b42cd5ec91",
+    "burnedAt": "2026-04-19T08:36:22.292Z"
+  },
+  {
+    "text": "Te dijeron que para ganar más tenés que cortar más rápido, cobrar más caro o abrir tu local. Las tres están mal. Y hay una cuarta",
+    "hookType": "segunda_persona",
+    "fromGenerationId": "b30487a2-113b-43d1-8fd7-e2b42cd5ec91",
+    "burnedAt": "2026-04-19T08:36:22.292Z"
+  },
+  {
+    "text": "Mirá tus manos un segundo. Son la razón por la que cobrás lo que cobrás. Y también son la razón por la que no cobrás más.",
+    "hookType": "nombrar_innombrado",
+    "fromGenerationId": "b30487a2-113b-43d1-8fd7-e2b42cd5ec91",
+    "burnedAt": "2026-04-19T08:36:22.292Z"
   }
 ]

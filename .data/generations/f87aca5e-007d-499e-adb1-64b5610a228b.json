@@ -1,0 +1,189 @@
+{
+  "id": "f87aca5e-007d-499e-adb1-64b5610a228b",
+  "briefId": "c81564a9-1e1a-4dae-b4b3-a6af34947197",
+  "title": "Hace dos años perdí 150 mil dólares en publicidad que no funcionó",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.6_inversion_perdida_credencial",
+    "body_type": "storytelling_hollywood",
+    "segment": "A",
+    "funnel_stage": "MOFU",
+    "niche": "universal",
+    "model_sale_type": "transparencia_total",
+    "transition_text": "Y esa lección que te acabo de contar es la que te voy a mostrar paso a paso. Es literalmente lo que uso yo todos los días.",
+    "total_duration_seconds": 85,
+    "word_count": 310,
+    "punto_entrada_emocional": "mezcla de vergüenza y honestidad radical: pérdida real narrada sin adornos",
+    "belief_change": {
+      "old_belief": "Este tipo habla desde arriba. Seguro no sabe lo que es perder plata de verdad",
+      "mechanism": "Inversión-credencial (H-18 Ramiro, 150% CLR avg): la plata perdida es skin in the game verificable",
+      "new_belief": "Este tipo pagó la escuela. Me puedo confiar porque ya pagó lo que yo no quiero pagar"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Perdió plata real. Está en la misma vereda que vos",
+        "installed_via": "cifra cruda en hook",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "La lección concreta que sacó es aplicable",
+        "installed_via": "desarrollo de aprendizaje",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Lo que funciona es validar antes de crear",
+        "installed_via": "cambio de paradigma",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA valida en una tarde lo que antes costaba 6 meses",
+        "installed_via": "mecanismo concreto",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Vos te ahorrás la escuela que yo pagué",
+        "installed_via": "transferencia de lección",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "inversion_credencial",
+        "hypothesis": "Pattern H-18 (Ramiro — inversión como credencial, 150% CLR). Cifra cruda desarma escepticismo",
+        "emotional_lever": "credibilidad + skin in the game",
+        "script_text": "Te lo voy a contar de una. Hace dos años perdí 150 mil dólares en publicidad que no funcionó. Una casa. Eso fue. Y la lección que saqué es lo único que me hizo ganar plata después. Hoy te cuento cuál es.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "anti_guru_confesion",
+        "hypothesis": "Desarmar el rol de experto abre confianza del escéptico que odia gurús",
+        "emotional_lever": "humanización",
+        "script_text": "Me van a decir el experto, el que sabe, el que enseña. Pero la verdad es otra. Yo aprendí porque me fundí varias veces. Y la última vez me costó 150 mil dólares. Voy a contarte qué pasó ahí y qué saqué.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "lista_fracasos",
+        "hypothesis": "Inventario crudo de errores valida autoridad por experiencia dura",
+        "emotional_lever": "humildad verificable",
+        "script_text": "Te hago una lista. 6 años de afiliación a márgenes mínimos. Freelance cobrando 1 dólar la hora. Una agencia con 100 clientes que me destruyó. Un ecommerce fundido. Y 150 mil dólares quemados en publicidad. Eso es mi currículum. De ahí salió lo que te voy a contar.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "comparacion_casa",
+        "hypothesis": "Equiparar la plata perdida a un objeto tangible (una casa) hace visible la magnitud",
+        "emotional_lever": "impacto emocional",
+        "script_text": "¿Sabés cuánto vale una casa en un barrio común de Argentina? 150 mil dólares. Bueno, eso es lo que perdí hace dos años en ads que no funcionaron. Una casa entera tirada en pesos de publicidad. Y la lección fue tan cara que me parece injusto no pasártela.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "transferencia_leccion",
+        "hypothesis": "Ofrecer explícitamente atajar el dolor genera el SÍ del viewer sin prometer riqueza",
+        "emotional_lever": "atajo legítimo",
+        "script_text": "Yo pagué 150 mil dólares por aprender una sola cosa. Te la voy a regalar en 2 minutos. Y si la agarrás, te vas a ahorrar 2 años de vueltas y un montón de plata. Es literalmente la cosa más valiosa que aprendí en 10 años.",
+        "timing_seconds": 12
+      }
+    ],
+    "development": {
+      "framework_used": "storytelling_credencial_5_beats",
+      "emotional_arc": "inversion_perdida → contexto_del_fracaso → leccion_concreta → mecanismo_actual → transferencia_atajo",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "La lección concreta que sacó es aplicable",
+          "viewer_emotion_after": "Quiero saber qué aprendió",
+          "is_turning_point": false,
+          "script_text": "Y lo que pasó fue esto. Armé un producto digital con la idea de salir de ahí. Un proyecto grande, de esos que querés que te saquen del laburo fijo y te den independencia. Lo creé entero, lo diseñé, lo empaqueté. Y recién después lo salí a vender. 150 mil dólares en anuncios intentando venderlo. Nadie lo quería. El error fue crearlo antes de saber si ese negocio iba a funcionar.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que funciona es validar antes de crear",
+          "viewer_emotion_after": "El orden estaba mal",
+          "is_turning_point": true,
+          "script_text": "Y acá está la cosa que me cambió. Se vende primero. Se crea después. Parece absurdo pero es al revés de lo que hace todo el mundo. Todo el mundo crea primero y después reza. Y por eso pierden plata. Todo lo que aprendí de ahí en adelante empieza por esa frase.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA valida en una tarde lo que antes costaba 6 meses",
+          "viewer_emotion_after": "Hay una forma corta de hacerlo",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial. Le pedís a la IA que te diga qué está buscando la gente esta semana sobre un tema que vos sepas. Número de búsquedas, competencia, precio promedio. En una tarde sabés si tu idea se vende. Si se vende, armás. Si no se vende, cambiás de idea. Sin quemar 150 mil dólares para enterarte.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Vos te ahorrás la escuela que yo pagué",
+          "viewer_emotion_after": "Esto es un atajo legítimo",
+          "is_turning_point": false,
+          "script_text": "Por eso te lo cuento así, crudo. Si escuchás esto y lo aplicás, te estás ahorrando lo que a mí me costó una casa. No es una promesa de plata. Es literalmente la escuela que ya pagué yo. Y la única razón por la que te la paso es porque me parece injusto que tengas que pagarla vos también.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "cifra_cruda",
+        "phrase": "perdí 150 mil dólares"
+      },
+      {
+        "location": "puente",
+        "technique": "reconstruccion_error",
+        "phrase": "El error fue crearlo antes"
+      },
+      {
+        "location": "quiebre",
+        "technique": "inversion_orden",
+        "phrase": "Se vende primero. Se crea después"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "atajo_ia",
+        "phrase": "En una tarde sabés si tu idea se vende"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "transferencia_escuela",
+        "phrase": "la escuela que ya pagué yo"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "vulnerabilidad_estrategica"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "case_study"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "especificidad_numerica"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 48,
+        "ingredient_name": "declaracion_contraintuitiva"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:36:56.432Z"
+}

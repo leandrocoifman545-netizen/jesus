@@ -1,0 +1,202 @@
+{
+  "id": "2b3e4208-f4da-4a66-a448-22efdefc786d",
+  "briefId": "2b7e9235-78c4-4534-8c1a-6bf901b2d6be",
+  "title": "Fitness — la rutina que las mamás sin gym pagarían por tener",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.1_comunidad_sin_proveedor_fitness",
+    "body_type": "pregunta_respuesta",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "fitness / yoga / pilates / entrenadores personales / rutinas en casa (amplio)",
+    "model_sale_type": "caballo_troya_baja_barrera",
+    "transition_text": "Por eso, lo que te acabo de contar, que lo que hacés con tus clientas puede convertirse en rutinas digitales para las mamás que no llegan al gimnasio, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 77,
+    "word_count": 250,
+    "punto_entrada_emocional": "generosidad profesional del instructor que descubre un mercado al que ya está ayudando gratis",
+    "belief_change": {
+      "old_belief": "Para ganar más tengo que tener más clientas presenciales, más horas de clase",
+      "mechanism": "Convertir una rutina semanal en un ebook de ejercicios con IA y vender a mamás sin tiempo",
+      "new_belief": "Mis rutinas son productos digitales que llegan a mamás que nunca pisan un gym"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Hay un mercado de mamás sin tiempo que no puedo atender presencial",
+        "installed_via": "Q&A con dato concreto de búsquedas",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Empaquetar la rutina es rápido y concreto",
+        "installed_via": "Demo con videos + IA + ebook ilustrado",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "YouTube no reemplaza una rutina pensada",
+        "installed_via": "Contraste rutina random vs plan estructurado",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Si das clases de yoga filtra al avatar exacto",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si das clases de yoga, pilates o funcional en un gimnasio, esto te va a interesar. Tenés 20 rutinas guardadas en la cabeza para clientas que recién arrancan. Esas rutinas, empaquetadas, se venden a 15 dólares a mamás que nunca van a pisar un gimnasio.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Forzar la cuenta mental de horas de enseñanza",
+        "emotional_lever": "auto_revelacion",
+        "script_text": "¿Cuántas mamás te preguntaron después de clase si hay algo que puedan hacer en casa porque no les alcanza el tiempo? ¿10? ¿20? A cada una le dijiste 'mirá, hacé esto y esto'. Esa misma conversación, escrita, vale 15 dólares.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "inmersion_segunda_persona",
+        "hypothesis": "Segunda persona dentro de la escena de trabajo",
+        "emotional_lever": "inmersion",
+        "script_text": "Vos armás rutinas de 20 minutos para personas con lumbalgia, rutinas de postparto, secuencias para mujeres de 50 que nunca hicieron deporte. Sabés qué ejercicios evitar, qué pausas meter. Eso no está en ningún video de YouTube bien armado.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Poner palabras al techo del instructor presencial",
+        "emotional_lever": "validacion_limite",
+        "script_text": "Nadie te dijo esto pero lo voy a decir. Si das clases 40 horas por semana, ya tocaste el techo. No podés atender más alumnas sin descuidar a tus hijos. Existe otro camino que no te saca tiempo. Te muestro.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "provocacion_dato",
+        "hypothesis": "Dato concreto que abre el mercado",
+        "emotional_lever": "curiosidad",
+        "script_text": "Hay 120 mil búsquedas por mes de rutinas de yoga para principiantes en español. Y no hay instructores reales vendiendo nada. Solo videos de YouTube random. Vos podés ser la que llene ese vacío.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_qa",
+      "emotional_arc": "curiosidad → permiso → posibilidad → validacion",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Existe un mercado que no llega al gym",
+          "viewer_emotion_after": "curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y acá está lo que pocos instructores ven. Te hago 3 preguntas rápidas. Las vas contestando en la cabeza.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mis rutinas tienen demanda invisible",
+          "viewer_emotion_after": "revelacion",
+          "is_turning_point": true,
+          "script_text": "Primera. ¿Cuántas amigas tuyas dicen que les encantaría ir a yoga pero no pueden por los hijos? Muchas. Segunda. ¿Cuántas veces les mandaste un video explicando un ejercicio gratis por WhatsApp? Varias. Tercera. ¿A alguna le cobraste? A ninguna. Ahí está tu negocio. Hay 120 mil búsquedas por mes de rutinas para casa y vos las respondés gratis.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Empaquetarlo es rápido",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Entonces te muestro cómo avanzar. Un día antes de tus clases, filmás con el celular 15 ejercicios de una rutina. Cada uno 40 segundos. Le pasás los videos a la IA. Te arma un ebook ilustrado de 30 páginas con respiración, pausas, progresiones de 4 semanas y videos cortos. Eso se vende a 15 dólares a mamás que no tienen tiempo para ir al gimnasio. Ese es el sistema.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "YouTube no reemplaza una rutina estructurada",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque vas a decir que en YouTube está todo gratis. Y sí, pero cualquier mamá que probó ponerse a hacer yoga con YouTube lo dejó en 2 semanas. Porque son videos sueltos, sin progresión, sin respuestas. La rutina tuya, con un plan de 4 semanas y un WhatsApp de consulta, es otra cosa.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "pregunta_directa",
+        "phrase": "Te hago 3 preguntas rápidas"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion_experiencia",
+        "phrase": "¿A alguna le cobraste? A ninguna"
+      },
+      {
+        "location": "quiebre",
+        "technique": "dato_mercado",
+        "phrase": "120 mil búsquedas por mes"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "filmás con el celular 15 ejercicios"
+      },
+      {
+        "location": "demolicion",
+        "technique": "validacion_dolor",
+        "phrase": "cualquier mamá que probó ponerse a hacer yoga con YouTube lo dejó en 2 semanas"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 2,
+        "ingredient_name": "Pregunta retorica dolor"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 28,
+        "ingredient_name": "Dolor sin nombrar"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso N pasos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:44:33.668Z"
+}

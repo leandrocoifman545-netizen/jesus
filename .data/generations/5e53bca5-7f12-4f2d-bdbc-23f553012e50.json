@@ -1,0 +1,207 @@
+{
+  "id": "5e53bca5-7f12-4f2d-bdbc-23f553012e50",
+  "briefId": "d5f264d0-3356-418b-9f19-a71218d57558",
+  "title": "Fútbol amateur — la planilla que otros entrenadores cobran",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.7_hobby_invisible_DT",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "A",
+    "funnel_stage": "MOFU",
+    "niche": "entrenadores amateur de fútbol / DT de barrio / preparadores físicos",
+    "model_sale_type": "escalabilidad_tiempo",
+    "transition_text": "Por eso, lo que te acabo de mostrar, que podés convertir lo que sabés de fútbol en un ingreso extra mientras seguís dirigiendo, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 82,
+    "word_count": 265,
+    "punto_entrada_emocional": "orgullo reprimido del DT amateur que sabe que tiene un saber valioso pero nunca lo cobró",
+    "belief_change": {
+      "old_belief": "Lo que sé de fútbol es un hobby, no un negocio, yo nunca fui profesional",
+      "mechanism": "Convertir 10 jugadas tácticas filmadas en un PDF ilustrado con IA para vender a otros entrenadores amateur",
+      "new_belief": "Mi experiencia en el fútbol de barrio es un proyecto que puedo monetizar sin dejar de dirigir"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Mi experiencia de barrio tiene demanda invisible",
+        "installed_via": "Pivote desde la rutina del DT amateur hacia el mercado de otros entrenadores",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Hay una forma concreta de empaquetar lo que sé",
+        "installed_via": "Demo con 10 jugadas filmadas y PDF de diagramas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito haber sido jugador profesional",
+        "installed_via": "Derrumbe del mito 'hay que ser profesional para enseñar'",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Si dirigís un equipo amateur filtra al avatar exacto",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si dirigís un equipo de fútbol amateur, los sábados a la mañana dejás a tus hijos con tu mujer y te vas a la cancha del barrio. Cobrás 5 mil pesos por partido si cobrás. Pero hay algo que hacés los martes que vale mucho más de lo que te pagan.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Escena del martes de entrenamiento activa memoria del DT",
+        "emotional_lever": "reconocimiento_cotidiano",
+        "script_text": "Martes a las 7 de la tarde. Estás en la cancha de tierra del barrio, con 14 pibes de 11 años que te miran como si fueras Pep Guardiola. Dictás una jugada en el pizarrón. Los pibes la hacen el sábado. Gana el partido. Y a vos nadie te pagó por esa jugada.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Nombrar el saber del DT amateur que nadie valora",
+        "emotional_lever": "validacion_silenciada",
+        "script_text": "Esto nadie te lo va a decir. El DT del Racing de tu barrio sabe más de tácticas que el 80 por ciento de los técnicos con carnet. Porque aprende de jugar, no de manuales. Y ese saber se puede cobrar.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Invertir la creencia 'soy amateur entonces no vale'",
+        "emotional_lever": "reframe_identidad",
+        "script_text": "Los mejores DTs de Argentina no son los que salen en ESPN. Son los que dirigen equipos de barrio hace 20 años y saben cómo sacar 3 goles a un equipo que tiene 10. Ese conocimiento, empaquetado, lo compra cualquier entrenador amateur del país.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "segunda_persona",
+        "hypothesis": "Meterlo en la escena del partido activa identificación",
+        "emotional_lever": "inmersion",
+        "script_text": "Vos dirigís un equipo. Ganaste el torneo del barrio 3 veces. Los padres te dicen que el pibe aprendió más con vos que con el profesor de gimnasia del colegio. Y vos no cobrás ni para el combustible. Se puede cambiar.",
+        "timing_seconds": 11
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_3_beats",
+      "emotional_arc": "reconocimiento → revelacion → posibilidad → permiso",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "El DT amateur tiene un saber empaquetable",
+          "viewer_emotion_after": "curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y acá está lo que pocos ven. Hay miles de entrenadores amateur en Argentina, Colombia, México. Están arrancando con equipos de barrio, de escuelitas, de colegios. Y buscan a alguien que ya tenga la vuelta.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi barrio es mi ventaja",
+          "viewer_emotion_after": "revelacion_identidad",
+          "is_turning_point": true,
+          "script_text": "Pero vos no sos un DT amateur. Sos un técnico que aprendió en la cancha de tierra, que sacó campeones con pibes que ni botines tenían, que sabe cómo hacer jugar a 14 nenes que nunca vieron un video de táctica. Ese saber no está en los libros. Está en tu cabeza y en tu pizarrón. Y hay otro DT en Santa Fe o en Medellín que pagaría 17 dólares por tenerlo escrito.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Empaquetarlo es concreto y sencillo",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Entonces te muestro cómo avanzar. Un día del entrenamiento agarrás el celular. Filmás 10 jugadas de pizarrón con tu ayudante. Explicás cada una en 2 minutos. Le pasás los videos a la IA. Te devuelve un PDF de 38 páginas con diagramas de cancha dibujados, posiciones exactas y el paso a paso de cada jugada. Ese PDF se vende a 17 dólares por WhatsApp a entrenadores de otras ciudades. Ese es el negocio.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito carnet ni haber sido profesional",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque me vas a decir que vos no sos profesional, que nunca jugaste en primera. Y acá está el punto. El DT que busca tu PDF tampoco. Dirige el equipo del colegio o un equipo de la liga del barrio. Y lo último que quiere es un libro de la ATFA. Quiere lo que funciona en la cancha de verdad. Lo tuyo.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "reconocimiento_mercado",
+        "phrase": "Hay miles de entrenadores amateur"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion_experiencia",
+        "phrase": "sacó campeones con pibes que ni botines tenían"
+      },
+      {
+        "location": "quiebre",
+        "technique": "prueba_demanda",
+        "phrase": "otro DT en Santa Fe o en Medellín que pagaría 17 dólares"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "agarrás el celular. Filmás 10 jugadas"
+      },
+      {
+        "location": "demolicion",
+        "technique": "reframe",
+        "phrase": "El DT que busca tu PDF tampoco"
+      },
+      {
+        "location": "demolicion",
+        "technique": "permiso",
+        "phrase": "Quiere lo que funciona en la cancha de verdad"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 4,
+        "ingredient_name": "Historia personal confesional"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripcion situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 93,
+        "ingredient_name": "Diversidad geografica"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:38:27.705Z"
+}

@@ -179,20 +179,20 @@ Atacan desde la narrativa. El viewer se engancha con la historia, no con la lóg
 - "Estás sentado en una pira de dinero" como frase — quemada
 
 ### Ángulos frescos (priorizar):
-- 1.7 (0 guiones — sin explorar)
 - 2.2 (0 guiones — sin explorar)
 - 2.4 (0 guiones — sin explorar)
 - 2.6 (0 guiones — sin explorar)
-- 3.1 (0 guiones — sin explorar)
-- 3.3 (0 guiones — sin explorar)
 - 3.4 (0 guiones — sin explorar)
 - 3.5 (0 guiones — sin explorar)
-- 1.1_reinvencion_saber (1 guion — poco explorado)
-- 4.6_producto_especifico_revelado (1 guion — poco explorado)
-- 5.3_analogia_cotidiana (1 guion — poco explorado)
-- 2.5_mercado_obligado (1 guion — poco explorado)
-- 1.6_autodidacta_amateur (1 guion — poco explorado)
-- 1.5_docente_creativa (1 guion — poco explorado)
+- 4.1 (0 guiones — sin explorar)
+- 4.2 (0 guiones — sin explorar)
+- 4.4 (0 guiones — sin explorar)
+- 5.4_analogia_jubilado_biblioteca (1 guion — poco explorado)
+- 5.3_analogia_musica_amateur (1 guion — poco explorado)
+- 2.1_comunidad_sin_proveedor_fitness (1 guion — poco explorado)
+- 4.3_antes_despues_IA_admin (1 guion — poco explorado)
+- 2.3_demanda_invisible_crianza (1 guion — poco explorado)
+- 4.6_producto_revelado_mecanica (1 guion — poco explorado)
 
 ---
 

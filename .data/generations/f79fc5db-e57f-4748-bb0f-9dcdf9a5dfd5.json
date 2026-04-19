@@ -1,0 +1,172 @@
+{
+  "id": "f79fc5db-e57f-4748-bb0f-9dcdf9a5dfd5",
+  "briefId": "e2aae108-6307-405f-8ce8-ac0acd40085e",
+  "title": "Tutorial dejar tu trabajo (adaptación Rafa Miranda)",
+  "script": {
+    "angle_family": "1",
+    "angle_specific": "1.2",
+    "body_type": "tutorial-promesa",
+    "segment": "C2",
+    "funnel_stage": "TOFU",
+    "niche": "negocios digitales con IA / salir del laburo",
+    "model_sale_type": "5",
+    "transition_text": "",
+    "total_duration_seconds": 88,
+    "word_count": 265,
+    "visual_format": "talking head pieza única, sin cortes, autoridad directa",
+    "belief_change": {
+      "old_belief": "Para tener un negocio propio tenés que inventar algo nuevo y arriesgar todo",
+      "mechanism": "Hoy con IA podés copiar modelos ya probados, te capacitan desde cero y lo hacés en tu tiempo libre sin renunciar mañana",
+      "new_belief": "Puedo escalar a mi propio negocio aplicando un sistema que ya funciona, sin tirar abajo mi vida actual"
+    },
+    "micro_beliefs": [
+      "El sueldo en relación de dependencia tiene techo, sí o sí",
+      "No hace falta inventar nada nuevo: copiar modelos probados es válido y rápido",
+      "Con IA, lo que antes era inalcanzable hoy es accesible para cualquiera",
+      "Empezar a la par del trabajo actual es el camino más realista"
+    ],
+    "micro_yes_chain": [
+      {
+        "location": "lead",
+        "phrase": "salir de ahí, dejar tu trabajo siendo joven"
+      },
+      {
+        "location": "lead",
+        "phrase": "Si todavía lo necesitás, seguí"
+      },
+      {
+        "location": "body",
+        "phrase": "todos sabemos que un sueldo de 8 horas"
+      },
+      {
+        "location": "body",
+        "phrase": "ya existen, que ya funcionan, que ya están comprobados"
+      },
+      {
+        "location": "body",
+        "phrase": "Sin conocimientos, sin experiencia, sin habilidades"
+      },
+      {
+        "location": "pre-cta",
+        "phrase": "Vos también lo podés hacer"
+      }
+    ],
+    "ingredients_used": [
+      "#71 Proceso de N Pasos",
+      "#85 Testimonio Diverso",
+      "#89 Prueba por Volumen",
+      "#103 Reducción al Absurdo",
+      "#117 Escasez"
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "timing_seconds": 8,
+        "script_text": "Tutorial de cómo dejar tu trabajo, ser independiente y comprarte el auto que siempre quisiste.\n"
+      },
+      {
+        "variant_number": 2,
+        "timing_seconds": 8,
+        "script_text": "Si tenés más de 35 años y estás harta de no ganar lo que mereces, esto es un tutorial. Te voy a mostrar paso a paso cómo dejar de depender de un solo ingreso."
+      },
+      {
+        "variant_number": 3,
+        "timing_seconds": 10,
+        "script_text": "Domingo a la noche. Estás preparando la ropa para el lunes y en el finde no descansaste nada. Si hace años que te pasa, quedate. Esto es un tutorial de cómo empezar a generar ingresos sin renunciar a tu trabajo actual."
+      },
+      {
+        "variant_number": 4,
+        "timing_seconds": 8,
+        "script_text": "Tutorial de cómo dejar de depender de un sueldo para empezar a tener tu propio negocio, ser independiente y vivir como se te dé la gana."
+      },
+      {
+        "variant_number": 5,
+        "timing_seconds": 9,
+        "script_text": "¿Trabajás 8 horas por día? Sí. ¿Eso te dio la vida que querías? Seguro que no. Este es el tutorial para cambiar esa respuesta."
+      }
+    ],
+    "development": {
+      "sections": [
+        {
+          "section_name": "Desarme + filtro",
+          "timing_seconds": 12,
+          "persuasion_function": "identificacion",
+          "micro_belief": "Empezar a la par del trabajo actual es el camino más realista",
+          "script_text": "Prestá mucha atención porque la única manera de fallar es no seguir los pasos al pie de la letra. Y no. No hace falta que renuncies mañana. Esto lo podés hacer perfectamente a la par con tu trabajo, en tu tiempo libre. Con una o dos horas por día alcanza."
+        },
+        {
+          "section_name": "Enemigo común",
+          "timing_seconds": 12,
+          "persuasion_function": "quiebre",
+          "micro_belief": "El sueldo en relación de dependencia tiene techo, sí o sí, y tenés que avanzar para salir de ahí",
+          "script_text": "Siendo realistas, a esta altura todos sabemos que un sueldo en relación de dependencia nunca te va a dar nunca te va a dar el nivel de vida que vos querés tener.\n"
+        },
+        {
+          "section_name": "Reframe + filtro de barreras",
+          "timing_seconds": 18,
+          "persuasion_function": "mecanismo",
+          "micro_belief": "No hace falta inventar ideas nuevas: copiar negocios probados es válido y rápido",
+          "script_text": "Pero la buena noticia es que hacer negocios hoy en 2026 no quiere decir inventar un nuevo modelo de negocio desde cero. Hoy te podés apalancar de modelos que ya existen, que ya funcionan, que ya están comprobados, que si los aplicás te permiten generar tus propios ingresos. Suponiendo que no sabés por dónde empezar, tenés poco tiempo, y pensás que no sos bueno con la tecnología. Hay un modelo que se llama Productos digitales con IA, donde la IA hace el trabajo pesado por vos."
+        },
+        {
+          "section_name": "Mecanismo concreto + escalera",
+          "timing_seconds": 18,
+          "persuasion_function": "demolicion",
+          "micro_belief": "Con IA, lo que antes era inalcanzable hoy es accesible para cualquiera",
+          "script_text": "Lo que vos ya sabés tu experiencia, lo que aprendiste laburando se convierte en un producto que se vende solo. Una guía, un curso, una plantilla. La armás una vez, la subís, y se vende sola, sin stock, sin envíos, sin que tengas que estar ahí. No te vas a hacer millonario de un día para el otro, pero con vender 2 o 3 al día ya estás ganando 50, 60 dólares extra por dia  \"¿Y si no se por dónde empezar?\"Le preguntás a la IA. Te dice qué se vende, y qué busca la gente."
+        },
+        {
+          "section_name": "Autoridad — premios",
+          "timing_seconds": 12,
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto lo dice alguien que ya lo hizo, no un teórico",
+          "script_text": "Llevo 5 años vendiendo productos digitales. Y te lo digo en serio: nunca vi una oportunidad como la de hoy con la IA. Gané premios que de chico soñaba, como el Two Comma Club — un premio que te dan por vender un millón de dólares en productos digitales. Cumplí metas que de chico parecían imposibles. Pero lo más loco no es eso. Lo más loco es que hoy trabajo en mi tiempo libre. Mi tiempo ocupado es ir al gym, ver a mis amigos, estar con mi familia. Y en los huecos, trabajo. Vos también lo podés hacer lo mismo. Podrías empezar haciendo tus primeros dolares al mes e ir escalando, con los productos digitales no tenés techo."
+        },
+        {
+          "section_name": "Misterio + CTA",
+          "timing_seconds": 8,
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Vale la pena pedir la info por DM",
+          "script_text": "Muchos me preguntan cuál es el sistema específico que uso. Pero eso no lo puedo decir por acá. "
+        }
+      ]
+    },
+    "offer_bridge": {
+      "product_type": "webinar_gratis",
+      "script_text": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis."
+    },
+    "cta_blocks": [
+      {
+        "channel": "Instagram Orgánico",
+        "channel_label": "Instagram",
+        "variant": "C",
+        "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      },
+      {
+        "channel": "Clase Gratuita",
+        "channel_label": "Webinar",
+        "variant": "C",
+        "text": "En 2 horas te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      },
+      {
+        "channel": "Taller $5",
+        "channel_label": "Taller",
+        "variant": "A",
+        "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      }
+    ]
+  },
+  "createdAt": "2026-04-18T13:13:37.188Z",
+  "status": "recorded",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  }
+}

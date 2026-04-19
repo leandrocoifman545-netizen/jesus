@@ -117,64 +117,63 @@ Max 1 uso cada una por batch de 10:
 
 ## §5 COBERTURA ACTUAL
 
-> Auto-generado por update-coverage.mjs — 2026-04-17
+> Auto-generado por update-coverage.mjs — 2026-04-19
 > Ventana: últimas 30 generaciones
 
 ### Hooks sub-usados (fórmulas con <3 usos en últimos 30 guiones)
-- F1 (2 usos)
+- F1 (0 usos)
 - F2 (0 usos)
 - F3 (0 usos)
 - F4 (0 usos)
 - F5 (0 usos)
 - F6 (0 usos)
-- F7 (1 usos)
-- F8 (1 usos)
+- F7 (0 usos)
+- F8 (0 usos)
 - F9 (0 usos)
 - F10 (0 usos)
-- F11 (1 usos)
+- F11 (0 usos)
 - F12 (0 usos)
 - F13 (0 usos)
 - F14 (0 usos)
-- F15 (1 usos)
-- F16 (2 usos)
-- F17 (1 usos)
+- F15 (0 usos)
+- F16 (0 usos)
+- F17 (0 usos)
 - F18 (0 usos)
 - F19 (0 usos)
-- F20 (1 usos)
+- F20 (0 usos)
 
 ### Vehículos sub-usados (<2 usos en últimos 30)
-- 1. Demolición de mito (0 usos)
-- 3. Demo/Proceso (1 usos)
+- 5. Un día en la vida (1 usos)
 - 6. Pregunta y respuesta (1 usos)
+- 7. Analogía extendida (1 usos)
+- 9. Demolición alternativas ⭐ (1 usos)
+- 10. Q&A conversacional ⭐ (0 usos)
+- 11. Tier-list/Rating (1 usos)
 - 12. Trailer de recurso (0 usos)
-- 13. Quiz de comparación (0 usos)
+- 13. Quiz de comparación (1 usos)
 
 ### Ingredientes nunca usados o sub-usados
-**1 uso:** G#91, L#128, D#54, F#75, G#94, D#51, E#67, G#90, C#44, B#29, B#27, E#63, E#65, G#89, H#100
-**Top usados (rotar):** B#23×8, C#47×7, D#49×7, H#101×7, F#79×5, G#88×4, E#62×4, F#80×4, E#69×4, F#76×3
+**1 uso:** E#63, K#126, B#28, F#74, A#7, G#93, D#53, H#99, K#125, C#43, F#76, A#8, C#12, F#47, G#23, I#31, B#3, C#7, B#29, #71 Proceso de N Pasos, #85 Testimonio Diverso, #89 Prueba por Volumen, #103 Reducción al Absurdo, #117 Escasez
+**Top usados (rotar):** G#88×14, F#82×12, D#49×9, B#23×8, F#79×7, E#67×5, F#71×5, B#31×5, C#47×5, F#75×4
 
 ### Ventas del modelo sub-usadas
-- cementerio_modelos (1 usos)
-- eliminacion_barreras (1 usos)
-- lean_anti_riesgo (1 usos)
+- cementerio_modelos (0 usos)
+- ventana_oportunidad_ia (0 usos)
+- matematica_simple (0 usos)
+- prueba_diversidad (0 usos)
 
 ### Ritmos sub-usados (R1-R7, <2 usos)
 - R1 (0 usos)
-- R2 (1 usos)
+- R2 (0 usos)
 - R3 (0 usos)
 - R4 (0 usos)
-- R5 (0 usos)
-- R6 (0 usos)
+- R5 (1 usos)
+- R6 (1 usos)
 - R7 (0 usos)
 
 ### Gaps detectados
-- ⚠️ Familia "4. Mecanismo y Proceso" tiene solo 2 guiones
-- ❌ Body type "1. Demolición de mito" tiene 0 guiones
-- ⚠️ Body type "3. Demo/Proceso" tiene solo 1 guion(es)
-- ⚠️ Body type "6. Pregunta y respuesta" tiene solo 1 guion(es)
-- ❌ Body type "12. Trailer de recurso" tiene 0 guiones
-- ❌ Body type "13. Quiz de comparación" tiene 0 guiones
-- ⚠️ Segmento "D" tiene solo 1 guiones
+- ⚠️ Body type "12. Trailer de recurso" tiene solo 1 guion(es)
+- ⚠️ Body type "13. Quiz de comparación" tiene solo 1 guion(es)
 ---
 
 ## CHECKLIST DE DIVERSIDAD (correr ANTES de aprobar batch)

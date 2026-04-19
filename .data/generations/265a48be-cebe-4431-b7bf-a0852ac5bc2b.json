@@ -1,0 +1,279 @@
+{
+  "id": "265a48be-cebe-4431-b7bf-a0852ac5bc2b",
+  "briefId": "b9514ca1-b327-492e-ab5f-c3006078a3be",
+  "title": "Si hacés manualidades, seguro ya te pasó — el regateo en la feria",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.8_feria_regateo_precio",
+    "body_type": "contraste_emocional",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "manualidades (amplio — paraguas winner #121)",
+    "model_sale_type": "contraste_fisico",
+    "transition_text": "Por eso esto no es solo para velas. Todo lo que hacés con las manos se puede vender sin ferias. Te explico cómo.",
+    "total_duration_seconds": 85,
+    "word_count": 245,
+    "punto_entrada_emocional": "Bronca cansada de tener que defender el precio cada vez que alguien agarra una pieza en la feria",
+    "belief_change": {
+      "old_belief": "Tengo que bajar el precio o regatear para vender en la feria, porque si no la gente se va",
+      "mechanism": "Online el que compra ya leyó el precio y decidió que vale — no hay pelea de precio, no hay 'qué caro', no hay 'eso lo hago yo'",
+      "new_belief": "Lo que sé hacer se puede vender sin regateo, porque el que compra online ya decidió"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto me pasa todos los domingos",
+        "installed_via": "escena literal regateo",
+        "persuasion_function": "identificacion",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "Las cuentas no me dan aunque yo lo sé",
+        "installed_via": "dolor matematico (material + tiempo)",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "Lo que sé ya es un curso",
+        "installed_via": "lista concreta de saberes",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Online el que paga ya decidió",
+        "installed_via": "contraste feria vs PDF",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "No tengo que entender de tecnología",
+        "installed_via": "descripcion de las que ya venden",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Ya hay mujeres como yo haciendo esto",
+        "installed_via": "prueba verificable Hotmart",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Reconocimiento inmediato de la escena del regateo en la feria",
+        "emotional_lever": "identificación + bronca",
+        "script_text": "Si hacés manualidades, seguro ya te pasó. Alguien agarra una pieza tuya. Pregunta el precio. Se le pone cara de 'qué caro'. Se va.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "Pregunta retorica + cuenta matematica que no cierra",
+        "emotional_lever": "auto-reconocimiento del patrón",
+        "script_text": "¿Cuántas veces bajaste el precio en la feria para no irte sin vender? Y después, a la noche, sacás las cuentas y no te da.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "anti_hype",
+        "hypothesis": "Anti-hype seguido de promesa realista (patron #46)",
+        "emotional_lever": "honestidad radical + esperanza",
+        "script_text": "Mirá, te voy a ser honesta. Vendiendo manualidades en la feria no vas a salir adelante. Pero lo que sabés hacer se puede vender sin que nadie te regatee.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "future_pacing_sensorial",
+        "hypothesis": "Imaginar un lugar donde no existe el regateo",
+        "emotional_lever": "deseo de alivio",
+        "script_text": "Imaginate que vendés tus manualidades y nadie te dice 'qué caro'. Nadie te dice 'eso lo hago yo'. Nadie te regatea. Existe ese lugar.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "actuacion_dialogo",
+        "hypothesis": "Dialogo actuado + auto-confrontacion con la propia concesion",
+        "emotional_lever": "bronca con uno mismo",
+        "script_text": "—Qué lindo, ¿cuánto sale? —Cuarenta lucas. —Uh, ¿no me hacés por treinta? —Y... bueno, dale. Eso que acabás de decir, 'bueno, dale', es el problema.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "Reconocimiento del dolor cronico (bajas el precio aunque no te da) -> revelacion del mecanismo (tu saber ya es un curso, online no hay regateo) -> demolicion de barrera (no entendes de tecnologia y eso esta bien) -> prueba verificable (Hotmart) -> contraste de modelo (feria domingo vs PDF sin estar)",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Esto que me pasa es un patron",
+          "viewer_emotion_after": "Reconocimiento (no soy la unica)",
+          "is_turning_point": false,
+          "script_text": "Mirá, lo que pasa en las ferias es siempre igual.",
+          "timing_seconds": 4
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Bajo el precio aunque se que las cuentas no me dan",
+          "viewer_emotion_after": "Bronca consigo misma por el patron",
+          "is_turning_point": true,
+          "script_text": "Porque vos sabés el tiempo que te lleva una pieza —tres horas, seis, diez, según qué sea. Sabés cuánto sale el material. Sabés que si cobrás lo que vale, te queda apenas un rato de tu vida. Y aún así, cuando alguien te regatea, bajás el precio. Porque si no, no vendés.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Lo que sé ya es curso; online el que compra ya decidió",
+          "viewer_emotion_after": "Alivio + curiosidad",
+          "is_turning_point": false,
+          "script_text": "Pero todo lo que sabés de hacer velas ya es un curso. Las ceras que aguantan el calor. Los pabilos que no tiran humo. Los 8 aromas que la gente vuelve a pedir. Los errores que cometiste los primeros meses. Le dictás todo a la IA en 5 audios —paso a paso, sin saber nada de tecnología. Arma un PDF de 28 páginas con fotos y listas de compras. Nueve dólares. El que lo paga ya decidió. Literalmente no te regatea.",
+          "timing_seconds": 26
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No sos experta ni entendes de herramientas — no hace falta",
+          "viewer_emotion_after": "Permiso (puedo yo)",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde cambia: no hace falta que seas experta en marketing. No hace falta que entiendas de herramientas. Las que venden esto online son mujeres que un día se cansaron de cargar el auto un domingo entero para vender 5 piezas. Nada más.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Gente como yo ya lo hace; lo puedo verificar",
+          "viewer_emotion_after": "Validacion (es real)",
+          "is_turning_point": false,
+          "script_text": "Entonces buscá \"curso de velas\" o \"guía de jabones\" en Hotmart. Fijate quién vende. La mayoría no son químicas ni artistas. Son mujeres que aprendieron y lo contaron.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Contraste feria vs digital me conviene",
+          "viewer_emotion_after": "Deseo del modelo digital",
+          "is_turning_point": false,
+          "script_text": "Por eso una feria es un domingo entero cargando, armando, sonriendo al que te regatea. Un PDF es un audio, es la IA, y se vende sin que estés ahí.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "quiebre",
+        "technique": "identificacion_situacional",
+        "phrase": "Vos sabés el tiempo que te lleva una pieza"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion_dolor",
+        "phrase": "cuando alguien te regatea, bajás el precio"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reconocimiento_patron",
+        "phrase": "Porque si no, no vendés"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "permiso",
+        "phrase": "todo lo que sabés de hacer velas ya es un curso"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "cierre_decisivo",
+        "phrase": "El que lo paga ya decidió"
+      },
+      {
+        "location": "demolicion",
+        "technique": "identificacion_con_otras",
+        "phrase": "son mujeres que un día se cansaron"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion",
+        "phrase": "buscá \"curso de velas\" o \"guía de jabones\" en Hotmart"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripción Situacional"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por Identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste Emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinición del Juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación Extrema"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Prueba Verificable"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "B"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-17T23:21:22.815Z",
+  "status": "confirmed"
+}

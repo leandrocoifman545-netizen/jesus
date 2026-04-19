@@ -1,0 +1,255 @@
+{
+  "id": "c30cbd6d-93e4-438c-bcce-98c409e41682",
+  "briefId": "0e4f7f67-4e80-411a-bae0-17607c4f18e5",
+  "title": "Nutricionista del pueblo — El techo no es tu título, es vender tu hora",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "t11_geografia_limitante",
+    "body_type": "demolicion_mito",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "salud / nutrición / fitness",
+    "model_sale_type": "cementerio_modelos",
+    "rhythm_template": "R4",
+    "emotional_arc": "pregunta_tras_pregunta",
+    "transition_text": "Si querés ver los 3 pasos exactos, tocá el botón de acá abajo.",
+    "total_duration_seconds": 86,
+    "word_count": 234,
+    "punto_entrada_emocional": "cobrar 35 dólares una consulta después de 20 años de estudio, en un pueblo chico donde ya atendiste a medio pueblo",
+    "winner_template_used": "winner-34 (cotilla cultural no usada) + R4 recorrido inverso",
+    "belief_change": {
+      "old_belief": "Mi título de nutricionista me habilita para atender pacientes — el techo es cuántos pacientes caben en mi pueblo",
+      "mechanism": "Recorrido inverso: una nutricionista de pueblo factura $2,400/mes con un PDF de 42 páginas hecho con IA en una tarde usando los protocolos que ya daba de cero a cada paciente",
+      "new_belief": "Mi título me habilita para ENSEÑAR lo que sé. Una consulta cambia una persona, un PDF cambia doscientas — sin mudarme del pueblo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto que siento no es culpa mía — es el modelo",
+        "installed_via": "Puente: lista de síntomas (sábados abiertos, posts que nadie lee, esperar recomendaciones) valida que el problema es estructural, no falta de esfuerzo",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Una nutricionista con mi misma matrícula factura 10x sin atender más pacientes",
+        "installed_via": "Quiebre como resultado verificable: $2,400/mes con PDF de 42 páginas. Misma profesional, mismo conocimiento, distinto qué vende",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre (Resultado)"
+      },
+      {
+        "belief": "Existe un proceso concreto de 3 pasos con IA",
+        "installed_via": "Mecanismo: investigación con IA (5 min) → PDF con mis propios protocolos → anuncio de $5/día al WhatsApp",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo (Proceso)"
+      },
+      {
+        "belief": "El mito que me frena no es tech — es pensar que mi título es para atender, no para enseñar",
+        "installed_via": "Demolición del mito de identidad profesional: una consulta cambia una persona, un PDF cambia doscientas",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición (Mito)"
+      },
+      {
+        "belief": "La materia prima la tengo hace 20 años — solo le falta formato",
+        "installed_via": "Prueba del origen: lo que repito a cada paciente ya está en mi cabeza + verificable en Hotmart ($17-$97)",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba (Origen)"
+      },
+      {
+        "belief": "Producto digital es el único modelo sin techo de cliente, stock o tiempo",
+        "installed_via": "Cementerio de modelos: agencia, freelance, ecommerce, servicios — todos con techo. PDG con IA se crea una vez, se vende infinitas",
+        "persuasion_function": "venta_modelo",
+        "section_name": "Venta modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "F4 pregunta espejo clásica: 1ra persona del avatar C3 + filtro nicho + brecha de curiosidad (¿cómo crezco?)",
+        "emotional_lever": "techo geográfico del pueblo chico",
+        "script_text": "Soy nutricionista en un pueblo chico. Cobro 35 dólares la consulta y ya atendí a medio pueblo. ¿Cómo crezco si no queda más gente?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "F4 + aspiración §11: tiempo fuera de consultorio que también genere plata. Brecha sobre el 'cómo'",
+        "emotional_lever": "valor encerrado en la hora facturable",
+        "script_text": "Tengo 15 años de matrícula y cobro 40 dólares la hora. ¿Hay forma de que lo que sé genere plata cuando no estoy atendiendo?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "F4 + intento fallido §7: ya probó IA sola pero sin estructura. Brecha: el paso que falta",
+        "emotional_lever": "frustración con ChatGPT sin estructura",
+        "script_text": "Le pedí a ChatGPT que me arme un ebook de alimentación. Me dio 40 páginas. No sé qué hacer con eso. ¿Alguien me explica?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_espejo_cotilla",
+        "hypothesis": "F4 + F21 cotilla cultural (revista Para Ti recortada). Evoca objeto compartido del avatar 45+ y pivota a brecha",
+        "emotional_lever": "nostalgia + injusticia del saber no monetizado",
+        "script_text": "Tengo la misma cabeza que mi mamá tenía en esos cuadernos de recetas recortadas de Para Ti, multiplicada por 15 años de matrícula. ¿Por qué lo que sé no me saca del cobrar por hora?",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "F4 + dolor §6 verbatim comprador C3 ('cobro poco por algo que vale mucho'). Comparación concreta (plomero) que duele",
+        "emotional_lever": "indignación por cobro injusto vs oficio no profesional",
+        "script_text": "Hace 20 años que estudio nutrición. Cobro 35 dólares una consulta. El plomero del pueblo cobra más. ¿Qué estoy haciendo mal?",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "pregunta_tras_pregunta",
+      "turning_point_beat": "Quiebre (Resultado)",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "hacés lo que hace el 90%",
+          "viewer_emotion_after": "reconocimiento",
+          "is_turning_point": false,
+          "timing_seconds": 7,
+          "script_text": "Nada. Pero hacés lo que hace el 90%: sábados abiertos, posts en Instagram que nadie lee, esperar que alguien te recomiende. Eso es vender tu hora — ingresos que se acaban apenas parás."
+        },
+        {
+          "section_name": "Quiebre (Resultado)",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Una nutricionista con tu misma matrícula factura 2,400 por mes",
+          "viewer_emotion_after": "revelación",
+          "is_turning_point": true,
+          "timing_seconds": 13,
+          "script_text": "Acá está el tema. Una nutricionista de un pueblo de 3 mil habitantes, con tu misma matrícula, literalmente factura 2,400 dólares por mes con un PDF de 42 páginas. Lo que cambió fue qué vende. ¿Me seguís?"
+        },
+        {
+          "section_name": "Mecanismo (Proceso)",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Son 3 cosas con IA",
+          "viewer_emotion_after": "claridad",
+          "is_turning_point": false,
+          "timing_seconds": 17,
+          "script_text": "Porque hizo 3 cosas con IA. Le pidió a la IA que le diga qué buscan las mujeres de 40 a 55 que quieren bajar sin dieta — en 5 minutos tuvo los 10 temas más buscados del mes. La IA le armó el producto digital con sus propios protocolos, los que ella ya daba hace años. Y 5 dólares por día de anuncios le traen mensajes al WhatsApp."
+        },
+        {
+          "section_name": "Demolición (Mito)",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Tu título te habilita para enseñar, no solo para atender",
+          "viewer_emotion_after": "reencuadre",
+          "is_turning_point": false,
+          "timing_seconds": 12,
+          "script_text": "Y lo peor es que el mito que te frena no es \"no sé de tecnología\". Es creer que tu título te habilita solo para ATENDER. Una consulta cambia una persona. Un PDF cambia doscientas."
+        },
+        {
+          "section_name": "Prueba (Origen)",
+          "persuasion_function": "prueba",
+          "micro_belief": "La materia prima la tenés hace 20 años",
+          "viewer_emotion_after": "convicción",
+          "is_turning_point": false,
+          "timing_seconds": 14,
+          "script_text": "Porque la materia prima la tenés hace 20 años. Lo que le repetís a cada paciente ya está archivado en tu cabeza. Entrá a Hotmart y buscá alimentación: vas a ver PDFs de nutricionistas vendiendo entre 17 y 97 dólares."
+        },
+        {
+          "section_name": "Venta modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Producto digital es el único sin techo de cliente, stock o tiempo",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "timing_seconds": 11,
+          "script_text": "Por eso yo probé 6 modelos de negocio. Agencia, freelance, ecommerce, servicios. Todos tienen techo: cliente, stock o tiempo. El producto digital con IA es el único que lo creás una sola vez y se vende infinitas."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "afirmacion",
+        "phrase": "hacés lo que hace el 90%"
+      },
+      {
+        "location": "puente",
+        "technique": "afirmacion",
+        "phrase": "esperar que alguien te recomiende"
+      },
+      {
+        "location": "quiebre",
+        "technique": "dato_anclado",
+        "phrase": "literalmente factura 2,400 dólares por mes"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "5 dólares por día de anuncios"
+      },
+      {
+        "location": "demolicion",
+        "technique": "afirmacion",
+        "phrase": "Una consulta cambia una persona"
+      },
+      {
+        "location": "prueba",
+        "technique": "afirmacion",
+        "phrase": "la materia prima la tenés hace 20 años"
+      },
+      {
+        "location": "prueba",
+        "technique": "dato_anclado",
+        "phrase": "entre 17 y 97 dólares"
+      }
+    ],
+    "ingredients_used": [
+      "B#24",
+      "D#48",
+      "F#71",
+      "G#85",
+      "L#129",
+      "C#38",
+      "H#95"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "C",
+        "layers": {
+          "oferta": "Armé una clase gratis de dos horas donde te muestro los 3 pasos exactos: cómo agarrar lo que ya sabés de tu profesión, cómo armar tu PDF con IA en una tarde, y cómo poner un anuncio de 5 dólares que te trae mensajes al WhatsApp de gente que te busca a vos.",
+          "orden_1": "Tocá el botón de acá abajo y anotate.",
+          "prueba": "Ya pasaron más de 17 mil personas. Profesionales que antes atendían 20 pacientes por mes y hoy venden 20 por día sin conocerlos.",
+          "riesgo_cero": "Es gratis. No te vendo nada de 500 dólares. Si no te sirve, no perdiste nada. Si te sirve, podés cerrar el mes sin angustia.",
+          "urgencia": "La clase es en vivo. Los cupos son limitados porque la doy yo. Si se llenan, no te deja registrarte.",
+          "cierre": "Lo único que tenés que hacer es tocar el botón. Te espero adentro."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Armé un taller de 3 días en vivo. Día 1: encontrás tu producto con IA usando lo que ya sabés. Día 2: la IA te arma el PDF con tus propios protocolos. Día 3: lo vendés por WhatsApp con un anuncio de 5 dólares. Salís con tu producto hecho y tu sistema funcionando.",
+          "orden_1": "Tocá el botón de acá abajo.",
+          "prueba": "Más de 17 mil personas pasaron. Profesionales de todas las áreas — nutrición, psicología, diseño, coaching.",
+          "riesgo_cero": "Cuesta 5 dólares. Menos que una pizza. Si no funciona, perdiste menos que un delivery. Si funciona, cambia cómo cerrás el mes.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana cobrando por hora.",
+          "cierre": "Tocá el botón. Son 5 dólares y 3 tardes. Te espero adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "A",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo agarrar lo que ya sabés de tu profesión y convertirlo en un PDF que se vende mientras atendés.",
+          "orden_1": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil profesionales. Nutricionistas, psicólogos, coaches.",
+          "riesgo_cero": "Es gratis. Si no te sirve no perdiste nada. Si te sirve, cambia cómo cobrás.",
+          "urgencia": "La clase es en vivo, conmigo. Cupos limitados.",
+          "cierre": "Comentá CLASE y entrá al link del perfil. Te espero adentro."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-17T15:02:21.694Z"
+}

@@ -1,0 +1,189 @@
+{
+  "id": "35530f24-0e74-4af3-ab80-819d8f96a9df",
+  "briefId": "0a7df9bc-7376-4480-9e43-c7df3e4a3905",
+  "title": "Si tenés un comercio a la calle y te abruman los impuestos",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.9_comercio_offline_sin_hook",
+    "body_type": "espejo_situacion",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "comercio offline / local a la calle",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Exactamente como la guía de ese rubro que te acabo de contar. Eso es lo que te voy a enseñar a hacer paso a paso.",
+    "total_duration_seconds": 82,
+    "word_count": 320,
+    "punto_entrada_emocional": "bronca cansada de trabajar en el local hace años y ver que la calle ya no da lo que daba",
+    "belief_change": {
+      "old_belief": "Si la venta presencial cayó, tengo que aguantar o cerrar. No hay otra forma.",
+      "mechanism": "Lo que sabés de tu rubro — después de 10, 20 años atrás del mostrador — es un producto digital que se vende sin stock ni local",
+      "new_belief": "La experiencia que tengo detrás del mostrador es más rentable que lo que vendo en el mostrador"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El bucle de impuestos-alquiler-luz es real y nadie lo nombra",
+        "installed_via": "lead situacional",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "No es que cerraste mal — es que el canal cambió",
+        "installed_via": "reframe en puente",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Lo que sé de mi rubro vale más que lo que vendo",
+        "installed_via": "quiebre identitario",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA empaqueta ese saber en una guía que se vende sola",
+        "installed_via": "mecanismo concreto",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Sin stock, sin alquiler, sin impuestos municipales",
+        "installed_via": "espejo inverso",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "situacion_especifica_textual",
+        "hypothesis": "Nombrar el bucle exacto (impuestos + alquiler + luz) activa reconocimiento instantáneo en el 32.9% de compradores reales con comercio offline",
+        "emotional_lever": "reconocimiento + bronca cansada",
+        "script_text": "Si tenés un comercio a la calle, seguro ya te pasó esto. Abrís a las 9. Entra un cliente en toda la mañana. A las 12 pagás la luz. A las 3 de la tarde te llegó la boleta de Ingresos Brutos. Y mientras tanto, atrás del mostrador, pensás: esto es un eterno bucle.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "cita_textual_compradora",
+        "hypothesis": "La frase exacta de una compradora real ('eterno bucle') es vocabulario interno del avatar",
+        "emotional_lever": "identificación",
+        "script_text": "Una compradora nuestra que tiene un comercio en Entre Ríos me escribió esta frase: tengo un local a la calle, me abruman los impuestos, es un eterno bucle. Si vos también estás en ese bucle, escuchá dos minutos. Te voy a explicar algo paso a paso que te puede ayudar.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "observacion_tendencia",
+        "hypothesis": "Nombrar el cambio macro (la calle dejó de dar) sin culpar al comerciante lo absuelve y abre a escuchar",
+        "emotional_lever": "alivio + curiosidad",
+        "script_text": "La venta a la calle cayó. No es que vos cerraste mal. No es que atendés mal. Es que el cliente que antes pasaba por tu puerta ahora pasa por su pantalla. La buena noticia es que ese mismo cliente te puede comprar algo que no ocupa lugar en tu local.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_incomoda",
+        "hypothesis": "Forzar el cálculo mental (años en el rubro) activa la toma de conciencia del expertise acumulado no monetizado",
+        "emotional_lever": "toma de conciencia",
+        "script_text": "¿Cuántos años hace que tenés tu comercio? ¿10? ¿15? ¿20? Todo lo que aprendiste detrás del mostrador — qué se vende, qué no, cómo atender al cliente difícil, cómo elegir proveedor — es más rentable que lo que vendés en el mostrador. Y te lo explico paso a paso.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "negacion_directa",
+        "hypothesis": "Desarmar las 3 salidas que el comerciante ya evaluó abre el espacio para una cuarta que no conocía",
+        "emotional_lever": "curiosidad",
+        "script_text": "Si tenés un comercio y la cosa viene floja, te van a decir tres cosas: bajá precios, poné Instagram, o cerrá y buscá trabajo. Hay una cuarta opción que nadie te dice. Y no requiere bajar un peso, ni subir una foto, ni cerrar el local.",
+        "timing_seconds": 12
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_5_beats",
+      "emotional_arc": "bucle_offline_reconocido → canal_cambio_no_culpa_tuya → expertise_acumulado_vale → mecanismo_guia_digital → espejo_inverso_sin_stock",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No es que cerraste mal, es que el canal cambió",
+          "viewer_emotion_after": "Esto no es mi culpa, es un cambio que puedo aprovechar",
+          "is_turning_point": false,
+          "script_text": "Y la cosa es así. Vos no hiciste nada mal. El cliente no desapareció, cambió de lugar. Antes entraba a tu local. Hoy busca en el celular antes de salir de la casa. Y cuando sale, ya sabe qué quiere y dónde ir.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Lo que sé de mi rubro vale más que lo que vendo",
+          "viewer_emotion_after": "Tengo algo adentro que no estoy cobrando",
+          "is_turning_point": true,
+          "script_text": "Y acá está el detalle que casi nadie te dice. Todo lo que aprendiste atrás del mostrador en 15 años no está en ningún libro. Cómo elegir un proveedor serio en Avellaneda, qué hacer con el stock que no rota, cómo atender al cliente que siempre regatea. Eso que para vos es obvio, para alguien que recién abre un local es un misterio que pagaría por resolver.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA empaqueta eso en una guía digital concreta",
+          "viewer_emotion_after": "Hay una forma concreta y sencilla de hacerlo",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial como herramienta. Le contás a la IA todo lo que sabés de tu rubro, paso a paso, como si le estuvieras explicando a un sobrino que quiere abrir un local. La IA te arma una guía de 30 páginas: cómo elegir el local, qué stock comprar primero, qué errores evitar el primer mes, qué proveedores buscar. La subís a Hotmart a 7 dólares. Y cada persona que está por abrir un comercio te la puede comprar.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Sin stock, sin alquiler, sin impuestos municipales",
+          "viewer_emotion_after": "Esto sale del bucle",
+          "is_turning_point": false,
+          "script_text": "Por eso este sistema sale del bucle. Sin stock que se venza. Sin alquiler que pagar. Sin impuestos municipales. Sin clima que te arruine el sábado. El mostrador sigue ahí. Pero al lado tenés algo que trabaja para vos las 24 horas, desde tu celular, mientras atendés a los clientes que sí entran.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "escena_reconocible",
+        "phrase": "esto es un eterno bucle"
+      },
+      {
+        "location": "puente",
+        "technique": "absolucion_del_error",
+        "phrase": "Vos no hiciste nada mal"
+      },
+      {
+        "location": "quiebre",
+        "technique": "saber_invisible_nombrado",
+        "phrase": "Eso que para vos es obvio"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_nombrado_con_numero",
+        "phrase": "una guía de 30 páginas"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "espejo_inverso",
+        "phrase": "Sin stock que se venza"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "descripcion_situacional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "redefinicion_del_juego"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "proceso_n_pasos"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 101,
+        "ingredient_name": "future_pacing_sensorial"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:26:03.770Z"
+}

@@ -1,0 +1,222 @@
+{
+  "id": "bddaf484-1bb7-41a7-9d73-ceeaa5ba3551",
+  "briefId": "841a7973-2451-4075-b54c-bf6bd8d01c70",
+  "title": "Mecánica casera — el manual del garage que se vende",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.6_producto_revelado_mecanica",
+    "body_type": "demo_proceso",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "mecánica de autos / motos / soldadura / carpintería casera (oficios con herramienta)",
+    "model_sale_type": "tiempo_vs_dinero",
+    "transition_text": "Por eso, lo que te acabo de mostrar, que lo que arreglás los sábados en el garage puede convertirse en un negocio digital, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 80,
+    "word_count": 265,
+    "punto_entrada_emocional": "descubrimiento de que lo que hacés por hobby tiene mercado real y concreto",
+    "belief_change": {
+      "old_belief": "Lo que arreglo los sábados es un hobby, no un proyecto, porque no tengo título de mecánico",
+      "mechanism": "Filmar un arreglo concreto en el garage y convertirlo en una guía digital ilustrada con IA",
+      "new_belief": "Mi experiencia en el garage es un proyecto real que me da independencia sin dejar mi trabajo"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Lo que hago tiene demanda real, no es solo hobby",
+        "installed_via": "Pivote identitario con datos concretos de búsquedas",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Empaquetarlo es un proceso específico y replicable",
+        "installed_via": "Demo visual con herramienta + celular + IA",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "YouTube gratuito no reemplaza mi paso a paso con errores reales",
+        "installed_via": "Contraste YouTube genérico vs manual específico",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      },
+      {
+        "belief": "Los compradores son otros aficionados, no profesionales",
+        "installed_via": "Definición del mercado comparando con Mercado Libre",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Si arreglás autos los sábados filtra al avatar exacto",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si los sábados arreglás tu auto o la moto de un vecino en el garage de tu casa, escuchame 60 segundos. Lo que hacés gratis para los pibes del barrio vale 19 dólares bien escrito. Y no necesitás ser mecánico recibido.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Escena del garage activa identificación inmediata",
+        "emotional_lever": "reconocimiento_cotidiano",
+        "script_text": "Sábado a la tarde. El auto del vecino no arranca. Te ponés debajo del capó 40 minutos. Arranca. El tipo te da una propina de 3 mil pesos y vuelve a su casa. Lo que acabás de hacer, hay 8 mil personas buscando cómo hacerlo en YouTube.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Poner palabras a lo que el mecánico amateur intuye",
+        "emotional_lever": "validacion_saber",
+        "script_text": "Te voy a decir algo que pensaste mil veces pero nadie te lo confirmó. Lo que vos sabés de mecánica a los 35 años sin título vale más que muchos videos de YouTube con 500 mil views. Y sí, se puede cobrar.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "inmersion_segunda_persona",
+        "hypothesis": "Segunda persona dentro de la escena del garage",
+        "emotional_lever": "inmersion",
+        "script_text": "Vos tenés una caja de herramientas que armaste en 15 años. Sabés cómo cambiar un filtro de aceite con los ojos cerrados. Sabés qué ruido hace una correa a punto de romperse. Eso que tenés en la cabeza es un manual que se vende a 19 dólares.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Forzar la cuenta mental de gente ayudada gratis",
+        "emotional_lever": "auto_revelacion",
+        "script_text": "¿A cuántas personas les arreglaste algo gratis este año? ¿5? ¿10? Cada una de esas veces alguien en Argentina buscó en Google cómo hacer lo mismo. Y pagó 19 dólares por una guía mal escrita.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "reconocimiento → revelacion → posibilidad → permiso → verificacion",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "El hobby de garage tiene mercado",
+          "viewer_emotion_after": "curiosidad",
+          "is_turning_point": false,
+          "script_text": "Y acá está el tema. La gente arregla menos las cosas que antes. Pero cada vez más gente mira YouTube para arreglarlas ella misma. Ese es el mercado. Y vos tenés lo que buscan.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Mi experiencia del garage es un proyecto real",
+          "viewer_emotion_after": "revelacion",
+          "is_turning_point": true,
+          "script_text": "Pero vos no sos un mecánico de fin de semana. Sos un tipo con 15 años de oficio práctico que sabe cómo cambiar una bobina de un Fiat Uno sin sacar medio motor. Ese saber específico, con marcas específicas, con fotos de herramientas reales, es lo que la gente busca y no encuentra. Google te devuelve videos genéricos. El tipo quiere el paso a paso de su auto.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Empaquetarlo es específico y concreto",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Y te muestro exactamente cómo avanzar. Un sábado mientras arreglás algo, apoyás el celular en un banquito. Filmás 20 minutos. Explicás en voz alta cada paso, qué herramienta usás, qué error evitar. Le pasás el video a la IA. Te arma una guía de 34 páginas con fotos, medidas exactas, errores comunes y lista de repuestos. Esa guía la vendés a 19 dólares a otros que tienen el mismo auto.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "YouTube gratuito no reemplaza mi paso a paso",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Porque vas a decir que en YouTube está todo gratis. Pero los videos son genéricos, están en inglés, o son de autos que acá no se venden. El tipo que quiere arreglar su Fiat Palio 2011 en Rosario no quiere un video de un Ford americano. Quiere tu paso a paso del Palio. Por eso paga.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay aficionados vendiéndolo",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Mercado Libre ahora y buscá manual PDF taller. Vas a encontrar manuales de 2000 pesos, de 3500, de 5000. La mitad los hace gente que no tiene un taller profesional. Son tipos del garage como vos. Pero lo empaquetaron.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "validacion_tendencia",
+        "phrase": "cada vez más gente mira YouTube para arreglarlas ella misma"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reconocimiento_valor",
+        "phrase": "15 años de oficio práctico"
+      },
+      {
+        "location": "quiebre",
+        "technique": "diferenciacion",
+        "phrase": "El tipo quiere el paso a paso de su auto"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "apoyás el celular en un banquito"
+      },
+      {
+        "location": "demolicion",
+        "technique": "especificidad",
+        "phrase": "su Fiat Palio 2011 en Rosario"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion",
+        "phrase": "Entrá a Mercado Libre ahora y buscá manual PDF taller"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 7,
+        "ingredient_name": "Situacion especifica"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripcion situacional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 71,
+        "ingredient_name": "Proceso N pasos"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:40:04.229Z"
+}

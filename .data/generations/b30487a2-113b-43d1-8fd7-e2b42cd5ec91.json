@@ -1,0 +1,242 @@
+{
+  "id": "b30487a2-113b-43d1-8fd7-e2b42cd5ec91",
+  "briefId": "977ddcd3-bc07-49ad-8dd3-547aa66fb336",
+  "title": "Peluqueras — dejar de depender de la silla",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.3_dependencia_presencial_silla",
+    "body_type": "contraste_emocional",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "peluqueras / estilistas / barberos / coloristas (amplio)",
+    "model_sale_type": "escalabilidad_tiempo_dinero",
+    "transition_text": "Por eso, lo que te acabo de contar, que podés dejar de cobrar por hora en el salón y empezar a hacer plata desde tu casa sin descuidar a tus hijos, es exactamente lo que te voy a enseñar esta semana.",
+    "total_duration_seconds": 82,
+    "word_count": 270,
+    "punto_entrada_emocional": "alivio mezclado con urgencia de saber que hay una salida de la silla todos los días",
+    "belief_change": {
+      "old_belief": "Para ganar más en peluquería tengo que atender más clientas, descuidar a mis hijos, y trabajar más horas",
+      "mechanism": "Empaquetar la técnica de color/corte en una guía digital ilustrada con IA y venderla por WhatsApp",
+      "new_belief": "Mi conocimiento de peluquería genera ingresos desde mi casa sin sacarme tiempo con mis hijos"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "La silla no es el único camino",
+        "installed_via": "Contraste emocional entre peluquera del salón y peluquera que vende su guía",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Hay una forma concreta de empaquetar la técnica con IA",
+        "installed_via": "Demo específica con audios de WhatsApp y guía de 24 páginas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "Mis colegas son el mercado, no la competencia",
+        "installed_via": "Reframe del mercado hacia otras peluqueras que quieren aprender",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      },
+      {
+        "belief": "Ya hay estilistas ganando desde su casa",
+        "installed_via": "Verificación en Instagram con términos específicos",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "hipernicho_winner121",
+        "hypothesis": "Arrancar con 'Si sos peluquera' filtra al avatar exacto y genera identificación inmediata",
+        "emotional_lever": "reconocimiento_identitario",
+        "script_text": "Si sos peluquera y tenés hijos, esto te va a doler un poco. Cada color balayage que hacés, cada corte a tijera, cada retoque de raíz. La clienta se va y vos te quedás con la plata del servicio. Nada más. Y el tiempo con tus hijos no vuelve.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "situacion_especifica",
+        "hypothesis": "Pintar una escena cotidiana del salón genera identificación instantánea",
+        "emotional_lever": "reconocimiento_cotidiano",
+        "script_text": "Si sos peluquera y mamá, pensá esto. Cada clienta que atendés es una hora menos con tus hijos. Y cuando la clienta se va, la hora también. La plata queda, el tiempo no vuelve más",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "desculpabilizacion",
+        "hypothesis": "Quitarle culpa a la peluquera por no haberlo visto antes",
+        "emotional_lever": "alivio",
+        "script_text": "Te dijeron que para ganar más tenés que cortar más. Mentira. Las peluqueras que están cobrando mejor cortan menos y no es porque cobran mas caro.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "segunda_persona",
+        "hypothesis": "Segunda persona directa coloca al avatar dentro de la escena",
+        "emotional_lever": "inmersion_directa",
+        "script_text": "Te dijeron que para ganar más tenés que cortar más rápido, cobrar más caro o abrir tu local. Las tres están mal. Y hay una cuarta",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Poner palabras al agotamiento físico que nadie nombra",
+        "emotional_lever": "validacion_dolor_silenciado",
+        "script_text": "Mirá tus manos un segundo. Son la razón por la que cobrás lo que cobrás. Y también son la razón por la que no cobrás más.",
+        "timing_seconds": 11
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "agotamiento → revelacion → posibilidad_concreta → permiso → validacion",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Mi técnica es un activo, no una tarea",
+          "viewer_emotion_after": "esperanza",
+          "is_turning_point": false,
+          "script_text": "Y acá está lo que nadie te cuenta. Toda peluquera que hace más de 5 años que corta tiene algo que otras están buscando. Fórmulas, atajos, cómo salvar un color mal hecho, cómo atender a la clienta difícil.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "La silla no es el único camino",
+          "viewer_emotion_after": "revelacion",
+          "is_turning_point": true,
+          "script_text": "Pero la peluquería tiene un techo invisible. No podés hacer más de 8 clientas por día sin descuidar a tus hijos. Podés subir el precio pero eso no depende de vos. Podés abrir tu local, pero te comés el alquiler. Mientras tanto hay otra peluquera en Córdoba que desde su casa vende su guía de color por Instagram y factura en un fin de semana lo que vos hacés en toda la semana del salón.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Empaquetar la técnica es un proceso concreto",
+          "viewer_emotion_after": "posibilidad",
+          "is_turning_point": false,
+          "script_text": "Y te explico cómo. Grabás 3 audios de WhatsApp. Uno explicando cómo hacés un balayage. Otro con las fórmulas de color que más usás. Otro con los errores que siempre pasan. Le pasás los audios a la IA. Te arma una guía de 24 páginas, con pasos numerados, tiempos de pausa y productos exactos. Esa guía se vende a 19 dólares a otras peluqueras. Ese es el negocio.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Mis colegas son el mercado, no la competencia",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "script_text": "Capaz pensás \"ya hay otras peluqueras haciendo esto\". Y sí, las hay. Pero el rubro es tan grande que no se satura nunca. Hay miles de chicas arrancando que no quieren un tutorial de YouTube. Quieren a alguien con experencia que les enseñe. Y esa podes ser vos.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay estilistas vendiéndolo desde su casa",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Instagram. Buscá guía de peluqueria. Fijate las cuentas que lo venden. La mayoría son peluqueras de barrio, mamás como vos. No son influencers de 500 mil seguidores. Tienen 3, 4 mil seguidores. Y venden todos los días sin salir de su casa.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección creíble",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. Podés seguir cortando en tu salón, pero ya no dependés de eso. Tenés $50, $60 dólares extra por día entrando desde tu casa, sin descuidar a los chicos. Es lo que ya sabés generando plata mientras estás con ellos.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "reconocimiento",
+        "phrase": "Toda peluquera que hace más de 5 años que corta tiene algo que otras están buscando"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion_dolor",
+        "phrase": "No podés hacer más de 8 clientas por día sin descuidar a tus hijos"
+      },
+      {
+        "location": "quiebre",
+        "technique": "prueba_contraste",
+        "phrase": "otra peluquera en Córdoba que desde su casa vende su guía de color por Instagram"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "Grabás 3 audios de WhatsApp"
+      },
+      {
+        "location": "demolicion",
+        "technique": "reframe",
+        "phrase": "Son tu mercado"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion",
+        "phrase": "Entrá a Instagram. Buscá guía balayage PDF"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 2,
+        "ingredient_name": "Pregunta retorica dolor"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 23,
+        "ingredient_name": "Descripcion situacional"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "Contraste emocional"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 51,
+        "ingredient_name": "Derrumbe del mito"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legitimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con numeros"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "E"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:34:50.649Z",
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "status": "recorded"
+}

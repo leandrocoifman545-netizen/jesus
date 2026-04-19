@@ -1,0 +1,261 @@
+{
+  "id": "c8f5c7fd-9b54-4f00-a0a7-82979434d0dd",
+  "briefId": "8b3478e2-a199-451f-ae99-6c405dd6955c",
+  "title": "Manicurista — Techo + demanda invisible (v3)",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "3.10_manicurista_techo_demanda_invisible",
+    "body_type": "comparacion_caminos",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "manicurista",
+    "model_sale_type": "tiempo_vs_dinero",
+    "transition_text": "Y lo mismo que sirve para uñas sirve para cualquier oficio que tengas en las manos. En la clase gratis de esta semana te muestro cómo se arma paso a paso.",
+    "total_duration_seconds": 84,
+    "word_count": 260,
+    "punto_entrada_emocional": "bronca de saber que hay demanda real esperando y vos estás con la mesa armada al pedo",
+    "belief_change": {
+      "old_belief": "Mi plata depende de cuántas manos me entren en el día y no hay forma de romper ese techo.",
+      "mechanism": "Hay chicas queriendo aprender tu oficio desde cero — les armás una guía con IA y la cobrás mientras seguís atendiendo.",
+      "new_belief": "Lo que ya sé lo puedo empaquetar una vez y cobrarlo sin depender de las manos del día."
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Tengo un techo matemático que no puedo romper laburando más horas",
+        "installed_via": "Cuenta explícita: 8 manos/día, 25% semana rota con 2 cancelaciones",
+        "persuasion_function": "quiebre",
+        "section_name": "hook"
+      },
+      {
+        "belief": "Hay una demanda real que ya existe y que nadie está atendiendo",
+        "installed_via": "Demanda invisible: la están googleando, la están preguntando, no saben por dónde empezar",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "El producto lo arma la IA, yo solo dicto lo que ya sé",
+        "installed_via": "Demo concreta con 4 items específicos del nicho",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Hay chicas ganando plata con esto ahora mismo",
+        "installed_via": "Prueba verificable en Hotmart con keywords específicas",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "Nombrar el techo matemático explícito activa la bronca de quien ya sacó esa cuenta en silencio",
+        "emotional_lever": "reconocimiento del techo invisible",
+        "script_text": "Hay una cosa que hacen las manicuristas que facturan en dólares y va en contra de todo lo que te enseñaron. Los números no mienten.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Descartar la respuesta obvia (subir precios) activa curiosidad por la respuesta real — open loop puro",
+        "emotional_lever": "curiosidad por el secreto de las que ganan bien",
+        "script_text": "Todas las manicuristas que hoy están ganando bien en Argentina empezaron a hacer una cosa. Y no es subir los precios.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Atacar la meta que toda manicurista cree querer (agenda llena) genera shock + urgencia silenciosa",
+        "emotional_lever": "shock de descubrir que lo que perseguís es una trampa",
+        "script_text": "Tener la agenda llena todo el mes es la trampa más grande en la que puede caer una manicurista. Y casi ninguna se da cuenta a tiempo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Atacar frontalmente la solución que toda manicurista persigue cada día (más clientas) genera el pattern-interrupt más violento — open loop puro en 12 palabras",
+        "emotional_lever": "shock + curiosidad inmediata por la contradicción",
+        "script_text": "La peor decisión que puede tomar hoy una manicurista es conseguir más clientas.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "tension_binaria_temporal",
+        "hypothesis": "Binario extremo (mejor/peor) + ventana de 24hs activa urgencia real sin prometer nada — el viewer siente que la decisión es suya",
+        "emotional_lever": "urgencia personal + tensión entre oportunidad y trampa",
+        "script_text": "Ser manicurista hoy puede ser lo mejor que te pasó para ganar dinero. O lo peor. Depende de una decisión que tomes en las próximas 24 horas.",
+        "timing_seconds": 11
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "techo_reconocido_a_demanda_invisible_revelada",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No es un problema de esfuerzo, es un problema de modelo",
+          "viewer_emotion_after": "reconocimiento: trabaja bien pero su plata tiene límite fijo",
+          "is_turning_point": false,
+          "script_text": "Y no es que no sepas laburar. Sabés. El problema es que una sesión son mínimo una hora. Hagas lo que hagas, no te entran más de 6 u 8 clientas en el día.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Hay un mercado real esperando que yo ya domino",
+          "viewer_emotion_after": "sorpresa: mientras yo espero, hay chicas buscando lo que yo sé",
+          "is_turning_point": true,
+          "script_text": "Estas deperdiciando tu conocimiento. Hoy hay un montón de chicas queriendo arrancar a ganar sus primeros ingresos, y ser manicurista es de las mejores opciones que hay. Quieren aprender pero no saben por dónde empezar. Y vos ya lo sabés. Vos ya lo hacés todos los días.",
+          "timing_seconds": 16
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Lo único que me toca hacer es dictar lo que ya aprendí",
+          "viewer_emotion_after": "posibilidad: puedo armar esto sin tener que aprender nada nuevo",
+          "is_turning_point": false,
+          "script_text": "Lo único que tenés que hacer es decirle a la IA: armame una guía sencilla, paso a paso, para la que quiere arrancar como manicurista desde cero. Ya sabes cómo conseguir la primera clienta. Cuánto cobrar cada sesión. Qué comprar sin fundirse en insumos el primer mes. Los 5 errores que te hacen perder plata. Te lA te arma todo. Vos solo le dictás lo que ya aprendiste a los golpes.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Esto ya está pasando, no es una promesa",
+          "viewer_emotion_after": "validación: puedo verificarlo ahora mismo",
+          "is_turning_point": false,
+          "script_text": "Pensá en todo lo que te costó llegar hasta acá. Los primeros meses cobrando barato. Las clientas que perdiste por errores. La plata que gastaste en productos que no servían. Todo ese camino que caminaste a los golpes es lo que una chica pagaría para saltarse",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Se arma una vez y trabaja por mí",
+          "viewer_emotion_after": "deseo: quiero romper el techo",
+          "is_turning_point": false,
+          "script_text": "¿Vos te das cuenta de la diferencia? En una te pagan por sesión. En la otra te pagan mientras estás en una sesión. Lo hacés una vez, lo cobrás miles. Vos seguís con tus clientas de siempre, pero ahora te entran ventas al mismo tiempo.",
+          "timing_seconds": 14
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "cuenta_matematica_compartida",
+        "phrase": "Ocho manos por día es tu techo"
+      },
+      {
+        "location": "hook",
+        "technique": "escena_reconocible",
+        "phrase": "Si dos te cancelan, perdiste el 25% de la semana antes del miércoles"
+      },
+      {
+        "location": "puente",
+        "technique": "validacion_esfuerzo",
+        "phrase": "Y no es que no sepas laburar. Sabés."
+      },
+      {
+        "location": "puente",
+        "technique": "diagnostico_compartido",
+        "phrase": "una sesión de uñas son dos horas entre lijado, base, color y secado"
+      },
+      {
+        "location": "quiebre",
+        "technique": "demanda_invisible_escena",
+        "phrase": "Hay un montón de chicas buscando aprender esto para ganar sus primeros ingresos"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reconocimiento_saber",
+        "phrase": "Y vos ya lo sabés. Vos ya lo hacés todos los días."
+      },
+      {
+        "location": "mecanismo",
+        "technique": "detalle_doloroso",
+        "phrase": "Qué comprar sin fundirse en insumos de Mercado Libre"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "reconocimiento_experiencia",
+        "phrase": "Vos solo le dictás lo que ya aprendiste a los golpes"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificacion_concreta",
+        "phrase": "Buscá 'manicurista desde cero'"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "contraste_fisico",
+        "phrase": "con cada clienta repetís las dos horas desde cero"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "espejo_inverso",
+        "phrase": "Sin techo de manos por día"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "C",
+        "ingredient_number": 41,
+        "ingredient_name": "Agitación matemática"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación extrema"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legítimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con números"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 108,
+        "ingredient_name": "Contraste con alternativa actual"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T00:34:27.484Z",
+  "status": "recorded"
+}

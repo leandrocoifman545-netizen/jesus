@@ -1,0 +1,189 @@
+{
+  "id": "c52dd79e-d1ca-4f6e-b1b8-82c9b539aff6",
+  "briefId": "8638a401-0850-40e3-bcc5-49cd71c8a463",
+  "title": "Hay una guía de huerta en balcón que se vende todos los días por 7 dólares",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.5_nicho_invisible_recorrido_inverso",
+    "body_type": "historia_con_giro",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "jardinería / huerta urbana",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Exactamente como esa guía de huerta que te conté. Eso es lo que te voy a enseñar a armar paso a paso con la herramienta de IA.",
+    "total_duration_seconds": 80,
+    "word_count": 295,
+    "punto_entrada_emocional": "curiosidad del que escucha algo insólito y quiere entender cómo llegó ahí",
+    "belief_change": {
+      "old_belief": "Los productos digitales los crean expertos jóvenes que saben de marketing",
+      "mechanism": "Recorrido inverso: arrancar por el resultado y retroceder hasta la vida anterior de la persona",
+      "new_belief": "Cualquiera que sepa hacer algo concreto puede armar uno de estos"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Ya hay gente común vendiendo productos chicos todos los días",
+        "installed_via": "hook con resultado concreto",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "El proceso para armarlo es corto",
+        "installed_via": "retroceso a armado",
+        "persuasion_function": "desarrollo",
+        "section_name": "beat_1"
+      },
+      {
+        "belief": "El conocimiento previo es casero, no académico",
+        "installed_via": "retroceso a saber",
+        "persuasion_function": "desarrollo",
+        "section_name": "beat_2"
+      },
+      {
+        "belief": "La vida anterior era común — tuya",
+        "installed_via": "retroceso a vida",
+        "persuasion_function": "dolor",
+        "section_name": "beat_3"
+      },
+      {
+        "belief": "Esa persona es como vos",
+        "installed_via": "plot twist identificación",
+        "persuasion_function": "quiebre",
+        "section_name": "twist"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "resultado_primero",
+        "hypothesis": "Plantilla R4 (recorrido inverso). Arrancar con el resultado logrado genera curiosidad sin prometer",
+        "emotional_lever": "curiosidad pura",
+        "script_text": "Hay una guía sobre cómo armar una huerta en balcón que se vende todos los días por 7 dólares en internet. La armó un señor jubilado de Mendoza. En una tarde. Y cuando te cuente cómo llegó ahí, te vas a sorprender.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "dato_google",
+        "hypothesis": "Dato de búsqueda valida la demanda antes de proponer la solución",
+        "emotional_lever": "sorpresa + validación",
+        "script_text": "En Argentina, todos los meses, 14 mil personas escriben en Google cómo armar una huerta en un balcón chico. Hay una guía que les resuelve eso, y se vende por 7 dólares. Lo raro no es la guía. Lo raro es quién la escribió.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_contraintuitiva",
+        "hypothesis": "Lanzar pregunta en forma de acertijo engancha al curioso",
+        "emotional_lever": "acertijo",
+        "script_text": "¿Quién creés que gana más plata cada mes vendiendo contenido sobre huerta en balcón? ¿Un influencer con millones de seguidores? ¿Una marca grande? No. Es un señor de 64 años que antes tenía kiosco.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "objeto_especifico",
+        "hypothesis": "Hacer tangible el producto (47 páginas) concreta el mecanismo",
+        "emotional_lever": "concreción",
+        "script_text": "Un ebook de 47 páginas sobre cómo hacer compost en un balcón se vendió 840 veces el mes pasado a 7 dólares cada uno. Eso son casi 6 mil dólares. De un documento. Escrito por una persona sin seguidores. Te cuento cómo llegó ahí.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "plot_twist_anticipado",
+        "hypothesis": "Prometer un giro al final mantiene retención a lo largo del video",
+        "emotional_lever": "expectativa",
+        "script_text": "Te voy a contar la historia de un producto digital. Se vende todos los días. Cuando termine la historia, te voy a decir quién lo escribió. Y probablemente pienses: si ese pudo, yo también.",
+        "timing_seconds": 10
+      }
+    ],
+    "development": {
+      "framework_used": "recorrido_inverso_R4",
+      "emotional_arc": "resultado_logrado → como_se_armó → que_sabia_antes → como_era_su_vida → plot_twist_es_como_vos",
+      "sections": [
+        {
+          "section_name": "beat_armado",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Se armó en una tarde con IA",
+          "viewer_emotion_after": "Es replicable",
+          "is_turning_point": false,
+          "script_text": "Y la pregunta es: ¿cómo la armó? La armó un sábado a la tarde. Le contó a la inteligencia artificial todo lo que sabía: qué plantas funcionan en macetas chicas, cómo regar sin que se pudran las raíces, qué hacer con el compost cuando no hay jardín. La IA le armó un documento de 47 páginas con dibujos, con cronograma de riego, con lista de semillas por estación. Lo subió a Hotmart. Listo.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "beat_conocimiento",
+          "persuasion_function": "puente",
+          "micro_belief": "El conocimiento era casero",
+          "viewer_emotion_after": "Ese saber lo tengo yo también",
+          "is_turning_point": false,
+          "script_text": "Y antes de armarla, ¿qué sabía? Nada académico. Nada que se enseñe en la facultad. Lo que sabía lo aprendió en el patio de su casa, con su mamá, durante 40 años. Plantar tomates. Cuidar albahaca. Saber cuándo regar y cuándo no. Saber que las babosas se van con cerveza. Cosas de casa.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "beat_vida_anterior",
+          "persuasion_function": "dolor",
+          "micro_belief": "La vida anterior era común",
+          "viewer_emotion_after": "Esta persona era exactamente como yo",
+          "is_turning_point": false,
+          "script_text": "¿Y cómo era su vida antes de todo esto? Tenía un kiosco en San Martín. Se jubiló en 2024. La jubilación no le alcanzaba. Los hijos grandes, la casa quieta, y él con la sensación de que todavía tenía energía pero nadie lo iba a contratar. Se metió a aprender esto porque no tenía nada que perder.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "twist",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Esa persona es como vos",
+          "viewer_emotion_after": "Yo podría ser esa persona",
+          "is_turning_point": true,
+          "script_text": "Por eso lo que te quería contar es esto: este señor no era experto. No tenía seguidores. No era joven ni tenía formación digital. Solo tenía una vida, un saber casero, y una tarde libre. Igual que vos, probablemente. Y eso alcanzó.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "resultado_tangible",
+        "phrase": "se vende todos los días por 7 dólares"
+      },
+      {
+        "location": "beat_armado",
+        "technique": "producto_con_numero",
+        "phrase": "un documento de 47 páginas"
+      },
+      {
+        "location": "beat_conocimiento",
+        "technique": "saber_casero",
+        "phrase": "Plantar tomates"
+      },
+      {
+        "location": "beat_vida_anterior",
+        "technique": "identificacion_vida_real",
+        "phrase": "La jubilación no le alcanzaba"
+      },
+      {
+        "location": "twist",
+        "technique": "igual_que_vos",
+        "phrase": "Igual que vos"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "G",
+        "ingredient_number": 94,
+        "ingredient_name": "caso_real_especifico"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 69,
+        "ingredient_name": "especificidad_numerica"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "origen_humilde"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 72,
+        "ingredient_name": "new_opportunity"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:34:20.072Z"
+}

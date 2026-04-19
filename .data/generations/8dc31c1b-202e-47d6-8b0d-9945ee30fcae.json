@@ -1,0 +1,255 @@
+{
+  "id": "8dc31c1b-202e-47d6-8b0d-9945ee30fcae",
+  "briefId": "d0f8196f-c154-4b39-8fc0-d45703ddb0fa",
+  "title": "Si hacés uñas — guía de soft gel en casa",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.10_manicurista_turnos_cuerpo",
+    "body_type": "demo_proceso",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "manicurista (gel, acrílico, esculpidas — atiende en casa o salón chico)",
+    "model_sale_type": "tiempo_vs_dinero",
+    "transition_text": "Y lo mismo que sirve para una guía de uñas sirve para cualquier oficio que tengas en las manos. En la clase gratis de esta semana te muestro cómo se arma paso a paso.",
+    "total_duration_seconds": 86,
+    "word_count": 250,
+    "punto_entrada_emocional": "El día cortado por un turno que no vino, con las manos cansadas y la mesa armada al pedo",
+    "belief_change": {
+      "old_belief": "Mi ingreso depende de cuántos turnos atiendo por semana, cobrando por hora y poniendo el cuerpo",
+      "mechanism": "Mostrar que las mismas clientas potenciales que no llegan a pagarse el salón están buscando aprender en casa — y que el conocimiento de técnica se vende una vez y cobra infinitas con una guía armada por IA",
+      "new_belief": "Las clientas que no llegan al salón están pagando por aprender en casa — eso lo vendo una vez y la guía trabaja sin mí"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El turno cancelado se come el día entero — no es un problema de promoción",
+        "installed_via": "Quiebre con matemática concreta de dos horas + insumos + cancelación",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "Hay una demanda enorme de aprender uñas en casa a la que no estoy vendiendo",
+        "installed_via": "Mecanismo: chicas que no llegan al salón buscan en YouTube + guía armada por IA + Hotmart",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "El criterio ya lo tengo — la IA se encarga del PDF",
+        "installed_via": "Demolición: dictar lo que ya sé, IA se encarga del diseño",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Hay manicuristas vendiendo esto hoy mismo en Hotmart",
+        "installed_via": "Prueba verificable: buscá uñas en casa o soft gel",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "Hipernicho + memoria específica del día cortado activa reconocimiento instantáneo en la manicurista",
+        "emotional_lever": "reconocimiento del día arruinado por cancelación",
+        "script_text": "Si hacés uñas ya te pasó. Te cancelaron dos turnos en la semana y el día te quedó cortado, mirando el teléfono con la mesa armada al pedo.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "La pregunta interna sobre horas vs plata detiene a la manicurista a calcular su propia matemática",
+        "emotional_lever": "pregunta dolorosa sobre el costo real de insumos",
+        "script_text": "¿Cuántas horas te pasaste sentada con la lamparita esta semana? ¿Y cuánta plata te quedó en la mano después de pagar gel, tips y envíos?",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "inmersion_segunda_persona",
+        "hypothesis": "Poner a la espectadora EN la escena de la mesita y la clienta apurada activa recuerdo sensorial del cansancio",
+        "emotional_lever": "inmersión sensorial en la sesión real",
+        "script_text": "Tenés la mesita llena de gel, limas y tips. Tu clienta llega tarde, te apura para terminar, se va. Te quedan las manos dormidas y la casa hecha un desastre.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "anti_hype",
+        "hypothesis": "Validar el oficio antes de confrontar baja la defensiva y abre a escuchar el diagnóstico",
+        "emotional_lever": "validación honesta + confrontación suave",
+        "script_text": "Hacer uñas no es un mal oficio. Pero si después de 3 años seguís cobrando por turno y el cuerpo ya te pide parar, hay una parte que no está cerrando.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "Escena sensorial del cuerpo cansado + banco con turnos cancelados genera micro-duelo antes de decidir si mira",
+        "emotional_lever": "dolor sensorial del cuerpo agotado",
+        "script_text": "Terminás el día con los ojos quemados de mirar la lamparita, los dedos acalambrados de sostener el pincel, y el banco con 4 turnos porque hoy hubo dos cancelaciones.",
+        "timing_seconds": 14
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "cuerpo_cansado_reconocido_a_demanda_invisible_revelada",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No es que trabajo poco — el problema está en otro lado",
+          "viewer_emotion_after": "validada: no es falta de esfuerzo, el cuerpo y las cancelaciones me suman",
+          "is_turning_point": false,
+          "script_text": "Y no es que trabajes poco. Trabajás un montón. El problema es lo que queda cuando sumás las horas en casa, los turnos cancelados y el cuerpo cansado.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El turno cancelado se come el día — no la promo fue mala",
+          "viewer_emotion_after": "bronca reconocida, me arruinan el día y encima ya gasté en insumos",
+          "is_turning_point": true,
+          "script_text": "Cada turno son mínimo una hora: lijado, base, color, decoración, secado. Sumale la compra de insumos y los mensajes para confirmar. Y si te cancela la de las 3, te quedaste con el día cortado y la plata que esperabas no entró.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Hay clientas potenciales buscando aprender en casa a las que no les vendo — mi técnica es el insumo",
+          "viewer_emotion_after": "ah, ahí hay algo que no estoy viendo",
+          "is_turning_point": false,
+          "script_text": "Pero pensá una cosa. Las mismas chicas que ya no llegan a pagarse el salón están buscando en YouTube cómo hacerse las uñas en casa. Le decís a la inteligencia artificial: armame una guía de 36 páginas con soft gel en casa, sin lámpara profesional, 8 diseños para principiantes, qué comprar de Mercado Libre, y los errores que más manchan las uñas. Te la arma. La subís a Hotmart por 12 dólares.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No hace falta que sea diseñadora — solo dicto lo que ya sé",
+          "viewer_emotion_after": "mi excusa técnica no aplica, la IA arma el PDF",
+          "is_turning_point": false,
+          "script_text": "Y lo único que tenés que hacer es dictarle lo que ya sabés. La IA se encarga del diseño del PDF, de las tablas de productos, de las portadas.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay manicuristas vendiendo esto hoy — es verificable",
+          "viewer_emotion_after": "si otras ya lo hacen yo también puedo",
+          "is_turning_point": false,
+          "script_text": "Entrá a Hotmart y buscá 'uñas en casa' o 'soft gel'. Fijate los precios. Fijate las reseñas. Hay manicuristas que ya están vendiendo lo que vos hacés todos los días.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Armar una vez y cobrar infinitas supera repetir cada turno dos horas",
+          "viewer_emotion_after": "quiero saber cómo se arma",
+          "is_turning_point": false,
+          "script_text": "Y por eso, con cada turno repetís las dos horas desde cero. Con una guía la armás una vez y la cobrás cuantas veces la compren. Sin cancelaciones, sin cargar la mesa, sin ocupar tu tiempo atendiendo.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "identificacion_situacional",
+        "phrase": "Si hacés uñas ya te pasó"
+      },
+      {
+        "location": "puente",
+        "technique": "validacion",
+        "phrase": "Y no es que trabajes poco. Trabajás un montón."
+      },
+      {
+        "location": "quiebre",
+        "technique": "confirmacion_dolor",
+        "phrase": "te quedaste con el día cortado"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "revelacion_demanda",
+        "phrase": "Las mismas chicas que ya no llegan a pagarse el salón están buscando en YouTube"
+      },
+      {
+        "location": "demolicion",
+        "technique": "barrera_eliminada",
+        "phrase": "lo único que tenés que hacer es dictarle lo que ya sabés"
+      },
+      {
+        "location": "prueba",
+        "technique": "curiosidad_verificable",
+        "phrase": "Hay manicuristas que ya están vendiendo lo que vos hacés todos los días"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "simplicidad",
+        "phrase": "la armás una vez y la cobrás cuantas veces la compren"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 29,
+        "ingredient_name": "Dolor comparativo social"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 41,
+        "ingredient_name": "Agitación matemática"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación extrema"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legítimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con números"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 108,
+        "ingredient_name": "Contraste con alternativa actual"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-18T16:53:03.003Z",
+  "status": "confirmed",
+  "batch": {
+    "id": "f63d6536-c6c8-48df-a0cd-d487da0fdb55",
+    "name": "Version 7.0"
+  }
+}

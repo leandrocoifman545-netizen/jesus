@@ -1,0 +1,189 @@
+{
+  "id": "6c3d6fca-e9c8-43e3-9183-9258d7ef2a87",
+  "briefId": "8c65e758-a6a4-46cf-ad8c-1e4f068b414a",
+  "title": "Algo que pocos saben: si tenés 5 cursos guardados, no te falta saber",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.10_sindrome_acumuladora",
+    "body_type": "revelacion_personal",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "mujer con formación acumulada sin monetizar",
+    "model_sale_type": "lean_anti_riesgo",
+    "transition_text": "Por eso te quiero contar paso a paso cómo se arma una cosa chica que sí se termina.",
+    "total_duration_seconds": 78,
+    "word_count": 285,
+    "punto_entrada_emocional": "vergüenza suave del que acumuló cursos y nunca terminó nada, mezclada con alivio al escuchar que tiene nombre",
+    "belief_change": {
+      "old_belief": "Me falta un curso más para estar lista",
+      "mechanism": "El síndrome de la acumuladora: cada formación nueva es otra dosis de esperanza que se apaga sin aplicación",
+      "new_belief": "No me falta saber. Me sobra. Lo que me falta es terminar una cosa chica"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Este patrón tiene nombre y no soy solo yo",
+        "installed_via": "naming del síndrome",
+        "persuasion_function": "hook",
+        "section_name": "hook"
+      },
+      {
+        "belief": "Cada curso nuevo era una dosis de esperanza",
+        "installed_via": "reframe emocional",
+        "persuasion_function": "puente",
+        "section_name": "puente"
+      },
+      {
+        "belief": "Te sobra información, te falta terminar algo chico",
+        "installed_via": "quiebre identitario",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "Una guía de 12 páginas es suficiente",
+        "installed_via": "mecanismo minimalista",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Terminar uno chico rompe el ciclo",
+        "installed_via": "venta por compleción",
+        "persuasion_function": "venta_modelo",
+        "section_name": "venta_modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "exclusividad",
+        "hypothesis": "Pattern untapped (187% CLR). Arrancar con frase confidencial baja las defensas del avatar",
+        "emotional_lever": "intimidad + curiosidad",
+        "script_text": "Algo que pocos dicen. Si tenés 5 cursos guardados en Drive que nunca terminaste, no te falta saber. Te sobra. Y te voy a explicar por qué eso es una buena noticia. Aunque ahora no lo parezca.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "naming_sindrome",
+        "hypothesis": "Poner nombre exclusivo ('síndrome de la acumuladora') que ningún competidor usa activa pertenencia",
+        "emotional_lever": "pertenencia + reconocimiento",
+        "script_text": "Le pusimos nombre a algo que muchas tenemos: el síndrome de la acumuladora. Es cuando tenés 4, 5, 7 formaciones hechas y ni una sola se terminó en un producto que vendiste. Si eso te está pasando, escuchá con atención.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "pregunta_incomoda_conteo",
+        "hypothesis": "Forzar inventario mental de formaciones activa lucidez sin vergüenza si se encuadra bien",
+        "emotional_lever": "lucidez",
+        "script_text": "Contá los cursos que empezaste en los últimos 3 años. Los webinars. Los ebooks que descargaste. Las formaciones que pagaste. Ahora contá los que terminaste. Y los que terminaron en algo que vendiste. El problema no es que no sepas.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "confesion_avatar",
+        "hypothesis": "Verbatim de compradora real 'seguir formándome y no aplicar' valida el dolor",
+        "emotional_lever": "validación",
+        "script_text": "Una mujer me escribió esta frase el lunes: seguir formándome y no aplicar lo aprendido. Ya no es falta de tiempo, ni de plata, ni de información. Es otra cosa. Y tiene una salida que nadie te está contando.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "se_filtro",
+        "hypothesis": "Patrón H-19 de Ramiro (272% CLR). 'Se filtró' como apertura crea urgencia de insider",
+        "emotional_lever": "exclusividad + curiosidad",
+        "script_text": "Se filtró un patrón que no se habla en voz alta. Se llama síndrome de la acumuladora. Lo tienen 1 de cada 3 mujeres arriba de 40 que compraron formación digital. Y tiene una salida corta.",
+        "timing_seconds": 11
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_naming_4_beats",
+      "emotional_arc": "naming_liberador → reframe_emocional → quiebre_sobreestudio → mecanismo_minimo → compleción_liberadora",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Cada curso nuevo era una dosis de esperanza",
+          "viewer_emotion_after": "Ahora entiendo por qué lo hacía",
+          "is_turning_point": false,
+          "script_text": "Porque cada curso nuevo no era pérdida de tiempo para vos. Era una dosis de esperanza. Era el momento donde pensabas: esta vez sí voy a aprender a venderlo sencillo. Funcionaba 3 semanas. Después venía el bajón. Y el curso siguiente. Así 7 veces en 3 años.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Te sobra información, te falta terminar algo chico",
+          "viewer_emotion_after": "El problema era otro",
+          "is_turning_point": true,
+          "script_text": "Y acá está el punto. No te falta información. Te sobra. Tenés cuadernos llenos. Tenés apuntes. Tenés notas de voz. Lo que te falta es terminar una cosa chica en 3 días y verla vendida. Eso es lo único que rompe el ciclo. Un resultado chiquito pero real.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Una guía de 12 páginas es suficiente",
+          "viewer_emotion_after": "Es más chico de lo que pensaba",
+          "is_turning_point": false,
+          "script_text": "Y acá es donde entra la inteligencia artificial. Agarrás uno solo de los cursos que hiciste. El que más te gustó. Le contás a la IA los 3 conceptos clave que te quedaron. La IA te arma una guía de 12 páginas, chiquita, clara, vendible. La subís a Hotmart a 5 dólares. Y recién ahí, con una cosa chica vendida, podés decir que sabés.",
+          "timing_seconds": 17
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Terminar uno chico rompe el ciclo",
+          "viewer_emotion_after": "Puedo salir de esta",
+          "is_turning_point": false,
+          "script_text": "Por eso este modelo es lo único que funciona para alguien como vos. No es un curso más. Es una cosa chica, terminada, vendida. Un producto de 12 páginas vendido 20 veces rompe lo que 10 formaciones no rompieron. Porque por primera vez cerraste el ciclo.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook_1",
+        "technique": "confidencia",
+        "phrase": "Algo que pocos dicen"
+      },
+      {
+        "location": "puente",
+        "technique": "reframe_esperanza",
+        "phrase": "una dosis de esperanza"
+      },
+      {
+        "location": "quiebre",
+        "technique": "inversion_problema",
+        "phrase": "No te falta información. Te sobra"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "producto_con_numero",
+        "phrase": "una guía de 12 páginas"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "compleción",
+        "phrase": "por primera vez cerraste el ciclo"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "H",
+        "ingredient_number": 99,
+        "ingredient_name": "future_7_dias"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 47,
+        "ingredient_name": "contraste_emocional"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 67,
+        "ingredient_name": "vulnerabilidad_estrategica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "simplificacion_extrema"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T07:32:08.903Z"
+}

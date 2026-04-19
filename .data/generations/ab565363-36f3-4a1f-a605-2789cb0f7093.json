@@ -1,0 +1,270 @@
+{
+  "id": "ab565363-36f3-4a1f-a605-2789cb0f7093",
+  "briefId": "e42e2cf7-9f01-47fe-9422-1bd15fed4207",
+  "title": "Tu cabeza ordenada vale más que esa jubilación",
+  "batch": {
+    "name": "plan-1 2026-04-17 organización"
+  },
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.3_cabeza_administrativa_vale_plata",
+    "body_type": "trailer_recurso",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "organización / administración / productividad",
+    "model_sale_type": "eliminacion_barreras",
+    "rhythm_template": "R7",
+    "emotional_arc": "analogia_principio_a_fin",
+    "transition_text": "Preparé una clase gratuita la próxima semana donde te muestro el proceso completo. Y te voy a regalar el prompt exacto con el que la inteligencia artificial arma tu guía en 20 minutos. Tocá el botón de acá abajo.",
+    "total_duration_seconds": 77,
+    "word_count": 260,
+    "punto_entrada_emocional": "mujer 55+ con jubilación que no llega a fin de mes, que fue empleada administrativa o ama de casa ordenada toda la vida, que tiene libretas y agendas llenas de sistemas que nunca cobró",
+    "winner_template_used": "winner-34-cotilla_cultural + winner-46-eliminacion_barreras",
+    "belief_change": {
+      "old_belief": "A mi edad ya se me pasó el tren y esa manía de anotar todo ya no vale plata",
+      "mechanism": "Dictás 20 minutos a la IA cómo ordenás casa y plata → guía de 43 páginas con plantillas, calendario y 7 listas lista para vender",
+      "new_belief": "Tu cabeza ordenada vale más que lo que te pagaron 35 años por ejecutarla — y se vende sin salir de casa"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "La jubilación no me alcanza y nadie me preguntó qué sabía hacer",
+        "installed_via": "Pregunta de matemática emocional + escena rifas/fiados + D#50 pregunta que nadie hace",
+        "persuasion_function": "identificacion",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Lo que anotás en la libreta del cajón vale plata — y el 80% se frustra por arrancar mal",
+        "installed_via": "L#130 threat de proceso + reframe identidad",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Existe un proceso: celular + 20 minutos + IA = guía de 43 páginas con plantillas, calendario y 7 listas",
+        "installed_via": "F#72 new opportunity + analogía principio-a-fin + números concretos",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No importa edad, tecnología ni experiencia — solo hablar 20 minutos",
+        "installed_via": "#5 Eliminación de barreras x 4 (regla de 3 rota)",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolición"
+      },
+      {
+        "belief": "Esto funciona — 2 mil alumnos lo hicieron (jubiladas, amas de casa, administrativas)",
+        "installed_via": "Datos Jesús verificables §2: $1M/año, $150K perdidos, 2000 alumnos",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      },
+      {
+        "belief": "Mientras dudás, otras subieron la segunda guía — sin cara, sin seguidores, sin programar, sin miles de dólares",
+        "installed_via": "C#39 contraste con otros + eliminación de 4 barreras",
+        "persuasion_function": "venta_modelo",
+        "section_name": "Venta modelo"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "cotilla_dolor",
+        "hypothesis": "F21 evocación cultural (agenda de cuero de oficina) + dolor §6 jubilación miserable. Palancas [3] cotilla + [1] brecha.",
+        "emotional_lever": "cotilla + dolor por años pagados miseria",
+        "script_text": "¿Te acordás de esa agenda de cuero con el calendario atrás? La tenías siempre llena de todo lo que sabías hacer. Te pagaron miseria 35 años por esa cabeza.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "cotilla_aspiracion",
+        "hypothesis": "F21 evocación cultural (taquitos del almanaque con lista diaria) + aspiración §11 dignidad sin salir de casa. Palancas [3] cotilla + [1] brecha.",
+        "emotional_lever": "cotilla + aspiración de trabajar desde casa",
+        "script_text": "¿Te acordás de los taquitos del almanaque que arrancabas cada mañana con la lista del día? Ese sistema que tenés en la cabeza hoy se vende sin arrancar hojas.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "cotilla_tension_edad",
+        "hypothesis": "F21 evocación cultural (libreta Congreso en el cajón) + tensión T4 urgencia de edad. Palancas [3] cotilla + [2] disonancia. Ataca creencia real de C5 'ya no vale mi cabeza a los 58'.",
+        "emotional_lever": "cotilla + disonancia T4 (urgencia de edad)",
+        "script_text": "¿Todavía tenés una libreta Congreso con espiral en el cajón? Tenés 58 y creés que esa manía de anotar todo ya no vale. Es al revés — nunca valió tanto.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "cotilla_intento_fallido",
+        "hypothesis": "F21 evocación cultural (guías Ama de Casa que venían con la revista) + formato obsoleto que hoy se digitaliza. Palancas [3] cotilla + [1] brecha.",
+        "emotional_lever": "cotilla + revelación de oportunidad perdida",
+        "script_text": "¿Te acordás de esas guías de Ama de Casa que venían con la revista los miércoles? Desaparecieron. Lo que enseñaban se vende hoy a 15 dólares la copia.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "cotilla_filtro_C5",
+        "hypothesis": "F21 evocación cultural (ficheros rosas de oficina) + filtro-comprador C5 (empleada administrativa). Palancas [3] cotilla + [4] filtro.",
+        "emotional_lever": "cotilla + filtro C5 empleada administrativa",
+        "script_text": "¿Te acordás de los ficheros rosas con pestañas de la oficina? Ordenabas mejor que todos y se daban cuenta. Nadie te dijo que esa cabeza valía plata.",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "trailer_recurso_4_beats",
+      "emotional_arc": "analogia_principio_a_fin",
+      "turning_point_beat": "Quiebre",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "identificacion",
+          "micro_belief": "La jubilación no alcanza y nadie preguntó qué sabía hacer",
+          "viewer_emotion_after": "reconocimiento + incomodidad",
+          "is_turning_point": false,
+          "timing_seconds": 11,
+          "script_text": "¿Hace cuánto que la jubilación no te alcanza ni para la primera quincena? Tres años. Cinco. Hoy son rifas, fiados y vender la licuadora Liliana que te queda en el fondo del placard. Y lo más raro: nadie te preguntó qué sabés hacer que valga plata sin salir de tu casa."
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "La libreta del cajón vale plata — el 80% arranca mal y se frustra",
+          "viewer_emotion_after": "revelación + alivio",
+          "is_turning_point": true,
+          "timing_seconds": 11,
+          "script_text": "Acá está el tema. El 80% arranca queriendo vender cursos de IA que no entiende, se frustra en dos semanas y vuelve al fiado. Pero vos tenés algo que nadie te dijo que valía plata: eso que anotás en la libreta del cajón."
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Celular + 20 min + IA = guía de 43 páginas con plantillas, calendario, 7 listas",
+          "viewer_emotion_after": "claridad",
+          "is_turning_point": false,
+          "timing_seconds": 16,
+          "script_text": "Entonces mirá esto. Agarrás el celular — ese que ya tenés. Le dictás 20 minutos de cómo ordenás vos la casa y la plata del mes. La inteligencia artificial te arma una guía de 43 páginas con plantillas semanales, un calendario anual y 7 listas ya hechas. En una tarde lo tenés terminado."
+        },
+        {
+          "section_name": "Demolición",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No importa edad, tecnología ni experiencia — solo hablar 20 minutos",
+          "viewer_emotion_after": "permiso",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "Pero ojo. No importa que tengas 58 años. No importa que nunca hayas vendido nada online. No importa que creas que la tecnología no es lo tuyo. Lo único que tenés que hacer es hablar 20 minutos. Nada más."
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "2 mil alumnos lo hicieron — jubiladas, amas de casa, administrativas",
+          "viewer_emotion_after": "confianza",
+          "is_turning_point": false,
+          "timing_seconds": 11,
+          "script_text": "Porque yo invertí más de un millón de dólares por año en publicidad para armar esto. Perdí 150 mil en campañas que no funcionaban — literalmente se me fue una casa. Ya pasaron más de 2 mil alumnos. Jubiladas, amas de casa, empleadas administrativas que nunca habían vendido nada."
+        },
+        {
+          "section_name": "Venta modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Otras ya subieron la 2da guía sin cara, sin seguidores, sin programar, sin miles de dólares",
+          "viewer_emotion_after": "convicción + urgencia",
+          "is_turning_point": false,
+          "timing_seconds": 10,
+          "script_text": "Y por eso te lo digo recto. Mientras vos dudás si tu cabeza ordenada vale algo, otras ya subieron la segunda guía. Sin mostrar la cara. Sin seguidores. Sin programar nada. Sin invertir miles de dólares. La guía la creás una vez y se vende infinito — es un negocio digital que funciona mientras dormís, con la independencia que nunca tuviste en la oficina."
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "puente",
+        "technique": "pregunta_matematica_emocional",
+        "phrase": "¿Hace cuánto que la jubilación no te alcanza ni para la primera quincena?"
+      },
+      {
+        "location": "puente",
+        "technique": "escena_reconocible",
+        "phrase": "rifas, fiados y vender la licuadora Liliana"
+      },
+      {
+        "location": "puente",
+        "technique": "pregunta_que_nadie_hace",
+        "phrase": "nadie te preguntó qué sabés hacer que valga plata"
+      },
+      {
+        "location": "quiebre",
+        "technique": "threat_de_proceso",
+        "phrase": "el 80% arranca queriendo vender cursos de IA que no entiende"
+      },
+      {
+        "location": "quiebre",
+        "technique": "reframe_identidad",
+        "phrase": "eso que anotás en la libreta del cajón"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "dato_anclado",
+        "phrase": "guía de 43 páginas con plantillas semanales"
+      },
+      {
+        "location": "demolicion",
+        "technique": "eliminacion_barreras",
+        "phrase": "No importa que tengas 58 años"
+      },
+      {
+        "location": "prueba",
+        "technique": "autoridad_experiencial",
+        "phrase": "yo invertí más de un millón de dólares por año"
+      },
+      {
+        "location": "prueba",
+        "technique": "confesion_fracaso",
+        "phrase": "literalmente se me fue una casa"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "contraste_con_otros",
+        "phrase": "otras ya subieron la segunda guía"
+      }
+    ],
+    "ingredients_used": [
+      "B#25",
+      "C#39",
+      "D#50",
+      "F#72",
+      "G#86",
+      "L#130",
+      "H#96"
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "channel_label": "Clase Gratuita",
+        "variant": "A",
+        "layers": {
+          "oferta": "Es una clase en vivo de dos horas la próxima semana. Ahí te muestro cómo agarrar lo que ya sabés, armarlo con la IA y empezar a venderlo por WhatsApp. Te llevás el proceso completo, los prompts y un sistema para salir del fiado.",
+          "prueba": "Ya pasaron más de 2 mil alumnos. Amas de casa, jubiladas, empleadas administrativas que arrancaron sin saber nada de internet.",
+          "riesgo_cero": "Es gratis. Si no te sirve, no perdiste nada.",
+          "urgencia": "La clase es en vivo, los cupos son limitados.",
+          "cierre": "Tocá el botón de acá abajo para registrarte."
+        }
+      },
+      {
+        "channel": "taller_5",
+        "channel_label": "Taller $5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Armé un taller de 3 días en vivo. Día 1: encontrás tu producto con IA. Día 2: lo armás. Día 3: lo vendés por WhatsApp. Salís con tu guía hecha y tu anuncio listo.",
+          "prueba": "Ya pasaron más de 2 mil alumnos. Jubiladas, amas de casa, administrativas que arrancaron donde estás vos.",
+          "riesgo_cero": "¿Cuánto cuesta? 5 dólares. Menos que una pizza.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu guía en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Nos vemos adentro."
+        }
+      },
+      {
+        "channel": "instagram",
+        "channel_label": "Instagram Orgánico",
+        "variant": "A",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo agarrar lo que ya sabés, armarlo con IA y empezar a venderlo por WhatsApp.",
+          "orden_1": "Comentá CLASE acá abajo y registrate en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 2 mil alumnos. Gente que arrancó sin saber nada de internet.",
+          "riesgo_cero": "Es gratis. Si no te sirve, no perdiste nada.",
+          "cierre": "Comentá CLASE y registrate en el link de mi perfil. Te espero adentro."
+        }
+      }
+    ]
+  },
+  "createdAt": "2026-04-17T20:55:16.274Z"
+}

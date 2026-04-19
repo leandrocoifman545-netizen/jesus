@@ -1,0 +1,261 @@
+{
+  "id": "1e64169b-741f-49f2-ad50-d616675bccf9",
+  "briefId": "863c5ab3-63f2-49f9-9b1d-1eaee55f310d",
+  "title": "Si vendés por Mercado Libre — guía de rubro",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.9_comision_reposicion_ecommerce",
+    "body_type": "contraste_emocional",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "comerciante que vende por Mercado Libre (cualquier rubro)",
+    "model_sale_type": "contraste_fisico",
+    "transition_text": "Ahora te estarás preguntando por dónde arrancar",
+    "total_duration_seconds": 90,
+    "word_count": 270,
+    "punto_entrada_emocional": "La bronca de ver que cada venta de Mercado Libre se la come el costo de mantener la operación",
+    "belief_change": {
+      "old_belief": "Para avanzar vendiendo online tengo que vender más unidades — más stock, más envíos, más tiempo",
+      "mechanism": "Mostrar la matemática real de una venta ML (17% + envío + hora y media de operación) y contraponerla con un producto digital que se arma una vez y cobra infinitas veces sin repetir la operación",
+      "new_belief": "Hay un tipo de producto que se entrega solo, sin stock ni envío, y paga mejor que reponer físico"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "La operación se come cada venta — la matemática no cierra",
+        "installed_via": "Quiebre con matemática concreta 17% + envío + hora y media",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "Existe un producto que se entrega sin que yo empaque ni vaya al correo",
+        "installed_via": "Mecanismo con guía de 28 páginas entregada automática por Hotmart",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "El conocimiento del rubro es el producto — no hace falta ser diseñadora",
+        "installed_via": "Demolición: la IA se encarga del PDF, yo aporto el criterio",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Hay gente vendiendo hoy mismo guías de mi rubro en Hotmart",
+        "installed_via": "Prueba verificable: buscá tu rubro en Hotmart",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "Hipernicho + memoria matemática específica filtra al comprador del Cluster Offline",
+        "emotional_lever": "reconocimiento matemático del costo real",
+        "script_text": "Si vendés por Mercado Libre seguro ya te pasó. Cerraste una venta, y cuando sumás comisión, envío, y lo que te costó reponerlo, con suerte te quedó un 30%.\n\n",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "La pregunta interna del vendedor ML repetida en voz alta lo detiene a responderla",
+        "emotional_lever": "pregunta dolorosa del monólogo interno",
+        "script_text": "¿Y si te dijera que hay una forma de sacar plata de Mercado Libre sin envíos, sin stock, y sin que te descuenten un solo peso de comisión? No es una cuenta trucha. Es algo que ya tenés y que nunca cobraste.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "inmersion_segunda_persona",
+        "hypothesis": "Poner al espectador EN la escena del correo activa recuerdo duradero sin anclar a un momento",
+        "emotional_lever": "inmersión sensorial operativa",
+        "script_text": "Es domingo a la noche. Estás contestando preguntas de Mercado Libre desde el sillón mientras tu familia mira una serie. Mañana hay que ir al correo de vuelta.",
+        "timing_seconds": 13
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "anti_hype",
+        "hypothesis": "Validar primero el negocio abre la puerta a confrontar la matemática sin defensiva",
+        "emotional_lever": "validación honesta + confrontación suave",
+        "script_text": "Si vendés por Mercado Libre seguro ya te pasó. Publicaste un producto nuevo, hiciste todo bien, y a la semana alguien más lo subió a mitad de precio con envío gratis.",
+        "timing_seconds": 14
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "Escena sensorial del empaque genera micro-duelo antes de decidir si mira, activa memoria duradera",
+        "emotional_lever": "dolor sensorial operativo repetido",
+        "script_text": "Imaginate vender por Mercado Libre publicando una sola vez, sin ir al correo, y sin pelear precio con los otros vendedores. Eso existe, y no tiene nada que ver con lo que creés.",
+        "timing_seconds": 14
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "dolor_operativo_reconocido_a_liberacion_espejo_inverso",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No es que venda poco — hay otra cosa que no está funcionando",
+          "viewer_emotion_after": "validado: no soy mal vendedor, el problema es otro",
+          "is_turning_point": false,
+          "script_text": "Eso tiene solución. El problema de vender por Mercado Libre es que dependés de comisiones , de responder preguntas, y de volver a reponer stock cada vez. Sin eso, no vendés.",
+          "timing_seconds": 7
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "La operación se come cada venta — la matemática no cierra",
+          "viewer_emotion_after": "bronca reconocida, lo que hago deja poco porque repito todo",
+          "is_turning_point": true,
+          "script_text": "Pero hay algo que vale más que el producto que vendés, y es lo que aprendiste vendiendo por Mercado Libre. Sabés cómo armar un título, qué fotos convierten, cómo contestar preguntas para cerrar la venta. Eso lo aprendiste a los golpes. Y hay un montón de gente arrancando que pagaría por saberlo.\n",
+          "timing_seconds": 15
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Existe un producto que se entrega solo y mi conocimiento del rubro es el insumo",
+          "viewer_emotion_after": "ah, hay otra forma — lo que ya sé es lo que vale",
+          "is_turning_point": false,
+          "script_text": "Y es acá donde entra la inteligencia artificial. Le decís a la inteligencia artificial: armame una guía de 28 páginas para alguien que recién abre su cuenta en Mercado Libre y quiere hacer sus primeras 10 ventas. Te la arma con pasos, gráficos y todo lo que necesitás para entenderlo. En una hora tenés un producto digital terminado listo para poder venderlo.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No hace falta ser diseñadora — el criterio ya lo tengo",
+          "viewer_emotion_after": "mi excusa no aplica, lo único que tengo que hacer es dictar",
+          "is_turning_point": false,
+          "script_text": "Lo único que tenés que hacer es dictarle lo que ya sabés. La inteligencia artificial se encarga del diseño del PDF, de las tablas y de las portadas. Vos aportás el criterio que acumulaste vendiendo.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otros ya lo están haciendo hoy — es verificable",
+          "viewer_emotion_after": "si otros lo hacen yo también puedo",
+          "is_turning_point": false,
+          "script_text": "No es que tengas que dejar de vender por Mercado Libre. Seguís con tu negocio. Pero hay cientos de miles de personas arrancando ahora mismo, buscando cómo vender, cometiendo los errores que vos ya resolviste. Entrá a Hotmart y buscá \"vender por Mercado Libre\". Fijate los precios vos, podes ser uno de ellos.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Armar una vez y cobrar infinitas supera reponer por cada venta",
+          "viewer_emotion_after": "quiero saber cómo se arma",
+          "is_turning_point": false,
+          "script_text": "Con un producto físico por cada venta repetís todos los procesos y renegas con las devoluciones. Con una guía la armás una vez y te pagan cada vez que alguien la compra. Sin stock, sin hacer envios y  sin comisión. Tu conocimiento trabajando por vos las 24 horas del día.",
+          "timing_seconds": 12
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "identificacion_situacional",
+        "phrase": "Si vendés por Mercado Libre seguro ya te pasó"
+      },
+      {
+        "location": "puente",
+        "technique": "validacion",
+        "phrase": "Y no es que vendas poco. Vendés un montón."
+      },
+      {
+        "location": "quiebre",
+        "technique": "confirmacion_dolor",
+        "phrase": "repetís la operación entera desde cero"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "reconocimiento_skill",
+        "phrase": "Elegiste vender lo que vendés porque de eso sabés"
+      },
+      {
+        "location": "demolicion",
+        "technique": "barrera_eliminada",
+        "phrase": "lo único que tenés que hacer es dictarle lo que ya sabés"
+      },
+      {
+        "location": "prueba",
+        "technique": "curiosidad_verificable",
+        "phrase": "Hay gente vendiendo lo que vos sabés de memoria"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "simplicidad",
+        "phrase": "la armás una vez y la cobrás cuantas veces la compren"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 41,
+        "ingredient_name": "Agitación matemática"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificación extrema"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 82,
+        "ingredient_name": "Atajo legítimo"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 88,
+        "ingredient_name": "Resultado con números"
+      },
+      {
+        "category": "I",
+        "ingredient_number": 108,
+        "ingredient_name": "Contraste con alternativa actual"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-18T03:12:46.361Z",
+  "status": "recorded",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved"
+  }
+}
