@@ -12,8 +12,8 @@
     "niche": "mecánica de autos / motos / soldadura / carpintería casera (oficios con herramienta)",
     "model_sale_type": "tiempo_vs_dinero",
     "transition_text": "Por eso, lo que te acabo de mostrar, que lo que arreglás los sábados en el garage puede convertirse en un negocio digital, es exactamente lo que te voy a enseñar esta semana.",
-    "total_duration_seconds": 80,
-    "word_count": 265,
+    "total_duration_seconds": 81,
+    "word_count": 308,
     "punto_entrada_emocional": "descubrimiento de que lo que hacés por hobby tiene mercado real y concreto",
     "belief_change": {
       "old_belief": "Lo que arreglo los sábados es un hobby, no un proyecto, porque no tengo título de mecánico",
@@ -136,6 +136,15 @@
           "is_turning_point": false,
           "script_text": "Entrá a Mercado Libre ahora y buscá manual PDF taller. Vas a encontrar manuales de 2000 pesos, de 3500, de 5000. La mitad los hace gente que no tiene un taller profesional. Son tipos del garage como vos. Pero lo empaquetaron.",
           "timing_seconds": 11
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección modesta",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. No te estoy diciendo que dejes tu trabajo. Pero estamos hablando de 25, 35 dólares por día extra con un manual que armaste una vez. Es tu oficio del garage trabajando mientras vos dormís.",
+          "timing_seconds": 10
         }
       ]
     },

@@ -12,8 +12,8 @@
     "niche": "fitness / yoga / pilates / entrenadores personales / rutinas en casa (amplio)",
     "model_sale_type": "caballo_troya_baja_barrera",
     "transition_text": "Por eso, lo que te acabo de contar, que lo que hacés con tus clientas puede convertirse en rutinas digitales para las mamás que no llegan al gimnasio, es exactamente lo que te voy a enseñar esta semana.",
-    "total_duration_seconds": 77,
-    "word_count": 250,
+    "total_duration_seconds": 78,
+    "word_count": 285,
     "punto_entrada_emocional": "generosidad profesional del instructor que descubre un mercado al que ya está ayudando gratis",
     "belief_change": {
       "old_belief": "Para ganar más tengo que tener más clientas presenciales, más horas de clase",
@@ -121,6 +121,24 @@
           "is_turning_point": false,
           "script_text": "Porque vas a decir que en YouTube está todo gratis. Y sí, pero cualquier mamá que probó ponerse a hacer yoga con YouTube lo dejó en 2 semanas. Porque son videos sueltos, sin progresión, sin respuestas. La rutina tuya, con un plan de 4 semanas y un WhatsApp de consulta, es otra cosa.",
           "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay instructoras vendiendo rutinas PDF",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Instagram y buscá 'rutina yoga casa PDF'. Fijate las cuentas que lo venden. Son instructoras de barrio, con 3, 4 mil seguidores. Venden ebooks a 14, 18 dólares todo el tiempo. No son influencers fitness de Miami. Son instructoras como vos.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección creíble sin dejar el gym",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. Seguís dando tus clases en el gimnasio, cobrás lo de siempre. Pero encima tenés 30, 40 dólares por día extra con un ebook armado una vez. Tus rutinas llegando a mamás que nunca hubieras conocido en el gimnasio.",
+          "timing_seconds": 10
         }
       ]
     },

@@ -12,8 +12,8 @@
     "niche": "emprendedores quemados que ya probaron Hotmart, dropshipping, Amazon FBA, afiliación",
     "model_sale_type": "lean_anti_riesgo",
     "transition_text": "Por eso, lo que te acabo de mostrar, que podés validar tu idea en 48 horas antes de invertir un peso, es exactamente lo que te voy a enseñar esta semana.",
-    "total_duration_seconds": 80,
-    "word_count": 265,
+    "total_duration_seconds": 86,
+    "word_count": 320,
     "punto_entrada_emocional": "esperanza cauta de un emprendedor que se quemó pero todavía quiere avanzar",
     "belief_change": {
       "old_belief": "Yo ya probé emprender y no me sale, el problema soy yo",
@@ -121,6 +121,24 @@
           "is_turning_point": false,
           "script_text": "Porque vas a decir que ya probaste todo. Pero no probaste validar antes de crear. Con dropshipping pagaste primero. Con afiliación pusiste tiempo primero. Acá no ponés un peso hasta que alguien te diga sí. Eso cambia todo.",
           "timing_seconds": 12
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay gente aplicando el método lean con ChatGPT",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a YouTube y buscá 'validar idea de negocio con WhatsApp'. Vas a ver videos de gente que lo hizo con 5, 10, 20 mensajes. Sin pagar un peso de publicidad. Sin tener audiencia. Ese es el modelo que te digo. No es teoría, es lo que funciona en 2026.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección modesta y real",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. No te vas a hacer rico en un mes. Pero estamos hablando de avanzar con un proyecto que ya validaste. 30, 40 dólares por día extra con un producto que la gente ya dijo que quiere comprar. Eso sí es un negocio.",
+          "timing_seconds": 11
         }
       ]
     },

@@ -98,17 +98,17 @@ Del cruce con reporte de performance Meta Ads:
 
 ## Counts estadísticos (generations con status winner/recorded)
 
-**Total validados:** 23 (0 winners + 23 recorded)
+**Total validados:** 25 (0 winners + 25 recorded)
 
-**Top ángulos:** unknown (9), identidad (5), confrontacion (3), historia (2), 1 (1)
+**Top ángulos:** unknown (9), identidad (6), confrontacion (4), historia (2), 1 (1)
 
-**Top bodies:** unknown (9), contraste_emocional (3), comparacion_caminos (2), pregunta_respuesta (1), un_dia_en_la_vida (1)
+**Top bodies:** unknown (9), contraste_emocional (4), comparacion_caminos (3), pregunta_respuesta (1), un_dia_en_la_vida (1)
 
-**Top hooks:** situacion_especifica (16), provocacion (10), pregunta_incomoda (8), confesion (8), contraintuitivo (8)
+**Top hooks:** situacion_especifica (17), provocacion (10), pregunta_incomoda (8), confesion (8), contraintuitivo (8)
 
-**Top segmentos:** unknown (9), A (6), B (4), C (2), D (1)
+**Top segmentos:** unknown (9), A (7), B (4), C (3), D (1)
 
-**Top nichos:** unknown (9), comerciante que vende por Mercado Libre (cualquier rubro) (1), docencia primaria / material didáctico / maestra de grado (1), identidad como padre/madre (genérico) (1), amplio — productos digitales con IA (formato orgánico IG) (1)
+**Top nichos:** unknown (9), comerciante que vende por Mercado Libre (cualquier rubro) (1), docencia primaria / material didáctico / maestra de grado (1), vendedores / cerradores / comerciantes B2B (amplio — telefónico, presencial, Mercado Libre) (1), identidad como padre/madre (genérico) (1)
 
 ---
 

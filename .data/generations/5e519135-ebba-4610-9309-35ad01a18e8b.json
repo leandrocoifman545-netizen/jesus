@@ -12,8 +12,8 @@
     "niche": "jubilados con oficio (ex-contadores, ex-docentes, ex-médicos, ex-oficios, ex-empleados de comercio)",
     "model_sale_type": "democratizacion_ia",
     "transition_text": "Por eso, lo que te acabo de contar, que 40 años de experiencia pueden convertirse en un producto digital que vende todos los días, es exactamente lo que te voy a enseñar esta semana.",
-    "total_duration_seconds": 82,
-    "word_count": 260,
+    "total_duration_seconds": 87,
+    "word_count": 359,
     "punto_entrada_emocional": "propósito renovado del jubilado que descubre que su experiencia no se pierde con la jubilación",
     "belief_change": {
       "old_belief": "Me jubilé y toda esa experiencia que tengo ya no sirve para generar nada",
@@ -121,6 +121,24 @@
           "is_turning_point": false,
           "script_text": "Porque me vas a decir que vos no sabés de computación. No te pido que aprendas. Solo tenés que saber mandar un audio por WhatsApp. Lo demás lo hace la IA y un hijo o un nieto que te ayuda 1 hora. La venta la hace una página automática. Te lo muestro gratis primero para que veas que es de verdad.",
           "timing_seconds": 13
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay jubilados vendiendo su experiencia",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Hotmart y buscá 'guía oficio PDF'. Vas a ver guías de 15, 22, 30 dólares de gente con 30 o 40 años de experiencia. Ex-contadores, ex-maestros, ex-plomeros. Escribieron lo que saben con ayuda de sus hijos. Y hoy venden sin moverse de su casa.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección honesta para jubilado",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. No es para hacerse rico a los 65. Es para complementar la jubilación con 20, 30 dólares por día. Y para sentir que esos 40 años de laburo siguen dando frutos. Tu experiencia no se jubiló, pasó al próximo capítulo.",
+          "timing_seconds": 11
         }
       ]
     },

@@ -13,7 +13,7 @@
     "model_sale_type": "lean_anti_riesgo",
     "transition_text": "Por eso, lo que te acabo de contar, que lo que tocás los fines de semana puede aprenderse paso a paso a través de la ayuda de la IA, es exactamente lo que te voy a enseñar esta semana.",
     "total_duration_seconds": 82,
-    "word_count": 265,
+    "word_count": 302,
     "punto_entrada_emocional": "orgullo tranquilo del músico que nunca se animó a cobrar por lo que sabe porque no es profesional",
     "belief_change": {
       "old_belief": "Lo que toco es un hobby porque no soy músico profesional, no puedo cobrar",
@@ -121,6 +121,24 @@
           "is_turning_point": false,
           "script_text": "Porque vas a decir que ya hay YouTube gratis con clases de guitarra. Y sí, pero el que recién arranca no quiere 200 videos. Quiere la canción que le gusta, bien explicada, con todo lo que necesita. Una academia le cobra 40 dólares la clase. Vos le das la canción completa por 11.",
           "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay guitarristas amateurs vendiendo cursos",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Hotmart y buscá 'aprender guitarra canción'. Vas a ver cursos de 9, 12, 17 dólares de una sola canción explicada. Muchos son tipos que nunca dieron una clase presencial. Aprendieron tocando de oído. Y hoy venden todos los días.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección modesta y honesta",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. No te voy a prometer que vas a vivir de la música. Pero estamos hablando de 20, 25 dólares por día extra con un curso que armaste en una tarde. Tu música trabajando mientras vos tocás los domingos con los amigos.",
+          "timing_seconds": 11
         }
       ]
     },

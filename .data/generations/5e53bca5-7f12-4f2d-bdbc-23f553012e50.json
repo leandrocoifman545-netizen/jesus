@@ -12,8 +12,8 @@
     "niche": "entrenadores amateur de fútbol / DT de barrio / preparadores físicos",
     "model_sale_type": "escalabilidad_tiempo",
     "transition_text": "Por eso, lo que te acabo de mostrar, que podés convertir lo que sabés de fútbol en un ingreso extra mientras seguís dirigiendo, es exactamente lo que te voy a enseñar esta semana.",
-    "total_duration_seconds": 82,
-    "word_count": 265,
+    "total_duration_seconds": 84,
+    "word_count": 329,
     "punto_entrada_emocional": "orgullo reprimido del DT amateur que sabe que tiene un saber valioso pero nunca lo cobró",
     "belief_change": {
       "old_belief": "Lo que sé de fútbol es un hobby, no un negocio, yo nunca fui profesional",
@@ -121,6 +121,24 @@
           "is_turning_point": false,
           "script_text": "Porque me vas a decir que vos no sos profesional, que nunca jugaste en primera. Y acá está el punto. El DT que busca tu PDF tampoco. Dirige el equipo del colegio o un equipo de la liga del barrio. Y lo último que quiere es un libro de la ATFA. Quiere lo que funciona en la cancha de verdad. Lo tuyo.",
           "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay DTs amateurs vendiéndolo",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Instagram y buscá 'tácticas fútbol amateur PDF'. Vas a encontrar cuentas de DTs de barrio vendiendo manuales a 15, 20, 25 dólares. La mayoría tienen 2 mil seguidores. No son nadie. Pero entendieron que su saber se cobra.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección honesta",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. No vas a dejar de dirigir tu equipo ni vas a vivir de esto. Pero estamos hablando de 200, 300 dólares al mes extra con un PDF que armás una vez. Tu saber cobrando mientras entrenás a los pibes el martes.",
+          "timing_seconds": 11
         }
       ]
     },

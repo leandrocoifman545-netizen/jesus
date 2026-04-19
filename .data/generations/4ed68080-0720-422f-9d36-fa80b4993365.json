@@ -12,8 +12,8 @@
     "niche": "administrativos / secretarias / asistentes virtuales / gestión / Excel / organización",
     "model_sale_type": "democratizacion_ia",
     "transition_text": "Por eso, lo que te acabo de contar, que esa cabeza ordenada que tenés puede convertirse en plantillas que se venden en piloto automático, es exactamente lo que te voy a enseñar esta semana.",
-    "total_duration_seconds": 79,
-    "word_count": 255,
+    "total_duration_seconds": 81,
+    "word_count": 314,
     "punto_entrada_emocional": "descubrimiento callado de que esa manía de ordenar todo es una habilidad valiosa, no una rareza",
     "belief_change": {
       "old_belief": "Mi manía de ordenar todo es solo una particularidad, no sirve para avanzar",
@@ -121,6 +121,24 @@
           "is_turning_point": false,
           "script_text": "Porque vas a decir que en internet está todo. Esa es la herramienta que ya sabés usar. Y sí, pero todo es genérico. Vos armaste una plantilla para gestionar un taller de chapa y pintura. O una para una peluquería. O una para un monotributista de diseño. Esos dueños no quieren el Excel de un gurú de Miami. Quieren el tuyo. Del rubro exacto.",
           "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Hay administrativas vendiendo plantillas de nicho",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Mercado Libre ahora y buscá 'plantilla Excel gestión'. Fijate los packs de 8, 9, 11 dólares. La mitad los armó gente que trabaja en una oficina como la tuya. No son programadores. Son administrativas con 10 años de Excel.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección real",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. Seguís yendo a tu oficina, cobrás tu sueldo igual. Pero encima tenés una entrada extra de 25, 40 dólares por día con plantillas que armaste una vez. Es esa cabeza ordenada tuya trabajando sola.",
+          "timing_seconds": 10
         }
       ]
     },

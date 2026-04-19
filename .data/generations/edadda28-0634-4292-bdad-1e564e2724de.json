@@ -12,8 +12,8 @@
     "niche": "crianza / maternidad primeriza / primeros años (lactancia, sueño, alimentación, límites)",
     "model_sale_type": "eliminacion_barreras",
     "transition_text": "Por eso, lo que te acabo de mostrar, que lo que aprendiste criando a tus hijos puede convertirse en un ingreso sin descuidar a tus hijos, es exactamente lo que te voy a enseñar esta semana.",
-    "total_duration_seconds": 78,
-    "word_count": 250,
+    "total_duration_seconds": 84,
+    "word_count": 316,
     "punto_entrada_emocional": "generosidad de madre que quiere ayudar a otras y descubre que también puede cobrar por eso",
     "belief_change": {
       "old_belief": "Lo que yo sé es de mamá común, cualquiera lo sabe",
@@ -121,6 +121,24 @@
           "is_turning_point": false,
           "script_text": "Porque vas a decir que las pediatras saben más. Y acá está el punto. La pediatra da 15 minutos de consulta y plata por el medio. La mamá primeriza quiere el paso a paso a las 3 de la mañana cuando el bebé llora. La guía de otra mamá que ya pasó por ahí es lo que más valora. Por eso paga.",
           "timing_seconds": 14
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Ya hay mamás vendiendo guías de crianza",
+          "viewer_emotion_after": "validacion_verificable",
+          "is_turning_point": false,
+          "script_text": "Entrá a Instagram y buscá 'guía sueño bebé PDF'. Vas a ver cuentas de mamás vendiendo guías a 12, 18, 25 dólares. No son pediatras. No son enfermeras. Son mamás que ya pasaron por eso. Y las mamás primerizas les compran todo el tiempo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Venta del modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Proyección honesta sin hype",
+          "viewer_emotion_after": "credibilidad",
+          "is_turning_point": false,
+          "script_text": "Y eso es lo bueno. No vas a ser millonaria. Pero estamos hablando de 20, 30 dólares por día extra desde tu casa, mientras tus hijos duermen o juegan. Es tu experiencia de mamá cobrando por ayudar a otras mamás.",
+          "timing_seconds": 10
         }
       ]
     },
