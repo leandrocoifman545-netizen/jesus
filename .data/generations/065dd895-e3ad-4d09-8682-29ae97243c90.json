@@ -1,0 +1,233 @@
+{
+  "id": "065dd895-e3ad-4d09-8682-29ae97243c90",
+  "briefId": "5a3e20fc-8937-4cbe-94d4-823d27b9df42",
+  "title": "Psicologos/coaches/nutris — los audios de WhatsApp son tu producto",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.11_regalo_invisible_whatsapp",
+    "body_type": "demo_proceso",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "psicologos / nutricionistas / coaches / terapeutas / profesionales que atienden por WhatsApp",
+    "model_sale_type": "redefinicion_trabajo",
+    "transition_text": "Y esa guía que te acabo de describir es apenas un ejemplo. Lo único que tenés que hacer es que cada oficio tiene el suyo y el camino es el mismo. Si querés que te lo muestre paso a paso, te explico cómo.",
+    "total_duration_seconds": 79,
+    "word_count": 230,
+    "punto_entrada_emocional": "La bronca calmada del que se da cuenta, mientras manda un audio mas, que acaba de regalar lo que le da de comer",
+    "belief_change": {
+      "old_belief": "Lo que regalo por audio es solo atencion, no un producto",
+      "mechanism": "Los audios repetidos son el producto empaquetable",
+      "new_belief": "Lo que ya dije 200 veces es una guia de 12 paginas que puedo vender 30 veces por mes"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "No me pagan por el titulo, me pagan por 6-8 respuestas concretas",
+        "installed_via": "quiebre",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA transforma 20 audios en una guia organizada",
+        "installed_via": "mecanismo",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "Seguir atendiendo + vender PDF no son excluyentes",
+        "installed_via": "demolicion",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Otros que no son profesionales ya lo estan vendiendo",
+        "installed_via": "prueba",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "Auto-seleccion por oficio + memoria WhatsApp especifica",
+        "emotional_lever": "reconocimiento",
+        "script_text": "Si sabés de nutrición, psicología o coaching, seguro ya te pasó. Abrís WhatsApp un martes a las 10 de la noche, tenés 14 audios sin responder, y todos te preguntan más o menos lo mismo.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "inmersion_segunda_persona",
+        "hypothesis": "Escena sensorial del regalo invisible",
+        "emotional_lever": "bronca calmada",
+        "script_text": "Estás en la cocina, comiendo algo rápido, y grabás un audio de 4 minutos explicándole a una paciente cómo ordenar las comidas de la semana. Apretás enviar. Volvés al plato. Acabás de regalar lo que otra persona vende a 15 dólares.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Naming del trabajo invisible",
+        "emotional_lever": "desculpabilizacion",
+        "script_text": "Hay un trabajo que las psicólogas, las nutricionistas y las coaches hacen todos los días y nadie les paga. Se llama 'explicar lo mismo por audio'. Y te está comiendo las tardes.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Pregunta que fuerza el conteo",
+        "emotional_lever": "confrontacion suave",
+        "script_text": "¿Cuántos audios de 5 minutos mandaste esta semana explicando algo que ya explicaste cien veces? ¿Diez? ¿Veinte? ¿Y cuánto cobraste por esos audios?",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Inversion del activo mas valioso",
+        "emotional_lever": "revelacion",
+        "script_text": "El activo más caro que tenés como profesional no son tus años de carrera. Son los audios de WhatsApp que mandás sin pensar.",
+        "timing_seconds": 7
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "revelacion_oportunidad",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Lo invisible tiene un producto adentro",
+          "viewer_emotion_after": "Esto tiene que ver conmigo",
+          "is_turning_point": false,
+          "script_text": "Y acá está el tema: eso que hacés todos los martes, ese laburo invisible que no cobrás, ahí adentro está tu próximo producto digital sencillo. Te muestro paso a paso.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "No me pagan por el titulo, me pagan por 6-8 respuestas concretas",
+          "viewer_emotion_after": "Mierda, es verdad",
+          "is_turning_point": true,
+          "script_text": "Lo que pasa es que tus pacientes no te pagan por tu título de la UBA. Te pagan por las 6 u 8 respuestas concretas que repetís siempre. Cómo organizar las comidas de la semana, cómo cortar con la ex, cómo bajar la ansiedad antes de dormir. Eso es el producto. La consulta es el formato más caro y más lento de entregarlo.",
+          "timing_seconds": 18
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA transforma 20 audios en una guia organizada",
+          "viewer_emotion_after": "Ah, asi de simple",
+          "is_turning_point": false,
+          "script_text": "Entonces entrás a tu WhatsApp. Elegís los 20 audios más largos de este mes. Se los pasás a la inteligencia artificial, los transcribe, y con eso te arma una guía de 12 páginas organizada por tema: sueño, ansiedad, alimentación, lo que sea tu oficio. Le ponés un nombre, una portada, y la subís a Hotmart a 11 dólares. Sábado a la tarde ya la tenés lista. Es literalmente una herramienta nueva que antes no existía.",
+          "timing_seconds": 22
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Seguir atendiendo + vender PDF no son excluyentes",
+          "viewer_emotion_after": "Mi excusa no aplica",
+          "is_turning_point": false,
+          "script_text": "Y no, no tenés que dejar de atender. Seguís con tus turnos. Pero el 70 por ciento de las preguntas que te llegan ahora tienen respuesta en un PDF que vendiste tres veces mientras dormías.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otros que no son profesionales ya lo estan vendiendo",
+          "viewer_emotion_after": "Si ellos pudieron, yo puedo",
+          "is_turning_point": false,
+          "script_text": "Porque mirá Hotmart, buscá 'guía ansiedad' o 'menú semanal'. Fijate cuántas hay, los precios, las reseñas. La mayoría no son psicólogas ni nutricionistas. Son personas que agarraron lo que sabían y lo escribieron una vez.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "400-500 dolares extra por mes sin atender mas",
+          "viewer_emotion_after": "Es plausible",
+          "is_turning_point": false,
+          "script_text": "Por eso no te vas a hacer millonario. Pero 30, 40 ventas por mes de algo que ya tenías hecho, son entre 400 y 500 dólares extra en tu cuenta. Eso es pagar el alquiler sin levantarte del sillón. Sin atender a nadie más.",
+          "timing_seconds": 8
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "reconocimiento",
+        "phrase": "seguro ya te pasó"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion",
+        "phrase": "Lo que pasa es que"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "paso a paso"
+      },
+      {
+        "location": "demolicion",
+        "technique": "eliminacion_objecion",
+        "phrase": "no tenés que dejar de atender"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificable",
+        "phrase": "mirá Hotmart"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "anti_hype",
+        "phrase": "no te vas a hacer millonario"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Demo con producto nombrado"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad profesional"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 17,
+        "ingredient_name": "Anti-hype con rango modesto"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del juego"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T10:08:44.832Z"
+}

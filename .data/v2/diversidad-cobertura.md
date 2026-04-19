@@ -145,16 +145,15 @@ Max 1 uso cada una por batch de 10:
 ### Vehículos sub-usados (<2 usos en últimos 30)
 - 5. Un día en la vida (1 usos)
 - 6. Pregunta y respuesta (1 usos)
-- 7. Analogía extendida (1 usos)
 - 9. Demolición alternativas ⭐ (1 usos)
 - 10. Q&A conversacional ⭐ (0 usos)
 - 11. Tier-list/Rating (1 usos)
 - 12. Trailer de recurso (0 usos)
-- 13. Quiz de comparación (1 usos)
+- 13. Quiz de comparación (0 usos)
 
 ### Ingredientes nunca usados o sub-usados
-**1 uso:** E#63, K#126, B#28, F#74, A#7, G#93, D#53, H#99, K#125, C#43, F#76, A#8, C#12, F#47, G#23, I#31, B#3, C#7, B#29, #71 Proceso de N Pasos, #85 Testimonio Diverso, #89 Prueba por Volumen, #103 Reducción al Absurdo, #117 Escasez
-**Top usados (rotar):** G#88×14, F#82×12, D#49×9, B#23×8, F#79×7, E#67×5, F#71×5, B#31×5, C#47×5, F#75×4
+**1 uso:** H#13, H#14, H#17, E#63, K#126, B#28, F#74, A#7, G#93, B#25, D#53, F#72, H#99, K#125, C#43, A#8, C#12, F#47, G#23, I#31, B#3, C#7, B#29, #71 Proceso de N Pasos, #85 Testimonio Diverso, #89 Prueba por Volumen, #103 Reducción al Absurdo, #117 Escasez
+**Top usados (rotar):** G#88×14, F#82×12, D#49×11, F#79×8, B#23×8, B#31×6, F#75×5, E#67×5, F#71×5, C#47×5
 
 ### Ventas del modelo sub-usadas
 - cementerio_modelos (0 usos)
@@ -167,8 +166,8 @@ Max 1 uso cada una por batch de 10:
 - R2 (0 usos)
 - R3 (0 usos)
 - R4 (0 usos)
-- R5 (1 usos)
-- R6 (1 usos)
+- R5 (0 usos)
+- R6 (0 usos)
 - R7 (0 usos)
 
 ### Gaps detectados

@@ -1,0 +1,237 @@
+{
+  "id": "9fb5c7b9-56aa-4c2c-bdca-55efbcfa1c09",
+  "briefId": "ca4fdd53-dfba-4651-81ea-680e422a164b",
+  "title": "Sindrome de la acumuladora — 5 certificaciones, 1 producto",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.10_sindrome_acumuladora_45",
+    "body_type": "demolicion_mito",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "mujeres 45+ con multiples formaciones (coaching, reiki, astrologia, yoga, numerologia, docentes con postgrados, terapeutas con 4+ certificaciones)",
+    "model_sale_type": "foco_vs_dispersion",
+    "transition_text": "Y lo único que tenés que hacer es entender cuál de todo lo que ya sabés empaquetás primero. Si querés que te lo muestre con un ejemplo real, te explico cómo.",
+    "total_duration_seconds": 84,
+    "word_count": 245,
+    "punto_entrada_emocional": "La verguenza silenciosa de tener un cajon de diplomas y una cuenta bancaria que no se movio",
+    "belief_change": {
+      "old_belief": "Necesito una certificacion mas para empezar a facturar",
+      "mechanism": "Elegir UNA sola y empaquetarla con IA",
+      "new_belief": "Tengo que usar menos de lo que se, no mas. Una sola cosa empaquetada vende mas que 6 dispersas"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "El mercado paga por empaquetar, no por saber",
+        "installed_via": "quiebre",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "Una sola formacion empaquetada + IA = guia de 34 paginas",
+        "installed_via": "mecanismo",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "No hace falta estudiar mas, hace falta elegir",
+        "installed_via": "demolicion",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Otras lo hicieron con una sola cosa",
+        "installed_via": "prueba",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "nombrar_innombrado",
+        "hypothesis": "Darle nombre al patron activa reconocimiento",
+        "emotional_lever": "reconocimiento doloroso",
+        "script_text": "Hay un síndrome que les pasa a las mujeres de más de 40 y no tiene nombre todavía. Yo le voy a poner uno: el síndrome de la acumuladora de certificaciones. Cinco diplomas guardados y una cuenta bancaria igual.",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "desculpabilizacion",
+        "hypothesis": "Absolver libera accion",
+        "emotional_lever": "alivio + reencuadre",
+        "script_text": "Si estudiaste coaching, reiki, astrología, yoga y numerología y seguís ganando lo mismo que hace diez años, no es culpa tuya. Es culpa del modelo que te dijo que sumar un certificado más iba a cambiar algo.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "Auto-seleccion + escena del cajon",
+        "emotional_lever": "verguenza silenciosa",
+        "script_text": "Si tenés más de 40 y sos de las que estudia todo el tiempo, seguro ya te pasó. Abrís un cajón, ves 4 diplomas enmarcados, y te das cuenta que nunca cobraste ni un peso por ninguno de los cuatro.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "anti_hype",
+        "hypothesis": "Anti-hype + verdad incomoda mas potente que promesa",
+        "emotional_lever": "confrontacion honesta",
+        "script_text": "No te voy a decir que con esto te vas a hacer rica. Te voy a decir algo más incómodo: tenés 20 años de formación guardados y seguís esperando que alguien te contrate para usarlos.",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Pregunta con suma forzada duele mas",
+        "emotional_lever": "cuenta dolorosa",
+        "script_text": "¿Cuánto gastaste en cursos los últimos 10 años? Sumá. Ahora sumá cuánto facturaste con esos cursos. ¿Cuál de los dos números te duele más?",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "confrontacion_directa",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "El problema no es aprender poco, es no vender nada",
+          "viewer_emotion_after": "Ya se de que habla",
+          "is_turning_point": false,
+          "script_text": "Y acá está el tema: no es que aprendas poco, mamá. Es que aprendés demasiado y no generás ingresos con nada de eso. Te explico paso a paso cómo se corta ese bucle en 24 horas.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "El mercado paga por empaquetar, no por saber",
+          "viewer_emotion_after": "Es verdad, me pasa",
+          "is_turning_point": true,
+          "script_text": "Lo que pasa es que el mercado no te paga por saber. El mercado te paga por empaquetar una de las cosas que ya sabés. Vos tenés, no sé, 6 certificaciones. Coaching, reiki, lo que sea. Cada nueva certificación que sumás no te acerca a los 3 mil dólares al mes: te aleja, porque dispersa el mensaje. Tu problema no es falta de formación. Es falta de foco.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Una sola formacion + IA = guia de 34 paginas",
+          "viewer_emotion_after": "Ah, se ve factible",
+          "is_turning_point": false,
+          "script_text": "Entonces pará. Agarrá tus 6 certificaciones. Ponelas sobre la mesa. Elegí UNA. La que más gente te pidió que le enseñes. La que mejor te sale. La que te da orgullo cuando hablás de ella. Esa una sola. Le contás a la inteligencia artificial todo lo que sabés, como si se lo estuvieras explicando a una amiga que empieza desde cero. Y te arma una guía de 34 páginas con ejercicios, ejemplos y una hoja de ruta. La publicas y te empiezan a llegar al compras al whatsapp. Las otras 5 certificaciones siguen en el cajón. Y no pasa nada. Porque UNA bien empaquetada te deja más plata que las 6 juntas dispersas.",
+          "timing_seconds": 23
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No hace falta mas estudio, solo elegir",
+          "viewer_emotion_after": "Mi excusa no aplica",
+          "is_turning_point": false,
+          "script_text": "Y no, no hace falta que vuelvas a estudiar un sábado más en tu casa. No hace falta otro título de 900 dólares. Literalmente lo único que tenés que hacer es elegir cuál de todas las cosas que ya sabés vas a vender primero.",
+          "timing_seconds": 9
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otras con una sola cosa ya lo hicieron",
+          "viewer_emotion_after": "Si esas pudieron...",
+          "is_turning_point": false,
+          "script_text": "Porque mirá, metete en Google y escribí \"aprender reiki online\". Hay 27 mil búsquedas por mes. Ahora escribí \"curso astrología natal\". Otras 18 mil. Esa gente está buscando. Vos tenés el conocimiento. Y alguien con menos títulos que vos ya les está vendiendo la guía.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "500 dolares por mes con 1 sola guia",
+          "viewer_emotion_after": "Es plausible",
+          "is_turning_point": false,
+          "script_text": "Por eso no necesitás más diplomas. Necesitás menos. 1 sola guía de 17 dólares vendida 30 veces por mes son 500 dólares en tu cuenta. Eso casi es el alquiler. Sin salir a buscar un alumno particular más, sin descuidar la casa.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "reconocimiento",
+        "phrase": "seguro ya te pasó"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion",
+        "phrase": "Lo que pasa es que"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "paso a paso"
+      },
+      {
+        "location": "demolicion",
+        "technique": "eliminacion_objecion",
+        "phrase": "no hace falta que vuelvas a estudiar"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificable",
+        "phrase": "mirá Hotmart"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "anti_hype",
+        "phrase": "no necesitás más diplomas"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "H",
+        "ingredient_number": 13,
+        "ingredient_name": "Nombrar lo innombrado"
+      },
+      {
+        "category": "H",
+        "ingredient_number": 14,
+        "ingredient_name": "Desculpabilizacion"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 79,
+        "ingredient_name": "Simplificacion extrema (1 de 6)"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 49,
+        "ingredient_name": "Redefinicion del juego"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T10:11:35.001Z",
+  "status": "recorded"
+}

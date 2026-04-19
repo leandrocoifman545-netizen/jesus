@@ -137,7 +137,7 @@
           "micro_belief": "La info específica que quiero la tiene él y no la suelta acá",
           "viewer_emotion_after": "Tensión por saber qué viene después",
           "is_turning_point": true,
-          "script_text": "Llevo 5 años vendiendo productos digitales. Y te lo digo en serio: nunca vi una oportunidad como la de hoy con la IA. Gané premios que de chico soñaba, como el Two Comma Club — un premio que te dan por vender un millón de dólares en productos digitales. Cumplí metas que de chico parecían imposibles. Pero lo más loco no es eso. Lo más loco es que hoy trabajo en mi tiempo libre. Mi tiempo ocupado es ir al gym, ver a mis amigos, estar con mi familia. Y en los huecos, trabajo. Vos también lo podés hacer lo mismo. Podrías empezar haciendo tus primeros dolares al mes e ir escalando, con los productos digitales no tenés techo.",
+          "script_text": "Llevo 5 años vendiendo productos digitales. Y te lo digo en serio: nunca vi una oportunidad como la de hoy en dia con la IA. Gané premios que de chico soñaba, como el Two Comma Club — un premio que te dan por vender un millón de dólares en productos digitales. Cumplí metas que de chico parecían imposibles. Pero lo más loco no es eso. Lo más loco es que hoy trabajo en mi tiempo libre. Mi tiempo ocupado es ir al gym, ver a mis amigos, estar con mi familia. Y en los huecos, trabajo. Vos también lo podés hacer lo mismo. Podrías empezar haciendo tus primeros dolares al mes e ir escalando, con los productos digitales no tenés techo.",
           "timing_seconds": 13
         }
       ]
@@ -230,4 +230,4 @@
     "4": "approved"
   },
   "status": "recorded"
-}
+}}

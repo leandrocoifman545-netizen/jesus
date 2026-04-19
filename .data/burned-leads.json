@@ -1008,5 +1008,35 @@
     "hookType": "nombrar_innombrado",
     "fromGenerationId": "b30487a2-113b-43d1-8fd7-e2b42cd5ec91",
     "burnedAt": "2026-04-19T08:36:22.292Z"
+  },
+  {
+    "text": "Hay un síndrome que les pasa a las mujeres de más de 40 y no tiene nombre todavía. Yo le voy a poner uno: el síndrome de la acumuladora de certificaciones. Cinco diplomas guardados y una cuenta bancaria igual.",
+    "hookType": "nombrar_innombrado",
+    "fromGenerationId": "9fb5c7b9-56aa-4c2c-bdca-55efbcfa1c09",
+    "burnedAt": "2026-04-19T11:17:39.402Z"
+  },
+  {
+    "text": "Si estudiaste coaching, reiki, astrología, yoga y numerología y seguís ganando lo mismo que hace diez años, no es culpa tuya. Es culpa del modelo que te dijo que sumar un certificado más iba a cambiar algo.",
+    "hookType": "desculpabilizacion",
+    "fromGenerationId": "9fb5c7b9-56aa-4c2c-bdca-55efbcfa1c09",
+    "burnedAt": "2026-04-19T11:17:39.402Z"
+  },
+  {
+    "text": "Si tenés más de 40 y sos de las que estudia todo el tiempo, seguro ya te pasó. Abrís un cajón, ves 4 diplomas enmarcados, y te das cuenta que nunca cobraste ni un peso por ninguno de los cuatro.",
+    "hookType": "auto_seleccion_memoria",
+    "fromGenerationId": "9fb5c7b9-56aa-4c2c-bdca-55efbcfa1c09",
+    "burnedAt": "2026-04-19T11:17:39.402Z"
+  },
+  {
+    "text": "No te voy a decir que con esto te vas a hacer rica. Te voy a decir algo más incómodo: tenés 20 años de formación guardados y seguís esperando que alguien te contrate para usarlos.",
+    "hookType": "anti_hype",
+    "fromGenerationId": "9fb5c7b9-56aa-4c2c-bdca-55efbcfa1c09",
+    "burnedAt": "2026-04-19T11:17:39.402Z"
+  },
+  {
+    "text": "¿Cuánto gastaste en cursos los últimos 10 años? Sumá. Ahora sumá cuánto facturaste con esos cursos. ¿Cuál de los dos números te duele más?",
+    "hookType": "pregunta_espejo",
+    "fromGenerationId": "9fb5c7b9-56aa-4c2c-bdca-55efbcfa1c09",
+    "burnedAt": "2026-04-19T11:17:39.402Z"
   }
 ]

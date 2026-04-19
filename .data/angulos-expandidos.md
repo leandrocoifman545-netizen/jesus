@@ -187,12 +187,12 @@ Atacan desde la narrativa. El viewer se engancha con la historia, no con la lóg
 - 4.1 (0 guiones — sin explorar)
 - 4.2 (0 guiones — sin explorar)
 - 4.4 (0 guiones — sin explorar)
+- 2.7_nido_vacio_tiempo_libre_reinvencion (1 guion — poco explorado)
+- 1.10_sindrome_acumuladora_45 (1 guion — poco explorado)
+- 3.11_regalo_invisible_whatsapp (1 guion — poco explorado)
 - 5.4_analogia_jubilado_biblioteca (1 guion — poco explorado)
 - 5.3_analogia_musica_amateur (1 guion — poco explorado)
 - 2.1_comunidad_sin_proveedor_fitness (1 guion — poco explorado)
-- 4.3_antes_despues_IA_admin (1 guion — poco explorado)
-- 2.3_demanda_invisible_crianza (1 guion — poco explorado)
-- 4.6_producto_revelado_mecanica (1 guion — poco explorado)
 
 ---
 

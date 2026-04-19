@@ -1,0 +1,233 @@
+{
+  "id": "7b9aa52e-9281-4fd1-ab27-6b28e46a5955",
+  "briefId": "b9c61ebf-3c7e-4dcc-a778-e925b3104955",
+  "title": "Nido vacio 50+ — aprendiste Google con panales, la IA es mas facil",
+  "batch": "semana-2026-04-19",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.7_nido_vacio_tiempo_libre_reinvencion",
+    "body_type": "analogia_extendida",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "mujeres 48-62 con hijos grandes o que se fueron (nido vacio) amplio: amas de casa, jubiladas recientes, ex-empleadas, docentes retiradas, madres de adolescentes",
+    "model_sale_type": "herencia_vivida",
+    "transition_text": "Y lo único que tenés que hacer es entender cuál de todas las cosas que viviste va a ser tu primera guía. Si querés que te lo muestre con un ejemplo real, te explico paso a paso.",
+    "total_duration_seconds": 82,
+    "word_count": 240,
+    "punto_entrada_emocional": "El miedo tierno a empezar de nuevo a los 50 cuando ya nadie necesita tu cuidado diario",
+    "belief_change": {
+      "old_belief": "A los 50 es tarde para aprender tecnologia",
+      "mechanism": "Analogia Google+panales - la IA es mas facil que lo que ya aprendiste",
+      "new_belief": "Aprendi Google con un bebe en brazos. La IA con tiempo libre es chiste"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Ya aprendiste cosas más difíciles en peores condiciones",
+        "installed_via": "quiebre",
+        "persuasion_function": "quiebre",
+        "section_name": "quiebre"
+      },
+      {
+        "belief": "La IA es Google pero más fácil",
+        "installed_via": "mecanismo",
+        "persuasion_function": "mecanismo",
+        "section_name": "mecanismo"
+      },
+      {
+        "belief": "No necesito programar ni mudarme",
+        "installed_via": "demolicion",
+        "persuasion_function": "demolicion",
+        "section_name": "demolicion"
+      },
+      {
+        "belief": "Mujeres de 60+ ya lo hicieron con 1.100 ventas",
+        "installed_via": "prueba",
+        "persuasion_function": "prueba",
+        "section_name": "prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "Escena sensorial cuarto vacío",
+        "emotional_lever": "melancolía tierna",
+        "script_text": "Tenés 54 años. Los chicos ya no viven con vos. La casa suena distinto. Pasás por el cuarto que era de tu hija, la cama está hecha desde hace meses. Y ahí te cae el pensamiento: '¿ahora qué hago con el resto?'",
+        "timing_seconds": 11
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "auto_seleccion_memoria",
+        "hypothesis": "Memoria mate + cálculo de años",
+        "emotional_lever": "culpa pequeña",
+        "script_text": "Si tenés más de 50, seguro ya te pasó. Te sentás a la mesa de la cocina, sola, a tomar unos mates, y pensás 'me quedan 15 años de laburo útil, como mucho'. Y sentís culpa de estar pensando en vos, por primera vez.",
+        "timing_seconds": 12
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Invertir edad como ventaja",
+        "emotional_lever": "permiso",
+        "script_text": "La mujer que mejor aprende IA hoy no tiene 25 años. Tiene 52. Porque ya aprendió cosas más difíciles en peores condiciones, y esta vez tiene tiempo.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "anti_hype",
+        "hypothesis": "No influencer, 3 meses",
+        "emotional_lever": "alivio",
+        "script_text": "No te voy a decir que a los 52 vas a ser influencer. Te voy a decir algo más tranquilo: en 3 meses podés tener plata propia de lo que ya sabés hacer. Eso alcanza para empezar de nuevo sin mudarse a ningún lado.",
+        "timing_seconds": 10
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "Pregunta recuerdo + comparación",
+        "emotional_lever": "dignidad",
+        "script_text": "¿Te acordás cuando tus hijos nacieron y aprendiste a usar Google con un bebé en brazos y un trabajo a las 7 de la mañana? ¿Y te acordás cómo te las arreglaste? Hoy tenés tiempo, paciencia y nadie te pide comida. Y estás dudando.",
+        "timing_seconds": 12
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "analogia_principio_fin",
+      "sections": [
+        {
+          "section_name": "puente",
+          "persuasion_function": "puente",
+          "micro_belief": "No es tecnología, es ser principiante de nuevo",
+          "viewer_emotion_after": "Me entiende",
+          "is_turning_point": false,
+          "script_text": "Y acá está el tema: lo que te asusta no es la tecnología. Es volver a sentirte principiante a los 54. Y eso, lo hiciste ya 6 veces en tu vida, mamá. Te lo muestro paso a paso con una comparación.",
+          "timing_seconds": 8
+        },
+        {
+          "section_name": "quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Ya aprendiste Google con un bebé",
+          "viewer_emotion_after": "Es verdad, lo hice",
+          "is_turning_point": true,
+          "script_text": "Lo que pasa es que pensás que aprender esto nuevo va a ser difícil. Pero pará, te hago una pregunta: hace 22 años, cuando tus hijos eran chicos, apareció algo que se llamaba Google. Nadie lo entendía. Vos tampoco. Tenías 32, un bebé a upa, y laburo a las 7. Y lo aprendiste. En medio de pañales, con mocos en el hombro y sin dormir. Si eso pudiste, ¿por qué ahora, con tiempo, no ibas a poder?",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "La IA es Google al revés, más fácil",
+          "viewer_emotion_after": "Puedo hacerlo",
+          "is_turning_point": false,
+          "script_text": "Entonces pensá la IA como el Google nuevo, pero más fácil. Google te obligaba a escribir con palabras clave, a filtrar 40 resultados. La inteligencia artificial es al revés: le hablás como le hablás a tu comadre. Le decís 'necesito una guía para mujeres en nido vacío que quieran hacer plata sin descuidar la casa'. Y te la arma. 28 páginas, con ejercicios, lista de recursos. Vos solo le decís qué sabés. Ella hace el resto. La subís a Hotmart por 14 dólares. Otras mujeres de tu edad te la compran.",
+          "timing_seconds": 20
+        },
+        {
+          "section_name": "demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Paciencia de pañales > programar",
+          "viewer_emotion_after": "Nada me para",
+          "is_turning_point": false,
+          "script_text": "Y no, no hace falta que aprendas programación. No hace falta cámara. No hace falta mudarse. Literalmente lo único que tenés que hacer es aplicar la misma paciencia que tuviste con los primeros pañales a una herramienta que es 10 veces más simple.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Señora de 61 + 1.100 ventas",
+          "viewer_emotion_after": "Si ella pudo",
+          "is_turning_point": false,
+          "script_text": "Porque metete en Hotmart, filtrá por edad de autor, buscá 'guía reinvención 50', 'transición nido vacío'. Son mujeres de tu edad, algunas con más canas que vos, que empaquetaron sus últimos 20 años y lo vendieron. Una señora de 61 tiene 1.100 ventas. No hace falta decir más.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "venta_modelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "20 años criando son materia prima",
+          "viewer_emotion_after": "Mi vida vale",
+          "is_turning_point": false,
+          "script_text": "Por eso los 20 años de experiencia criando hijos, cuidando la casa, sosteniendo parejas, no son 'lo que ya pasó'. Son la materia prima que nadie de 25 tiene. Y hay alguien más joven pagando por saber lo que vos ya sabés, sin descuidar nada porque hoy tu tiempo ya es tuyo.",
+          "timing_seconds": 11
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "reconocimiento",
+        "phrase": "seguro ya te pasó"
+      },
+      {
+        "location": "quiebre",
+        "technique": "validacion",
+        "phrase": "Lo que pasa es que"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "simplicidad",
+        "phrase": "paso a paso"
+      },
+      {
+        "location": "demolicion",
+        "technique": "eliminacion_objecion",
+        "phrase": "no hace falta que aprendas programación"
+      },
+      {
+        "location": "prueba",
+        "technique": "verificable",
+        "phrase": "metete en Hotmart"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "anti_hype",
+        "phrase": "la materia prima que nadie de 25 tiene"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "F",
+        "ingredient_number": 76,
+        "ingredient_name": "Metáfora extendida"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 54,
+        "ingredient_name": "Analogía simple"
+      },
+      {
+        "category": "E",
+        "ingredient_number": 62,
+        "ingredient_name": "Origen humilde / experiencia vivida"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 92,
+        "ingredient_name": "Case study específico"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "D"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "B"
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T10:23:46.271Z"
+}

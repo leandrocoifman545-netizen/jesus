@@ -506,8 +506,8 @@ function generatePackHTML(selected: GenerationSummary[], ctas: ActiveCTA[]): str
       <div class="lead-card no-break">
         <div class="lead-num">${h.variant_number}</div>
         <div class="lead-content">
-          <div class="lead-type">${esc(h.hook_type.replace(/_/g, " "))}</div>
-          <div class="lead-text">&ldquo;${esc(h.script_text)}&rdquo;</div>
+          <div class="lead-type">${esc((h.hook_type || "").replace(/_/g, " "))}</div>
+          <div class="lead-text">&ldquo;${esc(h.script_text || "")}&rdquo;</div>
         </div>
       </div>`).join("");
 
@@ -1329,21 +1329,28 @@ export default function SessionPack({ generations: initialGenerations, activeCTA
     const selectedGens = getSelectedOrdered();
     if (selectedGens.length === 0) { toast("Seleccioná al menos un guion"); return; }
     const html = generatePackHTML(selectedGens, CTAS);
-    const htmlWithPrint = html.replace("</body>", "<script>window.onload=function(){setTimeout(function(){window.print()},400)}<\/script></body>");
+    const printScript = "<script>window.addEventListener('load',function(){setTimeout(function(){window.focus();window.print();},900);});<\/script>";
+    const htmlWithPrint = html.replace("</body>", printScript + "</body>");
     const blob = new Blob([htmlWithPrint], { type: "text/html;charset=utf-8" });
     const url = URL.createObjectURL(blob);
+
     const w = window.open(url, "_blank");
-    if (w) {
-      toast(`PDF listo — guardalo como PDF (${selectedGens.length} guiones)`);
-    } else {
-      // Fallback: descarga como HTML si el popup es bloqueado
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = `pack-grabacion-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.html`;
-      link.click();
-      URL.revokeObjectURL(url);
-      toast(`Pack descargado — abrilo y usá Cmd+P para guardar como PDF`);
+    if (w && !w.closed) {
+      // revoke tarde para que la ventana termine de cargar el blob
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
+      toast(`PDF listo — se abre la vista de impresión (${selectedGens.length} guiones)`);
+      return;
     }
+
+    // Fallback: pop-up bloqueado → descarga como HTML
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `pack-grabacion-${new Date().toISOString().slice(0, 10)}-${selectedGens.length}guiones.html`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    toast(`Pop-up bloqueado — descargué el HTML. Abrilo y usá Cmd+P`);
   }
 
   function downloadTeleprompter() {

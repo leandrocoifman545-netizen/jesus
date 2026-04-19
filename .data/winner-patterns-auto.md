@@ -1,6 +1,6 @@
 # Winner Patterns — Auto-generado
 > Fecha: 2026-04-19
-> Base: 34 generaciones (0 winners, 23 recorded, 11 confirmed)
+> Base: 36 generaciones (0 winners, 25 recorded, 11 confirmed)
 > Este archivo se regenera con: `node scripts/update-winners.mjs`
 
 ## ⚠️ No hay winners marcados aún
@@ -10,8 +10,8 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 ## Body Types (vehículos narrativos)
 | Body Type | Total | Winners | Win Rate |
 |-----------|-------|---------|----------|
-| contraste_emocional | 5 | 0 | 0% |
-| comparacion_caminos | 3 | 0 | 0% |
+| contraste_emocional | 6 | 0 | 0% |
+| comparacion_caminos | 4 | 0 | 0% |
 | demo_proceso | 3 | 0 | 0% |
 | qa_conversacional | 3 | 0 | 0% |
 | historia_con_giro | 2 | 0 | 0% |
@@ -32,6 +32,8 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 | revelacion_oportunidad | 2 | 0 | 0% |
 | confrontacion_directa | 2 | 0 | 0% |
 | provocacion_evidencia | 2 | 0 | 0% |
+| agotamiento → revelacion → posibilidad_concreta → permiso → validacion | 1 | 0 | 0% |
+| bronca_silenciosa → revelacion_identidad → posibilidad_concreta → permiso → verificacion | 1 | 0 | 0% |
 | exclusividad → valor → curiosidad → alivio de barreras → urgencia de saber | 1 | 0 | 0% |
 | techo_reconocido_a_demanda_invisible_revelada | 1 | 0 | 0% |
 | cuerpo_cansado_reconocido_a_demanda_invisible_revelada | 1 | 0 | 0% |
@@ -55,8 +57,8 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 ## Familias de Ángulo
 | Familia | Total | Winners | Win Rate |
 |---------|-------|---------|----------|
-| identidad | 8 | 0 | 0% |
-| confrontacion | 7 | 0 | 0% |
+| identidad | 9 | 0 | 0% |
+| confrontacion | 8 | 0 | 0% |
 | oportunidad | 3 | 0 | 0% |
 | mecanismo | 2 | 0 | 0% |
 | historia | 2 | 0 | 0% |
@@ -67,8 +69,8 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 ## Segmentos
 | Segmento | Total | Winners | Win Rate |
 |----------|-------|---------|----------|
-| A | 9 | 0 | 0% |
-| C | 8 | 0 | 0% |
+| A | 10 | 0 | 0% |
+| C | 9 | 0 | 0% |
 | B | 6 | 0 | 0% |
 | C2 | 1 | 0 | 0% |
 | D | 1 | 0 | 0% |
@@ -76,13 +78,14 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 ## Ventas del Modelo
 | Tipo | Total | Winners | Win Rate |
 |------|-------|---------|----------|
+| transparencia_total | 6 | 0 | 0% |
 | tiempo_vs_dinero | 6 | 0 | 0% |
-| transparencia_total | 5 | 0 | 0% |
 | contraste_fisico | 4 | 0 | 0% |
 | democratizacion_ia | 2 | 0 | 0% |
 | matematica_simple | 2 | 0 | 0% |
 | ventana_oportunidad_ia | 2 | 0 | 0% |
 | 5 | 1 | 0 | 0% |
+| escalabilidad_tiempo_dinero | 1 | 0 | 0% |
 | eliminacion_barreras | 1 | 0 | 0% |
 | lean_anti_riesgo | 1 | 0 | 0% |
 | cementerio_modelos | 1 | 0 | 0% |
