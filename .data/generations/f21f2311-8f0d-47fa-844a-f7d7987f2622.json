@@ -1,0 +1,269 @@
+{
+  "id": "f21f2311-8f0d-47fa-844a-f7d7987f2622",
+  "briefId": "a6cf6a2b-83be-438f-9ead-c7f688e8142e",
+  "title": "Disenadoras — Tu carpeta de bocetos es el cajero que nunca abriste",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.disenadora_template_versionado",
+    "body_type": "demo_proceso",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "disenadoras graficas / UX / diseno de marca / diseno de marca",
+    "model_sale_type": "transparencia_total",
+    "transition_text": "Ese template de diseno de marca para coaches es UN ejemplo. Te voy a mostrar el proceso entero esta semana en una clase.",
+    "total_duration_seconds": 84,
+    "word_count": 230,
+    "punto_entrada_emocional": "bronca de ver que 8 anos de carpetas de bocetos no pagan mas que el mes actual",
+    "belief_change": {
+      "old_belief": "Soy disenadora y cobro por proyecto. Para crecer tengo que sumar clientes o subir tarifa",
+      "mechanism": "Mostrar la matematica entre cobrar por proyecto unico vs vender un template 100 veces",
+      "new_belief": "Mi carpeta de bocetos es un catalogo de productos que nadie abrio"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Hay una cuenta de diseno que nadie te explico",
+        "installed_via": "curiosidad_por_matematica",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Vender un template 100 veces cambia la cuenta entera",
+        "installed_via": "prueba_logica",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Puedo versionar lo que ya hice y subirlo a un marketplace",
+        "installed_via": "stack_herramientas",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito mas clientes VIP ni Behance diario",
+        "installed_via": "desarmar_excusas",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      },
+      {
+        "belief": "Los templates de diseno de marca facturan fuerte en marketplaces reales",
+        "installed_via": "prueba_tiempo_real",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "ancla_precio_invertida",
+        "hypothesis": "la matematica del precio dispara el calculo inevitable",
+        "emotional_lever": "disonancia_matematica",
+        "script_text": "Cuanto cobras por un manual de marca completo? 40 mil pesos? 60 mil? Cuantos hiciste el ano pasado? Haz la cuenta. Cuantos manual de marcas mas necesitas hacer para crecer?",
+        "timing_seconds": 9
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "nostalgia_objeto_extincion",
+        "hypothesis": "las carpetas de bocetos como objeto en extincion activan valor latente",
+        "emotional_lever": "nostalgia_activa",
+        "script_text": "Te acordas cuando tenias carpetas de bocetos llenas de ideas que nadie vio? Siguen en el disco. Nadie las va a volver a mirar.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "anti_hype",
+        "hypothesis": "el anti-hype desarma la defensa de la escepticismo del diseno",
+        "emotional_lever": "alivio_de_honestidad",
+        "script_text": "Lo que te voy a mostrar no es flashero. No es un truco de diseno. Es matematica simple y aburrida que cambia como cobras.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_espejo",
+        "hypothesis": "la repeticion del cobro junior despues de anos pega directo",
+        "emotional_lever": "hartazgo_profesional",
+        "script_text": "Hago diseno de marca hace 8 anos. Cada proyecto arranca de cero. Y en dolares cobro lo mismo que cuando era junior.",
+        "timing_seconds": 6
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "la declaracion sobre los que mas cobran abre curiosidad",
+        "emotional_lever": "curiosidad_por_estrategia",
+        "script_text": "Los disenadores que mas cobran no son los mejores. Son los que venden lo mismo 50 veces en vez de una.",
+        "timing_seconds": 6
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "futuro_sensorial",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Hay una cuenta de diseno que nadie te explico",
+          "viewer_emotion_after": "curiosidad_por_cuenta",
+          "is_turning_point": false,
+          "script_text": "Pero la matematica del diseno tiene una cuenta que tus profesores de la UBA no te contaron. Y no es de proyecto.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Vender un template 100 veces cambia la cuenta entera",
+          "viewer_emotion_after": "revelacion_matematica",
+          "is_turning_point": true,
+          "script_text": "Porque si cobras 40 mil pesos por un manual de marca, tu techo son 10 manual de marcas al ano y el ritmo con el que podes cerrar proyectos. Si vendes un template de diseno de marca 100 veces a 50 dolares, la cuenta es otra. Y el trabajo pesado lo haces una sola vez.",
+          "timing_seconds": 14
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Puedo versionar lo que ya hice y subirlo a un marketplace",
+          "viewer_emotion_after": "camino_claro",
+          "is_turning_point": false,
+          "script_text": "Y aca esta el tema: agarras uno de tus mejores diseno de marcas del ano pasado. El de la coach de mindfulness, por ejemplo. Lo limpias, lo haces generico. Armas un template con logo, paleta, tipografias, tarjetas y mockups de Instagram en Canva y Figma. Lo subis a Creative Market o a Hotmart. Otra coach lo compra por 47 dolares porque esta empezando y necesita una identidad profesional el lunes.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito mas clientes VIP ni Behance diario",
+          "viewer_emotion_after": "excusas_desarmadas",
+          "is_turning_point": false,
+          "script_text": "Entonces no hace falta sumar clientes VIP. No hace falta postearlo todos los dias en Behance. No hace falta aprender otra herramienta rara. Lo que ya hiciste esta en tu disco. Solo falta versionarlo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Los templates de diseno de marca facturan fuerte en marketplaces reales",
+          "viewer_emotion_after": "confirmacion_de_realidad",
+          "is_turning_point": false,
+          "script_text": "Porque en Creative Market hay templates de diseno de marca vendiendose desde 20 hasta 300 dolares. Los mejores facturan cinco cifras por mes con un template. Literalmente mientras duermen.",
+          "timing_seconds": 10
+        },
+        {
+          "section_name": "VentaModelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Es una decision de negocio, no de disciplina",
+          "viewer_emotion_after": "claridad_estrategica",
+          "is_turning_point": false,
+          "script_text": "Por eso no es diseno contra producto digital. Es trabajar con tiempo o trabajar con resultado. Tu carpeta de bocetos es el cajero que nunca abriste. Es una decision de negocio, no de disciplina creativa.",
+          "timing_seconds": 10
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "calculo_mental",
+        "phrase": "Haz la cuenta"
+      },
+      {
+        "location": "puente",
+        "technique": "curiosidad",
+        "phrase": "una cuenta que tus profesores de la UBA no te contaron"
+      },
+      {
+        "location": "quiebre",
+        "technique": "revelacion_matematica",
+        "phrase": "el trabajo pesado lo haces una sola vez"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "reconocimiento",
+        "phrase": "uno de tus mejores diseno de marcas del ano pasado"
+      },
+      {
+        "location": "demolicion",
+        "technique": "reduccion",
+        "phrase": "Solo falta versionarlo"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "remate_analogico",
+        "phrase": "el cajero que nunca abriste"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 30,
+        "ingredient_name": "Precio-perspectiva (R7)"
+      },
+      {
+        "category": "A",
+        "ingredient_number": 17,
+        "ingredient_name": "Anti-hype"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 36,
+        "ingredient_name": "Dolor temporal"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 56,
+        "ingredient_name": "Prueba logica"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 84,
+        "ingredient_name": "Stack de herramientas simples"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 91,
+        "ingredient_name": "Prueba en tiempo real"
+      },
+      {
+        "category": "K",
+        "ingredient_number": 128,
+        "ingredient_name": "Remate Analogico"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-23T03:03:45.215Z"
+}

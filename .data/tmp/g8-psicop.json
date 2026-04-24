@@ -1,0 +1,69 @@
+{
+  "title": "Psicopedagogas — Lo que le decis a una mama vale para 100",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.psicopedagoga_guia_para_madres",
+    "body_type": "pregunta_respuesta",
+    "segment": "C",
+    "funnel_stage": "TOFU",
+    "niche": "psicopedagogas / fonoaudiologas / terapeutas ocupacionales",
+    "model_sale_type": "democratizacion_ia",
+    "transition_text": "Esa guia para padres con hijos con dislexia es UN ejemplo. Te voy a mostrar el proceso entero esta semana en una clase.",
+    "total_duration_seconds": 82,
+    "word_count": 225,
+    "punto_entrada_emocional": "frustracion de atender a chicos ajenos mientras los tuyos esperan y saber que lo que decis sirve a 100 familias mas",
+    "belief_change": {
+      "old_belief": "Mi trabajo es individual, una sesion por familia. No se puede escalar sin perder calidad",
+      "mechanism": "Mostrar que lo que se le explica a una mama se puede grabar y llegar a 100 con la misma calidad",
+      "new_belief": "Mi explicacion grabada ayuda a las familias que nunca van a llegar a mi consultorio"
+    },
+    "micro_beliefs": [
+      { "belief": "La mama que me pide que arme algo no esta equivocada", "installed_via": "legitimar_pedido_externo", "persuasion_function": "puente", "section_name": "Puente" },
+      { "belief": "Un audio bien grabado es una sesion multiplicada", "installed_via": "analogia_simple", "persuasion_function": "quiebre", "section_name": "Quiebre" },
+      { "belief": "Las 5 preguntas repetidas son el producto", "installed_via": "demo_implicita", "persuasion_function": "mecanismo", "section_name": "Mecanismo" },
+      { "belief": "No necesito Instagram ni dejar de atender ni aprender diseno", "installed_via": "desarmar_excusas", "persuasion_function": "demolicion", "section_name": "Demolicion" },
+      { "belief": "Otras colegas ya estan vendiendo guias para familias", "installed_via": "audio_real", "persuasion_function": "prueba", "section_name": "Prueba" }
+    ],
+    "hooks": [
+      { "variant_number": 1, "hook_type": "voz_tercero", "hypothesis": "la voz de la mama del paciente valida la demanda externa", "emotional_lever": "pedido_reconocido", "script_text": "Tu ultima paciente te dice, la mama: vos deberias armar una guia con todo esto. Esto lo necesitan un monton de familias. Y vos sonreis pero no haces nada.", "timing_seconds": 8 },
+      { "variant_number": 2, "hook_type": "auto_seleccion_memoria", "hypothesis": "la escena de la mama que se queda 30 min mas es universal del nicho", "emotional_lever": "memoria_clinica", "script_text": "Si sos psicopedagoga o fono, seguro ya te paso. Atendes al nene una hora. Y despues la mama se queda 30 minutos mas preguntandote cosas.", "timing_seconds": 8 },
+      { "variant_number": 3, "hook_type": "pregunta_espejo", "hypothesis": "el monologo de la profesional con hijos propios se reconoce solo", "emotional_lever": "empatia_doble_rol", "script_text": "Soy psicopedagoga. Tengo 3 hijos. Atiendo a 25 nenes por semana. Y si lo que le explico a cada mama lo pudieran tener todas las que no consiguen turno?", "timing_seconds": 8 },
+      { "variant_number": 4, "hook_type": "historia_dolor_sensorial", "hypothesis": "la escena de llegar a casa agotada pega en el cluster mamas", "emotional_lever": "agotamiento_maternal", "script_text": "Salis del consultorio a las 8 de la noche. Tus hijos ya comieron. Te queres sentar pero tenes que hacer informes del dia.", "timing_seconds": 7 },
+      { "variant_number": 5, "hook_type": "promesa_directa", "hypothesis": "la promesa contraintuitiva abre curiosidad", "emotional_lever": "curiosidad_por_escala", "script_text": "Tu proxima paciente no va a ser un nene. Van a ser 200 familias que leyeron tu guia un domingo a la noche.", "timing_seconds": 7 }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "analogia_principio_fin",
+      "sections": [
+        { "section_name": "Puente", "persuasion_function": "puente", "micro_belief": "La mama que me pide que arme algo no esta equivocada", "viewer_emotion_after": "legitimidad_reconocida", "is_turning_point": false, "script_text": "Pero esa mama que te dice deberias armarlo tiene razon. Y te esta pidiendo sin saber que te ayudes a vos.", "timing_seconds": 6 },
+        { "section_name": "Quiebre", "persuasion_function": "quiebre", "micro_belief": "Un audio bien grabado es una sesion multiplicada", "viewer_emotion_after": "comprension_de_escala", "is_turning_point": true, "script_text": "Porque una sesion con una mama son 30 minutos con una familia. Un audio de WhatsApp bien grabado es 30 minutos con 100 familias. La analogia es la misma, el impacto no.", "timing_seconds": 12 },
+        { "section_name": "Mecanismo", "persuasion_function": "mecanismo", "micro_belief": "Las 5 preguntas repetidas son el producto", "viewer_emotion_after": "camino_posible", "is_turning_point": false, "script_text": "Y aca esta el tema: agarras las 5 preguntas que te hacen todas las mamas de chicos con dislexia. Grabas los audios explicando cada una como si se los mandaras a una sola persona. La IA te los transcribe y te arma una guia paso a paso de 18 paginas con imprimibles y actividades para casa. Una mama de Tucuman la compra por 22 dolares porque su hijo repite primero y no puede pagar una consulta por mes.", "timing_seconds": 19 },
+        { "section_name": "Demolicion", "persuasion_function": "demolicion", "micro_belief": "No necesito Instagram ni dejar de atender ni aprender diseno", "viewer_emotion_after": "excusas_desarmadas", "is_turning_point": false, "script_text": "Entonces no hace falta armar una cuenta de Instagram. No hace falta que dejes de atender. No hace falta aprender diseno grafico. Las preguntas ya te las hacen todas las semanas. La guia casi se escribe sola si le das el tiempo.", "timing_seconds": 13 },
+        { "section_name": "Prueba", "persuasion_function": "prueba", "micro_belief": "Otras colegas ya estan vendiendo guias para familias", "viewer_emotion_after": "confirmacion_de_realidad", "is_turning_point": false, "script_text": "Porque una colega de Neuquen subio una guia de estrategias para TDAH en Hotmart el ano pasado. Esta semana me mando un audio: vendio 43 copias mientras cenaba con sus hijos.", "timing_seconds": 11 },
+        { "section_name": "VentaModelo", "persuasion_function": "venta_modelo", "micro_belief": "Puedo sumar plata sin descuidar a los mios", "viewer_emotion_after": "permiso_con_familia", "is_turning_point": false, "script_text": "Por eso no se trata de abandonar a los nenes que atendes. Se trata de ayudar a los que nunca van a llegar a tu consultorio. Y sumar plata sin descuidar a los tuyos.", "timing_seconds": 9 }
+      ]
+    },
+    "micro_yes_chain": [
+      { "location": "hook", "technique": "pedido_externo", "phrase": "Esto lo necesitan un monton de familias" },
+      { "location": "puente", "technique": "legitimar", "phrase": "te esta pidiendo sin saber que te ayudes a vos" },
+      { "location": "quiebre", "technique": "analogia_simple", "phrase": "30 minutos con 100 familias" },
+      { "location": "mecanismo", "technique": "reconocimiento", "phrase": "Las 5 preguntas que te hacen todas las mamas" },
+      { "location": "demolicion", "technique": "permiso", "phrase": "La guia casi se escribe sola" },
+      { "location": "venta_modelo", "technique": "integracion", "phrase": "sin descuidar a los tuyos" }
+    ],
+    "ingredients_used": [
+      { "category": "A", "ingredient_number": 12, "ingredient_name": "Voz de tercero (F12)" },
+      { "category": "A", "ingredient_number": 21, "ingredient_name": "Nombre directo al avatar" },
+      { "category": "B", "ingredient_number": 27, "ingredient_name": "Paralisis por informacion" },
+      { "category": "D", "ingredient_number": 54, "ingredient_name": "Analogia simple" },
+      { "category": "F", "ingredient_number": 73, "ingredient_name": "Demo implicita" },
+      { "category": "G", "ingredient_number": 86, "ingredient_name": "Audio real" }
+    ],
+    "cta_blocks": [
+      { "channel": "clase_gratuita", "variant": "C" },
+      { "channel": "taller_5", "variant": "A" },
+      { "channel": "instagram", "variant": "C" }
+    ]
+  }
+}

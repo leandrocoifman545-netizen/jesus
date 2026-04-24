@@ -26,7 +26,7 @@ Intento de batch con 3 conceptos que rompían el patrón "X empaquetó Y con IA"
 
 **ERR-03 · Hooks que asumen momento presente**
 - Manifestación: "Son las 3 AM", "ahora estás despierta", "03:12". Filtra por HORA, no por avatar.
-- Root cause: el hook estaba anclado al concepto literal en vez de a experiencia duradera. El winner #121 ($0.38) filtra por ACTIVIDAD ("si hacés manualidades"), no por momento.
+- Root cause: el hook estaba anclado al concepto literal en vez de a experiencia duradera. Los hooks efectivos filtran por OBJECIÓN / HIPÓTESIS / ANALOGÍA (#3, #6, #44) o por IDENTIDAD PSICOLÓGICA, nunca por momento presente ni por edad.
 - Arreglo aplicado: Gate 3 aplica las 10 reglas de Víctor como check obligatorio. La regla 7 (congruencia) y 8 (no hablar de lo obvio) detectan asunciones de momento.
 
 **ERR-04 · Errores de lenguaje local**

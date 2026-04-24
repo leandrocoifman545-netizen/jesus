@@ -55,7 +55,6 @@ export async function getKnowledgeContext(): Promise<string> {
     jerarquiaDecisiones,
     objeciones,
     frasesTextuales,
-    cruceWinners,
   ] = await Promise.all([
     loadFile("angulos-expandidos.md"),
     loadFile("tipos-cuerpo.md"),
@@ -71,7 +70,6 @@ export async function getKnowledgeContext(): Promise<string> {
     loadFile("jerarquia-decisiones.md"),
     loadFile("objeciones-adp.md"),
     loadFile("frases-textuales-562-compradores.md"),
-    loadFile("cruce-562-vs-winners.md"),
   ]);
 
   const sections: string[] = [];
@@ -132,13 +130,9 @@ export async function getKnowledgeContext(): Promise<string> {
     sections.push(`## FRASES TEXTUALES DE 562 COMPRADORES (copy-paste directo para hooks, beats, CTAs)\n${frasesTextuales}`);
   }
 
-  if (cruceWinners) {
-    sections.push(`## CRUCE COMPRADORES × WINNERS (nichos validados, mecanismos confirmados, oportunidades)\n${cruceWinners}`);
-  }
-
   // Warn about missing critical files so Claude knows its context is incomplete
-  const loadedFiles = [angulos, tiposCuerpo, ingredientes, reglasDiversidad, ventaModelo, ctasBiblioteca, motorAudiencia, winnerPatterns, sessionInsights, avatares, inteligenciaCompradores, jerarquiaDecisiones, objeciones, frasesTextuales, cruceWinners];
-  const fileNames = ["angulos-expandidos.md", "tipos-cuerpo.md", "enciclopedia-127-ingredientes.md", "reglas-diversidad.md", "venta-modelo-negocio.md", "ctas-biblioteca.md", "motor-audiencia.md", "winner-patterns.md", "session-insights.md", "avatares-adp.md", "inteligencia-compradores.md", "jerarquia-decisiones.md", "objeciones-adp.md", "frases-textuales-562-compradores.md", "cruce-562-vs-winners.md"];
+  const loadedFiles = [angulos, tiposCuerpo, ingredientes, reglasDiversidad, ventaModelo, ctasBiblioteca, motorAudiencia, winnerPatterns, sessionInsights, avatares, inteligenciaCompradores, jerarquiaDecisiones, objeciones, frasesTextuales];
+  const fileNames = ["angulos-expandidos.md", "tipos-cuerpo.md", "enciclopedia-127-ingredientes.md", "reglas-diversidad.md", "venta-modelo-negocio.md", "ctas-biblioteca.md", "motor-audiencia.md", "winner-patterns.md", "session-insights.md", "avatares-adp.md", "inteligencia-compradores.md", "jerarquia-decisiones.md", "objeciones-adp.md", "frases-textuales-562-compradores.md"];
   const missing = fileNames.filter((_, i) => !loadedFiles[i]);
 
   if (missing.length > 0) {
@@ -183,7 +177,6 @@ export async function getKnowledgeContextLongform(): Promise<string> {
     // - winner-patterns.md (CLR metrics, 60-90s duración, TikTok patterns — irrelevante para 10-20min)
     // - session-insights.md (modularidad hooks/body, sweet spot 55-65s, CLR de Ramiro — ads only)
     // - ctas-biblioteca.md (bloques CTA de 6 capas para ads — YouTube usa CTAs nativos)
-    // - cruce-562-vs-winners.md (ad-specific niches and mechanisms)
   ]);
 
   const sections: string[] = [];

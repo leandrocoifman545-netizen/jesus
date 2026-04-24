@@ -1,17 +1,19 @@
 # Mecanismos de Hooks — 20 Fórmulas (F1-F20)
 
-> Destilación accionable de la investigación de 8 competidores (577 videos, 586 transcripciones) + winners reales de ADP.
-> Fuentes completas: `pattern-library.md`, `herasmedia_hooks_bank.md`, `cruce-4-winners-adp-2026.md`
+> Destilación accionable de la investigación de 8 competidores (577 videos, 586 transcripciones) + análisis de winners ADP.
+> Fuentes vigentes: `pattern-library.md`, `herasmedia_hooks_bank.md`, `winner-patterns.md` (los 4 winners YTD 2026).
+>
+> ⚠️ **Actualización 2026-04-24:** La evidencia histórica de fórmulas F1-F3 venía de ads que no pasaron el umbral de ≥100 ventas (#121, #34) o fatigaron a escala (#46). Las fórmulas conceptualmente siguen siendo hipótesis razonables, pero no están re-validadas con los 4 winners actuales (#3, #6, #39, #44). Priorizar los patrones de `winner-patterns.md` para la elección final.
 
 ---
 
 ## REGLA #1: EL HOOK ES UN FILTRO DE COMPRADOR
 
-El CPL baja linealmente con qué tan bien el hook filtra al comprador real:
-- Match perfecto (hook atrae al perfil comprador) → $0.38
-- Match amplio (hook incluye comprador + otros) → $0.99
-- Sin filtro → $1.31
-- Desajuste (hook atrae a quien NO compra) → $1.46
+El match con el comprador real es la variable más predictiva del CPL:
+- Match perfecto (hook atrae al perfil comprador) → CPL más bajo del rango
+- Match amplio (hook incluye comprador + otros) → CPL medio
+- Sin filtro (hook atrae a todos) → CPL alto
+- Desajuste (hook atrae a quien NO compra) → CPL más alto
 
 **Antes de elegir fórmula, preguntarse: ¿Este hook atrae a Patricia (48, empleada), Roberto (62, jubilado) o Laura (38, mamá)? Si atrae a Martín (26, oficinista) → CPL sube.**
 
@@ -23,20 +25,20 @@ Estas fórmulas tienen la mayor combinación de data + fit con la audiencia de A
 
 | Prioridad | Fórmula | Nombre | Data |
 |-----------|---------|--------|------|
-| 1 | F1 | Auto-selección + memoria | $0.38 CPL (probado) |
-| 2 | F2 | Eliminación de barreras | $0.99 CPL (probado) |
-| 3 | F16 | Inmersión 2da persona | 175% CLR (Heras) |
-| 4 | F17 | Anti-hype | ~59% CLR (cross-profile) |
-| 5 | F18 | Desculpabilización | 6/8 perfiles (axioma) |
-| 6 | F19 | Anti-consejo | 59.77% CLR (Heras) |
-| 7 | F4 | Pregunta espejo | 157.9% CLR (Jaime) |
-| 8 | F7 | Flip contraintuitivo (mejorado) | Hipótesis fuerte |
-| 9 | F11 | Historia dolor sensorial (mejorado) | Hipótesis fuerte |
-| 10 | F20 | Pregunta-trampa dual | 70%+ CLR (Tino) |
+| 1 | F16 | Inmersión 2da persona | 175% CLR (Heras) |
+| 2 | F17 | Anti-hype | ~59% CLR (cross-profile) — presente en todos los winners ADP actuales |
+| 3 | F18 | Desculpabilización | 6/8 perfiles (axioma) |
+| 4 | F4 | Pregunta espejo | 157.9% CLR (Jaime) — análogo al hook de #6 (ROAS 2,63) |
+| 5 | F19 | Anti-consejo | 59.77% CLR (Heras) |
+| 6 | F7 | Flip contraintuitivo | Hipótesis fuerte |
+| 7 | F11 | Historia dolor sensorial | Hipótesis fuerte |
+| 8 | F20 | Pregunta-trampa dual | 70%+ CLR (Tino) |
+| 9 | F1 | Auto-selección + memoria | Hipótesis — evidencia histórica retirada |
+| 10 | F2 | Eliminación de barreras | Hipótesis — fatigó a escala en #46 (anti-patrón) |
 
 ---
 
-## FÓRMULAS PROBADAS CON CPL REAL
+## FÓRMULAS HISTÓRICAS (F1-F3 — evidencia retirada, conceptos en observación)
 
 ### F1 — Auto-selección + memoria
 **Qué es:** Nombrás el nicho del avatar y activás un recuerdo específico de su vida. El cerebro busca la memoria antes de decidir si sigue mirando.
@@ -45,7 +47,6 @@ Estas fórmulas tienen la mayor combinación de data + fit con la audiencia de A
 1. Nombrar el nicho: **preferir "Si sabés [hacer X]..."** sobre "Si hacés/sos [NICHO]..."
    - "Sabés hacer" captura identidad LATENTE — incluye a quien tiene el skill pero no ejerce activamente. Alineado con la tesis de ADP: monetizar CONOCIMIENTO, no actividad.
    - "Hacés" filtra solo a quien está activa hoy — excluye a quien dejó, hace esporádicamente, o tiene el skill sin explotarlo.
-   - El propio winner #121 lo confirma en el body: "el conocimiento de cómo hacerlas vale mucho más que la manualidad en sí."
 2. Activar memoria concreta: "...seguro ya te pasó"
 3. Describir la situación vivida con detalle sensorial
 
@@ -54,10 +55,10 @@ Estas fórmulas tienen la mayor combinación de data + fit con la audiencia de A
 
 **Palanca psicológica:** El cerebro BUSCA el recuerdo antes de evaluar si el ad le interesa. Eso lo retiene.
 
-**Cuándo usarlo:** Cuando el nicho tiene una experiencia universal frustrante que todos comparten. Preferir nichos AMPLIOS en población (docentes, comerciantes, terapeutas) con dolor compartido verificado — no sub-nichos chicos (profe de inglés, nutricionista deportivo) que limitan volumen sin mejorar filtrado.
+**Cuándo usarlo:** Cuando el nicho tiene una experiencia universal frustrante que todos comparten. Preferir nichos AMPLIOS en población (docentes, comerciantes, terapeutas) con dolor compartido verificado — no sub-nichos chicos que limitan volumen sin mejorar filtrado.
 **Cuándo NO:** Cuando el nicho es demasiado amplio para activar memoria ("si trabajás") o demasiado chico para tener volumen de compradores reales (<5% de la base de 562).
 
-**Fuente:** Winner #121 ADP — $0.38 CPL (el mejor CPL de toda la historia de ADP).
+**Estado:** Conceptualmente sólida. La evidencia histórica fue retirada por no pasar el umbral de ≥100 ventas. Producir variantes con spend ≥$2k para re-validar.
 
 ---
 
@@ -74,10 +75,10 @@ Estas fórmulas tienen la mayor combinación de data + fit con la audiencia de A
 
 **Palanca psicológica:** Cada "no importa" elimina una razón para scrollear. El avatar que iba a irse se queda porque le dijeron que SÍ es para él.
 
-**Cuándo usarlo:** Cuando el avatar tiene objeciones fuertes de identidad (edad, tecnología, experiencia).
+**Cuándo usarlo:** Cuando el avatar tiene objeciones fuertes de identidad (tecnología, experiencia). **Evitar barreras demográficas explícitas (edad).**
 **Cuándo NO:** Cuando las objeciones son genéricas — si cualquier avatar tiene esas objeciones, no filtra.
 
-**Fuente:** Winner #46 ADP — $0.99 CPL. Match amplio pero efectivo.
+**Estado:** ⚠️ Anti-patrón parcial. El ad #46 usaba esta fórmula con barrera demográfica ("tenés entre 25 y 55 años") y fatigó a escala (ROAS 0,55, 95 ventas). La fórmula puede servir si la barrera NO es demográfica sino de identidad/creencia. Ver `winner-patterns.md` sección "Anti-patrón #46".
 
 ---
 
@@ -92,10 +93,10 @@ Estas fórmulas tienen la mayor combinación de data + fit con la audiencia de A
 
 **Palanca psicológica:** Curiosidad leve. El avatar EVALÚA si le interesa en vez de ser automáticamente absorbido.
 
-**Cuándo usarlo:** Testing rápido, awareness alto.
-**Cuándo NO:** Cuando querés filtrar — este hook atrae a todos y no filtra a nadie. CPL más alto ($1.31).
+**Cuándo usarlo:** Testing rápido, awareness alto. Combinar con contraste de creencia + re-explicación + anti-pitch (patrón del #39).
+**Cuándo NO:** Cuando querés filtrar fuerte — este hook atrae amplio y no discrimina.
 
-**Fuente:** Winner #39 ADP — $1.31 CPL. Funciona pero no filtra.
+**Estado:** Validada a escala en el **Winner #39 [BN]** — ROAS 1,25, $2.706 spend, 167 ventas (ACTIVE en YTD 2026). Es workhorse confirmado cuando se combina con el cuerpo correcto (contraste IAs gratuitas vs pagas + re-explicación + anti-pitch "no te voy a vender nada de $500, vale menos que una pizza").
 
 ---
 

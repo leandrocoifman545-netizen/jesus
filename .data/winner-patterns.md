@@ -1,120 +1,250 @@
-# Winner Patterns — 2026-04-19
+# Winner Patterns — actualizado 2026-04-24
 
-> **DNA real accionable extraído de los análisis profundos en `.data/`.**
-> Fuente primaria: `analisis-winner-*.md` (análisis manuales con métricas reales).
-> Fuente secundaria: generations con status winner/recorded (counts estadísticos).
+> 🔒 **ARCHIVO MANUAL — NO REGENERAR.** Este archivo se mantiene a mano desde 2026-04-24. La regeneración automática (via `extract-winner-patterns.mjs`, ya removida del pipeline) reintroducía data de ads fatigados y sin validar. Cuando haya nuevos winners con ≥100 ventas en el reporte Meta Ads, editar esta tabla directamente.
+>
+> **DNA real accionable extraído de los análisis profundos.**
+> Fuente primaria: `transcripciones-ganadores/CROSS_ANALYSIS.md` + `transcripciones-ganadores/ANALISIS.md` (2026-04-23).
+> Fuente secundaria: análisis individuales vigentes en `.data/analisis-winner-*.md`.
 
-## Winners con análisis profundo (6)
+---
 
-| # | Ad | CPL | Leads | Nicho | Ángulo | Hook type | Segmento | Dur |
-|---|----|-----|-------|-------|--------|-----------|----------|-----|
-| 1 | Winner #121 [C9-H1-CTAventa] | $0.38 | 54 | Manualidades / artesanías (ferias) | — | — | — | 67.4s |
-| 2 | Winner #34 [C3-H4-CTAventa] | $0.73 | 302 | Decoración de interiores — guías de decoración con IA | Nostalgia (revistas de decoración de kiosco) → oportunidad digital | — | — | — |
-| 3 | Winner #122 [C9-H2-CTAventa] | $0.78 | 366 | — | — | — | — | — |
-| 4 | Winner #46 [Hook_16 Cuerpo_3 CTA_4] | $0.99 | 866 | — | confrontacion / modelo_equivocado | eliminacion_barreras | A (principiante total) | 64.6s |
-| 5 | Winner #39 [BN] T4 | $1.34 | 1270 | — | — | — | — | — |
-| 6 | Analisis Profundo — Winner #43 [BN T4] | $1.44 | 747 | — | — | — | — | — |
+## 🚧 Regla dura de elegibilidad
 
-## DNA por winner (hallazgos accionables)
+Un ad **solo cuenta como winner** si cumple los 2 criterios:
 
-### Winner #121 [C9-H1-CTAventa] — $0.38
+1. **≥100 ventas reales** (evidencia de conversión, no ruido estadístico).
+2. **ROAS ≥ 1** (rentable con LTV backend; umbral positivo del embudo = 0,50, pero acá exigimos ≥1 para pattern-extraction).
+
+Un ad con CPL bajo pero <100 ventas **no es winner** — es experimento sin validar. Un ad con ≥100 ventas pero ROAS <1 **es loser con evidencia** — sirve como anti-patrón, no como plantilla.
+
+---
+
+## 🏆 Top actual — reporte Meta Ads YTD 2026 (01-ene a 20-abr)
+
+### Los 4 winners validados
+
+| # | Ad | Spend | Ventas | ROAS | Profit 2-productos | Status |
+|---|---|---|---|---|---|---|
+| 1 | **#3** (analogía manejar) | $5.943 | 424 | 1,20 | **+$1.196** | WITH_ISSUE |
+| 2 | **#6** (pregunta del avatar) | $547 | 108 | **2,63** | +$862 | CAMPAIGN_PAUSED |
+| 3 | **#39 [BN]** (IAs gratuitas + 3 pasos) | $2.706 | 167 | 1,25 | +$665 | **ACTIVE** |
+| 4 | **#44 [C1]** (deuda 30 días) | $2.730 | 161 | 1,21 | +$578 | DISAPPROVE |
+
+### Caso de estudio — loser con evidencia
+
+| # | Ad | Spend | Ventas | ROAS | Por qué interesa |
+|---|---|---|---|---|---|
+| — | **#46** [Hook16 C3 CTA4] (3 modelos) | $2.945 | 95 | **0,55** | Pasó la barra de spend pero falló ROAS. Único evidencia dura de **fatiga a escala**. Anti-patrón, no plantilla. |
+
+---
+
+## 🧬 DNA por winner — hallazgos accionables
+
+### Winner #3 (analogía manejar) — ROAS 1,20 / $7.139 rev / 424 ventas
+
+**Meta-patrón:** ANALOGÍA COTIDIANA CON BRACKET NARRATIVO
 
 **Hallazgos que mueven la aguja:**
-1. **HIPERNICHO COMO HOOK** — Qué es: Abrir con "Si hacés [NICHO]" en vez de "No importa si tenés [EDAD]" baja el CPL 2.6x ($0.38 vs $0.99). Por qué es el más valioso: Es INMEDIATAMENTE replicable. La estructura del ad #121 es una PLANTILLA que se pu
-2. **DEMO CONCRETA DEL MECANISMO** — Qué es: Nombrar un PRODUCTO ESPECÍFICO ("guía de 15 páginas de velas artesanales") + mostrarlo con INSERT VISUAL es más persuasivo que describir el concepto ("productos digitales"). Por qué es valioso: Resuelve el proble
-3. **ESPEJO INVERSO DEL DOLOR** — Qué es: Cerrar con la INVERSIÓN EXACTA del dolor inicial. 3 dependencias al inicio → 3 liberaciones al final. El arco emocional se cierra y el viewer siente RESOLUCIÓN. Por qué es valioso: Es una técnica de ESTRUCTURA qu
 
-*Análisis completo:* `.data/analisis-winner-121-c9-h1-ctaventa.md`
+1. **Bracket narrativo** (abrir y cerrar con la misma escena). Abre con "¿Viste cuando aprendés a manejar?" y cierra con "apretá el embriague, creá tu producto, poné primera". El cerebro completa el círculo → más watched-to-end → algoritmo escala.
+2. **Analogía motora** (verbos de acción: apretá, soltá, poné primera) en vez de analogía abstracta. El viewer vive la escena kinestésicamente.
+3. **"Nosotros" institucional** 3 veces ("nuestro programa", "nuestras capacitaciones"). Único winner con plural — puede estar filtrando a ticket alto (Academia vs. Taller).
+4. **Soft sell sin CTA explícito.** Termina con consejo ("eso es lo que te enseñamos") — no pide botón.
+5. **Humor ligero** ("manejar sin mano es peligroso. No lo hagan."). Rompe el modo ad.
 
----
+**Estructura:**
+```
+[0-12s]  Analogía de apertura: scene cotidiana + pregunta
+[12-22s] Insight universal + gag humorístico
+[22-32s] Transferencia al emprender online
+[32-43s] Autoridad lateral ("a mí me sale natural")
+[43-58s] Venta del modelo con "nuestro"
+[58-65s] Callback → cierra con la analogía inicial transformada
+```
 
-### Winner #34 [C3-H4-CTAventa] — $0.73
+**Replicable:** cualquier experiencia cotidiana argentina (cocinar, armar un mueble, aprender un idioma). La clave es que sea MOTORA (verbos de acción) y que el cierre RETOME la analogía inicial.
 
-**Meta-patrón:** NOSTALGIA → OPORTUNIDAD → DEMO → ESCALABILIDAD
-
-**Principios transferibles:**
-- La nostalgia genera el CTR más alto porque no activa defensas anti-ad. Un recuerdo compartido es la puerta de entrada menos amena
-
-*Análisis completo:* `.data/analisis-winner-34-c3-h4-ctaventa.md`
-
----
-
-### Winner #122 [C9-H2-CTAventa] — $0.78
-
-*Análisis completo:* `.data/analisis-winner-122-c9-h2-ctaventa.md`
+*Análisis completo:* `transcripciones-ganadores/ad-3.md`
 
 ---
 
-### Winner #46 [Hook_16 Cuerpo_3 CTA_4] — $0.99
+### Winner #6 (pregunta del avatar) — ROAS 2,63 / 108 ventas
 
-**Meta-patrón:** INCLUÍ → CALIFICÁ → DESTRUÍ × 2 → CONSTRUÍ HONESTO → CONVERTÍ → ASEGURÁ
+**Meta-patrón:** FORMATO ACTUACIÓN/DIÁLOGO + OBJECTION HANDLING + VULNERABILIDAD DENSA
 
 **Hallazgos que mueven la aguja:**
-1. **La densidad de SÍes es la métrica oculta del CPL** — 13 SÍes en 65s (1 cada 5s) vs 11 SÍes en 193s (1 cada 17s) del ad viejo. La compresión de la cadena de confianza es lo que separa Meta Ads de YouTube. Cada guion nuevo debería medirse en SÍes/segundo.
-2. **El anti-hype es el ingrediente de conversión más poderoso en LATAM** — "No te vas a hacer millonario" es la frase que separa $0.99 de $2.50+ CPL. Ahora confirmado en 3 perfiles (Jaime + Heras + Jesús). Debería ser ingrediente OBLIGATORIO en todo ad TOFU.
-3. **La estructura "3 opciones, destruye 2" es infinitamente replicable** — Es el esqueleto del winner. Se puede variar: las 2 alternativas destruidas, los números, los nombres. Cada variante es un ad nuevo con la misma mecánica probada. Jesús debería grabar 5-10 variantes de esta estructura.
 
-**Principios transferibles:**
-- Dar 3 opciones con nombre propio, demoler 2 con datos concretos, dejar la tercera como ganadora por descarte lógico
+1. **Formato pregunta-respuesta con voz DISTINTA al inicio.** Es el único winner que abre con voz del avatar ("¿esto sirve si nunca vendí nada online?"). Todos los demás abren con voz de Jesús. El cambio de voz baja la guardia publicitaria.
+2. **Inversión de la objeción.** La duda del avatar ("nunca vendí online") pasa de OBSTÁCULO a VENTAJA en los primeros 15 segundos. Técnica difícil de replicar pero poderosa.
+3. **Vulnerabilidad densa.** 4 frases de sinceridad: "obviamente tienes sus limitantes", "no te vas a hacer millonario", "hay gente que no va a poder hacerlo", "tenés alta probabilidad de equivocarte". Nadie más del top tiene tanta.
+4. **Ausencia de CTA explícito.** Cierre con CONSEJO ("alguien que te guíe"). No pide botón. Alta confianza.
+5. **Triple martilleo de "es muy difícil"** referido a alternativas — hace que este modelo se sienta el único viable por contraste.
 
-*Análisis completo:* `.data/analisis-winner-46-hook16-cuerpo3-cta4.md`
+**Estructura:**
+```
+[0-3s]   Pregunta del avatar en voz distinta
+[3-22s]  Reframe: la objeción es la ventaja
+[22-37s] Demolición de alternativas con "es muy difícil" × 4
+[37-46s] Mecanismo (compu + IA + producto + ads)
+[46-60s] Expectativa realista con número concreto (2-3k)
+[60-66s] Venta del modelo
+[66-72s] Cierre con consejo (sin CTA)
+```
 
----
+**Nota de escala:** 108 ventas validan la conversión, pero el spend fue bajo ($547). Al escalar a $2k+ el ROAS probablemente comprima — esperar algo entre 1,3-1,8 sostenido. Si colapsa debajo de 1, pasa a la categoría de #46 (buen hook, no escala).
 
-### Winner #39 [BN] T4 — $1.34
+**Replicable:** pedirle al avatar 5 preguntas reales ("¿sirve si tengo X?", "¿y si no tengo Y?") y grabar cada una con esta estructura.
 
-**Principios transferibles:**
-- Un cambio visual drástico en los primeros 3 segundos compra atención en el feed
-
-*Análisis completo:* `.data/analisis-winner-39-bn-t4.md`
-
----
-
-### Analisis Profundo — Winner #43 [BN T4] — $1.44
-
-**Principios transferibles:**
-- Usar algo que el viewer YA HACE con la herramienta para demostrar que PUEDE hacer algo nuevo
-- La transicion visual puede comunicar transformacion A->B sin una sola palabra
-- Apilar 5+ objeciones demolidas en rafaga rapida DESPUES del deseo genera sensacion de "no tengo excusa"
-
-*Análisis completo:* `.data/analisis-winner-43-bn-t4.md`
+*Análisis completo:* `transcripciones-ganadores/ad-6.md`
 
 ---
 
-## Factores que explicaron la mejora T4 → T6 (CPL -49%)
+### Winner #39 [BN] — ROAS 1,25 (ACTIVE)
 
-Del cruce con reporte de performance Meta Ads:
+**Meta-patrón:** LISTICLE 3 PASOS + ANTI-PITCH EXPLÍCITO
 
-- **Nicho específico vs genérico** — impacto estimado 30%
-- **B-roll de nicho + screen ChatGPT = verificación visual** — impacto estimado 20%
-- **Duración más corta = menos abandono** — impacto estimado 15%
-- **Hooks más sofisticados** — impacto estimado 15%
-- **Nomenclatura modular C×H×CTA** — impacto estimado 10%
-- **Producción profesional vs UGC casero** — impacto estimado 10%
+**Hallazgos que mueven la aguja:**
 
-*Análisis completo:* `.data/cruce-winners-t4-t6-reporte-performance.md`
+1. **Contraste binario de creencia** ("las IAs gratuitas vs las pagas — las gratuitas hay que descartarlas") + proceso de 3 partes IMPLÍCITO (encontrar productos → modelarlos con IA → vender con anuncios). **Corrección 2026-04-24:** revisión del transcript mostró que NO hay numeración explícita "paso 1/2/3" como se decía antes — el proceso va de corrido.
+2. **Anti-pitch doble:** "no te voy a vender nada de $500, ni $200… algo que vale menos que una pizza". Inversión de expectativa + posicionamiento de tripwire. Patrón confirmado en 3 perfiles distintos (Jaime, Heras, Jesús) como el más potente en LATAM.
+3. **Contraste gratuitas vs pagas** como quiebre de creencia inicial.
+4. **Cierre casual con "Abrazos."** Señal afectiva al final (marker universal de top 4 actual).
+5. **Duración 85s** — límite superior del target; el que llega al final está altamente pre-calificado.
 
----
-
-## Counts estadísticos (generations con status winner/recorded)
-
-**Total validados:** 25 (0 winners + 25 recorded)
-
-**Top ángulos:** unknown (9), identidad (6), confrontacion (4), historia (2), 1 (1)
-
-**Top bodies:** unknown (9), contraste_emocional (4), comparacion_caminos (3), pregunta_respuesta (1), un_dia_en_la_vida (1)
-
-**Top hooks:** situacion_especifica (17), provocacion (10), pregunta_incomoda (8), confesion (8), contraintuitivo (8)
-
-**Top segmentos:** unknown (9), A (7), B (4), C (3), D (1)
-
-**Top nichos:** unknown (9), comerciante que vende por Mercado Libre (cualquier rubro) (1), docencia primaria / material didáctico / maestra de grado (1), vendedores / cerradores / comerciantes B2B (amplio — telefónico, presencial, Mercado Libre) (1), identidad como padre/madre (genérico) (1)
+*Análisis completo:* `transcripciones-ganadores/ad-39bn.md` + `.data/analisis-winner-39-bn-t4.md`
 
 ---
 
-## Cómo usar estos patterns
+### Winner #44 [C1] — ROAS 1,21 (DISAPPROVE — apelar)
 
-- **Sesgar hacia lo validado:** los winners con análisis profundo tienen métricas reales. Usar su estructura (ángulo, hook type, vehículo) como norte.
-- **NUNCA copiar:** son patrones para SESGAR decisiones, no templates para replicar.
-- **Diversidad sigue mandando:** si un tipo de lead tiene más winners, priorizarlo pero no repetirlo.
-- **Leer el análisis completo** si vas a basar un guion en un winner — los hallazgos aquí son destilado, el contexto completo está en `.data/analisis-winner-*.md`.
+**Meta-patrón:** HIPÓTESIS DEL AUTOR + DEMOLICIÓN DE OBJECIONES × 3
+
+**Hallazgos que mueven la aguja:**
+
+1. **Pregunta hipotética posicionante:** "Si tuviera una deuda que pagar en 30 días, no buscaría trabajo — buscaría algo para emprender". Activa autoridad sin pitchear.
+2. **Triple anti-objeción en ráfaga:** cara / plata / tiempo. Demoler las 3 objeciones principales en 10s.
+3. **Demo en vivo prometida:** "te voy a mostrar en vivo cómo yo hago con la IA" (autoridad verificable).
+4. **Bonus de preparación** — clases previas para nivelar. Reduce fricción de entrada.
+5. **Cierre con "¡Abrazo!"** — afectivo.
+
+**⚠️ Causa del DISAPPROVE:** beat 5 menciona directamente "pagar una deuda", "plan de ahorro de un auto", "alquiler de tu departamento". Meta flagea como promesa de ingresos. **Solución:** reformular a lenguaje de "estilo de vida" según `feedback_reglas_escritura.md`.
+
+*Análisis completo:* `transcripciones-ganadores/ad-44-c1.md`
+
+---
+
+### ⚠️ Anti-patrón: #46 — el que fatigó a escala
+
+Escaló a $2.945 de spend con solo 95 ventas y ROAS 0,55 (loser con evidencia).
+
+**Qué hace distinto a los 3 que SÍ sostuvieron escala** (#3, #39, #44):
+
+| Feature | #46 (fatigó) | #3 / #39 / #44 (sostuvieron) |
+|---|---|---|
+| Hook | Demográfico (25-55 años) | Psicológico (objeción, hipótesis, analogía) |
+| Menciona competidores | Sí (Fiverr, Digistore) | No |
+| Menciona IA | No | Sí (2-7 veces) |
+| Oraciones promedio | 12,7 palabras | 9-14 palabras (#3 más cortas) |
+| Argentinismos | Medios | Altos |
+| Cierre afectivo | No | "Abrazo" / callback / consejo |
+
+**Anti-patrón claro:** evitar los 3 primeros ítems (hook demográfico, competidores con nombre, IA ausente).
+
+*Transcripción:* `transcripciones-ganadores/ad-46.md`
+
+---
+
+## 🧭 Principios transversales (vigentes de análisis anteriores + confirmados hoy)
+
+**Confirmados en T4-T7 Y en YTD 2026:**
+
+1. **Voseo argentino + CTA suave.** "Tocá el botón", "abrazo", "vos lo único que tenés".
+2. **Anti-hype / anti-venta** = ingrediente obligatorio en ads TOFU ("no te vas a hacer millonario", "no te voy a vender nada de $500"). Presente en TODOS los winners del top.
+3. **Duración 65-85s.** Sweet spot confirmado.
+4. **Jesús único presentador.** Sin testimonios, sin actores.
+5. **Especificidad > abstracción.** Números concretos, productos específicos, pasos visualizables.
+6. **Match con comprador real.** Patricia (48, 26%), Roberto (62, 30%), Laura (38, 15%) = 71% del comprador. Los hooks deben activar por identidad psicológica o dolor, no por edad explícita.
+7. **B-roll que verifica la promesa.** El viewer tiene que VER que es real, no confiar en palabras.
+
+**Nuevos principios descubiertos hoy (YTD 2026-04):**
+
+8. **Cierre afectivo, no mecánico.** "Abrazo", callback o consejo final. Nunca cerrar con "tocá el botón" plano. El CTA funcional puede estar, pero nunca como última frase.
+9. **Ratio avatar/producto <0,35.** Los ads que hablan del AVATAR (no del producto) rinden mejor. Medir: menciones de "producto*" / menciones de "vos/te".
+10. **La IA es magnet, no mensaje.** Los 2 top absolutos (#6, #3) mencionan la IA solo tangencialmente. La IA atrae el clic; el avatar convierte.
+11. **Evitar demografía explícita.** Los 4 top actuales NUNCA mencionan edad. Filtrar por identidad psicológica, no cronológica.
+12. **No resubir ads ganadores.** Las 3 subidas del #3 mostraron ROAS decreciente (1,20 → 0,77 → 0,32). Cada reupload arranca de cero en Meta y pierde el learning. Mejor: variante mínima (cambiar primer frame).
+13. **≥3 negaciones estratégicas por ad.** "No tenés que X", "no hay Y", "no vas a Z". Los top tienen 3-5; los bottom tienen 0-1.
+14. **Formato actuación/diálogo es asimétricamente potente.** #6 es el único ad en este formato en el top 10 y tiene el top ROAS. Alta prioridad producir más.
+
+---
+
+## 🎯 Descomposición por componente (T6 data — principio vigente, números obsoletos)
+
+Del cruce T4-T6 se derivó que el impacto al CPL se distribuye:
+- **Cuerpo / creativo:** ~50%
+- **Hook:** ~30%
+- **CTA:** ~20%
+
+**Principio confirmado:** cuando tengas que elegir dónde invertir tiempo, invertí en el CUERPO. Un buen cuerpo con hook mediocre rinde más que un mal cuerpo con hook genial.
+
+**Caveat:** los porcentajes exactos son de T6 (hace ~1 mes). El principio general (cuerpo > hook > CTA) sigue en pie, pero los deltas específicos no.
+
+---
+
+## 📋 Factores que explicaron -49% CPL en la curva de mejora histórica
+
+Los 6 factores, del más al menos importante (como principios generalizables):
+
+1. **Match con comprador real** — ~40% (reformulado desde "nicho específico")
+2. **Producción profesional** — ~15%
+3. **B-roll + screen ChatGPT = verificación visual** — ~15%
+4. **Nicho específico vs genérico** — ~15% (subset del #1)
+5. **Duración más corta** — ~10%
+6. **Hooks más sofisticados** — ~5%
+
+---
+
+## 🎬 Cómo usar estos patterns
+
+### Para producir un guion nuevo
+
+1. **Elegir UNO de los 4 meta-patrones** (no combinar en el mismo guion):
+   - Analogía cotidiana con bracket narrativo (#3)
+   - Formato actuación/diálogo (#6) [**máxima prioridad**]
+   - Contraste de creencia + re-explicación + anti-pitch (#39)
+   - Hipótesis del autor + demolición × 3 (#44)
+
+2. **Aplicar los 14 principios transversales** como checklist.
+
+3. **Elegir un avatar objetivo** de Patricia / Roberto / Laura — no todos. Ese avatar filtra el hook.
+
+4. **Medir contra el score de `CROSS_ANALYSIS.md` sección 23.3** antes de producir.
+
+### Para decidir qué escalar
+
+- ≥100 ventas + ROAS ≥1 → winner validado, mantener y clonar con variantes mínimas.
+- <100 ventas con CPL atractivo → candidato, NO cuenta como winner hasta pasar umbral.
+- ≥100 ventas + ROAS <1 → loser con evidencia (como #46), anti-patrón — no replicar.
+
+### Para NO repetir errores
+
+- No resubir un ad ganador: siempre variante mínima.
+- No hacer hook demográfico (25-55 años, jubilado/joven).
+- No mencionar competidores por nombre (Fiverr, Digistore en ads de productos digitales).
+- No cerrar con "tocá el botón" sin cierre afectivo antes.
+- No hacer big idea genérica ("qué es X") — siempre específica con ángulo.
+
+---
+
+## 📚 Referencias
+
+**Fuente primaria (YTD 2026):**
+- `transcripciones-ganadores/INDEX.md` — tabla maestra
+- `transcripciones-ganadores/ANALISIS.md` — análisis individual + cross básico
+- `transcripciones-ganadores/CROSS_ANALYSIS.md` — 16 dimensiones cruzadas + score ponderado
+- `transcripciones-ganadores/ad-*.md` — transcripciones con frontmatter
+
+**Deep-dives vigentes:**
+- `analisis-winner-39-bn-t4.md` — #39 (ACTIVE, ROAS 1,25)
+
+**Nota sobre limpieza (2026-04-24):** se borraron los análisis de ads que no pasaron el umbral de 100 ventas reales (#121 con 54 registros, entre otros) y los archivos que mezclaban data de ads fatigados con data vigente. La data de los 562 compradores sigue disponible en `audiencia-compradores.md` (memoria).

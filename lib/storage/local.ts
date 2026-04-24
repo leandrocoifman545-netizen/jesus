@@ -57,13 +57,22 @@ async function listItemsFromDir<T extends { createdAt: string }>(
   try {
     const files = await fs.readdir(dir);
     const jsonFiles = files.filter((f) => f.endsWith(".json") && !f.includes(".backup"));
-    const items = await Promise.all(
+    const results = await Promise.allSettled(
       jsonFiles.map(async (file) => {
         const data = await fs.readFile(path.join(dir, file), "utf-8");
         const parsed = JSON.parse(data) as T;
         return normalize ? normalize(parsed) : parsed;
       })
     );
+    const items: T[] = [];
+    for (let i = 0; i < results.length; i++) {
+      const r = results[i];
+      if (r.status === "fulfilled") {
+        items.push(r.value);
+      } else {
+        console.error(`[storage] skipping ${dir}/${jsonFiles[i]}: ${r.reason instanceof Error ? r.reason.message : r.reason}`);
+      }
+    }
     const sorted = items.sort(
       (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     );

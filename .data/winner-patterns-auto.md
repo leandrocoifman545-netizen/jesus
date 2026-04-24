@@ -1,7 +1,11 @@
 # Winner Patterns — Auto-generado
-> Fecha: 2026-04-19
+> Fecha: 2026-04-23
 > Base: 36 generaciones (0 winners, 25 recorded, 11 confirmed)
 > Este archivo se regenera con: `node scripts/update-winners.mjs`
+>
+> ℹ️ **Este archivo es un agregado AUTOMÁTICO de las generaciones marcadas como 'winner' en /post-session.** Para el análisis CURADO de winners reales de Meta Ads (basado en el reporte de performance YTD 2026), ver `winner-patterns.md`.
+>
+> Pendiente: marcar los ads del top 10 actual (#3, #6, #39, #44, #46, #122, #140, #1) como winner/recorded desde /post-session para que este script los agregue.
 
 ## ⚠️ No hay winners marcados aún
 Marcar scripts como 'winner' en /post-session para que este análisis tenga data.
@@ -26,15 +30,14 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 ## Arcos Narrativos
 | Arco | Total | Winners | Win Rate |
 |------|-------|---------|----------|
+| confrontacion_directa | 3 | 0 | 0% |
 | dolor_puro_esperanza | 3 | 0 | 0% |
 | futuro_sensorial | 3 | 0 | 0% |
 | dolor_escena_a_mecanismo_demo | 2 | 0 | 0% |
 | revelacion_oportunidad | 2 | 0 | 0% |
-| confrontacion_directa | 2 | 0 | 0% |
 | provocacion_evidencia | 2 | 0 | 0% |
 | agotamiento → revelacion → posibilidad_concreta → permiso → validacion | 1 | 0 | 0% |
 | bronca_silenciosa → revelacion_identidad → posibilidad_concreta → permiso → verificacion | 1 | 0 | 0% |
-| exclusividad → valor → curiosidad → alivio de barreras → urgencia de saber | 1 | 0 | 0% |
 | techo_reconocido_a_demanda_invisible_revelada | 1 | 0 | 0% |
 | cuerpo_cansado_reconocido_a_demanda_invisible_revelada | 1 | 0 | 0% |
 | dolor_operativo_reconocido_a_liberacion_espejo_inverso | 1 | 0 | 0% |
@@ -57,11 +60,11 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 ## Familias de Ángulo
 | Familia | Total | Winners | Win Rate |
 |---------|-------|---------|----------|
-| identidad | 9 | 0 | 0% |
+| identidad | 10 | 0 | 0% |
 | confrontacion | 8 | 0 | 0% |
-| oportunidad | 3 | 0 | 0% |
 | mecanismo | 2 | 0 | 0% |
 | historia | 2 | 0 | 0% |
+| oportunidad | 2 | 0 | 0% |
 | 1 | 1 | 0 | 0% |
 | 5 | 1 | 0 | 0% |
 | ventana_oportunidad | 1 | 0 | 0% |
@@ -69,9 +72,9 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 ## Segmentos
 | Segmento | Total | Winners | Win Rate |
 |----------|-------|---------|----------|
+| C | 10 | 0 | 0% |
 | A | 10 | 0 | 0% |
-| C | 9 | 0 | 0% |
-| B | 6 | 0 | 0% |
+| B | 5 | 0 | 0% |
 | C2 | 1 | 0 | 0% |
 | D | 1 | 0 | 0% |
 
@@ -85,8 +88,8 @@ Mientras tanto, se muestran los patrones de scripts grabados.
 | matematica_simple | 2 | 0 | 0% |
 | ventana_oportunidad_ia | 2 | 0 | 0% |
 | 5 | 1 | 0 | 0% |
+| foco_vs_dispersion | 1 | 0 | 0% |
 | escalabilidad_tiempo_dinero | 1 | 0 | 0% |
-| eliminacion_barreras | 1 | 0 | 0% |
 | lean_anti_riesgo | 1 | 0 | 0% |
 | cementerio_modelos | 1 | 0 | 0% |
 

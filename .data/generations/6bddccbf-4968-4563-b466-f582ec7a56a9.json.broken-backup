@@ -1,0 +1,233 @@
+{
+  "id": "6bddccbf-4968-4563-b466-f582ec7a56a9",
+  "briefId": "2413ec18-bc5a-41f7-86ba-5528794a09b2",
+  "title": "Adaptación Rafa Miranda — filtro + cliffhanger + DM (v2)",
+  "batch": {
+    "id": "b3f785ff-e410-4f38-a62a-942b89770841",
+    "name": "domingo"
+  },
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.1_modelo_oculto",
+    "body_type": "demolicion_mito",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "amplio — productos digitales con IA (formato orgánico IG)",
+    "model_sale_type": "eliminacion_barreras",
+    "transition_text": "Muchos me preguntan cuál es el sistema específico que uso. Pero eso no lo puedo decir por acá. ",
+    "total_duration_seconds": 78,
+    "word_count": 195,
+    "punto_entrada_emocional": "curiosidad de exclusividad — sentir que hay info que solo unos pocos van a recibir",
+    "belief_change": {
+      "old_belief": "Los modelos que pagan en dólares desde casa son inalcanzables o son estafas",
+      "mechanism": "Filtro de audiencia + teaser de 3 atributos + cliffhanger con recompensa específica",
+      "new_belief": "Existe un modelo real, accesible, que ya puedo empezar hoy mismo si pido la info"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Esto es exclusivo y no es para cualquiera",
+        "installed_via": "Filtro de audiencia inicial",
+        "persuasion_function": "filtro",
+        "section_name": "Filtro"
+      },
+      {
+        "belief": "Esta info tiene valor real, vale plata",
+        "installed_via": "Ancla de precio + instrucción de guardar",
+        "persuasion_function": "valor_percibido",
+        "section_name": "Valor + Guardar"
+      },
+      {
+        "belief": "No necesito experiencia ni recursos para empezar",
+        "installed_via": "Anulación de objeciones de experiencia y recursos",
+        "persuasion_function": "demolicion",
+        "section_name": "Anula objeciones"
+      },
+      {
+        "belief": "La info específica que quiero está al otro lado del DM",
+        "installed_via": "Cliffhanger con recompensa concreta",
+        "persuasion_function": "cliffhanger",
+        "section_name": "Autoridad + Cliffhanger"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "filtro_exclusividad",
+        "hypothesis": "Filtrar con 'no es para todos' + promesa temporal activa la exclusividad y hace quedarse al que se identifica",
+        "emotional_lever": "exclusividad / pertenencia",
+        "script_text": "Voy a ser directo porque este video no es para todos. Pero si este 2026 uno de tus objetivos es dejar de depender de un sueldo, quedate. Esto te puede cambiar los próximos 6 meses.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "anti_hype",
+        "hypothesis": "Arrancar con confianza adulta y sin promesa exagerada conecta con segmento B quemado",
+        "emotional_lever": "confianza / alivio",
+        "script_text": "No te voy a prometer que te hagas millonario. Pero si este 2026 querés dejar de depender de tu trabajo, hay un modelo nuevo del que casi nadie está hablando.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "ancla_precio_invertida",
+        "hypothesis": "Anclar en 'cursos caros' al principio posiciona el video como regalo exclusivo",
+        "emotional_lever": "valor percibido / oportunidad",
+        "script_text": "Hay una forma nueva que están usando docentes, empleadas y mujeres que ya no quieren volver a pedir un aumento que nunca les dan. Se hace desde casa, a tu ritmo, sin jefe y ni horario fijos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "pregunta_trampa_dual",
+        "hypothesis": "Pregunta que identifica al avatar y lo mete adentro de la escena",
+        "emotional_lever": "auto-reconocimiento",
+        "script_text": "Existe un motivo por el que algunas mujeres de 40 ya no trabajan en relación de dependencia. Y no es que tengan más suerte que vos.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "flip_contraintuitivo",
+        "hypothesis": "Romper la creencia de que hace falta arrancar de cero invierte la expectativa",
+        "emotional_lever": "curiosidad / validación",
+        "script_text": "De cada 100 mujeres que trabajaron toda la vida, 87 se jubilan sin la tranquilidad que se ganaron. Y no es por trabajar poco. Es por una decisión que casi ninguna toma a tiempo",
+        "timing_seconds": 8
+      }
+    ],
+    "development": {
+      "framework_used": "7_escalones_rafa_miranda",
+      "emotional_arc": "exclusividad → valor → curiosidad → alivio de barreras → urgencia de saber",
+      "sections": [
+        {
+          "section_name": "Valor + Guardar",
+          "persuasion_function": "valor_percibido",
+          "micro_belief": "Esta info vale plata, no la quiero perder",
+          "viewer_emotion_after": "Urgencia de guardar + expectativa de acción inmediata",
+          "is_turning_point": false,
+          "script_text": "Muchos pagan por esta información. Así que yo que vos guardo este video, porque literalmente te voy a dar algo con lo que al terminar de ver este video ya podes empezar a generar dinero.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Teaser 3 atributos",
+          "persuasion_function": "teaser",
+          "micro_belief": "Hay algo real que combina dólares + desde casa + cualquier país",
+          "viewer_emotion_after": "Curiosidad pura, quiere saber qué es",
+          "is_turning_point": true,
+          "script_text": "Hay un modelo de negocio del que casi nadie está hablando hoy en día que es el más fácil para empezar a ganar en dólares trabajando desde casa sin importar en qué país del mundo te encuentres.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Nombre + Anula objeción experiencia",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "No necesito saber de tecnología ni haber vendido antes",
+          "viewer_emotion_after": "Alivio, esto puede ser para mí",
+          "is_turning_point": false,
+          "script_text": "Se llama productos digitales con inteligencia artificial. Vendés lo que ya sabés hacer, envasado en una guía o un mini curso. La IA hace el 90% del trabajo por vos. Si sabés mandar un audio por WhatsApp, ya tenés el conocimiento suficiente para hacer este modelo de negocio.\"",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Anula objeción recursos",
+          "persuasion_function": "demolicion",
+          "micro_belief": "Con lo que ya tengo (celular + 1 hora) alcanza",
+          "viewer_emotion_after": "Permiso para empezar",
+          "is_turning_point": false,
+          "script_text": "Solo necesitás una computadora y conexión a internet ya con esto podrias tener un ingreso extra de $50 a $60 diarios por producto digital que crees",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "Autoridad + Cliffhanger",
+          "persuasion_function": "cliffhanger",
+          "micro_belief": "La info específica que quiero la tiene él y no la suelta acá",
+          "viewer_emotion_after": "Tensión por saber qué viene después",
+          "is_turning_point": true,
+          "script_text": "Llevo 5 años vendiendo productos digitales. Y te lo digo en serio: nunca vi una oportunidad como la de hoy en dia con la IA. Gané premios que de chico soñaba, como el Two Comma Club — un premio que te dan por vender un millón de dólares en productos digitales. Cumplí metas que de chico parecían imposibles. Pero lo más loco no es eso. Lo más loco es que hoy trabajo en mi tiempo libre. Mi tiempo ocupado es ir al gym, ver a mis amigos, estar con mi familia. Y en los huecos, trabajo. Vos también lo podés hacer lo mismo. Podrías empezar haciendo tus primeros dolares al mes e ir escalando, con los productos digitales no tenés techo.",
+          "timing_seconds": 13
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "Filtro",
+        "technique": "auto_seleccion",
+        "phrase": "si este 2026 uno de tus objetivos es dejar de depender de un sueldo"
+      },
+      {
+        "location": "Valor + Guardar",
+        "technique": "ancla_precio",
+        "phrase": "Muchos pagan cursos de 497 dólares por esta información"
+      },
+      {
+        "location": "Teaser",
+        "technique": "tres_atributos",
+        "phrase": "está pagando en dólares, que se hace desde el teléfono sin salir de tu casa, y que no depende del país"
+      },
+      {
+        "location": "Anula objeción experiencia",
+        "technique": "permiso",
+        "phrase": "aunque no entiendas nada de tecnología ni hayas vendido algo online en tu vida"
+      },
+      {
+        "location": "Anula objeción recursos",
+        "technique": "recurso_minimo",
+        "phrase": "con el celular que tenés ahí en la mano y una hora por día después de cenar"
+      },
+      {
+        "location": "Cliffhanger",
+        "technique": "retencion_informacion",
+        "phrase": "pero eso por acá no lo puedo pasar"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 1,
+        "ingredient_name": "filtro_de_audiencia"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 3,
+        "ingredient_name": "ancla_precio_invertida"
+      },
+      {
+        "category": "C",
+        "ingredient_number": 7,
+        "ingredient_name": "cliffhanger_cta"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "A"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "A"
+      }
+    ]
+  },
+  "createdAt": "2026-04-19T04:21:04.653Z",
+  "hookApprovals": {
+    "0": "approved",
+    "1": "approved",
+    "2": "approved",
+    "3": "approved",
+    "4": "approved"
+  },
+  "status": "recorded"
+}}

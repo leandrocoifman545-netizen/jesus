@@ -1,0 +1,69 @@
+{
+  "title": "Kinesiologos — Un video de rodilla para 100 rodillas",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.kinesiologo_dia_en_la_vida",
+    "body_type": "un_dia_en_la_vida",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "kinesiologos / fisioterapeutas / terapeutas fisicos",
+    "model_sale_type": "tiempo_vs_dinero",
+    "transition_text": "Ese programa de rodilla post-artroscopia es UN ejemplo. Te voy a mostrar el proceso entero esta semana en una clase.",
+    "total_duration_seconds": 82,
+    "word_count": 225,
+    "punto_entrada_emocional": "agotamiento de cobrar por turno y ver que tu cuerpo es el techo",
+    "belief_change": {
+      "old_belief": "Mi ingreso depende de cuantos pacientes puedo atender en una semana",
+      "mechanism": "Mostrar que grabar una explicacion de rehabilitacion una vez sirve para 100 pacientes",
+      "new_belief": "Mi explicacion grabada trabaja mientras yo no estoy"
+    },
+    "micro_beliefs": [
+      { "belief": "Repito lo mismo 40 veces por la misma plata", "installed_via": "nombrar_agotamiento", "persuasion_function": "puente", "section_name": "Puente" },
+      { "belief": "El juego no es cobrar mas, es cobrar sin estar", "installed_via": "redefinicion_del_juego", "persuasion_function": "quiebre", "section_name": "Quiebre" },
+      { "belief": "Mi explicacion tipica se graba una vez y sirve para 100 casos", "installed_via": "metafora_multiplicacion", "persuasion_function": "mecanismo", "section_name": "Mecanismo" },
+      { "belief": "No necesito otra sala ni asistente ni marketing", "installed_via": "desarmar_excusas", "persuasion_function": "demolicion", "section_name": "Demolicion" },
+      { "belief": "Colegas en varias ciudades ya lo estan haciendo", "installed_via": "diversidad_geografica", "persuasion_function": "prueba", "section_name": "Prueba" }
+    ],
+    "hooks": [
+      { "variant_number": 1, "hook_type": "pregunta_incomoda", "hypothesis": "rafaga de preguntas dispara el calculo mental del kinesiologo", "emotional_lever": "agotamiento_por_calculo", "script_text": "Cuantos pacientes atendes por dia? 8? 10? A cuanto la sesion? 7 mil pesos? Cuantas semanas podes mantener ese ritmo antes de que te duela la espalda a vos?", "timing_seconds": 8 },
+      { "variant_number": 2, "hook_type": "inmersion_segunda_persona", "hypothesis": "meter al kinesiologo en la escena de las 8 de la noche", "emotional_lever": "fatiga_sensorial", "script_text": "Terminas con el ultimo paciente. Abris el excel y contas 8 sesiones. Y te alcanza para el alquiler del consultorio, no para vivir.", "timing_seconds": 7 },
+      { "variant_number": 3, "hook_type": "promesa_directa", "hypothesis": "la idea suena tan contraintuitiva que genera curiosidad", "emotional_lever": "curiosidad_por_contradiccion", "script_text": "Hay una forma de grabar una sesion de rehabilitacion y que la venda durante 3 anos sin que vos estes.", "timing_seconds": 6 },
+      { "variant_number": 4, "hook_type": "provocacion_dato", "hypothesis": "la repeticion numerica duele mas que la queja general", "emotional_lever": "dolor_numerico", "script_text": "Atendes 40 rodillas por ano. Le decis a cada una lo mismo. Y cobras 40 veces lo mismo en vez de una sola.", "timing_seconds": 6 },
+      { "variant_number": 5, "hook_type": "pregunta_espejo", "hypothesis": "ironia auto-reflexiva activa el reconocimiento", "emotional_lever": "ironia_del_rol", "script_text": "Soy kinesiologo. Atiendo 50 pacientes por semana. Me duele la espalda mas que a ellos. Y si el que tiene que rehabilitarse soy yo?", "timing_seconds": 7 }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "confrontacion_directa",
+      "sections": [
+        { "section_name": "Puente", "persuasion_function": "puente", "micro_belief": "Repito lo mismo 40 veces por la misma plata", "viewer_emotion_after": "patron_reconocido", "is_turning_point": false, "script_text": "Pero lo que te agota no son los pacientes. Es repetir la misma explicacion 40 veces por la misma plata.", "timing_seconds": 6 },
+        { "section_name": "Quiebre", "persuasion_function": "quiebre", "micro_belief": "El juego no es cobrar mas, es cobrar sin estar", "viewer_emotion_after": "redefinicion_del_problema", "is_turning_point": true, "script_text": "Porque el juego no es cobrar mas por hora. Con 24 horas, un cuerpo y un consultorio, tu techo es siempre el mismo. El juego es cobrar sin estar. Que lo que te tomo 10 anos aprender lo cobre un archivo que se descarga sin que vos abras la puerta.", "timing_seconds": 14 },
+        { "section_name": "Mecanismo", "persuasion_function": "mecanismo", "micro_belief": "Mi explicacion tipica se graba una vez y sirve para 100 casos", "viewer_emotion_after": "camino_claro", "is_turning_point": false, "script_text": "Y aca esta el tema: agarras a uno de tus pacientes tipicos, rodilla post-artroscopia. Literalmente grabas tu explicacion de los 28 dias de rehabilitacion. La IA te transcribe y te arma un video-curso con 5 etapas, ejercicios por dia, senales de alarma y un PDF con la progresion. Un paciente de Mendoza que se opero la semana pasada lo compra por 37 dolares. Es como grabar un manual de rodilla que sirve para 100 rodillas.", "timing_seconds": 20 },
+        { "section_name": "Demolicion", "persuasion_function": "demolicion", "micro_belief": "No necesito otra sala ni asistente ni marketing", "viewer_emotion_after": "excusa_desarmada", "is_turning_point": false, "script_text": "Entonces no hace falta que abras otro consultorio. No hace falta que contrates un asistente. No hace falta aprender a hacer marketing. Tu explicacion ya la tenes aceitada: la repetis 5 veces por semana.", "timing_seconds": 12 },
+        { "section_name": "Prueba", "persuasion_function": "prueba", "micro_belief": "Colegas en varias ciudades ya lo estan haciendo", "viewer_emotion_after": "confirmacion_de_realidad", "is_turning_point": false, "script_text": "Porque kinesiologos de Mendoza, de Rosario, de Mar del Plata ya estan vendiendo programas de rehabilitacion en PDF y video. No son famosos. Solo entendieron el negocio.", "timing_seconds": 11 },
+        { "section_name": "VentaModelo", "persuasion_function": "venta_modelo", "micro_belief": "Puedo generar independencia real del tiempo", "viewer_emotion_after": "permiso_de_salir_del_reloj", "is_turning_point": false, "script_text": "Por eso la diferencia no es tener una sala mas grande. Es que un video grabado trabaja mientras vos dormis. Esa independencia ya existe. Solo que nadie te la vendio a vos todavia.", "timing_seconds": 9 }
+      ]
+    },
+    "micro_yes_chain": [
+      { "location": "hook", "technique": "rafaga_calculo", "phrase": "Cuantos pacientes atendes por dia" },
+      { "location": "puente", "technique": "nombrar_patron", "phrase": "repetir la misma explicacion 40 veces" },
+      { "location": "quiebre", "technique": "redefinicion", "phrase": "El juego es cobrar sin estar" },
+      { "location": "mecanismo", "technique": "metafora", "phrase": "manual de rodilla que sirve para 100 rodillas" },
+      { "location": "demolicion", "technique": "permiso", "phrase": "la repetis 5 veces por semana" },
+      { "location": "venta_modelo", "technique": "liberacion", "phrase": "trabaja mientras vos dormis" }
+    ],
+    "ingredients_used": [
+      { "category": "A", "ingredient_number": 16, "ingredient_name": "Inmersion 2da persona (F16)" },
+      { "category": "A", "ingredient_number": 17, "ingredient_name": "Pop quiz / desafio (rafaga)" },
+      { "category": "B", "ingredient_number": 35, "ingredient_name": "Dolor economico concreto" },
+      { "category": "D", "ingredient_number": 49, "ingredient_name": "Redefinicion del juego" },
+      { "category": "F", "ingredient_number": 76, "ingredient_name": "Metafora" },
+      { "category": "G", "ingredient_number": 93, "ingredient_name": "Diversidad geografica" }
+    ],
+    "cta_blocks": [
+      { "channel": "clase_gratuita", "variant": "C" },
+      { "channel": "taller_5", "variant": "A" },
+      { "channel": "instagram", "variant": "C" }
+    ]
+  }
+}

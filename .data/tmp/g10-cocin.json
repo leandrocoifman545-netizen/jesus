@@ -1,0 +1,70 @@
+{
+  "title": "Cocineras — El cuaderno de la abuela ya era un producto digital",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "mecanismo",
+    "angle_specific": "4.cocinera_cuaderno_abuela_digitalizado",
+    "body_type": "comparacion_caminos",
+    "segment": "C",
+    "funnel_stage": "RETARGET",
+    "niche": "cocineras / cocineros caseros / amateurs con cuaderno de recetas familiar",
+    "model_sale_type": "prueba_diversidad",
+    "transition_text": "Ese recetario Cocinar para 4 con 1 hora es UN ejemplo. Te voy a mostrar el proceso entero esta semana en una clase.",
+    "total_duration_seconds": 82,
+    "word_count": 230,
+    "punto_entrada_emocional": "reconocimiento de que tu cocina cotidiana vale para mas familias que la tuya",
+    "belief_change": {
+      "old_belief": "Mis recetas son comunes, cualquiera las tiene. No hay nada especial para vender",
+      "mechanism": "Mostrar que las recetas comunes funcionan porque resuelven un problema universal",
+      "new_belief": "Mi cuaderno cotidiano es un producto digital que se arma con una foto"
+    },
+    "micro_beliefs": [
+      { "belief": "La venta dominguera no es casualidad, el cuaderno es el producto", "installed_via": "revelar_patron", "persuasion_function": "puente", "section_name": "Puente" },
+      { "belief": "Lo 'comun' es exactamente lo que vende", "installed_via": "mistaken_beliefs", "persuasion_function": "quiebre", "section_name": "Quiebre" },
+      { "belief": "La IA digitaliza el cuaderno en un dia, no en tres semanas", "installed_via": "antes_y_despues_IA", "persuasion_function": "mecanismo", "section_name": "Mecanismo" },
+      { "belief": "No necesito TikTok ni marca ni herramientas raras", "installed_via": "desarmar_excusas", "persuasion_function": "demolicion", "section_name": "Demolicion" },
+      { "belief": "Otras mamas ya estan vendiendo recetarios por WhatsApp", "installed_via": "prueba_diversa", "persuasion_function": "prueba", "section_name": "Prueba" }
+    ],
+    "hooks": [
+      { "variant_number": 1, "hook_type": "resultado_primero", "hypothesis": "arrancar desde la venta concreta invita al recorrido inverso", "emotional_lever": "curiosidad_por_origen", "script_text": "Hay un PDF con 40 recetas de una sola olla que se vende cada domingo por WhatsApp. Lo compran mamas de toda Latinoamerica a las 10 de la noche.", "timing_seconds": 8 },
+      { "variant_number": 2, "hook_type": "anti_consejo", "hypothesis": "destruir el consejo de abrir cuenta libera del parate", "emotional_lever": "alivio_de_consejo", "script_text": "Todos te dicen: abri un Instagram de cocina. Deja. El problema no es que no tengas cuenta. Es que no sabes que vendes.", "timing_seconds": 7 },
+      { "variant_number": 3, "hook_type": "nostalgia_objeto_extincion", "hypothesis": "el cuaderno de recetas activa memoria afectiva universal", "emotional_lever": "nostalgia_activa", "script_text": "Te acordas del cuaderno con las recetas de tu abuela, anotadas a mano? Ese cuaderno ya era un producto digital. Solo faltaba digitalizarlo.", "timing_seconds": 7 },
+      { "variant_number": 4, "hook_type": "hipotetico_personal", "hypothesis": "el hipotetico en primera persona empieza desde la escena concreta", "emotional_lever": "identificacion_domestica", "script_text": "Si hoy me despertara en tu cocina, con tu cuaderno y una hora libre, esto es exactamente lo que haria.", "timing_seconds": 6 },
+      { "variant_number": 5, "hook_type": "nombrar_innombrado", "hypothesis": "ponerle nombre al parate libera la accion", "emotional_lever": "liberacion_por_naming", "script_text": "Lo que te pasa cuando pensas mis recetas son comunes, las tiene todo el mundo, tiene un nombre: paralisis por familiaridad.", "timing_seconds": 7 }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "recorrido_inverso_resultado_origen",
+      "sections": [
+        { "section_name": "Puente", "persuasion_function": "puente", "micro_belief": "La venta dominguera no es casualidad, el cuaderno es el producto", "viewer_emotion_after": "curiosidad_por_como", "is_turning_point": false, "script_text": "Pero esa venta del domingo no es casualidad. Y tu cuaderno con los 40 guisos para los dias largos tampoco.", "timing_seconds": 6 },
+        { "section_name": "Quiebre", "persuasion_function": "quiebre", "micro_belief": "Lo comun es exactamente lo que vende", "viewer_emotion_after": "reframe_de_valor", "is_turning_point": true, "script_text": "Porque el error es creer que tus recetas son comunes. Si son comunes es porque funcionan para muchas familias. Eso no es un defecto. Es exactamente lo que las hace vendibles.", "timing_seconds": 12 },
+        { "section_name": "Mecanismo", "persuasion_function": "mecanismo", "micro_belief": "La IA digitaliza el cuaderno en un dia, no en tres semanas", "viewer_emotion_after": "camino_posible", "is_turning_point": false, "script_text": "Y aca esta el tema: antes de la IA, digitalizar tu cuaderno era tipear 40 recetas, buscar fotos, armar indice, disenar la tapa. Tres semanas de trasnoche. Con IA: sacas foto al cuaderno, le decis Cocinar para 4 con 1 hora, y te arma un PDF de 40 recetas de una sola olla con lista de compras semanal ordenada por dia. Una mama de Mar del Plata lo compra a las 10 de la noche porque manana los nenes comen y ella no quiere cocinar.", "timing_seconds": 19 },
+        { "section_name": "Demolicion", "persuasion_function": "demolicion", "micro_belief": "No necesito TikTok ni marca ni herramientas raras", "viewer_emotion_after": "excusas_desarmadas", "is_turning_point": false, "script_text": "Entonces no hace falta que subas un video a TikTok cocinando. No hace falta que le pongas nombre a una marca. No hace falta aprender herramientas raras. El cuaderno ya esta escrito en tu casa. Solo necesitas ayuda para empaquetarlo.", "timing_seconds": 13 },
+        { "section_name": "Prueba", "persuasion_function": "prueba", "micro_belief": "Otras mamas ya estan vendiendo recetarios por WhatsApp", "viewer_emotion_after": "confirmacion_de_realidad", "is_turning_point": false, "script_text": "Porque hay cocineras reales vendiendo recetarios en PDF por WhatsApp. Una vende 8 copias por semana. Literalmente mientras pone la mesa para sus hijos.", "timing_seconds": 10 },
+        { "section_name": "VentaModelo", "persuasion_function": "venta_modelo", "micro_belief": "Puedo ayudar a 100 familias y sumar plata sin dejar la cocina", "viewer_emotion_after": "permiso_integrador", "is_turning_point": false, "script_text": "Por eso no se trata de dejar de cocinar. Se trata de que las 100 familias que no van a aprender de vos puedan comer mejor esta semana. Y vos, en tu tiempo libre, abris el telefono un domingo y ves 3 ventas nuevas.", "timing_seconds": 12 }
+      ]
+    },
+    "micro_yes_chain": [
+      { "location": "hook", "technique": "resultado_primero", "phrase": "se vende cada domingo por WhatsApp" },
+      { "location": "puente", "technique": "pista_de_origen", "phrase": "Y tu cuaderno" },
+      { "location": "quiebre", "technique": "reframe", "phrase": "lo que las hace vendibles" },
+      { "location": "mecanismo", "technique": "reconocimiento", "phrase": "sacas foto al cuaderno" },
+      { "location": "demolicion", "technique": "reduccion", "phrase": "Solo necesitas ayuda para empaquetarlo" },
+      { "location": "venta_modelo", "technique": "integracion", "phrase": "ves 3 ventas nuevas" }
+    ],
+    "ingredients_used": [
+      { "category": "A", "ingredient_number": 27, "ingredient_name": "Anti-consejo universal" },
+      { "category": "A", "ingredient_number": 14, "ingredient_name": "Comparacion temporal (antes/despues IA)" },
+      { "category": "B", "ingredient_number": 24, "ingredient_name": "Lista de sintomas" },
+      { "category": "D", "ingredient_number": 52, "ingredient_name": "Mistaken beliefs" },
+      { "category": "F", "ingredient_number": 77, "ingredient_name": "Antes de IA vs Despues" },
+      { "category": "G", "ingredient_number": 88, "ingredient_name": "Resultado con numeros (diversa)" },
+      { "category": "H", "ingredient_number": 101, "ingredient_name": "Future pacing sensorial" }
+    ],
+    "cta_blocks": [
+      { "channel": "instagram", "variant": "C" },
+      { "channel": "clase_gratuita", "variant": "C" },
+      { "channel": "taller_5", "variant": "A" }
+    ]
+  }
+}

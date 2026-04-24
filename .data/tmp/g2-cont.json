@@ -1,0 +1,70 @@
+{
+  "title": "Contadoras — 3 formas de cobrar, solo una sin techo",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.contadora_tres_formas_cobrar",
+    "body_type": "quiz_comparacion",
+    "segment": "A",
+    "funnel_stage": "TOFU",
+    "niche": "contadoras freelance / administrativas / estudios contables chicos",
+    "model_sale_type": "matematica_simple",
+    "transition_text": "Esa plantilla de monotributo es UN ejemplo. Te voy a mostrar el proceso entero esta semana en una clase.",
+    "total_duration_seconds": 76,
+    "word_count": 215,
+    "punto_entrada_emocional": "bronca de hacer la matematica de tu propio trabajo y ver que la velocidad no paga",
+    "belief_change": {
+      "old_belief": "Como contadora cobro por hora o por cliente, y la unica forma de crecer es sumar mas clientes",
+      "mechanism": "Mostrar que hay 3 formas de cobrar y solo una no tiene techo de horas",
+      "new_belief": "Puedo empaquetar lo que ya hago en un producto digital y cobrar sin atender"
+    },
+    "micro_beliefs": [
+      { "belief": "Mi velocidad no esta pagada", "installed_via": "disonancia_logica", "persuasion_function": "puente", "section_name": "Puente" },
+      { "belief": "Hay 3 formas de cobrar y solo una no tiene techo", "installed_via": "declaracion_contraintuitiva", "persuasion_function": "quiebre", "section_name": "Quiebre" },
+      { "belief": "Mi plantilla ya existe, solo falta empaquetarla", "installed_via": "demo_concreta", "persuasion_function": "mecanismo", "section_name": "Mecanismo" },
+      { "belief": "No necesito ser influencer ni aprender cosas raras", "installed_via": "desarmar_excusas", "persuasion_function": "demolicion", "section_name": "Demolicion" },
+      { "belief": "El mercado de plantillas contables ya existe", "installed_via": "prueba_verificable", "persuasion_function": "prueba", "section_name": "Prueba" }
+    ],
+    "hooks": [
+      { "variant_number": 1, "hook_type": "pregunta_trampa_dual", "hypothesis": "la disonancia entre velocidad y paga dispara la reflexion", "emotional_lever": "disonancia_logica", "script_text": "Cuantos balances hiciste este ano? 20? 40? Ahora la segunda pregunta: cuanto te pagaron extra por tu velocidad? Nada.", "timing_seconds": 7 },
+      { "variant_number": 2, "hook_type": "actuacion_dialogo", "hypothesis": "sketch entre colegas contadoras muestra el contraste", "emotional_lever": "envidia_controlada", "script_text": "Contadora uno: otro cliente que presenta tarde. Contadora dos: yo ya no atiendo. Vendo una plantilla y gano igual.", "timing_seconds": 7 },
+      { "variant_number": 3, "hook_type": "flip_contraintuitivo", "hypothesis": "declaracion contraintuitiva fuerza a seguir mirando", "emotional_lever": "curiosidad_por_contradiccion", "script_text": "La contadora que menos clientes tiene este ano cobra mas que vos. Y no es casualidad.", "timing_seconds": 5 },
+      { "variant_number": 4, "hook_type": "anti_consejo", "hypothesis": "destruir el consejo universal abre al mensaje real", "emotional_lever": "alivio_de_anticonsejo", "script_text": "Todos te dicen que subas la tarifa. Subis la tarifa, llega tu techo mas rapido. No es por ahi.", "timing_seconds": 6 },
+      { "variant_number": 5, "hook_type": "pregunta_espejo", "hypothesis": "el monologo interno de la contadora agotada se reconoce solo", "emotional_lever": "hartazgo_profesional", "script_text": "Llevo 15 anos haciendo cierres fiscales. Cada abril me mata. Y si hay una forma de no tener que estar yo?", "timing_seconds": 7 }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "pregunta_pregunta",
+      "sections": [
+        { "section_name": "Puente", "persuasion_function": "puente", "micro_belief": "Mi velocidad no esta pagada", "viewer_emotion_after": "curiosidad_por_matematica", "is_turning_point": false, "script_text": "Pero la respuesta a esa pregunta es la matematica de tu negocio. Y esa matematica te la dejaron mal armada.", "timing_seconds": 5 },
+        { "section_name": "Quiebre", "persuasion_function": "quiebre", "micro_belief": "Hay 3 formas de cobrar y solo una no tiene techo", "viewer_emotion_after": "revelacion_estructural", "is_turning_point": true, "script_text": "Porque hay tres formas de cobrar en contaduria. Por hora: tu techo son 8 horas por dia. Por cliente: tu techo son 40 clientes antes de no dar mas. Por producto digital: no tenes techo. Dos te queman. Una escala.", "timing_seconds": 14 },
+        { "section_name": "Mecanismo", "persuasion_function": "mecanismo", "micro_belief": "Mi plantilla ya existe, solo falta empaquetarla", "viewer_emotion_after": "camino_posible", "is_turning_point": false, "script_text": "Y aca esta el tema: agarras tu plantilla de cierre fiscal para monotributistas, la que armaste en 2018 y usas todos los anos. La convertis en un producto digital, un Excel mas un video explicativo de como completarlo. Lo vendes por 27 dolares. Una colega de Cordoba lo usa para sus 60 clientes y le ahorra 20 horas en abril.", "timing_seconds": 18 },
+        { "section_name": "Demolicion", "persuasion_function": "demolicion", "micro_belief": "No necesito ser influencer ni aprender cosas raras", "viewer_emotion_after": "excusa_desarmada", "is_turning_point": false, "script_text": "Entonces no hace falta que seas tiktoker contadora. No hace falta tener mil seguidores. No hace falta aprender nada raro. La plantilla ya la tenes. Lo que hace falta es empaquetarla para que otras colegas puedan avanzar con ella.", "timing_seconds": 13 },
+        { "section_name": "Prueba", "persuasion_function": "prueba", "micro_belief": "El mercado de plantillas contables ya existe", "viewer_emotion_after": "confirmacion_de_realidad", "is_turning_point": false, "script_text": "Porque en Hotmart hay plantillas de contaduria vendiendose hace 3 anos. Busca plantilla monotributo Excel. Vas a ver 40 productos activos ahora mismo.", "timing_seconds": 9 },
+        { "section_name": "VentaModelo", "persuasion_function": "venta_modelo", "micro_belief": "Puedo escalar sin sumar horas", "viewer_emotion_after": "claridad_matematica", "is_turning_point": false, "script_text": "Por eso la diferencia entre cobrar por hora y cobrar por producto digital no es el precio. Es cuanto trabajas despues de la primera venta. Un cliente mas: mas horas. Una plantilla mas vendida: cero horas. Esto no te va a hacer millonaria. Pero te saca del reloj.", "timing_seconds": 13 }
+      ]
+    },
+    "micro_yes_chain": [
+      { "location": "hook", "technique": "identificacion", "phrase": "Cuantos balances hiciste este ano" },
+      { "location": "puente", "technique": "validacion", "phrase": "matematica de tu negocio" },
+      { "location": "quiebre", "technique": "revelacion", "phrase": "Dos te queman. Una escala" },
+      { "location": "mecanismo", "technique": "reconocimiento", "phrase": "la que armaste en 2018 y usas todos los anos" },
+      { "location": "demolicion", "technique": "permiso", "phrase": "La plantilla ya la tenes" },
+      { "location": "venta_modelo", "technique": "liberacion", "phrase": "Te saca del reloj" }
+    ],
+    "ingredients_used": [
+      { "category": "A", "ingredient_number": 31, "ingredient_name": "Sketch 2 voces" },
+      { "category": "A", "ingredient_number": 23, "ingredient_name": "Ego-check / Micro-test (pregunta trampa)" },
+      { "category": "B", "ingredient_number": 28, "ingredient_name": "Costo de no actuar" },
+      { "category": "D", "ingredient_number": 48, "ingredient_name": "Declaracion contraintuitiva" },
+      { "category": "F", "ingredient_number": 71, "ingredient_name": "Proceso N pasos (3 formas)" },
+      { "category": "G", "ingredient_number": 88, "ingredient_name": "Resultado con numeros" },
+      { "category": "H", "ingredient_number": 103, "ingredient_name": "Anti-hype (no millonaria)" }
+    ],
+    "cta_blocks": [
+      { "channel": "clase_gratuita", "variant": "C" },
+      { "channel": "taller_5", "variant": "A" },
+      { "channel": "instagram", "variant": "C" }
+    ]
+  }
+}

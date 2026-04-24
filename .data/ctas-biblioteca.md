@@ -1,25 +1,46 @@
-# Biblioteca de Bloques CTA — 6 Capas de Persuasión
+# Biblioteca de Bloques CTA
 
-> Basado en Benson (Actos 5-9 del VSL) comprimido para ads cortos.
-> Cada bloque CTA tiene 6 capas internas. La capa 1 se graba con el body, las capas 2-6 se graban una vez y se pegan a cualquier cuerpo.
+> **Fuente viva para producción:** `ctas-activos.json` (v3, actualizado 2026-04-24). El sistema lee ese archivo al generar guiones. Este doc es referencia de TONO y VARIANTES.
 
-## Anatomía del Bloque CTA
+> ⚠️ **Actualización 2026-04-24:** Los 4 winners actuales (YTD 2026) tienen CTAs de 3-15s, no 20-25s. La estructura de 6 capas (Benson/VSL clásico) se comprimió a **3 capas** para alinear con winners. Los 3 canales (orgánico / taller / clase gratis) siguen siendo modulares — se graban una vez y se pegan a los 10 bodies de la semana.
+
+## Anatomía del Bloque CTA — NUEVA (3 capas)
 
 ```
-[CAPA 1 — TRANSICIÓN]     Se graba CON el body. Específica al nicho. 1 oración, 3-5 seg.
+[CAPA 1 — TRANSICIÓN]         Se graba CON el body. Específica al nicho. 3-5s
 ────── CORTE ──────
-[CAPA 2 — OFERTA]         QUÉ se lleva. 3 promesas + formato. 5-7 seg.
-[CAPA 6a — ORDEN]         Primera instrucción de acción. Atrapa a los ya convencidos. 2 seg.
-[CAPA 3 — PRUEBA MICRO]   Prueba social comprimida. 1-2 frases. 3-4 seg.
-[CAPA 4 — RIESGO CERO]    Eliminar el miedo + beneficio concreto ($). 2-3 frases. 4-5 seg.
-[CAPA 5 — URGENCIA]       Por qué AHORA + justificación real. 2-3 frases. 4-5 seg.
-[CIERRE — ORDEN reforzado] Segunda instrucción + frase de peso + cierre cálido. 3-4 seg.
+[CAPA 2 — PROMESA + CTA]      Qué es + cómo acceder, fusionados. 40-50 palabras, 7-10s.
+[CAPA 3 — REASEGURAMIENTO]    Prueba + riesgo + urgencia comprimidos en UNA frase. 10-20 palabras, 3-5s.
+[CAPA 4 — CIERRE AFECTIVO]    "Te espero adentro" / "Abrazo" / callback. 3-8 palabras, 2-3s.
 ```
 
-**Patrón doble CTA:** la orden aparece 2 veces. La primera (6a) después de la oferta atrapa a los que ya están convencidos. El cierre atrapa a los que necesitaron prueba + riesgo + urgencia.
+**Duración total del bloque (capas 2-4):** **11-18s acelerado / 20-30s natural**
+**Duración de la transición (capa 1):** 3-5s
+**Total palabras por CTA:** 50-65 (vs 150-200 del legacy de 6 capas)
 
-**Duración total del bloque (capas 2-cierre):** ~20-25 seg
-**Duración de la transición (capa 1):** ~3-5 seg
+**Por qué se cambió:**
+- Winner #3: CTA ~3s ("Eso es lo que te enseñamos en nuestras capacitaciones")
+- Winner #6: CTA ~5s (consejo sin botón)
+- Winner #39: CTA ~15s (pitch + anti-pitch + abrazos)
+- Winner #44: CTA ~15s (botón + agendar día)
+- Promedio winner: **~10s**. Los CTAs legacy tardaban 36-67s al leerse natural. Ajustado.
+
+---
+
+## VARIANTES ACTIVAS v3 (2026-04-24)
+
+Las 3 variantes en producción están en `ctas-activos.json`:
+- `clase-gratis-C-v3` — Clase Gratuita, ads pagos TOFU (62 palabras)
+- `taller-5-A-v3` — Taller $5, ads pagos MOFU (64 palabras)
+- `instagram-C-v3` — Instagram orgánico (54 palabras)
+
+Editar ahí si se ajustan. Este archivo solo documenta tono y variantes.
+
+---
+
+## LEGACY — Biblioteca de 6 Capas (deprecada 2026-04-24)
+
+> Las variantes A/B/C/D documentadas más abajo usan la estructura de 6 capas (oferta + orden + prueba + riesgo cero + urgencia + cierre) típica de Benson/VSL. Se mantienen como referencia histórica de copy y para inspirarse en frases, pero **NO usar directo** — todas producen CTAs de 36-67s que no se alinean con los winners actuales. Al elegir una variante, COMPRIMIR a 3 capas siguiendo el patrón v3.
 
 ---
 

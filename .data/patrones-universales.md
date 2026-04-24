@@ -45,9 +45,9 @@
 
 ### H-2: Anti-Hype como Trust Accelerator
 **Descripción:** Admitir lo negativo de tu oferta o decir que algo es "aburrido pero funciona" genera confianza más rápido que promesas en mercados quemados.
-**Confirmaciones:** Jaime #52 y #48 (ambos con anti-hype, ambos CLR alto). **Heras: 4 usos de "aburrido" — "Esto es muy aburrido, pero genera 100.000 seguidores" (58.9% CLR). CLR promedio 59% en 4 videos.** **Jesús Winner #46 Meta Ads: "No te vas a hacer millonario, pero $50-60/día" → $0.99 CPL (866 registros, 118K alcance). Anti-hype como ancla de credibilidad que habilita el número específico.**
+**Confirmaciones:** Jaime #52 y #48 (ambos con anti-hype, ambos CLR alto). **Heras: 4 usos de "aburrido" — "Esto es muy aburrido, pero genera 100.000 seguidores" (58.9% CLR). CLR promedio 59% en 4 videos.** **Jesús top ADP YTD 2026: anti-hype explícito presente en TODOS los 4 winners actuales (#3 "manejar sin mano es peligroso", #6 "no te vas a hacer millonario, hay gente que no va a poder", #39 "no te voy a vender nada de $500", #44 triple demolición de objeciones) — es uno de los 14 principios transversales confirmados en `winner-patterns.md`.**
 **Contradicciones:** Ninguna.
-**Estado:** **CANDIDATO A AXIOMA** (3 perfiles: Jaime + Heras + Jesús en Meta Ads). Funciona en orgánico (Jaime/Heras) Y en paid (Jesús). Cross-plataforma confirmado.
+**Estado:** **AXIOMA** — confirmado transversalmente en 4/4 winners ADP actuales + cross-profile externo (Jaime + Heras). Cross-plataforma confirmado (orgánico + paid).
 **Aplicación:** En mercados quemados de promesas (como emprendimiento digital), el anti-hype funciona como diferenciador. Para Meta Ads LATAM, preceder SIEMPRE el número de ganancia con una frase de anti-hype.
 
 ### H-4: Identidad Visual = Avatar (no creador)
@@ -247,23 +247,23 @@
 
 ### H-26: Re-explicación como Señal de Empatía en Ads
 **Descripción:** Decir "te lo explico de nuevo para que sea más fácil" en un ad y REPETIR simplificado es contra-intuitivo (¿perder tiempo repitiendo?) pero funciona como señal de A7 (te doy más) y A4 (me importa que entiendas). El viewer siente que al creador le IMPORTA si entiende.
-**Confirmaciones:** Jesús #39[BN] (CPR $1.31 — mejor ad de ADP 2026). Los 12 segundos de re-explicación son el bloque de mayor A7 del ad.
+**Confirmaciones:** Jesús #39[BN] (ROAS 1,25, 167 ventas, ACTIVE — workhorse validado). Los 12 segundos de re-explicación son el bloque de mayor A7 del ad.
 **Cross-profile:** EXCLUSIVO. 0 resultados en 586 transcripciones de 28 perfiles para "explico de nuevo", "te lo resumo", "te lo repito", "para que quede claro". **NADIE hace esto.** Posible ventaja competitiva no replicada o patrón no descubierto por otros creadores.
 **Estado:** HIPÓTESIS (1 confirmación) pero con potencial de diferenciador enorme dado que 0/28 perfiles lo usan.
 **Aplicación ADP:** En guiones de 75-90s con 3+ conceptos, incluir beat de "mirá, para que quede claro..." con simplificación real. PROTEGER este patrón — es exclusivo.
 **Fuente:** Análisis ads ganadores Jesús ADP + cross-profile validation, 2026-04-01.
 
-### H-27: Producción EDUCATIVA/PROBATORIA > Producción DECORATIVA (CORREGIDO 2x)
-**Descripción:** CORREGIDO 2x (2026-04-01) — La tesis evolucionó: v1 decía "menos producción = mejor". v2 (frames cada 5s del #39/#43) refinó a "educativa > decorativa". v3 (68 frames del #121) confirma y AMPLÍA: el #121 tiene 30% de B-roll (5-6 escenas) + marcos redondeados + transición naranja + gráfico de búsqueda + jump cuts = MÁS producción que #46 y #39. Pero es producción que PRUEBA (feria real, mujer haciendo velas, producto terminado) e ILUSTRA (cada insert enseña un paso). $0.38 CPL = el mejor resultado CON la mayor producción, siempre que sea funcional.
-**Confirmaciones:** Jesús #121 (30% B-roll educativa/probatoria, $0.38 CPL). Jesús #39[BN] (4 inserts educativos, $1.31) vs #43[BN] (2 inserts decorativos, $1.46). Jaime #52 (casual, casa, 157% CLR) vs #48 (set podcast, 60% CLR). Ramiro + Heras: sobre-producción DECORATIVA = bottom (H-24).
-**Contradicciones:** Ninguna — pero la métrica cambió de "cantidad" a "tipo". Más producción FUNCIONAL = mejor. Más producción DECORATIVA = peor.
-**Estado:** **HIPÓTESIS FUERTE** (4+ confirmaciones). La variable es TIPO, no CANTIDAD.
-**Aplicación:** (1) Setting doméstico > aspiracional para TOFU. (2) B-roll educativa/probatoria (ilustra pasos, muestra productos reales, prueba el dolor) → SIEMPRE incluir, cuanto más mejor. (3) B-roll decorativa (stock, bordes dorados, mood) → NUNCA. (4) #121 es la nueva referencia: 30% B-roll funcional + 70% talking head = $0.38 CPL.
-**Fuente:** Análisis ads ganadores Jesús ADP. CORREGIDO 2x con 68 frames 1fps del #121, 2026-04-01.
+### H-27: Producción EDUCATIVA/PROBATORIA > Producción DECORATIVA
+**Descripción:** La métrica clave no es CANTIDAD de producción, sino TIPO. Producción FUNCIONAL (que prueba o ilustra lo que se dice) suma. Producción DECORATIVA (stock, bordes dorados, mood) resta.
+**Confirmaciones:** Jesús #39[BN] (4 inserts educativos, ROAS 1,25 ACTIVE). Jaime #52 (casual, casa, 157% CLR) vs #48 (set podcast, 60% CLR). Ramiro + Heras: sobre-producción DECORATIVA = bottom (H-24).
+**Contradicciones:** Ninguna.
+**Estado:** **HIPÓTESIS FUERTE** — la variable es TIPO, no CANTIDAD.
+**Aplicación:** (1) Setting doméstico > aspiracional para TOFU. (2) B-roll educativa/probatoria (ilustra pasos, muestra productos reales, prueba el dolor) → SIEMPRE incluir, cuanto más mejor. (3) B-roll decorativa (stock, bordes dorados, mood) → NUNCA.
+**Fuente:** Análisis cross-profile + ads ganadores ADP actualizados 2026-04-24.
 
 ### H-28: Anti-objeción de Precio con Ancla Cotidiana
 **Descripción:** Anclar el precio con un objeto cotidiano ("vale menos que una pizza") > decir el número ("$5") > decir "barato". El objeto debe ser: 1) cotidiano, 2) que el avatar compre SIN pensar, 3) precio similar. Funciona ESPECIALMENTE como escalera descendente ($500→$200→pizza = secuencia de alivio).
-**Confirmaciones:** Jesús #39[BN]: "vale menos que una pizza" = momento de mayor sonrisa genuina + mejor CPR del portfolio.
+**Confirmaciones:** Jesús #39[BN] (ROAS 1,25, 167 ventas): "vale menos que una pizza" = momento de mayor sonrisa genuina. Parte del DNA del único ad ACTIVE del top 4.
 **Cross-profile:** EXCLUSIVO. 0 resultados en 586 transcripciones para anclas cotidianas de precio ("vale menos", "más barato que"). Todos los creadores usan números o "gratis".
 **Estado:** HIPÓTESIS (1 confirmación) pero con potencial de diferenciador. Nadie traduce precio a objetos cotidianos.
 **Aplicación ADP:** Biblioteca de anclas por avatar: Patricia=supermercado/pizza, Roberto=diario/café, Laura=merienda de los chicos, Martín=delivery. Rotar en CTAs.
@@ -271,68 +271,59 @@
 
 ### H-29: El Ad como Auto-Referencia del Producto
 **Descripción:** "Venderlos con anuncios como este" — el ad demuestra el producto dentro de sí mismo. Meta-prueba circular: si te llegó el ad → funciona → te enseña cómo hacer lo que acabás de ver.
-**Confirmaciones:** Jesús #39[BN] y #43[BN] (ambos). **CROSS-PROFILE CONFIRMADO:** "como este" = 48 resultados en 3 perfiles (Ramiro 16, Heras 29, Hormozi 3). CLR promedio 75.57% — casi 2x el promedio del dataset. Ramiro llega hasta 254% CLR con este patrón.
+**Confirmaciones:** Jesús #39[BN] (ACTIVE, ROAS 1,25). **CROSS-PROFILE CONFIRMADO:** "como este" = 48 resultados en 3 perfiles (Ramiro 16, Heras 29, Hormozi 3). CLR promedio 75.57% — casi 2x el promedio del dataset. Ramiro llega hasta 254% CLR con este patrón.
 **Contradicciones:** Ninguna.
 **Estado:** **HIPÓTESIS FUERTE** (4 fuentes: Jesús + Ramiro + Heras + Hormozi). Candidato a axioma si se confirma en 1 perfil más.
 **Axioma:** #1 (verificable — lo estás viendo).
 **Aplicación ADP:** "Este anuncio lo hicimos con IA en 20 min. En la clase te muestro cómo." O screen recording como pizarra digital.
 **Fuente:** Análisis ads ganadores Jesús ADP + cross-profile validation, 2026-04-01.
 
+> ⚠️ **Aviso 2026-04-24 — Hipótesis H-30 a H-34: evidencia retirada, principios en observación**
+>
+> Las hipótesis H-30, H-31, H-32, H-33 y H-34 se apoyaban en comparaciones específicas entre el #121 ($0.38 CPL sobre 54 leads y $52 de spend) y el #46 ($0.99 CPL, ahora sabemos que fatigó a ROAS 0,55 al escalar). Ambos ads fueron removidos del sistema por no pasar el umbral de ≥100 ventas validadas (#121) o por fatigar a escala (#46). **La diferencia de 2.6x entre $0.38 y $0.99 no se sostiene estadísticamente** con el spend real del #121.
+>
+> Los PRINCIPIOS conceptuales siguen siendo hipótesis razonables y pueden seguir usándose como lente de diseño. Pero **no se han re-validado** con los 4 winners actuales (#3, #6, #39, #44). Tratar como ideas a testear, no como reglas.
+
 ### H-30: SÍes Emocionales > SÍes Lógicos (a igual densidad) — HIPÓTESIS DÉBIL
-**Descripción:** A igual densidad de SÍes internos (~1/5s), los SÍes anclados en EXPERIENCIA VIVIDA del viewer ("llovió y no vendiste nada") generan menor CPL que los SÍes anclados en LÓGICA ELIMINATORIA ("Fiverr no sirve porque si no laburás no cobrás").
-**Confirmaciones:** Jesús #121 (SÍes emocionales, $0.38 CPL) vs #46 (SÍes lógicos, $0.99 CPL). Ambos con 13 SÍes en ~66s = misma densidad, 2.6x diferencia en CPL.
-**Contradicciones:** Ninguna, pero **confianza BAJA**: 1 solo datapoint. La diferencia de CPL puede deberse al efecto nicho (H-32), a la B-roll educativa (30% del video), a la combinación de H-31+H-32+H-33+H-34, o a factores de audiencia — NO separable con la data actual.
+**Descripción:** A igual densidad de SÍes internos (~1/5s), los SÍes anclados en EXPERIENCIA VIVIDA del viewer generan menor CPL que los SÍes anclados en LÓGICA ELIMINATORIA.
+**Confirmaciones:** Retiradas — dependían de comparación #121 vs #46 sin evidencia a escala.
 **Axioma:** #5 (la gente recuerda sentimientos, no información).
-**Aplicación:** Tratar como intuición a testear, NO como regla. Si se confirma en 2+ comparaciones aisladas → promover.
-**Fuente:** Análisis winner #121 vs #46, 2026-04-01. Confianza rebajada en revisión del mismo día.
+**Aplicación:** Tratar como intuición a testear, NO como regla.
+**Estado:** Conceptualmente razonable, evidencia pendiente.
 
 ### H-31: Demo Concreta del Producto > Promesa Abstracta
 **Descripción:** Nombrar un PRODUCTO ESPECÍFICO ("guía de 15 páginas de velas artesanales con materiales caseros") + insert visual del producto real es más persuasivo que describir el concepto genérico ("productos digitales"). El viewer que VE el producto se imagina haciendo el suyo.
-**Confirmaciones:** Jesús #121 (demo concreta + insert vela, $0.38 CPL) vs #46 (concepto abstracto "productos digitales", sin demo, $0.99 CPL).
-**Contradicciones:** Ninguna.
+**Confirmaciones parciales:** Consistente con el patrón transversal de los winners actuales — #3 menciona productos específicos ("creá tu producto", "poné primera"), #39 menciona demo "en vivo con la IA". La especificidad es principio transversal del top.
 **Axioma:** #1 (verificable — el viewer VE el producto) + #7 (valor — el viewer aprende cómo se hace).
 **Aplicación:** En cada guion de ads, incluir 1 ejemplo hiper-concreto del producto digital que el viewer haría. No "un curso", sino "un curso de 10 videos de cómo decorar tortas con fondant".
-**Fuente:** Análisis winner #121, 2026-04-01.
+**Estado:** Principio vigente (especificidad > abstracción) confirmado transversalmente.
 
-### H-32: Hipernicho como Hook > Eliminación de Barreras (HALLAZGO FUERTE)
-**Descripción:** "Si hacés [NICHO]" ($0.38 CPL) supera a "No importa si tenés [EDAD/EXPERIENCIA]" ($0.99 CPL) como hook de ads. La auto-selección por identidad/oficio genera 2.6x más conversión que la inclusión genérica por eliminación de barreras. Hablarle a UNO y que MUCHOS se identifiquen > hablarle a TODOS y que nadie se sienta especial.
-**Confirmaciones:** Jesús #121 "Si haces manualidades" ($0.38) vs #46 "No importa si tenés 25 o 55" ($0.99). 2.6x diferencia.
-**Contradicciones:** Ninguna. Necesita más nichos para confirmar.
-**Axioma:** #2 (auto-selección — el viewer ELIGE quedarse) + #5 (sentimiento — el nicho activa identidad, no razón).
-**Aplicación:** Crear 10-15 variantes del mismo ad con hooks nicheados: "Si hacés tortas...", "Si das clases...", "Si vendés ropa...", etc. Cada variante con dolor sensorial específico del nicho + ejemplo de producto digital del nicho.
-**Fuente:** Análisis winner #121 vs #46, 2026-04-01.
+### H-32: Filtro Psicológico > Filtro Demográfico
+**Descripción:** Hooks que filtran por IDENTIDAD/DOLOR/CREENCIA del avatar superan a hooks que filtran por EDAD/DEMOGRAFÍA. Los 4 winners actuales filtran psicológicamente (objeción, hipótesis, analogía, pregunta del avatar) y ninguno menciona edad. El anti-patrón #46 filtraba demográficamente ("25-55 años") y fatigó.
+**Confirmaciones:** #3 filtra por identidad emprendedora, #6 por objeción ("nunca vendí online"), #39 por creencia ("IAs gratuitas vs pagas"), #44 por hipótesis ("si tuviera una deuda"). #46 (anti-patrón) filtraba demográficamente y no sostuvo.
+**Axioma:** #2 (auto-selección — el viewer ELIGE quedarse) + #5 (sentimiento — el filtro activa identidad, no razón).
+**Aplicación:** Evitar edad explícita como filtro. Usar identidad psicológica, dolor compartido, creencia común o hipótesis.
+**Estado:** **HIPÓTESIS FUERTE** — 4 confirmaciones en winners actuales + 1 contradicción en anti-patrón (#46).
 
 ### H-33: Espejo Inverso del Dolor como Cierre
 **Descripción:** Cerrar con la INVERSIÓN EXACTA del dolor inicial. N dependencias al inicio → N liberaciones al final. El arco emocional se cierra y el viewer siente RESOLUCIÓN. Cada elemento del cierre CANCELA punto a punto un elemento del problema.
-**Confirmaciones:** Jesús #121: Dolor = "dependés del clima, del lugar y de tu tiempo" → Cierre = "Sin envíos, sin stock, sin depender de una feria". Arco emocional cerrado. $0.38 CPL. Reforzado con enumeración visual 1-2-3 dedos (68 frames).
-**Cross-profile:** "sin depender" = 1/586 (Jaime, CLR 1.32%). "sin envíos"/"sin stock" = 0/586. La triple negación espejo es **EXCLUSIVA**.
-**Contradicciones:** Ninguna.
+**Confirmaciones cross-profile:** "sin depender" aparece en Jaime Higueras con CLR 1.32% — confirmación externa débil.
 **Axioma:** #5 (sentimiento — el cierre espejo genera satisfacción emocional de resolución).
-**Aplicación:** En el auto-brief, agregar como restricción: "El cierre del body debe CANCELAR punto por punto los dolores mencionados en los primeros 15 segundos."
-**Fuente:** Análisis winner #121, 2026-04-01. Cross-profile validation agregada.
+**Aplicación:** En el auto-brief, sugerencia opcional: "El cierre del body puede CANCELAR punto por punto los dolores mencionados en los primeros 15 segundos."
+**Estado:** Principio conceptual. Evidencia ADP original retirada. Relacionado con el "bracket narrativo" del #3 (abre y cierra con la misma escena) — posible re-validación si se confirma patrón.
 
 ### H-34: B-roll Diversa Amplía Target por Canal Visual
 **Descripción:** El audio filtra (nombra UN nicho específico) pero el B-roll amplía (muestra VARIOS oficios/productos del mismo sector). Doble canal con funciones complementarias: audio = identificación precisa, visual = inclusión amplia.
-**Confirmaciones:** Jesús #121: audio dice "velas artesanales" pero B-roll muestra macramé (s6-9), crochet (s13-14), velas (s21-25), sellado de cera (s26-29) y jabones (s30-33) = 5 oficios. La artesana de bijouterie no escucha "bijouterie" pero VE manualidades similares. $0.38 CPL.
-**Contradicciones:** Ninguna. 1 datapoint.
+**Confirmaciones:** Retiradas — dependían de frame-by-frame del #121.
 **Axioma:** #2 (auto-selección — el viewer se identifica por el canal visual aunque el audio no la nombre explícitamente).
-**Aplicación:** En ads nicheados, usar B-roll que muestre 3-5 variantes del sector (no solo el ejemplo que nombra el audio). Si el audio dice "tortas", la B-roll puede mostrar: tortas + cupcakes + galletas decoradas + catering.
-**Fuente:** Análisis winner #121 (revelado por 68 frames 1fps, NO visible con 6 frames), 2026-04-01.
+**Aplicación:** En ads nicheados, usar B-roll que muestre 3-5 variantes del sector. Si el audio dice "tortas", la B-roll puede mostrar: tortas + cupcakes + galletas decoradas + catering.
+**Estado:** Hipótesis conceptual a testear.
 
 ---
 
-### Hipótesis del Winner #46 (documentadas en análisis principal, no renumeradas aquí)
+### Hipótesis del Winner #46 — ARCHIVADAS (2026-04-24)
 
-> Las hipótesis originales del #46 (densidad de SÍes, eliminación barreras como hook, CTA largo, texto overlay como canal paralelo, diseño de 2 lenguajes visuales) están documentadas CON CROSS-PROFILE VALIDATION en `.data/analisis-winner-46-hook16-cuerpo3-cta4.md` Bloque 4.
-> 
-> **Cross-profile validation completada (ig-search.mjs, 2026-04-01):**
-> - "no importa si" → 2 resultados (Ramiro 106%, Hormozi 1.69%). Eliminación de barreras como hook = **EXCLUSIVO** de Jesús
-> - "la realidad es" → 19 resultados en 6 perfiles. Ramiro 10 usos, CLR ~100%+. Intro anti-hype = **UNIVERSAL**
-> - "millonario" → 21 resultados en 6 perfiles. Anti-hype con "millonario" = **UNIVERSAL** (confirma H-2 → candidato axioma)
-> - "tres formas"/"3 modelos" → 1/0 resultados. Estructura "3 opciones destruye 2" = **EXCLUSIVO** de Jesús
-> - "no necesitas ser" → 0 resultados. Eliminación barrera expertise = **EXCLUSIVO**
-> 
-> **Con H-32 (hipernicho del #121), la eliminación de barreras ya no es el hook más fuerte** — el hipernicho ($0.38) supera a la eliminación ($0.99) por 2.6x. Pero ambas son exclusivas del dataset, lo que las hace ventajas competitivas.
+> El #46 fatigó a escala (ROAS 0,55 con $2.945 de spend) y fue reclasificado como **anti-patrón**. Sus hipótesis originales (eliminación barreras como hook, densidad de SÍes) ya no se sostienen como patrón replicable. El análisis profundo fue borrado. Ver `winner-patterns.md` sección "Anti-patrón: #46" para el contexto actualizado — el hook demográfico + mencionar competidores + no mencionar IA son lo que diferenció a #46 de los 3 winners que sí sostuvieron escala (#3, #39, #44).
 
 ---
 

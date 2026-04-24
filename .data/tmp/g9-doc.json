@@ -1,0 +1,70 @@
+{
+  "title": "Docentes — Tu planificacion vale mas que tu clase",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "confrontacion",
+    "angle_specific": "3.docente_sistema_planificacion",
+    "body_type": "demolicion_alternativas",
+    "segment": "B",
+    "funnel_stage": "MOFU",
+    "niche": "docentes secundarios y terciarios / profesores de formacion profesional",
+    "model_sale_type": "lean_anti_riesgo",
+    "transition_text": "Ese sistema de planificacion de matematica es UN ejemplo. Te voy a mostrar el proceso entero esta semana en el taller.",
+    "total_duration_seconds": 84,
+    "word_count": 240,
+    "punto_entrada_emocional": "hartazgo del docente senior que sabe que lo que hace vale y nadie lo paga asi",
+    "belief_change": {
+      "old_belief": "Para escalar como docente tengo que dar mas clases particulares o subir a Udemy",
+      "mechanism": "Mostrar que el tercer camino es empaquetar el SISTEMA de planificacion para otros docentes",
+      "new_belief": "Lo que se vende no es el curso para el alumno. Es mi sistema de ensenar para otros docentes"
+    },
+    "micro_beliefs": [
+      { "belief": "El consejo de subir a Udemy es malo", "installed_via": "anti_consejo", "persuasion_function": "puente", "section_name": "Puente" },
+      { "belief": "Hay 3 caminos y dos tienen techo, el tercero no", "installed_via": "demolicion_alternativas", "persuasion_function": "quiebre", "section_name": "Quiebre" },
+      { "belief": "Mi sistema de planificacion es el producto real", "installed_via": "secreto_oculto", "persuasion_function": "mecanismo", "section_name": "Mecanismo" },
+      { "belief": "No necesito ser tiktoker ni dejar la escuela", "installed_via": "desarmar_excusas", "persuasion_function": "demolicion", "section_name": "Demolicion" },
+      { "belief": "Hay docentes reales vendiendo planificaciones ahora mismo", "installed_via": "volumen_variante", "persuasion_function": "prueba", "section_name": "Prueba" }
+    ],
+    "hooks": [
+      { "variant_number": 1, "hook_type": "pregunta_trampa_dual", "hypothesis": "acertijo logico fuerza al docente a detener el scroll", "emotional_lever": "curiosidad_logica", "script_text": "Si un docente con 40 alumnos ensena lo mismo 40 veces, por que le llaman multiplicar? Algo no cuadra en la cuenta.", "timing_seconds": 7 },
+      { "variant_number": 2, "hook_type": "anti_consejo", "hypothesis": "destruir el consejo popular de Udemy libera energia mental", "emotional_lever": "alivio_directo", "script_text": "Todos te dicen que subas contenido a Udemy. Dejate de joder. Ahi competis con 50 mil cursos y nadie va a encontrar el tuyo.", "timing_seconds": 7 },
+      { "variant_number": 3, "hook_type": "pregunta_espejo", "hypothesis": "el calculo semanal del docente duele por si solo", "emotional_lever": "hartazgo_profesional", "script_text": "Doy 25 horas catedra por semana. Corrijo 80 pruebas por mes. Cobro igual que hace 6 anos. Algun dia sale esto?", "timing_seconds": 7 },
+      { "variant_number": 4, "hook_type": "provocacion_dato", "hypothesis": "la contradiccion entre experiencia y pago inicial duele", "emotional_lever": "dolor_temporal", "script_text": "15 anos de planificaciones guardadas en tu PC. 15 anos ensenando lo mismo. Y cada ano arrancas de cero con plata.", "timing_seconds": 7 },
+      { "variant_number": 5, "hook_type": "nadie_explica", "hypothesis": "senalar la brecha entre consejo vago y como concreto", "emotional_lever": "frustracion_por_generico", "script_text": "Todos te dicen: vendi tu contenido. Nadie te dice como, a quien, por cuanto ni como cobrar.", "timing_seconds": 6 }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "demolicion_alternativas_3_caminos",
+      "sections": [
+        { "section_name": "Puente", "persuasion_function": "puente", "micro_belief": "El consejo de subir a Udemy es malo", "viewer_emotion_after": "apertura_critica", "is_turning_point": false, "script_text": "Pero si te estan diciendo que subas a Udemy, te estan diciendo mal. Hay otro camino que nadie nombra en los grupos de docentes.", "timing_seconds": 7 },
+        { "section_name": "Quiebre", "persuasion_function": "quiebre", "micro_belief": "Hay 3 caminos y dos tienen techo, el tercero no", "viewer_emotion_after": "mapa_claro", "is_turning_point": true, "script_text": "Porque hay 3 caminos que te venden como docente emprendedor. Uno: dar clases particulares. Tu techo son las horas disponibles. Dos: subir un curso a Udemy. Tu techo es el algoritmo que te elija entre 50 mil cursos. Tres: empaquetar tu sistema de planificacion para OTROS docentes. Sin techo. Sin algoritmo. Y no es la mas obvia.", "timing_seconds": 16 },
+        { "section_name": "Mecanismo", "persuasion_function": "mecanismo", "micro_belief": "Mi sistema de planificacion es el producto real", "viewer_emotion_after": "camino_concreto", "is_turning_point": false, "script_text": "Y aca esta el tema: lo que se vende no es el curso para el alumno. Es el sistema que armaste para ensenar. Agarras tu planificacion completa de matematica de tercer ano secundario. La IA te la estructura paso a paso en 12 modulos con actividades por clase, evaluaciones tipo y rubricas. Lo vendes a 67 dolares a otros docentes que recien entran y no saben ni por donde empezar el ano.", "timing_seconds": 18 },
+        { "section_name": "Demolicion", "persuasion_function": "demolicion", "micro_belief": "No necesito ser tiktoker ni dejar la escuela", "viewer_emotion_after": "excusas_desarmadas", "is_turning_point": false, "script_text": "Entonces no te estoy diciendo que dejes la escuela. No te estoy diciendo que dejes de correr con el cuaderno rojo de lista. No necesitas aprender herramientas de TikTok. Lo que ya tenes armado es lo que otros docentes estan pagando.", "timing_seconds": 13 },
+        { "section_name": "Prueba", "persuasion_function": "prueba", "micro_belief": "Hay docentes reales vendiendo planificaciones ahora mismo", "viewer_emotion_after": "confirmacion_de_realidad", "is_turning_point": false, "script_text": "Porque hay profesores que vendiendo una planificacion de secundaria llegaron a 400 colegas el primer ano. Sin aparecer en ningun TikTok. Sin dar una entrevista. Con un PDF que ya tenian hecho desde 2019.", "timing_seconds": 11 },
+        { "section_name": "VentaModelo", "persuasion_function": "venta_modelo", "micro_belief": "Puedo sumar una fuente de ingresos sin arriesgar el sueldo", "viewer_emotion_after": "permiso_lean", "is_turning_point": false, "script_text": "Por eso no te pido que arriesgues tu sueldo. Te pido que conviertas lo que ya haces para entrar al aula en un producto que trabaja despues del timbre. Esto no te va a hacer millonario pero te saca del congelamiento.", "timing_seconds": 12 }
+      ]
+    },
+    "micro_yes_chain": [
+      { "location": "hook", "technique": "acertijo", "phrase": "Algo no cuadra en la cuenta" },
+      { "location": "puente", "technique": "apertura_critica", "phrase": "Hay otro camino que nadie nombra" },
+      { "location": "quiebre", "technique": "mapa_3_caminos", "phrase": "Sin techo. Sin algoritmo" },
+      { "location": "mecanismo", "technique": "reconocimiento", "phrase": "tu planificacion completa de matematica de tercer ano secundario" },
+      { "location": "demolicion", "technique": "permiso", "phrase": "Lo que ya tenes armado es lo que otros docentes estan pagando" },
+      { "location": "venta_modelo", "technique": "lean", "phrase": "te saca del congelamiento" }
+    ],
+    "ingredients_used": [
+      { "category": "A", "ingredient_number": 20, "ingredient_name": "Anti-consejo universal" },
+      { "category": "A", "ingredient_number": 23, "ingredient_name": "Ego-check / Micro-test" },
+      { "category": "B", "ingredient_number": 30, "ingredient_name": "Ciclo roto" },
+      { "category": "D", "ingredient_number": 50, "ingredient_name": "Ejemplo imposible" },
+      { "category": "F", "ingredient_number": 78, "ingredient_name": "Secreto / Ingrediente oculto" },
+      { "category": "G", "ingredient_number": 89, "ingredient_name": "Prueba por volumen" },
+      { "category": "H", "ingredient_number": 103, "ingredient_name": "Anti-hype" }
+    ],
+    "cta_blocks": [
+      { "channel": "taller_5", "variant": "A" },
+      { "channel": "clase_gratuita", "variant": "C" },
+      { "channel": "instagram", "variant": "C" }
+    ]
+  }
+}

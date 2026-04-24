@@ -1,0 +1,264 @@
+{
+  "id": "89a7983e-27b1-44df-8186-7fc2ec1cdaac",
+  "briefId": "3f9e5d98-36c2-4b9a-b987-31c3c0600deb",
+  "title": "Costureras — El Cajon de la Abuela",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "historia",
+    "angle_specific": "5.costurera_herencia_molde",
+    "body_type": "historia_con_giro",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "costureras / modistas / mujeres con taller de costura en casa",
+    "model_sale_type": "herencia_vivida",
+    "transition_text": "Ese kit El Cajon de la Abuela es UN ejemplo. Te voy a mostrar el proceso entero esta semana en una clase.",
+    "total_duration_seconds": 81,
+    "word_count": 220,
+    "punto_entrada_emocional": "bronca de que tu destino sea la silla de costura hasta los 75",
+    "belief_change": {
+      "old_belief": "Amo coser pero mi futuro es seguir cosiendo a pedido hasta que el cuerpo no de mas",
+      "mechanism": "Darle permiso de empaquetar los moldes heredados en un producto digital vendible",
+      "new_belief": "Lo que se queda hecho en un PDF y trabaja sin mi"
+    },
+    "micro_beliefs": [
+      {
+        "belief": "Los moldes heredados no tienen que morir en el cajon",
+        "installed_via": "nombrar_herencia",
+        "persuasion_function": "puente",
+        "section_name": "Puente"
+      },
+      {
+        "belief": "Puedo dejar de coser a pedido sin dejar de coser",
+        "installed_via": "dar_permiso",
+        "persuasion_function": "quiebre",
+        "section_name": "Quiebre"
+      },
+      {
+        "belief": "Los moldes de papel se convierten en un PDF vendible",
+        "installed_via": "mecanismo_con_nombre",
+        "persuasion_function": "mecanismo",
+        "section_name": "Mecanismo"
+      },
+      {
+        "belief": "No necesito maquina nueva ni instagram ni aprender mil cosas",
+        "installed_via": "desarmar_excusas",
+        "persuasion_function": "demolicion",
+        "section_name": "Demolicion"
+      },
+      {
+        "belief": "Otras costureras ya lo estan haciendo en otros paises",
+        "installed_via": "testimonio_diverso",
+        "persuasion_function": "prueba",
+        "section_name": "Prueba"
+      }
+    ],
+    "hooks": [
+      {
+        "variant_number": 1,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "cold open en la escena del taller mete al viewer directo en el dolor",
+        "emotional_lever": "cansancio_fisico_cotidiano",
+        "script_text": "Son las 3 de la tarde. Hace dos semanas cosés el mismo vestido de novia. Y calculas: ganaste menos que el delivery que pasa por tu ventana.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 2,
+        "hook_type": "negacion_directa",
+        "hypothesis": "la frase textual del avatar activa identificacion inmediata",
+        "emotional_lever": "rechazo_del_destino",
+        "script_text": "Amas coser. Pero no queres que tu futuro sea este: sentada en una silla hasta los 75 anos cosiendo para otros.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 3,
+        "hook_type": "historia_dolor_sensorial",
+        "hypothesis": "detalles corporales ultra especificos disparan reconocimiento",
+        "emotional_lever": "dolor_fisico_identidad",
+        "script_text": "Te duele la cadera de tantas horas sentada. El dedo indice lo tenes torcido de 20 anos de aguja. Y cada ano cobras menos que el anterior.",
+        "timing_seconds": 8
+      },
+      {
+        "variant_number": 4,
+        "hook_type": "objeto_especifico",
+        "hypothesis": "el objeto heredado activa nostalgia + valor latente",
+        "emotional_lever": "nostalgia_activa",
+        "script_text": "Abris el cajon de la maquina. Estan los moldes que heredaste. En papel amarillento. Los seguis usando en 2026 como si fuera 1985.",
+        "timing_seconds": 7
+      },
+      {
+        "variant_number": 5,
+        "hook_type": "voz_tercero",
+        "hypothesis": "la pregunta de la nieta desarma la defensa racional",
+        "emotional_lever": "vulnerabilidad_familiar",
+        "script_text": "Tu nieta te pregunta: abuela, por que seguis cosiendo si te duele todo? Y no sabes que responder.",
+        "timing_seconds": 6
+      }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "historia_personal",
+      "sections": [
+        {
+          "section_name": "Puente",
+          "persuasion_function": "puente",
+          "micro_belief": "Los moldes heredados no tienen que morir en el cajon",
+          "viewer_emotion_after": "apertura_emocional",
+          "is_turning_point": false,
+          "script_text": "Pero no tiene que ser asi. Esos moldes que heredaste no tienen que terminar en un cajon amarillento. Tampoco vos.",
+          "timing_seconds": 6
+        },
+        {
+          "section_name": "Quiebre",
+          "persuasion_function": "quiebre",
+          "micro_belief": "Puedo dejar de coser a pedido sin dejar de coser",
+          "viewer_emotion_after": "permiso_recibido",
+          "is_turning_point": true,
+          "script_text": "Porque te doy permiso de cambiar el juego. No es dejar de coser. Es dejar de coser a pedido. Podes seguir amando la costura sin que ella te rompa el cuerpo.",
+          "timing_seconds": 12
+        },
+        {
+          "section_name": "Mecanismo",
+          "persuasion_function": "mecanismo",
+          "micro_belief": "Los moldes de papel se convierten en un PDF vendible",
+          "viewer_emotion_after": "camino_concreto",
+          "is_turning_point": false,
+          "script_text": "Y aca esta el tema: agarras 25 patrones de ropa de bebe que heredaste de tu mama. Los escaneas con el celular. La IA los limpia, los ordena y arma un PDF paso a paso con medidas, telas sugeridas y fotos. Lo vendes como El Cajon de la Abuela a 19 dolares. Una mujer de Santa Fe lo compra porque va a ser abuela en marzo y quiere coserle la ropa a su nieta.",
+          "timing_seconds": 19
+        },
+        {
+          "section_name": "Demolicion",
+          "persuasion_function": "demolicion",
+          "micro_belief": "No necesito maquina nueva ni instagram ni aprender mil cosas",
+          "viewer_emotion_after": "excusas_desarmadas",
+          "is_turning_point": false,
+          "script_text": "Entonces no hace falta coser un encargo mas. No hace falta aprender a usar una maquina nueva. No hace falta abrir un Instagram. Los patrones ya los tenes en el cajon. Solo necesitas ayuda para empaquetarlos.",
+          "timing_seconds": 13
+        },
+        {
+          "section_name": "Prueba",
+          "persuasion_function": "prueba",
+          "micro_belief": "Otras costureras ya lo estan haciendo en otros paises",
+          "viewer_emotion_after": "confirmacion_de_realidad",
+          "is_turning_point": false,
+          "script_text": "Porque ya hay costureras vendiendo patrones en PDF en Espana, en Mexico, en Peru. Cada una con su estilo. No dejaron la costura: le sumaron una fuente de plata que no las rompe.",
+          "timing_seconds": 11
+        },
+        {
+          "section_name": "VentaModelo",
+          "persuasion_function": "venta_modelo",
+          "micro_belief": "Lo que se queda hecho en un archivo y trabaja sin mi",
+          "viewer_emotion_after": "permiso_de_soltar",
+          "is_turning_point": false,
+          "script_text": "Por eso no se trata de abandonar lo que sabes. Se trata de dejar que lo que sabes viva sin vos pegada a la silla.",
+          "timing_seconds": 7
+        }
+      ]
+    },
+    "micro_yes_chain": [
+      {
+        "location": "hook",
+        "technique": "dolor_fisico",
+        "phrase": "Te duele la cadera"
+      },
+      {
+        "location": "puente",
+        "technique": "apertura",
+        "phrase": "no tiene que ser asi"
+      },
+      {
+        "location": "quiebre",
+        "technique": "permiso",
+        "phrase": "te doy permiso de cambiar el juego"
+      },
+      {
+        "location": "mecanismo",
+        "technique": "reconocimiento",
+        "phrase": "heredaste de tu mama"
+      },
+      {
+        "location": "demolicion",
+        "technique": "reduccion",
+        "phrase": "Solo necesitas ayuda para empaquetarlos"
+      },
+      {
+        "location": "venta_modelo",
+        "technique": "liberacion",
+        "phrase": "viva sin vos pegada a la silla"
+      }
+    ],
+    "ingredients_used": [
+      {
+        "category": "A",
+        "ingredient_number": 19,
+        "ingredient_name": "Cold Open estilo serie"
+      },
+      {
+        "category": "A",
+        "ingredient_number": 12,
+        "ingredient_name": "Voz de tercero (hook 5)"
+      },
+      {
+        "category": "B",
+        "ingredient_number": 31,
+        "ingredient_name": "Dolor por identidad"
+      },
+      {
+        "category": "D",
+        "ingredient_number": 53,
+        "ingredient_name": "El permiso"
+      },
+      {
+        "category": "F",
+        "ingredient_number": 75,
+        "ingredient_name": "Mecanismo con nombre propio"
+      },
+      {
+        "category": "G",
+        "ingredient_number": 85,
+        "ingredient_name": "Testimonio diverso"
+      }
+    ],
+    "cta_blocks": [
+      {
+        "channel": "clase_gratuita",
+        "variant": "C"
+      },
+      {
+        "channel": "taller_5",
+        "variant": "A",
+        "layers": {
+          "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
+          "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
+          "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
+          "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
+          "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+        },
+        "ingredients": [
+          "#71 Proceso de N Pasos",
+          "#98 Tres Deliverables",
+          "#89 Prueba por Volumen",
+          "#93 Diversidad Geográfica",
+          "#103 Reducción al Absurdo",
+          "#122 Costo de Esperar"
+        ]
+      },
+      {
+        "channel": "instagram",
+        "variant": "C",
+        "layers": {
+          "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
+          "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+          "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
+          "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
+          "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
+          "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+        },
+        "ingredients": [
+          "#89 Prueba por Volumen",
+          "#117 Escasez"
+        ]
+      }
+    ]
+  },
+  "createdAt": "2026-04-23T03:02:19.398Z"
+}

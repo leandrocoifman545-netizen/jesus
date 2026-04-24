@@ -7,8 +7,8 @@
 Armá el plan semanal de guiones. Antes de elegir nichos, ángulos o personalidades, LEETE estos archivos:
 
 1. `frases-textuales-562-compradores.md` — frases REALES de compradores. Cada guion debe usar al menos una.
-2. `cruce-562-vs-winners.md` — nichos validados con data real + oportunidades no explotadas.
-3. `inteligencia-compradores.md` — datos cuantitativos de 562 compradores.
+2. `inteligencia-compradores.md` — datos cuantitativos de 562 compradores.
+3. `winner-patterns.md` — los 4 winners validados actuales (#3, #6, #39, #44) con ≥100 ventas cada uno.
 
 Reglas para este plan:
 

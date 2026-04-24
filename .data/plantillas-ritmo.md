@@ -3,10 +3,12 @@
 > Cada plantilla define CÓMO suena el guion, no QUÉ dice. El contenido viene del skill (emoción, big idea, analogía). La plantilla dice cómo se mueve.
 >
 > **Regla:** NUNCA usar la misma plantilla 2 veces seguidas. En batch de 10: mínimo 5 distintas.
+>
+> ⚠️ **2026-04-24:** Las plantillas R1 y R2 originalmente se anclaban en ads (#121 / #43) que fueron removidos del sistema por no pasar el umbral de ≥100 ventas. Siguen disponibles como hipótesis conceptuales pero sin evidencia actual a escala. Los 4 winners YTD 2026 (#3, #6, #39, #44) usan otras cadencias — ver `winner-patterns.md` para los meta-patrones vigentes (analogía con bracket, pregunta-avatar, contraste de creencia + re-explicación, hipótesis + demolición).
 
 ---
 
-## R1. "Directo sin adornos" (modelado de Winner #121 — $0.38 CPL)
+## R1. "Directo sin adornos" (plantilla conceptual — sin evidencia actual a escala)
 
 **Cadencia:** Rápido, lineal, sin pausas. Cada oración avanza la historia. Cero adornos.
 
@@ -29,7 +31,7 @@
 
 ---
 
-## R2. "Acertijo lógico" (inspirado en Winner #43 — $1.46 CPL)
+## R2. "Acertijo lógico" (plantilla conceptual — evidencia histórica retirada; el ad #43 que la usaba fue matado por desajuste con comprador)
 
 **Cadencia:** Empieza lento (el cerebro procesa), acelera en la segunda mitad. Ritmo de razonamiento.
 

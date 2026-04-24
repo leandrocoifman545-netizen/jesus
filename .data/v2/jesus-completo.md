@@ -276,7 +276,10 @@ Virales → Imágenes ($2 test) → Videos (solo ideas ganadoras confirmadas)
 Meta diaria: 1 idea ganadora nueva por día.
 Grabar en horizontal, recortar para vertical.
 
-### Guiones reales de referencia (winners con CPL verificado — Meta Ads T4-T7)
-1. **#46 [Hook_16 Cuerpo_3 CTA_4]** — ESCALA. $857 spend, 866 leads, $0.99 CPL. Estructura "3 opciones destruye 2". Hook eliminación barreras. ~65s. Escaló a $1,542 spend manteniendo CPL <$1.
-2. **#121 [C9-H1 CTAventa]** — EFICIENCIA. $0.38 CPL (récord), 54 leads, $52 spend. Hipernicho auto-selección ("Si hacés manualidades"). Demo concreta del mecanismo. ~67s. Muestra chica pero señal fortísima.
-3. **#34 [C3-H4 CTAventa]** — DIVERSIDAD. $0.73 CPL, 302 leads. Cotilla cultural/nostalgia ("¿Viste esa revista de decoración?"). CTR 4.46%. ~71s. Consistente en 4 tandas.
+### Guiones reales de referencia (winners validados YTD 2026 — ≥100 ventas + ROAS ≥1)
+1. **#3** — TOP REVENUE. $5.943 spend, 424 ventas, ROAS 1,20. Analogía motora con bracket narrativo ("¿Viste cuando aprendés a manejar?"). ~65s. Único winner con "nosotros" institucional.
+2. **#6** — TOP ROAS. $547 spend, 108 ventas, ROAS 2,63. Formato pregunta-respuesta con voz del avatar ("¿sirve si nunca vendí nada online?"). Inversión de objeción. Vulnerabilidad densa. ~72s.
+3. **#39 [BN]** — ACTIVE WORKHORSE. $2.706 spend, 167 ventas, ROAS 1,25. Contraste de creencia (IAs gratuitas vs pagas) + proceso implícito + re-explicación ("te lo voy a explicar de nuevo") + anti-pitch explícito ("no te voy a vender nada de $500, vale menos que una pizza"). ~85s.
+4. **#44 [C1]** — BLOQUEADO (DISAPPROVE). $2.730 spend, 161 ventas, ROAS 1,21. Hipótesis del autor ("Si tuviera una deuda") + triple demolición objeciones. Meta lo rechazó por promesa de ingresos.
+
+*Anti-patrón documentado:* #46 fatigó a escala (95 ventas, ROAS 0,55). Causa probable: hook demográfico (25-55 años) + mencionar competidores por nombre + IA ausente del mensaje.

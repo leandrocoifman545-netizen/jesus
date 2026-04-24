@@ -152,7 +152,7 @@ Mismo saber → nivel 1 ($X) → nivel 2 ($XX) → nivel 3 ($XXX). Destruye "no 
 | E#61 | Micro-Story de Origen | 2-3 oraciones de cómo empezó | ○ |
 | E#62 | Autoridad por Origen | "Yo estuve donde vos estás" | ● |
 | E#63 | Credencial Anti-Hype | "No soy el más exitoso, pero..." | ○ |
-| E#64 | Dato de Resultado Específico | "$0.38 CPL", "866 registros" | ○ |
+| E#64 | Dato de Resultado Específico | "424 ventas con un ad", "$50-60 por día" | ○ |
 | E#65 | Reconocimiento Externo | Awards, menciones, apariciones | ○ |
 | E#66 | Confesión de Fracaso | "Perdí $150K en ads que no funcionaron" | ○ |
 | E#67 | Vulnerabilidad Estratégica | Mostrar debilidad que genera confianza | ○ |

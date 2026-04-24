@@ -1,10 +1,37 @@
 # Análisis Profundo — Winner #39 [BN] T4
 
-> **Fecha de análisis:** 2026-04-09 (rehecho con cruce de compradores)
+> ✅ **ACTUALIZACIÓN 2026-04-23 — AD SIGUE VIGENTE Y ES TOP ACTIVE**
+>
+> Métricas actuales (YTD 2026 al 2026-04-20):
+>
+> - Spend: $2.706 · Ventas: 167 · Revenue: $3.371
+> - CPL: $1,37 · **ROAS: 1,25** (probado a escala)
+> - Status: **ACTIVE** — Mejor ACTIVE del top 10 actual
+> - Conversión lead→venta: 8,43%
+> - Profit 2-productos: **+$665**
+>
+> **Es uno de los 3 workhorses confirmados del sistema actual** (junto con #3 y #44). Sostuvo $2.7k de spend manteniendo ROAS 1,25 — evidencia robusta.
+>
+> **Qué sigue vigente de este análisis:**
+> - La clasificación original "SIN FILTRO — atrae curiosos generales" sigue siendo correcta conceptualmente, pero el ad convierte igual por volumen y por el anti-pitch del final.
+> - Frame-by-frame visual (17 frames cada 5s).
+> - El listicle de 3 pasos numerado como estructura replicable.
+> - El anti-pitch "no te voy a vender nada de $500, ni $200... menos que una pizza".
+>
+> **Qué se agrega al análisis original (descubierto en YTD 2026):**
+> - Cierre con "Abrazos" como marker de top performers.
+> - Oraciones cortas intercaladas (promedio 12,5 palabras/oración).
+> - Duración 85s es el LÍMITE superior del target — el que llega al final está pre-calificado.
+>
+> Ver `winner-patterns.md` + `transcripciones-ganadores/ad-39bn.md` para análisis vigente complementario.
+>
+> ---
+>
+> **Fecha de análisis:** 2026-04-09 (rehecho con cruce de compradores) · **Validado vigente:** 2026-04-23
 > **Producto:** ADP — Productos digitales con IA
 > **Plataforma:** Meta Ads (Facebook/Instagram)
-> **Tanda:** T4 (13 Mar 2026)
-> **Tier:** 1 (Benchmark) — #2 histórico por volumen de leads
+> **Tanda (original):** T4 (13 Mar 2026) · **Estado actual:** ACTIVE YTD 2026
+> **Tier:** 1 (Benchmark) — #2 histórico por volumen de leads · **Actual:** #2 ROAS del top 10 actual
 > **Metodología:** 7 axiomas + 8 pasadas + 6 lentes + 7 dimensiones + cruce con 562 compradores + autocrítica 27 preguntas
 > **Visual:** 85 frames a 1fps
 > **Clasificación cruce-562:** SIN FILTRO — atrae curiosos generales, no filtra al comprador real
@@ -876,7 +903,7 @@ Sí. BAJA-MEDIA total. El "te lo voy a explicar de nuevo" es un reset de carga b
 ### Cross-profile (19-20)
 
 **19. "¿Validé cada hipótesis contra otros perfiles?"**
-No se ejecutó ig-search.mjs en este análisis porque es un ad de ADP, no un perfil externo. Las hipótesis se validaron contra la data de los 562 compradores reales y contra el cruce-562-vs-winners.md existente.
+No se ejecutó ig-search.mjs en este análisis porque es un ad de ADP, no un perfil externo. Las hipótesis se validaron contra la data de los 562 compradores reales (ver `inteligencia-compradores.md` y `audiencia-compradores.md` en memoria).
 
 **20. "¿Sé cuáles patrones son universales y cuáles exclusivos?"**
 Los patrones UNIVERSALES de #39 (anti-venta, meta-referencia, re-explicación, triple negación de precio, B&W interrupt) son confirmados por múltiples winners del portfolio. El patrón EXCLUSIVO es el hook genérico de IA sin filtro — que funciona para volumen pero no para calidad de lead.

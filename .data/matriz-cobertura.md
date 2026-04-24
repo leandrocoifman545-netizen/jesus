@@ -1,32 +1,32 @@
 # Matriz de Cobertura — Auto-generado
-> Fecha: 2026-04-19
-> Base: 68 generaciones
+> Fecha: 2026-04-23
+> Base: 77 generaciones
 > Este archivo se regenera con: `node scripts/update-coverage.mjs`
 
 ## Últimas generaciones (no repetir)
 
 | ID | Nicho | Familia | Ángulo | Body Type | Fecha |
 |-----|-------|---------|--------|-----------|-------|
-| 7b9aa52e | mujeres 48-62 con hijos grandes o que se fueron (nido vacio) amplio: amas de casa, jubiladas recientes, ex-empleadas, docentes retiradas, madres de adolescentes | Oportunidad y Tenden | 2.7_nido_vacio_tiempo_libre_reinvencion | Analogía extendida | 2026-04-19 |
-| 9fb5c7b9 | mujeres 45+ con multiples formaciones (coaching, reiki, astrologia, yoga, numerologia, docentes con postgrados, terapeutas con 4+ certificaciones) | identidad | 1.10_sindrome_acumuladora_45 | Demolición de mito | 2026-04-19 |
-| 065dd895 | psicologos / nutricionistas / coaches / terapeutas / profesionales que atienden por WhatsApp | confrontacion | 3.11_regalo_invisible_whatsapp | Demo/Proceso | 2026-04-19 |
-| 5e519135 | jubilados con oficio (ex-contadores, ex-docentes, ex-médicos, ex-oficios, ex-empleados de comercio) | historia | 5.4_analogia_jubilado_biblioteca | Analogía extendida | 2026-04-19 |
-| 81eaac16 | músicos amateur / guitarra / piano / ukelele / batería / canto (enseñar lo que tocás) | historia | 5.3_analogia_musica_amateur | storytelling_hollywood | 2026-04-19 |
-| 2b3e4208 | fitness / yoga / pilates / entrenadores personales / rutinas en casa (amplio) | Oportunidad y Tenden | 2.1_comunidad_sin_proveedor_fitness | Pregunta y respuesta | 2026-04-19 |
-| 4ed68080 | administrativos / secretarias / asistentes virtuales / gestión / Excel / organización | mecanismo | 4.3_antes_despues_IA_admin | Historia con giro | 2026-04-19 |
-| edadda28 | crianza / maternidad primeriza / primeros años (lactancia, sueño, alimentación, límites) | Oportunidad y Tenden | 2.3_demanda_invisible_crianza | Tier-list/Rating | 2026-04-19 |
-| bddaf484 | mecánica de autos / motos / soldadura / carpintería casera (oficios con herramienta) | mecanismo | 4.6_producto_revelado_mecanica | Demo/Proceso | 2026-04-19 |
-| 5e53bca5 | entrenadores amateur de fútbol / DT de barrio / preparadores físicos | identidad | 1.7_hobby_invisible_DT | Un día en la vida | 2026-04-19 |
+| 9295aed1 | cocineras / cocineros caseros / amateurs con cuaderno de recetas familiar | mecanismo | 4.cocinera_cuaderno_abuela_digitalizado | Comparación caminos | 2026-04-23 |
+| c02654b6 | docentes secundarios y terciarios / profesores de formacion profesional | confrontacion | 3.docente_sistema_planificacion | Demolición alternativa | 2026-04-23 |
+| 139c84d1 | psicopedagogas / fonoaudiologas / terapeutas ocupacionales | mecanismo | 4.psicopedagoga_guia_para_madres | Pregunta y respuesta | 2026-04-23 |
+| 6d7d2102 | comerciantes con local a la calle / duenos de comercio tradicional | Oportunidad y Tenden | 2.comerciante_offline_knowhow_oculto | q_and_a_conversacional | 2026-04-23 |
+| f21f2311 | disenadoras graficas / UX / diseno de marca / diseno de marca | Oportunidad y Tenden | 2.disenadora_template_versionado | Demo/Proceso | 2026-04-23 |
+| 89a7983e | costureras / modistas / mujeres con taller de costura en casa | historia | 5.costurera_herencia_molde | Historia con giro | 2026-04-23 |
+| 22564d34 | kinesiologos / fisioterapeutas / terapeutas fisicos | historia | 5.kinesiologo_dia_en_la_vida | Un día en la vida | 2026-04-23 |
+| d6e70e63 | nutricionistas / dietistas / licenciados en nutricion | identidad | 1.nutricionista_consulta_efimera | Analogía extendida | 2026-04-23 |
+| afc17a94 | contadoras freelance / administrativas / estudios contables chicos | confrontacion | 3.contadora_tres_formas_cobrar | Quiz de comparación | 2026-04-23 |
+| 0ef054ef | arquitectos (proyectistas, estudios pequenos, freelance senior) | identidad | 1.arquitecto_plano_tipo_empaquetado | Trailer de recurso | 2026-04-23 |
 
 ## Resumen general
 
 | Dimensión | Valores usados | Total generaciones |
 |-----------|---------------|-------------------|
-| Familias de ángulo | 7 / 5 | 68 |
-| Body types | 21 / 13 | 68 |
-| Segmentos | 7 / 4 | 68 |
-| Funnel stages | 4 / 3 | 68 |
-| Lead types distintos | 108 | — |
+| Familias de ángulo | 7 / 5 | 77 |
+| Body types | 22 / 13 | 77 |
+| Segmentos | 7 / 4 | 77 |
+| Funnel stages | 4 / 3 | 77 |
+| Lead types distintos | 113 | — |
 | Avatares distintos | 5 | — |
 | Ventas del modelo distintas | 20 | — |
 
@@ -34,31 +34,32 @@
 
 | Familia | Count | % |
 |---------|-------|---|
-| 1. Identidad y Situación | 18 | 26% |
-| 2. Oportunidad y Tendencia | 13 | 19% |
-| 3. Contraste y Confrontación | 12 | 18% |
-| 4. Mecanismo y Proceso | 5 | 7% |
-| 5. Historia y Emoción | 7 | 10% |
+| 1. Identidad y Situación | 20 | 26% |
+| 2. Oportunidad y Tendencia | 14 | 18% |
+| 3. Contraste y Confrontación | 14 | 18% |
+| 4. Mecanismo y Proceso | 7 | 9% |
+| 5. Historia y Emoción | 9 | 12% |
 | ❓ modelo_equivocado | 2 | 3% |
-| ❓ desconocido | 11 | 16% |
+| ❓ desconocido | 11 | 14% |
 
 ## Cobertura por body type
 
 | Body Type | Count | % |
 |-----------|-------|---|
-| 1. Demolición de mito | 5 | 7% |
-| 2. Historia con giro | 5 | 7% |
-| 3. Demo/Proceso | 6 | 9% |
-| 4. Comparación caminos | 4 | 6% |
-| 5. Un día en la vida | 3 | 4% |
-| 6. Pregunta y respuesta | 2 | 3% |
-| 7. Analogía extendida | 4 | 6% |
-| 8. Contraste emocional | 6 | 9% |
-| 9. Demolición alternativas ⭐ | 3 | 4% |
+| 1. Demolición de mito | 4 | 5% |
+| 2. Historia con giro | 6 | 8% |
+| 3. Demo/Proceso | 7 | 9% |
+| 4. Comparación caminos | 5 | 6% |
+| 5. Un día en la vida | 4 | 5% |
+| 6. Pregunta y respuesta | 3 | 4% |
+| 7. Analogía extendida | 5 | 6% |
+| 8. Contraste emocional | 6 | 8% |
+| 9. Demolición alternativas ⭐ | 4 | 5% |
 | 10. Q&A conversacional ⭐ | 3 | 4% |
-| 11. Tier-list/Rating | 4 | 6% |
-| 12. Trailer de recurso | 1 | 1% |
-| 13. Quiz de comparación | 1 | 1% |
+| 11. Tier-list/Rating | 4 | 5% |
+| 12. Trailer de recurso | 2 | 3% |
+| 13. Quiz de comparación | 2 | 3% |
+| ❓ q_and_a_conversacional | 1 | 1% |
 | ❓ storytelling_hollywood | 3 | 4% |
 | ❓ espejo_situacion | 2 | 3% |
 | ❓ escena_cinematografica | 1 | 1% |
@@ -66,31 +67,31 @@
 | ❓ demolicion_objecion | 1 | 1% |
 | ❓ matematica_reveladora | 1 | 1% |
 | ❓ tutorial-promesa | 1 | 1% |
-| ❓ desconocido | 11 | 16% |
+| ❓ desconocido | 11 | 14% |
 
 ## Cobertura por segmento
 
 | Segmento | Count | % |
 |----------|-------|---|
-| A | 17 | 25% |
-| B | 15 | 22% |
-| C | 17 | 25% |
-| D | 3 | 4% |
+| A | 21 | 27% |
+| B | 17 | 22% |
+| C | 19 | 25% |
+| D | 4 | 5% |
 
 ## Cobertura por funnel stage
 
 | Stage | Count | % |
 |-------|-------|---|
-| TOFU | 43 | 63% |
-| MOFU | 6 | 9% |
-| RETARGET | 6 | 9% |
+| TOFU | 49 | 64% |
+| MOFU | 8 | 10% |
+| RETARGET | 7 | 9% |
 
 ## Cobertura por avatar
 
 | Avatar | Count | % |
 |--------|-------|---|
-| ? | 59 | 87% |
-| martin | 5 | 7% |
+| ? | 68 | 88% |
+| martin | 5 | 6% |
 | patricia | 2 | 3% |
 | laura | 1 | 1% |
 | todos | 1 | 1% |
@@ -99,22 +100,22 @@
 
 | Tipo de venta | Count | % |
 |---------------|-------|---|
-| ? | 11 | 16% |
-| democratizacion_ia | 9 | 13% |
-| transparencia_total | 8 | 12% |
-| tiempo_vs_dinero | 7 | 10% |
-| lean_anti_riesgo | 6 | 9% |
-| eliminacion_barreras | 4 | 6% |
-| contraste_fisico | 4 | 6% |
-| cementerio_modelos | 3 | 4% |
-| escalabilidad | 2 | 3% |
-| matematica_simple | 2 | 3% |
+| ? | 11 | 14% |
+| democratizacion_ia | 10 | 13% |
+| transparencia_total | 9 | 12% |
+| tiempo_vs_dinero | 8 | 10% |
+| lean_anti_riesgo | 7 | 9% |
+| cementerio_modelos | 4 | 5% |
+| contraste_fisico | 4 | 5% |
+| prueba_diversidad | 3 | 4% |
+| escalabilidad | 3 | 4% |
+| matematica_simple | 3 | 4% |
+| eliminacion_barreras | 3 | 4% |
+| herencia_vivida | 2 | 3% |
+| redefinicion_trabajo | 2 | 3% |
 | ventana_oportunidad_ia | 2 | 3% |
-| prueba_diversidad | 2 | 3% |
 | 5 | 1 | 1% |
-| herencia_vivida | 1 | 1% |
 | foco_vs_dispersion | 1 | 1% |
-| redefinicion_trabajo | 1 | 1% |
 | caballo_troya_baja_barrera | 1 | 1% |
 | escalabilidad_tiempo | 1 | 1% |
 | escalabilidad_tiempo_dinero | 1 | 1% |
@@ -124,31 +125,41 @@
 
 | Lead Type | Count | % del total hooks |
 |-----------|-------|------------------|
-| situacion_especifica | 29 | 9% |
-| pregunta_incomoda | 17 | 5% |
-| provocacion | 16 | 5% |
-| pregunta_espejo | 15 | 5% |
-| actuacion_dialogo | 14 | 4% |
+| situacion_especifica | 30 | 8% |
+| pregunta_espejo | 21 | 6% |
+| pregunta_incomoda | 18 | 5% |
+| provocacion | 16 | 4% |
+| actuacion_dialogo | 15 | 4% |
+| nombrar_innombrado | 13 | 4% |
+| flip_contraintuitivo | 13 | 4% |
 | confesion | 13 | 4% |
-| flip_contraintuitivo | 12 | 4% |
-| nombrar_innombrado | 12 | 4% |
 | historia_mini | 11 | 3% |
+| auto_seleccion_memoria | 10 | 3% |
+| historia_dolor_sensorial | 10 | 3% |
 | contraintuitivo | 10 | 3% |
-| auto_seleccion_memoria | 8 | 3% |
-| hipernicho_winner121 | 8 | 3% |
+| negacion_directa | 9 | 2% |
+| inmersion_segunda_persona | 8 | 2% |
+| hipernicho_winner121 | 8 | 2% |
 | anti_hype | 7 | 2% |
 | desculpabilizacion | 7 | 2% |
 | observacion_tendencia | 7 | 2% |
-| negacion_directa | 7 | 2% |
-| historia_dolor_sensorial | 6 | 2% |
-| inmersion_segunda_persona | 6 | 2% |
-| dato_concreto | 5 | 2% |
+| anti_consejo | 5 | 1% |
+| dato_concreto | 5 | 1% |
+| pregunta_trampa_dual | 4 | 1% |
+| provocacion_dato | 4 | 1% |
 | segunda_persona | 4 | 1% |
-| pregunta_trampa_dual | 3 | 1% |
+| nostalgia_objeto_extincion | 3 | 1% |
+| ancla_precio_invertida | 3 | 1% |
+| confesion_temporal | 3 | 1% |
 | analogia_cotidiana | 3 | 1% |
 | timeline_provocacion | 3 | 1% |
-| confesion_temporal | 2 | 1% |
-| ancla_precio_invertida | 2 | 1% |
+| resultado_primero | 2 | 1% |
+| hipotetico_personal | 2 | 1% |
+| voz_tercero | 2 | 1% |
+| promesa_directa | 2 | 1% |
+| exclusividad | 2 | 1% |
+| contraste_temporal | 2 | 1% |
+| objeto_especifico | 2 | 1% |
 | future_pacing_sensorial | 2 | 1% |
 | hipernicho | 2 | 1% |
 | eliminacion_barreras | 2 | 1% |
@@ -157,9 +168,12 @@
 | question | 2 | 1% |
 | reveal_teaser | 2 | 1% |
 | curiosity_gap | 2 | 1% |
+| nadie_explica | 1 | 0% |
+| timeline_proyeccion | 1 | 0% |
+| declaracion_absurda | 1 | 0% |
+| monologo_interno | 1 | 0% |
 | nostalgia_winner34 | 1 | 0% |
 | credencial | 1 | 0% |
-| provocacion_dato | 1 | 0% |
 | inversion_credencial | 1 | 0% |
 | anti_guru_confesion | 1 | 0% |
 | lista_fracasos | 1 | 0% |
@@ -169,23 +183,18 @@
 | frase_textual_docente | 1 | 0% |
 | pregunta_especifica | 1 | 0% |
 | verdad_incomoda | 1 | 0% |
-| contraste_temporal | 1 | 0% |
-| resultado_primero | 1 | 0% |
 | dato_google | 1 | 0% |
 | pregunta_contraintuitiva | 1 | 0% |
-| objeto_especifico | 1 | 0% |
 | plot_twist_anticipado | 1 | 0% |
 | monologo_interno_segunda_persona | 1 | 0% |
 | escena_domingo_tarde | 1 | 0% |
 | cuenta_anios | 1 | 0% |
 | pensamiento_intrusivo | 1 | 0% |
 | contrato_consigo_misma | 1 | 0% |
-| exclusividad | 1 | 0% |
 | naming_sindrome | 1 | 0% |
 | pregunta_incomoda_conteo | 1 | 0% |
 | confesion_avatar | 1 | 0% |
 | se_filtro | 1 | 0% |
-| hipotetico_personal | 1 | 0% |
 | anti_hype_declarativo | 1 | 0% |
 | provocacion_suave | 1 | 0% |
 | pregunta_directa | 1 | 0% |
@@ -194,7 +203,6 @@
 | declaracion_contraintuitiva | 1 | 0% |
 | matematica_reveladora | 1 | 0% |
 | pregunta_incomoda_comparativa | 1 | 0% |
-| nostalgia_objeto_extincion | 1 | 0% |
 | situacion_maternidad | 1 | 0% |
 | escena_intima | 1 | 0% |
 | segunda_persona_modelando | 1 | 0% |
@@ -202,8 +210,6 @@
 | invitacion_demo | 1 | 0% |
 | situacion_especifica_textual | 1 | 0% |
 | cita_textual_compradora | 1 | 0% |
-| anti_consejo | 1 | 0% |
-| filtro_exclusividad | 1 | 0% |
 | tension_binaria_temporal | 1 | 0% |
 | disonancia_dolor | 1 | 0% |
 | disonancia_aspiracion | 1 | 0% |
@@ -235,15 +241,15 @@
 
 ## Matriz cruzada: Familia × Body Type
 
-| Familia \ Body | Demolición de m | Historia con gi | Demo/Proceso | Comparación cam | Un día en la vi | Pregunta y resp | Analogía extend | Contraste emoci | Demolición alte | Q&A conversacio | Tier-list/Ratin | Trailer de recu | Quiz de compara | storytelling_ho | espejo_situacio | escena_cinemato | revelacion_pers | demolicion_obje | matematica_reve | tutorial-promes | desconocido | **Total** |
-|----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------|
-| Identidad y Si | 2 | 1 | — | 2 | 3 | 1 | 1 | 3 | — | — | — | — | — | — | 2 | 1 | 1 | — | — | 1 | — | **18** |
-| Oportunidad y  | 2 | 1 | 1 | 1 | — | 1 | 1 | — | 1 | — | 3 | 1 | 1 | — | — | — | — | — | — | — | — | **13** |
-| Contraste y Co | — | — | 3 | — | — | — | 1 | 3 | 2 | 1 | — | — | — | — | — | — | — | 1 | 1 | — | — | **12** |
-| Mecanismo y Pr | — | 1 | 2 | — | — | — | — | — | — | 1 | 1 | — | — | — | — | — | — | — | — | — | — | **5** |
-| Historia y Emo | — | 1 | — | 1 | — | — | 1 | — | — | 1 | — | — | — | 3 | — | — | — | — | — | — | — | **7** |
-| modelo_equivoc | 1 | 1 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | **2** |
-| desconocido | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 11 | **11** |
+| Familia \ Body | Demolición de m | Historia con gi | Demo/Proceso | Comparación cam | Un día en la vi | Pregunta y resp | Analogía extend | Contraste emoci | Demolición alte | Q&A conversacio | Tier-list/Ratin | Trailer de recu | Quiz de compara | q_and_a_convers | storytelling_ho | espejo_situacio | escena_cinemato | revelacion_pers | demolicion_obje | matematica_reve | tutorial-promes | desconocido | **Total** |
+|----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------|
+| Identidad y Si | 2 | 1 | — | 2 | 3 | 1 | 2 | 3 | — | — | — | 1 | — | — | — | 2 | 1 | 1 | — | — | 1 | — | **20** |
+| Oportunidad y  | 1 | 1 | 2 | 1 | — | 1 | 1 | — | 1 | — | 3 | 1 | 1 | 1 | — | — | — | — | — | — | — | — | **14** |
+| Contraste y Co | — | — | 3 | — | — | — | 1 | 3 | 3 | 1 | — | — | 1 | — | — | — | — | — | 1 | 1 | — | — | **14** |
+| Mecanismo y Pr | — | 1 | 2 | 1 | — | 1 | — | — | — | 1 | 1 | — | — | — | — | — | — | — | — | — | — | — | **7** |
+| Historia y Emo | — | 2 | — | 1 | 1 | — | 1 | — | — | 1 | — | — | — | — | 3 | — | — | — | — | — | — | — | **9** |
+| modelo_equivoc | 1 | 1 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | **2** |
+| desconocido | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 11 | **11** |
 
 ## Ángulos específicos (saturación)
 
@@ -251,6 +257,16 @@
 |--------|-------|--------|
 | ? | 13 | 🔴 Quemado |
 | 1.2_oficinista_atrapado | 2 | ✅ OK |
+| 4.cocinera_cuaderno_abuela_digitalizado | 1 | ✅ OK |
+| 3.docente_sistema_planificacion | 1 | ✅ OK |
+| 4.psicopedagoga_guia_para_madres | 1 | ✅ OK |
+| 2.comerciante_offline_knowhow_oculto | 1 | ✅ OK |
+| 2.disenadora_template_versionado | 1 | ✅ OK |
+| 5.costurera_herencia_molde | 1 | ✅ OK |
+| 5.kinesiologo_dia_en_la_vida | 1 | ✅ OK |
+| 1.nutricionista_consulta_efimera | 1 | ✅ OK |
+| 3.contadora_tres_formas_cobrar | 1 | ✅ OK |
+| 1.arquitecto_plano_tipo_empaquetado | 1 | ✅ OK |
 | 2.7_nido_vacio_tiempo_libre_reinvencion | 1 | ✅ OK |
 | 1.10_sindrome_acumuladora_45 | 1 | ✅ OK |
 | 3.11_regalo_invisible_whatsapp | 1 | ✅ OK |
@@ -275,7 +291,6 @@
 | 4.7_demo_modeladora_2da_persona | 1 | ✅ OK |
 | 1.9_comercio_offline_sin_hook | 1 | ✅ OK |
 | 1.8_saber_invisible_plantas | 1 | ✅ OK |
-| 2.1_modelo_oculto | 1 | ✅ OK |
 | 3.10_manicurista_techo_demanda_invisible | 1 | ✅ OK |
 | 3.10_manicurista_turnos_cuerpo | 1 | ✅ OK |
 | 1.2 | 1 | ✅ OK |
@@ -307,14 +322,23 @@
 
 ## Gaps detectados (priorizar)
 
-- ⚠️ Body type "12. Trailer de recurso" tiene solo 1 guion(es)
-- ⚠️ Body type "13. Quiz de comparación" tiene solo 1 guion(es)
+No se detectaron gaps mayores. Todas las dimensiones tienen cobertura.
 
 ## Nichos usados
 
 | Nicho | Count |
 |-------|-------|
 | negocios con IA | 2 |
+| cocineras / cocineros caseros / amateurs con cuaderno de recetas familiar | 1 |
+| docentes secundarios y terciarios / profesores de formacion profesional | 1 |
+| psicopedagogas / fonoaudiologas / terapeutas ocupacionales | 1 |
+| comerciantes con local a la calle / duenos de comercio tradicional | 1 |
+| disenadoras graficas / UX / diseno de marca / diseno de marca | 1 |
+| costureras / modistas / mujeres con taller de costura en casa | 1 |
+| kinesiologos / fisioterapeutas / terapeutas fisicos | 1 |
+| nutricionistas / dietistas / licenciados en nutricion | 1 |
+| contadoras freelance / administrativas / estudios contables chicos | 1 |
+| arquitectos (proyectistas, estudios pequenos, freelance senior) | 1 |
 | mujeres 48-62 con hijos grandes o que se fueron (nido vacio) amplio: amas de casa, jubiladas recientes, ex-empleadas, docentes retiradas, madres de adolescentes | 1 |
 | mujeres 45+ con multiples formaciones (coaching, reiki, astrologia, yoga, numerologia, docentes con postgrados, terapeutas con 4+ certificaciones) | 1 |
 | psicologos / nutricionistas / coaches / terapeutas / profesionales que atienden por WhatsApp | 1 |
@@ -339,12 +363,11 @@
 | profesional 50+ con oficio o experiencia | 1 |
 | comercio offline / local a la calle | 1 |
 | plantas (huerta + ornamentales + jardinería casera) | 1 |
-| amplio — productos digitales con IA (formato orgánico IG) | 1 |
 | manicurista | 1 |
 | manicurista (gel, acrílico, esculpidas — atiende en casa o salón chico) | 1 |
 | negocios digitales con IA / salir del laburo | 1 |
 | comerciante que vende por Mercado Libre (cualquier rubro) | 1 |
-| manualidades (amplio — paraguas winner #121) | 1 |
+| manualidades (amplio — paraguas de rubros artesanales) | 1 |
 | velas artesanales | 1 |
 | diseño / arte / creatividad | 1 |
 | terapia / psicología / bienestar | 1 |
@@ -380,7 +403,7 @@
 
 | Patrón | Count | Ejemplos de títulos |
 |--------|-------|---------------------|
-| 🔴 `empaqueto_algo` | 16 | Sindrome de la acumuladora — 5 certifica · Psicologos/coaches/nutris — los audios d |
+| 🔴 `empaqueto_algo` | 22 | Docentes — Tu planificacion vale mas que · Comercio offline — Tu know-how de provee |
 | 🔴 `x_años_experiencia` | 10 | Jubilados — 40 años de oficio en una guí · Músicos — la canción que enseñaste vale  |
 | 🔴 `ia_pone_en_papel` | 6 | Jubilados — 40 años de oficio en una guí · Si sabés de plantas — lo que regalás, ot |
 | 🟡 `regalas_vale_plata` | 2 | Si sabés de plantas — lo que regalás, ot · Si sabés hacer tortas — el audio de What |
@@ -393,9 +416,9 @@ _Ninguno._
 
 | Bigrama | Count |
 |---------|-------|
+| `producto digital` | 9 |
 | `guia digital` | 8 |
 | `guia paginas` | 6 |
-| `producto digital` | 6 |
 | `productos digitales` | 5 |
 | `digital vende` | 4 |
 | `vale plata` | 4 |

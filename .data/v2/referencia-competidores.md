@@ -87,7 +87,7 @@
 
 ### @sooweigoh — B-roll educativo
 - **Estilo:** B-roll como herramienta educativa, no cosmética.
-- **Para ADP:** El B-roll de winner #121 sigue este principio — B-roll muestra la PRUEBA, no el lifestyle.
+- **Para ADP:** El B-roll que verifica la promesa (no el lifestyle) es un principio transversal de los winners actuales — mostrar que el mecanismo es real, no solo prometerlo.
 
 ---
 

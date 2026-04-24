@@ -117,7 +117,7 @@ Max 1 uso cada una por batch de 10:
 
 ## §5 COBERTURA ACTUAL
 
-> Auto-generado por update-coverage.mjs — 2026-04-19
+> Auto-generado por update-coverage.mjs — 2026-04-23
 > Ventana: últimas 30 generaciones
 
 ### Hooks sub-usados (fórmulas con <3 usos en últimos 30 guiones)
@@ -143,23 +143,24 @@ Max 1 uso cada una por batch de 10:
 - F20 (0 usos)
 
 ### Vehículos sub-usados (<2 usos en últimos 30)
-- 5. Un día en la vida (1 usos)
-- 6. Pregunta y respuesta (1 usos)
-- 9. Demolición alternativas ⭐ (1 usos)
+- 1. Demolición de mito (1 usos)
+- 8. Contraste emocional (1 usos)
 - 10. Q&A conversacional ⭐ (0 usos)
 - 11. Tier-list/Rating (1 usos)
-- 12. Trailer de recurso (0 usos)
-- 13. Quiz de comparación (0 usos)
+- 12. Trailer de recurso (1 usos)
+- 13. Quiz de comparación (1 usos)
 
 ### Ingredientes nunca usados o sub-usados
-**1 uso:** H#13, H#14, H#17, E#63, K#126, B#28, F#74, A#7, G#93, B#25, D#53, F#72, H#99, K#125, C#43, A#8, C#12, F#47, G#23, I#31, B#3, C#7, B#29, #71 Proceso de N Pasos, #85 Testimonio Diverso, #89 Prueba por Volumen, #103 Reducción al Absurdo, #117 Escasez
-**Top usados (rotar):** G#88×14, F#82×12, D#49×11, F#79×8, B#23×8, B#31×6, F#75×5, E#67×5, F#71×5, C#47×5
+**1 uso:** A#27, A#14, B#24, D#52, F#77, H#101, B#30, D#50, F#78, G#89, A#21, B#27, F#73, G#86, D#57, G#87, B#36, D#56, F#84, G#91, K#128, A#19, G#85, A#16, B#35, A#26, A#32, B#37, A#31, A#11
+**Top usados (rotar):** G#88×12, F#82×9, D#49×8, B#23×6, F#79×5, B#31×5, F#75×5, D#48×5, F#71×5, E#67×5
 
 ### Ventas del modelo sub-usadas
-- cementerio_modelos (0 usos)
+- cementerio_modelos (1 usos)
 - ventana_oportunidad_ia (0 usos)
-- matematica_simple (0 usos)
-- prueba_diversidad (0 usos)
+- contraste_fisico (0 usos)
+- eliminacion_barreras (1 usos)
+- matematica_simple (1 usos)
+- prueba_diversidad (1 usos)
 
 ### Ritmos sub-usados (R1-R7, <2 usos)
 - R1 (0 usos)
@@ -171,8 +172,7 @@ Max 1 uso cada una por batch de 10:
 - R7 (0 usos)
 
 ### Gaps detectados
-- ⚠️ Body type "12. Trailer de recurso" tiene solo 1 guion(es)
-- ⚠️ Body type "13. Quiz de comparación" tiene solo 1 guion(es)
+_Sin gaps mayores._
 ---
 
 ## CHECKLIST DE DIVERSIDAD (correr ANTES de aprobar batch)

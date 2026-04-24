@@ -502,41 +502,33 @@ Cada uno es un ángulo de ad diferente. Ver detalle en data profunda.
 
 ---
 
-## CRUCE CON WINNERS ADP (4 mejores ads por CPL)
+## GAPS ENTRE ADS ACTUALES Y DOLORES REALES
 
-### Resumen de winners:
-1. **#121 ($0.38 CPL)** — Hipernicho manualidades, auto-selección
-2. **#46 ($0.99 CPL)** — Eliminación de barreras, anti-hype
-3. **#39 ($1.31 CPL)** — Promesa directa, demo de 3 pasos
-4. **#43 ($1.46 CPL)** — Analogía absurda, ChatGPT psicólogo
-
-### 5 GAPS entre lo que los winners dicen y lo que los compradores sienten:
+> Sección reescrita 2026-04-24. El cruce original comparaba con ads ya retirados del sistema (#121/#46/#43). Los 4 winners actuales (#3/#6/#39/#44) están en `winner-patterns.md`. Los gaps de contenido frente a la data de compradores siguen vigentes como oportunidades de hook:
 
 **GAP 1: Ningún winner toca "trabajo mucho y gano poco" directamente.**
-El dolor #1 (55%) no aparece en ningún hook. #121 lo toca INDIRECTAMENTE ("tu ingreso depende del clima, del lugar y de tu tiempo") y es el mejor ad. Más variantes de este reframe = más $0.38.
+El dolor #1 (55%) rara vez aparece en los hooks. Oportunidad: reframear el dolor sin decirlo directo ("cobrar por hora tiene techo", "depender del clima/lugar/tiempo").
 
 **GAP 2: Ningún winner destruye el miedo #1 "que sea estafa".**
-25% lo menciona. Los winners venden oportunidad pero no atacan la desconfianza. Oportunidad: ad que abra con "sé que ya te cagaron antes con otro curso."
+25% lo menciona como miedo pre-compra. Oportunidad: ad que abra con "sé que ya te cagaron antes con otro curso".
 
-**GAP 3: Ningún winner usa lenguaje de "dignidad" / "tranquilidad".**
-Los sueños reales son básicos: pagar deudas, casa, llevar al hijo al colegio. Los CTAs hablan de "clase gratuita" y "paso a paso". Oportunidad: CTA emocional ("imaginate cerrar el mes tranquila").
+**GAP 3: Lenguaje de "dignidad" / "tranquilidad" está ausente.**
+Los sueños reales son básicos: pagar deudas, llevar al hijo al colegio. Los CTAs hablan de "clase gratuita". Oportunidad: CTA emocional ("imaginate cerrar el mes tranquila").
 
 **GAP 4: Ningún winner habla a MUJERES específicamente.**
-59% de compradores son mujeres. 0% de hooks dicen "si sos mamá", "si sos mujer". Oportunidad ENORME: hook tipo #121 para mamás/docentes/terapeutas.
+59% de compradores son mujeres. 0% de hooks del top dicen "si sos mamá", "si sos mujer". Oportunidad con identidad psicológica (no demográfica explícita).
 
-**GAP 5: El mundo de desarrollo personal (45% de lo que consumen) no aparece en ningún winner.**
+**GAP 5: El mundo de desarrollo personal (45% del consumo) no aparece en los winners.**
 Todos hablan de IA/negocios. Nadie puentea desde Kiyosaki/Dispenza. Oportunidad: "¿Leíste Padre Rico? Acá te muestro cómo crear ese activo."
 
-### NICHOS VALIDADOS PARA ADS TIPO #121:
-La data de "a quién querés ayudar" + la data de profesiones revela estos nichos hiperviables:
+### NICHOS CON POTENCIAL PARA HOOKS DE AUTO-SELECCIÓN:
+La data de "a quién querés ayudar" + profesiones revela nichos hiperviables:
 - **Docentes** (15% del total, pain: "cobro poco por mi vocación")
 - **Repostería/pastelería** (4+ personas con experiencia directa)
 - **Yoga/pilates/meditación** (6+ instructoras)
 - **Nutrición/dietas** (10 en salud/bienestar)
 - **Organización/productividad** (16 personas, 94% mujeres)
 - **Peluquería/estética** (3-4 personas)
-
-Ver detalle completo en `analisis-adpd-123-data-profunda.md` sección 15.
 
 ---
 
@@ -555,17 +547,17 @@ Pierde resonancia con el 70%+. Esta audiencia no se identifica con "facturé $50
 
 ### Nuevas (basadas en cruces de data profunda):
 
-### P4: "¿Qué pasa si hacemos ads segmentados por edad?"
-CPL baja 20-30%. Cada rango de edad tiene dolor diferente. Un ad para 40-49 que diga "trabajás mucho y ganás poco" pega 31% en ese rango vs 18% en 30-39. La segmentación demográfica + dolor específico = lo que hizo #121 con nicho pero aplicado a edad.
+### P4: "¿Qué pasa si hacemos ads segmentados por dolor específico?"
+La segmentación por identidad psicológica + dolor específico tiene mejor match que hooks genéricos. Un ad que diga "trabajás mucho y ganás poco" pega distinto por rango de edad (31% 40-49 vs 18% 30-39). **Evitar mencionar edad en el hook** — los winners actuales nunca lo hacen. Filtrar por identidad (docente, comerciante, mamá), no por cronología.
 
-### P5: "¿Qué pasa si hacemos un ad tipo #121 para docentes?"
-CPL $0.50-$0.80. Docentes = 15% de compradores + 11% quiere crear productos educativos. "Si sos docente y cobrás por hora, seguro ya te pasó..." → autoselección + dolor real.
+### P5: "¿Qué pasa si hacemos un ad de auto-selección para docentes?"
+Docentes = 15% de compradores + 11% quiere crear productos educativos. Hook candidato: "Si sos docente y cobrás por hora, seguro ya te pasó..." → autoselección + dolor real. Requiere validar a escala (≥100 ventas) antes de declarar winner.
 
 ### P6: "¿Qué pasa si el CTA menciona 'tranquilidad' en vez de 'clase gratuita'?"
-CTR sube 15-25% en mujeres 40+. El sueño #1 es "tranquilidad" y ningún winner lo toca.
+CTR proyectado sube 15-25% en mujeres 40+. El sueño #1 es "tranquilidad" y ningún winner lo toca.
 
 ### P7: "¿Qué pasa si abrimos con 'Sé que ya te cagaron con otro curso'?"
-CPL sube ligeramente pero quality score sube mucho. 25% tiene miedo a estafa + 12%+ ya compró sin resultado. Destruir la objeción #1 que ningún winner toca.
+Quality score proyectado sube. 25% tiene miedo a estafa + 12%+ ya compró sin resultado. Ningún winner actual destruye la objeción #1.
 
 ### P8: "¿Qué pasa si hacemos un ad con historia real de una compradora?"
 CLR alto + CPL $0.80-$1.20. La historia de Graciela (contadora que vendió $8K) o María Fernanda (madre soltera) filmada por ellas = UGC real + identificación masiva con el avatar nuclear.

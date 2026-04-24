@@ -1,0 +1,69 @@
+{
+  "title": "Comercio offline — Tu know-how de proveedores vale mas que el local",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "oportunidad",
+    "angle_specific": "2.comerciante_offline_knowhow_oculto",
+    "body_type": "q_and_a_conversacional",
+    "segment": "D",
+    "funnel_stage": "MOFU",
+    "niche": "comerciantes con local a la calle / duenos de comercio tradicional",
+    "model_sale_type": "cementerio_modelos",
+    "transition_text": "Esa guia de proveedores es UN ejemplo. Te voy a mostrar el proceso entero esta semana en el taller.",
+    "total_duration_seconds": 81,
+    "word_count": 225,
+    "punto_entrada_emocional": "hartazgo de abrir la persiana un martes y que no entre nadie hace meses",
+    "belief_change": {
+      "old_belief": "Tengo un local que no da y no se que mas hacer. Instagram tampoco me salva",
+      "mechanism": "Mostrar que tu know-how de proveedores negociados a lo largo de 15 anos vale mas empaquetado que atras del mostrador",
+      "new_belief": "Mi conocimiento de comerciante tiene un comprador que no es mi cliente tipico"
+    },
+    "micro_beliefs": [
+      { "belief": "El local te puede hacer plata sin abrir la persiana", "installed_via": "confidencialidad_insider", "persuasion_function": "puente", "section_name": "Puente" },
+      { "belief": "Otros comerciantes ya facturaron mas cerrando que abriendo", "installed_via": "antes_despues_alumno", "persuasion_function": "quiebre", "section_name": "Quiebre" },
+      { "belief": "Mi lista de proveedores es el producto", "installed_via": "simplificacion_extrema", "persuasion_function": "mecanismo", "section_name": "Mecanismo" },
+      { "belief": "No hace falta humo ni Instagram ni camara", "installed_via": "anti_hype_directo", "persuasion_function": "demolicion", "section_name": "Demolicion" },
+      { "belief": "Ya hay guias de proveedores circulando en Hotmart", "installed_via": "antes_despues_contexto", "persuasion_function": "prueba", "section_name": "Prueba" }
+    ],
+    "hooks": [
+      { "variant_number": 1, "hook_type": "exclusividad", "hypothesis": "el tono insider abre puertas en un escepticismo quemado", "emotional_lever": "confidencialidad", "script_text": "Esto no lo cuento mucho. Algo que los que tenemos local hace 15 anos sabemos pero nadie lo dice afuera.", "timing_seconds": 7 },
+      { "variant_number": 2, "hook_type": "historia_dolor_sensorial", "hypothesis": "la escena del martes vacio es universal en este cluster", "emotional_lever": "vacio_cotidiano", "script_text": "Abris la persiana. Martes 10 de la manana. En la calle hay cuatro personas. Todos los martes.", "timing_seconds": 6 },
+      { "variant_number": 3, "hook_type": "ancla_precio_invertida", "hypothesis": "la matematica del alquiler versus ventas duele por sola", "emotional_lever": "angustia_matematica", "script_text": "Cuanto te sale el alquiler del local este mes? 80 mil pesos? 120 mil? Y cuanto vendiste la semana pasada?", "timing_seconds": 7 },
+      { "variant_number": 4, "hook_type": "anti_consejo", "hypothesis": "dejar de golpear el caballo muerto de Instagram libera energia", "emotional_lever": "alivio_directo", "script_text": "Todos te dicen que abras un Instagram. Dejate de joder. Instagram no te va a salvar el local.", "timing_seconds": 6 },
+      { "variant_number": 5, "hook_type": "contraste_temporal", "hypothesis": "el timeline contrastivo activa la nostalgia del local lleno", "emotional_lever": "nostalgia_productiva", "script_text": "Hace 5 anos, los martes vendias. Hoy los martes miras la persiana y te preguntas hasta cuando aguantas.", "timing_seconds": 7 }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "revelacion_oportunidad",
+      "sections": [
+        { "section_name": "Puente", "persuasion_function": "puente", "micro_belief": "El local te puede hacer plata sin abrir la persiana", "viewer_emotion_after": "curiosidad_reactivada", "is_turning_point": false, "script_text": "Pero hay una forma de que ese local te haga plata incluso cuando no abris la persiana. Y no es Instagram ni es delivery.", "timing_seconds": 6 },
+        { "section_name": "Quiebre", "persuasion_function": "quiebre", "micro_belief": "Otros comerciantes ya facturaron mas cerrando que abriendo", "viewer_emotion_after": "posibilidad_concreta", "is_turning_point": true, "script_text": "Porque hay comerciantes que ya cerraron el local y facturan mas que cuando lo tenian. Un ferretero de Banfield cerro en junio del ano pasado. Armo una guia con los proveedores que el conseguia para clientes. La vende por 47 dolares a otros ferreteros que estan armando negocio desde cero.", "timing_seconds": 14 },
+        { "section_name": "Mecanismo", "persuasion_function": "mecanismo", "micro_belief": "Mi lista de proveedores es el producto", "viewer_emotion_after": "camino_concreto", "is_turning_point": false, "script_text": "Y aca esta el tema: agarras tu propio know-how de negociar con proveedores. Esa lista de Matarazzo, de Spinelli, de los mayoristas de La Salada que nadie mas tiene. La IA te arma un PDF con como cerrar precios, que pedir, como no dejarte estafar. Lo vendes a 37 dolares a cualquiera que esta abriendo un comercio en 2026 y no sabe ni con quien hablar.", "timing_seconds": 18 },
+        { "section_name": "Demolicion", "persuasion_function": "demolicion", "micro_belief": "No hace falta humo ni Instagram ni camara", "viewer_emotion_after": "escepticismo_bajado", "is_turning_point": false, "script_text": "Entonces no te voy a vender humo. Te voy a decir la verdad: no te voy a decir que vas a ganar 10 mil dolares por mes. Te digo que hay gente que paga por lo que vos sabes de memoria. Y no necesitas Instagram. Ni camara. Ni aprender nada nuevo.", "timing_seconds": 14 },
+        { "section_name": "Prueba", "persuasion_function": "prueba", "micro_belief": "Ya hay guias de proveedores circulando en Hotmart", "viewer_emotion_after": "confirmacion_de_realidad", "is_turning_point": false, "script_text": "Porque en Hotmart hay guias de proveedores vendiendose por toda Latinoamerica. Las arman comerciantes que cerraron o que siguen con el local. Una vende sola 12 copias por semana.", "timing_seconds": 11 },
+        { "section_name": "VentaModelo", "persuasion_function": "venta_modelo", "micro_belief": "El local es una forma de hacer negocio, no la unica", "viewer_emotion_after": "apertura_estrategica", "is_turning_point": false, "script_text": "Por eso el local no es el negocio. El local es una forma de hacer negocio. Hay otras. Y una de ellas no te obliga a abrir la persiana todos los dias.", "timing_seconds": 8 }
+      ]
+    },
+    "micro_yes_chain": [
+      { "location": "hook", "technique": "intimidad_insider", "phrase": "nadie lo dice afuera" },
+      { "location": "puente", "technique": "apertura", "phrase": "no es Instagram ni es delivery" },
+      { "location": "quiebre", "technique": "caso_concreto", "phrase": "Un ferretero de Banfield cerro en junio" },
+      { "location": "mecanismo", "technique": "reconocimiento", "phrase": "esa lista de Matarazzo, de Spinelli" },
+      { "location": "demolicion", "technique": "honestidad", "phrase": "Te voy a decir la verdad" },
+      { "location": "venta_modelo", "technique": "apertura_estrategica", "phrase": "Hay otras" }
+    ],
+    "ingredients_used": [
+      { "category": "A", "ingredient_number": 30, "ingredient_name": "Precio-perspectiva" },
+      { "category": "A", "ingredient_number": 20, "ingredient_name": "El Secreto (exclusividad)" },
+      { "category": "B", "ingredient_number": 23, "ingredient_name": "Descripcion situacional" },
+      { "category": "D", "ingredient_number": 57, "ingredient_name": "Antes/despues alumno" },
+      { "category": "F", "ingredient_number": 79, "ingredient_name": "Simplificacion extrema" },
+      { "category": "G", "ingredient_number": 87, "ingredient_name": "Antes/despues con contexto" }
+    ],
+    "cta_blocks": [
+      { "channel": "taller_5", "variant": "A" },
+      { "channel": "clase_gratuita", "variant": "C" },
+      { "channel": "instagram", "variant": "C" }
+    ]
+  }
+}

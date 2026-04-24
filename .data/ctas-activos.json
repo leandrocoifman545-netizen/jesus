@@ -1,49 +1,56 @@
 [
   {
-    "id": "clase-gratis-C-v2",
+    "id": "clase-gratis-C-v3",
     "channel": "Clase Gratuita",
     "variant": "C",
-    "version": "2.0",
-    "ingredients": ["#85 Testimonio Diverso", "#106 Garantía Implícita", "#117 Escasez"],
+    "version": "3.0",
+    "updated": "2026-04-24",
+    "notes": "Versión comprimida alineada con estructura de winners (3 capas en lugar de 6). Target: 14-18s acelerado / 26-32s natural.",
+    "target_words": 60,
+    "target_seconds_accelerated": 11,
+    "target_seconds_natural": 21,
     "layers": {
-      "oferta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa.",
-      "orden_1": "Tocá el botón de acá abajo y registrate.",
-      "prueba": "Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero.",
-      "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí.",
-      "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
-      "cierre": "Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+      "promesa_cta": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia, sin saber de tecnología, desde tu casa. Tocá el botón de acá abajo y registrate.",
+      "reaseguramiento_micro": "Es en vivo, conmigo, con cupos limitados. Si no te sirve, no perdiste nada.",
+      "cierre_afectivo": "Te espero adentro."
     },
-    "text": "En 2 horas te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia. Sin saber de tecnología y desde tu casa. Tocá el botón de acá abajo y registrate. Lo hicieron mamás que nunca habían vendido nada, jubilados que solo sabían usar WhatsApp, pibes de 20 que vivían del sueldo mínimo. Todos empezaron de cero. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de 50, 60 dólares por día extra. ¿O no te serviría esa plata? Yo creo que sí. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Son 2 horas que te pueden ahorrar meses de estar buscando solo. Registrate ahora. Te espero adentro."
+    "text": "Tengo una clase gratis de 2 horas donde te muestro cómo encontrar productos digitales que ya se están vendiendo, cómo crearlos con IA y cómo empezar a venderlos. Sin experiencia, sin saber de tecnología, desde tu casa. Tocá el botón de acá abajo y registrate. Es en vivo, conmigo, con cupos limitados. Si no te sirve, no perdiste nada. Te espero adentro.",
+    "word_count": 62
   },
   {
-    "id": "taller-5-A-v2",
+    "id": "taller-5-A-v3",
     "channel": "Taller $5",
     "variant": "A",
-    "version": "2.0",
-    "ingredients": ["#71 Proceso de N Pasos", "#98 Tres Deliverables", "#89 Prueba por Volumen", "#93 Diversidad Geográfica", "#103 Reducción al Absurdo", "#122 Costo de Esperar"],
+    "version": "3.0",
+    "updated": "2026-04-24",
+    "notes": "Versión comprimida alineada con estructura de winners (3 capas en lugar de 6). Target: 14-18s acelerado / 26-32s natural.",
+    "target_words": 60,
+    "target_seconds_accelerated": 11,
+    "target_seconds_natural": 21,
     "layers": {
-      "oferta": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando.",
-      "prueba": "Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España.",
-      "riesgo_cero": "¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo.",
-      "urgencia": "El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta.",
-      "cierre": "Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+      "promesa_cta": "Son 3 días conmigo en vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto y tu primer sistema de ventas. Tocá el botón de acá abajo.",
+      "reaseguramiento_micro": "Cinco dólares, menos que una pizza. Ya pasaron 17 mil personas. Si no funciona, perdiste menos que un café.",
+      "cierre_afectivo": "Nos vemos adentro."
     },
-    "text": "Son 3 días conmigo. En vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto creado, tu anuncio listo y tu primer sistema de ventas funcionando. Ya lo hicieron más de 17 mil personas en Argentina, Colombia, México y España. ¿Cuánto vale? 5 dólares. Menos que un café. ¿Por qué tan barato? Porque yo no gano con el taller. Gano cuando a vos te va bien. ¿Y cómo gano? Porque cuando te va bien, querés seguir aprendiendo. El taller arranca esta semana. Cada semana que lo pensás es otra semana sin tu producto en venta. Tocá el botón de acá abajo. Son 5 dólares y 3 tardes. Si no funciona, perdiste menos que una pizza. Si funciona, podrías estar ganando 50, 60 dólares por día extra. Nos vemos adentro."
+    "text": "Son 3 días conmigo en vivo. Día 1: encontrás tu producto ganador con IA. Día 2: lo armás completo. Día 3: lo vendés por WhatsApp. Salís con tu producto y tu primer sistema de ventas. Tocá el botón de acá abajo. Cinco dólares, menos que una pizza. Ya pasaron 17 mil personas. Si no funciona, perdiste menos que un café. Nos vemos adentro.",
+    "word_count": 64
   },
   {
-    "id": "instagram-C-v2",
+    "id": "instagram-C-v3",
     "channel": "Instagram Orgánico",
     "variant": "C",
-    "version": "2.0",
-    "ingredients": ["#89 Prueba por Volumen", "#117 Escasez"],
+    "version": "3.0",
+    "updated": "2026-04-24",
+    "notes": "Versión comprimida alineada con estructura de winners (3 capas en lugar de 6). Target: 12-15s acelerado / 22-28s natural.",
+    "target_words": 50,
+    "target_seconds_accelerated": 9,
+    "target_seconds_natural": 17,
     "layers": {
-      "oferta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí.",
-      "orden_1": "Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
-      "prueba": "Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora.",
-      "riesgo_cero": "Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día.",
-      "urgencia": "La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte.",
-      "cierre": "Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+      "promesa_cta": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil.",
+      "reaseguramiento_micro": "Es en vivo, conmigo.",
+      "cierre_afectivo": "Te espero adentro, abrazo."
     },
-    "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. ¿Sabés usar WhatsApp? Yo creo que sí. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Ya pasaron más de 17 mil personas por esta clase. Gente que arrancó exactamente donde estás vos ahora. Es una clase gratis. Si no te sirve, no perdiste nada. Pero si te sirve, estamos hablando de que podrías ganar 50, 60 dólares extra por día. La clase es en vivo, conmigo. Y porque es en vivo, los cupos son limitados. No le puedo dar atención a todo el mundo. Si se llenan los lugares, no te va a dejar registrarte. Comentá 'CLASE' y registrate en el link de mi perfil. Te espero adentro, abrazo."
+    "text": "Tengo una clase gratis de 2 horas donde te muestro paso a paso cómo encontrar un producto digital, crearlo con IA y empezar a venderlo. Lo único que necesitás es saber usar WhatsApp. Comentá 'CLASE' acá abajo y andá a registrarte en el link de mi perfil. Es en vivo, conmigo. Te espero adentro, abrazo.",
+    "word_count": 54
   }
 ]

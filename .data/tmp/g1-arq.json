@@ -1,0 +1,69 @@
+{
+  "title": "Arquitectos — 40 planos en el disco D",
+  "batch": "semana-2026-04-22",
+  "script": {
+    "angle_family": "identidad",
+    "angle_specific": "1.arquitecto_plano_tipo_empaquetado",
+    "body_type": "trailer_recurso",
+    "segment": "B",
+    "funnel_stage": "TOFU",
+    "niche": "arquitectos (proyectistas, estudios pequenos, freelance senior)",
+    "model_sale_type": "redefinicion_trabajo",
+    "transition_text": "Ese paquete de 40 planos de casa chorizo es UN ejemplo. Te voy a mostrar el proceso entero esta semana, en una clase.",
+    "total_duration_seconds": 83,
+    "word_count": 225,
+    "punto_entrada_emocional": "bronca de saber que 20 anos de trabajo estan guardados sin capitalizar",
+    "belief_change": {
+      "old_belief": "Mi trabajo de arquitecto es unico y se paga por obra",
+      "mechanism": "Mostrar el plano tipo como paquete digital vendible 100 veces a colegas de otros paises",
+      "new_belief": "Mi trabajo ya esta hecho y se empaqueta por resultado"
+    },
+    "micro_beliefs": [
+      { "belief": "Mis planos viejos valen plata", "installed_via": "nostalgia_invertida", "persuasion_function": "puente", "section_name": "Puente" },
+      { "belief": "El comprador es otro arquitecto senior, no un junior", "installed_via": "inversion_autoridad", "persuasion_function": "quiebre", "section_name": "Quiebre" },
+      { "belief": "La IA ordena, yo no redibujo", "installed_via": "resultado_del_proceso", "persuasion_function": "mecanismo", "section_name": "Mecanismo" },
+      { "belief": "No hace falta crear nada nuevo", "installed_via": "desarmar_excusa", "persuasion_function": "demolicion", "section_name": "Demolicion" },
+      { "belief": "El nicho existe y es verificable", "installed_via": "meta_proof", "persuasion_function": "prueba", "section_name": "Prueba" }
+    ],
+    "hooks": [
+      { "variant_number": 1, "hook_type": "timeline_proyeccion", "hypothesis": "el objeto cultural en extincion dispara nostalgia + valor perdido", "emotional_lever": "nostalgia_descarte_valioso", "script_text": "Tus viejos planos en papel, los que llevabas enrollados a la obra, estan en un tubo en el placard. Nadie los va a volver a desplegar.", "timing_seconds": 7 },
+      { "variant_number": 2, "hook_type": "auto_seleccion_memoria", "hypothesis": "identidad + activacion de memoria concreta sobre carpeta digital olvidada", "emotional_lever": "valor_latente_invisible", "script_text": "Si sos arquitecto y tenes mas de 10 obras entregadas, seguro tenes una carpeta de proyectos que ya nadie mira. Ahi hay plata.", "timing_seconds": 6 },
+      { "variant_number": 3, "hook_type": "pregunta_espejo", "hypothesis": "monologo interno del arquitecto atrapado", "emotional_lever": "impotencia_economica_identidad", "script_text": "Haces 6 obras por ano. Trabajas como un hijo de puta. Y en dolares cobras lo mismo que en 2019.", "timing_seconds": 6 },
+      { "variant_number": 4, "hook_type": "declaracion_absurda", "hypothesis": "geografia absurda crea curiosidad y enemigo comun", "emotional_lever": "provocacion_geografica", "script_text": "Un arquitecto de Chajari factura mas vendiendo planos PDF que un estudio de Palermo dibujando edificios. Eso pasa en 2026.", "timing_seconds": 6 },
+      { "variant_number": 5, "hook_type": "monologo_interno", "hypothesis": "ponerlo en la escena del descubrimiento", "emotional_lever": "insight_demorado", "script_text": "Abris tu disco viejo. Ves 40 proyectos de refaccion de casa chorizo. Los hiciste uno por uno. Y pensas: los podria haber vendido 40 veces.", "timing_seconds": 8 }
+    ],
+    "development": {
+      "framework_used": "micro_vsl_puente_4_beats",
+      "emotional_arc": "provocacion_evidencia",
+      "sections": [
+        { "section_name": "Puente", "persuasion_function": "puente", "micro_belief": "Mis planos viejos valen plata", "viewer_emotion_after": "oportunidad_perdida_identificada", "is_turning_point": false, "script_text": "Pero eso que pensas cuando miras tus planos viejos no es nostalgia. Es una idea que te estas perdiendo hace 10 anos.", "timing_seconds": 6 },
+        { "section_name": "Quiebre", "persuasion_function": "quiebre", "micro_belief": "El comprador es otro arquitecto senior, no un junior", "viewer_emotion_after": "descubrimiento_del_comprador_real", "is_turning_point": true, "script_text": "Porque el arquitecto que paga 47 dolares por un pack de planos tipo no es un pibe recien recibido. Es un colega senior de otro pais que quiere empezar una obra el lunes y no tiene tiempo de dibujar una casa chorizo desde cero con las herramientas de siempre. Vos ya tenes lo que a el le falta.", "timing_seconds": 14 },
+        { "section_name": "Mecanismo", "persuasion_function": "mecanismo", "micro_belief": "La IA ordena, yo no redibujo", "viewer_emotion_after": "camino_claro_y_posible", "is_turning_point": false, "script_text": "Y aca esta el tema: agarras 40 proyectos de refaccion de casa chorizo que ya hiciste. La IA te los ordena por metros cuadrados, por zona, por presupuesto. Literalmente te arma un paquete digital de 40 planos tipo con memoria descriptiva y computo. Un arquitecto de Uruguay lo compra por 47 dolares un domingo a las 11 de la noche. Vos ya lo dibujaste hace 8 anos.", "timing_seconds": 18 },
+        { "section_name": "Demolicion", "persuasion_function": "demolicion", "micro_belief": "No hace falta crear nada nuevo", "viewer_emotion_after": "excusa_desarmada", "is_turning_point": false, "script_text": "Entonces no hace falta que sean proyectos nuevos. No hace falta que sean espectaculares. Y no hace falta aprender ninguna herramienta rara. Ya existen. Estan en el disco D de tu compu, en la carpeta Archivo que no abris desde 2018. Lo que hace falta es que alguien los ordene y les ponga precio.", "timing_seconds": 14 },
+        { "section_name": "Prueba", "persuasion_function": "prueba", "micro_belief": "El nicho existe y es verificable", "viewer_emotion_after": "confirmacion_de_realidad", "is_turning_point": false, "script_text": "Y si no me crees, busca planos tipo PDF en Google. Vas a ver estudios que venden packs de 12, de 20, de 50 planos. Este anuncio que estas mirando tambien esta hecho con IA. Igual que el paquete digital que te acabo de contar.", "timing_seconds": 12 },
+        { "section_name": "VentaModelo", "persuasion_function": "venta_modelo", "micro_belief": "Puedo cobrar por resultado, no por horas", "viewer_emotion_after": "permiso_de_cambio", "is_turning_point": false, "script_text": "Por eso no es que tenes que trabajar mas horas. Es que cobraste por tiempo 20 anos. Ahora podes cobrar por resultado. Y el resultado ya esta hecho.", "timing_seconds": 10 }
+      ]
+    },
+    "micro_yes_chain": [
+      { "location": "hook", "technique": "identificacion", "phrase": "Tus viejos planos en papel" },
+      { "location": "puente", "technique": "validacion", "phrase": "Es una idea que te estas perdiendo" },
+      { "location": "quiebre", "technique": "confirmacion_valor", "phrase": "Vos ya tenes lo que a el le falta" },
+      { "location": "mecanismo", "technique": "reconocimiento", "phrase": "Ya lo dibujaste hace 8 anos" },
+      { "location": "demolicion", "technique": "permiso", "phrase": "Estan en el disco D de tu compu" },
+      { "location": "venta_modelo", "technique": "liberacion", "phrase": "Y el resultado ya esta hecho" }
+    ],
+    "ingredients_used": [
+      { "category": "A", "ingredient_number": 11, "ingredient_name": "Declaracion absurda" },
+      { "category": "A", "ingredient_number": 13, "ingredient_name": "Timeline proyeccion" },
+      { "category": "B", "ingredient_number": 33, "ingredient_name": "Frustracion con complejidad" },
+      { "category": "D", "ingredient_number": 55, "ingredient_name": "Inversion de autoridad" },
+      { "category": "F", "ingredient_number": 83, "ingredient_name": "Resultado del proceso" },
+      { "category": "G", "ingredient_number": 94, "ingredient_name": "Meta-Proof" }
+    ],
+    "cta_blocks": [
+      { "channel": "clase_gratuita", "variant": "C" },
+      { "channel": "taller_5", "variant": "A" },
+      { "channel": "instagram", "variant": "C" }
+    ]
+  }
+}
